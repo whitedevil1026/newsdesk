@@ -80,7 +80,8 @@ article:last-child{border-bottom:none}
 .rail{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:9px;
  font-size:11px;letter-spacing:.07em;text-transform:uppercase;font-weight:600}
 .pri.critical{color:var(--crit)} .pri.important{color:var(--imp)} .pri.minor{color:var(--minor)}
-.vd.verified{color:var(--ok)} .vd.single_source{color:var(--warn)}
+.vd.verified{color:var(--ok)} .vd.corroborated{color:var(--ok)}
+.vd.established{color:var(--muted)} .vd.unverified{color:var(--warn)}
 .vd.disputed{color:var(--bad)} .vd.reported{color:var(--muted)}
 .sep{color:var(--line2);font-weight:400}
 .when{color:var(--muted);font-weight:400;text-transform:none;letter-spacing:0;
@@ -166,8 +167,12 @@ footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);
 const CATS = {cyber_attacks:"Attacks & Exploits", cyber_tools:"Tools & Tradecraft",
               tech_ai:"Tech & AI", markets:"Markets", india_world:"India & World",
               cybersecurity:"Cybersecurity"};
-const VD = {verified:"verified", reported:"reported",
-            single_source:"single source", disputed:"disputed"};
+// Wording matters here: the badge answers "how well established is this",
+// which is a different question from "how many outlets", already shown
+// beside it. "unverified" means a single tier-C source, not "probably false".
+const VD = {verified:"verified", corroborated:"corroborated",
+            established:"established", unverified:"unverified",
+            disputed:"disputed"};
 let DATA=null, cat="all", activeTags=new Set(), query="";
 
 const esc = s => String(s==null?"":s).replace(/[&<>"']/g,
@@ -299,7 +304,8 @@ function boot(d){
     "<span><b>"+c.published+"</b> stories</span>"+
     "<span><b>"+c.critical+"</b> critical</span>"+
     "<span><b>"+c.verified+"</b> verified</span>"+
-    "<span><b>"+c.single_source+"</b> single-source</span>"+
+    "<span><b>"+(c.corroborated||0)+"</b> corroborated</span>"+
+    "<span><b>"+(c.unverified||0)+"</b> unverified</span>"+
     "<span><b>"+c.rejected+"</b> blocked at the gate</span>";
 
   const cats=["all",...new Set(d.items.map(i=>i.category))];

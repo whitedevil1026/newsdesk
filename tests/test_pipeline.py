@@ -102,3 +102,93 @@ class TestScoring:
                                                    primary=True)])
         assert _interest_score(plain, icfg) == _interest_score(official, icfg), \
             "an official source is a reason to trust a story, not to care about it"
+
+
+class TestBudgetKillSwitch:
+    """The stop condition has to be provable, not assumed.
+
+    These run against the real settings ladder but never touch the network.
+    """
+
+    def _fresh(self):
+        from pipeline.budget import Budget, USAGE_PATH
+        USAGE_PATH.unlink(missing_ok=True)
+        return Budget()
+
+    def test_ladder_is_ordered_best_first(self):
+        b = self._fresh()
+        assert b.tiers[0].model.startswith("gemini-3."), b.tiers[0].model
+        # Cheap high-quota models must sit at the bottom, not the top.
+        assert b.tiers[-1].rpd > b.tiers[0].rpd
+
+    def test_exhaustion_stops_cleanly(self):
+        b = self._fresh()
+        for tier in b.tiers:
+            tier.blocked = "test"
+        assert b.capacity() == 0
+        assert b.next_model() is None
+        assert "exhausted" in b.stopped_reason
+
+    def test_reserve_protects_a_slice_of_quota(self):
+        """A full run must never lock out an ad-hoc --test-llm."""
+        b = self._fresh()
+        assert b.tiers[0].usable_rpd < b.tiers[0].rpd
+
+    def test_per_run_cap_is_below_daily_cap(self):
+        b = self._fresh()
+        for tier in b.tiers:
+            assert tier.per_run <= tier.usable_rpd, tier.model
+
+    def test_quota_refusal_persists_but_overload_does_not(self):
+        from pipeline.budget import Budget, USAGE_PATH
+        b = self._fresh()
+        first = b.next_model()
+        b.block(first, "429", persist=True)
+        assert Budget().tiers[0].blocked, "a 429 must survive into the next run"
+
+        USAGE_PATH.unlink(missing_ok=True)
+        b2 = Budget()
+        b2.block(b2.next_model(), "503 overload")      # transient
+        assert not Budget().tiers[0].blocked, "a 503 must not persist"
+        USAGE_PATH.unlink(missing_ok=True)
+
+
+class TestVerdicts:
+    """Verdicts must actually discriminate — the previous scheme put 96% of
+    items on one label, which is true but useless."""
+
+    def _item(self, tier="B", outlets=1, primary=False):
+        from datetime import datetime, timezone
+        from pipeline.models import Cluster
+        arts = [_art("Some headline about a thing", f"d{n}.com", tier=tier)
+                for n in range(outlets)]
+        if primary:
+            arts[0].is_primary = True
+        return Cluster(key="k", articles=arts)
+
+    def test_primary_anchor_is_verified(self):
+        from pipeline.s4_corroborate import run
+        from pipeline.models import Verdict
+        out = run([self._item(primary=True)])
+        assert out[0].verdict is Verdict.VERIFIED
+
+    def test_three_outlets_is_verified(self):
+        from pipeline.s4_corroborate import run
+        from pipeline.models import Verdict
+        out = run([self._item(outlets=3)])
+        assert out[0].verdict is Verdict.VERIFIED
+
+    def test_two_outlets_is_corroborated(self):
+        from pipeline.s4_corroborate import run
+        from pipeline.models import Verdict
+        out = run([self._item(outlets=2)])
+        assert out[0].verdict is Verdict.CORROBORATED
+
+    def test_known_publication_beats_a_random_blog(self):
+        """The distinction the old single_source label threw away."""
+        from pipeline.s4_corroborate import run
+        from pipeline.models import Verdict
+        established = run([self._item(tier="B")])[0]
+        blog = run([self._item(tier="C")])[0]
+        assert established.verdict is Verdict.ESTABLISHED
+        assert blog.verdict is Verdict.UNVERIFIED

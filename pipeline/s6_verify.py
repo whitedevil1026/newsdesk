@@ -4,12 +4,16 @@ Answers the second validation question: is MY SUMMARY faithful to the
 source?  Cheapest-first cascade, exactly as production hallucination
 detection is normally built:
 
-  1. span check      - is support_span actually present in the body?   (free)
-  2. NLI entailment  - local model, claim vs body                       (free, Step 4)
-  3. LLM judge       - borderline cases only                            (Step 4)
+  1. span check   - is support_span actually present in the body?  (here, free)
+  2. cross-model  - does a DIFFERENT model agree the claim follows
+                    from the source?                                (stage 6b)
 
-Only step 1 is live in the skeleton.  It already catches the most common
-failure: a model that invents its own supporting quote.
+A local NLI model was planned as step 2 and dropped: it meant a 400MB
+download to answer a question the judge in stage 6b already answers using
+quota that is otherwise idle.
+
+This stage stays deterministic and offline on purpose. It is the check that
+still works when there is no API key, no quota, and no network.
 """
 
 from __future__ import annotations
@@ -42,21 +46,12 @@ def run(items: list[Item], bodies: dict[str, str]) -> list[Item]:
     cfg = settings()["verify"]
     tcfg = settings()["trust"]
 
-    if not cfg["enabled"]:
-        log("verify", "verify.enabled=false - span check only, no NLI")
-
     passed = rejected = 0
     for item in items:
         if item.verdict is Verdict.REJECTED:
             continue
 
         _span_check(item, bodies.get(item.cluster_key, ""))
-
-        if cfg["enabled"]:
-            raise NotImplementedError(
-                "NLI entailment not wired yet (Step 4). "
-                "Set verify.enabled: false to run the skeleton."
-            )
 
         checked = [c for c in item.claims if c.status != "unchecked"]
         bad = [c for c in checked if c.status == "contradicted"]

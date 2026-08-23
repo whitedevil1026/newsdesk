@@ -183,7 +183,8 @@ def _generate(batch, budget, key, profile, tag_list, llm_gemini,
             return results, tier.model
 
         except llm_gemini.RateLimited as exc:
-            budget.block(tier, f"rate limited — {str(exc)[:60]}")
+            # Quota refusals last until the quota resets, so remember them.
+            budget.block(tier, f"rate limited — {str(exc)[:60]}", persist=True)
         except llm_gemini.GeminiError as exc:
             # Config errors (bad key, retired model) are permanent for this
             # model but say nothing about the others, so block and move on.

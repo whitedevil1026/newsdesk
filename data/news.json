@@ -1,363 +1,82 @@
 {
-  "generated_at": "2026-08-23T19:58:44.442765+00:00",
+  "generated_at": "2026-08-23T20:24:31.601195+00:00",
   "window_hours": 48,
   "counts": {
     "published": 40,
-    "rejected": 0,
-    "critical": 5,
-    "important": 25,
+    "rejected": 25,
+    "critical": 2,
+    "important": 32,
     "verified": 0,
-    "single_source": 37
+    "single_source": 39
   },
   "items": [
     {
-      "cluster_key": "9463314eebf6df50",
-      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse",
-      "category": "india_world",
-      "one_liner": "US-Canada trade talks collapse over unmet demands, triggering 50% US tariffs and retaliatory Canadian countermeasures in a deepening trade war.",
+      "cluster_key": "0d11eef5a20341f6",
+      "title": "TikTok Agrees to $400 Million Settlement in U.S. Child Privacy Lawsuit",
+      "category": "cyber_attacks",
+      "one_liner": "Enforcement action under COPPA imposing a $400M fine on TikTok for user privacy violations.",
       "tags": [
-        "llm",
-        "markets",
-        "policy",
-        "release"
-      ],
-      "summary": "Trade talks between the US and Canada collapsed after mutual accusations of last-minute demands, prompting US President Donald Trump to impose a 50% tariff on a limited scope of Canadian goods worth roughly $20bn. In response, Canadian Prime Minister Mark Carney denounced the move as an attack and announced dollar-for-dollar retaliatory tariffs starting September 8 on American goods including steel, dairy, and electronics. The breakdown escalates economic friction, with Trump reiterating controversial remarks about Canada becoming a US state.",
-      "key_facts": [
-        "US tariff rate: 50%",
-        "Retaliation date: September 8",
-        "Impacted Canadian imports scope: $20bn (£15bn; C$28bn) or about 5%"
-      ],
-      "bottom_line": "The breakdown of bilateral trade negotiations between the US and Canada marks the start of a reciprocal tariff war impacting billions in cross-border commerce.",
-      "claims": [
-        {
-          "text": "US President Donald Trump announced new 50% US tariffs on a range of Canadian goods after trade talks collapsed.",
-          "support_span": "US President Donald Trump has said Canada wants \"the benefits of being a State, without being one\" after trade talks between the two countries collapsed late on Friday. His comments come after negotiations broke down, triggering new 50% US tariffs on a range of Canadian goods",
-          "status": "entailed"
-        },
-        {
-          "text": "Canadian Prime Minister Mark Carney confirmed he would match Trump's tariffs dollar-for-dollar from September 8.",
-          "support_span": "Canadian Prime Minister Mark Carney called the fresh tariffs a \"miscalculation\" designed to \"hurt and divide us\". Carney confirmed he would match Trump's tariffs \"dollar-for-dollar\" from 8 September",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 62.5,
-      "critical_signal": "",
-      "priority": "critical",
-      "verdict": "single_source",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-23T19:11:30+00:00",
-      "trace": [
-        "tier A (+40)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 62 = trust 40 / interest 100 / corrob 25",
-        "claims entailed 2/2 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "81b72c262d7cdd95",
-      "title": "Carney faces crucial test after walking away from Trump's deal",
-      "category": "india_world",
-      "one_liner": "Prime Minister Mark Carney's decision to walk away from US trade talks plunges Canada and the US into an escalating trade war.",
-      "tags": [
-        "india",
-        "markets",
-        "policy"
-      ],
-      "summary": "Canadian Prime Minister Mark Carney has walked away from tentative trade negotiations with the US after accusing the Trump administration of demanding eleventh-hour changes and unfair concessions. The breakdown has thrust the long-standing economic allies into an escalating trade war, marking a major political test for Carney's 'elbows up' leadership style. With Canada sending roughly 70% of its exports to the US and cross-border sectors reeling from mutual tariffs and boycotts, Carney must now rally public and provincial backing to absorb economic pain in pursuit of better terms. Canadian provinces are showing a united front behind Ottawa despite heavy exposure in manufacturing and tourism revenue.",
-      "key_facts": [
-        "Export exposure: ~70% of Canadian exports go to the US",
-        "US wine export drop: 78% year-over-year ($357m loss)",
-        "Travel revenue loss: C$3.3bn ($2.35bn; £1.75bn)"
-      ],
-      "bottom_line": "Prime Minister Mark Carney's rejection of late-stage US trade terms has triggered an open trade war, testing Canadian economic resilience.",
-      "claims": [
-        {
-          "text": "Canada sends about 70% of its exports to the US, and the country is the top trading partner for a number of US states, with Michigan, Kentucky, Indiana and Ohio among the most exposed.",
-          "support_span": "Canada sends about 70% of its exports to the US, and the country is the top trading partner for a number of US states, with Michigan, Kentucky, Indiana and Ohio among the most exposed.",
-          "status": "entailed"
-        },
-        {
-          "text": "Based on US government trade data, US wine exports to Canada fell 78% year over year, a $357m loss in export value.",
-          "support_span": "Based on US government trade data, US wine exports to Canada fell 78% year over year, a $357m loss in export value.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 62.5,
-      "critical_signal": "",
-      "priority": "critical",
-      "verdict": "single_source",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c3040pn8lmmo?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-22T20:02:46+00:00",
-      "trace": [
-        "tier A (+40)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 62 = trust 40 / interest 100 / corrob 25",
-        "claims entailed 2/2 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "9209177207cae1c4",
-      "title": "Rescuers dig through Ukraine mall wreckage as Zelensky condemns 'despicable' Russian strike",
-      "category": "india_world",
-      "one_liner": "A deadly Russian double-tap drone strike on a Ukrainian shopping center killed 16 people amid intensifying cross-border bombardments.",
-      "tags": [
-        "blueteam",
-        "incident"
-      ],
-      "summary": "Russian double-tap drone strikes targeting a shopping centre in Kryvyi Rih, Ukraine, killed 16 people and injured 130, with emergency workers among the casualties of the second strike. President Volodymyr Zelensky condemned the attack as the conflict saw heavy overnight exchanges, including Ukrainian strikes killing four in Russia and Russian missile and drone bombardments hitting residential and railway infrastructure across Ukraine. Regional officials noted that rescue operations could take two additional days amid continuing threats and devastation.",
-      "key_facts": [
-        "Fatalities in Kryvyi Rih: 16",
-        "Injured in Kryvyi Rih: 130",
-        "Missing persons: 4",
-        "Area of fire: 9,000 sq m"
-      ],
-      "bottom_line": "Escalating double-tap strikes on civilian infrastructure and acute air defense missile shortages continue to drive heavy casualties in the Ukraine conflict.",
-      "claims": [
-        {
-          "text": "Sixteen people were killed and 130 injured when two drones hit a shopping centre in Kryvyi Rih.",
-          "support_span": "Sixteen people were killed and 130 injured when two drones hit the busy centre in Kryvyi Rih in quick succession in what is known as a double-tap strike.",
-          "status": "entailed"
-        },
-        {
-          "text": "President Volodymyr Zelensky condemned the attack.",
-          "support_span": "President Volodymyr Zelensky condemned the \"cynical and despicable\" attack in which the second drone targeted emergency workers.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 62.5,
-      "critical_signal": "",
-      "priority": "critical",
-      "verdict": "single_source",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-22T13:13:16+00:00",
-      "trace": [
-        "tier A (+40)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 62 = trust 40 / interest 100 / corrob 25",
-        "claims entailed 2/2 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "88d2aee04d271738",
-      "title": "TikTok to pay $400m to US in one of largest child privacy settlements",
-      "category": "india_world",
-      "one_liner": "TikTok agrees to a massive $400 million settlement with the US government over allegations of collecting data on children under 13.",
-      "tags": [
+        "appsec",
         "cloud",
+        "exploit",
         "policy",
         "privacy"
       ],
-      "summary": "TikTok and its parent company ByteDance have agreed to pay $400 million to the US Department of Justice to settle a lawsuit alleging violations of the Children's Online Privacy Protection Act (COPPA). The lawsuit, stemming from a 2024 action, accused the platform of collecting massive amounts of data from millions of users under the age of 13 without proper age-gating or parental consent. Under the agreement, $300 million will be paid immediately, with the remaining $100 million contingent on the government vacating a 2019 FTC consent decree. This penalty stands as one of the largest child privacy settlements in US history.",
+      "summary": "TikTok agreed to pay $400 million to settle a US federal lawsuit over COPPA child privacy violations. TikTok will pay $300 million immediately and $100 million contingent upon vacating a prior Musical.ly consent decree. The agreement resolves allegations of unlawful data collection on users under 13 and mandates enhanced parental controls.",
       "key_facts": [
-        "Settlement amount: $400m (£293m)",
-        "Immediate payment: $300m",
-        "Conditional payment: $100m",
-        "Enacted law: COPPA (Children's Online Privacy Protection Act)"
+        "Settlement: $400 million ($300 million immediate, $100 million conditional)",
+        "Regulation: Children's Online Privacy Protection Act (COPPA)",
+        "EU GDPR fine (Sept 2023): €345 million"
       ],
-      "bottom_line": "TikTok's $400 million child privacy settlement with the US marks a massive enforcement action under COPPA.",
+      "bottom_line": "ByteDance will pay $400 million to resolve major U.S. federal child data privacy charges, forcing stricter platform controls.",
       "claims": [
         {
-          "text": "TikTok has agreed to pay $400m (£293m) to the US to end a lawsuit alleging its platform violated children‘s privacy, marking one of the largest ever settlements over the issue.",
-          "support_span": "TikTok has agreed to pay $400m (£293m) to the US to end a lawsuit alleging its platform violated children‘s privacy, marking one of the largest ever settlements over the issue.",
+          "text": "TikTok agreed to pay $400 million to settle a US federal lawsuit over COPPA child privacy violations.",
+          "support_span": "The U.S. Department of Justice (DoJ) announced on Friday that ByteDance-owned TikTok will pay $400 million to settle a 2024 lawsuit accusing the company of violating child privacy laws in the country.",
           "status": "entailed"
         },
         {
-          "text": "Under the terms of the deal, TikTok and ByteDance will immediately pay the DOJ $300m.",
-          "support_span": "Under the terms of the deal, TikTok and ByteDance will immediately pay the DOJ $300m.",
-          "status": "entailed"
-        },
-        {
-          "text": "It will pay another $100m when the government vacates a 2019 consent decree, external with the Federal Trade Commission.",
-          "support_span": "It will pay another $100m when the government vacates a 2019 consent decree, external with the Federal Trade Commission.",
+          "text": "TikTok will pay $300 million immediately and $100 million contingent upon vacating a prior Musical.ly consent decree.",
+          "support_span": "As part of the settlement, the social media platform will pay $300 million immediately, and an additional $100 million \"upon entry of an order vacating a prior consent decree entered against TikTok’s predecessor, Musical.ly,\" the DoJ said in a press release.",
           "status": "entailed"
         }
       ],
-      "trust_score": 40,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 62.5,
-      "critical_signal": "",
-      "priority": "critical",
-      "verdict": "single_source",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwyr0l45xjro?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-21T22:36:12+00:00",
-      "trace": [
-        "tier A (+40)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 62 = trust 40 / interest 100 / corrob 25",
-        "claims entailed 3/3 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "254776a2994fdbbc",
-      "title": "Girl, 17, killed in Swedish sword attack, police say",
-      "category": "india_world",
-      "one_liner": "A 17-year-old girl died and two boys were seriously injured in a high school sword attack in central Sweden.",
-      "tags": [
-        "identity",
-        "incident"
-      ],
-      "summary": "A 17-year-old girl was killed and two boys aged 12 and 17 were seriously injured in a sword attack at the Brinell School in Fagersta, central Sweden. An 18-year-old former student wearing a helmet was arrested by police, who are treating the case as murder and attempted murder. Swedish political leaders, including Prime Minister Ulf Kristersson, visited the school to pay respects following the emergency response.",
-      "key_facts": [
-        "Victim age: 17",
-        "Injured: Two boys aged 12 and 17",
-        "Suspect age: 18",
-        "Location: Brinell School, Fagersta, Sweden"
-      ],
-      "bottom_line": "School safety and emergency responses face intense scrutiny following a fatal armed attack at a Swedish secondary school.",
-      "claims": [
-        {
-          "text": "A 17-year-old girl was killed in a sword attack at Brinell School in central Sweden.",
-          "support_span": "A 17-year-old girl was killed in the deadly sword attack at a high school in central Sweden on Friday, police have confirmed.",
-          "status": "entailed"
-        },
-        {
-          "text": "An 18-year-old man was arrested by police.",
-          "support_span": "An 18-year-old man was arrested but has not been identified.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 52,
+      "trust_score": 49,
       "interest_score": 75,
-      "corroboration": 2,
-      "blend": 61.8,
+      "corroboration": 3,
+      "blend": 68.5,
       "critical_signal": "",
       "priority": "critical",
       "verdict": "reported",
       "sources": [
         {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c8jnjp0lwlwo?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/tiktok-agrees-to-400-million-settlement.html",
+          "domain": "thehackernews.com",
+          "tier": "B"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/983531/tiktok-settle-doj-lawsuit-coppa",
+          "domain": "theverge.com",
+          "tier": "B"
         },
         {
           "name": "Reuters Business",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZVV3NExuQmFxMzNiVU9iZnhweFRMb2tvQmlqVmhNbXJia0YtcXFMalNXanhOS2gxYy12MHFZT0VoRENBOWFLMklzdWVaV3pZMVFmSmI0VEJENUxSTU5nbUJZdnpWa3lIR1IydEFSb3JIY0pjQ0RRdjh5aGhqdy1DYlVLdksyc1psREx4Q1NXUDVOTk45WndFU1RaWE5RMmdTZFZ2SnAxVFltWDhhYTJ2WlQxNS1lNU9rX29nVXVRMmEwdw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdHp4WjducldzcUtEUTljcWhGYmpkOUgzc2RKaFFhaUFyVjdCZW9XajFRb1BNTWVGUnVmdVNVWDBLQmVWS3d1UkZncVp3R2cwQWxRVDB4c1VFVW5Gc1RoUzRZVUZ0aFlQTGc2ekF3T0w5QUQtSXFPYml1cnBzamdJV0NVR3d3ZTFoTVRocVp2dm4xQXFyX0U2TXdwM2I5ZmNqa0Q1emcza0N0dkczb25xdzY0UFZvSElWLUE?oc=5",
           "domain": "news.google.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-22T13:22:35+00:00",
+      "published": "2026-08-21T20:54:31+00:00",
       "trace": [
-        "tier A (+40)",
-        "2 independent outlets (+12)",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 62 = trust 52 / interest 75 / corrob 50",
-        "claims entailed 2/2 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "1e91a1bf3d9cdc99",
-      "title": "Dozens of co-ordinated arson attacks hit southern Thailand",
-      "category": "india_world",
-      "one_liner": "Over 50 coordinated arson attacks struck southern Thailand's insurgency-hit provinces, injuring two and triggering a brief curfew.",
-      "tags": [
-        "exploit",
-        "incident",
-        "llm",
-        "network"
-      ],
-      "summary": "More than 50 coordinated arson and incendiary attacks targeted telecommunication towers, convenience stores, and government buildings across Thailand's southern border provinces. Two women were injured by a bomb explosion in Narathiwat province, prompting authorities to briefly enforce an overnight curfew. Although no group claimed responsibility, the low-level separatist insurgency involving groups like the Barisan Revolusi Nasional has persisted in the region since 2004.",
-      "key_facts": [
-        "Attacks count: 50+",
-        "Injuries: 2",
-        "Provinces affected: Narathiwat, Yala, Pattani"
-      ],
-      "bottom_line": "Persistent separatist violence in southern Thailand continues to disrupt regional stability and security operations.",
-      "claims": [
-        {
-          "text": "More than 50 coordinated arson and incendiary attacks were carried out across Thailand's southern border provinces.",
-          "support_span": "More than 50 co-ordinated arson and incendiary attacks \"aimed at creating unrest\" have been carried out across Thailand's insurgency-hit south, the Thai military has said.",
-          "status": "entailed"
-        },
-        {
-          "text": "Two women were injured when a bomb exploded in Muang district in Narathiwat province.",
-          "support_span": "According to the Bangkok Post, two women were injured when a bomb exploded in Muang district in Narathiwat province.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 52,
-      "interest_score": 75,
-      "corroboration": 2,
-      "blend": 61.8,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "reported",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c8enegx4xy3o?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        },
-        {
-          "name": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/8/23/dozens-of-attacks-in-southern-thailand-wound-three-people?traffic_source=rss",
-          "domain": "aljazeera.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-23T11:50:59+00:00",
-      "trace": [
-        "tier A (+40)",
-        "2 independent outlets (+12)",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 62 = trust 52 / interest 75 / corrob 50",
-        "demoted: critical capped at 5",
-        "claims entailed 2/2 (100%)"
+        "tier B (+25)",
+        "3 independent outlets (+24)",
+        "importance 4/5 from gemini-3.6-flash",
+        "blend 68 = trust 49 / interest 75 / corrob 75",
+        "claims entailed 2/2 (100%)",
+        "judge (gemma-4-26b-a4b-it): all claims supported"
       ],
       "reject_reason": ""
     },
@@ -399,7 +118,7 @@
       "corroboration": 1,
       "blend": 58.8,
       "critical_signal": "",
-      "priority": "important",
+      "priority": "critical",
       "verdict": "single_source",
       "sources": [
         {
@@ -417,194 +136,7 @@
         "summary: heuristic extractive (no LLM configured)",
         "LLM batch failed — extractive fallback",
         "blend 59 = trust 25 / interest 100 / corrob 25",
-        "demoted: critical capped at 5",
         "claims entailed 3/3 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "7c197db454c6edcf",
-      "title": "Seven-storey building collapsed in Gachibowli 66 days after Cyberabad Municipal Corporation flagged unauthorised construction",
-      "category": "india_world",
-      "one_liner": "A seven-storey unauthorized building collapsed in Gachibowli, killing two people over two months after municipal authorities flagged it.",
-      "tags": [
-        "appsec",
-        "india",
-        "policy"
-      ],
-      "summary": "A multi-storeyed building comprising a ground floor, six upper floors, and a penthouse collapsed in Gachibowli, Hyderabad, resulting in two deaths and damage to an adjacent building. The Cyberabad Municipal Corporation (CMC) had issued a show-cause notice and speaking orders regarding unauthorized construction 66 days prior, noting that the structure lacked proper permissions, setbacks, and technical supervision while utilizing poor-quality materials. Following the disaster, CMC Commissioner G. Srijana suspended Town Planning Building Officer U. Santosh Kumar for negligence, while authorities sought criminal charges against the property owners and initiated a city-wide inspection of unauthorized buildings.",
-      "key_facts": [
-        "Location: Gachibowli Village, Serilingampally mandal, Ranga Reddy district",
-        "Date of collapse: August 22, 2026",
-        "Casualties: 2 deaths",
-        "Notice date: June 17, 2026 (66 days prior)"
-      ],
-      "bottom_line": "The collapse of an unauthorized seven-storey building in Gachibowli, killing two, led to the immediate suspension of a municipal planning officer and a criminal case against owners.",
-      "claims": [
-        {
-          "text": "A multi-storeyed building in Gachibowli that collapsed on Saturday (August 22, 2026), killing two people and damaging an adjoining building, was issued a show-cause notice and speaking orders by the Cyberabad Municipal Corporation (CMC) 66 days earlier over unauthorised construction.",
-          "support_span": "A multi-storeyed building in Gachibowli that collapsed on Saturday (August 22, 2026), killing two people and damaging an adjoining building, was issued a show-cause notice and speaking orders by the Cyberabad Municipal Corporation (CMC) 66 days earlier over unauthorised construction.",
-          "status": "entailed"
-        },
-        {
-          "text": "Following the collapse, CMC Commissioner G. Srijana ordered the immediate suspension of U. Santosh Kumar, Town Planning Building Officer (TPBO), Circle-50, Madhapur, for failing to stop the unauthorised construction.",
-          "support_span": "Following the collapse, CMC Commissioner G. Srijana ordered the immediate suspension of U. Santosh Kumar, Town Planning Building Officer (TPBO), Circle-50, Madhapur, for failing to stop the unauthorised construction.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 58.8,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "single_source",
-      "sources": [
-        {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/cities/Hyderabad/gachibowli-building-collapse-that-killed-two-was-served-notice-66-days-earlier-over-unauthorised-construction/article71380197.ece",
-          "domain": "thehindu.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-23T15:05:34+00:00",
-      "trace": [
-        "tier B (+25)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 25 / interest 100 / corrob 25",
-        "demoted: critical capped at 5",
-        "claims entailed 2/2 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "3cb411a882f64d24",
-      "title": "Connecting the Dots: Securing the Overlooked Corners of the Software Development Lifecycle (SDLC) Supply Chain",
-      "category": "cyber_attacks",
-      "one_liner": "Modern software supply chain attacks are poisoning developer tooling and CI/CD pipelines via advanced multi-stage worms like ChainDrop.",
-      "tags": [
-        "appsec",
-        "cloud",
-        "exploit",
-        "identity",
-        "malware",
-        "opensource",
-        "research",
-        "supply-chain"
-      ],
-      "summary": "Software supply chain attacks have drastically accelerated, shifting focus from finished applications to the developer tooling, open-source libraries, and CI/CD pipelines used to build them. Security research from Unit 42 highlights sophisticated threats like the ChainDrop npm worm, which infected over 400 packages—including major libraries like keyv and cacheable-request—by hijacking npm setup scripts, scraping live process memory for cloud secrets, and using Ethereum blockchain transactions for command-and-control. Because modern applications rely on thousands of external dependencies, traditional post-build SBOMs are no longer sufficient to secure the digital software factory against persistent backdoors.",
-      "key_facts": [
-        "Infected packages: Over 400 (including keyv and cacheable-request)",
-        "Payload size: 727 KB obfuscated payload using Bun runtime",
-        "C2 infrastructure: Dynamic Ethereum blockchain transactions"
-      ],
-      "bottom_line": "Securing modern software requires protecting developer environments and CI/CD pipelines, as traditional SBOMs cannot catch active factory-level compromises.",
-      "claims": [
-        {
-          "text": "The ChainDrop npm worm infected over 400 packages including keyv and cacheable-request.",
-          "support_span": "Consider the recent ChainDrop npm worm, which infected over 400 packages including massively popular libraries like keyv and cacheable-request using a highly evasive three-step chain",
-          "status": "entailed"
-        },
-        {
-          "text": "The worm used a hidden Python script to read live process memory from GitHub Actions runners to steal OIDC tokens.",
-          "support_span": "a hidden Python script directly read live process memory from GitHub Actions runners to steal temporary OpenID Connect (OIDC) tokens and secrets",
-          "status": "entailed"
-        },
-        {
-          "text": "ChainDrop managed its command-and-control infrastructure dynamically through Ethereum blockchain transactions.",
-          "support_span": "managing its entire command-and-control (C2) infrastructure dynamically through Ethereum blockchain transactions.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 58.8,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "single_source",
-      "sources": [
-        {
-          "name": "Unit42",
-          "url": "https://unit42.paloaltonetworks.com/sdlc-supply-chain/",
-          "domain": "unit42.paloaltonetworks.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-21T23:00:21+00:00",
-      "trace": [
-        "tier B (+25)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 25 / interest 100 / corrob 25",
-        "demoted: critical capped at 5",
-        "claims entailed 3/3 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "8db9dde080711925",
-      "title": "ED arrests former Minister Karumuri Nageswara Rao in liquor transport scam",
-      "category": "india_world",
-      "one_liner": "Former Andhra Pradesh Minister Karumuri Nageswara Rao was arrested by the ED over an alleged ₹195-crore liquor transport scam.",
-      "tags": [
-        "exploit",
-        "india",
-        "policy"
-      ],
-      "summary": "Enforcement Directorate officials arrested former Andhra Pradesh Civil Supplies Minister Karumuri Venkata Nageswara Rao in Hyderabad regarding an alleged ₹195-crore liquor transport scam. Investigators allege the previous YSRCP government inflated transport rates to roughly ₹35 per kilometre against a prevailing ₹13 rate and mismanaged tender allocations. Opposition leaders condemned the arrest as political vendetta by the ruling coalition, while the agency continues prosecuting individuals connected to the administration's beverage corporation.",
-      "key_facts": [
-        "Scam amount: ₹195-crore",
-        "Transport rate charged: ₹35 per kilometre",
-        "Prevailing transport rate: ₹13 per kilometre"
-      ],
-      "bottom_line": "Anti-corruption agencies are aggressively targeting former government officials over alleged financial irregularities in state procurement contracts.",
-      "claims": [
-        {
-          "text": "ED officials arrested former Civil Supplies Minister Karumuri Venkata Nageswara Rao over a liquor transport scam.",
-          "support_span": "Officials of the Enforcement Directorate (ED) arrested former Civil Supplies Minister and YSR Congress Party leader Karumuri Venkata Nageswara Rao in connection with the alleged liquor transport scam on Sunday.",
-          "status": "entailed"
-        },
-        {
-          "text": "The case involves alleged money laundering in a ₹195-crore liquor transport scam under the previous YSRCP government.",
-          "support_span": "The investigation agency is probing alleged money laundering in the ₹195-crore liquor transport scam.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 37,
-      "interest_score": 75,
-      "corroboration": 2,
-      "blend": 58.0,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "single_source",
-      "sources": [
-        {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/national/andhra-pradesh/ed-arrests-former-minister-karumuri-nageswara-rao-in-liquor-transport-scam/article71381318.ece",
-          "domain": "thehindu.com",
-          "tier": "B"
-        },
-        {
-          "name": "NDTV India",
-          "url": "https://www.ndtv.com/india-news/former-andhra-pradesh-minister-karumuri-nageswara-rao-arrested-in-andhra-pradesh-liquor-scam-11948378#publisher=newsstand",
-          "domain": "ndtv.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-23T14:48:36+00:00",
-      "trace": [
-        "tier B (+25)",
-        "2 independent outlets (+12)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 58 = trust 37 / interest 75 / corrob 50",
-        "demoted: critical capped at 5",
-        "claims entailed 2/2 (100%)"
       ],
       "reject_reason": ""
     },
@@ -729,6 +261,65 @@
       "reject_reason": ""
     },
     {
+      "cluster_key": "7ef267dceaa96e86",
+      "title": "Cripacx/mediagen — AI image and video generation skill for Claude Code and other coding agents — Gemini, OpenAI and Kie AI behind",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "llm",
+        "opensource",
+        "tool"
+      ],
+      "summary": "Give your agent image and video generation across Google Gemini, OpenAI and Kie AI — one skill, one install, no API to learn. Say roughly what you want and let it decide the rest: You: Make a hero image for the landing page, wide, something moody and industrial. Agent: npx -y mediagen image \"A disused loading dock at dusk, wet concrete…\" --aspect-ratio 21:9 --json → ./output/image-20260823T094107Z.png It wrote the prompt out in full, knew 21:9 rules OpenAI out, and read the…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Give your agent image and video generation across Google Gemini, OpenAI and Kie AI — one skill, one install, no API to learn.",
+          "support_span": "Give your agent image and video generation across Google Gemini, OpenAI and Kie AI — one skill, one install, no API to learn.",
+          "status": "entailed"
+        },
+        {
+          "text": "Say roughly what you want and let it decide the rest:\nYou:   Make a hero image for the landing page, wide, something moody and industrial.",
+          "support_span": "Say roughly what you want and let it decide the rest:\nYou:   Make a hero image for the landing page, wide, something moody and industrial.",
+          "status": "entailed"
+        },
+        {
+          "text": "Agent: npx -y mediagen image \"A disused loading dock at dusk, wet concrete…\"\n         --aspect-ratio 21:9 --json\n       → ./output/image-20260823T094107Z.png\nIt wrote the prompt out in full, knew 21:9 rules OpenAI out, and read the path\nback from --json.",
+          "support_span": "Agent: npx -y mediagen image \"A disused loading dock at dusk, wet concrete…\"\n         --aspect-ratio 21:9 --json\n       → ./output/image-20260823T094107Z.png\nIt wrote the prompt out in full, knew 21:9 rules OpenAI out, and read the path\nback from --json.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 55.0,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "single_source",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/Cripacx/mediagen",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-22T23:49:10+00:00",
+      "trace": [
+        "tier C (+10)",
+        "only one independent outlet — flagged, not hidden",
+        "summary: heuristic extractive (no LLM configured)",
+        "LLM batch failed — extractive fallback",
+        "blend 55 = trust 10 / interest 100 / corrob 25",
+        "claims entailed 3/3 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
       "cluster_key": "38f569a1d1f69721",
       "title": "Thousands struggling without power in Indiana 12 days after severe storms",
       "category": "india_world",
@@ -785,245 +376,122 @@
       "reject_reason": ""
     },
     {
-      "cluster_key": "738263e23f5d4d43",
-      "title": "Syria says Israeli strike near Damascus violation of international law",
-      "category": "india_world",
-      "one_liner": "An Israeli strike near Damascus draws strong condemnation from Syria amid rising regional tensions involving Turkey and the US.",
+      "cluster_key": "6823c8dc98778b96",
+      "title": "kgoedecke/doop — The open-source alternative to Paper.design. A multiplayer design canvas where humans and AI agents design tog",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
-        "blueteam",
-        "cloud",
+        "agents",
+        "ai",
         "exploit",
-        "incident",
-        "linux",
         "llm",
-        "policy"
-      ],
-      "summary": "Syria has strongly condemned an Israeli strike on the village of Beit Jinn near Damascus that hit a civilian vehicle and caused injuries, calling it a violation of international law and state sovereignty. The Israeli military stated it targeted a terrorist planning imminent attacks against soldiers, marking the second known strike in Syria within a week. The incident follows regional friction over an earlier strike near the Turkish border, which prompted a rare US rebuke and differing justifications from Israeli and American officials regarding Turkish military deployments. Meanwhile, Syria has been rebuilding its military facilities and strengthening its diplomatic ties with the West following the fall of Bashar al-Assad's government.",
-      "key_facts": [
-        "Location: Beit Jinn, southwest of Damascus"
-      ],
-      "bottom_line": "Israel's latest military strike near Damascus has escalated diplomatic tensions and drawn condemnation from Syria for violating international law.",
-      "claims": [
-        {
-          "text": "Syria has condemned an Israeli attack on the village of Beit Jinn, southwest of the country's capital Damascus, which officials said hit a civilian vehicle and left several people injured.",
-          "support_span": "Syria has condemned an Israeli attack on the village of Beit Jinn, southwest of the country's capital Damascus, which officials said hit a civilian vehicle and left several people injured.",
-          "status": "entailed"
-        },
-        {
-          "text": "The attack was the second known Israeli strike on Syria in the past week, with Syria branding it a \"violation\" of its sovereignty and international law.",
-          "support_span": "The attack was the second known Israeli strike on Syria in the past week, with Syria branding it a \"violation\" of its sovereignty and international law.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 51.2,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "single_source",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c2dkdegr2xeo?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-22T21:42:42+00:00",
-      "trace": [
-        "tier A (+40)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 51 = trust 40 / interest 75 / corrob 25",
-        "claims entailed 2/2 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "f8e46ad1c8462e18",
-      "title": "US military newspaper editor voices censorship fears after being fired",
-      "category": "india_world",
-      "one_liner": "The editor-in-chief of the editorially independent US military paper Stars and Stripes has been fired by the Pentagon over censorship concerns.",
-      "tags": [
-        "blueteam",
-        "policy",
+        "opensource",
         "research",
+        "threat-intel",
         "tool"
       ],
-      "summary": "Erik Slavin, the editor-in-chief of the US military newspaper Stars and Stripes, has been dismissed by the Department of Defense for insubordination following critical remarks regarding censorship. The firing, along with the dismissal of reporter Lara Korte and publisher Max Lederer, follows a televised interview where Slavin stated that censorship would be a red line. The newspaper, which maintains congressional and DoD mandates for editorial independence, serves an average of 1.4 million readers daily. Press freedom advocates have strongly condemned the action as a brazen attempt by the Pentagon to dictate military news coverage.",
-      "key_facts": [
-        "Daily audience: 1.4 million readers",
-        "Employee tenure: 21 years (Erik Slavin)"
-      ],
-      "bottom_line": "The dismissal of Stars and Stripes' editor-in-chief by the Pentagon highlights growing tensions over press freedom and military news censorship.",
-      "claims": [
-        {
-          "text": "The editor-in-chief of US military newspaper Stars and Stripes has told the BBC of his concern over censorship a day after being dismissed by the US Department of Defense (DoD) for \"insubordination\".",
-          "support_span": "The editor-in-chief of US military newspaper Stars and Stripes has told the BBC of his concern over censorship a day after being dismissed by the US Department of Defense (DoD) for \"insubordination\".",
-          "status": "entailed"
-        },
-        {
-          "text": "Slavin says he believes he was fired for having stated in an interview that \"in a hypothetical situation, censorship would be a red line\".",
-          "support_span": "Slavin says he believes he was fired for having stated in an interview that \"in a hypothetical situation, censorship would be a red line\".",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 51.2,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "single_source",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm2g23ng8p4o?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-22T16:57:19+00:00",
-      "trace": [
-        "tier A (+40)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 51 = trust 40 / interest 75 / corrob 25",
-        "claims entailed 2/2 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "f7a28bc703dff014",
-      "title": "Fourteen killed in strike on Myanmar monastery",
-      "category": "india_world",
-      "one_liner": "A military airstrike on a monastery in Myanmar's Sagaing region killed 14 elderly civilians gathered for a meditation retreat.",
-      "tags": [
-        "identity",
-        "india",
-        "policy",
-        "release"
-      ],
-      "summary": "Military air strikes struck a monastery in Myanmar's central Sagaing region during a Buddhist Lent meditation retreat, killing 14 people and injuring several monks. Local rescue workers and opposition fighters confirmed that all fatalities were elderly civilians aged between 50 and 70 from local townships, with the site being bombed twice while rescuers searched for survivors. Myanmar's military junta, which has been locked in a civil war following the 2021 coup, did not immediately comment on the incident. The military has frequently faced accusations of targeting public infrastructure under martial rule.",
-      "key_facts": [
-        "Fatalities: 14 people",
-        "Location: Myaung township, Sagaing region, Myanmar",
-        "Distance from Mandalay: 70km (47 miles) west",
-        "Victim age range: 50 to 70 years old"
-      ],
-      "bottom_line": "Myanmar military airstrikes hit a monastery in the Sagaing region, killing 14 elderly civilians attending a meditation retreat.",
-      "claims": [
-        {
-          "text": "Fourteen people were killed in military air strikes at a monastery in Myanmar early on Friday, opposition fighters and a local rescue worker have said.",
-          "support_span": "Fourteen people were killed in military air strikes at a monastery in Myanmar early on Friday, opposition fighters and a local rescue worker have said.",
-          "status": "entailed"
-        },
-        {
-          "text": "The attack happened at around 09:00 local time (02:30 GMT) in Myaung township in the central Sagaing region, some 70km (47 miles) west of Mandalay, the news agency AFP reported.",
-          "support_span": "The attack happened at around 09:00 local time (02:30 GMT) in Myaung township in the central Sagaing region, some 70km (47 miles) west of Mandalay, the news agency AFP reported.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 51.2,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "single_source",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqlxlvz01z1o?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-22T13:48:06+00:00",
-      "trace": [
-        "tier A (+40)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 51 = trust 40 / interest 75 / corrob 25",
-        "claims entailed 2/2 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "0d11eef5a20341f6",
-      "title": "TikTok Agrees to $400 Million Settlement in U.S. Child Privacy Lawsuit",
-      "category": "cyber_attacks",
-      "one_liner": "Cyber Attacks: carried by 4 outlets.",
-      "tags": [
-        "cloud",
-        "policy",
-        "privacy"
-      ],
-      "summary": "Department of Justice (DoJ) announced on Friday that ByteDance-owned TikTok will pay $400 million to settle a 2024 lawsuit accusing the company of violating child privacy laws in the country. As part of the settlement, the social media platform will pay $300 million immediately, and an additional $100 million \"upon entry of an order vacating a prior consent decree entered against TikTok’s predecessor, Musical.ly,\" the DoJ said in a press release. A complaint filed back in Au…",
+      "summary": "Doop is the open-source alternative to Paper.design — a multiplayer design canvas for humans and AI agents. Every design lives on a shareable Canvas (/c/<id>) holding Frames — artboards that render real HTML in sandboxed iframes. People edit in the browser; AI agents edit through the built-in MCP server, streaming their designs in live.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
         {
-          "text": "Department of Justice (DoJ) announced on Friday that ByteDance-owned TikTok will pay $400 million to settle a 2024 lawsuit accusing the company of violating child privacy laws in the country.",
-          "support_span": "Department of Justice (DoJ) announced on Friday that ByteDance-owned TikTok will pay $400 million to settle a 2024 lawsuit accusing the company of violating child privacy laws in the country.",
+          "text": "Doop is the open-source alternative to Paper.design — a multiplayer\ndesign canvas for humans and AI agents.",
+          "support_span": "Doop is the open-source alternative to Paper.design — a multiplayer\ndesign canvas for humans and AI agents.",
           "status": "entailed"
         },
         {
-          "text": "As part of the settlement, the social media platform will pay $300 million immediately, and an additional $100 million \"upon entry of an order vacating a prior consent decree entered against TikTok’s predecessor, Musical.ly,\" the DoJ said in a press release.",
-          "support_span": "As part of the settlement, the social media platform will pay $300 million immediately, and an additional $100 million \"upon entry of an order vacating a prior consent decree entered against TikTok’s predecessor, Musical.ly,\" the DoJ said in a press release.",
+          "text": "Every design lives on a shareable Canvas\n(/c/<id>) holding Frames — artboards that render real HTML in sandboxed iframes.",
+          "support_span": "Every design lives on a shareable Canvas\n(/c/<id>) holding Frames — artboards that render real HTML in sandboxed iframes.",
           "status": "entailed"
         },
         {
-          "text": "A complaint filed back in August 2024 alongside the Federal Trade Commission (FTC) accused the company of \"massive-scale invasions of children's privacy\" by knowingly allowing children under 13 to create TikTok accounts and unlawfully collecting data from those who used it in \"Kids Mode.\"\nIt further alleged TikTok and its parent company ByteDance failed to \"comply with parents' requests to delete their children's accounts and information.\"\nAt the time, the company disputed the arguments, stating many of them related to \"past events and practices\" that were either \"factually inaccurate or have been addressed.\"\nThe DoJ characterized the settlement as \"one of the largest recoveries ever\" obtained in connection with U.S.",
-          "support_span": "A complaint filed back in August 2024 alongside the Federal Trade Commission (FTC) accused the company of \"massive-scale invasions of children's privacy\" by knowingly allowing children under 13 to create TikTok accounts and unlawfully collecting data from those who used it in \"Kids Mode.\"\nIt further alleged TikTok and its parent company ByteDance failed to \"comply with parents' requests to delete their children's accounts and information.\"\nAt the time, the company disputed the arguments, stating many of them related to \"past events and practices\" that were either \"factually inaccurate or have been addressed.\"\nThe DoJ characterized the settlement as \"one of the largest recoveries ever\" obtained in connection with U.S.",
+          "text": "People edit\nin the browser; AI agents edit through the built-in MCP server, streaming their designs in\nlive.",
+          "support_span": "People edit\nin the browser; AI agents edit through the built-in MCP server, streaming their designs in\nlive.",
           "status": "entailed"
         }
       ],
-      "trust_score": 61,
-      "interest_score": 12,
-      "corroboration": 4,
-      "blend": 50.6,
+      "trust_score": 10,
+      "interest_score": 92,
+      "corroboration": 1,
+      "blend": 51.4,
       "critical_signal": "",
       "priority": "important",
-      "verdict": "reported",
+      "verdict": "single_source",
       "sources": [
         {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/08/tiktok-agrees-to-400-million-settlement.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/tech/983531/tiktok-settle-doj-lawsuit-coppa",
-          "domain": "theverge.com",
-          "tier": "B"
-        },
-        {
-          "name": "TechCrunch",
-          "url": "https://techcrunch.com/2026/08/21/tiktok-reaches-400m-settlement-over-childrens-privacy-lawsuit/",
-          "domain": "techcrunch.com",
-          "tier": "B"
-        },
-        {
-          "name": "Reuters Business",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdHp4WjducldzcUtEUTljcWhGYmpkOUgzc2RKaFFhaUFyVjdCZW9XajFRb1BNTWVGUnVmdVNVWDBLQmVWS3d1UkZncVp3R2cwQWxRVDB4c1VFVW5Gc1RoUzRZVUZ0aFlQTGc2ekF3T0w5QUQtSXFPYml1cnBzamdJV0NVR3d3ZTFoTVRocVp2dm4xQXFyX0U2TXdwM2I5ZmNqa0Q1emcza0N0dkczb25xdzY0UFZvSElWLUE?oc=5",
-          "domain": "news.google.com",
+          "name": "GitHub (new)",
+          "url": "https://github.com/kgoedecke/doop",
+          "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-21T20:25:21+00:00",
+      "published": "2026-08-22T15:40:51+00:00",
       "trace": [
-        "tier B (+25)",
-        "4 independent outlets (+36)",
+        "tier C (+10)",
+        "only one independent outlet — flagged, not hidden",
         "summary: heuristic extractive (no LLM configured)",
         "LLM batch failed — extractive fallback",
-        "blend 51 = trust 61 / interest 12 / corrob 100",
+        "blend 51 = trust 10 / interest 92 / corrob 25",
+        "claims entailed 3/3 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "643d0ca605c829a3",
+      "title": "Zelenskyy says wartime elections could ‘destroy’ Ukraine",
+      "category": "india_world",
+      "one_liner": "India World: single report, unconfirmed.",
+      "tags": [
+        "blueteam",
+        "incident",
+        "india",
+        "llm",
+        "policy"
+      ],
+      "summary": "Ukrainian President Volodymyr Zelenskyy has rejected his ex-defence chief’s calls for a wartime election, calling the prospect a “huge risk” amid the more than four-year war with Russia. Ukrainian law bans elections during wartime, a measure that had gone unchallenged until former Defence Minister Mykhailo Fedorov made the first public demand for a vote earlier this week. Recommended Stories list of 4 items - list 1 of 4Russia says ready for ‘new ideas’ on Ukraine war that m…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Ukrainian President Volodymyr Zelenskyy has rejected his ex-defence chief’s calls for a wartime election, calling the prospect a “huge risk” amid the more than four-year war with Russia.",
+          "support_span": "Ukrainian President Volodymyr Zelenskyy has rejected his ex-defence chief’s calls for a wartime election, calling the prospect a “huge risk” amid the more than four-year war with Russia.",
+          "status": "entailed"
+        },
+        {
+          "text": "Ukrainian law bans elections during wartime, a measure that had gone unchallenged until former Defence Minister Mykhailo Fedorov made the first public demand for a vote earlier this week.",
+          "support_span": "Ukrainian law bans elections during wartime, a measure that had gone unchallenged until former Defence Minister Mykhailo Fedorov made the first public demand for a vote earlier this week.",
+          "status": "entailed"
+        },
+        {
+          "text": "Recommended Stories\nlist of 4 items\n- list 1 of 4Russia says ready for ‘new ideas’ on Ukraine war that match Putin’s goals\n- list 2 of 4Russian expert warns of impending social crisis as Ukraine death toll rises\n- list 3 of 4Russian drone attack on busy shopping centre kills 15 in Ukraine\n- list 4 of 4Russia, Ukraine trade attacks as Putin warns of ‘far more destructive’ hits\nZelenskyy rejected the call during a wide-ranging briefing with reporters on Saturday.",
+          "support_span": "Recommended Stories\nlist of 4 items\n- list 1 of 4Russia says ready for ‘new ideas’ on Ukraine war that match Putin’s goals\n- list 2 of 4Russian expert warns of impending social crisis as Ukraine death toll rises\n- list 3 of 4Russian drone attack on busy shopping centre kills 15 in Ukraine\n- list 4 of 4Russia, Ukraine trade attacks as Putin warns of ‘far more destructive’ hits\nZelenskyy rejected the call during a wide-ranging briefing with reporters on Saturday.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 78,
+      "corroboration": 1,
+      "blend": 48.9,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "single_source",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/23/zelenskyy-says-wartime-elections-could-destroy-ukraine?traffic_source=rss",
+          "domain": "aljazeera.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-23T12:19:12+00:00",
+      "trace": [
+        "tier B (+25)",
+        "only one independent outlet — flagged, not hidden",
+        "summary: heuristic extractive (no LLM configured)",
+        "gemini-3.6-flash rate limited — extractive fallback",
+        "blend 49 = trust 25 / interest 78 / corrob 25",
         "claims entailed 3/3 (100%)"
       ],
       "reject_reason": ""
@@ -1262,6 +730,117 @@
       "reject_reason": ""
     },
     {
+      "cluster_key": "8fe1185e2a29976d",
+      "title": "India News Highlights, 23 August 2026 | Tejaswi Yadav seeks NHRC probe into Bihar youth’s alleged custodial death",
+      "category": "india_world",
+      "one_liner": "India World: single report, unconfirmed.",
+      "tags": [
+        "india"
+      ],
+      "summary": "Yadav also sought accountability and appropriate relief and compensation for the family. (ANI Photo) India News: Bihar Leader of Opposition Tejashwi Yadav has approached the National Human Rights Commission (NHRC), seeking an independent inquiry into the alleged custodial death of a 19-year-old youth in Madhubani. In his letter, Yadav said Roshan Yadav, who had been in judicial custody since May 27, was found dead inside Madhubani’s Mandal Karagar on August 10.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Yadav also sought accountability and appropriate relief and compensation for the family.",
+          "support_span": "Yadav also sought accountability and appropriate relief and compensation for the family.",
+          "status": "entailed"
+        },
+        {
+          "text": "(ANI Photo)\nIndia News: Bihar Leader of Opposition Tejashwi Yadav has approached the National Human Rights Commission (NHRC), seeking an independent inquiry into the alleged custodial death of a 19-year-old youth in Madhubani.",
+          "support_span": "(ANI Photo)\nIndia News: Bihar Leader of Opposition Tejashwi Yadav has approached the National Human Rights Commission (NHRC), seeking an independent inquiry into the alleged custodial death of a 19-year-old youth in Madhubani.",
+          "status": "entailed"
+        },
+        {
+          "text": "In his letter, Yadav said Roshan Yadav, who had been in judicial custody since May 27, was found dead inside Madhubani’s Mandal Karagar on August 10.",
+          "support_span": "In his letter, Yadav said Roshan Yadav, who had been in judicial custody since May 27, was found dead inside Madhubani’s Mandal Karagar on August 10.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 78,
+      "corroboration": 1,
+      "blend": 48.9,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "single_source",
+      "sources": [
+        {
+          "name": "Indian Express",
+          "url": "https://indianexpress.com/article/india/today-india-breaking-news-live-updates-23-august-2026-one-nation-one-election-2029-chenab-rescue-odisha-ship-10845619/",
+          "domain": "indianexpress.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-23T03:53:20+00:00",
+      "trace": [
+        "tier B (+25)",
+        "only one independent outlet — flagged, not hidden",
+        "summary: heuristic extractive (no LLM configured)",
+        "LLM batch failed — extractive fallback",
+        "blend 49 = trust 25 / interest 78 / corrob 25",
+        "claims entailed 3/3 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "8dcb5bb53735af0f",
+      "title": "‘Tremendous, largely untapped potential in India-Turkiye ties across every pillar’: Ali Murat Ersoy, Turkiye’s Ambassador to India",
+      "category": "india_world",
+      "one_liner": "India World: single report, unconfirmed.",
+      "tags": [
+        "india",
+        "malware"
+      ],
+      "summary": "ALMOST A year after he took over as Turkiye’s Ambassador to India, steering bilateral ties through the most difficult phase in the aftermath of Operation Sindoor, where Ankara was seen to be siding with Islamabad, leading to a boycott by Indian travellers and business, Ali Murat Ersoy speaks to Divya A on how much of the lost ground has been recovered, how they plan to keep the ties insulated from geopolitical disruptions in the future, and what he sets out to achieve during…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "ALMOST A year after he took over as Turkiye’s Ambassador to India, steering bilateral ties through the most difficult phase in the aftermath of Operation Sindoor, where Ankara was seen to be siding with Islamabad, leading to a boycott by Indian travellers and business, Ali Murat Ersoy speaks to Divya A on how much of the lost ground has been recovered, how they plan to keep the ties insulated from geopolitical disruptions in the future, and what he sets out to achieve during his tenure here.",
+          "support_span": "ALMOST A year after he took over as Turkiye’s Ambassador to India, steering bilateral ties through the most difficult phase in the aftermath of Operation Sindoor, where Ankara was seen to be siding with Islamabad, leading to a boycott by Indian travellers and business, Ali Murat Ersoy speaks to Divya A on how much of the lost ground has been recovered, how they plan to keep the ties insulated from geopolitical disruptions in the future, and what he sets out to achieve during his tenure here.",
+          "status": "entailed"
+        },
+        {
+          "text": "In 2024, over 3.3 lakh Indian tourists visited Turkiye.",
+          "support_span": "In 2024, over 3.3 lakh Indian tourists visited Turkiye.",
+          "status": "entailed"
+        },
+        {
+          "text": "Between January and May 2025, about 1.15 lakh Indians visited the country, recording a normal growth.",
+          "support_span": "Between January and May 2025, about 1.15 lakh Indians visited the country, recording a normal growth.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 78,
+      "corroboration": 1,
+      "blend": 48.9,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "single_source",
+      "sources": [
+        {
+          "name": "Indian Express",
+          "url": "https://indianexpress.com/article/india/tremendous-largely-untapped-potential-in-india-turkiye-ties-across-every-pillar-ali-murat-ersoy-turkiyes-ambassador-to-india-10845418/",
+          "domain": "indianexpress.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-23T01:39:06+00:00",
+      "trace": [
+        "tier B (+25)",
+        "only one independent outlet — flagged, not hidden",
+        "summary: heuristic extractive (no LLM configured)",
+        "LLM batch failed — extractive fallback",
+        "blend 49 = trust 25 / interest 78 / corrob 25",
+        "claims entailed 3/3 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
       "cluster_key": "66027f2083404f30",
       "title": "Welspun Corp leads as over 10 Nifty 500 stocks gain 10–23% this week despite market volatility",
       "category": "markets",
@@ -1368,6 +947,61 @@
       ],
       "primary_links": [],
       "published": "2026-08-22T15:56:54+00:00",
+      "trace": [
+        "tier B (+25)",
+        "only one independent outlet — flagged, not hidden",
+        "summary: heuristic extractive (no LLM configured)",
+        "LLM batch failed — extractive fallback",
+        "blend 49 = trust 25 / interest 78 / corrob 25",
+        "claims entailed 3/3 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "71b3463509eb7592",
+      "title": "Indian Railways runs 1.3-km freight train carrying 360 containers from Mumbai to Gujarat: Check details",
+      "category": "india_world",
+      "one_liner": "India World: single report, unconfirmed.",
+      "tags": [
+        "india"
+      ],
+      "summary": "Anish Mondal is a journalist with over nine years of experience covering the railways and roadways. Currently a member of the Indianexpress.com editorial team, Anish specializes in high-impact sectors. Professional Journey Anish began his career at the public broadcaster Rajya Sabha Television (now Sansad TV), where he developed a foundational understanding of legislative processes and national governance.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Anish Mondal is a journalist with over nine years of experience covering the railways and roadways.",
+          "support_span": "Anish Mondal is a journalist with over nine years of experience covering the railways and roadways.",
+          "status": "entailed"
+        },
+        {
+          "text": "Currently a member of the Indianexpress.com editorial team, Anish specializes in high-impact sectors.",
+          "support_span": "Currently a member of the Indianexpress.com editorial team, Anish specializes in high-impact sectors.",
+          "status": "entailed"
+        },
+        {
+          "text": "Professional Journey Anish began his career at the public broadcaster Rajya Sabha Television (now Sansad TV), where he developed a foundational understanding of legislative processes and national governance.",
+          "support_span": "Professional Journey Anish began his career at the public broadcaster Rajya Sabha Television (now Sansad TV), where he developed a foundational understanding of legislative processes and national governance.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 78,
+      "corroboration": 1,
+      "blend": 48.9,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "single_source",
+      "sources": [
+        {
+          "name": "Indian Express",
+          "url": "https://indianexpress.com/article/india/indian-railways-first-1-3-km-double-stack-long-haul-container-train-10845084/",
+          "domain": "indianexpress.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-22T13:18:59+00:00",
       "trace": [
         "tier B (+25)",
         "only one independent outlet — flagged, not hidden",
@@ -1547,157 +1181,95 @@
       "reject_reason": ""
     },
     {
-      "cluster_key": "492e2f7e2a739f58",
-      "title": "US-Iran war: Crude oil price is key | Is Tehran writing the obituary of Turkey-Pakistan-Saudi Arabia's defence pact?",
-      "category": "markets",
-      "one_liner": "Iran's proxy drone attacks on Saudi oil infrastructure test the newly minted Turkey-Pakistan-Saudi Arabia mutual defense pact.",
+      "cluster_key": "0eddbff8c05a6478",
+      "title": "India, UK review defence industrial cooperation",
+      "category": "india_world",
+      "one_liner": "India World: single report, unconfirmed.",
       "tags": [
-        "ai",
         "blueteam",
         "exploit",
-        "incident",
-        "india",
-        "markets",
-        "policy"
-      ],
-      "summary": "Amidst the ongoing US-Iran war over the Strait of Hormuz, Iran and its Houthi proxies have escalated attacks by targeting oil infrastructure in US-allied Middle Eastern nations like Saudi Arabia to disrupt global oil supplies and drive up inflation. This latest aerial drone strike on Saudi facilities comes in the wake of the newly signed Mecca Joint Defence Agreement between Turkey, Pakistan, and Saudi Arabia, which binds them to treat an attack on one as an attack on all. Market analysts note that Tehran's explicit strategy is to prolong the conflict and force international economic pressure on the United States and Israel by keeping global crude oil prices high.",
-      "key_facts": [
-        "Defence pact date: Signed on 7th August 2026",
-        "Combined active military personnel: Roughly 1.4 million across Turkey, Pakistan, and Saudi Arabia"
-      ],
-      "bottom_line": "Tehran's strategic targeting of Gulf oil infrastructure weaponizes global inflation and tests new regional mutual defense pacts.",
-      "claims": [
-        {
-          "text": "Yemen's Houthis carried out two drone attacks on Saudi Arabia, targeting Najran airport and an Aramco facility.",
-          "support_span": "Yemen's Houthis, who have Iran's support, said on Thursday last week that they carried out two drone attacks on Saudi Arabia, targeting what they described as a sensitive target at Najran airport and an Aramco facility in Najran",
-          "status": "entailed"
-        },
-        {
-          "text": "The Mecca Joint Defence Agreement is a tripartite defence deal signed on 7th August 2026 among Turkey, Pakistan and Saudi Arabia.",
-          "support_span": "Saudi Arabia is now a part of the Mecca Joint Defence Agreement, signed on 7th August 2026. The Mecca Joint Defence Agreement is a tripartite defence deal among Turkey, Pakistan and Saudi Arabia",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 47.5,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "single_source",
-      "sources": [
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/commodities/us-iran-war-crude-oil-price-is-key-is-tehran-writing-the-obituary-of-turkey-pakistan-saudi-arabias-defence-pact-11787455149964.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-23T06:04:03+00:00",
-      "trace": [
-        "tier B (+25)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 25 / interest 75 / corrob 25",
-        "claims entailed 2/2 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "dc34812aad7409e1",
-      "title": "SIPs stay above  ₹30,000 crore: Equity mutual funds smash record as assets hit  ₹48.5 lakh crore",
-      "category": "markets",
-      "one_liner": "Indian equity mutual fund assets hit a record ₹48.5 lakh crore as monthly SIP contributions remained above ₹30,000 crore.",
-      "tags": [
         "india",
         "markets"
       ],
-      "summary": "Equity mutual fund assets in India reached a record ₹48.5 lakh crore in July, driven by strong growth in active equity schemes and consistent investor participation through Systematic Investment Plans (SIPs). Monthly SIP contributions stayed above ₹30,000 crore for the fifth consecutive month, hitting ₹31,961 crore, while total cumulative SIP assets crossed ₹18 lakh crore for the first time. Meanwhile, passive funds also surged to a record ₹15.5 lakh crore, while debt fund assets experienced a slight contraction.",
-      "key_facts": [
-        "Total equity mutual fund assets: ₹48.5 lakh crore",
-        "July SIP contributions: ₹31,961 crore",
-        "Total SIP assets: ₹18.2 lakh crore",
-        "Passive funds AAUM: ₹15.5 lakh crore"
-      ],
-      "bottom_line": "Sustained retail capital inflows into equity SIPs continue to drive record expansion across India's mutual fund industry.",
+      "summary": "India and the UK on Friday reviewed the ongoing defence industrial cooperation with emphasis on Research & Development through the India-UK vision 2035 and the 10-year Defence Industrial Roadmap. The 25th India-UK Defence Consultative Group meeting was held between Defence Secretary Rajesh Kumar Singh with the Permanent Under Secretary (PUS) for Defence of UK Jeremy Pocklington in New Delhi. In a statement, the Defence Ministry said that both sides agreed to expand bilateral…",
+      "key_facts": [],
+      "bottom_line": "",
       "claims": [
         {
-          "text": "Equity mutual fund assets rose to a fresh record of ₹48.5 lakh crore in July.",
-          "support_span": "Equity mutual fund assets rose to a fresh record of ₹48.5 lakh crore in July, accounting for 56 per cent of the mutual fund industry's overall Average Assets Under Management (AAUM)",
+          "text": "India and the UK on Friday reviewed the ongoing defence industrial cooperation with emphasis on Research & Development through the India-UK vision 2035 and the 10-year Defence Industrial Roadmap.",
+          "support_span": "India and the UK on Friday reviewed the ongoing defence industrial cooperation with emphasis on Research & Development through the India-UK vision 2035 and the 10-year Defence Industrial Roadmap.",
           "status": "entailed"
         },
         {
-          "text": "Monthly SIP contributions stood at ₹31,961 crore in July, remaining above ₹30,000 crore for the fifth consecutive month.",
-          "support_span": "Monthly SIP contributions stood at ₹31,961 crore in July, remaining above ₹30,000 crore for the fifth consecutive month.",
+          "text": "The 25th India-UK Defence Consultative Group meeting was held between Defence Secretary Rajesh Kumar Singh with the Permanent Under Secretary (PUS) for Defence of UK Jeremy Pocklington in New Delhi.",
+          "support_span": "The 25th India-UK Defence Consultative Group meeting was held between Defence Secretary Rajesh Kumar Singh with the Permanent Under Secretary (PUS) for Defence of UK Jeremy Pocklington in New Delhi.",
           "status": "entailed"
         },
         {
-          "text": "SIP assets crossed ₹18 lakh crore for the first time, reaching ₹18.2 lakh crore in July.",
-          "support_span": "SIP assets crossed ₹18 lakh crore for the first time, reaching ₹18.2 lakh crore in July and accounting for 21.1 per cent of the mutual fund industry's overall assets.",
+          "text": "In a statement, the Defence Ministry said that both sides agreed to expand bilateral exchanges between the armed forces of India and UK through joint exercises, training and capacity building.",
+          "support_span": "In a statement, the Defence Ministry said that both sides agreed to expand bilateral exchanges between the armed forces of India and UK through joint exercises, training and capacity building.",
           "status": "entailed"
         }
       ],
       "trust_score": 25,
-      "interest_score": 75,
+      "interest_score": 78,
       "corroboration": 1,
-      "blend": 47.5,
+      "blend": 48.9,
       "critical_signal": "",
       "priority": "important",
       "verdict": "single_source",
       "sources": [
         {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/sips-stay-above-rs-30-000-crore-equity-mutual-funds-smash-record-as-assets-hit-rs-48-5-lakh-crore-11787408860279.html",
-          "domain": "livemint.com",
+          "name": "Indian Express",
+          "url": "https://indianexpress.com/article/india/india-uk-review-defence-industrial-cooperation-10844179/",
+          "domain": "indianexpress.com",
           "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-22T14:36:55+00:00",
+      "published": "2026-08-22T00:26:15+00:00",
       "trace": [
         "tier B (+25)",
         "only one independent outlet — flagged, not hidden",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 25 / interest 75 / corrob 25",
+        "summary: heuristic extractive (no LLM configured)",
+        "gemini-3.6-flash rate limited — extractive fallback",
+        "blend 49 = trust 25 / interest 78 / corrob 25",
         "claims entailed 3/3 (100%)"
       ],
       "reject_reason": ""
     },
     {
-      "cluster_key": "1386cf57c8bab847",
-      "title": "Explained | How Bitcoin rally led to skyrocketing of crypto stocks | What’s fuelling surge of both? Climbing in tandem",
-      "category": "markets",
-      "one_liner": "A massive Bitcoin price rally driven by US Treasury liquidity injections and short squeezes has sent crypto-linked stocks soaring.",
+      "cluster_key": "96a434125598f898",
+      "title": "ToxicPanda Android malware uses VPN permissions to block Google Play",
+      "category": "cyber_attacks",
+      "one_liner": "Major Android malware update utilizing Wireless ADB abuse and local VPN traffic interception.",
       "tags": [
-        "dfir",
+        "android",
+        "appsec",
+        "cloud",
         "exploit",
-        "howto",
-        "markets",
-        "tool"
+        "llm",
+        "malware",
+        "network",
+        "release"
       ],
-      "summary": "Bitcoin prices surged up to 23% in a week, nearing the $80,000 level and driving a massive rally in crypto stocks following the US Treasury's announcement to double long-dated bond buybacks. The macroeconomic liquidity injection lowered long yields and boosted risk assets, which was further amplified by over $1 billion in leveraged short liquidations and strong spot Bitcoin ETF inflows. Consequently, crypto-linked equities like Robinhood and Coinbase rallied significantly alongside large corporate Bitcoin purchases.",
+      "summary": "ToxicPanda 2.0 requests VPN permissions to block communications to Google Play and Google Play Services. The malware abuses Wireless ADB via Accessibility Services to run privileged shell commands. This mechanism bypasses runtime consent prompts, disables OEM battery restrictions, and installs secondary banking payloads.",
       "key_facts": [
-        "Bitcoin weekly surge: Up to 23%, nearing $80,000",
-        "Robinhood stock gain: Approximately 14%",
-        "Coinbase stock gain: Over 8%",
-        "Short liquidations: Over $1 billion in 60 minutes and $3 billion in total bear losses"
+        "Targeted apps: 349 financial/crypto apps",
+        "Remote commands supported: 167",
+        "PIN-harvesting targets: 140 financial/crypto apps",
+        "Distribution vector: Amazon AWS-hosted buckets"
       ],
-      "bottom_line": "US Treasury bond buybacks can trigger sudden macro liquidity shifts that violently reprice digital assets and crypto-linked equities.",
+      "bottom_line": "ToxicPanda 2.0 leverages local VPN filtering and automated Wireless ADB exploitation to paralyze Google Play protections and achieve root-like device control.",
       "claims": [
         {
-          "text": "Bitcoin surged up to 23% last week and came close to the $80,000 level.",
-          "support_span": "The original cryptocurrency surged up to 23% last week and came close to the psychological $80,000 level, last seen in May 2026.",
+          "text": "ToxicPanda 2.0 requests VPN permissions to block communications to Google Play and Google Play Services.",
+          "support_span": "The malware now requests VPN service permissions to create a local interface that allows it to control network traffic passing through it. The feature enables ToxicPanda 2.0 to block communication from Google Play and Google Play Services.",
           "status": "entailed"
         },
         {
-          "text": "Robinhood Markets stock finished around 14% higher and Coinbase Global rallied over 8%.",
-          "support_span": "-Robinhood Markets' stock price finished around 14% higher - Coinbase Global's stock rallied over 8%",
-          "status": "entailed"
-        },
-        {
-          "text": "Spot Bitcoin ETFs saw $458 million of inflows in a single day.",
-          "support_span": "spot Bitcoin ETFs saw $458 million of inflows in a single day, with BlackRock’s IBIT leading, and total inflows hit $500 million.",
+          "text": "The malware abuses Wireless ADB via Accessibility Services to run privileged shell commands.",
+          "support_span": "Using the Accessibility Services permission, the malware enables Developer Options, activates Wireless Debugging, extracts the six-digit ADB pairing code and port, and connects with the device’s local ADB service.",
           "status": "entailed"
         }
       ],
@@ -1710,19 +1282,202 @@
       "verdict": "single_source",
       "sources": [
         {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/toxicpanda-android-malware-uses-vpn-permissions-to-block-google-play/",
+          "domain": "bleepingcomputer.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-23T14:23:46+00:00",
+      "trace": [
+        "tier B (+25)",
+        "only one independent outlet — flagged, not hidden",
+        "importance 4/5 from gemini-3.6-flash",
+        "blend 48 = trust 25 / interest 75 / corrob 25",
+        "claims entailed 2/2 (100%)",
+        "judge (gemma-4-26b-a4b-it): all claims supported"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "5f7112ae14cc261d",
+      "title": "Hackers infect Android car head units with proxy botnet malware",
+      "category": "cyber_attacks",
+      "one_liner": "Novel Android supply-chain attack turning vehicular head units into proxy botnet nodes.",
+      "tags": [
+        "android",
+        "incident",
+        "malware",
+        "markets",
+        "research",
+        "supply-chain",
+        "threat-intel",
+        "tool"
+      ],
+      "summary": "The MoYu threat actor infected Android car head units manufactured by DoFun. A legitimate system update app named TWCore downloaded a malicious JarService payload via MQTT. The malware deploys a reverse-proxy module named zhima to turn car infotainment systems into botnet nodes for ad fraud and residential proxy traffic.",
+      "key_facts": [
+        "Threat actor: MoYu group",
+        "Target vendor: DoFun (Shenzhen Driving Control Technology Co., Ltd.)",
+        "Legitimate app abused: TWCore",
+        "Malware payload: JarService",
+        "Proxy module: zhima"
+      ],
+      "bottom_line": "Threat actors have successfully compromised automotive supply chains to turn Android car infotainment units into residential proxy botnets.",
+      "claims": [
+        {
+          "text": "The MoYu threat actor infected Android car head units manufactured by DoFun.",
+          "support_span": "Kaspersky researchers analyzed the malware and attributed the operation to the MoYu group, a threat actor previously associated with the BadBox malware botnet.",
+          "status": "entailed"
+        },
+        {
+          "text": "The malware deploys a reverse-proxy module named zhima to turn car infotainment systems into botnet nodes.",
+          "support_span": "Researchers discovered that the operator primarily loaded a reverse-proxy module named ‘zhima,’ which turns the head unit into a proxy botnet node, and also made web requests for click-fraud activity.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 47.5,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "single_source",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-infect-android-car-head-units-with-proxy-botnet-malware/",
+          "domain": "bleepingcomputer.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-22T14:14:24+00:00",
+      "trace": [
+        "tier B (+25)",
+        "only one independent outlet — flagged, not hidden",
+        "importance 4/5 from gemini-3.6-flash",
+        "blend 48 = trust 25 / interest 75 / corrob 25",
+        "claims entailed 2/2 (100%)",
+        "judge (gemma-4-26b-a4b-it): all claims supported"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "3cb411a882f64d24",
+      "title": "Connecting the Dots: Securing the Overlooked Corners of the Software Development Lifecycle (SDLC) Supply Chain",
+      "category": "cyber_attacks",
+      "one_liner": "Critical analysis of modern SDLC supply chain attacks and memory-scraping npm worms targeting developer tools.",
+      "tags": [
+        "appsec",
+        "dfir",
+        "exploit",
+        "identity",
+        "llm",
+        "malware",
+        "opensource",
+        "research"
+      ],
+      "summary": "The ChainDrop npm worm infected over 400 packages by abusing preinstall setup scripts. ChainDrop extracted temporary OIDC tokens from GitHub Actions runner process memory. The worm used stolen tokens to propagate across open-source packages and established cross-linked persistent hooks in VS Code and Claude Code.",
+      "key_facts": [
+        "Infected packages: over 400 packages (including keyv, cacheable-request)",
+        "CVE-2024-3094: XZ Utils backdoor",
+        "Open-source codebase proportion: 80-90%"
+      ],
+      "bottom_line": "Supply chain attacks like the ChainDrop worm exploit developer build scripts and CI/CD memory to steal tokens and achieve persistent multi-tool backdoors.",
+      "claims": [
+        {
+          "text": "The ChainDrop npm worm infected over 400 packages by abusing preinstall setup scripts.",
+          "support_span": "Consider the recent ChainDrop npm worm, which infected over 400 packages including massively popular libraries like keyv and cacheable-request using a highly evasive three-step chain:",
+          "status": "entailed"
+        },
+        {
+          "text": "ChainDrop extracted temporary OIDC tokens from GitHub Actions runner process memory.",
+          "support_span": "Rather than just scraping disk files, a hidden Python script directly read live process memory from GitHub Actions runners to steal temporary OpenID Connect (OIDC) tokens and secrets, alongside a massive sweep for local developer credentials.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 47.5,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "single_source",
+      "sources": [
+        {
+          "name": "Unit42",
+          "url": "https://unit42.paloaltonetworks.com/sdlc-supply-chain/",
+          "domain": "unit42.paloaltonetworks.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-21T23:00:21+00:00",
+      "trace": [
+        "tier B (+25)",
+        "only one independent outlet — flagged, not hidden",
+        "importance 4/5 from gemini-3.6-flash",
+        "blend 48 = trust 25 / interest 75 / corrob 25",
+        "claims entailed 2/2 (100%)",
+        "judge (gemma-4-26b-a4b-it): all claims supported"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "99f1c36bd2d1a45d",
+      "title": "Stock Market prediction for tomorrow, 24 August 2026: Sensex, Nifty outlook for Monday — US, South Korea, Taiwan cues",
+      "category": "markets",
+      "one_liner": "Markets: single report, unconfirmed.",
+      "tags": [
+        "india",
+        "markets",
+        "research",
+        "tool"
+      ],
+      "summary": "Stock Market prediction for Monday, 24 August 2026: The key benchmark indices of the Indian stock market concluded the week on a cautious note, extending their recent corrective trend amid high crude oil prices, rising global bond yields, and continued geopolitical tensions that dampened investor sentiment. Trading remained volatile throughout the week, with benchmark indices staging a recovery at one point before ending Friday largely unchanged as investors continued to eva…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Stock Market prediction for Monday, 24 August 2026: The key benchmark indices of the Indian stock market concluded the week on a cautious note, extending their recent corrective trend amid high crude oil prices, rising global bond yields, and continued geopolitical tensions that dampened investor sentiment.",
+          "support_span": "Stock Market prediction for Monday, 24 August 2026: The key benchmark indices of the Indian stock market concluded the week on a cautious note, extending their recent corrective trend amid high crude oil prices, rising global bond yields, and continued geopolitical tensions that dampened investor sentiment.",
+          "status": "entailed"
+        },
+        {
+          "text": "Trading remained volatile throughout the week, with benchmark indices staging a recovery at one point before ending Friday largely unchanged as investors continued to evaluate the evolving global risk landscape.",
+          "support_span": "Trading remained volatile throughout the week, with benchmark indices staging a recovery at one point before ending Friday largely unchanged as investors continued to evaluate the evolving global risk landscape.",
+          "status": "entailed"
+        },
+        {
+          "text": "On a weekly basis, the Nifty 50 index slipped about 0.47% to close at 24,252, while the Sensex declined nearly 0.60% to settle at 77,540.83.",
+          "support_span": "On a weekly basis, the Nifty 50 index slipped about 0.47% to close at 24,252, while the Sensex declined nearly 0.60% to settle at 77,540.83.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 72,
+      "corroboration": 1,
+      "blend": 46.1,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "single_source",
+      "sources": [
+        {
           "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/cryptocurrency/explained-how-bitcoin-rally-led-to-skyrocketing-of-crypto-stocks-what-s-fuelling-surge-of-both-climbing-in-tandem-11787364376857.html",
+          "url": "https://www.livemint.com/market/stock-market-news/stock-market-prediction-for-tomorrow-24-august-2026-sensex-nifty-outlook-for-monday-us-south-korea-taiwan-cues-11787450741265.html",
           "domain": "livemint.com",
           "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-22T03:56:49+00:00",
+      "published": "2026-08-23T03:16:40+00:00",
       "trace": [
         "tier B (+25)",
         "only one independent outlet — flagged, not hidden",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 25 / interest 75 / corrob 25",
+        "summary: heuristic extractive (no LLM configured)",
+        "LLM batch failed — extractive fallback",
+        "blend 46 = trust 25 / interest 72 / corrob 25",
         "claims entailed 3/3 (100%)"
       ],
       "reject_reason": ""
@@ -1789,32 +1544,467 @@
       "reject_reason": ""
     },
     {
-      "cluster_key": "3ed351d073cefc20",
-      "title": "An okay laptop with 16GB of RAM is better than a nice laptop with 8GB, and this $520 HP OmniBook proves it",
-      "category": "tech_ai",
-      "one_liner": "The $520 HP OmniBook 3 demonstrates that an affordable laptop with 16GB of RAM provides superior value to overpriced 8GB models.",
+      "cluster_key": "30a7795ed1e30782",
+      "title": "EU sends helicopters, firefighters to Serbia to tackle wildfires - Reuters",
+      "category": "markets",
+      "one_liner": "Markets: single report, unconfirmed.",
       "tags": [
-        "hardware",
-        "threat-intel"
+        "dfir",
+        "markets"
       ],
-      "summary": "The 16-inch HP OmniBook 3 proves that a basic productivity laptop equipped with 16GB of RAM and a 512GB SSD for around $520 offers better real-world value than expensive machines crippled by 8GB of RAM. Driven by Qualcomm's base Snapdragon X processor, the budget machine delivers excellent battery life and adequate day-to-day performance despite compromises in its plastic chassis, basic 300-nit screen, and mediocre speakers. Amidst rising hardware costs, it provides a functional, highly portable alternative that avoids feeling like a penalty for budget-conscious buyers.",
-      "key_facts": [
-        "Price: Around $520",
-        "RAM: 16GB",
-        "Storage: 512GB SSD",
-        "Processor: 8-core Snapdragon X",
-        "Screen: 16-inch 1920 x 1200 anti-glare IPS LCD"
-      ],
-      "bottom_line": "Adequate RAM configurations like 16GB make budget Snapdragon X laptops viable productivity tools despite compromises in display and audio quality.",
+      "summary": "EU sends helicopters, firefighters to Serbia to tackle wildfires Reuters",
+      "key_facts": [],
+      "bottom_line": "",
       "claims": [
         {
-          "text": "The HP OmniBook 3 16 is a basic productivity laptop that regularly goes for around $520 at Walmart and Amazon.",
-          "support_span": "HP’s 16-inch OmniBook 3 is a basic productivity laptop that regularly goes for around $520 at Walmart and Amazon.",
+          "text": "EU sends helicopters, firefighters to Serbia to tackle wildfires Reuters",
+          "support_span": "EU sends helicopters, firefighters to Serbia to tackle wildfires Reuters",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 78,
+      "corroboration": 1,
+      "blend": 45.1,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "single_source",
+      "sources": [
+        {
+          "name": "Reuters Business",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUGlKOVc4ZDFhMlNOWE8wNXpPb1paZW5RRG5oZFd3VV9YaThScFlPYmRCZ2xfMU9sRFNpNUpsNk9Jb1BES19nOVJDdnJER241VzNyZWc0UGNSZWJEMEFnSW1vaDhacGEzQW1WYU9pU21mcTlWWHBOU3BiTm05cFNGY05QVFhwd1pGOEhLenNoSnliZUhEYnh3ZFpTNTMxYzZoeURya04zdy12c3NmQVUtTDcyRVE?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-22T14:44:00+00:00",
+      "trace": [
+        "tier C (+10)",
+        "only one independent outlet — flagged, not hidden",
+        "summary: heuristic extractive (no LLM configured)",
+        "LLM batch failed — extractive fallback",
+        "blend 45 = trust 10 / interest 78 / corrob 25",
+        "claims entailed 1/1 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "567d203eae1ea98f",
+      "title": "Nifty may hit 28,000 in the next 1 year, says Pankaj Pandey of ICICI Securities, suggests 5 stocks for up to 60% upside",
+      "category": "markets",
+      "one_liner": "Markets: single report, unconfirmed.",
+      "tags": [
+        "markets",
+        "research"
+      ],
+      "summary": "The domestic market remains in consolidation mode, with elevated oil prices keeping investors wary of a potential inflation flare-up, tighter monetary policy, weak earnings, and a slowdown in economic growth. The stock market benchmark Nifty 50 is down about 0.60% for August so far, looking set to snap its two-month winning run even as Q1 results came in better than expected. This reflects that higher oil prices remain a key concern for markets, and as long as the US-Iran co…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "The domestic market remains in consolidation mode, with elevated oil prices keeping investors wary of a potential inflation flare-up, tighter monetary policy, weak earnings, and a slowdown in economic growth.",
+          "support_span": "The domestic market remains in consolidation mode, with elevated oil prices keeping investors wary of a potential inflation flare-up, tighter monetary policy, weak earnings, and a slowdown in economic growth.",
           "status": "entailed"
         },
         {
-          "text": "The entry-level OmniBook 3 has an 8-core Snapdragon X processor, 16GB of RAM, 512GB SSD, and a 16-inch 1920 x 1200 IPS LCD.",
-          "support_span": "The entry-level OmniBook 3 I tested has an 8-core Snapdragon X processor, 16GB of RAM, 512GB SSD, and a 16-inch 1920 x 1200 anti-glare IPS LCD.",
+          "text": "The stock market benchmark Nifty 50 is down about 0.60% for August so far, looking set to snap its two-month winning run even as Q1 results came in better than expected.",
+          "support_span": "The stock market benchmark Nifty 50 is down about 0.60% for August so far, looking set to snap its two-month winning run even as Q1 results came in better than expected.",
+          "status": "entailed"
+        },
+        {
+          "text": "This reflects that higher oil prices remain a key concern for markets, and as long as the US-Iran conflict is unresolved, a sustained rally is unlikely.",
+          "support_span": "This reflects that higher oil prices remain a key concern for markets, and as long as the US-Iran conflict is unresolved, a sustained rally is unlikely.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 64,
+      "corroboration": 1,
+      "blend": 42.5,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "single_source",
+      "sources": [
+        {
+          "name": "Livemint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/nifty-may-hit-28-000-in-the-next-1-year-says-pankaj-pandey-of-icici-securities-suggests-5-stocks-for-up-to-60-upside-11787323383377.html",
+          "domain": "livemint.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-22T03:30:02+00:00",
+      "trace": [
+        "tier B (+25)",
+        "only one independent outlet — flagged, not hidden",
+        "summary: heuristic extractive (no LLM configured)",
+        "LLM batch failed — extractive fallback",
+        "blend 43 = trust 25 / interest 64 / corrob 25",
+        "claims entailed 3/3 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "47661aea7171a7a1",
+      "title": "Zelensky should be asked what he knew about government corruption, sacked minister tells BBC",
+      "category": "india_world",
+      "one_liner": "India World: single report, unconfirmed.",
+      "tags": [
+        "blueteam",
+        "exploit",
+        "india"
+      ],
+      "summary": "- Published Ukrainian President Volodymyr Zelensky should be asked questions about corruption in his government, his sacked defence minister Mykhailo Fedorov has told the BBC. Fedorov, a popular minister who modernised the military and pioneered drone warfare, was fired last month after reportedly falling out with the head of Ukraine's armed forces. He told the BBC a money laundering investigation announced last week meant Zelensky should be asked about his awareness of pote…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "- Published\nUkrainian President Volodymyr Zelensky should be asked questions about corruption in his government, his sacked defence minister Mykhailo Fedorov has told the BBC.",
+          "support_span": "- Published\nUkrainian President Volodymyr Zelensky should be asked questions about corruption in his government, his sacked defence minister Mykhailo Fedorov has told the BBC.",
+          "status": "entailed"
+        },
+        {
+          "text": "Fedorov, a popular minister who modernised the military and pioneered drone warfare, was fired last month after reportedly falling out with the head of Ukraine's armed forces.",
+          "support_span": "Fedorov, a popular minister who modernised the military and pioneered drone warfare, was fired last month after reportedly falling out with the head of Ukraine's armed forces.",
+          "status": "entailed"
+        },
+        {
+          "text": "He told the BBC a money laundering investigation announced last week meant Zelensky should be asked about his awareness of potential corruption in his inner circle.",
+          "support_span": "He told the BBC a money laundering investigation announced last week meant Zelensky should be asked about his awareness of potential corruption in his inner circle.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 54,
+      "corroboration": 1,
+      "blend": 41.8,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "single_source",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwy4ypzvd7po?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-23T12:56:43+00:00",
+      "trace": [
+        "tier A (+40)",
+        "only one independent outlet — flagged, not hidden",
+        "summary: heuristic extractive (no LLM configured)",
+        "gemini-3.6-flash rate limited — extractive fallback",
+        "blend 42 = trust 40 / interest 54 / corrob 25",
+        "claims entailed 3/3 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "9112124e8570c757",
+      "title": "DR Congo and M23 rebels agree roadmap for peace talks",
+      "category": "india_world",
+      "one_liner": "India World: single report, unconfirmed.",
+      "tags": [
+        "exploit",
+        "india",
+        "policy",
+        "tool"
+      ],
+      "summary": "- Published The Democratic Republic of Congo government and the Rwanda-backed M23 rebel group have agreed a roadmap for peace talks. In a joint statement after five days of talks in Switzerland, they said they had pledged to \"pursue negotiations towards comprehensive peace and conflict resolution\" and set up a mechanism to monitor the ceasefire. The roadmap sets out a timeline for talks under a US-brokered peace framework which they signed in 2025 - only for fighting to then…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "- Published\nThe Democratic Republic of Congo government and the Rwanda-backed M23 rebel group have agreed a roadmap for peace talks.",
+          "support_span": "- Published\nThe Democratic Republic of Congo government and the Rwanda-backed M23 rebel group have agreed a roadmap for peace talks.",
+          "status": "entailed"
+        },
+        {
+          "text": "In a joint statement after five days of talks in Switzerland, they said they had pledged to \"pursue negotiations towards comprehensive peace and conflict resolution\" and set up a mechanism to monitor the ceasefire.",
+          "support_span": "In a joint statement after five days of talks in Switzerland, they said they had pledged to \"pursue negotiations towards comprehensive peace and conflict resolution\" and set up a mechanism to monitor the ceasefire.",
+          "status": "entailed"
+        },
+        {
+          "text": "The roadmap sets out a timeline for talks under a US-brokered peace framework which they signed in 2025 - only for fighting to then continue in eastern DR Congo, which has been engulfed in conflict for decades.",
+          "support_span": "The roadmap sets out a timeline for talks under a US-brokered peace framework which they signed in 2025 - only for fighting to then continue in eastern DR Congo, which has been engulfed in conflict for decades.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 54,
+      "corroboration": 1,
+      "blend": 41.8,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "single_source",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cre4e1q3wewo?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-23T12:52:08+00:00",
+      "trace": [
+        "tier A (+40)",
+        "only one independent outlet — flagged, not hidden",
+        "summary: heuristic extractive (no LLM configured)",
+        "gemini-3.6-flash rate limited — extractive fallback",
+        "blend 42 = trust 40 / interest 54 / corrob 25",
+        "claims entailed 3/3 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "3ba27aad45a0567a",
+      "title": "Modi spent years building his strong image - why is he making Gen Z reels now?",
+      "category": "india_world",
+      "one_liner": "India World: single report, unconfirmed.",
+      "tags": [
+        "exploit",
+        "hardware",
+        "identity",
+        "india"
+      ],
+      "summary": "- Published Many among India's Gen Z may not see Narendra Modi as a friend. But the Indian prime minister is trying to talk to them like one. The 75-year-old leader - who has long cultivated a strongman image through scripted speeches, formal broadcasts and carefully choreographed appearances - has in recent weeks adopted a more casual style on Instagram, the photo and video platform popular with young people.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "- Published\nMany among India's Gen Z may not see Narendra Modi as a friend.",
+          "support_span": "- Published\nMany among India's Gen Z may not see Narendra Modi as a friend.",
+          "status": "entailed"
+        },
+        {
+          "text": "But the Indian prime minister is trying to talk to them like one.",
+          "support_span": "But the Indian prime minister is trying to talk to them like one.",
+          "status": "entailed"
+        },
+        {
+          "text": "The 75-year-old leader - who has long cultivated a strongman image through scripted speeches, formal broadcasts and carefully choreographed appearances - has in recent weeks adopted a more casual style on Instagram, the photo and video platform popular with young people.",
+          "support_span": "The 75-year-old leader - who has long cultivated a strongman image through scripted speeches, formal broadcasts and carefully choreographed appearances - has in recent weeks adopted a more casual style on Instagram, the photo and video platform popular with young people.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 54,
+      "corroboration": 1,
+      "blend": 41.8,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "single_source",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cnvn0n1nld6o?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-21T22:15:32+00:00",
+      "trace": [
+        "tier A (+40)",
+        "only one independent outlet — flagged, not hidden",
+        "summary: heuristic extractive (no LLM configured)",
+        "gemini-3.6-flash rate limited — extractive fallback",
+        "blend 42 = trust 40 / interest 54 / corrob 25",
+        "claims entailed 3/3 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "ee09961d9d06ec85",
+      "title": "Two killed after giant Ganesha statue collapses onto crowd in Mumbai",
+      "category": "india_world",
+      "one_liner": "India World: single report, unconfirmed.",
+      "tags": [
+        "exploit",
+        "india"
+      ],
+      "summary": "Two killed after giant Ganesha statue collapses onto crowd in Mumbai Two people were killed and five others injured after a massive Ganesha idol fell onto a crowd during a procession in Mumbai, India. Devotees carry these idols through the streets before immersing them in the Arabian Sea as part of the annual 10-day Ganesh Chaturthi festival.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Two killed after giant Ganesha statue collapses onto crowd in Mumbai\nTwo people were killed and five others injured after a massive Ganesha idol fell onto a crowd during a procession in Mumbai, India.",
+          "support_span": "Two killed after giant Ganesha statue collapses onto crowd in Mumbai\nTwo people were killed and five others injured after a massive Ganesha idol fell onto a crowd during a procession in Mumbai, India.",
+          "status": "entailed"
+        },
+        {
+          "text": "Devotees carry these idols through the streets before immersing them in the Arabian Sea as part of the annual 10-day Ganesh Chaturthi festival.",
+          "support_span": "Devotees carry these idols through the streets before immersing them in the Arabian Sea as part of the annual 10-day Ganesh Chaturthi festival.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 54,
+      "corroboration": 1,
+      "blend": 38.0,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "single_source",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/23/two-killed-after-giant-ganesha-statue-collapses-onto-crowd-in-mumbai?traffic_source=rss",
+          "domain": "aljazeera.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-23T19:27:17+00:00",
+      "trace": [
+        "tier B (+25)",
+        "only one independent outlet — flagged, not hidden",
+        "summary: heuristic extractive (no LLM configured)",
+        "LLM batch failed — extractive fallback",
+        "blend 38 = trust 25 / interest 54 / corrob 25",
+        "claims entailed 2/2 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "33c92b4cb1e53d26",
+      "title": "DMK’s regional satraps among 22 who will lose district secretary posts",
+      "category": "india_world",
+      "one_liner": "India World: single report, unconfirmed.",
+      "tags": [
+        "exploit",
+        "india"
+      ],
+      "summary": "With the principal opposition party in Tamil Nadu, the Dravida Munnetra Kazhagam (DMK), on the cusp of a revamp, several of its powerful regional satraps, including former Ministers, are set to make an exit from the organisational post of district secretaries. The exercise, which is being undertaken in the wake of the party’s defeat in the recent Assembly election, will most likely see new faces in 50% of its district secretary posts. The party’s high-level executive committ…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "With the principal opposition party in Tamil Nadu, the Dravida Munnetra Kazhagam (DMK), on the cusp of a revamp, several of its powerful regional satraps, including former Ministers, are set to make an exit from the organisational post of district secretaries.",
+          "support_span": "With the principal opposition party in Tamil Nadu, the Dravida Munnetra Kazhagam (DMK), on the cusp of a revamp, several of its powerful regional satraps, including former Ministers, are set to make an exit from the organisational post of district secretaries.",
+          "status": "entailed"
+        },
+        {
+          "text": "The exercise, which is being undertaken in the wake of the party’s defeat in the recent Assembly election, will most likely see new faces in 50% of its district secretary posts.",
+          "support_span": "The exercise, which is being undertaken in the wake of the party’s defeat in the recent Assembly election, will most likely see new faces in 50% of its district secretary posts.",
+          "status": "entailed"
+        },
+        {
+          "text": "The party’s high-level executive committee approved the new rules prescribed by the revamp committee headed by former Minister Thangam Thennarasu.",
+          "support_span": "The party’s high-level executive committee approved the new rules prescribed by the revamp committee headed by former Minister Thangam Thennarasu.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 54,
+      "corroboration": 1,
+      "blend": 38.0,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "single_source",
+      "sources": [
+        {
+          "name": "The Hindu National",
+          "url": "https://www.thehindu.com/news/national/dmks-regional-satraps-among-22-who-will-lose-district-secretary-posts/article71381677.ece",
+          "domain": "thehindu.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-23T18:33:16+00:00",
+      "trace": [
+        "tier B (+25)",
+        "only one independent outlet — flagged, not hidden",
+        "summary: heuristic extractive (no LLM configured)",
+        "LLM batch failed — extractive fallback",
+        "blend 38 = trust 25 / interest 54 / corrob 25",
+        "claims entailed 3/3 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "e823bcc789c02435",
+      "title": "Video: Thousands of families flee fighting in Sudan’s North Kordofan State",
+      "category": "india_world",
+      "one_liner": "India World: single report, unconfirmed.",
+      "tags": [
+        "india"
+      ],
+      "summary": "Thousands of families flee fighting in Sudan’s North Kordofan State Mothers and their children are in dire need of food and safety in Sudan’s conflict-stricken Kordofan State. People are queuing for food in an already overcrowded camp with hundreds of thousands who sought refuge in El Obeid.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Thousands of families flee fighting in Sudan’s North Kordofan State\nMothers and their children are in dire need of food and safety in Sudan’s conflict-stricken Kordofan State.",
+          "support_span": "Thousands of families flee fighting in Sudan’s North Kordofan State\nMothers and their children are in dire need of food and safety in Sudan’s conflict-stricken Kordofan State.",
+          "status": "entailed"
+        },
+        {
+          "text": "People are queuing for food in an already overcrowded camp with hundreds of thousands who sought refuge in El Obeid.",
+          "support_span": "People are queuing for food in an already overcrowded camp with hundreds of thousands who sought refuge in El Obeid.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 54,
+      "corroboration": 1,
+      "blend": 38.0,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "single_source",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/23/video-thousands-of-families-flee-fighting-in-sudans-north-kordofan-state?traffic_source=rss",
+          "domain": "aljazeera.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-23T18:27:46+00:00",
+      "trace": [
+        "tier B (+25)",
+        "only one independent outlet — flagged, not hidden",
+        "summary: heuristic extractive (no LLM configured)",
+        "gemini-3.6-flash rate limited — extractive fallback",
+        "blend 38 = trust 25 / interest 54 / corrob 25",
+        "claims entailed 2/2 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "50baa94d6d917a63",
+      "title": "Named Pipes Under Attack: Securing Windows Interprocess Communication",
+      "category": "cyber_attacks",
+      "one_liner": "Practical architectural and security advice on securing Windows IPC named pipes against privilege escalation.",
+      "tags": [
+        "agents",
+        "appsec",
+        "blueteam",
+        "exploit",
+        "howto",
+        "incident",
+        "malware",
+        "tool"
+      ],
+      "summary": "Developers frequently misuse Windows named pipes by assuming local interprocess communication is inherently trusted. High-privilege services using named pipes can expose unsafe APIs to lower-privilege local applications or malware. Security engineers must enforce restrictive access control lists, separate authentication from authorization, and strictly verify impersonation contexts.",
+      "key_facts": [
+        "IPC Mechanism: Windows Named Pipes",
+        "High-privilege context: LocalSystem"
+      ],
+      "bottom_line": "Local interprocess communication via named pipes requires explicit access controls and input validation to prevent privilege escalation attacks.",
+      "claims": [
+        {
+          "text": "Developers frequently misuse Windows named pipes by assuming local interprocess communication is inherently trusted.",
+          "support_span": "Named pipes are often treated as private because they are used for communication between applications on the same computer. That assumption is unsafe.",
+          "status": "entailed"
+        },
+        {
+          "text": "High-privilege services using named pipes can expose unsafe APIs to lower-privilege local applications or malware.",
+          "support_span": "When these operations are exposed through a named pipe, the pipe becomes an API to privileged functionality.",
           "status": "entailed"
         }
       ],
@@ -1827,20 +2017,136 @@
       "verdict": "single_source",
       "sources": [
         {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/tech/983554/hp-omnibook-3-16-snapdragon-laptop-review",
-          "domain": "theverge.com",
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/named-pipes-under-attack-securing-windows-interprocess-communication/",
+          "domain": "bleepingcomputer.com",
           "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-22T13:00:00+00:00",
+      "published": "2026-08-22T13:00:09+00:00",
       "trace": [
         "tier B (+25)",
         "only one independent outlet — flagged, not hidden",
-        "importance 3/5 from gemini-3.5-flash-lite",
+        "importance 3/5 from gemini-3.6-flash",
         "blend 36 = trust 25 / interest 50 / corrob 25",
-        "claims entailed 2/2 (100%)"
+        "claims entailed 2/2 (100%)",
+        "judge (gemma-4-26b-a4b-it): all claims supported"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "1dee74eeaed0ea7f",
+      "title": "How an Emerging Industrial Protocol Family Could Put OT at Risk",
+      "category": "cyber_attacks",
+      "one_liner": "Threat research showing how vulnerabilities in TSN industrial protocols expose OT/ICS environments to physical manipulation.",
+      "tags": [
+        "blueteam",
+        "exploit",
+        "hardware",
+        "network",
+        "research"
+      ],
+      "summary": "Unprotected Time-Sensitive Networking protocols can be manipulated to alter process variables in OT environments. Attackers can induce subtle clock drifts in TSN networks to disrupt industrial schedules. Without security protections integrated into microsecond latency protocols, industrial equipment like robotic arms can be remotely manipulated.",
+      "key_facts": [
+        "Protocol family: Time-Sensitive Networking (TSN / IEEE bridging specs)",
+        "Research firm: Nozomi Networks (acquired by Mitsubishi Electric)"
+      ],
+      "bottom_line": "Unencrypted Time-Sensitive Networking protocols allow attackers with local OT network access to manipulate industrial process variables and hardware.",
+      "claims": [
+        {
+          "text": "Unprotected Time-Sensitive Networking protocols can be manipulated to alter process variables in OT environments.",
+          "support_span": "The team showed how weaknesses in Time-Sensitive Networking (TSN) protocols could be abused to ultimately manipulate all the industrial systems it touches.",
+          "status": "entailed"
+        },
+        {
+          "text": "Attackers can induce subtle clock drifts in TSN networks to disrupt industrial schedules.",
+          "support_span": "This also includes subtly tampering with OT synchronization clocks to inject damaging changes in scheduling of processes.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 36.2,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "single_source",
+      "sources": [
+        {
+          "name": "DarkReading",
+          "url": "https://www.darkreading.com/ics-ot-security/how-emerging-industrial-protocol-family-put-ot-at-risk",
+          "domain": "darkreading.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-21T20:24:42+00:00",
+      "trace": [
+        "tier B (+25)",
+        "only one independent outlet — flagged, not hidden",
+        "importance 3/5 from gemini-3.6-flash",
+        "blend 36 = trust 25 / interest 50 / corrob 25",
+        "claims entailed 2/2 (100%)",
+        "judge (gemma-4-26b-a4b-it): all claims supported"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "055017b0a06036dc",
+      "title": "Who’s behind the new ‘stealth model’ Ox Alpha?",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "network",
+        "release",
+        "windows"
+      ],
+      "summary": "A mysterious new AI model called Ox Alpha has driven certain corners of the internet into a frenzy of speculation about who actually built it. The free model was released on OpenRouter on Thursday, where it was described as “a reasoning model designed for coding, sustained agentic work, and production workload.” On X, Stripe CEO Patrick Collison (whose company is acquiring OpenRouter) described Ox Alpha as “very impressive.” So who’s actually behind Ox Alpha? The OpenRouter…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "A mysterious new AI model called Ox Alpha has driven certain corners of the internet into a frenzy of speculation about who actually built it.",
+          "support_span": "A mysterious new AI model called Ox Alpha has driven certain corners of the internet into a frenzy of speculation about who actually built it.",
+          "status": "entailed"
+        },
+        {
+          "text": "The free model was released on OpenRouter on Thursday, where it was described as “a reasoning model designed for coding, sustained agentic work, and production workload.” On X, Stripe CEO Patrick Collison (whose company is acquiring OpenRouter) described Ox Alpha as “very impressive.”\nSo who’s actually behind Ox Alpha?",
+          "support_span": "The free model was released on OpenRouter on Thursday, where it was described as “a reasoning model designed for coding, sustained agentic work, and production workload.” On X, Stripe CEO Patrick Collison (whose company is acquiring OpenRouter) described Ox Alpha as “very impressive.”\nSo who’s actually behind Ox Alpha?",
+          "status": "entailed"
+        },
+        {
+          "text": "The OpenRouter listing described it as a “stealth model” and said it was “developed and operated by a third-party provider who has chosen to remain anonymous during this preview.”\nUnsurprisingly, much of the speculation has revolved around China.",
+          "support_span": "The OpenRouter listing described it as a “stealth model” and said it was “developed and operated by a third-party provider who has chosen to remain anonymous during this preview.”\nUnsurprisingly, much of the speculation has revolved around China.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 12,
+      "corroboration": 1,
+      "blend": 19.1,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "single_source",
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
+          "domain": "techcrunch.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-23T20:01:36+00:00",
+      "trace": [
+        "tier B (+25)",
+        "only one independent outlet — flagged, not hidden",
+        "summary: heuristic extractive (no LLM configured)",
+        "blend 19 = trust 25 / interest 12 / corrob 25",
+        "claims entailed 3/3 (100%)"
       ],
       "reject_reason": ""
     },
@@ -1949,6 +2255,7 @@
         "tier B (+25)",
         "only one independent outlet — flagged, not hidden",
         "summary: heuristic extractive (no LLM configured)",
+        "LLM batch failed — extractive fallback",
         "blend 19 = trust 25 / interest 12 / corrob 25",
         "claims entailed 3/3 (100%)"
       ],
@@ -2004,352 +2311,7 @@
         "tier B (+25)",
         "only one independent outlet — flagged, not hidden",
         "summary: heuristic extractive (no LLM configured)",
-        "blend 19 = trust 25 / interest 12 / corrob 25",
-        "claims entailed 3/3 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "a221ad1f6d7a071f",
-      "title": "TechCrunch Mobility: The custom chip driving Waymo’s robotaxi ambitions",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "hardware",
-        "identity",
-        "network",
-        "tool"
-      ],
-      "summary": "Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation. To get this in your inbox, sign up here for free — just click TechCrunch Mobility! Waymo gets a lot of attention for its fast-paced expansion.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation.",
-          "support_span": "Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation.",
-          "status": "entailed"
-        },
-        {
-          "text": "To get this in your inbox, sign up here for free — just click TechCrunch Mobility!",
-          "support_span": "To get this in your inbox, sign up here for free — just click TechCrunch Mobility!",
-          "status": "entailed"
-        },
-        {
-          "text": "Waymo gets a lot of attention for its fast-paced expansion.",
-          "support_span": "Waymo gets a lot of attention for its fast-paced expansion.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 12,
-      "corroboration": 1,
-      "blend": 19.1,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "single_source",
-      "sources": [
-        {
-          "name": "TechCrunch",
-          "url": "https://techcrunch.com/2026/08/23/techcrunch-mobility-the-custom-chip-driving-waymos-robotaxi-ambitions/",
-          "domain": "techcrunch.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-23T16:03:00+00:00",
-      "trace": [
-        "tier B (+25)",
-        "only one independent outlet — flagged, not hidden",
-        "summary: heuristic extractive (no LLM configured)",
-        "blend 19 = trust 25 / interest 12 / corrob 25",
-        "claims entailed 3/3 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "3fff31f0ded01f70",
-      "title": "Flock CEO calls for ‘compromise’ as surveillance company faces growing backlash",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "ai",
-        "privacy",
-        "tool"
-      ],
-      "summary": "The country needs to find a “compromise” between privacy and safety, according to Flock Safety CEO Garrett Langley. “When people talk about just one of these, privacy or safety, they’re prioritizing the wrong thing, and what we have to prioritize as a country is compromise,” Langley said during a recent interview with Fox News. “How do we have our safety, and how do we balance privacy?” Langley’s Fox News appearance was just the latest interview he’s given as the company fac…",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "The country needs to find a “compromise” between privacy and safety, according to Flock Safety CEO Garrett Langley.",
-          "support_span": "The country needs to find a “compromise” between privacy and safety, according to Flock Safety CEO Garrett Langley.",
-          "status": "entailed"
-        },
-        {
-          "text": "“When people talk about just one of these, privacy or safety, they’re prioritizing the wrong thing, and what we have to prioritize as a country is compromise,” Langley said during a recent interview with Fox News.",
-          "support_span": "“When people talk about just one of these, privacy or safety, they’re prioritizing the wrong thing, and what we have to prioritize as a country is compromise,” Langley said during a recent interview with Fox News.",
-          "status": "entailed"
-        },
-        {
-          "text": "“How do we have our safety, and how do we balance privacy?”\nLangley’s Fox News appearance was just the latest interview he’s given as the company faces a growing public outcry around concerns that Flock’s surveillance cameras, drones, and license plate recognition technology could be misused.",
-          "support_span": "“How do we have our safety, and how do we balance privacy?”\nLangley’s Fox News appearance was just the latest interview he’s given as the company faces a growing public outcry around concerns that Flock’s surveillance cameras, drones, and license plate recognition technology could be misused.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 12,
-      "corroboration": 1,
-      "blend": 19.1,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "single_source",
-      "sources": [
-        {
-          "name": "TechCrunch",
-          "url": "https://techcrunch.com/2026/08/23/flock-ceo-calls-for-compromise-as-surveillance-company-faces-growing-backlash/",
-          "domain": "techcrunch.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-23T15:30:00+00:00",
-      "trace": [
-        "tier B (+25)",
-        "only one independent outlet — flagged, not hidden",
-        "summary: heuristic extractive (no LLM configured)",
-        "blend 19 = trust 25 / interest 12 / corrob 25",
-        "claims entailed 3/3 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "f747fc5e64705c6d",
-      "title": "We’re All Going to the World’s Fair is an intimate coming-of-age horror film",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "blueteam"
-      ],
-      "summary": "Jane Schoenbrun’s latest film, Teenage Sex and Death at Camp Miasma, is making a splash in theaters right now. So it seems like the perfect time to revisit their first film, We’re All Going to the World’s Fair. I fell in love with this film when I first saw it at Sundance in 2021.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "Jane Schoenbrun’s latest film, Teenage Sex and Death at Camp Miasma, is making a splash in theaters right now.",
-          "support_span": "Jane Schoenbrun’s latest film, Teenage Sex and Death at Camp Miasma, is making a splash in theaters right now.",
-          "status": "entailed"
-        },
-        {
-          "text": "So it seems like the perfect time to revisit their first film, We’re All Going to the World’s Fair.",
-          "support_span": "So it seems like the perfect time to revisit their first film, We’re All Going to the World’s Fair.",
-          "status": "entailed"
-        },
-        {
-          "text": "I fell in love with this film when I first saw it at Sundance in 2021.",
-          "support_span": "I fell in love with this film when I first saw it at Sundance in 2021.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 12,
-      "corroboration": 1,
-      "blend": 19.1,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "single_source",
-      "sources": [
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/entertainment/983177/jane-schoenbrun-were-all-going-to-the-worlds-fair-horror-movie-review",
-          "domain": "theverge.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-23T15:00:00+00:00",
-      "trace": [
-        "tier B (+25)",
-        "only one independent outlet — flagged, not hidden",
-        "summary: heuristic extractive (no LLM configured)",
-        "blend 19 = trust 25 / interest 12 / corrob 25",
-        "claims entailed 3/3 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "8dafa127b694766c",
-      "title": "Is it legal to train AI models on copyrighted books? It’s complicated",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "ai",
-        "cloud",
-        "llm",
-        "policy",
-        "research",
-        "tool"
-      ],
-      "summary": "You probably know by now that the AI models powering ChatGPT, Gemini, Claude, and other chatbots are trained on seemingly infinite databases of published works, containing hundreds of millions of books, online articles, academic papers, and basically anything you can find on the internet. Most published authors have, without their knowledge or consent, contributed to the development of the same AI tools that threaten to undermine their livelihoods. “I think one of the issues…",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "You probably know by now that the AI models powering ChatGPT, Gemini, Claude, and other chatbots are trained on seemingly infinite databases of published works, containing hundreds of millions of books, online articles, academic papers, and basically anything you can find on the internet.",
-          "support_span": "You probably know by now that the AI models powering ChatGPT, Gemini, Claude, and other chatbots are trained on seemingly infinite databases of published works, containing hundreds of millions of books, online articles, academic papers, and basically anything you can find on the internet.",
-          "status": "entailed"
-        },
-        {
-          "text": "Most published authors have, without their knowledge or consent, contributed to the development of the same AI tools that threaten to undermine their livelihoods.",
-          "support_span": "Most published authors have, without their knowledge or consent, contributed to the development of the same AI tools that threaten to undermine their livelihoods.",
-          "status": "entailed"
-        },
-        {
-          "text": "“I think one of the issues with this entire area of law and this entire area of technology is there’s a lot going on,” Cathy Gellis, an attorney with expertise in intellectual property, copyright, and technology, told TechCrunch.",
-          "support_span": "“I think one of the issues with this entire area of law and this entire area of technology is there’s a lot going on,” Cathy Gellis, an attorney with expertise in intellectual property, copyright, and technology, told TechCrunch.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 12,
-      "corroboration": 1,
-      "blend": 19.1,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "single_source",
-      "sources": [
-        {
-          "name": "TechCrunch",
-          "url": "https://techcrunch.com/2026/08/23/is-it-legal-to-train-ai-models-on-copyrighted-books-its-complicated/",
-          "domain": "techcrunch.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-23T15:00:00+00:00",
-      "trace": [
-        "tier B (+25)",
-        "only one independent outlet — flagged, not hidden",
-        "summary: heuristic extractive (no LLM configured)",
-        "blend 19 = trust 25 / interest 12 / corrob 25",
-        "claims entailed 3/3 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "96a434125598f898",
-      "title": "ToxicPanda Android malware uses VPN permissions to block Google Play",
-      "category": "cyber_attacks",
-      "one_liner": "Cyber Attacks: single report, unconfirmed.",
-      "tags": [
-        "android",
-        "cloud",
-        "malware",
-        "network",
-        "release",
-        "research",
-        "threat-intel"
-      ],
-      "summary": "The ToxicPanda Android malware has evolved with new malicious functionality, expanding its targeting to 349 applications and adding support for 167 remote commands. The malware now requests VPN service permissions to create a local interface that allows it to control network traffic passing through it. The feature enables ToxicPanda 2.0 to block communication from Google Play and Google Play Services.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "The ToxicPanda Android malware has evolved with new malicious functionality, expanding its targeting to 349 applications and adding support for 167 remote commands.",
-          "support_span": "The ToxicPanda Android malware has evolved with new malicious functionality, expanding its targeting to 349 applications and adding support for 167 remote commands.",
-          "status": "entailed"
-        },
-        {
-          "text": "The malware now requests VPN service permissions to create a local interface that allows it to control network traffic passing through it.",
-          "support_span": "The malware now requests VPN service permissions to create a local interface that allows it to control network traffic passing through it.",
-          "status": "entailed"
-        },
-        {
-          "text": "The feature enables ToxicPanda 2.0 to block communication from Google Play and Google Play Services.",
-          "support_span": "The feature enables ToxicPanda 2.0 to block communication from Google Play and Google Play Services.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 12,
-      "corroboration": 1,
-      "blend": 19.1,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "single_source",
-      "sources": [
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/toxicpanda-android-malware-uses-vpn-permissions-to-block-google-play/",
-          "domain": "bleepingcomputer.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-23T14:23:46+00:00",
-      "trace": [
-        "tier B (+25)",
-        "only one independent outlet — flagged, not hidden",
-        "summary: heuristic extractive (no LLM configured)",
-        "blend 19 = trust 25 / interest 12 / corrob 25",
-        "claims entailed 3/3 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "5f7112ae14cc261d",
-      "title": "Hackers infect Android car head units with proxy botnet malware",
-      "category": "cyber_attacks",
-      "one_liner": "Cyber Attacks: single report, unconfirmed.",
-      "tags": [
-        "android",
-        "incident",
-        "malware",
-        "markets",
-        "research",
-        "threat-intel",
-        "tool"
-      ],
-      "summary": "A supply-chain attack targeting Android-based car head units is using a legitimate device-update app to spread malware that enlists compromised devices in a proxy botnet or uses them for ad fraud. Kaspersky researchers analyzed the malware and attributed the operation to the MoYu group, a threat actor previously associated with the BadBox malware botnet. The researchers note that this is the first documented case of a malware infection chain specifically created for the targ…",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "A supply-chain attack targeting Android-based car head units is using a legitimate device-update app to spread malware that enlists compromised devices in a proxy botnet or uses them for ad fraud.",
-          "support_span": "A supply-chain attack targeting Android-based car head units is using a legitimate device-update app to spread malware that enlists compromised devices in a proxy botnet or uses them for ad fraud.",
-          "status": "entailed"
-        },
-        {
-          "text": "Kaspersky researchers analyzed the malware and attributed the operation to the MoYu group, a threat actor previously associated with the BadBox malware botnet.",
-          "support_span": "Kaspersky researchers analyzed the malware and attributed the operation to the MoYu group, a threat actor previously associated with the BadBox malware botnet.",
-          "status": "entailed"
-        },
-        {
-          "text": "The researchers note that this is the first documented case of a malware infection chain specifically created for the targeted car head unit.",
-          "support_span": "The researchers note that this is the first documented case of a malware infection chain specifically created for the targeted car head unit.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 12,
-      "corroboration": 1,
-      "blend": 19.1,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "single_source",
-      "sources": [
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/hackers-infect-android-car-head-units-with-proxy-botnet-malware/",
-          "domain": "bleepingcomputer.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-22T14:14:24+00:00",
-      "trace": [
-        "tier B (+25)",
-        "only one independent outlet — flagged, not hidden",
-        "summary: heuristic extractive (no LLM configured)",
+        "LLM batch failed — extractive fallback",
         "blend 19 = trust 25 / interest 12 / corrob 25",
         "claims entailed 3/3 (100%)"
       ],

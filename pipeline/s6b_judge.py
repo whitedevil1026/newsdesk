@@ -145,7 +145,7 @@ def run(items: list[Item], bodies: dict[str, str]) -> list[Item]:
             results = llm_gemini.raw_json(
                 tier.model, key, JUDGE_SYSTEM, prompt, JUDGE_SCHEMA)
         except llm_gemini.RateLimited as exc:
-            budget.block(tier, str(exc)[:80])
+            budget.block(tier, str(exc)[:80], persist=True)
             continue
         except llm_gemini.GeminiError as exc:
             # A failed judge must never reject anything. Unjudged is the safe

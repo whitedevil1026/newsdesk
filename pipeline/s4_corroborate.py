@@ -95,7 +95,10 @@ def _best_date(cluster: Cluster) -> datetime | None:
 def run(clusters: list[Cluster]) -> list[Item]:
     cfg = settings()
     tcfg, pcfg = cfg["trust"], cfg["priority"]
-    cutoff = now_utc() - timedelta(hours=cfg["window"]["lookback_hours"])
+    # Must mirror the harvest windows exactly, or the stale-drop below throws
+    # away everything the wider category windows just admitted.
+    from .s1_harvest import window_for
+    cutoffs = {}
 
     items: list[Item] = []
     rejected = 0
@@ -118,6 +121,10 @@ def run(clusters: list[Cluster]) -> list[Item]:
         )
 
         # --- hard gate: recycled or out-of-window content ------------------
+        if lead.category not in cutoffs:
+            cutoffs[lead.category] = now_utc() - timedelta(
+                hours=window_for(lead.category, cfg))
+        cutoff = cutoffs[lead.category]
         if tcfg["hard_drop"]["outside_window"] and published and published < cutoff:
             item.verdict = Verdict.REJECTED
             item.reject_reason = f"published {published.date()} — outside lookback window"
@@ -140,14 +147,21 @@ def run(clusters: list[Cluster]) -> list[Item]:
 
         item.trust_score = max(0, min(100, score))
 
-        # --- verdict ---------------------------------------------------------
-        if item.trust_score >= tcfg["verdict"]["verified"]:
+        # --- verdict: rules over the real signals, not a score threshold ----
+        if primaries or outlets >= 3:
             item.verdict = Verdict.VERIFIED
-        elif item.trust_score >= tcfg["verdict"]["reported"] and outlets > 1:
-            item.verdict = Verdict.REPORTED
+            item.note("verified: "
+                      + ("primary source artifact" if primaries
+                         else f"{outlets} independent outlets"))
+        elif outlets >= 2:
+            item.verdict = Verdict.CORROBORATED
+            item.note(f"corroborated by {outlets} independent outlets")
+        elif lead.tier in ("A", "B"):
+            item.verdict = Verdict.ESTABLISHED
+            item.note(f"single outlet, established publication (tier {lead.tier})")
         else:
-            item.verdict = Verdict.SINGLE_SOURCE
-            item.note("only one independent outlet — flagged, not hidden")
+            item.verdict = Verdict.UNVERIFIED
+            item.note(f"single tier-{lead.tier} source — treat with caution")
 
         # --- priority ---------------------------------------------------------
         item.interest_score = _interest_score(cl, cfg["interest"])

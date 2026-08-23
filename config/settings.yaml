@@ -2,13 +2,31 @@
 # so tuning behaviour never means editing code.
 
 window:
-  lookback_hours: 48        # how far back a "batch" reaches
+  lookback_hours: 48        # default, and the floor for fast-moving categories
   max_items_published: 40   # cap on cards written to the site
+
+  # PER-CATEGORY WINDOWS. One window for everything was the single biggest
+  # content bug in this project: on a live harvest, 21 of 43 feeds returned
+  # nothing in 48h — not because they were broken (all were probed and work)
+  # but because security and research blogs publish WEEKLY while news wires
+  # publish 60 items a day.
+  #
+  # The result was a dashboard that was ~90% general news and almost none of
+  # the releases, attacks and tools it is supposed to be about. Krebs,
+  # Schneier, Trail of Bits, PortSwigger, Talos and Elastic Security Labs all
+  # had zero items in 48h.
+  #
+  # Freshness should match how fast a field actually moves.
+  per_category_hours:
+    india_world:   48       # high volume, staleness is obvious
+    markets:       48
+    cyber_attacks: 96       # an exploited CVE stays relevant for days
+    cyber_tools:   168      # a tool released Tuesday still matters Friday
+    tech_ai:       120      # release cycles are weekly, not hourly
 
   # Per-category floor/ceiling so one prolific feed cannot own the page.
   # Without this a single high-volume wire filled 39 of 40 slots on a live run.
   per_category_max: 12
-  per_category_min: 3
 
 dedupe:
   # A dashboard shows a rolling window, so an article seen in an earlier run
@@ -72,9 +90,19 @@ bluesky:
 
 cluster:
   # Overlap coefficient (shared tokens / shorter headline), NOT Jaccard.
-  # Calibrated on a live 363-article harvest: 0.55 + 3 shared tokens
-  # recovered every genuine cross-outlet pair with zero false positives.
-  title_similarity: 0.55
+  #
+  # RECALIBRATED 2026-08-24 against a 427-article harvest. The original 0.55
+  # was set on a general-news mix where the only pairs present happened to
+  # score high; the real distribution has a dense band at 0.42-0.54 that was
+  # being thrown away — TikTok/DOJ settlement (0.50), Guinea landfill (0.50),
+  # Swedish school attack (0.43), robot 100m record (0.44) all sat below it.
+  #
+  # The clean separator is SHARED TOKEN COUNT, not the ratio: every genuine
+  # pair in that band shared >=3 content words, and every false positive
+  # ("US-Iran crude oil" vs "Nigeria cash in on Iran war") shared exactly 2.
+  # Lowering the ratio while holding the floor at 3 nearly doubles
+  # corroboration without admitting a single bad merge.
+  title_similarity: 0.42
   min_shared_tokens: 3
   min_title_tokens: 4
 
@@ -84,13 +112,14 @@ trust:
   outlet_points: 12         # per additional independent outlet, capped below
   outlet_cap:    36
   primary_source_bonus: 30  # story traces to an official artifact
-  # Verdict thresholds against the final score
-  verdict:
-    verified:   65
-    reported:   40
-    # below `reported` -> single_source
+  # NOTE: verdicts are no longer threshold-based. They are rules over the
+  # signals themselves (primary anchor / outlet count / source tier), because
+  # a score threshold of 65 was unreachable for this feed mix and put 96% of
+  # items on one label. trust_score is still computed and shown, but it
+  # informs ranking, not the badge. See Verdict in pipeline/models.py.
   hard_drop:
-    blocklisted_domain: true
+    # blocklisted domains are dropped unconditionally in stage 2, before
+    # anything is scored — there is no meaningful "score it anyway" mode.
     outside_window: true
     contradicted_claim: true
 
@@ -233,6 +262,12 @@ judge:
   prefer_cheap_model: true  # independence and volume matter more than prose
 
 verify:
-  enabled: false            # flips on at Step 4
-  nli_model: "cross-encoder/nli-deberta-v3-base"
-  min_entailed_ratio: 0.7
+  # Stage 6 is the cheap, deterministic half of validation: it checks that
+  # each claim's supporting quote actually appears in the article, which
+  # catches a model inventing its own evidence.
+  #
+  # The semantic half — "the quote is real but the claim misreads it" — is
+  # handled by the cross-model judge in stage 6b, not by a local NLI model.
+  # A 400MB entailment model was planned here and dropped: the judge does the
+  # same job using quota that is already free.
+  min_entailed_ratio: 0.7   # below this, an item cannot hold CRITICAL

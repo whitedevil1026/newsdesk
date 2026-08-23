@@ -72,7 +72,10 @@ def run(items: list[Item], dry_run: bool = False) -> dict:
             "critical": sum(1 for i in live if i.priority is Priority.CRITICAL),
             "important": sum(1 for i in live if i.priority is Priority.IMPORTANT),
             "verified": sum(1 for i in live if i.verdict is Verdict.VERIFIED),
-            "single_source": sum(1 for i in live if i.verdict is Verdict.SINGLE_SOURCE),
+            "corroborated": sum(1 for i in live if i.verdict is Verdict.CORROBORATED),
+            "established": sum(1 for i in live if i.verdict is Verdict.ESTABLISHED),
+            "unverified": sum(1 for i in live if i.verdict is Verdict.UNVERIFIED),
+            "disputed": sum(1 for i in live if i.verdict is Verdict.DISPUTED),
         },
         "items": [i.to_json() for i in live],
     }

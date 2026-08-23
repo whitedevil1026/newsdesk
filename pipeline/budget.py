@@ -92,10 +92,18 @@ class Budget:
 
         self._data = _load()
         day = self._data.get(_today(), {})
-        self.tiers: list[ModelBudget] = [
-            ModelBudget(spec, day.get(spec["model"], 0), reserve)
-            for spec in cfg["tiers"]
-        ]
+        blocked_today = set(day.get("_blocked", []))
+        self.tiers = []
+        for spec in cfg["tiers"]:
+            tier = ModelBudget(spec, day.get(spec["model"], 0), reserve)
+            if tier.model in blocked_today:
+                # Refused by the provider earlier today. Retrying costs four
+                # attempts with exponential backoff before failing the same way.
+                tier.blocked = "quota refused earlier today"
+            self.tiers.append(tier)
+        if blocked_today:
+            log("budget", f"skipping {len(blocked_today)} model(s) already "
+                          f"refused today: {', '.join(sorted(blocked_today))}")
         self._last_call: dict[str, float] = {}
         self.stopped_reason: str = ""
 
@@ -138,15 +146,31 @@ class Budget:
         self._last_call[tier.model] = time.monotonic()
 
         day = self._data.setdefault(_today(), {})
-        day[tier.model] = tier.used_today
+        day[tier.model] = tier.used_today          # "_blocked" key is preserved
         for old in sorted(self._data)[:-14]:       # keep a fortnight
             self._data.pop(old, None)
         USAGE_PATH.write_text(json.dumps(self._data, indent=2), encoding="utf-8")
 
-    def block(self, tier: ModelBudget, why: str) -> None:
-        """Provider refused this model; fall through to the next tier."""
+    def block(self, tier: ModelBudget, why: str, persist: bool = False) -> None:
+        """Stop using this model; fall through to the next tier.
+
+        `persist` writes the block into the day's usage file. Reserve it for
+        quota refusals (429), which last until the quota resets, and never
+        use it for transient failures (503 overload), which do not.
+
+        This matters because the local counter is only a self-limit: it
+        cannot see calls made before it existed, or by anything else sharing
+        the key. On a live run gemini-3.6-flash returned 429 after just 4
+        recorded calls, because ~16 earlier calls were invisible to it. The
+        provider's refusal is authoritative; the counter is a guess.
+        """
         tier.blocked = why
         log("budget", f"! {tier.model} blocked: {why}")
+        if persist:
+            day = self._data.setdefault(_today(), {})
+            day.setdefault("_blocked", []).append(tier.model)
+            USAGE_PATH.write_text(json.dumps(self._data, indent=2), encoding="utf-8")
+            log("budget", f"  {tier.model} stays blocked for the rest of the UTC day")
 
     # --- reporting -------------------------------------------------------
 

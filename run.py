@@ -46,8 +46,9 @@ BADGE = {
 }
 MARK = {
     Verdict.VERIFIED:      "\033[92mVERIFIED\033[0m",
-    Verdict.REPORTED:      "reported",
-    Verdict.SINGLE_SOURCE: "\033[93msingle-source\033[0m",
+    Verdict.CORROBORATED:  "\033[96mcorroborated\033[0m",
+    Verdict.ESTABLISHED:   "established",
+    Verdict.UNVERIFIED:    "\033[93munverified\033[0m",
     Verdict.DISPUTED:      "\033[95mDISPUTED\033[0m",
     Verdict.REJECTED:      "\033[91mREJECTED\033[0m",
 }
@@ -126,7 +127,8 @@ def render(payload: dict) -> None:
     banner(f"NEWSDESK  ·  {payload['generated_at'][:16].replace('T', ' ')} UTC  ·  "
            f"{payload['window_hours']}h window")
     print(f"  {c['published']} published   {c['critical']} critical   "
-          f"{c['verified']} verified   {c['single_source']} single-source   "
+          f"{c['verified']} verified   {c['corroborated']} corroborated   "
+          f"{c['unverified']} unverified   "
           f"{c['rejected']} rejected\n")
 
     # Items arrive ranked by priority, so grouping on a change of category

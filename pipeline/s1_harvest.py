@@ -49,6 +49,13 @@ def _fetch_bytes(url: str, cfg: dict) -> bytes:
         return resp.read()
 
 
+def window_for(category: str, cfg: dict) -> int:
+    """Lookback for one category. See the note in settings.yaml — a single
+    window starved every weekly-publishing source in the security sections."""
+    per = cfg["window"].get("per_category_hours", {})
+    return per.get(category, cfg["window"]["lookback_hours"])
+
+
 def _fetch_one(category: str, spec: dict, cutoff: datetime, cfg: dict) -> list[Article]:
     parsed = feedparser.parse(_fetch_bytes(spec["url"], cfg))
     if getattr(parsed, "bozo", 0) and not parsed.entries:
@@ -85,15 +92,21 @@ def _fetch_one(category: str, spec: dict, cutoff: datetime, cfg: dict) -> list[A
 
 def run() -> list[Article]:
     cfg = settings()
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=cfg["window"]["lookback_hours"])
+    now = datetime.now(timezone.utc)
     registry = feeds()
 
     jobs = [(cat, spec) for cat, specs in registry.items() for spec in specs]
-    log("harvest", f"{len(jobs)} feeds, window = {cfg['window']['lookback_hours']}h")
+    windows = {cat: window_for(cat, cfg) for cat in registry}
+    log("harvest", f"{len(jobs)} feeds, windows " +
+        ", ".join(f"{c}={h}h" for c, h in windows.items()))
 
     articles: list[Article] = []
     with ThreadPoolExecutor(max_workers=12) as pool:
-        futures = {pool.submit(_fetch_one, c, s, cutoff, cfg): s for c, s in jobs}
+        futures = {
+            pool.submit(_fetch_one, c, s,
+                        now - timedelta(hours=windows[c]), cfg): s
+            for c, s in jobs
+        }
         for fut in as_completed(futures):
             try:
                 articles.extend(fut.result())

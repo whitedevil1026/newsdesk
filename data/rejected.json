@@ -1,4 +1,1384 @@
 {
-  "generated_at": "2026-08-23T19:58:44.442765+00:00",
-  "items": []
+  "generated_at": "2026-08-23T20:24:31.601195+00:00",
+  "items": [
+    {
+      "cluster_key": "73853ada04cdc66b",
+      "title": "amitshekhariitbhu/llm-inference-engineering — Learn LLM Inference Engineering step by step - from KV cache, PagedAttention, and continuous batching to vLLM,",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "ai",
+        "hardware",
+        "howto",
+        "llm",
+        "opensource"
+      ],
+      "summary": "Learn LLM Inference Engineering step by step - from KV cache, PagedAttention, and continuous batching to vLLM, SGLang, and GPUs. Prepared and maintained by the Founder of Outcome School: Amit Shekhar Note: This series will continue to grow as I write more blogs and create more videos on new topics. Everything in inference optimization builds on one fact: an LLM generates text one token at a time.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Learn LLM Inference Engineering step by step - from KV cache, PagedAttention, and continuous batching to vLLM, SGLang, and GPUs.",
+          "support_span": "Learn LLM Inference Engineering step by step - from KV cache, PagedAttention, and continuous batching to vLLM, SGLang, and GPUs.",
+          "status": "entailed"
+        },
+        {
+          "text": "Prepared and maintained by the Founder of Outcome School: Amit Shekhar\nNote: This series will continue to grow as I write more blogs and create more videos on new topics.",
+          "support_span": "Prepared and maintained by the Founder of Outcome School: Amit Shekhar\nNote: This series will continue to grow as I write more blogs and create more videos on new topics.",
+          "status": "entailed"
+        },
+        {
+          "text": "Everything in inference optimization builds on one fact: an LLM generates text one token at a time.",
+          "support_span": "Everything in inference optimization builds on one fact: an LLM generates text one token at a time.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/amitshekhariitbhu/llm-inference-engineering",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-18T03:10:26+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-18 — outside lookback window"
+    },
+    {
+      "cluster_key": "615d0de0adfa88b5",
+      "title": "sevensir888/codex-command-center — A local desktop control center for organizing Codex projects, engineering tasks, sessions, Git changes, Skills",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "opensource",
+        "privacy",
+        "tool",
+        "windows"
+      ],
+      "summary": "Turn Codex sessions into organized engineering work. Codex Command Center is a Windows-first, local-first desktop workspace for organizing Codex-based engineering work across projects, tasks, sessions, Git changes, Skills, and MCP configuration. Codex does the reasoning, editing, commands, and tests.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Turn Codex sessions into organized engineering work.",
+          "support_span": "Turn Codex sessions into organized engineering work.",
+          "status": "entailed"
+        },
+        {
+          "text": "Codex Command Center is a Windows-first, local-first desktop workspace for organizing Codex-based engineering work across projects, tasks, sessions, Git changes, Skills, and MCP configuration.",
+          "support_span": "Codex Command Center is a Windows-first, local-first desktop workspace for organizing Codex-based engineering work across projects, tasks, sessions, Git changes, Skills, and MCP configuration.",
+          "status": "entailed"
+        },
+        {
+          "text": "Codex does the reasoning, editing, commands, and tests.",
+          "support_span": "Codex does the reasoning, editing, commands, and tests.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/sevensir888/codex-command-center",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-17T16:45:32+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-17 — outside lookback window"
+    },
+    {
+      "cluster_key": "62627d1f7f6715f4",
+      "title": "KBT096/windows-secure-toolkit — Local Windows security auditing and reversible hardening with a C#/.NET Framework 4.8 core and CMD/BAT entry p",
+      "category": "cyber_tools",
+      "one_liner": "Cyber Tools: single report, unconfirmed.",
+      "tags": [
+        "blueteam",
+        "opensource",
+        "release",
+        "tool",
+        "windows"
+      ],
+      "summary": "Windows 的安全设置有点像家里的电箱：平时没人想看，真出问题又希望它有记录。 当前版本：1.3.1。 这个小工具从 CMD/BAT 进去，用 C# 做检查、预览、备份和恢复。它不负责把电脑变成“绝对安全”，只负责把常见的几件事做得清楚一点。 - 只读审计：防火墙、Defender、UAC、SMBv1、Guest、RDP/NLA、AutoRun、更新服务和待重启状态； - 生成 Markdown 和 JSON 报告； - 预览一套保守基线，确认以后才应用； - 应用前保存清单、SHA-256 和防火墙策略； - 在同一台电脑上校验后恢复备份； - 只读列出本机备份目录，并显示清单和 SHA-256 状态； - Defender 快速扫描、DISM/SFC 只读检查、TCP 监听端口查看； - 本机兼容性诊断：平台、.NET Framework、WMI 和原生命令能力，支持 JSON 输出； - 只查询 GitHub Release 版本，不下载脚本，更不会下载完就“相信它”。 - 入站端口、RDP 和管理员账户由用户明确决定，工具不会代为开…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Windows 的安全设置有点像家里的电箱：平时没人想看，真出问题又希望它有记录。\n当前版本：1.3.1。\n这个小工具从 CMD/BAT 进去，用 C# 做检查、预览、备份和恢复。它不负责把电脑变成“绝对安全”，只负责把常见的几件事做得清楚一点。\n- 只读审计：防火墙、Defender、UAC、SMBv1、Guest、RDP/NLA、AutoRun、更新服务和待重启状态；\n- 生成 Markdown 和 JSON 报告；\n- 预览一套保守基线，确认以后才应用；\n- 应用前保存清单、SHA-256 和防火墙策略；\n- 在同一台电脑上校验后恢复备份；\n- 只读列出本机备份目录，并显示清单和 SHA-256 状态；\n- Defender 快速扫描、DISM/SFC 只读检查、TCP 监听端口查看；\n- 本机兼容性诊断：平台、.NET Framework、WMI 和原生命令能力，支持 JSON 输出；\n- 只查询 GitHub Release 版本，不下载脚本，更不会下载完就“相信它”。\n- 入站端口、RDP 和管理员账户由用户明确决定，工具不会代为开放或创建；\n- 系统重启与 DISM/SFC 修复由用户决定，工具只执行检查和验证；\n- 审计结果、用户名、IP 和其他本机数据只保存在本地，不上传；\n- 组织策略、MDM 和安全产品保留对系统设置的控制权；\n- 静态检查结果按验证范围标注，不替代所有 Windows 版本的实机验证。\n如果电脑由公司策略管理，本地设置可能在策略刷新后恢复；请以组织策略和后续审计结果为准。\n支持 Windows 10/11 和 Windows Server 2019/2022/2025。运行已编译版本只需要 .NET Framework 4.8；从源码构建需要 .NET 6 SDK 或更高版本。\n不需要安装 SDK 时，可以从 v1.3.1 Release 下载 windows-secure-toolkit-v1.3.1-win-x64.zip，解压后进入目录。\n从源码运行时，在项目目录打开 CMD：\nbuild.cmd\nwin_secure.cmd self-test\nself-test 只检查程序和清单处理，不修改系统设置。\n第一次使用先完成只读检查。下面的命令不会应用安全基线：\nwin_secure.cmd doctor\nwin_secure.cmd audit\nwin_secure.cmd plan\ndoctor 检查系统兼容性，audit 生成 Markdown 和 JSON 报告，plan 显示将要处理的项目和可能的影响。\n阅读计划并确认影响范围后，以管理员身份打开 CMD，再运行：\nwin_secure.cmd apply\n应用前会先创建备份并再次请求确认。程序不会自动开放入站端口、启用 RDP 或创建管理员账户。\n先查看备份目录和清单状态：\nwin_secure.cmd backups\n恢复操作需要管理员权限，并会校验备份清单、计算机名称和 SHA-256：\nwin_secure.cmd restore \"C:\\ProgramData\\WindowsSecureToolkit\\Backups\\20260818-120000\"\nwin_secure.bat 是兼容入口，功能和 .cmd 相同。\n- src/WinSecure.cs ：核心实现；\n- src/WindowsSecureToolkit.csproj ：.NET Framework 4.8 项目文件；\n- build.cmd ：构建核心程序；\n- win_secure.cmd /win_secure.bat ：用户入口；\n- scripts/Test-Repository.cmd ：构建、入口和报告烟雾测试；\n- docs/THREAT_MODEL.md ：边界和威胁模型。\n- docs/WINDOWS_VALIDATION.md ：诊断命令与 Windows 验证矩阵。\n本机 Windows 11 专业工作站版 build 26200 已验证：C# 构建、CMD/BAT 启动、版本、自检、审计、计划、报告生成、端口查看和 Release 检查。公开 GitHub Actions 也会在 Windows runner 上构建并运行烟雾测试。\ndoctor 是只读能力探测，不会因为缺少可选组件就修改系统；doctor --json 输出带 SchemaVersion 的机器可读结果，适合在收集日志前先确认环境。不同 Windows 版本、组织策略和第三方防护软件可能使某些项目显示为 Unavailable，这代表需要人工复核，不代表工具已经替你修复。\n实际修改系统的 Apply/Restore 流程没有在维护者机器上执行，因此发布说明不会把它写成已经覆盖所有环境。请先看计划并保留备份。\n- 普通问题请使用 Issues；\n- 可能暴露系统数据的问题请按照 SECURITY.md 私下报告；\n- 提交代码前请阅读 CONTRIBUTING.md。\n当前维护者：@KBT096。\n本项目自身代码遵循 MIT License 协议发布。构建目标使用 .NET Framework 4.8；运行时调用 netsh、dism、sfc、netstat、WMI 和 Microsoft Defender 等 Windows 系统组件，相关组件的授权和使用条件以 Microsoft Windows 许可条款为准。CI 使用 GitHub Actions 与固定提交的 actions/checkout，仅用于仓库验证，不随工具运行。本仓库不捆绑 YABS、NextTrace 或其他 VPS 探针组件。\n本项目采用 MIT License。外部诊断工具仍分别受其上游许可证约束。",
+          "support_span": "Windows 的安全设置有点像家里的电箱：平时没人想看，真出问题又希望它有记录。\n当前版本：1.3.1。\n这个小工具从 CMD/BAT 进去，用 C# 做检查、预览、备份和恢复。它不负责把电脑变成“绝对安全”，只负责把常见的几件事做得清楚一点。\n- 只读审计：防火墙、Defender、UAC、SMBv1、Guest、RDP/NLA、AutoRun、更新服务和待重启状态；\n- 生成 Markdown 和 JSON 报告；\n- 预览一套保守基线，确认以后才应用；\n- 应用前保存清单、SHA-256 和防火墙策略；\n- 在同一台电脑上校验后恢复备份；\n- 只读列出本机备份目录，并显示清单和 SHA-256 状态；\n- Defender 快速扫描、DISM/SFC 只读检查、TCP 监听端口查看；\n- 本机兼容性诊断：平台、.NET Framework、WMI 和原生命令能力，支持 JSON 输出；\n- 只查询 GitHub Release 版本，不下载脚本，更不会下载完就“相信它”。\n- 入站端口、RDP 和管理员账户由用户明确决定，工具不会代为开放或创建；\n- 系统重启与 DISM/SFC 修复由用户决定，工具只执行检查和验证；\n- 审计结果、用户名、IP 和其他本机数据只保存在本地，不上传；\n- 组织策略、MDM 和安全产品保留对系统设置的控制权；\n- 静态检查结果按验证范围标注，不替代所有 Windows 版本的实机验证。\n如果电脑由公司策略管理，本地设置可能在策略刷新后恢复；请以组织策略和后续审计结果为准。\n支持 Windows 10/11 和 Windows Server 2019/2022/2025。运行已编译版本只需要 .NET Framework 4.8；从源码构建需要 .NET 6 SDK 或更高版本。\n不需要安装 SDK 时，可以从 v1.3.1 Release 下载 windows-secure-toolkit-v1.3.1-win-x64.zip，解压后进入目录。\n从源码运行时，在项目目录打开 CMD：\nbuild.cmd\nwin_secure.cmd self-test\nself-test 只检查程序和清单处理，不修改系统设置。\n第一次使用先完成只读检查。下面的命令不会应用安全基线：\nwin_secure.cmd doctor\nwin_secure.cmd audit\nwin_secure.cmd plan\ndoctor 检查系统兼容性，audit 生成 Markdown 和 JSON 报告，plan 显示将要处理的项目和可能的影响。\n阅读计划并确认影响范围后，以管理员身份打开 CMD，再运行：\nwin_secure.cmd apply\n应用前会先创建备份并再次请求确认。程序不会自动开放入站端口、启用 RDP 或创建管理员账户。\n先查看备份目录和清单状态：\nwin_secure.cmd backups\n恢复操作需要管理员权限，并会校验备份清单、计算机名称和 SHA-256：\nwin_secure.cmd restore \"C:\\ProgramData\\WindowsSecureToolkit\\Backups\\20260818-120000\"\nwin_secure.bat 是兼容入口，功能和 .cmd 相同。\n- src/WinSecure.cs ：核心实现；\n- src/WindowsSecureToolkit.csproj ：.NET Framework 4.8 项目文件；\n- build.cmd ：构建核心程序；\n- win_secure.cmd /win_secure.bat ：用户入口；\n- scripts/Test-Repository.cmd ：构建、入口和报告烟雾测试；\n- docs/THREAT_MODEL.md ：边界和威胁模型。\n- docs/WINDOWS_VALIDATION.md ：诊断命令与 Windows 验证矩阵。\n本机 Windows 11 专业工作站版 build 26200 已验证：C# 构建、CMD/BAT 启动、版本、自检、审计、计划、报告生成、端口查看和 Release 检查。公开 GitHub Actions 也会在 Windows runner 上构建并运行烟雾测试。\ndoctor 是只读能力探测，不会因为缺少可选组件就修改系统；doctor --json 输出带 SchemaVersion 的机器可读结果，适合在收集日志前先确认环境。不同 Windows 版本、组织策略和第三方防护软件可能使某些项目显示为 Unavailable，这代表需要人工复核，不代表工具已经替你修复。\n实际修改系统的 Apply/Restore 流程没有在维护者机器上执行，因此发布说明不会把它写成已经覆盖所有环境。请先看计划并保留备份。\n- 普通问题请使用 Issues；\n- 可能暴露系统数据的问题请按照 SECURITY.md 私下报告；\n- 提交代码前请阅读 CONTRIBUTING.md。\n当前维护者：@KBT096。\n本项目自身代码遵循 MIT License 协议发布。构建目标使用 .NET Framework 4.8；运行时调用 netsh、dism、sfc、netstat、WMI 和 Microsoft Defender 等 Windows 系统组件，相关组件的授权和使用条件以 Microsoft Windows 许可条款为准。CI 使用 GitHub Actions 与固定提交的 actions/checkout，仅用于仓库验证，不随工具运行。本仓库不捆绑 YABS、NextTrace 或其他 VPS 探针组件。\n本项目采用 MIT License。外部诊断工具仍分别受其上游许可证约束。",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/KBT096/windows-secure-toolkit",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-18T20:01:50+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-18 — outside lookback window"
+    },
+    {
+      "cluster_key": "f7cc15009ac94022",
+      "title": "squall01337/mixamo-llm-mocap — Turn any video into a Mixamo-rig animation - GVHMR estimator, spec-driven retarget, FK apply in Blender via MC",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "exploit",
+        "incident",
+        "llm",
+        "opensource",
+        "tool",
+        "windows"
+      ],
+      "summary": "Turn any locked-camera video — filmed or AI-generated — into a clean FK animation on any Mixamo character. One performer, or two fighting each other. No mocap suit, no manual keyframing, and every stage scriptable enough that an AI agent can run the whole loop.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Turn any locked-camera video — filmed or AI-generated — into a clean FK animation on any Mixamo character.",
+          "support_span": "Turn any locked-camera video — filmed or AI-generated — into a clean FK animation on any Mixamo character.",
+          "status": "entailed"
+        },
+        {
+          "text": "One performer, or two fighting each other.",
+          "support_span": "One performer, or two fighting each other.",
+          "status": "entailed"
+        },
+        {
+          "text": "No mocap suit, no manual keyframing, and every stage scriptable enough that an AI agent can run the whole loop.",
+          "support_span": "No mocap suit, no manual keyframing, and every stage scriptable enough that an AI agent can run the whole loop.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/squall01337/mixamo-llm-mocap",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-17T21:05:02+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-17 — outside lookback window"
+    },
+    {
+      "cluster_key": "2698a06b54f649e0",
+      "title": "zorost/AI-Engineering-Lab — A free, self-paced 24-week AI engineering course: Python, machine learning, LLMs, RAG, fine-tuning, agents and",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "blueteam",
+        "cloud",
+        "dfir",
+        "hardware",
+        "llm",
+        "markets"
+      ],
+      "summary": "Start here · Browse all 24 weeks · Curriculum · Reference · Glossary · Roadmap Developed by Zorost Intelligence AI Lab · Washington, DC · zorost.com/ai-engineering-lab git clone https://github.com/zorost/AI-Engineering-Lab.git cd AI-Engineering-Lab python -m pip install -r requirements.txt - New to programming or to AI? It names the tools, the order, and what to do when something breaks. It sets up your machine and generates the dataset every later week reuses.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Start here · Browse all 24 weeks · Curriculum · Reference · Glossary · Roadmap\nDeveloped by Zorost Intelligence AI Lab · Washington, DC · zorost.com/ai-engineering-lab\ngit clone https://github.com/zorost/AI-Engineering-Lab.git\ncd AI-Engineering-Lab\npython -m pip install -r requirements.txt\n- New to programming or to AI?",
+          "support_span": "Start here · Browse all 24 weeks · Curriculum · Reference · Glossary · Roadmap\nDeveloped by Zorost Intelligence AI Lab · Washington, DC · zorost.com/ai-engineering-lab\ngit clone https://github.com/zorost/AI-Engineering-Lab.git\ncd AI-Engineering-Lab\npython -m pip install -r requirements.txt\n- New to programming or to AI?",
+          "status": "entailed"
+        },
+        {
+          "text": "It names the tools, the order, and what to do when something breaks.",
+          "support_span": "It names the tools, the order, and what to do when something breaks.",
+          "status": "entailed"
+        },
+        {
+          "text": "It sets up your machine and\ngenerates the dataset every later week reuses.",
+          "support_span": "It sets up your machine and\ngenerates the dataset every later week reuses.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/zorost/AI-Engineering-Lab",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-17T16:34:05+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-17 — outside lookback window"
+    },
+    {
+      "cluster_key": "444eee48c15777dc",
+      "title": "sanjarbiy/bugbountyrules — Behavioral-discipline skill turning an AI agent into a methodical, non-robotic bug-bounty & pentest hunter - 4",
+      "category": "cyber_tools",
+      "one_liner": "Cyber Tools: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "llm",
+        "markets",
+        "opensource",
+        "redteam",
+        "tool",
+        "vulnerability"
+      ],
+      "summary": "A behavioral-discipline skill for authorized bug bounty & penetration testing. It turns an AI agent into a methodical, persistent, non-robotic hunter - enforcing scope, generating attack vectors autonomously, holding evidence discipline, and chaining across the full web / API / mobile / cloud / LLM attack surface. For bug bounty programs you are enrolled in, penetration tests you are contracted for, CTFs, and your own systems.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "A behavioral-discipline skill for authorized bug bounty & penetration testing.",
+          "support_span": "A behavioral-discipline skill for authorized bug bounty & penetration testing.",
+          "status": "entailed"
+        },
+        {
+          "text": "It turns an AI agent into a methodical, persistent, non-robotic hunter - enforcing scope, generating attack vectors autonomously, holding evidence discipline, and chaining across the full web / API / mobile / cloud / LLM attack surface.",
+          "support_span": "It turns an AI agent into a methodical, persistent, non-robotic hunter - enforcing scope, generating attack vectors autonomously, holding evidence discipline, and chaining across the full web / API / mobile / cloud / LLM attack surface.",
+          "status": "entailed"
+        },
+        {
+          "text": "For bug bounty programs you are enrolled in, penetration tests you are contracted for, CTFs, and your own systems.",
+          "support_span": "For bug bounty programs you are enrolled in, penetration tests you are contracted for, CTFs, and your own systems.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/sanjarbiy/bugbountyrules",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-17T18:15:38+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-17 — outside lookback window"
+    },
+    {
+      "cluster_key": "4410315a77d9ba67",
+      "title": "projectdiscovery/httpx — httpx is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp lib",
+      "category": "cyber_tools",
+      "one_liner": "Cyber Tools: single report, unconfirmed.",
+      "tags": [
+        "opensource",
+        "threat-intel",
+        "tool"
+      ],
+      "summary": "Features • Installation • Usage • Documentation • Notes • Join Discord httpx is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library. It is designed to maintain result reliability with an increased number of threads. - Simple and modular code base making it easy to contribute.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Features • Installation • Usage • Documentation • Notes • Join Discord\nhttpx is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library.",
+          "support_span": "Features • Installation • Usage • Documentation • Notes • Join Discord\nhttpx is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library.",
+          "status": "entailed"
+        },
+        {
+          "text": "It is designed to maintain result reliability with an increased number of threads.",
+          "support_span": "It is designed to maintain result reliability with an increased number of threads.",
+          "status": "entailed"
+        },
+        {
+          "text": "- Simple and modular code base making it easy to contribute.",
+          "support_span": "- Simple and modular code base making it easy to contribute.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (updated)",
+          "url": "https://github.com/projectdiscovery/httpx",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-19T10:13:19+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-19 — outside lookback window"
+    },
+    {
+      "cluster_key": "b05af914e2b0ea81",
+      "title": "OpenLabs-so/oa-design — The Open Analytics design language as an agent skill: component recipes with type-checked source, token CSS, a",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "exploit",
+        "howto",
+        "llm",
+        "opensource",
+        "supply-chain",
+        "threat-intel",
+        "tool"
+      ],
+      "summary": "The design language of Open Analytics, packaged three ways: an agent skill, type-checked component recipes, and a CLI. People kept asking how the dashboard looks and moves the way it does; this repository is the answer, in a form an agent can execute. Every hex code, spring constant, radius and easing is lifted from the shipped product, with the reasoning attached.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "The design language of Open Analytics, packaged three ways: an agent skill, type-checked component recipes, and a CLI.",
+          "support_span": "The design language of Open Analytics, packaged three ways: an agent skill, type-checked component recipes, and a CLI.",
+          "status": "entailed"
+        },
+        {
+          "text": "People kept asking how the dashboard looks and moves the way it does; this repository is the answer, in a form an agent can execute.",
+          "support_span": "People kept asking how the dashboard looks and moves the way it does; this repository is the answer, in a form an agent can execute.",
+          "status": "entailed"
+        },
+        {
+          "text": "Every hex code, spring constant, radius and easing is lifted from the shipped product, with the reasoning attached.",
+          "support_span": "Every hex code, spring constant, radius and easing is lifted from the shipped product, with the reasoning attached.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/OpenLabs-so/oa-design",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-20T18:28:10+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-20 — outside lookback window"
+    },
+    {
+      "cluster_key": "51b6eba7b47acd10",
+      "title": "lianghsun/open-sheet — The spreadsheet framework built for agents — write the model as React, export a live .xlsx. The third medium, ",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "appsec",
+        "exploit",
+        "opensource",
+        "policy",
+        "research",
+        "tool"
+      ],
+      "summary": "English · 繁體中文 The spreadsheet framework built for agents. Describe the model you need in natural language — your coding agent writes the React. open-sheet handles the cell addressing, the formula references, the recalculation, and the export.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "English · 繁體中文\nThe spreadsheet framework built for agents.",
+          "support_span": "English · 繁體中文\nThe spreadsheet framework built for agents.",
+          "status": "entailed"
+        },
+        {
+          "text": "Describe the model you need in natural language — your coding agent writes the React.",
+          "support_span": "Describe the model you need in natural language — your coding agent writes the React.",
+          "status": "entailed"
+        },
+        {
+          "text": "open-sheet handles the cell addressing, the formula references, the recalculation, and the export.",
+          "support_span": "open-sheet handles the cell addressing, the formula references, the recalculation, and the export.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/lianghsun/open-sheet",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-18T07:15:17+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-18 — outside lookback window"
+    },
+    {
+      "cluster_key": "7854e21a28fdf43c",
+      "title": "0x4meliorate/Mimic — Frameless Browser‑in‑the‑Browser (BitB) - No iframes, no frame‑busting issues. A single‑script Shadow DOM / Mu",
+      "category": "cyber_tools",
+      "one_liner": "Cyber Tools: single report, unconfirmed.",
+      "tags": [
+        "malware",
+        "opensource",
+        "policy",
+        "release",
+        "tool",
+        "windows"
+      ],
+      "summary": "Frameless Browser‑in‑the‑Browser (BitB) - No iframes, no frame‑busting issues. A single‑script Shadow DOM / MutationObserver library for realistic phishing simulations, easily injected via reverse proxy. ⚠️ Warning: Only use this software according to your current legislation.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Frameless Browser‑in‑the‑Browser (BitB) - No iframes, no frame‑busting issues.",
+          "support_span": "Frameless Browser‑in‑the‑Browser (BitB) - No iframes, no frame‑busting issues.",
+          "status": "entailed"
+        },
+        {
+          "text": "A single‑script Shadow DOM / MutationObserver library for realistic phishing simulations, easily injected via reverse proxy.",
+          "support_span": "A single‑script Shadow DOM / MutationObserver library for realistic phishing simulations, easily injected via reverse proxy.",
+          "status": "entailed"
+        },
+        {
+          "text": "⚠️ Warning: Only use this software according to your current legislation.",
+          "support_span": "⚠️ Warning: Only use this software according to your current legislation.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/0x4meliorate/Mimic",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-20T22:47:50+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-20 — outside lookback window"
+    },
+    {
+      "cluster_key": "0876c9c2b39765c7",
+      "title": "CopilotKit/OpenBot — Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action ",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "exploit",
+        "identity",
+        "opensource",
+        "policy",
+        "release",
+        "threat-intel"
+      ],
+      "summary": "AI coworkers you can hand real work to, and actually trust with the access. Each gets a computer of its own: a real browser with its own logins, its own files, and only the tools you grant. Every action decided before it happens and recorded after.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "AI coworkers you can hand real work to, and actually trust with the access.",
+          "support_span": "AI coworkers you can hand real work to, and actually trust with the access.",
+          "status": "entailed"
+        },
+        {
+          "text": "Each gets a computer of its own: a real browser with its own logins, its own files, and only the tools you grant.",
+          "support_span": "Each gets a computer of its own: a real browser with its own logins, its own files, and only the tools you grant.",
+          "status": "entailed"
+        },
+        {
+          "text": "Every action decided before it happens and recorded after.",
+          "support_span": "Every action decided before it happens and recorded after.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/CopilotKit/OpenBot",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-17T00:44:59+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-17 — outside lookback window"
+    },
+    {
+      "cluster_key": "4158789a4e6f404a",
+      "title": "six2dez/reconftw — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of tools to ",
+      "category": "cyber_tools",
+      "one_liner": "Cyber Tools: single report, unconfirmed.",
+      "tags": [
+        "appsec",
+        "cloud",
+        "exploit",
+        "identity",
+        "opensource",
+        "redteam",
+        "research",
+        "tool"
+      ],
+      "summary": "reconFTW is a powerful automated reconnaissance tool designed for security researchers and penetration testers. It streamlines the process of gathering intelligence on a target by performing subdomain enumeration, vulnerability scanning, OSINT and more. With a modular design, extensive configuration options, and support for distributed scanning via AX Framework, reconFTW is built to deliver comprehensive results efficiently.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "reconFTW is a powerful automated reconnaissance tool designed for security researchers and penetration testers.",
+          "support_span": "reconFTW is a powerful automated reconnaissance tool designed for security researchers and penetration testers.",
+          "status": "entailed"
+        },
+        {
+          "text": "It streamlines the process of gathering intelligence on a target by performing subdomain enumeration, vulnerability scanning, OSINT and more.",
+          "support_span": "It streamlines the process of gathering intelligence on a target by performing subdomain enumeration, vulnerability scanning, OSINT and more.",
+          "status": "entailed"
+        },
+        {
+          "text": "With a modular design, extensive configuration options, and support for distributed scanning via AX Framework, reconFTW is built to deliver comprehensive results efficiently.",
+          "support_span": "With a modular design, extensive configuration options, and support for distributed scanning via AX Framework, reconFTW is built to deliver comprehensive results efficiently.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (updated)",
+          "url": "https://github.com/six2dez/reconftw",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-20T09:01:41+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-20 — outside lookback window"
+    },
+    {
+      "cluster_key": "fd5d5c01f18811a7",
+      "title": "ZSeven-W/dsh-ios — DeepSeek Harness (DSH) plugin: a live iOS Simulator — and a USB-connected iPhone — inside the conversation. 22",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "llm",
+        "opensource",
+        "release",
+        "tool"
+      ],
+      "summary": "A live, interactive iOS Simulator inside a DeepSeek Harness conversation — plus your real iPhone over USB. 22 agent tools • live MJPEG sidebar panel • simulator & real iPhone over USB • list/feed row actions • SwiftUI preview hot reload npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1 English · 简体中文 · 繁體中文 · 日本語 · 한국어 · Français · Español · Deutsch · Português · Русский · हिन्दी · Türkçe · ไทย · Tiếng Việt · Bahasa Indonesia npm: @zsev…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "A live, interactive iOS Simulator inside a DeepSeek Harness conversation — plus your real iPhone over USB.",
+          "support_span": "A live, interactive iOS Simulator inside a DeepSeek Harness conversation — plus your real iPhone over USB.",
+          "status": "entailed"
+        },
+        {
+          "text": "22 agent tools • live MJPEG sidebar panel • simulator & real iPhone over USB • list/feed row actions • SwiftUI preview hot reload\n  npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1\n  English · 简体中文 · 繁體中文 · 日本語 · 한국어 · Français · Español · Deutsch · Português · Русский · हिन्दी · Türkçe · ไทย · Tiếng Việt · Bahasa Indonesia\n  npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1\n  \nA real iPhone driven from inside a DSH conversation — the agent's tool calls on the left, the live device panel on the right\nDSH iOS Simulator gives the agent a real iOS Simulator inside the conversation — and gives you the pixels.",
+          "support_span": "22 agent tools • live MJPEG sidebar panel • simulator & real iPhone over USB • list/feed row actions • SwiftUI preview hot reload\n  npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1\n  English · 简体中文 · 繁體中文 · 日本語 · 한국어 · Français · Español · Deutsch · Português · Русский · हिन्दी · Türkçe · ไทย · Tiếng Việt · Bahasa Indonesia\n  npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1\n  \nA real iPhone driven from inside a DSH conversation — the agent's tool calls on the left, the live device panel on the right\nDSH iOS Simulator gives the agent a real iOS Simulator inside the conversation — and gives you the pixels.",
+          "status": "entailed"
+        },
+        {
+          "text": "The agent can boot a device, build and run an Xcode project or Swift package, drive the UI by accessibility identity or by OCR text, read unified logs, and inspect processes, backtraces, and leaks, while a live stream of the device renders in a persistent sidebar panel where you can tap, drag, rotate, and press Home directly on the video.",
+          "support_span": "The agent can boot a device, build and run an Xcode project or Swift package, drive the UI by accessibility identity or by OCR text, read unified logs, and inspect processes, backtraces, and leaks, while a live stream of the device renders in a persistent sidebar panel where you can tap, drag, rotate, and press Home directly on the video.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/ZSeven-W/dsh-ios",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-19T18:02:50+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-19 — outside lookback window"
+    },
+    {
+      "cluster_key": "bc50b7caef98181b",
+      "title": "1rhino2/fnprint — match functions in binaries by what they do, not what their bytes look like. behavioral function fingerprintin",
+      "category": "cyber_tools",
+      "one_liner": "Cyber Tools: single report, unconfirmed.",
+      "tags": [
+        "dfir",
+        "opensource",
+        "release",
+        "tool",
+        "vulnerability"
+      ],
+      "summary": "fnprint matches functions in binaries by what they do, not by what their bytes or control-flow graphs look like. it runs each function in a tiny emulator with made-up inputs, records the side effects it produces, and hashes that behavior into a fingerprint. two functions that behave the same get similar fingerprints, even if they were built by a different compiler or at a different optimization level.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "fnprint matches functions in binaries by what they do, not by what their bytes or control-flow graphs look like.",
+          "support_span": "fnprint matches functions in binaries by what they do, not by what their bytes or control-flow graphs look like.",
+          "status": "entailed"
+        },
+        {
+          "text": "it runs each function in a tiny emulator with made-up inputs, records the side effects it produces, and hashes that behavior into a fingerprint.",
+          "support_span": "it runs each function in a tiny emulator with made-up inputs, records the side effects it produces, and hashes that behavior into a fingerprint.",
+          "status": "entailed"
+        },
+        {
+          "text": "two functions that behave the same get similar fingerprints, even if they were built by a different compiler or at a different optimization level.",
+          "support_span": "two functions that behave the same get similar fingerprints, even if they were built by a different compiler or at a different optimization level.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/1rhino2/fnprint",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-19T06:22:03+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-19 — outside lookback window"
+    },
+    {
+      "cluster_key": "2ec9fc6e0967147d",
+      "title": "joe960913/Jixu — A durable single-Agent Harness for TypeScript with recoverable Threads, explicit side-effect boundaries, and a",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "linux",
+        "llm",
+        "opensource",
+        "policy",
+        "threat-intel",
+        "tool"
+      ],
+      "summary": "Jixu is a small single-Agent Harness for TypeScript. Recovery, replay, context continuity, and side-effect control stay beneath one direct API. npm install -g jixu-ai jixu Global installation also works with pnpm add -g jixu-ai and bun add -g jixu-ai.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Jixu is a small single-Agent Harness for TypeScript.",
+          "support_span": "Jixu is a small single-Agent Harness for TypeScript.",
+          "status": "entailed"
+        },
+        {
+          "text": "Recovery, replay, context continuity, and side-effect control stay beneath one direct API.",
+          "support_span": "Recovery, replay, context continuity, and side-effect control stay beneath one direct API.",
+          "status": "entailed"
+        },
+        {
+          "text": "npm install -g jixu-ai\njixu\nGlobal installation also works with pnpm add -g jixu-ai and\nbun add -g jixu-ai.",
+          "support_span": "npm install -g jixu-ai\njixu\nGlobal installation also works with pnpm add -g jixu-ai and\nbun add -g jixu-ai.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/joe960913/Jixu",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-18T11:43:25+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-18 — outside lookback window"
+    },
+    {
+      "cluster_key": "558ea75bef63f0e6",
+      "title": "worldwonderer/oh-story-dsh — A DSH plugin for novel writing and short-drama production, powered by Oh Story and Drama Skills.",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "linux",
+        "llm",
+        "opensource",
+        "threat-intel"
+      ],
+      "summary": "oh-story-dsh 是基于 DeepSeek Harness（DSH）构建的社区插件，将 Oh Story 的小说方法库与 Drama Skills 的短剧生产流程带入 DSH。DSH 管理 Agent、会话、模型、权限和 Chat；插件提供创作 Skills、专业 Roles、项目协议与三栏工作台。 本项目与 DeepSeek 官方无隶属、合作或背书关系；DeepSeek Harness 名称与品牌素材归其权利人所有。 覆盖长篇、短篇、选题、扫榜、拆文、导入、审稿、去 AI 味与封面流程。13 个 Oh Story Skills 与 7 个专业 Roles 按固定上游版本随插件交付。 内置 Drama Skills 0.6.0 的 creator-first 工作流。每集按请求维护最多五份可读 Markdown：剧本.md、视觉设定.md、分镜.md、图片提示词.md、视频提示词.md；不预建空文档，也不倒补用户未点名的阶段。审查与生产交付继续使用 DSH 原生工具、权限和确认界面。 Drama Skills 0.6.0 是破坏性升级：…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "oh-story-dsh 是基于 DeepSeek Harness（DSH）构建的社区插件，将 Oh Story 的小说方法库与 Drama Skills 的短剧生产流程带入 DSH。DSH 管理 Agent、会话、模型、权限和 Chat；插件提供创作 Skills、专业 Roles、项目协议与三栏工作台。\n本项目与 DeepSeek 官方无隶属、合作或背书关系；DeepSeek Harness 名称与品牌素材归其权利人所有。\n覆盖长篇、短篇、选题、扫榜、拆文、导入、审稿、去 AI 味与封面流程。13 个 Oh Story Skills 与 7 个专业 Roles 按固定上游版本随插件交付。\n内置 Drama Skills 0.6.0 的 creator-first 工作流。每集按请求维护最多五份可读 Markdown：剧本.md、视觉设定.md、分镜.md、图片提示词.md、视频提示词.md；不预建空文档，也不倒补用户未点名的阶段。审查与生产交付继续使用 DSH 原生工具、权限和确认界面。\nDrama Skills 0.6.0 是破坏性升级：v0.5 结构化项目应继续锁定 v0.5 并只读保留；迁移时新建项目根，逐集人工确认当前工作所需文档，不要在同一目录混用旧 JSON/JSONL 与新文档。\n- 原生三栏布局：项目文件树、编辑器与官方 Chat 同屏，Trajectory、工具执行、Todo、审批和 Composer 保持 DSH 原生交互。\n- 实时文件跟随：Agent 调用官方文件工具时，目标文件自动定位，编辑器同步呈现生成中的内容。\n- Chat 文件导航：点击官方 Chat 中的作品文件名，文件树会定位并在编辑器打开对应文件。\n- 创作文档预览：Markdown 支持标题、表格、任务列表、引用和代码块；JSONL 以带行号、类型和状态的结构化记录呈现。\n- 安全编辑：支持源码编辑与快捷保存；人工未保存内容不会被并发 Agent 修改覆盖。\n- 稳定长对话：消息区独立滚动，官方 Composer 固定在 Chat 栏底部。\n需要 Node.js 24+。\n1.",
+          "support_span": "oh-story-dsh 是基于 DeepSeek Harness（DSH）构建的社区插件，将 Oh Story 的小说方法库与 Drama Skills 的短剧生产流程带入 DSH。DSH 管理 Agent、会话、模型、权限和 Chat；插件提供创作 Skills、专业 Roles、项目协议与三栏工作台。\n本项目与 DeepSeek 官方无隶属、合作或背书关系；DeepSeek Harness 名称与品牌素材归其权利人所有。\n覆盖长篇、短篇、选题、扫榜、拆文、导入、审稿、去 AI 味与封面流程。13 个 Oh Story Skills 与 7 个专业 Roles 按固定上游版本随插件交付。\n内置 Drama Skills 0.6.0 的 creator-first 工作流。每集按请求维护最多五份可读 Markdown：剧本.md、视觉设定.md、分镜.md、图片提示词.md、视频提示词.md；不预建空文档，也不倒补用户未点名的阶段。审查与生产交付继续使用 DSH 原生工具、权限和确认界面。\nDrama Skills 0.6.0 是破坏性升级：v0.5 结构化项目应继续锁定 v0.5 并只读保留；迁移时新建项目根，逐集人工确认当前工作所需文档，不要在同一目录混用旧 JSON/JSONL 与新文档。\n- 原生三栏布局：项目文件树、编辑器与官方 Chat 同屏，Trajectory、工具执行、Todo、审批和 Composer 保持 DSH 原生交互。\n- 实时文件跟随：Agent 调用官方文件工具时，目标文件自动定位，编辑器同步呈现生成中的内容。\n- Chat 文件导航：点击官方 Chat 中的作品文件名，文件树会定位并在编辑器打开对应文件。\n- 创作文档预览：Markdown 支持标题、表格、任务列表、引用和代码块；JSONL 以带行号、类型和状态的结构化记录呈现。\n- 安全编辑：支持源码编辑与快捷保存；人工未保存内容不会被并发 Agent 修改覆盖。\n- 稳定长对话：消息区独立滚动，官方 Composer 固定在 Chat 栏底部。\n需要 Node.js 24+。\n1.",
+          "status": "entailed"
+        },
+        {
+          "text": "安装插件并启动 DSH Web\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 plugin --profile web add @oh-story/dsh@0.1.4\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 web\n也可以直接安装 GitHub Release 中经过同一套测试的预构建包：\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 plugin --profile web add https://github.com/worldwonderer/oh-story-dsh/releases/download/v0.1.4/oh-story-dsh-0.1.4.tgz\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 web\n默认在 http://127.0.0.1:3080 打开。\n2.",
+          "support_span": "安装插件并启动 DSH Web\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 plugin --profile web add @oh-story/dsh@0.1.4\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 web\n也可以直接安装 GitHub Release 中经过同一套测试的预构建包：\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 plugin --profile web add https://github.com/worldwonderer/oh-story-dsh/releases/download/v0.1.4/oh-story-dsh-0.1.4.tgz\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 web\n默认在 http://127.0.0.1:3080 打开。\n2.",
+          "status": "entailed"
+        },
+        {
+          "text": "配置模型\n首次使用需要在 DSH 的「设置 → 模型」中添加 Provider 并填入 API Key；也可以在启动前设置环境变量 DEEPSEEK_API_KEY。模型、凭据与权限均由 DSH 管理，本插件不接触。\n3.",
+          "support_span": "配置模型\n首次使用需要在 DSH 的「设置 → 模型」中添加 Provider 并填入 API Key；也可以在启动前设置环境变量 DEEPSEEK_API_KEY。模型、凭据与权限均由 DSH 管理，本插件不接触。\n3.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/worldwonderer/oh-story-dsh",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-19T15:27:01+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-19 — outside lookback window"
+    },
+    {
+      "cluster_key": "7dcdd5f46b1e0f6d",
+      "title": "only-cli/oc — Turn any website into a compact CLI tailored for AI agents. Browse the web in hundreds of tokens, not tens of ",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "llm",
+        "opensource",
+        "threat-intel",
+        "tool"
+      ],
+      "summary": "Turns websites into a command line interface for AI agents. oc open <url> fetches a page and hands back a compact, numbered view instead of raw HTML or a screenshot, so agents like Claude Code, Codex, and Antigravity can browse without burning tokens. It also gets past blocks that stop naive fetchers on some sites, by talking to the page the way a real browser would.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Turns websites into a command line interface for AI agents.",
+          "support_span": "Turns websites into a command line interface for AI agents.",
+          "status": "entailed"
+        },
+        {
+          "text": "oc open <url> fetches a page and hands back a compact, numbered view instead of raw HTML or a screenshot, so agents like Claude Code, Codex, and Antigravity can browse without burning tokens.",
+          "support_span": "oc open <url> fetches a page and hands back a compact, numbered view instead of raw HTML or a screenshot, so agents like Claude Code, Codex, and Antigravity can browse without burning tokens.",
+          "status": "entailed"
+        },
+        {
+          "text": "It also gets past blocks that stop naive fetchers on some sites, by talking to the page the way a real browser would.",
+          "support_span": "It also gets past blocks that stop naive fetchers on some sites, by talking to the page the way a real browser would.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/only-cli/oc",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-18T13:00:30+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-18 — outside lookback window"
+    },
+    {
+      "cluster_key": "f57bf469d8b78ce8",
+      "title": "elie222/botdirectory.ai — Open-source directory of agent-bot prompts for Grok Bot, Rakazo, and any agent — botdirectory.ai",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "dfir",
+        "exploit",
+        "identity",
+        "llm",
+        "opensource",
+        "threat-intel"
+      ],
+      "summary": "A community-maintained directory of ready-to-use agent prompts for Grok Bot, Rakazo, and any agent you already use. Copy a prompt, paste it into your agent, and it sets itself up as a scheduled bot — email triage, daily briefings, SEO fixes, churn warnings, and more. Live site: botdirectory.ai A bot is one markdown file in bots/: --- name: SEO Improver category: Marketing added_at: \"2026-08-18T12:00:00.000Z\" contributor: rakazo integrations: [GitHub, DataForSEO, Search Conso…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "A community-maintained directory of ready-to-use agent prompts for Grok Bot, Rakazo, and any agent you already use.",
+          "support_span": "A community-maintained directory of ready-to-use agent prompts for Grok Bot, Rakazo, and any agent you already use.",
+          "status": "entailed"
+        },
+        {
+          "text": "Copy a prompt, paste it into your agent, and it sets itself up as a scheduled bot — email triage, daily briefings, SEO fixes, churn warnings, and more.",
+          "support_span": "Copy a prompt, paste it into your agent, and it sets itself up as a scheduled bot — email triage, daily briefings, SEO fixes, churn warnings, and more.",
+          "status": "entailed"
+        },
+        {
+          "text": "Live site: botdirectory.ai\nA bot is one markdown file in bots/:\n---\nname: SEO Improver\ncategory: Marketing\nadded_at: \"2026-08-18T12:00:00.000Z\"\ncontributor: rakazo\nintegrations: [GitHub, DataForSEO, Search Console]\nintegration_urls: { DataForSEO: https://dataforseo.com }\n---\nSet up a new bot for me.",
+          "support_span": "Live site: botdirectory.ai\nA bot is one markdown file in bots/:\n---\nname: SEO Improver\ncategory: Marketing\nadded_at: \"2026-08-18T12:00:00.000Z\"\ncontributor: rakazo\nintegrations: [GitHub, DataForSEO, Search Console]\nintegration_urls: { DataForSEO: https://dataforseo.com }\n---\nSet up a new bot for me.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/elie222/botdirectory.ai",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-17T18:23:44+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-17 — outside lookback window"
+    },
+    {
+      "cluster_key": "8856c93897241e8e",
+      "title": "Jordanwei1/jiaojie-skill — 交接 Skill（Jiaojie）：跨窗口、跨模型、跨设备、跨语言的 AI 上下文交接工具。换窗口，不失忆；换模型，不重来。Open-source AI context handoff.",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "exploit",
+        "opensource",
+        "threat-intel"
+      ],
+      "summary": "「换窗口，不失忆；换模型，不重来。」 交接 Skill（Jiaojie）把当前目标、决策、废案、关键产物和下一步交给另一个 AI，让它从真正停下的位置继续。 一个跨窗口、跨模型、跨设备、跨语言的开源 AI 上下文交接工具，基于开放的 Agent Skills 协议；实际验证范围以公开兼容矩阵为准。 handoff skill 证明了把任务摘要交给下一个 Agent 是可行的。 那为什么只交摘要？把意图演化、废弃方案、负知识、产物和真正的下一步一起交过去。 只需说一句「交接一下」，Jiaojie 自动完成导出、接收确认和连续性验证。 其他语言 / Other Languages: English · Français · 日本語 · 한국어 · Español 一段多轮编程对话已经走到这里： 用户 ❯ 支付 webhook 偶尔会被重复处理。 不能更换数据库，也不能更换支付平台。 AI A ❯ request_id 方案验证失败：同一个事件重投时， request_id 会变化，不能作为幂等键。 用户 ❯ 不要使用 Redis 锁，我不接受新的运…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "「换窗口，不失忆；换模型，不重来。」\n交接 Skill（Jiaojie）把当前目标、决策、废案、关键产物和下一步交给另一个 AI，让它从真正停下的位置继续。\n一个跨窗口、跨模型、跨设备、跨语言的开源 AI 上下文交接工具，基于开放的 Agent Skills 协议；实际验证范围以公开兼容矩阵为准。\nhandoff skill 证明了把任务摘要交给下一个 Agent 是可行的。\n那为什么只交摘要？把意图演化、废弃方案、负知识、产物和真正的下一步一起交过去。\n只需说一句「交接一下」，Jiaojie 自动完成导出、接收确认和连续性验证。\n其他语言 / Other Languages:\nEnglish · Français · 日本語 · 한국어 · Español\n一段多轮编程对话已经走到这里：\n用户      ❯ 支付 webhook 偶尔会被重复处理。\n            不能更换数据库，也不能更换支付平台。\nAI A      ❯ request_id 方案验证失败：同一个事件重投时，\n            request_id 会变化，不能作为幂等键。\n用户      ❯ 不要使用 Redis 锁，我不接受新的运行依赖。\n            改用支付平台的 event_id 和数据库唯一约束。\n用户      ❯ 下一步并行修改 handler.py 和补 replay 测试，\n            最后再更新法语运行手册。交接一下。\n            接收方在另一台电脑上，把必需文件一起带走。\nAI A      ❯ 已选择 handoff.zip：下一步依赖 handler.py\n            和 failure-log.txt，接收方无法访问当前工作区。\n用户把交接包交给一个没有原会话的 AI B：\n用户      ❯ 接收这个交接包。用法语回复，但不要继续执行。\nAI B      ❯ Réception réussie.",
+          "support_span": "「换窗口，不失忆；换模型，不重来。」\n交接 Skill（Jiaojie）把当前目标、决策、废案、关键产物和下一步交给另一个 AI，让它从真正停下的位置继续。\n一个跨窗口、跨模型、跨设备、跨语言的开源 AI 上下文交接工具，基于开放的 Agent Skills 协议；实际验证范围以公开兼容矩阵为准。\nhandoff skill 证明了把任务摘要交给下一个 Agent 是可行的。\n那为什么只交摘要？把意图演化、废弃方案、负知识、产物和真正的下一步一起交过去。\n只需说一句「交接一下」，Jiaojie 自动完成导出、接收确认和连续性验证。\n其他语言 / Other Languages:\nEnglish · Français · 日本語 · 한국어 · Español\n一段多轮编程对话已经走到这里：\n用户      ❯ 支付 webhook 偶尔会被重复处理。\n            不能更换数据库，也不能更换支付平台。\nAI A      ❯ request_id 方案验证失败：同一个事件重投时，\n            request_id 会变化，不能作为幂等键。\n用户      ❯ 不要使用 Redis 锁，我不接受新的运行依赖。\n            改用支付平台的 event_id 和数据库唯一约束。\n用户      ❯ 下一步并行修改 handler.py 和补 replay 测试，\n            最后再更新法语运行手册。交接一下。\n            接收方在另一台电脑上，把必需文件一起带走。\nAI A      ❯ 已选择 handoff.zip：下一步依赖 handler.py\n            和 failure-log.txt，接收方无法访问当前工作区。\n用户把交接包交给一个没有原会话的 AI B：\n用户      ❯ 接收这个交接包。用法语回复，但不要继续执行。\nAI B      ❯ Réception réussie.",
+          "status": "entailed"
+        },
+        {
+          "text": "Je n’ai pas poursuivi,\n            conformément à votre demande.",
+          "support_span": "Je n’ai pas poursuivi,\n            conformément à votre demande.",
+          "status": "entailed"
+        },
+        {
+          "text": "Objectif actuel : empêcher le retraitement des webhooks\n            avec event_id et une contrainte unique.",
+          "support_span": "Objectif actuel : empêcher le retraitement des webhooks\n            avec event_id et une contrainte unique.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/Jordanwei1/jiaojie-skill",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-20T08:57:52+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-20 — outside lookback window"
+    },
+    {
+      "cluster_key": "5b868fa99c4bdd97",
+      "title": "abligail/narralume — Open-source AI-assisted writing studio for long-form fiction. 故事设定、正文版本、AI 协作、审稿与交付一体化的长篇小说写作工具。",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "ai",
+        "exploit",
+        "howto",
+        "opensource",
+        "release",
+        "threat-intel",
+        "tool"
+      ],
+      "summary": "Hosted demo · Releases · User guide · Source · 中文 The hard part of a novel is rarely generating the next paragraph. It is keeping characters, chronology, promises, outline decisions, and tens of thousands of existing words in agreement. A change may affect several chapters, and an AI suggestion should not become part of the book simply because it was generated.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Hosted demo · Releases · User guide · Source · 中文\nThe hard part of a novel is rarely generating the next paragraph.",
+          "support_span": "Hosted demo · Releases · User guide · Source · 中文\nThe hard part of a novel is rarely generating the next paragraph.",
+          "status": "entailed"
+        },
+        {
+          "text": "It is keeping characters, chronology, promises, outline decisions, and tens of thousands of existing words in agreement.",
+          "support_span": "It is keeping characters, chronology, promises, outline decisions, and tens of thousands of existing words in agreement.",
+          "status": "entailed"
+        },
+        {
+          "text": "A change may affect several chapters, and an AI suggestion should not become part of the book simply because it was generated.",
+          "support_span": "A change may affect several chapters, and an AI suggestion should not become part of the book simply because it was generated.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/abligail/narralume",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-20T16:16:58+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-20 — outside lookback window"
+    },
+    {
+      "cluster_key": "f5cccd875a858ef3",
+      "title": "wang2122/sprix-sage-router — Sprix AI at 屿智同行 — state-aware SELF/COLLABORATE/HANDOFF routing for A2A agent networks.",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "appsec",
+        "dfir",
+        "exploit",
+        "network",
+        "opensource",
+        "research"
+      ],
+      "summary": "An open-source research output of Sprix AI at 屿智同行. Choose whether an agent should continue alone, recruit complementary collaborators, or hand off the task—then assign task-DAG roles, schedule dependencies, and learn from execution evidence under permission, budget, and deadline constraints. Quick start · Algorithm · Benchmark · Contributing · Security Agent discovery tells a system which agents exist.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "An open-source research output of Sprix AI at 屿智同行.",
+          "support_span": "An open-source research output of Sprix AI at 屿智同行.",
+          "status": "entailed"
+        },
+        {
+          "text": "Choose whether an agent should continue alone, recruit complementary collaborators, or hand off the task—then assign task-DAG roles, schedule dependencies, and learn from execution evidence under permission, budget, and deadline constraints.",
+          "support_span": "Choose whether an agent should continue alone, recruit complementary collaborators, or hand off the task—then assign task-DAG roles, schedule dependencies, and learn from execution evidence under permission, budget, and deadline constraints.",
+          "status": "entailed"
+        },
+        {
+          "text": "Quick start · Algorithm · Benchmark · Contributing · Security\nAgent discovery tells a system which agents exist.",
+          "support_span": "Quick start · Algorithm · Benchmark · Contributing · Security\nAgent discovery tells a system which agents exist.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/wang2122/sprix-sage-router",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-18T04:08:11+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-18 — outside lookback window"
+    },
+    {
+      "cluster_key": "427fa75c1e744e40",
+      "title": "Spielewoy/autoprompt-skill — Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "exploit",
+        "howto",
+        "linux",
+        "llm",
+        "opensource",
+        "research",
+        "threat-intel"
+      ],
+      "summary": "Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks. English | 中文 | 한국어 | Español | العربية Install · Benchmarks · Invocation · Run controls · Workflow · Agents · Examples · FAQ · License Use the CLI below, or download an installer from GitHub Releases. npm install -g autoprompt-skillautoprompt Choose your coding agent, confirm its path, and install.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.",
+          "support_span": "Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.",
+          "status": "entailed"
+        },
+        {
+          "text": "English | 中文 | 한국어 | Español | العربية\nInstall · Benchmarks · Invocation · Run controls · Workflow · Agents · Examples · FAQ · License\nUse the CLI below, or download an installer from GitHub Releases.",
+          "support_span": "English | 中文 | 한국어 | Español | العربية\nInstall · Benchmarks · Invocation · Run controls · Workflow · Agents · Examples · FAQ · License\nUse the CLI below, or download an installer from GitHub Releases.",
+          "status": "entailed"
+        },
+        {
+          "text": "npm install -g autoprompt-skillautoprompt\nChoose your coding agent, confirm its path, and install.",
+          "support_span": "npm install -g autoprompt-skillautoprompt\nChoose your coding agent, confirm its path, and install.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/Spielewoy/autoprompt-skill",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-17T22:40:47+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-17 — outside lookback window"
+    },
+    {
+      "cluster_key": "60c5be7a054cd187",
+      "title": "DavidCarliez/cover — Reversible privacy proxy for AI agents: send realistic fakes, restore originals locally.",
+      "category": "cyber_tools",
+      "one_liner": "Cyber Tools: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "appsec",
+        "linux",
+        "llm",
+        "network",
+        "opensource",
+        "privacy"
+      ],
+      "summary": "Install · Quick start · Policies · Monitoring · Pi / OMP · Security Cover is a bidirectional privacy proxy for AI coding agents. It replaces matched sensitive values locally with realistic, deterministic stand-ins before a request leaves your machine, then translates matching fakes in normal and streaming responses back to the originals. The model gets coherent context; your agent and tools keep working with the real environment.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Install · Quick start · Policies · Monitoring · Pi / OMP · Security\nCover is a bidirectional privacy proxy for AI coding agents.",
+          "support_span": "Install · Quick start · Policies · Monitoring · Pi / OMP · Security\nCover is a bidirectional privacy proxy for AI coding agents.",
+          "status": "entailed"
+        },
+        {
+          "text": "It replaces matched sensitive values locally with realistic, deterministic stand-ins before a request leaves your machine, then translates matching fakes in normal and streaming responses back to the originals.",
+          "support_span": "It replaces matched sensitive values locally with realistic, deterministic stand-ins before a request leaves your machine, then translates matching fakes in normal and streaming responses back to the originals.",
+          "status": "entailed"
+        },
+        {
+          "text": "The model gets coherent context; your agent and tools keep working with the real environment.",
+          "support_span": "The model gets coherent context; your agent and tools keep working with the real environment.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/DavidCarliez/cover",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-21T18:56:30+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-21 — outside lookback window"
+    },
+    {
+      "cluster_key": "3426536d88daa242",
+      "title": "cinderline/northcinder — Open-source MCP server for comparing products and asking the buyer before purchase.",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "exploit",
+        "howto",
+        "opensource",
+        "release"
+      ],
+      "summary": "AI agents are starting to do more than answer shopping questions. Soon they will decide which products people see and, in some cases, buy on their behalf. Big marketplaces are building the easiest version of this: an agent that searches one catalog and steers the buyer toward that platform's checkout.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "AI agents are starting to do more than answer shopping questions.",
+          "support_span": "AI agents are starting to do more than answer shopping questions.",
+          "status": "entailed"
+        },
+        {
+          "text": "Soon they will decide which products people see and, in some cases, buy on their behalf.",
+          "support_span": "Soon they will decide which products people see and, in some cases, buy on their behalf.",
+          "status": "entailed"
+        },
+        {
+          "text": "Big marketplaces are building the easiest version of this: an agent that searches one catalog and steers the buyer toward that platform's checkout.",
+          "support_span": "Big marketplaces are building the easiest version of this: an agent that searches one catalog and steers the buyer toward that platform's checkout.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/cinderline/northcinder",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-17T11:42:31+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-17 — outside lookback window"
+    },
+    {
+      "cluster_key": "d803b01c4e9ad0d5",
+      "title": "Whispergate/lldp — Mythic Peer to Peer (P2P) Communication Protocol via. LLDP",
+      "category": "cyber_tools",
+      "one_liner": "Cyber Tools: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "linux",
+        "opensource",
+        "redteam",
+        "threat-intel",
+        "tool",
+        "windows"
+      ],
+      "summary": "Mythic C2 profile for peer-to-peer communication over IEEE 802.1AB (LLDP). C2 data is carried inside Organizationally Specific TLVs (Type 127) with a configurable OUI so that frames blend with vendor-specific LLDP extensions on the wire. Both agents must share a broadcast domain.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Mythic C2 profile for peer-to-peer communication over IEEE 802.1AB (LLDP).",
+          "support_span": "Mythic C2 profile for peer-to-peer communication over IEEE 802.1AB (LLDP).",
+          "status": "entailed"
+        },
+        {
+          "text": "C2 data is carried inside Organizationally Specific TLVs (Type 127) with a configurable OUI so that frames blend with vendor-specific LLDP extensions on the wire.",
+          "support_span": "C2 data is carried inside Organizationally Specific TLVs (Type 127) with a configurable OUI so that frames blend with vendor-specific LLDP extensions on the wire.",
+          "status": "entailed"
+        },
+        {
+          "text": "Both agents must share a broadcast domain.",
+          "support_span": "Both agents must share a broadcast domain.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/Whispergate/lldp",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-20T05:58:18+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-20 — outside lookback window"
+    }
+  ]
 }

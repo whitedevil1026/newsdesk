@@ -14,13 +14,24 @@ from typing import Any
 
 
 class Verdict(str, Enum):
-    """How much we trust that the story itself is real."""
+    """How well established a story is.
 
-    VERIFIED = "verified"            # corroborated and/or anchored to a primary source
-    REPORTED = "reported"            # multiple outlets, no primary anchor
-    SINGLE_SOURCE = "single_source"  # one outlet only — shown, but flagged
-    DISPUTED = "disputed"            # outlets contradict each other on a key fact
-    REJECTED = "rejected"            # never published; see Item.reject_reason
+    Rule-based on the signals themselves rather than a numeric threshold.
+    The old scheme leaned on a trust score crossing 65, which was unreachable
+    for this feed mix and left 96% of items on one label — technically true,
+    informationally useless.
+
+    Corroboration and source quality are different questions and are now kept
+    apart: a BleepingComputer exclusive and an anonymous GitHub repo are both
+    "one outlet", but they are not the same claim on your attention.
+    """
+
+    VERIFIED = "verified"          # primary artifact, or 3+ independent outlets
+    CORROBORATED = "corroborated"  # 2 independent outlets agree
+    ESTABLISHED = "established"    # one outlet, but a known publication (tier A/B)
+    UNVERIFIED = "unverified"      # one outlet, blog/aggregator/repo (tier C)
+    DISPUTED = "disputed"          # outlets or the judge disagree on a key fact
+    REJECTED = "rejected"          # never published; see Item.reject_reason
 
 
 class Priority(str, Enum):
@@ -110,7 +121,7 @@ class Item:
     blend: float = 0.0
     critical_signal: str = ""
     priority: Priority = Priority.MINOR
-    verdict: Verdict = Verdict.SINGLE_SOURCE
+    verdict: Verdict = Verdict.UNVERIFIED
 
     # provenance — always carried to the card, never dropped
     sources: list[dict[str, str]] = field(default_factory=list)
