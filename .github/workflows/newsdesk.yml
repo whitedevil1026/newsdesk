@@ -1,0 +1,41 @@
+name: newsdesk
+
+on:
+  schedule:
+    - cron: "30 1 * * *"      # 07:00 IST daily (Actions cron is UTC)
+  workflow_dispatch:           # manual "refresh now"
+
+permissions:
+  contents: write              # needed to commit news.json back
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      # Cached separately: refreshing it on every run is wasteful and the
+      # upstream sheet only changes weekly.
+      - name: Refresh credibility blocklist
+        run: python run.py --update-blocklist
+        continue-on-error: true
+
+      - name: Run pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python run.py --quiet
+
+      - name: Commit results
+        run: |
+          git config user.name  "newsdesk-bot"
+          git config user.email "newsdesk-bot@users.noreply.github.com"
+          git add data/news.json data/rejected.json data/cache/seen.json site/news.json
+          git diff --staged --quiet || git commit -m "newsdesk: $(date -u +%Y-%m-%d)"
+          git push

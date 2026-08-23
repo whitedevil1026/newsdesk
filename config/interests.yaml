@@ -1,0 +1,35 @@
+# Your interest profile.  Used for keyword scoring now; the same text
+# becomes the LLM's relevance prompt later.
+
+profile: >
+  Practical security work (exploited CVEs, breaches, DFIR, malware, bug bounty),
+  AI and LLM tooling for developers, Android and mobile development,
+  Indian markets and major global business events, and significant
+  India / world news.
+
+boost:
+  cybersecurity: ["actively exploited", "zero-day", "0-day", "KEV", "ransomware",
+                  "breach", "CVE-", "RCE", "privilege escalation", "supply chain",
+                  "APT", "malware", "data leak", "patch tuesday", "PoC"]
+  tech_ai:       ["Claude", "Anthropic", "GPT", "Gemini", "LLM", "open source model",
+                  "agent", "benchmark", "Android", "Kotlin", "developer tool", "API"]
+  markets:       ["RBI", "Sensex", "Nifty", "IPO", "funding round", "acquisition",
+                  "layoffs", "inflation", "rate cut", "earnings"]
+  india_world:   ["India", "Supreme Court", "parliament", "election", "policy",
+                  "sanctions", "conflict", "summit"]
+
+# Terms that make a story CRITICAL on their own, regardless of blend score.
+# Kept deliberately short: if everything is critical, nothing is.
+critical_signals:
+  - "actively exploited"
+  - "exploited in the wild"
+  - "emergency patch"
+  - "out-of-band patch"
+  - "added to the kev"
+  - "known exploited vulnerabilities catalog"
+  - "unauthenticated rce"
+  - "supply chain compromise"
+  - "mass exploitation"
+
+mute: ["horoscope", "sponsored", "deal of the day", "coupon", "giveaway",
+       "best laptops under", "top 10 gadgets", "casino", "betting"]

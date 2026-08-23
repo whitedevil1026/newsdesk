@@ -1,0 +1,238 @@
+# Run-level knobs.  Everything the pipeline decides is driven from here,
+# so tuning behaviour never means editing code.
+
+window:
+  lookback_hours: 48        # how far back a "batch" reaches
+  max_items_published: 40   # cap on cards written to the site
+
+  # Per-category floor/ceiling so one prolific feed cannot own the page.
+  # Without this a single high-volume wire filled 39 of 40 slots on a live run.
+  per_category_max: 12
+  per_category_min: 3
+
+dedupe:
+  # A dashboard shows a rolling window, so an article seen in an earlier run
+  # must still appear today if it is still inside the window. What the seen
+  # store prevents is paying to SUMMARISE the same article twice.
+  #   reuse_summary : keep showing it, reuse the cached summary  (correct)
+  #   suppress      : hide anything already published once       (digest-style)
+  mode: reuse_summary
+
+harvest:
+  timeout_seconds: 15
+  max_per_feed: 60
+  # A plain bot UA gets 403s from PIB, TechCrunch and others. This is a
+  # standard browser string: we are reading public RSS at low volume.
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+
+# --- GitHub: what got BUILT, not what got written about --------------------
+# NOTE ON SYNTAX: GitHub search rejects "topic:a OR topic:b" outright
+# ("the search contains only logical operators"), so each search names ONE
+# topic. Unauthenticated search is capped at 10 requests/minute, hence the
+# pacing below; set GITHUB_TOKEN in .env to raise that to 30/min.
+github:
+  enabled: true
+  lookback_hours: 168       # 7 days: a tool released Tuesday still matters Friday
+  per_search: 12
+  pace_seconds: 7           # stay under 10 searches/min unauthenticated
+  token_env: "GITHUB_TOKEN" # optional; absent is fine
+  searches:
+    # Star floors do the heavy lifting — GitHub produces thousands of new
+    # repos a week and nearly all are scaffolding, coursework or AI filler.
+    - {category: cyber_tools, kind: new,     min_stars: 25, topic: security}
+    - {category: cyber_tools, kind: new,     min_stars: 15, topic: pentesting}
+    - {category: cyber_tools, kind: new,     min_stars: 10, topic: dfir}
+    - {category: cyber_tools, kind: new,     min_stars: 10, topic: incident-response}
+    - {category: cyber_tools, kind: new,     min_stars: 10, topic: threat-hunting}
+    - {category: cyber_tools, kind: new,     min_stars: 15, topic: malware-analysis}
+    - {category: cyber_tools, kind: new,     min_stars: 15, topic: red-team}
+    - {category: cyber_tools, kind: updated, min_stars: 3000, topic: osint}
+    - {category: tech_ai,     kind: new,     min_stars: 80, topic: llm}
+    - {category: tech_ai,     kind: new,     min_stars: 50, topic: ai-agents}
+    - {category: tech_ai,     kind: new,     min_stars: 40, topic: mcp}
+
+# --- Bluesky ---------------------------------------------------------------
+# DISABLED by default, deliberately. Two measured reasons:
+#   * the public search endpoint (searchPosts) returns 403 without auth, so
+#     topic search is unavailable; only author feeds are open.
+#   * author feeds are low-yield inside a 48h window — when this was tested,
+#     the newest posts from the three seed accounts were 149h, 96h and
+#     13,263h old (that last account is dormant).
+# Enable it with your own curated list of genuinely active accounts.
+# X/Twitter is not used at all: its free tier ended for new developers in
+# Feb 2026 and reads are billed per post.
+bluesky:
+  enabled: false
+  lookback_hours: 48
+  per_account: 30
+  min_chars: 80
+  min_likes: 8
+  accounts:
+    - {handle: "simonwillison.net", name: "Simon Willison", category: tech_ai}
+
+cluster:
+  # Overlap coefficient (shared tokens / shorter headline), NOT Jaccard.
+  # Calibrated on a live 363-article harvest: 0.55 + 3 shared tokens
+  # recovered every genuine cross-outlet pair with zero false positives.
+  title_similarity: 0.55
+  min_shared_tokens: 3
+  min_title_tokens: 4
+
+trust:
+  # Score contributions.  Total is clamped to 0-100.
+  tier_points:   {A: 40, B: 25, C: 10}
+  outlet_points: 12         # per additional independent outlet, capped below
+  outlet_cap:    36
+  primary_source_bonus: 30  # story traces to an official artifact
+  # Verdict thresholds against the final score
+  verdict:
+    verified:   65
+    reported:   40
+    # below `reported` -> single_source
+  hard_drop:
+    blocklisted_domain: true
+    outside_window: true
+    contradicted_claim: true
+
+priority:
+  # Final priority = weighted blend of three 0-100 components, then bucketed.
+  weights: {trust: 0.25, interest: 0.45, corroboration: 0.30}
+
+  # Thresholds are calibrated against the OBSERVED blend range, not an
+  # imagined 0-100 spread. On a live 404-item run the blend topped out at
+  # 49, so the original 75/50 buckets left every single item "minor".
+  buckets: {critical: 58, important: 38}
+
+  # Guard rails so the buckets stay meaningful when the news is quiet or
+  # unusually busy: a share cap, and a hard cap on critical count.
+  max_critical_share: 0.06    # at most 6% of published items may be critical
+  max_critical: 5
+
+interest:
+  # Interest is a saturating curve on weighted keyword hits, not a raw count.
+  # Title hits count double: a term in the headline is what the story is
+  # about, the same term in the body may be an aside.
+  title_weight: 2.0
+  body_weight: 1.0
+  saturation_k: 0.55          # 1 hit ~42, 2 ~67, 3 ~81, 5 ~94
+  category_base: 12           # floor so an on-topic story is never a flat 0
+
+  # NOTE: there is deliberately no primary-source bonus here. Coming from an
+  # official source makes a story TRUSTWORTHY, not IMPORTANT — conflating the
+  # two put five routine government press releases at the top of the first
+  # live run. Primary sources are rewarded in trust scoring only.
+
+  # Routine-notice damping: official feeds carry a lot of administrative
+  # boilerplate that is perfectly true and of no interest.
+  routine_penalty: 28
+  routine_markers:
+    - "joint working group"
+    - "review meeting"
+    - "inaugurates"
+    - "addresses the"
+    - "chairs the"
+    - "workshop on"
+    - "celebrated"
+    - "observed on"
+    - "felicitat"
+    - "memorandum of understanding signed"
+    # Speculation and punditry: high keyword density, near-zero news value.
+    - "prediction for tomorrow"
+    - "stocks to buy"
+    - "stocks to watch"
+    - "target price"
+    - "may hit"
+    - "could rally"
+    - "top picks"
+    - "what to expect"
+    - "here's why"
+    - "auction of government"
+    - "variable rate reverse repo"
+
+llm:
+  provider: gemini          # none | gemini   (none = extractive, no API key)
+
+  # TIERED MODELS. Free-tier limits differ enormously between models, and the
+  # scarce one is worth spending only where quality is actually read.
+  # Verified from aistudio.google.com/rate-limit on 2026-08-24:
+  #
+  #   gemini-3.6-flash        RPM 5    TPM 250K   RPD 20     <- premium, tiny quota
+  #   gemini-3.5-flash-lite   RPM 15   TPM 250K   RPD 500    <- bulk, 25x headroom
+  #   gemini-3.1-flash-lite   RPM 15   TPM 250K   RPD 500    <- spare bulk
+  #
+  # Batches are handed to the first tier until its per-run allowance is used,
+  # then fall through to the next. Since batches are ordered best-first, the
+  # strongest model summarises the stories most likely to be read.
+  # THE LADDER. Every entry below was probed live on 2026-08-24 with a real
+  # call and a structured-output schema; limits come from the account's own
+  # rate-limit dashboard, not from documentation.
+  #
+  # Ordered by capability. Batches are handed to the first model with quota
+  # left, and batches are ordered best-story-first, so the strongest model
+  # always summarises the stories most likely to be read.
+  #
+  # NOT LISTED, and why:
+  #   gemini-2.5-flash, gemini-2.5-flash-lite  -> HTTP 404, retired for new
+  #     projects even though the dashboard still shows quota rows for them.
+  #   gemini-2.5-pro, gemini-3.1-pro, 2 flash  -> quota shown as 0/0.
+  #
+  # Daily ceiling across the ladder is ~29,000 requests. This pipeline needs
+  # about 5. The ladder exists so a bad day cannot silently degrade quality,
+  # not because the volume is needed.
+  tiers:
+    # Flagship flash models: best quality, 20 requests/day each.
+    - {model: "gemini-3.7-flash",      rpm: 5,  rpd: 20,    max_batches_per_run: 2}
+    - {model: "gemini-3.6-flash",      rpm: 5,  rpd: 20,    max_batches_per_run: 2}
+    - {model: "gemini-3.5-flash",      rpm: 5,  rpd: 20,    max_batches_per_run: 2}
+    - {model: "gemini-3-flash-preview", rpm: 5, rpd: 20,    max_batches_per_run: 2}
+    # Lite models: noticeably weaker prose, 25x the allowance.
+    - {model: "gemini-3.5-flash-lite", rpm: 15, rpd: 500,   max_batches_per_run: 6}
+    - {model: "gemini-3.1-flash-lite", rpm: 15, rpd: 500,   max_batches_per_run: 6}
+    # Gemma: open-weight, enormous allowance, but TPM is 16K against 250K
+    # for the Gemini models — so its batches must be small or they exceed
+    # tokens-per-minute. Last resort, and it does honour the schema.
+    - {model: "gemma-4-31b-it",        rpm: 30, rpd: 14400, max_batches_per_run: 8, batch_size: 6}
+    - {model: "gemma-4-26b-a4b-it",    rpm: 30, rpd: 14400, max_batches_per_run: 8, batch_size: 6}
+
+  # 20 items/batch, not 12. A live batch of 12 used 18.4K tokens against a
+  # 250K TPM ceiling, so token budget was never the constraint — REQUESTS are.
+  # Bigger batches mean fewer requests for the same work: 100 items now costs
+  # 5 calls instead of 9.
+  batch_size: 20
+
+  # Only a shortlist goes to the model. Stage 4 scores every cluster (~315 on a
+  # live run) but stage 7 publishes 40, so summarising everything spent ~27
+  # calls to throw away ~23 of them. The shortlist is wider than the publish
+  # cap so the model's importance score can still reorder the ranking.
+  max_items_summarized: 100
+  api_key_env: "GEMINI_API_KEY"
+
+  # Hard stop on API usage. The counter is persistent and keyed by UTC date,
+  # matching how providers reset quota. Per-model, because the limits are.
+  #
+  # Hitting a cap is not an error: the run continues and the remaining items
+  # get extractive summaries, so you always get a page — just a plainer one.
+  # A real provider 429 is different: the rest of the run is abandoned rather
+  # than retried, because hammering a closed door can extend the cooldown.
+  budget:
+    enabled: true
+    reserve_fraction: 0.15  # keep 15% of each model's RPD spare for --test-llm
+    pace: true              # sleep between calls to respect RPM
+
+# --- Stage 6b: independent cross-model validation --------------------------
+# A second model re-checks whether each claim is actually supported by the
+# source. Deliberately a DIFFERENT model than the one that wrote the summary:
+# a model grading its own work agrees with itself.
+#
+# Runs on the cheapest tier with quota left (Gemma allows 14,400/day against
+# the ~5 this pipeline uses), so the check costs effectively nothing.
+judge:
+  enabled: true
+  max_items: 40             # only what will actually be published
+  batch_size: 8
+  prefer_cheap_model: true  # independence and volume matter more than prose
+
+verify:
+  enabled: false            # flips on at Step 4
+  nli_model: "cross-encoder/nli-deberta-v3-base"
+  min_entailed_ratio: 0.7

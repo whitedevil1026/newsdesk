@@ -1,0 +1,4 @@
+feedparser>=6.0.11
+PyYAML>=6.0.1
+certifi>=2024.2.2         # current CA bundle; Windows Python lacks one
+trafilatura>=1.12.0       # optional but recommended: full-text extraction

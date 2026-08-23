@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Newsdesk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf9f6; --card:#fff; --ink:#1c1b19; --ink2:#3d3b37; --muted:#6f6c66;
+  --line:#e6e3dc; --line2:#d5d1c7; --accent:#8a5a2b;
+  --crit:#b3341f; --imp:#a8701a; --minor:#8f8b83;
+  --ok:#1c6b45; --warn:#9a6a12; --bad:#7a3f96;
+  --factbg:#f4f2ec;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#14140f; --card:#1c1c18; --ink:#eae7df; --ink2:#c9c5bb; --muted:#928e85;
+  --line:#2c2b26; --line2:#3a3833; --accent:#d9a066;
+  --crit:#ff7a63; --imp:#e3a94f; --minor:#7d7a72;
+  --ok:#5fc999; --warn:#e0bb5c; --bad:#c58ede;
+  --factbg:#232320;
+}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+ font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+
+.wrap{max-width:720px;margin:0 auto;padding:34px 20px 100px}
+@media(min-width:1180px){.wrap{max-width:760px}}
+
+header{margin-bottom:22px}
+.brand{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+h1{margin:0;font-family:"Newsreader",Georgia,serif;font-size:31px;font-weight:600;
+ letter-spacing:-.015em}
+.meta{color:var(--muted);font-size:13.5px}
+.stats{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px;font-size:13.5px;
+ color:var(--muted);padding-bottom:16px;border-bottom:1px solid var(--line)}
+.stats b{color:var(--ink);font-weight:600}
+
+/* controls — the bar retracts on scroll-down so it never sits over the text */
+.controls{position:sticky;top:0;z-index:5;background:var(--bg);
+ padding:14px 0 12px;border-bottom:1px solid var(--line);margin-bottom:6px;
+ transition:transform .22s ease, opacity .22s ease}
+.controls.hidden{transform:translateY(-115%);opacity:0;pointer-events:none}
+.tagbar{display:flex;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap}
+.toggle{border:1px solid var(--line2);background:transparent;color:var(--muted);
+ border-radius:7px;padding:4px 11px;font-size:12.5px;cursor:pointer;
+ font-family:inherit}
+.toggle:hover{color:var(--ink);border-color:var(--muted)}
+.toggle[aria-expanded=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.active-tags{display:flex;flex-wrap:wrap;gap:5px}
+.active-tags .chip{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+#tagchips{margin-top:8px;max-height:0;overflow:hidden;
+ transition:max-height .25s ease}
+#tagchips.open{max-height:340px;overflow:auto}
+#q{width:100%;padding:11px 14px;font:inherit;font-size:15.5px;color:var(--ink);
+ background:var(--card);border:1px solid var(--line2);border-radius:9px}
+#q:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:transparent}
+#q::placeholder{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.chip{border:1px solid var(--line2);background:transparent;color:var(--muted);
+ border-radius:999px;padding:4px 11px;font-size:12.5px;cursor:pointer;
+ font-family:inherit;line-height:1.5}
+.chip:hover{color:var(--ink);border-color:var(--muted)}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip .n{opacity:.55;margin-left:5px;font-variant-numeric:tabular-nums}
+
+
+/* sections */
+h2.sec{font-family:"Newsreader",Georgia,serif;font-size:13px;letter-spacing:.13em;
+ text-transform:uppercase;color:var(--muted);margin:38px 0 4px;font-weight:600;
+ padding-bottom:8px;border-bottom:1px solid var(--line)}
+
+/* card */
+article{padding:26px 0;border-bottom:1px solid var(--line)}
+article:last-child{border-bottom:none}
+.rail{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:9px;
+ font-size:11px;letter-spacing:.07em;text-transform:uppercase;font-weight:600}
+.pri.critical{color:var(--crit)} .pri.important{color:var(--imp)} .pri.minor{color:var(--minor)}
+.vd.verified{color:var(--ok)} .vd.single_source{color:var(--warn)}
+.vd.disputed{color:var(--bad)} .vd.reported{color:var(--muted)}
+.sep{color:var(--line2);font-weight:400}
+.when{color:var(--muted);font-weight:400;text-transform:none;letter-spacing:0;
+ font-size:12.5px}
+
+h3{margin:0 0 12px;font-family:"Newsreader",Georgia,serif;font-size:25px;
+ line-height:1.25;font-weight:600;letter-spacing:-.012em}
+h3 a{color:inherit;text-decoration:none}
+h3 a:hover{text-decoration:underline;text-decoration-thickness:1px;
+ text-underline-offset:3px}
+
+.bottom{font-family:"Newsreader",Georgia,serif;font-size:19px;line-height:1.5;
+ font-weight:500;color:var(--ink);margin:0 0 14px;padding-left:15px;
+ border-left:3px solid var(--accent)}
+
+.body{font-family:"Newsreader",Georgia,serif;font-size:18.5px;line-height:1.72;
+ color:var(--ink2);margin:0 0 15px}
+
+.facts{background:var(--factbg);border-radius:9px;padding:13px 16px;margin:0 0 15px}
+.facts ul{margin:0;padding:0;list-style:none;
+ display:grid;gap:7px}
+.facts li{font-size:14.5px;line-height:1.45;color:var(--ink2);
+ padding-left:16px;position:relative}
+.facts li:before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;
+ border-radius:50%;background:var(--accent)}
+.facts b{color:var(--ink);font-weight:600}
+
+.why{font-size:14.5px;color:var(--muted);margin:0 0 15px;font-style:italic}
+
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:13px}
+.tag{background:transparent;border:1px solid var(--line2);color:var(--muted);
+ font-size:11.5px;padding:2px 9px;border-radius:5px;cursor:pointer;
+ font-family:inherit;letter-spacing:.02em}
+.tag:hover{color:var(--accent);border-color:var(--accent)}
+
+.srcs{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13.5px;align-items:baseline}
+.srcs a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line2)}
+.srcs a:hover{color:var(--ink);border-bottom-color:var(--muted)}
+.srcs a.primary{color:var(--ok);border-bottom-color:var(--ok)}
+.srcs .lbl{color:var(--muted);font-size:11px;letter-spacing:.08em;
+ text-transform:uppercase;font-weight:600}
+
+details{margin-top:12px}
+summary{cursor:pointer;color:var(--muted);font-size:12.5px;list-style:none;
+ display:inline-block}
+summary::-webkit-details-marker{display:none}
+summary:before{content:"\203A  ";display:inline-block;transition:transform .15s}
+details[open] summary:before{transform:rotate(90deg)}
+details ul{margin:9px 0 0;padding-left:19px;color:var(--muted);font-size:13px;
+ line-height:1.6}
+
+mark{background:color-mix(in srgb, var(--accent) 26%, transparent);
+ color:inherit;padding:0 1px;border-radius:2px}
+
+.empty{color:var(--muted);padding:60px 0;text-align:center;font-size:15px}
+footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);
+ color:var(--muted);font-size:12.5px;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><h1>Newsdesk</h1><span class="meta" id="meta">loading…</span></div>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="controls">
+    <input id="q" type="search" autocomplete="off" spellcheck="false"
+           placeholder="Search — try dfir, soc, llm, cve, ransomware, a vendor name…">
+    <div class="chips" id="cats"></div>
+    <div class="tagbar">
+      <button class="toggle" id="tagToggle" aria-expanded="false">Tags</button>
+      <div class="active-tags" id="activeTags"></div>
+    </div>
+    <div class="chips" id="tagchips"></div>
+  </div>
+
+  <main id="feed"></main>
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const CATS = {cyber_attacks:"Attacks & Exploits", cyber_tools:"Tools & Tradecraft",
+              tech_ai:"Tech & AI", markets:"Markets", india_world:"India & World",
+              cybersecurity:"Cybersecurity"};
+const VD = {verified:"verified", reported:"reported",
+            single_source:"single source", disputed:"disputed"};
+let DATA=null, cat="all", activeTags=new Set(), query="";
+
+const esc = s => String(s==null?"":s).replace(/[&<>"']/g,
+  c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+function ago(iso){
+  if(!iso) return "";
+  const h=(Date.now()-new Date(iso))/36e5;
+  if(h<1) return Math.max(1,Math.round(h*60))+"m ago";
+  if(h<24) return Math.round(h)+"h ago";
+  return Math.round(h/24)+"d ago";
+}
+
+// Highlight matches, but only after escaping — never build HTML from raw input.
+function hl(text){
+  const safe = esc(text);
+  if(!query) return safe;
+  const terms = query.split(/\s+/).filter(t=>t.length>1)
+    .map(t=>t.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"));
+  if(!terms.length) return safe;
+  return safe.replace(new RegExp("("+terms.join("|")+")","ig"), "<mark>$1</mark>");
+}
+
+// "Label: value" renders the label in bold; plain strings pass through.
+function fact(f){
+  const i = f.indexOf(":");
+  if(i>0 && i<42) return "<b>"+hl(f.slice(0,i))+"</b>"+hl(f.slice(i));
+  return hl(f);
+}
+
+function haystack(it){
+  return [it.title, it.summary, it.bottom_line, it.one_liner,
+          (it.key_facts||[]).join(" "), (it.tags||[]).join(" "),
+          it.sources.map(s=>s.name).join(" ")].join(" ").toLowerCase();
+}
+
+function matches(it){
+  if(cat!=="all" && it.category!==cat) return false;
+  for(const t of activeTags) if(!(it.tags||[]).includes(t)) return false;
+  if(!query) return true;
+  const hay = haystack(it);
+  return query.split(/\s+/).filter(Boolean).every(t=>hay.includes(t));
+}
+
+function card(it){
+  const byName=new Map();
+  for(const s of it.sources) if(!byName.has(s.name)) byName.set(s.name,s);
+  const srcs=[...byName.values()].map(s=>
+    '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.name)+'</a>').join("");
+  const prim=(it.primary_links||[]).length
+    ? '<a class="primary" href="'+esc(it.primary_links[0])+
+      '" target="_blank" rel="noopener">primary source</a>' : "";
+  const facts=(it.key_facts||[]).length
+    ? '<div class="facts"><ul>'+it.key_facts.map(f=>"<li>"+fact(f)+"</li>").join("")+"</ul></div>" : "";
+  const tags=(it.tags||[]).length
+    ? '<div class="tags">'+it.tags.map(t=>
+      '<button class="tag" data-tag="'+esc(t)+'">'+esc(t)+"</button>").join("")+"</div>" : "";
+  const trace=(it.trace||[]).map(t=>"<li>"+esc(t)+"</li>").join("");
+  const age=ago(it.published);
+
+  return '<article>'+
+    '<div class="rail">'+
+      '<span class="pri '+esc(it.priority)+'">'+esc(it.priority)+'</span>'+
+      '<span class="sep">/</span>'+
+      '<span class="vd '+esc(it.verdict)+'">'+esc(VD[it.verdict]||it.verdict)+'</span>'+
+      '<span class="sep">/</span>'+
+      '<span class="when">'+it.corroboration+' outlet'+(it.corroboration>1?"s":"")+
+        (age?' · '+esc(age):"")+'</span>'+
+    '</div>'+
+    '<h3><a href="'+esc(it.sources[0].url)+'" target="_blank" rel="noopener">'+
+      hl(it.title)+'</a></h3>'+
+    (it.bottom_line?'<p class="bottom">'+hl(it.bottom_line)+'</p>':"")+
+    (it.summary?'<p class="body">'+hl(it.summary)+'</p>':"")+
+    facts+
+    (it.one_liner?'<p class="why">'+hl(it.one_liner)+'</p>':"")+
+    tags+
+    '<div class="srcs"><span class="lbl">Sources</span>'+srcs+prim+'</div>'+
+    (trace?'<details><summary>how this was scored</summary><ul>'+trace+'</ul></details>':"")+
+  '</article>';
+}
+
+function draw(){
+  const feed=document.getElementById("feed");
+  const items=DATA.items.filter(matches);
+
+  if(!items.length){
+    feed.innerHTML='<p class="empty">Nothing matches. Clear the search or pick another tag.</p>';
+    drawTags(items); return;
+  }
+  const groups={};
+  for(const it of items){ (groups[it.category]=groups[it.category]||[]).push(it); }
+  feed.innerHTML=Object.keys(groups).map(c=>
+    '<h2 class="sec">'+esc(CATS[c]||c)+' · '+groups[c].length+'</h2>'+
+    groups[c].map(card).join("")).join("");
+  drawTags(items);
+}
+
+// Tag chips reflect what is actually on screen, so the facets never offer a
+// filter that would return nothing.
+function drawTags(visible){
+  const counts={};
+  for(const it of DATA.items){
+    if(cat!=="all" && it.category!==cat) continue;
+    for(const t of it.tags||[]) counts[t]=(counts[t]||0)+1;
+  }
+  const ordered=Object.entries(counts).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]));
+  const box=document.getElementById("tagchips");
+  const toggle=document.getElementById("tagToggle");
+  if(toggle) toggle.textContent = activeTags.size
+    ? "Tags · "+activeTags.size+" on" : "Tags";
+
+  // Active filters stay visible next to the toggle even when the drawer is
+  // shut, so you can always see and undo what is filtering the page.
+  const act=document.getElementById("activeTags");
+  if(act) act.innerHTML=[...activeTags].map(t=>
+    '<button class="chip" data-tag="'+esc(t)+'">'+esc(t)+' ×</button>').join("");
+
+  box.innerHTML=ordered.map(([t,n])=>
+    '<button class="chip" data-tag="'+esc(t)+'" aria-pressed="'+activeTags.has(t)+'">'+
+    esc(t)+'<span class="n">'+n+'</span></button>').join("");
+}
+
+function boot(d){
+  DATA=d;
+  const c=d.counts;
+  document.getElementById("meta").textContent=
+    new Date(d.generated_at).toLocaleString()+" · last "+d.window_hours+"h";
+  document.getElementById("stats").innerHTML=
+    "<span><b>"+c.published+"</b> stories</span>"+
+    "<span><b>"+c.critical+"</b> critical</span>"+
+    "<span><b>"+c.verified+"</b> verified</span>"+
+    "<span><b>"+c.single_source+"</b> single-source</span>"+
+    "<span><b>"+c.rejected+"</b> blocked at the gate</span>";
+
+  const cats=["all",...new Set(d.items.map(i=>i.category))];
+  const cbox=document.getElementById("cats");
+  cbox.innerHTML=cats.map(x=>{
+    const n=x==="all"?d.items.length:d.items.filter(i=>i.category===x).length;
+    return '<button class="chip" data-cat="'+x+'" aria-pressed="'+(x===cat)+'">'+
+      (x==="all"?"All":esc(CATS[x]||x))+'<span class="n">'+n+'</span></button>';
+  }).join("");
+
+  cbox.onclick=e=>{
+    const b=e.target.closest("button[data-cat]"); if(!b) return;
+    cat=b.dataset.cat; activeTags.clear();
+    [...cbox.children].forEach(x=>x.setAttribute("aria-pressed",x===b));
+    draw();
+  };
+  document.getElementById("tagchips").onclick=e=>{
+    const b=e.target.closest("button[data-tag]"); if(!b) return;
+    const t=b.dataset.tag;
+    activeTags.has(t)?activeTags.delete(t):activeTags.add(t);
+    draw();
+  };
+  document.getElementById("activeTags").onclick=e=>{
+    const b=e.target.closest("button[data-tag]"); if(!b) return;
+    activeTags.delete(b.dataset.tag); draw();
+  };
+
+  // The tag list is long enough to bury the article underneath it, so it is
+  // collapsed by default and opened on demand.
+  const drawer=document.getElementById("tagchips");
+  const toggle=document.getElementById("tagToggle");
+  toggle.onclick=()=>{
+    const open=drawer.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", open);
+  };
+
+  // Retract the whole control bar while scrolling down, bring it back on the
+  // way up — the reading area is never covered by chrome you are not using.
+  const bar=document.querySelector(".controls");
+  let lastY=window.scrollY, ticking=false;
+  window.addEventListener("scroll",()=>{
+    if(ticking) return;
+    ticking=true;
+    requestAnimationFrame(()=>{
+      const y=window.scrollY;
+      const goingDown = y>lastY && y>140;
+      // Never hide the bar while a filter is open or focused, or the control
+      // vanishes mid-interaction.
+      const busy = drawer.classList.contains("open") ||
+                   document.activeElement===document.getElementById("q");
+      bar.classList.toggle("hidden", goingDown && !busy);
+      lastY=y; ticking=false;
+    });
+  },{passive:true});
+  document.getElementById("feed").addEventListener("click",e=>{
+    const b=e.target.closest("button.tag"); if(!b) return;
+    activeTags.clear(); activeTags.add(b.dataset.tag);
+    window.scrollTo({top:0,behavior:"smooth"}); draw();
+  });
+
+  let timer;
+  document.getElementById("q").addEventListener("input",e=>{
+    clearTimeout(timer);
+    timer=setTimeout(()=>{ query=e.target.value.trim().toLowerCase(); draw(); },110);
+  });
+
+  document.getElementById("foot").textContent=
+    "Verdicts describe corroboration and sourcing, not proven truth. "+
+    "Items whose summary claims could not be traced to the source text are "+
+    "rejected and logged to data/rejected.json rather than shown here.";
+  draw();
+}
+
+fetch("news.json",{cache:"no-store"})
+  .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
+  .then(boot)
+  .catch(e=>{
+    document.getElementById("meta").textContent="could not load news.json — "+e;
+    document.getElementById("feed").innerHTML=
+      '<p class="empty">Run <code>python run.py</code> first.</p>';
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+# Controlled tag vocabulary.
+#
+# Deliberately a FIXED list, not free-form. If the model invents tags, the
+# facet list fragments ("dfir", "DFIR", "forensics", "digital-forensics") and
+# search stops being reliable. The model must pick from `vocabulary` only;
+# anything else it returns is dropped at parse time.
+#
+# `rules` give a keyword fallback so tagging still works with provider: none,
+# and so obvious tags are never missed when the model is terse.
+
+vocabulary:
+  # what kind of thing is it
+  - release          # new version / launch / GA
+  - tool             # a usable tool, repo, utility
+  - howto            # tutorial, guide, walkthrough, usage
+  - research         # paper, technical writeup, analysis
+  - incident         # a breach or attack that happened
+  - vulnerability    # CVE, flaw, advisory
+  - policy           # regulation, legal, compliance
+
+  # subject areas
+  - ai
+  - llm
+  - agents
+  - opensource
+  - dfir
+  - soc
+  - threat-intel
+  - malware
+  - ransomware
+  - exploit
+  - redteam
+  - blueteam
+  - appsec
+  - cloud
+  - android
+  - windows
+  - linux
+  - network
+  - identity
+  - supply-chain
+  - privacy
+  - hardware
+  - markets
+  - india
+
+# Keyword -> tag. Matched case-insensitively against title + summary.
+# These only ADD tags; they never remove what the model chose.
+rules:
+  dfir:         ["dfir", "forensic", "incident response", "memory dump", "triage",
+                 "timeline analysis", "artifact", "autopsy", "volatility", "velociraptor"]
+  soc:          ["soc ", "siem", "splunk", "detection engineering", "sigma rule",
+                 "alert triage", "threat hunting", "elastic security", "wazuh"]
+  threat-intel: ["threat intel", "apt", "ioc", "ttp", "mitre att&ck", "attribution",
+                 "threat actor", "campaign"]
+  malware:      ["malware", "trojan", "backdoor", "loader", "stealer", "rootkit",
+                 "botnet", "rat ", "infostealer"]
+  ransomware:   ["ransomware", "lockbit", "ransom", "extortion", "double extortion"]
+  exploit:      ["exploit", "poc", "proof of concept", "rce", "privilege escalation",
+                 "zero-day", "0-day", "actively exploited", "weaponized"]
+  vulnerability: ["cve-", "vulnerability", "advisory", "patch", "flaw", "kev",
+                 "security update", "bug bounty"]
+  redteam:      ["red team", "pentest", "penetration test", "c2 ", "command and control",
+                 "adversary emulation", "initial access", "lateral movement"]
+  blueteam:     ["blue team", "defen", "hardening", "edr", "xdr", "mitigation",
+                 "detection rule"]
+  appsec:       ["appsec", "sast", "dast", "sql injection", "xss", "ssrf",
+                 "code review", "owasp", "dependency"]
+  supply-chain: ["supply chain", "npm package", "pypi", "typosquat", "dependency confusion",
+                 "sbom", "package registry"]
+  cloud:        ["aws", "azure", "gcp", "kubernetes", "k8s", "s3 bucket", "iam ",
+                 "terraform", "container escape"]
+  identity:     ["okta", "entra", "active directory", "kerberos", "oauth", "saml",
+                 "mfa", "credential", "session token"]
+  android:      ["android", "apk", "play store", "kotlin", "mobile app"]
+  windows:      ["windows", "microsoft", "powershell", "ntlm", ".net", "registry"]
+  linux:        ["linux", "ubuntu", "debian", "kernel", "systemd", "bash"]
+  network:      ["firewall", "vpn", "router", "fortinet", "palo alto", "cisco",
+                 "packet", "dns "]
+  hardware:     ["chip", "gpu", "silicon", "processor", "semiconductor", "robotics",
+                 "quantum"]
+  privacy:      ["privacy", "gdpr", "surveillance", "tracking", "data protection"]
+  policy:       ["regulation", "lawsuit", "settlement", "fine", "compliance",
+                 "sanction", "ban ", "court"]
+
+  ai:           ["artificial intelligence", " ai ", "machine learning", "neural",
+                 "model weights", "inference", "training run"]
+  llm:          ["llm", "gpt", "claude", "gemini", "llama", "mistral", "qwen",
+                 "deepseek", "prompt", "context window", "tokenizer"]
+  agents:       ["agent", "agentic", "mcp ", "tool use", "autonomous", "workflow automation"]
+  opensource:   ["open source", "open-source", "github.com", "apache 2.0", "mit license",
+                 "self-host", "foss"]
+  release:      ["released", "launches", "announces", "now available", "general availability",
+                 "v1.", "v2.", "version ", "ships", "unveils", "introducing"]
+  tool:         ["tool", "framework", "library", "cli", "utility", "scanner", "toolkit"]
+  howto:        ["how to", "guide", "tutorial", "walkthrough", "getting started",
+                 "step by step", "cheat sheet", "explained", "deep dive"]
+  research:     ["paper", "arxiv", "study finds", "researchers", "benchmark", "analysis"]
+  incident:     ["breach", "hacked", "compromised", "data leak", "attack on",
+                 "stolen data", "intrusion"]
+  markets:      ["nifty", "sensex", "rbi", "ipo", "earnings", "funding round",
+                 "valuation", "acquisition"]
+  india:        ["india", "indian", "delhi", "mumbai", "bengaluru", "upi ", "aadhaar"]

@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Secrets. Never commit this file.
+.env
+
+data/raw/          # per-stage snapshots; debugging only, regenerated each run

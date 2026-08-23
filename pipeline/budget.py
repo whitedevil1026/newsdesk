@@ -1,0 +1,154 @@
+"""Per-model API budgeting and pacing.
+
+Free-tier limits are per model and differ by more than an order of magnitude
+(gemini-3.6-flash allows 20 requests a day; gemini-3.5-flash-lite allows 500),
+so a single global counter cannot express the constraint. This tracks each
+model separately and hands out the next usable one.
+
+Three limits, each with a different failure meaning:
+
+  RPD       requests per UTC day. Tracked persistently across runs, because
+            the quota is per day and this project runs more than once.
+  RPM       requests per minute. Enforced by sleeping, not by failing — the
+            calls are wanted, they just have to be spread out.
+  per-run   a self-imposed cap so one run cannot eat the whole day.
+
+Hitting any of these is normal: the caller falls back to extractive summaries.
+Only a provider 429 is treated as a stop condition.
+"""
+
+from __future__ import annotations
+
+import json
+import time
+from datetime import datetime, timezone
+
+from .config import CACHE_DIR, settings
+from .utils import log
+
+USAGE_PATH = CACHE_DIR / "usage.json"
+
+
+def _today() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+
+def _load() -> dict:
+    if USAGE_PATH.exists():
+        try:
+            return json.loads(USAGE_PATH.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            log("budget", "! usage counter corrupt, starting fresh")
+    return {}
+
+
+class ModelBudget:
+    """One model's allowance for today."""
+
+    def __init__(self, spec: dict, used_today: int, reserve: float) -> None:
+        self.model: str = spec["model"]
+        self.rpm: int = spec.get("rpm", 5)
+        self.rpd: int = spec.get("rpd", 20)
+        self.per_run: int = spec.get("max_batches_per_run", 5)
+        # Some models have a much lower TPM than the Gemini flash family
+        # (Gemma is 16K against 250K), so a batch sized for Flash would blow
+        # their tokens-per-minute ceiling. None means "use the global size".
+        self.batch_size: int | None = spec.get("batch_size")
+
+        # Hold a slice of the daily quota back so an ad-hoc `--test-llm` or a
+        # second run later in the day is not locked out by the first.
+        self.usable_rpd: int = max(1, int(self.rpd * (1 - reserve)))
+
+        self.used_today: int = used_today
+        self.this_run: int = 0
+        self.blocked: str = ""          # set when the provider itself refuses
+
+    @property
+    def remaining(self) -> int:
+        if self.blocked:
+            return 0
+        return max(0, min(self.usable_rpd - self.used_today,
+                          self.per_run - self.this_run))
+
+    @property
+    def min_interval(self) -> float:
+        """Seconds between calls to stay inside RPM, with a little slack."""
+        return 60.0 / max(1, self.rpm) * 1.1
+
+    def __str__(self) -> str:
+        return (f"{self.model} {self.used_today}/{self.usable_rpd} today "
+                f"(cap {self.rpd}), {self.remaining} left")
+
+
+class Budget:
+    """The full tier ladder, plus pacing."""
+
+    def __init__(self) -> None:
+        cfg = settings()["llm"]
+        bcfg = cfg.get("budget", {})
+        self.enabled: bool = bcfg.get("enabled", True)
+        self.pace: bool = bcfg.get("pace", True)
+        reserve: float = bcfg.get("reserve_fraction", 0.15)
+
+        self._data = _load()
+        day = self._data.get(_today(), {})
+        self.tiers: list[ModelBudget] = [
+            ModelBudget(spec, day.get(spec["model"], 0), reserve)
+            for spec in cfg["tiers"]
+        ]
+        self._last_call: dict[str, float] = {}
+        self.stopped_reason: str = ""
+
+    # --- selection -------------------------------------------------------
+
+    def next_model(self) -> ModelBudget | None:
+        """The strongest model that still has allowance, or None."""
+        if not self.enabled:
+            return self.tiers[0]
+        for tier in self.tiers:
+            if tier.remaining > 0:
+                return tier
+        self.stopped_reason = ("all model quotas exhausted for today — "
+                               "remaining items use extractive summaries")
+        return None
+
+    def capacity(self) -> int:
+        """Total batches the ladder can serve this run."""
+        if not self.enabled:
+            return 10 ** 6
+        return sum(t.remaining for t in self.tiers)
+
+    # --- execution -------------------------------------------------------
+
+    def wait(self, tier: ModelBudget) -> None:
+        """Sleep if needed so this model's RPM is not exceeded."""
+        if not self.pace:
+            return
+        last = self._last_call.get(tier.model)
+        if last is None:
+            return
+        gap = tier.min_interval - (time.monotonic() - last)
+        if gap > 0:
+            log("budget", f"pacing {gap:.0f}s for {tier.model} (RPM {tier.rpm})")
+            time.sleep(gap)
+
+    def record(self, tier: ModelBudget) -> None:
+        tier.this_run += 1
+        tier.used_today += 1
+        self._last_call[tier.model] = time.monotonic()
+
+        day = self._data.setdefault(_today(), {})
+        day[tier.model] = tier.used_today
+        for old in sorted(self._data)[:-14]:       # keep a fortnight
+            self._data.pop(old, None)
+        USAGE_PATH.write_text(json.dumps(self._data, indent=2), encoding="utf-8")
+
+    def block(self, tier: ModelBudget, why: str) -> None:
+        """Provider refused this model; fall through to the next tier."""
+        tier.blocked = why
+        log("budget", f"! {tier.model} blocked: {why}")
+
+    # --- reporting -------------------------------------------------------
+
+    def report(self) -> str:
+        return " | ".join(str(t) for t in self.tiers)

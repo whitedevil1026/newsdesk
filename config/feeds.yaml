@@ -1,0 +1,66 @@
+# Feed registry.  category -> list of sources.
+# tier:  A = wire/primary/official   B = established outlet   C = aggregator/blog
+# flags: primary: true      the feed IS the official artifact (CISA, vendor PSIRT)
+#        aggregator: true   link is a redirect stub, not the article itself
+#
+# Categories are the sections on the site. They are weighted toward what gets
+# read here: new releases and how to use them, new attacks, new tools.
+
+# --- New attacks, exploits, breaches, advisories ---------------------------
+cyber_attacks:
+  - {name: "CISA Advisories",      url: "https://www.cisa.gov/cybersecurity-advisories/all.xml",      tier: A, primary: true}
+  - {name: "CISA News",            url: "https://www.cisa.gov/news.xml",                              tier: A, primary: true}
+  - {name: "BleepingComputer",     url: "https://www.bleepingcomputer.com/feed/",                     tier: B}
+  - {name: "The Hacker News",      url: "https://feeds.feedburner.com/TheHackersNews",                tier: B}
+  - {name: "Krebs on Security",    url: "https://krebsonsecurity.com/feed/",                          tier: B}
+  - {name: "Google Project Zero",  url: "https://googleprojectzero.blogspot.com/feeds/posts/default", tier: A, primary: true}
+  - {name: "SANS ISC Diary",       url: "https://isc.sans.edu/rssfeed_full.xml",                      tier: A}
+  - {name: "Unit42",               url: "https://unit42.paloaltonetworks.com/feed/",                  tier: B}
+  - {name: "Securelist",           url: "https://securelist.com/feed/",                               tier: B}
+  - {name: "DarkReading",          url: "https://www.darkreading.com/rss.xml",                        tier: B}
+  - {name: "Cisco Talos",         url: "https://feeds.feedburner.com/feedburner/Talos",              tier: B}
+  - {name: "WeLiveSecurity",      url: "https://www.welivesecurity.com/en/rss/feed/",                tier: B}
+  - {name: "Malwarebytes Labs",   url: "https://www.malwarebytes.com/blog/feed/index.xml",           tier: B}
+
+# --- New tools, techniques, tradecraft, how-to ----------------------------
+cyber_tools:
+  - {name: "Rapid7 Blog",          url: "https://blog.rapid7.com/rss/",                               tier: B}
+  - {name: "Schneier on Security", url: "https://www.schneier.com/feed/atom/",                        tier: B}
+  - {name: "PortSwigger Research", url: "https://portswigger.net/research/rss",                       tier: A}
+  - {name: "Trail of Bits",        url: "https://blog.trailofbits.com/feed/",                         tier: B}
+  # GitHub tool discovery is not RSS — see the `github:` block in settings.yaml
+  - {name: "Elastic Security Labs", url: "https://www.elastic.co/security-labs/rss/feed.xml",        tier: B}
+  - {name: "GitHub Security Lab", url: "https://github.blog/tag/github-security-lab/feed/",          tier: A}
+  - {name: "OALabs Research",     url: "https://research.openanalysis.net/feed.xml",                 tier: B}
+
+# --- AI / tech releases, and how to actually use them ---------------------
+tech_ai:
+  - {name: "Simon Willison",       url: "https://simonwillison.net/atom/everything/",                 tier: B}
+  - {name: "Hacker News 150+",     url: "https://hnrss.org/frontpage?points=150",                     tier: C}
+  - {name: "Ars Technica",         url: "https://feeds.arstechnica.com/arstechnica/index",            tier: B}
+  - {name: "The Verge",            url: "https://www.theverge.com/rss/index.xml",                     tier: B}
+  - {name: "TechCrunch",           url: "https://techcrunch.com/feed/",                               tier: B}
+  - {name: "OpenAI Blog",          url: "https://openai.com/news/rss.xml",                            tier: A, primary: true}
+  - {name: "Google AI Blog",       url: "https://blog.google/technology/ai/rss/",                     tier: A, primary: true}
+  - {name: "Hugging Face Blog",    url: "https://huggingface.co/blog/feed.xml",                       tier: A, primary: true}
+  - {name: "arXiv cs.AI",          url: "http://export.arxiv.org/rss/cs.AI",                          tier: A, primary: true}
+  - {name: "arXiv cs.CR",          url: "http://export.arxiv.org/rss/cs.CR",                          tier: A, primary: true}
+  - {name: "MIT Tech Review",      url: "https://www.technologyreview.com/feed/",                     tier: B}
+  - {name: "IEEE Spectrum",        url: "https://spectrum.ieee.org/feeds/feed.rss",                   tier: B}
+  - {name: "NVIDIA Dev Blog",     url: "https://developer.nvidia.com/blog/feed/",                    tier: B}
+
+# --- Markets ---------------------------------------------------------------
+markets:
+  - {name: "Reuters Business",     url: "https://news.google.com/rss/search?q=when:2d+site:reuters.com+business&hl=en-IN&gl=IN&ceid=IN:en", tier: C, aggregator: true}
+  - {name: "Economic Times",       url: "https://economictimes.indiatimes.com/rssfeedstopstories.cms", tier: B}
+  - {name: "Livemint Markets",     url: "https://www.livemint.com/rss/markets",                        tier: B}
+  - {name: "CNBC Finance",         url: "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000664", tier: B}
+
+# --- India & world ---------------------------------------------------------
+india_world:
+  - {name: "BBC World",            url: "https://feeds.bbci.co.uk/news/world/rss.xml",                 tier: A}
+  - {name: "The Hindu National",   url: "https://www.thehindu.com/news/national/feeder/default.rss",   tier: B}
+  - {name: "Indian Express",       url: "https://indianexpress.com/section/india/feed/",               tier: B}
+  - {name: "NDTV India",           url: "https://feeds.feedburner.com/ndtvnews-india-news",            tier: B}
+  - {name: "Al Jazeera",           url: "https://www.aljazeera.com/xml/rss/all.xml",                   tier: B}
+  - {name: "PIB India",            url: "https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3",  tier: A, primary: true}
