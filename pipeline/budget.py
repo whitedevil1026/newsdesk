@@ -109,13 +109,29 @@ class Budget:
 
     # --- selection -------------------------------------------------------
 
-    def next_model(self) -> ModelBudget | None:
-        """The strongest model that still has allowance, or None."""
+    def next_model(self, prefer: str = "premium") -> ModelBudget | None:
+        """Pick a model for the next call.
+
+        `prefer` routes by what the work is worth, not just by batch order:
+
+          premium  the strongest model with quota. For stories a person will
+                   actually read at the top of the page.
+          bulk     the cheapest model with quota, searched from the bottom.
+                   For low-frequency material — social posts, repository
+                   listings, minor items — where a weaker summary is fine and
+                   the flagship's 20-a-day allowance would be wasted.
+
+        Both fall back through the whole ladder, so "bulk" still gets served
+        by a flagship model if the cheap tiers are exhausted, and vice versa.
+        """
         if not self.enabled:
             return self.tiers[0]
-        for tier in self.tiers:
+
+        order = self.tiers if prefer == "premium" else list(reversed(self.tiers))
+        for tier in order:
             if tier.remaining > 0:
                 return tier
+
         self.stopped_reason = ("all model quotas exhausted for today — "
                                "remaining items use extractive summaries")
         return None

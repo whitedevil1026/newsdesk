@@ -22,6 +22,18 @@ cyber_attacks:
   - {name: "WeLiveSecurity",      url: "https://www.welivesecurity.com/en/rss/feed/",                tier: B}
   - {name: "Malwarebytes Labs",   url: "https://www.malwarebytes.com/blog/feed/index.xml",           tier: B}
 
+  # --- Google News topic scans -------------------------------------------
+  # Viable now that redirect tokens resolve to real publisher URLs (see
+  # pipeline/gnews.py). These cast a much wider net than any single outlet:
+  # one query returned 53 ransomware stories where the dedicated feeds had 3.
+  # tier C because a search result is unvetted; the publisher is read from
+  # the title so clustering and outlet-counting still see the true source.
+  - {name: "GN Zero-day watch", url: "https://news.google.com/rss/search?q=zero-day+OR+%22actively+exploited%22+vulnerability+when%3A4d&hl=en-US&gl=US&ceid=US%3Aen", tier: C, aggregator: true}
+  - {name: "GN Ransomware watch", url: "https://news.google.com/rss/search?q=ransomware+attack+when%3A4d&hl=en-US&gl=US&ceid=US%3Aen", tier: C, aggregator: true}
+  - {name: "GN Breach watch", url: "https://news.google.com/rss/search?q=%22data+breach%22+OR+%22data+leak%22+when%3A4d&hl=en-US&gl=US&ceid=US%3Aen", tier: C, aggregator: true}
+  - {name: "GN CVE watch", url: "https://news.google.com/rss/search?q=CVE+critical+patch+advisory+when%3A4d&hl=en-US&gl=US&ceid=US%3Aen", tier: C, aggregator: true}
+  - {name: "GN APT watch", url: "https://news.google.com/rss/search?q=%22threat+actor%22+OR+APT+campaign+malware+when%3A4d&hl=en-US&gl=US&ceid=US%3Aen", tier: C, aggregator: true}
+
 # --- New tools, techniques, tradecraft, how-to ----------------------------
 cyber_tools:
   - {name: "Rapid7 Blog",          url: "https://blog.rapid7.com/rss/",                               tier: B}
@@ -32,6 +44,17 @@ cyber_tools:
   - {name: "Elastic Security Labs", url: "https://www.elastic.co/security-labs/rss/feed.xml",        tier: B}
   - {name: "GitHub Security Lab", url: "https://github.blog/tag/github-security-lab/feed/",          tier: A}
   - {name: "OALabs Research",     url: "https://research.openanalysis.net/feed.xml",                 tier: B}
+
+  # --- Google News topic scans -------------------------------------------
+  # Viable now that redirect tokens resolve to real publisher URLs (see
+  # pipeline/gnews.py). These cast a much wider net than any single outlet:
+  # one query returned 53 ransomware stories where the dedicated feeds had 3.
+  # tier C because a search result is unvetted; the publisher is read from
+  # the title so clustering and outlet-counting still see the true source.
+  - {name: "GN Security tools", url: "https://news.google.com/rss/search?q=%22open+source%22+security+tool+release+github+when%3A4d&hl=en-US&gl=US&ceid=US%3Aen", tier: C, aggregator: true}
+  - {name: "GN Offensive tools", url: "https://news.google.com/rss/search?q=pentest+OR+%22red+team%22+OR+exploit+tool+release+when%3A4d&hl=en-US&gl=US&ceid=US%3Aen", tier: C, aggregator: true}
+  - {name: "GN DFIR tools", url: "https://news.google.com/rss/search?q=DFIR+OR+%22digital+forensics%22+OR+%22incident+response%22+tool+when%3A4d&hl=en-US&gl=US&ceid=US%3Aen", tier: C, aggregator: true}
+  - {name: "GN Detection eng", url: "https://news.google.com/rss/search?q=%22detection+engineering%22+OR+%22threat+hunting%22+OR+sigma+rules+when%3A4d&hl=en-US&gl=US&ceid=US%3Aen", tier: C, aggregator: true}
 
 # --- AI / tech releases, and how to actually use them ---------------------
 tech_ai:
@@ -48,6 +71,17 @@ tech_ai:
   - {name: "MIT Tech Review",      url: "https://www.technologyreview.com/feed/",                     tier: B}
   - {name: "IEEE Spectrum",        url: "https://spectrum.ieee.org/feeds/feed.rss",                   tier: B}
   - {name: "NVIDIA Dev Blog",     url: "https://developer.nvidia.com/blog/feed/",                    tier: B}
+
+  # --- Google News topic scans -------------------------------------------
+  # Viable now that redirect tokens resolve to real publisher URLs (see
+  # pipeline/gnews.py). These cast a much wider net than any single outlet:
+  # one query returned 53 ransomware stories where the dedicated feeds had 3.
+  # tier C because a search result is unvetted; the publisher is read from
+  # the title so clustering and outlet-counting still see the true source.
+  - {name: "GN LLM releases", url: "https://news.google.com/rss/search?q=%22open+source%22+LLM+OR+%22language+model%22+release+weights+when%3A4d&hl=en-US&gl=US&ceid=US%3Aen", tier: C, aggregator: true}
+  - {name: "GN AI agents", url: "https://news.google.com/rss/search?q=AI+agent+OR+%22agentic%22+framework+launch+when%3A4d&hl=en-US&gl=US&ceid=US%3Aen", tier: C, aggregator: true}
+  - {name: "GN Dev tooling", url: "https://news.google.com/rss/search?q=developer+tool+OR+framework+launch+open+source+when%3A4d&hl=en-US&gl=US&ceid=US%3Aen", tier: C, aggregator: true}
+  - {name: "GN AI research", url: "https://news.google.com/rss/search?q=AI+research+paper+benchmark+results+when%3A4d&hl=en-US&gl=US&ceid=US%3Aen", tier: C, aggregator: true}
 
 # --- Markets ---------------------------------------------------------------
 markets:

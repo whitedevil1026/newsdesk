@@ -28,6 +28,15 @@ window:
   # Without this a single high-volume wire filled 39 of 40 slots on a live run.
   per_category_max: 12
 
+# When the pipeline is scheduled to run. This is metadata only — the actual
+# schedule lives in .github/workflows/newsdesk.yml and must be kept in step.
+# The site reads it to tell the reader when the page will next refresh, which
+# is the difference between "this looks stale" and "this is expected".
+schedule:
+  cron_utc: "30 1 * * *"    # 01:30 UTC daily
+  display_tz: "Asia/Kolkata"
+  display_name: "07:00 IST"
+
 dedupe:
   # A dashboard shows a rolling window, so an article seen in an earlier run
   # must still appear today if it is still inside the window. What the seen
@@ -69,24 +78,33 @@ github:
     - {category: tech_ai,     kind: new,     min_stars: 50, topic: ai-agents}
     - {category: tech_ai,     kind: new,     min_stars: 40, topic: mcp}
 
-# --- Bluesky ---------------------------------------------------------------
-# DISABLED by default, deliberately. Two measured reasons:
-#   * the public search endpoint (searchPosts) returns 403 without auth, so
-#     topic search is unavailable; only author feeds are open.
-#   * author feeds are low-yield inside a 48h window — when this was tested,
-#     the newest posts from the three seed accounts were 149h, 96h and
-#     13,263h old (that last account is dormant).
-# Enable it with your own curated list of genuinely active accounts.
-# X/Twitter is not used at all: its free tier ended for new developers in
-# Feb 2026 and reads are billed per post.
+# --- Bluesky: practitioner chatter that never becomes an article -----------
+# Re-enabled 2026-08-24 after probing 30 handles: 12 post within 7 days.
+# The first attempt seeded only 3 accounts, two of which were dormant, and
+# concluded the whole source was dead. It was the sample that was dead.
+#
+# Only INDIVIDUALS are listed. Outlet accounts (Ars, Verge, CyberScoop) are
+# active but only repost their own RSS, which is already harvested directly.
+#
+# Note: the public searchPosts endpoint returns 403 without auth, so topic
+# search is not available — this is author feeds only.
+# X/Twitter remains unused: free tier ended Feb 2026, reads are billed.
 bluesky:
-  enabled: false
-  lookback_hours: 48
-  per_account: 30
-  min_chars: 80
-  min_likes: 8
+  enabled: true
+  lookback_hours: 168       # individuals post weekly, not hourly
+  per_account: 25
+  min_chars: 80             # skip one-liners and reactions
+  min_likes: 10             # unless the post carries a link
   accounts:
-    - {handle: "simonwillison.net", name: "Simon Willison", category: tech_ai}
+    - {handle: "troyhunt.com",              name: "Troy Hunt",        category: cyber_attacks}
+    - {handle: "kimzetter.bsky.social",     name: "Kim Zetter",       category: cyber_attacks}
+    - {handle: "404media.co",               name: "404 Media",        category: cyber_attacks}
+    - {handle: "danielmiessler.bsky.social", name: "Daniel Miessler", category: cyber_tools}
+    - {handle: "simonwillison.net",         name: "Simon Willison",   category: tech_ai}
+    - {handle: "simonw.bsky.social",        name: "Simon Willison",   category: tech_ai}
+    - {handle: "emollick.bsky.social",      name: "Ethan Mollick",    category: tech_ai}
+    - {handle: "xeiaso.net",                name: "Xe Iaso",          category: tech_ai}
+    - {handle: "jaredwhite.com",            name: "Jared White",      category: tech_ai}
 
 cluster:
   # Overlap coefficient (shared tokens / shorter headline), NOT Jaccard.

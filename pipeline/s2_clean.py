@@ -12,7 +12,7 @@ from pathlib import Path
 
 from .config import CACHE_DIR, interests, settings
 from .models import Article, Cluster, canonical_url
-from .utils import log, overlap, tokens
+from .utils import domain_of, log, overlap, tokens
 
 SEEN_PATH = CACHE_DIR / "seen.json"
 BLOCKLIST_PATH = CACHE_DIR / "iffy_blocklist.txt"

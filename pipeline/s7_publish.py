@@ -19,6 +19,57 @@ REJECTS_JSON = DATA_DIR / "rejected.json"
 _ORDER = {Priority.CRITICAL: 0, Priority.IMPORTANT: 1, Priority.MINOR: 2}
 
 
+def _resolve_links(items: list[Item]) -> None:
+    """Turn Google News redirects into real publisher URLs, in place.
+
+    Runs here rather than at harvest because it costs two HTTP requests per
+    link. Only what is actually being published is worth that — roughly 40
+    links instead of several hundred, and the results are cached forever.
+    """
+    from . import gnews
+
+    targets = [s["url"] for i in items for s in i.sources
+               if gnews.is_gnews(s["url"])]
+    if not targets:
+        return
+
+    resolved = gnews.resolve_many(targets)
+    fixed = 0
+    for item in items:
+        for src in item.sources:
+            real = resolved.get(src["url"])
+            if real:
+                src["url"] = real
+                fixed += 1
+    if fixed:
+        log("publish", f"{fixed} reference links resolved to publishers")
+
+
+def _next_run(cron: str) -> str | None:
+    """Next fire time for a daily 'M H * * *' cron, as UTC ISO8601.
+
+    Only the daily form is handled, because that is the only form the
+    workflow uses. Anything else returns None rather than guessing — a wrong
+    "next update" time is worse than none, since the whole point is telling
+    the reader whether the page is stale or simply between runs.
+    """
+    from datetime import timedelta
+
+    parts = cron.split()
+    if len(parts) != 5 or parts[2:] != ["*", "*", "*"]:
+        return None
+    try:
+        minute, hour = int(parts[0]), int(parts[1])
+    except ValueError:
+        return None
+
+    now = now_utc()
+    nxt = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+    if nxt <= now:
+        nxt += timedelta(days=1)
+    return nxt.isoformat()
+
+
 def _apply_quotas(ranked: list, wcfg: dict) -> list:
     """Cap each category, then refill spare slots by global rank.
 
@@ -63,9 +114,19 @@ def run(items: list[Item], dry_run: bool = False) -> dict:
     ))
     live = _apply_quotas(live, cfg["window"])
 
+    sched = cfg.get("schedule", {})
+    _resolve_links(live)
+
     payload = {
         "generated_at": now_utc().isoformat(),
+        "next_update": _next_run(sched.get("cron_utc", "")),
+        "schedule": {
+            "cron_utc": sched.get("cron_utc", ""),
+            "display_tz": sched.get("display_tz", "UTC"),
+            "display_name": sched.get("display_name", ""),
+        },
         "window_hours": cfg["window"]["lookback_hours"],
+        "per_category_hours": cfg["window"].get("per_category_hours", {}),
         "counts": {
             "published": len(live),
             "rejected": len(dead),

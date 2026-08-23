@@ -150,8 +150,28 @@ def _shortlist(items: list[Item], limit: int,
 
 
 
+BULK_DOMAINS = {"bsky.app", "github.com"}
+
+
+def _is_bulk(item) -> bool:
+    """Should this item be summarised by a cheap, high-quota model?
+
+    Two cases, both the user's point: material that does not update daily
+    (social posts, repository listings) and material ranked too low to be
+    read closely. Neither justifies spending one of twenty daily flagship
+    requests, but both are still worth collecting and summarising.
+    """
+    from .models import Priority
+
+    if item is None:
+        return False
+    if any(s.get("domain") in BULK_DOMAINS for s in item.sources):
+        return True
+    return item.priority is Priority.MINOR
+
+
 def _generate(batch, budget, key, profile, tag_list, llm_gemini,
-              n: int, total: int):
+              n: int, total: int, prefer: str = "premium"):
     """Try each model with quota until one serves this batch.
 
     A model can fail for reasons that say nothing about the batch — a 503
@@ -163,7 +183,7 @@ def _generate(batch, budget, key, profile, tag_list, llm_gemini,
     Returns (results, model_name), or (None, "") if every tier is spent.
     """
     while True:
-        tier = budget.next_model()
+        tier = budget.next_model(prefer)
         if tier is None:
             return None, ""
 
@@ -276,8 +296,13 @@ def run(items: list[Item], bodies: dict[str, str]) -> list[Item]:
     done = failed = 0
 
     for n, batch in enumerate(batches, 1):
+        # A batch is "bulk" when most of it is low-frequency or low-ranked
+        # material. Routing it to the cheap tier keeps the flagship quota for
+        # the stories at the top of the page.
+        bulk = sum(_is_bulk(b["_item"]) for b in batch) > len(batch) / 2
         results, used = _generate(batch, budget, key, profile, tag_list,
-                                  llm_gemini, n, len(batches))
+                                  llm_gemini, n, len(batches),
+                                  prefer="bulk" if bulk else "premium")
         if results is None:
             for b in batch:
                 _heuristic(b["_item"], b["body"])

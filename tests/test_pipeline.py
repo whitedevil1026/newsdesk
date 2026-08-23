@@ -8,6 +8,8 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+import pytest
+
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from pipeline.models import Article, Cluster, canonical_url
@@ -104,10 +106,23 @@ class TestScoring:
             "an official source is a reason to trust a story, not to care about it"
 
 
+@pytest.fixture(autouse=True)
+def _isolated_usage(tmp_path, monkeypatch):
+    """Redirect the usage counter at a temp file for every test in this module.
+
+    Without this the tests delete the REAL data/cache/usage.json — which they
+    did, wiping live quota state out from under a run that was in flight.
+    Tests must never touch production data.
+    """
+    import pipeline.budget as budget
+    monkeypatch.setattr(budget, "USAGE_PATH", tmp_path / "usage.json")
+
+
 class TestBudgetKillSwitch:
     """The stop condition has to be provable, not assumed.
 
-    These run against the real settings ladder but never touch the network.
+    These run against the real settings ladder but never touch the network
+    and never touch the real usage counter (see the fixture above).
     """
 
     def _fresh(self):
@@ -140,7 +155,9 @@ class TestBudgetKillSwitch:
             assert tier.per_run <= tier.usable_rpd, tier.model
 
     def test_quota_refusal_persists_but_overload_does_not(self):
-        from pipeline.budget import Budget, USAGE_PATH
+        import pipeline.budget as _b
+        from pipeline.budget import Budget
+        USAGE_PATH = _b.USAGE_PATH
         b = self._fresh()
         first = b.next_model()
         b.block(first, "429", persist=True)

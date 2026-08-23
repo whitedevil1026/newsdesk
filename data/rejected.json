@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T20:24:31.601195+00:00",
+  "generated_at": "2026-08-23T20:29:04.678961+00:00",
   "items": [
     {
       "cluster_key": "73853ada04cdc66b",
@@ -1325,6 +1325,273 @@
       "reject_reason": "published 2026-08-17 — outside lookback window"
     },
     {
+      "cluster_key": "3654d5ab6ce69863",
+      "title": "These bookshops let Chinese readers question their country - now the doors are closing",
+      "category": "india_world",
+      "one_liner": "National security police raids and arrests force historic independent bookstores in Hong Kong to close, eliminating safe havens for censored Chinese readers.",
+      "tags": [
+        "blueteam",
+        "cloud",
+        "exploit",
+        "incident",
+        "india",
+        "markets",
+        "policy",
+        "release"
+      ],
+      "summary": "Independent bookshops in Hong Kong that stock politically sensitive titles, such as works on the 1989 Tiananmen Square massacre and democracy campaigns, are facing sweeping closures amid heightened Beijing control. National security police have arrested multiple bookshop owners and staff under sedition and money laundering charges linked to the sweeping National Security Law. Consequently, prominent stores like Greenfield Bookstore are shutting down after decades of operation, closing off a vital cultural space for both local Hong Kongers and mainland Chinese readers seeking uncensored perspectives.",
+      "key_facts": [
+        "Arrests: Multiple owners and staff across several bookstores",
+        "Charges: Sedition and money laundering",
+        "Closing store: Greenfield Bookstore (after 50 years)"
+      ],
+      "bottom_line": "Hong Kong's independent bookshops are shutting down under pressure from national security laws and police arrests, cutting off access to politically sensitive books for mainland readers.",
+      "claims": [
+        {
+          "text": "Independent bookshops in Hong Kong that stock politically sensitive titles, such as works on the 1989 Tiananmen Square massacre and democracy campaigns, are facing sweeping closures amid heightened Beijing control.",
+          "support_span": "Founded four years ago by a former councillor, the independent bookshop has earned a reputation for stocking what authorities would consider sensitive books - from accounts of Hong Kong's pro-democracy campaigners, to famous allegories on authoritarianism...",
+          "status": "contradicted"
+        },
+        {
+          "text": "National security police have arrested multiple bookshop owners and staff under sedition and money laundering charges linked to the sweeping National Security Law.",
+          "support_span": "When police searched Hunter Bookstore on 24 June, they accused owner Letitia Wong, 33, and a 32-year-old man, of violating those laws and arrested them for sedition and money laundering.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 51.2,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj0338l6yg4o?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-21T22:26:25+00:00",
+      "trace": [
+        "tier A (+40)",
+        "only one independent outlet — flagged, not hidden",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 51 = trust 40 / interest 75 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "39d4d82c86677eea",
+      "title": "Drugs at their fingertips, intense pressure: Why child stars fall into addiction",
+      "category": "india_world",
+      "one_liner": "The death of actress Hayden Panettiere at 36 brings renewed attention to the severe mental health and addiction struggles confronting former child stars.",
+      "tags": [
+        "dfir",
+        "exploit",
+        "release",
+        "vulnerability"
+      ],
+      "summary": "The sudden death of actress Hayden Panettiere at age 36 has re-ignited industry discussions regarding the intense pressure, exhaustion, and early exposure to drugs faced by child stars in Hollywood. Panettiere had recently published a memoir detailing how she was handed a pill ahead of a red-carpet event as a teen, which initiated her struggles with substance abuse. Emergency crews responded to a cardiac arrest call at her South Carolina home, and while no cause of death has been released, the US Drug Enforcement Agency has joined the investigation.",
+      "key_facts": [
+        "Age at death: 36",
+        "Location: Greenville, South Carolina"
+      ],
+      "bottom_line": "Hayden Panettiere's death at age 36 has prompted a federal investigation and reignited scrutiny over the pressures and drug access faced by child actors in Hollywood.",
+      "claims": [
+        {
+          "text": "The sudden death of actress Hayden Panettiere at age 36 has re-ignited industry discussions regarding the intense pressure, exhaustion, and early exposure to drugs faced by child stars in Hollywood.",
+          "support_span": "The star's sudden death at the age of 36 has placed a renewed focus on her struggles with mental health and substance abuse, and re-ignited a discussion about the pressures of Hollywood on child stars.",
+          "status": "entailed"
+        },
+        {
+          "text": "Emergency crews responded to a cardiac arrest call at her South Carolina home, and while no cause of death has been released, the US Drug Enforcement Agency has joined the investigation.",
+          "support_span": "The coroner's office in Greenville, South Carolina said crews treated a woman in \"cardiac arrest\" and her autopsy showed \"no signs of trauma\". No cause of death has been released... the US Drug Enforcement Agency is joining an investigation into her death",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 40.0,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq56x3910jwo?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-21T23:41:33+00:00",
+      "trace": [
+        "tier A (+40)",
+        "only one independent outlet — flagged, not hidden",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 40 = trust 40 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "9463314eebf6df50",
+      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse",
+      "category": "india_world",
+      "one_liner": "The collapse of US-Canada trade talks sparks a full-scale trade war as Trump slaps 50% tariffs on Canadian goods and Ottawa retaliates dollar-for-dollar.",
+      "tags": [
+        "llm",
+        "markets",
+        "policy",
+        "release"
+      ],
+      "summary": "Trade talks between the US and Canada collapsed after both sides accused each other of making last-minute demands, prompting US President Donald Trump to impose a new 50% tariff on roughly $20bn worth of Canadian imports. In response, Canadian Prime Minister Mark Carney declared a trade war, announcing dollar-for-dollar retaliatory tariffs starting September 8 on American goods including steel, dairy, and electronics. Trump dismissed Canadian retaliation while continuing to reference Canada joining the US as a state, creating a severe escalation in bilateral trade relations.",
+      "key_facts": [
+        "New US tariff rate: 50%",
+        "Impacted Canadian imports: ~$20bn (5% total)",
+        "Retaliation start date: September 8"
+      ],
+      "bottom_line": "US-Canada trade negotiations have broken down entirely, leading to reciprocal 50% tariffs and a declared trade war between the two nations.",
+      "claims": [
+        {
+          "text": "Trade talks between the US and Canada collapsed after both sides accused each other of making last-minute demands, prompting US President Donald Trump to impose a new 50% tariff on roughly $20bn worth of Canadian imports.",
+          "support_span": "US President Donald Trump has said Canada wants \"the benefits of being a State, without being one\" after trade talks between the two countries collapsed late on Friday... triggering new 50% US tariffs on a range of Canadian goods",
+          "status": "contradicted"
+        },
+        {
+          "text": "In response, Canadian Prime Minister Mark Carney declared a trade war, announcing dollar-for-dollar retaliatory tariffs starting September 8 on American goods including steel, dairy, and electronics.",
+          "support_span": "Canadian Prime Minister Mark Carney called the fresh tariffs a \"miscalculation\" designed to \"hurt and divide us\". Carney confirmed he would match Trump's tariffs \"dollar-for-dollar\" from 8 September",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 62.5,
+      "critical_signal": "",
+      "priority": "critical",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-23T19:11:30+00:00",
+      "trace": [
+        "tier A (+40)",
+        "only one independent outlet — flagged, not hidden",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 62 = trust 40 / interest 100 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "7678b1aa1618950f",
+      "title": "Due to need for 'absolute success,' China delays critical Moon launch to 2027",
+      "category": "tech_ai",
+      "one_liner": "A significant delay in China's lunar exploration timeline.",
+      "tags": [
+        "policy"
+      ],
+      "summary": "China has delayed its critical Chang’e 7 lunar mission to 2027, citing the need for 'absolute success.' The mission is a key part of China's lunar exploration program and was previously scheduled for an earlier launch. Authorities stated that the mission currently does not meet the necessary conditions for launch.",
+      "key_facts": [
+        "Mission: Chang’e 7",
+        "New Date: 2027"
+      ],
+      "bottom_line": "China is prioritizing mission reliability over schedule for its high-stakes lunar exploration.",
+      "claims": [
+        {
+          "text": "China has delayed the Chang’e 7 mission to 2027.",
+          "support_span": "China delays critical Moon launch to 2027",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 25.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/space/2026/08/due-to-need-for-absolute-success-china-delays-critical-moon-launch-to-2027/",
+          "domain": "arstechnica.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-23T14:30:16+00:00",
+      "trace": [
+        "tier B (+25)",
+        "only one independent outlet — flagged, not hidden",
+        "importance 2/5 from gemini-3-flash-preview",
+        "blend 25 = trust 25 / interest 25 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "7aefa49688d7d23a",
+      "title": "Trump waves green flag kicking off high-speed IndyCar race through Washington",
+      "category": "india_world",
+      "one_liner": "Washington D.C. hosts its first professional street race as part of national anniversary celebrations, drawing massive crowds and presidential participation.",
+      "tags": [
+        "exploit"
+      ],
+      "summary": "US President Donald Trump attended the Freedom 250 Grand Prix, an IndyCar race held on a 1.7-mile street circuit through Washington D.C. as part of the country's 250th birthday celebrations. The event drew an estimated 140,000 attendees and featured 25 drivers reaching speeds up to 190mph past major national monuments. The race required extensive logistical preparation, security measures, and temporary airspace closures.",
+      "key_facts": [
+        "Expected attendance: 140,000",
+        "Track length: 1.7 miles",
+        "Top speed: 190 mph (306 km/h)",
+        "Drivers: 25"
+      ],
+      "bottom_line": "The Freedom 250 Grand Prix brought high-speed IndyCar racing to the streets of Washington D.C., creating a major logistical and security event for the capital.",
+      "claims": [
+        {
+          "text": "US President Donald Trump attended the Freedom 250 Grand Prix, an IndyCar race held on a 1.7-mile street circuit through Washington D.C. as part of the country's 250th birthday celebrations.",
+          "support_span": "US President Donald Trump was among hundreds of people who gathered to see the IndyCar race through the streets of Washington DC on Sunday, marking the culmination of a series of summer events to celebrate the country's 250th birthday.",
+          "status": "entailed"
+        },
+        {
+          "text": "The event drew an estimated 140,000 attendees and featured 25 drivers reaching speeds up to 190mph past major national monuments.",
+          "support_span": "Organisers of the Freedom 250 Grand Prix say about 140,000 people are expected to attend... 25 professional drivers competing in the event face 147 laps... zoomed past the capital's famous monuments and museums at speeds of up to 190mph (306kmh).",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 40.0,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c0qvq24vlj4o?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-23T18:17:34+00:00",
+      "trace": [
+        "tier A (+40)",
+        "only one independent outlet — flagged, not hidden",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 40 = trust 40 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
       "cluster_key": "d803b01c4e9ad0d5",
       "title": "Whispergate/lldp — Mythic Peer to Peer (P2P) Communication Protocol via. LLDP",
       "category": "cyber_tools",
@@ -1379,6 +1646,220 @@
         "summary: heuristic extractive (no LLM configured)"
       ],
       "reject_reason": "published 2026-08-20 — outside lookback window"
+    },
+    {
+      "cluster_key": "d8c91124dda98326",
+      "title": "Trump's space transportation policy calls for new spaceport on federal land",
+      "category": "tech_ai",
+      "one_liner": "Major policy news regarding space infrastructure and heavy-lift capabilities.",
+      "tags": [
+        "policy"
+      ],
+      "summary": "Trump's space transportation policy includes a call for a new spaceport to be established on federal land. The proposal suggests that an additional site is needed to support heavy and super heavy launch capabilities. This move aims to expand the infrastructure available for advanced space missions.",
+      "key_facts": [
+        "Capability: Heavy and super heavy launch"
+      ],
+      "bottom_line": "The administration is pushing for expanded federal infrastructure to support heavy-lift space launches.",
+      "claims": [
+        {
+          "text": "The policy calls for a new spaceport on federal land.",
+          "support_span": "Trump's space transportation policy calls for new spaceport on federal land",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 25.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/space/2026/08/trump-admin-calls-for-more-spaceports-to-handle-surge-in-launches/",
+          "domain": "arstechnica.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-21T23:32:17+00:00",
+      "trace": [
+        "tier B (+25)",
+        "only one independent outlet — flagged, not hidden",
+        "importance 2/5 from gemini-3-flash-preview",
+        "blend 25 = trust 25 / interest 25 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "40289fa88a4f0bc5",
+      "title": "Did a goat herder's lucky $200 nugget spark a gold rush in western Kenya?",
+      "category": "india_world",
+      "one_liner": "A goat herder's small gold discovery triggers a massive influx of thousands of prospectors to a remote village in western Kenya.",
+      "tags": [
+        "markets"
+      ],
+      "summary": "A gold rush has overwhelmed the remote village of Cheporor in western Kenya after a goat herder named Manasse Lomachar sold a three-gram golden nugget for $280. Local authorities estimate that rumors and early finds drew up to 10,000 prospectors into the rough grazing land, though numbers have since dwindled to around 2,500. While small-scale alluvial gold has been panned in the area for years, the sudden influx highlights the precarious economic conditions of farmers and locals seeking alternative income.",
+      "key_facts": [
+        "Gold sold: 3 grams for $280 (36,000 Kenyan shillings)",
+        "Peak prospectors: ~10,000",
+        "Current prospectors: ~2,500"
+      ],
+      "bottom_line": "A chance discovery of a small gold nugget sparked a massive, transient gold rush drawing thousands of prospectors to western Kenya.",
+      "claims": [
+        {
+          "text": "A gold rush has overwhelmed the remote village of Cheporor in western Kenya after a goat herder named Manasse Lomachar sold a three-gram golden nugget for $280.",
+          "support_span": "A goat herder from a remote area of western Kenya has told the BBC his discovery of a golden nugget has sparked a gold rush, overwhelming his small village over the last few weeks.",
+          "status": "entailed"
+        },
+        {
+          "text": "Local authorities estimate that rumors and early finds drew up to 10,000 prospectors into the rough grazing land, though numbers have since dwindled to around 2,500.",
+          "support_span": "But local authorities estimate that about 10,000 people arrived at the height of the rush... Since the initial rush, the number of prospectors has gone down to around 2,500",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 40.0,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/clyjmnvdr95o?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-22T23:22:02+00:00",
+      "trace": [
+        "tier A (+40)",
+        "only one independent outlet — flagged, not hidden",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 40 = trust 40 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "6074842a57973a5d",
+      "title": "Watch: Taking a 180mph spin round America's birthday Grand Prix racetrack",
+      "category": "india_world",
+      "one_liner": "A test drive preview captures the high-speed preparation for Washington D.C.'s historic IndyCar Grand Prix.",
+      "tags": [
+        "threat-intel"
+      ],
+      "summary": "The BBC's Helena Humphrey took a test drive around the Freedom 250 Grand Prix racetrack in Washington D.C., where IndyCar vehicles will reach speeds up to 180mph. The event marks the capital's first major auto race in over 24 years and serves as a belated celebration of the nation's 250th anniversary, drawing an expected crowd of 140,000 daily attendees.",
+      "key_facts": [
+        "Speed: 180mph",
+        "Attendance: ~140,000 per day"
+      ],
+      "bottom_line": "The Freedom 250 Grand Prix brings 180mph IndyCar racing back to Washington D.C. for the first time in over two decades.",
+      "claims": [
+        {
+          "text": "The BBC's Helena Humphrey took a test drive around the Freedom 250 Grand Prix racetrack in Washington D.C., where IndyCar vehicles will reach speeds up to 180mph.",
+          "support_span": "The BBC's Helena Humphrey took a test drive ahead of the Freedom 250 Grand Prix, where IndyCar race cars will push speeds of 180mph in Washington DC.",
+          "status": "entailed"
+        },
+        {
+          "text": "The event marks the capital's first major auto race in over 24 years and serves as a belated celebration of the nation's 250th anniversary, drawing an expected crowd of 140,000 daily attendees.",
+          "support_span": "The event is the first major auto race in the capital in more than 24 years... expected to attract about 140,000 people on each day of the weekend.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 28.8,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/cn0nd7y883zo?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-21T21:50:27+00:00",
+      "trace": [
+        "tier A (+40)",
+        "only one independent outlet — flagged, not hidden",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 29 = trust 40 / interest 25 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "0d11eef5a20341f6",
+      "title": "TikTok Agrees to $400 Million Settlement in U.S. Child Privacy Lawsuit",
+      "category": "cyber_attacks",
+      "one_liner": "TikTok agrees to a massive $400 million settlement with the US Department of Justice over child privacy violations under COPPA.",
+      "tags": [
+        "cloud",
+        "policy",
+        "privacy"
+      ],
+      "summary": "ByteDance-owned TikTok has agreed to a $400 million settlement with the U.S. Department of Justice and the FTC to resolve a 2024 lawsuit alleging massive violations of the Children's Online Privacy Protection Act (COPPA). Under the agreement, TikTok will pay $300 million immediately and another $100 million conditional on vacating a prior consent decree tied to its predecessor, Musical.ly. The complaint accused TikTok of knowingly permitting children under 13 to create accounts, unlawfully harvesting data in Kids Mode, and failing to honor parental account-deletion requests. While marking one of the largest child privacy recoveries in US history, the company noted it has since deployed enhanced age-control safeguards.",
+      "key_facts": [
+        "Settlement amount: $400 million",
+        "Immediate payment: $300 million",
+        "Conditional payment: $100 million"
+      ],
+      "bottom_line": "ByteDance agreed to pay $400 million to settle US federal charges that TikTok illegally collected data from children under 13 in violation of privacy laws.",
+      "claims": [
+        {
+          "text": "The U.S. Department of Justice (DoJ) announced on Friday that ByteDance-owned TikTok will pay $400 million to settle a 2024 lawsuit accusing the company of violating child privacy laws in the country.",
+          "support_span": "The U.S. Department of Justice (DoJ) announced on Friday that ByteDance-owned TikTok will pay $400 million to settle a 2024 lawsuit accusing the company of violating child privacy laws in the country.",
+          "status": "entailed"
+        },
+        {
+          "text": "As part of the settlement, the social media platform will pay $300 million immediately, and an additional $100 million \"upon entry of an order vacating a prior consent decree entered against TikTok’s predecessor, Musical.ly,\" the DoJ said in a press release.",
+          "support_span": "As part of the settlement, the social media platform will pay $300 million immediately, and an additional $100 million \"upon entry of an order harvested data from those who used it in \"Kids Mode.\" (Wait, check exact support span in text: \"upon entry of an order vacating a prior consent decree entered against TikTok’s predecessor, Musical.ly,\")",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 49,
+      "interest_score": 75,
+      "corroboration": 3,
+      "blend": 68.5,
+      "critical_signal": "",
+      "priority": "critical",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/tiktok-agrees-to-400-million-settlement.html",
+          "domain": "thehackernews.com",
+          "tier": "B"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/983531/tiktok-settle-doj-lawsuit-coppa",
+          "domain": "theverge.com",
+          "tier": "B"
+        },
+        {
+          "name": "Reuters Business",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdHp4WjducldzcUtEUTljcWhGYmpkOUgzc2RKaFFhaUFyVjdCZW9XajFRb1BNTWVGUnVmdVNVWDBLQmVWS3d1UkZncVp3R2cwQWxRVDB4c1VFVW5Gc1RoUzRZVUZ0aFlQTGc2ekF3T0w5QUQtSXFPYml1cnBzamdJV0NVR3d3ZTFoTVRocVp2dm4xQXFyX0U2TXdwM2I5ZmNqa0Q1emcza0N0dkczb25xdzY0UFZvSElWLUE?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-21T20:54:31+00:00",
+      "trace": [
+        "tier B (+25)",
+        "3 independent outlets (+24)",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 68 = trust 49 / interest 75 / corrob 75"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
     }
   ]
 }

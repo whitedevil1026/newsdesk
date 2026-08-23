@@ -14,6 +14,7 @@ from datetime import datetime, timedelta, timezone
 
 import feedparser
 
+from . import gnews
 from .config import feeds, settings
 from .models import Article
 from .utils import domain_of, log, strip_html
@@ -68,6 +69,16 @@ def _fetch_one(category: str, spec: dict, cutoff: datetime, cfg: dict) -> list[A
         title = (entry.get("title") or "").strip()
         if not link or not title:
             continue
+        # Google News wraps every story in a redirect and names the real
+        # publisher in the title. Attribute it here, for free, so clustering
+        # and outlet-counting see the true source instead of "news.google.com".
+        src_name, src_domain, aggregator = spec["name"], domain_of(link),             bool(spec.get("aggregator", False))
+        if gnews.is_gnews(link):
+            found = gnews.publisher_of(title)
+            if found:
+                src_name, src_domain = found
+                title = gnews.strip_publisher(title)
+
         published = _parse_date(entry)
         # Undated entries are kept — stage 4 re-checks the date from the page.
         if published and published < cutoff:
@@ -76,14 +87,14 @@ def _fetch_one(category: str, spec: dict, cutoff: datetime, cfg: dict) -> list[A
             Article(
                 url=link,
                 title=title,
-                source=spec["name"],
-                domain=domain_of(link),
+                source=src_name,
+                domain=src_domain,
                 category=category,
                 tier=spec.get("tier", "C"),
                 published=published,
                 summary_raw=strip_html(entry.get("summary") or "")[:1200],
                 is_primary=bool(spec.get("primary", False)),
-                is_aggregator=bool(spec.get("aggregator", False)),
+                is_aggregator=aggregator,
             )
         )
     log("harvest", f"  {spec['name']:<24} {len(out):>3} in window")
