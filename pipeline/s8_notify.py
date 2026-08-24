@@ -51,8 +51,25 @@ _MARK = {Verdict.VERIFIED: "verified", Verdict.CORROBORATED: "corroborated",
 
 
 def _secret(name: str) -> str | None:
-    """Environment first, then .env — same precedence as the API key."""
-    return os.environ.get(name) or _load_dotenv().get(name) or None
+    """Environment first, then .env — same precedence as the API key.
+
+    Sanitised, because Telegram carries the token in the URL PATH, so a
+    control character in it makes InvalidURL embed the whole path — token
+    included — in an exception this module logs in three places.
+    """
+    from .config import clean_secret
+    return clean_secret(os.environ.get(name) or _load_dotenv().get(name), name)
+
+
+def _mask(chat_id: str) -> str:
+    """Partially hide the destination in logs.
+
+    Not a credential — it grants nothing without the bot token — but it is an
+    identifier, and console output ends up in CI logs and screenshots.
+    """
+    if chat_id.startswith("@"):
+        return chat_id[:3] + "***"
+    return "***" + chat_id[-4:] if len(chat_id) > 4 else "***"
 
 
 def _esc(text: str) -> str:
@@ -240,5 +257,5 @@ def run(items: list[Item], generated_at: str, dry_run: bool = False) -> None:
         return
 
     sent = sum(_send(token, chat_id, m, 20) for m in messages)
-    log("notify", f"{sent}/{len(messages)} message(s) sent to {chat_id} "
+    log("notify", f"{sent}/{len(messages)} message(s) sent to {_mask(chat_id)} "
                   f"({len(live)} items)")

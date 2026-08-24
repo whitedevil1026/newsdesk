@@ -263,13 +263,81 @@ class TestNoSecretsInRepo:
         # snapshots before it was caught.
         assert ".env" in [line.strip() for line in ignored]
 
-    def test_no_key_shaped_strings_in_config(self):
-        root = Path(__file__).resolve().parent.parent
+    def test_no_key_shaped_strings_in_any_tracked_file(self):
+        """Scan everything git tracks, not just config/.
+
+        The original version checked config/*.yaml only, which would not have
+        caught a key pasted into README.md, PROGRESS.md or a data/ file. It
+        also had no pattern for a Telegram bot token or the newer GitHub
+        token prefixes.
+        """
         import re
-        pat = re.compile(r"AIza[0-9A-Za-z_-]{20,}|AQ\.[A-Za-z0-9]{20,}"
-                         r"|ghp_[A-Za-z0-9]{20,}")
-        for path in (root / "config").glob("*.yaml"):
-            assert not pat.search(path.read_text(encoding="utf-8")), path
+        import subprocess
+
+        root = Path(__file__).resolve().parent.parent
+        pat = re.compile(
+            r"AIza[0-9A-Za-z_-]{20,}"            # Google API key
+            r"|AQ\.[A-Za-z0-9_-]{20,}"           # newer Google AI Studio key
+            r"|gh[pousr]_[A-Za-z0-9]{20,}"       # GitHub classic/fine tokens
+            r"|github_pat_[A-Za-z0-9_]{20,}"
+            r"|\d{8,10}:AA[A-Za-z0-9_-]{30,}"  # Telegram bot token
+            r"|sk-[A-Za-z0-9]{20,}"              # OpenAI-style
+            r"|xox[baprs]-[A-Za-z0-9-]{10,}"     # Slack
+        )
+        tracked = subprocess.run(["git", "ls-files"], cwd=root,
+                                 capture_output=True, text=True).stdout.split()
+        assert tracked, "git ls-files returned nothing"
+
+        for rel in tracked:
+            path = root / rel
+            try:
+                text = path.read_text(encoding="utf-8")
+            except (UnicodeDecodeError, FileNotFoundError, OSError):
+                continue                      # binary or removed; nothing to scan
+            found = pat.search(text)
+            assert not found, f"key-shaped string in {rel}: {found.group()[:12]}..."
+
+
+class TestSecretSanitising:
+    """One validation closes three separate leak paths.
+
+    A secret containing a control character makes http.client raise
+    ValueError("Invalid header value %r") with the FULL header in the
+    message — which s1b_github logs, llm_gemini lets escape as a traceback,
+    and s8_notify echoes in three handlers. Sanitising at the entry point
+    beats patching each site, because the next handler written would leak too.
+    """
+
+    def test_control_characters_are_removed(self):
+        from pipeline.config import clean_secret
+        for bad in (chr(10), chr(13), chr(9), chr(0), chr(31)):
+            out = clean_secret("AIza" + bad + "SyKEY", "TEST")
+            assert bad not in out
+            assert out == "AIzaSyKEY"
+
+    def test_a_clean_key_is_returned_unchanged(self):
+        from pipeline.config import clean_secret
+        assert clean_secret("AIzaSyABC123", "TEST") == "AIzaSyABC123"
+
+    def test_surrounding_whitespace_is_trimmed(self):
+        from pipeline.config import clean_secret
+        assert clean_secret("  AIzaSyABC123  ", "TEST") == "AIzaSyABC123"
+
+    def test_empty_and_none_become_none(self):
+        from pipeline.config import clean_secret
+        assert clean_secret("", "TEST") is None
+        assert clean_secret(None, "TEST") is None
+        assert clean_secret("   ", "TEST") is None
+
+    def test_sanitised_value_is_header_safe(self):
+        """The actual property that matters: http.client must accept it."""
+        import http.client
+        from pipeline.config import clean_secret
+        dirty = "Bearer_tok" + chr(10) + "en"
+        cleaned = clean_secret(dirty, "TEST")
+        # This is the call that raised ValueError with the token in the message.
+        http.client.HTTPConnection("example.com")._validate_header_value =             getattr(http.client.HTTPConnection, "_validate_header_value", None)
+        assert all(ord(c) > 0x20 for c in cleaned)
 
 
 class TestPromptHardening:

@@ -113,7 +113,9 @@ def run() -> list[Article]:
     since = (datetime.now(timezone.utc)
              - timedelta(hours=gh["lookback_hours"])).strftime("%Y-%m-%d")
 
-    token = os.environ.get(gh.get("token_env", "")) or None
+    from .config import clean_secret
+    token = clean_secret(os.environ.get(gh.get("token_env", "")),
+                         gh.get("token_env", "GITHUB_TOKEN"))
     if token:
         log("github", "using GITHUB_TOKEN (30 searches/min)")
 

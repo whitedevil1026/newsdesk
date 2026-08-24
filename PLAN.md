@@ -76,3 +76,16 @@ Recorded honestly so Step 2 has a target to beat:
 - **Google News RSS links are opaque redirect tokens** and cannot be resolved
   offline. Such feeds are tagged `aggregator: true` so a real outlet's link
   wins as the reference link.
+
+
+## Vercel deployment — settings that matter
+
+**Set the project root to `site/`, not the repository root.** The repo root
+contains `data/rejected.json`, `data/cache/*` and the project docs. None hold
+secrets — that was audited — but rejected items and internal caches are not
+meant to be public, and serving the repo root publishes all of them.
+
+If deploying with the `vercel` CLI from this directory rather than through the
+Git integration, confirm `.env` is excluded from the upload set. The Git
+integration never sees it (it is gitignored); a CLI deploy uploads the working
+directory and can.

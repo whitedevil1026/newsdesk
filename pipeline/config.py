@@ -118,7 +118,39 @@ def _load_dotenv() -> dict[str, str]:
     return out
 
 
+def clean_secret(value: str | None, name: str = "secret") -> str | None:
+    """Strip whitespace/control characters from a credential before use.
+
+    This is the single fix for three separate leak paths, all with the same
+    root cause. A token containing a control character — a key pasted across
+    a line wrap is the realistic case — makes http.client raise
+
+        ValueError("Invalid header value %r" % value)
+
+    where %r is the FULL header, i.e. `Bearer <token>` or the Gemini key.
+    That exception is then caught and logged:
+
+        s1b_github.py   caught by `except Exception` and written to stderr
+        llm_gemini.py   escapes as an uncaught traceback
+        s8_notify.py    Telegram puts the token in the URL path, so
+                        InvalidURL embeds it and three handlers echo it
+
+    Patching each handler would leave the next one to be written exposed.
+    Sanitising at the single point of entry closes all of them, and a token
+    with a stray newline was never going to authenticate anyway.
+    """
+    if value is None:
+        return None
+    cleaned = "".join(ch for ch in value.strip() if ord(ch) > 0x20)
+    if cleaned != value.strip():
+        print(f"WARNING: {name} contained whitespace or control characters; "
+              f"they were stripped. Check the value in .env is on one line.",
+              file=sys.stderr)
+    return cleaned or None
+
+
 def api_key() -> str | None:
     """LLM key: real environment first, then .env. Never from committed config."""
     name = settings()["llm"]["api_key_env"]
-    return os.environ.get(name) or _load_dotenv().get(name) or None
+    raw = os.environ.get(name) or _load_dotenv().get(name)
+    return clean_secret(raw, name)
