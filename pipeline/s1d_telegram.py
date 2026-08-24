@@ -40,9 +40,22 @@ except ImportError:
 
 PREVIEW = "https://t.me/s/{channel}"
 
-_MSG = re.compile(
+# One regex per MESSAGE, not one for text and another for time.
+#
+# The previous version matched text divs and <time> tags independently and
+# zipped them with `stamps[-len(blocks):]`. That is only correct when every
+# extra timestamp precedes the first text block, which is not how a channel
+# looks: a media-only post (routine on vxunderground) produces a stamp with
+# no text block, and a REPLY produces two text blocks for one stamp because
+# the reply-preview div also starts with `tgme_widget_message_text`. Either
+# way every subsequent post was paired with the wrong time — silently, since
+# when the counts happen to match the slice is a no-op.
+_MESSAGE = re.compile(
+    r'<div class="tgme_widget_message[ "].*?(?=<div class="tgme_widget_message[ "]|\Z)',
+    re.S)
+_TEXT_IN_MSG = re.compile(
     r'<div class="tgme_widget_message_text[^"]*"[^>]*>(.*?)</div>', re.S)
-_TIME = re.compile(r'<time datetime="([^"]+)"')
+_TIME_IN_MSG = re.compile(r'<time datetime="([^"]+)"')
 _HREF = re.compile(r'href="(https?://[^"]+)"')
 _TAG = re.compile(r"<[^>]+>")
 _BR = re.compile(r"<br\s*/?>", re.I)
@@ -133,13 +146,20 @@ def _channel_articles(spec: dict, cutoff: datetime, cfg: dict) -> list[Article]:
     if not page:
         return []
 
-    blocks = _MSG.findall(page)
-    stamps = _TIME.findall(page)
     tg = cfg["telegram"]
     out: list[Article] = []
 
-    # Messages and timestamps appear in the same document order.
-    for block, stamp in zip(blocks, stamps[-len(blocks):] if blocks else []):
+    # Each message carries its own timestamp, so they cannot drift apart.
+    for chunk in _MESSAGE.findall(page):
+        texts = _TEXT_IN_MSG.findall(chunk)
+        stamps = _TIME_IN_MSG.findall(chunk)
+        if not texts or not stamps:
+            continue                      # media-only post, or no timestamp
+
+        # The LAST text div is the message's own; an earlier one is the
+        # quoted post in a reply. The LAST <time> is the post time; an
+        # earlier one belongs to the quoted post.
+        block, stamp = texts[-1], stamps[-1]
         text, link = _parse(block)
         if len(text) < tg["min_chars"]:
             continue

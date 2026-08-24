@@ -209,6 +209,42 @@ def _post_with_retries(model: str, key: str, payload: dict,
     raise GeminiError("exhausted retries")            # pragma: no cover
 
 
+
+def _extract_text(data: dict, model: str) -> str:
+    """Pull the response text out, or raise GeminiError — never KeyError.
+
+    Gemini omits `content` entirely when a candidate stops for SAFETY or
+    MAX_TOKENS, and omits `candidates` altogether when the whole prompt is
+    blocked. Both were dereferenced directly, so the exception escaped every
+    caller (which catch only GeminiError/RateLimited) and killed the run
+    AFTER stages 1-5 had already spent their network and API budget.
+
+    A news feed is untrusted input, so a safety block is a routine event
+    here, not an exceptional one. It must degrade to an extractive summary
+    for that batch, which is what raising GeminiError achieves.
+    """
+    candidates = data.get("candidates")
+    if not candidates:
+        reason = (data.get("promptFeedback") or {}).get("blockReason", "none")
+        raise GeminiError(
+            f"{model} returned no candidates (blockReason={reason}). "
+            f"The prompt itself was rejected.")
+
+    candidate = candidates[0]
+    finish = candidate.get("finishReason")
+    if finish not in (None, "STOP"):
+        log("gemini", f"! {model} finishReason={finish}")
+
+    parts = (candidate.get("content") or {}).get("parts")
+    if not parts:
+        raise GeminiError(
+            f"{model} returned a candidate with no content "
+            f"(finishReason={finish}). Usually a safety block or a response "
+            f"truncated at max tokens.")
+
+    return "".join(p.get("text", "") for p in parts)
+
+
 def call(model: str, key: str, profile: str, batch: list[dict],
          tags: str = "", timeout: int = 90, max_retries: int = 4) -> list[dict]:
     """Summarise one batch of articles. Returns the parsed ``results`` list.
@@ -243,18 +279,7 @@ def call(model: str, key: str, profile: str, batch: list[dict],
 
     data = _post_with_retries(model, key, payload, timeout, max_retries)
 
-    try:
-        candidate = data["candidates"][0]
-    except (KeyError, IndexError) as exc:
-        # Usually a safety block or an empty response; surface it rather than
-        # silently returning nothing.
-        raise GeminiError(f"no candidate in response: {json.dumps(data)[:400]}") from exc
-
-    finish = candidate.get("finishReason")
-    if finish not in (None, "STOP"):
-        log("gemini", f"! finishReason={finish} — output may be truncated")
-
-    text = "".join(p.get("text", "") for p in candidate["content"]["parts"])
+    text = _extract_text(data, model)
     try:
         return json.loads(text)["results"]
     except (json.JSONDecodeError, KeyError) as exc:
@@ -279,8 +304,7 @@ def raw_json(model: str, key: str, system: str, prompt: str,
         },
     }
     data = _post_with_retries(model, key, payload, timeout)
-    candidate = data["candidates"][0]
-    text = "".join(p.get("text", "") for p in candidate["content"]["parts"])
+    text = _extract_text(data, model)
     try:
         return json.loads(text)
     except json.JSONDecodeError as exc:

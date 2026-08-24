@@ -7,10 +7,26 @@ profile: >
   Indian markets and major global business events, and significant
   India / world news.
 
+# NOTE: these keys MUST match the category names used in feeds.yaml.
+# A `cybersecurity:` key survived here after the categories were split into
+# cyber_attacks and cyber_tools, so for a long time it matched nothing and
+# every security keyword was dead config — security stories scored the bare
+# category_base of 12 while markets and india_world stories scored up to 100.
+# Interest carries the heaviest weight (0.45), so security was losing ~40
+# blend points against routine news, and within the cyber sections ranking
+# collapsed to trust+corroboration alone.
 boost:
-  cybersecurity: ["actively exploited", "zero-day", "0-day", "KEV", "ransomware",
-                  "breach", "CVE-", "RCE", "privilege escalation", "supply chain",
-                  "APT", "malware", "data leak", "patch tuesday", "PoC"]
+  cyber_attacks: ["actively exploited", "exploited in the wild", "zero-day",
+                  "0-day", "KEV", "ransomware", "breach", "CVE-", "RCE",
+                  "privilege escalation", "supply chain", "APT", "malware",
+                  "data leak", "patch tuesday", "PoC", "unauthenticated",
+                  "pre-auth", "backdoor", "infostealer", "botnet",
+                  "critical vulnerability", "emergency patch"]
+  cyber_tools:   ["open source", "github", "released", "toolkit", "framework",
+                  "scanner", "detection rule", "sigma", "yara", "burp",
+                  "nuclei", "writeup", "bug bounty", "how i found",
+                  "exploit chain", "proof of concept", "DFIR", "forensics",
+                  "threat hunting", "red team", "purple team", "tradecraft"]
   tech_ai:       ["Claude", "Anthropic", "GPT", "Gemini", "LLM", "open source model",
                   "agent", "benchmark", "Android", "Kotlin", "developer tool", "API"]
   markets:       ["RBI", "Sensex", "Nifty", "IPO", "funding round", "acquisition",

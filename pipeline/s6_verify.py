@@ -28,8 +28,21 @@ def _normalise(text: str) -> str:
 
 
 def _span_check(item: Item, body: str) -> None:
-    """A support_span not present in the body means the quote was invented."""
+    """A support_span not present in the body means the quote was invented.
+
+    Unless there IS no body. "We never fetched the article" and "the model
+    invented its evidence" are different failures, and without this guard the
+    first was recorded as the second — hard-rejecting the item with a
+    reject_reason that blamed the model for a fetch that never happened.
+    """
     hay = _normalise(body)
+    if not hay:
+        for claim in item.claims:
+            if claim.status == "unchecked":
+                claim.status = "neutral"       # unverifiable, not disproven
+        item.note("no article text available — claims left unverified")
+        return
+
     for claim in item.claims:
         if claim.status != "unchecked":
             continue

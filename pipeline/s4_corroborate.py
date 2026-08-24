@@ -124,8 +124,15 @@ def run(clusters: list[Cluster]) -> list[Item]:
             corroboration=outlets,
             primary_links=primaries,
             published=published,
-            sources=[{"name": a.source, "url": a.url, "domain": a.domain, "tier": a.tier}
-                     for a in sorted(cl.articles, key=lambda a: a.tier)],
+            # Aggregators sort LAST, matching Cluster.lead. sources[0] is what
+            # the card links to, the console prints and stage 5 tells the
+            # model — so without this guard a card could show one outlet's
+            # headline above another outlet's redirect stub.
+            sources=[{"name": a.source, "url": a.url, "domain": a.domain,
+                      "tier": a.tier}
+                     for a in sorted(cl.articles,
+                                     key=lambda a: (a.is_aggregator, a.tier,
+                                                    a.domain))],
         )
 
         # --- hard gate: recycled or out-of-window content ------------------

@@ -241,9 +241,17 @@ def run(items: list[Item], generated_at: str, dry_run: bool = False) -> None:
     floor = cfg.get("min_priority", "important")
     wanted = {Priority.CRITICAL} if floor == "critical" else \
         {Priority.CRITICAL, Priority.IMPORTANT}
-    live = [i for i in items
-            if i.verdict is not Verdict.REJECTED and i.priority in wanted]
-    live = live[: cfg.get("max_items", 10)]
+    # Rank before slicing. `items` arrives in stage-4 cluster order, which is
+    # longest-title-first — arbitrary as far as importance goes. Slicing it
+    # unsorted meant a CRITICAL exploited zero-day could be dropped in favour
+    # of ten routine markets items, which defeats the entire point of a
+    # "worth interrupting you for" digest.
+    order = {Priority.CRITICAL: 0, Priority.IMPORTANT: 1, Priority.MINOR: 2}
+    live = sorted(
+        (i for i in items
+         if i.verdict is not Verdict.REJECTED and i.priority in wanted),
+        key=lambda i: (order[i.priority], -i.blend),
+    )[: cfg.get("max_items", 10)]
 
     if not live:
         log("notify", f"nothing at or above '{floor}' — nothing sent")

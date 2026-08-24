@@ -532,3 +532,138 @@ class TestSecretsFilePermissions:
         from pathlib import Path
         from pipeline.config import _warn_if_world_readable
         _warn_if_world_readable(Path("does-not-exist-anywhere.env"))
+
+
+class TestCategoryKeysMatchFeeds:
+    """The single worst class of bug in this project: a config key that no
+    code path ever looks up, so the feature silently does nothing."""
+
+    def test_every_boost_key_is_a_real_category(self):
+        """A `cybersecurity:` key survived a category rename and matched
+        nothing, so every security keyword was dead — exploited zero-days
+        scored the bare category floor of 12 while markets stories scored 100."""
+        from pipeline.config import feeds, interests
+        real = set(feeds())
+        for key in interests()["boost"]:
+            assert key in real, f"boost.{key} matches no category in feeds.yaml"
+
+    def test_every_category_has_a_boost_profile(self):
+        from pipeline.config import feeds, interests
+        boost = set(interests()["boost"])
+        for cat in feeds():
+            assert cat in boost, f"category {cat} has no keyword profile"
+
+    def test_security_keywords_actually_fire(self):
+        from datetime import datetime, timezone
+        from pipeline.config import settings
+        from pipeline.models import Article, Cluster
+        from pipeline.s4_corroborate import _interest_score
+
+        def score(cat, title):
+            a = Article(url="https://x.com/1", title=title, source="s",
+                        domain="x.com", category=cat, tier="B",
+                        published=datetime.now(timezone.utc))
+            return _interest_score(Cluster(key="k", articles=[a]),
+                                   settings()["interest"])
+
+        hot = score("cyber_attacks",
+                    "Actively exploited zero-day RCE ransomware CVE-2026-1")
+        routine = score("cyber_attacks", "Vendor publishes quarterly report")
+        assert hot > routine + 40, f"hot={hot} routine={routine}"
+
+
+class TestGeminiResponseShapes:
+    """Gemini omits `content` on a safety block and omits `candidates`
+    entirely when the prompt is rejected. Both were dereferenced directly, so
+    a KeyError escaped every caller and killed the run AFTER stages 1-5 had
+    spent their budget. A news feed is untrusted input, so a safety block is
+    routine here, not exceptional."""
+
+    def _extract(self, data):
+        from pipeline.llm_gemini import _extract_text
+        return _extract_text(data, "test-model")
+
+    def test_no_candidates_raises_gemini_error(self):
+        from pipeline.llm_gemini import GeminiError
+        with pytest.raises(GeminiError):
+            self._extract({"promptFeedback": {"blockReason": "SAFETY"}})
+
+    def test_candidate_without_content_raises_gemini_error(self):
+        from pipeline.llm_gemini import GeminiError
+        with pytest.raises(GeminiError):
+            self._extract({"candidates": [{"finishReason": "SAFETY"}]})
+
+    def test_max_tokens_truncation_raises_gemini_error(self):
+        from pipeline.llm_gemini import GeminiError
+        with pytest.raises(GeminiError):
+            self._extract({"candidates": [{"finishReason": "MAX_TOKENS"}]})
+
+    def test_healthy_response_returns_text(self):
+        out = self._extract({"candidates": [
+            {"finishReason": "STOP", "content": {"parts": [{"text": "hi"}]}}]})
+        assert out == "hi"
+
+    def test_never_raises_keyerror(self):
+        """The property that matters: callers catch GeminiError only."""
+        for data in ({}, {"candidates": []}, {"candidates": [{}]},
+                     {"candidates": [{"content": {}}]}):
+            try:
+                self._extract(data)
+            except Exception as exc:
+                assert type(exc).__name__ == "GeminiError", type(exc).__name__
+
+
+class TestNotifyRanking:
+    def test_critical_survives_a_flood_of_routine_items(self):
+        """The digest slice was taken from unsorted cluster order, so a
+        CRITICAL item could be dropped for ten routine ones."""
+        from pipeline.models import Item, Priority, Verdict
+        from pipeline import s8_notify
+
+        items = []
+        for n in range(12):
+            it = Item(cluster_key=f"r{n}", title=f"routine {n}",
+                      category="markets")
+            it.priority, it.verdict, it.blend = Priority.IMPORTANT, Verdict.ESTABLISHED, 10.0
+            items.append(it)
+        hot = Item(cluster_key="hot", title="ACTIVELY EXPLOITED ZERO-DAY",
+                   category="cyber_attacks")
+        hot.priority, hot.verdict, hot.blend = Priority.CRITICAL, Verdict.VERIFIED, 99.0
+        items.append(hot)
+
+        order = {Priority.CRITICAL: 0, Priority.IMPORTANT: 1, Priority.MINOR: 2}
+        ranked = sorted(
+            (i for i in items if i.verdict is not Verdict.REJECTED),
+            key=lambda i: (order[i.priority], -i.blend))[:10]
+        assert ranked[0] is hot
+
+
+class TestVerifyMissingBody:
+    def test_no_body_is_unverifiable_not_contradicted(self):
+        """'We never fetched the article' and 'the model invented its
+        evidence' are different failures and must not share a verdict."""
+        from pipeline.models import Claim, Item, Verdict
+        from pipeline import s6_verify
+
+        it = Item(cluster_key="k", title="t", category="cyber_attacks")
+        it.claims = [Claim(text="a claim", support_span="some quote")]
+        s6_verify.run([it], {"k": ""})
+        assert it.verdict is not Verdict.REJECTED
+        assert all(c.status == "neutral" for c in it.claims)
+
+
+class TestSourceOrdering:
+    def test_aggregator_is_never_the_primary_link(self):
+        """sources[0] is what the card links to and what stage 5 tells the
+        model. An aggregator there means the headline and the link come from
+        different outlets."""
+        from pipeline.models import Verdict
+        from pipeline.s4_corroborate import run as corroborate
+
+        agg = _art("Acme RCE flaw exploited in the wild", "news.google.com",
+                   tier="A", aggregator=True)
+        real = _art("Acme RCE flaw exploited in the wild attacks ongoing",
+                    "bleepingcomputer.com", tier="A")
+        from pipeline.models import Cluster
+        out = corroborate([Cluster(key="k", articles=[agg, real])])
+        assert out[0].sources[0]["domain"] == "bleepingcomputer.com"

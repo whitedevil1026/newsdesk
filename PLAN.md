@@ -71,11 +71,15 @@ Recorded honestly so Step 2 has a target to beat:
 - **Clustering is lexical.** Two outlets that paraphrase a headline with no
   shared content words will not cluster, so corroboration undercounts.
   Embeddings would fix it; not needed at this volume yet.
-- **Extraction succeeds ~52% of the time** (211/404 on a live run). The rest
-  fall back to feed blurbs, which weakens both summary and verification.
-- **Google News RSS links are opaque redirect tokens** and cannot be resolved
-  offline. Such feeds are tagged `aggregator: true` so a real outlet's link
-  wins as the reference link.
+- **Extraction succeeds ~79% of the time** (357/449 on a live run, up from
+  52% once per-category windows stopped starving the slower sources). The
+  rest fall back to feed blurbs, which weakens summary and verification.
+- ~~Google News links cannot be resolved~~ — **solved.** The first attempt
+  only tried decoding the token offline, which fails for the current
+  `AU_yq…` format. Google's own front end calls a `batchexecute` endpoint
+  with a signature scraped from the article page; that returns the publisher
+  URL. See `pipeline/gnews.py`. This also made Google News topic *search*
+  usable, which is where most of the breadth now comes from.
 
 
 ## Vercel deployment — settings that matter

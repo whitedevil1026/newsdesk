@@ -11,12 +11,13 @@
     "gemma-4-31b-it": 3
   },
   "2026-08-24": {
-    "gemma-4-26b-a4b-it": 18,
+    "gemma-4-26b-a4b-it": 22,
     "gemini-3.7-flash": 1,
     "_blocked": [
       "gemini-3.7-flash",
       "gemini-3.6-flash",
-      "gemini-3.5-flash"
+      "gemini-3.5-flash",
+      "gemma-4-26b-a4b-it"
     ],
     "gemini-3.6-flash": 2,
     "gemini-3.5-flash": 3,

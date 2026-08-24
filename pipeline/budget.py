@@ -124,10 +124,17 @@ class Budget:
         Both fall back through the whole ladder, so "bulk" still gets served
         by a flagship model if the cheap tiers are exhausted, and vice versa.
         """
-        if not self.enabled:
-            return self.tiers[0]
-
+        # `enabled: false` disables the QUOTA accounting, not the tier ladder.
+        # Returning tiers[0] unconditionally ignored `blocked`, so a caller
+        # looping until next_model() returns None — which _generate does —
+        # would spin forever against a permanently failing model.
         order = self.tiers if prefer == "premium" else list(reversed(self.tiers))
+        if not self.enabled:
+            for tier in order:
+                if not tier.blocked:
+                    return tier
+            self.stopped_reason = "every model has failed this run"
+            return None
         for tier in order:
             if tier.remaining > 0:
                 return tier

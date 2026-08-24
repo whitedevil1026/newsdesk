@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T06:27:18.874958+00:00",
+  "generated_at": "2026-08-24T19:40:01.817718+00:00",
   "items": [
     {
       "cluster_key": "73853ada04cdc66b",
@@ -54,6 +54,107 @@
         "summary: heuristic extractive (no LLM configured)"
       ],
       "reject_reason": "published 2026-08-18 — outside lookback window"
+    },
+    {
+      "cluster_key": "d5b07d68e2af0e34",
+      "title": "\"The emperor is a fan of Flock, and we must continue utilizing Flock technologies so that we can follow and surveil the rebel scum,\" Vader said durin…",
+      "category": "cyber_attacks",
+      "one_liner": "Cyber Attacks: single report, unconfirmed.",
+      "tags": [
+        "threat-intel"
+      ],
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post 404 Media 404media.co did:plc:vcepp6trx4vpe5ourxso4tjl \"The emperor is a fan of Flock, and we must continue utilizing Flock technologies so that we can follow and surveil the rebel scum,\" Vader said during the meeting.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "status": "entailed"
+        },
+        {
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "status": "entailed"
+        },
+        {
+          "text": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  \"The emperor is a fan of Flock, and we must continue utilizing Flock technologies so that we can follow and surveil the rebel scum,\" Vader said during the meeting.",
+          "support_span": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  \"The emperor is a fan of Flock, and we must continue utilizing Flock technologies so that we can follow and surveil the rebel scum,\" Vader said during the meeting.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mtjqomjlab2i",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-20T17:15:03.080000+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-20 — outside lookback window"
+    },
+    {
+      "cluster_key": "feb59a7368368d98",
+      "title": "Ypsilanti Township in Michigan passed a six month moratorium on “major electric utility infrastructure” as a delaying tactic, the latest in the Towns…",
+      "category": "cyber_attacks",
+      "one_liner": "Cyber Attacks: single report, unconfirmed.",
+      "tags": [
+        "threat-intel",
+        "tool"
+      ],
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post 404 Media 404media.co did:plc:vcepp6trx4vpe5ourxso4tjl Ypsilanti Township in Michigan passed a six month moratorium on “major electric utility infrastructure” as a delaying tactic, the latest in the Township’s long fight to stop the construction of a $1.2 billion data center.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "status": "entailed"
+        },
+        {
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "status": "entailed"
+        },
+        {
+          "text": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  Ypsilanti Township in Michigan passed a six month moratorium on “major electric utility infrastructure” as a delaying tactic, the latest in the Township’s long fight to stop the construction of a $1.2 billion data center.",
+          "support_span": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  Ypsilanti Township in Michigan passed a six month moratorium on “major electric utility infrastructure” as a delaying tactic, the latest in the Township’s long fight to stop the construction of a $1.2 billion data center.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mtjhmjn6os2s",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-20T14:32:50.191000+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-20 — outside lookback window"
     },
     {
       "cluster_key": "c397a966237cc5c7",
@@ -159,57 +260,6 @@
       "reject_reason": "published 2026-08-18 — outside lookback window"
     },
     {
-      "cluster_key": "c7483d49e75d4c0f",
-      "title": "AI diffusion in political campaigns is quite high (and it looks like Anthropic’s fight with the Pentagon may have been good for its uptake among poli…",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "ai",
-        "threat-intel"
-      ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu AI diffusion in political campaigns is quite high (and it looks like Anthropic’s fight with the Pentagon may have been good for its uptake among politicians, through it is impossible to establish a definitive cause for its rapid rise) https://freesystems.substack.…",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "This is a heavily interactive web application, and JavaScript is required.",
-          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
-          "status": "entailed"
-        },
-        {
-          "text": "Simple HTML interfaces are possible, but that is not what this is.",
-          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
-          "status": "entailed"
-        },
-        {
-          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  AI diffusion in political campaigns is quite high (and it looks like Anthropic’s fight with the Pentagon may have been good for its uptake among politicians, through it is impossible to establish a definitive cause for its rapid rise) https://freesystems.substack.com/p/ai-is-transforming-politics-and-how?r=i5f7&utm_medium=ios\n  2026-08-17T12:53:27.975Z",
-          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  AI diffusion in political campaigns is quite high (and it looks like Anthropic’s fight with the Pentagon may have been good for its uptake among politicians, through it is impossible to establish a definitive cause for its rapid rise) https://freesystems.substack.com/p/ai-is-transforming-politics-and-how?r=i5f7&utm_medium=ios\n  2026-08-17T12:53:27.975Z",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mtbqnymbtk2o",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-17T12:53:25.205000+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-17 — outside lookback window"
-    },
-    {
       "cluster_key": "81cf3e525133b86e",
       "title": "The fact that LLMs have theory of mind at all is a huge deal (and was controversial when discovered in GPT-4), but you can still see the limitations…",
       "category": "tech_ai",
@@ -254,114 +304,6 @@
       ],
       "primary_links": [],
       "published": "2026-08-18T12:50:15.659000+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-18 — outside lookback window"
-    },
-    {
-      "cluster_key": "bc6d6549110bd52a",
-      "title": "Amazon buying and destroying rare books to train AI; a bunch of wild AI use in the courts; and Meta's new patent for its AI smart glasses.",
-      "category": "cyber_attacks",
-      "one_liner": "Cyber Attacks: single report, unconfirmed.",
-      "tags": [
-        "ai",
-        "policy",
-        "threat-intel"
-      ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post 404 Media 404media.co did:plc:vcepp6trx4vpe5ourxso4tjl Amazon buying and destroying rare books to train AI; a bunch of wild AI use in the courts; and Meta's new patent for its AI smart glasses.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "This is a heavily interactive web application, and JavaScript is required.",
-          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
-          "status": "entailed"
-        },
-        {
-          "text": "Simple HTML interfaces are possible, but that is not what this is.",
-          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
-          "status": "entailed"
-        },
-        {
-          "text": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  Amazon buying and destroying rare books to train AI; a bunch of wild AI use in the courts; and Meta's new patent for its AI smart glasses.",
-          "support_span": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  Amazon buying and destroying rare books to train AI; a bunch of wild AI use in the courts; and Meta's new patent for its AI smart glasses.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "404 Media",
-          "url": "https://bsky.app/profile/404media.co/post/3mthkbk7boq25",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-19T20:15:02.565000+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-19 — outside lookback window"
-    },
-    {
-      "cluster_key": "619f5cfb2b8581e0",
-      "title": "wolfiesch/omp-best-of — Best-of-N coding agents with LLM-as-a-Verifier selection for Oh My Pi: isolated git worktrees, verifier-ranked",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "dfir",
-        "llm",
-        "opensource",
-        "research",
-        "threat-intel",
-        "vulnerability"
-      ],
-      "summary": "Run several OMP-powered candidate agents on the same task in isolated copy-on-write workspaces, rank their complete trajectories with either LLM-as-a-Verifier or an OMP subscription-backed sampled judge, and optionally apply the selected patch. /best-of --n 5 --apply Fix the failing authentication test Sampling several solutions raises the chance that at least one is correct, but selecting among them remains a separate problem. This plugin provides OMP orchestration, pluggab…",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "Run several OMP-powered candidate agents on the same task in isolated copy-on-write workspaces, rank their complete trajectories with either LLM-as-a-Verifier or an OMP subscription-backed sampled judge, and optionally apply the selected patch.",
-          "support_span": "Run several OMP-powered candidate agents on the same task in isolated copy-on-write workspaces, rank their complete trajectories with either LLM-as-a-Verifier or an OMP subscription-backed sampled judge, and optionally apply the selected patch.",
-          "status": "entailed"
-        },
-        {
-          "text": "/best-of --n 5 --apply Fix the failing authentication test\nSampling several solutions raises the chance that at least one is correct, but selecting among them remains a separate problem.",
-          "support_span": "/best-of --n 5 --apply Fix the failing authentication test\nSampling several solutions raises the chance that at least one is correct, but selecting among them remains a separate problem.",
-          "status": "entailed"
-        },
-        {
-          "text": "This plugin provides OMP orchestration, pluggable verifier selection, inspectable artifacts, and opt-in patch application.",
-          "support_span": "This plugin provides OMP orchestration, pluggable verifier selection, inspectable artifacts, and opt-in patch application.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/wolfiesch/omp-best-of",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-18T00:41:05+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
@@ -424,62 +366,54 @@
       "reject_reason": "published 2026-08-18 — outside lookback window"
     },
     {
-      "cluster_key": "8dcb5bb53735af0f",
-      "title": "‘Tremendous, largely untapped potential in India-Turkiye ties across every pillar’: Ali Murat Ersoy, Turkiye’s Ambassador to India",
-      "category": "india_world",
-      "one_liner": "Relevant to your interest in Indian markets and the stabilization of global business ties.",
+      "cluster_key": "3b3c37d2dc6d4950",
+      "title": "And now, the video of “Darth Vader”on why he wants Flock in San Diego. Read the full story here: www.404media.co/darth-vader-...",
+      "category": "cyber_attacks",
+      "one_liner": "Cyber Attacks: single report, unconfirmed.",
       "tags": [
-        "india",
-        "malware",
-        "markets",
-        "policy",
-        "tool"
+        "threat-intel"
       ],
-      "summary": "Turkiye’s Ambassador to India, Ali Murat Ersoy, reports that bilateral ties are recovering following a 2025 boycott triggered by geopolitical tensions. Indian tourist arrivals reached 120,000 in the first eight months of 2026, showing a steady climb back toward pre-crisis levels. The focus is now on insulating tourism and trade from future political noise through direct engagement with the Indian travel trade and media. Bilateral trade continues to grow, with increasing interest from Turkish businesses in Indian construction and textiles.",
-      "key_facts": [
-        "Indian tourists (Jan-Aug 2026): 120,000",
-        "2024 total tourists: 3.3 lakh",
-        "Sectors: Construction, textiles, infrastructure"
-      ],
-      "bottom_line": "India and Turkiye are actively working to decouple their economic and people-to-people ties from geopolitical fluctuations.",
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post 404 Media 404media.co did:plc:vcepp6trx4vpe5ourxso4tjl And now, the video of “Darth Vader”on why he wants Flock in San Diego.",
+      "key_facts": [],
+      "bottom_line": "",
       "claims": [
         {
-          "text": "Indian tourist arrivals reached 120,000 between January and August 2026.",
-          "support_span": "Arrivals from India have been gradually increasing and reached almost 120,000 between January and August this year.",
-          "status": "contradicted"
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "status": "entailed"
         },
         {
-          "text": "A citizen-led travel boycott in 2025 caused a sharp drop in arrivals.",
-          "support_span": "arrivals dropped sharply after that due to a sudden rise in geopolitical tensions and citizen-led travel boycott.",
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "status": "entailed"
+        },
+        {
+          "text": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  And now, the video of “Darth Vader”on why he wants Flock in San Diego.",
+          "support_span": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  And now, the video of “Darth Vader”on why he wants Flock in San Diego.",
           "status": "entailed"
         }
       ],
-      "trust_score": 25,
-      "interest_score": 25,
+      "trust_score": 0,
+      "interest_score": 0,
       "corroboration": 1,
-      "blend": 25.0,
+      "blend": 0.0,
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Indian Express",
-          "url": "https://indianexpress.com/article/india/tremendous-largely-untapped-potential-in-india-turkiye-ties-across-every-pillar-ali-murat-ersoy-turkiyes-ambassador-to-india-10845418/",
-          "domain": "indianexpress.com",
-          "tier": "B"
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mtjrtludrk2m",
+          "domain": "bsky.app",
+          "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-23T01:39:06+00:00",
+      "published": "2026-08-20T17:35:44.820000+00:00",
       "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 2/5 from cache",
-        "blend 25 = trust 25 / interest 25 / corrob 25",
-        "claims entailed 2/2 (100%)",
-        "judge (gemma-4-26b-a4b-it): contradicted — rejected"
+        "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "gemma-4-26b-a4b-it found a claim contradicted by the source"
+      "reject_reason": "published 2026-08-20 — outside lookback window"
     },
     {
       "cluster_key": "2ec9fc6e0967147d",
@@ -493,9 +427,10 @@
         "opensource",
         "policy",
         "threat-intel",
-        "tool"
+        "tool",
+        "vulnerability"
       ],
-      "summary": "A small single-Agent Harness for TypeScript. Define one Agent, give it Tools and Skills, and continue its work in a durable Thread. npm install -g jixu-ai jixu Global installation also works with pnpm add -g jixu-ai and bun add -g jixu-ai.",
+      "summary": "A small single-Agent Harness for TypeScript. Define one Agent, give it Tools and Skills, and continue its work in a durable Thread. Warning Jixu can run Bash commands on your machine.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
@@ -510,8 +445,8 @@
           "status": "entailed"
         },
         {
-          "text": "npm install -g jixu-ai\njixu\nGlobal installation also works with pnpm add -g jixu-ai and\nbun add -g jixu-ai.",
-          "support_span": "npm install -g jixu-ai\njixu\nGlobal installation also works with pnpm add -g jixu-ai and\nbun add -g jixu-ai.",
+          "text": "Warning\nJixu can run Bash commands on your machine.",
+          "support_span": "Warning\nJixu can run Bash commands on your machine.",
           "status": "entailed"
         }
       ],
@@ -594,6 +529,61 @@
       "reject_reason": "published 2026-08-18 — outside lookback window"
     },
     {
+      "cluster_key": "82a748697f86d7b8",
+      "title": "zenstory-ai/oh-story-dsh — A DSH plugin for novel writing and short-drama production, powered by Oh Story and Drama Skills.",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "linux",
+        "llm",
+        "opensource",
+        "threat-intel"
+      ],
+      "summary": "oh-story-dsh 是基于 DeepSeek Harness（DSH）构建的社区插件，将 Oh Story 的小说方法库与 Drama Skills 的短剧生产流程带入 DSH。DSH 管理 Agent、会话、模型、权限和 Chat；插件提供创作 Skills、专业 Roles、项目协议与三栏工作台。 本项目与 DeepSeek 官方无隶属、合作或背书关系；DeepSeek Harness 名称与品牌素材归其权利人所有。 覆盖长篇、短篇、选题、扫榜、拆文、导入、审稿、去 AI 味与封面流程。13 个 Oh Story Skills 与 7 个专业 Roles 按固定上游版本随插件交付。 内置 Drama Skills 0.6.0 的 creator-first 工作流。每集按请求维护最多五份可读 Markdown：剧本.md、视觉设定.md、分镜.md、图片提示词.md、视频提示词.md；不预建空文档，也不倒补用户未点名的阶段。审查与生产交付继续使用 DSH 原生工具、权限和确认界面。 Drama Skills 0.6.0 是破坏性升级：…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "oh-story-dsh 是基于 DeepSeek Harness（DSH）构建的社区插件，将 Oh Story 的小说方法库与 Drama Skills 的短剧生产流程带入 DSH。DSH 管理 Agent、会话、模型、权限和 Chat；插件提供创作 Skills、专业 Roles、项目协议与三栏工作台。\n本项目与 DeepSeek 官方无隶属、合作或背书关系；DeepSeek Harness 名称与品牌素材归其权利人所有。\n覆盖长篇、短篇、选题、扫榜、拆文、导入、审稿、去 AI 味与封面流程。13 个 Oh Story Skills 与 7 个专业 Roles 按固定上游版本随插件交付。\n内置 Drama Skills 0.6.0 的 creator-first 工作流。每集按请求维护最多五份可读 Markdown：剧本.md、视觉设定.md、分镜.md、图片提示词.md、视频提示词.md；不预建空文档，也不倒补用户未点名的阶段。审查与生产交付继续使用 DSH 原生工具、权限和确认界面。\nDrama Skills 0.6.0 是破坏性升级：v0.5 结构化项目应继续锁定 v0.5 并只读保留；迁移时新建项目根，逐集人工确认当前工作所需文档，不要在同一目录混用旧 JSON/JSONL 与新文档。\n- 原生三栏布局：项目文件树、编辑器与官方 Chat 同屏，Trajectory、工具执行、Todo、审批和 Composer 保持 DSH 原生交互。\n- 实时文件跟随：Agent 调用官方文件工具时，目标文件自动定位，编辑器同步呈现生成中的内容。\n- Chat 文件导航：点击官方 Chat 中的作品文件名，文件树会定位并在编辑器打开对应文件。\n- 创作文档预览：Markdown 支持标题、表格、任务列表、引用和代码块；JSONL 以带行号、类型和状态的结构化记录呈现。\n- 安全编辑：支持源码编辑与快捷保存；人工未保存内容不会被并发 Agent 修改覆盖。\n- 稳定长对话：消息区独立滚动，官方 Composer 固定在 Chat 栏底部。\n需要 Node.js 24+。\n1.",
+          "support_span": "oh-story-dsh 是基于 DeepSeek Harness（DSH）构建的社区插件，将 Oh Story 的小说方法库与 Drama Skills 的短剧生产流程带入 DSH。DSH 管理 Agent、会话、模型、权限和 Chat；插件提供创作 Skills、专业 Roles、项目协议与三栏工作台。\n本项目与 DeepSeek 官方无隶属、合作或背书关系；DeepSeek Harness 名称与品牌素材归其权利人所有。\n覆盖长篇、短篇、选题、扫榜、拆文、导入、审稿、去 AI 味与封面流程。13 个 Oh Story Skills 与 7 个专业 Roles 按固定上游版本随插件交付。\n内置 Drama Skills 0.6.0 的 creator-first 工作流。每集按请求维护最多五份可读 Markdown：剧本.md、视觉设定.md、分镜.md、图片提示词.md、视频提示词.md；不预建空文档，也不倒补用户未点名的阶段。审查与生产交付继续使用 DSH 原生工具、权限和确认界面。\nDrama Skills 0.6.0 是破坏性升级：v0.5 结构化项目应继续锁定 v0.5 并只读保留；迁移时新建项目根，逐集人工确认当前工作所需文档，不要在同一目录混用旧 JSON/JSONL 与新文档。\n- 原生三栏布局：项目文件树、编辑器与官方 Chat 同屏，Trajectory、工具执行、Todo、审批和 Composer 保持 DSH 原生交互。\n- 实时文件跟随：Agent 调用官方文件工具时，目标文件自动定位，编辑器同步呈现生成中的内容。\n- Chat 文件导航：点击官方 Chat 中的作品文件名，文件树会定位并在编辑器打开对应文件。\n- 创作文档预览：Markdown 支持标题、表格、任务列表、引用和代码块；JSONL 以带行号、类型和状态的结构化记录呈现。\n- 安全编辑：支持源码编辑与快捷保存；人工未保存内容不会被并发 Agent 修改覆盖。\n- 稳定长对话：消息区独立滚动，官方 Composer 固定在 Chat 栏底部。\n需要 Node.js 24+。\n1.",
+          "status": "entailed"
+        },
+        {
+          "text": "安装插件并启动 DSH Web\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 plugin --profile web add @oh-story/dsh@0.1.4\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 web\n也可以直接安装 GitHub Release 中经过同一套测试的预构建包：\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 plugin --profile web add https://github.com/zenstory-ai/oh-story-dsh/releases/download/v0.1.4/oh-story-dsh-0.1.4.tgz\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 web\n默认在 http://127.0.0.1:3080 打开。\n2.",
+          "support_span": "安装插件并启动 DSH Web\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 plugin --profile web add @oh-story/dsh@0.1.4\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 web\n也可以直接安装 GitHub Release 中经过同一套测试的预构建包：\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 plugin --profile web add https://github.com/zenstory-ai/oh-story-dsh/releases/download/v0.1.4/oh-story-dsh-0.1.4.tgz\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 web\n默认在 http://127.0.0.1:3080 打开。\n2.",
+          "status": "entailed"
+        },
+        {
+          "text": "配置模型\n首次使用需要在 DSH 的「设置 → 模型」中添加 Provider 并填入 API Key；也可以在启动前设置环境变量 DEEPSEEK_API_KEY。模型、凭据与权限均由 DSH 管理，本插件不接触。\n3.",
+          "support_span": "配置模型\n首次使用需要在 DSH 的「设置 → 模型」中添加 Provider 并填入 API Key；也可以在启动前设置环境变量 DEEPSEEK_API_KEY。模型、凭据与权限均由 DSH 管理，本插件不接触。\n3.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/zenstory-ai/oh-story-dsh",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-19T15:27:01+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-19 — outside lookback window"
+    },
+    {
       "cluster_key": "f5cccd875a858ef3",
       "title": "wang2122/sprix-sage-router — Sprix AI at 屿智同行 — state-aware SELF/COLLABORATE/HANDOFF routing for A2A agent networks.",
       "category": "tech_ai",
@@ -651,41 +641,41 @@
       "reject_reason": "published 2026-08-18 — outside lookback window"
     },
     {
-      "cluster_key": "c09e56ddc1f46d0c",
-      "title": "Sensex, Nifty, Nikkei, KOSPI to Dow Jones: Global equity heatmap before the opening bell of the Indian stock market",
+      "cluster_key": "17e92bc13214c592",
+      "title": "Top Gainers &amp; Losers on 24 Aug: BLS International, Balrampur Chini Mills, HAL, Bank of Baroda among top losers",
       "category": "markets",
-      "one_liner": "Global market sentiment overview ahead of the Indian market open, highlighting risks from oil and regional volatility.",
+      "one_liner": "Indian markets are reacting to a combination of geopolitical instability in the Middle East and domestic corporate scandals.",
       "tags": [
-        "dfir",
-        "exploit",
         "india",
+        "llm",
         "markets",
-        "policy"
+        "policy",
+        "privacy",
+        "threat-intel",
+        "tool"
       ],
-      "summary": "Global markets are trading cautiously as Middle East tensions and high crude oil prices (WTI near $86) dampen risk appetite. While US markets ended higher on Friday, Asian markets saw significant drops on Monday, with the KOSPI falling over 3% and the Hang Seng down over 2%. Investors are focused on upcoming triggers, including Nvidia's earnings and the Fed's Jackson Hole symposium. In the US, Bitcoin's surge toward $77,000 boosted financial stocks like Robinhood and Coinbase despite overall weekly losses for major indexes.",
+      "summary": "The Indian stock market declined on August 24, with the Nifty 50 closing 0.14% lower and the Sensex falling 0.22%. Market pressure was driven by global bond yield increases, Middle East tensions, and US sanctions on Iran, which kept crude oil prices high. BLS International saw the biggest drop among Nifty 500 stocks, falling 10.5% following visa fraud allegations. Conversely, Vishal Mega Mart and IDBI Bank saw gains due to leadership changes and market movement respectively.",
       "key_facts": [
-        "KOSPI: -3%+",
-        "Hang Seng: -2%+",
-        "WTI Crude: ~$86/barrel",
-        "Bitcoin: ~$77,000",
-        "Robinhood: +14%"
+        "Nifty 50: 24,219 (-0.14%)",
+        "S&P BSE Sensex: 77,370 (-0.22%)",
+        "BLS International: -10.5% (₲242)"
       ],
-      "bottom_line": "Geopolitical instability in the Middle East is outweighing positive US business activity data, leading to a sharp sell-off in Asian equity markets.",
+      "bottom_line": "Geopolitical tensions and high oil prices are creating a cautious environment for Indian equities.",
       "claims": [
         {
-          "text": "The South Korean KOSPI index fell by over 3%.",
-          "support_span": "the South Korean KOSPI index crashed by over 3%",
+          "text": "Nifty 50 closed 0.14% lower.",
+          "support_span": "The Nifty 50 closed 0.14% lower at the 24,219 level",
           "status": "entailed"
         },
         {
-          "text": "WTI crude is trading near $86 a barrel.",
-          "support_span": "WTI trading near $86 a barrel",
-          "status": "entailed"
-        },
-        {
-          "text": "Bitcoin surged toward $77,000, boosting Robinhood shares.",
-          "support_span": "Bitcoin surged toward $77,000... Robinhood jumped almost 14%",
+          "text": "BLS International fell 10.5% due to visa fraud allegations.",
+          "support_span": "BLS International emerged as the top laggard among Nifty 500 stocks, falling 10.5% to ₲242 apiece following media reports alleging visa fraud.",
           "status": "contradicted"
+        },
+        {
+          "text": "US sanctions on Iran are contributing to market pressure.",
+          "support_span": "investors awaited further clarity on how tensions in the Middle East would unfold, with the US preparing to announce new sanctions on Iran.",
+          "status": "entailed"
         }
       ],
       "trust_score": 25,
@@ -698,18 +688,17 @@
       "sources": [
         {
           "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/sensex-nifty-nikkei-kospi-to-dow-jones-global-equity-heatmap-before-the-opening-bell-of-the-indian-stock-market-11787538298754.html",
+          "url": "https://www.livemint.com/market/stock-market-news/top-gainers-losers-on-24-aug-bls-international-balrampur-chini-mills-hal-bank-of-baroda-among-top-losers-11787563388800.html",
           "domain": "livemint.com",
           "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-24T03:48:06+00:00",
+      "published": "2026-08-24T10:04:30+00:00",
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "demoted: critical capped at 5",
-        "importance 3/5 from gemini-3-flash-preview",
+        "importance 3/5 from gemma-4-31b-it",
         "blend 36 = trust 25 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
@@ -778,8 +767,68 @@
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
+        "importance 3/5 from cache",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "dbe675c439b81204",
+      "title": "Structure for Reading, Prose for Writing: Asymmetric Structural Conditioning in Multi-Agent Document Authoring",
+      "category": "tech_ai",
+      "one_liner": "Research on multi-agent document authoring highlights a structural conditioning asymmetry where structured markup aids reading but harms writing.",
+      "tags": [
+        "agents",
+        "ai",
+        "exploit",
+        "identity",
+        "llm",
+        "markets",
+        "research",
+        "tool"
+      ],
+      "summary": "An arXiv paper investigates multi-agent document authoring systems by evaluating a deployed tender-response framework against human-submitted bids under sovereignty constraints. An LLM judge rated the system's responses as good as or better than human bids in the vast majority of sections, revealing that evaluation gaps largely stem from missing source information rather than poor writing quality. The study identifies a conditioning asymmetry: while rendering source documents as structural markup improves reading comprehension, converting instruction material into nested XML degrades answer quality from 74% to 48%. The authors conclude that structured markup belongs where models read, while prose and self-tests belong where they write.",
+      "key_facts": [
+        "Performance drop: Converting instruction material to nested XML reduced quality from 74% to 48%"
+      ],
+      "bottom_line": "Structuring source documents as markup improves AI reading comprehension, but applying structural markup to instruction material degrades text generation quality.",
+      "claims": [
+        {
+          "text": "The benefit does not transfer to conditioning: converting a bid's instruction material from prose to nested XML dropped answer quality from 74% to 48% under a paired comparison.",
+          "support_span": "The benefit does not transfer to conditioning: converting a bid's \textbackslash empha{instruction} material from prose to nested XML dropped answer quality from $74\b5$ to $48\b5$ under a paired comparison.",
+          "status": "contradicted"
+        },
+        {
+          "text": "Structure belongs where the model reads; prose and self-applied tests belong where it writes.",
+          "support_span": "Structure belongs where the model reads; prose and self-applied tests belong where it writes.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 47.5,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2608.20786",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2608.20786"
+      ],
+      "published": "2026-08-24T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
         "demoted: critical capped at 5",
-        "importance 3/5 from gemini-3-flash-preview",
+        "importance 3/5 from gemini-3.5-flash-lite",
         "blend 48 = trust 70 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
@@ -840,8 +889,69 @@
         "primary source anchor (+30)",
         "verified: primary source artifact",
         "demoted: critical capped at 5",
-        "importance 3/5 from gemini-3-flash-preview",
+        "importance 3/5 from cache",
         "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "bf81fccafcb24d93",
+      "title": "Balrampur Chini Mills share price up over 10% in 5 days - What's sweetening up stock investors | Explained",
+      "category": "markets",
+      "one_liner": "High sugar prices are outweighing government attempts to curb hoarding and stockholding.",
+      "tags": [
+        "exploit",
+        "howto",
+        "india",
+        "markets",
+        "tool"
+      ],
+      "summary": "Balrampur Chini Mills shares rose over 10% in five days despite tighter government restrictions on sugar stockholding. The government has barred dealers consuming over 10 metric tonnes monthly from holding more than 15 days of inventory from September 1 to November 30, 2026. Despite these restrictions, sugar prices have risen nearly 10% in the past month, with average ex-mill prices reaching ₲5,400₲5,500 per quintal. Investors are betting on high realisations and increased profitability due to fixed cane costs.",
+      "key_facts": [
+        "Inventory Limit: 15 days (for >10MT/month consumers)",
+        "Sugar Price Increase: ~10% (past month)",
+        "Ex-mill Price: ₲5,400₲5,500 per quintal"
+      ],
+      "bottom_line": "Sugar mill profitability is increasing due to record-high sugar prices despite regulatory restrictions.",
+      "claims": [
+        {
+          "text": "Shares rose over 10% in five days.",
+          "support_span": "Balrampur Chini Mills share price has rallied over 10% in the last five sessions on NSE",
+          "status": "entailed"
+        },
+        {
+          "text": "Dealers consuming >10 metric tonnes monthly cannot hold >15 days of inventory.",
+          "support_span": "the government barred dealers and traders consuming more than 10 metric tonnes of sugar a month from holding inventory exceeding 15 days of their requirements.",
+          "status": "entailed"
+        },
+        {
+          "text": "Average ex-mill sugar price is ₲5,400₲5,500 per quintal.",
+          "support_span": "Industry estimates showed that the all-India average ex-mill sugar price climbed to around ₲5,400₲5,500 per quintal on August 18",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 25.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Livemint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/balrampur-chini-mills-share-price-up-over-10-in-5-days-whats-sweetening-up-stock-investors-explained-11787547675126.html",
+          "domain": "livemint.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-24T05:35:43+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 2/5 from gemma-4-31b-it",
+        "blend 25 = trust 25 / interest 25 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -896,103 +1006,224 @@
       "reject_reason": "published 2026-08-18 — outside lookback window"
     },
     {
-      "cluster_key": "5297421a118bd049",
-      "title": "UAT-10147: Chinese-speaking adversary integrates agentic AI into post-compromise operations",
-      "category": "cyber_attacks",
-      "one_liner": "First major report of a threat actor operationalizing agentic AI for end-to-end intrusion workflows.",
+      "cluster_key": "aeefe9990e8fe194",
+      "title": "Hindustan Copper OFS: Government to sell up to 6% stake at  ₹514 per share, 10% below market price",
+      "category": "markets",
+      "one_liner": "The Indian government is capitalizing on high global copper prices to divest its stake in Hindustan Copper.",
       "tags": [
-        "agents",
-        "ai",
-        "exploit",
-        "incident",
-        "linux",
-        "llm",
-        "malware",
-        "network"
+        "india",
+        "markets"
       ],
-      "summary": "Cisco Talos has identified a Chinese-speaking threat actor, UAT-10147, that is actively using agentic AI to automate post-compromise operations. The group targets Windows and Linux web servers globally, using AI for reconnaissance, payload generation, and iterative exploit refinement. Talos observed the actor using tools like PentestGPT and DeepAudit to scale complex attacks and generate operational playbooks. This represents a shift from simple AI-assisted scripting to semi-autonomous offensive orchestration, allowing lower-skilled actors to perform advanced intrusions.",
+      "summary": "The Indian government will sell up to a 6% stake in Hindustan Copper through an Offer for Sale (OFS) at a floor price of ₲514 per share. This price is a 10.45% discount to the Monday closing price of ₲574. The sale, valued at approximately ₲3000 crore, is driven by a rally in global copper prices. The government has already raised ₲52,716 crore through PSU disinvestment this fiscal year, including a ₲31,552 crore sale in LIC.",
       "key_facts": [
-        "Actor: UAT-10147",
-        "Target list: ~170,000 URLs",
-        "Tools: Metasploit, ysoserial, PentestGPT, DeepAudit",
-        "Sectors: Government, education, media, tech, gaming"
+        "Floor Price: ₲514",
+        "Stake Sale: Up to 6%",
+        "Estimated Value: ₲3000 crore",
+        "Total PSU Disinvestment: ₲52,716 crore"
       ],
-      "bottom_line": "Real-world threat actors are now using agentic AI frameworks to automate the entire post-exploitation lifecycle, significantly lowering the barrier to entry for complex cyberattacks.",
+      "bottom_line": "The government is using a discounted OFS to ensure the sale of a 6% stake in Hindustan Copper.",
       "claims": [
         {
-          "text": "UAT-10147 is a Chinese-speaking group using agentic AI for post-compromise operations.",
-          "support_span": "Cisco Talos discovered a Chinese-speaking cybercrime group, tracked as UAT-10147... leveraging agentic AI systems to operationalize offensive tradecraft at scale.",
+          "text": "The government is selling up to a 6% stake at ₲514 per share.",
+          "support_span": "The government is looking to sell up to a 6% stake in the company through the OFS at a floor price of ₲514 per share.",
           "status": "contradicted"
         },
         {
-          "text": "The actor uses AI for iterative exploit refinement and adaptive troubleshooting.",
-          "support_span": "the actor demonstrated: - Iterative exploit refinement - Adaptive troubleshooting - Post-exploitation automation",
-          "status": "entailed"
+          "text": "The floor price is a 10.45% discount to the closing price.",
+          "support_span": "The floor price represents a 10.45% discount to Hindustan Copper's closing price of ₲574 on the NSE on Monday.",
+          "status": "contradicted"
         },
         {
-          "text": "Talos identified a target list of approximately 170,000 URLs.",
-          "support_span": "we also identified a target list containing approximately 170,000 URLs stored in a text file.",
-          "status": "entailed"
+          "text": "The government has raised ₲52,716 crore through PSU disinvestment this fiscal.",
+          "support_span": "So far in the current fiscal, the government has mopped up ₲52,716 crore through PSU disinvestment.",
+          "status": "contradicted"
         }
       ],
       "trust_score": 37,
-      "interest_score": 100,
+      "interest_score": 25,
       "corroboration": 2,
-      "blend": 69.2,
+      "blend": 35.5,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Livemint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/hindustan-copper-ofs-government-to-sell-up-to-6-stake-at-rs-514-per-share-10-below-market-price-11787579800581.html",
+          "domain": "livemint.com",
+          "tier": "B"
+        },
+        {
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQM19ydlZBQjhCdTh3V3JPd01hY1lsS182emhoYktlNGlIQXVhamZiSlFzNmFiTVR0V1RUbXFzbUJmLXZRbjFfSkhIa2NhYmVaVmQzUE0zUnZoX29LREhGWXd6aFFzR25VeDVXNlJOUHVId3FLQldUaDlVWGJsX2h0Q2xVWklLTnR0QkdtdzE5QlM1N2lqVUIzMERB?oc=5",
+          "domain": "reuters.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-24T13:39:44+00:00",
+      "trace": [
+        "tier B (+25)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "importance 2/5 from gemma-4-31b-it",
+        "blend 36 = trust 37 / interest 25 / corrob 50"
+      ],
+      "reject_reason": "3 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "3d193fbbc684eaaa",
+      "title": "US stock market today: Wall Street futures slip as tech rout, Iran tensions and bond yields weigh",
+      "category": "markets",
+      "one_liner": "The US is launching a massive financial offensive against Iran, risking further inflation and market volatility.",
+      "tags": [
+        "dfir",
+        "hardware",
+        "markets",
+        "policy",
+        "tool",
+        "vulnerability"
+      ],
+      "summary": "US stock futures slipped on August 24 as technology stocks retreated and tensions between the US and Iran escalated. Treasury Secretary Scott Bessent described new sanctions against Iran as an \"economic D-Day,\" targeting Tehran and potentially countries dealing with it, including China. Investors are concerned that prolonged conflict will keep oil prices high and inflation above the 2% target, with the 30-year US Treasury yield reaching a 20-year high of 5.3%. Market participants are awaiting the July PCE inflation report and a speech from Kevin Warsh at Jackson Hole.",
+      "key_facts": [
+        "30-year US Treasury yield: 5.3%",
+        "PCE inflation: >3%",
+        "Brent crude: $90.30 (-4%)",
+        "WTI crude: $84.79 (-3%)"
+      ],
+      "bottom_line": "Escalating US-Iran conflict and high bond yields are undermining US tech valuations and economic stability.",
+      "claims": [
+        {
+          "text": "Treasury Secretary Scott Bessent called the sanctions an \"economic D-Day.\"",
+          "support_span": "Writing in the Financial Times, Bessent said Washington was launching the ‛single greatest financial offensive marshalled against an adversary”, describing it as an ‛economic D-Day”.",
+          "status": "contradicted"
+        },
+        {
+          "text": "The 30-year US Treasury yield reached 5.3%.",
+          "support_span": "pushing the 30-year US Treasury yield to 5.3%, its highest level in nearly 20 years.",
+          "status": "entailed"
+        },
+        {
+          "text": "US inflation remains stubbornly above 3%.",
+          "support_span": "the PCE data has shown that US consumer inflation remains stubbornly above 3%",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 47.5,
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Cisco Talos",
-          "url": "https://blog.talosintelligence.com/uat-10147-chinese-speaking-adversary-integrates-agentic-ai-into-post-compromise-operations/",
-          "domain": "blog.talosintelligence.com",
+          "name": "Livemint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/us-stock-market-today-wall-street-futures-slip-as-tech-rout-iran-tensions-and-bond-yields-weigh-11787385929496.html",
+          "domain": "livemint.com",
           "tier": "B"
-        },
-        {
-          "name": "Cisco Talos Blog",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQURFUDZBa2JkY1ZYYWpfLXl4RHpJT05ESE53elFZZV93Z2ZQQjRKanEyUGZIaW9yYVg1UlZTUEJKTm1MblpGQzVFVFZtdlVITndVdUdZZmpleE5JV3REeUFCdXJUWVBvbGdwT0ZrZnJlQ1VBcEk5eTgydUg0SFY1ck9WUUFuWmthNm11Y2xkd1BxNEw3WTJtOXhmdkhtNGNiMjhDckNSRDBGbEhoMXFPWUpSd01USXJ6c3lYbzRiWjBGNzBQ?oc=5",
-          "domain": "cisco-talos-blog.publisher",
-          "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-20T10:00:32+00:00",
+      "published": "2026-08-24T12:35:14+00:00",
       "trace": [
         "tier B (+25)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 5/5 from gemini-3-flash-preview",
-        "blend 69 = trust 37 / interest 100 / corrob 50",
-        "demoted: critical capped at 5"
+        "single outlet, established publication (tier B)",
+        "importance 4/5 from gemma-4-31b-it",
+        "blend 48 = trust 25 / interest 75 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "5187e9e43cbea021",
-      "title": "This is the genuine logo used by the Amazon location that destructively scans books",
+      "cluster_key": "3cecef2ed45cbadc",
+      "title": "Upper circuit! Why Vishal Mega Mart share price surged today - Rally drive rationale explained",
+      "category": "markets",
+      "one_liner": "Management stability at Vishal Mega Mart is driving a stock rally and positive analyst outlook.",
+      "tags": [
+        "howto",
+        "india",
+        "markets",
+        "research",
+        "tool"
+      ],
+      "summary": "Vishal Mega Mart's share price hit its upper circuit of ₹113.95 on August 24, rising over 11% following the reappointment of Gunender Kapur as Managing Director and CEO for a five-year term starting September 1, 2026. The board also approved the grant of 4.68 crore stock options to eligible employees. Morgan Stanley maintains an 'overweight' recommendation with a target price of ₹146, citing the resolution of management succession uncertainty as a key positive. The stock had previously been on a three-month losing streak.",
+      "key_facts": [
+        "Upper Circuit: ₹113.95",
+        "CEO Term: 5 years (Sept 1, 2026 - Aug 31, 2031)",
+        "Stock Options: 4.68 crore",
+        "Morgan Stanley Target: ₹146"
+      ],
+      "bottom_line": "The reappointment of Gunender Kapur as CEO for five years removes management succession uncertainty, triggering a stock surge.",
+      "claims": [
+        {
+          "text": "Vishal Mega Mart share price jumped 10% to hit its upper circuit of ₹113.95",
+          "support_span": "Vishal Mega Mart share price jumped jumped 10% to hit its upper circuit of ₹113.95",
+          "status": "contradicted"
+        },
+        {
+          "text": "Gunender Kapur was reappointed as MD and CEO for five years",
+          "support_span": "its board had approved the re-appointment of Gunender Kapur for a period of five years commencing from 1 September 2026, up to and including 31 August 2031",
+          "status": "entailed"
+        },
+        {
+          "text": "The board approved 4.68 crore stock options for employees",
+          "support_span": "the company's board has approved the grant of 4.68 crore stock options to eligible employees",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 36.2,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Livemint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/why-vishal-mega-mart-share-price-is-rising-today-stock-hits-the-upper-circuit-11787547310653.html",
+          "domain": "livemint.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-24T05:02:19+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 3/5 from gemma-4-31b-it",
+        "blend 36 = trust 25 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "e0555d933c60a101",
+      "title": "SeanEllyJames/deep-research-skill — 让AI Agent 做真正会思考，有判断的深度调研，而不是会摆信息的汇总报告。一个即插即用的 skill 文件。",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
-        "windows"
+        "agents",
+        "llm",
+        "opensource",
+        "tool"
       ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Simon Willison simonwillison.net did:plc:kft6lu4trxowqmter2b6vg6z This is the genuine logo used by the Amazon location that destructively scans books [contains quote post or other embedded content] 2026-08-17T14:56:23.367Z",
+      "summary": "市面上绝大多数所谓的「AI 深度调研」，本质是 Wide Research：并行搜一堆来源，按主题分好类，给你一份工整的 checklist。看起来很全，事实也没错，但没用——它只有目录，没有判断。 这个 skill 把 Agent 掰到另一条路上：Deep Research。精读一手源，把它们之间的矛盾挑出来，最后落到一个业内人真的会跟你争论的判断上。 Wide Research 是 LLM 的出厂设置，产出的是「正确的废话」。这个 skill 就是一套护栏，把它从默认模式里拽出来。 一套四阶段工作流，以及比工作流更重要的东西：不让 Agent 跳过 Phase 0 的纪律。 Phase 0 元思考 — 绝不外包 一次搜索都还没发起，先拷问问题本身：为什么问这个？隐藏假设是什么？有没有一个「显而易见但其实不对」的标准答案，而这篇报告的全部价值就是说清它为什么不对？然后写下「好答案」该长什么样：核心论点摆到一屋子业内人面前得能吵起来，而不是集体点头。 Phase 1 一手源精读 找到那 3 到 5 篇真正的原始文献（财报、创始人自己写的博文、电…",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
         {
-          "text": "This is a heavily interactive web application, and JavaScript is required.",
-          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "text": "市面上绝大多数所谓的「AI 深度调研」，本质是 Wide Research：并行搜一堆来源，按主题分好类，给你一份工整的 checklist。看起来很全，事实也没错，但没用——它只有目录，没有判断。\n这个 skill 把 Agent 掰到另一条路上：Deep Research。精读一手源，把它们之间的矛盾挑出来，最后落到一个业内人真的会跟你争论的判断上。\nWide Research 是 LLM 的出厂设置，产出的是「正确的废话」。这个 skill 就是一套护栏，把它从默认模式里拽出来。\n一套四阶段工作流，以及比工作流更重要的东西：不让 Agent 跳过 Phase 0 的纪律。\nPhase 0　元思考 — 绝不外包\n一次搜索都还没发起，先拷问问题本身：为什么问这个？隐藏假设是什么？有没有一个「显而易见但其实不对」的标准答案，而这篇报告的全部价值就是说清它为什么不对？然后写下「好答案」该长什么样：核心论点摆到一屋子业内人面前得能吵起来，而不是集体点头。\nPhase 1　一手源精读\n找到那 3 到 5 篇真正的原始文献（财报、创始人自己写的博文、电话会议逐字稿、论文原文），完整读完。二手总结每转一手，洞见就蒸发一层。\nPhase 2　对比与反例\n选 2 到 3 个案例做深度对比，专门去挖失败案例和批评声音。收敛本身是发现，分歧背后的原因是更大的发现。\nPhase 3　交叉验证\n多源印证的可信，单源的标注存疑，互相矛盾的——这才是最有意思的地方，去分析这个矛盾意味着什么。\nPhase 4　把论证写出来\n段落优先于表格，每一章只推进一个论点，诚实标注不知道的部分。最后一道自检：如果核心结论放到业内不会引发任何争论，重写。\n这个文件最值钱的部分是「翻车目录」：把 Agent 最容易走的捷径一条条写下来，每条都配一个检测信号，让你（或 Agent）当场判断是不是正在犯。\n1 · 跳过 Phase 0 直接搜 没有假设引导，subagent 返回的是信息碎片，不是论证素材。\n检测信号：subagent 的 prompt 里没有「假设」或「待验证的论点」。\n2 · 拿 subagent 的返回结构当报告骨架 你会得到一个伪装成分析的主题目录。\n检测信号：章节标题拿去当搜索关键词刚好合适（「定价对比」「适合谁」）——那是文件柜，不是论证。\n3 · 用表格和 bullet 替代思考 一个洞见如果能塞进表格，它大概率不是洞见。\n检测信号：删掉所有表格和 bullet 后，剩下的段落撑不起一篇文章。\n4 · 结论太安全 「A 适合新手，B 适合老手」这种话不用调研就能说。\n检测信号：核心结论发到专业群里，没人会出来反驳或讨论。\n5 · 把「全面」当「深度」 10 个维度各 3 句，输给 3 个维度各 3 段。\n检测信号：报告过万字，但核心论点三句话就能说完。\n6 · 子 agent 递归 fan-out 一次真实事故就是这条规则的由来：主 agent 派 3 个 → 变 13 个 → 变 50+ → 最终 149 个 agent，一笔意外的 API 账单。\n检测信号：你在给子 agent 的 prompt 里写了「你可以用 Agent 工具进一步搜索」。停，马上要炸。\n1.",
+          "support_span": "市面上绝大多数所谓的「AI 深度调研」，本质是 Wide Research：并行搜一堆来源，按主题分好类，给你一份工整的 checklist。看起来很全，事实也没错，但没用——它只有目录，没有判断。\n这个 skill 把 Agent 掰到另一条路上：Deep Research。精读一手源，把它们之间的矛盾挑出来，最后落到一个业内人真的会跟你争论的判断上。\nWide Research 是 LLM 的出厂设置，产出的是「正确的废话」。这个 skill 就是一套护栏，把它从默认模式里拽出来。\n一套四阶段工作流，以及比工作流更重要的东西：不让 Agent 跳过 Phase 0 的纪律。\nPhase 0　元思考 — 绝不外包\n一次搜索都还没发起，先拷问问题本身：为什么问这个？隐藏假设是什么？有没有一个「显而易见但其实不对」的标准答案，而这篇报告的全部价值就是说清它为什么不对？然后写下「好答案」该长什么样：核心论点摆到一屋子业内人面前得能吵起来，而不是集体点头。\nPhase 1　一手源精读\n找到那 3 到 5 篇真正的原始文献（财报、创始人自己写的博文、电话会议逐字稿、论文原文），完整读完。二手总结每转一手，洞见就蒸发一层。\nPhase 2　对比与反例\n选 2 到 3 个案例做深度对比，专门去挖失败案例和批评声音。收敛本身是发现，分歧背后的原因是更大的发现。\nPhase 3　交叉验证\n多源印证的可信，单源的标注存疑，互相矛盾的——这才是最有意思的地方，去分析这个矛盾意味着什么。\nPhase 4　把论证写出来\n段落优先于表格，每一章只推进一个论点，诚实标注不知道的部分。最后一道自检：如果核心结论放到业内不会引发任何争论，重写。\n这个文件最值钱的部分是「翻车目录」：把 Agent 最容易走的捷径一条条写下来，每条都配一个检测信号，让你（或 Agent）当场判断是不是正在犯。\n1 · 跳过 Phase 0 直接搜 没有假设引导，subagent 返回的是信息碎片，不是论证素材。\n检测信号：subagent 的 prompt 里没有「假设」或「待验证的论点」。\n2 · 拿 subagent 的返回结构当报告骨架 你会得到一个伪装成分析的主题目录。\n检测信号：章节标题拿去当搜索关键词刚好合适（「定价对比」「适合谁」）——那是文件柜，不是论证。\n3 · 用表格和 bullet 替代思考 一个洞见如果能塞进表格，它大概率不是洞见。\n检测信号：删掉所有表格和 bullet 后，剩下的段落撑不起一篇文章。\n4 · 结论太安全 「A 适合新手，B 适合老手」这种话不用调研就能说。\n检测信号：核心结论发到专业群里，没人会出来反驳或讨论。\n5 · 把「全面」当「深度」 10 个维度各 3 句，输给 3 个维度各 3 段。\n检测信号：报告过万字，但核心论点三句话就能说完。\n6 · 子 agent 递归 fan-out 一次真实事故就是这条规则的由来：主 agent 派 3 个 → 变 13 个 → 变 50+ → 最终 149 个 agent，一笔意外的 API 账单。\n检测信号：你在给子 agent 的 prompt 里写了「你可以用 Agent 工具进一步搜索」。停，马上要炸。\n1.",
           "status": "entailed"
         },
         {
-          "text": "Simple HTML interfaces are possible, but that is not what this is.",
-          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "text": "把 SKILL.md 放进 Agent 的 skills 目录，或直接粘进系统提示词 / 项目指令\n2.",
+          "support_span": "把 SKILL.md 放进 Agent 的 skills 目录，或直接粘进系统提示词 / 项目指令\n2.",
           "status": "entailed"
         },
         {
-          "text": "Post\n  Simon Willison\n  simonwillison.net\n  did:plc:kft6lu4trxowqmter2b6vg6z\n  This is the genuine logo used by the Amazon location that destructively scans books\n[contains quote post or other embedded content]\n  2026-08-17T14:56:23.367Z",
-          "support_span": "Post\n  Simon Willison\n  simonwillison.net\n  did:plc:kft6lu4trxowqmter2b6vg6z\n  This is the genuine logo used by the Amazon location that destructively scans books\n[contains quote post or other embedded content]\n  2026-08-17T14:56:23.367Z",
+          "text": "看着它在搜索之前先停下来做 Phase 0 —— 那个停顿，就是全部意义所在\n任何能读 skill 文件、能派 subagent 的 Agent 都能用（Claude Code、Cursor、Cline 等）。搜索那一步默认你手上有一个搜索 / 抓取工具（比如 Tavily 这类搜索 MCP，或 Agent 自带的联网搜索），有什么用什么，skill 会自动降级适配。\n- 中文主版　→　SKILL.md\n- English　→　SKILL.en.md\n因为它是对着一堆真实的翻车记录写出来的，不是在书房里空想的。文件里每一条反模式，都是真实调研过程中犯过、并且烧钱或丢脸到值得为它立一条规矩的错误。那个 149 个 agent 的失控故事是真的，「你的章节标题就是搜索关键词」那个信号也是真的。这是踩过的坑结成的疤，写成了提示词。",
+          "support_span": "看着它在搜索之前先停下来做 Phase 0 —— 那个停顿，就是全部意义所在\n任何能读 skill 文件、能派 subagent 的 Agent 都能用（Claude Code、Cursor、Cline 等）。搜索那一步默认你手上有一个搜索 / 抓取工具（比如 Tavily 这类搜索 MCP，或 Agent 自带的联网搜索），有什么用什么，skill 会自动降级适配。\n- 中文主版　→　SKILL.md\n- English　→　SKILL.en.md\n因为它是对着一堆真实的翻车记录写出来的，不是在书房里空想的。文件里每一条反模式，都是真实调研过程中犯过、并且烧钱或丢脸到值得为它立一条规矩的错误。那个 149 个 agent 的失控故事是真的，「你的章节标题就是搜索关键词」那个信号也是真的。这是踩过的坑结成的疤，写成了提示词。",
           "status": "entailed"
         }
       ],
@@ -1005,68 +1236,451 @@
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Simon Willison",
-          "url": "https://bsky.app/profile/simonwillison.net/post/3mtbxjub6ms26",
-          "domain": "bsky.app",
+          "name": "GitHub (new)",
+          "url": "https://github.com/SeanEllyJames/deep-research-skill",
+          "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-17T14:56:22.628000+00:00",
+      "published": "2026-08-18T07:04:01+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-17 — outside lookback window"
+      "reject_reason": "published 2026-08-18 — outside lookback window"
     },
     {
-      "cluster_key": "ab7d268965e1531e",
-      "title": "Q1 earnings cheer needs to last, but it may not",
+      "cluster_key": "4b6bf0ca8597b363",
+      "title": "Stock market today: Sensex falls 170 points, Nifty 50 ends below 24,219; metal stocks shine",
       "category": "markets",
-      "one_liner": "Provides a critical perspective on the sustainability of the Indian market rally amidst global skepticism.",
+      "one_liner": "Indian benchmarks drifted lower under pressure from oil-price fears and impending geopolitical sanctions.",
       "tags": [
-        "ai",
         "india",
         "markets",
+        "policy",
+        "privacy",
         "research",
         "tool"
       ],
-      "summary": "India has become the least-favored stock market in Asia according to a BofA Securities survey, cited for weak growth and high valuations. While Q1FY27 earnings showed a 4% growth for Nifty 50 companies, analysts warn that this recovery may not be sustainable without a pick-up in domestic manufacturing. High crude oil prices and a sub-par monsoon season remain significant risks to future profitability. The market currently trades at a premium compared to other emerging markets, putting pressure on companies to deliver consistent earnings.",
+      "summary": "The Indian stock market ended lower on Monday due to weak global cues, with the Sensex falling 172 points to 77,369 and the Nifty 50 dropping 33 points to close at 24,219.05. Sentiment was dampened by rising global bond yields, a hawkish Reserve Bank of India stance, and anticipation of harsh upcoming US economic sanctions against Iran, which kept Brent crude oil prices elevated above $92 per barrel. While financial, banking, and PSU bank indices dragged the market down, the Nifty Metal sector outperformed with a 1.6% jump, supported by individual gains in stocks like JSW Steel and Tata Steel.",
       "key_facts": [
-        "Nifty 50 Earnings Growth: 4% YoY",
-        "India P/E Ratio: 17x",
-        "MSCI India (3 months): +3%",
-        "MSCI India (YTD): -2.6%"
+        "Sensex Close: 77,369 (down 172 points)",
+        "Nifty 50 Close: 24,219.05 (down 33 points)",
+        "Nifty Metal Gain: 1.60%",
+        "Brent Crude: Above $92 per barrel"
       ],
-      "bottom_line": "Despite positive Q1 results, structural headwinds and high valuations are making global investors cautious about Indian equities.",
+      "bottom_line": "Domestic equities are sliding alongside broader Asian markets as investors price in higher oil prices and macroeconomic uncertainty.",
       "claims": [
         {
-          "text": "India is the least-favored market in Asia according to BofA.",
-          "support_span": "India is now the least-favored stock market in Asia, according to the August BofA Securities fund manager survey.",
+          "text": "The Sensex ended at 77,369, down 172 points, or 0.22%, while the Nifty 50 closed 33 points, or 0.14%, lower at 24,219.05.",
+          "support_span": "The Sensex ended at 77,369, down 172 points, or 0.22%, while the Nifty 50 closed 33 points, or 0.14%, lower at 24,219.05.",
+          "status": "entailed"
+        },
+        {
+          "text": "Among sectoral indices, Nifty Metal jumped 1.6%, defying weak market sentiment.",
+          "support_span": "Among sectoral indices, Nifty Metal jumped 1.6%, defying weak market sentiment.",
           "status": "contradicted"
         }
       ],
       "trust_score": 25,
-      "interest_score": 25,
+      "interest_score": 75,
       "corroboration": 1,
-      "blend": 25.0,
+      "blend": 47.5,
       "critical_signal": "",
-      "priority": "minor",
+      "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
           "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/mark-to-market/nifty-50-q1-fy27-earnings-review-11787461701757.html",
+          "url": "https://www.livemint.com/market/stock-market-news/stock-market-today-sensex-falls-170-points-nifty-50-ends-below-24-219-metal-stocks-shine-11787565654953.html",
           "domain": "livemint.com",
           "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-24T01:01:01+00:00",
+      "published": "2026-08-24T10:06:23+00:00",
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 2/5 from gemini-3-flash-preview",
-        "blend 25 = trust 25 / interest 25 / corrob 25"
+        "demoted: critical capped at 5",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 25 / interest 75 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "af211012575696cf",
+      "title": "Beyond End-to-End Success: Diagnosing Failures in Long-Horizon Security LLM Agents",
+      "category": "tech_ai",
+      "one_liner": "Security researchers should note that LLM agent failures often stem from upstream state discovery issues rather than the security task itself.",
+      "tags": [
+        "agents",
+        "ai",
+        "appsec",
+        "exploit",
+        "llm",
+        "markets",
+        "redteam",
+        "research"
+      ],
+      "summary": "A new diagnostic methodology for long-horizon security LLM agents reveals that task failures often occur during state discovery rather than the exercise of security capabilities. By instrumenting tasks with checkpoints, researchers found that many Gemini 2.5 Flash failures happened before the model even observed the state it needed to reuse. Interestingly, protocol-disambiguation guidance that improved Gemini 2.5 Flash performance actually had the opposite effect on Gemini 3.7 Flash. This suggests that failure modes shift between model generations, requiring granular diagnosis rather than just aggregate success metrics.",
+      "key_facts": [
+        "Models: Gemini 2.5 Flash, Gemini 3.7 Flash",
+        "Study size: 92-seed study",
+        "State observation increase: 65.5% to 95.4% (Gemini 2.5)"
+      ],
+      "bottom_line": "Guidance that improves state observation in one model generation can degrade performance in the next, highlighting the instability of prompt-based fixes for security agents.",
+      "claims": [
+        {
+          "text": "Many Gemini 2.5 Flash failures occur before the model observes the necessary state for the task.",
+          "support_span": "On observed state reuse, checkpoint analysis shows that many Gemini 2.5 Flash failures occur before the model observes the state it is later expected to reuse.",
+          "status": "entailed"
+        },
+        {
+          "text": "Targeted guidance increased state observation from 65.5% to 95.4% for Gemini 2.5 Flash.",
+          "support_span": "In a pre-specified 92-seed study, targeted protocol-disambiguation guidance increases state observation from 65.5% under a matched non-guidance control message to 95.4%.",
+          "status": "contradicted"
+        },
+        {
+          "text": "The same guidance had the opposite effect on Gemini 3.7 Flash.",
+          "support_span": "Repeating the same design with Gemini 3.7 Flash produces the opposite effect, while state observation no longer reliably predicts task completion.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.CR",
+          "url": "https://arxiv.org/abs/2608.20563",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2608.20563"
+      ],
+      "published": "2026-08-24T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "demoted: critical capped at 5",
+        "importance 4/5 from gemini-3-flash-preview",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "b8c75a5947fceb9b",
+      "title": "Structured but Fragile: On the Limits of LLMs in Cybersecurity Decision-Making",
+      "category": "tech_ai",
+      "one_liner": "LLMs can mimic structured cybersecurity decision-making when given explicit attack graphs, but their reasoning is highly fragile and easily skewed by framing.",
+      "tags": [
+        "ai",
+        "blueteam",
+        "cloud",
+        "incident",
+        "llm",
+        "malware",
+        "markets",
+        "ransomware"
+      ],
+      "summary": "Researchers investigate whether large language models can perform structured security reasoning when selecting defenses over attack graphs spanning ransomware, cloud abuse, Kubernetes, and ICS/OT intrusions, comparing their strategies against a game-theoretic optimization baseline. While LLMs produce coherent strategies close to the optimum when explicit attack-graph structures are provided, their capabilities are extremely fragile. LLM behavior is highly sensitive to prompt framing, graph complexity, and small wording changes, and relabeling a poor strategy as optimal dramatically improves its LLM evaluation score. Furthermore, LLM-generated solvers for the optimization problem scale poorly compared to purpose-built solvers. These findings indicate that LLMs only approximate structured cybersecurity reasoning under strict representations rather than applying it robustly.",
+      "key_facts": [
+        "Scenarios tested: ransomware, supply-chain compromise, cloud abuse, Kubernetes attacks, POS malware, and ICS/OT intrusion"
+      ],
+      "bottom_line": "Large language models do not apply robust structured reasoning in cybersecurity decision-making, exhibiting extreme sensitivity to framing and graph complexity.",
+      "claims": [
+        {
+          "text": "When explicit attack-graph structure is provided, they often produce coherent strategies close to the optimization baseline.",
+          "support_span": "When explicit attack-graph structure is provided, they often produce coherent strategies close to the optimization baseline.",
+          "status": "entailed"
+        },
+        {
+          "text": "LLM behaviour is increasingly fragile with graph complexity and is highly sensitive to framing.",
+          "support_span": "LLM behaviour is increasingly fragile with graph complexity and is highly sensitive to framing.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.CR",
+          "url": "https://arxiv.org/abs/2608.20966",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2608.20966"
+      ],
+      "published": "2026-08-24T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "demoted: critical capped at 5",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "f4200302bed69577",
+      "title": "Evaluating Skills, Not Just Agents: Agentic Continuous Evaluation of Skills",
+      "category": "tech_ai",
+      "one_liner": "ACES evaluates enterprise AI agent skills through live execution trials, revealing that static code scans miss crucial runtime workflow gains.",
+      "tags": [
+        "agents",
+        "ai",
+        "appsec",
+        "dfir",
+        "exploit",
+        "llm",
+        "markets",
+        "opensource"
+      ],
+      "summary": "Enterprise agent programs are transitioning to production, requiring evidence-based reviews of reusable skills and tool packages rather than static structural scans. Researchers present ACES (Agentic Continuous Evaluation of Skills), a repository-native framework that runs paired live trials with and without target skills, normalizes trajectories into the Agent Trajectory Interchange Format (ATIF), and reports Skill Lift across runtime metrics. Evaluating 145 real enterprise skills, static scans and LLM judges measure complementary facets with a Spearman correlation of only 0.14. Across 947 scored paired cases from 58 production skills, mean composite Skill Lift is 0.2134, with composite lift being positive in 72.8% of cases, surfacing operational improvements that document scans miss.",
+      "key_facts": [
+        "Skills evaluated: 145 real skills from enterprise repositories",
+        "Scored paired cases: 947 cases across 58 production skills",
+        "Mean composite Skill Lift: 0.2134",
+        "Positive composite lift percentage: 72.8%"
+      ],
+      "bottom_line": "Repository-native agentic continuous evaluation (ACES) measures true operational skill lift via live trials, addressing the limitations of static security and structure scans.",
+      "claims": [
+        {
+          "text": "On 145 real skills from internal enterprise repositories and public catalogs, scan-only gates surface useful authoring issues but measure complementary facets (structural versus LLM-judge Spearman rho = 0.14).",
+          "support_span": "On 145 real skills from internal enterprise repositories and public catalogs, scan-only gates surface useful authoring issues but measure complementary facets (structural versus LLM-judge Spearman $\rho = 0.14$).",
+          "status": "contradicted"
+        },
+        {
+          "text": "Across 947 scored paired cases from 58 of 64 production skills and four primary harnesses, mean composite Skill Lift is 0.2134 (95% paired-case CI [0.1967, 0.2301]); mean outcome-only lift, the average of accuracy and goal accuracy, is 0.1799.",
+          "support_span": "Across 947 scored paired cases from 58 of 64 production skills and four primary harnesses, mean composite Skill Lift is 0.2134 (95\\% paired-case CI [0.1967, 0.2301]); mean outcome-only lift, the average of accuracy and goal accuracy, is 0.1799.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2608.20614",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2608.20614"
+      ],
+      "published": "2026-08-24T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "demoted: critical capped at 5",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "c45a38e60e0aa768",
+      "title": "ARQ: Agentic CodeQL Query Refinement for C/C++ Vulnerability Detection",
+      "category": "tech_ai",
+      "one_liner": "arXiv paper introduces ARQ, an agentic framework that uses program synthesis and LLMs to automatically refine CodeQL queries for C/C++ vulnerability detection.",
+      "tags": [
+        "agents",
+        "ai",
+        "appsec",
+        "exploit",
+        "llm",
+        "opensource",
+        "policy",
+        "release"
+      ],
+      "summary": "An arXiv paper presents ARQ, an agentic framework that automatically refines C/C++ CodeQL static analysis queries using execution-grounded evidence from synthesized programs. By identifying execution disagreements where a synthesized program is genuinely vulnerable or safe but the query verdict disagrees, ARQ runs an LLM-based refinement loop to fix false positives and false negatives without requiring labeled datasets or vulnerability templates. Tested across commercial LLMs on Juliet and FormAI datasets, ARQ-refined queries increased true positive detection by up to 119.8% while maintaining at least 98.0% precision. The framework successfully resolved long-standing GitHub issues in the official CodeQL repository and discovered new bugs in libpng and zlib.",
+      "key_facts": [
+        "Framework: ARQ",
+        "Precision: At least 98.0%",
+        "True positive improvement: Up to 119.8%",
+        "Languages: C/C++"
+      ],
+      "bottom_line": "ARQ uses execution-grounded evidence from synthesized programs to automatically refine static analysis queries, dramatically increasing true positive rates while maintaining high precision.",
+      "claims": [
+        {
+          "text": "We present ARQ, an agentic framework that automatically refines C/C++ CodeQL queries using execution-grounded evidence from synthesized programs.",
+          "support_span": "We present ARQ, an agentic framework that automatically refines C/C++ CodeQL queries using execution-grounded evidence from synthesized programs.",
+          "status": "contradicted"
+        },
+        {
+          "text": "We compare both ARQ-refined and original CodeQL queries on the Juliet v1.3 and FormAI v2 datasets and show that ARQ-refined queries detect substantially more true positives, by up to 119.8\b5, with a Precision of at least 98.0\b5 throughout.",
+          "support_span": "We compare both ARQ-refined and original CodeQL queries on the Juliet v1.3 and FormAI v2 datasets and show that ARQ-refined queries detect substantially more true positives, by up to 119.8\textbackslash %, with a Precision of at least 98.0\textbackslash % throughout.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.CR",
+          "url": "https://arxiv.org/abs/2608.20637",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2608.20637"
+      ],
+      "published": "2026-08-24T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "demoted: critical capped at 5",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "2 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "913287f81a3efc38",
+      "title": "Top Rated Penetration Testing Service Company in USA",
+      "category": "cyber_tools",
+      "one_liner": "This is a promotional piece for a US-based penetration testing service provider, TabdeltaQA.",
+      "tags": [
+        "android",
+        "appsec",
+        "blueteam",
+        "cloud",
+        "exploit",
+        "redteam",
+        "vulnerability"
+      ],
+      "summary": "TabdeltaQA provides penetration testing services in the USA, focusing on web applications, mobile apps, APIs, and cloud platforms. The services aim to identify exploitable security weaknesses and prioritize remediation based on business risk. The company offers specialized testing for network infrastructure, cloud configurations, and mobile applications to protect sensitive data and reduce the attack surface.",
+      "key_facts": [],
+      "bottom_line": "TabdeltaQA offers comprehensive penetration testing services to help US businesses identify and security gaps.",
+      "claims": [
+        {
+          "text": "TabdeltaQA provides penetration testing and security testing services.",
+          "support_span": "TabdeltaQA provides penetration testing and security testing services designed to help organizations identify security gaps and strengthen their applications and infrastructure.",
+          "status": "contradicted"
+        },
+        {
+          "text": "They offer web and application penetration testing.",
+          "support_span": "Web and application penetration testing focuses on identifying weaknesses in websites, web applications, and enterprise applications.",
+          "status": "entailed"
+        },
+        {
+          "text": "They offer network penetration testing.",
+          "support_span": "text: Network penetration testing evaluates the security of network infrastructure and identifies potential paths that could be used for unauthorized access.",
+          "status": "contradicted"
+        },
+        {
+          "text": "They offer cloud penetration testing.",
+          "support_span": "text: Cloud penetration testing can examine cloud applications, workloads, APIs, configurations, and assets for security weaknesses and misconfigurations.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 22,
+      "interest_score": 0,
+      "corroboration": 2,
+      "blend": 20.5,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "ET CIO",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNXRSVFNLR0M2a18xSlFKRTFSc2JUTFk5RUxiU1JYRXN5R285MTZGZjdSU2pnWTNSQi1tZ0tQNnM3bnE4bkExTVhZemloSW1EdFpQRXE1Y3RNQ3hiajkzcmJWZG1BcG96RmRaMFhXbHV3ek9vLTlqVGhQM1JpU0d5Uk12c3JtNllfYVlaRjJTX05oQzhEbFEwX2tOaHAyeTlNZGh6dFNiSWNfWG5ZcEl1NnhuZndkLTJW0gG-AUFVX3lxTE84QUt2a1dGaXZkT1pPMl9aay1jUDVRcm10TjJjUlp1UTFxX0RuZFVfbUVPbWtNUEpCZm81VUlEYkI1Q0lVRFl3UUp4ZkRPRElLMTVDZUhTeXVwWFd6WW5YRkx2RF9vTXg0aXZHVGE0cjM1NjRXb3AtVWFfUFVub3ZPZ1dwZTFnYmdWLXU3NjFtM2lhc1VGWUNIZUJVQXFMWDYxYzc5Zzc4NW5vMW9BeWR1MV9tMEVwS3pGRVhCR2c?oc=5",
+          "domain": "et-cio.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Medium pentesting",
+          "url": "https://medium.com/@tabdeltaqa/top-rated-penetration-testing-service-company-in-usa-9ac7779c920f?source=rss------penetration_testing-5",
+          "domain": "medium.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-21T18:10:54+00:00",
+      "trace": [
+        "tier C (+10)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "importance 1/5 from gemma-4-31b-it",
+        "blend 20 = trust 22 / interest 0 / corrob 50"
+      ],
+      "reject_reason": "3 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "fe9677ce3c0e858c",
+      "title": "Despite Hiccups, Revival Of India-Bangladesh Ties On Track",
+      "category": "india_world",
+      "one_liner": "This is a truncated report on India-Bangladesh diplomatic relations with no actionable details.",
+      "tags": [
+        "india",
+        "policy"
+      ],
+      "summary": "The article is truncated and contains only a headline and a single line mentioning the Indian High Commissioner to Bangladesh, Dinesh Trivedi. It suggests a focus on the revival of bilateral ties between India and Bangladesh despite recent difficulties. No further details on specific policy changes or events are provided.",
+      "key_facts": [],
+      "bottom_line": "The article is too truncated to provide meaningful information beyond a general headline about India-Bangladesh ties.",
+      "claims": [
+        {
+          "text": "The article discusses the revival of India-Bangladesh ties.",
+          "support_span": "Despite Hiccups, Revival Of India-Bangladesh Ties On Track",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 13.8,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/india-news/despite-hiccups-revival-of-india-bangladesh-ties-on-track-11953116#publisher=newsstand",
+          "domain": "ndtv.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-24T15:50:18+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 1/5 from gemini-3-flash-preview",
+        "blend 14 = trust 25 / interest 0 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     }
