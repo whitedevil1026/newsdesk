@@ -111,6 +111,36 @@ def _send(token: str, chat_id: str, text: str, timeout: int) -> bool:
     return False
 
 
+
+def _discover_chats(token: str) -> list[tuple[str, str]]:
+    """Chat ids the bot can already reach, from getUpdates.
+
+    Telegram only reveals a chat once someone has interacted with the bot
+    there, which is why this returns nothing until you message it.
+    """
+    try:
+        req = urllib.request.Request(
+            f"https://api.telegram.org/bot{token}/getUpdates")
+        with urllib.request.urlopen(req, timeout=15, context=_SSL) as resp:
+            updates = json.load(resp).get("result", [])
+    except Exception as exc:
+        log("notify", f"! could not read updates: {exc}")
+        return []
+
+    seen: dict[str, str] = {}
+    for upd in updates:
+        msg = (upd.get("message") or upd.get("channel_post")
+               or upd.get("my_chat_member") or {})
+        chat = msg.get("chat") or {}
+        cid = chat.get("id")
+        if cid is None:
+            continue
+        name = (chat.get("title") or chat.get("username")
+                or chat.get("first_name") or "chat")
+        seen[str(cid)] = f"{chat.get('type', '?')}: {name}"
+    return sorted(seen.items())
+
+
 def selftest() -> int:
     """Check the bot works BEFORE a run depends on it.
 
@@ -127,8 +157,23 @@ def selftest() -> int:
         print("  @BotFather -> /newbot -> put the token in .env")
         return 1
     if not chat_id:
-        print("TELEGRAM_CHAT_ID is not set.")
-        print("  e.g. TELEGRAM_CHAT_ID=@ctinow in .env")
+        # Finding your own chat id is the fiddliest part of Telegram setup,
+        # so discover it rather than making the user hunt for it. Anyone who
+        # has messaged the bot shows up in getUpdates.
+        print("TELEGRAM_CHAT_ID is not set. Looking for recent chats...")
+        found = _discover_chats(token)
+        if found:
+            print("")
+            print("  Send one of these to Telegram? Add to .env:")
+            for cid, label in found:
+                print(f"    TELEGRAM_CHAT_ID={cid}      ({label})")
+        else:
+            print("")
+            print("  No chats found. Do ONE of these, then re-run:")
+            print("   a) Open your bot in Telegram and press Start / send 'hi'")
+            print("      -> it will DM you the digest, no channel needed")
+            print("   b) Create your own channel, add the bot as admin,")
+            print("      post any message there, then re-run this")
         return 1
 
     # 1. Is the token itself valid?

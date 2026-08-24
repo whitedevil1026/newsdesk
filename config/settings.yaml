@@ -141,8 +141,12 @@ telegram:
 #
 # Setup:
 #   1. @BotFather on Telegram -> /newbot -> copy the token
-#   2. Add the bot to your channel as an ADMIN (it cannot post otherwise)
-#   3. In .env:  TELEGRAM_BOT_TOKEN=...   TELEGRAM_CHAT_ID=@yourchannel
+#   2. Pick a destination you CONTROL:
+#        - simplest: message the bot directly; it will DM you the digest
+#        - or: your own channel, with the bot added as an ADMIN
+#      You cannot push to someone else's channel, only read it.
+#   3. TELEGRAM_BOT_TOKEN=... in .env, then `python run.py --test-telegram`
+#      which discovers and prints your chat id for you
 #   4. Flip enabled to true below
 notify:
   telegram:
