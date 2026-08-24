@@ -27,6 +27,10 @@ window:
   # Per-category floor/ceiling so one prolific feed cannot own the page.
   # Without this a single high-volume wire filled 39 of 40 slots on a live run.
   per_category_max: 12
+  # Guaranteed floor per category. Without it the topic scans flooded cyber
+  # and AI and squeezed markets down to a single item on a live run — the
+  # cap alone does not stop one section crowding out another.
+  per_category_min: 3
 
 # When the pipeline is scheduled to run. This is metadata only — the actual
 # schedule lives in .github/workflows/newsdesk.yml and must be kept in step.
@@ -251,7 +255,13 @@ llm:
   # live run) but stage 7 publishes 40, so summarising everything spent ~27
   # calls to throw away ~23 of them. The shortlist is wider than the publish
   # cap so the model's importance score can still reorder the ranking.
-  max_items_summarized: 100
+  # Was 100 against a 40-item page. That over-bought by 60 items while the
+  # flagship models (20 requests/day each) ran dry mid-run, leaving 12 of 40
+  # published cards with extractive summaries instead of real ones.
+  #
+  # 60 keeps enough headroom for the model's importance score to reorder the
+  # ranking, without paying for a tail that never reaches the page.
+  max_items_summarized: 60
   api_key_env: "GEMINI_API_KEY"
 
   # Hard stop on API usage. The counter is persistent and keyed by UTC date,

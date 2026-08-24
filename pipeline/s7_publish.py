@@ -79,16 +79,36 @@ def _apply_quotas(ranked: list, wcfg: dict) -> list:
     """
     total = wcfg["max_items_published"]
     cap = wcfg["per_category_max"]
+    floor = wcfg.get("per_category_min", 0)
+
+    by_cat: dict[str, list] = {}
+    for item in ranked:
+        by_cat.setdefault(item.category, []).append(item)
 
     chosen, counts = [], {}
+    picked: set[int] = set()
+
+    # Reserve the floor first. A cap alone does not stop one section crowding
+    # out another: when the topic scans flooded cyber and AI, markets was
+    # squeezed to a single item even though its cap was 12.
+    for cat, group in by_cat.items():
+        for item in group[:floor]:
+            if len(chosen) >= total:
+                break
+            chosen.append(item)
+            picked.add(id(item))
+            counts[cat] = counts.get(cat, 0) + 1
+
     for item in ranked:                      # already ranked priority-then-blend
+        if id(item) in picked:
+            continue
         n = counts.get(item.category, 0)
         if n < cap and len(chosen) < total:
             chosen.append(item)
+            picked.add(id(item))
             counts[item.category] = n + 1
 
     if len(chosen) < total:                  # spare capacity: best of the rest
-        picked = {id(i) for i in chosen}
         for item in ranked:
             if len(chosen) >= total:
                 break

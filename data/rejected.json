@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T20:29:04.678961+00:00",
+  "generated_at": "2026-08-24T04:29:45.763893+00:00",
   "items": [
     {
       "cluster_key": "73853ada04cdc66b",
@@ -50,6 +50,262 @@
       ],
       "primary_links": [],
       "published": "2026-08-18T03:10:26+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-18 — outside lookback window"
+    },
+    {
+      "cluster_key": "a2d76d090e5c8fa6",
+      "title": "Heees my review of Qwen 3.8 27B - I can't remember the last time I've had this much fun playing with a local model that runs on my own computers simo…",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "llm",
+        "threat-intel",
+        "windows"
+      ],
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Simon Willison simonwillison.net did:plc:kft6lu4trxowqmter2b6vg6z Heees my review of Qwen 3.8 27B - I can't remember the last time I've had this much fun playing with a local model that runs on my own computers https://simonwillison.net/2026/Aug/16/qwen-38-27b/ 2026-08-16T22:02:28.470Z",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "status": "entailed"
+        },
+        {
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "status": "entailed"
+        },
+        {
+          "text": "Post\n  Simon Willison\n  simonwillison.net\n  did:plc:kft6lu4trxowqmter2b6vg6z\n  Heees my review of Qwen 3.8 27B - I can't remember the last time I've had this much fun playing with a local model that runs on my own computers https://simonwillison.net/2026/Aug/16/qwen-38-27b/\n  2026-08-16T22:02:28.470Z",
+          "support_span": "Post\n  Simon Willison\n  simonwillison.net\n  did:plc:kft6lu4trxowqmter2b6vg6z\n  Heees my review of Qwen 3.8 27B - I can't remember the last time I've had this much fun playing with a local model that runs on my own computers https://simonwillison.net/2026/Aug/16/qwen-38-27b/\n  2026-08-16T22:02:28.470Z",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Simon Willison",
+          "url": "https://bsky.app/profile/simonwillison.net/post/3mta6urbgf22b",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-16T22:02:25.308000+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-16 — outside lookback window"
+    },
+    {
+      "cluster_key": "59c8e2ec22354d3c",
+      "title": "Some early evidence that AI may actually be accelerating discoveries in the areas where you would expect to see AI acceleration happening first. metr…",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "ai",
+        "llm",
+        "threat-intel"
+      ],
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu Some early evidence that AI may actually be accelerating discoveries in the areas where you would expect to see AI acceleration happening first.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "status": "entailed"
+        },
+        {
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "status": "entailed"
+        },
+        {
+          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Some early evidence that AI may actually be accelerating discoveries in the areas where you would expect to see AI acceleration happening first.",
+          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Some early evidence that AI may actually be accelerating discoveries in the areas where you would expect to see AI acceleration happening first.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mteol7gac22j",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-18T16:54:03.418000+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-18 — outside lookback window"
+    },
+    {
+      "cluster_key": "c7483d49e75d4c0f",
+      "title": "AI diffusion in political campaigns is quite high (and it looks like Anthropic’s fight with the Pentagon may have been good for its uptake among poli…",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "ai",
+        "threat-intel"
+      ],
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu AI diffusion in political campaigns is quite high (and it looks like Anthropic’s fight with the Pentagon may have been good for its uptake among politicians, through it is impossible to establish a definitive cause for its rapid rise) https://freesystems.substack.…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "status": "entailed"
+        },
+        {
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "status": "entailed"
+        },
+        {
+          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  AI diffusion in political campaigns is quite high (and it looks like Anthropic’s fight with the Pentagon may have been good for its uptake among politicians, through it is impossible to establish a definitive cause for its rapid rise) https://freesystems.substack.com/p/ai-is-transforming-politics-and-how?r=i5f7&utm_medium=ios\n  2026-08-17T12:53:27.975Z",
+          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  AI diffusion in political campaigns is quite high (and it looks like Anthropic’s fight with the Pentagon may have been good for its uptake among politicians, through it is impossible to establish a definitive cause for its rapid rise) https://freesystems.substack.com/p/ai-is-transforming-politics-and-how?r=i5f7&utm_medium=ios\n  2026-08-17T12:53:27.975Z",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mtbqnymbtk2o",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-17T12:53:25.205000+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-17 — outside lookback window"
+    },
+    {
+      "cluster_key": "5cc6d95f83341566",
+      "title": "These are two videos of an otter using a laptop on an airplane, generated by AI running entirely on my local computer, one in late 2024, and the othe…",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "ai",
+        "threat-intel"
+      ],
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu These are two videos of an otter using a laptop on an airplane, generated by AI running entirely on my local computer, one in late 2024, and the other today.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "status": "entailed"
+        },
+        {
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "status": "entailed"
+        },
+        {
+          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  These are two videos of an otter using a laptop on an airplane, generated by AI running entirely on my local computer, one in late 2024, and the other today.",
+          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  These are two videos of an otter using a laptop on an airplane, generated by AI running entirely on my local computer, one in late 2024, and the other today.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mtayrfvsjc2r",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-17T05:45:50.017000+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-17 — outside lookback window"
+    },
+    {
+      "cluster_key": "81cf3e525133b86e",
+      "title": "The fact that LLMs have theory of mind at all is a huge deal (and was controversial when discovered in GPT-4), but you can still see the limitations…",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "llm"
+      ],
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu The fact that LLMs have theory of mind at all is a huge deal (and was controversial when discovered in GPT-4), but you can still see the limitations when models need to consider more than one audience - like how they struggle to separate end user & creator needs/p…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "status": "entailed"
+        },
+        {
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "status": "entailed"
+        },
+        {
+          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  The fact that LLMs have theory of mind at all is a huge deal (and was controversial when discovered in GPT-4), but you can still see the limitations when models need to consider more than one audience - like how they struggle to separate end user & creator needs/perspectives when coding or writing.",
+          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  The fact that LLMs have theory of mind at all is a huge deal (and was controversial when discovered in GPT-4), but you can still see the limitations when models need to consider more than one audience - like how they struggle to separate end user & creator needs/perspectives when coding or writing.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mteaxbclcc2n",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-18T12:50:15.659000+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
@@ -108,50 +364,6 @@
         "summary: heuristic extractive (no LLM configured)"
       ],
       "reject_reason": "published 2026-08-17 — outside lookback window"
-    },
-    {
-      "cluster_key": "62627d1f7f6715f4",
-      "title": "KBT096/windows-secure-toolkit — Local Windows security auditing and reversible hardening with a C#/.NET Framework 4.8 core and CMD/BAT entry p",
-      "category": "cyber_tools",
-      "one_liner": "Cyber Tools: single report, unconfirmed.",
-      "tags": [
-        "blueteam",
-        "opensource",
-        "release",
-        "tool",
-        "windows"
-      ],
-      "summary": "Windows 的安全设置有点像家里的电箱：平时没人想看，真出问题又希望它有记录。 当前版本：1.3.1。 这个小工具从 CMD/BAT 进去，用 C# 做检查、预览、备份和恢复。它不负责把电脑变成“绝对安全”，只负责把常见的几件事做得清楚一点。 - 只读审计：防火墙、Defender、UAC、SMBv1、Guest、RDP/NLA、AutoRun、更新服务和待重启状态； - 生成 Markdown 和 JSON 报告； - 预览一套保守基线，确认以后才应用； - 应用前保存清单、SHA-256 和防火墙策略； - 在同一台电脑上校验后恢复备份； - 只读列出本机备份目录，并显示清单和 SHA-256 状态； - Defender 快速扫描、DISM/SFC 只读检查、TCP 监听端口查看； - 本机兼容性诊断：平台、.NET Framework、WMI 和原生命令能力，支持 JSON 输出； - 只查询 GitHub Release 版本，不下载脚本，更不会下载完就“相信它”。 - 入站端口、RDP 和管理员账户由用户明确决定，工具不会代为开…",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "Windows 的安全设置有点像家里的电箱：平时没人想看，真出问题又希望它有记录。\n当前版本：1.3.1。\n这个小工具从 CMD/BAT 进去，用 C# 做检查、预览、备份和恢复。它不负责把电脑变成“绝对安全”，只负责把常见的几件事做得清楚一点。\n- 只读审计：防火墙、Defender、UAC、SMBv1、Guest、RDP/NLA、AutoRun、更新服务和待重启状态；\n- 生成 Markdown 和 JSON 报告；\n- 预览一套保守基线，确认以后才应用；\n- 应用前保存清单、SHA-256 和防火墙策略；\n- 在同一台电脑上校验后恢复备份；\n- 只读列出本机备份目录，并显示清单和 SHA-256 状态；\n- Defender 快速扫描、DISM/SFC 只读检查、TCP 监听端口查看；\n- 本机兼容性诊断：平台、.NET Framework、WMI 和原生命令能力，支持 JSON 输出；\n- 只查询 GitHub Release 版本，不下载脚本，更不会下载完就“相信它”。\n- 入站端口、RDP 和管理员账户由用户明确决定，工具不会代为开放或创建；\n- 系统重启与 DISM/SFC 修复由用户决定，工具只执行检查和验证；\n- 审计结果、用户名、IP 和其他本机数据只保存在本地，不上传；\n- 组织策略、MDM 和安全产品保留对系统设置的控制权；\n- 静态检查结果按验证范围标注，不替代所有 Windows 版本的实机验证。\n如果电脑由公司策略管理，本地设置可能在策略刷新后恢复；请以组织策略和后续审计结果为准。\n支持 Windows 10/11 和 Windows Server 2019/2022/2025。运行已编译版本只需要 .NET Framework 4.8；从源码构建需要 .NET 6 SDK 或更高版本。\n不需要安装 SDK 时，可以从 v1.3.1 Release 下载 windows-secure-toolkit-v1.3.1-win-x64.zip，解压后进入目录。\n从源码运行时，在项目目录打开 CMD：\nbuild.cmd\nwin_secure.cmd self-test\nself-test 只检查程序和清单处理，不修改系统设置。\n第一次使用先完成只读检查。下面的命令不会应用安全基线：\nwin_secure.cmd doctor\nwin_secure.cmd audit\nwin_secure.cmd plan\ndoctor 检查系统兼容性，audit 生成 Markdown 和 JSON 报告，plan 显示将要处理的项目和可能的影响。\n阅读计划并确认影响范围后，以管理员身份打开 CMD，再运行：\nwin_secure.cmd apply\n应用前会先创建备份并再次请求确认。程序不会自动开放入站端口、启用 RDP 或创建管理员账户。\n先查看备份目录和清单状态：\nwin_secure.cmd backups\n恢复操作需要管理员权限，并会校验备份清单、计算机名称和 SHA-256：\nwin_secure.cmd restore \"C:\\ProgramData\\WindowsSecureToolkit\\Backups\\20260818-120000\"\nwin_secure.bat 是兼容入口，功能和 .cmd 相同。\n- src/WinSecure.cs ：核心实现；\n- src/WindowsSecureToolkit.csproj ：.NET Framework 4.8 项目文件；\n- build.cmd ：构建核心程序；\n- win_secure.cmd /win_secure.bat ：用户入口；\n- scripts/Test-Repository.cmd ：构建、入口和报告烟雾测试；\n- docs/THREAT_MODEL.md ：边界和威胁模型。\n- docs/WINDOWS_VALIDATION.md ：诊断命令与 Windows 验证矩阵。\n本机 Windows 11 专业工作站版 build 26200 已验证：C# 构建、CMD/BAT 启动、版本、自检、审计、计划、报告生成、端口查看和 Release 检查。公开 GitHub Actions 也会在 Windows runner 上构建并运行烟雾测试。\ndoctor 是只读能力探测，不会因为缺少可选组件就修改系统；doctor --json 输出带 SchemaVersion 的机器可读结果，适合在收集日志前先确认环境。不同 Windows 版本、组织策略和第三方防护软件可能使某些项目显示为 Unavailable，这代表需要人工复核，不代表工具已经替你修复。\n实际修改系统的 Apply/Restore 流程没有在维护者机器上执行，因此发布说明不会把它写成已经覆盖所有环境。请先看计划并保留备份。\n- 普通问题请使用 Issues；\n- 可能暴露系统数据的问题请按照 SECURITY.md 私下报告；\n- 提交代码前请阅读 CONTRIBUTING.md。\n当前维护者：@KBT096。\n本项目自身代码遵循 MIT License 协议发布。构建目标使用 .NET Framework 4.8；运行时调用 netsh、dism、sfc、netstat、WMI 和 Microsoft Defender 等 Windows 系统组件，相关组件的授权和使用条件以 Microsoft Windows 许可条款为准。CI 使用 GitHub Actions 与固定提交的 actions/checkout，仅用于仓库验证，不随工具运行。本仓库不捆绑 YABS、NextTrace 或其他 VPS 探针组件。\n本项目采用 MIT License。外部诊断工具仍分别受其上游许可证约束。",
-          "support_span": "Windows 的安全设置有点像家里的电箱：平时没人想看，真出问题又希望它有记录。\n当前版本：1.3.1。\n这个小工具从 CMD/BAT 进去，用 C# 做检查、预览、备份和恢复。它不负责把电脑变成“绝对安全”，只负责把常见的几件事做得清楚一点。\n- 只读审计：防火墙、Defender、UAC、SMBv1、Guest、RDP/NLA、AutoRun、更新服务和待重启状态；\n- 生成 Markdown 和 JSON 报告；\n- 预览一套保守基线，确认以后才应用；\n- 应用前保存清单、SHA-256 和防火墙策略；\n- 在同一台电脑上校验后恢复备份；\n- 只读列出本机备份目录，并显示清单和 SHA-256 状态；\n- Defender 快速扫描、DISM/SFC 只读检查、TCP 监听端口查看；\n- 本机兼容性诊断：平台、.NET Framework、WMI 和原生命令能力，支持 JSON 输出；\n- 只查询 GitHub Release 版本，不下载脚本，更不会下载完就“相信它”。\n- 入站端口、RDP 和管理员账户由用户明确决定，工具不会代为开放或创建；\n- 系统重启与 DISM/SFC 修复由用户决定，工具只执行检查和验证；\n- 审计结果、用户名、IP 和其他本机数据只保存在本地，不上传；\n- 组织策略、MDM 和安全产品保留对系统设置的控制权；\n- 静态检查结果按验证范围标注，不替代所有 Windows 版本的实机验证。\n如果电脑由公司策略管理，本地设置可能在策略刷新后恢复；请以组织策略和后续审计结果为准。\n支持 Windows 10/11 和 Windows Server 2019/2022/2025。运行已编译版本只需要 .NET Framework 4.8；从源码构建需要 .NET 6 SDK 或更高版本。\n不需要安装 SDK 时，可以从 v1.3.1 Release 下载 windows-secure-toolkit-v1.3.1-win-x64.zip，解压后进入目录。\n从源码运行时，在项目目录打开 CMD：\nbuild.cmd\nwin_secure.cmd self-test\nself-test 只检查程序和清单处理，不修改系统设置。\n第一次使用先完成只读检查。下面的命令不会应用安全基线：\nwin_secure.cmd doctor\nwin_secure.cmd audit\nwin_secure.cmd plan\ndoctor 检查系统兼容性，audit 生成 Markdown 和 JSON 报告，plan 显示将要处理的项目和可能的影响。\n阅读计划并确认影响范围后，以管理员身份打开 CMD，再运行：\nwin_secure.cmd apply\n应用前会先创建备份并再次请求确认。程序不会自动开放入站端口、启用 RDP 或创建管理员账户。\n先查看备份目录和清单状态：\nwin_secure.cmd backups\n恢复操作需要管理员权限，并会校验备份清单、计算机名称和 SHA-256：\nwin_secure.cmd restore \"C:\\ProgramData\\WindowsSecureToolkit\\Backups\\20260818-120000\"\nwin_secure.bat 是兼容入口，功能和 .cmd 相同。\n- src/WinSecure.cs ：核心实现；\n- src/WindowsSecureToolkit.csproj ：.NET Framework 4.8 项目文件；\n- build.cmd ：构建核心程序；\n- win_secure.cmd /win_secure.bat ：用户入口；\n- scripts/Test-Repository.cmd ：构建、入口和报告烟雾测试；\n- docs/THREAT_MODEL.md ：边界和威胁模型。\n- docs/WINDOWS_VALIDATION.md ：诊断命令与 Windows 验证矩阵。\n本机 Windows 11 专业工作站版 build 26200 已验证：C# 构建、CMD/BAT 启动、版本、自检、审计、计划、报告生成、端口查看和 Release 检查。公开 GitHub Actions 也会在 Windows runner 上构建并运行烟雾测试。\ndoctor 是只读能力探测，不会因为缺少可选组件就修改系统；doctor --json 输出带 SchemaVersion 的机器可读结果，适合在收集日志前先确认环境。不同 Windows 版本、组织策略和第三方防护软件可能使某些项目显示为 Unavailable，这代表需要人工复核，不代表工具已经替你修复。\n实际修改系统的 Apply/Restore 流程没有在维护者机器上执行，因此发布说明不会把它写成已经覆盖所有环境。请先看计划并保留备份。\n- 普通问题请使用 Issues；\n- 可能暴露系统数据的问题请按照 SECURITY.md 私下报告；\n- 提交代码前请阅读 CONTRIBUTING.md。\n当前维护者：@KBT096。\n本项目自身代码遵循 MIT License 协议发布。构建目标使用 .NET Framework 4.8；运行时调用 netsh、dism、sfc、netstat、WMI 和 Microsoft Defender 等 Windows 系统组件，相关组件的授权和使用条件以 Microsoft Windows 许可条款为准。CI 使用 GitHub Actions 与固定提交的 actions/checkout，仅用于仓库验证，不随工具运行。本仓库不捆绑 YABS、NextTrace 或其他 VPS 探针组件。\n本项目采用 MIT License。外部诊断工具仍分别受其上游许可证约束。",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/KBT096/windows-secure-toolkit",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-18T20:01:50+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-18 — outside lookback window"
     },
     {
       "cluster_key": "f7cc15009ac94022",
@@ -268,37 +480,32 @@
       "reject_reason": "published 2026-08-17 — outside lookback window"
     },
     {
-      "cluster_key": "444eee48c15777dc",
-      "title": "sanjarbiy/bugbountyrules — Behavioral-discipline skill turning an AI agent into a methodical, non-robotic bug-bounty & pentest hunter - 4",
-      "category": "cyber_tools",
-      "one_liner": "Cyber Tools: single report, unconfirmed.",
+      "cluster_key": "bc6d6549110bd52a",
+      "title": "Amazon buying and destroying rare books to train AI; a bunch of wild AI use in the courts; and Meta's new patent for its AI smart glasses.",
+      "category": "cyber_attacks",
+      "one_liner": "Cyber Attacks: single report, unconfirmed.",
       "tags": [
-        "agents",
         "ai",
-        "llm",
-        "markets",
-        "opensource",
-        "redteam",
-        "tool",
-        "vulnerability"
+        "policy",
+        "threat-intel"
       ],
-      "summary": "A behavioral-discipline skill for authorized bug bounty & penetration testing. It turns an AI agent into a methodical, persistent, non-robotic hunter - enforcing scope, generating attack vectors autonomously, holding evidence discipline, and chaining across the full web / API / mobile / cloud / LLM attack surface. For bug bounty programs you are enrolled in, penetration tests you are contracted for, CTFs, and your own systems.",
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post 404 Media 404media.co did:plc:vcepp6trx4vpe5ourxso4tjl Amazon buying and destroying rare books to train AI; a bunch of wild AI use in the courts; and Meta's new patent for its AI smart glasses.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
         {
-          "text": "A behavioral-discipline skill for authorized bug bounty & penetration testing.",
-          "support_span": "A behavioral-discipline skill for authorized bug bounty & penetration testing.",
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
           "status": "entailed"
         },
         {
-          "text": "It turns an AI agent into a methodical, persistent, non-robotic hunter - enforcing scope, generating attack vectors autonomously, holding evidence discipline, and chaining across the full web / API / mobile / cloud / LLM attack surface.",
-          "support_span": "It turns an AI agent into a methodical, persistent, non-robotic hunter - enforcing scope, generating attack vectors autonomously, holding evidence discipline, and chaining across the full web / API / mobile / cloud / LLM attack surface.",
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
           "status": "entailed"
         },
         {
-          "text": "For bug bounty programs you are enrolled in, penetration tests you are contracted for, CTFs, and your own systems.",
-          "support_span": "For bug bounty programs you are enrolled in, penetration tests you are contracted for, CTFs, and your own systems.",
+          "text": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  Amazon buying and destroying rare books to train AI; a bunch of wild AI use in the courts; and Meta's new patent for its AI smart glasses.",
+          "support_span": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  Amazon buying and destroying rare books to train AI; a bunch of wild AI use in the courts; and Meta's new patent for its AI smart glasses.",
           "status": "entailed"
         }
       ],
@@ -311,127 +518,18 @@
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/sanjarbiy/bugbountyrules",
-          "domain": "github.com",
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mthkbk7boq25",
+          "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-17T18:15:38+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-17 — outside lookback window"
-    },
-    {
-      "cluster_key": "4410315a77d9ba67",
-      "title": "projectdiscovery/httpx — httpx is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp lib",
-      "category": "cyber_tools",
-      "one_liner": "Cyber Tools: single report, unconfirmed.",
-      "tags": [
-        "opensource",
-        "threat-intel",
-        "tool"
-      ],
-      "summary": "Features • Installation • Usage • Documentation • Notes • Join Discord httpx is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library. It is designed to maintain result reliability with an increased number of threads. - Simple and modular code base making it easy to contribute.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "Features • Installation • Usage • Documentation • Notes • Join Discord\nhttpx is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library.",
-          "support_span": "Features • Installation • Usage • Documentation • Notes • Join Discord\nhttpx is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library.",
-          "status": "entailed"
-        },
-        {
-          "text": "It is designed to maintain result reliability with an increased number of threads.",
-          "support_span": "It is designed to maintain result reliability with an increased number of threads.",
-          "status": "entailed"
-        },
-        {
-          "text": "- Simple and modular code base making it easy to contribute.",
-          "support_span": "- Simple and modular code base making it easy to contribute.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (updated)",
-          "url": "https://github.com/projectdiscovery/httpx",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-19T10:13:19+00:00",
+      "published": "2026-08-19T20:15:02.565000+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
       "reject_reason": "published 2026-08-19 — outside lookback window"
-    },
-    {
-      "cluster_key": "b05af914e2b0ea81",
-      "title": "OpenLabs-so/oa-design — The Open Analytics design language as an agent skill: component recipes with type-checked source, token CSS, a",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "exploit",
-        "howto",
-        "llm",
-        "opensource",
-        "supply-chain",
-        "threat-intel",
-        "tool"
-      ],
-      "summary": "The design language of Open Analytics, packaged three ways: an agent skill, type-checked component recipes, and a CLI. People kept asking how the dashboard looks and moves the way it does; this repository is the answer, in a form an agent can execute. Every hex code, spring constant, radius and easing is lifted from the shipped product, with the reasoning attached.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "The design language of Open Analytics, packaged three ways: an agent skill, type-checked component recipes, and a CLI.",
-          "support_span": "The design language of Open Analytics, packaged three ways: an agent skill, type-checked component recipes, and a CLI.",
-          "status": "entailed"
-        },
-        {
-          "text": "People kept asking how the dashboard looks and moves the way it does; this repository is the answer, in a form an agent can execute.",
-          "support_span": "People kept asking how the dashboard looks and moves the way it does; this repository is the answer, in a form an agent can execute.",
-          "status": "entailed"
-        },
-        {
-          "text": "Every hex code, spring constant, radius and easing is lifted from the shipped product, with the reasoning attached.",
-          "support_span": "Every hex code, spring constant, radius and easing is lifted from the shipped product, with the reasoning attached.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/OpenLabs-so/oa-design",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-20T18:28:10+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-20 — outside lookback window"
     },
     {
       "cluster_key": "51b6eba7b47acd10",
@@ -488,61 +586,6 @@
         "summary: heuristic extractive (no LLM configured)"
       ],
       "reject_reason": "published 2026-08-18 — outside lookback window"
-    },
-    {
-      "cluster_key": "7854e21a28fdf43c",
-      "title": "0x4meliorate/Mimic — Frameless Browser‑in‑the‑Browser (BitB) - No iframes, no frame‑busting issues. A single‑script Shadow DOM / Mu",
-      "category": "cyber_tools",
-      "one_liner": "Cyber Tools: single report, unconfirmed.",
-      "tags": [
-        "malware",
-        "opensource",
-        "policy",
-        "release",
-        "tool",
-        "windows"
-      ],
-      "summary": "Frameless Browser‑in‑the‑Browser (BitB) - No iframes, no frame‑busting issues. A single‑script Shadow DOM / MutationObserver library for realistic phishing simulations, easily injected via reverse proxy. ⚠️ Warning: Only use this software according to your current legislation.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "Frameless Browser‑in‑the‑Browser (BitB) - No iframes, no frame‑busting issues.",
-          "support_span": "Frameless Browser‑in‑the‑Browser (BitB) - No iframes, no frame‑busting issues.",
-          "status": "entailed"
-        },
-        {
-          "text": "A single‑script Shadow DOM / MutationObserver library for realistic phishing simulations, easily injected via reverse proxy.",
-          "support_span": "A single‑script Shadow DOM / MutationObserver library for realistic phishing simulations, easily injected via reverse proxy.",
-          "status": "entailed"
-        },
-        {
-          "text": "⚠️ Warning: Only use this software according to your current legislation.",
-          "support_span": "⚠️ Warning: Only use this software according to your current legislation.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/0x4meliorate/Mimic",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-20T22:47:50+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-20 — outside lookback window"
     },
     {
       "cluster_key": "0876c9c2b39765c7",
@@ -602,171 +645,6 @@
       "reject_reason": "published 2026-08-17 — outside lookback window"
     },
     {
-      "cluster_key": "4158789a4e6f404a",
-      "title": "six2dez/reconftw — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of tools to ",
-      "category": "cyber_tools",
-      "one_liner": "Cyber Tools: single report, unconfirmed.",
-      "tags": [
-        "appsec",
-        "cloud",
-        "exploit",
-        "identity",
-        "opensource",
-        "redteam",
-        "research",
-        "tool"
-      ],
-      "summary": "reconFTW is a powerful automated reconnaissance tool designed for security researchers and penetration testers. It streamlines the process of gathering intelligence on a target by performing subdomain enumeration, vulnerability scanning, OSINT and more. With a modular design, extensive configuration options, and support for distributed scanning via AX Framework, reconFTW is built to deliver comprehensive results efficiently.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "reconFTW is a powerful automated reconnaissance tool designed for security researchers and penetration testers.",
-          "support_span": "reconFTW is a powerful automated reconnaissance tool designed for security researchers and penetration testers.",
-          "status": "entailed"
-        },
-        {
-          "text": "It streamlines the process of gathering intelligence on a target by performing subdomain enumeration, vulnerability scanning, OSINT and more.",
-          "support_span": "It streamlines the process of gathering intelligence on a target by performing subdomain enumeration, vulnerability scanning, OSINT and more.",
-          "status": "entailed"
-        },
-        {
-          "text": "With a modular design, extensive configuration options, and support for distributed scanning via AX Framework, reconFTW is built to deliver comprehensive results efficiently.",
-          "support_span": "With a modular design, extensive configuration options, and support for distributed scanning via AX Framework, reconFTW is built to deliver comprehensive results efficiently.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (updated)",
-          "url": "https://github.com/six2dez/reconftw",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-20T09:01:41+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-20 — outside lookback window"
-    },
-    {
-      "cluster_key": "fd5d5c01f18811a7",
-      "title": "ZSeven-W/dsh-ios — DeepSeek Harness (DSH) plugin: a live iOS Simulator — and a USB-connected iPhone — inside the conversation. 22",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "llm",
-        "opensource",
-        "release",
-        "tool"
-      ],
-      "summary": "A live, interactive iOS Simulator inside a DeepSeek Harness conversation — plus your real iPhone over USB. 22 agent tools • live MJPEG sidebar panel • simulator & real iPhone over USB • list/feed row actions • SwiftUI preview hot reload npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1 English · 简体中文 · 繁體中文 · 日本語 · 한국어 · Français · Español · Deutsch · Português · Русский · हिन्दी · Türkçe · ไทย · Tiếng Việt · Bahasa Indonesia npm: @zsev…",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "A live, interactive iOS Simulator inside a DeepSeek Harness conversation — plus your real iPhone over USB.",
-          "support_span": "A live, interactive iOS Simulator inside a DeepSeek Harness conversation — plus your real iPhone over USB.",
-          "status": "entailed"
-        },
-        {
-          "text": "22 agent tools • live MJPEG sidebar panel • simulator & real iPhone over USB • list/feed row actions • SwiftUI preview hot reload\n  npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1\n  English · 简体中文 · 繁體中文 · 日本語 · 한국어 · Français · Español · Deutsch · Português · Русский · हिन्दी · Türkçe · ไทย · Tiếng Việt · Bahasa Indonesia\n  npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1\n  \nA real iPhone driven from inside a DSH conversation — the agent's tool calls on the left, the live device panel on the right\nDSH iOS Simulator gives the agent a real iOS Simulator inside the conversation — and gives you the pixels.",
-          "support_span": "22 agent tools • live MJPEG sidebar panel • simulator & real iPhone over USB • list/feed row actions • SwiftUI preview hot reload\n  npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1\n  English · 简体中文 · 繁體中文 · 日本語 · 한국어 · Français · Español · Deutsch · Português · Русский · हिन्दी · Türkçe · ไทย · Tiếng Việt · Bahasa Indonesia\n  npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1\n  \nA real iPhone driven from inside a DSH conversation — the agent's tool calls on the left, the live device panel on the right\nDSH iOS Simulator gives the agent a real iOS Simulator inside the conversation — and gives you the pixels.",
-          "status": "entailed"
-        },
-        {
-          "text": "The agent can boot a device, build and run an Xcode project or Swift package, drive the UI by accessibility identity or by OCR text, read unified logs, and inspect processes, backtraces, and leaks, while a live stream of the device renders in a persistent sidebar panel where you can tap, drag, rotate, and press Home directly on the video.",
-          "support_span": "The agent can boot a device, build and run an Xcode project or Swift package, drive the UI by accessibility identity or by OCR text, read unified logs, and inspect processes, backtraces, and leaks, while a live stream of the device renders in a persistent sidebar panel where you can tap, drag, rotate, and press Home directly on the video.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/ZSeven-W/dsh-ios",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-19T18:02:50+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-19 — outside lookback window"
-    },
-    {
-      "cluster_key": "bc50b7caef98181b",
-      "title": "1rhino2/fnprint — match functions in binaries by what they do, not what their bytes look like. behavioral function fingerprintin",
-      "category": "cyber_tools",
-      "one_liner": "Cyber Tools: single report, unconfirmed.",
-      "tags": [
-        "dfir",
-        "opensource",
-        "release",
-        "tool",
-        "vulnerability"
-      ],
-      "summary": "fnprint matches functions in binaries by what they do, not by what their bytes or control-flow graphs look like. it runs each function in a tiny emulator with made-up inputs, records the side effects it produces, and hashes that behavior into a fingerprint. two functions that behave the same get similar fingerprints, even if they were built by a different compiler or at a different optimization level.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "fnprint matches functions in binaries by what they do, not by what their bytes or control-flow graphs look like.",
-          "support_span": "fnprint matches functions in binaries by what they do, not by what their bytes or control-flow graphs look like.",
-          "status": "entailed"
-        },
-        {
-          "text": "it runs each function in a tiny emulator with made-up inputs, records the side effects it produces, and hashes that behavior into a fingerprint.",
-          "support_span": "it runs each function in a tiny emulator with made-up inputs, records the side effects it produces, and hashes that behavior into a fingerprint.",
-          "status": "entailed"
-        },
-        {
-          "text": "two functions that behave the same get similar fingerprints, even if they were built by a different compiler or at a different optimization level.",
-          "support_span": "two functions that behave the same get similar fingerprints, even if they were built by a different compiler or at a different optimization level.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/1rhino2/fnprint",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-19T06:22:03+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-19 — outside lookback window"
-    },
-    {
       "cluster_key": "2ec9fc6e0967147d",
       "title": "joe960913/Jixu — A durable single-Agent Harness for TypeScript with recoverable Threads, explicit side-effect boundaries, and a",
       "category": "tech_ai",
@@ -821,61 +699,6 @@
         "summary: heuristic extractive (no LLM configured)"
       ],
       "reject_reason": "published 2026-08-18 — outside lookback window"
-    },
-    {
-      "cluster_key": "558ea75bef63f0e6",
-      "title": "worldwonderer/oh-story-dsh — A DSH plugin for novel writing and short-drama production, powered by Oh Story and Drama Skills.",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai",
-        "linux",
-        "llm",
-        "opensource",
-        "threat-intel"
-      ],
-      "summary": "oh-story-dsh 是基于 DeepSeek Harness（DSH）构建的社区插件，将 Oh Story 的小说方法库与 Drama Skills 的短剧生产流程带入 DSH。DSH 管理 Agent、会话、模型、权限和 Chat；插件提供创作 Skills、专业 Roles、项目协议与三栏工作台。 本项目与 DeepSeek 官方无隶属、合作或背书关系；DeepSeek Harness 名称与品牌素材归其权利人所有。 覆盖长篇、短篇、选题、扫榜、拆文、导入、审稿、去 AI 味与封面流程。13 个 Oh Story Skills 与 7 个专业 Roles 按固定上游版本随插件交付。 内置 Drama Skills 0.6.0 的 creator-first 工作流。每集按请求维护最多五份可读 Markdown：剧本.md、视觉设定.md、分镜.md、图片提示词.md、视频提示词.md；不预建空文档，也不倒补用户未点名的阶段。审查与生产交付继续使用 DSH 原生工具、权限和确认界面。 Drama Skills 0.6.0 是破坏性升级：…",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "oh-story-dsh 是基于 DeepSeek Harness（DSH）构建的社区插件，将 Oh Story 的小说方法库与 Drama Skills 的短剧生产流程带入 DSH。DSH 管理 Agent、会话、模型、权限和 Chat；插件提供创作 Skills、专业 Roles、项目协议与三栏工作台。\n本项目与 DeepSeek 官方无隶属、合作或背书关系；DeepSeek Harness 名称与品牌素材归其权利人所有。\n覆盖长篇、短篇、选题、扫榜、拆文、导入、审稿、去 AI 味与封面流程。13 个 Oh Story Skills 与 7 个专业 Roles 按固定上游版本随插件交付。\n内置 Drama Skills 0.6.0 的 creator-first 工作流。每集按请求维护最多五份可读 Markdown：剧本.md、视觉设定.md、分镜.md、图片提示词.md、视频提示词.md；不预建空文档，也不倒补用户未点名的阶段。审查与生产交付继续使用 DSH 原生工具、权限和确认界面。\nDrama Skills 0.6.0 是破坏性升级：v0.5 结构化项目应继续锁定 v0.5 并只读保留；迁移时新建项目根，逐集人工确认当前工作所需文档，不要在同一目录混用旧 JSON/JSONL 与新文档。\n- 原生三栏布局：项目文件树、编辑器与官方 Chat 同屏，Trajectory、工具执行、Todo、审批和 Composer 保持 DSH 原生交互。\n- 实时文件跟随：Agent 调用官方文件工具时，目标文件自动定位，编辑器同步呈现生成中的内容。\n- Chat 文件导航：点击官方 Chat 中的作品文件名，文件树会定位并在编辑器打开对应文件。\n- 创作文档预览：Markdown 支持标题、表格、任务列表、引用和代码块；JSONL 以带行号、类型和状态的结构化记录呈现。\n- 安全编辑：支持源码编辑与快捷保存；人工未保存内容不会被并发 Agent 修改覆盖。\n- 稳定长对话：消息区独立滚动，官方 Composer 固定在 Chat 栏底部。\n需要 Node.js 24+。\n1.",
-          "support_span": "oh-story-dsh 是基于 DeepSeek Harness（DSH）构建的社区插件，将 Oh Story 的小说方法库与 Drama Skills 的短剧生产流程带入 DSH。DSH 管理 Agent、会话、模型、权限和 Chat；插件提供创作 Skills、专业 Roles、项目协议与三栏工作台。\n本项目与 DeepSeek 官方无隶属、合作或背书关系；DeepSeek Harness 名称与品牌素材归其权利人所有。\n覆盖长篇、短篇、选题、扫榜、拆文、导入、审稿、去 AI 味与封面流程。13 个 Oh Story Skills 与 7 个专业 Roles 按固定上游版本随插件交付。\n内置 Drama Skills 0.6.0 的 creator-first 工作流。每集按请求维护最多五份可读 Markdown：剧本.md、视觉设定.md、分镜.md、图片提示词.md、视频提示词.md；不预建空文档，也不倒补用户未点名的阶段。审查与生产交付继续使用 DSH 原生工具、权限和确认界面。\nDrama Skills 0.6.0 是破坏性升级：v0.5 结构化项目应继续锁定 v0.5 并只读保留；迁移时新建项目根，逐集人工确认当前工作所需文档，不要在同一目录混用旧 JSON/JSONL 与新文档。\n- 原生三栏布局：项目文件树、编辑器与官方 Chat 同屏，Trajectory、工具执行、Todo、审批和 Composer 保持 DSH 原生交互。\n- 实时文件跟随：Agent 调用官方文件工具时，目标文件自动定位，编辑器同步呈现生成中的内容。\n- Chat 文件导航：点击官方 Chat 中的作品文件名，文件树会定位并在编辑器打开对应文件。\n- 创作文档预览：Markdown 支持标题、表格、任务列表、引用和代码块；JSONL 以带行号、类型和状态的结构化记录呈现。\n- 安全编辑：支持源码编辑与快捷保存；人工未保存内容不会被并发 Agent 修改覆盖。\n- 稳定长对话：消息区独立滚动，官方 Composer 固定在 Chat 栏底部。\n需要 Node.js 24+。\n1.",
-          "status": "entailed"
-        },
-        {
-          "text": "安装插件并启动 DSH Web\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 plugin --profile web add @oh-story/dsh@0.1.4\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 web\n也可以直接安装 GitHub Release 中经过同一套测试的预构建包：\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 plugin --profile web add https://github.com/worldwonderer/oh-story-dsh/releases/download/v0.1.4/oh-story-dsh-0.1.4.tgz\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 web\n默认在 http://127.0.0.1:3080 打开。\n2.",
-          "support_span": "安装插件并启动 DSH Web\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 plugin --profile web add @oh-story/dsh@0.1.4\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 web\n也可以直接安装 GitHub Release 中经过同一套测试的预构建包：\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 plugin --profile web add https://github.com/worldwonderer/oh-story-dsh/releases/download/v0.1.4/oh-story-dsh-0.1.4.tgz\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 web\n默认在 http://127.0.0.1:3080 打开。\n2.",
-          "status": "entailed"
-        },
-        {
-          "text": "配置模型\n首次使用需要在 DSH 的「设置 → 模型」中添加 Provider 并填入 API Key；也可以在启动前设置环境变量 DEEPSEEK_API_KEY。模型、凭据与权限均由 DSH 管理，本插件不接触。\n3.",
-          "support_span": "配置模型\n首次使用需要在 DSH 的「设置 → 模型」中添加 Provider 并填入 API Key；也可以在启动前设置环境变量 DEEPSEEK_API_KEY。模型、凭据与权限均由 DSH 管理，本插件不接触。\n3.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/worldwonderer/oh-story-dsh",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-19T15:27:01+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-19 — outside lookback window"
     },
     {
       "cluster_key": "7dcdd5f46b1e0f6d",
@@ -987,116 +810,6 @@
         "summary: heuristic extractive (no LLM configured)"
       ],
       "reject_reason": "published 2026-08-17 — outside lookback window"
-    },
-    {
-      "cluster_key": "8856c93897241e8e",
-      "title": "Jordanwei1/jiaojie-skill — 交接 Skill（Jiaojie）：跨窗口、跨模型、跨设备、跨语言的 AI 上下文交接工具。换窗口，不失忆；换模型，不重来。Open-source AI context handoff.",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai",
-        "exploit",
-        "opensource",
-        "threat-intel"
-      ],
-      "summary": "「换窗口，不失忆；换模型，不重来。」 交接 Skill（Jiaojie）把当前目标、决策、废案、关键产物和下一步交给另一个 AI，让它从真正停下的位置继续。 一个跨窗口、跨模型、跨设备、跨语言的开源 AI 上下文交接工具，基于开放的 Agent Skills 协议；实际验证范围以公开兼容矩阵为准。 handoff skill 证明了把任务摘要交给下一个 Agent 是可行的。 那为什么只交摘要？把意图演化、废弃方案、负知识、产物和真正的下一步一起交过去。 只需说一句「交接一下」，Jiaojie 自动完成导出、接收确认和连续性验证。 其他语言 / Other Languages: English · Français · 日本語 · 한국어 · Español 一段多轮编程对话已经走到这里： 用户 ❯ 支付 webhook 偶尔会被重复处理。 不能更换数据库，也不能更换支付平台。 AI A ❯ request_id 方案验证失败：同一个事件重投时， request_id 会变化，不能作为幂等键。 用户 ❯ 不要使用 Redis 锁，我不接受新的运…",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "「换窗口，不失忆；换模型，不重来。」\n交接 Skill（Jiaojie）把当前目标、决策、废案、关键产物和下一步交给另一个 AI，让它从真正停下的位置继续。\n一个跨窗口、跨模型、跨设备、跨语言的开源 AI 上下文交接工具，基于开放的 Agent Skills 协议；实际验证范围以公开兼容矩阵为准。\nhandoff skill 证明了把任务摘要交给下一个 Agent 是可行的。\n那为什么只交摘要？把意图演化、废弃方案、负知识、产物和真正的下一步一起交过去。\n只需说一句「交接一下」，Jiaojie 自动完成导出、接收确认和连续性验证。\n其他语言 / Other Languages:\nEnglish · Français · 日本語 · 한국어 · Español\n一段多轮编程对话已经走到这里：\n用户      ❯ 支付 webhook 偶尔会被重复处理。\n            不能更换数据库，也不能更换支付平台。\nAI A      ❯ request_id 方案验证失败：同一个事件重投时，\n            request_id 会变化，不能作为幂等键。\n用户      ❯ 不要使用 Redis 锁，我不接受新的运行依赖。\n            改用支付平台的 event_id 和数据库唯一约束。\n用户      ❯ 下一步并行修改 handler.py 和补 replay 测试，\n            最后再更新法语运行手册。交接一下。\n            接收方在另一台电脑上，把必需文件一起带走。\nAI A      ❯ 已选择 handoff.zip：下一步依赖 handler.py\n            和 failure-log.txt，接收方无法访问当前工作区。\n用户把交接包交给一个没有原会话的 AI B：\n用户      ❯ 接收这个交接包。用法语回复，但不要继续执行。\nAI B      ❯ Réception réussie.",
-          "support_span": "「换窗口，不失忆；换模型，不重来。」\n交接 Skill（Jiaojie）把当前目标、决策、废案、关键产物和下一步交给另一个 AI，让它从真正停下的位置继续。\n一个跨窗口、跨模型、跨设备、跨语言的开源 AI 上下文交接工具，基于开放的 Agent Skills 协议；实际验证范围以公开兼容矩阵为准。\nhandoff skill 证明了把任务摘要交给下一个 Agent 是可行的。\n那为什么只交摘要？把意图演化、废弃方案、负知识、产物和真正的下一步一起交过去。\n只需说一句「交接一下」，Jiaojie 自动完成导出、接收确认和连续性验证。\n其他语言 / Other Languages:\nEnglish · Français · 日本語 · 한국어 · Español\n一段多轮编程对话已经走到这里：\n用户      ❯ 支付 webhook 偶尔会被重复处理。\n            不能更换数据库，也不能更换支付平台。\nAI A      ❯ request_id 方案验证失败：同一个事件重投时，\n            request_id 会变化，不能作为幂等键。\n用户      ❯ 不要使用 Redis 锁，我不接受新的运行依赖。\n            改用支付平台的 event_id 和数据库唯一约束。\n用户      ❯ 下一步并行修改 handler.py 和补 replay 测试，\n            最后再更新法语运行手册。交接一下。\n            接收方在另一台电脑上，把必需文件一起带走。\nAI A      ❯ 已选择 handoff.zip：下一步依赖 handler.py\n            和 failure-log.txt，接收方无法访问当前工作区。\n用户把交接包交给一个没有原会话的 AI B：\n用户      ❯ 接收这个交接包。用法语回复，但不要继续执行。\nAI B      ❯ Réception réussie.",
-          "status": "entailed"
-        },
-        {
-          "text": "Je n’ai pas poursuivi,\n            conformément à votre demande.",
-          "support_span": "Je n’ai pas poursuivi,\n            conformément à votre demande.",
-          "status": "entailed"
-        },
-        {
-          "text": "Objectif actuel : empêcher le retraitement des webhooks\n            avec event_id et une contrainte unique.",
-          "support_span": "Objectif actuel : empêcher le retraitement des webhooks\n            avec event_id et une contrainte unique.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/Jordanwei1/jiaojie-skill",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-20T08:57:52+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-20 — outside lookback window"
-    },
-    {
-      "cluster_key": "5b868fa99c4bdd97",
-      "title": "abligail/narralume — Open-source AI-assisted writing studio for long-form fiction. 故事设定、正文版本、AI 协作、审稿与交付一体化的长篇小说写作工具。",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "ai",
-        "exploit",
-        "howto",
-        "opensource",
-        "release",
-        "threat-intel",
-        "tool"
-      ],
-      "summary": "Hosted demo · Releases · User guide · Source · 中文 The hard part of a novel is rarely generating the next paragraph. It is keeping characters, chronology, promises, outline decisions, and tens of thousands of existing words in agreement. A change may affect several chapters, and an AI suggestion should not become part of the book simply because it was generated.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "Hosted demo · Releases · User guide · Source · 中文\nThe hard part of a novel is rarely generating the next paragraph.",
-          "support_span": "Hosted demo · Releases · User guide · Source · 中文\nThe hard part of a novel is rarely generating the next paragraph.",
-          "status": "entailed"
-        },
-        {
-          "text": "It is keeping characters, chronology, promises, outline decisions, and tens of thousands of existing words in agreement.",
-          "support_span": "It is keeping characters, chronology, promises, outline decisions, and tens of thousands of existing words in agreement.",
-          "status": "entailed"
-        },
-        {
-          "text": "A change may affect several chapters, and an AI suggestion should not become part of the book simply because it was generated.",
-          "support_span": "A change may affect several chapters, and an AI suggestion should not become part of the book simply because it was generated.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/abligail/narralume",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-20T16:16:58+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-20 — outside lookback window"
     },
     {
       "cluster_key": "f5cccd875a858ef3",
@@ -1213,63 +926,6 @@
       "reject_reason": "published 2026-08-17 — outside lookback window"
     },
     {
-      "cluster_key": "60c5be7a054cd187",
-      "title": "DavidCarliez/cover — Reversible privacy proxy for AI agents: send realistic fakes, restore originals locally.",
-      "category": "cyber_tools",
-      "one_liner": "Cyber Tools: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai",
-        "appsec",
-        "linux",
-        "llm",
-        "network",
-        "opensource",
-        "privacy"
-      ],
-      "summary": "Install · Quick start · Policies · Monitoring · Pi / OMP · Security Cover is a bidirectional privacy proxy for AI coding agents. It replaces matched sensitive values locally with realistic, deterministic stand-ins before a request leaves your machine, then translates matching fakes in normal and streaming responses back to the originals. The model gets coherent context; your agent and tools keep working with the real environment.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "Install · Quick start · Policies · Monitoring · Pi / OMP · Security\nCover is a bidirectional privacy proxy for AI coding agents.",
-          "support_span": "Install · Quick start · Policies · Monitoring · Pi / OMP · Security\nCover is a bidirectional privacy proxy for AI coding agents.",
-          "status": "entailed"
-        },
-        {
-          "text": "It replaces matched sensitive values locally with realistic, deterministic stand-ins before a request leaves your machine, then translates matching fakes in normal and streaming responses back to the originals.",
-          "support_span": "It replaces matched sensitive values locally with realistic, deterministic stand-ins before a request leaves your machine, then translates matching fakes in normal and streaming responses back to the originals.",
-          "status": "entailed"
-        },
-        {
-          "text": "The model gets coherent context; your agent and tools keep working with the real environment.",
-          "support_span": "The model gets coherent context; your agent and tools keep working with the real environment.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/DavidCarliez/cover",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-21T18:56:30+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-21 — outside lookback window"
-    },
-    {
       "cluster_key": "3426536d88daa242",
       "title": "cinderline/northcinder — Open-source MCP server for comparing products and asking the buyer before purchase.",
       "category": "tech_ai",
@@ -1325,303 +981,30 @@
       "reject_reason": "published 2026-08-17 — outside lookback window"
     },
     {
-      "cluster_key": "3654d5ab6ce69863",
-      "title": "These bookshops let Chinese readers question their country - now the doors are closing",
-      "category": "india_world",
-      "one_liner": "National security police raids and arrests force historic independent bookstores in Hong Kong to close, eliminating safe havens for censored Chinese readers.",
-      "tags": [
-        "blueteam",
-        "cloud",
-        "exploit",
-        "incident",
-        "india",
-        "markets",
-        "policy",
-        "release"
-      ],
-      "summary": "Independent bookshops in Hong Kong that stock politically sensitive titles, such as works on the 1989 Tiananmen Square massacre and democracy campaigns, are facing sweeping closures amid heightened Beijing control. National security police have arrested multiple bookshop owners and staff under sedition and money laundering charges linked to the sweeping National Security Law. Consequently, prominent stores like Greenfield Bookstore are shutting down after decades of operation, closing off a vital cultural space for both local Hong Kongers and mainland Chinese readers seeking uncensored perspectives.",
-      "key_facts": [
-        "Arrests: Multiple owners and staff across several bookstores",
-        "Charges: Sedition and money laundering",
-        "Closing store: Greenfield Bookstore (after 50 years)"
-      ],
-      "bottom_line": "Hong Kong's independent bookshops are shutting down under pressure from national security laws and police arrests, cutting off access to politically sensitive books for mainland readers.",
-      "claims": [
-        {
-          "text": "Independent bookshops in Hong Kong that stock politically sensitive titles, such as works on the 1989 Tiananmen Square massacre and democracy campaigns, are facing sweeping closures amid heightened Beijing control.",
-          "support_span": "Founded four years ago by a former councillor, the independent bookshop has earned a reputation for stocking what authorities would consider sensitive books - from accounts of Hong Kong's pro-democracy campaigners, to famous allegories on authoritarianism...",
-          "status": "contradicted"
-        },
-        {
-          "text": "National security police have arrested multiple bookshop owners and staff under sedition and money laundering charges linked to the sweeping National Security Law.",
-          "support_span": "When police searched Hunter Bookstore on 24 June, they accused owner Letitia Wong, 33, and a 32-year-old man, of violating those laws and arrested them for sedition and money laundering.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 51.2,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cj0338l6yg4o?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-21T22:26:25+00:00",
-      "trace": [
-        "tier A (+40)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 51 = trust 40 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "39d4d82c86677eea",
-      "title": "Drugs at their fingertips, intense pressure: Why child stars fall into addiction",
-      "category": "india_world",
-      "one_liner": "The death of actress Hayden Panettiere at 36 brings renewed attention to the severe mental health and addiction struggles confronting former child stars.",
-      "tags": [
-        "dfir",
-        "exploit",
-        "release",
-        "vulnerability"
-      ],
-      "summary": "The sudden death of actress Hayden Panettiere at age 36 has re-ignited industry discussions regarding the intense pressure, exhaustion, and early exposure to drugs faced by child stars in Hollywood. Panettiere had recently published a memoir detailing how she was handed a pill ahead of a red-carpet event as a teen, which initiated her struggles with substance abuse. Emergency crews responded to a cardiac arrest call at her South Carolina home, and while no cause of death has been released, the US Drug Enforcement Agency has joined the investigation.",
-      "key_facts": [
-        "Age at death: 36",
-        "Location: Greenville, South Carolina"
-      ],
-      "bottom_line": "Hayden Panettiere's death at age 36 has prompted a federal investigation and reignited scrutiny over the pressures and drug access faced by child actors in Hollywood.",
-      "claims": [
-        {
-          "text": "The sudden death of actress Hayden Panettiere at age 36 has re-ignited industry discussions regarding the intense pressure, exhaustion, and early exposure to drugs faced by child stars in Hollywood.",
-          "support_span": "The star's sudden death at the age of 36 has placed a renewed focus on her struggles with mental health and substance abuse, and re-ignited a discussion about the pressures of Hollywood on child stars.",
-          "status": "entailed"
-        },
-        {
-          "text": "Emergency crews responded to a cardiac arrest call at her South Carolina home, and while no cause of death has been released, the US Drug Enforcement Agency has joined the investigation.",
-          "support_span": "The coroner's office in Greenville, South Carolina said crews treated a woman in \"cardiac arrest\" and her autopsy showed \"no signs of trauma\". No cause of death has been released... the US Drug Enforcement Agency is joining an investigation into her death",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 40.0,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cq56x3910jwo?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-21T23:41:33+00:00",
-      "trace": [
-        "tier A (+40)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 40 = trust 40 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "9463314eebf6df50",
-      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse",
-      "category": "india_world",
-      "one_liner": "The collapse of US-Canada trade talks sparks a full-scale trade war as Trump slaps 50% tariffs on Canadian goods and Ottawa retaliates dollar-for-dollar.",
-      "tags": [
-        "llm",
-        "markets",
-        "policy",
-        "release"
-      ],
-      "summary": "Trade talks between the US and Canada collapsed after both sides accused each other of making last-minute demands, prompting US President Donald Trump to impose a new 50% tariff on roughly $20bn worth of Canadian imports. In response, Canadian Prime Minister Mark Carney declared a trade war, announcing dollar-for-dollar retaliatory tariffs starting September 8 on American goods including steel, dairy, and electronics. Trump dismissed Canadian retaliation while continuing to reference Canada joining the US as a state, creating a severe escalation in bilateral trade relations.",
-      "key_facts": [
-        "New US tariff rate: 50%",
-        "Impacted Canadian imports: ~$20bn (5% total)",
-        "Retaliation start date: September 8"
-      ],
-      "bottom_line": "US-Canada trade negotiations have broken down entirely, leading to reciprocal 50% tariffs and a declared trade war between the two nations.",
-      "claims": [
-        {
-          "text": "Trade talks between the US and Canada collapsed after both sides accused each other of making last-minute demands, prompting US President Donald Trump to impose a new 50% tariff on roughly $20bn worth of Canadian imports.",
-          "support_span": "US President Donald Trump has said Canada wants \"the benefits of being a State, without being one\" after trade talks between the two countries collapsed late on Friday... triggering new 50% US tariffs on a range of Canadian goods",
-          "status": "contradicted"
-        },
-        {
-          "text": "In response, Canadian Prime Minister Mark Carney declared a trade war, announcing dollar-for-dollar retaliatory tariffs starting September 8 on American goods including steel, dairy, and electronics.",
-          "support_span": "Canadian Prime Minister Mark Carney called the fresh tariffs a \"miscalculation\" designed to \"hurt and divide us\". Carney confirmed he would match Trump's tariffs \"dollar-for-dollar\" from 8 September",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 62.5,
-      "critical_signal": "",
-      "priority": "critical",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-23T19:11:30+00:00",
-      "trace": [
-        "tier A (+40)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 62 = trust 40 / interest 100 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "7678b1aa1618950f",
-      "title": "Due to need for 'absolute success,' China delays critical Moon launch to 2027",
+      "cluster_key": "632d9b998f793cc9",
+      "title": "Heading to an arcade for the first time in forever today. Maybe I'll get to see a real pinball table!",
       "category": "tech_ai",
-      "one_liner": "A significant delay in China's lunar exploration timeline.",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
-        "policy"
-      ],
-      "summary": "China has delayed its critical Chang’e 7 lunar mission to 2027, citing the need for 'absolute success.' The mission is a key part of China's lunar exploration program and was previously scheduled for an earlier launch. Authorities stated that the mission currently does not meet the necessary conditions for launch.",
-      "key_facts": [
-        "Mission: Chang’e 7",
-        "New Date: 2027"
-      ],
-      "bottom_line": "China is prioritizing mission reliability over schedule for its high-stakes lunar exploration.",
-      "claims": [
-        {
-          "text": "China has delayed the Chang’e 7 mission to 2027.",
-          "support_span": "China delays critical Moon launch to 2027",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 25,
-      "corroboration": 1,
-      "blend": 25.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ars Technica",
-          "url": "https://arstechnica.com/space/2026/08/due-to-need-for-absolute-success-china-delays-critical-moon-launch-to-2027/",
-          "domain": "arstechnica.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-23T14:30:16+00:00",
-      "trace": [
-        "tier B (+25)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 2/5 from gemini-3-flash-preview",
-        "blend 25 = trust 25 / interest 25 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "7aefa49688d7d23a",
-      "title": "Trump waves green flag kicking off high-speed IndyCar race through Washington",
-      "category": "india_world",
-      "one_liner": "Washington D.C. hosts its first professional street race as part of national anniversary celebrations, drawing massive crowds and presidential participation.",
-      "tags": [
-        "exploit"
-      ],
-      "summary": "US President Donald Trump attended the Freedom 250 Grand Prix, an IndyCar race held on a 1.7-mile street circuit through Washington D.C. as part of the country's 250th birthday celebrations. The event drew an estimated 140,000 attendees and featured 25 drivers reaching speeds up to 190mph past major national monuments. The race required extensive logistical preparation, security measures, and temporary airspace closures.",
-      "key_facts": [
-        "Expected attendance: 140,000",
-        "Track length: 1.7 miles",
-        "Top speed: 190 mph (306 km/h)",
-        "Drivers: 25"
-      ],
-      "bottom_line": "The Freedom 250 Grand Prix brought high-speed IndyCar racing to the streets of Washington D.C., creating a major logistical and security event for the capital.",
-      "claims": [
-        {
-          "text": "US President Donald Trump attended the Freedom 250 Grand Prix, an IndyCar race held on a 1.7-mile street circuit through Washington D.C. as part of the country's 250th birthday celebrations.",
-          "support_span": "US President Donald Trump was among hundreds of people who gathered to see the IndyCar race through the streets of Washington DC on Sunday, marking the culmination of a series of summer events to celebrate the country's 250th birthday.",
-          "status": "entailed"
-        },
-        {
-          "text": "The event drew an estimated 140,000 attendees and featured 25 drivers reaching speeds up to 190mph past major national monuments.",
-          "support_span": "Organisers of the Freedom 250 Grand Prix say about 140,000 people are expected to attend... 25 professional drivers competing in the event face 147 laps... zoomed past the capital's famous monuments and museums at speeds of up to 190mph (306kmh).",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 40.0,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c0qvq24vlj4o?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-23T18:17:34+00:00",
-      "trace": [
-        "tier A (+40)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 40 = trust 40 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "d803b01c4e9ad0d5",
-      "title": "Whispergate/lldp — Mythic Peer to Peer (P2P) Communication Protocol via. LLDP",
-      "category": "cyber_tools",
-      "one_liner": "Cyber Tools: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "linux",
-        "opensource",
-        "redteam",
-        "threat-intel",
-        "tool",
         "windows"
       ],
-      "summary": "Mythic C2 profile for peer-to-peer communication over IEEE 802.1AB (LLDP). C2 data is carried inside Organizationally Specific TLVs (Type 127) with a configurable OUI so that frames blend with vendor-specific LLDP extensions on the wire. Both agents must share a broadcast domain.",
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Xe xeiaso.net did:plc:e5nncb3dr5thdkjir5cfaqfe Heading to an arcade for the first time in forever today.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
         {
-          "text": "Mythic C2 profile for peer-to-peer communication over IEEE 802.1AB (LLDP).",
-          "support_span": "Mythic C2 profile for peer-to-peer communication over IEEE 802.1AB (LLDP).",
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
           "status": "entailed"
         },
         {
-          "text": "C2 data is carried inside Organizationally Specific TLVs (Type 127) with a configurable OUI so that frames blend with vendor-specific LLDP extensions on the wire.",
-          "support_span": "C2 data is carried inside Organizationally Specific TLVs (Type 127) with a configurable OUI so that frames blend with vendor-specific LLDP extensions on the wire.",
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
           "status": "entailed"
         },
         {
-          "text": "Both agents must share a broadcast domain.",
-          "support_span": "Both agents must share a broadcast domain.",
+          "text": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  Heading to an arcade for the first time in forever today.",
+          "support_span": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  Heading to an arcade for the first time in forever today.",
           "status": "entailed"
         }
       ],
@@ -1634,232 +1017,68 @@
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/Whispergate/lldp",
-          "domain": "github.com",
+          "name": "Xe Iaso",
+          "url": "https://bsky.app/profile/xeiaso.net/post/3mtf32mm3wk2r",
+          "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-20T05:58:18+00:00",
+      "published": "2026-08-18T20:37:25.466000+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-20 — outside lookback window"
+      "reject_reason": "published 2026-08-18 — outside lookback window"
     },
     {
-      "cluster_key": "d8c91124dda98326",
-      "title": "Trump's space transportation policy calls for new spaceport on federal land",
+      "cluster_key": "5187e9e43cbea021",
+      "title": "This is the genuine logo used by the Amazon location that destructively scans books",
       "category": "tech_ai",
-      "one_liner": "Major policy news regarding space infrastructure and heavy-lift capabilities.",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
-        "policy"
+        "windows"
       ],
-      "summary": "Trump's space transportation policy includes a call for a new spaceport to be established on federal land. The proposal suggests that an additional site is needed to support heavy and super heavy launch capabilities. This move aims to expand the infrastructure available for advanced space missions.",
-      "key_facts": [
-        "Capability: Heavy and super heavy launch"
-      ],
-      "bottom_line": "The administration is pushing for expanded federal infrastructure to support heavy-lift space launches.",
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Simon Willison simonwillison.net did:plc:kft6lu4trxowqmter2b6vg6z This is the genuine logo used by the Amazon location that destructively scans books [contains quote post or other embedded content] 2026-08-17T14:56:23.367Z",
+      "key_facts": [],
+      "bottom_line": "",
       "claims": [
         {
-          "text": "The policy calls for a new spaceport on federal land.",
-          "support_span": "Trump's space transportation policy calls for new spaceport on federal land",
-          "status": "contradicted"
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "status": "entailed"
+        },
+        {
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "status": "entailed"
+        },
+        {
+          "text": "Post\n  Simon Willison\n  simonwillison.net\n  did:plc:kft6lu4trxowqmter2b6vg6z\n  This is the genuine logo used by the Amazon location that destructively scans books\n[contains quote post or other embedded content]\n  2026-08-17T14:56:23.367Z",
+          "support_span": "Post\n  Simon Willison\n  simonwillison.net\n  did:plc:kft6lu4trxowqmter2b6vg6z\n  This is the genuine logo used by the Amazon location that destructively scans books\n[contains quote post or other embedded content]\n  2026-08-17T14:56:23.367Z",
+          "status": "entailed"
         }
       ],
-      "trust_score": 25,
-      "interest_score": 25,
+      "trust_score": 0,
+      "interest_score": 0,
       "corroboration": 1,
-      "blend": 25.0,
+      "blend": 0.0,
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Ars Technica",
-          "url": "https://arstechnica.com/space/2026/08/trump-admin-calls-for-more-spaceports-to-handle-surge-in-launches/",
-          "domain": "arstechnica.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-21T23:32:17+00:00",
-      "trace": [
-        "tier B (+25)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 2/5 from gemini-3-flash-preview",
-        "blend 25 = trust 25 / interest 25 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "40289fa88a4f0bc5",
-      "title": "Did a goat herder's lucky $200 nugget spark a gold rush in western Kenya?",
-      "category": "india_world",
-      "one_liner": "A goat herder's small gold discovery triggers a massive influx of thousands of prospectors to a remote village in western Kenya.",
-      "tags": [
-        "markets"
-      ],
-      "summary": "A gold rush has overwhelmed the remote village of Cheporor in western Kenya after a goat herder named Manasse Lomachar sold a three-gram golden nugget for $280. Local authorities estimate that rumors and early finds drew up to 10,000 prospectors into the rough grazing land, though numbers have since dwindled to around 2,500. While small-scale alluvial gold has been panned in the area for years, the sudden influx highlights the precarious economic conditions of farmers and locals seeking alternative income.",
-      "key_facts": [
-        "Gold sold: 3 grams for $280 (36,000 Kenyan shillings)",
-        "Peak prospectors: ~10,000",
-        "Current prospectors: ~2,500"
-      ],
-      "bottom_line": "A chance discovery of a small gold nugget sparked a massive, transient gold rush drawing thousands of prospectors to western Kenya.",
-      "claims": [
-        {
-          "text": "A gold rush has overwhelmed the remote village of Cheporor in western Kenya after a goat herder named Manasse Lomachar sold a three-gram golden nugget for $280.",
-          "support_span": "A goat herder from a remote area of western Kenya has told the BBC his discovery of a golden nugget has sparked a gold rush, overwhelming his small village over the last few weeks.",
-          "status": "entailed"
-        },
-        {
-          "text": "Local authorities estimate that rumors and early finds drew up to 10,000 prospectors into the rough grazing land, though numbers have since dwindled to around 2,500.",
-          "support_span": "But local authorities estimate that about 10,000 people arrived at the height of the rush... Since the initial rush, the number of prospectors has gone down to around 2,500",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 40.0,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/clyjmnvdr95o?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-22T23:22:02+00:00",
-      "trace": [
-        "tier A (+40)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 40 = trust 40 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "6074842a57973a5d",
-      "title": "Watch: Taking a 180mph spin round America's birthday Grand Prix racetrack",
-      "category": "india_world",
-      "one_liner": "A test drive preview captures the high-speed preparation for Washington D.C.'s historic IndyCar Grand Prix.",
-      "tags": [
-        "threat-intel"
-      ],
-      "summary": "The BBC's Helena Humphrey took a test drive around the Freedom 250 Grand Prix racetrack in Washington D.C., where IndyCar vehicles will reach speeds up to 180mph. The event marks the capital's first major auto race in over 24 years and serves as a belated celebration of the nation's 250th anniversary, drawing an expected crowd of 140,000 daily attendees.",
-      "key_facts": [
-        "Speed: 180mph",
-        "Attendance: ~140,000 per day"
-      ],
-      "bottom_line": "The Freedom 250 Grand Prix brings 180mph IndyCar racing back to Washington D.C. for the first time in over two decades.",
-      "claims": [
-        {
-          "text": "The BBC's Helena Humphrey took a test drive around the Freedom 250 Grand Prix racetrack in Washington D.C., where IndyCar vehicles will reach speeds up to 180mph.",
-          "support_span": "The BBC's Helena Humphrey took a test drive ahead of the Freedom 250 Grand Prix, where IndyCar race cars will push speeds of 180mph in Washington DC.",
-          "status": "entailed"
-        },
-        {
-          "text": "The event marks the capital's first major auto race in over 24 years and serves as a belated celebration of the nation's 250th anniversary, drawing an expected crowd of 140,000 daily attendees.",
-          "support_span": "The event is the first major auto race in the capital in more than 24 years... expected to attract about 140,000 people on each day of the weekend.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 25,
-      "corroboration": 1,
-      "blend": 28.8,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/videos/cn0nd7y883zo?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-21T21:50:27+00:00",
-      "trace": [
-        "tier A (+40)",
-        "only one independent outlet — flagged, not hidden",
-        "importance 2/5 from gemini-3.5-flash-lite",
-        "blend 29 = trust 40 / interest 25 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "0d11eef5a20341f6",
-      "title": "TikTok Agrees to $400 Million Settlement in U.S. Child Privacy Lawsuit",
-      "category": "cyber_attacks",
-      "one_liner": "TikTok agrees to a massive $400 million settlement with the US Department of Justice over child privacy violations under COPPA.",
-      "tags": [
-        "cloud",
-        "policy",
-        "privacy"
-      ],
-      "summary": "ByteDance-owned TikTok has agreed to a $400 million settlement with the U.S. Department of Justice and the FTC to resolve a 2024 lawsuit alleging massive violations of the Children's Online Privacy Protection Act (COPPA). Under the agreement, TikTok will pay $300 million immediately and another $100 million conditional on vacating a prior consent decree tied to its predecessor, Musical.ly. The complaint accused TikTok of knowingly permitting children under 13 to create accounts, unlawfully harvesting data in Kids Mode, and failing to honor parental account-deletion requests. While marking one of the largest child privacy recoveries in US history, the company noted it has since deployed enhanced age-control safeguards.",
-      "key_facts": [
-        "Settlement amount: $400 million",
-        "Immediate payment: $300 million",
-        "Conditional payment: $100 million"
-      ],
-      "bottom_line": "ByteDance agreed to pay $400 million to settle US federal charges that TikTok illegally collected data from children under 13 in violation of privacy laws.",
-      "claims": [
-        {
-          "text": "The U.S. Department of Justice (DoJ) announced on Friday that ByteDance-owned TikTok will pay $400 million to settle a 2024 lawsuit accusing the company of violating child privacy laws in the country.",
-          "support_span": "The U.S. Department of Justice (DoJ) announced on Friday that ByteDance-owned TikTok will pay $400 million to settle a 2024 lawsuit accusing the company of violating child privacy laws in the country.",
-          "status": "entailed"
-        },
-        {
-          "text": "As part of the settlement, the social media platform will pay $300 million immediately, and an additional $100 million \"upon entry of an order vacating a prior consent decree entered against TikTok’s predecessor, Musical.ly,\" the DoJ said in a press release.",
-          "support_span": "As part of the settlement, the social media platform will pay $300 million immediately, and an additional $100 million \"upon entry of an order harvested data from those who used it in \"Kids Mode.\" (Wait, check exact support span in text: \"upon entry of an order vacating a prior consent decree entered against TikTok’s predecessor, Musical.ly,\")",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 49,
-      "interest_score": 75,
-      "corroboration": 3,
-      "blend": 68.5,
-      "critical_signal": "",
-      "priority": "critical",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/08/tiktok-agrees-to-400-million-settlement.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/tech/983531/tiktok-settle-doj-lawsuit-coppa",
-          "domain": "theverge.com",
-          "tier": "B"
-        },
-        {
-          "name": "Reuters Business",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdHp4WjducldzcUtEUTljcWhGYmpkOUgzc2RKaFFhaUFyVjdCZW9XajFRb1BNTWVGUnVmdVNVWDBLQmVWS3d1UkZncVp3R2cwQWxRVDB4c1VFVW5Gc1RoUzRZVUZ0aFlQTGc2ekF3T0w5QUQtSXFPYml1cnBzamdJV0NVR3d3ZTFoTVRocVp2dm4xQXFyX0U2TXdwM2I5ZmNqa0Q1emcza0N0dkczb25xdzY0UFZvSElWLUE?oc=5",
-          "domain": "news.google.com",
+          "name": "Simon Willison",
+          "url": "https://bsky.app/profile/simonwillison.net/post/3mtbxjub6ms26",
+          "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-21T20:54:31+00:00",
+      "published": "2026-08-17T14:56:22.628000+00:00",
       "trace": [
-        "tier B (+25)",
-        "3 independent outlets (+24)",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 68 = trust 49 / interest 75 / corrob 75"
+        "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-08-17 — outside lookback window"
     }
   ]
 }

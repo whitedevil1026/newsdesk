@@ -6,4 +6,8 @@ __pycache__/
 # Secrets. Never commit this file.
 .env
 
-data/raw/          # per-stage snapshots; debugging only, regenerated each run
+# Per-stage debug snapshots, regenerated on every run.
+# NOTE: a trailing comment on the same line as a pattern does NOT work in
+# .gitignore — "data/raw/  # snapshots" is read as a literal path and matches
+# nothing. That bug tracked 4.1 MB of snapshots per run.
+data/raw/

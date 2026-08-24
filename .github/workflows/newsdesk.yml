@@ -2,15 +2,28 @@ name: newsdesk
 
 on:
   schedule:
-    - cron: "30 1 * * *"      # 07:00 IST daily (Actions cron is UTC)
-  workflow_dispatch:           # manual "refresh now"
+    # 01:30 UTC = 07:00 IST. Keep this in step with `schedule.cron_utc` in
+    # config/settings.yaml — the site reads that to tell readers when the page
+    # next refreshes, and a mismatch makes it lie.
+    - cron: "30 1 * * *"
+  workflow_dispatch:            # manual "refresh now"
 
 permissions:
-  contents: write              # needed to commit news.json back
+  contents: write               # commits the refreshed news.json back
+
+# Never let two runs overlap. They would fight over the same committed cache
+# files and the loser's quota accounting would be lost.
+concurrency:
+  group: newsdesk
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    # A local run once stalled for hours on a network read. Fail loudly
+    # instead of silently consuming the monthly Actions allowance.
+    timeout-minutes: 30
+
     steps:
       - uses: actions/checkout@v4
 
@@ -21,8 +34,8 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      # Cached separately: refreshing it on every run is wasteful and the
-      # upstream sheet only changes weekly.
+      # Weekly-ish upstream data; a failure here must not stop the run, the
+      # pipeline just proceeds with the previously committed blocklist.
       - name: Refresh credibility blocklist
         run: python run.py --update-blocklist
         continue-on-error: true
@@ -30,12 +43,68 @@ jobs:
       - name: Run pipeline
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Actions issues this automatically. It lifts GitHub code search
+          # from 10 requests/minute to 30, which matters because runners
+          # share outbound IPs and hit the anonymous limit constantly.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python run.py --quiet
 
       - name: Commit results
         run: |
+          set -euo pipefail
           git config user.name  "newsdesk-bot"
           git config user.email "newsdesk-bot@users.noreply.github.com"
-          git add data/news.json data/rejected.json data/cache/seen.json site/news.json
-          git diff --staged --quiet || git commit -m "newsdesk: $(date -u +%Y-%m-%d)"
-          git push
+
+          # The cache files are as important as the output. Without them every
+          # scheduled run starts cold:
+          #   summaries.json  re-pays for summaries already generated
+          #   usage.json      resets the daily quota counter, disabling the
+          #                   kill switch across runs
+          #   gnews_urls.json re-resolves links that never change
+          #   seen.json       loses de-duplication history
+          git add -f \
+            data/news.json \
+            data/rejected.json \
+            data/cache/seen.json \
+            data/cache/summaries.json \
+            data/cache/usage.json \
+            data/cache/gnews_urls.json \
+            data/cache/iffy_blocklist.txt \
+            site/news.json
+
+          if git diff --staged --quiet; then
+            echo "nothing changed"
+            exit 0
+          fi
+
+          git commit -m "newsdesk: $(date -u '+%Y-%m-%d %H:%M') UTC"
+
+          # Another run (or a human) may have pushed since checkout. Rebase
+          # rather than force — losing someone else's commit to publish a
+          # news page would be a bad trade.
+          for attempt in 1 2 3; do
+            if git push; then exit 0; fi
+            echo "push rejected, rebasing (attempt $attempt)"
+            git pull --rebase --autostash
+          done
+          echo "could not push after 3 attempts" >&2
+          exit 1
+
+      - name: Summarise run
+        if: always()
+        run: |
+          echo "### Newsdesk run" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f data/news.json ]; then
+            python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          d = json.load(open("data/news.json", encoding="utf-8"))
+          c = d["counts"]
+          print(f"- generated: `{d['generated_at']}`")
+          print(f"- published **{c['published']}**, not published {c['rejected']}")
+          print(f"- verified {c.get('verified',0)}, "
+                f"corroborated {c.get('corroborated',0)}, "
+                f"disputed {c.get('disputed',0)}")
+          PY
+          else
+            echo "- no news.json produced" >> "$GITHUB_STEP_SUMMARY"
+          fi
