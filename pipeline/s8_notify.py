@@ -111,6 +111,58 @@ def _send(token: str, chat_id: str, text: str, timeout: int) -> bool:
     return False
 
 
+def selftest() -> int:
+    """Check the bot works BEFORE a run depends on it.
+
+    Three setup mistakes look identical from the outside: a wrong token, a
+    bot never added to the channel, and a bot added without admin rights.
+    This tells them apart so you are not guessing.
+    """
+    cfg = settings().get("notify", {}).get("telegram", {})
+    token = _secret(cfg.get("token_env", "TELEGRAM_BOT_TOKEN"))
+    chat_id = _secret(cfg.get("chat_env", "TELEGRAM_CHAT_ID"))
+
+    if not token:
+        print("TELEGRAM_BOT_TOKEN is not set.")
+        print("  @BotFather -> /newbot -> put the token in .env")
+        return 1
+    if not chat_id:
+        print("TELEGRAM_CHAT_ID is not set.")
+        print("  e.g. TELEGRAM_CHAT_ID=@ctinow in .env")
+        return 1
+
+    # 1. Is the token itself valid?
+    try:
+        req = urllib.request.Request(
+            f"https://api.telegram.org/bot{token}/getMe")
+        with urllib.request.urlopen(req, timeout=15, context=_SSL) as resp:
+            me = json.load(resp)["result"]
+        print(f"token OK   -> bot is @{me.get('username')}")
+    except urllib.error.HTTPError as exc:
+        print(f"token REJECTED (HTTP {exc.code}). Re-copy it from @BotFather.")
+        return 1
+    except Exception as exc:
+        print(f"could not reach Telegram: {exc}")
+        return 1
+
+    # 2. Can it actually post to the channel?
+    ok = _send(token, chat_id,
+               "<b>Newsdesk</b>\n"
+               "Setup test - if you can read this, the bot is configured "
+               "correctly.", 15)
+    if ok:
+        print(f"posting OK -> test message sent to {chat_id}")
+        print("")
+        print("Now set  notify.telegram.enabled: true  in "
+              "config/settings.yaml to start sending digests.")
+        return 0
+
+    print(f"posting FAILED to {chat_id}.")
+    print("  Most likely the bot is not an ADMIN of the channel.")
+    print("  Channel -> Administrators -> Add Admin -> pick your bot,")
+    print("  and make sure 'Post Messages' is enabled.")
+    return 1
+
 def run(items: list[Item], generated_at: str, dry_run: bool = False) -> None:
     cfg = settings().get("notify", {}).get("telegram", {})
     if not cfg.get("enabled", False):

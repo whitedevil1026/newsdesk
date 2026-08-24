@@ -175,6 +175,8 @@ def main() -> int:
     ap.add_argument("--update-blocklist", action="store_true")
     ap.add_argument("--test-llm", action="store_true",
                     help="one tiny Gemini call to prove the key works")
+    ap.add_argument("--test-telegram", action="store_true",
+                    help="verify the Telegram bot token and channel access")
     ap.add_argument("--quiet", action="store_true", help="no console render")
     args = ap.parse_args()
 
@@ -183,6 +185,9 @@ def main() -> int:
         return 0
     if args.test_llm:
         return test_llm()
+    if args.test_telegram:
+        from pipeline import s8_notify
+        return s8_notify.selftest()
     if args.show:
         show_last()
         return 0
