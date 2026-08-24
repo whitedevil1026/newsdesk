@@ -103,8 +103,8 @@ def _fallback_all(items: list[Item], bodies: dict[str, str], why: str) -> list[I
     return items
 
 
-def _shortlist(items: list[Item], limit: int,
-               per_category: int) -> tuple[list[Item], list[Item]]:
+def _shortlist(items: list[Item], limit: int, per_category: int,
+               multiplier: float = 2.0) -> tuple[list[Item], list[Item]]:
     """Split into the items worth an API call and the rest.
 
     Category-aware, and it has to be. Stage 7 fills a per-category quota, so
@@ -126,9 +126,7 @@ def _shortlist(items: list[Item], limit: int,
     for item in sorted(live, key=lambda i: -i.blend):
         by_cat.setdefault(item.category, []).append(item)
 
-    # 1.5x the publish quota: enough headroom for the model to promote
-    # something the keyword heuristic ranked low, without paying for the tail.
-    allocation = max(1, int(per_category * 1.5))
+    allocation = max(1, int(per_category * multiplier))
     chosen: list[Item] = []
     picked: set[int] = set()
     for group in by_cat.values():
@@ -242,7 +240,8 @@ def run(items: list[Item], bodies: dict[str, str]) -> list[Item]:
     # publish cut and the model's opinion of them would never be read.
     shortlist, rest = _shortlist(
         items, cfg["max_items_summarized"],
-        settings()["window"]["per_category_max"])
+        settings()["window"]["per_category_max"],
+        cfg.get("shortlist_multiplier", 2.0))
     if rest:
         log("summarize", f"shortlist {len(shortlist)} to the model, "
                          f"{len(rest)} extractive (below the publish cut)")

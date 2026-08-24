@@ -261,7 +261,28 @@ llm:
   #
   # 60 keeps enough headroom for the model's importance score to reorder the
   # ranking, without paying for a tail that never reaches the page.
-  max_items_summarized: 60
+  # Must be comfortably WIDER than the publish cut, per category.
+  #
+  # At 60 across 5 categories each got ~12 — exactly the per-category publish
+  # quota — so anything reaching the page outside its category's top 12 by
+  # KEYWORD score had never been summarised. Measured on a live run: only
+  # 14 of 40 published cards carried a real summary; the other 26 were
+  # extractive fallbacks. The model's importance score reorders the ranking,
+  # so an item sitting 20th on keywords routinely ends up published.
+  #
+  # Sized empirically, by replaying a finished run and asking how many of the
+  # 40 cards that actually published would have been in the shortlist:
+  #
+  #    limit  60 (x1.5) ->  14/40      <- the observed failure, reproduced
+  #    limit  60 (x2.0) ->  18/40
+  #    limit 100 (x2.0) ->  35/40
+  #    limit 120 (x2.0) ->  35/40
+  #    limit 150 (x2.0) ->  40/40      <- full coverage
+  #
+  # 150 costs ~8 calls against a ladder that allows 36 batches a run, and the
+  # summary cache means repeat items are not paid for twice.
+  max_items_summarized: 150
+  shortlist_multiplier: 2.0   # per-category allocation = publish quota x this
   api_key_env: "GEMINI_API_KEY"
 
   # Hard stop on API usage. The counter is persistent and keyed by UTC date,

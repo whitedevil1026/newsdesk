@@ -297,3 +297,57 @@ class TestPromptHardening:
     def test_judge_is_hardened_too(self):
         from pipeline.s6b_judge import JUDGE_SYSTEM
         assert "untrusted" in JUDGE_SYSTEM.lower()
+
+
+class TestShortlistCoverage:
+    """The shortlist must be wider than the publish cut, per category.
+
+    This is the regression that produced 26 of 40 published cards carrying an
+    extractive fallback instead of a real summary: the shortlist allocated
+    each category exactly its publish quota, so anything promoted by the
+    model's importance score had never been summarised in the first place.
+    """
+
+    def _items(self, per_cat=60):
+        from pipeline.models import Item
+        out = []
+        for cat in ("tech_ai", "cyber_attacks", "cyber_tools",
+                    "markets", "india_world"):
+            for n in range(per_cat):
+                it = Item(cluster_key=f"{cat}{n}", title="t", category=cat)
+                it.blend = float(per_cat - n)
+                out.append(it)
+        return out
+
+    def test_allocation_exceeds_publish_quota(self):
+        """Each category must get more slots than it can publish, or the
+        model's reordering has nowhere to promote from."""
+        from pipeline.config import settings
+        import collections
+        from pipeline.s5_summarize import _shortlist
+
+        cfg = settings()
+        quota = cfg["window"]["per_category_max"]
+        short, _ = _shortlist(self._items(),
+                              cfg["llm"]["max_items_summarized"], quota,
+                              cfg["llm"].get("shortlist_multiplier", 2.0))
+        per = collections.Counter(i.category for i in short)
+        for cat, n in per.items():
+            assert n > quota, f"{cat}: {n} slots vs publish quota {quota}"
+
+    def test_shortlist_is_not_starved_by_a_dominant_category(self):
+        """A category with 10x the volume must not consume the whole budget."""
+        import collections
+        from pipeline.models import Item
+        from pipeline.s5_summarize import _shortlist
+
+        items = self._items(per_cat=5)
+        for n in range(300):                       # tech_ai floods the harvest
+            it = Item(cluster_key=f"flood{n}", title="t", category="tech_ai")
+            it.blend = 999.0
+            items.append(it)
+
+        short, _ = _shortlist(items, 150, 12, 2.0)
+        per = collections.Counter(i.category for i in short)
+        for cat in ("markets", "cyber_tools", "india_world"):
+            assert per[cat] == 5, f"{cat} starved: {per[cat]}"
