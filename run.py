@@ -238,6 +238,10 @@ def main() -> int:
     # Stage 5 replaces the keyword interest score with the model's importance
     # judgement, so priority has to be recomputed or that judgement is ignored.
     items = s4_corroborate.rescore(items)
+    # The model's importance score reorders the ranking, so items it promoted
+    # into the publish set may never have been summarised. Fill those gaps.
+    items = s5_summarize.top_up(items, bodies)
+    items = s4_corroborate.rescore(items)
     snapshot(items, RAW_DIR / "s5_items.json", "summarised items")
     if args.stop_after == 5:
         return 0

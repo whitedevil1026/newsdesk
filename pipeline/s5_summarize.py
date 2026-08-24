@@ -58,6 +58,10 @@ def _apply(item: Item, payload: dict, source: str, body: str = "") -> None:
     item.key_facts = [f.strip() for f in payload.get("key_facts", [])
                       if isinstance(f, str) and f.strip()][:5]
     tagging.apply(item, body, payload.get("tags"))
+    # A real summary replaces an extractive one, so drop the marker or the
+    # top-up pass would keep re-selecting the same items forever.
+    item.trace = [t for t in item.trace
+                  if "extractive" not in t and "heuristic" not in t]
     item.claims = [
         Claim(text=c.get("text", ""), support_span=c.get("support_span", ""))
         for c in payload.get("claims", [])
@@ -210,9 +214,49 @@ def _generate(batch, budget, key, profile, tag_list, llm_gemini,
                              f"{str(exc)[:90]}")
             budget.block(tier, "call failed")
 
+def top_up(items: list[Item], bodies: dict[str, str]) -> list[Item]:
+    """Summarise items that will PUBLISH but were never sent to the model.
+
+    The shortlist is ranked on the pre-LLM blend, but the model's importance
+    score then reorders everything: demoting a shortlisted item lets an
+    unshortlisted one rise into the publish set, arriving with only an
+    extractive summary. On a live run that left 17 of 40 published cards
+    without a real summary, and their keyword-interest median was HIGHER
+    than the summarised ones — these were not filler.
+
+    Widening the shortlist cannot fix this, because the promotion happens
+    after the shortlist is chosen. Only a second pass can. It is bounded to
+    the publish cap, so the worst case is two extra calls.
+    """
+    from .config import settings as _settings
+    from .s7_publish import _apply_quotas
+
+    cfg = _settings()
+    if cfg["llm"]["provider"] == "none" or not api_key():
+        return items
+
+    live = [i for i in items if i.verdict is not Verdict.REJECTED]
+    live.sort(key=lambda i: (i.priority.value != "critical", -i.blend))
+    will_publish = _apply_quotas(live, cfg["window"])
+
+    gaps = [i for i in will_publish
+            if any("extractive" in t or "heuristic" in t for t in i.trace)]
+    if not gaps:
+        return items
+
+    log("summarize", f"top-up: {len(gaps)} publishable items have no model "
+                     f"summary")
+    # run() mutates the Item objects in place and returns the list it was
+    # given, so the ORIGINAL list must be returned here — returning run()'s
+    # value would silently reduce the pipeline to just the gap items.
+    run(gaps, bodies, _is_top_up=True)
+    return items
+
+
 # --------------------------------------------------------------- main ----
 
-def run(items: list[Item], bodies: dict[str, str]) -> list[Item]:
+def run(items: list[Item], bodies: dict[str, str],
+        _is_top_up: bool = False) -> list[Item]:
     cfg = settings()["llm"]
     provider = cfg["provider"]
 
@@ -238,10 +282,13 @@ def run(items: list[Item], bodies: dict[str, str]) -> list[Item]:
     # Only a shortlist is worth paying for. Items outside it still get an
     # extractive summary so nothing is left blank, but they are far below the
     # publish cut and the model's opinion of them would never be read.
-    shortlist, rest = _shortlist(
-        items, cfg["max_items_summarized"],
-        settings()["window"]["per_category_max"],
-        cfg.get("shortlist_multiplier", 2.0))
+    if _is_top_up:
+        shortlist, rest = items, []      # caller already chose the exact set
+    else:
+        shortlist, rest = _shortlist(
+            items, cfg["max_items_summarized"],
+            settings()["window"]["per_category_max"],
+            cfg.get("shortlist_multiplier", 2.0))
     if rest:
         log("summarize", f"shortlist {len(shortlist)} to the model, "
                          f"{len(rest)} extractive (below the publish cut)")
