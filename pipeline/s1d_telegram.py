@@ -52,6 +52,36 @@ SHORTENERS = {"ift.tt", "bit.ly", "buff.ly", "t.co", "dlvr.it", "ow.ly",
               "tinyurl.com", "lnkd.in", "trib.al", "shorturl.at", "rb.gy"}
 
 
+
+def _known_sources() -> dict[str, tuple[str, str]]:
+    """domain -> (display name, tier) for every outlet we already harvest.
+
+    A channel post is a POINTER, not a source. When ctinow links to
+    bleepingcomputer.com, the article is BleepingComputer's — tiering it C
+    because a Telegram channel happened to surface it understates it badly,
+    and on a live run left genuine security reporting sitting below the
+    publication bar.
+    """
+    from .config import feeds
+    from .utils import domain_of
+
+    out: dict[str, tuple[str, str]] = {}
+    for specs in feeds().values():
+        for spec in specs:
+            if spec.get("aggregator"):
+                continue
+            dom = domain_of(spec["url"])
+            if dom:
+                out[dom] = (spec["name"], spec.get("tier", "C"))
+    # Outlets that show up through channels but are not feeds of ours.
+    out.setdefault("securityweek.com", ("SecurityWeek", "B"))
+    out.setdefault("therecord.media", ("The Record", "B"))
+    out.setdefault("infosecurity-magazine.com", ("Infosecurity", "B"))
+    out.setdefault("helpnetsecurity.com", ("Help Net Security", "B"))
+    out.setdefault("securityaffairs.com", ("Security Affairs", "B"))
+    return out
+
+
 def _fetch(channel: str, ua: str, timeout: int) -> str | None:
     try:
         req = urllib.request.Request(PREVIEW.format(channel=channel),
@@ -134,13 +164,23 @@ def _channel_articles(spec: dict, cutoff: datetime, cfg: dict) -> list[Article]:
         title = re.sub(r"https?://\S+$", "", text).strip() or text
         from .utils import domain_of
 
+        dom = domain_of(url)
+        # Credit the outlet the link actually points at, not the channel that
+        # surfaced it. A post pointing at BleepingComputer IS BleepingComputer.
+        known = _known_sources().get(dom)
+        if known:
+            src_name, src_tier = known
+        else:
+            src_name = spec.get("name", channel)
+            src_tier = spec.get("tier", "C")   # unknown host: one poster's word
+
         out.append(Article(
             url=url,
             title=truncate(title, 160),
-            source=spec.get("name", channel),
-            domain=domain_of(url),
+            source=src_name,
+            domain=dom,
             category=spec["category"],
-            tier=spec.get("tier", "C"),   # a channel post is one poster's word
+            tier=src_tier,
             published=when,
             summary_raw=text,
             is_primary=False,
