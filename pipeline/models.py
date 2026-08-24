@@ -55,6 +55,7 @@ class Article:
     body: str = ""              # full text, filled by stage 3
     is_primary: bool = False    # feed is an official/primary source
     is_aggregator: bool = False # link is a redirect stub, not the article
+    window_hours: int = 0       # per-feed override it was harvested under
 
     @property
     def uid(self) -> str:

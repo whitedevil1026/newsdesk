@@ -13,7 +13,7 @@ cyber_attacks:
   - {name: "BleepingComputer",     url: "https://www.bleepingcomputer.com/feed/",                     tier: B}
   - {name: "The Hacker News",      url: "https://feeds.feedburner.com/TheHackersNews",                tier: B}
   - {name: "Krebs on Security",    url: "https://krebsonsecurity.com/feed/",                          tier: B}
-  - {name: "Google Project Zero",  url: "https://googleprojectzero.blogspot.com/feeds/posts/default", tier: A, primary: true}
+  - {name: "Google Project Zero",  url: "https://googleprojectzero.blogspot.com/feeds/posts/default", tier: A, primary: true, window_hours: 720}
   - {name: "SANS ISC Diary",       url: "https://isc.sans.edu/rssfeed_full.xml",                      tier: A}
   - {name: "Unit42",               url: "https://unit42.paloaltonetworks.com/feed/",                  tier: B}
   - {name: "Securelist",           url: "https://securelist.com/feed/",                               tier: B}
@@ -38,12 +38,38 @@ cyber_attacks:
 cyber_tools:
   - {name: "Rapid7 Blog",          url: "https://blog.rapid7.com/rss/",                               tier: B}
   - {name: "Schneier on Security", url: "https://www.schneier.com/feed/atom/",                        tier: B}
-  - {name: "PortSwigger Research", url: "https://portswigger.net/research/rss",                       tier: A}
-  - {name: "Trail of Bits",        url: "https://blog.trailofbits.com/feed/",                         tier: B}
+  - {name: "PortSwigger Research", url: "https://portswigger.net/research/rss",                       tier: A, window_hours: 720}
+  - {name: "Trail of Bits",        url: "https://blog.trailofbits.com/feed/",                         tier: B, window_hours: 504}
   # GitHub tool discovery is not RSS — see the `github:` block in settings.yaml
   - {name: "Elastic Security Labs", url: "https://www.elastic.co/security-labs/rss/feed.xml",        tier: B}
   - {name: "GitHub Security Lab", url: "https://github.blog/tag/github-security-lab/feed/",          tier: A}
-  - {name: "OALabs Research",     url: "https://research.openanalysis.net/feed.xml",                 tier: B}
+  - {name: "OALabs Research",     url: "https://research.openanalysis.net/feed.xml",                 tier: B, window_hours: 720}
+
+  # --- Bug bounty and exploit writeups -----------------------------------
+  # window_hours overrides the category window. These labs publish once or
+  # twice a MONTH; under the 168h category window every one of them returned
+  # zero items despite the feeds working. A month-old teardown of a pre-auth
+  # RCE has not stopped being worth reading.
+  #
+  # Measured cadence 2026-08-24 (newest post age): Sonar 12 items inside 30d,
+  # PortSwigger 3, Trail of Bits 2, watchTowr 1, Include Security 1;
+  # Doyensec 68d, OALabs 69d, Project Zero 103d, Assetnote 949d.
+  # The last four contribute nothing most weeks and that is fine — they cost
+  # one HTTP request and appear the day they publish. Assetnote looks
+  # abandoned rather than slow; kept only because it is free to keep.
+  # "How they did it" content: disclosed bugs with the methodology attached,
+  # not just the announcement that a bug existed. All probed live 2026-08-24.
+  - {name: "watchTowr Labs",      url: "https://labs.watchtowr.com/rss/",                       tier: A, window_hours: 720}
+  - {name: "Assetnote Research",  url: "https://blog.assetnote.io/feed.xml",                    tier: A, window_hours: 720}
+  - {name: "Doyensec",            url: "https://blog.doyensec.com/atom.xml",                    tier: A, window_hours: 720}
+  - {name: "Include Security",    url: "https://blog.includesecurity.com/feed/",                tier: B, window_hours: 720}
+  - {name: "Sonar Research",      url: "https://www.sonarsource.com/blog/rss.xml",              tier: B, window_hours: 720}
+  - {name: "InfoSec Write-ups",   url: "https://infosecwriteups.com/feed",                      tier: C}
+  - {name: "Medium bug bounty",   url: "https://medium.com/feed/tag/bug-bounty",                tier: C}
+  - {name: "Medium pentesting",   url: "https://medium.com/feed/tag/penetration-testing",       tier: C}
+  - {name: "Chromium Releases",   url: "https://chromereleases.googleblog.com/atom.xml",        tier: A, primary: true}
+  - {name: "GN Bug bounty",       url: "https://news.google.com/rss/search?q=%22bug+bounty%22+OR+%22vulnerability+disclosure%22+reward+researcher+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen", tier: C, aggregator: true}
+  - {name: "GN Exploit writeup",  url: "https://news.google.com/rss/search?q=%22proof+of+concept%22+exploit+writeup+vulnerability+chain+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen", tier: C, aggregator: true}
 
   # --- Google News topic scans -------------------------------------------
   # Viable now that redirect tokens resolve to real publisher URLs (see

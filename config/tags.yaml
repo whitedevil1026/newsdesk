@@ -31,6 +31,8 @@ vocabulary:
   - exploit
   - redteam
   - blueteam
+  - bugbounty        # disclosed bug + the methodology behind it
+  - writeup          # step-by-step "how it was found"
   - appsec
   - cloud
   - android
@@ -60,6 +62,13 @@ rules:
                  "zero-day", "0-day", "actively exploited", "weaponized"]
   vulnerability: ["cve-", "vulnerability", "advisory", "patch", "flaw", "kev",
                  "security update", "bug bounty"]
+  bugbounty:    ["bug bounty", "bounty award", "hackerone", "bugcrowd",
+                 "intigriti", "responsible disclosure", "vulnerability disclosure",
+                 "triaged", "duplicate report", "p1 ", "critical severity report"]
+  writeup:      ["writeup", "write-up", "how i found", "how we found",
+                 "root cause analysis", "exploit chain", "proof of concept",
+                 "poc ", "reproduction steps", "attack chain", "0-click",
+                 "one-click", "pre-auth"]
   redteam:      ["red team", "pentest", "penetration test", "c2 ", "command and control",
                  "adversary emulation", "initial access", "lateral movement"]
   blueteam:     ["blue team", "defen", "hardening", "edr", "xdr", "mitigation",

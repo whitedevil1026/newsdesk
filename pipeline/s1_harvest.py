@@ -50,9 +50,21 @@ def _fetch_bytes(url: str, cfg: dict) -> bytes:
         return resp.read()
 
 
-def window_for(category: str, cfg: dict) -> int:
-    """Lookback for one category. See the note in settings.yaml — a single
-    window starved every weekly-publishing source in the security sections."""
+def window_for(category: str, cfg: dict, spec: dict | None = None) -> int:
+    """Lookback for one feed.
+
+    Three levels, most specific first: a per-feed `window_hours`, then the
+    category window, then the global default.
+
+    The per-feed level exists because publishing cadence is a property of the
+    SOURCE, not its category. Deep research labs — watchTowr, Assetnote,
+    Doyensec, Include Security, Sonar — publish once or twice a month, and
+    every one of them returned zero items under a 168h category window even
+    though the feeds were verified working. A month-old teardown of a
+    pre-auth RCE has not stopped being worth reading.
+    """
+    if spec and spec.get("window_hours"):
+        return int(spec["window_hours"])
     per = cfg["window"].get("per_category_hours", {})
     return per.get(category, cfg["window"]["lookback_hours"])
 
@@ -95,6 +107,7 @@ def _fetch_one(category: str, spec: dict, cutoff: datetime, cfg: dict) -> list[A
                 summary_raw=strip_html(entry.get("summary") or "")[:1200],
                 is_primary=bool(spec.get("primary", False)),
                 is_aggregator=aggregator,
+                window_hours=int(spec.get("window_hours") or 0),
             )
         )
     log("harvest", f"  {spec['name']:<24} {len(out):>3} in window")
@@ -115,7 +128,7 @@ def run() -> list[Article]:
     with ThreadPoolExecutor(max_workers=12) as pool:
         futures = {
             pool.submit(_fetch_one, c, s,
-                        now - timedelta(hours=windows[c]), cfg): s
+                        now - timedelta(hours=window_for(c, cfg, s)), cfg): s
             for c, s in jobs
         }
         for fut in as_completed(futures):

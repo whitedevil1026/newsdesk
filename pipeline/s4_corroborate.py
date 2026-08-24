@@ -87,6 +87,14 @@ def _is_critical_signal(cluster: Cluster) -> str | None:
     return None
 
 
+def _feed_window(article, cfg: dict) -> int:
+    """The lookback this article was actually harvested under."""
+    from .s1_harvest import window_for
+    return window_for(article.category, cfg,
+                      {"window_hours": article.window_hours}
+                      if article.window_hours else None)
+
+
 def _best_date(cluster: Cluster) -> datetime | None:
     dates = [a.published for a in cluster.articles if a.published]
     return min(dates) if dates else None      # earliest = when it broke
@@ -121,10 +129,11 @@ def run(clusters: list[Cluster]) -> list[Item]:
         )
 
         # --- hard gate: recycled or out-of-window content ------------------
-        if lead.category not in cutoffs:
-            cutoffs[lead.category] = now_utc() - timedelta(
-                hours=window_for(lead.category, cfg))
-        cutoff = cutoffs[lead.category]
+        # Use the WIDEST window any article in the cluster was harvested
+        # under. A slow research blog admitted at 720h must not then be
+        # dropped because a wire story in the same cluster only gets 48h.
+        span = max(_feed_window(a, cfg) for a in cl.articles)
+        cutoff = now_utc() - timedelta(hours=span)
         if tcfg["hard_drop"]["outside_window"] and published and published < cutoff:
             item.verdict = Verdict.REJECTED
             item.reject_reason = f"published {published.date()} — outside lookback window"
