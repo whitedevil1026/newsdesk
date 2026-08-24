@@ -110,6 +110,48 @@ bluesky:
     - {handle: "xeiaso.net",                name: "Xe Iaso",          category: tech_ai}
     - {handle: "jaredwhite.com",            name: "Jared White",      category: tech_ai}
 
+# --- Telegram: public channels ---------------------------------------------
+# Read-only via t.me/s/<channel>, which any PUBLIC channel exposes. No bot,
+# no token, no account — verified before this was added. Private channels
+# have no such preview and would need a bot added to them.
+#
+# Channels break faster than articles: a CTI channel posts a link and a line
+# of context within minutes, often before anyone writes the article. What
+# they do not carry is body text, so stage 3 fetches it from the link.
+telegram:
+  enabled: true
+  lookback_hours: 72
+  min_chars: 40
+  require_link: true        # commentary with no link has nothing to verify
+  channels:
+    # The user's own channel.
+    - {channel: "ctinow",         name: "CTI Now",        category: cyber_attacks, tier: C}
+    # Public infosec channels, probed live for activity before adding.
+    - {channel: "vxunderground",  name: "vx-underground", category: cyber_attacks, tier: C}
+    - {channel: "androidMalware", name: "Android Malware", category: cyber_attacks, tier: C}
+
+# --- Push the digest to Telegram -------------------------------------------
+# OFF by default and it stays off until you set it up. It posts to a channel
+# other people may read, so it must never start working as a side effect of
+# a config default.
+#
+# Only critical/important items are sent. The website is the full record;
+# this is the "worth interrupting you for" subset. A channel that receives
+# 40 cards every morning gets muted, which is worse than sending nothing.
+#
+# Setup:
+#   1. @BotFather on Telegram -> /newbot -> copy the token
+#   2. Add the bot to your channel as an ADMIN (it cannot post otherwise)
+#   3. In .env:  TELEGRAM_BOT_TOKEN=...   TELEGRAM_CHAT_ID=@yourchannel
+#   4. Flip enabled to true below
+notify:
+  telegram:
+    enabled: false
+    token_env: "TELEGRAM_BOT_TOKEN"
+    chat_env: "TELEGRAM_CHAT_ID"
+    min_priority: important   # critical | important
+    max_items: 10
+
 cluster:
   # Overlap coefficient (shared tokens / shorter headline), NOT Jaccard.
   #

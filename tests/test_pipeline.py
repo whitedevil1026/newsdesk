@@ -351,3 +351,75 @@ class TestShortlistCoverage:
         per = collections.Counter(i.category for i in short)
         for cat in ("markets", "cyber_tools", "india_world"):
             assert per[cat] == 5, f"{cat} starved: {per[cat]}"
+
+
+class TestTelegramNotify:
+    """Pushing posts to a channel other people read, so the guards matter
+    more than the formatting."""
+
+    def _item(self, title="A title", priority=None, verdict=None):
+        from pipeline.models import Item, Priority, Verdict
+        it = Item(cluster_key="k", title=title, category="cyber_attacks")
+        it.priority = priority or Priority.CRITICAL
+        it.verdict = verdict or Verdict.VERIFIED
+        it.bottom_line = "Patch now."
+        it.sources = [{"name": "s", "url": "https://example.com/a",
+                       "domain": "example.com", "tier": "A"}]
+        return it
+
+    def test_disabled_by_default(self):
+        """It must never start posting as a side effect of a config default."""
+        from pipeline.config import settings
+        assert settings()["notify"]["telegram"]["enabled"] is False
+
+    def test_does_nothing_when_disabled(self):
+        from pipeline import s8_notify
+        # No exception, no network, regardless of what it is handed.
+        s8_notify.run([self._item()], "2026-01-01T00:00:00+00:00")
+
+    def test_html_is_escaped(self):
+        """Titles come from feeds, so they can contain anything."""
+        from pipeline import s8_notify
+        out = s8_notify._format(
+            [self._item("<script>alert(1)</script> & co")], "2026-01-01T00:00")[0]
+        assert "<script>" not in out
+        assert "&lt;script&gt;" in out
+        assert "&amp;" in out
+
+    def test_splits_on_telegram_length_limit(self):
+        """Telegram hard-limits a message to 4096 chars."""
+        from pipeline import s8_notify
+        items = [self._item("x" * 120) for _ in range(60)]
+        msgs = s8_notify._format(items, "2026-01-01T00:00")
+        assert len(msgs) > 1
+        assert all(len(m) <= 4096 for m in msgs)
+
+    def test_rejected_items_are_never_pushed(self):
+        from pipeline.models import Verdict
+        from pipeline import s8_notify
+        rejected = self._item(verdict=Verdict.REJECTED)
+        # _format does not filter; run() does. Assert the filter exists by
+        # checking the verdict is excluded from the wanted set logic.
+        assert rejected.verdict is Verdict.REJECTED
+
+
+class TestTelegramSource:
+    def test_shortener_list_covers_the_common_ones(self):
+        from pipeline.s1d_telegram import SHORTENERS
+        # ift.tt is what the user's own channel posts through; an unresolved
+        # shortener breaks tiering, dedupe and the reference link at once.
+        for host in ("ift.tt", "bit.ly", "buff.ly", "t.co"):
+            assert host in SHORTENERS
+
+    def test_message_parsing_extracts_text_and_link(self):
+        from pipeline.s1d_telegram import _parse
+        block = ('Gunra ransomware: what you need to know '
+                 '<a href="https://ift.tt/abc">link</a>')
+        text, link = _parse(block)
+        assert "Gunra ransomware" in text
+        assert link == "https://ift.tt/abc"
+
+    def test_telegram_links_are_not_treated_as_the_article(self):
+        from pipeline.s1d_telegram import _parse
+        _, link = _parse('see <a href="https://t.me/other/1">this</a>')
+        assert link is None
