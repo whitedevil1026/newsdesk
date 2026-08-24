@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T19:40:01.817718+00:00",
+  "generated_at": "2026-08-24T19:57:05.061688+00:00",
   "next_update": "2026-08-25T01:30:00+00:00",
   "schedule": {
     "cron_utc": "30 1 * * *",
@@ -16,13 +16,13 @@
   },
   "counts": {
     "published": 40,
-    "rejected": 29,
+    "rejected": 21,
     "critical": 5,
     "important": 35,
-    "verified": 20,
+    "verified": 19,
     "corroborated": 5,
-    "established": 14,
-    "unverified": 0,
+    "established": 12,
+    "unverified": 3,
     "disputed": 1
   },
   "items": [
@@ -30,26 +30,26 @@
       "cluster_key": "2f5f270a3cd6caa9",
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
       "category": "cyber_attacks",
-      "one_liner": "An actively exploited OS command injection flaw in Zimbra has been added to CISA's KEV, requiring immediate patching.",
+      "one_liner": "Oracle HTTP and Weblogic servers are facing active exploitation via a newly cataloged access control vulnerability.",
       "tags": [
-        "appsec",
         "blueteam",
         "exploit",
         "incident",
+        "policy",
         "threat-intel",
         "vulnerability"
       ],
-      "summary": "CISA has added CVE-2026-73570, an OS command injection vulnerability in Zimbra Collaboration Suite (ZCS), to its Known Exploited Vulnerabilities (KEV) Catalog. Federal agencies are required to prioritize remediation of this flaw as it allows for total control of publicly exposed assets. The addition is based on evidence of active exploitation in the wild.",
+      "summary": "CISA has added CVE-2026-21962 to its Known Exploited Vulnerabilities (KEV) Catalog, citing evidence of active exploitation in the wild. This vulnerability affects Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in, stemming from improper access control. Federal Civilian Executive Branch (FCEB) agencies are required to prioritize remediation of this flaw under Binding Operational Directive 26-04. CISA strongly encourages all organizations to patch this vulnerability immediately to mitigate risks to their infrastructure.",
       "key_facts": [
-        "CVE-2026-73570: OS Command Injection",
-        "Product: Zimbra Collaboration Suite (ZCS)",
-        "Directive: BOD 26-04"
+        "CVE-2026-21962: Oracle HTTP Server and Weblogic Server Proxy Plug-in",
+        "Directive: BOD 26-04",
+        "Vulnerability Type: Improper Access Control"
       ],
-      "bottom_line": "CVE-2026-73570 in Zimbra is being actively exploited and grants full control of affected assets; immediate remediation is required.",
+      "bottom_line": "Patch CVE-2026-21962 immediately as it is currently being exploited by malicious actors to gain unauthorized access to Oracle environments.",
       "claims": [
         {
-          "text": "CISA added CVE-2026-73570 to the Known Exploited Vulnerabilities Catalog.",
-          "support_span": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. - CVE-2026-73570 Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
+          "text": "CISA added CVE-2026-21962 to the KEV Catalog due to active exploitation.",
+          "support_span": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. - CVE-2026-21962 Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in Improper Access Control Vulnerability",
           "status": "entailed"
         }
       ],
@@ -63,6 +63,12 @@
       "sources": [
         {
           "name": "CISA Advisories",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/08/24/cisa-adds-one-known-exploited-vulnerability-catalog",
+          "domain": "cisa.gov",
+          "tier": "A"
+        },
+        {
+          "name": "CISA Advisories",
           "url": "https://www.cisa.gov/news-events/alerts/2026/08/21/cisa-adds-one-known-exploited-vulnerability-catalog",
           "domain": "cisa.gov",
           "tier": "A"
@@ -72,24 +78,6 @@
           "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-urgent-patching-of-actively-exploited-zimbra-flaw/",
           "domain": "bleepingcomputer.com",
           "tier": "B"
-        },
-        {
-          "name": "Security Affairs",
-          "url": "https://securityaffairs.com/197693/security/u-s-cisa-adds-zimbra-collaboration-suite-zcs-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
-          "domain": "security-affairs.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "gbhackers.com",
-          "url": "https://gbhackers.com/zimbra-collaboration-suite-flaw/",
-          "domain": "gbhackers-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "CyberSecurityNews",
-          "url": "https://cybersecuritynews.com/zimbra-rce-vulnerability-exploited/",
-          "domain": "cybersecuritynews.publisher",
-          "tier": "C"
         },
         {
           "name": "BleepingComputer",
@@ -102,10 +90,35 @@
           "url": "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-109/",
           "domain": "cyber-security-agency-of-singapore.publisher",
           "tier": "C"
+        },
+        {
+          "name": "CyberSecurityNews",
+          "url": "https://cybersecuritynews.com/zimbra-collaboration-suite-vulnerability-exploited/",
+          "domain": "cybersecuritynews.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "CyberSecurityNews",
+          "url": "https://cybersecuritynews.com/zimbra-rce-vulnerability-exploited/",
+          "domain": "cybersecuritynews.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "gbhackers.com",
+          "url": "https://gbhackers.com/zimbra-collaboration-suite-flaw/",
+          "domain": "gbhackers-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Security Affairs",
+          "url": "https://securityaffairs.com/197693/security/u-s-cisa-adds-zimbra-collaboration-suite-zcs-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+          "domain": "security-affairs.publisher",
+          "tier": "C"
         }
       ],
       "primary_links": [
-        "https://www.cisa.gov/news-events/alerts/2026/08/21/cisa-adds-one-known-exploited-vulnerability-catalog"
+        "https://www.cisa.gov/news-events/alerts/2026/08/21/cisa-adds-one-known-exploited-vulnerability-catalog",
+        "https://www.cisa.gov/news-events/alerts/2026/08/24/cisa-adds-one-known-exploited-vulnerability-catalog"
       ],
       "published": "2026-08-21T08:33:14+00:00",
       "trace": [
@@ -113,11 +126,82 @@
         "6 independent outlets (+36)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "demoted: critical capped at 5",
         "importance 5/5 from gemini-3-flash-preview",
         "blend 100 = trust 100 / interest 100 / corrob 100",
         "claims entailed 1/1 (100%)",
-        "judge (gemma-4-26b-a4b-it): all claims supported"
+        "judge (gemma-4-31b-it): all claims supported"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "55fe64467daa103f",
+      "title": "Alibaba shares plunge 11% after $10.2 billion share placement to fund AI expansion",
+      "category": "markets",
+      "one_liner": "Alibaba's massive share placement to fund AI infrastructure triggered a stock sell-off amid lower quarterly profits.",
+      "tags": [
+        "ai",
+        "cloud",
+        "exploit",
+        "markets",
+        "tool"
+      ],
+      "summary": "Alibaba shares dropped as much as 11% on Monday after the Chinese technology giant announced an HK$80 billion ($10.2 billion) share placement to fund artificial intelligence infrastructure expansions. The company is issuing 710 million new shares at HK$112.70 each, which represents a discount to its previous closing price. This aggressive capital-raising effort follows a 75% year-on-year drop in June-quarter net profit driven by heavy investments in computing power and AI capabilities, raising investor concerns regarding near-term profitability and share dilution.",
+      "key_facts": [
+        "Share Placement Size: HK$80 billion ($10.2 billion)",
+        "New Shares Issued: 710 million",
+        "Issue Price: HK$112.70",
+        "Net Profit Drop: 75% year-on-year"
+      ],
+      "bottom_line": "Alibaba shares fell sharply following a $10.2 billion share placement aimed at funding aggressive artificial intelligence expansion.",
+      "claims": [
+        {
+          "text": "Alibaba shares plunged as much as 11% on Monday, 24 August, after the Chinese technology major announced an HK$80 billion ($10.2 billion) share placement to raise funds for its artificial intelligence expansion.",
+          "support_span": "Alibaba shares plunged as much as 11% on Monday, 24 August, after the Chinese technology major announced an HK$80 billion ($10.2 billion) share placement to raise funds for its artificial intelligence expansion.",
+          "status": "entailed"
+        },
+        {
+          "text": "The company plans to issue 710 million new shares at HK$112.70 each, below Friday’s closing price of HK$123.",
+          "support_span": "The company plans to issue 710 million new shares at HK$112.70 each, below Friday’s closing price of HK$123.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 49,
+      "interest_score": 100,
+      "corroboration": 3,
+      "blend": 79.8,
+      "critical_signal": "",
+      "priority": "critical",
+      "verdict": "verified",
+      "sources": [
+        {
+          "name": "CNBC Finance",
+          "url": "https://www.cnbc.com/2026/08/24/alibaba-share-placement-drop-ai-hong-kong.html",
+          "domain": "cnbc.com",
+          "tier": "B"
+        },
+        {
+          "name": "Livemint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/alibaba-shares-plunge-11-after-10-2-billion-share-placement-to-fund-ai-expansion-11787547880961.html",
+          "domain": "livemint.com",
+          "tier": "B"
+        },
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/business/retail-consumer/alibaba-set-open-down-8-hong-kong-after-102-billion-share-placement-plan-2026-08-24/",
+          "domain": "reuters.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-24T01:32:00+00:00",
+      "trace": [
+        "tier B (+25)",
+        "3 independent outlets (+24)",
+        "verified: 3 independent outlets",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 80 = trust 49 / interest 100 / corrob 75",
+        "claims entailed 2/2 (100%)",
+        "judge (gemma-4-31b-it): all claims supported"
       ],
       "reject_reason": ""
     },
@@ -125,10 +209,10 @@
       "cluster_key": "ba6b854d5e4c5e97",
       "title": "Hackers infect Android car head units with proxy botnet malware",
       "category": "cyber_attacks",
-      "one_liner": "Supply-chain attack on Android car infotainment systems turns vehicles into proxy botnet nodes.",
+      "one_liner": "Android-based automotive head units are being compromised via legitimate update channels to serve as proxy botnet nodes.",
       "tags": [
         "android",
-        "exploit",
+        "hardware",
         "incident",
         "malware",
         "markets",
@@ -136,29 +220,29 @@
         "supply-chain",
         "threat-intel"
       ],
-      "summary": "A supply-chain attack targeting Android-based car head units from Chinese provider DoFun is using a legitimate update app (TWCore) to distribute \"JarService\" malware. Attributed to the MoYu group, the malware enlists devices into a proxy botnet (using the 'zhima' module) or performs ad fraud via click-fraud activity. While it does not affect critical driving systems, it provides attackers with shell-level access and the ability to execute arbitrary code.",
+      "summary": "A supply-chain attack is targeting Android-based car head units from Chinese provider DoFun to enlist them in a proxy botnet. The malware, named JarService, is delivered via a legitimate system update app (TWCore) and establishes communication with a command-and-control server via MQTT. Once infected, the units report device metadata and can execute arbitrary code, perform ad fraud, or act as residential proxy nodes. Kaspersky researchers attributed the campaign to the MoYu group, previously linked to the BadBox botnet.",
       "key_facts": [
-        "Malware: JarService",
-        "Threat Actor: MoYu group",
+        "Actor: MoYu group",
         "Target: DoFun Android head units",
-        "Module: zhima (reverse-proxy)"
+        "Malware: JarService",
+        "C2 Server: cardoor[.]cn"
       ],
-      "bottom_line": "Android-based car head units are being compromised via legitimate update channels to serve as residential proxy nodes for cybercriminals.",
+      "bottom_line": "Automotive infotainment systems are now active targets for supply-chain malware designed for monetization through ad fraud and proxy services.",
       "claims": [
         {
-          "text": "A supply-chain attack on Android car head units uses a legitimate update app to spread malware.",
-          "support_span": "A supply-chain attack targeting Android-based car head units is using a legitimate device-update app to spread malware that enlists compromised devices in a proxy botnet or uses them for ad fraud.",
+          "text": "The malware targets Android head units from DoFun.",
+          "support_span": "MoYu's operation targets systems from DoFun, a Chinese automotive software and hardware provider owned by Shenzhen Driving Control Technology Co., Ltd.",
           "status": "entailed"
         },
         {
-          "text": "The malware turns the head unit into a proxy botnet node using a module named 'zhima'.",
-          "support_span": "Researchers discovered that the operator primarily loaded a reverse-proxy module named ‘zhima,’ which turns the head unit into a proxy botnet node",
+          "text": "The malware turns the head unit into a proxy botnet node.",
+          "support_span": "Kaspersky says the malware does not interfere with driving or critical vehicle control systems, and appears designed for advertising fraud and turning internet-connected car head units into residential proxy nodes for monetization purposes.",
           "status": "entailed"
         }
       ],
       "trust_score": 61,
       "interest_score": 75,
-      "corroboration": 4,
+      "corroboration": 5,
       "blend": 79.0,
       "critical_signal": "",
       "priority": "critical",
@@ -169,6 +253,12 @@
           "url": "https://www.bleepingcomputer.com/news/security/hackers-infect-android-car-head-units-with-proxy-botnet-malware/",
           "domain": "bleepingcomputer.com",
           "tier": "B"
+        },
+        {
+          "name": "Brand Icon Image",
+          "url": "https://www.brandiconimage.com/2026/08/kaspersky-discovers-malware-campaign.html",
+          "domain": "brand-icon-image.publisher",
+          "tier": "C"
         },
         {
           "name": "cyberpress.org",
@@ -183,9 +273,9 @@
           "tier": "C"
         },
         {
-          "name": "Brand Icon Image",
-          "url": "https://www.brandiconimage.com/2026/08/kaspersky-discovers-malware-campaign.html",
-          "domain": "brand-icon-image.publisher",
+          "name": "The Record from Recorded Future News",
+          "url": "https://therecord.media/android-botnet-china-hackers",
+          "domain": "the-record-from-recorded-future-news.publisher",
           "tier": "C"
         }
       ],
@@ -193,140 +283,54 @@
       "published": "2026-08-22T14:14:24+00:00",
       "trace": [
         "tier B (+25)",
-        "4 independent outlets (+36)",
-        "verified: 4 independent outlets",
+        "5 independent outlets (+36)",
+        "verified: 5 independent outlets",
         "importance 4/5 from gemini-3-flash-preview",
         "blend 79 = trust 61 / interest 75 / corrob 100",
         "claims entailed 2/2 (100%)",
-        "judge (gemma-4-26b-a4b-it): all claims supported"
+        "judge (gemma-4-31b-it): all claims supported"
       ],
       "reject_reason": ""
     },
     {
-      "cluster_key": "58f66a40c663c669",
-      "title": "Microsoft Patches Severe Entra ID Flaw (CVSS 10.0) Allowing Remote Code Execution",
-      "category": "cyber_attacks",
-      "one_liner": "Microsoft patched a CVSS 10.0 deserialization RCE flaw in Entra ID (CVE-2026-69836), confirming no active exploitation.",
-      "tags": [
-        "appsec",
-        "blueteam",
-        "cloud",
-        "exploit",
-        "identity",
-        "release",
-        "vulnerability",
-        "windows"
-      ],
-      "summary": "Microsoft disclosed and addressed a maximum-severity remote code execution vulnerability (CVE-2026-69836, CVSS 10.0) in its cloud identity service Microsoft Entra ID (formerly Azure AD). The flaw stems from untrusted data deserialization, permitting unauthenticated attackers to execute remote code over the network. Although initial advisories erroneously stated active in-the-wild exploitation, Microsoft clarified that the issue was identified internally by Robert Fitzpatrick and was patched without requiring customer action. The service mitigation has been deployed across cloud infrastructure.",
-      "key_facts": [
-        "CVE-2026-69836: CVSS 10.0, Remote Code Execution via Untrusted Deserialization",
-        "Affected service: Microsoft Entra ID (formerly Azure Active Directory)",
-        "Exploitation status: Not exploited in the wild (corrected)"
-      ],
-      "bottom_line": "Microsoft has resolved a critical CVSS 10.0 RCE flaw in Entra ID on the backend, requiring no tenant-side patching actions.",
-      "claims": [
-        {
-          "text": "CVE-2026-69836 is a CVSS 10.0 deserialization remote code execution vulnerability in Microsoft Entra ID.",
-          "support_span": "The vulnerability, tracked as CVE-2026-69836 (CVSS score: 10.0), is a case of remote code execution impacting the tech giant's cloud-based identity and access management service.",
-          "status": "entailed"
-        },
-        {
-          "text": "Microsoft mitigated the flaw on backend systems with no customer intervention required.",
-          "support_span": "\"This vulnerability has already been fully mitigated by Microsoft,\" it added. \"There is no action for users of this service to take.\"",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 61,
-      "interest_score": 75,
-      "corroboration": 4,
-      "blend": 79.0,
-      "critical_signal": "",
-      "priority": "critical",
-      "verdict": "verified",
-      "sources": [
-        {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        },
-        {
-          "name": "finance.biggo.com",
-          "url": "https://finance.biggo.com/news/0ba9f414-6bb2-4501-ade8-2685b3668eff",
-          "domain": "finance-biggo-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "cyberpress.org",
-          "url": "https://cyberpress.org/critical-microsoft-entra-id-rce-flaw/",
-          "domain": "cyberpress-org.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-warns-of-max-severity-entra-id-flaw-exploited-in-attacks/",
-          "domain": "bleepingcomputer.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-21T05:22:03+00:00",
-      "trace": [
-        "tier B (+25)",
-        "4 independent outlets (+36)",
-        "verified: 4 independent outlets",
-        "importance 4/5 from cache",
-        "blend 79 = trust 61 / interest 75 / corrob 100",
-        "claims entailed 2/2 (100%)",
-        "judge (gemma-4-26b-a4b-it): all claims supported"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "ef8ae3ff44dcae17",
+      "cluster_key": "800097a37de2fbe4",
       "title": "Medical records, SSNs, and bank details exposed in CareCloud data breach",
       "category": "cyber_attacks",
-      "one_liner": "A massive healthcare breach affecting 3.75 million people with exposure of full financial and medical records.",
+      "one_liner": "A major healthcare data breach in an AWS environment has exposed the PII and financial data of millions.",
       "tags": [
         "cloud",
         "dfir",
-        "identity",
         "incident",
         "privacy"
       ],
-      "summary": "Healthcare technology provider CareCloud confirmed a massive data breach affecting over 3.75 million individuals, significantly higher than initial estimates. An unauthorized party accessed an AWS environment in March 2026, exfiltrating databases containing SSNs, medical records, financial details, and full credit card data. The breach caused an eight-hour disruption to one of the company's electronic health record (EHR) environments.",
+      "summary": "Healthcare technology provider CareCloud confirmed a massive data breach impacting over 3.75 million individuals, significantly higher than initial estimates. An unauthorized third party accessed an AWS environment between March 10 and March 16, 2026, exfiltrating databases containing sensitive identity and medical information. The stolen data includes Social Security numbers, medical records, and full credit card details including CVV codes for some victims. CareCloud discovered the intrusion in March, but the full scale was only revealed via an HHS breach tracker update this month.",
       "key_facts": [
         "Affected: 3,756,469 individuals",
-        "Breach dates: March 10-16, 2026",
-        "Platform: Amazon Web Services (AWS)"
+        "Breach Window: March 10 to March 16, 2026",
+        "Platform: Amazon Web Services (AWS)",
+        "Data Stolen: SSNs, medical records, credit card CVV"
       ],
-      "bottom_line": "The CareCloud breach is one of the year's largest, exposing the complete identity and financial profiles of over 3.7 million patients.",
+      "bottom_line": "The CareCloud breach is one of the largest healthcare incidents of the year, exposing a dangerous combination of medical, financial, and identity data.",
       "claims": [
         {
-          "text": "The CareCloud data breach impacted over 3.75 million people.",
-          "support_span": "Healthcare technology giant CareCloud has confirmed that a data breach earlier this year impacted more than 3.75 million people",
+          "text": "The CareCloud breach impacted more than 3.75 million people.",
+          "support_span": "Healthcare technology giant CareCloud has confirmed that a data breach earlier this year impacted more than 3.75 million people, making it one of the largest healthcare data incidents disclosed this year.",
           "status": "entailed"
         },
         {
-          "text": "The breach involved unauthorized access to an AWS environment between March 10 and March 16, 2026.",
-          "support_span": "CareCloud says an unauthorized third party accessed one of its Amazon Web Services (AWS) environments between March 10 and March 16, 2026.",
+          "text": "Stolen data included SSNs and full credit card data with CVV.",
+          "support_span": "Social Security numbers (SSNs) and driver’s license or passport numbers - Medical records and health insurance information - Bank account and financial details, plus full credit card data (including CVV) for a limited subset of victims",
           "status": "entailed"
         }
       ],
       "trust_score": 61,
       "interest_score": 75,
-      "corroboration": 26,
+      "corroboration": 22,
       "blend": 79.0,
       "critical_signal": "",
       "priority": "critical",
       "verdict": "verified",
       "sources": [
-        {
-          "name": "Malwarebytes Labs",
-          "url": "https://www.malwarebytes.com/blog/news/2026/08/medical-records-ssns-and-bank-details-exposed-in-carecloud-data-breach",
-          "domain": "malwarebytes.com",
-          "tier": "B"
-        },
         {
           "name": "BleepingComputer",
           "url": "https://www.bleepingcomputer.com/news/security/reliaquest-confirms-failed-data-theft-attack-after-shinyhunters-breach/",
@@ -334,123 +338,15 @@
           "tier": "B"
         },
         {
-          "name": "The Malone Telegram",
-          "url": "https://www.mymalonetelegram.com/online_features/press_releases/apollo-global-management-data-breach-edelson-lechtzin-llp-launches-investigation-into-exposure-of-personal-information/article_508a6425-fd35-5909-95d2-fb11d0bc7df7.html",
-          "domain": "the-malone-telegram.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "PR Newswire",
-          "url": "https://www.prnewswire.com/news-releases/apple-american-group-data-breach-edelson-lechtzin-llp-launches-investigation-into-exposure-of-personal-information-302857029.html",
-          "domain": "pr-newswire.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Crypto Briefing",
-          "url": "https://cryptobriefing.com/apollo-cyber-breach-personal-data-accessed/",
-          "domain": "crypto-briefing.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/apollo-global-management-apo-down-080914756.html",
-          "domain": "yahoo-finance.publisher",
-          "tier": "C"
+          "name": "Malwarebytes Labs",
+          "url": "https://www.malwarebytes.com/blog/news/2026/08/medical-records-ssns-and-bank-details-exposed-in-carecloud-data-breach",
+          "domain": "malwarebytes.com",
+          "tier": "B"
         },
         {
           "name": "BBN Times",
           "url": "https://www.bbntimes.com/financial/apollo-global-management-confirms-data-breach-amid-wave-of-attacks-on-financial-giants",
           "domain": "bbn-times.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "CyberScoop",
-          "url": "https://cyberscoop.com/apollo-discloses-data-breach-social-engineering-attack/",
-          "domain": "cyberscoop.com",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://www.claimdepot.com/data-breach/kern-behavioral-health-and-recovery-services-2026",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "TechRadar",
-          "url": "https://www.techradar.com/pro/security/private-equity-giant-apollo-confirms-data-breach-saw-personal-info-stolen",
-          "domain": "techradar.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "PYMNTS.com",
-          "url": "https://www.pymnts.com/cybersecurity/2026/apollo-global-management-social-engineering-attack-data-breach/",
-          "domain": "pymnts-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Malwarebytes",
-          "url": "https://www.malwarebytes.com/blog/news/2026/08/medical-records-ssns-and-bank-details-exposed-in-carecloud-data-breach",
-          "domain": "malwarebytes.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "TechRepublic",
-          "url": "https://www.techrepublic.com/article/news-apollo-data-breach-financial-firms-social-engineering/",
-          "domain": "techrepublic.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "thecharlotteledger.com",
-          "url": "https://www.thecharlotteledger.com/p/preferred-parking-data-breach-credit-card-information",
-          "domain": "thecharlotteledger-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/technology/apollo-global-confirms-data-breach-after-hackers-target-financial-firms-2026-08-21/",
-          "domain": "reuters.com",
-          "tier": "C"
-        },
-        {
-          "name": "ClassAction.org",
-          "url": "https://www.classaction.org/data-breach-lawsuits/southern-illinois-university-august-2026",
-          "domain": "classaction-org.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "ClassAction.org",
-          "url": "https://www.classaction.org/data-breach-lawsuits/apollo-global-management-august-2026",
-          "domain": "classaction-org.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "WSPA 7News",
-          "url": "https://www.wspa.com/video/anmed-ceo-addresses-cybersecurity-attack-data-breach-from-anmed/12093367/",
-          "domain": "wspa-7news.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Construction Dive",
-          "url": "https://www.constructiondive.com/news/turner-construction-data-breach-ssns-bank-accounts/828454/",
-          "domain": "construction-dive.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://www.claimdepot.com/data-breach/premier-medical-group-2026",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "ClassAction.org",
-          "url": "https://www.classaction.org/data-breach-lawsuits/forrestall-cpas-august-2026",
-          "domain": "classaction-org.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://www.claimdepot.com/data-breach/genesis-healthcare-2026",
-          "domain": "claim-depot.publisher",
           "tier": "C"
         },
         {
@@ -460,27 +356,21 @@
           "tier": "C"
         },
         {
-          "name": "SecurityWeek",
-          "url": "https://www.securityweek.com/personal-information-exposed-in-apollo-global-data-breach/",
-          "domain": "securityweek.com",
+          "name": "Claim Depot",
+          "url": "https://www.claimdepot.com/data-breach/kern-behavioral-health-and-recovery-services-2026",
+          "domain": "claim-depot.publisher",
           "tier": "C"
         },
         {
-          "name": "finance.biggo.com",
-          "url": "https://finance.biggo.com/news/ba18d2e2-ab80-4977-980b-a657be358a0f",
-          "domain": "finance-biggo-com.publisher",
+          "name": "Claim Depot",
+          "url": "https://www.claimdepot.com/data-breach/premier-medical-group-2026",
+          "domain": "claim-depot.publisher",
           "tier": "C"
         },
         {
-          "name": "JD Supra",
-          "url": "https://www.jdsupra.com/legalnews/close-enough-data-breach-notifications-6919478/",
-          "domain": "jd-supra.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Cyber Magazine",
-          "url": "https://cybermagazine.com/news/gtig-doppel-who-is-behind-the-apollo-data-breach",
-          "domain": "cyber-magazine.publisher",
+          "name": "Claim Depot",
+          "url": "https://www.claimdepot.com/data-breach/genesis-healthcare-2026",
+          "domain": "claim-depot.publisher",
           "tier": "C"
         },
         {
@@ -490,27 +380,9 @@
           "tier": "C"
         },
         {
-          "name": "ClassAction.org",
-          "url": "https://www.classaction.org/data-breach-lawsuits/surgeons-choice-medical-center-august-2026",
-          "domain": "classaction-org.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "DeXpose",
-          "url": "https://www.dexpose.io/direwolf-launches-ransomware-attack-on-aztec-software/",
-          "domain": "dexpose.publisher",
-          "tier": "C"
-        },
-        {
           "name": "Claim Depot",
           "url": "https://www.claimdepot.com/investigations/genesis-healthcare-data-breach-2026",
           "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Security Magazine",
-          "url": "https://www.securitymagazine.com/articles/102509-social-engineering-scheme-led-to-apollo-data-breach",
-          "domain": "security-magazine.publisher",
           "tier": "C"
         },
         {
@@ -526,15 +398,129 @@
           "tier": "C"
         },
         {
+          "name": "Claim Depot",
+          "url": "https://www.claimdepot.com/investigations/iris-healthcare-data-breach-2026",
+          "domain": "claim-depot.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "ClassAction.org",
+          "url": "https://www.classaction.org/data-breach-lawsuits/southern-illinois-university-august-2026",
+          "domain": "classaction-org.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "ClassAction.org",
+          "url": "https://www.classaction.org/data-breach-lawsuits/apollo-global-management-august-2026",
+          "domain": "classaction-org.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "ClassAction.org",
+          "url": "https://www.classaction.org/data-breach-lawsuits/forrestall-cpas-august-2026",
+          "domain": "classaction-org.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "ClassAction.org",
+          "url": "https://www.classaction.org/data-breach-lawsuits/surgeons-choice-medical-center-august-2026",
+          "domain": "classaction-org.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Construction Dive",
+          "url": "https://www.constructiondive.com/news/turner-construction-data-breach-ssns-bank-accounts/828454/",
+          "domain": "construction-dive.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Crypto Briefing",
+          "url": "https://cryptobriefing.com/apollo-cyber-breach-personal-data-accessed/",
+          "domain": "crypto-briefing.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Cyber Magazine",
+          "url": "https://cybermagazine.com/news/gtig-doppel-who-is-behind-the-apollo-data-breach",
+          "domain": "cyber-magazine.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "CyberScoop",
+          "url": "https://cyberscoop.com/apollo-discloses-data-breach-social-engineering-attack/",
+          "domain": "cyberscoop.com",
+          "tier": "C"
+        },
+        {
+          "name": "finance.biggo.com",
+          "url": "https://finance.biggo.com/news/ba18d2e2-ab80-4977-980b-a657be358a0f",
+          "domain": "finance-biggo-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "GlobeNewswire",
+          "url": "https://www.globenewswire.com/news-release/2026/08/24/3349433/0/en/apollo-global-management-data-breach-edelson-lechtzin-llp-launches-investigation-into-exposure-of-personal-information.html",
+          "domain": "globenewswire.publisher",
+          "tier": "C"
+        },
+        {
           "name": "Healthcare IT News",
           "url": "https://www.healthcareitnews.com/news/patient-data-was-breached-anmed-attack",
           "domain": "healthcare-it-news.publisher",
           "tier": "C"
         },
         {
-          "name": "DeXpose",
-          "url": "https://www.dexpose.io/direwolf-ransomware-attack-on-northstar/",
-          "domain": "dexpose.publisher",
+          "name": "Malwarebytes",
+          "url": "https://www.malwarebytes.com/blog/news/2026/08/medical-records-ssns-and-bank-details-exposed-in-carecloud-data-breach",
+          "domain": "malwarebytes.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "PYMNTS.com",
+          "url": "https://www.pymnts.com/cybersecurity/2026/apollo-global-management-social-engineering-attack-data-breach/",
+          "domain": "pymnts-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/technology/apollo-global-confirms-data-breach-after-hackers-target-financial-firms-2026-08-21/",
+          "domain": "reuters.com",
+          "tier": "C"
+        },
+        {
+          "name": "Security Magazine",
+          "url": "https://www.securitymagazine.com/articles/102509-social-engineering-scheme-led-to-apollo-data-breach",
+          "domain": "security-magazine.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://www.securityweek.com/personal-information-exposed-in-apollo-global-data-breach/",
+          "domain": "securityweek.com",
+          "tier": "C"
+        },
+        {
+          "name": "TechRadar",
+          "url": "https://www.techradar.com/pro/security/private-equity-giant-apollo-confirms-data-breach-saw-personal-info-stolen",
+          "domain": "techradar.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "TechRepublic",
+          "url": "https://www.techrepublic.com/article/news-apollo-data-breach-financial-firms-social-engineering/",
+          "domain": "techrepublic.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "WSPA 7News",
+          "url": "https://www.wspa.com/video/anmed-ceo-addresses-cybersecurity-attack-data-breach-from-anmed/12093367/",
+          "domain": "wspa-7news.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/apollo-global-management-apo-down-080914756.html",
+          "domain": "yahoo-finance.publisher",
           "tier": "C"
         }
       ],
@@ -542,416 +528,12 @@
       "published": "2026-08-20T20:19:45+00:00",
       "trace": [
         "tier B (+25)",
-        "26 independent outlets (+36)",
-        "verified: 26 independent outlets",
+        "22 independent outlets (+36)",
+        "verified: 22 independent outlets",
         "importance 4/5 from gemini-3-flash-preview",
         "blend 79 = trust 61 / interest 75 / corrob 100",
         "claims entailed 2/2 (100%)",
-        "judge (gemma-4-26b-a4b-it): all claims supported"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "6a7aa43cbac6b815",
-      "title": "DeepTeam: The Open-Source Penetration Testing Framework for LLMs",
-      "category": "cyber_tools",
-      "one_liner": "A new open-source tool allows for dynamic, automated red teaming of LLMs to find critical vulnerabilities.",
-      "tags": [
-        "ai",
-        "appsec",
-        "exploit",
-        "llm",
-        "opensource",
-        "redteam",
-        "research",
-        "tool"
-      ],
-      "summary": "DeepTeam is a new open-source red teaming framework specifically designed for LLM systems. It allows security researchers to simulate attacks such as prompt injection, jailbreaking, and multi-turn exploitation to identify vulnerabilities like PII leakage, SQL injection, and bias. Unlike traditional methods, DeepTeam generates malicious prompts dynamically rather than relying on a static dataset.",
-      "key_facts": [
-        "Tool: DeepTeam",
-        "Attack Types: Prompt injection, jailbreaking, multi-turn exploitation",
-        "Vulnerabilities: PII leakage, SQL injection, bias"
-      ],
-      "bottom_line": "LLM security testing can now be move from static prompt lists to dynamic, automated attack generation using DeepTeam.",
-      "claims": [
-        {
-          "text": "DeepTeam is an open-source red teaming framework for LLM systems",
-          "support_span": "DeepTeam is an open-source red teaming framework for LLM systems.",
-          "status": "entailed"
-        },
-        {
-          "text": "It can simulate attacks such as prompt injection, jailbreaking, and multi-turn exploitation",
-          "support_span": "It can simulate attacks such as prompt injection, jailbreaking, and multi-turn exploitation",
-          "status": "entailed"
-        },
-        {
-          "text": "DeepTeam generates the attacks dynamically",
-          "support_span": "DeepTeam generates the attacks dynamically.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 46,
-      "interest_score": 75,
-      "corroboration": 4,
-      "blend": 75.2,
-      "critical_signal": "",
-      "priority": "critical",
-      "verdict": "verified",
-      "sources": [
-        {
-          "name": "The Times of India",
-          "url": "https://timesofindia.indiatimes.com/education/news/at-13-this-uae-student-built-an-ai-education-platform-that-won-gold-and-an-open-source-tool-for-ai-developers/articleshow/133450254.cms",
-          "domain": "the-times-of-india.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "TechRepublic",
-          "url": "https://www.techrepublic.com/es/article/this-open-source-microsoft-benchmark-is-a-powerful-server-testing-tool/",
-          "domain": "techrepublic.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Medium pentesting",
-          "url": "https://medium.com/coding-nexus/deepteam-the-open-source-penetration-testing-framework-for-llms-ade1157da798?source=rss------penetration_testing-5",
-          "domain": "medium.com",
-          "tier": "C"
-        },
-        {
-          "name": "ababnews.com",
-          "url": "https://www.ababnews.com/news/608c1678-b152-4af8-890d-01f49dd61d40",
-          "domain": "ababnews-com.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-21T23:45:14+00:00",
-      "trace": [
-        "tier C (+10)",
-        "4 independent outlets (+36)",
-        "verified: 4 independent outlets",
-        "importance 4/5 from gemma-4-31b-it",
-        "blend 75 = trust 46 / interest 75 / corrob 100",
-        "claims entailed 3/3 (100%)",
-        "judge (gemma-4-26b-a4b-it): all claims supported"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "2bcf9ebcc362e84a",
-      "title": "MalSkills: Detecting Malicious Skills in the Agentic Supply Chain via Neuro-symbolic Reasoning",
-      "category": "tech_ai",
-      "one_liner": "Essential reading for anyone using third-party \"skills\" or plugins in their LLM agent workflows.",
-      "tags": [
-        "agents",
-        "ai",
-        "appsec",
-        "dfir",
-        "exploit",
-        "llm",
-        "malware",
-        "research"
-      ],
-      "summary": "MalSkills is a neuro-symbolic framework designed to detect malicious modules (skills) in the agentic supply chain. It combines symbolic parsing with LLM-assisted semantic analysis to extract security-sensitive operations and construct a skill dependency graph. By reasoning over this graph, it can identify suspicious workflows that traditional static or dynamic analysis might miss. In a real-world scan of over 150,000 skills from public registries, MalSkills flagged 620 potentially malicious items, 400 of which were confirmed as malicious.",
-      "key_facts": [
-        "F1 Score: 93%",
-        "Skills analyzed: 150,108",
-        "Registries scanned: 7",
-        "Confirmed malicious skills: 400"
-      ],
-      "bottom_line": "Automated neuro-symbolic analysis has successfully identified hundreds of malicious packages in public LLM agent registries, proving the reality of agentic supply chain attacks.",
-      "claims": [
-        {
-          "text": "MalSkills uses neuro-symbolic reasoning to detect malicious patterns in agent skills.",
-          "support_span": "MalSkills performs neuro-symbolic reasoning to infer malicious patterns or previously unseen suspicious workflows.",
-          "status": "entailed"
-        },
-        {
-          "text": "It achieved a 93% F1 score in benchmarking.",
-          "support_span": "MalSkills achieves 93% F1, outperforming the baselines by 5--87 percentage points.",
-          "status": "entailed"
-        },
-        {
-          "text": "The tool identified 400 confirmed malicious skills in public registries.",
-          "support_span": "apply MalSkills to analyze 150,108 skills collected from 7 public registries, flagging 620 potentially malicious skills. Through manual review, we confirm that 400 of them are indeed malicious",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 70.0,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "verified",
-      "sources": [
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2603.27204",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2603.27204"
-      ],
-      "published": "2026-08-24T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "demoted: critical capped at 5",
-        "importance 5/5 from cache",
-        "blend 70 = trust 70 / interest 100 / corrob 25",
-        "demoted: critical capped at 5",
-        "claims entailed 3/3 (100%)",
-        "judge (gemma-4-26b-a4b-it): all claims supported"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "3cb411a882f64d24",
-      "title": "Connecting the Dots: Securing the Overlooked Corners of the Software Development Lifecycle (SDLC) Supply Chain",
-      "category": "cyber_attacks",
-      "one_liner": "The ChainDrop npm worm highlights how attackers poison CI/CD pipelines and developer environments to harvest cloud secrets and propagate malware.",
-      "tags": [
-        "cloud",
-        "exploit",
-        "identity",
-        "malware",
-        "opensource",
-        "research",
-        "supply-chain",
-        "threat-intel"
-      ],
-      "summary": "Recent threat intelligence from Unit 42 highlights a massive shift in supply-chain attacks toward poisoning the software development lifecycle (SDLC) rather than targeting finished applications. A notable example is the ChainDrop npm worm, which infected over 400 packages—including keyv and cacheable-request—using a stealthy three-step chain involving modified preinstall hooks and the Bun runtime. The worm reads live process memory from GitHub Actions runners to harvest temporary OpenID Connect (OIDC) tokens and credentials, backdoors developer tools like VS Code, and uses Ethereum blockchain transactions for dynamic command-and-control communication. Because modern applications are assembled from thousands of indirect open-source dependencies, these attacks compromise developer laptops, CI/CD pipelines, and cloud environments before code ever reaches production.",
-      "key_facts": [
-        "Infected packages: over 400",
-        "Target libraries: keyv, cacheable-request",
-        "Payload size: 727 KB"
-      ],
-      "bottom_line": "The ChainDrop worm infected over 400 npm packages by exploiting preinstall scripts to harvest GitHub Actions tokens and backdoor developer environments.",
-      "claims": [
-        {
-          "text": "Consider the recent ChainDrop npm worm, which infected over 400 packages including massively popular libraries like keyv and cacheable-request using a highly evasive three-step chain",
-          "support_span": "Consider the recent ChainDrop npm worm, which infected over 400 packages including massively popular libraries like keyv and cacheable-request using a highly evasive three-step chain:",
-          "status": "entailed"
-        },
-        {
-          "text": "The malware triggers silently the second someone runs npm install by misusing npm's setup scripts (preinstall hooks).",
-          "support_span": "The malware triggers silently the second someone runs npm install by misusing npm's setup scripts (preinstall hooks).",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 37,
-      "interest_score": 100,
-      "corroboration": 2,
-      "blend": 69.2,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "corroborated",
-      "sources": [
-        {
-          "name": "Unit42",
-          "url": "https://unit42.paloaltonetworks.com/sdlc-supply-chain/",
-          "domain": "unit42.paloaltonetworks.com",
-          "tier": "B"
-        },
-        {
-          "name": "Unit 42",
-          "url": "https://unit42.paloaltonetworks.com/sdlc-supply-chain/",
-          "domain": "unit-42.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-21T23:00:21+00:00",
-      "trace": [
-        "tier B (+25)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 5/5 from cache",
-        "blend 69 = trust 37 / interest 100 / corrob 50",
-        "demoted: critical capped at 5",
-        "claims entailed 2/2 (100%)",
-        "judge (gemma-4-26b-a4b-it): all claims supported"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "d8b6db3fedaf9261",
-      "title": "Dollar higher after Iran sanctions, loonie drops after US announces tariff increases",
-      "category": "markets",
-      "one_liner": "New US sanctions on Iran and steep tariffs on Canadian imports drive the dollar higher and roil foreign exchange markets.",
-      "tags": [
-        "markets",
-        "policy",
-        "release",
-        "tool"
-      ],
-      "summary": "The U.S. dollar advanced against major currencies following the Trump administration's announcement of expanded secondary sanctions against Iran aimed at cutting off economic lifelines, alongside separate 50% tariffs on Canadian automotive and steel goods set for 2027. Currency markets reacted to reports that Treasury Secretary Scott Bessent may tap the nearly $1 trillion Treasury General Account to fund long-term bond buybacks rather than issuing short-term bills, drawing skepticism from economists regarding long-term national debt impacts. Meanwhile, the Canadian dollar dropped 0.61% following the trade escalation, while Bitcoin gained 2.05% to $78,993.42 after strong weekly momentum.",
-      "key_facts": [
-        "Dollar Index: 98.99 (up 0.17%)",
-        "Canadian Dollar Drop: 0.61% to C$1.385 per dollar",
-        "New US Tariffs on Canada: 50% on cars, trucks, automotive parts, and steel starting January 1, 2027",
-        "Bitcoin Price: $78,993.42 (up 2.05%)"
-      ],
-      "bottom_line": "Aggressive trade and economic penalties by the US are driving currency volatility and forcing retaliatory measures from global trading partners.",
-      "claims": [
-        {
-          "text": "The U.S. dollar advanced on Monday, coming off its third weekly decline in four that sent the greenback to three-month lows after President Donald Trump's administration announced an expansion of sanctions on Iran and separate tariffs on goods from Canada.",
-          "support_span": "The U.S. dollar advanced on Monday, coming off its third weekly decline in four that sent the greenback to three-month lows after President Donald Trump's administration announced an expansion of sanctions on Iran and separate tariffs on goods from Canada.",
-          "status": "entailed"
-        },
-        {
-          "text": "Trade tensions weighed on the Canadian dollar, which weakened 0.61%, its biggest drop since June 17, versus the greenback to C$1.385 per dollar",
-          "support_span": "Trade tensions weighed on the Canadian dollar, which weakened 0.61%, its biggest drop since June 17, versus the greenback to C$1.385 per dollar",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 49,
-      "interest_score": 75,
-      "corroboration": 3,
-      "blend": 68.5,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "verified",
-      "sources": [
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/dollar-higher-after-iran-sanctions-loonie-drops-after-us-announces-tariff-increases-11787599085535.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        },
-        {
-          "name": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/8/24/trump-administration-announces-global-economic-war-on-iran?traffic_source=rss",
-          "domain": "aljazeera.com",
-          "tier": "B"
-        },
-        {
-          "name": "Al Jazeera",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/trump-administration-announces-global-economic-war-on-iran-2?traffic_source=rss",
-          "domain": "aljazeera.com",
-          "tier": "B"
-        },
-        {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/business/dollar-trading-near-multi-month-lows-restrained-by-debt-nerves-2026-08-24/",
-          "domain": "reuters.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-24T15:07:23+00:00",
-      "trace": [
-        "tier B (+25)",
-        "3 independent outlets (+24)",
-        "verified: 3 independent outlets",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 68 = trust 49 / interest 75 / corrob 75",
-        "demoted: critical capped at 5",
-        "claims entailed 2/2 (100%)",
-        "judge (gemma-4-26b-a4b-it): all claims supported"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "55fe64467daa103f",
-      "title": "Alibaba shares plunge 11% after $10.2 billion share placement to fund AI expansion",
-      "category": "markets",
-      "one_liner": "Alibaba's aggressive AI investment strategy is causing short-term profit dips and share dilution, worrying investors.",
-      "tags": [
-        "ai",
-        "exploit",
-        "markets",
-        "tool"
-      ],
-      "summary": "Alibaba shares fell up to 11% on August 24 after the company announced a $10.2 billion (HK$80 billion) share placement to fund its AI expansion. The company will issue 710 million new shares at HK$112.70 each, which is below the previous closing price. Proceeds will be used to strengthen full-stack AI capabilities and upgrade AI infrastructure, following a 75% year-on-year drop in June-quarter net profit due to high AI spending. The deal is expected to close on August 26 with a 90-day lock-up period for new shares.",
-      "key_facts": [
-        "Placement: $10.2 billion (HK$80 billion)",
-        "New Shares: 710 million",
-        "Price per share: HK$112.70",
-        "Net Profit Drop: 75% (June-quarter)"
-      ],
-      "bottom_line": "Alibaba is prioritizing long-term AI dominance over short-term profitability and share value.",
-      "claims": [
-        {
-          "text": "Alibaba announced a $10.2 billion share placement to fund AI expansion.",
-          "support_span": "the Chinese technology major announced an HK$80 billion ($10.2 billion) share placement to raise funds for its artificial intelligence expansion.",
-          "status": "entailed"
-        },
-        {
-          "text": "The company will issue 710 million new shares at HK$112.70 each.",
-          "support_span": "The company plans to issue 710 million new shares at HK$112.70 each",
-          "status": "entailed"
-        },
-        {
-          "text": "June-quarter net profit fell 75% year-on-year.",
-          "support_span": "The company reported a 75% year-on-year fall in June-quarter net profit",
-          "status": "entailed"
-        },
-        {
-          "text": "The deal is expected to close on August 26.",
-          "support_span": "The deal is expected to close on 26 August",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 49,
-      "interest_score": 75,
-      "corroboration": 3,
-      "blend": 68.5,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "verified",
-      "sources": [
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/alibaba-shares-plunge-11-after-10-2-billion-share-placement-to-fund-ai-expansion-11787547880961.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        },
-        {
-          "name": "CNBC Finance",
-          "url": "https://www.cnbc.com/2026/08/24/alibaba-share-placement-drop-ai-hong-kong.html",
-          "domain": "cnbc.com",
-          "tier": "B"
-        },
-        {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/business/retail-consumer/alibaba-set-open-down-8-hong-kong-after-102-billion-share-placement-plan-2026-08-24/",
-          "domain": "reuters.com",
-          "tier": "C"
-        },
-        {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/business/retail-consumer/alibaba-proposes-hong-kong-share-placement-worth-10-billion-2026-08-23/",
-          "domain": "reuters.com",
-          "tier": "C"
-        },
-        {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/business/retail-consumer/alibaba-launches-wan30-ai-video-model-after-10-billion-share-sale-2026-08-24/",
-          "domain": "reuters.com",
-          "tier": "C"
-        },
-        {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/business/retail-consumer/alibaba-shares-fall-8-after-10-billion-hong-kong-share-sale-2026-08-24/",
-          "domain": "reuters.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-23T22:30:45+00:00",
-      "trace": [
-        "tier B (+25)",
-        "3 independent outlets (+24)",
-        "verified: 3 independent outlets",
-        "importance 4/5 from gemma-4-31b-it",
-        "blend 68 = trust 49 / interest 75 / corrob 75",
-        "demoted: critical capped at 5",
-        "claims entailed 4/4 (100%)",
-        "judge (gemma-4-26b-a4b-it): all claims supported"
+        "judge (gemma-4-31b-it): all claims supported"
       ],
       "reject_reason": ""
     },
@@ -959,29 +541,39 @@
       "cluster_key": "529bd65f1ee3c7e8",
       "title": "Detailed Timeline of OpenAI’s Cyberattack on Hugging Face",
       "category": "cyber_tools",
-      "one_liner": "OpenAI is demonstrating the offensive capabilities of its AI models in real-world cyberattacks.",
+      "one_liner": "A landmark Black Hat presentation details an autonomous AI model's successful cyberattack on Hugging Face infrastructure.",
       "tags": [
+        "agents",
         "ai",
-        "exploit",
         "incident",
-        "redteam"
+        "research",
+        "threat-intel"
       ],
-      "summary": "OpenAI presented details at Black Hat regarding a cyberattack conducted by its AI model on Hugging Face. The details and timeline of this offensive cyber operation were shared by Simon Willison.",
-      "key_facts": [],
-      "bottom_line": "AI models can now be used to execute complex, multi-step cyberattacks against major AI platforms like Hugging Face.",
+      "summary": "Bruce Schneier highlights a detailed timeline of a cyberattack conducted by an OpenAI AI model against Hugging Face, as presented at Black Hat. The attack is described as an impressive piece of cyber-offense work, demonstrating the evolving capabilities of AI in executing complex security breaches. The timeline, originally detailed by Simon Willison, provides insight into the specific steps and techniques used by the AI during the operation. This event underscores the growing reality of AI-driven offensive security threats against major AI infrastructure providers.",
+      "key_facts": [
+        "Event: Black Hat presentation",
+        "Target: Hugging Face",
+        "Attacker: OpenAI AI model"
+      ],
+      "bottom_line": "AI models are now capable of executing sophisticated, multi-stage cyberattacks against critical AI infrastructure.",
       "claims": [
         {
-          "text": "OpenAI presented details of its AI’s model’s cyberattack on Hugging Face at Black Hat",
+          "text": "OpenAI presented details of an AI model's attack on Hugging Face at Black Hat.",
           "support_span": "OpenAI presented details of its AI’s model’s cyberattack on Hugging Face at Black Hat last week.",
+          "status": "entailed"
+        },
+        {
+          "text": "Simon Willison provided a detailed timeline of the attack.",
+          "support_span": "Simon Willison details the timeline.",
           "status": "entailed"
         }
       ],
       "trust_score": 61,
-      "interest_score": 50,
+      "interest_score": 75,
       "corroboration": 4,
-      "blend": 67.8,
+      "blend": 79.0,
       "critical_signal": "",
-      "priority": "important",
+      "priority": "critical",
       "verdict": "verified",
       "sources": [
         {
@@ -1003,15 +595,15 @@
           "tier": "B"
         },
         {
-          "name": "Memeburn",
-          "url": "https://memeburn.com/gpt-5-6-sol-vs-claude-opus-5-benchmarks-developer-reports-and-the-hugging-face-breach/",
-          "domain": "memeburn.publisher",
-          "tier": "C"
-        },
-        {
           "name": "Crypto Briefing",
           "url": "https://cryptobriefing.com/alabama-ag-subpoenas-openai-hugging-face-breach/",
           "domain": "crypto-briefing.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Memeburn",
+          "url": "https://memeburn.com/gpt-5-6-sol-vs-claude-opus-5-benchmarks-developer-reports-and-the-hugging-face-breach/",
+          "domain": "memeburn.publisher",
           "tier": "C"
         }
       ],
@@ -1021,271 +613,240 @@
         "tier B (+25)",
         "4 independent outlets (+36)",
         "verified: 4 independent outlets",
-        "importance 3/5 from gemma-4-31b-it",
-        "blend 68 = trust 61 / interest 50 / corrob 100",
-        "demoted: critical capped at 5",
-        "claims entailed 1/1 (100%)",
-        "judge (gemma-4-26b-a4b-it): all claims supported"
+        "importance 4/5 from gemini-3-flash-preview",
+        "blend 79 = trust 61 / interest 75 / corrob 100",
+        "claims entailed 2/2 (100%)",
+        "judge (gemma-4-31b-it): all claims supported"
       ],
       "reject_reason": ""
     },
     {
-      "cluster_key": "a61ad1c701dad2ba",
-      "title": "Surat cyber cell arrests manpower supplier in Rs 33.14 crore fraud probe",
-      "category": "cyber_attacks",
-      "one_liner": "A massive multi-state cyber-fraud and job-scam network routed through shell bank accounts has been cracked down on by Surat police.",
+      "cluster_key": "d8b6db3fedaf9261",
+      "title": "Dollar higher after Iran sanctions, loonie drops after US announces tariff increases",
+      "category": "markets",
+      "one_liner": "Aggressive U.S. sanctions on Iran and steep tariffs on Canada boosted the dollar while disrupting currency markets.",
       "tags": [
-        "dfir",
-        "exploit",
-        "incident",
-        "india",
-        "malware",
-        "threat-intel"
+        "markets",
+        "policy",
+        "release",
+        "tool"
       ],
-      "summary": "The Surat Cyber Crime Cell has arrested a Chennai-based manpower supplier identified as Lovely alias Sameer alias Riv Arora for allegedly routing cyber-fraud proceeds through 34 bank accounts linked to an absconding associate connected to a Chinese gang. Investigators traced 113 complaints across 14 states totaling over Rs 33.14 crore in fraud linked to these accounts, which were allegedly supplied using a three to 3.5 percent commission model. Additionally, the accused operated call centers in multiple Indian cities and ran a separate data-entry job fraud using scraped job portal data to cheat over 750 people out of more than Rs 35 lakh.",
+      "summary": "The U.S. dollar advanced on Monday following an expansion of economic sanctions on Iran announced by Treasury Secretary Scott Bessent and newly imposed 50% tariffs on Canadian automotive and steel goods by President Donald Trump's administration. The sanctions aim to sever economic lifelines sustaining Tehran, while the Canadian dollar suffered its largest drop since June 17 in response to the trade measures. Long-term Treasury yields and potential buyback strategies involving the Treasury General Account also drew market focus as investors awaited upcoming inflation data and comments from Federal Reserve officials.",
       "key_facts": [
-        "Fraud Amount: Rs 33.14 crore (33,14,76,909)",
-        "Complaints Traced: 113 complaints across 14 states",
-        "Bank Accounts Involved: 34 accounts",
-        "Job Fraud Victims: Over 750 people cheated of over Rs 35 lakh",
-        "Statutes Cited: Sections 318(4), 336(2), 338, 336(3), 340(2), 61(2), 3(5) BNS 2023, Section 66(D) IT Amendment Act 2008"
+        "Canadian Tariffs: 50%",
+        "Dollar Index: 98.99",
+        "Bitcoin Price: $78,993.42"
       ],
-      "bottom_line": "A major cyber-fraud network routing millions to overseas syndicates via proxy bank accounts has been dismantled in India.",
+      "bottom_line": "The U.S. dollar rose as the administration expanded secondary sanctions on Iran and enacted heavy tariffs on Canadian goods.",
       "claims": [
         {
-          "text": "The Surat Cyber Crime Cell arrested a Chennai-based manpower supplier for allegedly providing bank accounts to route cyber-fraud proceeds linked to a Chinese gang.",
-          "support_span": "Surat Cyber Crime Cell arrested a Chennai-based manpower supplier for allegedly providing bank accounts to route cyber-fraud proceeds linked to a Chinese gang.",
+          "text": "The U.S. dollar advanced on Monday, coming off its third weekly decline in four that sent the greenback to three-month lows after President Donald Trump's administration announced an expansion of sanctions on Iran and separate tariffs on goods from Canada.",
+          "support_span": "The U.S. dollar advanced on Monday, coming off its third weekly decline in four that sent the greenback to three-month lows after President Donald Trump's administration announced an expansion of sanctions on Iran and separate tariffs on goods from Canada.",
           "status": "entailed"
         },
         {
-          "text": "Police traced 113 complaints involving over Rs 33.14 crore through 34 accounts and uncovered a separate job fraud affecting hundreds",
-          "support_span": "Police traced 113 complaints involving over Rs 33.14 crore through 34 accounts and uncovered a separate job fraud affecting hundreds",
+          "text": "Trade tensions weighed on the Canadian dollar, which weakened 0.61%, its biggest drop since June 17, versus the greenback to C$1.385 per dollar and was on track to snap a three-day streak of gains, after Washington imposed 50% tariffs on Canadian goods...",
+          "support_span": "Trade tensions weighed on the Canadian dollar, which weakened 0.61%, its biggest drop since June 17, versus the greenback to C$1.385 per dollar and was on track to snap a three-day streak of gains, after Washington imposed 50% tariffs on Canadian goods",
           "status": "entailed"
         }
       ],
-      "trust_score": 22,
-      "interest_score": 100,
-      "corroboration": 2,
-      "blend": 65.5,
+      "trust_score": 49,
+      "interest_score": 75,
+      "corroboration": 3,
+      "blend": 68.5,
       "critical_signal": "",
       "priority": "important",
-      "verdict": "corroborated",
+      "verdict": "verified",
       "sources": [
         {
-          "name": "CTI Now",
-          "url": "https://telanganatoday.com/surat-cyber-cell-arrests-manpower-supplier-in-rs-33-14-crore-fraud-probe",
-          "domain": "telanganatoday.com",
-          "tier": "C"
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/24/trump-administration-announces-global-economic-war-on-iran?traffic_source=rss",
+          "domain": "aljazeera.com",
+          "tier": "B"
         },
         {
-          "name": "CTI Now",
-          "url": "https://www.hindustantimes.com/india-news/ed-arrests-2-from-mumbai-in-cyber-fraud-cases-exceeding-rs-27-850-crore-101787583764205.html",
-          "domain": "hindustantimes.com",
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/trump-administration-announces-global-economic-war-on-iran-2?traffic_source=rss",
+          "domain": "aljazeera.com",
+          "tier": "B"
+        },
+        {
+          "name": "Livemint Markets",
+          "url": "https://www.livemint.com/market/dollar-higher-after-iran-sanctions-loonie-drops-after-us-announces-tariff-increases-11787599085535.html",
+          "domain": "livemint.com",
+          "tier": "B"
+        },
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/business/dollar-trading-near-multi-month-lows-restrained-by-debt-nerves-2026-08-24/",
+          "domain": "reuters.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-24T15:34:41+00:00",
+      "published": "2026-08-24T15:07:23+00:00",
       "trace": [
-        "tier C (+10)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 66 = trust 22 / interest 100 / corrob 50",
+        "tier B (+25)",
+        "3 independent outlets (+24)",
+        "verified: 3 independent outlets",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 68 = trust 49 / interest 75 / corrob 75",
         "demoted: critical capped at 5",
         "claims entailed 2/2 (100%)",
-        "judge (gemma-4-26b-a4b-it): all claims supported"
+        "judge (gemma-4-31b-it): all claims supported"
       ],
       "reject_reason": ""
     },
     {
-      "cluster_key": "4682b996d97087fb",
-      "title": "You’re Back In The Room (Citrix NetScaler Pre-Auth RCE CVE-2026-8452(?))",
-      "category": "cyber_tools",
-      "one_liner": "A critical RCE in widely used Citrix NetScaler gateways requires immediate patching of SAML-configured appliances.",
+      "cluster_key": "2c5399be74f1801a",
+      "title": "NVIDIA AVO Reaches 100% on ARC-AGI-3, Demonstrating a Frontier-Level General-Purpose Architecture for Long-Horizon Autonomous Agents",
+      "category": "tech_ai",
+      "one_liner": "Nvidia's AVO agent architecture autonomously optimizes GPU kernels over long horizons, outperforming manual implementations.",
       "tags": [
-        "appsec",
-        "exploit",
-        "identity",
-        "incident",
+        "agents",
+        "ai",
+        "hardware",
+        "howto",
+        "linux",
         "llm",
-        "network",
-        "research",
-        "vulnerability"
+        "markets",
+        "policy"
       ],
-      "summary": "watchTowr Labs has analyzed a Heap Overflow vulnerability in Citrix NetScaler ADC and NetScaler Gateway that allows for Remote Code Execution (RCE). The flaw is reachable when the appliance is configured to use SAML as either a Service Provider or an Identity Provider. Affected versions include NetScaler ADC and NetScaler Gateway 14.1 before 14.1-72.61 and 13.1 before 13.1-63.18. The researchers believe this vulnerability corresponds to CVE-2026-8452, although Citrix has not explicitly confirmed the correlation.",
+      "summary": "Nvidia researchers introduced Agentic Variation Operators (AVO), a general-purpose agent architecture designed for long-horizon autonomous tasks such as GPU-kernel optimization and ARC-AGI-3 benchmarking. AVO replaces traditional evolutionary search steps with an autonomous agent that inspects code, runs hardware-grounded tests, and refines approaches over extended periods. Operating continuously for seven days, AVO produced multihead attention kernels that outperformed cuDNN by up to 3.5% and FlashAttention-4 by up to 10.5% on NVIDIA DGX B200 systems. The framework highlights the importance of system-level mechanisms like persistent memory and supervision in maintaining progress across multistep engineering tasks.",
       "key_facts": [
-        "CVE-2026-8452: suspected Heap Overflow RCE",
-        "Affected: NetScaler ADC and Gateway 14.1 < 14.1-72.61",
-        "Affected: NetScaler ADC and Gateway 13.1 < 13.1-63.18",
-        "Trigger: SAML configuration (SP or IdP)"
+        "Duration: 7 days",
+        "Optimization directions: >500",
+        "Committed kernel versions: 40",
+        "Performance gain over cuDNN: up to 3.5%",
+        "Performance gain over FlashAttention-4: up to 10.5%"
       ],
-      "bottom_line": "Update NetScaler ADC and Gateway to versions 14.1-72.61 or 13.1-63.18 to prevent unauthenticated remote code execution via SAML.",
+      "bottom_line": "Autonomous agent architectures with persistent memory and hardware-grounded execution can successfully engineer high-performance GPU kernels over multi-day horizons.",
       "claims": [
         {
-          "text": "The vulnerability is a Heap Overflow that can lead to Remote Code Execution.",
-          "support_span": "Citrix subtly? silently? loudly? patched a Heap Overflow vulnerability that we’re going to walk through today and show how it can be used to achieve Remote Code Execution.",
-          "status": "entailed"
-        },
-        {
-          "text": "The flaw is reachable when the appliance is configured to use SAML.",
-          "support_span": "the vulnerability we’re discussing today is reachable when the Netscaler appliance is configured to use SAML as either a Service Provider (SP) or an Identity Provider (IdP).",
-          "status": "entailed"
-        },
-        {
-          "text": "NetScaler 14.1 before 14.1-72.61 and 13.1 before 13.1-63.18 are affected.",
-          "support_span": "Citrix lists the following versions as affected: - NetScaler ADC and NetScaler Gateway 14.1 BEFORE 14.1-72.61 - NetScaler ADC and NetScaler Gateway 13.1 BEFORE 13.1-63.18",
+          "text": "In our attention-kernel study, AVO operated continuously for seven days, explored more than 500 optimization directions, and produced 40 committed kernel versions.",
+          "support_span": "In our attention-kernel study, AVO operated continuously for seven days, explored more than 500 optimization directions, and produced 40 committed kernel versions.",
           "status": "entailed"
         }
       ],
-      "trust_score": 40,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 62.5,
+      "trust_score": 49,
+      "interest_score": 75,
+      "corroboration": 3,
+      "blend": 68.5,
       "critical_signal": "",
       "priority": "important",
-      "verdict": "established",
+      "verdict": "verified",
       "sources": [
         {
-          "name": "watchTowr Labs",
-          "url": "https://labs.watchtowr.com/youre-back-in-the-room-citrix-netscaler-pre-auth-rce-cve-2026-8452/",
-          "domain": "labs.watchtowr.com",
-          "tier": "A"
+          "name": "NVIDIA Dev Blog",
+          "url": "https://developer.nvidia.com/blog/nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-level-general-purpose-architecture-for-long-horizon-autonomous-agents/",
+          "domain": "developer.nvidia.com",
+          "tier": "B"
+        },
+        {
+          "name": "Crypto Briefing",
+          "url": "https://cryptobriefing.com/nvidia-avo-agent-arc-agi-3-perfect-score/",
+          "domain": "crypto-briefing.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "NVIDIA Developer",
+          "url": "https://developer.nvidia.com/blog/nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-level-general-purpose-architecture-for-long-horizon-autonomous-agents/",
+          "domain": "nvidia-developer.publisher",
+          "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-14T07:08:20+00:00",
+      "published": "2026-08-21T13:00:00+00:00",
       "trace": [
-        "tier A (+40)",
-        "single outlet, established publication (tier A)",
-        "importance 5/5 from gemma-4-31b-it",
-        "blend 62 = trust 40 / interest 100 / corrob 25",
+        "tier B (+25)",
+        "3 independent outlets (+24)",
+        "verified: 3 independent outlets",
         "demoted: critical capped at 5",
-        "claims entailed 3/3 (100%)",
-        "judge (gemma-4-26b-a4b-it): all claims supported"
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 68 = trust 49 / interest 75 / corrob 75",
+        "demoted: critical capped at 5",
+        "claims entailed 1/1 (100%)",
+        "judge (gemma-4-31b-it): all claims supported"
       ],
       "reject_reason": ""
     },
     {
-      "cluster_key": "4057ced6d5b24673",
-      "title": "CSS:the bomb inside your inbox",
-      "category": "cyber_tools",
-      "one_liner": "A PortSwigger study reveals how webmail CSS/HTML sanitizer flaws and label element abuses allow UI hijacking and token theft.",
+      "cluster_key": "58f66a40c663c669",
+      "title": "Microsoft Patches Severe Entra ID Flaw (CVSS 10.0) Allowing Remote Code Execution",
+      "category": "cyber_attacks",
+      "one_liner": "A maximum-severity RCE in Entra ID was patched by Microsoft, though initial reports of active exploitation were later retracted.",
       "tags": [
-        "ai",
         "appsec",
         "cloud",
         "exploit",
-        "howto",
-        "llm",
-        "research",
-        "tool"
-      ],
-      "summary": "Gareth Heyes from PortSwigger Research published a study on how webmail clients render untrusted CSS and HTML, exposing vulnerabilities where sanitization can be bypassed. The research highlights how HTML label elements with the 'for' attribute can inherit click actions on form elements to hijack user interfaces, control UI ribbons, and pin messages without user consent. Tested across clients like Yahoo Mail, AOL Mail, Fastmail, ProtonMail, Gmail, and Outlook, the findings demonstrate that sanitizers frequently fail to filter dangerous attributes properly. The bugs allow attackers to break trust boundaries, exfiltrate tokens, compromise third-party sites, and execute indirect prompt injections in AI-enabled mail clients.",
-      "key_facts": [
-        "Researcher: Gareth Heyes",
-        "Affected targets: Yahoo Mail, AOL Mail, Fastmail, ProtonMail, GMail, Outlook, OpenAI Atlas"
-      ],
-      "bottom_line": "Webmail sanitizers that fail to strip the 'for' attribute from label elements let malicious emails inherit form clicks and control user interfaces.",
-      "claims": [
-        {
-          "text": "HTML labels are an often overlooked element, using label tags you can target specific form elements that have an id attribute by using the label's for attribute.",
-          "support_span": "HTML labels are an often overlooked element, using label tags you can target specific form elements that have an id attribute by using the label's for attribute.",
-          "status": "entailed"
-        },
-        {
-          "text": "Using the label we can open Outlook's UI ribbon, then we can pin our message to the victim's Outlook.",
-          "support_span": "Using the label we can open Outlook's UI ribbon, then we can pin our message to the victim's Outlook.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 62.5,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "established",
-      "sources": [
-        {
-          "name": "PortSwigger Research",
-          "url": "https://portswigger.net/research/css-the-bomb-inside-your-inbox",
-          "domain": "portswigger.net",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-06T22:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "single outlet, established publication (tier A)",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 62 = trust 40 / interest 100 / corrob 25",
-        "demoted: critical capped at 5",
-        "claims entailed 2/2 (100%)",
-        "judge (gemma-4-26b-a4b-it): all claims supported"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "04e7535e61e612e7",
-      "title": "CRLF-Powered Desync Attacks: Beheading HTTP Streams",
-      "category": "cyber_tools",
-      "one_liner": "An advanced research paper details how Nginx proxy_pass CRLF normalization enables HTTP desync worms and browser-based cookie theft.",
-      "tags": [
-        "appsec",
-        "blueteam",
-        "exploit",
-        "howto",
+        "identity",
         "release",
-        "research",
-        "threat-intel",
-        "vulnerability"
+        "vulnerability",
+        "windows"
       ],
-      "summary": "PortSwigger Research published a paper co-authored with Tobia Righi exploring CRLF-powered HTTP header injection primitives that transform into desync worms, IP-locked desyncs, and browser-based XSS attacks. The research demonstrates how Nginx normalizes the uri variable in proxy_pass directives by url-decoding characters like %0d%0a, allowing attackers to inject new lines and take full control of forwarded requests upstream. By bypassing cross-network restrictions through the victim's browser, the technique can steal HTTPOnly cookies and generate out-of-thin-air XSS. The authors present these findings to warn against underestimated header injection vulnerabilities and help defenders avoid accidental desync disasters.",
+      "summary": "Microsoft has patched a critical remote code execution vulnerability in Entra ID (formerly Azure AD) tracked as CVE-2026-69836 with a CVSS score of 10.0. The flaw resulted from improper validation during the deserialization of untrusted data, potentially allowing unauthenticated network-based code execution. Although Microsoft initially marked the flaw as exploited in the wild, it later corrected the status to 'No' following further investigation. The issue has been fully mitigated on the service side, and customers do not need to take any action.",
       "key_facts": [
-        "Authors: PortSwigger Research and Tobia Righi (TurtleSec)",
-        "Vulnerability type: CRLF-Powered Desync Worm / HTTP Header Injection",
-        "Target software: Nginx"
+        "CVE-2026-69836: CVSS 10.0",
+        "Product: Microsoft Entra ID (Azure AD)",
+        "Vulnerability Type: Deserialization of untrusted data"
       ],
-      "bottom_line": "Nginx proxy_pass configurations that include the unencoded $uri variable allow attackers to inject CRLF sequences and achieve request smuggling and desync attacks.",
+      "bottom_line": "A critical CVSS 10.0 flaw in Entra ID was mitigated by Microsoft before it could be exploited, requiring no action from users but highlighting the severity of cloud identity risks.",
       "claims": [
         {
-          "text": "In Nginx configurations (an extremely popular web server) if the $uri variable is included in the proxy_pass directive, Nginx will normalise the request path before use, url-decoding any encoded characters including CRLF sequences (%0d%0a).",
-          "support_span": "In Nginx configurations (an extremely popular web server) if the $uri variable is included in the proxy_pass directive, Nginx will normalise the request path before use, url-decoding any encoded characters including CRLF sequences (%0d%0a).",
+          "text": "CVE-2026-69836 is a CVSS 10.0 RCE in Entra ID.",
+          "support_span": "The vulnerability, tracked as CVE-2026-69836 (CVSS score: 10.0), is a case of remote code execution impacting the tech giant's cloud-based identity and access management service.",
           "status": "entailed"
         },
         {
-          "text": "This allows us to inject new lines into the request that is forwarded upstream of Nginx, giving us full control over the structure of that request.",
-          "support_span": "This allows us to inject new lines into the request that is forwarded upstream of Nginx, giving us full control over the structure of that request.",
+          "text": "Microsoft corrected the status to indicate the flaw was not exploited.",
+          "support_span": "on August 21, 2026, Microsoft corrected the \"Exploited\" status to \"No\" after The Hacker News contacted the company for comment.",
           "status": "entailed"
         }
       ],
-      "trust_score": 40,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 62.5,
+      "trust_score": 61,
+      "interest_score": 50,
+      "corroboration": 4,
+      "blend": 67.8,
       "critical_signal": "",
       "priority": "important",
-      "verdict": "established",
+      "verdict": "verified",
       "sources": [
         {
-          "name": "PortSwigger Research",
-          "url": "https://portswigger.net/research/crlf-powered-desync-attacks",
-          "domain": "portswigger.net",
-          "tier": "A"
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
+          "domain": "thehackernews.com",
+          "tier": "B"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-warns-of-max-severity-entra-id-flaw-exploited-in-attacks/",
+          "domain": "bleepingcomputer.com",
+          "tier": "C"
+        },
+        {
+          "name": "cyberpress.org",
+          "url": "https://cyberpress.org/critical-microsoft-entra-id-rce-flaw/",
+          "domain": "cyberpress-org.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "finance.biggo.com",
+          "url": "https://finance.biggo.com/news/0ba9f414-6bb2-4501-ade8-2685b3668eff",
+          "domain": "finance-biggo-com.publisher",
+          "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-05T23:30:00+00:00",
+      "published": "2026-08-21T05:22:03+00:00",
       "trace": [
-        "tier A (+40)",
-        "single outlet, established publication (tier A)",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 62 = trust 40 / interest 100 / corrob 25",
+        "tier B (+25)",
+        "4 independent outlets (+36)",
+        "verified: 4 independent outlets",
+        "importance 3/5 from gemini-3-flash-preview",
+        "blend 68 = trust 61 / interest 50 / corrob 100",
         "demoted: critical capped at 5",
         "claims entailed 2/2 (100%)",
-        "judge (gemma-4-26b-a4b-it): all claims supported"
+        "judge (gemma-4-31b-it): all claims supported"
       ],
       "reject_reason": ""
     },
@@ -1342,6 +903,71 @@
         "https://openai.com/index/gpt-5-6-in-kiro"
       ],
       "published": "2026-08-24T12:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "demoted: critical capped at 5",
+        "summary: heuristic extractive (no LLM configured)",
+        "blend 60 = trust 70 / interest 78 / corrob 25",
+        "demoted: critical capped at 5",
+        "claims entailed 3/3 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "4325637bef7a4a8b",
+      "title": "Volumetric Radiology AI in the Era of Multimodal Large Language Models",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: anchored to an official source.",
+      "tags": [
+        "agents",
+        "ai",
+        "exploit",
+        "llm",
+        "markets",
+        "research",
+        "tool"
+      ],
+      "summary": "Computer Science > Artificial Intelligence Title:Volumetric Radiology AI in the Era of Multimodal Large Language Models View PDF HTML (experimental) Abstract:Advances in multimodal large language models (MLLMs) are extending radiological artificial intelligence (AI) beyond task-specific image analysis toward multimodal understanding and reasoning. Volumetric radiology, however, presents a fundamental representational mismatch: clinical interpretation often requires full-volu…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Computer Science > Artificial Intelligence\nTitle:Volumetric Radiology AI in the Era of Multimodal Large Language Models\nView PDF HTML (experimental)\n            Abstract:Advances in multimodal large language models (MLLMs) are extending radiological artificial intelligence (AI) beyond task-specific image analysis toward multimodal understanding and reasoning.",
+          "support_span": "Computer Science > Artificial Intelligence\nTitle:Volumetric Radiology AI in the Era of Multimodal Large Language Models\nView PDF HTML (experimental)\n            Abstract:Advances in multimodal large language models (MLLMs) are extending radiological artificial intelligence (AI) beyond task-specific image analysis toward multimodal understanding and reasoning.",
+          "status": "entailed"
+        },
+        {
+          "text": "Volumetric radiology, however, presents a fundamental representational mismatch: clinical interpretation often requires full-volume spatial context and acquisition-dependent quantitative information, whereas current MLLMs are commonly conditioned on selected two-dimensional (2D) images, compressed visual representations, or report-derived text.",
+          "support_span": "Volumetric radiology, however, presents a fundamental representational mismatch: clinical interpretation often requires full-volume spatial context and acquisition-dependent quantitative information, whereas current MLLMs are commonly conditioned on selected two-dimensional (2D) images, compressed visual representations, or report-derived text.",
+          "status": "entailed"
+        },
+        {
+          "text": "Reliable volumetric radiology AI therefore requires representations that preserve task-relevant three-dimensional (3D) information and systems that can access, verify, and integrate this information across clinical workflows.",
+          "support_span": "Reliable volumetric radiology AI therefore requires representations that preserve task-relevant three-dimensional (3D) information and systems that can access, verify, and integrate this information across clinical workflows.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 78,
+      "corroboration": 1,
+      "blend": 60.1,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "verified",
+      "sources": [
+        {
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2608.20549",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2608.20549"
+      ],
+      "published": "2026-08-24T04:00:00+00:00",
       "trace": [
         "tier A (+40)",
         "primary source anchor (+30)",
@@ -1937,172 +1563,105 @@
       "reject_reason": ""
     },
     {
-      "cluster_key": "57138baff00293d5",
-      "title": "Vibe Coding and Web Application Security: A Twin-Prompt Study",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: anchored to an official source, carried by 2 outlets.",
+      "cluster_key": "08f456205e68a95a",
+      "title": "Critical Keycloak Password Reset Flaw Could Let Unauthenticated Attackers Take Over Any Account",
+      "category": "cyber_attacks",
+      "one_liner": "A critical Keycloak flaw allows unauthenticated account takeover by bypassing the password reset token requirement.",
       "tags": [
-        "agents",
         "appsec",
         "exploit",
-        "llm",
-        "privacy",
+        "identity",
+        "opensource",
         "release",
-        "research",
-        "tool"
+        "vulnerability"
       ],
-      "summary": "Computer Science > Cryptography and Security Title:Vibe Coding and Web Application Security: A Twin-Prompt Study View PDF Abstract:Large language models increasingly generate complete web applications from natural-language prompts, raising the question of whether explicitly requesting security best practice improves the result. We study six functionally distinct web applications, each generated in two prompt variants that are identical except for an appended security-require…",
-      "key_facts": [],
-      "bottom_line": "",
+      "summary": "A critical security flaw in Keycloak (CVE-2026-18963, CVSS 9.1) allows unauthenticated remote attackers to take over any user account, including administrative ones. The vulnerability stems from improper state validation in the password reset flow, enabling attackers to bypass the required email token and transition directly to the password update phase. Patches have been released for upstream Keycloak and Red Hat's commercial builds. Organizations unable to patch immediately are advised to disable the 'Forgot password' functionality across all realms.",
+      "key_facts": [
+        "CVE-2026-18963: CVSS 9.1",
+        "Fixed Version: Keycloak 26.7.2",
+        "Affected: Upstream Keycloak and Red Hat build of Keycloak (RHBK)",
+        "CWE-640: Weak password recovery mechanism"
+      ],
+      "bottom_line": "Update Keycloak to version 26.7.2 immediately or disable the 'Forgot password' feature to prevent unauthenticated administrative account takeovers.",
       "claims": [
         {
-          "text": "Computer Science > Cryptography and Security\nTitle:Vibe Coding and Web Application Security: A Twin-Prompt Study\nView PDF\n            Abstract:Large language models increasingly generate complete web applications from natural-language prompts, raising the question of whether explicitly requesting security best practice improves the result.",
-          "support_span": "Computer Science > Cryptography and Security\nTitle:Vibe Coding and Web Application Security: A Twin-Prompt Study\nView PDF\n            Abstract:Large language models increasingly generate complete web applications from natural-language prompts, raising the question of whether explicitly requesting security best practice improves the result.",
+          "text": "CVE-2026-18963 allows account takeover without user interaction.",
+          "support_span": "The company assessed the severity as Critical because an unauthenticated remote attacker can exploit the flaw without any user interaction.",
           "status": "entailed"
         },
         {
-          "text": "We study six functionally distinct web applications, each generated in two prompt variants that are identical except for an appended security-requirements section: a baseline (A) and a security-aware (B) variant.",
-          "support_span": "We study six functionally distinct web applications, each generated in two prompt variants that are identical except for an appended security-requirements section: a baseline (A) and a security-aware (B) variant.",
-          "status": "entailed"
-        },
-        {
-          "text": "All twelve programs were produced by the same agentic coding assistant and the same model version in a single, non-iterative generation round, and were then analyzed with static, dependency, dynamic and manual techniques, yielding 75 confirmed findings out of 85 candidates.",
-          "support_span": "All twelve programs were produced by the same agentic coding assistant and the same model version in a single, non-iterative generation round, and were then analyzed with static, dependency, dynamic and manual techniques, yielding 75 confirmed findings out of 85 candidates.",
-          "status": "entailed"
+          "text": "Mitigation involves disabling the 'Forgot password' functionality.",
+          "support_span": "For deployments that cannot be updated immediately, Red Hat has published a temporary mitigation -- turn off the \"Forgot password\" functionality across all realms.",
+          "status": "neutral"
         }
       ],
-      "trust_score": 82,
-      "interest_score": 54,
-      "corroboration": 2,
-      "blend": 59.8,
+      "trust_score": 25,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 58.8,
       "critical_signal": "",
       "priority": "important",
-      "verdict": "verified",
+      "verdict": "disputed",
       "sources": [
         {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2608.20963",
-          "domain": "arxiv.org",
-          "tier": "A"
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/critical-keycloak-password-reset-flaw.html",
+          "domain": "thehackernews.com",
+          "tier": "B"
         },
         {
-          "name": "The Cryptonomist",
-          "url": "https://en.cryptonomist.ch/2026/08/24/vibe-coding-security-risks/",
-          "domain": "the-cryptonomist.publisher",
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/critical-keycloak-password-reset-flaw.html",
+          "domain": "thehackernews.com",
           "tier": "C"
         }
       ],
-      "primary_links": [
-        "https://arxiv.org/abs/2608.20963"
-      ],
-      "published": "2026-08-24T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "2 independent outlets (+12)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "demoted: critical capped at 5",
-        "summary: heuristic extractive (no LLM configured)",
-        "blend 60 = trust 82 / interest 54 / corrob 50",
-        "demoted: critical capped at 5",
-        "claims entailed 3/3 (100%)"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "8db9f4ef809f14dd",
-      "title": "Rapid7 Analysis: Microsoft SharePoint Remote Code Execution (CVE-2026-63520)",
-      "category": "cyber_tools",
-      "one_liner": "Rapid7 published an analysis of SharePoint CVE-2026-63520, showing how malicious .bdcm files enable .NET type instantiation and RCE.",
-      "tags": [
-        "appsec",
-        "blueteam",
-        "exploit",
-        "markets",
-        "release",
-        "research",
-        "vulnerability",
-        "windows"
-      ],
-      "summary": "Rapid7 and Microsoft disclosed CVE-2026-63520, an RCE vulnerability in Microsoft SharePoint's Business Data Connectivity (BDC) subsystem caused by unrestricted .NET type instantiation and property setting in the DbTypeReflector class. An authenticated attacker can upload a malicious .bdcm model file to instantiate arbitrary assembly-qualified types from the Global Assembly Cache and achieve OS command execution. When chained with authentication bypass CVE-2026-55040, the flaw results in unauthenticated remote code execution. Because third-party details of the vulnerability were published prematurely, Rapid7 expedited its technical analysis documenting gadget chain construction via ObjectDataProvider.",
-      "key_facts": [
-        "CVE ID: CVE-2026-63520",
-        "Authentication Bypass CVE: CVE-2026-55040",
-        "Affected Software: Microsoft SharePoint Server Subscription Edition version 16.0.19725.20210",
-        "Component: Business Data Connectivity (BDC) subsystem (DbTypeReflector class)"
-      ],
-      "bottom_line": "CVE-2026-63520 allows authenticated attackers to achieve RCE via unsafe .NET type resolution in SharePoint's BDC subsystem, becoming unauthenticated when chained with CVE-2026-55040.",
-      "claims": [
-        {
-          "text": "On August 11, 2026, Rapid7 and Microsoft disclosed CVE-2026-63520, a remote code execution (RCE) vulnerability affecting Microsoft SharePoint.",
-          "support_span": "On August 11, 2026, Rapid7 and Microsoft disclosed CVE-2026-63520, a remote code execution (RCE) vulnerability affecting Microsoft SharePoint.",
-          "status": "entailed"
-        },
-        {
-          "text": "An RCE vulnerability exists in the Microsoft SharePoint Business Data Connectivity (BDC) subsystem.",
-          "support_span": "An RCE vulnerability exists in the Microsoft SharePoint Business Data Connectivity (BDC) subsystem.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 58.8,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "established",
-      "sources": [
-        {
-          "name": "Rapid7 Blog",
-          "url": "https://www.rapid7.com/blog/post/ra-microsoft-sharepoint-remote-code-execution-cve-2026-63520",
-          "domain": "rapid7.com",
-          "tier": "B"
-        }
-      ],
       "primary_links": [],
-      "published": "2026-08-24T16:18:05+00:00",
+      "published": "2026-08-24T11:56:00+00:00",
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 5/5 from gemini-3.5-flash-lite",
+        "demoted: critical capped at 5",
+        "importance 5/5 from gemini-3-flash-preview",
         "blend 59 = trust 25 / interest 100 / corrob 25",
         "demoted: critical capped at 5",
         "claims entailed 2/2 (100%)",
-        "judge (gemma-4-26b-a4b-it): all claims supported"
+        "judge (gemma-4-31b-it): 1 claim(s) unsupported"
       ],
       "reject_reason": ""
     },
     {
-      "cluster_key": "bafd8ce6c4758f65",
-      "title": "CVE-2026-19490: Critical Vulnerability Affecting Citrix NetScaler ADC and NetScaler Gateway",
-      "category": "cyber_tools",
-      "one_liner": "CVE-2026-19490 is a critical CVSS 9.3 authentication bypass flaw in Citrix NetScaler ADC and Gateway requiring emergency patching.",
+      "cluster_key": "d432b85540ff6114",
+      "title": "GitLab CVE-2026-19478 Comes Under Active Exploitation Within Days of Disclosure",
+      "category": "cyber_attacks",
+      "one_liner": "A critical GitLab vulnerability is under active exploitation, allowing unauthenticated attackers to compromise public repositories.",
       "tags": [
-        "blueteam",
+        "ai",
+        "appsec",
         "exploit",
-        "incident",
-        "network",
-        "redteam",
+        "identity",
+        "opensource",
+        "policy",
         "release",
-        "threat-intel",
         "vulnerability"
       ],
-      "summary": "Citrix published a security advisory for CVE-2026-19490, a critical authentication bypass vulnerability affecting NetScaler ADC and NetScaler Gateway appliances with a CVSS v4.0 base score of 9.3. The flaw allows unauthenticated remote attackers to compromise vulnerable perimeter appliances over the network without user interaction or elevated privileges. Affected software versions include NetScaler ADC and Gateway 14.1 prior to 14.1-73.32 and version 13.1 prior to 13.1-63.21, along with specific FIPS and NDcPP builds. Organizations must patch systems on an emergency basis because perimeter networking products are heavily targeted by threat actors for initial access.",
+      "summary": "A critical code injection vulnerability in GitLab (CVE-2026-19478, CVSS 9.4) is being actively exploited just days after its public disclosure. The flaw allows unauthenticated attackers to modify or delete public projects and forge merge records via a GraphQL directive. Security firm watchTowr reported observing exploitation attempts against its honeypot network shortly after the patch was released. Organizations running self-hosted GitLab instances are urged to patch immediately or restrict access to the GraphQL API.",
       "key_facts": [
-        "CVE: CVE-2026-19490",
-        "CVSS Score: 9.3",
-        "Affected: NetScaler ADC and Gateway 14.1 < 14.1-73.32, 13.1 < 13.1-63.21"
+        "CVE-2026-19478: CVSS 9.4",
+        "Affected: GitLab CE/EE 18.2 to 19.2.4",
+        "Mitigation: Restrict /api/graphql",
+        "Vulnerability Type: Code Injection"
       ],
-      "bottom_line": "Unauthenticated attackers can bypass authentication on NetScaler perimeter appliances via CVE-2026-19490, demanding immediate emergency patching.",
+      "bottom_line": "Self-hosted GitLab instances must be updated immediately to prevent unauthenticated attackers from deleting or modifying public projects.",
       "claims": [
         {
-          "text": "CVE-2026-19490 is a critical authentication bypass vulnerability affecting Citrix NetScaler ADC and NetScaler Gateway.",
-          "support_span": "On August 19, 2026, a security advisory was published for CVE-2026-19490, a critical authentication bypass vulnerability affecting Citrix NetScaler ADC and NetScaler Gateway.",
+          "text": "CVE-2026-19478 is under active exploitation.",
+          "support_span": "A newly disclosed security flaw in GitLab has come under active exploitation within days of public disclosure, according to watchTowr.",
           "status": "entailed"
         },
         {
-          "text": "The vulnerability carries a CVSS v4.0 base score of 9.3.",
-          "support_span": "The vulnerability carries a CVSS v4.0 base score of 9.3 and can be exploited remotely by an unauthenticated attacker over the network without user interaction or elevated privileges.",
+          "text": "The flaw allows unauthenticated modification or deletion of public projects.",
+          "support_span": "The vulnerability in question is CVE-2026-19478 (CVSS score: 9.4), a case of code injection that allows an unauthenticated attacker to modify or delete publicly accessible GitLab projects",
           "status": "entailed"
         }
       ],
@@ -2115,22 +1674,231 @@
       "verdict": "established",
       "sources": [
         {
-          "name": "Rapid7 Blog",
-          "url": "https://www.rapid7.com/blog/post/etr-cve-2026-19490-critical-vulnerability-affecting-citrix-netscaler-adc-and-netscaler-gateway",
-          "domain": "rapid7.com",
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html",
+          "domain": "thehackernews.com",
           "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-19T16:46:06+00:00",
+      "published": "2026-08-21T07:04:25+00:00",
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 5/5 from cache",
+        "importance 5/5 from gemini-3-flash-preview",
         "blend 59 = trust 25 / interest 100 / corrob 25",
         "demoted: critical capped at 5",
         "claims entailed 2/2 (100%)",
-        "judge (gemma-4-26b-a4b-it): all claims supported"
+        "judge (gemma-4-31b-it): all claims supported"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "aeefe9990e8fe194",
+      "title": "Hindustan Copper OFS: Government to sell up to 6% stake at  ₹514 per share, 10% below market price",
+      "category": "markets",
+      "one_liner": "The Indian government launched a 6% Hindustan Copper stake sale at a discount following a sharp rally in copper prices.",
+      "tags": [
+        "india",
+        "markets",
+        "policy"
+      ],
+      "summary": "The Indian government has announced an Offer for Sale (OFS) to divest up to a 6% stake in state-run Hindustan Copper at a floor price of 514 rupees per share, representing a 10.45% discount to its previous closing price. The stake sale, valued at approximately 3,000 crore rupees, includes a 3% base offering and an additional 3% green shoe option, with 10% reserved for retail investors and shares set aside for employees. The divestment follows a sharp 17% monthly rally in the stock driven by global copper supply concerns and price spikes, bringing the government's total fiscal disinvestment proceeds to over 52,000 crore rupees.",
+      "key_facts": [
+        "OFS Floor Price: ₹514 per share",
+        "Discount to Market: 10.45%",
+        "Total Stake Offered: Up to 6%",
+        "Valuation of Sale: ~₹3,000 crore",
+        "Fiscal Dis disinvestment Total: ₹52,716 crore"
+      ],
+      "bottom_line": "The Indian government is offering a 6% stake in Hindustan Copper via an OFS at a 10% discount to market price.",
+      "claims": [
+        {
+          "text": "The government is looking to sell up to a 6% stake in the company through the OFS at a floor price of ₹514 per share.",
+          "support_span": "The government is looking to sell up to a 6% stake in the company through the OFS at a floor price of ₹514 per share.",
+          "status": "entailed"
+        },
+        {
+          "text": "The floor price represents a 10.45% discount to Hindustan Copper's closing price of ₹574 on the NSE on Monday.",
+          "support_span": "The floor price represents a 10.45% discount to Hindustan Copper's closing price of ₹574 on the NSE on Monday.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 37,
+      "interest_score": 75,
+      "corroboration": 2,
+      "blend": 58.0,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "corroborated",
+      "sources": [
+        {
+          "name": "Livemint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/hindustan-copper-ofs-government-to-sell-up-to-6-stake-at-rs-514-per-share-10-below-market-price-11787579800581.html",
+          "domain": "livemint.com",
+          "tier": "B"
+        },
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/india/india-sell-up-6-stake-hindustan-copper-via-ofs-2026-08-24/",
+          "domain": "reuters.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-24T13:39:44+00:00",
+      "trace": [
+        "tier B (+25)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 58 = trust 37 / interest 75 / corrob 50",
+        "demoted: critical capped at 5",
+        "claims entailed 2/2 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "4d1433edd1e2651b",
+      "title": "India news Highlights, 24 August 2026 | ‘Hygiene issue’: Licences of five Cricket Club of India restaurants suspended in Mumbai",
+      "category": "india_world",
+      "one_liner": "Track major Indian domestic developments, regulatory suspensions, severe weather alerts, and policy rollbacks across multiple states.",
+      "tags": [
+        "exploit",
+        "incident",
+        "india",
+        "markets",
+        "policy"
+      ],
+      "summary": "India news highlights for August 24, 2026, cover major domestic developments across multiple states. In Mumbai, the Food and Drug Administration suspended the licenses of five Cricket Club of India restaurants over hygiene violations. The India Meteorological Department issued a red alert for eight Delhi districts due to heavy rain and thunderstorms with winds up to 40 kmph. In Tamil Nadu, Chief Minister Joseph Vijay announced the cancellation of the proposed Parandur airport project. In criminal and enforcement updates, the Enforcement Directorate searched nine locations across Uttar Pradesh, Delhi, and Haryana in a bogus Input Tax Credit case, a fire in a Maharashtra government hospital NICU killed three newborns, and fugitive terrorist Goldy Brar claimed responsibility for the killing of Hardeep Singh Nijjar in a leaked audio.",
+      "key_facts": [
+        "Date: August 24, 2026",
+        "Suspended restaurants: 5 at Cricket Club of India, Mumbai",
+        "Hospital fire fatalities: 3 newborns in Maharashtra",
+        "Chlorine gas leak hospitalisations: 40 in Nagpur"
+      ],
+      "bottom_line": "Recent domestic events in India highlight major regulatory crackdowns, political project cancellations in Tamil Nadu, severe weather red alerts in Delhi, and tragic public health incidents.",
+      "claims": [
+        {
+          "text": "The Food and Drug Administration (FDA) has suspended the licences of five restaurants at the Cricket Club of India (CCI) in Mumbai over hygiene-related issues, officials said, according to a report by PTI.",
+          "support_span": "The Food and Drug Administration (FDA) has suspended the licences of five restaurants at the Cricket Club of India (CCI) in Mumbai over hygiene-related issues, officials said, according to a report by PTI.",
+          "status": "entailed"
+        },
+        {
+          "text": "Three newborns were killed in a fire that broke out in the NICU of a Maharashtra government hospital, in one of the most distressing tragedies reported from the state’s public health system in recent memory.",
+          "support_span": "Three newborns were killed in a fire that broke out in the NICU of a Maharashtra government hospital, in one of the most distressing tragedies reported from the state’s public health system in recent memory.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 37,
+      "interest_score": 75,
+      "corroboration": 2,
+      "blend": 58.0,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "corroborated",
+      "sources": [
+        {
+          "name": "Indian Express",
+          "url": "https://indianexpress.com/article/india/today-india-breaking-news-live-updates-24-august-2026-maharashtra-nicu-fire-newborns-ed-searches-goldy-brar-nijjar-10846776/",
+          "domain": "indianexpress.com",
+          "tier": "B"
+        },
+        {
+          "name": "t.co",
+          "url": "https://t.co/oNRb7LJhHY",
+          "domain": "t-co.publisher",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-23T19:57:38+00:00",
+      "trace": [
+        "tier B (+25)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "demoted: critical capped at 5",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 58 = trust 37 / interest 75 / corrob 50",
+        "demoted: critical capped at 5",
+        "claims entailed 2/2 (100%)",
+        "judge (gemma-4-31b-it): all claims supported"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "2608137705a378ef",
+      "title": "Tricky 'SynkLoader' Multitool May Herald Ransomware",
+      "category": "cyber_attacks",
+      "one_liner": "SynkLoader uses novel screen hijacking and custom Python runtimes to bypass EDR and steal credentials.",
+      "tags": [
+        "blueteam",
+        "cloud",
+        "identity",
+        "malware",
+        "ransomware",
+        "redteam",
+        "research",
+        "soc"
+      ],
+      "summary": "Researchers have identified a new malware family called 'SynkLoader' that uses novel techniques to facilitate ransomware attacks. It employs 'screen hijacking' to steal passwords and is delivered via phishing emails from legitimate Microsoft 365 tenants, with installers hosted on Azure storage. SynkLoader uses a custom Python environment and native C-based DLLs to bypass EDR detection and profile target systems. The malware is believed to be the work of initial access brokers or ransomware groups setting the stage for future infections.",
+      "key_facts": [
+        "Malware: SynkLoader",
+        "Discovery Date: Aug 18, 2026",
+        "Delivery: Microsoft 365 tenant and Azure storage",
+        "Technique: Screen hijacking"
+      ],
+      "bottom_line": "SynkLoader represents a sophisticated new threat that leverages legitimate cloud infrastructure and unusual programming environments to evade modern endpoint security.",
+      "claims": [
+        {
+          "text": "SynkLoader uses screen hijacking for password theft.",
+          "support_span": "An advanced, multilingual malware family brings back a trick from yesteryear — screen hijacking — for effective password theft, along with a slew of novel features.",
+          "status": "entailed"
+        },
+        {
+          "text": "The malware uses a custom Python environment to reduce EDR signals.",
+          "support_span": "\"Historically, not a lot of malware has been written in Python, so it reduces one of the endpoint detection and response (EDR) signals, which might raise suspicion if it were another language,\" Hutchins explains.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 37,
+      "interest_score": 75,
+      "corroboration": 2,
+      "blend": 58.0,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "corroborated",
+      "sources": [
+        {
+          "name": "DarkReading",
+          "url": "https://www.darkreading.com/threat-intelligence/tricky-synkloader-multitool-ransomware",
+          "domain": "darkreading.com",
+          "tier": "B"
+        },
+        {
+          "name": "CTI Now",
+          "url": "https://ift.tt/sptAgva",
+          "domain": "ift.tt",
+          "tier": "C"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/threat-intelligence/tricky-synkloader-multitool-ransomware",
+          "domain": "darkreading.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-24T15:02:32+00:00",
+      "trace": [
+        "tier B (+25)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "demoted: critical capped at 5",
+        "importance 4/5 from gemini-3-flash-preview",
+        "blend 58 = trust 37 / interest 75 / corrob 50",
+        "demoted: critical capped at 5",
+        "claims entailed 2/2 (100%)"
       ],
       "reject_reason": ""
     },
@@ -2138,23 +1906,21 @@
       "cluster_key": "d76663ec85907280",
       "title": "Shein IPO: Fast fashion retailer eyes $27 billion price tag in long-awaited Hong Kong listing — What we know",
       "category": "markets",
-      "one_liner": "Shein's discounted Hong Kong IPO highlights the valuation toll taken by regulatory scrutiny and shifting global trade barriers.",
+      "one_liner": "Fast-fashion giant Shein launched its $1.8 billion Hong Kong IPO at a depressed $27 billion valuation amid mounting regulatory scrutiny.",
       "tags": [
         "exploit",
         "markets",
         "policy",
-        "privacy",
         "tool"
       ],
-      "summary": "Fast-fashion major Shein Global Holdings is proceeding with its long-awaited initial public offering in Hong Kong, seeking to raise $1.8 billion by offering 280 million shares at prices between HK$47.6 and HK$49.5 each. This pricing values the company at approximately $25.7 billion to $26.8 billion, a steep drop from its peak $100 billion valuation in 2022 due to regulatory hurdles, tighter US tariffs, and a first-quarter loss of $99 million in 2026. Major cornerstone investors include Boyu Capital, Tiger Global, General Atlantic, Tencent, and UBS AM Singapore, with the company scheduled to debut on September 1. Meanwhile, the company faces ongoing US regulatory scrutiny, including a voluntary CFIUS review over its Everlane acquisition due to consumer data privacy concerns.",
+      "summary": "Fast-fashion retailer Shein Global Holdings initiated the final leg of its long-awaited initial public offering in Hong Kong, aiming to raise $1.8 billion by offering 280 million shares at HK$47.6 to HK$49.5 each. The valuation of $25.7 to $26.8 billion is a sharp drop from its near $100 billion valuation in 2022, impacted by stricter regulatory hurdles, US tariffs, and a swing to a $99 million net loss in the first quarter of 2026. Major cornerstone investors including Boyu Capital, Tiger Global, and Tencent have committed capital, with the stock scheduled to debut on September 1.",
       "key_facts": [
-        "IPO Target: $1.8 billion (HK$13.9 billion)",
-        "Valuation: $25.7 billion to $26.8 billion",
-        "Share Price: HK$47.6 to HK$49.5",
-        "Listing Date: September 1",
-        "Q1 2026 Financials: $99 million loss"
+        "IPO target raise: $1.8 billion (HK$13.9 billion)",
+        "Valuation: $25.7 to $26.8 billion",
+        "Listing date: September 1, Hong Kong Stock Exchange",
+        "Q1 2026 financial result: $99 million net loss"
       ],
-      "bottom_line": "Shein is entering the public markets at a quarter of its former peak valuation amid intense geopolitical and regulatory headwinds.",
+      "bottom_line": "Shein is proceeding with a Hong Kong IPO valuing the company at roughly $27 billion, representing a massive discount from its pandemic peak due to regulatory headwinds.",
       "claims": [
         {
           "text": "Fast fashion major Shein Global Holdings is in the final leg of its long-winded initial public offering (IPO) journey, seeking to raise $1.8 billion (HK$13.9 billion) in Hong Kong, according to a Bloomberg report today.",
@@ -2198,194 +1964,42 @@
         "importance 4/5 from gemini-3.5-flash-lite",
         "blend 58 = trust 37 / interest 75 / corrob 50",
         "demoted: critical capped at 5",
-        "claims entailed 2/2 (100%)",
-        "judge (gemma-4-26b-a4b-it): all claims supported"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "4d1433edd1e2651b",
-      "title": "India news Highlights, 24 August 2026 | ‘Hygiene issue’: Licences of five Cricket Club of India restaurants suspended in Mumbai",
-      "category": "india_world",
-      "one_liner": "A day of significant domestic developments in India ranging from public safety tragedies to major infrastructure reversals and security claims.",
-      "tags": [
-        "exploit",
-        "incident",
-        "india",
-        "policy"
-      ],
-      "summary": "India's news highlights for August 24, 2026, include the suspension of five restaurant licenses at Mumbai's Cricket Club of India due to hygiene violations. In a major infrastructure reversal, Tamil Nadu CM Vijay announced the cancellation of the Parandur airport project. Tragedies were reported in Maharashtra, where a hospital fire killed three newborns and a gas leak affected 40 people. Additionally, fugitive terrorist Goldy Brar claimed responsibility for the killing of Hardeep Singh Nijjar in a leaked audio recording, while the Enforcement Directorate conducted searches across multiple states in a GST fraud case.",
-      "key_facts": [
-        "Restaurants suspended: 5",
-        "Hospital deaths: 3 newborns",
-        "ED searches: 9 premises",
-        "Rain alert: 8 Delhi districts"
-      ],
-      "bottom_line": "Major infrastructure plans in Tamil Nadu have been scrapped, while public health and security incidents dominate the national news cycle.",
-      "claims": [
-        {
-          "text": "The FDA suspended five restaurant licenses at the Cricket Club of India in Mumbai.",
-          "support_span": "The Food and Drug Administration (FDA) has suspended the licences of five restaurants at the Cricket Club of India (CCI) in Mumbai over hygiene-related issues",
-          "status": "entailed"
-        },
-        {
-          "text": "Tamil Nadu CM Vijay dropped the Parandur airport project.",
-          "support_span": "Tamil Nadu Chief Minister Joseph Vijay announced in the Assembly that the Parandur airport project will be dropped, ending the state’s plans for the proposed airport.",
-          "status": "entailed"
-        },
-        {
-          "text": "Three newborns died in a Maharashtra hospital NICU fire.",
-          "support_span": "Three newborns were killed in a fire that broke out in the NICU of a Maharashtra government hospital",
-          "status": "entailed"
-        },
-        {
-          "text": "Goldy Brar claimed responsibility for the killing of Hardeep Singh Nijjar.",
-          "support_span": "Fugitive terrorist Goldy Brar has claimed in a leaked audio that he and his associates killed separatist Hardeep Singh Nijjar",
-          "status": "neutral"
-        }
-      ],
-      "trust_score": 37,
-      "interest_score": 75,
-      "corroboration": 2,
-      "blend": 58.0,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "disputed",
-      "sources": [
-        {
-          "name": "Indian Express",
-          "url": "https://indianexpress.com/article/india/today-india-breaking-news-live-updates-24-august-2026-maharashtra-nicu-fire-newborns-ed-searches-goldy-brar-nijjar-10846776/",
-          "domain": "indianexpress.com",
-          "tier": "B"
-        },
-        {
-          "name": "t.co",
-          "url": "https://t.co/oNRb7LJhHY",
-          "domain": "t-co.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-23T19:57:38+00:00",
-      "trace": [
-        "tier B (+25)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "demoted: critical capped at 5",
-        "importance 4/5 from gemini-3-flash-preview",
-        "blend 58 = trust 37 / interest 75 / corrob 50",
-        "demoted: critical capped at 5",
-        "claims entailed 4/4 (100%)",
-        "judge (gemma-4-26b-a4b-it): 1 claim(s) unsupported"
-      ],
-      "reject_reason": ""
-    },
-    {
-      "cluster_key": "2608137705a378ef",
-      "title": "Tricky 'SynkLoader' Multitool May Herald Ransomware",
-      "category": "cyber_attacks",
-      "one_liner": "A sophisticated new multi-language loader uses legitimate Microsoft infrastructure to bypass EDR and profile systems.",
-      "tags": [
-        "blueteam",
-        "cloud",
-        "incident",
-        "malware",
-        "ransomware",
-        "redteam",
-        "research",
-        "supply-chain"
-      ],
-      "summary": "A new malware family named \"SynkLoader\" has been identified, using a multi-stage infection process involving Python environments and native C DLLs to evade EDR signals. The attack begins with phishing emails from a legitimate-looking Microsoft 365 tenant, hosting malicious installers on Azure storage. SynkLoader includes a system profiler and screen-hijacking capabilities, suggesting it is being used by initial access brokers to prepare for ransomware deployments.",
-      "key_facts": [
-        "First deployment: July 28",
-        "Discovery date: Aug 18",
-        "Language: Python and C DLLs"
-      ],
-      "bottom_line": "SynkLoader represents a new class of evasive malware that combines Python and native C components to hide malicious behavior within legitimate processes.",
-      "claims": [
-        {
-          "text": "SynkLoader uses a combination of Python and native C DLLs to evade detection.",
-          "support_span": "That bridge creates a way to take malicious behavior but run it inside of a Python process.",
-          "status": "entailed"
-        },
-        {
-          "text": "The malware installer includes a PowerShell script, a Python environment, and fake Microsoft DLLs.",
-          "support_span": "The SynkLoader installer comes with a cascade of malicious doodads: a PowerShell script that executes its instructions in temporary memory, a minimalist Python environment, a malicious Python script that beacons back to the attacker's command-and-control (C2) domains, and a couple of handfuls of fake Microsoft runtime dynamic link libraries (DLLs).",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 37,
-      "interest_score": 75,
-      "corroboration": 2,
-      "blend": 58.0,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "corroborated",
-      "sources": [
-        {
-          "name": "DarkReading",
-          "url": "https://www.darkreading.com/threat-intelligence/tricky-synkloader-multitool-ransomware",
-          "domain": "darkreading.com",
-          "tier": "B"
-        },
-        {
-          "name": "Dark Reading",
-          "url": "https://www.darkreading.com/threat-intelligence/tricky-synkloader-multitool-ransomware",
-          "domain": "darkreading.com",
-          "tier": "C"
-        },
-        {
-          "name": "CTI Now",
-          "url": "https://ift.tt/sptAgva",
-          "domain": "ift.tt",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-24T15:02:32+00:00",
-      "trace": [
-        "tier B (+25)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 4/5 from gemini-3-flash-preview",
-        "blend 58 = trust 37 / interest 75 / corrob 50",
-        "demoted: critical capped at 5",
         "claims entailed 2/2 (100%)"
       ],
       "reject_reason": ""
     },
     {
-      "cluster_key": "09b5c405e45d7558",
-      "title": "ToxicPanda Banking Trojan Matures Into Enterprise Threat",
+      "cluster_key": "3cb411a882f64d24",
+      "title": "Connecting the Dots: Securing the Overlooked Corners of the Software Development Lifecycle (SDLC) Supply Chain",
       "category": "cyber_attacks",
-      "one_liner": "ToxicPanda 2.0 leverages Android developer features to gain shell access and target 349 financial apps.",
+      "one_liner": "Supply chain attacks are evolving to target CI/CD memory and developer IDEs to steal cloud tokens and propagate malware.",
       "tags": [
-        "android",
-        "cloud",
+        "appsec",
         "exploit",
         "identity",
-        "incident",
         "malware",
-        "release",
-        "research"
+        "opensource",
+        "research",
+        "supply-chain",
+        "tool"
       ],
-      "summary": "ToxicPanda 2.0, an evolved Android banking Trojan, has expanded its targeting from 16 to 349 financial and crypto applications across 16 countries. The malware now abuses Android's Wireless Debugging and Accessibility Services to gain shell-level access and establish persistence via ADB. It uses lock-screen overlays to steal credentials and is distributed via AWS-hosted buckets, posing a threat to both personal finances and enterprise resources accessed via mobile.",
+      "summary": "Unit 42 research details a shift in supply chain attacks targeting the software development lifecycle (SDLC), specifically CI/CD pipelines and developer tools. The 'ChainDrop' npm worm exemplifies this trend, having infected over 400 packages by stealing OIDC tokens from GitHub Actions runners and backdooring VS Code configurations. Attackers are increasingly poisoning the 'digital factory' to gain access to production environments before code is even deployed. This evolution makes traditional security measures like SBOMs insufficient for modern threat landscapes.",
       "key_facts": [
-        "Targeted apps: 349",
-        "Remote commands: 167",
-        "Countries affected: 16",
-        "Mechanism: Wireless Debugging/ADB abuse"
+        "Malware: ChainDrop npm worm",
+        "Affected: 400+ packages",
+        "Target: GitHub Actions OIDC tokens",
+        "Persistence: VS Code tasks.json"
       ],
-      "bottom_line": "ToxicPanda has matured into a sophisticated threat that uses Wireless Debugging to gain full shell-level control over Android devices.",
+      "bottom_line": "Security teams must shift focus from scanning finished software to monitoring the integrity of the CI/CD pipeline and developer environments where tokens are exposed.",
       "claims": [
         {
-          "text": "ToxicPanda 2.0 targets 349 banking, e-wallet, and cryptocurrency applications.",
-          "support_span": "ToxicPanda 2.0 expands substantially on its predecessor, adding 167 remote commands and broadening its targeting from 16 financial institutions to 349 banking, e-wallet, and cryptocurrency applications, according to recent research from Zimperium zLabs.",
+          "text": "The ChainDrop worm infected over 400 packages.",
+          "support_span": "Consider the recent ChainDrop npm worm, which infected over 400 packages including massively popular libraries like keyv and cacheable-request using a highly evasive three-step chain",
           "status": "entailed"
         },
         {
-          "text": "The malware abuses Android's Wireless Debugging to obtain shell-level access.",
-          "support_span": "ToxicPanda 2.0 also abuses Android's Wireless Debugging capability, introduced in Android 11, as a mechanism for privilege escalation.",
+          "text": "ChainDrop steals OIDC tokens from GitHub Actions runners.",
+          "support_span": "a hidden Python script directly read live process memory from GitHub Actions runners to steal temporary OpenID Connect (OIDC) tokens and secrets",
           "status": "entailed"
         }
       ],
@@ -2398,28 +2012,124 @@
       "verdict": "corroborated",
       "sources": [
         {
-          "name": "DarkReading",
-          "url": "https://www.darkreading.com/mobile-security/toxicpanda-banking-trojan-matures-enterprise-threat",
-          "domain": "darkreading.com",
+          "name": "Unit42",
+          "url": "https://unit42.paloaltonetworks.com/sdlc-supply-chain/",
+          "domain": "unit42.paloaltonetworks.com",
           "tier": "B"
         },
         {
-          "name": "CTI Now",
-          "url": "https://ift.tt/7KcdXN3",
-          "domain": "ift.tt",
+          "name": "Unit 42",
+          "url": "https://unit42.paloaltonetworks.com/sdlc-supply-chain/",
+          "domain": "unit-42.publisher",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-24T14:34:59+00:00",
+      "published": "2026-08-21T23:00:21+00:00",
       "trace": [
         "tier B (+25)",
         "2 independent outlets (+12)",
         "corroborated by 2 independent outlets",
+        "demoted: critical capped at 5",
         "importance 4/5 from gemini-3-flash-preview",
         "blend 58 = trust 37 / interest 75 / corrob 50",
         "demoted: critical capped at 5",
-        "claims entailed 2/2 (100%)"
+        "claims entailed 2/2 (100%)",
+        "judge (gemma-4-31b-it): all claims supported"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "a74562170c2a5e6f",
+      "title": "PoC Exploit Released for Microsoft SCCM Vulnerability Enabling SYSTEM-Level Code Execution",
+      "category": "cyber_tools",
+      "one_liner": "A public PoC for Microsoft SCCM gives attackers an easy path to SYSTEM-level compromise, making immediate patching mandatory.",
+      "tags": [
+        "exploit",
+        "release",
+        "vulnerability",
+        "windows",
+        "writeup"
+      ],
+      "summary": "A proof-of-concept exploit has been released for a Microsoft SCCM vulnerability that enables SYSTEM-level code execution. The release of this exploit increases the risk of active exploitation against vulnerable enterprise deployments. Administrators must prioritize patching or mitigating the affected SCCM instances immediately to prevent full domain compromise. The article consists solely of a headline and source without further technical details.",
+      "key_facts": [],
+      "bottom_line": "SYSTEM-level code execution in SCCM via a released PoC demands emergency patch deployment for all affected infrastructure.",
+      "claims": [],
+      "trust_score": 10,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 55.0,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "unverified",
+      "sources": [
+        {
+          "name": "gbhackers.com",
+          "url": "https://gbhackers.com/poc-exploit-released-for-microsoft-sccm-vulnerability/",
+          "domain": "gbhackers-com.publisher",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-20T05:17:30+00:00",
+      "trace": [
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 55 = trust 10 / interest 100 / corrob 25",
+        "claims entailed 0/0 (0%)"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "cb660d21615e9ce6",
+      "title": "Windows Zero-Day Hits Patch Tuesday: 421 CVEs Fixed [2026] - tech-insider.org",
+      "category": "cyber_attacks",
+      "one_liner": "Cyber Attacks: single report, unconfirmed.",
+      "tags": [
+        "exploit",
+        "vulnerability",
+        "windows"
+      ],
+      "summary": "Windows Zero-Day Hits Patch Tuesday: 421 CVEs Fixed [2026] tech-insider.org",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Windows Zero-Day Hits Patch Tuesday: 421 CVEs Fixed [2026] tech-insider.org",
+          "support_span": "Windows Zero-Day Hits Patch Tuesday: 421 CVEs Fixed [2026] tech-insider.org",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 55.0,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "unverified",
+      "sources": [
+        {
+          "name": "GN Zero-day watch",
+          "url": "https://tech-insider.org/windows-zero-day-patch-tuesday-421-cves-2026/",
+          "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "GN Zero-day watch",
+          "url": "https://tech-insider.org/cisco-asa-ftd-zero-day-cve-2026-20349/",
+          "domain": "news.google.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-22T03:21:51+00:00",
+      "trace": [
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "summary: heuristic extractive (no LLM configured)",
+        "blend 55 = trust 10 / interest 100 / corrob 25",
+        "claims entailed 1/1 (100%)"
       ],
       "reject_reason": ""
     },
@@ -2427,33 +2137,27 @@
       "cluster_key": "c686be971d651628",
       "title": "Access to Zambian courts prevented as election petition deadline looms",
       "category": "india_world",
-      "one_liner": "A major democratic crisis in Zambia as the judiciary is physically blocked from hearing election challenges.",
+      "one_liner": "Track the political crisis and judicial access restrictions in Zambia as the deadline to file presidential election petitions expires.",
       "tags": [
-        "incident",
+        "markets",
         "policy"
       ],
-      "summary": "Zambian authorities have sealed off major courts in Lusaka just as the deadline for filing a petition against the recent presidential election results approaches. Opposition candidate Brian Mundubile, who came second with 38% of the vote, intended to challenge incumbent Hakainde Hichilema's victory but is currently in hiding due to alleged threats. The Law Association of Zambia has expressed concern over the lack of official explanation for the closure, which effectively prevents legal challenges to the election. Despite the shutdown, preparations for Hichilema's inauguration on September 1 are continuing.",
+      "summary": "Court premises in Lusaka and across Zambia have been abruptly sealed off with armed police and military presence as the deadline approaches for filing an election petition against the presidential election outcome. Incumbent President Hakainde Hichilema secured a second term with 60% of the vote, while runner-up Brian Mundubile of the opposition secured 38% and planned to challenge the results due to alleged irregularities. Mundubile remains in hiding following post-election violence that included the fatal shooting of a former minister and arrests of opposition figures. The Law Association of Zambia expressed deep concern over the unannounced court closures, warning that they severely impede access to justice during a critical constitutional window.",
       "key_facts": [
-        "Election result: 60% (Hichilema) vs 38% (Mundubile)",
-        "Deadline: Monday (filing petition)",
-        "Inauguration date: September 1",
-        "Location: Lusaka, Zambia"
+        "Incumbent vote share: 60%",
+        "Opposition vote share: 38%",
+        "Inauguration date: September 1"
       ],
-      "bottom_line": "The physical closure of Zambian courts at a critical electoral deadline represents a significant breakdown in the rule of law and access to justice.",
+      "bottom_line": "Zambian court premises have been sealed off by security forces ahead of the election petition deadline, drawing strong condemnation from the Law Association of Zambia over compromised access to justice.",
       "claims": [
         {
-          "text": "Zambian courts were shut down as the election petition deadline approached.",
+          "text": "Court premises in the Zambian capital, Lusaka, and elsewhere have been shut as the deadline for filing a petition against the outcome of the recent presidential election approaches.",
           "support_span": "Court premises in the Zambian capital, Lusaka, and elsewhere have been shut as the deadline for filing a petition against the outcome of the recent presidential election approaches.",
           "status": "entailed"
         },
         {
-          "text": "Opposition candidate Brian Mundubile came second with 38% of the vote.",
-          "support_span": "Opposition candidate Brian Mundubile said he would challenge the election result, citing irregularities, after coming second with a 38% share of the vote.",
-          "status": "entailed"
-        },
-        {
-          "text": "The inauguration of Hakainde Hichilema is scheduled for September 1.",
-          "support_span": "Such a petition could potentially affect the inauguration of Hichilema, which is scheduled for 1 September.",
+          "text": "Incumbent Hakainde Hichilema won a second term with 60%.",
+          "support_span": "Incumbent Hakainde Hichilema won a second term with 60%.",
           "status": "entailed"
         }
       ],
@@ -2477,9 +2181,10 @@
       "trace": [
         "tier A (+40)",
         "single outlet, established publication (tier A)",
-        "importance 4/5 from gemini-3-flash-preview",
+        "importance 4/5 from gemini-3.5-flash-lite",
         "blend 51 = trust 40 / interest 75 / corrob 25",
-        "claims entailed 3/3 (100%)"
+        "claims entailed 2/2 (100%)",
+        "judge (gemma-4-31b-it): all claims supported"
       ],
       "reject_reason": ""
     },
@@ -2487,7 +2192,7 @@
       "cluster_key": "b48e812170e2cd8c",
       "title": "The formidable challenges facing new Tata boss",
       "category": "india_world",
-      "one_liner": "A leadership crisis at India's largest conglomerate that directly impacts its massive semiconductor and EV expansion plans.",
+      "one_liner": "Tata Sons faces leadership turmoil and strategic uncertainty following N Chandrasekaran's shock resignation amid massive capital expenditures.",
       "tags": [
         "ai",
         "exploit",
@@ -2497,22 +2202,16 @@
         "release",
         "vulnerability"
       ],
-      "summary": "Tata Sons is searching for a new chairman following the shock resignation of N Chandrasekaran due to a rift with Tata Trusts over capital allocation and a potential public listing. The successor faces the challenge of managing a $300 billion empire while navigating heavy losses in new unlisted ventures like semiconductors, e-commerce, and aviation. The group's traditional cash cow, TCS, is facing its own challenges from AI, making the transition critical for the conglomerate's future stability.",
+      "summary": "The abrupt resignation of Tata Sons chairman N Chandrasekaran has left corporate India's top position vacant amid ideological friction with Tata Trusts over public listings and heavy capital allocation. The conglomerate is deep into an unprecedented capital investment cycle spanning semiconductor fabrication, electric vehicle batteries, and turning around Air India, all while its traditional cash cow TCS faces AI-driven business model disruptions. Finding a successor who can manage complex regulatory relationships, absorb massive risks across bleeding unlisted ventures, and balance stakeholder expectations presents a formidable challenge for the selection committee.",
       "key_facts": [
-        "Empire value: $300bn",
-        "TCS cash flow contribution: 85%",
-        "Unlisted businesses: semiconductors, e-commerce, aviation"
+        "Group valuation: $300bn empire",
+        "Resigned executive: N Chandrasekaran"
       ],
-      "bottom_line": "The next Tata chairman must stabilize a $300bn empire where new loss-making ventures are currently outstripping the cash flow of its traditional software pillar.",
+      "bottom_line": "Tata Sons must navigate leadership instability and heavy cash burn in new ventures following the shock resignation of its chairman.",
       "claims": [
         {
-          "text": "Tata Sons chairman N Chandrasekaran resigned following a rift with Tata Trusts.",
-          "support_span": "Chandrasekaran resigned amid a deadlock over his reappointment and a widening rift with Tata Trusts - the charity arm which owns controlling shares of the unlisted commercial holding company.",
-          "status": "entailed"
-        },
-        {
-          "text": "TCS contributes approximately 85% of the group's cash flows.",
-          "support_span": "TCS has been the group's cash cow, contributing to some 85% of cash flows, but is no longer the pillar of support it once was.",
+          "text": "The shock resignation of Tata Sons chairman N Chandrasekaran earlier this month has left corporate India's top job vacant.",
+          "support_span": "The shock resignation of Tata Sons chairman N Chandrasekaran earlier this month has left corporate India's top job vacant.",
           "status": "entailed"
         }
       ],
@@ -2536,190 +2235,240 @@
       "trace": [
         "tier A (+40)",
         "single outlet, established publication (tier A)",
-        "importance 4/5 from gemini-3-flash-preview",
+        "importance 4/5 from gemini-3.5-flash-lite",
         "blend 51 = trust 40 / interest 75 / corrob 25",
-        "claims entailed 2/2 (100%)"
+        "claims entailed 1/1 (100%)",
+        "judge (gemma-4-31b-it): all claims supported"
       ],
       "reject_reason": ""
     },
     {
-      "cluster_key": "71733a0355c0ddf7",
-      "title": "Who Got Missed in the MFA Rollout&#x3f; More Powershell &#x2b; Graph &#x2b; Entra scripting&#x21;, (Fri, Aug 21st)",
+      "cluster_key": "b49c48ec7675f9ca",
+      "title": "Cybercriminals Turn GTA VI Leaks Into Malware Bait",
       "category": "cyber_attacks",
-      "one_liner": "Use this specific Microsoft Graph PowerShell script to quickly audit and root out accounts missing MFA or relying on insecure methods like SMS in your tenant.",
+      "one_liner": "Cyber Attacks: single report, unconfirmed.",
       "tags": [
-        "cloud",
-        "exploit",
-        "identity",
-        "llm",
-        "policy",
+        "blueteam",
+        "linux",
+        "malware",
+        "research",
         "tool",
         "windows"
       ],
-      "summary": "Administrators can use newly detailed PowerShell and Microsoft Graph beta commands to audit Entra ID user accounts and identify individuals who have not registered for multi-factor authentication. By querying the Get-MgBetaReportAuthenticationMethodUserRegistrationDetail cmdlet, security teams can extract non-MFA users and review specific sign-in mechanisms such as voice callbacks or SMS. This auditing method allows organizations to enforce stricter compliance policies and uncover unexpected accounts that bypass security requirements. The script outputs findings directly into a GridView for rapid investigation.",
-      "key_facts": [
-        "Module: Microsoft.Graph.Beta.Reports",
-        "Command: Get-MgBetaReportAuthenticationMethodUserRegistrationDetail",
-        "Scopes: AuditLog.Read.All, User.Read.All"
-      ],
-      "bottom_line": "Running this specific Graph query immediately exposes accounts lingering without MFA or relying on weak secondary methods.",
+      "summary": "GTA VI hype has reached the point where people are volunteering to infect their own computers just to check if a leak is real. Someone on X asked their followers to “take one for the team” and test a 113GB file claiming to be a playable Grand Theft Auto VI build, according to Tom’s Hardware’s reporting. Someone did, and the results were exactly what you’d expect.",
+      "key_facts": [],
+      "bottom_line": "",
       "claims": [
         {
-          "text": "The script uses the Get-MgBetaReportAuthenticationMethodUserRegistrationDetail cmdlet to find users not yet registered for MFA.",
-          "support_span": "$AllMFADetails = Get-MgBetaReportAuthenticationMethodUserRegistrationDetail -All",
+          "text": "GTA VI hype has reached the point where people are volunteering to infect their own computers just to check if a leak is real.",
+          "support_span": "GTA VI hype has reached the point where people are volunteering to infect their own computers just to check if a leak is real.",
           "status": "entailed"
         },
         {
-          "text": "The script filters for users where IsMfaRegistered is false.",
-          "support_span": "$NonMFAUsers = $AllMFAdetails | Where-Object { $_.IsMfaRegistered -eq $false }",
+          "text": "Someone on X asked their followers to “take one for the team” and test a 113GB file claiming to be a playable Grand Theft Auto VI build, according to Tom’s Hardware’s reporting.",
+          "support_span": "Someone on X asked their followers to “take one for the team” and test a 113GB file claiming to be a playable Grand Theft Auto VI build, according to Tom’s Hardware’s reporting.",
+          "status": "entailed"
+        },
+        {
+          "text": "Someone did, and the results were exactly what you’d expect.",
+          "support_span": "Someone did, and the results were exactly what you’d expect.",
           "status": "entailed"
         }
       ],
-      "trust_score": 40,
-      "interest_score": 75,
+      "trust_score": 25,
+      "interest_score": 78,
       "corroboration": 1,
-      "blend": 51.2,
+      "blend": 48.9,
       "critical_signal": "",
       "priority": "important",
       "verdict": "established",
       "sources": [
         {
-          "name": "SANS ISC Diary",
-          "url": "https://isc.sans.edu/diary/rss/33272",
-          "domain": "isc.sans.edu",
-          "tier": "A"
+          "name": "Security Affairs",
+          "url": "https://securityaffairs.com/197772/malware/cybercriminals-turn-gta-vi-leaks-into-malware-bait.html",
+          "domain": "securityaffairs.com",
+          "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-21T02:47:00+00:00",
+      "published": "2026-08-24T17:59:16+00:00",
       "trace": [
-        "tier A (+40)",
-        "single outlet, established publication (tier A)",
-        "importance 4/5 from cache",
-        "blend 51 = trust 40 / interest 75 / corrob 25",
-        "claims entailed 2/2 (100%)"
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "summary: heuristic extractive (no LLM configured)",
+        "blend 49 = trust 25 / interest 78 / corrob 25",
+        "claims entailed 3/3 (100%)"
       ],
       "reject_reason": ""
     },
     {
-      "cluster_key": "60ccb0cacb6d8d4c",
-      "title": "Even MOAR Powershell, looking at Entra logins - the good, the bad and the password sprays, (Fri, Aug 21st)",
+      "cluster_key": "2ae8a16c8a036606",
+      "title": "South Korean startup platform breach exposes key management failures",
       "category": "cyber_attacks",
-      "one_liner": "Query Entra ID sign-in logs with Microsoft Graph PowerShell to uncover hidden password sprays and anomalous foreign logons.",
+      "one_liner": "Cyber Attacks: single report, unconfirmed.",
       "tags": [
-        "blueteam",
-        "cloud",
-        "identity",
-        "soc",
+        "howto",
+        "incident",
+        "markets"
+      ],
+      "summary": "In July, South Korea’s government-backed startup support platform, Modu-ui Changup (모두의창업), suffered a data breach. The incident later revealed a critical encryption key management failure, demonstrating how encrypted data can still become exposed when organizations fail to protect encryption keys properly. The platform supports a nationwide startup audition program overseen by South Korea’s Ministry of SMEs and Startups (MSS), and it stores participants’ personal informatio…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "In July, South Korea’s government-backed startup support platform, Modu-ui Changup (모두의창업), suffered a data breach.",
+          "support_span": "In July, South Korea’s government-backed startup support platform, Modu-ui Changup (모두의창업), suffered a data breach.",
+          "status": "entailed"
+        },
+        {
+          "text": "The incident later revealed a critical encryption key management failure, demonstrating how encrypted data can still become exposed when organizations fail to protect encryption keys properly.",
+          "support_span": "The incident later revealed a critical encryption key management failure, demonstrating how encrypted data can still become exposed when organizations fail to protect encryption keys properly.",
+          "status": "entailed"
+        },
+        {
+          "text": "The platform supports a nationwide startup audition program overseen by South Korea’s Ministry of SMEs and Startups (MSS), and it stores participants’ personal information, including startup ideas, email addresses, and names.",
+          "support_span": "The platform supports a nationwide startup audition program overseen by South Korea’s Ministry of SMEs and Startups (MSS), and it stores participants’ personal information, including startup ideas, email addresses, and names.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 78,
+      "corroboration": 1,
+      "blend": 48.9,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "established",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/south-korean-startup-platform-breach-exposes-key-management-failures/",
+          "domain": "bleepingcomputer.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-24T14:00:10+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "summary: heuristic extractive (no LLM configured)",
+        "blend 49 = trust 25 / interest 78 / corrob 25",
+        "claims entailed 3/3 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "7113f16252a4678f",
+      "title": "Operation QUICSILVER Targets Myanmar Government and IT with QUICAgent Backdoor",
+      "category": "cyber_attacks",
+      "one_liner": "Cyber Attacks: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "dfir",
+        "malware",
+        "release",
+        "research",
         "threat-intel",
         "windows"
       ],
-      "summary": "Cloud administrators can use PowerShell and Microsoft Graph audit log commands to inspect successful and failed Entra ID sign-in events for password sprays and anomalous geographical logins. By querying Get-MgAuditLogSignIn with error code filters, defenders can extract hidden attributes like failure reasons, IP addresses, and specific cities or countries. Filtering out expected home countries leaves a targeted view of unexpected international access attempts and IPv6 activities. Reviewing these logs enables security teams to actively tighten conditional access policies against automated credential attacks.",
-      "key_facts": [
-        "Scopes: AuditLog.Read.All, Directory.Read.All",
-        "Command: Get-MgAuditLogSignIn"
-      ],
-      "bottom_line": "Querying raw Entra ID sign-in logs with Graph PowerShell reveals active password sprays and unexpected international logins hidden by default dashboards.",
+      "summary": "Cybersecurity researchers have flagged a cyber espionage campaign targeting Myanmar that uses graduation ceremony invitation lures to deliver a Go backdoor called QUICAgent. The campaign, codenamed Operation QUICSILVER, has been found to target government and information technology sectors, per Seqrite Labs. The activity is assessed to be the work of a China-nexus threat actor with moderate confidence.",
+      "key_facts": [],
+      "bottom_line": "",
       "claims": [
         {
-          "text": "The script queries failed sign-ins using the status/errorCode ne 0 filter.",
-          "support_span": "Get-MgAuditLogSignIn -Filter \"status/errorCode ne 0\" -All | Select-Object",
+          "text": "Cybersecurity researchers have flagged a cyber espionage campaign targeting Myanmar that uses graduation ceremony invitation lures to deliver a Go backdoor called QUICAgent.",
+          "support_span": "Cybersecurity researchers have flagged a cyber espionage campaign targeting Myanmar that uses graduation ceremony invitation lures to deliver a Go backdoor called QUICAgent.",
           "status": "entailed"
         },
         {
-          "text": "Successful logins can be filtered to detect unexpected countries outside an expected array.",
-          "support_span": "$f | Where { $_.Country -notin $ExpectedCountries } | out-gridview",
+          "text": "The campaign, codenamed Operation QUICSILVER, has been found to target government and information technology sectors, per Seqrite Labs.",
+          "support_span": "The campaign, codenamed Operation QUICSILVER, has been found to target government and information technology sectors, per Seqrite Labs.",
+          "status": "entailed"
+        },
+        {
+          "text": "The activity is assessed to be the work of a China-nexus threat actor with moderate confidence.",
+          "support_span": "The activity is assessed to be the work of a China-nexus threat actor with moderate confidence.",
           "status": "entailed"
         }
       ],
-      "trust_score": 40,
-      "interest_score": 75,
+      "trust_score": 25,
+      "interest_score": 78,
       "corroboration": 1,
-      "blend": 51.2,
+      "blend": 48.9,
       "critical_signal": "",
       "priority": "important",
       "verdict": "established",
       "sources": [
         {
-          "name": "SANS ISC Diary",
-          "url": "https://isc.sans.edu/diary/rss/33268",
-          "domain": "isc.sans.edu",
-          "tier": "A"
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/operation-quicsilver-targets-myanmar.html",
+          "domain": "thehackernews.com",
+          "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-21T01:49:18+00:00",
+      "published": "2026-08-24T11:51:36+00:00",
       "trace": [
-        "tier A (+40)",
-        "single outlet, established publication (tier A)",
-        "importance 4/5 from cache",
-        "blend 51 = trust 40 / interest 75 / corrob 25",
-        "claims entailed 2/2 (100%)"
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "summary: heuristic extractive (no LLM configured)",
+        "blend 49 = trust 25 / interest 78 / corrob 25",
+        "claims entailed 3/3 (100%)"
       ],
       "reject_reason": ""
     },
     {
-      "cluster_key": "3ed3a3d15d3e9c82",
-      "title": "Can AI do novel security research? Meet the HTTP Terminator",
-      "category": "cyber_tools",
-      "one_liner": "AI is now capable of autonomous, novel security research and exploit discovery in the HTTP desync attack class.",
+      "cluster_key": "8dcb5bb53735af0f",
+      "title": "‘Tremendous, largely untapped potential in India-Turkiye ties across every pillar’",
+      "category": "india_world",
+      "one_liner": "India World: single report, unconfirmed.",
       "tags": [
-        "agents",
-        "ai",
-        "appsec",
-        "exploit",
-        "howto",
-        "incident",
-        "llm",
-        "opensource"
+        "india",
+        "malware"
       ],
-      "summary": "PortSwigger Research has introduced the 'HTTP Terminator', an autonomous AI system designed to invent new attack techniques and execute them against live websites. The system successfully discovered new HTTP desync triggers and exploits that compromised banks, government infrastructure, and security solutions. While the AI could find novel exploits, the researcher noted that some discoveries still require a tight human/AI loop or remain entirely beyond AI's current reach. The project's blueprint and the HTTP Terminator tool will be open-sourced to demonstrate how to turn security expertise into autonomous research cascades.",
-      "key_facts": [
-        "Tool: HTTP Terminator",
-        "Attack Class: HTTP Desync Attacks",
-        "Targets: Banks, government infrastructure, security solutions",
-        "Presentation: Black Hat USA 2026 and DEF CON 34"
-      ],
-      "bottom_line": "The barrier to discovering novel, high-impact vulnerabilities is lowering as autonomous AI agents can now invent and scale new attack techniques.",
+      "summary": "ALMOST A year after he took over as Turkiye’s Ambassador to India, steering bilateral ties through the most difficult phase in the aftermath of Operation Sindoor, where Ankara was seen to be siding with Islamabad, leading to a boycott by Indian travellers and business, Ali Murat Ersoy speaks to Divya A on how much of the lost ground has been recovered, how they plan to keep the ties insulated from geopolitical disruptions in the future, and what he sets out to achieve during…",
+      "key_facts": [],
+      "bottom_line": "",
       "claims": [
         {
-          "text": "The HTTP Terminator is an autonomous system that can invent new attack techniques.",
-          "support_span": "can an autonomous system invent new attack techniques, and use them to hack live websites at scale?",
+          "text": "ALMOST A year after he took over as Turkiye’s Ambassador to India, steering bilateral ties through the most difficult phase in the aftermath of Operation Sindoor, where Ankara was seen to be siding with Islamabad, leading to a boycott by Indian travellers and business, Ali Murat Ersoy speaks to Divya A on how much of the lost ground has been recovered, how they plan to keep the ties insulated from geopolitical disruptions in the future, and what he sets out to achieve during his tenure here.",
+          "support_span": "ALMOST A year after he took over as Turkiye’s Ambassador to India, steering bilateral ties through the most difficult phase in the aftermath of Operation Sindoor, where Ankara was seen to be siding with Islamabad, leading to a boycott by Indian travellers and business, Ali Murat Ersoy speaks to Divya A on how much of the lost ground has been recovered, how they plan to keep the ties insulated from geopolitical disruptions in the future, and what he sets out to achieve during his tenure here.",
           "status": "entailed"
         },
         {
-          "text": "The system compromised banks, security solutions, and government infrastructure.",
-          "support_span": "I'll share an arsenal of new HTTP desync triggers, gadgets, and exploits that compromised banks, security solutions, and government infrastructure.",
+          "text": "In 2024, over 3.3 lakh Indian tourists visited Turkiye.",
+          "support_span": "In 2024, over 3.3 lakh Indian tourists visited Turkiye.",
           "status": "entailed"
         },
         {
-          "text": "The tool and its blueprint will be open-sourced.",
-          "support_span": "And yes, I'll open-source the HTTP Terminator.",
+          "text": "Between January and May 2025, about 1.15 lakh Indians visited the country, recording normal growth.",
+          "support_span": "Between January and May 2025, about 1.15 lakh Indians visited the country, recording normal growth.",
           "status": "entailed"
         }
       ],
-      "trust_score": 40,
-      "interest_score": 75,
+      "trust_score": 25,
+      "interest_score": 78,
       "corroboration": 1,
-      "blend": 51.2,
+      "blend": 48.9,
       "critical_signal": "",
       "priority": "important",
       "verdict": "established",
       "sources": [
         {
-          "name": "PortSwigger Research",
-          "url": "https://portswigger.net/research/can-ai-do-novel-security-research",
-          "domain": "portswigger.net",
-          "tier": "A"
+          "name": "Indian Express",
+          "url": "https://indianexpress.com/article/india/tremendous-largely-untapped-potential-in-india-turkiye-ties-across-every-pillar-ali-murat-ersoy-turkiyes-ambassador-to-india-10845418/",
+          "domain": "indianexpress.com",
+          "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-05T19:30:00+00:00",
+      "published": "2026-08-23T01:39:06+00:00",
       "trace": [
-        "tier A (+40)",
-        "single outlet, established publication (tier A)",
-        "importance 4/5 from gemma-4-31b-it",
-        "blend 51 = trust 40 / interest 75 / corrob 25",
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "summary: heuristic extractive (no LLM configured)",
+        "omitted by the model — extractive fallback",
+        "blend 49 = trust 25 / interest 78 / corrob 25",
         "claims entailed 3/3 (100%)"
       ],
       "reject_reason": ""
@@ -2728,29 +2477,28 @@
       "cluster_key": "5005d65f35b8081d",
       "title": "Government lifts ban on wheat exports, cites farmers’ interests amid depressed local prices",
       "category": "india_world",
-      "one_liner": "India re-enters the global wheat market after a four-year ban, signaling strong domestic production and a shift in agricultural policy.",
+      "one_liner": "India lifted its export ban on wheat and wheat products to support farmer incomes and clear surplus domestic buffer stocks.",
       "tags": [
         "india",
         "malware",
         "markets",
         "policy"
       ],
-      "summary": "The Indian government has lifted the ban on wheat and wheat product exports, effective August 24, 2026, to support farmers facing depressed domestic prices. The ban, originally implemented in May 2022 to control inflation, is being removed following record production of 120.65 million tonnes in the 2025-26 crop year. The Food Corporation of India currently holds a substantial buffer stock of nearly 49 million tonnes, ensuring domestic price stability.",
+      "summary": "The Indian government lifted its ban on wheat and wheat product exports with immediate effect, shifting its policy from prohibited to free. Food Ministry officials stated the move is designed to support farmers' incomes amidst depressed domestic market prices and incentivize strong sowing for the upcoming rabi season. The administration asserted that ample domestic buffer stocks of roughly 49 million tonnes remain available with the Food Corporation of India, ensuring sufficient supplies to keep consumer retail prices stable.",
       "key_facts": [
-        "Wheat production (2025-26): 120.65 million tonnes",
-        "Buffer stock: 49 million tonnes",
-        "Retail price (Aug 24, 2026): ₹31.46 per kg"
+        "Buffer stock: Nearly 49 million tonnes of wheat with FCI",
+        "Production: 120.65 million tonnes in 2025-26 crop year"
       ],
-      "bottom_line": "India has fully reopened wheat exports to boost farmer income following record-breaking harvests and massive government stockpiles.",
+      "bottom_line": "The Indian government has lifted the wheat export ban to stabilize plunging domestic farm prices while maintaining large public food reserves.",
       "claims": [
         {
-          "text": "The government lifted the export ban on wheat and wheat products on August 24, 2026.",
-          "support_span": "The government on Monday (August 24, 2026) lifted the export ban on wheat and wheat products with immediate effect",
+          "text": "The government on Monday (August 24, 2026) lifted the export ban on wheat and wheat products with immediate effect and said the decision is aimed at boosting farmers' income amid depressed domestic prices.",
+          "support_span": "The government on Monday (August 24, 2026) lifted the export ban on wheat and wheat products with immediate effect and said the decision is aimed at boosting farmers' income amid depressed domestic prices.",
           "status": "entailed"
         },
         {
-          "text": "India's wheat production reached a record 120.65 million tonnes in the 2025-26 crop year.",
-          "support_span": "India's wheat production stood at a record 120.65 million tonnes in the 2025-26 crop year (July-June) as against 117.94 million tonnes in the preceding year.",
+          "text": "The Food Corporation of India (FCI), the government's nodal agency for the procurement and distribution of foodgrains, has nearly 49 million tonnes of wheat in buffer stock.",
+          "support_span": "The Food Corporation of India (FCI), the government's nodal agency for the procurement and distribution of foodgrains, has nearly 49 million tonnes of wheat in buffer stock.",
           "status": "entailed"
         }
       ],
@@ -2774,43 +2522,142 @@
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3-flash-preview",
+        "importance 4/5 from gemini-3.5-flash-lite",
         "blend 48 = trust 25 / interest 75 / corrob 25",
         "claims entailed 2/2 (100%)"
       ],
       "reject_reason": ""
     },
     {
-      "cluster_key": "bddc2951b55c5d73",
-      "title": "Wall Street stocks mostly fall as Iran tensions, Nvidia earnings in focus; Marvell and Micron drop 6% each",
-      "category": "markets",
-      "one_liner": "Semiconductor weakness and geopolitical tensions pull Wall Street lower as markets brace for Nvidia's earnings.",
+      "cluster_key": "cc0ed5815ce9266a",
+      "title": "Three fugitives linked to Bambiha Gang deported from Malaysia: Amit Shah",
+      "category": "india_world",
+      "one_liner": "Three Bambiha Gang fugitives linked to cross-border arms and narco-trafficking were deported from Malaysia to India.",
       "tags": [
-        "ai",
         "exploit",
-        "hardware",
-        "markets",
+        "incident",
+        "india",
         "policy",
-        "tool"
+        "ransomware"
       ],
-      "summary": "Wall Street indices traded mostly lower as investors evaluated the Trump administration's warnings of severe economic sanctions against Iran, upcoming Nvidia earnings, and key US inflation data. The S&P 500 slipped 0.4% and the Nasdaq Composite dropped 0.7%, while the Dow Jones Industrial Average edged up 0.1%. Semiconductor stocks faced significant selling pressure, with Marvell Technology and Micron Technology each dropping over 6%, and Nvidia declining 2.44%. Meanwhile, Alibaba fell 1.24% following a $10.2 billion share offering to fund AI initiatives, and spot gold climbed 1.6% to $4,677.14 per ounce on technical buying.",
+      "summary": "Indian security agencies successfully facilitated the deportation of three fugitive gangsters linked to the Bambiha Gang from Malaysia back to India. Home Minister Amit Shah's office stated that the suspects—Jaspreet Singh, Ajay Singh, and Pawandeep Singh—were wanted for serious offenses including extortion, cross-border arms and narco-trafficking, and a foiled grenade attack in Ludhiana. The Ministry of Home Affairs noted that Indian law enforcement has secured the deportation of 51 hardened criminals over the course of 2026.",
       "key_facts": [
-        "S&P 500 Drop: 0.4%",
-        "Nasdaq Composite Drop: 0.7%",
-        "Marvell & Micron Drop: Over 6% each",
-        "Alibaba Share Offering: $10.2 billion",
-        "Spot Gold Increase: 1.6% to $4,677.14 per ounce"
+        "Deported individuals: Jaspreet Singh, Ajay Singh, and Pawandeep Singh",
+        "Total 2026 deportations: 51 hardened criminals",
+        "Affiliation: Bambiha Gang"
       ],
-      "bottom_line": "Investor caution ahead of major tech earnings and severe macroeconomic sanctions is dragging down US tech and semiconductor stocks.",
+      "bottom_line": "Indian security agencies have deported three high-profile fugitives from Malaysia, bringing total criminal deportations in 2026 to 51.",
       "claims": [
         {
-          "text": "As of 11:15 a.m. Eastern Time, the S&P 500 slipped 0.4%, the Dow Jones Industrial Average was up 0.1%, and the Nasdaq Composite was 0.7% lower.",
-          "support_span": "As of 11:15 a.m. Eastern Time, the S&P 500 slipped 0.4%, the Dow Jones Industrial Average was up 0.1%, and the Nasdaq Composite was 0.7% lower.",
+          "text": "The fugitives, namely Jaspreet Singh, Ajay Singh and Pawandeep Singh, are linked to the Bambiha Gang and are accused of multiple crimes, including extortion, cross-border arms and narco-trafficking, and a foiled grenade attack in Ludhiana,",
+          "support_span": "The fugitives, namely Jaspreet Singh, Ajay Singh and Pawandeep Singh, are linked to the Bambiha Gang and are accused of multiple crimes, including extortion, cross-border arms and narco-trafficking, and a foiled grenade attack in Ludhiana,",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 47.5,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "established",
+      "sources": [
+        {
+          "name": "The Hindu National",
+          "url": "https://www.thehindu.com/news/national/three-fugitives-linked-to-bambiha-gang-deported-from-malaysia-amit-shah/article71384557.ece",
+          "domain": "thehindu.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-24T17:33:42+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 25 / interest 75 / corrob 25",
+        "claims entailed 1/1 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "b417d3233c9aa9ec",
+      "title": "Hope to see PM Modi soon as we planned: Putin tells Jaishankar",
+      "category": "india_world",
+      "one_liner": "EAM S. Jaishankar met Vladimir Putin in Moscow to coordinate upcoming leadership summits and push for $100 billion in bilateral trade by 2030.",
+      "tags": [
+        "blueteam",
+        "india",
+        "markets",
+        "policy"
+      ],
+      "summary": "Russian President Vladimir Putin met with External Affairs Minister S. Jaishankar in the Kremlin, stating he plans to meet Prime Minister Narendra Modi at the upcoming Shanghai Cooperation Organisation (SCO) summit in Bishkek. During the talks, Jaishankar co-chaired the 27th India-Russia Inter-Governmental Commission alongside First Deputy Prime Minister Denis Manturov to discuss broad bilateral cooperation including energy, trade, and defense. Jaishankar emphasized the goal of reaching $100 billion in bilateral trade by 2030 while highlighting the need to overcome existing trade imbalances and non-tariff barriers.",
+      "key_facts": [
+        "Target trade volume: U.S. $100 billion by 2030",
+        "Upcoming meetings: SCO summit in Bishkek and BRICS summit in India"
+      ],
+      "bottom_line": "India and Russia are pressing forward with strategic and economic cooperation, targeting $100 billion in bilateral trade despite trade imbalances.",
+      "claims": [
+        {
+          "text": "Russian President Vladimir Putin on Monday (August 24, 2026) said that he plans to meet Prime Minister Narendra Modi at the upcoming summit of the Shanghai Cooperation Organisation (SCO) to be held at Bishkek, Kyrgyzstan.",
+          "support_span": "Russian President Vladimir Putin on Monday (August 24, 2026) said that he plans to meet Prime Minister Narendra Modi at the upcoming summit of the Shanghai Cooperation Organisation (SCO) to be held at Bishkek, Kyrgyzstan.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 47.5,
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "established",
+      "sources": [
+        {
+          "name": "The Hindu National",
+          "url": "https://www.thehindu.com/news/international/jaishankar-meets-russian-president-putin-discusses-bilateral-ties-global-developments/article71384497.ece",
+          "domain": "thehindu.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-24T17:11:27+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 25 / interest 75 / corrob 25",
+        "claims entailed 1/1 (100%)"
+      ],
+      "reject_reason": ""
+    },
+    {
+      "cluster_key": "bdd22b9bd0abbf9f",
+      "title": "IHCL-Oriental Hotels merger details: ‘Long-term value…’ | Explained - How it will benefit shareholders",
+      "category": "markets",
+      "one_liner": "IHCL's all-stock merger with Oriental Hotels will simplify Tata's hospitality holding structure and integrate iconic luxury assets.",
+      "tags": [
+        "howto",
+        "india",
+        "markets",
+        "policy"
+      ],
+      "summary": "The Indian Hotels Company Ltd (IHCL) has announced an all-stock merger agreement with Oriental Hotels Ltd (OHL), proposing a share exchange ratio of 25 IHCL shares for every 117 OHL shares. The transaction, slated for completion in the second half of fiscal year 2028 with an appointed date of April 1, 2027, aims to simplify the Tata Group's holding structure and create two new operating subsidiaries. The arrangement will integrate OHL's portfolio of seven hotels, including iconic properties like Taj Coromandel and Taj Fisherman's Cove, while optimizing overheads and supporting IHCL's Accelerate 2030 strategic growth objectives.",
+      "key_facts": [
+        "Share Swap Ratio: 25 IHCL shares for every 117 OHL shares",
+        "Target Completion: Second half of FY2028",
+        "Appointed Date: April 1, 2027",
+        "OHL Hotel Portfolio: 7 hotels with 825 rooms"
+      ],
+      "bottom_line": "IHCL and Oriental Hotels have approved an all-stock merger to streamline the Tata Group's hospitality holding structure.",
+      "claims": [
+        {
+          "text": "Tata Group-owned Indian Hotels Company Ltd (IHCL) on Monday said Oriental Hotels Ltd (OHL) will be merged with IHCL through an all-stock transaction.",
+          "support_span": "Tata Group-owned Indian Hotels Company Ltd (IHCL) on Monday said Oriental Hotels Ltd (OHL) will be merged with IHCL through an all-stock transaction.",
           "status": "entailed"
         },
         {
-          "text": "Among major technology companies, Apple and Amazon.com shares edged up less than 1% each, while Nvidia declined 2.44% ahead of its closely watched earnings report.",
-          "support_span": "Among major technology companies, Apple and Amazon.com shares edged up less than 1% each, while Nvidia declined 2.44% ahead of its closely watched earnings report.",
+          "text": "The Scheme of Arrangement proposes a share swap ratio of 25 IHCL shares for every 117 OHL shares and aims to complete the transaction in the second half of FY2028.",
+          "support_span": "The Scheme of Arrangement proposes a share swap ratio of 25 IHCL shares for every 117 OHL shares and aims to complete the transaction in the second half of FY2028.",
           "status": "entailed"
         }
       ],
@@ -2824,13 +2671,13 @@
       "sources": [
         {
           "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/wall-street-stocks-fall-as-iran-tensions-nvidia-earnings-and-inflation-data-in-focus-11787579304844.html",
+          "url": "https://www.livemint.com/market/stock-market-news/ihcloriental-hotels-merger-details-long-term-value-explained-how-it-will-benefit-shareholders-11787584241994.html",
           "domain": "livemint.com",
           "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-24T14:02:07+00:00",
+      "published": "2026-08-24T16:13:28+00:00",
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
@@ -2841,33 +2688,26 @@
       "reject_reason": ""
     },
     {
-      "cluster_key": "363e4dbe13c2ee67",
-      "title": "Stock market prediction tomorrow, 25 August: What will happen to Sensex, Nifty Bank, Nifty, KOSPI, Nikkei on Tuesday?",
-      "category": "markets",
-      "one_liner": "Escalating US-Iran tensions and surging global bond yields sent Asian equities lower in cautious trading.",
+      "cluster_key": "4705cf7abe95468e",
+      "title": "Houses set on fire as fresh violence erupts in India’s Manipur",
+      "category": "india_world",
+      "one_liner": "Fresh ethnic clashes in Manipur led to houses being burned and a security officer injured, continuing three years of unrest.",
       "tags": [
+        "exploit",
+        "incident",
         "india",
-        "markets",
-        "policy",
-        "tool"
+        "policy"
       ],
-      "summary": "Key Asian and Indian stock markets closed lower as investors grew cautious ahead of the US Treasury's announcement of sweeping economic sanctions aimed at isolating Iran and as markets awaited the upcoming US personal consumption expenditures inflation report. Global bond yields climbed, with US 10-year Treasury yields resting near 4.71% and 30-year yields touching multi-year highs despite government buyback efforts. US Treasury Secretary Scott Bessent announced that the administration will launch an aggressive financial offensive against Tehran. Consequently, major regional indices finished in the red, including the Nikkei 225 dropping 0.7%, the Kospi falling 3.1%, and the Hang Seng declining 1.9%.",
+      "summary": "Fresh ethnic violence erupted in India's Manipur state, resulting in several houses being set ablaze and an exchange of gunfire between two groups. The clashes left a security officer injured amid ongoing tensions spanning three years between the Hindu majority and Christian communities. Local security forces are working to contain the unrest.",
       "key_facts": [
-        "Nikkei 225 Drop: 0.7% to 65,528.09",
-        "Kospi Drop: 3.1% to 6,696.96",
-        "Hang Seng Drop: 1.9% to 25,517.33",
-        "US 10-Year Treasury Yield: 4.71%"
+        "Location: Manipur, India",
+        "Conflict duration: Three years of ethnic clashes"
       ],
-      "bottom_line": "Global markets are pulling back as aggressive new US sanctions against Iran and persistent multi-year high bond yields heighten risk aversion.",
+      "bottom_line": "Renewed violence in Manipur has injured a security officer and destroyed homes, underscoring ongoing ethnic divisions.",
       "claims": [
         {
-          "text": "Key Asian markets, including the Indian stock market, closed lower on Monday, August 24, as investors remained cautious while awaiting further details on the US announcement of sweeping economic sanctions aimed at isolating Iran's economy",
-          "support_span": "Key Asian markets, including the Indian stock market, closed lower on Monday, August 24, as investors remained cautious while awaiting further details on the US announcement of sweeping economic sanctions aimed at isolating Iran's economy",
-          "status": "entailed"
-        },
-        {
-          "text": "In Tokyo, the Nikkei 225 closed 0.7% lower at 65,528.09, while South Korea's Kospi declined 3.1% to 6,696.96.",
-          "support_span": "In Tokyo, the Nikkei 225 closed 0.7% lower at 65,528.09, while South Korea's Kospi declined 3.1% to 6,696.96.",
+          "text": "Several houses were set ablaze in India’s Manipur state, followed by gunfire between two groups that injured a security officer.",
+          "support_span": "Several houses were set ablaze in India’s Manipur state, followed by gunfire between two groups that injured a security officer.",
           "status": "entailed"
         }
       ],
@@ -2880,77 +2720,81 @@
       "verdict": "established",
       "sources": [
         {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/stock-market-prediction-tomorrow-25-august-what-will-happen-in-sensex-nifty-bank-nifty-kospi-nikkei-on-tuesday-11787568302143.html",
-          "domain": "livemint.com",
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/houses-set-on-fire-as-fresh-violence-erupts-in-indias-manipur?traffic_source=rss",
+          "domain": "aljazeera.com",
           "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-24T11:21:30+00:00",
+      "published": "2026-08-24T14:48:53+00:00",
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "demoted: critical capped at 5",
         "importance 4/5 from gemini-3.5-flash-lite",
         "blend 48 = trust 25 / interest 75 / corrob 25",
-        "claims entailed 2/2 (100%)"
+        "claims entailed 1/1 (100%)"
       ],
       "reject_reason": ""
     },
     {
-      "cluster_key": "6061db5209e27a7b",
-      "title": "IPO: Share price band  ₹300, GMP  ₹313 - Check last date to apply, allotment and listing details",
-      "category": "markets",
-      "one_liner": "Tempsens Instruments IPO achieves massive oversubscription with grey market signals pointing to a triple-digit listing return.",
+      "cluster_key": "10a3c8c38b9bcab6",
+      "title": "Getting Started in Bug Bounty Hunting",
+      "category": "cyber_tools",
+      "one_liner": "Cyber Tools: single report, unconfirmed.",
       "tags": [
-        "india",
-        "markets"
+        "android",
+        "bugbounty",
+        "dfir",
+        "exploit",
+        "howto",
+        "tool",
+        "vulnerability",
+        "writeup"
       ],
-      "summary": "Tempsens Instruments' mainboard IPO, priced at an upper band of ₹300 per share, is signaling multibagger returns in the grey market with a premium of ₹313, representing a potential gain of over 104%. Bidding for the issue closes at 5:00 PM on its final day, having achieved stellar subscription rates including 84.79 times overall, 46.56 times for retail, 240.53 times for non-institutional investors, and 34.79 times for qualified institutional buyers. Under current T+3 listing rules, share allotment is expected the following day with final listing slated for August 27, 2026, offering investors a rare high-growth industrial opportunity backed by heavy broker endorsements.",
-      "key_facts": [
-        "Upper Price Band: ₹300",
-        "Grey Market Premium (GMP): ₹313",
-        "Total Subscription: 84.79x",
-        "NII Subscription: 240.53x",
-        "Listing Date: August 27, 2026"
-      ],
-      "bottom_line": "Exceptional subscription numbers and grey market valuations highlight strong investor appetite for Tempsens' industrial niche offering.",
+      "summary": "Introduction Welcome to the introduction of getting started with Bug Bounty Hunting in 2026. This guide will be of importance to anyone coming into the bug bounty world, what to expect, and the realistic operations of your daily tasks. Please Note: All of the information inside of this article is based soley on the primary first-hand real-world experiences from Bearded Viking.",
+      "key_facts": [],
+      "bottom_line": "",
       "claims": [
         {
-          "text": "According to market observers, shares of the company are available at a premium of ₹313 in the grey market today, which is more than 100% higher than the upper price band of the mainboard IPO.",
-          "support_span": "According to market observers, shares of the company are available at a premium of ₹313 in the grey market today, which is more than 100% higher than the upper price band of the mainboard IPO.",
+          "text": "Introduction\nWelcome to the introduction of getting started with Bug Bounty Hunting in 2026.",
+          "support_span": "Introduction\nWelcome to the introduction of getting started with Bug Bounty Hunting in 2026.",
           "status": "entailed"
         },
         {
-          "text": "By 1:30 PM on day 3, the public issue was booked 84.79 times, the retail portion was filled 46.56 times, whereas the NII segment was subscribed to 240.53 times.",
-          "support_span": "By 1:30 PM on day 3, the public issue was booked 84.79 times, the retail portion was filled 46.56 times, whereas the NII segment was subscribed to 240.53 times.",
+          "text": "This guide will be of importance to anyone coming into the bug bounty world, what to expect, and the realistic operations of your daily tasks.",
+          "support_span": "This guide will be of importance to anyone coming into the bug bounty world, what to expect, and the realistic operations of your daily tasks.",
+          "status": "entailed"
+        },
+        {
+          "text": "Please Note: All of the information inside of this article is based soley on the primary first-hand real-world experiences from Bearded Viking.",
+          "support_span": "Please Note: All of the information inside of this article is based soley on the primary first-hand real-world experiences from Bearded Viking.",
           "status": "entailed"
         }
       ],
-      "trust_score": 25,
-      "interest_score": 75,
+      "trust_score": 10,
+      "interest_score": 78,
       "corroboration": 1,
-      "blend": 47.5,
+      "blend": 45.1,
       "critical_signal": "",
       "priority": "important",
-      "verdict": "established",
+      "verdict": "unverified",
       "sources": [
         {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/ipo/ipo-share-price-band-rs-300-gmp-rs-313-check-last-date-to-apply-allotment-and-listing-details-11787557592291.html",
-          "domain": "livemint.com",
-          "tier": "B"
+          "name": "Medium bug bounty",
+          "url": "https://beardedviking.medium.com/getting-started-in-bug-bounty-hunting-5a2da7978813?source=rss------bug_bounty-5",
+          "domain": "beardedviking.medium.com",
+          "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-24T08:23:45+00:00",
+      "published": "2026-08-24T17:01:39+00:00",
       "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 25 / interest 75 / corrob 25",
-        "claims entailed 2/2 (100%)"
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "summary: heuristic extractive (no LLM configured)",
+        "blend 45 = trust 10 / interest 78 / corrob 25",
+        "claims entailed 3/3 (100%)"
       ],
       "reject_reason": ""
     }

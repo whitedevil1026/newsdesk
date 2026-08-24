@@ -771,31 +771,50 @@ class TestNoLateImportShadowing:
         out = s7_publish.run([it], dry_run=True)
         assert out["counts"]["published"] == 1
 
-    def test_no_function_scope_import_precedes_its_own_use(self):
-        """Static scan: flag any function that uses a name before importing
-        it inside that same function."""
+    def test_no_function_scope_import_shadows_a_module_import(self):
+        """Flag any name imported BOTH at module scope and inside a function.
+
+        The function-scope import makes the name local to the ENTIRE function,
+        so every use of it in that function — including uses that appear
+        BEFORE the import statement, and uses on branches where the import
+        never executes — raises UnboundLocalError at runtime.
+
+        An earlier version of this test only flagged "used before the import
+        line", and it passed while the bug was live: run.py imported
+        s8_notify at module scope and again inside main(), so the call at the
+        end of main() failed with UnboundLocalError after the entire pipeline
+        had already run. Line order was never the issue; the shadowing is.
+        """
         import ast
         from pathlib import Path
 
+        root = Path(__file__).resolve().parent.parent
+        targets = list((root / "pipeline").glob("*.py")) + [root / "run.py"]
+
         offenders = []
-        for path in (Path(__file__).resolve().parent.parent / "pipeline").glob("*.py"):
+        for path in targets:
             tree = ast.parse(path.read_text(encoding="utf-8"))
+
+            module_level = set()
+            for node in tree.body:                    # top level only
+                if isinstance(node, (ast.Import, ast.ImportFrom)):
+                    for alias in node.names:
+                        module_level.add((alias.asname or alias.name).split(".")[0])
+
             for fn in [n for n in ast.walk(tree)
                        if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef))]:
-                imported: dict[str, int] = {}
                 for node in ast.walk(fn):
-                    if isinstance(node, (ast.Import, ast.ImportFrom)):
-                        for alias in node.names:
-                            nm = (alias.asname or alias.name).split(".")[0]
-                            imported.setdefault(nm, node.lineno)
-                for node in ast.walk(fn):
-                    if isinstance(node, ast.Name) and isinstance(node.ctx, ast.Load):
-                        line = imported.get(node.id)
-                        if line is not None and node.lineno < line:
+                    if not isinstance(node, (ast.Import, ast.ImportFrom)):
+                        continue
+                    for alias in node.names:
+                        name = (alias.asname or alias.name).split(".")[0]
+                        if name in module_level:
                             offenders.append(
-                                f"{path.name}:{node.lineno} uses '{node.id}' "
-                                f"but imports it at line {line}")
-        assert not offenders, "late import shadows earlier use:\n" + "\n".join(offenders)
+                                f"{path.name}:{node.lineno} re-imports '{name}' "
+                                f"inside {fn.name}(), shadowing the module-level "
+                                f"import for the whole function")
+
+        assert not offenders, "; ".join(offenders)
 
 
 class TestCorroborationIndependence:

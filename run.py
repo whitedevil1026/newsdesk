@@ -187,7 +187,6 @@ def main() -> int:
     if args.test_llm:
         return test_llm()
     if args.test_telegram:
-        from pipeline import s8_notify
         return s8_notify.selftest()
     if args.show:
         show_last()
