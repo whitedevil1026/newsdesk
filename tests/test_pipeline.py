@@ -209,3 +209,91 @@ class TestVerdicts:
         blog = run([self._item(tier="C")])[0]
         assert established.verdict is Verdict.ESTABLISHED
         assert blog.verdict is Verdict.UNVERIFIED
+
+
+class TestNetGuard:
+    """Outbound fetch safety.
+
+    Article links come from feeds, so they are attacker-influenceable. These
+    are offline tests: no request is ever made.
+    """
+
+    def test_file_scheme_is_refused(self):
+        """urlopen honours file:// — verified, not assumed. A feed link of
+        file:///.../.env would otherwise be read and could reach a summary."""
+        from pipeline.netguard import check
+        assert check("file:///C:/Users/me/.env") is not None
+
+    def test_non_http_schemes_refused(self):
+        from pipeline.netguard import check
+        for url in ("ftp://example.com/x", "gopher://example.com",
+                    "data:text/html,<script>", "javascript:alert(1)"):
+            assert check(url) is not None, url
+
+    def test_cloud_metadata_endpoint_blocked(self):
+        """169.254.169.254 is the cloud metadata service on CI runners."""
+        from pipeline.netguard import check
+        assert check("http://169.254.169.254/latest/meta-data/") is not None
+
+    def test_private_and_loopback_blocked(self):
+        from pipeline.netguard import check
+        for url in ("http://127.0.0.1:8777/", "http://192.168.1.1/admin",
+                    "http://10.0.0.5/", "http://localhost/"):
+            assert check(url) is not None, url
+
+    def test_ordinary_public_urls_allowed(self):
+        from pipeline.netguard import check
+        assert check("https://www.bbc.co.uk/news") is None
+
+    def test_scheme_only_mode_skips_dns(self):
+        """The cheap path still catches the scheme abuses, which is what the
+        per-article hot loop needs."""
+        from pipeline.netguard import check
+        assert check("file:///etc/passwd", resolve_dns=False) is not None
+        assert check("https://example.com", resolve_dns=False) is None
+
+
+class TestNoSecretsInRepo:
+    def test_env_is_gitignored(self):
+        """A key reaching a git remote is the one unrecoverable mistake here."""
+        root = Path(__file__).resolve().parent.parent
+        ignored = (root / ".gitignore").read_text(encoding="utf-8").splitlines()
+        # Must be its own line: a trailing comment makes the pattern literal
+        # and silently match nothing. That exact bug tracked 4.1 MB of
+        # snapshots before it was caught.
+        assert ".env" in [line.strip() for line in ignored]
+
+    def test_no_key_shaped_strings_in_config(self):
+        root = Path(__file__).resolve().parent.parent
+        import re
+        pat = re.compile(r"AIza[0-9A-Za-z_-]{20,}|AQ\.[A-Za-z0-9]{20,}"
+                         r"|ghp_[A-Za-z0-9]{20,}")
+        for path in (root / "config").glob("*.yaml"):
+            assert not pat.search(path.read_text(encoding="utf-8")), path
+
+
+class TestPromptHardening:
+    """The prompt must structurally separate instructions from content.
+
+    Live injection tests against three model tiers all resisted, but that is
+    a property of today's models. These assert the defence is present in the
+    prompt itself.
+    """
+
+    def test_article_text_is_delimited(self):
+        from pipeline.llm_gemini import SYSTEM
+        import pipeline.llm_gemini as m
+        assert "UNTRUSTED INPUT" in SYSTEM
+        assert "BEGIN ARTICLE" in Path(m.__file__).read_text(encoding="utf-8")
+
+    def test_system_prompt_refuses_embedded_instructions(self):
+        from pipeline.llm_gemini import SYSTEM
+        # Collapse whitespace first: the prompt is hard-wrapped, so a phrase
+        # can straddle a newline and a naive substring check misses it.
+        low = " ".join(SYSTEM.lower().split())
+        assert "never instructions" in low or "not instructions" in low
+        assert "do not comply" in low
+
+    def test_judge_is_hardened_too(self):
+        from pipeline.s6b_judge import JUDGE_SYSTEM
+        assert "untrusted" in JUDGE_SYSTEM.lower()

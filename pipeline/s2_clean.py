@@ -11,6 +11,7 @@ import json
 from pathlib import Path
 
 from .config import CACHE_DIR, interests, settings
+from . import netguard
 from .models import Article, Cluster, canonical_url
 from .utils import domain_of, log, overlap, tokens
 
@@ -58,9 +59,15 @@ def run(articles: list[Article]) -> list[Cluster]:
 
     kept: list[Article] = []
     by_uid: dict[str, Article] = {}
-    dropped = {"blocked": 0, "muted": 0, "seen": 0, "dupe": 0, "short": 0}
+    dropped = {"blocked": 0, "muted": 0, "seen": 0, "dupe": 0, "short": 0,
+               "unsafe_url": 0}
 
     for art in articles:
+        # Scheme check only — a DNS lookup per article would add hundreds of
+        # round trips. The extractor does the full check before fetching.
+        if not netguard.is_safe(art.url, resolve_dns=False):
+            dropped["unsafe_url"] += 1
+            continue
         if art.domain in blocked:
             dropped["blocked"] += 1
             continue

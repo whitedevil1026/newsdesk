@@ -30,6 +30,7 @@ import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+from . import netguard
 from .config import CACHE_DIR, settings
 from .utils import log
 
@@ -157,7 +158,12 @@ def _resolve_one(url: str, ua: str, timeout: int) -> str | None:
             body = resp.read().decode("utf-8", "replace")
 
         match = _REAL.search(body)
-        return match.group(0) if match else None
+        if not match:
+            return None
+        # The destination is chosen by whoever published to Google News, so
+        # it is untrusted even though the endpoint is Google's.
+        target = match.group(0)
+        return target if netguard.is_safe(target, resolve_dns=False) else None
     except Exception:
         return None
 

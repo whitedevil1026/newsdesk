@@ -9,6 +9,7 @@ from __future__ import annotations
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+from . import netguard
 from .config import settings
 from .models import Cluster
 from .utils import log
@@ -21,6 +22,14 @@ except ImportError:                     # pipeline must survive without it
 
 
 def _extract(url: str, timeout: int) -> str:
+    # Article links come from feeds, so they are untrusted input. trafilatura
+    # happens to reject file:// today, but relying on a third-party library's
+    # incidental behaviour for a security property is not a control.
+    reason = netguard.check(url)
+    if reason:
+        log("extract", f"! refusing {url[:52]}: {reason}")
+        return ""
+
     downloaded = trafilatura.fetch_url(url)
     if not downloaded:
         return ""

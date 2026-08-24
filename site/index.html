@@ -415,7 +415,10 @@ function boot(d){
   const cbox=document.getElementById("cats");
   cbox.innerHTML=cats.map(x=>{
     const n=x==="all"?d.items.length:d.items.filter(i=>i.category===x).length;
-    return '<button class="chip" data-cat="'+x+'" aria-pressed="'+(x===cat)+'">'+
+    // esc() even though categories come from our own config: an unescaped
+    // value inside an attribute is an injection waiting for the day the data
+    // source changes.
+    return '<button class="chip" data-cat="'+esc(x)+'" aria-pressed="'+(x===cat)+'">'+
       (x==="all"?"All":esc(CATS[x]||x))+'<span class="n">'+n+'</span></button>';
   }).join("");
 
