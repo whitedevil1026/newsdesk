@@ -123,17 +123,21 @@ telegram:
   lookback_hours: 72
   min_chars: 40
   require_link: true        # commentary with no link has nothing to verify
+  # These are PUBLIC channels being read, not owned. Reading needs no bot, no
+  # token and no permission — it is the same page a browser would load.
   channels:
-    # The user's own channel.
     - {channel: "ctinow",         name: "CTI Now",        category: cyber_attacks, tier: C}
-    # Public infosec channels, probed live for activity before adding.
     - {channel: "vxunderground",  name: "vx-underground", category: cyber_attacks, tier: C}
     - {channel: "androidMalware", name: "Android Malware", category: cyber_attacks, tier: C}
 
 # --- Push the digest to Telegram -------------------------------------------
-# OFF by default and it stays off until you set it up. It posts to a channel
-# other people may read, so it must never start working as a side effect of
-# a config default.
+# ENTIRELY OPTIONAL. This is the only part that needs a bot, and it does one
+# thing: send the digest to you. Reading channels above needs none of it.
+#
+# Skip this if you are happy opening the website. Nothing else depends on it.
+#
+# OFF by default and it stays off until you set it up, because it sends
+# messages on your behalf.
 #
 # Only critical/important items are sent. The website is the full record;
 # this is the "worth interrupting you for" subset. A channel that receives
