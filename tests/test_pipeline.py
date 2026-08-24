@@ -423,3 +423,44 @@ class TestTelegramSource:
         from pipeline.s1d_telegram import _parse
         _, link = _parse('see <a href="https://t.me/other/1">this</a>')
         assert link is None
+
+
+class TestSecretsFilePermissions:
+    """Gitignoring .env protects it from the remote, not from the local disk.
+
+    This machine's .env had inherited read access for the local Users group
+    and Authenticated Users, so any account on the box could read the API key.
+    """
+
+    def test_matcher_flags_risky_groups(self):
+        from pipeline.config import _ACL_RISKY
+        BS = chr(92)
+        cases = {
+            "BUILTIN" + BS + "Users:(I)(RX)": "Users",
+            "NT AUTHORITY" + BS + "Authenticated Users:(I)(M)":
+                "Authenticated Users",
+            ".env Everyone:(F)": "Everyone",
+            "MACHINE" + BS + "Users:(RX)": "Users",
+        }
+        for text, expected in cases.items():
+            hits = {m.group(1) for m in _ACL_RISKY.finditer(text)}
+            assert expected in hits, f"{text!r} -> {hits}"
+
+    def test_matcher_allows_an_owner_only_acl(self):
+        from pipeline.config import _ACL_RISKY
+        safe = ".env DESKTOP-EXAMPLE" + chr(92) + "owner:(R,W)"
+        assert not list(_ACL_RISKY.finditer(safe))
+
+    def test_authenticated_users_is_not_mislabelled_as_users(self):
+        """Alternation order matters: the bare 'Users' branch would otherwise
+        swallow 'Authenticated Users' and report the wrong group."""
+        from pipeline.config import _ACL_RISKY
+        text = "NT AUTHORITY" + chr(92) + "Authenticated Users:(I)(M)"
+        hits = {m.group(1) for m in _ACL_RISKY.finditer(text)}
+        assert hits == {"Authenticated Users"}
+
+    def test_check_never_raises(self):
+        """A permissions check must not be able to break a run."""
+        from pathlib import Path
+        from pipeline.config import _warn_if_world_readable
+        _warn_if_world_readable(Path("does-not-exist-anywhere.env"))

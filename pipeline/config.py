@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import os
+import re
+import sys
 from functools import lru_cache
 from pathlib import Path
 from typing import Any
@@ -40,6 +42,54 @@ def interests() -> dict[str, Any]:
 
 ENV_FILE = ROOT / ".env"
 
+# Groups whose read access to a secrets file is a problem. Anchored on a
+# backslash or line start so "Users" does not also match "Authenticated Users"
+# twice, and so any machine/domain prefix is accepted.
+#   * boundary is line-start, a backslash, OR whitespace, because icacls puts
+#     the first entry on the same line as the filename
+#   * longest alternative first, or "Authenticated Users:" matches the bare
+#     "Users" branch and gets mislabelled
+_ACL_RISKY = re.compile(
+    r"(?:^|\\|\s)(Authenticated Users|Everyone|Users):", re.MULTILINE)
+
+
+def _warn_if_world_readable(path: Path) -> None:
+    """Say something if the secrets file is readable by other local accounts.
+
+    Found on this machine: .env inherited read access for the local Users
+    group and Authenticated Users from its parent folder, meaning any account
+    on the box could read the API key. Gitignoring a file protects it from
+    the remote, not from the local filesystem.
+
+    This only warns — silently changing permissions on a user's files would be
+    worse than telling them.
+    """
+    try:
+        if os.name == "nt":
+            import subprocess
+            out = subprocess.run(["icacls", str(path)], capture_output=True,
+                                 text=True, timeout=10).stdout
+            # Match the account NAME only. icacls prefixes vary by machine
+            # and locale — BUILTIN\Users, MACHINE\Users, or a bare Users —
+            # so anchoring on any one prefix silently never matches.
+            risky = sorted({
+                m.group(1) for m in _ACL_RISKY.finditer(out)
+            })
+            if risky:
+                print(f"WARNING: {path.name} is readable by "
+                      f"{', '.join(risky)} — other accounts on this machine "
+                      f"can read your API keys.", file=sys.stderr)
+                print(f'  Fix:  icacls "{path}" /inheritance:r '
+                      f'/grant:r "%USERNAME%:(R,W)"', file=sys.stderr)
+        else:
+            mode = path.stat().st_mode
+            if mode & 0o077:
+                print(f"WARNING: {path.name} is group/world readable "
+                      f"({oct(mode & 0o777)}). Run: chmod 600 {path}",
+                      file=sys.stderr)
+    except Exception:
+        pass          # a permissions check must never break the run
+
 
 def _load_dotenv() -> dict[str, str]:
     """Read KEY=value pairs from .env, if it exists.
@@ -53,6 +103,8 @@ def _load_dotenv() -> dict[str, str]:
     """
     if not ENV_FILE.exists():
         return {}
+
+    _warn_if_world_readable(ENV_FILE)
 
     out: dict[str, str] = {}
     for line in ENV_FILE.read_text(encoding="utf-8").splitlines():
