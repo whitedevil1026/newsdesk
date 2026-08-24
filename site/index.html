@@ -156,7 +156,50 @@ details ul{margin:9px 0 0;padding-left:19px;color:var(--muted);font-size:13px;
 mark{background:color-mix(in srgb, var(--accent) 26%, transparent);
  color:inherit;padding:0 1px;border-radius:2px}
 
-.empty{color:var(--muted);padding:60px 0;text-align:center;font-size:15px}
+.empty{color:var(--muted);padding:60px 0;text-align:center;font-size:15px;
+ line-height:2.2}
+
+/* sort control + live result count */
+.lbl2{font-size:11px;letter-spacing:.09em;text-transform:uppercase;
+ color:var(--muted);font-weight:600}
+#sorts{margin-top:0}
+.count{font-size:12.5px;color:var(--muted);margin-left:auto}
+h2.sec .win{font-weight:400;letter-spacing:0;text-transform:none;
+ color:var(--muted);opacity:.75;cursor:help;font-size:11.5px}
+
+/* claims — the validation working, shown rather than asserted */
+.claims{margin:9px 0 4px}
+.claims > b{font-size:11px;letter-spacing:.07em;text-transform:uppercase;
+ color:var(--muted);font-weight:600}
+.claims ul{list-style:none;padding:0;margin:7px 0 0;display:grid;gap:6px}
+.cl{display:grid;grid-template-columns:1.1em 1fr;gap:7px;font-size:13px;
+ line-height:1.5;color:var(--muted)}
+.ck{font-weight:700;text-align:center}
+.cl.entailed .ck{color:var(--ok)}
+.cl.contradicted .ck{color:var(--crit)}
+.cl.contradicted{color:var(--ink)}
+.cl.neutral .ck{color:var(--warn)}
+details ul.tr{margin-top:10px}
+
+/* keyboard focus must be visible — the site is navigable by j/k */
+a:focus-visible, button:focus-visible, summary:focus-visible,
+input:focus-visible{outline:2px solid var(--accent);outline-offset:2px;
+ border-radius:4px}
+article.cursor{box-shadow:-14px 0 0 -11px var(--accent)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);
+ color:var(--bg);padding:9px 14px;border-radius:0 0 8px 0;z-index:20}
+.skip:focus{left:0}
+kbd{font:inherit;font-size:.86em;border:1px solid var(--line2);
+ border-bottom-width:2px;border-radius:4px;padding:0 4px;color:var(--ink)}
+
+@media print{
+  .controls,.skip,.stats,footer details{display:none !important}
+  body{font-size:11pt;background:#fff;color:#000}
+  .wrap{max-width:none;padding:0}
+  article{page-break-inside:avoid;border-bottom:1px solid #ccc}
+  .srcs a:after{content:" (" attr(href) ")";font-size:9pt;color:#555}
+  details{display:none}
+}
 
 /* --- Small screens ---------------------------------------------------- */
 @media (max-width:600px){
@@ -201,6 +244,7 @@ footer p{margin:14px 0 0}
 </style>
 </head>
 <body>
+<a class="skip" href="#feed">Skip to stories</a>
 <div class="wrap">
   <header>
     <div class="brand"><h1>Newsdesk</h1><span class="meta" id="meta">loading…</span></div>
@@ -211,6 +255,11 @@ footer p{margin:14px 0 0}
     <input id="q" type="search" autocomplete="off" spellcheck="false"
            placeholder="Search — try dfir, soc, llm, cve, ransomware, a vendor name…">
     <div class="chips" id="cats"></div>
+    <div class="tagbar">
+      <span class="lbl2">Sort</span>
+      <div class="chips" id="sorts"></div>
+      <span class="count" id="count" aria-live="polite"></span>
+    </div>
     <div class="tagbar">
       <button class="toggle" id="tagToggle" aria-expanded="false">Tags</button>
       <div class="active-tags" id="activeTags"></div>
@@ -232,7 +281,40 @@ const CATS = {cyber_attacks:"Attacks & Exploits", cyber_tools:"Tools & Tradecraf
 const VD = {verified:"verified", corroborated:"corroborated",
             established:"established", unverified:"unverified",
             disputed:"disputed"};
-let DATA=null, cat="all", activeTags=new Set(), query="";
+let DATA=null, cat="all", activeTags=new Set(), query="", sort="priority";
+
+// --- shareable state ---------------------------------------------------
+// Filters live in the URL hash so a filtered view can be bookmarked, shared
+// or survive a refresh. Without this, "look at the dfir items" means telling
+// someone which chips to click.
+function readState(){
+  const h=new URLSearchParams(location.hash.slice(1));
+  cat=h.get("cat")||"all";
+  sort=h.get("sort")||"priority";
+  query=(h.get("q")||"").toLowerCase();
+  activeTags=new Set((h.get("tags")||"").split(",").filter(Boolean));
+}
+function writeState(){
+  const h=new URLSearchParams();
+  if(cat!=="all") h.set("cat",cat);
+  if(sort!=="priority") h.set("sort",sort);
+  if(query) h.set("q",query);
+  if(activeTags.size) h.set("tags",[...activeTags].join(","));
+  const s=h.toString();
+  // replaceState, not a hash assignment: this must not add a history entry
+  // for every keystroke in the search box.
+  history.replaceState(null,"",s?("#"+s):location.pathname);
+}
+
+const SORTS={
+  priority:{label:"Priority", fn:(a,b)=>
+    (PRI[a.priority]-PRI[b.priority]) || (b.blend-a.blend)},
+  newest:{label:"Newest", fn:(a,b)=>
+    new Date(b.published||0)-new Date(a.published||0)},
+  sources:{label:"Most sources", fn:(a,b)=>
+    (b.corroboration-a.corroboration) || (PRI[a.priority]-PRI[b.priority])},
+};
+const PRI={critical:0, important:1, minor:2};
 
 const esc = s => String(s==null?"":s).replace(/[&<>"']/g,
   c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -290,6 +372,13 @@ function card(it){
     ? '<div class="tags">'+it.tags.map(t=>
       '<button class="tag" data-tag="'+esc(t)+'">'+esc(t)+"</button>").join("")+"</div>" : "";
   const trace=(it.trace||[]).map(t=>"<li>"+esc(t)+"</li>").join("");
+  // The claims ARE the validation story. Keeping them out of the UI meant
+  // the page asserted "verified" without ever showing the working.
+  const CLAIM_MARK={entailed:"✓", contradicted:"✗", neutral:"?"};
+  const claims=(it.claims||[]).map(c=>
+    '<li class="cl '+esc(c.status||"unchecked")+'">'+
+    '<span class="ck">'+(CLAIM_MARK[c.status]||"·")+'</span>'+
+    esc(c.text)+'</li>').join("");
   const age=ago(it.published);
 
   return '<article>'+
@@ -309,24 +398,60 @@ function card(it){
     (it.one_liner?'<p class="why">'+hl(it.one_liner)+'</p>':"")+
     tags+
     '<div class="srcs"><span class="lbl">Sources</span>'+srcs+prim+'</div>'+
-    (trace?'<details><summary>how this was scored</summary><ul>'+trace+'</ul></details>':"")+
+    (trace||claims?'<details><summary>how this was checked</summary>'+
+      (claims?'<div class="claims"><b>Claims checked against the source</b><ul>'+
+        claims+'</ul></div>':"")+
+      (trace?'<ul class="tr">'+trace+'</ul>':"")+'</details>':"")+
   '</article>';
 }
 
 function draw(){
   const feed=document.getElementById("feed");
-  const items=DATA.items.filter(matches);
+  const items=DATA.items.filter(matches).sort(SORTS[sort].fn);
+
+  writeState();
+  const live=document.getElementById("count");
+  if(live) live.textContent =
+    items.length+" of "+DATA.items.length+" stories"+
+    (sort!=="priority" ? ", by "+SORTS[sort].label.toLowerCase() : "");
 
   if(!items.length){
-    feed.innerHTML='<p class="empty">Nothing matches. Clear the search or pick another tag.</p>';
+    feed.innerHTML='<p class="empty">Nothing matches.'+
+      (query?' No story mentions &ldquo;'+esc(query)+'&rdquo;.':'')+
+      '<br><button class="chip" id="clearAll">Clear all filters</button></p>';
+    const btn=document.getElementById("clearAll");
+    if(btn) btn.onclick=()=>{
+      cat="all"; activeTags.clear(); query="";
+      document.getElementById("q").value="";
+      syncChips(); draw();
+    };
     drawTags(items); return;
   }
-  const groups={};
-  for(const it of items){ (groups[it.category]=groups[it.category]||[]).push(it); }
-  feed.innerHTML=Object.keys(groups).map(c=>
-    '<h2 class="sec">'+esc(CATS[c]||c)+' · '+groups[c].length+'</h2>'+
-    groups[c].map(card).join("")).join("");
+
+  // Sorting by time or source count deliberately drops the category
+  // headings — grouping fights the ordering the reader just asked for.
+  if(sort==="priority"){
+    const groups={};
+    for(const it of items){ (groups[it.category]=groups[it.category]||[]).push(it); }
+    feed.innerHTML=Object.keys(groups).map(c=>
+      '<h2 class="sec">'+esc(CATS[c]||c)+' &middot; '+groups[c].length+
+      windowNote(c)+'</h2>'+
+      groups[c].map(card).join("")).join("");
+  }else{
+    feed.innerHTML=items.map(card).join("");
+  }
   drawTags(items);
+}
+
+// Sections use different lookback windows — 48h for news, 7 days for tools,
+// because research blogs publish weekly. Saying so stops a 5-day-old tools
+// item reading as staleness.
+function windowNote(catKey){
+  const h=(DATA.per_category_hours||{})[catKey];
+  if(!h) return "";
+  const label = h>=48 ? Math.round(h/24)+" days" : h+"h";
+  return ' <span class="win" title="This section looks back '+label+
+         ', because its sources publish less often">last '+label+'</span>';
 }
 
 // Tag chips reflect what is actually on screen, so the facets never offer a
@@ -392,6 +517,8 @@ function updateLine(d){
 
 function boot(d){
   DATA=d;
+  readState();
+  document.getElementById("q").value = query;
   const c=d.counts;
   document.getElementById("meta").innerHTML=updateLine(d);
   // Plain language, and only counts that are actually meaningful. "Blocked at
@@ -478,6 +605,67 @@ function boot(d){
     timer=setTimeout(()=>{ query=e.target.value.trim().toLowerCase(); draw(); },110);
   });
 
+  // --- sort control ----------------------------------------------------
+  const sbox=document.getElementById("sorts");
+  sbox.innerHTML=Object.entries(SORTS).map(([k,v])=>
+    '<button class="chip" data-sort="'+k+'" aria-pressed="'+(k===sort)+'">'+
+    esc(v.label)+'</button>').join("");
+  sbox.onclick=e=>{
+    const b=e.target.closest("button[data-sort]"); if(!b) return;
+    sort=b.dataset.sort;
+    [...sbox.children].forEach(x=>x.setAttribute("aria-pressed",x===b));
+    draw();
+  };
+
+  // --- keyboard navigation ---------------------------------------------
+  // This is a reading site, so moving between stories should not require the
+  // mouse. j/k mirror the convention every feed reader already uses.
+  let cursor=-1;
+  const cards=()=>[...document.querySelectorAll("article")];
+  function focusCard(n){
+    const all=cards(); if(!all.length) return;
+    cursor=Math.max(0,Math.min(n,all.length-1));
+    all.forEach(c=>c.classList.remove("cursor"));
+    const el=all[cursor];
+    el.classList.add("cursor");
+    el.scrollIntoView({block:"center",behavior:"smooth"});
+  }
+  document.addEventListener("keydown",e=>{
+    const typing = /^(INPUT|TEXTAREA)$/.test(e.target.tagName);
+    if(e.key==="/" && !typing){
+      e.preventDefault(); document.getElementById("q").focus(); return;
+    }
+    if(e.key==="Escape"){
+      if(typing){ e.target.blur(); }
+      else if(query||activeTags.size||cat!=="all"){
+        cat="all"; activeTags.clear(); query="";
+        document.getElementById("q").value=""; syncChips(); draw();
+      }
+      return;
+    }
+    if(typing || e.metaKey || e.ctrlKey || e.altKey) return;
+    if(e.key==="j"){ e.preventDefault(); focusCard(cursor+1); }
+    else if(e.key==="k"){ e.preventDefault(); focusCard(cursor-1); }
+    else if(e.key==="o"||e.key==="Enter"){
+      const el=cards()[cursor]; const a=el&&el.querySelector("h3 a");
+      if(a) window.open(a.href,"_blank","noopener");
+    }
+    else if(e.key==="?"){
+      const h=document.getElementById("help");
+      if(h) h.open=!h.open;
+    }
+  });
+
+  // Keep the chip rows in step with state restored from the URL.
+  function syncChips(){
+    [...document.getElementById("cats").children].forEach(x=>
+      x.setAttribute("aria-pressed", x.dataset.cat===cat));
+    [...sbox.children].forEach(x=>
+      x.setAttribute("aria-pressed", x.dataset.sort===sort));
+  }
+  window.syncChips=syncChips;
+  syncChips();
+
   // If a scheduled run has clearly been missed, say so rather than showing a
   // confidently stale page — the reader cannot tell the difference otherwise.
   if(d.next_update){
@@ -492,6 +680,12 @@ function boot(d){
   }
 
   document.getElementById("foot").innerHTML=
+    '<details id="help"><summary>Keyboard shortcuts</summary>'+
+    '<dl><dt><kbd>j</kbd> / <kbd>k</kbd></dt><dd>next / previous story</dd>'+
+    '<dt><kbd>o</kbd> or <kbd>Enter</kbd></dt><dd>open the highlighted story</dd>'+
+    '<dt><kbd>/</kbd></dt><dd>jump to search</dd>'+
+    '<dt><kbd>Esc</kbd></dt><dd>clear all filters</dd>'+
+    '<dt><kbd>?</kbd></dt><dd>this list</dd></dl></details>'+
     '<details><summary>What do these labels mean?</summary>'+
     '<dl>'+
     '<dt>verified</dt><dd>Traced to an official artifact — a CISA advisory, a '+

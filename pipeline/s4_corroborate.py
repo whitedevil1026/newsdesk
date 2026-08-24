@@ -31,14 +31,49 @@ PRIMARY_HOSTS = (
 )
 
 
+# Services that distribute ONE press release to hundreds of sites. Their
+# reach says nothing about whether a story was independently reported.
+SYNDICATION = ("pr-newswire", "prnewswire", "businesswire", "business-wire",
+               "globenewswire", "globe-newswire", "accesswire", "einpresswire",
+               "yahoo-finance", "yahoo", "msn", "marketscreener",
+               "stocktitan", "investing-com", "benzinga")
+
+
 def _independent_outlets(cluster: Cluster) -> int:
-    domains = {a.domain for a in cluster.articles}
+    """Distinct outlets that reported this INDEPENDENTLY.
+
+    Three things are collapsed, because none of them is a second opinion:
+
+    1. Wire syndication — twelve sites carrying one Reuters story is one vote.
+    2. Press-release distribution — PR Newswire and friends push a single
+       release to hundreds of outlets.
+    3. Unmapped Google News publishers. A `.publisher` domain is synthetic:
+       it means the title named an outlet we could not match to a real host,
+       which in practice is the long tail of small sites republishing. On a
+       live run a single breach story counted 26 "outlets", most of them
+       Yahoo Finance, Crypto Briefing and The Malone Telegram — and that
+       inflated count is what promotes an item to `verified`.
+
+    The synthetic group still counts as ONE vote rather than zero: wide
+    pickup is weak evidence, not no evidence.
+    """
+    real: set[str] = set()
+    synthetic = False
+
+    for art in cluster.articles:
+        dom = art.domain
+        if dom.endswith(".publisher") or any(w in dom for w in SYNDICATION):
+            synthetic = True
+            continue
+        real.add(dom)
+
     for members in WIRE_GROUPS.values():
-        hit = domains & members
+        hit = real & members
         if len(hit) > 1:
-            domains -= hit
-            domains.add(next(iter(hit)))      # collapse to a single vote
-    return len(domains)
+            real -= hit
+            real.add(next(iter(hit)))         # collapse to a single vote
+
+    return len(real) + (1 if synthetic else 0)
 
 
 def _primary_links(cluster: Cluster) -> list[str]:

@@ -796,3 +796,50 @@ class TestNoLateImportShadowing:
                                 f"{path.name}:{node.lineno} uses '{node.id}' "
                                 f"but imports it at line {line}")
         assert not offenders, "late import shadows earlier use:\n" + "\n".join(offenders)
+
+
+class TestCorroborationIndependence:
+    """Corroboration is the basis of the `verified` badge, so it has to count
+    INDEPENDENT reporting, not reach. A live run counted 26 "outlets" on one
+    breach story, of which 21 were Yahoo Finance, Crypto Briefing, The Malone
+    Telegram and similar — the long tail republishing a single release."""
+
+    def _cluster(self, domains):
+        from datetime import datetime, timezone
+        from pipeline.models import Article, Cluster
+        return Cluster(key="k", articles=[
+            Article(url=f"https://{d}/x", title="t", source=d, domain=d,
+                    category="cyber_attacks", tier="B",
+                    published=datetime.now(timezone.utc)) for d in domains])
+
+    def test_synthetic_publishers_collapse_to_one_vote(self):
+        from pipeline.s4_corroborate import _independent_outlets
+        c = self._cluster(["bleepingcomputer.com",
+                           "a.publisher", "b.publisher", "c.publisher",
+                           "d.publisher", "e.publisher"])
+        assert _independent_outlets(c) == 2   # 1 real + 1 collective
+
+    def test_press_release_distributors_are_not_outlets(self):
+        from pipeline.s4_corroborate import _independent_outlets
+        c = self._cluster(["bleepingcomputer.com", "pr-newswire.publisher",
+                           "businesswire.com", "globenewswire.com",
+                           "yahoo-finance.publisher"])
+        assert _independent_outlets(c) == 2
+
+    def test_genuine_independent_outlets_all_count(self):
+        from pipeline.s4_corroborate import _independent_outlets
+        c = self._cluster(["bleepingcomputer.com", "cyberscoop.com",
+                           "malwarebytes.com", "securityweek.com"])
+        assert _independent_outlets(c) == 4
+
+    def test_wire_syndication_still_collapses(self):
+        from pipeline.s4_corroborate import _independent_outlets
+        c = self._cluster(["reuters.com", "in.reuters.com", "bbc.co.uk"])
+        assert _independent_outlets(c) == 2
+
+    def test_wide_pickup_is_weak_evidence_not_none(self):
+        """A story carried only by the long tail should count 1, not 0 —
+        wide pickup is weak evidence, not the absence of evidence."""
+        from pipeline.s4_corroborate import _independent_outlets
+        c = self._cluster(["a.publisher", "b.publisher", "c.publisher"])
+        assert _independent_outlets(c) == 1
