@@ -746,3 +746,53 @@ class TestRescoreTrace:
         assert sum(1 for t in kept if t.startswith("escalated to")) <= 1
         assert sum(1 for t in kept if t.startswith("demoted:")) <= 1
         assert "tier A (+40)" in it.trace          # non-scoring lines survive
+
+
+class TestNoLateImportShadowing:
+    """A function-scope `import x` makes x local to the WHOLE function, so any
+    earlier use of x in that function raises NameError at runtime rather than
+    at import time — invisible to a syntax check and to every test that does
+    not execute that exact path.
+
+    This shipped: s7_publish used hashlib and canonical_url at the top of
+    run() while importing them 50 lines further down, breaking publish
+    entirely while `python -c "import pipeline.s7_publish"` still passed.
+    """
+
+    def test_publish_runs_end_to_end(self):
+        from pipeline import s7_publish
+        from pipeline.models import Item, Priority, Verdict
+
+        it = Item(cluster_key="k", title="t", category="markets")
+        it.priority, it.verdict, it.blend = (Priority.IMPORTANT,
+                                             Verdict.ESTABLISHED, 10.0)
+        it.sources = [{"name": "s", "url": "https://example.com/a",
+                       "domain": "example.com", "tier": "B"}]
+        out = s7_publish.run([it], dry_run=True)
+        assert out["counts"]["published"] == 1
+
+    def test_no_function_scope_import_precedes_its_own_use(self):
+        """Static scan: flag any function that uses a name before importing
+        it inside that same function."""
+        import ast
+        from pathlib import Path
+
+        offenders = []
+        for path in (Path(__file__).resolve().parent.parent / "pipeline").glob("*.py"):
+            tree = ast.parse(path.read_text(encoding="utf-8"))
+            for fn in [n for n in ast.walk(tree)
+                       if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef))]:
+                imported: dict[str, int] = {}
+                for node in ast.walk(fn):
+                    if isinstance(node, (ast.Import, ast.ImportFrom)):
+                        for alias in node.names:
+                            nm = (alias.asname or alias.name).split(".")[0]
+                            imported.setdefault(nm, node.lineno)
+                for node in ast.walk(fn):
+                    if isinstance(node, ast.Name) and isinstance(node.ctx, ast.Load):
+                        line = imported.get(node.id)
+                        if line is not None and node.lineno < line:
+                            offenders.append(
+                                f"{path.name}:{node.lineno} uses '{node.id}' "
+                                f"but imports it at line {line}")
+        assert not offenders, "late import shadows earlier use:\n" + "\n".join(offenders)

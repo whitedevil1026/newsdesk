@@ -7,11 +7,13 @@ traced after the fact.
 
 from __future__ import annotations
 
+import hashlib
 from pathlib import Path
 
 from .config import DATA_DIR, SITE_DIR, settings
-from .models import Item, Priority, Verdict
-from .utils import log, now_utc, snapshot
+from .models import Item, Priority, Verdict, canonical_url
+from .s2_clean import save_seen
+from .utils import domain_of, log, now_utc, snapshot
 
 NEWS_JSON = DATA_DIR / "news.json"
 REJECTS_JSON = DATA_DIR / "rejected.json"
@@ -44,7 +46,6 @@ def _resolve_links(items: list[Item]) -> None:
                 # synthetic "<publisher>.publisher" placeholder derived from
                 # the Google News title, which would then disagree with the
                 # link shown on the same card.
-                from .utils import domain_of
                 src["domain"] = domain_of(real)
                 fixed += 1
     if fixed:
@@ -188,9 +189,6 @@ def run(items: list[Item], dry_run: bool = False) -> dict:
               "items": [i.to_json() for i in dead]}, REJECTS_JSON, "rejects")
 
     # Mark published sources as seen so tomorrow's run skips them.
-    from .s2_clean import save_seen
-    from .models import canonical_url
-    import hashlib
     # Both forms: the harvested url so stage 2 can match it next run, and the
     # resolved url so a direct hit on the publisher is recognised too.
     seen_uids |= {
