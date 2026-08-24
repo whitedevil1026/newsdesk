@@ -19,16 +19,29 @@ SEEN_PATH = CACHE_DIR / "seen.json"
 BLOCKLIST_PATH = CACHE_DIR / "iffy_blocklist.txt"
 
 
-def _load_seen() -> set[str]:
+def _load_seen_ordered() -> list[str]:
+    """Oldest first. A list, not a set, because pruning must drop the oldest."""
     if SEEN_PATH.exists():
-        return set(json.loads(SEEN_PATH.read_text(encoding="utf-8")))
-    return set()
+        return list(json.loads(SEEN_PATH.read_text(encoding="utf-8")))
+    return []
+
+
+def _load_seen() -> set[str]:
+    return set(_load_seen_ordered())
 
 
 def save_seen(uids: set[str]) -> None:
-    """Called by stage 7 only — an item is 'seen' once it is published."""
-    merged = sorted(_load_seen() | uids)[-20000:]     # bounded history
-    SEEN_PATH.write_text(json.dumps(merged), encoding="utf-8")
+    """Called by stage 7 only — an item is 'seen' once it is published.
+
+    Append-and-truncate, NOT sort-and-truncate. The uids are hex hashes, so
+    sorting them before pruning evicted every id beginning with a low hex
+    digit regardless of when it was published, while high-prefix ids survived
+    forever. Age is the property that matters for a de-duplication window.
+    """
+    previous = _load_seen_ordered()
+    known = set(previous)
+    merged = previous + [u for u in sorted(uids) if u not in known]
+    SEEN_PATH.write_text(json.dumps(merged[-20000:]), encoding="utf-8")
 
 
 def _blocklist() -> set[str]:

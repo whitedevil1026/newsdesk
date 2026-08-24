@@ -113,11 +113,14 @@ def _fetch(channel: str, ua: str, timeout: int) -> str | None:
 
 def _resolve_short(url: str, ua: str, timeout: int) -> str:
     """Follow a shortener to its destination. Returns the input on failure."""
-    host = urllib.request.urlparse(url).hostname or "" \
-        if hasattr(urllib.request, "urlparse") else ""
-    if not host:
-        from urllib.parse import urlsplit
-        host = (urlsplit(url).hostname or "").lower().removeprefix("www.")
+    # `hasattr(urllib.request, "urlparse")` is always true — CPython re-exports
+    # it — so the fallback branch here was unreachable and the www. prefix was
+    # never stripped. A `www.bit.ly` link therefore missed SHORTENERS and went
+    # unresolved, breaking the three things this function exists to protect:
+    # source tiering, de-duplication, and the reference link a reader clicks.
+    from urllib.parse import urlsplit
+
+    host = (urlsplit(url).hostname or "").lower().removeprefix("www.")
     if host not in SHORTENERS:
         return url
     try:

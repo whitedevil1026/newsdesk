@@ -167,7 +167,8 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--dry-run", action="store_true", help="write nothing to disk")
-    ap.add_argument("--stop-after", type=int, default=7, metavar="N", help="stop after stage N")
+    ap.add_argument("--stop-after", type=int, default=8, metavar="N",
+                    help="stop after stage N (6=verify, 7=judge, 8=publish)")
     ap.add_argument("--no-extract", action="store_true", help="skip full-text fetch")
     ap.add_argument("--no-social", action="store_true",
                     help="skip the GitHub and Bluesky collectors (RSS only)")
@@ -249,7 +250,7 @@ def main() -> int:
 
     banner("STAGE 6b  independent judge")
     items = s6b_judge.run(items, bodies)
-    if args.stop_after == 6:
+    if args.stop_after <= 7:   # 6b is the judge; 7 stops before publish
         return 0
 
     banner("STAGE 7  publish")

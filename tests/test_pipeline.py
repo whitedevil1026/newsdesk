@@ -667,3 +667,82 @@ class TestSourceOrdering:
         from pipeline.models import Cluster
         out = corroborate([Cluster(key="k", articles=[agg, real])])
         assert out[0].sources[0]["domain"] == "bleepingcomputer.com"
+
+
+class TestSeenStorePruning:
+    """The de-duplication window must forget the OLDEST entries, not the
+    lexicographically lowest. uids are hex hashes, so sorting before pruning
+    evicted every id starting with a low hex digit regardless of age."""
+
+    def _isolated(self, tmp_path, monkeypatch):
+        import pipeline.s2_clean as s2
+        monkeypatch.setattr(s2, "SEEN_PATH", tmp_path / "seen.json")
+        return s2
+
+    def test_insertion_order_is_preserved(self, tmp_path, monkeypatch):
+        import json
+        s2 = self._isolated(tmp_path, monkeypatch)
+        s2.SEEN_PATH.write_text(json.dumps(["aaa1", "fff9", "0000"]))
+        s2.save_seen({"bbb2"})
+        assert json.loads(s2.SEEN_PATH.read_text()) == \
+            ["aaa1", "fff9", "0000", "bbb2"]
+
+    def test_at_capacity_the_oldest_is_evicted(self, tmp_path, monkeypatch):
+        import json
+        s2 = self._isolated(tmp_path, monkeypatch)
+        s2.SEEN_PATH.write_text(json.dumps([f"{i:04x}" for i in range(20000)]))
+        s2.save_seen({"zzzz"})
+        out = json.loads(s2.SEEN_PATH.read_text())
+        assert len(out) == 20000
+        assert out[-1] == "zzzz"          # newest kept
+        assert out[0] == "0001"           # oldest dropped
+        assert "0000" not in out
+
+    def test_duplicates_are_not_appended_twice(self, tmp_path, monkeypatch):
+        import json
+        s2 = self._isolated(tmp_path, monkeypatch)
+        s2.SEEN_PATH.write_text(json.dumps(["aaa1"]))
+        s2.save_seen({"aaa1"})
+        assert json.loads(s2.SEEN_PATH.read_text()) == ["aaa1"]
+
+
+class TestShortenerHostMatching:
+    def test_www_prefixed_shortener_is_recognised(self):
+        """`www.bit.ly` missed SHORTENERS entirely, so it stayed unresolved
+        and broke tiering, dedupe and the reference link at once."""
+        from urllib.parse import urlsplit
+        from pipeline.s1d_telegram import SHORTENERS
+        for url in ("https://WWW.Bit.LY/abc", "https://bit.ly/abc",
+                    "http://www.ift.tt/xyz"):
+            host = (urlsplit(url).hostname or "").lower().removeprefix("www.")
+            assert host in SHORTENERS, url
+
+    def test_a_real_outlet_is_not_treated_as_a_shortener(self):
+        from urllib.parse import urlsplit
+        from pipeline.s1d_telegram import SHORTENERS
+        host = (urlsplit("https://www.bleepingcomputer.com/news/x").hostname
+                or "").lower().removeprefix("www.")
+        assert host not in SHORTENERS
+
+
+class TestRescoreTrace:
+    def test_stale_scoring_lines_are_cleared(self):
+        """rescore() stripped only "blend " lines, so an escalated item
+        shipped a trace showing its escalation twice, and a capped item
+        showed a contradictory escalate/demote pair. The trace renders
+        behind the card toggle, so the reader saw it."""
+        from pipeline.models import Item, Priority
+        from pipeline.s4_corroborate import rescore
+
+        it = Item(cluster_key="k", title="t", category="cyber_attacks")
+        it.priority, it.blend, it.interest_score = Priority.CRITICAL, 80.0, 100
+        it.trace = ["tier A (+40)", "blend 70 = ...",
+                    "escalated to CRITICAL by signal: 'actively exploited'",
+                    "demoted: critical capped at 5"]
+        rescore([it])
+        kept = [t for t in it.trace if t.startswith(("blend ", "escalated to",
+                                                     "demoted:"))]
+        # exactly one scoring pass worth of lines, not two
+        assert sum(1 for t in kept if t.startswith("escalated to")) <= 1
+        assert sum(1 for t in kept if t.startswith("demoted:")) <= 1
+        assert "tier A (+40)" in it.trace          # non-scoring lines survive

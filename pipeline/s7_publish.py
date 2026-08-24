@@ -40,6 +40,12 @@ def _resolve_links(items: list[Item]) -> None:
             real = resolved.get(src["url"])
             if real:
                 src["url"] = real
+                # Keep domain in step with url. It may still hold the
+                # synthetic "<publisher>.publisher" placeholder derived from
+                # the Google News title, which would then disagree with the
+                # link shown on the same card.
+                from .utils import domain_of
+                src["domain"] = domain_of(real)
                 fixed += 1
     if fixed:
         log("publish", f"{fixed} reference links resolved to publishers")
@@ -135,6 +141,15 @@ def run(items: list[Item], dry_run: bool = False) -> dict:
     live = _apply_quotas(live, cfg["window"])
 
     sched = cfg.get("schedule", {})
+    # Record the uids of the links AS HARVESTED, before resolution rewrites
+    # them. Stage 2 tests the raw harvested url against the seen store, so
+    # storing the resolved publisher url instead would mean a Google News
+    # item could never match and never be suppressed.
+    seen_uids = {
+        hashlib.sha1(canonical_url(s["url"]).encode()).hexdigest()[:16]
+        for i in live for s in i.sources
+    }
+
     _resolve_links(live)
 
     payload = {
@@ -176,11 +191,14 @@ def run(items: list[Item], dry_run: bool = False) -> dict:
     from .s2_clean import save_seen
     from .models import canonical_url
     import hashlib
-    uids = {
+    # Both forms: the harvested url so stage 2 can match it next run, and the
+    # resolved url so a direct hit on the publisher is recognised too.
+    seen_uids |= {
         hashlib.sha1(canonical_url(s["url"]).encode()).hexdigest()[:16]
         for i in live for s in i.sources
     }
-    save_seen(uids)
+    save_seen(seen_uids)
 
-    log("publish", f"{len(live)} published, {len(dead)} rejected, {len(uids)} urls marked seen")
+    log("publish", f"{len(live)} published, {len(dead)} rejected, "
+                   f"{len(seen_uids)} urls marked seen")
     return payload

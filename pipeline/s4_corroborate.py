@@ -252,7 +252,15 @@ def rescore(items: list[Item]) -> list[Item]:
     pcfg = settings()["priority"]
     for item in items:
         if item.verdict is not Verdict.REJECTED:
-            item.trace = [t for t in item.trace if not t.startswith("blend ")]
+            # Drop EVERY line the scoring pass writes, not just "blend ".
+            # score_priority also emits "escalated to CRITICAL by signal: ..."
+            # and _cap_critical emits "demoted: ...", so a rescored item shipped
+            # a trace showing its escalation twice, or a contradictory
+            # escalate/demote pair. The trace renders behind the card toggle,
+            # so the reader saw the confusion.
+            _STALE = ("blend ", "escalated to CRITICAL", "demoted:")
+            item.trace = [t for t in item.trace
+                          if not t.startswith(_STALE)]
             score_priority(item, pcfg)
     _cap_critical(items, pcfg)
     dist = {p.value: sum(1 for i in items if i.priority is p) for p in Priority}
