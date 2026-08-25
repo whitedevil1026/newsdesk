@@ -135,6 +135,32 @@ def _best_date(cluster: Cluster) -> datetime | None:
     return min(dates) if dates else None      # earliest = when it broke
 
 
+def _mark_new(items: list[Item]) -> None:
+    """Flag items that have never been published before.
+
+    The window is deliberately long for slow sections — 7 days for tools, 30
+    for research labs — so the same good story legitimately reappears for
+    days. Without a marker the page looks unchanged even when a third of it
+    is new, which reads as "the agent is not running".
+
+    An item counts as new when NONE of its source urls is in the seen store,
+    which stage 7 only writes for things it actually published.
+    """
+    import hashlib
+
+    from .models import canonical_url
+    from .s2_clean import _load_seen
+
+    seen = _load_seen()
+    if not seen:
+        return                       # first ever run: everything is "new", say nothing
+
+    for item in items:
+        uids = {hashlib.sha1(canonical_url(s["url"]).encode()).hexdigest()[:16]
+                for s in item.sources}
+        item.is_new = not (uids & seen)
+
+
 def run(clusters: list[Cluster]) -> list[Item]:
     cfg = settings()
     tcfg, pcfg = cfg["trust"], cfg["priority"]
@@ -221,6 +247,7 @@ def run(clusters: list[Cluster]) -> list[Item]:
 
         items.append(item)
 
+    _mark_new(items)
     _cap_critical(items, pcfg)
 
     live = len(items) - rejected

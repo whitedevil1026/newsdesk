@@ -173,6 +173,7 @@ def run(items: list[Item], dry_run: bool = False) -> dict:
             "established": sum(1 for i in live if i.verdict is Verdict.ESTABLISHED),
             "unverified": sum(1 for i in live if i.verdict is Verdict.UNVERIFIED),
             "disputed": sum(1 for i in live if i.verdict is Verdict.DISPUTED),
+            "new": sum(1 for i in live if i.is_new),
         },
         "items": [i.to_json() for i in live],
     }

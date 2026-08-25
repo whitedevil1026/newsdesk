@@ -120,6 +120,7 @@ class Item:
     interest_score: int = 0
     corroboration: int = 1
     blend: float = 0.0
+    is_new: bool = False         # not on the page in any previous run
     critical_signal: str = ""
     priority: Priority = Priority.MINOR
     verdict: Verdict = Verdict.UNVERIFIED

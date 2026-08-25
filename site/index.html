@@ -125,6 +125,9 @@ article:last-child{border-bottom:none}
 .chip-crit,.chip-warn{font-size:10.5px;letter-spacing:.09em;font-weight:700;
  text-transform:uppercase;padding:2px 8px;border-radius:4px}
 .chip-crit{background:var(--crit);color:var(--bg)}
+.chip-new{background:var(--accent);color:var(--bg);font-size:10.5px;
+ letter-spacing:.09em;font-weight:700;text-transform:uppercase;
+ padding:2px 8px;border-radius:4px}
 .chip-warn{background:transparent;color:var(--warn);
  border:1px solid color-mix(in srgb, var(--warn) 55%, transparent)}
 
@@ -294,6 +297,7 @@ footer p{margin:14px 0 0}
            placeholder="Search — try dfir, soc, llm, cve, ransomware, a vendor name…">
     <div class="chips" id="cats"></div>
     <div class="tagbar">
+      <button class="toggle" id="newOnly" aria-pressed="false">New only</button>
       <span class="lbl2">Sort</span>
       <div class="chips" id="sorts"></div>
       <span class="count" id="count" aria-live="polite"></span>
@@ -358,6 +362,8 @@ function writeState(){
   history.replaceState(null,"",s?("#"+s):location.pathname);
 }
 
+let onlyNew=false;
+
 const SORTS={
   priority:{label:"Priority", fn:(a,b)=>
     (PRI[a.priority]-PRI[b.priority]) || (b.blend-a.blend)},
@@ -403,6 +409,7 @@ function haystack(it){
 }
 
 function matches(it){
+  if(onlyNew && !it.is_new) return false;
   if(cat!=="all" && it.category!==cat) return false;
   for(const t of activeTags) if(!(it.tags||[]).includes(t)) return false;
   if(!query) return true;
@@ -466,6 +473,10 @@ function card(it){
     ? '<span class="chip-crit">critical</span>' : "";
   const vd = (it.verdict==="unverified"||it.verdict==="disputed")
     ? '<span class="chip-warn">'+esc(VD[it.verdict]||it.verdict)+'</span>' : "";
+  // Sections use windows up to 30 days, so a good story legitimately stays on
+  // the page for days. Without this the page looks unchanged even when a
+  // third of it is new, which reads as "the agent stopped running".
+  const isNew = it.is_new ? '<span class="chip-new">new</span>' : "";
 
   const detail =
     (it.summary?'<p class="body">'+hl(it.summary)+'</p>':"")+
@@ -475,7 +486,7 @@ function card(it){
     (trace?'<ul class="tr">'+trace+'</ul>':"");
 
   return '<article class="'+esc(it.priority)+'">'+
-    (pri||vd ? '<div class="rail">'+pri+vd+'</div>' : "")+
+    (pri||vd||isNew ? '<div class="rail">'+isNew+pri+vd+'</div>' : "")+
     '<h3><a href="'+esc(it.sources[0].url)+'" target="_blank" rel="noopener">'+
       hl(it.title)+'</a></h3>'+
     (it.bottom_line?'<p class="deck">'+hl(it.bottom_line)+'</p>':"")+
@@ -642,6 +653,8 @@ function boot(d){
     '<span title="'+esc(title)+'"><b>'+n+'</b> '+label+'</span>';
   document.getElementById("stats").innerHTML=
     stat(c.published,"stories","Stories published on this page")+
+    ((c.new||0)?stat(c.new,"new since last run",
+       "Not published on this page in any previous run"):"")+
     stat(c.critical,"need attention","Highest priority — worth acting on today")+
     stat(c.verified||0,"verified",
          "Backed by an official source (CISA, a CVE record, a vendor advisory) "
@@ -723,6 +736,18 @@ function boot(d){
   });
 
   // --- sort control ----------------------------------------------------
+  const nb=document.getElementById("newOnly");
+  if(nb){
+    const n=d.items.filter(i=>i.is_new).length;
+    nb.textContent = n ? "New only · "+n : "New only";
+    nb.disabled = !n;
+    nb.onclick=()=>{
+      onlyNew=!onlyNew;
+      nb.setAttribute("aria-pressed", onlyNew);
+      shown=PAGE; draw();
+    };
+  }
+
   const sbox=document.getElementById("sorts");
   sbox.innerHTML=Object.entries(SORTS).map(([k,v])=>
     '<button class="chip" data-sort="'+k+'" aria-pressed="'+(k===sort)+'">'+
