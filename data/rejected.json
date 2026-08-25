@@ -1,60 +1,6 @@
 {
-  "generated_at": "2026-08-24T19:57:05.061688+00:00",
+  "generated_at": "2026-08-25T02:37:32.198963+00:00",
   "items": [
-    {
-      "cluster_key": "73853ada04cdc66b",
-      "title": "amitshekhariitbhu/llm-inference-engineering — Learn LLM Inference Engineering step by step - from KV cache, PagedAttention, and continuous batching to vLLM,",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "ai",
-        "hardware",
-        "howto",
-        "llm",
-        "opensource"
-      ],
-      "summary": "Learn LLM Inference Engineering step by step - from KV cache, PagedAttention, and continuous batching to vLLM, SGLang, and GPUs. Prepared and maintained by the Founder of Outcome School: Amit Shekhar Note: This series will continue to grow as I write more blogs and create more videos on new topics. Everything in inference optimization builds on one fact: an LLM generates text one token at a time.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "Learn LLM Inference Engineering step by step - from KV cache, PagedAttention, and continuous batching to vLLM, SGLang, and GPUs.",
-          "support_span": "Learn LLM Inference Engineering step by step - from KV cache, PagedAttention, and continuous batching to vLLM, SGLang, and GPUs.",
-          "status": "entailed"
-        },
-        {
-          "text": "Prepared and maintained by the Founder of Outcome School: Amit Shekhar\nNote: This series will continue to grow as I write more blogs and create more videos on new topics.",
-          "support_span": "Prepared and maintained by the Founder of Outcome School: Amit Shekhar\nNote: This series will continue to grow as I write more blogs and create more videos on new topics.",
-          "status": "entailed"
-        },
-        {
-          "text": "Everything in inference optimization builds on one fact: an LLM generates text one token at a time.",
-          "support_span": "Everything in inference optimization builds on one fact: an LLM generates text one token at a time.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/amitshekhariitbhu/llm-inference-engineering",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-18T03:10:26+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-18 — outside lookback window"
-    },
     {
       "cluster_key": "d5b07d68e2af0e34",
       "title": "\"The emperor is a fan of Flock, and we must continue utilizing Flock technologies so that we can follow and surveil the rebel scum,\" Vader said durin…",
@@ -260,6 +206,54 @@
       "reject_reason": "published 2026-08-18 — outside lookback window"
     },
     {
+      "cluster_key": "f7646f8b4c400b8a",
+      "title": "Technology's effect on jobs changes over time In the First Industrial Revolution, handweaving had a \"Golden Age\" for 20 years because early machines…",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [],
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu Technology's effect on jobs changes over time In the First Industrial Revolution, handweaving had a \"Golden Age\" for 20 years because early machines made cheap yarn, which drove up demand for weavers.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "status": "entailed"
+        },
+        {
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "status": "entailed"
+        },
+        {
+          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Technology's effect on jobs changes over time\nIn the First Industrial Revolution, handweaving had a \"Golden Age\" for 20 years because early machines made cheap yarn, which drove up demand for weavers.",
+          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Technology's effect on jobs changes over time\nIn the First Industrial Revolution, handweaving had a \"Golden Age\" for 20 years because early machines made cheap yarn, which drove up demand for weavers.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mti65op5ks25",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-20T02:10:48.764000+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-20 — outside lookback window"
+    },
+    {
       "cluster_key": "81cf3e525133b86e",
       "title": "The fact that LLMs have theory of mind at all is a huge deal (and was controversial when discovered in GPT-4), but you can still see the limitations…",
       "category": "tech_ai",
@@ -310,36 +304,34 @@
       "reject_reason": "published 2026-08-18 — outside lookback window"
     },
     {
-      "cluster_key": "51b6eba7b47acd10",
-      "title": "lianghsun/open-sheet — The spreadsheet framework built for agents — write the model as React, export a live .xlsx. The third medium, ",
+      "cluster_key": "fd5d5c01f18811a7",
+      "title": "ZSeven-W/dsh-ios — DeepSeek Harness (DSH) plugin: a live iOS Simulator — and a USB-connected iPhone — inside the conversation. 22",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
         "agents",
-        "appsec",
-        "exploit",
+        "llm",
         "opensource",
-        "policy",
-        "research",
+        "release",
         "tool"
       ],
-      "summary": "English · 繁體中文 The spreadsheet framework built for agents. Describe the model you need in natural language — your coding agent writes the React. open-sheet handles the cell addressing, the formula references, the recalculation, and the export.",
+      "summary": "A live, interactive iOS Simulator inside a DeepSeek Harness conversation — plus your real iPhone over USB. 22 agent tools • live MJPEG sidebar panel • simulator & real iPhone over USB • list/feed row actions • SwiftUI preview hot reload npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1 English · 简体中文 · 繁體中文 · 日本語 · 한국어 · Français · Español · Deutsch · Português · Русский · हिन्दी · Türkçe · ไทย · Tiếng Việt · Bahasa Indonesia npm: @zsev…",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
         {
-          "text": "English · 繁體中文\nThe spreadsheet framework built for agents.",
-          "support_span": "English · 繁體中文\nThe spreadsheet framework built for agents.",
+          "text": "A live, interactive iOS Simulator inside a DeepSeek Harness conversation — plus your real iPhone over USB.",
+          "support_span": "A live, interactive iOS Simulator inside a DeepSeek Harness conversation — plus your real iPhone over USB.",
           "status": "entailed"
         },
         {
-          "text": "Describe the model you need in natural language — your coding agent writes the React.",
-          "support_span": "Describe the model you need in natural language — your coding agent writes the React.",
+          "text": "22 agent tools • live MJPEG sidebar panel • simulator & real iPhone over USB • list/feed row actions • SwiftUI preview hot reload\n  npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1\n  English · 简体中文 · 繁體中文 · 日本語 · 한국어 · Français · Español · Deutsch · Português · Русский · हिन्दी · Türkçe · ไทย · Tiếng Việt · Bahasa Indonesia\n  npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1\n  \nA real iPhone driven from inside a DSH conversation — the agent's tool calls on the left, the live device panel on the right\nDSH iOS Simulator gives the agent a real iOS Simulator inside the conversation — and gives you the pixels.",
+          "support_span": "22 agent tools • live MJPEG sidebar panel • simulator & real iPhone over USB • list/feed row actions • SwiftUI preview hot reload\n  npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1\n  English · 简体中文 · 繁體中文 · 日本語 · 한국어 · Français · Español · Deutsch · Português · Русский · हिन्दी · Türkçe · ไทย · Tiếng Việt · Bahasa Indonesia\n  npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1\n  \nA real iPhone driven from inside a DSH conversation — the agent's tool calls on the left, the live device panel on the right\nDSH iOS Simulator gives the agent a real iOS Simulator inside the conversation — and gives you the pixels.",
           "status": "entailed"
         },
         {
-          "text": "open-sheet handles the cell addressing, the formula references, the recalculation, and the export.",
-          "support_span": "open-sheet handles the cell addressing, the formula references, the recalculation, and the export.",
+          "text": "The agent can boot a device, build and run an Xcode project or Swift package, drive the UI by accessibility identity or by OCR text, read unified logs, and inspect processes, backtraces, and leaks, while a live stream of the device renders in a persistent sidebar panel where you can tap, drag, rotate, and press Home directly on the video.",
+          "support_span": "The agent can boot a device, build and run an Xcode project or Swift package, drive the UI by accessibility identity or by OCR text, read unified logs, and inspect processes, backtraces, and leaks, while a live stream of the device renders in a persistent sidebar panel where you can tap, drag, rotate, and press Home directly on the video.",
           "status": "entailed"
         }
       ],
@@ -353,17 +345,17 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/lianghsun/open-sheet",
+          "url": "https://github.com/ZSeven-W/dsh-ios",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-18T07:15:17+00:00",
+      "published": "2026-08-19T18:02:50+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-18 — outside lookback window"
+      "reject_reason": "published 2026-08-19 — outside lookback window"
     },
     {
       "cluster_key": "3b3c37d2dc6d4950",
@@ -414,119 +406,6 @@
         "summary: heuristic extractive (no LLM configured)"
       ],
       "reject_reason": "published 2026-08-20 — outside lookback window"
-    },
-    {
-      "cluster_key": "2ec9fc6e0967147d",
-      "title": "joe960913/Jixu — A durable single-Agent Harness for TypeScript with recoverable Threads, explicit side-effect boundaries, and a",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "linux",
-        "llm",
-        "opensource",
-        "policy",
-        "threat-intel",
-        "tool",
-        "vulnerability"
-      ],
-      "summary": "A small single-Agent Harness for TypeScript. Define one Agent, give it Tools and Skills, and continue its work in a durable Thread. Warning Jixu can run Bash commands on your machine.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "A small single-Agent Harness for TypeScript.",
-          "support_span": "A small single-Agent Harness for TypeScript.",
-          "status": "entailed"
-        },
-        {
-          "text": "Define one Agent, give it Tools and Skills, and continue its work in a durable Thread.",
-          "support_span": "Define one Agent, give it Tools and Skills, and continue its work in a durable Thread.",
-          "status": "entailed"
-        },
-        {
-          "text": "Warning\nJixu can run Bash commands on your machine.",
-          "support_span": "Warning\nJixu can run Bash commands on your machine.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/joe960913/Jixu",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-18T11:43:25+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-18 — outside lookback window"
-    },
-    {
-      "cluster_key": "7dcdd5f46b1e0f6d",
-      "title": "only-cli/oc — Turn any website into a compact CLI tailored for AI agents. Browse the web in hundreds of tokens, not tens of ",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai",
-        "identity",
-        "llm",
-        "opensource",
-        "threat-intel",
-        "tool"
-      ],
-      "summary": "Turns websites into a command line interface for AI agents. oc open <url> fetches a page and hands back a compact, numbered view instead of raw HTML or a screenshot, so agents like Claude Code, Codex, and Antigravity can browse without burning tokens. It also gets past blocks that stop naive fetchers on some sites, by talking to the page the way a real browser would.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "Turns websites into a command line interface for AI agents.",
-          "support_span": "Turns websites into a command line interface for AI agents.",
-          "status": "entailed"
-        },
-        {
-          "text": "oc open <url> fetches a page and hands back a compact, numbered view instead of raw HTML or a screenshot, so agents like Claude Code, Codex, and Antigravity can browse without burning tokens.",
-          "support_span": "oc open <url> fetches a page and hands back a compact, numbered view instead of raw HTML or a screenshot, so agents like Claude Code, Codex, and Antigravity can browse without burning tokens.",
-          "status": "entailed"
-        },
-        {
-          "text": "It also gets past blocks that stop naive fetchers on some sites, by talking to the page the way a real browser would.",
-          "support_span": "It also gets past blocks that stop naive fetchers on some sites, by talking to the page the way a real browser would.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/only-cli/oc",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-18T13:00:30+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-18 — outside lookback window"
     },
     {
       "cluster_key": "82a748697f86d7b8",
@@ -584,94 +463,32 @@
       "reject_reason": "published 2026-08-19 — outside lookback window"
     },
     {
-      "cluster_key": "87c1a17948dcb346",
-      "title": "When Words Are Safe But Actions Kill: Probing Physical Jailbreak Beyond Textual Jailbreak in Hidden-State Risk Space",
-      "category": "tech_ai",
-      "one_liner": "PRISM uses hidden-state probing to detect physical safety risks in embodied AI agents without relying on error-prone text moderation.",
-      "tags": [
-        "agents",
-        "ai",
-        "appsec",
-        "llm",
-        "research",
-        "tool"
-      ],
-      "summary": "Large language models acting as planners for embodied agents can receive linguistically benign instructions that become unsafe when grounded in the physical world. Researchers studied whether this physical jailbreak (PJ) differs from textual jailbreak (TJ) and showed that they form separable signals across multiple LLM families. To detect physical risks, they introduced PRISM, a single-layer L2-regularized logistic probe over full hidden states, which achieves 86.2% to 87.7% accuracy on SafeAgentBench and outperforms standard LLM judges while drastically reducing false-positive rates.",
-      "key_facts": [
-        "PRISM SafeAgentBench accuracy: 86.2% to 87.7%",
-        "PRISM false-positive rate: 11.7% to 13.7%",
-        "LLM judge false-positive rate: 24.7% to 39.0%"
-      ],
-      "bottom_line": "Hidden-state probing successfully separates physical jailbreaks from textual jailbreaks in LLM representations, offering a robust safety filter for embodied AI agents.",
-      "claims": [
-        {
-          "text": "PRISM achieves 86.2--87.7% accuracy on SafeAgentBench with 11.7--13.7% false-positive rates (FPRs), while same-scale LLM judges over-block safe tasks at 24.7--39.0% FPR.",
-          "support_span": "PRISM achieves 86.2--87.7% accuracy on SafeAgentBench with 11.7--13.7% false-positive rates (FPRs), while same-scale LLM judges over-block safe tasks at 24.7--39.0% FPR.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2607.15218",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2607.15218"
-      ],
-      "published": "2026-08-24T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "demoted: critical capped at 5",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "f5cccd875a858ef3",
-      "title": "wang2122/sprix-sage-router — Sprix AI at 屿智同行 — state-aware SELF/COLLABORATE/HANDOFF routing for A2A agent networks.",
+      "cluster_key": "1b6fcf121dfae12a",
+      "title": "Anubis continues to expose new ways people configure webservers https://xeiaso.net/notes/2026/anubis-csp-worker-hell/",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
-        "agents",
-        "ai",
-        "appsec",
-        "dfir",
         "exploit",
-        "network",
-        "opensource",
-        "research"
+        "threat-intel",
+        "windows"
       ],
-      "summary": "An open-source research output of Sprix AI at 屿智同行. Choose whether an agent should continue alone, recruit complementary collaborators, or hand off the task—then assign task-DAG roles, schedule dependencies, and learn from execution evidence under permission, budget, and deadline constraints. Quick start · Algorithm · Benchmark · Contributing · Security Agent discovery tells a system which agents exist.",
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Xe xeiaso.net did:plc:e5nncb3dr5thdkjir5cfaqfe Anubis continues to expose new ways people configure webservers https://xeiaso.net/notes/2026/anubis-csp-worker-hell/ https://xeiaso.net/notes/2026/anubis-csp-worker-hell/?utm_campaign=mi_irl&utm_medium=social&utm_source=bluesky 2026-08-19T20:20:50.066Z",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
         {
-          "text": "An open-source research output of Sprix AI at 屿智同行.",
-          "support_span": "An open-source research output of Sprix AI at 屿智同行.",
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
           "status": "entailed"
         },
         {
-          "text": "Choose whether an agent should continue alone, recruit complementary collaborators, or hand off the task—then assign task-DAG roles, schedule dependencies, and learn from execution evidence under permission, budget, and deadline constraints.",
-          "support_span": "Choose whether an agent should continue alone, recruit complementary collaborators, or hand off the task—then assign task-DAG roles, schedule dependencies, and learn from execution evidence under permission, budget, and deadline constraints.",
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
           "status": "entailed"
         },
         {
-          "text": "Quick start · Algorithm · Benchmark · Contributing · Security\nAgent discovery tells a system which agents exist.",
-          "support_span": "Quick start · Algorithm · Benchmark · Contributing · Security\nAgent discovery tells a system which agents exist.",
+          "text": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  Anubis continues to expose new ways people configure webservers\nhttps://xeiaso.net/notes/2026/anubis-csp-worker-hell/\nhttps://xeiaso.net/notes/2026/anubis-csp-worker-hell/?utm_campaign=mi_irl&utm_medium=social&utm_source=bluesky\n  2026-08-19T20:20:50.066Z",
+          "support_span": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  Anubis continues to expose new ways people configure webservers\nhttps://xeiaso.net/notes/2026/anubis-csp-worker-hell/\nhttps://xeiaso.net/notes/2026/anubis-csp-worker-hell/?utm_campaign=mi_irl&utm_medium=social&utm_source=bluesky\n  2026-08-19T20:20:50.066Z",
           "status": "entailed"
         }
       ],
@@ -684,75 +501,18 @@
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/wang2122/sprix-sage-router",
-          "domain": "github.com",
+          "name": "Xe Iaso",
+          "url": "https://bsky.app/profile/xeiaso.net/post/3mthklult3g2p",
+          "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-18T04:08:11+00:00",
+      "published": "2026-08-19T20:20:49.851000+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-18 — outside lookback window"
-    },
-    {
-      "cluster_key": "dbe675c439b81204",
-      "title": "Structure for Reading, Prose for Writing: Asymmetric Structural Conditioning in Multi-Agent Document Authoring",
-      "category": "tech_ai",
-      "one_liner": "Multi-agent document authoring systems suffer when instructions use nested XML structure rather than prose.",
-      "tags": [
-        "agents",
-        "ai",
-        "exploit",
-        "identity",
-        "llm",
-        "markets",
-        "research"
-      ],
-      "summary": "Researchers evaluated a deployed multi-agent tender-response system against human-submitted bids and found that divergence from ground truth is primarily an information-availability issue rather than a writing-quality one. The study identified a conditioning asymmetry: while structural markup aids reading tasks, converting instruction material from prose to nested XML dropped answer quality from 74% to 48% in paired comparisons. Furthermore, naming a forbidden construction concentrates rather than removes it, with 96% of surviving defects falling into the two explicitly named forms.",
-      "key_facts": [
-        "Ground-truth sections matched or beaten: 40 of 55",
-        "Prose to nested XML quality drop: 74% to 48%",
-        "Surviving defects in named forbidden forms: 96%"
-      ],
-      "bottom_line": "Structural markup helps multi-agent systems read documents, but converting instruction material to structural markup severely degrades answer quality during writing.",
-      "claims": [
-        {
-          "text": "converting a bid's instruction material from prose to nested XML dropped answer quality from 74% to 48% under a paired comparison.",
-          "support_span": "converting a bid's instruction material from prose to nested XML dropped answer quality from 74% to 48% under a paired comparison.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2608.20786",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2608.20786"
-      ],
-      "published": "2026-08-24T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "demoted: critical capped at 5",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-08-19 — outside lookback window"
     },
     {
       "cluster_key": "632d9b998f793cc9",
@@ -803,377 +563,6 @@
         "summary: heuristic extractive (no LLM configured)"
       ],
       "reject_reason": "published 2026-08-18 — outside lookback window"
-    },
-    {
-      "cluster_key": "e0555d933c60a101",
-      "title": "SeanEllyJames/deep-research-skill — 让AI Agent 做真正会思考，有判断的深度调研，而不是会摆信息的汇总报告。一个即插即用的 skill 文件。",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "llm",
-        "opensource",
-        "tool"
-      ],
-      "summary": "市面上绝大多数所谓的「AI 深度调研」，本质是 Wide Research：并行搜一堆来源，按主题分好类，给你一份工整的 checklist。看起来很全，事实也没错，但没用——它只有目录，没有判断。 这个 skill 把 Agent 掰到另一条路上：Deep Research。精读一手源，把它们之间的矛盾挑出来，最后落到一个业内人真的会跟你争论的判断上。 Wide Research 是 LLM 的出厂设置，产出的是「正确的废话」。这个 skill 就是一套护栏，把它从默认模式里拽出来。 一套四阶段工作流，以及比工作流更重要的东西：不让 Agent 跳过 Phase 0 的纪律。 Phase 0 元思考 — 绝不外包 一次搜索都还没发起，先拷问问题本身：为什么问这个？隐藏假设是什么？有没有一个「显而易见但其实不对」的标准答案，而这篇报告的全部价值就是说清它为什么不对？然后写下「好答案」该长什么样：核心论点摆到一屋子业内人面前得能吵起来，而不是集体点头。 Phase 1 一手源精读 找到那 3 到 5 篇真正的原始文献（财报、创始人自己写的博文、电…",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "市面上绝大多数所谓的「AI 深度调研」，本质是 Wide Research：并行搜一堆来源，按主题分好类，给你一份工整的 checklist。看起来很全，事实也没错，但没用——它只有目录，没有判断。\n这个 skill 把 Agent 掰到另一条路上：Deep Research。精读一手源，把它们之间的矛盾挑出来，最后落到一个业内人真的会跟你争论的判断上。\nWide Research 是 LLM 的出厂设置，产出的是「正确的废话」。这个 skill 就是一套护栏，把它从默认模式里拽出来。\n一套四阶段工作流，以及比工作流更重要的东西：不让 Agent 跳过 Phase 0 的纪律。\nPhase 0　元思考 — 绝不外包\n一次搜索都还没发起，先拷问问题本身：为什么问这个？隐藏假设是什么？有没有一个「显而易见但其实不对」的标准答案，而这篇报告的全部价值就是说清它为什么不对？然后写下「好答案」该长什么样：核心论点摆到一屋子业内人面前得能吵起来，而不是集体点头。\nPhase 1　一手源精读\n找到那 3 到 5 篇真正的原始文献（财报、创始人自己写的博文、电话会议逐字稿、论文原文），完整读完。二手总结每转一手，洞见就蒸发一层。\nPhase 2　对比与反例\n选 2 到 3 个案例做深度对比，专门去挖失败案例和批评声音。收敛本身是发现，分歧背后的原因是更大的发现。\nPhase 3　交叉验证\n多源印证的可信，单源的标注存疑，互相矛盾的——这才是最有意思的地方，去分析这个矛盾意味着什么。\nPhase 4　把论证写出来\n段落优先于表格，每一章只推进一个论点，诚实标注不知道的部分。最后一道自检：如果核心结论放到业内不会引发任何争论，重写。\n这个文件最值钱的部分是「翻车目录」：把 Agent 最容易走的捷径一条条写下来，每条都配一个检测信号，让你（或 Agent）当场判断是不是正在犯。\n1 · 跳过 Phase 0 直接搜 没有假设引导，subagent 返回的是信息碎片，不是论证素材。\n检测信号：subagent 的 prompt 里没有「假设」或「待验证的论点」。\n2 · 拿 subagent 的返回结构当报告骨架 你会得到一个伪装成分析的主题目录。\n检测信号：章节标题拿去当搜索关键词刚好合适（「定价对比」「适合谁」）——那是文件柜，不是论证。\n3 · 用表格和 bullet 替代思考 一个洞见如果能塞进表格，它大概率不是洞见。\n检测信号：删掉所有表格和 bullet 后，剩下的段落撑不起一篇文章。\n4 · 结论太安全 「A 适合新手，B 适合老手」这种话不用调研就能说。\n检测信号：核心结论发到专业群里，没人会出来反驳或讨论。\n5 · 把「全面」当「深度」 10 个维度各 3 句，输给 3 个维度各 3 段。\n检测信号：报告过万字，但核心论点三句话就能说完。\n6 · 子 agent 递归 fan-out 一次真实事故就是这条规则的由来：主 agent 派 3 个 → 变 13 个 → 变 50+ → 最终 149 个 agent，一笔意外的 API 账单。\n检测信号：你在给子 agent 的 prompt 里写了「你可以用 Agent 工具进一步搜索」。停，马上要炸。\n1.",
-          "support_span": "市面上绝大多数所谓的「AI 深度调研」，本质是 Wide Research：并行搜一堆来源，按主题分好类，给你一份工整的 checklist。看起来很全，事实也没错，但没用——它只有目录，没有判断。\n这个 skill 把 Agent 掰到另一条路上：Deep Research。精读一手源，把它们之间的矛盾挑出来，最后落到一个业内人真的会跟你争论的判断上。\nWide Research 是 LLM 的出厂设置，产出的是「正确的废话」。这个 skill 就是一套护栏，把它从默认模式里拽出来。\n一套四阶段工作流，以及比工作流更重要的东西：不让 Agent 跳过 Phase 0 的纪律。\nPhase 0　元思考 — 绝不外包\n一次搜索都还没发起，先拷问问题本身：为什么问这个？隐藏假设是什么？有没有一个「显而易见但其实不对」的标准答案，而这篇报告的全部价值就是说清它为什么不对？然后写下「好答案」该长什么样：核心论点摆到一屋子业内人面前得能吵起来，而不是集体点头。\nPhase 1　一手源精读\n找到那 3 到 5 篇真正的原始文献（财报、创始人自己写的博文、电话会议逐字稿、论文原文），完整读完。二手总结每转一手，洞见就蒸发一层。\nPhase 2　对比与反例\n选 2 到 3 个案例做深度对比，专门去挖失败案例和批评声音。收敛本身是发现，分歧背后的原因是更大的发现。\nPhase 3　交叉验证\n多源印证的可信，单源的标注存疑，互相矛盾的——这才是最有意思的地方，去分析这个矛盾意味着什么。\nPhase 4　把论证写出来\n段落优先于表格，每一章只推进一个论点，诚实标注不知道的部分。最后一道自检：如果核心结论放到业内不会引发任何争论，重写。\n这个文件最值钱的部分是「翻车目录」：把 Agent 最容易走的捷径一条条写下来，每条都配一个检测信号，让你（或 Agent）当场判断是不是正在犯。\n1 · 跳过 Phase 0 直接搜 没有假设引导，subagent 返回的是信息碎片，不是论证素材。\n检测信号：subagent 的 prompt 里没有「假设」或「待验证的论点」。\n2 · 拿 subagent 的返回结构当报告骨架 你会得到一个伪装成分析的主题目录。\n检测信号：章节标题拿去当搜索关键词刚好合适（「定价对比」「适合谁」）——那是文件柜，不是论证。\n3 · 用表格和 bullet 替代思考 一个洞见如果能塞进表格，它大概率不是洞见。\n检测信号：删掉所有表格和 bullet 后，剩下的段落撑不起一篇文章。\n4 · 结论太安全 「A 适合新手，B 适合老手」这种话不用调研就能说。\n检测信号：核心结论发到专业群里，没人会出来反驳或讨论。\n5 · 把「全面」当「深度」 10 个维度各 3 句，输给 3 个维度各 3 段。\n检测信号：报告过万字，但核心论点三句话就能说完。\n6 · 子 agent 递归 fan-out 一次真实事故就是这条规则的由来：主 agent 派 3 个 → 变 13 个 → 变 50+ → 最终 149 个 agent，一笔意外的 API 账单。\n检测信号：你在给子 agent 的 prompt 里写了「你可以用 Agent 工具进一步搜索」。停，马上要炸。\n1.",
-          "status": "entailed"
-        },
-        {
-          "text": "把 SKILL.md 放进 Agent 的 skills 目录，或直接粘进系统提示词 / 项目指令\n2.",
-          "support_span": "把 SKILL.md 放进 Agent 的 skills 目录，或直接粘进系统提示词 / 项目指令\n2.",
-          "status": "entailed"
-        },
-        {
-          "text": "看着它在搜索之前先停下来做 Phase 0 —— 那个停顿，就是全部意义所在\n任何能读 skill 文件、能派 subagent 的 Agent 都能用（Claude Code、Cursor、Cline 等）。搜索那一步默认你手上有一个搜索 / 抓取工具（比如 Tavily 这类搜索 MCP，或 Agent 自带的联网搜索），有什么用什么，skill 会自动降级适配。\n- 中文主版　→　SKILL.md\n- English　→　SKILL.en.md\n因为它是对着一堆真实的翻车记录写出来的，不是在书房里空想的。文件里每一条反模式，都是真实调研过程中犯过、并且烧钱或丢脸到值得为它立一条规矩的错误。那个 149 个 agent 的失控故事是真的，「你的章节标题就是搜索关键词」那个信号也是真的。这是踩过的坑结成的疤，写成了提示词。",
-          "support_span": "看着它在搜索之前先停下来做 Phase 0 —— 那个停顿，就是全部意义所在\n任何能读 skill 文件、能派 subagent 的 Agent 都能用（Claude Code、Cursor、Cline 等）。搜索那一步默认你手上有一个搜索 / 抓取工具（比如 Tavily 这类搜索 MCP，或 Agent 自带的联网搜索），有什么用什么，skill 会自动降级适配。\n- 中文主版　→　SKILL.md\n- English　→　SKILL.en.md\n因为它是对着一堆真实的翻车记录写出来的，不是在书房里空想的。文件里每一条反模式，都是真实调研过程中犯过、并且烧钱或丢脸到值得为它立一条规矩的错误。那个 149 个 agent 的失控故事是真的，「你的章节标题就是搜索关键词」那个信号也是真的。这是踩过的坑结成的疤，写成了提示词。",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/SeanEllyJames/deep-research-skill",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-18T07:04:01+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-18 — outside lookback window"
-    },
-    {
-      "cluster_key": "ed974b7e9a642d07",
-      "title": "WordlistLoader Delivers Amatera via ClickFix, SynkLoader Phishes Windows Passwords",
-      "category": "cyber_attacks",
-      "one_liner": "New malware loaders are using 'ClickFix' social engineering and legitimate cloud infrastructure to deliver stealers and ransomware.",
-      "tags": [
-        "cloud",
-        "identity",
-        "incident",
-        "llm",
-        "malware",
-        "network",
-        "ransomware",
-        "redteam"
-      ],
-      "summary": "Researchers have identified two new malware loaders, WordlistLoader and SynkLoader, being used in sophisticated phishing campaigns. WordlistLoader utilizes the 'ClickFix' technique to trick users into executing malicious PowerShell commands via the Windows Run dialog, leading to the delivery of Amatera Stealer. SynkLoader, a Python-based loader, uses Azure-hosted installers and a custom runtime to steal credentials and facilitate ransomware access. These campaigns leverage legitimate CDNs like jsDelivr and techniques like EtherHiding to bypass security controls.",
-      "key_facts": [
-        "Malware: WordlistLoader, SynkLoader, Amatera Stealer",
-        "Technique: ClickFix (FakeCaptcha)",
-        "Infrastructure: jsDelivr CDN, Azure storage",
-        "Method: EtherHiding (blockchain-based JS)"
-      ],
-      "bottom_line": "Attackers are increasingly using social engineering to trick users into running commands that bypass browser protections and deliver stealthy loaders.",
-      "claims": [
-        {
-          "text": "WordlistLoader uses the ClickFix technique to deliver Amatera Stealer.",
-          "support_span": "WordlistLoader is being used to deliver Amatera Stealer (aka ACR Stealer or AcridRain Stealer) via ClearFake campaigns, which employ the ClickFix (aka FakeCaptcha) technique",
-          "status": "entailed"
-        },
-        {
-          "text": "SynkLoader uses a custom Python environment to steal Windows passwords.",
-          "support_span": "WordlistLoader Delivers Amatera via ClickFix, SynkLoader Phishes Windows Passwords",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 47.5,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/08/wordlistloader-delivers-amatera-via.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Hacker News",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ESUQ1WXU2ZngwaUpoRXdRTkdSN3VyaGY1THpLZHA5MkZPekdZQ0x1akNyazdYNU0yVExRbHdIM1BhcWR6eVJDSnB0Tmh6V0RSM0h0VkZaM2x2ZTl5eW5KWmNzaEhjN0N6VC1ydUhTRjRDbGllN3ZsZE9hdm04YU0?oc=5",
-          "domain": "thehackernews.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-24T12:35:00+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3-flash-preview",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "af211012575696cf",
-      "title": "Beyond End-to-End Success: Diagnosing Failures in Long-Horizon Security LLM Agents",
-      "category": "tech_ai",
-      "one_liner": "Diagnose security LLM agent failures using checkpoint instrumentation rather than relying solely on aggregate end-to-end task success rates.",
-      "tags": [
-        "agents",
-        "ai",
-        "appsec",
-        "dfir",
-        "exploit",
-        "llm",
-        "markets",
-        "research"
-      ],
-      "summary": "Long-horizon security LLM agents depend on information and access discovered across multiple interactions, making final end-to-end success metrics difficult to interpret when failures occur early. The authors introduce a diagnostic methodology that adds checkpoints to security tasks, separates failures occurring before and after capability exposure, and applies controlled interventions to test upstream bottlenecks. Evaluating four task families showed that Gemini 2.5 Flash frequently failed before observing states it needed to reuse, and targeted guidance successfully increased state observation from 65.5% to 95.4% in a 92-seed study. However, repeating the study with Gemini 3.7 Flash produced opposite behavioral shifts where state observation no longer predicted task completion. These results highlight that dominant failure points shift across model generations, necessitating granular diagnostic evaluations over aggregate success rates.",
-      "key_facts": [
-        "Study size: 92-seed study",
-        "Gemini 2.5 Flash state observation (guidance): 95.4%",
-        "Gemini 2.5 Flash state observation (control): 65.5%",
-        "Evaluated models: Gemini 2.5 Flash, Gemini 3.7 Flash"
-      ],
-      "bottom_line": "Model bottlenecks shift across generations, proving that granular checkpoint-based diagnostics are essential for understanding why long-horizon security agents fail.",
-      "claims": [
-        {
-          "text": "In a pre-specified 92-seed study, targeted protocol-disambiguation guidance increases state observation from 65.5% under a matched non-guidance control message to 95.4%.",
-          "support_span": "In a pre-specified 92-seed study, targeted protocol-disambiguation guidance increases state observation from 65.5% under a matched non-guidance control message to 95.4%.",
-          "status": "contradicted"
-        },
-        {
-          "text": "Repeating the same design with Gemini 3.7 Flash produces the opposite effect, while state observation no longer reliably predicts task completion.",
-          "support_span": "Repeating the same design with Gemini 3.7 Flash produces the opposite effect, while state observation no longer reliably predicts task completion.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2608.20563",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2608.20563"
-      ],
-      "published": "2026-08-24T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "demoted: critical capped at 5",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "266bc24bde93d08e",
-      "title": "Horizon Industrial Parks IPO listing: Shares debut flat in a range-bound market",
-      "category": "markets",
-      "one_liner": "Horizon Industrial Parks' flat debut reflects cautious market sentiment despite its position as a major logistics developer.",
-      "tags": [
-        "hardware",
-        "india",
-        "markets",
-        "research"
-      ],
-      "summary": "Shares of Horizon Industrial Parks debuted flat on the BSE and NSE on Monday in a range-bound market, opening near the issue price of 60 rupees. The IPO had achieved an overall subscription of 1.52 times during its bidding window last week. The company intends to direct net proceeds from the 2,600 crore rupee fresh issue towards debt repayment and corporate purposes. Horizon operates a large logistics infrastructure network across major Indian industrial hubs and reported a profit of 0.14 crore rupees for the 2026 fiscal year.",
-      "key_facts": [
-        "Issue Price: ₹60",
-        "BSE Opening Price: ₹59.65",
-        "NSE Opening Price: ₹60.25",
-        "Subscription: 1.52 times",
-        "Total Issue Size: ₹2,600 crore"
-      ],
-      "bottom_line": "Horizon Industrial Parks shares listed flat on domestic bourses after raising funds to pay down debt.",
-      "claims": [
-        {
-          "text": "Horizon Industrial Parks' share price opened at ₹59.65 on the BSE against the issue price of ₹60, while on the NSE, the stock was listed at ₹60.25.",
-          "support_span": "Horizon Industrial Parks' share price opened at ₹59.65 on the BSE against the issue price of ₹60, while on the NSE, the stock was listed at ₹60.25.",
-          "status": "entailed"
-        },
-        {
-          "text": "The IPO was a book-built issue, which opened for public subscription on Monday, 17 August, and concluded on Wednesday, 19 August, with an overall subscription of 1.52 times.",
-          "support_span": "The IPO was a book-built issue, which opened for public subscription on Monday, 17 August, and concluded on Wednesday, 19 August, with an overall subscription of 1.52 times.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 25,
-      "corroboration": 1,
-      "blend": 25.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/ipo/horizon-industrial-parks-ipo-listing-shares-debut-flat-in-a-range-bound-market-11787545062108.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-24T04:31:10+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 2/5 from gemini-3.5-flash-lite",
-        "blend 25 = trust 25 / interest 25 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "f4200302bed69577",
-      "title": "Evaluating Skills, Not Just Agents: Agentic Continuous Evaluation of Skills",
-      "category": "tech_ai",
-      "one_liner": "ACES measures live enterprise agent skill efficacy through paired trials, showing that static code scans miss critical runtime performance gains.",
-      "tags": [
-        "agents",
-        "ai",
-        "appsec",
-        "dfir",
-        "exploit",
-        "llm",
-        "markets",
-        "opensource"
-      ],
-      "summary": "Enterprise agent programs are moving into production, but current static gates only scan skill artifacts for structure, style, and security without verifying whether capability packages actually improve live agent task completion. The authors present ACES (Agentic Continuous Evaluation of Skills), a repository-native framework that runs paired live trials with and without a target skill to compute Skill Lift: the target skill's added value under a fixed task, harness, workspace, and scorer. Across 947 scored paired cases from 58 production skills, mean composite Skill Lift is 0.2134, with composite lift positive in 72.8 percent of cases. The results show that structural document scans and runtime execution evaluations measure complementary facets, with process gains appearing in skill execution and efficiency.",
-      "key_facts": [
-        "Evaluated skills: 145 real skills from enterprise repositories",
-        "Scored paired cases: 947 cases across 58 production skills",
-        "Mean composite Skill Lift: 0.2134"
-      ],
-      "bottom_line": "Static security and style scans do not measure whether an enterprise agent skill actually improves live task execution.",
-      "claims": [
-        {
-          "text": "Current gates often scan these artifacts for structure, style, and security, but they do not answer the deployment question: does the capability package help a live agent complete enterprise tasks under the same model, sandbox, and grading policy?",
-          "support_span": "Current gates often scan these artifacts for structure, style, and security, but they do not answer the deployment question: does the capability package help a live agent complete enterprise tasks under the same model, sandbox, and grading policy?",
-          "status": "entailed"
-        },
-        {
-          "text": "Across 947 scored paired cases from 58 of 64 production skills and four primary harnesses, mean composite Skill Lift is 0.2134 (95% paired-case CI [0.1967, 0.2301]); mean outcome-only lift, the average of accuracy and goal accuracy, is 0.1799.",
-          "support_span": "Across 947 scored paired cases from 58 of 64 production skills and four primary harnesses, mean composite Skill Lift is 0.2134 (95% paired-case CI [0.1967, 0.2301]); mean outcome-only lift, the average of accuracy and goal accuracy, is 0.1799.",
-          "status": "contradicted"
-        },
-        {
-          "text": "Composite lift is positive in 72.8% of paired cases.",
-          "support_span": "Composite lift is positive in 72.8% of paired cases.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2608.20614",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2608.20614"
-      ],
-      "published": "2026-08-24T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "demoted: critical capped at 5",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "2 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "c45a38e60e0aa768",
-      "title": "ARQ: Agentic CodeQL Query Refinement for C/C++ Vulnerability Detection",
-      "category": "tech_ai",
-      "one_liner": "ARQ uses execution-grounded LLM feedback to automatically refine CodeQL queries, discovering new bugs and eliminating false results.",
-      "tags": [
-        "agents",
-        "ai",
-        "appsec",
-        "exploit",
-        "llm",
-        "policy",
-        "release",
-        "research"
-      ],
-      "summary": "Static analysis tools like CodeQL suffer from false positives and false negatives in C/C++ vulnerability detection. Researchers developed ARQ, an agentic framework that automatically refines CodeQL queries using execution-grounded evidence from synthesized programs via an LLM-based loop. Tested across three commercial LLMs on Juliet v1.3 and FormAI v2 datasets, ARQ-refined queries detected up to 119.8% more true positives while maintaining at least 98.0% precision, fixed three unresolved GitHub issues open for up to 27 months, and uncovered two new bugs in libpng and zlib.",
-      "key_facts": [
-        "True positive increase: up to 119.8%",
-        "Precision: at least 98.0%",
-        "Unresolved GitHub issues fixed: 3",
-        "Open duration of fixed issues: up to 27 months",
-        "Real-world libraries with new bugs: libpng and zlib"
-      ],
-      "bottom_line": "Agentic query refinement using synthesized program execution significantly boosts CodeQL true positive detection while uncovering real-world vulnerabilities in major libraries.",
-      "claims": [
-        {
-          "text": "ARQ-refined queries detect substantially more true positives, by up to 119.8%, with a Precision of at least 98.0% throughout.",
-          "support_span": "ARQ-refined queries detect substantially more true positives, by up to 119.8%, with a Precision of at least 98.0% throughout.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2608.20637",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2608.20637"
-      ],
-      "published": "2026-08-24T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "demoted: critical capped at 5",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
     }
   ]
 }
