@@ -257,3 +257,110 @@ article text.
 Verify the judge on a live run, then Step 4 (GitHub Actions) and Step 5
 (Vercel). A second Google account is available as a spare key if ever needed;
 not wired, and not currently necessary.
+
+---
+
+## 2026-08-24 (overnight) — two audits, thirteen defects, site rebuilt
+
+Two agents were run: one hunting API-key leak paths, one hunting correctness
+bugs. Between them they found things no amount of re-reading had.
+
+### The worst bug in the project so far
+
+`config/interests.yaml` still had a `cybersecurity:` boost key after the
+categories were split into `cyber_attacks` and `cyber_tools`. No code path
+ever looks up `cybersecurity`, so the entire 15-term security keyword list
+was dead config.
+
+Interest carries the heaviest weight (0.45), so:
+
+| headline | before | after |
+|---|---|---|
+| "Actively exploited zero-day RCE ransomware CVE-2026-1" | **12** | **100** |
+| "Vendor publishes quarterly transparency report" | 12 | 12 |
+
+Worse than the handicap: within the two cyber sections the interest term was
+a *constant*, so ranking there collapsed to trust+corroboration and a routine
+vendor blog sorted identically to an exploited-in-the-wild CVE.
+`critical_signals` is a separate top-level key and still worked, which is
+exactly what masked it.
+
+**Lesson, now a test:** every `boost` key must name a real category, and
+every category must have a profile. A config key nothing reads is the most
+expensive kind of bug here, because the feature looks present.
+
+### Crash-class
+
+- **A Gemini safety block killed the whole run.** `data["candidates"][0]` and
+  `candidate["content"]` were dereferenced unguarded; Gemini omits both on
+  SAFETY/MAX_TOKENS and omits `candidates` entirely when the prompt is
+  blocked. The KeyError escaped every caller and aborted the run *after*
+  stages 1-5 had spent their budget. Feeds are untrusted input, so a safety
+  block is routine here — it now degrades that batch.
+- **Two self-inflicted `UnboundLocalError`s.** A function-scope `import`
+  makes the name local to the WHOLE function, so an earlier use raises at
+  runtime. It hit `s7_publish` (publish broken entirely) and then `run.py`
+  (`s8_notify`, after a full successful run). Neither was caught by syntax
+  checks, module imports, or 68 tests.
+  **The guard I wrote for it was fake** — it checked "used before the import
+  line", but line order was never the issue. Proven fake by reintroducing the
+  bug and watching the test pass. Rewritten to detect the real smell: a name
+  imported at module scope AND re-imported inside a function. Verified by
+  watching it fail, then pass.
+
+### Data-quality
+
+- **Telegram timestamps were on the wrong posts.** Text divs and `<time>`
+  tags were matched independently and zipped with `stamps[-len(blocks):]`,
+  which only works if every extra stamp precedes the first text block. A
+  media-only post or a reply desyncs everything after it — silently, since
+  when the counts match the slice is a no-op. Now parsed per message.
+- **Corroboration counted reach, not independence.** One breach story showed
+  26 "outlets"; 21 were Yahoo Finance, Crypto Briefing, The Malone Telegram
+  and similar republishing one release. That count is what earns `verified`.
+  Syndication, press-release distributors and unmapped `.publisher` domains
+  now collapse to one vote each. **26 -> 6.**
+- **17 of 40 cards had no model summary**, and their keyword-interest median
+  was *higher* than the summarised ones. Structural: the shortlist ranks on
+  the pre-LLM blend, then the model's importance score reorders and promotes
+  items that were never sent to it. Widening the shortlist cannot fix a
+  promotion that happens after the shortlist is chosen — added a bounded
+  `top_up()` pass instead.
+
+### Also fixed
+
+Digest sliced 10 items from unsorted order (a CRITICAL zero-day could lose to
+ten routine market items) · budget ignored `blocked` when quota accounting was
+off, spinning forever · `sources[0]` could be an aggregator stub under another
+outlet's headline · an empty article body was recorded as "the model
+fabricated its quote" · `--stop-after` shadowed the judge entirely ·
+`rescore()` left stale trace lines so cards showed contradictory
+escalate/demote pairs · `www.`-prefixed shorteners never resolved · the seen
+store pruned by hex order rather than age.
+
+### Security
+
+`.env` was readable by every local account (inherited ACL) — gitignoring
+protects the remote, not the filesystem. Locked, with a warning if it
+regresses.
+
+Three conditional key-leak paths shared one root cause: a token containing a
+control character makes `http.client` raise `ValueError("Invalid header value
+%r")` with the FULL header in the message, which is then logged. One
+sanitiser at load closes all three. Audited clean otherwise: nothing in
+`data/`, the published site, git history, or the Actions workflow.
+
+### Site
+
+Filters in the URL (shareable) · sort by priority/newest/most-sources ·
+keyboard navigation (j/k, o, /, Esc, ?) · **claims shown** with pass/fail
+marks rather than the page merely asserting "verified" · per-section lookback
+labels so a five-day-old tools item does not read as stale · live region,
+focus styles, skip link, print stylesheet.
+
+### Tests: 42 -> 75
+
+### Next action
+
+Two research agents are running on presentation and recall. After that: the
+GitHub secret and one manual Actions run remain the only blockers to Vercel.
