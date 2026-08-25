@@ -145,12 +145,23 @@ telegram:
   # These are PUBLIC channels being read, not owned. Reading needs no bot, no
   # token and no permission — it is the same page a browser would load.
   channels:
+    #
+    # window_hours overrides the 72h default FOR THAT CHANNEL. Measured post
+    # rates on 2026-08-26 (newest post at the time of probing):
+    #   ctinow                 20 posts/day     newest  0h   -> default
+    #   Cyber_Security_Channel  ~2 posts/day    newest  5h   -> default
+    #   vxunderground          bursty, many with no link at all
+    #                                           newest  3h   -> default
+    #   androidMalware         ~1 post / 4 days newest 94h   -> 336h
+    #   secharvester           ~1 post / week   newest 174h  -> 504h
+    # Without the overrides the last two scored 0 posts on EVERY run: their
+    # newest post is always older than 72h, so the window did not filter them,
+    # it deleted them permanently.
     - {channel: "ctinow",         name: "CTI Now",        category: cyber_attacks, tier: C}
     - {channel: "vxunderground",  name: "vx-underground", category: cyber_attacks, tier: C}
-    - {channel: "androidMalware", name: "Android Malware", category: cyber_attacks, tier: C}
-    # Probed 2026-08-25: 20 messages each, newest same-day / 6 days.
+    - {channel: "androidMalware", name: "Android Malware", category: cyber_attacks, tier: C, window_hours: 336}
     - {channel: "Cyber_Security_Channel", name: "Cyber Security Channel", category: cyber_attacks, tier: C}
-    - {channel: "secharvester",   name: "SecHarvester",   category: cyber_tools, tier: C}
+    - {channel: "secharvester",   name: "SecHarvester",   category: cyber_tools, tier: C, window_hours: 504}
 
 # --- Push the digest to Telegram -------------------------------------------
 # ENTIRELY OPTIONAL. This is the only part that needs a bot, and it does one

@@ -150,7 +150,22 @@ def _channel_articles(spec: dict, cutoff: datetime, cfg: dict) -> list[Article]:
         return []
 
     tg = cfg["telegram"]
+    # A channel's own window, when it has one. Channels post at wildly
+    # different rates: ctinow runs 20 posts a day, secharvester about one a
+    # week. Judging both against a single 72h cutoff does not filter the slow
+    # ones, it DELETES them - every post is always older than the window, so
+    # the channel contributes nothing on every run for ever. feeds.yaml has
+    # had per-feed windows for exactly this reason; channels need them too.
+    own = spec.get("window_hours")
+    if own:
+        cutoff = datetime.now(timezone.utc) - timedelta(hours=int(own))
+
     out: list[Article] = []
+    # Counted so a channel that yields nothing can say WHY. Silence here was
+    # the whole problem: three of five channels returned zero and logged not
+    # one line, so a dead channel, a slow channel and a channel whose posts
+    # were all filtered out looked exactly alike from the console.
+    drop = {"short": 0, "old": 0, "nolink": 0, "unsafe": 0}
 
     # Each message carries its own timestamp, so they cannot drift apart.
     for chunk in _MESSAGE.findall(page):
@@ -165,22 +180,26 @@ def _channel_articles(spec: dict, cutoff: datetime, cfg: dict) -> list[Article]:
         block, stamp = texts[-1], stamps[-1]
         text, link = _parse(block)
         if len(text) < tg["min_chars"]:
+            drop["short"] += 1
             continue
         try:
             when = datetime.fromisoformat(stamp.replace("Z", "+00:00"))
         except ValueError:
             continue
         if when < cutoff:
+            drop["old"] += 1
             continue
 
         # A post with no link is commentary. Useful to a human scrolling the
         # channel, but there is nothing for the pipeline to verify against.
         if not link and tg.get("require_link", True):
+            drop["nolink"] += 1
             continue
 
         url = _resolve_short(link, ua, timeout) if link else \
             f"https://t.me/{channel}"
         if not netguard.is_safe(url, resolve_dns=False):
+            drop["unsafe"] += 1
             continue
 
         # Strip the trailing URL from the title — it is already the link.
@@ -210,8 +229,15 @@ def _channel_articles(spec: dict, cutoff: datetime, cfg: dict) -> list[Article]:
             window_hours=int(spec.get("window_hours") or 0),
         ))
 
+    # One line per channel, always. A zero with its reason attached is
+    # actionable ("raise this channel's window"); a zero with no line at all
+    # is indistinguishable from the collector never having run.
     if out:
         log("telegram", f"  {channel:<24} {len(out):>2} posts")
+    else:
+        why = ", ".join(f"{v} {k}" for k, v in drop.items() if v) or "no messages"
+        window = int(own) if own else tg["lookback_hours"]
+        log("telegram", f"  {channel:<24}  0 posts  ({why}; window {window}h)")
     return out
 
 
