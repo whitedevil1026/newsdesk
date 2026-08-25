@@ -142,6 +142,11 @@ ul.rejlist .dom{display:block;color:var(--muted);font-size:12px;margin-top:2px}
  font-family:inherit}
 .toggle:hover{color:var(--ink);border-color:var(--muted)}
 .toggle[aria-expanded=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+/* The escape hatch. Warm rather than red - clearing filters is a normal
+   move, not a destructive one - and it goes flat when there is nothing set,
+   which is most of the time. */
+.toggle.clear:not(:disabled){color:var(--accent);border-color:var(--accent)}
+.toggle.clear:not(:disabled):hover{background:var(--accent);color:var(--bg)}
 .active-tags{display:flex;flex-wrap:wrap;gap:5px}
 .active-tags .chip{background:var(--accent);color:var(--bg);border-color:var(--accent)}
 #tagchips{margin-top:8px;max-height:0;overflow:hidden;
@@ -431,6 +436,7 @@ footer p{margin:14px 0 0}
       </div>
       <div class="tagbar">
         <button class="toggle" id="tagToggle" aria-expanded="false">Tags</button>
+        <button class="toggle clear" id="clearAll" disabled>Clear all filters</button>
       </div>
       <div class="chips" id="tagchips"></div>
     </div>
@@ -456,7 +462,10 @@ const catRank = c => { const i = CAT_ORDER.indexOf(c); return i < 0 ? 99 : i; };
 const VD = {verified:"verified", corroborated:"corroborated",
             established:"established", unverified:"unverified",
             disputed:"disputed"};
-let DATA=null, cat="all", activeTags=new Set(), query="", sort="newest";
+// Newest-first is what the page falls back to whenever a sort is cleared,
+// so the value is named once rather than spelled out at each use.
+const DEFAULT_SORT="newest";
+let DATA=null, cat="all", activeTags=new Set(), query="", sort=DEFAULT_SORT;
 // Which headline stat is filtering the page, if any: "", critical, verified,
 // corroborated, new, rejected.
 let flag="", REJ=null;
@@ -473,27 +482,17 @@ let shown = PAGE;
 // Filters live in the URL hash so a filtered view can be bookmarked, shared
 // or survive a refresh. Without this, "look at the dfir items" means telling
 // someone which chips to click.
-function readState(){
-  const h=new URLSearchParams(location.hash.slice(1));
-  cat=h.get("cat")||"all";
-  sort=h.get("sort")||"newest";
-  age=h.get("age")||"all";
-  flag=h.get("show")||"";
-  query=(h.get("q")||"").toLowerCase();
-  activeTags=new Set((h.get("tags")||"").split(",").filter(Boolean));
-}
+// Filters used to be mirrored into the URL hash, which made every click
+// rewrite the address bar to #cat=cyber_tools&sort=sources. That bought
+// shareable filtered links at the cost of a URL nobody wants to look at or
+// paste, so it is gone: the page always opens clean, and filtering is a
+// thing you do to the page rather than a thing that changes its address.
+function readState(){ /* nothing is restored - the page opens unfiltered */ }
 function writeState(){
-  const h=new URLSearchParams();
-  if(cat!=="all") h.set("cat",cat);
-  if(sort!=="newest") h.set("sort",sort);
-  if(age!=="all") h.set("age",age);
-  if(flag) h.set("show",flag);
-  if(query) h.set("q",query);
-  if(activeTags.size) h.set("tags",[...activeTags].join(","));
-  const s=h.toString();
-  // replaceState, not a hash assignment: this must not add a history entry
-  // for every keystroke in the search box.
-  history.replaceState(null,"",s?("#"+s):location.pathname);
+  // Strip any hash left over from an older bookmark rather than leaving a
+  // stale one on screen that no longer describes what is displayed.
+  if(location.hash)
+    history.replaceState(null, "", location.pathname + location.search);
 }
 
 let onlyNew=false, age="all";
@@ -792,6 +791,30 @@ function drawRejects(feed){
 // either aborts partway or lands somewhere arbitrary. A filter change is a
 // mode switch rather than a navigation, so a jump is also the correct feel,
 // and it needs no prefers-reduced-motion branch.
+// Every control that can narrow the page, in one place. Three separate
+// hand-written versions of this test had already drifted apart - the dot
+// beside Filters was checking a different set of conditions from the Escape
+// key, so the page could be filtered with nothing indicating it.
+function anyFilter(){
+  return cat!=="all" || age!=="all" || flag!=="" || onlyNew ||
+         query!=="" || activeTags.size>0 || sort!==DEFAULT_SORT;
+}
+
+// Reset everything a reader can set, and put the controls back in step with
+// it. Escape, the button in the panel and the one in the empty state all go
+// through here so they cannot disagree about what "clear" means.
+function clearAll(){
+  cat="all"; age="all"; flag=""; onlyNew=false; query="";
+  activeTags.clear(); sort=DEFAULT_SORT; shown=PAGE;
+  const q=document.getElementById("q"); if(q) q.value="";
+  const nb=document.getElementById("newOnly");
+  if(nb) nb.setAttribute("aria-pressed","false");
+  const st=document.getElementById("stats");
+  if(st) [...st.children].forEach(x=>x.setAttribute("aria-pressed","false"));
+  if(window.syncChips) window.syncChips();
+  toTop(); draw();
+}
+
 function toTop(){
   if(window.scrollY>0) window.scrollTo({top:0, behavior:"auto"});
 }
@@ -822,21 +845,19 @@ function draw(){
     items.length+" of "+DATA.items.length+" stories, by "+
     SORTS[sort].label.toLowerCase();
   const dot=document.getElementById("fdot");
-  if(dot) dot.hidden = !(age!=="all" || onlyNew || sort!=="newest" ||
-                         activeTags.size);
+  const on=anyFilter();
+  if(dot) dot.hidden = !on;
+  // Disabled when there is nothing to clear, so the button reports the state
+  // of the page rather than sitting there looking equally clickable always.
+  const ca=document.getElementById("clearAll");
+  if(ca) ca.disabled = !on;
 
   if(!items.length){
     feed.innerHTML='<p class="empty">Nothing matches.'+
       (query?' No story mentions &ldquo;'+esc(query)+'&rdquo;.':'')+
-      '<br><button class="chip" id="clearAll">Clear all filters</button></p>';
-    const btn=document.getElementById("clearAll");
-    if(btn) btn.onclick=()=>{
-      cat="all"; activeTags.clear(); query=""; flag="";
-      document.getElementById("q").value="";
-      [...document.getElementById("stats").children].forEach(x=>
-        x.setAttribute("aria-pressed","false"));
-      syncChips(); draw();
-    };
+      '<br><button class="chip" id="clearNow">Clear all filters</button></p>';
+    const btn=document.getElementById("clearNow");
+    if(btn) btn.onclick=clearAll;
     drawTags(items); return;
   }
 
@@ -1036,6 +1057,9 @@ function boot(d){
   // is the price of hiding them: a closed panel must still say that something
   // inside it is filtering what you see, or the reader is looking at a subset
   // and has no way to tell.
+  const clearBtn=document.getElementById("clearAll");
+  if(clearBtn) clearBtn.onclick=()=>clearAll();
+
   const panel=document.getElementById("panel");
   const filt=document.getElementById("filtToggle");
   filt.onclick=()=>{
@@ -1130,11 +1154,15 @@ function boot(d){
     esc(v.label)+'</button>').join("");
   sbox.onclick=e=>{
     const b=e.target.closest("button[data-sort]"); if(!b) return;
-    sort=b.dataset.sort;
+    // Pressing the active sort again turns it off and falls back to the
+    // default, so the control behaves like the category and tag chips
+    // instead of being the one group you can enter but never leave.
+    sort = (b.dataset.sort===sort) ? DEFAULT_SORT : b.dataset.sort;
     // Deliberately NOT resetting `shown`. Sorting reorders the same set; the
     // filters change which stories exist and do reset it. Collapsing back to
     // the first 12 on a sort took away rows the reader had already opened.
-    [...sbox.children].forEach(x=>x.setAttribute("aria-pressed",x===b));
+    [...sbox.children].forEach(x=>
+      x.setAttribute("aria-pressed", x.dataset.sort===sort));
     toTop(); draw();
   };
 
@@ -1163,16 +1191,7 @@ function boot(d){
     }
     if(e.key==="Escape"){
       if(typing){ e.target.blur(); }
-      else if(query||activeTags.size||cat!=="all"||flag){
-        cat="all"; activeTags.clear(); query=""; age="all"; onlyNew=false;
-        flag="";
-        [...document.getElementById("stats").children].forEach(x=>
-          x.setAttribute("aria-pressed","false"));
-        document.getElementById("q").value="";
-        const nbtn=document.getElementById("newOnly");
-        if(nbtn) nbtn.setAttribute("aria-pressed","false");
-        shown=PAGE; syncChips(); draw();
-      }
+      else if(anyFilter()) clearAll();
       return;
     }
     if(typing || e.metaKey || e.ctrlKey || e.altKey) return;
@@ -1194,6 +1213,9 @@ function boot(d){
       x.setAttribute("aria-pressed", x.dataset.cat===cat));
     [...sbox.children].forEach(x=>
       x.setAttribute("aria-pressed", x.dataset.sort===sort));
+    const cb=document.getElementById("cats");
+    if(cb) [...cb.children].forEach(x=>
+      x.setAttribute("aria-pressed", x.dataset.cat===cat));
     const ab=document.getElementById("ages");
     if(ab) [...ab.children].forEach(x=>
       x.setAttribute("aria-pressed", x.dataset.age===age));
