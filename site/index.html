@@ -780,6 +780,22 @@ function drawRejects(feed){
       esc(String(e))+').<br>It is written next to news.json by the publish stage.</p>'; });
 }
 
+// Changing what the feed contains, or the order it is in, without moving the
+// page leaves the reader looking at the middle of a list that just became a
+// different list. On desktop the controls are a sticky rail, so this happens
+// on every sort click made while scrolled down: the story under the cursor
+// vanishes, nothing visibly changes, and the control reads as broken. Typing
+// in the search box is excluded - yanking the page on every keystroke is
+// worse than the problem it fixes.
+// Instant, not smooth. draw() replaces the whole feed on the very next line,
+// and a running smooth scroll against a DOM that is being rebuilt under it
+// either aborts partway or lands somewhere arbitrary. A filter change is a
+// mode switch rather than a navigation, so a jump is also the correct feel,
+// and it needs no prefers-reduced-motion branch.
+function toTop(){
+  if(window.scrollY>0) window.scrollTo({top:0, behavior:"auto"});
+}
+
 // Recency as a coarse band, in the metadata row rather than beside the
 // badges — it is scent, not a warning, and it must not compete with the
 // headline for the first fixation.
@@ -972,7 +988,7 @@ function boot(d){
     shown=PAGE;
     [...e.currentTarget.children].forEach(x=>
       x.setAttribute("aria-pressed", x.dataset.flag===flag));
-    draw();
+    toTop(); draw();
   };
 
   const cats=["all",...new Set(d.items.map(i=>i.category))];
@@ -991,18 +1007,18 @@ function boot(d){
     cat=b.dataset.cat; activeTags.clear();
     shown=PAGE;
     [...cbox.children].forEach(x=>x.setAttribute("aria-pressed",x===b));
-    draw();
+    toTop(); draw();
   };
   document.getElementById("tagchips").onclick=e=>{
     const b=e.target.closest("button[data-tag]"); if(!b) return;
     const t=b.dataset.tag;
     activeTags.has(t)?activeTags.delete(t):activeTags.add(t);
     shown=PAGE;
-    draw();
+    toTop(); draw();
   };
   document.getElementById("activeTags").onclick=e=>{
     const b=e.target.closest("button[data-tag]"); if(!b) return;
-    activeTags.delete(b.dataset.tag); draw();
+    activeTags.delete(b.dataset.tag); toTop(); draw();
   };
 
   // The tag list is long enough to bury the article underneath it, so it is
@@ -1075,18 +1091,18 @@ function boot(d){
       const n=v.hours==null ? d.items.length
         : d.items.filter(i=>i.published &&
             (Date.now()-new Date(i.published))/36e5 <= v.hours).length;
-      // "3 days 35" read as one broken label. A separator makes it two
-      // things: a name, and how many stories are behind it.
+      // No count on the label. "Today" is a date, and a number printed next
+      // to a date reads as part of it; the running total is already on the
+      // result line, where one copy of it is enough.
       return '<button class="chip" data-age="'+k+'" aria-pressed="'+(k===age)+'"'+
              (n?"":' disabled title="No stories published in this window"')+'>'+
-             esc(v.label)+
-             '<span class="n"><span class="sep3">·</span>'+n+'</span></button>';
+             esc(v.label)+'</button>';
     }).join("");
     abox.onclick=e=>{
       const b=e.target.closest("button[data-age]"); if(!b||b.disabled) return;
       age=b.dataset.age;
       [...abox.children].forEach(x=>x.setAttribute("aria-pressed",x===b));
-      shown=PAGE; draw();
+      shown=PAGE; toTop(); draw();
     };
   }
 
@@ -1104,7 +1120,7 @@ function boot(d){
     nb.onclick=()=>{
       onlyNew=!onlyNew;
       nb.setAttribute("aria-pressed", onlyNew);
-      shown=PAGE; draw();
+      shown=PAGE; toTop(); draw();
     };
   }
 
@@ -1119,7 +1135,7 @@ function boot(d){
     // filters change which stories exist and do reset it. Collapsing back to
     // the first 12 on a sort took away rows the reader had already opened.
     [...sbox.children].forEach(x=>x.setAttribute("aria-pressed",x===b));
-    draw();
+    toTop(); draw();
   };
 
   // --- keyboard navigation ---------------------------------------------
