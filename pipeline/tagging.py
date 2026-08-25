@@ -28,15 +28,29 @@ def vocabulary() -> frozenset[str]:
 def _rules() -> list[tuple[str, re.Pattern]]:
     """Compile each tag's keywords into one alternation pattern.
 
-    Terms with a trailing space in the config (" ai ", "rat ") are intentional
-    word-boundary guards; they stay as written rather than being stripped.
+    Terms are matched on word boundaries, so the old hand-written space
+    guards in the config (" ai ", "rat ") are no longer needed.
     """
     out = []
     for tag, terms in _load("tags.yaml")["rules"].items():
         if tag not in vocabulary():
             continue
-        pattern = "|".join(re.escape(t) for t in sorted(terms, key=len, reverse=True))
-        out.append((tag, re.compile(pattern, re.I)))
+        parts = []
+        for term in sorted(terms, key=len, reverse=True):
+            term = term.strip()
+            if not term:
+                continue
+            esc = re.escape(term)
+            # Word boundaries, not bare substrings. Without them "rce" matched
+            # COMMERCE and a Shein IPO story was tagged `exploit`; "poc" would
+            # match "pocket", " ai " needed a hand-written space guard.
+            # \b only asserts next to a word character, so add it per end only
+            # when the term actually starts or ends with one.
+            left = r"\b" if term[0].isalnum() else ""
+            right = r"\b" if term[-1].isalnum() else ""
+            parts.append(left + esc + right)
+        if parts:
+            out.append((tag, re.compile("|".join(parts), re.I)))
     return out
 
 

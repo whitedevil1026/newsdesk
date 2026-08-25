@@ -862,3 +862,47 @@ class TestCorroborationIndependence:
         from pipeline.s4_corroborate import _independent_outlets
         c = self._cluster(["a.publisher", "b.publisher", "c.publisher"])
         assert _independent_outlets(c) == 1
+
+
+class TestTagPrecision:
+    """Tag rules matched bare substrings, so 'rce' matched COMMERCE and a
+    Shein IPO story was tagged `exploit`. On a live run the tag appeared on
+    58% of items including markets and india_world stories, which makes it
+    useless as a filter — the thing tags exist for."""
+
+    def test_rce_does_not_match_commerce(self):
+        from pipeline.tagging import from_keywords
+        tags = from_keywords("Shein IPO eyes $27 billion in cross-border commerce")
+        assert "exploit" not in tags
+
+    def test_poc_does_not_match_pocket(self):
+        from pipeline.tagging import from_keywords
+        assert "exploit" not in from_keywords("A pocket guide to gardening")
+
+    def test_real_security_terms_still_match(self):
+        from pipeline.tagging import from_keywords
+        assert "exploit" in from_keywords("Unauthenticated RCE in Citrix NetScaler")
+        assert "ransomware" in from_keywords("Ransomware gang hits hospital")
+        assert "ai" in from_keywords("New AI model released by OpenAI")
+
+    def test_multi_word_terms_survive_boundaries(self):
+        from pipeline.tagging import from_keywords
+        assert "exploit" in from_keywords("Proof of concept published today")
+
+    def test_tags_discriminate_across_the_corpus(self):
+        """No tag should land on most of the page. A tag on 58% of items
+        carries no information."""
+        import collections
+        import json
+        from pathlib import Path
+
+        news = Path(__file__).resolve().parent.parent / "site" / "news.json"
+        if not news.exists():
+            return                       # nothing published yet; nothing to check
+        items = json.loads(news.read_text(encoding="utf-8"))["items"]
+        if len(items) < 10:
+            return
+        counts = collections.Counter(t for i in items for t in i.get("tags", []))
+        worst, n = counts.most_common(1)[0]
+        assert n <= len(items) * 0.7, (
+            f"tag '{worst}' is on {n}/{len(items)} items — too broad to filter on")

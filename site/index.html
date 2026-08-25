@@ -11,7 +11,10 @@
 :root{
   --bg:#faf9f6; --card:#fff; --ink:#1c1b19; --ink2:#3d3b37; --muted:#6f6c66;
   --line:#e6e3dc; --line2:#d5d1c7; --accent:#8a5a2b;
-  --crit:#b3341f; --imp:#a8701a; --minor:#8f8b83;
+  /* --imp was #a8701a at 3.99:1 and --minor #8f8b83 at 3.22:1 on this
+     background: both under the 4.5:1 AA floor for the small, bold text
+     they are used on. Darkened to clear it while keeping the hue. */
+  --crit:#b3341f; --imp:#8a5a15; --minor:#6e6a63;
   --ok:#1c6b45; --warn:#9a6a12; --bad:#7a3f96;
   --factbg:#f4f2ec;
 }
@@ -31,20 +34,27 @@ body{margin:0;background:var(--bg);color:var(--ink);
     measure stays readable without a stack of breakpoints. */
  font-size:clamp(15.5px, 0.95rem + 0.18vw, 17px)}
 
-.wrap{max-width:720px;margin:0 auto;
- padding:clamp(18px, 4vw, 34px) clamp(14px, 4vw, 20px) 100px}
-@media(min-width:1180px){.wrap{max-width:760px}}
+/* Measure, not pixels. ~55 cpl gave the best comprehension in Dyson &
+   Haselgrove and read FASTER than short lines; the usable band is 45-75 and
+   should not pass ~70. 64ch on the body font lands mid-band. */
+.wrap{margin:0 auto;
+ padding:clamp(18px, 4vw, 34px) clamp(14px, 4vw, 20px) 100px;
+ /* `min(64ch + 4rem, ...)` silently does nothing — an addition inside min()
+    needs calc(). The first attempt measured 81 characters per line, past the
+    45-75 band entirely. */
+ max-width:min(calc(54ch + 3rem), 38.5rem)}
+main, header, .controls{max-width:100%}
 
 /* Never let a long URL, code span or unbroken token push the page sideways. */
-h3, .body, .bottom, .facts li, .why{overflow-wrap:break-word}
+h3, .body, .deck, ul.facts li, .why{overflow-wrap:break-word}
 
 header{margin-bottom:22px}
 .brand{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
 h1{margin:0;font-family:"Newsreader",Georgia,serif;font-weight:600;
  letter-spacing:-.015em;font-size:clamp(24px, 5vw, 31px)}
 .meta{color:var(--muted);font-size:13.5px;line-height:1.6}
-.meta .sep2{opacity:.4;margin:0 2px}
-.meta .tzn{opacity:.7}
+.meta .sep2{opacity:.7;margin:0 2px}
+.meta .tzn{opacity:.9}
 .meta span[title]{cursor:help}
 .stale{margin-top:12px;padding:9px 13px;border-radius:8px;font-size:13px;
  background:color-mix(in srgb, var(--imp) 16%, transparent);
@@ -52,6 +62,16 @@ h1{margin:0;font-family:"Newsreader",Georgia,serif;font-weight:600;
 @media (max-width:600px){
   .brand{gap:4px}
   .meta{font-size:12.5px}
+  /* Measured: header 276px + controls 329px put the first headline at y=766
+     of an 812px screen — the entire opening view was chrome and not one
+     story was visible. The counts and the sort row are refinements, not
+     entry points, so they fold away on a phone. */
+  .stats{display:none}
+  .lbl2, #sorts{display:none}
+  header{margin-bottom:12px}
+  .controls{padding:10px 0 8px}
+  .tagbar{margin-top:8px}
+  h1{font-size:22px}
 }
 .stats{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px;font-size:13.5px;
  color:var(--muted);padding-bottom:16px;border-bottom:1px solid var(--line)}
@@ -83,7 +103,8 @@ h1{margin:0;font-family:"Newsreader",Georgia,serif;font-weight:600;
  font-family:inherit;line-height:1.5}
 .chip:hover{color:var(--ink);border-color:var(--muted)}
 .chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.chip .n{opacity:.55;margin-left:5px;font-variant-numeric:tabular-nums}
+/* was opacity .55 -> 2.17:1, effectively invisible. */
+.chip .n{opacity:.8;margin-left:5px;font-variant-numeric:tabular-nums}
 
 
 /* sections */
@@ -91,58 +112,65 @@ h2.sec{font-family:"Newsreader",Georgia,serif;font-size:13px;letter-spacing:.13e
  text-transform:uppercase;color:var(--muted);margin:38px 0 4px;font-weight:600;
  padding-bottom:8px;border-bottom:1px solid var(--line)}
 
-/* card */
-article{padding:26px 0;border-bottom:1px solid var(--line)}
+/* card — an explicit type scale with real steps between layers.
+   Layer-cake scanning only triggers when heading and body are UNMISTAKABLY
+   different; layers within 2px of each other read as one grey block. */
+article{padding:24px 0;border-bottom:1px solid var(--line)}
 article:last-child{border-bottom:none}
-.rail{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:9px;
- font-size:11px;letter-spacing:.07em;text-transform:uppercase;font-weight:600}
-.pri.critical{color:var(--crit)} .pri.important{color:var(--imp)} .pri.minor{color:var(--minor)}
-.vd.verified{color:var(--ok)} .vd.corroborated{color:var(--ok)}
-.vd.established{color:var(--muted)} .vd.unverified{color:var(--warn)}
-.vd.disputed{color:var(--bad)} .vd.reported{color:var(--muted)}
-.sep{color:var(--line2);font-weight:400}
-.when{color:var(--muted);font-weight:400;text-transform:none;letter-spacing:0;
- font-size:12.5px}
 
-h3{margin:0 0 12px;font-family:"Newsreader",Georgia,serif;
- font-size:clamp(20px, 3.6vw, 25px);
- line-height:1.28;font-weight:600;letter-spacing:-.012em}
+/* Chips appear on exceptions only. Pennycook et al: labelling a subset makes
+   the unlabelled subset read as verified, so a chip on every card is both
+   decoration and a false claim about everything else. */
+.rail{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-bottom:8px}
+.chip-crit,.chip-warn{font-size:10.5px;letter-spacing:.09em;font-weight:700;
+ text-transform:uppercase;padding:2px 8px;border-radius:4px}
+.chip-crit{background:var(--crit);color:var(--bg)}
+.chip-warn{background:transparent;color:var(--warn);
+ border:1px solid color-mix(in srgb, var(--warn) 55%, transparent)}
+
+/* Layer 1 — headline. The only thing guaranteed to be read. */
+h3{margin:0 0 9px;font-family:"Newsreader",Georgia,serif;
+ font-size:clamp(19px, 3.2vw, 22px);
+ line-height:1.3;font-weight:600;letter-spacing:-.012em}
 h3 a{color:inherit;text-decoration:none}
 h3 a:hover{text-decoration:underline;text-decoration-thickness:1px;
  text-underline-offset:3px}
 
-.bottom{font-family:"Newsreader",Georgia,serif;
- font-size:clamp(17px, 2.6vw, 19px);line-height:1.5;
- font-weight:500;color:var(--ink);margin:0 0 14px;padding-left:15px;
- border-left:3px solid var(--accent)}
+/* Layer 2 — the deck. One framing line, not three. This is where readers
+   stop, so it has to carry the concrete facts rather than an abstraction. */
+.deck{font-size:15px;line-height:1.55;color:var(--ink2);margin:0 0 11px;
+ font-weight:400}
 
-.body{font-family:"Newsreader",Georgia,serif;
- font-size:clamp(16.5px, 2.5vw, 18.5px);line-height:1.72;
- color:var(--ink2);margin:0 0 15px}
+/* Key facts are the default body now, not a decorative aside. Concrete
+   specifics are what survives into memory. */
+ul.facts{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:5px}
+ul.facts li{font-size:13.5px;line-height:1.5;color:var(--ink2);
+ padding-left:15px;position:relative}
+ul.facts li:before{content:"";position:absolute;left:0;top:.6em;
+ width:4px;height:4px;border-radius:50%;background:var(--accent)}
+ul.facts b{color:var(--ink);font-weight:600}
 
-.facts{background:var(--factbg);border-radius:9px;padding:13px 16px;margin:0 0 15px}
-.facts ul{margin:0;padding:0;list-style:none;
- display:grid;gap:7px}
-.facts li{font-size:14.5px;line-height:1.45;color:var(--ink2);
- padding-left:16px;position:relative}
-.facts li:before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;
- border-radius:50%;background:var(--accent)}
-.facts b{color:var(--ink);font-weight:600}
+/* Behind disclosure: the prose summary and the audit trail. */
+.body{font-family:"Newsreader",Georgia,serif;font-size:16px;line-height:1.7;
+ color:var(--ink2);margin:10px 0 12px}
+.why{font-size:13.5px;color:var(--muted);margin:0 0 12px;font-style:italic}
 
-.why{font-size:14.5px;color:var(--muted);margin:0 0 15px;font-style:italic}
-
-.tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:13px}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:0}
 .tag{background:transparent;border:1px solid var(--line2);color:var(--muted);
- font-size:11.5px;padding:2px 9px;border-radius:5px;cursor:pointer;
+ font-size:11px;padding:2px 8px;border-radius:5px;cursor:pointer;
  font-family:inherit;letter-spacing:.02em}
 .tag:hover{color:var(--accent);border-color:var(--accent)}
 
-.srcs{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13.5px;align-items:baseline}
+/* Named outlets, not a bare count: a single transparency feature moves
+   nothing, concrete named indicators measurably raise trust. */
+.srcs{display:flex;flex-wrap:wrap;gap:3px 8px;font-size:12.5px;
+ align-items:baseline;margin-bottom:11px;color:var(--muted)}
 .srcs a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line2)}
 .srcs a:hover{color:var(--ink);border-bottom-color:var(--muted)}
 .srcs a.primary{color:var(--ok);border-bottom-color:var(--ok)}
-.srcs .lbl{color:var(--muted);font-size:11px;letter-spacing:.08em;
- text-transform:uppercase;font-weight:600}
+.srcs .dot2{opacity:.4}
+.srcs .more{opacity:.65}
+.srcs .when{margin-left:auto;opacity:.8}
 
 details{margin-top:12px}
 summary{cursor:pointer;color:var(--muted);font-size:12.5px;list-style:none;
@@ -156,6 +184,12 @@ details ul{margin:9px 0 0;padding-left:19px;color:var(--muted);font-size:13px;
 mark{background:color-mix(in srgb, var(--accent) 26%, transparent);
  color:inherit;padding:0 1px;border-radius:2px}
 
+.loadmore{display:block;width:100%;margin:26px 0 0;padding:13px;
+ border:1px solid var(--line2);background:transparent;color:var(--ink);
+ border-radius:9px;font:inherit;font-size:14px;cursor:pointer}
+.loadmore:hover{border-color:var(--muted);background:var(--card)}
+.loadmore .rest{color:var(--muted);font-size:13px}
+
 .empty{color:var(--muted);padding:60px 0;text-align:center;font-size:15px;
  line-height:2.2}
 
@@ -165,7 +199,7 @@ mark{background:color-mix(in srgb, var(--accent) 26%, transparent);
 #sorts{margin-top:0}
 .count{font-size:12.5px;color:var(--muted);margin-left:auto}
 h2.sec .win{font-weight:400;letter-spacing:0;text-transform:none;
- color:var(--muted);opacity:.75;cursor:help;font-size:11.5px}
+ color:var(--muted);cursor:help;font-size:11.5px}
 
 /* claims — the validation working, shown rather than asserted */
 .claims{margin:9px 0 4px}
@@ -206,6 +240,10 @@ kbd{font:inherit;font-size:.86em;border:1px solid var(--line2);
   /* Chips become finger-sized. 32px is the practical floor for a tap target
      that sits in a wrapping row. */
   .chip,.toggle{padding:7px 13px;font-size:13px;min-height:32px}
+  /* Measured at 23.3px and 20.6px — both under the 24px WCAG 2.5.8 floor,
+     and they are the smallest targets on the page. */
+  .srcs a{min-height:32px;display:inline-flex;align-items:center}
+  summary{min-height:32px;display:inline-flex;align-items:center}
   .tag{padding:5px 10px;font-size:12px;min-height:30px}
   /* The stats row wraps to two lines on a phone; tighten it so the header
      does not eat half the first screen. */
@@ -275,6 +313,12 @@ footer p{margin:14px 0 0}
 const CATS = {cyber_attacks:"Attacks & Exploits", cyber_tools:"Tools & Tradecraft",
               tech_ai:"Tech & AI", markets:"Markets", india_world:"India & World",
               cybersecurity:"Cybersecurity"};
+
+// Section order was a byproduct of JS object key-insertion order, so whichever
+// category happened to own the highest-scoring item led the page — a security
+// reader could open to Markets, and the order changed day to day. Fixed.
+const CAT_ORDER = ["cyber_attacks","cyber_tools","tech_ai","markets","india_world"];
+const catRank = c => { const i = CAT_ORDER.indexOf(c); return i < 0 ? 99 : i; };
 // Wording matters here: the badge answers "how well established is this",
 // which is a different question from "how many outlets", already shown
 // beside it. "unverified" means a single tier-C source, not "probably false".
@@ -282,6 +326,14 @@ const VD = {verified:"verified", corroborated:"corroborated",
             established:"established", unverified:"unverified",
             disputed:"disputed"};
 let DATA=null, cat="all", activeTags=new Set(), query="", sort="priority";
+
+// Show 12, then let the reader ask for more. Choice-overload work shows
+// satisfaction down and deferral up as options multiply, and F-pattern
+// fixation decays down a long list, so cards 13-40 are barely seen anyway.
+// Explicit paging also preserves positional memory ("near the bottom of the
+// first screen") that infinite scroll destroys.
+const PAGE = 12;
+let shown = PAGE;
 
 // --- shareable state ---------------------------------------------------
 // Filters live in the URL hash so a filtered view can be bookmarked, shared
@@ -359,50 +411,95 @@ function matches(it){
 }
 
 function card(it){
+  // Card structure follows the evidence, not taste:
+  //
+  //  * TWO framing layers, not four. Chandler & Sweller's redundancy effect
+  //    says that when several sources are each independently intelligible,
+  //    showing them all forces mental reconciliation and produces WORSE
+  //    learning than showing one. Headline + one deck is also the journalism
+  //    standfirst convention NN/g endorse unchanged for the web.
+  //  * Key facts are the DEFAULT body; the prose summary moves behind
+  //    disclosure. Readers stop at layer two believing they are informed
+  //    (the "illusion of knowledge" finding), so layer two must carry the
+  //    concrete numbers rather than an abstract significance claim.
+  //  * Badges only for exceptions. Pennycook et al. showed labelling a
+  //    subset makes the UNLABELLED subset read as verified, so a chip on
+  //    every card is both decoration and a lie about everything else.
   const byName=new Map();
   for(const s of it.sources) if(!byName.has(s.name)) byName.set(s.name,s);
-  const srcs=[...byName.values()].map(s=>
-    '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.name)+'</a>').join("");
+  const named=[...byName.values()];
+
+  // Two named outlets beat a bare count: the Trust Project work found a
+  // SINGLE transparency feature moves nothing, while concrete named
+  // indicators measurably raised trust. Same width, real information.
+  const shown=named.slice(0,2).map(s=>
+    '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.name)+'</a>');
+  // Count what is actually listed. The rail used to print `corroboration`,
+  // which counts INDEPENDENT outlets after syndication collapsing, while the
+  // row below listed every distinct name — so a card could read "3 outlets"
+  // above six links. A reader who checks stops trusting every number.
+  const more=named.length>2 ? '<span class="more">+'+(named.length-2)+'</span>' : "";
   const prim=(it.primary_links||[]).length
     ? '<a class="primary" href="'+esc(it.primary_links[0])+
       '" target="_blank" rel="noopener">primary source</a>' : "";
-  const facts=(it.key_facts||[]).length
-    ? '<div class="facts"><ul>'+it.key_facts.map(f=>"<li>"+fact(f)+"</li>").join("")+"</ul></div>" : "";
-  const tags=(it.tags||[]).length
-    ? '<div class="tags">'+it.tags.map(t=>
+
+  // At most three facts. Concreteness aids recall; a long list stops being
+  // scannable and becomes another wall of text.
+  const facts=(it.key_facts||[]).slice(0,3);
+  const factHtml=facts.length
+    ? '<ul class="facts">'+facts.map(f=>"<li>"+fact(f)+"</li>").join("")+"</ul>" : "";
+
+  const tags=(it.tags||[]).slice(0,5);
+  const tagHtml=tags.length
+    ? '<div class="tags">'+tags.map(t=>
       '<button class="tag" data-tag="'+esc(t)+'">'+esc(t)+"</button>").join("")+"</div>" : "";
+
   const trace=(it.trace||[]).map(t=>"<li>"+esc(t)+"</li>").join("");
-  // The claims ARE the validation story. Keeping them out of the UI meant
-  // the page asserted "verified" without ever showing the working.
   const CLAIM_MARK={entailed:"✓", contradicted:"✗", neutral:"?"};
   const claims=(it.claims||[]).map(c=>
     '<li class="cl '+esc(c.status||"unchecked")+'">'+
     '<span class="ck">'+(CLAIM_MARK[c.status]||"·")+'</span>'+
     esc(c.text)+'</li>').join("");
-  const age=ago(it.published);
 
-  return '<article>'+
-    '<div class="rail">'+
-      '<span class="pri '+esc(it.priority)+'">'+esc(it.priority)+'</span>'+
-      '<span class="sep">/</span>'+
-      '<span class="vd '+esc(it.verdict)+'">'+esc(VD[it.verdict]||it.verdict)+'</span>'+
-      '<span class="sep">/</span>'+
-      '<span class="when">'+it.corroboration+' outlet'+(it.corroboration>1?"s":"")+
-        (age?' · '+esc(age):"")+'</span>'+
-    '</div>'+
+  // Only the exceptions get a chip. "important" is the unlabelled default.
+  const pri = it.priority==="critical"
+    ? '<span class="chip-crit">critical</span>' : "";
+  const vd = (it.verdict==="unverified"||it.verdict==="disputed")
+    ? '<span class="chip-warn">'+esc(VD[it.verdict]||it.verdict)+'</span>' : "";
+
+  const detail =
+    (it.summary?'<p class="body">'+hl(it.summary)+'</p>':"")+
+    (it.one_liner?'<p class="why">'+hl(it.one_liner)+'</p>':"")+
+    (claims?'<div class="claims"><b>Claims checked against the source</b><ul>'+
+      claims+'</ul></div>':"")+
+    (trace?'<ul class="tr">'+trace+'</ul>':"");
+
+  return '<article class="'+esc(it.priority)+'">'+
+    (pri||vd ? '<div class="rail">'+pri+vd+'</div>' : "")+
     '<h3><a href="'+esc(it.sources[0].url)+'" target="_blank" rel="noopener">'+
       hl(it.title)+'</a></h3>'+
-    (it.bottom_line?'<p class="bottom">'+hl(it.bottom_line)+'</p>':"")+
-    (it.summary?'<p class="body">'+hl(it.summary)+'</p>':"")+
-    facts+
-    (it.one_liner?'<p class="why">'+hl(it.one_liner)+'</p>':"")+
-    tags+
-    '<div class="srcs"><span class="lbl">Sources</span>'+srcs+prim+'</div>'+
-    (trace||claims?'<details><summary>how this was checked</summary>'+
-      (claims?'<div class="claims"><b>Claims checked against the source</b><ul>'+
-        claims+'</ul></div>':"")+
-      (trace?'<ul class="tr">'+trace+'</ul>':"")+'</details>':"")+
+    (it.bottom_line?'<p class="deck">'+hl(it.bottom_line)+'</p>':"")+
+    factHtml+
+    '<div class="srcs">'+shown.join('<span class="dot2">·</span>')+more+prim+
+      (band(it.published)?'<span class="when">'+esc(band(it.published))+'</span>':"")+
+    '</div>'+
+    tagHtml+
+    (detail?'<details><summary>Full summary and how it was checked</summary>'+
+      detail+'</details>':"")+
   '</article>';
+}
+
+// Recency as a coarse band, in the metadata row rather than beside the
+// badges — it is scent, not a warning, and it must not compete with the
+// headline for the first fixation.
+function band(iso){
+  if(!iso) return "";
+  const h=(Date.now()-new Date(iso))/36e5;
+  if(h<1) return "just now";
+  if(h<6) return Math.round(h)+"h";
+  if(h<24) return "today";
+  if(h<48) return "yesterday";
+  return Math.round(h/24)+" days";
 }
 
 function draw(){
@@ -428,18 +525,36 @@ function draw(){
     drawTags(items); return;
   }
 
+  const page=items.slice(0, shown);
+
   // Sorting by time or source count deliberately drops the category
   // headings — grouping fights the ordering the reader just asked for.
+  let html;
   if(sort==="priority"){
     const groups={};
-    for(const it of items){ (groups[it.category]=groups[it.category]||[]).push(it); }
-    feed.innerHTML=Object.keys(groups).map(c=>
+    for(const it of page){ (groups[it.category]=groups[it.category]||[]).push(it); }
+    html=Object.keys(groups).sort((a,b)=>catRank(a)-catRank(b)).map(c=>
       '<h2 class="sec">'+esc(CATS[c]||c)+' &middot; '+groups[c].length+
       windowNote(c)+'</h2>'+
       groups[c].map(card).join("")).join("");
   }else{
-    feed.innerHTML=items.map(card).join("");
+    html=page.map(card).join("");
   }
+
+  if(items.length>shown){
+    html+='<button class="loadmore" id="loadmore">Show '+
+      Math.min(PAGE, items.length-shown)+' more'+
+      '<span class="rest"> &middot; '+(items.length-shown)+' remaining</span></button>';
+  }
+  feed.innerHTML=html;
+
+  const lm=document.getElementById("loadmore");
+  if(lm) lm.onclick=()=>{
+    const first=shown;            // keep the reader's place
+    shown+=PAGE; draw();
+    const cards=document.querySelectorAll("article");
+    if(cards[first]) cards[first].scrollIntoView({block:"start",behavior:"smooth"});
+  };
   drawTags(items);
 }
 
@@ -552,6 +667,7 @@ function boot(d){
   cbox.onclick=e=>{
     const b=e.target.closest("button[data-cat]"); if(!b) return;
     cat=b.dataset.cat; activeTags.clear();
+    shown=PAGE;
     [...cbox.children].forEach(x=>x.setAttribute("aria-pressed",x===b));
     draw();
   };
@@ -559,6 +675,7 @@ function boot(d){
     const b=e.target.closest("button[data-tag]"); if(!b) return;
     const t=b.dataset.tag;
     activeTags.has(t)?activeTags.delete(t):activeTags.add(t);
+    shown=PAGE;
     draw();
   };
   document.getElementById("activeTags").onclick=e=>{
@@ -613,6 +730,7 @@ function boot(d){
   sbox.onclick=e=>{
     const b=e.target.closest("button[data-sort]"); if(!b) return;
     sort=b.dataset.sort;
+    shown=PAGE;
     [...sbox.children].forEach(x=>x.setAttribute("aria-pressed",x===b));
     draw();
   };
