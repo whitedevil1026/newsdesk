@@ -1,0 +1,19 @@
+# Generated outputs. Both a local run and the scheduled Actions run rewrite
+# these wholesale, so git's line-level merge produces a conflict in the middle
+# of a JSON document — thousands of lines of noise for a file that is simply
+# regenerated on the next run.
+#
+# `-merge` marks them unmergeable: git still reports the conflict, but leaves
+# the two versions whole so resolving is `git checkout --theirs <file>` rather
+# than hand-editing JSON.
+data/news.json          -merge
+data/rejected.json      -merge
+site/news.json          -merge
+data/cache/seen.json    -merge
+data/cache/summaries.json -merge
+data/cache/usage.json   -merge
+data/cache/gnews_urls.json -merge
+
+# Keep line endings sane across a Windows dev box and Linux CI runners.
+* text=auto eol=lf
+*.png binary
