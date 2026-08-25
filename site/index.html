@@ -158,6 +158,13 @@ ul.rejlist .dom{display:block;color:var(--muted);font-size:12px;margin-top:2px}
  font-family:inherit;line-height:1.5}
 .chip:hover{color:var(--ink);border-color:var(--muted)}
 .chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+/* A disabled control rendered at full opacity with a pointer cursor is
+   indistinguishable from a working one, so clicking it and getting nothing
+   reads as the page being broken rather than as "there is nothing here".
+   Both disabled controls now say so, and say why on hover. */
+.chip:disabled, .toggle:disabled{opacity:.4;cursor:not-allowed}
+.chip:disabled:hover, .toggle:disabled:hover{color:var(--muted);
+ border-color:var(--line2)}
 /* was opacity .55 -> 2.17:1, effectively invisible. */
 .chip .n{opacity:.8;margin-left:5px;font-variant-numeric:tabular-nums}
 .chip .sep3{opacity:.55;margin-right:4px}
@@ -1071,7 +1078,8 @@ function boot(d){
       // "3 days 35" read as one broken label. A separator makes it two
       // things: a name, and how many stories are behind it.
       return '<button class="chip" data-age="'+k+'" aria-pressed="'+(k===age)+'"'+
-             (n?"":" disabled")+'>'+esc(v.label)+
+             (n?"":' disabled title="No stories published in this window"')+'>'+
+             esc(v.label)+
              '<span class="n"><span class="sep3">·</span>'+n+'</span></button>';
     }).join("");
     abox.onclick=e=>{
@@ -1087,6 +1095,12 @@ function boot(d){
     const n=d.items.filter(i=>i.is_new).length;
     nb.textContent = n ? "New only · "+n : "New only";
     nb.disabled = !n;
+    // "New" means "not on this page after any previous run", so it can only
+    // ever be answered by comparing two runs. Saying that is the difference
+    // between a button that is off and a button that is broken.
+    nb.title = n ? "Show only the "+n+" stories that were not here before"
+                 : "Nothing is new since the last run, so there is nothing to "
+                   +"filter to. This fills in once two runs have completed.";
     nb.onclick=()=>{
       onlyNew=!onlyNew;
       nb.setAttribute("aria-pressed", onlyNew);
