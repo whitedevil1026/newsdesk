@@ -21,6 +21,57 @@ cyber_attacks:
   - {name: "Cisco Talos",         url: "https://feeds.feedburner.com/feedburner/Talos",              tier: B}
   - {name: "WeLiveSecurity",      url: "https://www.welivesecurity.com/en/rss/feed/",                tier: B}
   - {name: "Malwarebytes Labs",   url: "https://www.malwarebytes.com/blog/feed/index.xml",           tier: B}
+  # --- Verified additions 2026-08-25 -------------------------------------
+  # Every URL below was fetched and parsed on the day it was added, and its
+  # entry count and newest-entry age recorded. Deliberately EXCLUDED, so
+  # nobody re-adds them:
+  #   MSRC update-guide  4,704 entries in one response - a CVE firehose, not
+  #                      a news feed; it would swamp scoring
+  #   Synacktiv          parses, but pubDate is EMPTY - no date at all, so it
+  #                      contributes nothing under any lookback window
+  #   NVD RSS            retired by NIST; cvefeed.io is the substitute
+  #   CISA KEV xml       403 (the .json works but needs a custom adapter)
+  #   Reddit, Oracle, Akamai, Hackread, Socket.dev, Outpost24
+  #                      403 to bot AND browser UAs - Cloudflare-level, so no
+  #                      UA workaround exists
+  #   Pentester Land, HackerOne, Bugcrowd
+  #                      no working RSS exists at all; do not retry
+  # Feeds that PARSE but are abandoned were skipped too: Sam Curry (318d old),
+  # Rhino (363d), ret2 (440d), Aqua Nautilus (476d), Alex Chapman (792d).
+  - {name: "ZDI Advisories", url: "https://www.zerodayinitiative.com/rss/published/", tier: A, primary: true}
+  - {name: "Cisco PSIRT", url: "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml", tier: A, primary: true}
+  - {name: "Palo Alto PSIRT", url: "https://security.paloaltonetworks.com/rss.xml", tier: A, primary: true, window_hours: 720}
+  - {name: "Fortinet PSIRT", url: "https://filestore.fortinet.com/fortiguard/rss/ir.xml", tier: A, primary: true, window_hours: 720}
+  - {name: "Ubuntu USN", url: "https://ubuntu.com/security/notices/rss.xml", tier: A, primary: true}
+  - {name: "Debian DSA", url: "https://www.debian.org/security/dsa", tier: A, primary: true}
+  - {name: "Exploit-DB", url: "https://www.exploit-db.com/rss.xml", tier: A, primary: true}
+  - {name: "CVEFeed High", url: "https://cvefeed.io/rssfeed/severity/high.xml", tier: A}
+  - {name: "Full Disclosure", url: "https://seclists.org/rss/fulldisclosure.rss", tier: A}
+  - {name: "oss-security", url: "https://seclists.org/rss/oss-sec.rss", tier: A}
+  - {name: "GitLab Security", url: "https://about.gitlab.com/security-releases.xml", tier: A, primary: true, window_hours: 720}
+  - {name: "Jenkins Advisories", url: "https://www.jenkins.io/security/advisories/rss.xml", tier: A, primary: true, window_hours: 720}
+  - {name: "Check Point Research", url: "https://research.checkpoint.com/feed/", tier: B}
+  - {name: "Google Threat Intel", url: "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v", tier: B, window_hours: 720}
+  - {name: "Sekoia TDR", url: "https://www.sekoia.com/blog/rss.xml", tier: B}
+  - {name: "Huntress", url: "https://www.huntress.com/blog/rss.xml", tier: B}
+  - {name: "Red Canary", url: "https://redcanary.com/feed/", tier: B}
+  - {name: "Recorded Future", url: "https://www.recordedfuture.com/feed", tier: B}
+  - {name: "The DFIR Report", url: "https://thedfirreport.com/feed/", tier: B, window_hours: 2160}
+  - {name: "Volexity", url: "https://www.volexity.com/feed/", tier: B, window_hours: 2160}
+  - {name: "Objective-See", url: "https://objective-see.org/rss.xml", tier: B, window_hours: 1440}
+  - {name: "JPCERT CC", url: "https://blogs.jpcert.or.jp/en/atom.xml", tier: A, window_hours: 1440}
+  - {name: "Kaspersky ICS CERT", url: "https://ics-cert.kaspersky.com/feed/", tier: B}
+  - {name: "SecurityWeek", url: "https://www.securityweek.com/feed/", tier: B}
+  - {name: "The Record", url: "https://therecord.media/feed", tier: B}
+  - {name: "CyberScoop", url: "https://cyberscoop.com/feed/", tier: B}
+  - {name: "Help Net Security", url: "https://www.helpnetsecurity.com/feed/", tier: B}
+  - {name: "Infosecurity Magazine", url: "https://www.infosecurity-magazine.com/rss/news/", tier: B}
+  - {name: "The Register Security", url: "https://www.theregister.com/security/headlines.atom", tier: B}
+  - {name: "Security Affairs", url: "https://securityaffairs.com/feed", tier: B}
+  - {name: "Risky Business News", url: "https://risky.biz/feeds/risky-business-news/", tier: B}
+  - {name: "ETCISO India", url: "https://ciso.economictimes.indiatimes.com/rss/topstories", tier: B}
+  - {name: "CloudSEK", url: "https://www.cloudsek.com/blog/rss.xml", tier: B}
+  - {name: "Cyble", url: "https://cyble.com/feed/", tier: B}
 
   # --- Google News topic scans -------------------------------------------
   # Viable now that redirect tokens resolve to real publisher URLs (see
@@ -44,6 +95,25 @@ cyber_tools:
   - {name: "Elastic Security Labs", url: "https://www.elastic.co/security-labs/rss/feed.xml",        tier: B}
   - {name: "GitHub Security Lab", url: "https://github.blog/tag/github-security-lab/feed/",          tier: A}
   - {name: "OALabs Research",     url: "https://research.openanalysis.net/feed.xml",                 tier: B, window_hours: 720}
+  - {name: "Intigriti Blog", url: "https://blog.intigriti.com/feed/", tier: C}
+  - {name: "ProjectDiscovery", url: "https://blog.projectdiscovery.io/rss/", tier: B}
+  - {name: "0xdf Writeups", url: "https://0xdf.gitlab.io/feed.xml", tier: C, window_hours: 720}
+  - {name: "tldr sec", url: "https://tldrsec.com/feed.xml", tier: C, window_hours: 720}
+  - {name: "ZDI Blog", url: "https://www.zerodayinitiative.com/blog?format=rss", tier: A, window_hours: 720}
+  - {name: "SpecterOps", url: "https://specterops.io/feed/", tier: B, window_hours: 720}
+  - {name: "Bishop Fox", url: "https://bishopfox.com/feeds/blog.rss", tier: B, window_hours: 720}
+  - {name: "Quarkslab", url: "https://blog.quarkslab.com/feeds/all.rss.xml", tier: B, window_hours: 720}
+  - {name: "Pentest Partners", url: "https://www.pentestpartners.com/feed/", tier: C}
+  - {name: "StarLabs SG", url: "https://starlabs.sg/blog/index.xml", tier: B, window_hours: 1440}
+  - {name: "Shielder", url: "https://www.shielder.com/blog/index.xml", tier: C, window_hours: 2160}
+  - {name: "Detectify Labs", url: "https://labs.detectify.com/feed/", tier: C, window_hours: 3600}
+  - {name: "Praetorian", url: "https://www.praetorian.com/feed/", tier: B, window_hours: 1440}
+  - {name: "NVISO Labs", url: "https://blog.nviso.eu/feed/", tier: B, window_hours: 1440}
+  - {name: "Wiz Blog", url: "https://www.wiz.io/feed/rss.xml", tier: B}
+  - {name: "Datadog Security Labs", url: "https://securitylabs.datadoghq.com/rss/feed.xml", tier: B, window_hours: 720}
+  - {name: "JFrog Security", url: "https://jfrog.com/blog/feed/", tier: B}
+  - {name: "StepSecurity", url: "https://www.stepsecurity.io/blog/rss.xml", tier: C, window_hours: 720}
+  - {name: "GitHub Security Blog", url: "https://github.blog/security/feed/", tier: A, window_hours: 720}
 
   # --- Bug bounty and exploit writeups -----------------------------------
   # window_hours overrides the category window. These labs publish once or

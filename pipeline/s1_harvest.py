@@ -38,6 +38,22 @@ def _parse_date(entry) -> datetime | None:
     return None
 
 
+class _Redirect308(urllib.request.HTTPRedirectHandler):
+    """Follow HTTP 308 Permanent Redirect.
+
+    urllib handles 301/302/303/307 but not 308, so a feed that moved with a
+    308 raised HTTPError and was recorded as dead. Two feeds hit this
+    (Intigriti, ProjectDiscovery) and both are perfectly alive — the redirect
+    just was not being followed.
+    """
+
+    def http_error_308(self, req, fp, code, msg, headers):
+        return self.http_error_301(req, fp, 301, msg, headers)
+
+
+_OPENER = urllib.request.build_opener(_Redirect308)
+
+
 def _fetch_bytes(url: str, cfg: dict) -> bytes:
     req = urllib.request.Request(
         url,
@@ -45,8 +61,11 @@ def _fetch_bytes(url: str, cfg: dict) -> bytes:
                  "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
                  "Cache-Control": "no-cache"},
     )
-    with urllib.request.urlopen(req, timeout=cfg["harvest"]["timeout_seconds"],
-                                context=_SSL_CTX) as resp:
+    # _OPENER, not urlopen: it carries the 308 handler above.
+    import ssl as _ssl
+    https = urllib.request.HTTPSHandler(context=_SSL_CTX)
+    opener = urllib.request.build_opener(_Redirect308, https)
+    with opener.open(req, timeout=cfg["harvest"]["timeout_seconds"]) as resp:
         return resp.read()
 
 
