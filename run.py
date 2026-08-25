@@ -25,6 +25,7 @@ for _stream in (sys.stdout, sys.stderr):
         pass
 
 from pipeline import (s1_harvest, s1b_github, s1c_bluesky, s1d_telegram,
+                      s1e_vulns,
                       s2_clean, s3_extract,
                       s4_corroborate, s5_summarize, s6_verify, s6b_judge,
                       s7_publish, s8_notify)
@@ -201,6 +202,7 @@ def main() -> int:
         articles += s1b_github.run()
         articles += s1c_bluesky.run()
         articles += s1d_telegram.run()
+        articles += s1e_vulns.run()
         log("harvest", f"total with collectors: {len(articles)}")
     if not articles:
         print("no articles harvested — check network / feeds.yaml", file=sys.stderr)

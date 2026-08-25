@@ -110,6 +110,25 @@ bluesky:
     - {handle: "xeiaso.net",                name: "Xe Iaso",          category: tech_ai}
     - {handle: "jaredwhite.com",            name: "Jared White",      category: tech_ai}
 
+# --- Vulnerability intelligence from JSON APIs -----------------------------
+# Two of the most authoritative sources here publish no usable feed, and both
+# were previously written off as unavailable:
+#   CISA KEV  the XML endpoint 403s, the JSON one returns 200
+#   NVD       NIST retired RSS entirely; the 2.0 REST API is free and keyless
+#
+# KEV is the single strongest signal this dashboard can carry: inclusion means
+# CISA has evidence of exploitation IN THE WILD, not merely that a CVE exists.
+#
+# NVD asks for 5 requests per 30s without a key. This makes ONE per run, so
+# that is not a concern — but do not paginate without adding sleeps.
+vulns:
+  enabled: true
+  lookback_hours: 96
+  kev: true
+  nvd: true
+  nvd_cvss_floor: 8.0       # high and critical only; below that is noise
+  nvd_limit: 60
+
 # --- Telegram: public channels ---------------------------------------------
 # Read-only via t.me/s/<channel>, which any PUBLIC channel exposes. No bot,
 # no token, no account — verified before this was added. Private channels
@@ -129,6 +148,9 @@ telegram:
     - {channel: "ctinow",         name: "CTI Now",        category: cyber_attacks, tier: C}
     - {channel: "vxunderground",  name: "vx-underground", category: cyber_attacks, tier: C}
     - {channel: "androidMalware", name: "Android Malware", category: cyber_attacks, tier: C}
+    # Probed 2026-08-25: 20 messages each, newest same-day / 6 days.
+    - {channel: "Cyber_Security_Channel", name: "Cyber Security Channel", category: cyber_attacks, tier: C}
+    - {channel: "secharvester",   name: "SecHarvester",   category: cyber_tools, tier: C}
 
 # --- Push the digest to Telegram -------------------------------------------
 # ENTIRELY OPTIONAL. This is the only part that needs a bot, and it does one
