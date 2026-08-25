@@ -160,6 +160,7 @@ ul.rejlist .dom{display:block;color:var(--muted);font-size:12px;margin-top:2px}
 .chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 /* was opacity .55 -> 2.17:1, effectively invisible. */
 .chip .n{opacity:.8;margin-left:5px;font-variant-numeric:tabular-nums}
+.chip .sep3{opacity:.55;margin-right:4px}
 
 
 /* sections */
@@ -493,11 +494,16 @@ let onlyNew=false, age="all";
 // Recency bands. The sections deliberately use different lookback windows
 // (48h for news, 7 days for tools, 30 for research labs), so "show me only
 // today" is a question the page could not previously answer.
+// Durations, not days, was the wrong unit for a page you open in the
+// morning: "3 days" is arithmetic the reader has to do, "Today" is not.
+// All bands are cumulative — "Since yesterday" contains today — because a
+// filter that excludes the newest stories is never what anyone wants.
 const AGES={
-  all:  {label:"Any time", hours:null},
-  d1:   {label:"24 hours", hours:24},
-  d3:   {label:"3 days",   hours:72},
-  d7:   {label:"Week",     hours:168},
+  all:  {label:"All time",        hours:null},
+  d1:   {label:"Today",           hours:24},
+  d2:   {label:"Since yesterday", hours:48},
+  d3:   {label:"Last 3 days",     hours:72},
+  d7:   {label:"This week",       hours:168},
 };
 
 const SORTS={
@@ -787,9 +793,11 @@ function draw(){
 
   writeState();
   const live=document.getElementById("count");
+  // Naming only the non-default sort meant the label vanished exactly when
+  // the reader had just changed it, which reads as the click doing nothing.
   if(live) live.textContent =
-    items.length+" of "+DATA.items.length+" stories"+
-    (sort!=="priority" ? ", by "+SORTS[sort].label.toLowerCase() : "");
+    items.length+" of "+DATA.items.length+" stories, by "+
+    SORTS[sort].label.toLowerCase();
   const dot=document.getElementById("fdot");
   if(dot) dot.hidden = !(age!=="all" || onlyNew || sort!=="newest" ||
                          activeTags.size);
@@ -1060,9 +1068,11 @@ function boot(d){
       const n=v.hours==null ? d.items.length
         : d.items.filter(i=>i.published &&
             (Date.now()-new Date(i.published))/36e5 <= v.hours).length;
+      // "3 days 35" read as one broken label. A separator makes it two
+      // things: a name, and how many stories are behind it.
       return '<button class="chip" data-age="'+k+'" aria-pressed="'+(k===age)+'"'+
              (n?"":" disabled")+'>'+esc(v.label)+
-             '<span class="n">'+n+'</span></button>';
+             '<span class="n"><span class="sep3">·</span>'+n+'</span></button>';
     }).join("");
     abox.onclick=e=>{
       const b=e.target.closest("button[data-age]"); if(!b||b.disabled) return;
@@ -1091,7 +1101,9 @@ function boot(d){
   sbox.onclick=e=>{
     const b=e.target.closest("button[data-sort]"); if(!b) return;
     sort=b.dataset.sort;
-    shown=PAGE;
+    // Deliberately NOT resetting `shown`. Sorting reorders the same set; the
+    // filters change which stories exist and do reset it. Collapsing back to
+    // the first 12 on a sort took away rows the reader had already opened.
     [...sbox.children].forEach(x=>x.setAttribute("aria-pressed",x===b));
     draw();
   };
