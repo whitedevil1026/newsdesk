@@ -981,3 +981,47 @@ class TestJudgeScope:
         if floor == "minor":
             wanted.add(Priority.MINOR)
         assert Priority.MINOR not in wanted
+
+
+class TestDeployConfig:
+    """The published site is public even though the repo is private, so what
+    reaches it matters."""
+
+    def _vercel(self):
+        import json
+        from pathlib import Path
+        return json.loads(
+            (Path(__file__).resolve().parent.parent / "vercel.json")
+            .read_text(encoding="utf-8"))
+
+    def test_only_the_site_directory_is_published(self):
+        """Serving the repo root would expose data/rejected.json and the
+        caches. None hold secrets — that was audited — but rejected items and
+        internal state are not meant to be public."""
+        assert self._vercel()["outputDirectory"] == "site"
+
+    def test_news_json_is_not_cached(self):
+        """The whole point is a page that changes daily. A CDN caching
+        news.json would show yesterday's stories from a fresh deploy."""
+        rules = self._vercel()["headers"]
+        newsjson = next(r for r in rules if r["source"] == "/news.json")
+        cc = next(h["value"] for h in newsjson["headers"]
+                  if h["key"] == "Cache-Control")
+        assert "max-age=0" in cc and "must-revalidate" in cc
+
+    def test_csp_allows_the_fonts_the_page_actually_uses(self):
+        """A CSP that blocks its own stylesheet is worse than none."""
+        rules = self._vercel()["headers"]
+        catchall = next(r for r in rules if r["source"] == "/(.*)")
+        csp = next(h["value"] for h in catchall["headers"]
+                   if h["key"] == "Content-Security-Policy")
+        assert "fonts.googleapis.com" in csp
+        assert "fonts.gstatic.com" in csp
+        assert "default-src 'none'" in csp
+
+    def test_vercelignore_excludes_the_env_file(self):
+        from pathlib import Path
+        root = Path(__file__).resolve().parent.parent
+        ignored = (root / ".vercelignore").read_text(encoding="utf-8").split()
+        assert ".env" in ignored
+        assert "data/" in ignored

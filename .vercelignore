@@ -1,0 +1,13 @@
+# Only site/ is deployed, but be explicit: a CLI deploy from this directory
+# uploads the working tree, and none of the following should ever be public.
+.env
+.env.example
+data/
+pipeline/
+tests/
+.github/
+.claude/
+*.md
+requirements.txt
+run.py
+config/
