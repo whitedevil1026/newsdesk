@@ -116,6 +116,10 @@ def _isolated_usage(tmp_path, monkeypatch):
     """
     import pipeline.budget as budget
     monkeypatch.setattr(budget, "USAGE_PATH", tmp_path / "usage.json")
+    # _RUN_BLOCKS is module-level state that deliberately survives a new
+    # Budget() within one run. It must not survive between TESTS, or one
+    # test's simulated 503 silently blocks a model in the next.
+    monkeypatch.setattr(budget, "_RUN_BLOCKS", {})
 
 
 class TestBudgetKillSwitch:
@@ -155,18 +159,35 @@ class TestBudgetKillSwitch:
             assert tier.per_run <= tier.usable_rpd, tier.model
 
     def test_quota_refusal_persists_but_overload_does_not(self):
+        """Two different lifetimes, and both matter.
+
+        A 429 means the provider refused for the rest of the UTC day, so it
+        must survive into the next RUN — persisted to usage.json.
+
+        A 503 is transient overload, so it must NOT cost the model tomorrow.
+        It does still have to survive within the CURRENT run, because s5.run,
+        s5.top_up and s6b_judge each build their own Budget() and would
+        otherwise each retry the same dead model — that cost 4 of 11 calls on
+        a measured run.
+        """
         import pipeline.budget as _b
         from pipeline.budget import Budget
         USAGE_PATH = _b.USAGE_PATH
+
         b = self._fresh()
-        first = b.next_model()
-        b.block(first, "429", persist=True)
+        b.block(b.next_model(), "429", persist=True)
         assert Budget().tiers[0].blocked, "a 429 must survive into the next run"
 
+        # A new run: fresh process state AND fresh usage file.
         USAGE_PATH.unlink(missing_ok=True)
+        _b._RUN_BLOCKS.clear()
+
         b2 = Budget()
-        b2.block(b2.next_model(), "503 overload")      # transient
-        assert not Budget().tiers[0].blocked, "a 503 must not persist"
+        b2.block(b2.next_model(), "503 overload")       # transient
+        assert Budget().tiers[0].blocked,             "a 503 must survive within the run, or later stages retry it"
+
+        _b._RUN_BLOCKS.clear()                          # next run begins
+        assert not Budget().tiers[0].blocked,             "a 503 must not persist into the next run"
         USAGE_PATH.unlink(missing_ok=True)
 
 

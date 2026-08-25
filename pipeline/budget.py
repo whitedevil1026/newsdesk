@@ -28,6 +28,16 @@ from .utils import log
 
 USAGE_PATH = CACHE_DIR / "usage.json"
 
+# Blocks that must survive within one process but NOT across days.
+#
+# s5.run(), s5.top_up() and s6b_judge.run() each construct their own Budget(),
+# which re-reads usage.json. A 503 block is deliberately persist=False (a
+# transient overload should not cost you the model tomorrow), but that meant
+# it evaporated the moment the next stage built a new Budget — so top_up
+# cheerfully retried the same dead flagship and burned four more calls.
+# Measured: 4 of 11 stage-5 calls returned nothing for exactly this reason.
+_RUN_BLOCKS: dict[str, str] = {}
+
 
 def _today() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -96,7 +106,9 @@ class Budget:
         self.tiers = []
         for spec in cfg["tiers"]:
             tier = ModelBudget(spec, day.get(spec["model"], 0), reserve)
-            if tier.model in blocked_today:
+            if tier.model in _RUN_BLOCKS:
+                tier.blocked = _RUN_BLOCKS[tier.model]
+            elif tier.model in blocked_today:
                 # Refused by the provider earlier today. Retrying costs four
                 # attempts with exponential backoff before failing the same way.
                 tier.blocked = "quota refused earlier today"
@@ -188,6 +200,7 @@ class Budget:
         provider's refusal is authoritative; the counter is a guess.
         """
         tier.blocked = why
+        _RUN_BLOCKS[tier.model] = why      # survives the next Budget() in this run
         log("budget", f"! {tier.model} blocked: {why}")
         if persist:
             day = self._data.setdefault(_today(), {})

@@ -20,9 +20,16 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # A local run once stalled for hours on a network read. Fail loudly
-    # instead of silently consuming the monthly Actions allowance.
-    timeout-minutes: 30
+    # A local run once stalled for hours on a network read, hence a cap. But
+    # 30 minutes was too tight: the first run WITH an API key was cancelled at
+    # 30.6 min mid-pipeline, losing the whole run's work. Runners are slower
+    # than the dev box (shared network, cold caches) and the model ladder
+    # spends real time on 503 backoff before falling through.
+    #
+    # 75 minutes leaves headroom on a bad provider day while still catching a
+    # genuine hang. Actions allows up to 6 hours, so this is nowhere near a
+    # billing risk on a once-daily job.
+    timeout-minutes: 75
 
     steps:
       - uses: actions/checkout@v4

@@ -108,7 +108,38 @@ def run(articles: list[Article]) -> list[Cluster]:
     )
     multi = sum(1 for c in clusters if len(c.articles) > 1)
     log("clean", f"{len(clusters)} clusters ({multi} multi-outlet)")
+    # Re-key on CONTENT, not on whichever article happened to seed the cluster.
+    #
+    # The seed is the longest headline, with ties broken by harvest order — so
+    # the key changed whenever a new outlet joined with a longer headline, or
+    # the original seed aged out of the window, or threads simply finished in
+    # a different order. Every one of those is a guaranteed miss in the
+    # summary cache on a story already paid for.
+    #
+    # Measured: 32 hits out of 155 lookups (21%) against an expected ~50% for
+    # a rolling 48h window run daily. The cache held 285 entries with 285
+    # distinct cluster_keys and no duplicate body-length variants, which is
+    # what pointed at key churn rather than the body-length suffix.
+    for cluster in clusters:
+        cluster.key = _content_key(cluster)
     return clusters
+
+
+def _content_key(cluster: Cluster) -> str:
+    """A key that survives the cluster gaining or losing members.
+
+    The obvious choice — a hash of the union of headline tokens — is wrong:
+    it changes the moment a new outlet joins with any word the others did not
+    use, which is precisely the dominant churn case (a story picked up by a
+    second outlet the next day).
+
+    The smallest member uid is stable under that case, because adding an
+    article only changes the minimum if the new uid happens to sort lower.
+    Uids are sha1 prefixes of the canonical url, so which one is smallest is
+    arbitrary but FIXED for a given article — it does not depend on headline
+    length, harvest order, or how many outlets have picked the story up.
+    """
+    return min(a.uid for a in cluster.articles)
 
 
 def _cluster(articles: list[Article], threshold: float,
@@ -138,7 +169,7 @@ def _cluster(articles: list[Article], threshold: float,
                 placed = True
                 break
         if not placed:
-            clusters.append(Cluster(key=art.uid, articles=[art]))
+            clusters.append(Cluster(key=art.uid, articles=[art]))   # provisional
             sigs.append(sig)
 
     return clusters

@@ -185,6 +185,10 @@ def run(clusters: list[Cluster]) -> list[Item]:
             corroboration=outlets,
             primary_links=primaries,
             published=published,
+            # Every member's uid, so the summary cache can match on ANY of
+            # them. Chasing a perfectly stable cluster key is a losing game —
+            # the membership itself changes — but an article's uid never does.
+            alt_keys=sorted({a.uid for a in cl.articles}),
             # Aggregators sort LAST, matching Cluster.lead. sources[0] is what
             # the card links to, the console prints and stage 5 tells the
             # model — so without this guard a card could show one outlet's

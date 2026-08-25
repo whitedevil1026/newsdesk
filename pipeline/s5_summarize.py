@@ -197,11 +197,15 @@ def _generate(batch, budget, key, profile, tag_list, llm_gemini,
             results = []
             for part in slices:
                 budget.wait(tier)
-                budget.record(tier)
                 payload = [{k: b[k] for k in ("id", "title", "source", "body")}
                            for b in part]
-                results += llm_gemini.call(tier.model, key, profile, payload,
-                                           tags=tag_list)
+                got = llm_gemini.call(tier.model, key, profile, payload,
+                                      tags=tag_list)
+                # Record AFTER success. Debiting first meant a 429 or 503 —
+                # which returns nothing — still spent the local allowance,
+                # so the counter drifted pessimistic against the provider.
+                budget.record(tier)
+                results += got
             return results, tier.model
 
         except llm_gemini.RateLimited as exc:
@@ -301,9 +305,17 @@ def run(items: list[Item], bodies: dict[str, str],
         body = bodies.get(item.cluster_key, "")
         # Cache key includes the body so a re-extracted, fuller article gets
         # a fresh summary rather than reusing one written from a stub.
+        # Try the cluster key first, then every member article's uid. The
+        # cluster key moves when membership changes — a story picked up by a
+        # second outlet reseeds it — so a single-key lookup missed summaries
+        # already paid for. Measured hit rate was 21% against an expected
+        # ~50% for a rolling window run daily.
         ckey = f"{item.cluster_key}:{len(body)}"
-        if ckey in cache:
-            _apply(item, cache[ckey], "cache", body)
+        hit = next((k for k in [ckey] + [f"{a}:{len(body)}" for a in item.alt_keys]
+                    if k in cache), None)
+        if hit:
+            _apply(item, cache[hit], "cache", body)
+            cache[ckey] = cache[hit]        # re-file under the current key
             cached += 1
             continue
         pending.append({"id": item.cluster_key, "title": item.title,

@@ -23,6 +23,13 @@ from __future__ import annotations
 import json
 
 from .budget import Budget
+# The judge MUST see at least as much text as the summariser did. It was
+# truncating at 3000 while stage 5 sends 3500, so any claim whose supporting
+# sentence sat between those two offsets was invisible to the judge and got
+# marked "unsupported" — a manufactured verdict, on a real claim, from text
+# we simply never showed it. 35% of article bodies exceed 3500 chars, so
+# that window was regularly populated.
+from .llm_gemini import BODY_CHARS
 from .config import settings
 from .models import Item, Priority, Verdict
 from .utils import log
@@ -137,7 +144,7 @@ def run(items: list[Item], bodies: dict[str, str]) -> list[Item]:
 
         prompt = "\n\n".join(
             f"### id: {i.cluster_key}\nSOURCE TEXT:\n"
-            f"{(bodies.get(i.cluster_key, '') or '(no text)')[:3000]}\n"
+            f"{(bodies.get(i.cluster_key, '') or '(no text)')[:BODY_CHARS]}\n"
             f"CLAIMS:\n" + "\n".join(f"{k}. {c.text}" for k, c in enumerate(i.claims))
             for i in batch
         )
