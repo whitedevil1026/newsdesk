@@ -172,7 +172,14 @@ ul.facts b{color:var(--ink);font-weight:600}
 .srcs a:hover{color:var(--ink);border-bottom-color:var(--muted)}
 .srcs a.primary{color:var(--ok);border-bottom-color:var(--ok)}
 .srcs .dot2{opacity:.4}
-.srcs .more{opacity:.65}
+.srcs .srcmore{margin:0;display:inline-block}
+.srcs .srcmore summary{font-size:12.5px;color:var(--muted);min-height:0;
+ display:inline-block;padding:0}
+.srclist{display:grid;gap:5px;margin:8px 0 2px;padding:9px 11px;
+ background:var(--factbg);border-radius:7px;min-width:240px}
+.srcrow{display:flex;gap:10px;align-items:baseline;
+ justify-content:space-between;font-size:12.5px}
+.srcrow .dom{color:var(--muted);opacity:.75;font-size:11.5px;white-space:nowrap}
 .srcs .when{margin-left:auto;opacity:.8}
 
 details{margin-top:12px}
@@ -297,6 +304,8 @@ footer p{margin:14px 0 0}
            placeholder="Search — try dfir, soc, llm, cve, ransomware, a vendor name…">
     <div class="chips" id="cats"></div>
     <div class="tagbar">
+      <span class="lbl2">When</span>
+      <div class="chips" id="ages"></div>
       <button class="toggle" id="newOnly" aria-pressed="false">New only</button>
       <span class="lbl2">Sort</span>
       <div class="chips" id="sorts"></div>
@@ -347,6 +356,7 @@ function readState(){
   const h=new URLSearchParams(location.hash.slice(1));
   cat=h.get("cat")||"all";
   sort=h.get("sort")||"priority";
+  age=h.get("age")||"all";
   query=(h.get("q")||"").toLowerCase();
   activeTags=new Set((h.get("tags")||"").split(",").filter(Boolean));
 }
@@ -354,6 +364,7 @@ function writeState(){
   const h=new URLSearchParams();
   if(cat!=="all") h.set("cat",cat);
   if(sort!=="priority") h.set("sort",sort);
+  if(age!=="all") h.set("age",age);
   if(query) h.set("q",query);
   if(activeTags.size) h.set("tags",[...activeTags].join(","));
   const s=h.toString();
@@ -362,7 +373,17 @@ function writeState(){
   history.replaceState(null,"",s?("#"+s):location.pathname);
 }
 
-let onlyNew=false;
+let onlyNew=false, age="all";
+
+// Recency bands. The sections deliberately use different lookback windows
+// (48h for news, 7 days for tools, 30 for research labs), so "show me only
+// today" is a question the page could not previously answer.
+const AGES={
+  all:  {label:"Any time", hours:null},
+  d1:   {label:"24 hours", hours:24},
+  d3:   {label:"3 days",   hours:72},
+  d7:   {label:"Week",     hours:168},
+};
 
 const SORTS={
   priority:{label:"Priority", fn:(a,b)=>
@@ -410,6 +431,11 @@ function haystack(it){
 
 function matches(it){
   if(onlyNew && !it.is_new) return false;
+  const lim=AGES[age] && AGES[age].hours;
+  if(lim){
+    if(!it.published) return false;               // undated cannot be "recent"
+    if((Date.now()-new Date(it.published))/36e5 > lim) return false;
+  }
   if(cat!=="all" && it.category!==cat) return false;
   for(const t of activeTags) if(!(it.tags||[]).includes(t)) return false;
   if(!query) return true;
@@ -439,13 +465,25 @@ function card(it){
   // Two named outlets beat a bare count: the Trust Project work found a
   // SINGLE transparency feature moves nothing, while concrete named
   // indicators measurably raised trust. Same width, real information.
-  const shown=named.slice(0,2).map(s=>
-    '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.name)+'</a>');
+  // The rest stay one click away rather than hidden behind "+3". "Who says
+  // so" is the question a reader asks about anything surprising, and a count
+  // is not an answer to it. Each row carries the domain too, since a name
+  // alone does not tell you whether it is the publisher or an aggregator.
+  const link=o=>'<a href="'+esc(o.url)+'" target="_blank" rel="noopener" title="'+
+    esc(o.domain||"")+'">'+esc(o.name)+'</a>';
+  const shown=named.slice(0,2).map(link);
+  const rest=named.slice(2);
   // Count what is actually listed. The rail used to print `corroboration`,
   // which counts INDEPENDENT outlets after syndication collapsing, while the
   // row below listed every distinct name — so a card could read "3 outlets"
   // above six links. A reader who checks stops trusting every number.
-  const more=named.length>2 ? '<span class="more">+'+(named.length-2)+'</span>' : "";
+  const more=rest.length
+    ? '<details class="srcmore"><summary>' + rest.length + ' more</summary>'+
+      '<div class="srclist">'+rest.map(o=>
+        '<span class="srcrow">'+link(o)+
+        '<span class="dom">'+esc(o.domain||"")+'</span></span>').join("")+
+      '</div></details>'
+    : "";
   const prim=(it.primary_links||[]).length
     ? '<a class="primary" href="'+esc(it.primary_links[0])+
       '" target="_blank" rel="noopener">primary source</a>' : "";
@@ -736,6 +774,26 @@ function boot(d){
   });
 
   // --- sort control ----------------------------------------------------
+  // Each band shows how many stories it would leave, so the reader can see
+  // "24 hours · 9" before clicking and never lands on an empty page.
+  const abox=document.getElementById("ages");
+  if(abox){
+    abox.innerHTML=Object.entries(AGES).map(([k,v])=>{
+      const n=v.hours==null ? d.items.length
+        : d.items.filter(i=>i.published &&
+            (Date.now()-new Date(i.published))/36e5 <= v.hours).length;
+      return '<button class="chip" data-age="'+k+'" aria-pressed="'+(k===age)+'"'+
+             (n?"":" disabled")+'>'+esc(v.label)+
+             '<span class="n">'+n+'</span></button>';
+    }).join("");
+    abox.onclick=e=>{
+      const b=e.target.closest("button[data-age]"); if(!b||b.disabled) return;
+      age=b.dataset.age;
+      [...abox.children].forEach(x=>x.setAttribute("aria-pressed",x===b));
+      shown=PAGE; draw();
+    };
+  }
+
   const nb=document.getElementById("newOnly");
   if(nb){
     const n=d.items.filter(i=>i.is_new).length;
@@ -781,8 +839,11 @@ function boot(d){
     if(e.key==="Escape"){
       if(typing){ e.target.blur(); }
       else if(query||activeTags.size||cat!=="all"){
-        cat="all"; activeTags.clear(); query="";
-        document.getElementById("q").value=""; syncChips(); draw();
+        cat="all"; activeTags.clear(); query=""; age="all"; onlyNew=false;
+        document.getElementById("q").value="";
+        const nbtn=document.getElementById("newOnly");
+        if(nbtn) nbtn.setAttribute("aria-pressed","false");
+        shown=PAGE; syncChips(); draw();
       }
       return;
     }
@@ -805,6 +866,9 @@ function boot(d){
       x.setAttribute("aria-pressed", x.dataset.cat===cat));
     [...sbox.children].forEach(x=>
       x.setAttribute("aria-pressed", x.dataset.sort===sort));
+    const ab=document.getElementById("ages");
+    if(ab) [...ab.children].forEach(x=>
+      x.setAttribute("aria-pressed", x.dataset.age===age));
   }
   window.syncChips=syncChips;
   syncChips();

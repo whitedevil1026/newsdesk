@@ -292,8 +292,12 @@ llm:
     # Gemma: open-weight, enormous allowance, but TPM is 16K against 250K
     # for the Gemini models — so its batches must be small or they exceed
     # tokens-per-minute. Last resort, and it does honour the schema.
-    - {model: "gemma-4-31b-it",        rpm: 30, rpd: 14400, max_batches_per_run: 8, batch_size: 6}
-    - {model: "gemma-4-26b-a4b-it",    rpm: 30, rpd: 14400, max_batches_per_run: 8, batch_size: 6}
+    # batch_size 3, not 6. The dashboard showed Gemma 4 26B peaking at
+    # 17.87K TPM against a 16K ceiling — six articles at ~3.5K chars each
+    # still overflows it, and a TPM breach costs the whole slice. The Flash
+    # models have 250K TPM, which is why only these two need the override.
+    - {model: "gemma-4-31b-it",        rpm: 30, rpd: 14400, max_batches_per_run: 8, batch_size: 3}
+    - {model: "gemma-4-26b-a4b-it",    rpm: 30, rpd: 14400, max_batches_per_run: 8, batch_size: 3}
 
   # 20 items/batch, not 12. A live batch of 12 used 18.4K tokens against a
   # 250K TPM ceiling, so token budget was never the constraint — REQUESTS are.
