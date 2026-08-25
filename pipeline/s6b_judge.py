@@ -111,12 +111,20 @@ def run(items: list[Item], bodies: dict[str, str]) -> list[Item]:
     # Only items that will actually be published are worth judging, and only
     # those whose summary came from a model — extractive summaries quote the
     # source verbatim, so there is nothing to disagree with.
+    floor = cfg.get("min_priority", "important")
+    wanted = {Priority.CRITICAL}
+    if floor in ("important", "minor"):
+        wanted.add(Priority.IMPORTANT)
+    if floor == "minor":
+        wanted.add(Priority.MINOR)
+
     live = [i for i in items
             if i.verdict is not Verdict.REJECTED
             and i.claims
+            and i.priority in wanted
             and not any("extractive" in t or "heuristic" in t for t in i.trace)]
     live.sort(key=lambda i: (i.priority is not Priority.CRITICAL, -i.blend))
-    live = live[: cfg.get("max_items", 40)]
+    live = live[: cfg.get("max_items", 18)]
 
     if not live:
         log("judge", "nothing to judge")

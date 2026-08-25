@@ -360,8 +360,17 @@ llm:
 # the ~5 this pipeline uses), so the check costs effectively nothing.
 judge:
   enabled: true
-  max_items: 40             # only what will actually be published
-  batch_size: 8
+  # Scoped to what a wrong claim would actually cost. A measured run spent 5
+  # calls and ~4 minutes to return 28 "all claims supported", 1 unsupported
+  # and 0 rejections — nearly all of that on MINOR items nobody acts on.
+  #
+  # The claims on every item have already passed the deterministic span check
+  # in stage 6, so the judge is hunting a narrower failure: the quote is real
+  # but the inference from it is wrong. That is worth catching on a story you
+  # might act on today, and not worth four minutes on the tail.
+  max_items: 18
+  min_priority: important   # critical | important | minor
+  batch_size: 9
   prefer_cheap_model: true  # independence and volume matter more than prose
 
 verify:

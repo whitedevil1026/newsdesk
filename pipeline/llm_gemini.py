@@ -168,14 +168,27 @@ def _post(model: str, key: str, payload: dict, timeout: int) -> dict:
 
 
 def _post_with_retries(model: str, key: str, payload: dict,
-                       timeout: int, max_retries: int = 4) -> dict:
+                       timeout: int, max_retries: int = 2) -> dict:
     """POST with backoff. One place, so every caller fails the same way.
+
+    RETRY SHALLOW, FALL THROUGH FAST. Profiling a 45-minute run showed 63% of
+    wall clock inside this function and another 10% in RPM pacing — nearly
+    three quarters of the run spent waiting rather than working.
+
+    The old settings were 4 attempts at a 90s timeout with 3/6/12s backoff,
+    so one unresponsive model could burn six minutes before the caller was
+    allowed to try the next one. That made sense with a single model. With a
+    ladder of eight, it is exactly backwards: a DIFFERENT model is far more
+    likely to answer than the same one twelve seconds later.
+
+    2 attempts at 45s caps a dead model at ~93s and hands control back to
+    _generate, which moves to the next tier immediately.
 
     A 4xx that is not 429 is a configuration problem and is raised at once —
     retrying a bad key or a retired model name only burns time. A 429 gets
     its own exception type so the caller can stop rather than keep knocking.
     """
-    delay = 3.0
+    delay = 2.0
     for attempt in range(1, max_retries + 1):
         try:
             return _post(model, key, payload, timeout)
@@ -246,7 +259,7 @@ def _extract_text(data: dict, model: str) -> str:
 
 
 def call(model: str, key: str, profile: str, batch: list[dict],
-         tags: str = "", timeout: int = 90, max_retries: int = 4) -> list[dict]:
+         tags: str = "", timeout: int = 45, max_retries: int = 2) -> list[dict]:
     """Summarise one batch of articles. Returns the parsed ``results`` list.
 
     Retries on 429 (rate limit) and 5xx with exponential backoff; a 400 or
@@ -287,7 +300,7 @@ def call(model: str, key: str, profile: str, batch: list[dict],
 
 
 def raw_json(model: str, key: str, system: str, prompt: str,
-             schema: dict, timeout: int = 90) -> dict:
+             schema: dict, timeout: int = 45) -> dict:
     """Generic structured-output call.
 
     `call()` is specialised to the summarisation contract; the judge in stage

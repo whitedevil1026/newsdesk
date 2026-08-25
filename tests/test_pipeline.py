@@ -927,3 +927,57 @@ class TestTagPrecision:
         worst, n = counts.most_common(1)[0]
         assert n <= len(items) * 0.7, (
             f"tag '{worst}' is on {n}/{len(items)} items — too broad to filter on")
+
+
+class TestRetryBudget:
+    """Retry shallow, fall through fast.
+
+    Profiling a 45-minute run put 63% of wall clock inside the retry loop and
+    another 10% in RPM pacing — nearly three quarters spent waiting. With a
+    ladder of eight models, retrying ONE model deeply is backwards: a
+    different model is far more likely to answer than the same one twelve
+    seconds later.
+    """
+
+    def test_worst_case_on_a_dead_model_is_bounded(self):
+        import inspect
+        from pipeline import llm_gemini
+
+        sig = inspect.signature(llm_gemini._post_with_retries)
+        retries = sig.parameters["max_retries"].default
+        call_sig = inspect.signature(llm_gemini.call)
+        timeout = call_sig.parameters["timeout"].default
+
+        # attempts x timeout, plus backoff, must stay well under the point
+        # where one model can eat a meaningful share of the run
+        worst = retries * timeout
+        assert worst <= 120, f"a dead model can burn {worst}s before fallthrough"
+
+    def test_ladder_is_deep_enough_to_justify_shallow_retries(self):
+        """Shallow retries are only safe because there are models to fall
+        through TO. If the ladder shrank, this trade would stop making sense."""
+        from pipeline.config import settings
+        assert len(settings()["llm"]["tiers"]) >= 4
+
+
+class TestJudgeScope:
+    def test_judge_is_scoped_to_actionable_items(self):
+        """A measured run spent 5 calls and ~4 minutes returning 28 'all
+        supported', 1 unsupported and 0 rejections — nearly all of it on
+        MINOR items nobody acts on."""
+        from pipeline.config import settings
+        cfg = settings()["judge"]
+        assert cfg["min_priority"] in ("critical", "important")
+        assert cfg["max_items"] <= 20
+
+    def test_minor_items_are_excluded_by_default(self):
+        from pipeline.config import settings
+        from pipeline.models import Priority
+
+        floor = settings()["judge"]["min_priority"]
+        wanted = {Priority.CRITICAL}
+        if floor in ("important", "minor"):
+            wanted.add(Priority.IMPORTANT)
+        if floor == "minor":
+            wanted.add(Priority.MINOR)
+        assert Priority.MINOR not in wanted
