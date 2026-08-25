@@ -186,8 +186,13 @@ def run(items: list[Item], dry_run: bool = False) -> dict:
     # The site is served as a plain static directory, so its data file lives
     # beside index.html rather than being fetched from ../data.
     snapshot(payload, SITE_DIR / "news.json", "site copy")
-    snapshot({"generated_at": payload["generated_at"],
-              "items": [i.to_json() for i in dead]}, REJECTS_JSON, "rejects")
+    rejects = {"generated_at": payload["generated_at"],
+               "items": [i.to_json() for i in dead]}
+    snapshot(rejects, REJECTS_JSON, "rejects")
+    # The page links its "not published" count to this file, so it has to sit
+    # beside news.json in the served directory. A count a reader cannot open
+    # is a claim they have to take on faith.
+    snapshot(rejects, SITE_DIR / "rejected.json", "site rejects")
 
     # Mark published sources as seen so tomorrow's run skips them.
     # Both forms: the harvested url so stage 2 can match it next run, and the

@@ -38,7 +38,7 @@ body{margin:0;background:var(--bg);color:var(--ink);
    Haselgrove and read FASTER than short lines; the usable band is 45-75 and
    should not pass ~70. 64ch on the body font lands mid-band. */
 .wrap{margin:0 auto;
- padding:clamp(18px, 4vw, 34px) clamp(14px, 4vw, 20px) 100px;
+ padding:clamp(12px, 2.5vw, 22px) clamp(14px, 4vw, 20px) 100px;
  /* `min(64ch + 4rem, ...)` silently does nothing — an addition inside min()
     needs calc(). The first attempt measured 81 characters per line, past the
     45-75 band entirely. */
@@ -48,11 +48,12 @@ main, header, .controls{max-width:100%}
 /* Never let a long URL, code span or unbroken token push the page sideways. */
 h3, .body, .deck, ul.facts li, .why{overflow-wrap:break-word}
 
-header{margin-bottom:22px}
+header{margin-bottom:10px}
 .brand{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
 h1{margin:0;font-family:"Newsreader",Georgia,serif;font-weight:600;
  letter-spacing:-.015em;font-size:clamp(24px, 5vw, 31px)}
-.meta{color:var(--muted);font-size:13.5px;line-height:1.6}
+.meta{color:var(--muted);font-size:13px;line-height:1.55}
+.meta .dim{opacity:.75}
 .meta .sep2{opacity:.7;margin:0 2px}
 .meta .tzn{opacity:.9}
 .meta span[title]{cursor:help}
@@ -61,27 +62,80 @@ h1{margin:0;font-family:"Newsreader",Georgia,serif;font-weight:600;
  color:var(--ink);border:1px solid color-mix(in srgb, var(--imp) 40%, transparent)}
 @media (max-width:600px){
   .brand{gap:4px}
-  .meta{font-size:12.5px}
+  .meta{font-size:12px}
   /* Measured: header 276px + controls 329px put the first headline at y=766
      of an 812px screen — the entire opening view was chrome and not one
-     story was visible. The counts and the sort row are refinements, not
-     entry points, so they fold away on a phone. */
+     story was visible. Everything that is a refinement rather than an entry
+     point now lives inside the Filters panel, which is closed by default;
+     what remains on the opening screen is the title, one meta line, the
+     search box and a single scrolling row of sections. */
   .stats{display:none}
-  .lbl2, #sorts{display:none}
-  header{margin-bottom:12px}
-  .controls{padding:10px 0 8px}
+  header{margin-bottom:8px}
+  .controls{padding:8px 0 6px}
   .tagbar{margin-top:8px}
-  h1{font-size:22px}
+  h1{font-size:21px}
 }
-.stats{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px;font-size:13.5px;
- color:var(--muted);padding-bottom:16px;border-bottom:1px solid var(--line)}
+.stats{display:flex;flex-wrap:wrap;gap:2px 14px;margin-top:6px;font-size:12.5px;
+ color:var(--muted);padding-bottom:0;border-bottom:none}
 .stats b{color:var(--ink);font-weight:600}
+/* Each count is a control, so it has to look like one. Underlined-on-hover
+   rather than boxed: six boxes across the top read as a toolbar and pull the
+   eye away from the first headline, which is what the page is for. */
+.stat{border:0;background:none;font:inherit;font-size:inherit;color:var(--muted);
+ padding:2px 0;cursor:pointer;border-bottom:1px dotted var(--line2);
+ border-radius:0;font-family:inherit}
+.stat:hover{color:var(--ink);border-bottom-color:var(--muted)}
+.stat[aria-pressed=true]{color:var(--ink);border-bottom:1px solid var(--accent)}
+.stat[aria-pressed=true] b{color:var(--accent)}
+.stat.lead b{color:var(--accent);font-size:1.15em}
+
+/* the rejected list */
+.rejnote{color:var(--muted);font-size:13px;margin:18px 0 0;line-height:1.6}
+ul.rejlist{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:11px}
+ul.rejlist li{font-size:14px;line-height:1.5}
+ul.rejlist a{color:var(--ink2);text-decoration:none}
+ul.rejlist a:hover{text-decoration:underline;text-underline-offset:3px}
+ul.rejlist .dom{display:block;color:var(--muted);font-size:12px;margin-top:2px}
 
 /* controls — the bar retracts on scroll-down so it never sits over the text */
 .controls{position:sticky;top:0;z-index:5;background:var(--bg);
- padding:14px 0 12px;border-bottom:1px solid var(--line);margin-bottom:6px;
+ padding:10px 0 8px;border-bottom:1px solid var(--line);margin-bottom:4px;
  transition:transform .22s ease, opacity .22s ease}
 .controls.hidden{transform:translateY(-115%);opacity:0;pointer-events:none}
+
+/* Row 1 — search and the one button that reveals everything else. */
+.row1{display:flex;align-items:center;gap:8px}
+.row1 .toggle{flex:0 0 auto;white-space:nowrap;padding:8px 12px}
+.fdot{display:inline-block;width:6px;height:6px;border-radius:50%;
+ background:var(--accent);margin-left:6px;vertical-align:middle}
+.toggle[aria-expanded=true] .fdot{background:var(--bg)}
+
+/* Sections stay on ONE line and scroll sideways. Wrapping cost a second row
+   of chrome on every phone and most laptops, for a list that is five items
+   long and never grows. */
+.strip{margin-top:8px;overflow-x:auto;overscroll-behavior-x:contain;
+ scrollbar-width:none;-ms-overflow-style:none;
+ -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 22px),transparent);
+ mask-image:linear-gradient(90deg,#000 calc(100% - 22px),transparent)}
+.strip::-webkit-scrollbar{display:none}
+.strip .chips{flex-wrap:nowrap;margin-top:0;padding-right:22px}
+.strip .chip{flex:0 0 auto;white-space:nowrap}
+
+/* Everything secondary. Closed on load; opening it costs one tap and the
+   reader keeps the whole first screen for stories until they ask for it. */
+#panel{max-height:0;overflow:hidden;transition:max-height .25s ease}
+#panel.open{max-height:60vh;overflow:auto}
+#activeTags{margin-top:8px}
+#activeTags:empty{display:none}
+
+/* Reading state: the bar keeps the section strip and drops everything else,
+   so the sticky chrome over the text is one 34px row instead of four. */
+.controls.compact{padding:5px 0 4px}
+.controls.compact .row1, .controls.compact #activeTags{display:none}
+.controls.compact .strip{margin-top:0}
+@media (prefers-reduced-motion:reduce){
+  .controls, #panel, #tagchips{transition:none}
+}
 .tagbar{display:flex;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap}
 .toggle{border:1px solid var(--line2);background:transparent;color:var(--muted);
  border-radius:7px;padding:4px 11px;font-size:12.5px;cursor:pointer;
@@ -92,9 +146,10 @@ h1{margin:0;font-family:"Newsreader",Georgia,serif;font-weight:600;
 .active-tags .chip{background:var(--accent);color:var(--bg);border-color:var(--accent)}
 #tagchips{margin-top:8px;max-height:0;overflow:hidden;
  transition:max-height .25s ease}
-#tagchips.open{max-height:340px;overflow:auto}
-#q{width:100%;padding:11px 14px;font:inherit;font-size:15.5px;color:var(--ink);
- background:var(--card);border:1px solid var(--line2);border-radius:9px}
+#tagchips.open{max-height:230px;overflow:auto}
+#q{flex:1 1 auto;min-width:0;padding:9px 13px;font:inherit;font-size:15px;
+ color:var(--ink);background:var(--card);border:1px solid var(--line2);
+ border-radius:9px}
 #q:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:transparent}
 #q::placeholder{color:var(--muted)}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
@@ -224,6 +279,49 @@ h2.sec .win{font-weight:400;letter-spacing:0;text-transform:none;
 .cl.contradicted{color:var(--ink)}
 .cl.neutral .ck{color:var(--warn)}
 details ul.tr{margin-top:10px}
+/* Nested one level down and visually quieter than its parent, so it reads as
+   a footnote to the summary rather than a second section of equal weight. */
+.score{margin-top:14px;padding-top:10px;border-top:1px dashed var(--line)}
+.score > summary{font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;
+ font-weight:600}
+
+/* --- Desktop: the controls become a rail --------------------------------
+   Below this width the bar has to sit above the text and therefore over it
+   while scrolling. Past it there is dead margin either side of a 55-character
+   measure doing nothing, so the filters move into that margin: the reading
+   column keeps its measure, the controls are permanently visible, and
+   nothing is ever laid on top of a sentence. */
+@media (min-width:1000px){
+  .wrap{max-width:min(calc(54ch + 3rem + 270px), 62rem);
+        display:grid;grid-template-columns:230px minmax(0,1fr);
+        column-gap:40px;align-items:start;
+        padding-top:clamp(20px,2.5vw,34px)}
+  header{grid-column:1 / -1;margin-bottom:20px;padding-bottom:14px;
+         border-bottom:1px solid var(--line)}
+  main, #foot{grid-column:2;min-width:0}
+  .controls{grid-column:1;grid-row:2;position:sticky;top:22px;
+            padding:0;margin:0;border-bottom:none;
+            max-height:calc(100vh - 44px);overflow-y:auto;
+            scrollbar-width:thin}
+  /* Nothing retracts or collapses up here — there is room for all of it. */
+  .controls.hidden{transform:none;opacity:1;pointer-events:auto}
+  .controls.compact .row1, .controls.compact #activeTags{display:block}
+  .row1{display:block}
+  .row1 .toggle{display:none}
+  .row1 #q{width:100%}
+  /* .open can survive a resize from a narrow window; both states are the
+     same up here, so pin them together rather than leaving a 60vh cap on a
+     rail that is already scrollable. */
+  #panel, #panel.open{max-height:none;overflow:visible}
+  .strip{overflow:visible;margin-top:12px;
+         -webkit-mask-image:none;mask-image:none}
+  .strip .chips{flex-wrap:wrap;padding-right:0}
+  .tagbar{margin-top:14px}
+  #tagchips.open{max-height:260px}
+  .count{margin-left:0}
+  h2.sec{margin-top:0}
+  main h2.sec ~ h2.sec{margin-top:34px}
+}
 
 /* keyboard focus must be visible — the site is navigable by j/k */
 a:focus-visible, button:focus-visible, summary:focus-visible,
@@ -265,6 +363,10 @@ kbd{font:inherit;font-size:.86em;border:1px solid var(--line2);
   .controls{position:static}
   .controls.hidden{transform:none;opacity:1;pointer-events:auto}
   #tagchips.open{max-height:210px}
+  /* Under 16px iOS zooms the whole page in the moment the field takes focus
+     and never zooms back out. This block sits after the base #q rule; the
+     earlier phone block does not, which is why the value was being lost. */
+  #q{font-size:16px;padding:9px 12px}
 }
 
 /* --- Tablet ----------------------------------------------------------- */
@@ -300,22 +402,30 @@ footer p{margin:14px 0 0}
   </header>
 
   <div class="controls">
-    <input id="q" type="search" autocomplete="off" spellcheck="false"
-           placeholder="Search — try dfir, soc, llm, cve, ransomware, a vendor name…">
-    <div class="chips" id="cats"></div>
-    <div class="tagbar">
-      <span class="lbl2">When</span>
-      <div class="chips" id="ages"></div>
-      <button class="toggle" id="newOnly" aria-pressed="false">New only</button>
-      <span class="lbl2">Sort</span>
-      <div class="chips" id="sorts"></div>
-      <span class="count" id="count" aria-live="polite"></span>
+    <div class="row1">
+      <input id="q" type="search" autocomplete="off" spellcheck="false"
+             placeholder="Search dfir, cve, llm, ransomware…">
+      <button class="toggle" id="filtToggle" aria-expanded="false"
+              aria-controls="panel">Filters<span class="fdot" id="fdot" hidden></span></button>
     </div>
-    <div class="tagbar">
-      <button class="toggle" id="tagToggle" aria-expanded="false">Tags</button>
-      <div class="active-tags" id="activeTags"></div>
+    <div class="strip"><div class="chips" id="cats"></div></div>
+    <div class="active-tags" id="activeTags"></div>
+    <div id="panel">
+      <div class="tagbar">
+        <span class="lbl2">When</span>
+        <div class="chips" id="ages"></div>
+        <button class="toggle" id="newOnly" aria-pressed="false">New only</button>
+      </div>
+      <div class="tagbar">
+        <span class="lbl2">Sort</span>
+        <div class="chips" id="sorts"></div>
+        <span class="count" id="count" aria-live="polite"></span>
+      </div>
+      <div class="tagbar">
+        <button class="toggle" id="tagToggle" aria-expanded="false">Tags</button>
+      </div>
+      <div class="chips" id="tagchips"></div>
     </div>
-    <div class="chips" id="tagchips"></div>
   </div>
 
   <main id="feed"></main>
@@ -338,7 +448,10 @@ const catRank = c => { const i = CAT_ORDER.indexOf(c); return i < 0 ? 99 : i; };
 const VD = {verified:"verified", corroborated:"corroborated",
             established:"established", unverified:"unverified",
             disputed:"disputed"};
-let DATA=null, cat="all", activeTags=new Set(), query="", sort="priority";
+let DATA=null, cat="all", activeTags=new Set(), query="", sort="newest";
+// Which headline stat is filtering the page, if any: "", critical, verified,
+// corroborated, new, rejected.
+let flag="", REJ=null;
 
 // Show 12, then let the reader ask for more. Choice-overload work shows
 // satisfaction down and deferral up as options multiply, and F-pattern
@@ -355,16 +468,18 @@ let shown = PAGE;
 function readState(){
   const h=new URLSearchParams(location.hash.slice(1));
   cat=h.get("cat")||"all";
-  sort=h.get("sort")||"priority";
+  sort=h.get("sort")||"newest";
   age=h.get("age")||"all";
+  flag=h.get("show")||"";
   query=(h.get("q")||"").toLowerCase();
   activeTags=new Set((h.get("tags")||"").split(",").filter(Boolean));
 }
 function writeState(){
   const h=new URLSearchParams();
   if(cat!=="all") h.set("cat",cat);
-  if(sort!=="priority") h.set("sort",sort);
+  if(sort!=="newest") h.set("sort",sort);
   if(age!=="all") h.set("age",age);
+  if(flag) h.set("show",flag);
   if(query) h.set("q",query);
   if(activeTags.size) h.set("tags",[...activeTags].join(","));
   const s=h.toString();
@@ -429,8 +544,19 @@ function haystack(it){
           it.sources.map(s=>s.name).join(" ")].join(" ").toLowerCase();
 }
 
+// The headline counts were decoration: five numbers a reader could read but
+// not act on. Each is now the filter it describes, so "14 verified" answers
+// "which fourteen?" in one click.
+const FLAGS={
+  new:         it=>!!it.is_new,
+  critical:    it=>it.priority==="critical",
+  verified:    it=>it.verdict==="verified",
+  corroborated:it=>it.verdict==="corroborated",
+};
+
 function matches(it){
   if(onlyNew && !it.is_new) return false;
+  if(flag && FLAGS[flag] && !FLAGS[flag](it)) return false;
   const lim=AGES[age] && AGES[age].hours;
   if(lim){
     if(!it.published) return false;               // undated cannot be "recent"
@@ -499,7 +625,14 @@ function card(it){
     ? '<div class="tags">'+tags.map(t=>
       '<button class="tag" data-tag="'+esc(t)+'">'+esc(t)+"</button>").join("")+"</div>" : "";
 
-  const trace=(it.trace||[]).map(t=>"<li>"+esc(t)+"</li>").join("");
+  // The trace is the agent's own scoring arithmetic. It was being dumped as
+  // an unlabelled bullet list directly under the claims, so a reader met
+  // "blend 89 = trust 100 / interest 75 / corrob 100" with nothing telling
+  // them what it was or why it was there. Notation a reader cannot decode is
+  // worse than no notation: it makes the whole card look unfinished. Every
+  // line now says what it means in words, and the block is collapsed behind
+  // a heading that names it.
+  const trace=(it.trace||[]).map(t=>"<li>"+esc(human(t))+"</li>").join("");
   const CLAIM_MARK={entailed:"✓", contradicted:"✗", neutral:"?"};
   const claims=(it.claims||[]).map(c=>
     '<li class="cl '+esc(c.status||"unchecked")+'">'+
@@ -521,7 +654,8 @@ function card(it){
     (it.one_liner?'<p class="why">'+hl(it.one_liner)+'</p>':"")+
     (claims?'<div class="claims"><b>Claims checked against the source</b><ul>'+
       claims+'</ul></div>':"")+
-    (trace?'<ul class="tr">'+trace+'</ul>':"");
+    (trace?'<details class="score"><summary>Why it ranked here</summary>'+
+      '<ul class="tr">'+trace+'</ul></details>':"");
 
   return '<article class="'+esc(it.priority)+'">'+
     (pri||vd||isNew ? '<div class="rail">'+isNew+pri+vd+'</div>' : "")+
@@ -536,6 +670,101 @@ function card(it){
     (detail?'<details><summary>Full summary and how it was checked</summary>'+
       detail+'</details>':"")+
   '</article>';
+}
+
+// Turn one scoring-trace line into a sentence. Anything unrecognised falls
+// through unchanged, so a new line added in the pipeline degrades to the raw
+// string rather than disappearing from the page.
+const TRACE_RULES=[
+  [/^blend (\d+) = trust (\d+) \/ interest (\d+) \/ corrob (\d+)$/,
+   (m)=>"Overall score "+m[1]+" out of 100 \u2014 source trust "+m[2]+
+        ", importance "+m[3]+", corroboration "+m[4]],
+  [/^claims entailed (\d+)\/(\d+) \(\d+%\)$/,
+   (m)=>m[1]+" of "+m[2]+" claims in the summary traced back to the source article"],
+  [/^tier ([A-C]) \(\+\d+\)$/,
+   (m)=>"Publisher reliability rated tier "+m[1]],
+  [/^importance (\d+)\/(\d+) from cache$/,
+   (m)=>"Rated "+m[1]+" of "+m[2]+" for importance (reused from an earlier run)"],
+  [/^importance (\d+)\/(\d+) from (.+)$/,
+   (m)=>"Rated "+m[1]+" of "+m[2]+" for importance by "+m[3]],
+  [/^demoted: critical capped at (\d+)$/,
+   (m)=>"Not flagged critical \u2014 the page shows at most "+m[1]+" critical stories a day"],
+  [/^(\d+) independent outlets \(\+\d+\)$/,
+   (m)=>m[1]+" independent outlets reported it"],
+  [/^primary source anchor \(\+\d+\)$/,
+   ()=>"Anchored to a primary source \u2014 an advisory, CVE record or official notice"],
+  [/^verified: primary source artifact$/,
+   ()=>"Verified: the story rests on a primary source document"],
+  [/^verified: (\d+) independent outlets$/,
+   (m)=>"Verified: "+m[1]+" independent outlets reported it separately"],
+  [/^judge \(([^)]+)\): (.+)$/,
+   (m)=>"A second model ("+m[1]+") re-read the summary against the article: "+m[2]],
+  [/^single outlet, established publication \(tier ([A-C])\)$/,
+   (m)=>"Only one outlet has it, but that outlet is tier "+m[1]],
+];
+function human(t){
+  for(const [re,fn] of TRACE_RULES){ const m=re.exec(t); if(m) return fn(m); }
+  return t;
+}
+
+// What the gate threw away, and why. Published as its own file rather than
+// folded into news.json: it is read once out of curiosity, so it should not
+// cost every reader the download. Two reasons dominate — a story older than
+// its category's lookback window, and a summary sentence the verifier could
+// not trace back to the article it came from.
+function drawRejects(feed){
+  writeState();
+  const live=document.getElementById("count");
+  if(live) live.textContent="";
+  const dot=document.getElementById("fdot"); if(dot) dot.hidden=true;
+
+  const render=()=>{
+    const items=(REJ&&REJ.items)||[];
+    if(!items.length){
+      feed.innerHTML='<p class="empty">Nothing was rejected in this run.</p>';
+      return;
+    }
+    // The raw reasons carry a date per row, so grouping on them verbatim
+    // produced one heading per calendar day saying the same thing. Group on
+    // what actually happened, in the reader's words.
+    const REASONS=[
+      [/outside lookback window/i,
+       "Too old for the window its section uses"],
+      [/claim\(s\) not supported/i,
+       "A sentence in the summary could not be traced back to the article"],
+      [/contradicted by the source/i,
+       "A second model found a claim the article contradicts"],
+    ];
+    const groups=new Map();
+    for(const it of items){
+      const raw=it.reject_reason||"no reason recorded";
+      const hit=REASONS.find(([re])=>re.test(raw));
+      const why=hit?hit[1]:raw;
+      if(!groups.has(why)) groups.set(why,[]);
+      groups.get(why).push(it);
+    }
+    let html='<p class="rejnote">These were harvested and then refused before '+
+      'publishing. Nothing here is on the page above.</p>';
+    for(const [why,rows] of [...groups.entries()].sort((a,b)=>b[1].length-a[1].length)){
+      html+='<h2 class="sec">'+esc(why)+' <span class="win">'+rows.length+'</span></h2>'+
+        '<ul class="rejlist">'+rows.map(it=>{
+          const src=(it.sources&&it.sources[0])||{};
+          return '<li><a href="'+esc(src.url||"#")+'" target="_blank" rel="noopener">'+
+            esc(it.title||"(untitled)")+'</a>'+
+            '<span class="dom">'+esc(src.name||src.domain||"")+
+            (it.published?" · "+esc(band(it.published)):"")+'</span></li>';
+        }).join("")+'</ul>';
+    }
+    feed.innerHTML=html;
+  };
+
+  if(REJ){ render(); return; }
+  feed.innerHTML='<p class="empty">Loading the rejected list…</p>';
+  fetch("rejected.json",{cache:"no-cache"})
+    .then(r=>r.ok?r.json():Promise.reject(r.status))
+    .then(d=>{ REJ=d; render(); })
+    .catch(e=>{ feed.innerHTML='<p class="empty">Could not load rejected.json ('+
+      esc(String(e))+').<br>It is written next to news.json by the publish stage.</p>'; });
 }
 
 // Recency as a coarse band, in the metadata row rather than beside the
@@ -553,6 +782,7 @@ function band(iso){
 
 function draw(){
   const feed=document.getElementById("feed");
+  if(flag==="rejected"){ drawRejects(feed); return; }
   const items=DATA.items.filter(matches).sort(SORTS[sort].fn);
 
   writeState();
@@ -560,6 +790,9 @@ function draw(){
   if(live) live.textContent =
     items.length+" of "+DATA.items.length+" stories"+
     (sort!=="priority" ? ", by "+SORTS[sort].label.toLowerCase() : "");
+  const dot=document.getElementById("fdot");
+  if(dot) dot.hidden = !(age!=="all" || onlyNew || sort!=="newest" ||
+                         activeTags.size);
 
   if(!items.length){
     feed.innerHTML='<p class="empty">Nothing matches.'+
@@ -567,8 +800,10 @@ function draw(){
       '<br><button class="chip" id="clearAll">Clear all filters</button></p>';
     const btn=document.getElementById("clearAll");
     if(btn) btn.onclick=()=>{
-      cat="all"; activeTags.clear(); query="";
+      cat="all"; activeTags.clear(); query=""; flag="";
       document.getElementById("q").value="";
+      [...document.getElementById("stats").children].forEach(x=>
+        x.setAttribute("aria-pressed","false"));
       syncChips(); draw();
     };
     drawTags(items); return;
@@ -662,20 +897,23 @@ function until(iso){
   return "in "+Math.round(h/24)+"d";
 }
 
+// Three full timestamps and a timezone name wrapped to two lines and pushed
+// every story below the fold. What a reader actually needs here is "is this
+// fresh" and "when does it change" — two short phrases. The exact clock
+// times, the schedule and the timezone stay reachable as tooltips, which is
+// where detail belongs when it is checked once and never again.
 function updateLine(d){
   const tz=Intl.DateTimeFormat().resolvedOptions().timeZone||"local time";
-  const age=ago(d.generated_at);
-  let out='<span title="'+esc(new Date(d.generated_at).toISOString())+'">'+
-          "Updated "+esc(age)+" &middot; "+esc(fmt(d.generated_at))+"</span>";
+  const full=t=>esc(fmt(t))+" ("+esc(tz)+")";
+  let out='<span title="'+full(d.generated_at)+'">Updated '+
+          esc(ago(d.generated_at))+"</span>";
   if(d.next_update){
-    out+=' <span class="sep2">|</span> <span title="'+
-         esc(new Date(d.next_update).toISOString())+'">Next update '+
-         esc(until(d.next_update))+" &middot; "+esc(fmt(d.next_update));
+    let tip=full(d.next_update);
     if(d.schedule && d.schedule.display_name)
-      out+=" ("+esc(d.schedule.display_name)+" daily)";
-    out+="</span>";
+      tip+=" — runs "+esc(d.schedule.display_name)+" daily";
+    out+=' <span class="sep2">&middot;</span> <span class="dim" title="'+tip+
+         '">next '+esc(until(d.next_update))+"</span>";
   }
-  out+=' <span class="sep2">|</span> <span class="tzn">times in '+esc(tz)+"</span>";
   return out;
 }
 
@@ -686,23 +924,41 @@ function boot(d){
   const c=d.counts;
   document.getElementById("meta").innerHTML=updateLine(d);
   // Plain language, and only counts that are actually meaningful. "Blocked at
-  // the gate" was internal jargon that meant nothing to a reader.
-  const stat=(n,label,title)=>
-    '<span title="'+esc(title)+'"><b>'+n+'</b> '+label+'</span>';
+  // the gate" was internal jargon that meant nothing to a reader. Each count
+  // is a button that filters to exactly the stories it counts — a number you
+  // cannot open is a number you cannot check.
+  const stat=(n,label,title,f)=>
+    '<button class="stat" data-flag="'+esc(f)+'" title="'+esc(title)+'"'+
+    ' aria-pressed="'+(flag===f)+'"><b>'+n+'</b> '+label+'</button>';
   document.getElementById("stats").innerHTML=
-    stat(c.published,"stories","Stories published on this page")+
-    ((c.new||0)?stat(c.new,"new since last run",
-       "Not published on this page in any previous run"):"")+
-    stat(c.critical,"need attention","Highest priority — worth acting on today")+
+    // Today's haul leads. It is the one number that answers "is there
+    // anything I have not already read", which is why the page is open.
+    '<button class="stat lead" data-flag="new" title="'+
+      esc("Stories that were not on this page after any previous run. Zero is "
+          +"a real answer: it means today's harvest found nothing the last "
+          +"run had not already published.")+'" aria-pressed="'+(flag==="new")+
+      '"><b>'+(c.new||0)+'</b> new today</button>'+
+    stat(c.published,"stories","Everything published on this page today","")+
+    stat(c.critical,"need attention",
+         "Highest priority — worth acting on today","critical")+
     stat(c.verified||0,"verified",
          "Backed by an official source (CISA, a CVE record, a vendor advisory) "
-         +"or reported independently by 3+ outlets")+
+         +"or reported independently by 3+ outlets","verified")+
     stat(c.corroborated||0,"corroborated",
-         "Two independent outlets report the same story")+
+         "Two independent outlets report the same story","corroborated")+
     stat(c.rejected,"not published",
          "Refused before publishing: either too old for the window, or a "
-         +"sentence in the summary could not be traced back to the source "
-         +"article. Logged with reasons in data/rejected.json.");
+         +"sentence in the summary could not be traced back to its source "
+         +"article. Click to read the list and the reason for each.","rejected");
+
+  document.getElementById("stats").onclick=e=>{
+    const b=e.target.closest("button[data-flag]"); if(!b) return;
+    flag = (flag===b.dataset.flag) ? "" : b.dataset.flag;
+    shown=PAGE;
+    [...e.currentTarget.children].forEach(x=>
+      x.setAttribute("aria-pressed", x.dataset.flag===flag));
+    draw();
+  };
 
   const cats=["all",...new Set(d.items.map(i=>i.category))];
   const cbox=document.getElementById("cats");
@@ -743,6 +999,21 @@ function boot(d){
     toggle.setAttribute("aria-expanded", open);
   };
 
+  // When / Sort / New only / Tags together were four rows of chrome sitting
+  // permanently above the text. They are refinements — reached after you have
+  // started reading, not before — so they collapse behind one button. The dot
+  // is the price of hiding them: a closed panel must still say that something
+  // inside it is filtering what you see, or the reader is looking at a subset
+  // and has no way to tell.
+  const panel=document.getElementById("panel");
+  const filt=document.getElementById("filtToggle");
+  filt.onclick=()=>{
+    const open=panel.classList.toggle("open");
+    filt.setAttribute("aria-expanded", open);
+    if(!open) drawer.classList.remove("open"),
+              toggle.setAttribute("aria-expanded","false");
+  };
+
   // Retract the whole control bar while scrolling down, bring it back on the
   // way up — the reading area is never covered by chrome you are not using.
   const bar=document.querySelector(".controls");
@@ -753,9 +1024,16 @@ function boot(d){
     requestAnimationFrame(()=>{
       const y=window.scrollY;
       const goingDown = y>lastY && y>140;
+      // Once you are reading, the search box is dead weight overhead; the
+      // section strip is the only control worth keeping within reach. Drop
+      // to the strip alone so the bar that comes back on scroll-up is one
+      // row, not four.
+      bar.classList.toggle("compact", y>240 && !panel.classList.contains("open") &&
+                           document.activeElement!==document.getElementById("q"));
       // Never hide the bar while a filter is open or focused, or the control
       // vanishes mid-interaction.
       const busy = drawer.classList.contains("open") ||
+                   panel.classList.contains("open") ||
                    document.activeElement===document.getElementById("q");
       bar.classList.toggle("hidden", goingDown && !busy);
       lastY=y; ticking=false;
@@ -834,12 +1112,20 @@ function boot(d){
   document.addEventListener("keydown",e=>{
     const typing = /^(INPUT|TEXTAREA)$/.test(e.target.tagName);
     if(e.key==="/" && !typing){
-      e.preventDefault(); document.getElementById("q").focus(); return;
+      e.preventDefault();
+      // The bar may be in its compact state with the input display:none, and
+      // focus() on a hidden element silently does nothing.
+      const b=document.querySelector(".controls");
+      b.classList.remove("compact","hidden");
+      document.getElementById("q").focus(); return;
     }
     if(e.key==="Escape"){
       if(typing){ e.target.blur(); }
-      else if(query||activeTags.size||cat!=="all"){
+      else if(query||activeTags.size||cat!=="all"||flag){
         cat="all"; activeTags.clear(); query=""; age="all"; onlyNew=false;
+        flag="";
+        [...document.getElementById("stats").children].forEach(x=>
+          x.setAttribute("aria-pressed","false"));
         document.getElementById("q").value="";
         const nbtn=document.getElementById("newOnly");
         if(nbtn) nbtn.setAttribute("aria-pressed","false");
