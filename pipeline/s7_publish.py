@@ -126,6 +126,42 @@ def _apply_quotas(ranked: list, wcfg: dict) -> list:
     return chosen
 
 
+def _held_back(dead: list[Item]) -> list[dict]:
+    """Rejected stories, carried onto the page but marked and defanged.
+
+    These used to vanish into rejected.json. Most of them are perfectly
+    real - 16 of 24 on a typical run are simply older than their section's
+    lookback window, which says nothing at all about whether the reporting
+    is sound - and every one of them names its source, so the reader can
+    judge for themselves.
+
+    The ones rejected for an UNSUPPORTED CLAIM are different, and cannot be
+    shipped as they stand. What failed there is our own summary: the model
+    wrote a sentence the verifier could not trace back to the article. The
+    story may be fine; the prose about it is not evidence. So the generated
+    text is stripped from those and only the headline, the source and the
+    reason survive. Publishing an unverifiable summary under a "held back"
+    label would still be publishing it.
+    """
+    out: list[dict] = []
+    for item in dead:
+        d = item.to_json()
+        reason = (item.reject_reason or "").lower()
+        stale = "lookback window" in reason
+        d["held_back"] = True
+        d["verdict"] = Verdict.UNVERIFIED.value
+        d["priority"] = Priority.MINOR.value
+        if not stale:
+            # Model-written prose that failed its own check. Drop it rather
+            # than caveat it - a label does not make a claim traceable.
+            for field in ("summary", "one_liner", "bottom_line"):
+                d[field] = ""
+            d["key_facts"] = []
+            d["claims"] = []
+        out.append(d)
+    return out
+
+
 def run(items: list[Item], dry_run: bool = False) -> dict:
     cfg = settings()
 
@@ -166,6 +202,7 @@ def run(items: list[Item], dry_run: bool = False) -> dict:
         "counts": {
             "published": len(live),
             "rejected": len(dead),
+            "total_shown": len(live) + len(dead),
             "critical": sum(1 for i in live if i.priority is Priority.CRITICAL),
             "important": sum(1 for i in live if i.priority is Priority.IMPORTANT),
             "verified": sum(1 for i in live if i.verdict is Verdict.VERIFIED),
@@ -175,7 +212,7 @@ def run(items: list[Item], dry_run: bool = False) -> dict:
             "disputed": sum(1 for i in live if i.verdict is Verdict.DISPUTED),
             "new": sum(1 for i in live if i.is_new),
         },
-        "items": [i.to_json() for i in live],
+        "items": [i.to_json() for i in live] + _held_back(dead),
     }
 
     if dry_run:

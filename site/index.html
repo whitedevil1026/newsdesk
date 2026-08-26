@@ -96,6 +96,7 @@ h1{margin:0;font-family:"Newsreader",Georgia,serif;font-weight:600;
 #applied{display:flex;align-items:center;gap:10px;flex-wrap:wrap;
  margin:14px 0 2px;padding:9px 12px;border-radius:9px;
  background:var(--factbg);border:1px solid var(--line2);font-size:13px}
+#applied[hidden]{display:none}
 #applied .ap-n{color:var(--muted);white-space:nowrap}
 #applied .ap-n b{color:var(--ink);font-weight:600;
  font-variant-numeric:tabular-nums}
@@ -108,6 +109,13 @@ h1{margin:0;font-family:"Newsreader",Georgia,serif;font-weight:600;
  padding:3px 11px;font:inherit;font-size:12px;cursor:pointer;flex:0 0 auto}
 #applied .ap-x:hover{background:var(--accent);color:var(--bg)}
 @media (max-width:600px){ #applied{margin-top:10px;padding:8px 10px} }
+
+.chip-held{background:color-mix(in srgb, var(--bad) 20%, transparent);
+ color:var(--bad);border:1px solid color-mix(in srgb, var(--bad) 45%, transparent);
+ border-radius:5px;padding:1px 7px;font-size:10.5px;font-weight:600;
+ letter-spacing:.05em;text-transform:uppercase}
+.heldwhy{font-size:12.5px;line-height:1.55;color:var(--muted);margin:0 0 11px;
+ padding-left:11px;border-left:2px solid color-mix(in srgb, var(--bad) 40%, transparent)}
 
 .rejnote{color:var(--muted);font-size:13px;margin:18px 0 0;line-height:1.6}
 ul.rejlist{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:11px}
@@ -330,9 +338,10 @@ details ul.tr{margin-top:10px}
         padding-top:clamp(20px,2.5vw,34px)}
   header{grid-column:1 / -1;margin-bottom:20px;padding-bottom:14px;
          border-bottom:1px solid var(--line)}
-  main, #foot, #applied{grid-column:2;min-width:0}
-  #applied{margin-top:0}
-  .controls{grid-column:1;grid-row:2;position:sticky;top:22px;
+  #applied{grid-column:2;grid-row:2;min-width:0;margin-top:0}
+  main{grid-column:2;grid-row:3;min-width:0}
+  #foot{grid-column:2;grid-row:4;min-width:0}
+  .controls{grid-column:1;grid-row:2 / span 3;position:sticky;top:22px;
             padding:0;margin:0;border-bottom:none;
             max-height:calc(100vh - 44px);overflow-y:auto;
             scrollbar-width:thin}
@@ -581,13 +590,18 @@ function haystack(it){
 // not act on. Each is now the filter it describes, so "14 verified" answers
 // "which fourteen?" in one click.
 const FLAG_LABEL={new:"new today", critical:"needs attention",
-  verified:"verified", corroborated:"corroborated", rejected:"not published"};
+  verified:"verified", corroborated:"corroborated", rejected:"not published",
+  published:"published only"};
 
 const FLAGS={
   new:         it=>!!it.is_new,
   critical:    it=>it.priority==="critical",
   verified:    it=>it.verdict==="verified",
   corroborated:it=>it.verdict==="corroborated",
+  // Held-back stories now sit in the same list as everything else, so these
+  // two are the halves of it rather than a separate page.
+  published:   it=>!it.held_back,
+  rejected:    it=>!!it.held_back,
 };
 
 function matches(it){
@@ -684,27 +698,44 @@ function card(it){
   // the page for days. Without this the page looks unchanged even when a
   // third of it is new, which reads as "the agent stopped running".
   const isNew = it.is_new ? '<span class="chip-new">new</span>' : "";
+  // Marked, with the reason, rather than silently mixed in. A reader who
+  // cannot see which stories cleared the checks learns nothing from the fact
+  // that the others did not.
+  const held = it.held_back
+    ? '<span class="chip-held">not published</span>' : "";
+  const heldWhy = it.held_back && it.reject_reason
+    ? '<p class="heldwhy">Held back: '+esc(_heldReason(it.reject_reason))+'</p>'
+    : "";
 
-  const detail =
+  const prose =
     (it.summary?'<p class="body">'+hl(it.summary)+'</p>':"")+
     (it.one_liner?'<p class="why">'+hl(it.one_liner)+'</p>':"")+
     (claims?'<div class="claims"><b>Claims checked against the source</b><ul>'+
-      claims+'</ul></div>':"")+
-    (trace?'<details class="score"><summary>Why it ranked here</summary>'+
-      '<ul class="tr">'+trace+'</ul></details>':"");
+      claims+'</ul></div>':"");
+  const scoreBlock = trace
+    ? '<details class="score"><summary>Why it ranked here</summary>'+
+      '<ul class="tr">'+trace+'</ul></details>' : "";
+  // With prose: one toggle hiding all of it, scoring nested inside. Without
+  // prose (a held-back card, where the summary was removed): the scoring
+  // block on its own, because "Full summary" would be a promise of something
+  // that is not there.
+  const detail = prose
+    ? '<details><summary>Full summary and how it was checked</summary>'+
+      prose+scoreBlock+'</details>'
+    : scoreBlock;
 
   return '<article class="'+esc(it.priority)+'">'+
-    (pri||vd||isNew ? '<div class="rail">'+isNew+pri+vd+'</div>' : "")+
+    (pri||vd||isNew||held ? '<div class="rail">'+isNew+held+pri+vd+'</div>' : "")+
     '<h3><a href="'+esc(it.sources[0].url)+'" target="_blank" rel="noopener">'+
       hl(it.title)+'</a></h3>'+
     (it.bottom_line?'<p class="deck">'+hl(it.bottom_line)+'</p>':"")+
+    heldWhy+
     factHtml+
     '<div class="srcs">'+shown.join('<span class="dot2">·</span>')+more+prim+
       (band(it.published)?'<span class="when">'+esc(band(it.published))+'</span>':"")+
     '</div>'+
     tagHtml+
-    (detail?'<details><summary>Full summary and how it was checked</summary>'+
-      detail+'</details>':"")+
+    detail+
   '</article>';
 }
 
@@ -850,6 +881,22 @@ function clearAll(){
 //
 // This puts what is applied, and how much it cut, immediately above the
 // first card - where the reader is already looking when they click.
+// The raw reason carries a date per row and internal model names. Say what
+// happened instead.
+const HELD_REASONS=[
+  [/outside lookback window/i, "older than the window this section uses"],
+  [/claim\(s\) not supported/i,
+   "our summary made a point the article does not support, so the summary "+
+   "was removed and only the original headline and source are shown"],
+  [/contradicted by the source/i,
+   "a second model found our summary contradicted the article, so the "+
+   "summary was removed"],
+];
+function _heldReason(raw){
+  const hit=HELD_REASONS.find(([re])=>re.test(raw||""));
+  return hit ? hit[1] : (raw||"no reason recorded");
+}
+
 function paintApplied(count){
   const box=document.getElementById("applied");
   if(!box) return;
@@ -894,7 +941,6 @@ function band(iso){
 
 function draw(){
   const feed=document.getElementById("feed");
-  if(flag==="rejected"){ drawRejects(feed); return; }
   const items=DATA.items.filter(matches).sort(SORTS[sort].fn);
 
   writeState();
@@ -1051,7 +1097,8 @@ function boot(d){
           +"a real answer: it means today's harvest found nothing the last "
           +"run had not already published.")+'" aria-pressed="'+(flag==="new")+
       '"><b>'+(c.new||0)+'</b> new today</button>'+
-    stat(c.published,"stories","Everything published on this page today","")+
+    stat(c.published,"stories","Passed the checks and published normally",
+         "published")+
     stat(c.critical,"need attention",
          "Highest priority — worth acting on today","critical")+
     stat(c.verified||0,"verified",
@@ -1062,7 +1109,8 @@ function boot(d){
     stat(c.rejected,"not published",
          "Refused before publishing: either too old for the window, or a "
          +"sentence in the summary could not be traced back to its source "
-         +"article. Click to read the list and the reason for each.","rejected");
+         +"article. They are on the page, marked, with the reason on each "
+         +"card. Click to see only those.","rejected");
 
   document.getElementById("stats").onclick=e=>{
     const b=e.target.closest("button[data-flag]"); if(!b) return;
