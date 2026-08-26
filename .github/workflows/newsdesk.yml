@@ -77,7 +77,8 @@ jobs:
             data/cache/usage.json \
             data/cache/gnews_urls.json \
             data/cache/iffy_blocklist.txt \
-            site/news.json
+            site/news.json \
+            site/rejected.json
 
           if git diff --staged --quiet; then
             echo "nothing changed"

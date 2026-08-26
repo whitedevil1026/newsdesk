@@ -90,6 +90,25 @@ h1{margin:0;font-family:"Newsreader",Georgia,serif;font-weight:600;
 .stat.lead b{color:var(--accent);font-size:1.15em}
 
 /* the rejected list */
+/* Applied-filter summary. Deliberately the loudest thing between the
+   controls and the first headline: it is the only feedback that a date band
+   changed anything, because the cards at the top of the list do not. */
+#applied{display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+ margin:14px 0 2px;padding:9px 12px;border-radius:9px;
+ background:var(--factbg);border:1px solid var(--line2);font-size:13px}
+#applied .ap-n{color:var(--muted);white-space:nowrap}
+#applied .ap-n b{color:var(--ink);font-weight:600;
+ font-variant-numeric:tabular-nums}
+#applied .ap-list{display:flex;flex-wrap:wrap;gap:5px;flex:1 1 auto;min-width:0}
+#applied .ap-b{background:var(--card);border:1px solid var(--line2);
+ border-radius:999px;padding:2px 9px;color:var(--ink2);font-size:12px;
+ white-space:nowrap}
+#applied .ap-x{margin-left:auto;border:1px solid var(--accent);
+ background:transparent;color:var(--accent);border-radius:7px;
+ padding:3px 11px;font:inherit;font-size:12px;cursor:pointer;flex:0 0 auto}
+#applied .ap-x:hover{background:var(--accent);color:var(--bg)}
+@media (max-width:600px){ #applied{margin-top:10px;padding:8px 10px} }
+
 .rejnote{color:var(--muted);font-size:13px;margin:18px 0 0;line-height:1.6}
 ul.rejlist{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:11px}
 ul.rejlist li{font-size:14px;line-height:1.5}
@@ -311,7 +330,8 @@ details ul.tr{margin-top:10px}
         padding-top:clamp(20px,2.5vw,34px)}
   header{grid-column:1 / -1;margin-bottom:20px;padding-bottom:14px;
          border-bottom:1px solid var(--line)}
-  main, #foot{grid-column:2;min-width:0}
+  main, #foot, #applied{grid-column:2;min-width:0}
+  #applied{margin-top:0}
   .controls{grid-column:1;grid-row:2;position:sticky;top:22px;
             padding:0;margin:0;border-bottom:none;
             max-height:calc(100vh - 44px);overflow-y:auto;
@@ -442,6 +462,7 @@ footer p{margin:14px 0 0}
     </div>
   </div>
 
+  <div id="applied" hidden></div>
   <main id="feed"></main>
   <footer id="foot"></footer>
 </div>
@@ -559,6 +580,9 @@ function haystack(it){
 // The headline counts were decoration: five numbers a reader could read but
 // not act on. Each is now the filter it describes, so "14 verified" answers
 // "which fourteen?" in one click.
+const FLAG_LABEL={new:"new today", critical:"needs attention",
+  verified:"verified", corroborated:"corroborated", rejected:"not published"};
+
 const FLAGS={
   new:         it=>!!it.is_new,
   critical:    it=>it.priority==="critical",
@@ -726,6 +750,7 @@ function human(t){
 // not trace back to the article it came from.
 function drawRejects(feed){
   writeState();
+  paintApplied(REJ && REJ.items ? REJ.items.length : 0);
   const live=document.getElementById("count");
   if(live) live.textContent="";
   const dot=document.getElementById("fdot"); if(dot) dot.hidden=true;
@@ -815,6 +840,41 @@ function clearAll(){
   toTop(); draw();
 }
 
+// The date bands are cumulative and the default sort is newest-first, so the
+// FIRST TWELVE CARDS ARE IDENTICAL for Today, Since yesterday, Last 3 days
+// and All time. Clicking through them changed the result count from 40 to 12
+// while the visible page did not move a pixel - and the count was a small
+// line inside a panel that is collapsed by default on a phone. The filter
+// was working perfectly and looked completely dead, which is worse than
+// broken because there is nothing to debug.
+//
+// This puts what is applied, and how much it cut, immediately above the
+// first card - where the reader is already looking when they click.
+function paintApplied(count){
+  const box=document.getElementById("applied");
+  if(!box) return;
+  if(!anyFilter()){ box.hidden=true; box.innerHTML=""; return; }
+
+  const bits=[];
+  if(cat!=="all")        bits.push(esc(CATS[cat]||cat));
+  if(age!=="all" && AGES[age]) bits.push(esc(AGES[age].label));
+  if(flag)               bits.push(esc(FLAG_LABEL[flag]||flag));
+  if(onlyNew)            bits.push("new only");
+  if(sort!==DEFAULT_SORT) bits.push("by "+esc(SORTS[sort].label.toLowerCase()));
+  for(const t of activeTags) bits.push(esc(t));
+  if(query)              bits.push('"'+esc(query)+'"');
+
+  const total=DATA?DATA.items.length:count;
+  box.hidden=false;
+  box.innerHTML=
+    '<span class="ap-n"><b>'+count+'</b> of '+total+'</span>'+
+    '<span class="ap-list">'+bits.map(b=>'<span class="ap-b">'+b+'</span>').join("")+
+    '</span>'+
+    '<button class="ap-x" id="applyClear" title="Clear every filter">Clear</button>';
+  const x=document.getElementById("applyClear");
+  if(x) x.onclick=()=>clearAll();
+}
+
 function toTop(){
   if(window.scrollY>0) window.scrollTo({top:0, behavior:"auto"});
 }
@@ -847,6 +907,7 @@ function draw(){
   const dot=document.getElementById("fdot");
   const on=anyFilter();
   if(dot) dot.hidden = !on;
+  paintApplied(items.length);
   // Disabled when there is nothing to clear, so the button reports the state
   // of the page rather than sitting there looking equally clickable always.
   const ca=document.getElementById("clearAll");
