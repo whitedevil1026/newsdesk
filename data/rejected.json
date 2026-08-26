@@ -1,113 +1,15 @@
 {
-  "generated_at": "2026-08-25T17:27:42.509505+00:00",
+  "generated_at": "2026-08-26T02:50:41.178470+00:00",
   "items": [
     {
-      "cluster_key": "56c2a03b1c9f83b8",
-      "title": "Instagram head Adam Mosseri said last month that the platform would start removing harassing content. So why are there so many videos of men using Me…",
-      "category": "cyber_attacks",
-      "one_liner": "Cyber Attacks: single report, unconfirmed.",
-      "tags": [
-        "policy"
-      ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post 404 Media 404media.co did:plc:vcepp6trx4vpe5ourxso4tjl Instagram head Adam Mosseri said last month that the platform would start removing harassing content.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "This is a heavily interactive web application, and JavaScript is required.",
-          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
-          "status": "entailed"
-        },
-        {
-          "text": "Simple HTML interfaces are possible, but that is not what this is.",
-          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
-          "status": "entailed"
-        },
-        {
-          "text": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  Instagram head Adam Mosseri said last month that the platform would start removing harassing content.",
-          "support_span": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  Instagram head Adam Mosseri said last month that the platform would start removing harassing content.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "404 Media",
-          "url": "https://bsky.app/profile/404media.co/post/3mtm5bqzlz222",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-21T16:05:50.636000+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-21 — outside lookback window"
-    },
-    {
-      "cluster_key": "d5b07d68e2af0e34",
-      "title": "\"The emperor is a fan of Flock, and we must continue utilizing Flock technologies so that we can follow and surveil the rebel scum,\" Vader said durin…",
-      "category": "cyber_attacks",
-      "one_liner": "Cyber Attacks: single report, unconfirmed.",
-      "tags": [],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post 404 Media 404media.co did:plc:vcepp6trx4vpe5ourxso4tjl \"The emperor is a fan of Flock, and we must continue utilizing Flock technologies so that we can follow and surveil the rebel scum,\" Vader said during the meeting.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "This is a heavily interactive web application, and JavaScript is required.",
-          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
-          "status": "entailed"
-        },
-        {
-          "text": "Simple HTML interfaces are possible, but that is not what this is.",
-          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
-          "status": "entailed"
-        },
-        {
-          "text": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  \"The emperor is a fan of Flock, and we must continue utilizing Flock technologies so that we can follow and surveil the rebel scum,\" Vader said during the meeting.",
-          "support_span": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  \"The emperor is a fan of Flock, and we must continue utilizing Flock technologies so that we can follow and surveil the rebel scum,\" Vader said during the meeting.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "404 Media",
-          "url": "https://bsky.app/profile/404media.co/post/3mtjqomjlab2i",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-20T17:15:03.080000+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-20 — outside lookback window"
-    },
-    {
-      "cluster_key": "c397a966237cc5c7",
-      "title": "If alignment issues are becoming big enough in their new models that OpenAI is willing to commit 20% of research inference compute to chain-of-though…",
+      "cluster_key": "01d7606bfa4c0133",
+      "title": "Even when LLMs write well, the lack of variety in style is crippling. Reading the same prose in your instructions & social media & advertisements & s…",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
         "ai"
       ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu If alignment issues are becoming big enough in their new models that OpenAI is willing to commit 20% of research inference compute to chain-of-thought monitoring, that suggests that alignment issues are becoming a serious concern.",
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu Even when LLMs write well, the lack of variety in style is crippling.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
@@ -122,8 +24,8 @@
           "status": "entailed"
         },
         {
-          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  If alignment issues are becoming big enough in their new models that OpenAI is willing to commit 20% of research inference compute to chain-of-thought monitoring, that suggests that alignment issues are becoming a serious concern.",
-          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  If alignment issues are becoming big enough in their new models that OpenAI is willing to commit 20% of research inference compute to chain-of-thought monitoring, that suggests that alignment issues are becoming a serious concern.",
+          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Even when LLMs write well, the lack of variety in style is crippling.",
+          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Even when LLMs write well, the lack of variety in style is crippling.",
           "status": "entailed"
         }
       ],
@@ -131,74 +33,27 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "01d7606bfa4c0133"
+      ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
           "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mtf67piajs2n",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mtkkexjh4c2t",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-18T21:33:57.484000+00:00",
+      "published": "2026-08-21T00:54:57.277000+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-18 — outside lookback window"
-    },
-    {
-      "cluster_key": "59c8e2ec22354d3c",
-      "title": "Some early evidence that AI may actually be accelerating discoveries in the areas where you would expect to see AI acceleration happening first. metr…",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "ai",
-        "llm"
-      ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu Some early evidence that AI may actually be accelerating discoveries in the areas where you would expect to see AI acceleration happening first.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "This is a heavily interactive web application, and JavaScript is required.",
-          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
-          "status": "entailed"
-        },
-        {
-          "text": "Simple HTML interfaces are possible, but that is not what this is.",
-          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
-          "status": "entailed"
-        },
-        {
-          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Some early evidence that AI may actually be accelerating discoveries in the areas where you would expect to see AI acceleration happening first.",
-          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Some early evidence that AI may actually be accelerating discoveries in the areas where you would expect to see AI acceleration happening first.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mteol7gac22j",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-18T16:54:03.418000+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-18 — outside lookback window"
+      "reject_reason": "published 2026-08-21 — outside lookback window"
     },
     {
       "cluster_key": "099468bc5c73167e",
@@ -233,6 +88,10 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "099468bc5c73167e"
+      ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
@@ -283,6 +142,10 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "f7646f8b4c400b8a"
+      ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
@@ -302,7 +165,408 @@
       "reject_reason": "published 2026-08-20 — outside lookback window"
     },
     {
-      "cluster_key": "b05af914e2b0ea81",
+      "cluster_key": "bec8cb94438b97a9",
+      "title": "CVE-2026-12710 (CRITICAL 9.3): A Missing Authorization vulnerability in the QueryEngineTask of Google Cloud Application Integration (version…",
+      "category": "cyber_attacks",
+      "one_liner": "Google Cloud Application Integration contains a critical missing authorization vulnerability in its QueryEngineTask component.",
+      "tags": [
+        "cloud",
+        "release",
+        "vulnerability"
+      ],
+      "summary": "A critical missing authorization vulnerability, designated CVE-2026-12710 with a CVSS score of 9.3, has been identified in the QueryEngineTask component of Google Cloud Application Integration. The flaw allows unauthorized access or actions within cloud integration tasks due to improper privilege verification. While NIST provides baseline metadata pointers, detailed remediation steps require reviewing official Google Cloud security advisories. The severity level highlights the risk of unauthorized backend workflow manipulation.",
+      "key_facts": [
+        "CVE identifier: CVE-2026-12710",
+        "CVSS Score: 9.3 (Critical)",
+        "Affected component: QueryEngineTask in Google Cloud Application Integration"
+      ],
+      "bottom_line": "A missing authorization flaw in Google Cloud Application Integration exposes cloud workflows to potential unauthorized execution risks.",
+      "claims": [
+        {
+          "text": "A critical missing authorization vulnerability, designated CVE-2026-12710 with a CVSS score of 9.3, has been identified in the QueryEngineTask component of Google Cloud Application Integration.",
+          "support_span": "CVE-2026-12710 (CRITICAL 9.3): A Missing Authorization vulnerability in the QueryEngineTask of Google Cloud Application Integration (version…",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": true,
+      "alt_keys": [
+        "bec8cb94438b97a9"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12710",
+          "domain": "nist.gov",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-12710"
+      ],
+      "published": "2026-08-22T09:16:53.340000+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "42311753fd7269bd",
+      "title": "CVE-2026-77946 (CRITICAL 9.3): A vulnerability was determined in TRENDnet TEW-821DAP 2.2.01b05. Affected by this vulnerability is the functi…",
+      "category": "cyber_attacks",
+      "one_liner": "A critical stack-based buffer overflow in TRENDnet TEW-821DAP 2.2.01b05 allows remote unauthenticated attackers to execute arbitrary code.",
+      "tags": [
+        "exploit",
+        "hardware",
+        "release",
+        "vulnerability"
+      ],
+      "summary": "TRENDnet TEW-821DAP version 2.2.01b05 contains a stack-based buffer overflow vulnerability in the uci_safe_get function located within the NTP Timezone Configuration Handler (/cgi-bin/apply_time.cgi). Remote, unauthenticated attackers can exploit this flaw by manipulating input parameters such as system.ntp.server or time zone settings. The resulting vulnerability carries a critical CVSS score of 9.3 and can be leveraged to achieve remote code execution. Public proof-of-concept exploits for this issue are available.",
+      "key_facts": [
+        "CVE identifier: CVE-2026-77946",
+        "CVSS Score: 9.3 (Critical)",
+        "Affected product: TRENDnet TEW-821DAP 2.2.01b05"
+      ],
+      "bottom_line": "TRENDnet TEW-821DAP routers are vulnerable to remote code execution via unauthenticated parameter manipulation in the NTP configuration handler.",
+      "claims": [
+        {
+          "text": "TRENDnet TEW-821DAP version 2.2.01b05 contains a stack-based buffer overflow vulnerability in the uci_safe_get function located within the NTP Timezone Configuration Handler (/cgi-bin/apply_time.cgi).",
+          "support_span": "A vulnerability was determined in TRENDnet TEW-821DAP 2.2.01b05. Affected by this vulnerability is the functi…",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 70.0,
+      "is_new": true,
+      "alt_keys": [
+        "42311753fd7269bd"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77946",
+          "domain": "nist.gov",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-77946"
+      ],
+      "published": "2026-08-22T11:16:54.447000+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 70 = trust 70 / interest 100 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "76755294e4328c78",
+      "title": "CVE-2026-63310 (CRITICAL 9.3): NLTK before 3.9.3 fails to verify file integrity after downloading packages and before extraction in the down…",
+      "category": "cyber_attacks",
+      "one_liner": "NLTK before 3.9.3 is vulnerable to critical file integrity issues because downloaded packages are extracted without verification.",
+      "tags": [
+        "release",
+        "supply-chain",
+        "vulnerability"
+      ],
+      "summary": "NLTK versions prior to 3.9.3 suffer from a critical file integrity vulnerability (CVE-2026-63310) with a CVSS score of 9.3. The package manager fails to verify the integrity of downloaded corpus and package files prior to extraction during the download phase. This oversight leaves systems vulnerable to man-in-the-middle tampering or malicious package substitution during runtime downloads. Developers utilizing NLTK should update to version 3.9.3 or later to ensure cryptographic verification of fetched assets.",
+      "key_facts": [
+        "CVE identifier: CVE-2026-63310",
+        "CVSS Score: 9.3 (Critical)",
+        "Affected product: NLTK before 3.9.3"
+      ],
+      "bottom_line": "Applications using NLTK prior to 3.9.3 risk executing untrusted code or corrupted assets due to missing file verification during package downloads.",
+      "claims": [
+        {
+          "text": "NLTK versions prior to 3.9.3 suffer from a critical file integrity vulnerability (CVE-2026-63310) with a CVSS score of 9.3.",
+          "support_span": "CVE-2026-63310 (CRITICAL 9.3): NLTK before 3.9.3 fails to verify file integrity after downloading packages and before extraction in the down…",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": true,
+      "alt_keys": [
+        "76755294e4328c78"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63310",
+          "domain": "nist.gov",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-63310"
+      ],
+      "published": "2026-08-22T15:16:19.100000+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "c41678d7f8547845",
+      "title": "CVE-2026-57998 (HIGH 8.5): better-npm-audit through 3.11.0, and the 4.0.0-rc.2 prerelease, builds its npm audit command by interpolating…",
+      "category": "cyber_attacks",
+      "one_liner": "better-npm-audit through 3.11.0 allows command injection via unescaped registry options passed to a shell execution function.",
+      "tags": [
+        "appsec",
+        "release",
+        "supply-chain",
+        "tool",
+        "vulnerability",
+        "windows"
+      ],
+      "summary": "The better-npm-audit package through version 3.11.0 and the 4.0.0-rc.2 prerelease contain a high-severity command injection vulnerability. The tool constructs its npm audit command by directly interpolating the user-supplied --registry option into a string without validation or quoting, then passes it to child_process.exec(), which spawns a shell. An attacker who supplies a registry string containing shell metacharacters such as semicolons or pipes can execute arbitrary operating system commands with the privileges of the running process.",
+      "key_facts": [
+        "CVE identifier: CVE-2026-57998",
+        "CVSS Score: 8.5 (High)",
+        "Affected versions: <= 3.11.0, 4.0.0-rc.2"
+      ],
+      "bottom_line": "Passing malicious registry parameters to vulnerable versions of better-npm-audit will execute arbitrary OS commands with process privileges.",
+      "claims": [
+        {
+          "text": "The better-npm-audit package through version 3.11.0 and the 4.0.0-rc.2 prerelease contain a high-severity command injection vulnerability.",
+          "support_span": "better-npm-audit through 3.11.0, and the 4.0.0-rc.2 prerelease, builds its npm audit command by interpolating…",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": true,
+      "alt_keys": [
+        "c41678d7f8547845"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57998",
+          "domain": "nist.gov",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-57998"
+      ],
+      "published": "2026-08-22T13:16:38.263000+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "5a96a973c749134b",
+      "title": "CVE-2026-62243 (HIGH 8.7): Netty (io.netty:netty-handler) versions from 4.2.0.Final through 4.2.16.Final and versions through 4.1.136.Fi…",
+      "category": "cyber_attacks",
+      "one_liner": "Netty client OpenSSL path disables TLS hostname verification under certain Java configurations, enabling MITM attacks.",
+      "tags": [
+        "appsec",
+        "network",
+        "vulnerability"
+      ],
+      "summary": "Netty handler versions 4.2.0.Final through 4.2.16.Final and versions up to 4.1.136.Final disable TLS hostname verification on the SslProvider.OPENSSL client path under specific configurations. This occurs when a plain X509TrustManager is utilized and Unsafe-based trust-manager wrapping is unavailable, notably on Java 25 and newer. Consequently, the OpenSSL client fails to validate server hostnames, allowing man-in-the-middle attackers to present certificates issued for different domains and have them accepted without error. The issue is fixed in versions 4.2.17.Final and 4.1.137.Final.",
+      "key_facts": [
+        "CVE identifier: CVE-2026-62243",
+        "CVSS Score: 8.7 (High)",
+        "Fixed versions: 4.2.17.Final, 4.1.137.Final"
+      ],
+      "bottom_line": "Applications running Netty on Java 25+ with specific trust managers are vulnerable to MITM certificate spoofing due to disabled hostname verification.",
+      "claims": [
+        {
+          "text": "Netty handler versions 4.2.0.Final through 4.2.16.Final and versions up to 4.1.136.Final disable TLS hostname verification on the SslProvider.OPENSSL client path under specific configurations.",
+          "support_span": "Netty (io.netty:netty-handler) versions from 4.2.0.Final through 4.2.16.Final and versions through 4.1.136.Fi… disable TLS hostname verification on the SslProvider.OPENSSL client path when a plain (non-extended) X509TrustManager is used and Unsafe-based trust-manager wrapping is unavailable (Java 25+).",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": true,
+      "alt_keys": [
+        "5a96a973c749134b"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62243",
+          "domain": "nist.gov",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-62243"
+      ],
+      "published": "2026-08-22T13:16:39.687000+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "295131c17417fed0",
+      "title": "CVE-2026-62384 (HIGH 8.7): NLTK versions before 3.10.2 contain a symlink-based sandbox bypass in FramenetCorpusReader that allows attack…",
+      "category": "cyber_attacks",
+      "one_liner": "NLTK before 3.10.2 contains a sandbox bypass via symlinks in FramenetCorpusReader, exposing arbitrary XML files to readers.",
+      "tags": [
+        "appsec",
+        "supply-chain",
+        "vulnerability"
+      ],
+      "summary": "NLTK versions prior to 3.10.2 contain a symlink-based sandbox bypass vulnerability in FramenetCorpusReader. Attackers can place symbolic links with names lacking path separators inside the corpus subdirectory to successfully bypass path validation checks. When accessed via methods such as frame_by_name(), _lu_file(), or doc(), these symlinks resolve to arbitrary XML files outside the intended corpus root. This flaw allows unauthorized reading of sensitive files from the host system.",
+      "key_facts": [
+        "CVE identifier: CVE-2026-62384",
+        "CVSS Score: 8.7 (High)",
+        "Fixed version: 3.10.2"
+      ],
+      "bottom_line": "Attackers can exploit symlink flaws in NLTK's FramenetCorpusReader to read arbitrary files outside the corpus root directory.",
+      "claims": [
+        {
+          "text": "NLTK versions prior to 3.10.2 contain a symlink-based sandbox bypass vulnerability in FramenetCorpusReader.",
+          "support_span": "NLTK versions before 3.10.2 contain a symlink-based sandbox bypass in FramenetCorpusReader that allows attack…",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": true,
+      "alt_keys": [
+        "295131c17417fed0"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62384",
+          "domain": "nist.gov",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-62384"
+      ],
+      "published": "2026-08-22T15:16:18.700000+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "cc0579676221eb6a",
+      "title": "CVE-2026-62388 (HIGH 8.7): NLTK versions before 3.10.0 default to ENFORCE=False in pathsec.py, causing all security validation functions…",
+      "category": "cyber_attacks",
+      "one_liner": "NLTK < 3.10.0 defaults security validation to disabled warning mode, enabling bypasses for path traversal and pickling.",
+      "tags": [
+        "appsec",
+        "vulnerability"
+      ],
+      "summary": "NLTK versions prior to 3.10.0 default to ENFORCE=False in pathsec.py, causing all security validation functions to emit warning messages rather than raising exceptions. This misconfiguration permits attackers to bypass path traversal and pickle deserialization protections unless security controls are explicitly enabled manually. NLTK versions below 3.10.0 require manual updates or configuration changes to properly enforce file and deserialization safeguards.",
+      "key_facts": [
+        "Affected: NLTK before 3.10.0",
+        "CVSS Score: 8.7 High"
+      ],
+      "bottom_line": "NLTK versions before 3.10.0 fail to enforce security checks by default, silently downgrading path traversal and deserialization blocks into warnings.",
+      "claims": [
+        {
+          "text": "NLTK versions before 3.10.0 default to ENFORCE=False in pathsec.py, causing all security validation functions to emit warnings instead of raising exceptions.",
+          "support_span": "NLTK versions before 3.10.0 default to insignificance or NLTK versions before 3.10.0 default to ENFORCE=False in pathsec.py, causing all security validation functions to emit warnings instead of raising exceptions.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": true,
+      "alt_keys": [
+        "cc0579676221eb6a"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62388",
+          "domain": "nist.gov",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-62388"
+      ],
+      "published": "2026-08-22T15:16:18.967000+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "8856c93897241e8e",
       "title": "OpenLabs-so/oa-design — The Open Analytics design language as an agent skill: component recipes with type-checked source, token CSS, a",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
@@ -338,6 +602,11 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "8856c93897241e8e",
+        "b05af914e2b0ea81"
+      ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
@@ -400,6 +669,10 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "f655774091c9c829"
+      ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
@@ -446,6 +719,10 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "02ea87d03ed2b9c5"
+      ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
@@ -463,163 +740,6 @@
         "summary: heuristic extractive (no LLM configured)"
       ],
       "reject_reason": "published 2026-08-20 — outside lookback window"
-    },
-    {
-      "cluster_key": "fd5d5c01f18811a7",
-      "title": "ZSeven-W/dsh-ios — DeepSeek Harness (DSH) plugin: a live iOS Simulator — and a USB-connected iPhone — inside the conversation. 22",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource",
-        "release",
-        "tool"
-      ],
-      "summary": "A live, interactive iOS Simulator inside a DeepSeek Harness conversation — plus your real iPhone over USB. 22 agent tools • live MJPEG sidebar panel • simulator & real iPhone over USB • list/feed row actions • SwiftUI preview hot reload npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1 English · 简体中文 · 繁體中文 · 日本語 · 한국어 · Français · Español · Deutsch · Português · Русский · हिन्दी · Türkçe · ไทย · Tiếng Việt · Bahasa Indonesia npm: @zsev…",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "A live, interactive iOS Simulator inside a DeepSeek Harness conversation — plus your real iPhone over USB.",
-          "support_span": "A live, interactive iOS Simulator inside a DeepSeek Harness conversation — plus your real iPhone over USB.",
-          "status": "entailed"
-        },
-        {
-          "text": "22 agent tools • live MJPEG sidebar panel • simulator & real iPhone over USB • list/feed row actions • SwiftUI preview hot reload\n  npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1\n  English · 简体中文 · 繁體中文 · 日本語 · 한국어 · Français · Español · Deutsch · Português · Русский · हिन्दी · Türkçe · ไทย · Tiếng Việt · Bahasa Indonesia\n  npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1\n  \nA real iPhone driven from inside a DSH conversation — the agent's tool calls on the left, the live device panel on the right\nDSH iOS Simulator gives the agent a real iOS Simulator inside the conversation — and gives you the pixels.",
-          "support_span": "22 agent tools • live MJPEG sidebar panel • simulator & real iPhone over USB • list/feed row actions • SwiftUI preview hot reload\n  npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1\n  English · 简体中文 · 繁體中文 · 日本語 · 한국어 · Français · Español · Deutsch · Português · Русский · हिन्दी · Türkçe · ไทย · Tiếng Việt · Bahasa Indonesia\n  npm: @zseven-w/dsh-ios · Current plugin release: 0.1.0-rc.3 · Tested with DSH 0.1.1-rc.1\n  \nA real iPhone driven from inside a DSH conversation — the agent's tool calls on the left, the live device panel on the right\nDSH iOS Simulator gives the agent a real iOS Simulator inside the conversation — and gives you the pixels.",
-          "status": "entailed"
-        },
-        {
-          "text": "The agent can boot a device, build and run an Xcode project or Swift package, drive the UI by accessibility identity or by OCR text, read unified logs, and inspect processes, backtraces, and leaks, while a live stream of the device renders in a persistent sidebar panel where you can tap, drag, rotate, and press Home directly on the video.",
-          "support_span": "The agent can boot a device, build and run an Xcode project or Swift package, drive the UI by accessibility identity or by OCR text, read unified logs, and inspect processes, backtraces, and leaks, while a live stream of the device renders in a persistent sidebar panel where you can tap, drag, rotate, and press Home directly on the video.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/ZSeven-W/dsh-ios",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-19T18:02:50+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-19 — outside lookback window"
-    },
-    {
-      "cluster_key": "3b3c37d2dc6d4950",
-      "title": "And now, the video of “Darth Vader”on why he wants Flock in San Diego. Read the full story here: www.404media.co/darth-vader-...",
-      "category": "cyber_attacks",
-      "one_liner": "Cyber Attacks: single report, unconfirmed.",
-      "tags": [],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post 404 Media 404media.co did:plc:vcepp6trx4vpe5ourxso4tjl And now, the video of “Darth Vader”on why he wants Flock in San Diego.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "This is a heavily interactive web application, and JavaScript is required.",
-          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
-          "status": "entailed"
-        },
-        {
-          "text": "Simple HTML interfaces are possible, but that is not what this is.",
-          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
-          "status": "entailed"
-        },
-        {
-          "text": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  And now, the video of “Darth Vader”on why he wants Flock in San Diego.",
-          "support_span": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  And now, the video of “Darth Vader”on why he wants Flock in San Diego.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "404 Media",
-          "url": "https://bsky.app/profile/404media.co/post/3mtjrtludrk2m",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-20T17:35:44.820000+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-20 — outside lookback window"
-    },
-    {
-      "cluster_key": "82a748697f86d7b8",
-      "title": "zenstory-ai/oh-story-dsh — A DSH plugin for novel writing and short-drama production, powered by Oh Story and Drama Skills.",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai",
-        "linux",
-        "llm",
-        "opensource"
-      ],
-      "summary": "oh-story-dsh 是基于 DeepSeek Harness（DSH）构建的社区插件，将 Oh Story 的小说方法库与 Drama Skills 的短剧生产流程带入 DSH。DSH 管理 Agent、会话、模型、权限和 Chat；插件提供创作 Skills、专业 Roles、项目协议与三栏工作台。 本项目与 DeepSeek 官方无隶属、合作或背书关系；DeepSeek Harness 名称与品牌素材归其权利人所有。 覆盖长篇、短篇、选题、扫榜、拆文、导入、审稿、去 AI 味与封面流程。13 个 Oh Story Skills 与 7 个专业 Roles 按固定上游版本随插件交付。 内置 Drama Skills 0.6.0 的 creator-first 工作流。每集按请求维护最多五份可读 Markdown：剧本.md、视觉设定.md、分镜.md、图片提示词.md、视频提示词.md；不预建空文档，也不倒补用户未点名的阶段。审查与生产交付继续使用 DSH 原生工具、权限和确认界面。 Drama Skills 0.6.0 是破坏性升级：…",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "oh-story-dsh 是基于 DeepSeek Harness（DSH）构建的社区插件，将 Oh Story 的小说方法库与 Drama Skills 的短剧生产流程带入 DSH。DSH 管理 Agent、会话、模型、权限和 Chat；插件提供创作 Skills、专业 Roles、项目协议与三栏工作台。\n本项目与 DeepSeek 官方无隶属、合作或背书关系；DeepSeek Harness 名称与品牌素材归其权利人所有。\n覆盖长篇、短篇、选题、扫榜、拆文、导入、审稿、去 AI 味与封面流程。13 个 Oh Story Skills 与 7 个专业 Roles 按固定上游版本随插件交付。\n内置 Drama Skills 0.6.0 的 creator-first 工作流。每集按请求维护最多五份可读 Markdown：剧本.md、视觉设定.md、分镜.md、图片提示词.md、视频提示词.md；不预建空文档，也不倒补用户未点名的阶段。审查与生产交付继续使用 DSH 原生工具、权限和确认界面。\nDrama Skills 0.6.0 是破坏性升级：v0.5 结构化项目应继续锁定 v0.5 并只读保留；迁移时新建项目根，逐集人工确认当前工作所需文档，不要在同一目录混用旧 JSON/JSONL 与新文档。\n- 原生三栏布局：项目文件树、编辑器与官方 Chat 同屏，Trajectory、工具执行、Todo、审批和 Composer 保持 DSH 原生交互。\n- 实时文件跟随：Agent 调用官方文件工具时，目标文件自动定位，编辑器同步呈现生成中的内容。\n- Chat 文件导航：点击官方 Chat 中的作品文件名，文件树会定位并在编辑器打开对应文件。\n- 创作文档预览：Markdown 支持标题、表格、任务列表、引用和代码块；JSONL 以带行号、类型和状态的结构化记录呈现。\n- 安全编辑：支持源码编辑与快捷保存；人工未保存内容不会被并发 Agent 修改覆盖。\n- 稳定长对话：消息区独立滚动，官方 Composer 固定在 Chat 栏底部。\n需要 Node.js 24+。\n1.",
-          "support_span": "oh-story-dsh 是基于 DeepSeek Harness（DSH）构建的社区插件，将 Oh Story 的小说方法库与 Drama Skills 的短剧生产流程带入 DSH。DSH 管理 Agent、会话、模型、权限和 Chat；插件提供创作 Skills、专业 Roles、项目协议与三栏工作台。\n本项目与 DeepSeek 官方无隶属、合作或背书关系；DeepSeek Harness 名称与品牌素材归其权利人所有。\n覆盖长篇、短篇、选题、扫榜、拆文、导入、审稿、去 AI 味与封面流程。13 个 Oh Story Skills 与 7 个专业 Roles 按固定上游版本随插件交付。\n内置 Drama Skills 0.6.0 的 creator-first 工作流。每集按请求维护最多五份可读 Markdown：剧本.md、视觉设定.md、分镜.md、图片提示词.md、视频提示词.md；不预建空文档，也不倒补用户未点名的阶段。审查与生产交付继续使用 DSH 原生工具、权限和确认界面。\nDrama Skills 0.6.0 是破坏性升级：v0.5 结构化项目应继续锁定 v0.5 并只读保留；迁移时新建项目根，逐集人工确认当前工作所需文档，不要在同一目录混用旧 JSON/JSONL 与新文档。\n- 原生三栏布局：项目文件树、编辑器与官方 Chat 同屏，Trajectory、工具执行、Todo、审批和 Composer 保持 DSH 原生交互。\n- 实时文件跟随：Agent 调用官方文件工具时，目标文件自动定位，编辑器同步呈现生成中的内容。\n- Chat 文件导航：点击官方 Chat 中的作品文件名，文件树会定位并在编辑器打开对应文件。\n- 创作文档预览：Markdown 支持标题、表格、任务列表、引用和代码块；JSONL 以带行号、类型和状态的结构化记录呈现。\n- 安全编辑：支持源码编辑与快捷保存；人工未保存内容不会被并发 Agent 修改覆盖。\n- 稳定长对话：消息区独立滚动，官方 Composer 固定在 Chat 栏底部。\n需要 Node.js 24+。\n1.",
-          "status": "entailed"
-        },
-        {
-          "text": "安装插件并启动 DSH Web\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 plugin --profile web add @oh-story/dsh@0.1.4\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 web\n也可以直接安装 GitHub Release 中经过同一套测试的预构建包：\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 plugin --profile web add https://github.com/zenstory-ai/oh-story-dsh/releases/download/v0.1.4/oh-story-dsh-0.1.4.tgz\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 web\n默认在 http://127.0.0.1:3080 打开。\n2.",
-          "support_span": "安装插件并启动 DSH Web\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 plugin --profile web add @oh-story/dsh@0.1.4\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 web\n也可以直接安装 GitHub Release 中经过同一套测试的预构建包：\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 plugin --profile web add https://github.com/zenstory-ai/oh-story-dsh/releases/download/v0.1.4/oh-story-dsh-0.1.4.tgz\nnpx -y @deepseek-ai/dsh@0.1.1-rc.1 web\n默认在 http://127.0.0.1:3080 打开。\n2.",
-          "status": "entailed"
-        },
-        {
-          "text": "配置模型\n首次使用需要在 DSH 的「设置 → 模型」中添加 Provider 并填入 API Key；也可以在启动前设置环境变量 DEEPSEEK_API_KEY。模型、凭据与权限均由 DSH 管理，本插件不接触。\n3.",
-          "support_span": "配置模型\n首次使用需要在 DSH 的「设置 → 模型」中添加 Provider 并填入 API Key；也可以在启动前设置环境变量 DEEPSEEK_API_KEY。模型、凭据与权限均由 DSH 管理，本插件不接触。\n3.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/zenstory-ai/oh-story-dsh",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-19T15:27:01+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-19 — outside lookback window"
     },
     {
       "cluster_key": "5b868fa99c4bdd97",
@@ -656,6 +776,10 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "5b868fa99c4bdd97"
+      ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
@@ -707,6 +831,10 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "1b6fcf121dfae12a"
+      ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
@@ -766,6 +894,11 @@
       "interest_score": 50,
       "corroboration": 1,
       "blend": 47.5,
+      "is_new": true,
+      "alt_keys": [
+        "277b76c189431d7e",
+        "5e578641f8c420a7"
+      ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
@@ -792,83 +925,21 @@
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "importance 3/5 from gemini-3-flash-preview",
+        "importance 3/5 from cache",
         "blend 48 = trust 70 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "dbc73e108ce86b9f",
-      "title": "Indian Railways’ first high-speed test track nears completion: Trains to be tested at 220 kmph from 2027-28",
-      "category": "india_world",
-      "one_liner": "India's first high-speed railway test track in Rajasthan nears completion, enabling international-standard trials for Vande Bharat and global rolling stock by 2027.",
-      "tags": [
-        "hardware",
-        "india",
-        "policy"
-      ],
-      "summary": "Indian Railways’ first dedicated high-speed test track, developed by the Research Design and Standards Organisation (RDSO) in Rajasthan's Jodhpur Division between Gudha and Thathana Mithri at a cost of Rs 967.07 crore, is nearing final completion. The 59 km facility comprises a 23-km main line, a 13-km high-speed loop at Gudha, a 3-km accelerated testing loop at Nawa, and a 20-km curve testing loop at Mithri. Once fully operational by late 2026, with testing trials set for 2027-28, India will become the first country to possess comprehensive rolling stock testing facilities meeting international UIC-518/EN-14363 standards.",
-      "key_facts": [
-        "Project cost: Rs 967.07 crore",
-        "Track length: 59 km",
-        "Location: Gudha and Thathana Mithri, Jodhpur Division, Rajasthan",
-        "Trials start: 2027-28"
-      ],
-      "bottom_line": "The completion of India's first dedicated high-speed railway test track establishes international testing capabilities for rolling stock and accelerates domestic rail modernization.",
-      "claims": [
-        {
-          "text": "The project is being developed by the Research Design and Standards Organisation (RDSO) at a cost of Rs 967.07 crore.",
-          "support_span": "The project is being developed by the Research Design and Standards Organisation (RDSO) at a cost of Rs 967.07 crore.",
-          "status": "entailed"
-        },
-        {
-          "text": "“A new BG (Rough Gauge) Dedicated Test Track of 59 Km has been developed between Gudha-Thathana Mithri in Jodhpur Division (about 70 Km from Jaipur) in Rajasthan.",
-          "support_span": "“A new BG (Broad Gauge) Dedicated Test Track of 59 Km has been developed between Gudha-Thathana Mithri in Jodhpur Division (about 70 Km from Jaipur) in Rajasthan.",
-          "status": "contradicted"
-        },
-        {
-          "text": "Testing and trials of various types of rolling stock, including semi-high-speed Vande Bharat trainsets, are expected to begin in 2027-28 at the testing facilities.",
-          "support_span": "Testing and trials of various types of rolling stock, including semi-high-speed Vande Bharat trainsets, are expected to begin in 2027-28 at the testing facilities.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 47.5,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Indian Express",
-          "url": "https://indianexpress.com/article/india/indian-railways-first-high-speed-test-track-rajasthan-220-kmph-trials-2027-28-10846276/",
-          "domain": "indianexpress.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-24T08:29:19+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 4/5 from cache",
-        "blend 48 = trust 25 / interest 75 / corrob 25",
-        "claims entailed 3/3 (100%)",
-        "judge (gemma-4-26b-a4b-it): contradicted — rejected"
-      ],
-      "reject_reason": "gemma-4-26b-a4b-it found a claim contradicted by the source"
-    },
-    {
-      "cluster_key": "632d9b998f793cc9",
-      "title": "Heading to an arcade for the first time in forever today. Maybe I'll get to see a real pinball table!",
+      "cluster_key": "6f485d67b1ba5caa",
+      "title": "\"In my day we used to take heroin and be happy with it\" The only context you get is Haskell",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
         "ai",
         "windows"
       ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Xe xeiaso.net did:plc:e5nncb3dr5thdkjir5cfaqfe Heading to an arcade for the first time in forever today.",
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Xe xeiaso.net did:plc:e5nncb3dr5thdkjir5cfaqfe \"In my day we used to take heroin and be happy with it\" The only context you get is Haskell 2026-08-20T21:03:06.078Z",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
@@ -883,8 +954,8 @@
           "status": "entailed"
         },
         {
-          "text": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  Heading to an arcade for the first time in forever today.",
-          "support_span": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  Heading to an arcade for the first time in forever today.",
+          "text": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  \"In my day we used to take heroin and be happy with it\"\nThe only context you get is Haskell\n  2026-08-20T21:03:06.078Z",
+          "support_span": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  \"In my day we used to take heroin and be happy with it\"\nThe only context you get is Haskell\n  2026-08-20T21:03:06.078Z",
           "status": "entailed"
         }
       ],
@@ -892,153 +963,27 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "6f485d67b1ba5caa"
+      ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
           "name": "Xe Iaso",
-          "url": "https://bsky.app/profile/xeiaso.net/post/3mtf32mm3wk2r",
+          "url": "https://bsky.app/profile/xeiaso.net/post/3mtk5gdvtxc2n",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-18T20:37:25.466000+00:00",
+      "published": "2026-08-20T21:03:05.178000+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-18 — outside lookback window"
-    },
-    {
-      "cluster_key": "b605104ef4ee20f6",
-      "title": "India must own its trade, add 100 ships to merchant fleet: Shipping Minister Sarbananda Sonowal",
-      "category": "india_world",
-      "one_liner": "India's push to build its domestic merchant fleet and reduce its $75 billion foreign freight bill directly impacts the regional maritime and trade sector.",
-      "tags": [
-        "india",
-        "markets",
-        "policy",
-        "release"
-      ],
-      "summary": "The National Shipping Board has proposed a five-point roadmap to add 100 vessels to India's merchant fleet over the next five years to reduce dependence on foreign shipping lines. India currently pays close to $75 billion annually in freight charges to foreign lines for commodities like crude oil, gas, coal, and urea. Operating under the Indian flag is currently 16% to 20% costlier than foreign flags due to taxes and higher financing costs. The measures include fiscal reforms, assured cargo support, competitive financing, and regulatory streamlining to help Indian shipowners participate in the maritime economy. This initiative supports the broader ambition of making India a top five ship-owning nation by 2047.",
-      "key_facts": [
-        "Vessel target: 100 new merchant vessels over 5 years",
-        "Annual foreign freight cost: Close to $75 billion",
-        "Operating cost differential: Indian flag 16% to 20% costlier than foreign flags",
-        "Target year: Maritime Amrit Kaal Vision 2047"
-      ],
-      "bottom_line": "India aims to add 100 ships to its merchant fleet over five years to curb its heavy reliance on foreign carriers.",
-      "claims": [
-        {
-          "text": "The National Shipping Board (NSB) has proposed a five-point roadmap to add 100 vessels to India’s merchant fleet over the next five years, with the move aimed at reducing the country’s dependence on foreign shipping lines for transporting critical cargo.",
-          "support_span": "The National Shipping Board (NSB) has proposed a five-point roadmap to add 100 vessels to India’s merchant fleet over the next five years, with the move aimed at reducing the country’s dependence on foreign shipping lines for transporting critical cargo.",
-          "status": "entailed"
-        },
-        {
-          "text": "India currently pays close to $75 billion annually in freight charges to foreign shipping lines.",
-          "support_span": "India said India currently pays close to $75 billion annually, in freight charges to foreign shipping lines for transporting commodities including crude oil, gas, coal, and urea.",
-          "status": "contradicted"
-        },
-        {
-          "text": "Operating under the Indian flag remains 16% to 20% costlier than operating under foreign flags.",
-          "support_span": "operating under the Indian flag remains 16% to 20% costlier than operating under foreign flags.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 47.5,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/national/india-must-own-its-trade-add-100-ships-to-merchant-fleet-shipping-minister-sarbananda-sonowal/article71389660.ece",
-          "domain": "thehindu.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-25T15:39:50+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "0e310a189b62978a",
-      "title": "330 victims, Rs 400 crore: Goa digital arrest leads ED to pan-India network of cyber fraudsters",
-      "category": "india_world",
-      "one_liner": "ED arrests two in a massive pan-India digital arrest money laundering probe involving over Rs 400 crore in fraud proceeds.",
-      "tags": [
-        "incident",
-        "india",
-        "markets",
-        "policy"
-      ],
-      "summary": "The Enforcement Directorate arrested two individuals in connection with a digital arrest and money laundering investigation that originated in Goa, uncovering a pan-India cyber fraud network tied to 163 FIRs across 20 states and UTs with losses exceeding Rs 400 crore. Investigators found that funds were rapidly fragmented across more than 400 beneficiary accounts and routed through proxy-directed forex, trading, and travel entities holding RBI full-fledged money changer licences to convert proceeds into cash and foreign currency. The overarching network is linked to 330 victim complaints totaling Rs 417.49 crore, with searches across Mumbai and Goa resulting in the seizure of Rs 3.25 crore in cash and digital evidence.",
-      "key_facts": [
-        "Aggregate Loss: More than Rs 400 crore (specifically Rs 417.49 crore)",
-        "FIR Count: 163 FIRs across 20 States and UTs",
-        "Victim Complaints: 330 victim complaints",
-        "Cash Seized: Rs 3.25 crore",
-        "Legislation: Prevention of Money Laundering Act (PMLA), 2002"
-      ],
-      "bottom_line": "Cyber fraud syndicates are systematically laundering hundreds of crores through proxy-run RBI-licensed forex and trading firms.",
-      "claims": [
-        {
-          "text": "The Enforcement Directorate (ED) on Sunday arrested two persons as part of a money laundering probe, stemming from a digital arrest case in Goa.",
-          "support_span": "The Enforcement Directorate (ED) on Sunday arrested two persons as part of a money laundering probe, stemming from a digital arrest case in Goa.",
-          "status": "entailed"
-        },
-        {
-          "text": "The ED said probe has uncovered a pan-India organised network of cyber fraudsters, whose accounts are subject of over 163 FIRs across 20 states and Union Territories and involving an aggregate loss of more than Rs 400 crore.",
-          "support_span": "The Enforcement Directorate (ED) said probe has uncovered a pan-India organised network of cyber fraudsters, whose accounts are subject of over 163 FIRs across 20 states and Union Territories and involving an aggregate loss of more than Rs 400 crore.",
-          "status": "contradicted"
-        },
-        {
-          "text": "It said Rs 3.25 crore in cash has been seized, along with digital devices, records and statutory registers, which are under examination.",
-          "support_span": "It said Rs 3.25 crore in cash has been seized, along with digital devices, records and statutory registers, which are under examination.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 37,
-      "interest_score": 100,
-      "corroboration": 2,
-      "blend": 69.2,
-      "critical_signal": "",
-      "priority": "critical",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Indian Express",
-          "url": "https://indianexpress.com/article/india/330-victims-rs-400-crore-goa-digital-arrest-leads-ed-to-pan-india-network-of-cyber-fraudsters-10847923/",
-          "domain": "indianexpress.com",
-          "tier": "B"
-        },
-        {
-          "name": "CTI Now",
-          "url": "https://telanganatoday.com/ed-arrests-two-over-rs-27850-crore-cyber-fraud-network",
-          "domain": "telanganatoday.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-24T23:42:42+00:00",
-      "trace": [
-        "tier B (+25)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 69 = trust 37 / interest 100 / corrob 50"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-08-20 — outside lookback window"
     },
     {
       "cluster_key": "d4199a5635c3862f",
@@ -1083,6 +1028,11 @@
       "interest_score": 75,
       "corroboration": 1,
       "blend": 58.8,
+      "is_new": true,
+      "alt_keys": [
+        "d4199a5635c3862f",
+        "d729e72ab7a4c01c"
+      ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
@@ -1109,59 +1059,142 @@
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "importance 4/5 from gemini-3-flash-preview",
+        "importance 4/5 from cache",
         "blend 59 = trust 70 / interest 75 / corrob 25",
         "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "59b325c5b605d9ed",
-      "title": "This week, we discuss our party and panel coming up, and do some light reminiscing.",
-      "category": "cyber_attacks",
-      "one_liner": "Cyber Attacks: single report, unconfirmed.",
-      "tags": [],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post 404 Media 404media.co did:plc:vcepp6trx4vpe5ourxso4tjl This week, we discuss our party and panel coming up, and do some light reminiscing.",
-      "key_facts": [],
-      "bottom_line": "",
+      "cluster_key": "d5bb9924adb5f0c3",
+      "title": "HP partners with U.S.-blacklisted Huawei for licensing the Chinese company's WiFi tech",
+      "category": "markets",
+      "one_liner": "HP licensing Huawei's WiFi tech demonstrates how foundational standards override geopolitical trade bans in global patent pools.",
+      "tags": [
+        "hardware",
+        "markets",
+        "network",
+        "policy"
+      ],
+      "summary": "U.S.-based personal computing firm HP has signed a multi-year global cross-licensing agreement for WiFi patents from Chinese telecoms giant Huawei. The deal follows a patent dispute involving the Sisvel WiFi 6 patent pool, of which Huawei is a founding member, allowing HP access to approximately 2,000 wireless network connectivity patents. This partnership marks a notable adoption of Huawei technology outside China despite the company having been placed on a U.S. blacklist in 2019, which restricted its dealings with American suppliers. The agreement also features reciprocal patent rights granted by HP to Huawei.",
+      "key_facts": [
+        "Patents accessed: 2,000 wireless connectivity patents",
+        "Patent pool: Sisvel WiFi 6",
+        "U.S. blacklist year: 2019"
+      ],
+      "bottom_line": "HP has signed a multi-year global agreement to license WiFi patents from U.S.-blacklisted Huawei, signaling practical technology adoption through standard patent pools despite trade restrictions.",
       "claims": [
         {
-          "text": "This is a heavily interactive web application, and JavaScript is required.",
-          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "text": "U.S.-based personal computing and printing firm HP has signed a multi-year global agreement for licensing certain WiFi patents from Chinese telecoms giant Huawei",
+          "support_span": "U.S.-based personal computing and printing firm HP has signed a multi-year global agreement for licensing certain WiFi patents from Chinese telecoms giant Huawei, the companies announced Wednesday.",
           "status": "entailed"
         },
         {
-          "text": "Simple HTML interfaces are possible, but that is not what this is.",
-          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "text": "Huawei was one of the founding members of the patent pool, called Sisvel WiFi 6.",
+          "support_span": "Huawei was one of the founding members of the patent pool, called Sisvel WiFi 6.",
           "status": "entailed"
         },
         {
-          "text": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  This week, we discuss our party and panel coming up, and do some light reminiscing.",
-          "support_span": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  This week, we discuss our party and panel coming up, and do some light reminiscing.",
-          "status": "entailed"
+          "text": "The latest global cross-licensing agreement includes valuable reciprocal patent rights from HP",
+          "support_span": "The latest global cross-licensing agreement includes valuable reciprocal patent rights from HP",
+          "status": "contradicted"
         }
       ],
-      "trust_score": 0,
-      "interest_score": 0,
+      "trust_score": 25,
+      "interest_score": 50,
       "corroboration": 1,
-      "blend": 0.0,
+      "blend": 36.2,
+      "is_new": true,
+      "alt_keys": [
+        "d5bb9924adb5f0c3"
+      ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "404 Media",
-          "url": "https://bsky.app/profile/404media.co/post/3mtm2gzhds723",
-          "domain": "bsky.app",
-          "tier": "C"
+          "name": "CNBC Finance",
+          "url": "https://www.cnbc.com/2026/08/25/hp-partners-huawei-wifi-tech-us-entity-list.html",
+          "domain": "cnbc.com",
+          "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-21T15:15:04.615000+00:00",
+      "published": "2026-08-26T02:01:01+00:00",
       "trace": [
-        "summary: heuristic extractive (no LLM configured)"
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 36 = trust 25 / interest 50 / corrob 25"
       ],
-      "reject_reason": "published 2026-08-21 — outside lookback window"
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "1880d87acfa2d589",
+      "title": "Identify, eliminate threats before they grow big: Amit Shah urges security agencies",
+      "category": "india_world",
+      "one_liner": "Amit Shah's directive to use AI for predictive policing and tighten internal security frameworks sets a clear compliance mandate for Indian law enforcement.",
+      "tags": [
+        "ai",
+        "blueteam",
+        "india",
+        "policy",
+        "research",
+        "supply-chain",
+        "tool"
+      ],
+      "summary": "Union Home Minister Amit Shah addressed the Intelligence Bureau's National Security Strategy Conference, urging security agencies to anticipate and eliminate threats before they escalate into major crises. Outlining a four-pronged border security strategy aimed at making India 'infiltrator-free', Shah stressed that internal security is fundamental to achieving a developed nation status by 2047. He highlighted the upcoming full implementation of three new criminal laws within a year to expedite court cases and increase conviction rates, while calling for the expansion of the 'Prahar' anti-terror framework and the Narcotics Control Vision Document 2026-2029. Furthermore, Shah urged young officers to leverage artificial intelligence for data integration and criminal analysis across platforms like CCTNS, ICJS, NatGrid, and NAFIS.",
+      "key_facts": [
+        "Timeline for criminal laws implementation: Within a year",
+        "Narcotics vision document: Narcotics Control Vision Document 2026-2029",
+        "Target year for developed India: 2047"
+      ],
+      "bottom_line": "Union Home Minister Amit Shah urged security agencies to adopt a proactive, AI-driven approach to border control, counter-terrorism, and narcotics prevention to secure India's long-term development.",
+      "claims": [
+        {
+          "text": "Union Home Minister Amit Shah on Tuesday... said India’s security policy must be framed keeping in view emerging global challenges... while urging security agencies to anticipate threats before they become major crises.",
+          "support_span": "Union Home Minister Amit Shah on Tuesday (August 25, 2026) said India’s security policy must be framed keeping in view emerging global challenges, including geopolitical instability, energy and resource insecurity, supply chain disruptions, rising radicalisation and cyber misinformation campaigns, while urging security agencies to anticipate threats before they become major crises.",
+          "status": "entailed"
+        },
+        {
+          "text": "the three new criminal laws would be implemented fully within a year.",
+          "support_span": "The Home Minister said the three new criminal laws would be implemented fully within a year.",
+          "status": "contradicted"
+        },
+        {
+          "text": "integrated databases linking CCTNS, ICJS, NatGrid and NAFIS had been created. He urged young officers to use artificial intelligence for data integration",
+          "support_span": "Highlighting the role of technology in policing, Mr. Shah said integrated databases linking CCTNS, ICJS, NatGrid and NAFIS had been created. He urged young officers to use artificial intelligence for data integration, analysis and identifying criminal modus operandi to generate actionable intelligence and prevent future threats.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "alt_keys": [
+        "1880d87acfa2d589"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "The Hindu National",
+          "url": "https://www.thehindu.com/news/national/identify-eliminate-threats-before-they-grow-big-amit-shah-urges-security-agencies/article71390304.ece",
+          "domain": "thehindu.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-25T20:30:03+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 25 / interest 75 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
       "cluster_key": "907caa93cbe60bcf",
@@ -1196,6 +1229,10 @@
       "interest_score": 75,
       "corroboration": 1,
       "blend": 58.8,
+      "is_new": true,
+      "alt_keys": [
+        "907caa93cbe60bcf"
+      ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
@@ -1215,185 +1252,14 @@
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "importance 4/5 from gemini-3.5-flash-lite",
+        "importance 4/5 from cache",
         "blend 59 = trust 70 / interest 75 / corrob 25",
         "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "69f67164eb34eeea",
-      "title": "E4del and PINHOLE RATs Turn FTP Banners Into Dead Drops for Malware Commands",
-      "category": "cyber_attacks",
-      "one_liner": "The use of FTP banners for C2 instructions is a novel technique that may bypass security tools focused on HTTP/S traffic.",
-      "tags": [
-        "malware",
-        "network",
-        "redteam",
-        "research",
-        "threat-intel",
-        "windows",
-        "writeup"
-      ],
-      "summary": "A new campaign is using FTP banners as dead drop resolvers (DDRs) to deliver the E4del and PINHOLE remote access trojans (RATs). This unusual technique involves malware stagers fetching commands directly from the initial welcome message of an FTP server, allowing them to blend in with network traffic. E4del is a Node.js-based RAT masquerading as Discord that features a dynamic beaconing system with tiered jitter to evade detection. PINHOLE is a more advanced variant that uses high-reputation platforms like Pinterest and SurveyMonkey as DDRs to obtain C2 details and proxy communication through Cloudflare Workers.",
-      "key_facts": [
-        "Malware: E4del (Node.js), PINHOLE",
-        "Technique: FTP Banner Dead Drop Resolver (DDR)",
-        "C2 Proxy: Cloudflare Workers",
-        "DDR Platforms: Pinterest, SurveyMonkey"
-      ],
-      "bottom_line": "Threat actors are innovating with protocol-level dead drops like FTP banners to bypass security controls that primarily monitor web-based traffic.",
-      "claims": [
-        {
-          "text": "Malware stagers are fetching commands directly from FTP server welcome messages.",
-          "support_span": "The mechanism allows \"malware stagers to fetch commands directly from the protocol's initial response,\"",
-          "status": "entailed"
-        },
-        {
-          "text": "The E4del RAT uses a tiered jitter system for its beaconing mechanism.",
-          "support_span": "The beaconing mechanism is highly dynamic, implementing a tiered jitter system to blend in with normal network traffic.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 36.2,
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/08/e4del-and-pinhole-rats-turn-ftp-banners.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-25T11:33:44+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 3/5 from gemini-3-flash-preview",
-        "blend 36 = trust 25 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "aefc8810292db5cb",
-      "title": "Attackers Target miniOrange SAML Flaws That Can Grant WordPress Admin Access",
-      "category": "cyber_attacks",
-      "one_liner": "This is a high-impact vulnerability in a popular WordPress SSO plugin that allows trivial admin takeover via malformed SAML responses.",
-      "tags": [
-        "appsec",
-        "exploit",
-        "identity",
-        "release",
-        "vulnerability"
-      ],
-      "summary": "Two severe vulnerabilities in the miniOrange SAML 2.0 SSO plugin for WordPress are being actively exploited to gain administrative access. CVE-2026-15981 (CVSS 9.8) allows an authentication bypass because the plugin incorrectly treats an OpenSSL error as a successful signature verification. CVE-2026-61979 (CVSS 8.1) involves signature algorithm confusion that can lead to unauthenticated privilege escalation. Proof-of-concept code is available, and attackers are reportedly conducting opportunistic scans to find and compromise vulnerable sites.",
-      "key_facts": [
-        "CVE-2026-15981: CVSS 9.8, authentication bypass",
-        "CVE-2026-61979: CVSS 8.1, privilege escalation",
-        "Fixed Version: 17.0.6 (Standard edition)",
-        "Affected Product: miniOrange SAML 2.0 Single Sign On plugin"
-      ],
-      "bottom_line": "Unauthenticated attackers can gain full WordPress admin access by exploiting a logic error in how the miniOrange SAML plugin validates signatures.",
-      "claims": [
-        {
-          "text": "The plugin incorrectly treats an OpenSSL error as a successful signature verification.",
-          "support_span": "causing an error return value of -1 to be evaluated as truthy and therefore treated as a successful signature verification.",
-          "status": "contradicted"
-        },
-        {
-          "text": "Attackers can log in as any WordPress user, including administrators, by submitting a crafted SAMLResponse.",
-          "support_span": "This makes it possible for unauthenticated attackers to log in as any existing WordPress user, including administrators, by submitting a crafted SAMLResponse containing an attacker-controlled NameID and a deliberately malformed signature value",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 47.5,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/08/attackers-target-miniorange-saml-flaws.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Hacker News",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQWTJ5aTlHdy1rb3c4bGNWc2h6SXFhX0JGR1BLQWRUOE9HemxDVU1BNlRLdmk2VHJVei0zQWRBcGk5RVpBOTJ6QUs3V0hLdEhWXzRhUVQtcG5qUmlUMDRMUE9IWnh2Wkhad25OX1g0alU4Y21HanlRODB2dVdUdy1iRGxTNA?oc=5",
-          "domain": "thehackernews.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-25T08:34:00+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3-flash-preview",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "3c7ea8e5c5f42dd3",
-      "title": "Low On Fuel, Indian Drone Inadvertently Hit Pak's Kirana Hills Nuke Facility",
-      "category": "india_world",
-      "one_liner": "An inadvertent drone strike on a Pakistani nuclear facility escalates cross-border tensions and aerial risk profiles.",
-      "tags": [
-        "incident",
-        "india",
-        "network"
-      ],
-      "summary": "An Indian drone, low on fuel, inadvertently struck Pakistan's Kirana Hills nuclear facility, while the Indian Air Force had also been cleared to launch an attack on Skardu.",
-      "key_facts": [
-        "Target: Kirana Hills nuclear facility",
-        "Actor: Indian drone"
-      ],
-      "bottom_line": "An Indian drone low on fuel inadvertently struck Pakistan's Kirana Hills nuclear facility.",
-      "claims": [
-        {
-          "text": "Low On Fuel, Indian Drone Inadvertently Hit Pak's Kirana Hills Nuke Facility",
-          "support_span": "Low On Fuel, Indian Drone Inadvertently Hit Pak's Kirana Hills Nuke Facility",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 58.8,
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NDTV India",
-          "url": "https://www.ndtv.com/india-news/operation-sindoor-india-pakistan-low-on-fuel-indian-drone-inadvertently-hit-paks-kirana-hills-nuke-facility-11957603#publisher=newsstand",
-          "domain": "ndtv.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-25T14:51:55+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 25 / interest 100 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "b3f5ba30b958f106",
+      "cluster_key": "9109ab790e66a236",
       "title": "24 npm Packages Abuse unpkg Mirrors to Host Fake Cloudflare CAPTCHA Pages",
       "category": "cyber_attacks",
       "one_liner": "This highlights a clever supply-chain abuse where the npm registry itself is used as a CDN for phishing pages.",
@@ -1425,19 +1291,38 @@
           "status": "contradicted"
         }
       ],
-      "trust_score": 25,
+      "trust_score": 37,
       "interest_score": 50,
-      "corroboration": 1,
-      "blend": 36.2,
+      "corroboration": 2,
+      "blend": 46.8,
+      "is_new": true,
+      "alt_keys": [
+        "9109ab790e66a236",
+        "b3f5ba30b958f106",
+        "c2c830c05e6fc1ae",
+        "e7c2149d23bc6913"
+      ],
       "critical_signal": "",
-      "priority": "minor",
+      "priority": "important",
       "verdict": "rejected",
       "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-abuse-npm-mirrors-to-host-phishing-redirect-pages/",
+          "domain": "bleepingcomputer.com",
+          "tier": "B"
+        },
         {
           "name": "The Hacker News",
           "url": "https://thehackernews.com/2026/08/24-npm-packages-abuse-unpkg-mirrors-to.html",
           "domain": "thehackernews.com",
           "tier": "B"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPb0F5SDk3OXJmcHczLTFCeVpZUFlmQjNxZTcxR09FRUxUUGtIbjZ2QVpWbzlabTBGanNDeG90SE9sMTFCeTV6TTZ5bDBRdW5Kd1J6NW1Pc0c0ZUV0M3Y3Nko0ZXloVFBoa1ZKTHF0dEhscGFneGRWVFg3cEVvU21MUW1nQkxsRWRpa0lsUlY1eFBsZW5wdlk5Qi1qeXJPOGVNUXRid0h1alB2Zk9leUHSAa4BQVVfeXFMT29BeUg5NzlyZnB3My0xQnlaWVBZZkIzcWU3MUdPRUVMVFBrSG42dkFaVm85Wm0wRmpzQ3hvdEhPbDExQnk1ek02eWwwUXVuSndSejVtT3NHNGVFdDN2NzZKNGV5aFRQaGtWSkxxdHRIbHBhZ3hkVlRYN3BFb1NtTFFtZ0JMbEVkaWtJbFJWNXhQbGVucHZZOUItanlyTzhlTVF0YndIdWpQdmZPZXlB?oc=5",
+          "domain": "bleepingcomputer.com",
+          "tier": "C"
         },
         {
           "name": "The Hacker News",
@@ -1450,75 +1335,140 @@
       "published": "2026-08-25T11:52:00+00:00",
       "trace": [
         "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 3/5 from gemini-3-flash-preview",
-        "blend 36 = trust 25 / interest 50 / corrob 25"
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "importance 3/5 from cache",
+        "blend 47 = trust 37 / interest 50 / corrob 50"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "354509e2e9469976",
-      "title": "Hackers breached over 270 Zimbra servers in ongoing attacks",
-      "category": "cyber_attacks",
-      "one_liner": "Active exploitation of CVE-2026-73570 has compromised over 270 Zimbra instances, triggering a mandatory CISA KEV deadline.",
+      "cluster_key": "45db857ff0bac441",
+      "title": "China hits out at 'illegal' new US sanctions on Iran and trading partners",
+      "category": "india_world",
+      "one_liner": "U.S. sweeping financial sanctions on Iran and its trading partners threaten to provoke severe trade friction with Beijing ahead of upcoming presidential talks.",
       "tags": [
-        "appsec",
-        "blueteam",
-        "exploit",
-        "incident",
-        "release",
-        "threat-intel",
-        "vulnerability"
+        "india",
+        "markets",
+        "policy",
+        "tool"
       ],
-      "summary": "Threat actors have compromised more than 270 Zimbra Collaboration Suite (ZCS) servers by actively exploiting CVE-2026-73570, a high-severity command injection vulnerability in the SNMP monitoring component. Vendor Synacor patched the flaw on July 20 in ZCS version 10.1.20, but Shadowserver reports that over 8,200 exposed instances remain unpatched worldwide. Following active exploitation warnings from CERT Polska, CISA added CVE-2026-73570 to its Known Exploited Vulnerabilities (KEV) catalog and mandated U.S. federal agencies to apply patches by August 24.",
+      "summary": "China has vowed to protect its interests and take necessary measures after U.S. Treasury Secretary Scott Bessent announced a wide-ranging financial offensive against Iran, dubbed 'Operation Economic Outcast'. The new sanctions target nearly 60 entities, individuals, and vessels globally, aiming to isolate any nation or financial institution continuing economic partnerships with Tehran. China, which remains the largest buyer of Iranian oil, criticized the unilateral actions as illegal under international law. The diplomatic friction escalates amidst a broader conflict that has disrupted traffic through the Strait of Hormuz, driven up global oil prices, and preceded upcoming talks between President Donald Trump and Chinese President Xi Jinping.",
       "key_facts": [
-        "CVE-2026-73570: High-severity command injection in SNMP component",
-        "Patched version: ZCS version 10.1.20 (released July 20)",
-        "Compromised instances: 274 confirmed by Shadowserver",
-        "Exposed unpatched instances: at least 8,200",
-        "CISA KEV patch deadline: August 24"
+        "Sanctioned targets: Almost 60 entities, individuals, and vessels",
+        "Operation name: Operation Economic Outcast",
+        "CEE / Economist cited: David Oxley"
       ],
-      "bottom_line": "Security teams running Zimbra Collaboration Suite must verify their patch status to version 10.1.20 immediately or inspect logs for signs of remote code execution.",
+      "bottom_line": "The U.S. has launched a massive financial offensive against Iran and its trading partners, prompting Beijing to vow retaliatory measures to safeguard its commercial interests.",
       "claims": [
         {
-          "text": "Threat security watchdog Shadowserver detected 274 Zimbra instances compromised by CVE-2026-73570 exploitation.",
-          "support_span": "\"274 instances seen compromised in our scans for exploitation artifacts on 2026-08-22,\" Shadowserver warned.",
+          "text": "Foreign ministry spokesman Lin Jian said China was firmly opposed to what it called 'illegal unilateral sanctions' and would take 'all necessary measures' to safeguard its rights.",
+          "support_span": "Foreign ministry spokesman Lin Jian said China was firmly opposed to what it called \"illegal unilateral sanctions\" and would take \"all necessary measures\" to safeguard its rights.",
+          "status": "entailed"
+        },
+        {
+          "text": "US Treasury Secretary Scott Bessent announced the new measures on Monday, warning any nation financially partnering with Iran would be isolated.",
+          "support_span": "This came after US Treasury Secretary Scott Bessent announced the new measures on Monday, warning any nation financially partnering with Iran would be isolated.",
+          "status": "entailed"
+        },
+        {
+          "text": "The US has dubbed its latest sanctions 'Operation Economic Outcast' and described them as an 'economic D-Day' against Iran.",
+          "support_span": "The US has dubbed its latest sanctions 'Operation Economic Outcast' and described them as an 'economic D-Day' against Iran.",
           "status": "contradicted"
         },
         {
-          "text": "Synacor released ZCS version 10.1.20 on July 20 to fix the SNMP monitoring component vulnerability.",
-          "support_span": "Synacor patched the security flaw (tracked as CVE-2026-73570), which allows unauthenticated attackers to gain code execution remotely by exploiting a command injection weakness in the SNMP monitoring component when SNMP notifications are enabled, with the release of ZCS version 10.1.20 on July 20.",
-          "status": "entailed"
-        },
-        {
-          "text": "CISA added CVE-2026-73570 to its KEV catalog and ordered federal civilian agencies to patch by August 24.",
-          "support_span": "The Cybersecurity and Infrastructure Security Agency (CISA) also added the flaw to its KEV catalog following CERT Polska's warning and ordered U.S. Federal Civilian Executive Branch (FCEB) agencies to patch their systems within three days, by August 24.",
+          "text": "The Treasury had mapped financial channels, facilitators and networks used by Iran to evade sanctions to trade oil, imposing sanctions on almost 60 entities, individuals and vessels.",
+          "support_span": "He said the Treasury had mapped financial channels, facilitators and networks used by Iran to evade sanctions to trade oil, imposing sanctions on almost 60 entities, individuals and vessels.",
           "status": "entailed"
         }
       ],
-      "trust_score": 25,
+      "trust_score": 40,
       "interest_score": 100,
       "corroboration": 1,
-      "blend": 58.8,
+      "blend": 62.5,
+      "is_new": false,
+      "alt_keys": [
+        "45db857ff0bac441"
+      ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/hackers-breached-over-270-zimbra-servers-in-ongoing-attacks/",
-          "domain": "bleepingcomputer.com",
-          "tier": "B"
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/clyl8965j5go?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-25T12:04:02+00:00",
+      "published": "2026-08-25T11:53:36+00:00",
       "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 5/5 from gemini-3.6-flash",
-        "blend 59 = trust 25 / interest 100 / corrob 25",
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 62 = trust 40 / interest 100 / corrob 25",
         "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "4ce37faf72c5a447",
+      "title": "Chrome Stable for iOS Update",
+      "category": "cyber_tools",
+      "one_liner": "Chrome Stable for iOS received a routine version update notification.",
+      "tags": [
+        "android",
+        "release",
+        "vulnerability"
+      ],
+      "summary": "This article is a brief release notice for Chrome Stable for iOS published on Tuesday, August 25, 2026, containing no technical payload or patch details.",
+      "key_facts": [],
+      "bottom_line": "Chrome Stable for iOS has been updated.",
+      "claims": [
+        {
+          "text": "Tuesday, August 25, 2026 Give us feedback in our Product Forums.",
+          "support_span": "Tuesday, August 25, 2026 Give s feedback in our Product Forums.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 25.0,
+      "is_new": true,
+      "alt_keys": [
+        "4ce37faf72c5a447",
+        "eeb6181ec09b6ee5"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Chromium Releases",
+          "url": "http://chromereleases.googleblog.com/2026/08/chrome-stable-for-ios-update_071142905.html",
+          "domain": "chromereleases.googleblog.com",
+          "tier": "A"
+        },
+        {
+          "name": "Chromium Releases",
+          "url": "http://chromereleases.googleblog.com/2026/08/chrome-stable-for-ios-update_0773762116.html",
+          "domain": "chromereleases.googleblog.com",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "http://chromereleases.googleblog.com/2026/08/chrome-stable-for-ios-update_071142905.html",
+        "http://chromereleases.googleblog.com/2026/08/chrome-stable-for-ios-update_0773762116.html"
+      ],
+      "published": "2026-08-19T16:58:32+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 1/5 from gemini-3.5-flash-lite",
+        "blend 25 = trust 70 / interest 0 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     }
