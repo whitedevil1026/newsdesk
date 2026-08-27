@@ -1,6 +1,114 @@
 {
-  "generated_at": "2026-08-26T02:50:41.178470+00:00",
+  "generated_at": "2026-08-27T11:51:10.510341+00:00",
   "items": [
+    {
+      "cluster_key": "5e4d6944b6d14edb",
+      "title": "Fable: \"I want a twigl shader that renders Lost Carcosa from The King in Yellow. Nail the mood.\" (Shaders are procedurally generated using math alone…",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "ai"
+      ],
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu Fable: \"I want a twigl shader that renders Lost Carcosa from The King in Yellow.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "status": "entailed"
+        },
+        {
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "status": "entailed"
+        },
+        {
+          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Fable: \"I want a twigl shader that renders Lost Carcosa from The King in Yellow.",
+          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Fable: \"I want a twigl shader that renders Lost Carcosa from The King in Yellow.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "5e4d6944b6d14edb"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mtncr3ccls2j",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-22T03:16:33.172000+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-22 — outside lookback window"
+    },
+    {
+      "cluster_key": "dbc612bceb5bb30b",
+      "title": "Its going to be an era of contradictions. Polls will show everyone hates AI overall but also everyone will secretly use AI all the time for lots of s…",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "ai"
+      ],
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu Its going to be an era of contradictions.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "status": "entailed"
+        },
+        {
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "status": "entailed"
+        },
+        {
+          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Its going to be an era of contradictions.",
+          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Its going to be an era of contradictions.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "dbc612bceb5bb30b"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mtms457ksk2c",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-21T22:18:30.663000+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-21 — outside lookback window"
+    },
     {
       "cluster_key": "01d7606bfa4c0133",
       "title": "Even when LLMs write well, the lack of variety in style is crippling. Reading the same prose in your instructions & social media & advertisements & s…",
@@ -56,662 +164,34 @@
       "reject_reason": "published 2026-08-21 — outside lookback window"
     },
     {
-      "cluster_key": "099468bc5c73167e",
-      "title": "Claude's skill creator (literally, just ask it to make a skill) is still the best way to make reusable skills if you care about the details. ChatGPT…",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "ai",
-        "llm"
-      ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu Claude's skill creator (literally, just ask it to make a skill) is still the best way to make reusable skills if you care about the details.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "This is a heavily interactive web application, and JavaScript is required.",
-          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
-          "status": "entailed"
-        },
-        {
-          "text": "Simple HTML interfaces are possible, but that is not what this is.",
-          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
-          "status": "entailed"
-        },
-        {
-          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Claude's skill creator (literally, just ask it to make a skill) is still the best way to make reusable skills if you care about the details.",
-          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Claude's skill creator (literally, just ask it to make a skill) is still the best way to make reusable skills if you care about the details.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "099468bc5c73167e"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mtifkmoewc2n",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-20T04:23:19.045000+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-20 — outside lookback window"
-    },
-    {
-      "cluster_key": "f7646f8b4c400b8a",
-      "title": "Technology's effect on jobs changes over time In the First Industrial Revolution, handweaving had a \"Golden Age\" for 20 years because early machines…",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "ai"
-      ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu Technology's effect on jobs changes over time In the First Industrial Revolution, handweaving had a \"Golden Age\" for 20 years because early machines made cheap yarn, which drove up demand for weavers.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "This is a heavily interactive web application, and JavaScript is required.",
-          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
-          "status": "entailed"
-        },
-        {
-          "text": "Simple HTML interfaces are possible, but that is not what this is.",
-          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
-          "status": "entailed"
-        },
-        {
-          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Technology's effect on jobs changes over time\nIn the First Industrial Revolution, handweaving had a \"Golden Age\" for 20 years because early machines made cheap yarn, which drove up demand for weavers.",
-          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Technology's effect on jobs changes over time\nIn the First Industrial Revolution, handweaving had a \"Golden Age\" for 20 years because early machines made cheap yarn, which drove up demand for weavers.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "f7646f8b4c400b8a"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mti65op5ks25",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-20T02:10:48.764000+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-20 — outside lookback window"
-    },
-    {
-      "cluster_key": "bec8cb94438b97a9",
-      "title": "CVE-2026-12710 (CRITICAL 9.3): A Missing Authorization vulnerability in the QueryEngineTask of Google Cloud Application Integration (version…",
-      "category": "cyber_attacks",
-      "one_liner": "Google Cloud Application Integration contains a critical missing authorization vulnerability in its QueryEngineTask component.",
-      "tags": [
-        "cloud",
-        "release",
-        "vulnerability"
-      ],
-      "summary": "A critical missing authorization vulnerability, designated CVE-2026-12710 with a CVSS score of 9.3, has been identified in the QueryEngineTask component of Google Cloud Application Integration. The flaw allows unauthorized access or actions within cloud integration tasks due to improper privilege verification. While NIST provides baseline metadata pointers, detailed remediation steps require reviewing official Google Cloud security advisories. The severity level highlights the risk of unauthorized backend workflow manipulation.",
-      "key_facts": [
-        "CVE identifier: CVE-2026-12710",
-        "CVSS Score: 9.3 (Critical)",
-        "Affected component: QueryEngineTask in Google Cloud Application Integration"
-      ],
-      "bottom_line": "A missing authorization flaw in Google Cloud Application Integration exposes cloud workflows to potential unauthorized execution risks.",
-      "claims": [
-        {
-          "text": "A critical missing authorization vulnerability, designated CVE-2026-12710 with a CVSS score of 9.3, has been identified in the QueryEngineTask component of Google Cloud Application Integration.",
-          "support_span": "CVE-2026-12710 (CRITICAL 9.3): A Missing Authorization vulnerability in the QueryEngineTask of Google Cloud Application Integration (version…",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "alt_keys": [
-        "bec8cb94438b97a9"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12710",
-          "domain": "nist.gov",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-12710"
-      ],
-      "published": "2026-08-22T09:16:53.340000+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "42311753fd7269bd",
-      "title": "CVE-2026-77946 (CRITICAL 9.3): A vulnerability was determined in TRENDnet TEW-821DAP 2.2.01b05. Affected by this vulnerability is the functi…",
-      "category": "cyber_attacks",
-      "one_liner": "A critical stack-based buffer overflow in TRENDnet TEW-821DAP 2.2.01b05 allows remote unauthenticated attackers to execute arbitrary code.",
-      "tags": [
-        "exploit",
-        "hardware",
-        "release",
-        "vulnerability"
-      ],
-      "summary": "TRENDnet TEW-821DAP version 2.2.01b05 contains a stack-based buffer overflow vulnerability in the uci_safe_get function located within the NTP Timezone Configuration Handler (/cgi-bin/apply_time.cgi). Remote, unauthenticated attackers can exploit this flaw by manipulating input parameters such as system.ntp.server or time zone settings. The resulting vulnerability carries a critical CVSS score of 9.3 and can be leveraged to achieve remote code execution. Public proof-of-concept exploits for this issue are available.",
-      "key_facts": [
-        "CVE identifier: CVE-2026-77946",
-        "CVSS Score: 9.3 (Critical)",
-        "Affected product: TRENDnet TEW-821DAP 2.2.01b05"
-      ],
-      "bottom_line": "TRENDnet TEW-821DAP routers are vulnerable to remote code execution via unauthenticated parameter manipulation in the NTP configuration handler.",
-      "claims": [
-        {
-          "text": "TRENDnet TEW-821DAP version 2.2.01b05 contains a stack-based buffer overflow vulnerability in the uci_safe_get function located within the NTP Timezone Configuration Handler (/cgi-bin/apply_time.cgi).",
-          "support_span": "A vulnerability was determined in TRENDnet TEW-821DAP 2.2.01b05. Affected by this vulnerability is the functi…",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 70.0,
-      "is_new": true,
-      "alt_keys": [
-        "42311753fd7269bd"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77946",
-          "domain": "nist.gov",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-77946"
-      ],
-      "published": "2026-08-22T11:16:54.447000+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 70 = trust 70 / interest 100 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "76755294e4328c78",
-      "title": "CVE-2026-63310 (CRITICAL 9.3): NLTK before 3.9.3 fails to verify file integrity after downloading packages and before extraction in the down…",
-      "category": "cyber_attacks",
-      "one_liner": "NLTK before 3.9.3 is vulnerable to critical file integrity issues because downloaded packages are extracted without verification.",
-      "tags": [
-        "release",
-        "supply-chain",
-        "vulnerability"
-      ],
-      "summary": "NLTK versions prior to 3.9.3 suffer from a critical file integrity vulnerability (CVE-2026-63310) with a CVSS score of 9.3. The package manager fails to verify the integrity of downloaded corpus and package files prior to extraction during the download phase. This oversight leaves systems vulnerable to man-in-the-middle tampering or malicious package substitution during runtime downloads. Developers utilizing NLTK should update to version 3.9.3 or later to ensure cryptographic verification of fetched assets.",
-      "key_facts": [
-        "CVE identifier: CVE-2026-63310",
-        "CVSS Score: 9.3 (Critical)",
-        "Affected product: NLTK before 3.9.3"
-      ],
-      "bottom_line": "Applications using NLTK prior to 3.9.3 risk executing untrusted code or corrupted assets due to missing file verification during package downloads.",
-      "claims": [
-        {
-          "text": "NLTK versions prior to 3.9.3 suffer from a critical file integrity vulnerability (CVE-2026-63310) with a CVSS score of 9.3.",
-          "support_span": "CVE-2026-63310 (CRITICAL 9.3): NLTK before 3.9.3 fails to verify file integrity after downloading packages and before extraction in the down…",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "alt_keys": [
-        "76755294e4328c78"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63310",
-          "domain": "nist.gov",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-63310"
-      ],
-      "published": "2026-08-22T15:16:19.100000+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "c41678d7f8547845",
-      "title": "CVE-2026-57998 (HIGH 8.5): better-npm-audit through 3.11.0, and the 4.0.0-rc.2 prerelease, builds its npm audit command by interpolating…",
-      "category": "cyber_attacks",
-      "one_liner": "better-npm-audit through 3.11.0 allows command injection via unescaped registry options passed to a shell execution function.",
-      "tags": [
-        "appsec",
-        "release",
-        "supply-chain",
-        "tool",
-        "vulnerability",
-        "windows"
-      ],
-      "summary": "The better-npm-audit package through version 3.11.0 and the 4.0.0-rc.2 prerelease contain a high-severity command injection vulnerability. The tool constructs its npm audit command by directly interpolating the user-supplied --registry option into a string without validation or quoting, then passes it to child_process.exec(), which spawns a shell. An attacker who supplies a registry string containing shell metacharacters such as semicolons or pipes can execute arbitrary operating system commands with the privileges of the running process.",
-      "key_facts": [
-        "CVE identifier: CVE-2026-57998",
-        "CVSS Score: 8.5 (High)",
-        "Affected versions: <= 3.11.0, 4.0.0-rc.2"
-      ],
-      "bottom_line": "Passing malicious registry parameters to vulnerable versions of better-npm-audit will execute arbitrary OS commands with process privileges.",
-      "claims": [
-        {
-          "text": "The better-npm-audit package through version 3.11.0 and the 4.0.0-rc.2 prerelease contain a high-severity command injection vulnerability.",
-          "support_span": "better-npm-audit through 3.11.0, and the 4.0.0-rc.2 prerelease, builds its npm audit command by interpolating…",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "alt_keys": [
-        "c41678d7f8547845"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57998",
-          "domain": "nist.gov",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-57998"
-      ],
-      "published": "2026-08-22T13:16:38.263000+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "5a96a973c749134b",
-      "title": "CVE-2026-62243 (HIGH 8.7): Netty (io.netty:netty-handler) versions from 4.2.0.Final through 4.2.16.Final and versions through 4.1.136.Fi…",
-      "category": "cyber_attacks",
-      "one_liner": "Netty client OpenSSL path disables TLS hostname verification under certain Java configurations, enabling MITM attacks.",
-      "tags": [
-        "appsec",
-        "network",
-        "vulnerability"
-      ],
-      "summary": "Netty handler versions 4.2.0.Final through 4.2.16.Final and versions up to 4.1.136.Final disable TLS hostname verification on the SslProvider.OPENSSL client path under specific configurations. This occurs when a plain X509TrustManager is utilized and Unsafe-based trust-manager wrapping is unavailable, notably on Java 25 and newer. Consequently, the OpenSSL client fails to validate server hostnames, allowing man-in-the-middle attackers to present certificates issued for different domains and have them accepted without error. The issue is fixed in versions 4.2.17.Final and 4.1.137.Final.",
-      "key_facts": [
-        "CVE identifier: CVE-2026-62243",
-        "CVSS Score: 8.7 (High)",
-        "Fixed versions: 4.2.17.Final, 4.1.137.Final"
-      ],
-      "bottom_line": "Applications running Netty on Java 25+ with specific trust managers are vulnerable to MITM certificate spoofing due to disabled hostname verification.",
-      "claims": [
-        {
-          "text": "Netty handler versions 4.2.0.Final through 4.2.16.Final and versions up to 4.1.136.Final disable TLS hostname verification on the SslProvider.OPENSSL client path under specific configurations.",
-          "support_span": "Netty (io.netty:netty-handler) versions from 4.2.0.Final through 4.2.16.Final and versions through 4.1.136.Fi… disable TLS hostname verification on the SslProvider.OPENSSL client path when a plain (non-extended) X509TrustManager is used and Unsafe-based trust-manager wrapping is unavailable (Java 25+).",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "alt_keys": [
-        "5a96a973c749134b"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62243",
-          "domain": "nist.gov",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-62243"
-      ],
-      "published": "2026-08-22T13:16:39.687000+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "295131c17417fed0",
-      "title": "CVE-2026-62384 (HIGH 8.7): NLTK versions before 3.10.2 contain a symlink-based sandbox bypass in FramenetCorpusReader that allows attack…",
-      "category": "cyber_attacks",
-      "one_liner": "NLTK before 3.10.2 contains a sandbox bypass via symlinks in FramenetCorpusReader, exposing arbitrary XML files to readers.",
-      "tags": [
-        "appsec",
-        "supply-chain",
-        "vulnerability"
-      ],
-      "summary": "NLTK versions prior to 3.10.2 contain a symlink-based sandbox bypass vulnerability in FramenetCorpusReader. Attackers can place symbolic links with names lacking path separators inside the corpus subdirectory to successfully bypass path validation checks. When accessed via methods such as frame_by_name(), _lu_file(), or doc(), these symlinks resolve to arbitrary XML files outside the intended corpus root. This flaw allows unauthorized reading of sensitive files from the host system.",
-      "key_facts": [
-        "CVE identifier: CVE-2026-62384",
-        "CVSS Score: 8.7 (High)",
-        "Fixed version: 3.10.2"
-      ],
-      "bottom_line": "Attackers can exploit symlink flaws in NLTK's FramenetCorpusReader to read arbitrary files outside the corpus root directory.",
-      "claims": [
-        {
-          "text": "NLTK versions prior to 3.10.2 contain a symlink-based sandbox bypass vulnerability in FramenetCorpusReader.",
-          "support_span": "NLTK versions before 3.10.2 contain a symlink-based sandbox bypass in FramenetCorpusReader that allows attack…",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "alt_keys": [
-        "295131c17417fed0"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62384",
-          "domain": "nist.gov",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-62384"
-      ],
-      "published": "2026-08-22T15:16:18.700000+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "cc0579676221eb6a",
-      "title": "CVE-2026-62388 (HIGH 8.7): NLTK versions before 3.10.0 default to ENFORCE=False in pathsec.py, causing all security validation functions…",
-      "category": "cyber_attacks",
-      "one_liner": "NLTK < 3.10.0 defaults security validation to disabled warning mode, enabling bypasses for path traversal and pickling.",
-      "tags": [
-        "appsec",
-        "vulnerability"
-      ],
-      "summary": "NLTK versions prior to 3.10.0 default to ENFORCE=False in pathsec.py, causing all security validation functions to emit warning messages rather than raising exceptions. This misconfiguration permits attackers to bypass path traversal and pickle deserialization protections unless security controls are explicitly enabled manually. NLTK versions below 3.10.0 require manual updates or configuration changes to properly enforce file and deserialization safeguards.",
-      "key_facts": [
-        "Affected: NLTK before 3.10.0",
-        "CVSS Score: 8.7 High"
-      ],
-      "bottom_line": "NLTK versions before 3.10.0 fail to enforce security checks by default, silently downgrading path traversal and deserialization blocks into warnings.",
-      "claims": [
-        {
-          "text": "NLTK versions before 3.10.0 default to ENFORCE=False in pathsec.py, causing all security validation functions to emit warnings instead of raising exceptions.",
-          "support_span": "NLTK versions before 3.10.0 default to insignificance or NLTK versions before 3.10.0 default to ENFORCE=False in pathsec.py, causing all security validation functions to emit warnings instead of raising exceptions.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "alt_keys": [
-        "cc0579676221eb6a"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62388",
-          "domain": "nist.gov",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-62388"
-      ],
-      "published": "2026-08-22T15:16:18.967000+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "8856c93897241e8e",
-      "title": "OpenLabs-so/oa-design — The Open Analytics design language as an agent skill: component recipes with type-checked source, token CSS, a",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource",
-        "supply-chain",
-        "tool"
-      ],
-      "summary": "The design language of Open Analytics, packaged three ways: an agent skill, type-checked component recipes, and a CLI. People kept asking how the dashboard looks and moves the way it does; this repository is the answer, in a form an agent can execute. Every hex code, spring constant, radius and easing is lifted from the shipped product, with the reasoning attached.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "The design language of Open Analytics, packaged three ways: an agent skill, type-checked component recipes, and a CLI.",
-          "support_span": "The design language of Open Analytics, packaged three ways: an agent skill, type-checked component recipes, and a CLI.",
-          "status": "entailed"
-        },
-        {
-          "text": "People kept asking how the dashboard looks and moves the way it does; this repository is the answer, in a form an agent can execute.",
-          "support_span": "People kept asking how the dashboard looks and moves the way it does; this repository is the answer, in a form an agent can execute.",
-          "status": "entailed"
-        },
-        {
-          "text": "Every hex code, spring constant, radius and easing is lifted from the shipped product, with the reasoning attached.",
-          "support_span": "Every hex code, spring constant, radius and easing is lifted from the shipped product, with the reasoning attached.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "8856c93897241e8e",
-        "b05af914e2b0ea81"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/OpenLabs-so/oa-design",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/Jordanwei1/jiaojie-skill",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-20T08:57:52+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-20 — outside lookback window"
-    },
-    {
-      "cluster_key": "f655774091c9c829",
-      "title": "ArihantDeva/heimdall — Persistent memory for AI coding agents — one verified kb_search replaces the grep/find/ls orientation loop. Cr",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai",
-        "hardware",
-        "linux",
-        "llm",
-        "opensource",
-        "tool"
-      ],
-      "summary": "Your agent keeps rebuilding work you already did. Heimdall gives AI coding agents persistent memory across every repository and project you work on — so the question \"did I already solve this in another project?\" gets answered by one verified search instead of twenty minutes of grep, find, and ls loops. But your work isn't: the Excel tracker pattern you built last month solves the CSV-parsing problem in today's repo.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "Your agent keeps rebuilding work you already did.",
-          "support_span": "Your agent keeps rebuilding work you already did.",
-          "status": "entailed"
-        },
-        {
-          "text": "Heimdall gives AI coding agents persistent memory across every repository and project you work on — so the question \"did I already solve this in another project?\" gets answered by one verified search instead of twenty minutes of grep, find, and ls loops.",
-          "support_span": "Heimdall gives AI coding agents persistent memory across every repository and project you work on — so the question \"did I already solve this in another project?\" gets answered by one verified search instead of twenty minutes of grep, find, and ls loops.",
-          "status": "entailed"
-        },
-        {
-          "text": "But your work isn't: the Excel tracker pattern you built last month solves the CSV-parsing problem in today's repo.",
-          "support_span": "But your work isn't: the Excel tracker pattern you built last month solves the CSV-parsing problem in today's repo.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "f655774091c9c829"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/ArihantDeva/heimdall",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-20T16:22:22+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-20 — outside lookback window"
-    },
-    {
-      "cluster_key": "02ea87d03ed2b9c5",
-      "title": "sinyu1012/proxypin-mcp-workbench — 基于 ProxyPin 与 MCP 的自动化抓包、API 分析、Mock 场景和数据归档工作台，支持 移动端/Mac端 抓包并通过 MCP 让 AI 自动分析获取内容 / Mock 一系列接口。",
+      "cluster_key": "44774266b23702ce",
+      "title": "LeeHueeng/store-screenshots — 🖼️ AI agent skill for Claude Code & Codex — turns raw app screenshots into store-ready App Store & Google Play",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
         "agents",
         "ai",
         "android",
-        "linux",
-        "opensource",
-        "research",
-        "windows"
+        "llm",
+        "opensource"
       ],
-      "summary": "基于 ProxyPin 与 Model Context Protocol（MCP）的自动化抓包、API 分析、Mock 场景和数据归档工作台。 本项目面向开发、测试和个人数据迁移场景，将传统抓包工具里的“查看单条请求”扩展为可以长期复用的工作流：按任务归档请求、整理 API 资产、组合 Mock 规则，并让本地 AI 客户端通过 MCP 分析当前抓包会话。 本项目是非官方衍生项目，与 ProxyPin 及下列上游作者不存在官方隶属、授权代理或背书关系。请只分析自己拥有或明确获授权的设备、账号、应用和流量。 以下截图使用空白状态或匿名示例数据，不包含真实 Token、Cookie、设备标识、用户资料或业务域名。 本机抓包会将 macOS 流量从普通设备抓包中单独归拢，并支持按来源应用筛选。 - 自动化工作台：统一管理抓包项目、API 资产、数据导出和 Mock 场景。 - 抓包项目归档：按任务隔离请求并持续写入独立归档，清空实时列表也不会丢失项目记录。 - 采集方案：保存域名范围和人工操作步骤，下次可以按同一流程重新采集。 - API 资产整理：…",
+      "summary": "Raw app screenshots in → store-ready marketing images out. An AI agent skill for Claude Code & OpenAI Codex that adds device frames, branded backgrounds, and benefit-driven copy — at exact App Store & Google Play sizes. English · 한국어 Making App Store and Google Play screenshots by hand — opening Figma, hunting for device mockups, double-checking pixel sizes — gets old fast.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
         {
-          "text": "基于 ProxyPin 与 Model Context Protocol（MCP）的自动化抓包、API 分析、Mock 场景和数据归档工作台。\n本项目面向开发、测试和个人数据迁移场景，将传统抓包工具里的“查看单条请求”扩展为可以长期复用的工作流：按任务归档请求、整理 API 资产、组合 Mock 规则，并让本地 AI 客户端通过 MCP 分析当前抓包会话。\n本项目是非官方衍生项目，与 ProxyPin 及下列上游作者不存在官方隶属、授权代理或背书关系。请只分析自己拥有或明确获授权的设备、账号、应用和流量。\n以下截图使用空白状态或匿名示例数据，不包含真实 Token、Cookie、设备标识、用户资料或业务域名。\n本机抓包会将 macOS 流量从普通设备抓包中单独归拢，并支持按来源应用筛选。\n- 自动化工作台：统一管理抓包项目、API 资产、数据导出和 Mock 场景。\n- 抓包项目归档：按任务隔离请求并持续写入独立归档，清空实时列表也不会丢失项目记录。\n- 采集方案：保存域名范围和人工操作步骤，下次可以按同一流程重新采集。\n- API 资产整理：按方法、路径和响应结构聚合请求，减少重复翻找。\n- 数据导出：从归档中提取结构化记录，导出经过脱敏的 JSON 或 CSV。\n- Mock 场景合集：多条请求重写规则归入同一合集，通过一个开关整体启停。\n- 双列详情视图：宽屏同时查看 Request 与 Response；窄屏自动回退为标签页。\n- 本机应用归类：将 macOS 本机流量单独归拢，按已捕获应用筛选请求，同时保留手机与远端设备抓包视图。\n- MCP 自动化：本地 AI 客户端可以搜索请求、读取详情、对比接口和管理授权范围内的 Mock。\n代码、配置和截图中的产品名称、业务域名与场景均使用匿名或公开示例，例如“示例育儿应用”“示例订阅应用”和 example.com。\n- Flutter（建议使用项目配置对应的 FVM 版本）\n- macOS、Windows、Linux、Android 或 iOS 开发环境\n- macOS 桌面调试需要 Xcode 与 CocoaPods\nfvm flutter pub get\nfvm flutter run -d macos\n如果没有安装 FVM，也可以使用兼容版本的 flutter 命令。\n- 让手机和运行本项目的电脑连接同一局域网。\n- 在手机 Wi-Fi 中把 HTTP 代理指向电脑的局域网 IP 和应用显示的 HTTP 端口。\n- 先验证普通 HTTP 转发，再安装由当前设备本地生成的 CA。\n- iPhone 安装描述文件后，还需要在“证书信任设置”中开启完全信任。\n- HTTPS 解密尽量限定到正在测试的域名。\n- 完成后关闭手机代理、移除不再使用的 CA，并清理包含凭据的导出文件。\n详细流程见仓库内置的 ProxyPin 抓包工作流 Skill。\n默认情况下，MCP 服务只监听本机回环地址，手机连接的是 HTTP 代理端口，AI 客户端连接的是 MCP 端口，两者不要混用。\nMCP 健康检查：http://127.0.0.1:9101/health\nMCP JSON-RPC：http://127.0.0.1:9101/message\n使用仓库内的脱敏客户端：\npython3 skills/proxypin-capture-workflow/scripts/proxypin_mcp.py health\npython3 skills/proxypin-capture-workflow/scripts/proxypin_mcp.py tools\npython3 skills/proxypin-capture-workflow/scripts/proxypin_mcp.py \\\n  call search_requests '{\"urlKeyword\":\"example.com\",\"limit\":20}'\n辅助脚本默认遮盖常见 Token、Authorization、Cookie 和密码字段。只有确实需要在本机完成转换时才使用 --raw，不要把原始输出提交到仓库或粘贴到公开 Issue。\n本项目附带一套可复用的 ProxyPin 工作流：\nskills/proxypin-capture-workflow/\n├── SKILL.md\n├── agents/openai.yaml\n├── references/\n│   ├── capture-setup.md\n│   ├── export-and-mock.md\n│   └── mcp-analysis.md\n└── scripts/proxypin_mcp.py\n可以将整个目录复制到 Codex Skills 目录：\ncp -R skills/proxypin-capture-workflow ~/.codex/skills/\nSkill 包含手机代理诊断、iOS/Android CA 配置、MCP 请求分析、个人数据导出校验和 Mock 合集管理边界。\n- 仅处理自己拥有或明确获授权的流量。\n- 不要提交 HAR、抓包历史、运行日志、导出数据、Cookie、Authorization、查询 Token、设备标识或家庭成员资料。\n- 不要把 MCP 服务暴露到局域网或公网。\n- 不提供证书固定绕过、越狱、Root、Frida 注入或第三方付费权益绕过方案。\n- Mock 只能用于自己的应用或明确授权的测试环境。\n- 安装 CA 等同于授予 HTTPS 解密能力；只信任当前设备本地生成且指纹可核对的 CA。\n本分支不再随安装包分发共享 CA 私钥。新安装会在首次启动时于本机应用数据目录生成唯一 CA，私钥在 macOS/Linux 上限制为仅当前用户可读写。由旧版本升级的用户应在证书管理中重新生成一次 CA，并重新安装、核对和信任新证书。更多说明见 SECURITY.md。\nfvm flutter analyze lib/network/util/crts.dart lib/features/workbench\nfvm flutter test test/capture_plan_test.dart \\\n  test/har_archive_recovery_test.dart \\\n  test/network_panel_split_layout_test.dart \\\n  test/request_rewrite_diagnostics_test.dart \\\n  test/workbench_services_test.dart\nfvm flutter build macos --debug\ngit diff --check\n仓库还保留了部分上游的手工联调脚本，它们依赖本机证书样本、临时文件或本地 HTTP 服务，不属于可离线重复执行的自动化测试；公开发布前以以上定向测试和实际构建为准。\n界面改动至少应验证：宽屏与窄屏布局、Request/Response 正文、SSE/WebSocket、Cookies、Mock 诊断和跨断点窗口缩放。\n本公开仓库从经过脱敏的代码快照开始记录历史，并基于以下项目继续开发：\n- wanghongenpin/proxypin：原始 ProxyPin 项目。\n- SuxyEE/proxypin-mcp：早期 MCP 集成实现。\n- ouy160/proxypin-mcp-model：本仓库直接采用的代码基线。\n感谢所有上游作者和贡献者。上游链接、许可证与详细署名见 NOTICE；需要追溯原始实现时，请以对应上游仓库的公开历史为准。\n本项目继续采用 Apache License 2.0。原项目的版权、许可证和署名信息予以保留；新增代码及修改部分的版权归相应贡献者所有。",
-          "support_span": "基于 ProxyPin 与 Model Context Protocol（MCP）的自动化抓包、API 分析、Mock 场景和数据归档工作台。\n本项目面向开发、测试和个人数据迁移场景，将传统抓包工具里的“查看单条请求”扩展为可以长期复用的工作流：按任务归档请求、整理 API 资产、组合 Mock 规则，并让本地 AI 客户端通过 MCP 分析当前抓包会话。\n本项目是非官方衍生项目，与 ProxyPin 及下列上游作者不存在官方隶属、授权代理或背书关系。请只分析自己拥有或明确获授权的设备、账号、应用和流量。\n以下截图使用空白状态或匿名示例数据，不包含真实 Token、Cookie、设备标识、用户资料或业务域名。\n本机抓包会将 macOS 流量从普通设备抓包中单独归拢，并支持按来源应用筛选。\n- 自动化工作台：统一管理抓包项目、API 资产、数据导出和 Mock 场景。\n- 抓包项目归档：按任务隔离请求并持续写入独立归档，清空实时列表也不会丢失项目记录。\n- 采集方案：保存域名范围和人工操作步骤，下次可以按同一流程重新采集。\n- API 资产整理：按方法、路径和响应结构聚合请求，减少重复翻找。\n- 数据导出：从归档中提取结构化记录，导出经过脱敏的 JSON 或 CSV。\n- Mock 场景合集：多条请求重写规则归入同一合集，通过一个开关整体启停。\n- 双列详情视图：宽屏同时查看 Request 与 Response；窄屏自动回退为标签页。\n- 本机应用归类：将 macOS 本机流量单独归拢，按已捕获应用筛选请求，同时保留手机与远端设备抓包视图。\n- MCP 自动化：本地 AI 客户端可以搜索请求、读取详情、对比接口和管理授权范围内的 Mock。\n代码、配置和截图中的产品名称、业务域名与场景均使用匿名或公开示例，例如“示例育儿应用”“示例订阅应用”和 example.com。\n- Flutter（建议使用项目配置对应的 FVM 版本）\n- macOS、Windows、Linux、Android 或 iOS 开发环境\n- macOS 桌面调试需要 Xcode 与 CocoaPods\nfvm flutter pub get\nfvm flutter run -d macos\n如果没有安装 FVM，也可以使用兼容版本的 flutter 命令。\n- 让手机和运行本项目的电脑连接同一局域网。\n- 在手机 Wi-Fi 中把 HTTP 代理指向电脑的局域网 IP 和应用显示的 HTTP 端口。\n- 先验证普通 HTTP 转发，再安装由当前设备本地生成的 CA。\n- iPhone 安装描述文件后，还需要在“证书信任设置”中开启完全信任。\n- HTTPS 解密尽量限定到正在测试的域名。\n- 完成后关闭手机代理、移除不再使用的 CA，并清理包含凭据的导出文件。\n详细流程见仓库内置的 ProxyPin 抓包工作流 Skill。\n默认情况下，MCP 服务只监听本机回环地址，手机连接的是 HTTP 代理端口，AI 客户端连接的是 MCP 端口，两者不要混用。\nMCP 健康检查：http://127.0.0.1:9101/health\nMCP JSON-RPC：http://127.0.0.1:9101/message\n使用仓库内的脱敏客户端：\npython3 skills/proxypin-capture-workflow/scripts/proxypin_mcp.py health\npython3 skills/proxypin-capture-workflow/scripts/proxypin_mcp.py tools\npython3 skills/proxypin-capture-workflow/scripts/proxypin_mcp.py \\\n  call search_requests '{\"urlKeyword\":\"example.com\",\"limit\":20}'\n辅助脚本默认遮盖常见 Token、Authorization、Cookie 和密码字段。只有确实需要在本机完成转换时才使用 --raw，不要把原始输出提交到仓库或粘贴到公开 Issue。\n本项目附带一套可复用的 ProxyPin 工作流：\nskills/proxypin-capture-workflow/\n├── SKILL.md\n├── agents/openai.yaml\n├── references/\n│   ├── capture-setup.md\n│   ├── export-and-mock.md\n│   └── mcp-analysis.md\n└── scripts/proxypin_mcp.py\n可以将整个目录复制到 Codex Skills 目录：\ncp -R skills/proxypin-capture-workflow ~/.codex/skills/\nSkill 包含手机代理诊断、iOS/Android CA 配置、MCP 请求分析、个人数据导出校验和 Mock 合集管理边界。\n- 仅处理自己拥有或明确获授权的流量。\n- 不要提交 HAR、抓包历史、运行日志、导出数据、Cookie、Authorization、查询 Token、设备标识或家庭成员资料。\n- 不要把 MCP 服务暴露到局域网或公网。\n- 不提供证书固定绕过、越狱、Root、Frida 注入或第三方付费权益绕过方案。\n- Mock 只能用于自己的应用或明确授权的测试环境。\n- 安装 CA 等同于授予 HTTPS 解密能力；只信任当前设备本地生成且指纹可核对的 CA。\n本分支不再随安装包分发共享 CA 私钥。新安装会在首次启动时于本机应用数据目录生成唯一 CA，私钥在 macOS/Linux 上限制为仅当前用户可读写。由旧版本升级的用户应在证书管理中重新生成一次 CA，并重新安装、核对和信任新证书。更多说明见 SECURITY.md。\nfvm flutter analyze lib/network/util/crts.dart lib/features/workbench\nfvm flutter test test/capture_plan_test.dart \\\n  test/har_archive_recovery_test.dart \\\n  test/network_panel_split_layout_test.dart \\\n  test/request_rewrite_diagnostics_test.dart \\\n  test/workbench_services_test.dart\nfvm flutter build macos --debug\ngit diff --check\n仓库还保留了部分上游的手工联调脚本，它们依赖本机证书样本、临时文件或本地 HTTP 服务，不属于可离线重复执行的自动化测试；公开发布前以以上定向测试和实际构建为准。\n界面改动至少应验证：宽屏与窄屏布局、Request/Response 正文、SSE/WebSocket、Cookies、Mock 诊断和跨断点窗口缩放。\n本公开仓库从经过脱敏的代码快照开始记录历史，并基于以下项目继续开发：\n- wanghongenpin/proxypin：原始 ProxyPin 项目。\n- SuxyEE/proxypin-mcp：早期 MCP 集成实现。\n- ouy160/proxypin-mcp-model：本仓库直接采用的代码基线。\n感谢所有上游作者和贡献者。上游链接、许可证与详细署名见 NOTICE；需要追溯原始实现时，请以对应上游仓库的公开历史为准。\n本项目继续采用 Apache License 2.0。原项目的版权、许可证和署名信息予以保留；新增代码及修改部分的版权归相应贡献者所有。",
+          "text": "Raw app screenshots in → store-ready marketing images out.",
+          "support_span": "Raw app screenshots in → store-ready marketing images out.",
+          "status": "entailed"
+        },
+        {
+          "text": "An AI agent skill for Claude Code & OpenAI Codex that adds device frames, branded backgrounds, and benefit-driven copy — at exact App Store & Google Play sizes.",
+          "support_span": "An AI agent skill for Claude Code & OpenAI Codex that adds device frames, branded backgrounds, and benefit-driven copy — at exact App Store & Google Play sizes.",
+          "status": "entailed"
+        },
+        {
+          "text": "English · 한국어\nMaking App Store and Google Play screenshots by hand — opening Figma, hunting for device mockups, double-checking pixel sizes — gets old fast.",
+          "support_span": "English · 한국어\nMaking App Store and Google Play screenshots by hand — opening Figma, hunting for device mockups, double-checking pixel sizes — gets old fast.",
           "status": "entailed"
         }
       ],
@@ -721,7 +201,7 @@
       "blend": 0.0,
       "is_new": true,
       "alt_keys": [
-        "02ea87d03ed2b9c5"
+        "44774266b23702ce"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -729,46 +209,49 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/sinyu1012/proxypin-mcp-workbench",
+          "url": "https://github.com/LeeHueeng/store-screenshots",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-20T04:07:43+00:00",
+      "published": "2026-08-21T03:48:58+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-20 — outside lookback window"
+      "reject_reason": "published 2026-08-21 — outside lookback window"
     },
     {
-      "cluster_key": "5b868fa99c4bdd97",
-      "title": "abligail/narralume — Open-source AI-assisted writing studio for long-form fiction. 故事设定、正文版本、AI 协作、审稿与交付一体化的长篇小说写作工具。",
+      "cluster_key": "cf935b1146d582ac",
+      "title": "ApodexAI/FrontierAgent — 🧩 FrontierAgent, our agent framework, open-sourced alongside it — native command-line TUI, ReAct and Agent Tea",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
+        "agents",
         "ai",
         "howto",
         "opensource",
+        "release",
+        "research",
         "tool"
       ],
-      "summary": "Hosted demo · Releases · User guide · Source · 中文 The hard part of a novel is rarely generating the next paragraph. It is keeping characters, chronology, promises, outline decisions, and tens of thousands of existing words in agreement. A change may affect several chapters, and an AI suggestion should not become part of the book simply because it was generated.",
+      "summary": "FrontierAgent is an open-source agent runtime, terminal product, and evaluation suite for long-horizon research and file-based work. The frontier-agent TUI ships two native workflows: - ReAct — one stateful agent researches, reads files, writes deliverables, runs commands, and iterates in a task-scoped sandbox. - Agent Team — a coordinator maintains a task board, delegates independent work to parallel sub-agents, collects their reports, and synthesizes the result.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
         {
-          "text": "Hosted demo · Releases · User guide · Source · 中文\nThe hard part of a novel is rarely generating the next paragraph.",
-          "support_span": "Hosted demo · Releases · User guide · Source · 中文\nThe hard part of a novel is rarely generating the next paragraph.",
+          "text": "FrontierAgent is an open-source agent runtime, terminal product, and evaluation\nsuite for long-horizon research and file-based work.",
+          "support_span": "FrontierAgent is an open-source agent runtime, terminal product, and evaluation\nsuite for long-horizon research and file-based work.",
           "status": "entailed"
         },
         {
-          "text": "It is keeping characters, chronology, promises, outline decisions, and tens of thousands of existing words in agreement.",
-          "support_span": "It is keeping characters, chronology, promises, outline decisions, and tens of thousands of existing words in agreement.",
+          "text": "The frontier-agent TUI\nships two native workflows:\n- ReAct — one stateful agent researches, reads files, writes deliverables, runs commands, and iterates in a task-scoped sandbox.",
+          "support_span": "The frontier-agent TUI\nships two native workflows:\n- ReAct — one stateful agent researches, reads files, writes deliverables, runs commands, and iterates in a task-scoped sandbox.",
           "status": "entailed"
         },
         {
-          "text": "A change may affect several chapters, and an AI suggestion should not become part of the book simply because it was generated.",
-          "support_span": "A change may affect several chapters, and an AI suggestion should not become part of the book simply because it was generated.",
+          "text": "- Agent Team — a coordinator maintains a task board, delegates independent work to parallel sub-agents, collects their reports, and synthesizes the result.",
+          "support_span": "- Agent Team — a coordinator maintains a task board, delegates independent work to parallel sub-agents, collects their reports, and synthesizes the result.",
           "status": "entailed"
         }
       ],
@@ -778,7 +261,7 @@
       "blend": 0.0,
       "is_new": true,
       "alt_keys": [
-        "5b868fa99c4bdd97"
+        "cf935b1146d582ac"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -786,28 +269,202 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/abligail/narralume",
+          "url": "https://github.com/ApodexAI/FrontierAgent",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-20T16:16:58+00:00",
+      "published": "2026-08-22T05:07:35+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-20 — outside lookback window"
+      "reject_reason": "published 2026-08-22 — outside lookback window"
     },
     {
-      "cluster_key": "1b6fcf121dfae12a",
-      "title": "Anubis continues to expose new ways people configure webservers https://xeiaso.net/notes/2026/anubis-csp-worker-hell/",
+      "cluster_key": "e43e9fc8d062a934",
+      "title": "unclecode/modelprint — Who is really behind that API? Fingerprint any OpenAI-compatible endpoint in the browser: 9 infrastructure pro",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
         "ai",
+        "llm",
+        "opensource",
+        "tool",
         "windows"
       ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Xe xeiaso.net did:plc:e5nncb3dr5thdkjir5cfaqfe Anubis continues to expose new ways people configure webservers https://xeiaso.net/notes/2026/anubis-csp-worker-hell/ https://xeiaso.net/notes/2026/anubis-csp-worker-hell/?utm_campaign=mi_irl&utm_medium=social&utm_source=bluesky 2026-08-19T20:20:50.066Z",
+      "summary": "One page that answers one question: who is really behind that API? Run infrastructure probes against any OpenAI-compatible endpoint and compare the fingerprints, side by side. Try it: modelprint.ai No install, no build, no server.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "One page that answers one question: who is really behind that API?",
+          "support_span": "One page that answers one question: who is really behind that API?",
+          "status": "entailed"
+        },
+        {
+          "text": "Run infrastructure probes against any OpenAI-compatible endpoint and compare the fingerprints, side by side.",
+          "support_span": "Run infrastructure probes against any OpenAI-compatible endpoint and compare the fingerprints, side by side.",
+          "status": "entailed"
+        },
+        {
+          "text": "Try it: modelprint.ai No install, no build, no server.",
+          "support_span": "Try it: modelprint.ai No install, no build, no server.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "e43e9fc8d062a934"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/unclecode/modelprint",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-21T12:16:56+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-21 — outside lookback window"
+    },
+    {
+      "cluster_key": "32607f1587dc963d",
+      "title": "sodiumsun/agenttrail — Local observability map for AI coding agents. Watch Claude Code, Codex, and Cursor plans, tool calls, file cha",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "appsec",
+        "llm",
+        "opensource",
+        "tool"
+      ],
+      "summary": "Your coding agent has been working for half an hour. Did it quietly reopen the part it already called done? agenttrail is a local, open-source observability layer for AI coding agents.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Your coding agent has been working for half an hour.",
+          "support_span": "Your coding agent has been working for half an hour.",
+          "status": "entailed"
+        },
+        {
+          "text": "Did it quietly reopen the part it already called done?",
+          "support_span": "Did it quietly reopen the part it already called done?",
+          "status": "entailed"
+        },
+        {
+          "text": "agenttrail is a local, open-source observability layer for AI coding agents.",
+          "support_span": "agenttrail is a local, open-source observability layer for AI coding agents.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "32607f1587dc963d"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/sodiumsun/agenttrail",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-21T21:14:33+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-21 — outside lookback window"
+    },
+    {
+      "cluster_key": "3611e4211e8da69c",
+      "title": "halofyai/halofy — Halofy is the open access and governance layer for AI agents across your organization. Identity, policy, prove",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "linux",
+        "opensource"
+      ],
+      "summary": "The open access and governance layer for AI agents across your organization. Give every agent the right organizational context through one identity and policy model, with provenance, audit, and signed erasure. As AI spreads across an organization, every agent needs access to shared context without becoming its own identity system, policy engine, or audit silo.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "The open access and governance layer for AI agents across your organization.",
+          "support_span": "The open access and governance layer for AI agents across your organization.",
+          "status": "entailed"
+        },
+        {
+          "text": "Give every agent the right organizational context through one identity and policy model, with provenance, audit, and signed erasure.",
+          "support_span": "Give every agent the right organizational context through one identity and policy model, with provenance, audit, and signed erasure.",
+          "status": "entailed"
+        },
+        {
+          "text": "As AI spreads across an organization, every agent needs access to shared context without becoming its own identity system, policy engine, or audit silo.",
+          "support_span": "As AI spreads across an organization, every agent needs access to shared context without becoming its own identity system, policy engine, or audit silo.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "3611e4211e8da69c"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/halofyai/halofy",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-22T06:09:53+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-22 — outside lookback window"
+    },
+    {
+      "cluster_key": "244a471e2404a534",
+      "title": "I asked GPT-5.6 Sol to create the most Claude-y possible parody image and what it came up with is pretty great and dead-on.",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "ai",
+        "llm"
+      ],
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu I asked GPT-5.6 Sol to create the most Claude-y possible parody image and what it came up with is pretty great and dead-on.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
@@ -822,8 +479,8 @@
           "status": "entailed"
         },
         {
-          "text": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  Anubis continues to expose new ways people configure webservers\nhttps://xeiaso.net/notes/2026/anubis-csp-worker-hell/\nhttps://xeiaso.net/notes/2026/anubis-csp-worker-hell/?utm_campaign=mi_irl&utm_medium=social&utm_source=bluesky\n  2026-08-19T20:20:50.066Z",
-          "support_span": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  Anubis continues to expose new ways people configure webservers\nhttps://xeiaso.net/notes/2026/anubis-csp-worker-hell/\nhttps://xeiaso.net/notes/2026/anubis-csp-worker-hell/?utm_campaign=mi_irl&utm_medium=social&utm_source=bluesky\n  2026-08-19T20:20:50.066Z",
+          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  I asked GPT-5.6 Sol to create the most Claude-y possible parody image and what it came up with is pretty great and dead-on.",
+          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  I asked GPT-5.6 Sol to create the most Claude-y possible parody image and what it came up with is pretty great and dead-on.",
           "status": "entailed"
         }
       ],
@@ -833,60 +490,275 @@
       "blend": 0.0,
       "is_new": true,
       "alt_keys": [
-        "1b6fcf121dfae12a"
+        "244a471e2404a534"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Xe Iaso",
-          "url": "https://bsky.app/profile/xeiaso.net/post/3mthklult3g2p",
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mtl46sita22j",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-19T20:20:49.851000+00:00",
+      "published": "2026-08-21T06:13:38.039000+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-19 — outside lookback window"
+      "reject_reason": "published 2026-08-21 — outside lookback window"
     },
     {
-      "cluster_key": "277b76c189431d7e",
-      "title": "BanglaVeilGuard: Cross-Script Safety Benchmarking and Lightweight Guardrails for Bangla Large Language Models",
-      "category": "tech_ai",
-      "one_liner": "This is a significant development for securing LLM deployments in the linguistically complex Indian and Bengali markets.",
-      "tags": [
-        "ai",
-        "india",
-        "llm",
-        "policy",
-        "research",
-        "tool"
-      ],
-      "summary": "BanglaVeilGuard is a new safety benchmark and prompt guard designed to secure Bangla LLMs against unsafe inputs across multiple scripts and dialects. The system addresses the challenge of Bangla users frequently mixing scripts (Romanized, Banglish) and regional registers, which standard English-centric benchmarks miss. By using multi-view normalization and a prompt-risk classifier, the guard screens prompts without requiring changes to the underlying model's weights. Testing showed a dramatic reduction in attack success rates for models like Claude Opus 4.8 and BanglaLLama, though it does increase over-refusal on benign dialectal prompts.",
-      "key_facts": [
-        "Prompts: 2,366",
-        "ASR reduction: 93.8-100.0% to 6.3%",
-        "Target: Claude Opus 4.8, BanglaLLama, TituLLM"
-      ],
-      "bottom_line": "Effective safety for Bangla LLMs requires handling cross-script and code-mixed inputs rather than relying on standard-script benchmarks.",
+      "cluster_key": "e1f89ebd272791b1",
+      "title": "We're very happy to welcome our 48th government CERT to @haveibeenpwned.com - Sri Lanka! www.troyhunt.com/welcoming-th...",
+      "category": "cyber_attacks",
+      "one_liner": "Cyber Attacks: single report, unconfirmed.",
+      "tags": [],
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Troy Hunt troyhunt.com did:plc:hg47czad2gksha3a7iyhwyan We're very happy to welcome our 48th government CERT to @haveibeenpwned.com - Sri Lanka!",
+      "key_facts": [],
+      "bottom_line": "",
       "claims": [
         {
-          "text": "The benchmark includes 2,366 quality-filtered prompts covering six language forms.",
-          "support_span": "The benchmark contains 2,366 quality-filtered prompts and a held-out 354-prompt evaluation split spanning unsafe, safe, and safe-sensitive requests.",
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
           "status": "entailed"
         },
         {
-          "text": "The prompt guard reduced attack success rates for Claude Opus 4.8 to 6.3%.",
-          "support_span": "Across target-model families, guarded runs reduce attack success under deterministic response scoring from 93.8--100.0% to 6.3% for Claude Opus 4.8, BanglaLLama, and TituLLM",
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "status": "entailed"
+        },
+        {
+          "text": "Post\n  Troy Hunt\n  troyhunt.com\n  did:plc:hg47czad2gksha3a7iyhwyan\n  We're very happy to welcome our 48th government CERT to @haveibeenpwned.com - Sri Lanka!",
+          "support_span": "Post\n  Troy Hunt\n  troyhunt.com\n  did:plc:hg47czad2gksha3a7iyhwyan\n  We're very happy to welcome our 48th government CERT to @haveibeenpwned.com - Sri Lanka!",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "e1f89ebd272791b1"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Troy Hunt",
+          "url": "https://bsky.app/profile/troyhunt.com/post/3mtq6uyp7uk2e",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-23T06:45:08.914000+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-23 — outside lookback window"
+    },
+    {
+      "cluster_key": "69d041d582b73275",
+      "title": "EXCLUSIVE: China's Moonshot in talks with Microsoft, Amazon, Google over K3 revenue sharing, sources say",
+      "category": "markets",
+      "one_liner": "Moonshot's revenue-sharing talks with Microsoft, Amazon, and Google signal expanding global commercialization of Chinese LLMs.",
+      "tags": [
+        "ai",
+        "llm",
+        "windows"
+      ],
+      "summary": "Chinese artificial intelligence startup Moonshot is reportedly engaged in discussions with major tech giants Microsoft, Amazon, and Google concerning revenue-sharing arrangements for its K3 model. The talks highlight global technology collaborations and cross-border commercial frameworks surrounding advanced foundational LLMs. Such partnerships could significantly impact market positioning and cloud infrastructure distribution for Chinese AI developers.",
+      "key_facts": [],
+      "bottom_line": "China's Moonshot is in talks with Microsoft, Amazon, and Google regarding K3 model revenue-sharing arrangements.",
+      "claims": [
+        {
+          "text": "EXCLUSIVE: China's Moonshot in talks with Microsoft, Amazon, and Google over K3 revenue sharing, sources say",
+          "support_span": "EXCLUSIVE: China's Moonshot in talks with Microsoft, Amazon, and Google over K3 revenue sharing, sources say",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 22,
+      "interest_score": 50,
+      "corroboration": 2,
+      "blend": 43.0,
+      "is_new": true,
+      "alt_keys": [
+        "69d041d582b73275",
+        "f8552ffca3fffc25"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPaWlQbDBkTjZOWlNxMFJUeDkxc0taQllySUkzRzJ4aHJrSzlVQTY5LVhqU2dfd2lUSGZSVjI2dVFPQnZ5X0FuRThHT0JDRkxJTTlLUVFETjM5Y0lGbzFwUkhGWFNVOUJQX1NWZ09SZDViVWNZTmI1TFY4ODUwZXl2UGh5VnRETVhhbDQ4NHh5bmU2YXZXdGZEbnlSUmVZVEZ2dUd3ampaeW94bkhBaEhhRkNKQ1E1QlJSZUFDUTZ5eGFERHlPZHo3TnFaQTJZVUdt?oc=5",
+          "domain": "reuters.com",
+          "tier": "C"
+        },
+        {
+          "name": "Startup Fortune",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZUdZWnc1alNicnJYd3UzWENfRnE1b3h0YkNmV3B2eXJmQkM1aHA3VWlMZ0dDbk9tRnZZMlE5UkQzNTBBanZtSkV3UThER0c5YkZORDBaR2lxT1FjR0R0SXVEbzQ2OS1ucmZTanB3QWVaOS1HQUpGUmlzQkpBOEcyelNmOEh1WEh4Z1FkaVRycV95WkRuaVRYaTM0dkx4QjZ1TUE?oc=5",
+          "domain": "startup-fortune.publisher",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-26T14:44:05+00:00",
+      "trace": [
+        "tier C (+10)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 43 = trust 22 / interest 50 / corrob 50"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "a935dc7f3ab3ddf4",
+      "title": "'Nearly 300 Indians Among Thousands Reported Missing': Nepal Foreign Minister Shisir Khanal On Floods",
+      "category": "india_world",
+      "one_liner": "Nepal Foreign Minister highlights that nearly 300 Indians are missing following border flash floods.",
+      "tags": [
+        "india",
+        "policy"
+      ],
+      "summary": "Speaking at the NDTV World Anviksha Summit, Nepal Foreign Minister Shisir Khanal addressed the severe flash flood crisis affecting the region, noting that nearly 300 Indian nationals are among the thousands reported missing.",
+      "key_facts": [
+        "Missing Indians: Nearly 300"
+      ],
+      "bottom_line": "The humanitarian crisis from Nepal's flash floods directly impacts hundreds of missing Indian citizens.",
+      "claims": [
+        {
+          "text": "'Nearly 300 Indians Among Thousands Reported Missing': Nepal Foreign Minister Shisir Khanal On Floods",
+          "support_span": "'Nearly 300 Indians Among Thousands Reported Missing': Nepal Foreign Minister Shisir Khanal On Floods",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "alt_keys": [
+        "a935dc7f3ab3ddf4"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/india-news/nearly-300-indians-among-thousands-reported-missing-nepal-foreign-minister-shishir-khanal-on-floods-11964634#publisher=newsstand",
+          "domain": "ndtv.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-27T09:18:13+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 25 / interest 75 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "40c07ea8ba19ef30",
+      "title": "Reassembling Distributed Risk: Trajectory-Conditioned Action Generation for Multi-Turn Agent Safety",
+      "category": "tech_ai",
+      "one_liner": "ReDiR injects compressed trajectory-level safety representations during generation to block multi-turn distributed tool-use attacks below 8% success.",
+      "tags": [
+        "agents",
+        "ai",
+        "appsec",
+        "blueteam",
+        "llm",
+        "research",
+        "tool"
+      ],
+      "summary": "Tool-using LLM agents can distribute a harmful objective across multiple seemingly benign requests and tool calls, allowing attacks to emerge only at the trajectory level. Existing defenses depend on auxiliary online reasoning or post-generation checks, adding high inference costs. The authors propose ReDiR (Reassembling Distributed Risk), a generation-time defense that compresses the active multi-agent trajectory into a compact latent safety representation and injects it into the base model. Evaluated across two agent-safety benchmarks and eight held-out tool domains, ReDiR reduces attack success rates to below 8% while preserving task fidelity.",
+      "key_facts": [
+        "Attack success rate: below 8%"
+      ],
+      "bottom_line": "ReDiR prevents multi-turn distributed safety attacks on tool-using LLM agents by conditioning generation on a compressed trajectory-level safety representation.",
+      "claims": [
+        {
+          "text": "ReDiR reduces attack success rates to below 8%, transfers to unseen tool domains, and preserves benign fidelity with low computational overhead.",
+          "support_span": "ReDiR reduces attack success rates to below 8%, transfers to unseen tool domains, and preserves benign fidelity with low computational overhead.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": true,
+      "alt_keys": [
+        "40c07ea8ba19ef30"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.CR",
+          "url": "https://arxiv.org/abs/2608.25711",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2608.25711"
+      ],
+      "published": "2026-08-27T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "d024883adc3f7307",
+      "title": "EMRB: A Multi-Level Benchmark for Evaluating LLM Reasoning over Raw Electromagnetic Signals",
+      "category": "tech_ai",
+      "one_liner": "EMRB benchmarks LLM capabilities in analyzing raw electromagnetic signals, exposing steep performance drops on complex system design.",
+      "tags": [
+        "ai",
+        "llm",
+        "privacy",
+        "release",
+        "research",
+        "tool"
+      ],
+      "summary": "Large Language Models are increasingly evaluated on their ability to act as code agents, but their capability to analyze raw physical-layer measurements has remained unmeasured. To address this, researchers introduce EMRB (Electromagnetic Reasoning Benchmark), containing 200 problems across five difficulty levels and 27 question types derived from 11 raw I/O signal types. Evaluations across 14 LLMs showed scores dropping steeply from 84.9% on basic measurements down to 21.2% on system design. Furthermore, the proposed structured method 'ReconPilot' raised overall scores by 3.8 to 17.6 points across backbones by separating reconnaissance, analysis, and self-verification.",
+      "key_facts": [
+        "Benchmark: EMRB",
+        "Problems: 200",
+        "Difficulty levels: 5",
+        "Question types: 27",
+        "Models evaluated: 14"
+      ],
+      "bottom_line": "LLMs struggle significantly with raw electromagnetic signal analysis, though structured reconnaissance workflows like ReconPilot improve performance.",
+      "claims": [
+        {
+          "text": "We introduce EMRB, which evaluates whether LLMs can analyze raw I/Q data by writing and running code.",
+          "support_span": "We introduce \\textbf{EMRB} (\\textbf{E}lectro\\textbf{m}agnetic \\textbf{R}easoning \\textbf{Benchmark}), which evaluates whether LLMs can analyze raw I/Q data by writing and running code.",
           "status": "contradicted"
         },
         {
-          "text": "The system uses multi-view normalization to screen prompts without altering model weights.",
-          "support_span": "BanglaVeilGuard uses non-destructive multi-view normalization with a prompt-risk classifier and thresholded pre-generation gate, allowing it to screen prompts for heterogeneous target models without changing their weights.",
+          "text": "EMRB contains 200 problems across five difficulty levels and 27 question types.",
+          "support_span": "EMRB contains 200 problems across five difficulty levels and 27 question types, from signal detection to OFDM design, generated from 11 signal types with verified ground truth.",
           "status": "entailed"
         }
       ],
@@ -896,36 +768,28 @@
       "blend": 47.5,
       "is_new": true,
       "alt_keys": [
-        "277b76c189431d7e",
-        "5e578641f8c420a7"
+        "d024883adc3f7307"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2608.21880",
-          "domain": "arxiv.org",
-          "tier": "A"
-        },
-        {
           "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2608.21664",
+          "url": "https://arxiv.org/abs/2608.24086",
           "domain": "arxiv.org",
           "tier": "A"
         }
       ],
       "primary_links": [
-        "https://arxiv.org/abs/2608.21664",
-        "https://arxiv.org/abs/2608.21880"
+        "https://arxiv.org/abs/2608.24086"
       ],
-      "published": "2026-08-25T04:00:00+00:00",
+      "published": "2026-08-27T04:00:00+00:00",
       "trace": [
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "importance 3/5 from cache",
+        "importance 3/5 from gemini-3.5-flash-lite",
         "blend 48 = trust 70 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
@@ -986,42 +850,85 @@
       "reject_reason": "published 2026-08-20 — outside lookback window"
     },
     {
-      "cluster_key": "d4199a5635c3862f",
-      "title": "AgentFlow: A Flow-Centric Policy Language and Framework for Securing LLM Agent Systems",
+      "cluster_key": "d253f3a741cc7bd7",
+      "title": "\"System Bent, Didn't Break\": Shashi Tharoor On India's Gen Z Protest vs Other Countries",
+      "category": "india_world",
+      "one_liner": "Shashi Tharoor analyzes South Asian governance and Gen Z protests at the NDTV World Anviksha Summit.",
+      "tags": [
+        "india",
+        "policy",
+        "tool"
+      ],
+      "summary": "At the NDTV World Anviksha Summit, Shashi Tharoor discussed governance models across South Asia, contrasting political stability and youth-led Gen Z protests in neighboring countries with India's democratic framework.",
+      "key_facts": [],
+      "bottom_line": "Regional political comparisons highlight structural differences in how democratic systems handle youth protests in South Asia.",
+      "claims": [
+        {
+          "text": "\"System Bent, Didn't Break\": Shashi Tharoor On India's Gen Z Protest vs Other Countries",
+          "support_span": "\"System Bent, Didn't Break\": Shashi Tharoor On India's Gen Z Protest vs Other Countries",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 25.0,
+      "is_new": true,
+      "alt_keys": [
+        "d253f3a741cc7bd7"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/india-news/system-bent-didnt-break-shashi-tharoor-on-indias-gen-z-protest-vs-others-11965674#publisher=newsstand",
+          "domain": "ndtv.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-27T08:20:17+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 25 = trust 25 / interest 25 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "50d94b889caaa939",
+      "title": "ToolMinimize: Auditing and Rewriting LLM Agent Tool Calls to Minimize Privacy Exposure",
       "category": "tech_ai",
-      "one_liner": "This framework provides a robust way to implement data-flow guardrails in agentic systems, preventing multi-step exploitation.",
+      "one_liner": "ToolMinimize acts as a middleware to rewrite LLM agent tool call arguments, cutting privacy exposure by over 80% without losing validity.",
       "tags": [
         "agents",
         "ai",
-        "appsec",
         "llm",
-        "policy",
-        "release",
+        "privacy",
         "research",
         "tool"
       ],
-      "summary": "AgentFlow is a new policy language and runtime framework designed to secure LLM agents by monitoring the flow of sensitive data across multiple steps. Unlike traditional systems that check single actions, AgentFlow uses a reference monitor to enforce constraints on where data can travel, including tool invocations and delegation boundaries. Evaluation on benchmarks like AgentDojo showed that the framework could reduce confirmed compromises from 33% to 0% while actually improving overall utility. The system includes an SMT-based verifier to check safety properties in under half a second.",
+      "summary": "LLM agents routinely include privacy-sensitive data (PSD) in tool call arguments beyond what is required, crossing trust boundaries to third-party services. Measurements show 81-88% of default tool calls include unnecessary PSD, dropping only to 36-76% with explicit instructions. Researchers introduce ToolMinimize, a middleware intercepting tool calls to rewrite arguments to the minimum necessary data through removal, generalization, substitution, and truncation. Live validation on production models reduced privacy cost by 81.2-92.0% with 100% task validity and a median latency of 1.77 ms.",
       "key_facts": [
-        "AgentDojo compromise reduction: 33.0% to 0.0%",
-        "AgentDyn compromise reduction: 73.5% to 0.0%",
-        "Verification time: < 0.5s"
+        "Models tested: GPT-4o, Claude 3.5 Sonnet, Llama-3.3-70B",
+        "Privacy cost reduction: 81.2–92.0%",
+        "Median latency: 1.77 ms",
+        "Tool calls evaluated: 307"
       ],
-      "bottom_line": "Securing LLM agents requires monitoring data flows across sequences of actions rather than just validating individual steps in isolation.",
+      "bottom_line": "LLM agents habitually overshare private data in tool calls, but automated middleware rewriting can strip unnecessary PII with minimal latency.",
       "claims": [
         {
-          "text": "AgentFlow reduced confirmed compromise from 33.0% to 0.0% on the AgentDojo benchmark.",
-          "support_span": "On 949 AgentDojo injected cases across four suites, AgentFlow reduces confirmed compromise from 33.0% to 0.0% while improving aggregate utility from 46.7% to 63.3%.",
+          "text": "A controlled measurement on three production LLMs shows that 81-88% of tool calls include unnecessary PSD under default prompts.",
+          "support_span": "A controlled measurement on three production LLMs (GPT-4o, Claude 3.5 Sonnet, Llama-3.3-70B) shows that 81--88\\% of tool calls include unnecessary PSD under default prompts; explicit privacy instructions still leave 36--76\\% over-sharing.",
+          "status": "entailed"
+        },
+        {
+          "text": "Live validation reduces privacy cost by 81.2-92.0% at 100% argument-level task validity with a median latency of 1.77 ms.",
+          "support_span": "Live validation on 307 tool calls across the three LLMs above reduces privacy cost by 81.2--92.0\\% at 100\\% argument-level task validity (TOST equivalence p{<}0.001 at \\Delta{=}1.0); ... Median latency is 1.77\\,ms.",
           "status": "contradicted"
-        },
-        {
-          "text": "The framework uses a runtime reference monitor to mediate agent actions.",
-          "support_span": "A runtime reference monitor mediates agent actions, and a bounded SMT-based verifier checks safety properties for a structured policy fragment.",
-          "status": "entailed"
-        },
-        {
-          "text": "Safety properties can be verified in less than 0.5 seconds.",
-          "support_span": "In our prototype, seven safety properties verify in under 0.5 seconds each, and the verifier catches all seeded unsafe policy variants in our study.",
-          "status": "entailed"
         }
       ],
       "trust_score": 70,
@@ -1030,8 +937,7 @@
       "blend": 58.8,
       "is_new": true,
       "alt_keys": [
-        "d4199a5635c3862f",
-        "d729e72ab7a4c01c"
+        "50d94b889caaa939"
       ],
       "critical_signal": "",
       "priority": "important",
@@ -1039,64 +945,100 @@
       "sources": [
         {
           "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2608.22868",
-          "domain": "arxiv.org",
-          "tier": "A"
-        },
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2608.23471",
+          "url": "https://arxiv.org/abs/2608.24957",
           "domain": "arxiv.org",
           "tier": "A"
         }
       ],
       "primary_links": [
-        "https://arxiv.org/abs/2608.22868",
-        "https://arxiv.org/abs/2608.23471"
+        "https://arxiv.org/abs/2608.24957"
       ],
-      "published": "2026-08-25T04:00:00+00:00",
+      "published": "2026-08-27T04:00:00+00:00",
       "trace": [
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "importance 4/5 from cache",
+        "importance 4/5 from gemini-3.5-flash-lite",
         "blend 59 = trust 70 / interest 75 / corrob 25",
         "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "d5bb9924adb5f0c3",
-      "title": "HP partners with U.S.-blacklisted Huawei for licensing the Chinese company's WiFi tech",
-      "category": "markets",
-      "one_liner": "HP licensing Huawei's WiFi tech demonstrates how foundational standards override geopolitical trade bans in global patent pools.",
+      "cluster_key": "0da054bb8c95742c",
+      "title": "ACE: A Self-Correcting Agentic Canvas Editor for Multi-Slide Presentation Automation",
+      "category": "tech_ai",
+      "one_liner": "ACE combines a hierarchical scene-graph editor, content-aware routing, and self-correction to automate multi-slide presentations reliably.",
       "tags": [
-        "hardware",
-        "markets",
+        "agents",
+        "ai",
+        "llm",
         "network",
-        "policy"
+        "research"
       ],
-      "summary": "U.S.-based personal computing firm HP has signed a multi-year global cross-licensing agreement for WiFi patents from Chinese telecoms giant Huawei. The deal follows a patent dispute involving the Sisvel WiFi 6 patent pool, of which Huawei is a founding member, allowing HP access to approximately 2,000 wireless network connectivity patents. This partnership marks a notable adoption of Huawei technology outside China despite the company having been placed on a U.S. blacklist in 2019, which restricted its dealings with American suppliers. The agreement also features reciprocal patent rights granted by HP to Huawei.",
+      "summary": "Commercial design platforms use LLM agents to edit documents, but legacy flat formats force agents to recompute coordinates and break layouts. The authors present ACE, an agentic canvas editor built over a hierarchical scene-graph with 98 specialized tools, paired with CARE (a content-aware router cutting input tokens by ~89%) and a self-correction loop driven by a ground-truth-free instruction-following judge. ACE significantly outperforms single-turn HTML pipelines on instruction following (4.23 vs 3.81) at 1.75x the speed and ~44% lower cost, with blind raters favoring ACE in 58.7% of decisive wins.",
       "key_facts": [
-        "Patents accessed: 2,000 wireless connectivity patents",
-        "Patent pool: Sisvel WiFi 6",
-        "U.S. blacklist year: 2019"
+        "Action space: 98 tools",
+        "Input token reduction: ~89%",
+        "Instruction following score: 4.23 vs 3.81",
+        "Speedup: 1.75x"
       ],
-      "bottom_line": "HP has signed a multi-year global agreement to license WiFi patents from U.S.-blacklisted Huawei, signaling practical technology adoption through standard patent pools despite trade restrictions.",
+      "bottom_line": "ACE achieves superior automated slide editing and layout stability by coupling a hierarchical scene-graph with iterative self-correction.",
       "claims": [
         {
-          "text": "U.S.-based personal computing and printing firm HP has signed a multi-year global agreement for licensing certain WiFi patents from Chinese telecoms giant Huawei",
-          "support_span": "U.S.-based personal computing and printing firm HP has signed a multi-year global agreement for licensing certain WiFi patents from Chinese telecoms giant Huawei, the companies announced Wednesday.",
-          "status": "entailed"
-        },
+          "text": "adding self-correction lifts ACE significantly above it on instruction following (IF 4.23 vs.\ref{tab:main} 3.81 on the full 94-task benchmark, paired p{=}.010, replicated by an out-of-loop judge) at 1.75$\times$ the speed and $\tilde{}$44% lower cost.",
+          "support_span": "adding self-correction lifts ACE significantly above it on instruction following (IF 4.23 vs.\ref{tab:main} 3.81 on the full 94-task benchmark, paired p{=}.010, replicated by an out-of-loop judge) at 1.75$\times$ the speed and $\tilde{}$44% lower cost.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "alt_keys": [
+        "0da054bb8c95742c"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
         {
-          "text": "Huawei was one of the founding members of the patent pool, called Sisvel WiFi 6.",
-          "support_span": "Huawei was one of the founding members of the patent pool, called Sisvel WiFi 6.",
-          "status": "entailed"
-        },
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2608.24103",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2608.24103"
+      ],
+      "published": "2026-08-27T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "81c91beaca8d86d6",
+      "title": "\"3 Countries, 1 Mountain System\": Nepal Leader's Call For Action To India, China",
+      "category": "india_world",
+      "one_liner": "Nepal leader calls on India and China for joint regional action on mountain disaster management.",
+      "tags": [
+        "india",
+        "policy"
+      ],
+      "summary": "During the NDTV Summit, Nepalese leader Rabi Lamichhane called for collaborative regional action between India, China, and Nepal to manage shared ecological and disaster risks across their interconnected mountain systems.",
+      "key_facts": [],
+      "bottom_line": "Mitigating cross-border natural disasters requires coordinated multilateral cooperation between India, Nepal, and China.",
+      "claims": [
         {
-          "text": "The latest global cross-licensing agreement includes valuable reciprocal patent rights from HP",
-          "support_span": "The latest global cross-licensing agreement includes valuable reciprocal patent rights from HP",
+          "text": "\"3 Countries, 1 Mountain System\": Nepal Leader's Call For Action To India, China",
+          "support_span": "\"3 Countries, 1 Mountain System\": Nepal Leader's Call For Action To India, China",
           "status": "contradicted"
         }
       ],
@@ -1106,21 +1048,21 @@
       "blend": 36.2,
       "is_new": true,
       "alt_keys": [
-        "d5bb9924adb5f0c3"
+        "81c91beaca8d86d6"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "CNBC Finance",
-          "url": "https://www.cnbc.com/2026/08/25/hp-partners-huawei-wifi-tech-us-entity-list.html",
-          "domain": "cnbc.com",
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/india-news/nepal-flash-flood-3-countries-1-mountain-system-nepal-leaders-call-for-action-to-india-china-11966254#publisher=newsstand",
+          "domain": "ndtv.com",
           "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-26T02:01:01+00:00",
+      "published": "2026-08-27T10:19:07+00:00",
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
@@ -1130,345 +1072,105 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "1880d87acfa2d589",
-      "title": "Identify, eliminate threats before they grow big: Amit Shah urges security agencies",
+      "cluster_key": "a01e2d45eb0c30d6",
+      "title": "IBPS Clerk Recruitment 2026: Registration For 11,403 Vacancies Ends Tomorrow",
       "category": "india_world",
-      "one_liner": "Amit Shah's directive to use AI for predictive policing and tighten internal security frameworks sets a clear compliance mandate for Indian law enforcement.",
+      "one_liner": "IBPS Clerk recruitment registration for 11,403 positions closes tomorrow, utilizing a two-tier online testing model.",
       "tags": [
-        "ai",
-        "blueteam",
-        "india",
-        "policy",
-        "research",
-        "supply-chain",
-        "tool"
+        "india"
       ],
-      "summary": "Union Home Minister Amit Shah addressed the Intelligence Bureau's National Security Strategy Conference, urging security agencies to anticipate and eliminate threats before they escalate into major crises. Outlining a four-pronged border security strategy aimed at making India 'infiltrator-free', Shah stressed that internal security is fundamental to achieving a developed nation status by 2047. He highlighted the upcoming full implementation of three new criminal laws within a year to expedite court cases and increase conviction rates, while calling for the expansion of the 'Prahar' anti-terror framework and the Narcotics Control Vision Document 2026-2029. Furthermore, Shah urged young officers to leverage artificial intelligence for data integration and criminal analysis across platforms like CCTNS, ICJS, NatGrid, and NAFIS.",
+      "summary": "Registration for the IBPS Clerk Recruitment 2026, covering 11,403 vacancies, is set to conclude tomorrow. The comprehensive selection process requires candidates to clear a two-tier online examination structure. The recruitment drive opens significant employment opportunities within the Indian banking sector. Applicants are advised to complete their submissions before the fast-approaching deadline.",
       "key_facts": [
-        "Timeline for criminal laws implementation: Within a year",
-        "Narcotics vision document: Narcotics Control Vision Document 2026-2029",
-        "Target year for developed India: 2047"
+        "Vacancies: 11,403",
+        "Selection process: Two-tier online examination"
       ],
-      "bottom_line": "Union Home Minister Amit Shah urged security agencies to adopt a proactive, AI-driven approach to border control, counter-terrorism, and narcotics prevention to secure India's long-term development.",
+      "bottom_line": "Prospective banking candidates have until tomorrow to submit applications for over 11,000 clerk vacancies.",
       "claims": [
         {
-          "text": "Union Home Minister Amit Shah on Tuesday... said India’s security policy must be framed keeping in view emerging global challenges... while urging security agencies to anticipate threats before they become major crises.",
-          "support_span": "Union Home Minister Amit Shah on Tuesday (August 25, 2026) said India’s security policy must be framed keeping in view emerging global challenges, including geopolitical instability, energy and resource insecurity, supply chain disruptions, rising radicalisation and cyber misinformation campaigns, while urging security agencies to anticipate threats before they become major crises.",
-          "status": "entailed"
-        },
-        {
-          "text": "the three new criminal laws would be implemented fully within a year.",
-          "support_span": "The Home Minister said the three new criminal laws would be implemented fully within a year.",
+          "text": "Registration for IBPS Clerk Recruitment 2026 across 11,403 vacancies ends tomorrow.",
+          "support_span": "IBPS Clerk Recruitment 2026: The Registration For 11,403 Vacancies Ends Tomorrow",
           "status": "contradicted"
         },
         {
-          "text": "integrated databases linking CCTNS, ICJS, NatGrid and NAFIS had been created. He urged young officers to use artificial intelligence for data integration",
-          "support_span": "Highlighting the role of technology in policing, Mr. Shah said integrated databases linking CCTNS, ICJS, NatGrid and NAFIS had been created. He urged young officers to use artificial intelligence for data integration, analysis and identifying criminal modus operandi to generate actionable intelligence and prevent future threats.",
+          "text": "The selection process involves a two-tier online examination.",
+          "support_span": "The selection process involves a two-tier online examination.",
           "status": "entailed"
         }
       ],
       "trust_score": 25,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "alt_keys": [
-        "1880d87acfa2d589"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/national/identify-eliminate-threats-before-they-grow-big-amit-shah-urges-security-agencies/article71390304.ece",
-          "domain": "thehindu.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-25T20:30:03+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "907caa93cbe60bcf",
-      "title": "CyberFactory: Scaling Cyber Security Capabilities with Instances from the Wild",
-      "category": "tech_ai",
-      "one_liner": "CyberFactory converts public CVEs into executable task instances to train open-source security agents that outperform base models.",
-      "tags": [
-        "agents",
-        "ai",
-        "exploit",
-        "howto",
-        "llm",
-        "malware",
-        "opensource",
-        "research"
-      ],
-      "summary": "While closed-source LLMs advance in cybersecurity capabilities, open-source solutions often lack reproducible training and scalable agentic data. Researchers introduced CyberFactory, a unified open-source framework connecting data construction, trajectory synthesis, and model training for tasks like proof-of-concept generation, vulnerability patching, and CyberQA. CyberFactory converts public CVE artifacts into executable task instances and uses a reusable vulnerability-analysis skill to guide teacher models through execution feedback. Using these trajectories, the team trained a security model that reaches 52.4% Pass@1 on CyberGym under a one-hour budget, outperforming its Qwen 3.5 base model by 22.8 points.",
-      "key_facts": [
-        "Benchmark: CyberGym",
-        "Performance: 52.4% Pass@1",
-        "Improvement: +22.8 points over Qwen 3.5 base model"
-      ],
-      "bottom_line": "CyberFactory successfully automates the translation of wild CVE artifacts into scalable training trajectories for open-source cybersecurity agents.",
-      "claims": [
-        {
-          "text": "On CyberGym, the model reaches 52.4% Pass@1 under a one-hour budget, improving over its Qwen 3.5 base model by +22.8 points.",
-          "support_span": "On CyberGym, \nmodelname reaches 52.4% Pass@1 under a one-hour budget, improving over its Qwen~3.5 base model by +22.8 points and outperforming the evaluated general-purpose backbones under the same scaffold.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "alt_keys": [
-        "907caa93cbe60bcf"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2608.23181",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2608.23181"
-      ],
-      "published": "2026-08-25T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from cache",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "9109ab790e66a236",
-      "title": "24 npm Packages Abuse unpkg Mirrors to Host Fake Cloudflare CAPTCHA Pages",
-      "category": "cyber_attacks",
-      "one_liner": "This highlights a clever supply-chain abuse where the npm registry itself is used as a CDN for phishing pages.",
-      "tags": [
-        "llm",
-        "malware",
-        "opensource",
-        "research",
-        "supply-chain",
-        "threat-intel",
-        "windows"
-      ],
-      "summary": "Researchers have discovered a campaign where 24 npm packages are being used as free hosting infrastructure for phishing pages by abusing unpkg mirrors. The packages contain a single HTML page that, when rendered via unpkg.com, displays a fake Cloudflare CAPTCHA designed to redirect users to ClickFix phishing sites. The threat actors have also utilized KeyVal, a public key-value store, as a dead drop resolver to dynamically update redirection URLs and evade domain blocklists. This technique allows malicious content to persist on trusted CDN infrastructure even after the original packages are removed from the npm registry.",
-      "key_facts": [
-        "Package Count: 24 npm packages",
-        "Infrastructure Abused: unpkg.com, KeyVal (api.keyval.org)",
-        "Phishing Style: ClickFix / Fake CAPTCHA"
-      ],
-      "bottom_line": "Attackers are turning legitimate developer tools and npm mirrors into persistent, trusted hosting for phishing infrastructure that is difficult to take down.",
-      "claims": [
-        {
-          "text": "Threat actors are using npm mirrors as free storage for phishing infrastructure.",
-          "support_span": "the threat actor’s use of npm isn't to infect developers who install it, but to use the registry and its mirrors as a safe, validated storage for the malware",
-          "status": "entailed"
-        },
-        {
-          "text": "The campaign uses KeyVal as a dead drop resolver to extract redirection URLs.",
-          "support_span": "switching to KeyVal (\"api.keyval[.]org\"), a free, public key-value store... it turns the legitimate service into a dead drop resolver (DDR) and uses it to extract and decode the URL to which the victim is redirected to.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 37,
-      "interest_score": 50,
-      "corroboration": 2,
-      "blend": 46.8,
-      "is_new": true,
-      "alt_keys": [
-        "9109ab790e66a236",
-        "b3f5ba30b958f106",
-        "c2c830c05e6fc1ae",
-        "e7c2149d23bc6913"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/hackers-abuse-npm-mirrors-to-host-phishing-redirect-pages/",
-          "domain": "bleepingcomputer.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/08/24-npm-packages-abuse-unpkg-mirrors-to.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPb0F5SDk3OXJmcHczLTFCeVpZUFlmQjNxZTcxR09FRUxUUGtIbjZ2QVpWbzlabTBGanNDeG90SE9sMTFCeTV6TTZ5bDBRdW5Kd1J6NW1Pc0c0ZUV0M3Y3Nko0ZXloVFBoa1ZKTHF0dEhscGFneGRWVFg3cEVvU21MUW1nQkxsRWRpa0lsUlY1eFBsZW5wdlk5Qi1qeXJPOGVNUXRid0h1alB2Zk9leUHSAa4BQVVfeXFMT29BeUg5NzlyZnB3My0xQnlaWVBZZkIzcWU3MUdPRUVMVFBrSG42dkFaVm85Wm0wRmpzQ3hvdEhPbDExQnk1ek02eWwwUXVuSndSejVtT3NHNGVFdDN2NzZKNGV5aFRQaGtWSkxxdHRIbHBhZ3hkVlRYN3BFb1NtTFFtZ0JMbEVkaWtJbFJWNXhQbGVucHZZOUItanlyTzhlTVF0YndIdWpQdmZPZXlB?oc=5",
-          "domain": "bleepingcomputer.com",
-          "tier": "C"
-        },
-        {
-          "name": "The Hacker News",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNajVtakZjNG5rdXlKa28zUUZxbFJJY1NwWHlRZTRUU3d2cVlHWFRFMjlaS2NrazJNUXpiWW9ZdzVLRnpOZjBnUzlxakFHVy1uRUJwRUV1U195OUI0dy1oc0lrZmVjOV9XbElOa0kxVThnYXdlSkVTcDFBUlZqOUZUNm8tcw?oc=5",
-          "domain": "thehackernews.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-25T11:52:00+00:00",
-      "trace": [
-        "tier B (+25)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 3/5 from cache",
-        "blend 47 = trust 37 / interest 50 / corrob 50"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "45db857ff0bac441",
-      "title": "China hits out at 'illegal' new US sanctions on Iran and trading partners",
-      "category": "india_world",
-      "one_liner": "U.S. sweeping financial sanctions on Iran and its trading partners threaten to provoke severe trade friction with Beijing ahead of upcoming presidential talks.",
-      "tags": [
-        "india",
-        "markets",
-        "policy",
-        "tool"
-      ],
-      "summary": "China has vowed to protect its interests and take necessary measures after U.S. Treasury Secretary Scott Bessent announced a wide-ranging financial offensive against Iran, dubbed 'Operation Economic Outcast'. The new sanctions target nearly 60 entities, individuals, and vessels globally, aiming to isolate any nation or financial institution continuing economic partnerships with Tehran. China, which remains the largest buyer of Iranian oil, criticized the unilateral actions as illegal under international law. The diplomatic friction escalates amidst a broader conflict that has disrupted traffic through the Strait of Hormuz, driven up global oil prices, and preceded upcoming talks between President Donald Trump and Chinese President Xi Jinping.",
-      "key_facts": [
-        "Sanctioned targets: Almost 60 entities, individuals, and vessels",
-        "Operation name: Operation Economic Outcast",
-        "CEE / Economist cited: David Oxley"
-      ],
-      "bottom_line": "The U.S. has launched a massive financial offensive against Iran and its trading partners, prompting Beijing to vow retaliatory measures to safeguard its commercial interests.",
-      "claims": [
-        {
-          "text": "Foreign ministry spokesman Lin Jian said China was firmly opposed to what it called 'illegal unilateral sanctions' and would take 'all necessary measures' to safeguard its rights.",
-          "support_span": "Foreign ministry spokesman Lin Jian said China was firmly opposed to what it called \"illegal unilateral sanctions\" and would take \"all necessary measures\" to safeguard its rights.",
-          "status": "entailed"
-        },
-        {
-          "text": "US Treasury Secretary Scott Bessent announced the new measures on Monday, warning any nation financially partnering with Iran would be isolated.",
-          "support_span": "This came after US Treasury Secretary Scott Bessent announced the new measures on Monday, warning any nation financially partnering with Iran would be isolated.",
-          "status": "entailed"
-        },
-        {
-          "text": "The US has dubbed its latest sanctions 'Operation Economic Outcast' and described them as an 'economic D-Day' against Iran.",
-          "support_span": "The US has dubbed its latest sanctions 'Operation Economic Outcast' and described them as an 'economic D-Day' against Iran.",
-          "status": "contradicted"
-        },
-        {
-          "text": "The Treasury had mapped financial channels, facilitators and networks used by Iran to evade sanctions to trade oil, imposing sanctions on almost 60 entities, individuals and vessels.",
-          "support_span": "He said the Treasury had mapped financial channels, facilitators and networks used by Iran to evade sanctions to trade oil, imposing sanctions on almost 60 entities, individuals and vessels.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 62.5,
-      "is_new": false,
-      "alt_keys": [
-        "45db857ff0bac441"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/clyl8965j5go?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-25T11:53:36+00:00",
-      "trace": [
-        "tier A (+40)",
-        "single outlet, established publication (tier A)",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 62 = trust 40 / interest 100 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "4ce37faf72c5a447",
-      "title": "Chrome Stable for iOS Update",
-      "category": "cyber_tools",
-      "one_liner": "Chrome Stable for iOS received a routine version update notification.",
-      "tags": [
-        "android",
-        "release",
-        "vulnerability"
-      ],
-      "summary": "This article is a brief release notice for Chrome Stable for iOS published on Tuesday, August 25, 2026, containing no technical payload or patch details.",
-      "key_facts": [],
-      "bottom_line": "Chrome Stable for iOS has been updated.",
-      "claims": [
-        {
-          "text": "Tuesday, August 25, 2026 Give us feedback in our Product Forums.",
-          "support_span": "Tuesday, August 25, 2026 Give s feedback in our Product Forums.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 0,
+      "interest_score": 25,
       "corroboration": 1,
       "blend": 25.0,
       "is_new": true,
       "alt_keys": [
-        "4ce37faf72c5a447",
-        "eeb6181ec09b6ee5"
+        "a01e2d45eb0c30d6"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Chromium Releases",
-          "url": "http://chromereleases.googleblog.com/2026/08/chrome-stable-for-ios-update_071142905.html",
-          "domain": "chromereleases.googleblog.com",
-          "tier": "A"
-        },
-        {
-          "name": "Chromium Releases",
-          "url": "http://chromereleases.googleblog.com/2026/08/chrome-stable-for-ios-update_0773762116.html",
-          "domain": "chromereleases.googleblog.com",
-          "tier": "A"
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/education/ibps-clerk-recruitment-2026-registration-for-11-403-vacancies-ends-on-august-28-11966182#publisher=newsstand",
+          "domain": "ndtv.com",
+          "tier": "B"
         }
       ],
-      "primary_links": [
-        "http://chromereleases.googleblog.com/2026/08/chrome-stable-for-ios-update_071142905.html",
-        "http://chromereleases.googleblog.com/2026/08/chrome-stable-for-ios-update_0773762116.html"
-      ],
-      "published": "2026-08-19T16:58:32+00:00",
+      "primary_links": [],
+      "published": "2026-08-27T10:14:42+00:00",
       "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 1/5 from gemini-3.5-flash-lite",
-        "blend 25 = trust 70 / interest 0 / corrob 25"
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 25 = trust 25 / interest 25 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "8e2b345cae8c7f21",
+      "title": "\"No Boasting\": Shashi Tharoor's Advice To Media As India Sends Help To Nepal",
+      "category": "india_world",
+      "one_liner": "Shashi Tharoor advises media restraint as India extends disaster relief to Nepal.",
+      "tags": [
+        "india",
+        "policy"
+      ],
+      "summary": "Shashi Tharoor emphasized restraint and responsible reporting to the media as India coordinates humanitarian relief efforts and assistance for flood-hit Nepal.",
+      "key_facts": [],
+      "bottom_line": "Humanitarian assistance efforts in Nepal should be managed without unnecessary political boasting.",
+      "claims": [
+        {
+          "text": "\"No Boasting\": Shashi Tharoor's Advice To Media As India Sends Help To Nepal",
+          "support_span": "\"No Boasting\": Shashi Tharoor's Advice To Media As India Sends Help To Nepal",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 25.0,
+      "is_new": true,
+      "alt_keys": [
+        "8e2b345cae8c7f21"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/india-news/nepal-flash-flood-no-boasting-shashi-tharoors-advice-to-media-as-india-sends-help-to-nepal-11965425#publisher=newsstand",
+          "domain": "ndtv.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-27T08:21:37+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 25 = trust 25 / interest 25 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     }

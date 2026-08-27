@@ -5,5 +5,10 @@
     "_blocked": [
       "gemma-4-26b-a4b-it"
     ]
+  },
+  "2026-08-27": {
+    "gemini-3.5-flash-lite": 7,
+    "gemini-3.1-flash-lite": 1,
+    "gemma-4-26b-a4b-it": 2
   }
 }
