@@ -1,40 +1,44 @@
 {
-  "generated_at": "2026-08-31T07:26:53.748351+00:00",
+  "generated_at": "2026-09-01T06:45:41.513345+00:00",
   "items": [
     {
-      "cluster_key": "dd458a8db5bc209d",
-      "title": "Just blogged: It's very easy to pull email addresses from a data breach and make claims about scope that are completely wrong. Like - MASSIVELY wrong…",
+      "cluster_key": "a79493b21229c965",
+      "title": "Extortion Group Claims Manchester Airports Group Data Breach",
       "category": "cyber_attacks",
-      "one_liner": "Cyber Attacks: single report, unconfirmed.",
+      "one_liner": "Cyber Attacks: carried by 2 outlets.",
       "tags": [
-        "incident"
+        "incident",
+        "ransomware",
+        "threat-intel"
       ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Troy Hunt troyhunt.com did:plc:hg47czad2gksha3a7iyhwyan Just blogged: It's very easy to pull email addresses from a data breach and make claims about scope that are completely wrong.",
+      "summary": "The FulcrumSec extortion group has claimed responsibility for the recently disclosed Manchester Airports Group (MAG) data breach. The largest airport group in the UK, MAG owns and operates Manchester, London Stansted, and East Midlands airports. MAG disclosed the incident on August 27, notifying customers that hackers stole data associated with car park, lounge, and Fast Track bookings, as well as in-airport Wi-Fi sign-ups at all three airports.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
         {
-          "text": "This is a heavily interactive web application, and JavaScript is required.",
-          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "text": "The FulcrumSec extortion group has claimed responsibility for the recently disclosed Manchester Airports Group (MAG) data breach.",
+          "support_span": "The FulcrumSec extortion group has claimed responsibility for the recently disclosed Manchester Airports Group (MAG) data breach.",
           "status": "entailed"
         },
         {
-          "text": "Simple HTML interfaces are possible, but that is not what this is.",
-          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "text": "The largest airport group in the UK, MAG owns and operates Manchester, London Stansted, and East Midlands airports.",
+          "support_span": "The largest airport group in the UK, MAG owns and operates Manchester, London Stansted, and East Midlands airports.",
           "status": "entailed"
         },
         {
-          "text": "Post\n  Troy Hunt\n  troyhunt.com\n  did:plc:hg47czad2gksha3a7iyhwyan\n  Just blogged: It's very easy to pull email addresses from a data breach and make claims about scope that are completely wrong.",
-          "support_span": "Post\n  Troy Hunt\n  troyhunt.com\n  did:plc:hg47czad2gksha3a7iyhwyan\n  Just blogged: It's very easy to pull email addresses from a data breach and make claims about scope that are completely wrong.",
+          "text": "MAG disclosed the incident on August 27, notifying customers that hackers stole data associated with car park, lounge, and Fast Track bookings, as well as in-airport Wi-Fi sign-ups at all three airports.",
+          "support_span": "MAG disclosed the incident on August 27, notifying customers that hackers stole data associated with car park, lounge, and Fast Track bookings, as well as in-airport Wi-Fi sign-ups at all three airports.",
           "status": "entailed"
         }
       ],
       "trust_score": 0,
       "interest_score": 0,
-      "corroboration": 1,
+      "corroboration": 2,
       "blend": 0.0,
       "is_new": true,
       "alt_keys": [
+        "a79493b21229c965",
+        "ce128ed0b2969793",
         "dd458a8db5bc209d"
       ],
       "critical_signal": "",
@@ -42,9 +46,21 @@
       "verdict": "rejected",
       "sources": [
         {
+          "name": "SecurityWeek",
+          "url": "https://www.securityweek.com/extortion-group-claims-manchester-airports-group-data-breach/",
+          "domain": "securityweek.com",
+          "tier": "B"
+        },
+        {
           "name": "Troy Hunt",
           "url": "https://bsky.app/profile/troyhunt.com/post/3mtwyanq7xc2k",
           "domain": "bsky.app",
+          "tier": "C"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPTnBHekxPVVI1enFweDYybllISkYxeVVJcndpS2dyMmNJR2dvZTVyNW04bDZpdzVKTDZrMXI1eHkzZEZ2TmQ0VGFkeXg1SFZTOXpLNURfMDFVMW84T2FPd01fU3NjaWMtLXRwbmYxUVEtUWlGV2hGTkI5NHozUzEzN1BWNEFaOFV3R0NBYlZLN1ZkMjF60gGaAUFVX3lxTE81Nld2UGFlSVhHckZWeU9zdDNmVlNJdFRmRThOcVc1UGhOSjlUTFdnb0JCQ09iWXUwc2ZZT094ZThnQk1ycjQyQUljWGtlV3hxdEV6TWs3Z1k4ME5mNEI3RXFiY0JkQXRjeF9pLXZqWTg4Tnk1UUF0SUJvR0JFY2RiVWR3cV9QM2V3VUNIQ3ppbm1sbThlY3pXUlE?oc=5",
+          "domain": "securityweek.com",
           "tier": "C"
         }
       ],
@@ -56,14 +72,73 @@
       "reject_reason": "published 2026-08-25 — outside lookback window"
     },
     {
-      "cluster_key": "eb32d41cd53e0242",
-      "title": "From @randomwalker.bsky.social: state-level data center bans have very little impact overall on AI progress due to rising efficiency. If your concern…",
+      "cluster_key": "6712f333434e288d",
+      "title": "Brevard County deputy sheriff Michael Fultz resigned from the force after an internal investigation detailed extreme cases of alleged sexual miscondu…",
+      "category": "cyber_attacks",
+      "one_liner": "Cyber Attacks: single report, unconfirmed.",
+      "tags": [],
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post 404 Media 404media.co did:plc:vcepp6trx4vpe5ourxso4tjl Brevard County deputy sheriff Michael Fultz resigned from the force after an internal investigation detailed extreme cases of alleged sexual misconduct, racism, and abuse, including Fultz’s use of Flock to stalk his ex-girlfriend.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "status": "entailed"
+        },
+        {
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "status": "entailed"
+        },
+        {
+          "text": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  Brevard County deputy sheriff Michael Fultz resigned from the force after an internal investigation detailed extreme cases of alleged sexual misconduct, racism, and abuse, including Fultz’s use of Flock to stalk his ex-girlfriend.",
+          "support_span": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  Brevard County deputy sheriff Michael Fultz resigned from the force after an internal investigation detailed extreme cases of alleged sexual misconduct, racism, and abuse, including Fultz’s use of Flock to stalk his ex-girlfriend.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "6712f333434e288d",
+        "deb10f0cef4df2ee"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3muara256bx2w",
+          "domain": "bsky.app",
+          "tier": "C"
+        },
+        {
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mu3idq5n222x",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-27T18:33:44.060000+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-27 — outside lookback window"
+    },
+    {
+      "cluster_key": "944615ee93ba573e",
+      "title": "I know it is a lot for instructors who never asked for AI to change things about their teaching, but if you teach and have not updated your expectati…",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
         "ai"
       ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu From @randomwalker.bsky.social: state-level data center bans have very little impact overall on AI progress due to rising efficiency.",
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu I know it is a lot for instructors who never asked for AI to change things about their teaching, but if you teach and have not updated your expectations over the last 6 months over what AI can do (a lot more), its error rate (a lot less) and its ubiquity among you…",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
@@ -78,8 +153,8 @@
           "status": "entailed"
         },
         {
-          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  From @randomwalker.bsky.social: state-level data center bans have very little impact overall on AI progress due to rising efficiency.",
-          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  From @randomwalker.bsky.social: state-level data center bans have very little impact overall on AI progress due to rising efficiency.",
+          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  I know it is a lot for instructors who never asked for AI to change things about their teaching, but if you teach and have not updated your expectations over the last 6 months over what AI can do (a lot more), its error rate (a lot less) and its ubiquity among your students (near total), you need to\n  2026-08-26T15:00:51.672Z",
+          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  I know it is a lot for instructors who never asked for AI to change things about their teaching, but if you teach and have not updated your expectations over the last 6 months over what AI can do (a lot more), its error rate (a lot less) and its ubiquity among your students (near total), you need to\n  2026-08-26T15:00:51.672Z",
           "status": "entailed"
         }
       ],
@@ -89,7 +164,7 @@
       "blend": 0.0,
       "is_new": true,
       "alt_keys": [
-        "eb32d41cd53e0242"
+        "944615ee93ba573e"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -97,213 +172,41 @@
       "sources": [
         {
           "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mtu2ue3p7c2j",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mtyly5pyh22e",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-24T19:43:51.288000+00:00",
+      "published": "2026-08-26T15:00:51.397000+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-24 — outside lookback window"
+      "reject_reason": "published 2026-08-26 — outside lookback window"
     },
     {
-      "cluster_key": "f04035fd4370d03a",
-      "title": "Note to anyone sending in an application, paper, or any other document where one person reads many submissions: yes, they can tell. It is obvious in…",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "ai",
-        "research"
-      ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu Note to anyone sending in an application, paper, or any other document where one person reads many submissions: yes, they can tell.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "This is a heavily interactive web application, and JavaScript is required.",
-          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
-          "status": "entailed"
-        },
-        {
-          "text": "Simple HTML interfaces are possible, but that is not what this is.",
-          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
-          "status": "entailed"
-        },
-        {
-          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Note to anyone sending in an application, paper, or any other document where one person reads many submissions: yes, they can tell.",
-          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Note to anyone sending in an application, paper, or any other document where one person reads many submissions: yes, they can tell.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "f04035fd4370d03a"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mttuzjyiyc2j",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-24T17:59:22.798000+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-24 — outside lookback window"
-    },
-    {
-      "cluster_key": "175061c8caa630d1",
-      "title": "CVE-2026-81673 (CRITICAL 9.3): The ‘/ws/apitribuna/setVisita’ endpoint is vulnerable to SQL injection through the id_video and id_ambito par…",
+      "cluster_key": "b7a59ddf27c4afd2",
+      "title": "How does the U.S. government weaponize private data to surveil and kill abroad and at home? 404 Media is joining The Intercept for a LIVE discussion…",
       "category": "cyber_attacks",
-      "one_liner": "A critical SQL injection in the setVisita endpoint highlights input handling flaws that attackers can leverage to manipulate database records.",
-      "tags": [
-        "appsec",
-        "exploit",
-        "privacy",
-        "vulnerability"
-      ],
-      "summary": "A critical SQL injection vulnerability tracked as CVE-2026-81673 has been identified in the ‘/ws/apitribuna/setVisita’ endpoint. The flaw stems from a failure to validate or sanitize the id_video and id_ambito parameters before inserting them into SQL queries. This allows remote attackers to disrupt query execution, trigger database errors, and manipulate visit tracking records. The vulnerability carries a CVSS base score of 9.3 and was published on August 27, 2026. Ultimately, it affects the overall integrity of analytics and record accuracy.",
-      "key_facts": [
-        "CVE: CVE-2026-81673",
-        "CVSS Score: 9.3 CRITICAL",
-        "Endpoint: /ws/apitribuna/setVisita",
-        "Vulnerable Parameters: id_video, id_ambito",
-        "Published Date: 2026-08-27"
-      ],
-      "bottom_line": "Unvalidated parameters in the setVisita endpoint allow remote SQL injection, threatening database integrity and visit tracking accuracy.",
-      "claims": [
-        {
-          "text": "The ‘/ws/apitribuna/setVisita’ endpoint is vulnerable to SQL injection through the id_video and id_ambito parameters.",
-          "support_span": "The ‘/ws/apitribuna/setVisita’ endpoint is vulnerable to SQL injection through the id_video and id_ambito par…",
-          "status": "contradicted"
-        },
-        {
-          "text": "CVSS base score 9.3 (CRITICAL).",
-          "support_span": "CVSS base score 9.3 (CRITICAL).",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 82,
-      "interest_score": 75,
-      "corroboration": 2,
-      "blend": 69.2,
-      "is_new": false,
-      "alt_keys": [
-        "175061c8caa630d1",
-        "3695eb24aa477231",
-        "a6b3a896dfa090e1",
-        "d8c8931debd472c4",
-        "df51f2da08f7b7e5",
-        "e206e440737314c5",
-        "e87dd1c92f5a5e61"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81673",
-          "domain": "nist.gov",
-          "tier": "A"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81674",
-          "domain": "nist.gov",
-          "tier": "A"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81675",
-          "domain": "nist.gov",
-          "tier": "A"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81672",
-          "domain": "nist.gov",
-          "tier": "A"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81676",
-          "domain": "nist.gov",
-          "tier": "A"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81677",
-          "domain": "nist.gov",
-          "tier": "A"
-        },
-        {
-          "name": "CCB Belgium",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYW5jX2RmYUhLTXgzM3NPMC11ek1QbnVkRzlzcXQ1VUdBMmpkQnNlcWU2Ti1nUmp1YmJCbWJIWGMtSlZNc1JqM2o3a0lTd3ZiaXlUUTlsb3R6WnVVMEdwLXJkTVFJR2NuTGdCdXhrT3RBbjFzOV9oQ2lUQzNWc0QxVi1TX3gySXZLWkNxY3RETXJFRHFBUzBvNFhSLUpuYTRvM1E?oc=5",
-          "domain": "ccb-belgium.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-81672",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-81673",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-81674",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-81675",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-81676",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-81677"
-      ],
-      "published": "2026-08-27T13:18:42.610000+00:00",
-      "trace": [
-        "tier A (+40)",
-        "2 independent outlets (+12)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 69 = trust 82 / interest 75 / corrob 50",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "6a263ca2bb2a956a",
-      "title": "kharmanskyi/open-steps — Skills that translate your coding agent's output into plain language: honest reports, straight verdicts, steps",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai",
-        "opensource"
-      ],
-      "summary": "Skills that keep development open to the person running it: the sessions, the decisions, the next steps, all in plain language. I'm a market-led builder: I look for where demand already exists and the infrastructure doesn't, then build the missing piece. Twenty years of building web and software products, always from the product side, and more than 50 developers at my company today.",
+      "one_liner": "Cyber Attacks: single report, unconfirmed.",
+      "tags": [],
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post 404 Media 404media.co did:plc:vcepp6trx4vpe5ourxso4tjl How does the U.S.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
         {
-          "text": "Skills that keep development open to the person running it: the sessions, the decisions, the next steps, all in plain language.",
-          "support_span": "Skills that keep development open to the person running it: the sessions, the decisions, the next steps, all in plain language.",
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
           "status": "entailed"
         },
         {
-          "text": "I'm a market-led builder: I look for where demand already exists and the infrastructure doesn't, then build the missing piece.",
-          "support_span": "I'm a market-led builder: I look for where demand already exists and the infrastructure doesn't, then build the missing piece.",
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
           "status": "entailed"
         },
         {
-          "text": "Twenty years of building web and software products, always from the product side, and more than 50 developers at my company today.",
-          "support_span": "Twenty years of building web and software products, always from the product side, and more than 50 developers at my company today.",
+          "text": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  How does the U.S.",
+          "support_span": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  How does the U.S.",
           "status": "entailed"
         }
       ],
@@ -313,25 +216,79 @@
       "blend": 0.0,
       "is_new": true,
       "alt_keys": [
-        "6a263ca2bb2a956a"
+        "b7a59ddf27c4afd2"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/kharmanskyi/open-steps",
-          "domain": "github.com",
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mu3iy5c5w52z",
+          "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-25T14:24:24+00:00",
+      "published": "2026-08-27T18:45:08.283000+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-25 — outside lookback window"
+      "reject_reason": "published 2026-08-27 — outside lookback window"
+    },
+    {
+      "cluster_key": "3354615ba323d6d1",
+      "title": "I hear the story about how it took 30 years to gain productivity from electricity a lot in relation to AI (I have even told it myself) But not every…",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "ai"
+      ],
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu I hear the story about how it took 30 years to gain productivity from electricity a lot in relation to AI (I have even told it myself) But not every technology is that way.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "status": "entailed"
+        },
+        {
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "status": "entailed"
+        },
+        {
+          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  I hear the story about how it took 30 years to gain productivity from electricity a lot in relation to AI (I have even told it myself)\nBut not every technology is that way.",
+          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  I hear the story about how it took 30 years to gain productivity from electricity a lot in relation to AI (I have even told it myself)\nBut not every technology is that way.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "3354615ba323d6d1"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mtzxxmhap22l",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-27T04:07:57.924000+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-27 — outside lookback window"
     },
     {
       "cluster_key": "f6777ea4a458d8a4",
@@ -393,40 +350,43 @@
       "trace": [
         "tier C (+10)",
         "single tier-C source — treat with caution",
-        "importance 3/5 from gemini-3.5-flash-lite",
+        "importance 3/5 from cache",
         "blend 32 = trust 10 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "5fbf3031e9b95b38",
-      "title": "acryldev/acryl — ACRYL - Agent Context Relay Yielding Lifecycles. One persistent workspace, one canonical context, any coding a",
+      "cluster_key": "e3b4be7837eb0826",
+      "title": "UditAkhourii/cdaf — CDAF (Cached Descriptive Asset Files) - open sidecar format for video so AI agents stop re-analyzing the same ",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
         "agents",
         "ai",
+        "linux",
         "llm",
         "opensource",
-        "tool"
+        "research",
+        "tool",
+        "windows"
       ],
-      "summary": "⭐ Support ACRYL · Website · Documentation · Download v0.1.14 · Discord · GitHub Important ACRYL is in active early development. Interfaces, workflows, and packaging may change while the first public foundation is established. ACRYL has three surfaces that share the same project model, but they are deliberately separate installs.",
+      "summary": "Stop making AI agents watch the same video twice. CDAF is an open sidecar format for video: a plain-text, timestamped description that lives next to the video file with the same basename. Generate it once, and every AI agent that touches that footage afterward reads a few hundred text tokens instead of running a full video-understanding pass.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
         {
-          "text": "⭐ Support ACRYL · Website · Documentation · Download v0.1.14 · Discord · GitHub\nImportant\nACRYL is in active early development.",
-          "support_span": "⭐ Support ACRYL · Website · Documentation · Download v0.1.14 · Discord · GitHub\nImportant\nACRYL is in active early development.",
+          "text": "Stop making AI agents watch the same video twice.",
+          "support_span": "Stop making AI agents watch the same video twice.",
           "status": "entailed"
         },
         {
-          "text": "Interfaces, workflows, and packaging may change while the first public foundation is established.",
-          "support_span": "Interfaces, workflows, and packaging may change while the first public foundation is established.",
+          "text": "CDAF is an open sidecar format for video: a plain-text, timestamped description that lives next to the video file with the same basename.",
+          "support_span": "CDAF is an open sidecar format for video: a plain-text, timestamped description that lives next to the video file with the same basename.",
           "status": "entailed"
         },
         {
-          "text": "ACRYL has three surfaces that share the same project model, but they are deliberately separate installs.",
-          "support_span": "ACRYL has three surfaces that share the same project model, but they are deliberately separate installs.",
+          "text": "Generate it once, and every AI agent that touches that footage afterward reads a few hundred text tokens instead of running a full video-understanding pass.",
+          "support_span": "Generate it once, and every AI agent that touches that footage afterward reads a few hundred text tokens instead of running a full video-understanding pass.",
           "status": "entailed"
         }
       ],
@@ -436,7 +396,7 @@
       "blend": 0.0,
       "is_new": true,
       "alt_keys": [
-        "5fbf3031e9b95b38"
+        "e3b4be7837eb0826"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -444,709 +404,252 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/acryldev/acryl",
+          "url": "https://github.com/UditAkhourii/cdaf",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-25T15:53:56+00:00",
+      "published": "2026-08-26T09:12:41+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-25 — outside lookback window"
+      "reject_reason": "published 2026-08-26 — outside lookback window"
     },
     {
-      "cluster_key": "648e16f7180ba3a5",
-      "title": "I built a dynamic GitHub app store with Claude, now I don't have to rely on Google for open-source app discovery - How-To Geek",
-      "category": "cyber_tools",
-      "one_liner": "A developer builds a Claude-powered GitHub app store for open-source software discovery.",
+      "cluster_key": "1b3a221aac349c90",
+      "title": "[webapps] C-MOR  6.0104 - Cross-Site Scripting (XSS)",
+      "category": "cyber_attacks",
+      "one_liner": "C-MOR Video Surveillance XSS flaws allow client-side code execution via manipulated URL parameters.",
       "tags": [
-        "ai",
-        "howto",
-        "llm",
-        "opensource"
+        "appsec",
+        "exploit",
+        "privacy",
+        "release",
+        "vulnerability",
+        "writeup"
       ],
-      "summary": "The article is a short headline blurb about a user building a dynamic GitHub app store with Claude to avoid relying on Google for open-source app discovery.",
-      "key_facts": [],
-      "bottom_line": "Claude can be used to construct a custom GitHub app store for open-source discovery.",
+      "summary": "C-MOR Video Surveillance versions up to 6.0104 contain a cross-site scripting vulnerability via the 'size' parameter in the ptzpreset.pml component and the 'anyparam' parameter in the show-movies.pml component. An attacker can execute arbitrary client-side code by tricking an authenticated user into visiting a crafted URL. The issue is tracked as CVE-2026-51133.",
+      "key_facts": [
+        "Product: C-MOR Video Surveillance",
+        "Affected Versions: <= 6.0104",
+        "CVE: CVE-2026-51133"
+      ],
+      "bottom_line": "C-MOR Video Surveillance versions up to 6.0104 are vulnerable to authenticated stored or reflected XSS via parameter inputs.",
       "claims": [
         {
-          "text": "I built a dynamic GitHub app store with Claude, now I don't have to rely on Google for open-source app discovery - How-To Geek",
-          "support_span": "I built a dynamic GitHub app store with Claude, now I don't have to rely on Google for open-source app discovery - How-To Geek",
+          "text": "A Cross-Site Scripting (XSS) vulnerability in za-internet GmbH C-MOR Video Surveillance <= V6.0104 allows a remote attacker to execute arbitrary client-side code via the 'size' parameter in the ptzpreset.pml component and the 'anyparam' in the show-movies.pml component.",
+          "support_span": "A Cross-Site Scripting (XSS) vulnerability in za-internet GmbH C-MOR Video Surveillance <= V6.0104 allows a remote attacker to execute arbitrary client-side code via the 'size' parameter in the ptzpreset.pml component and the 'anyparam' in the show-movies.pml component.",
           "status": "contradicted"
         }
       ],
-      "trust_score": 22,
-      "interest_score": 0,
+      "trust_score": 82,
+      "interest_score": 50,
       "corroboration": 2,
-      "blend": 20.5,
+      "blend": 58.0,
       "is_new": true,
       "alt_keys": [
-        "648e16f7180ba3a5",
-        "a9668ef5b5072040"
+        "1b3a221aac349c90",
+        "53eac309a10652cb",
+        "5bcc91e5e35f360c",
+        "792df0bb952bc6a0",
+        "79f2ffd00ccff24c",
+        "86b5ea410189fbc9",
+        "9513d1261508613d",
+        "c7bc86d270177b3d",
+        "d4636c790d3f64ec",
+        "ed5fd06ddb329556"
       ],
       "critical_signal": "",
-      "priority": "minor",
+      "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GN Security tools",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSVJEbWQ1ZmloN05qSU5PSGZDaEVQS3ZHUVpGYWQwdTduMW9tNmkxeEMyc1hIVmtNSHhOX1dwT0pXZngxcElaX2p0REpycEltNG5RQ214cXNCemdXZUZBbVpRREVPc3ZSbUhsUm5YSzJ1TTJsbFI5VnlhNFlBb0xmS2gtQnpYdw?oc=5",
-          "domain": "news.google.com",
-          "tier": "C"
+          "name": "Exploit-DB",
+          "url": "https://www.exploit-db.com/exploits/52665",
+          "domain": "exploit-db.com",
+          "tier": "A"
         },
         {
-          "name": "Northeast Times",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSDRVV28tZkQ3RzhiTkVCMXBtNGlIeGNNSGF0bHJsc0c5YkNrRVpQc1I4YmRoU0plMGVaS3FCclFqalBocTFPZGp6NklNbW9UV0N3RG80Y045RWx6Rl9lcTF5RjRCU2IxeWVGLUJrRUZ5WDhnMzJyTFJuRjE1Q1ZvYXVnWWVsdG5UNWdicmtGZ2wzMDR4T1dB?oc=5",
-          "domain": "northeast-times.publisher",
-          "tier": "C"
+          "name": "Exploit-DB",
+          "url": "https://www.exploit-db.com/exploits/52661",
+          "domain": "exploit-db.com",
+          "tier": "A"
+        },
+        {
+          "name": "Exploit-DB",
+          "url": "https://www.exploit-db.com/exploits/52666",
+          "domain": "exploit-db.com",
+          "tier": "A"
+        },
+        {
+          "name": "Exploit-DB",
+          "url": "https://www.exploit-db.com/exploits/52662",
+          "domain": "exploit-db.com",
+          "tier": "A"
+        },
+        {
+          "name": "oss-security",
+          "url": "https://seclists.org/oss-sec/2026/q3/617",
+          "domain": "seclists.org",
+          "tier": "A"
+        },
+        {
+          "name": "oss-security",
+          "url": "https://seclists.org/oss-sec/2026/q3/623",
+          "domain": "seclists.org",
+          "tier": "A"
+        },
+        {
+          "name": "oss-security",
+          "url": "https://seclists.org/oss-sec/2026/q3/620",
+          "domain": "seclists.org",
+          "tier": "A"
+        },
+        {
+          "name": "oss-security",
+          "url": "https://seclists.org/oss-sec/2026/q3/621",
+          "domain": "seclists.org",
+          "tier": "A"
+        },
+        {
+          "name": "oss-security",
+          "url": "https://seclists.org/oss-sec/2026/q3/622",
+          "domain": "seclists.org",
+          "tier": "A"
+        },
+        {
+          "name": "oss-security",
+          "url": "https://seclists.org/oss-sec/2026/q3/619",
+          "domain": "seclists.org",
+          "tier": "A"
         }
       ],
-      "primary_links": [],
-      "published": "2026-08-29T14:15:00+00:00",
+      "primary_links": [
+        "https://www.exploit-db.com/exploits/52661",
+        "https://www.exploit-db.com/exploits/52662",
+        "https://www.exploit-db.com/exploits/52665",
+        "https://www.exploit-db.com/exploits/52666"
+      ],
+      "published": "2026-08-30T23:11:05+00:00",
       "trace": [
-        "tier C (+10)",
+        "tier A (+40)",
         "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 1/5 from gemini-3.5-flash-lite",
-        "blend 20 = trust 22 / interest 0 / corrob 50"
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 58 = trust 82 / interest 50 / corrob 50",
+        "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "372e5aac8c464fe9",
-      "title": "heygen-com/hyperframes-community-skills — Community-maintained skills for specialized HyperFrames workflows.",
+      "cluster_key": "d831d8cec0740599",
+      "title": "Selective Forgetting: A Graph-Based Memory Framework for Long-Term LLM Agents",
       "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "one_liner": "Graph-based memory frameworks for LLM agents do not outperform flat vector baselines, but automated pruning effectively reduces storage size.",
       "tags": [
         "agents",
-        "ai",
-        "opensource",
-        "tool"
-      ],
-      "summary": "A community-maintained collection of focused, one-off skills for HyperFrames. This repository is for useful skills built around a specific workflow, tool, or use case that do not belong in HyperFrames' curated public skill set. Each directory under skills/ is independent and can be installed on its own.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "A community-maintained collection of focused, one-off skills for HyperFrames.",
-          "support_span": "A community-maintained collection of focused, one-off skills for HyperFrames.",
-          "status": "entailed"
-        },
-        {
-          "text": "This repository is for useful skills built around a specific workflow, tool, or\nuse case that do not belong in HyperFrames' curated public skill set.",
-          "support_span": "This repository is for useful skills built around a specific workflow, tool, or\nuse case that do not belong in HyperFrames' curated public skill set.",
-          "status": "entailed"
-        },
-        {
-          "text": "Each\ndirectory under skills/ is independent and can be installed on its own.",
-          "support_span": "Each\ndirectory under skills/ is independent and can be installed on its own.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "372e5aac8c464fe9"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/heygen-com/hyperframes-community-skills",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-25T05:26:54+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-25 — outside lookback window"
-    },
-    {
-      "cluster_key": "49630db34771aadb",
-      "title": "CamoDocs: A Poisoning Attack Against Retrieval-Augmented Language Models Using Camouflaged Documents",
-      "category": "tech_ai",
-      "one_liner": "CamoDocs is a RAG data poisoning attack that uses token dispersion and camouflaged document chunking to bypass query-overlap detection.",
-      "tags": [
         "ai",
         "llm",
         "research",
-        "tool",
-        "vulnerability"
-      ],
-      "summary": "Data poisoning attacks against Retrieval-Augmented Generation models typically rely on query inclusion, which introduces lexical and embedding-space artifacts that simple security defenses easily detect. Researchers introduce CamoDocs, a poisoning method that bypasses query inclusion by chunking synthesized benign and adversarial drafts, replacing selected tokens in benign chunks with dispersion tokens, and applying coherence filtering. Across seven RAG defenses, three open-weight LLMs, and three benchmarks, CamoDocs achieves high attack success rates while avoiding traditional detection artifacts. It also proves effective against proprietary systems, achieving average attack success rates of 61.80% on GPT-5.4-mini and 55.09% on Claude-Haiku-4.5. While erasure-heavy clustering defenses like TrustRAG mitigate the attack, they impose substantial utility drops on retrieval-dependent tasks.",
-      "key_facts": [
-        "GPT-5.4-mini ASR: 61.80%\nClaude-Haiku-4.5 ASR: 55.09%"
-      ],
-      "bottom_line": "RAG systems remain vulnerable to stealthy data poisoning techniques that evade lexical detection filters without sacrificing attack success rates.",
-      "claims": [
-        {
-          "text": "We propose CamoDocs, a poisoning attack that avoids direct query inclusion by camouflaging adversarial documents among benign content.",
-          "support_span": "We proposes CamoDocs, a poisoning attack that avoids direct query inclusion by camouflaging adversarial documents among benign content.",
-          "status": "contradicted"
-        },
-        {
-          "text": "It also remains effective against proprietary models, achieving average ASRs of 61.80% on GPT-5.4-mini and 55.09% on Claude-Haiku-4.5.",
-          "support_span": "It also remains effective against proprietary models, achieving average ASRs of 61.80% on GPT-5.4-mini and 55.09% on Claude-Haiku-4.5.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "alt_keys": [
-        "49630db34771aadb"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2608.28389",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2608.28389"
-      ],
-      "published": "2026-08-31T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "6c3ac1a28b7b5565",
-      "title": "Trump hails 'historic' deal for US to control 65bn barrels of Venezuela's oil",
-      "category": "india_world",
-      "one_liner": "The US has secured a historic 25-year energy agreement to control 65 billion barrels of Venezuelan oil reserves.",
-      "tags": [
-        "markets",
-        "policy"
-      ],
-      "summary": "The United States has reached a 25-year agreement with Venezuela's interim government to control 17 strategic oil fields holding over 65 billion barrels of proven reserves. US President Donald Trump stated that the accord aims to lower domestic petrol prices and double American oil reserves, while Venezuelan interim President Delcy Rodríguez hailed it as a driver of economic revival backed by $100 billion in private investments and $209 billion in taxes. Under the terms, the US government retains 55% control of a joint venture granted a 100-year concession. Analysts have expressed skepticism regarding long-standing industry obstacles and potential legal challenges within Venezuela.",
-      "key_facts": [
-        "Oil Reserves: 65 billion barrels",
-        "Agreement Duration: 25 years",
-        "Concession Length: 100 years",
-        "Target Output: 1.5 million barrels per day",
-        "Investment: $100bn"
-      ],
-      "bottom_line": "The US and Venezuela have concluded a major oil agreement giving the US majority control over 65 billion barrels of reserves to lower prices and boost investment.",
-      "claims": [
-        {
-          "text": "The US has struck a deal with Venezuela to control more than 65 billion barrels of proven oil reserves, Donald Trump said.",
-          "support_span": "The US has struck a deal with Venezuela to control more than 65 billion barrels of proven oil reserves, Donald Trump said.",
-          "status": "contradicted"
-        },
-        {
-          "text": "She said it would target an increase in crude output to 1.5 million barrels per day and preserve the country's sovereignty over its natural resources.",
-          "support_span": "She said it would target an increase in crude output to 1.5 million barrels per day and preserve the country's sovereignty over its natural resources.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 52,
-      "interest_score": 100,
-      "corroboration": 2,
-      "blend": 73.0,
-      "is_new": false,
-      "alt_keys": [
-        "6c3ac1a28b7b5565",
-        "b67b0a11ef82eb55"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        },
-        {
-          "name": "Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbDBRX1E5WWItYWoycXJDSUZhMWJaZUthYmJUcTFqcTA3MGJLZnVPS1dQcWZyeW1FbW9wYnRBNS1OSlVyM0VXN3BIV01IVl8tMmdjQzByaGxIcmVQSnRDSjRiTXdtdEkza1hkdDJQcGNzYXY4OGkzOGZpS1pFMUtyaVFXenBXalpHUTNnZGhZUl92bklLcUg5OVhVMWkzaWxvYWN6S05oN0w3dw?oc=5",
-          "domain": "reuters.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-29T07:35:18+00:00",
-      "trace": [
-        "tier A (+40)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 73 = trust 52 / interest 100 / corrob 50",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "730496810665a838",
-      "title": "Local AI Beats ChatGPT on Reliability, 20x Cheaper [2026] - tech-insider.org",
-      "category": "tech_ai",
-      "one_liner": "A 2026 report claims local AI models surpass ChatGPT in reliability at a fraction of the cost.",
-      "tags": [
-        "ai",
-        "llm"
-      ],
-      "summary": "According to a tech-insider report from 2026, local AI implementations outperform ChatGPT in reliability while achieving significantly lower costs. The headline asserts a twentyfold cost reduction compared to hosted API services. No further technical benchmarks or architectural details were disclosed in the excerpt.",
-      "key_facts": [
-        "Year: 2026"
-      ],
-      "bottom_line": "Local AI deployment alternatives are claimed to offer higher reliability and significantly lower operating costs than commercial options like ChatGPT.",
-      "claims": [
-        {
-          "text": "According to a tech-insider report from 2026, local AI implementations outperform ChatGPT in reliability while achieving significantly lower costs.",
-          "support_span": "Local AI Beats ChatGPT on Reliability, 20x Cheaper [2026] - tech-insider.org",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 22,
-      "interest_score": 0,
-      "corroboration": 2,
-      "blend": 20.5,
-      "is_new": true,
-      "alt_keys": [
-        "730496810665a838",
-        "cca3599ee4f823fd",
-        "ea67bcccb2ac2c58"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GN Dev tooling",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdmhEMC1DRGR6QjVOVEpCaVZGRmhxX0tWTUIySGMtcjVyc2gzOTRDcE1lek9NS0VLdkUxT0lEYllBeG1EM2RjbFpMZ0lBdDBoTjlJVGJZS2xzRmFVa3h6Z21PZERlYkI2MF96Tm42eENPa0luMVcwOW1XdjRKMEVQU251ck5YT2s?oc=5",
-          "domain": "news.google.com",
-          "tier": "C"
-        },
-        {
-          "name": "GN AI research",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE51VXdtRzk1c3RUeXdhZGNPYk1NYjFIMl9oYVhzUlFvN0ZxSE00ZWdaWFBmREh6Z05Sa3h2dk4yODVLTDdEc0xBcTAxQVB3Q3RMemc0WkFqTUN5RWlacXVPTDNPeUhJY211VnYzd3NvREVMeXBVbzlmSlNwemNxUlE?oc=5",
-          "domain": "news.google.com",
-          "tier": "C"
-        },
-        {
-          "name": "TechRepublic",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQMW9RWFVkR25sUkJ5Y21iUl9GNTloZ2NvS3hXMlA0TGhoR3pnVTlkQTQ1VWtQMk5iUzFFSmpuYk5tQWh3SVpXTEFhWkNBZ2hKdHpjRDg3QkJDd1hKcXUtR0xOSmEwQTU1eFlFdjktc0xnYkozMHg3Sm5TSEZVQlBmM2NB?oc=5",
-          "domain": "techrepublic.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-27T11:30:34+00:00",
-      "trace": [
-        "tier C (+10)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 1/5 from gemini-3.5-flash-lite",
-        "blend 20 = trust 22 / interest 0 / corrob 50"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "5b44621e79ec7d90",
-      "title": "Safety Does Not Compose: Non-Decaying Loop State for Autonomous LLM Agents",
-      "category": "tech_ai",
-      "one_liner": "LoopHarness provides a persistent, non-decaying safety state across LLM agent loops to prevent multi-iteration fragmented attacks.",
-      "tags": [
-        "agents",
-        "ai",
-        "blueteam",
-        "llm",
-        "redteam",
         "tool"
       ],
-      "summary": "Autonomous LLM agents operate in unattended loops across many iterations, but standard safeguards are defined over a single trajectory and re-initialized when a new trajectory begins. The authors show a theoretical separation: trajectory-scoped monitors fail against attacks whose evidence is fragmented across iterations, whereas a monitor retaining cross-iteration state succeeds. While geometrically decaying risk scores are insufficient due to fixed wait times, the authors introduce LoopHarness, which enforces a persistent, non-decaying safety state at the loop level. Under mediated commits and an arbiter detection floor, LoopHarness bounds unauthorized irreversible actions to a constant term, surviving fully colluding verifiers.",
-      "key_facts": [],
-      "bottom_line": "Trajectory-scoped monitors fail against multi-step attacks, requiring loop-level persistent state architectures to bound unauthorized actions.",
-      "claims": [
-        {
-          "text": "Our central result is a separation: against an attack whose evidence is fragmented across several iterations, every trajectory-scoped monitor has a true-positive rate equal to its false-positive rate...",
-          "support_span": "Our central result is a separation: against an attack whose evidence is fragmented across several iterations, every trajectory-scoped monitor has a true-positive rate equal to its false-positive rate, however expressive it is, because the evidence it would need never appears in the window it sees...",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "alt_keys": [
-        "5b44621e79ec7d90"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2608.27141",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2608.27141"
-      ],
-      "published": "2026-08-31T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from cache",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "57d9027ab31648a0",
-      "title": "Merit-Systems/OpenInstinct — iMessage personal assistant + password vault",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "ai",
-        "linux",
-        "opensource",
-        "writeup"
-      ],
-      "summary": "A personal iMessage assistant that can use a browser like you. It can do your chores, book you movie tickets, or handle your groceries. You stay in control of your passwords, credit cards and context.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "A personal iMessage assistant that can use a browser like you.",
-          "support_span": "A personal iMessage assistant that can use a browser like you.",
-          "status": "entailed"
-        },
-        {
-          "text": "It can do your chores, book you movie tickets, or handle your groceries.",
-          "support_span": "It can do your chores, book you movie tickets, or handle your groceries.",
-          "status": "entailed"
-        },
-        {
-          "text": "You stay in control of your passwords, credit cards and context.",
-          "support_span": "You stay in control of your passwords, credit cards and context.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "57d9027ab31648a0"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/Merit-Systems/OpenInstinct",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-25T14:42:47+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-25 — outside lookback window"
-    },
-    {
-      "cluster_key": "ea698b9243461d08",
-      "title": "ROPE: Routed Origin Policy Enforcement against Indirect Prompt Injection",
-      "category": "tech_ai",
-      "one_liner": "ROPE uses structural origin tracking to block indirect prompt injections in tool-using LLM agents while preserving utility.",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "privacy",
-        "tool"
-      ],
-      "summary": "Routed Origin Policy Enforcement (ROPE) is a novel defense mechanism designed to prevent indirect prompt injection in tool-using LLM agents. ROPE enforces a structural notion of trust where values can only reach state-changing tools if they trace unforgeably to explicit user requests, named sources, or authoritative records. By performing a deterministic origin check over sensitive tool parameters without relying on language models for the enforcement step, ROPE limits attack success rates to 1.6–2.6% while retaining up to 100% of clean utility. The framework maintains zero success rates against long-horizon attacks that defeat conventional system-level defenses.",
+      "summary": "Researchers evaluated a graph-based memory framework for long-term LLM agents that extracts conversational turns into typed nodes and relations while periodically pruning low-scoring memories. On the LongMemEval benchmark, the graph structure did not outperform a flat vector retrieval baseline at matched candidate generation budgets, with token F1 dropping from 0.468 to 0.417. However, the forgetting module successfully pruned 9.8 percent of nodes and 9.5 percent of stored bytes from a large persistent graph without altering token F1 performance.",
       "key_facts": [
-        "Attack Success Rate: 1.6%–2.6%",
-        "Utility Retained: 82%–100%"
+        "Graph token F1: 0.417",
+        "Vector baseline token F1: 0.468",
+        "Pruned graph nodes: 9.8%"
       ],
-      "bottom_line": "ROPE stops indirect prompt injections in LLM agents by enforcing deterministic origin checks on sensitive tool parameters.",
+      "bottom_line": "Flat vector retrieval outperforms knowledge graph structures for long-term LLM agent conversation recall.",
       "claims": [
         {
-          "text": "ROPE holds attack success rate to 1.6--2.6% while retaining 82--100% of undefended clean utility, significantly exceeding state-of-the-art system-level defenses in utility while attaining comparable or better security.",
-          "support_span": "ROPE holds attack success rate to 1.6--2.6% while retaining 82--100% of undefended clean utility, significantly exceeding state-of-the-art system-level defenses in utility while attaining comparable or better security.",
+          "text": "On LongMemEval, the graph does not outperform a flat vector baseline at a matched candidate-generation budget of five retrieval roots: token F1 is $0.417$ against $0.468$, and a paired bootstrap over 500 questions gives $\rfloor = -0.050$ (95% CI $[-0.085, -0.016]$).",
+          "support_span": "On LongMemEval, the graph does not outperform a flat vector baseline at a matched candidate-generation budget of five retrieval roots: token F1 is $0.417$ against $0.468$, and a paired bootstrap over 500 questions gives $\\Delta = -0.050$ (95% CI $[-0.085, -0.016]$).",
           "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "alt_keys": [
-        "ea698b9243461d08"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2608.27496",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2608.27496"
-      ],
-      "published": "2026-08-31T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "47dc3664480b8f57",
-      "title": "Threat Actors Abuse Cursor Agent AI to Assist Ransomware Operations",
-      "category": "cyber_attacks",
-      "one_liner": "Aurora ransomware actors abused SpaceX's Cursor Agent with Claude Sonnet to automate reconnaissance and post-compromise tasks.",
-      "tags": [
-        "agents",
-        "ai",
-        "incident",
-        "linux",
-        "llm",
-        "network",
-        "ransomware",
-        "tool"
-      ],
-      "summary": "Aurora ransomware operators have integrated SpaceX's AI Cursor Agent running Claude Sonnet into their post-compromise attack chain across multiple victims. Threat actors leveraged the AI tool to automate environment reconnaissance, execute Nmap and NetExec scans, configure VPN clients, and launch NTLM relay and certificate attacks using tools like PetitPotam and Certipy. Additionally, the group deployed a new Linux ransomware variant specifically tailored to target VMware ESXi hypervisors by scanning networks with custom LDAP modules.",
-      "key_facts": [
-        "AI tool: Cursor Agent (Claude Sonnet)",
-        "Threat group: Aurora",
-        "Attack period: April 8 to May 26, 2026"
-      ],
-      "bottom_line": "Expect threat actors to actively weaponize AI developer coding agents for automated lateral movement and environment enumeration during intrusions.",
-      "claims": [
-        {
-          "text": "Aurora ransomware actors abused SpaceX's Cursor Agent running Claude Sonnet to assist with post-compromise activities.",
-          "support_span": "The Aurora ransomware actors have been observed abusing SpaceX’s AI Cursor Agent as part of exploitation campaigns... The threat actors ran Claude Sonnet through Cursor Agent to assist with various exploitation activities against 10 victims between April 8 and May 26, 2026.",
-          "status": "contradicted"
-        },
-        {
-          "text": "Aurora operators deployed a new Linux ransomware variant capable of targeting ESXi environments.",
-          "support_span": "The Gambit study, published on August 27, also observed Aurora operators deploying a new Linux ransomware variant capable of targeting ESXi environments.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 37,
-      "interest_score": 100,
-      "corroboration": 2,
-      "blend": 69.2,
-      "is_new": true,
-      "alt_keys": [
-        "47dc3664480b8f57",
-        "51907fddf41911aa",
-        "dbd5b12015ad1052"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Infosecurity Magazine",
-          "url": "https://www.infosecurity-magazine.com/news/abuse-cursor-agent-ransomware/",
-          "domain": "infosecurity-magazine.com",
-          "tier": "B"
-        },
-        {
-          "name": "Infosecurity Magazine",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1lVFFBZlhEQ1E2cnF0djFjMUtvTHlpZGF4cUd1eHRqQXFuMDhVRk9RVFVBc3BEX3diYmFSSjNRNTAtWkxBaHdUN1NJay13UHVfX1htOEROX3BfcmttN2c4RzZJRlpnYzMxRWZJWXdNaXd2TUhESWR6Rk5UU1E4dw?oc=5",
-          "domain": "infosecurity-magazine.com",
-          "tier": "C"
-        },
-        {
-          "name": "TechRepublic",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNQWFVRkVjZTJSTF9SMmNPWEt1a1dBM0x4QmJtX0Zhdkt2Mm9QM2U3RjdscW5YV0t3MDlsN1RhRTFlSWlYYzQ2RDY0SHc2T1gybEdjWGpiM1g5V1BtQ1JNX2ZHLTRoWm82NEowQW8zbi16cVRhWmhVSnpaODdxZC0tOEpjQ19MM25NSzdaV2xacTBUUmJTaGZRNlJ1amJhR2RQenVWR0JB?oc=5",
-          "domain": "techrepublic.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-28T07:00:00+00:00",
-      "trace": [
-        "tier B (+25)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 5/5 from cache",
-        "blend 69 = trust 37 / interest 100 / corrob 50",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "2c75307a59bf5f10",
-      "title": "Right-wing commentator Milo Yiannopoulos deported from US to UK",
-      "category": "india_world",
-      "one_liner": "The deportation of a prominent right-wing media figure highlights strict US enforcement of visa overstays.",
-      "tags": [
-        "policy"
-      ],
-      "summary": "British right-wing commentator Milo Yiannopoulos has been deported from the United States to the UK following his detention by Immigration and Customs Enforcement in New Orleans. The Department of Homeland Security stated that Yiannopoulos had overstayed his 2019 tourist visa violation. Known for his controversial political views and past support for strict immigration enforcement, he has been barred from returning to the United States permanently.",
-      "key_facts": [
-        "Age: 41",
-        "Date of arrest: August 27",
-        "Destination: United Kingdom"
-      ],
-      "bottom_line": "Milo Yiannopoulos was deported from the US to the UK by ICE after overstaying his visa.",
-      "claims": [
-        {
-          "text": "British right-wing political commentator Milo Yiannopoulos has been deported from the United States after being detained by Immigration and Customs Enforcement.",
-          "support_span": "British right-wing political commentator Milo Yiannopoulos has been deported from the United States after being detained by Immigration and Customs Enforcement (ICE).",
-          "status": "entailed"
-        },
-        {
-          "text": "Yiannopoulos was arrested on 27 August after arriving at Louis Armstrong New Orleans International Airport.",
-          "support_span": "Yiannopoulos, was arrested on 27 August after arriving at Louis Armstrong New Orleans International Airport.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 64,
-      "interest_score": 25,
-      "corroboration": 3,
-      "blend": 49.8,
-      "is_new": true,
-      "alt_keys": [
-        "2c75307a59bf5f10",
-        "580231b526deec16",
-        "9cb0a580cccdf145"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqlw52vr0dwo?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        },
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/policy/986456/milo-yiannopoulos-deported-ice",
-          "domain": "theverge.com",
-          "tier": "B"
-        },
-        {
-          "name": "Reuters",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObURVMERBQWV0QWJua3FzNktCUjV4dE1POXg4MTBpQi1CTFJzSlpaMnpZZHNnR3VHUXpCeDdmQVdTQXU4UlFFLUtRd3JCejdiUERFNzZHTnpmTHFLM2JxMENIY0xrSUN4NjZXbU9JeFpmVnppMmlWY1F2SkdOY0NORElUN3lIX1FwVGc0RkIwSkNHM3VBbE5pYm1QNng?oc=5",
-          "domain": "reuters.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-29T17:52:42+00:00",
-      "trace": [
-        "tier A (+40)",
-        "3 independent outlets (+24)",
-        "verified: 3 independent outlets",
-        "importance 2/5 from cache",
-        "blend 50 = trust 64 / interest 25 / corrob 75"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "d6bb1031e66bcecd",
-      "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
-      "category": "tech_ai",
-      "one_liner": "OpenAI is scaling its K-12 AI initiative with standardized privacy agreements, signaling a major push into the US public education market.",
-      "tags": [
-        "ai",
-        "policy",
-        "privacy",
-        "release",
-        "tool"
-      ],
-      "summary": "OpenAI is expanding its 'ChatGPT for Teachers' program to 55 additional school systems, reaching over 100,000 more educators across 20 states. The initiative includes a new 16-state National Data Privacy Agreement to standardize student data protection and simplify adoption for districts. The tool is provided free to verified K-12 educators through June 2028, with features including administrative controls and FERPA-compliant workspaces. OpenAI is also providing hands-on training and peer learning support to help districts manage AI integration.",
-      "key_facts": [
-        "Expansion: 55 school systems, 20 states",
-        "Total reach: 300,000+ educators",
-        "Free access end date: June 2028"
-      ],
-      "bottom_line": "Standardized data privacy frameworks are becoming the primary vehicle for large-scale AI adoption in the US public education sector.",
-      "claims": [
-        {
-          "text": "OpenAI is expanding this work to 55 additional school systems across 20 states, bringing ChatGPT for Teachers to over 100,000 more educators and staff.",
-          "support_span": "OpenAI is expanding this work to 55 additional school systems across 20 states, bringing ChatGPT for Teachers to over 100,000 more educators and staff.",
-          "status": "contradicted"
-        },
-        {
-          "text": "ChatGPT for Teachers remains a free tool for verified U.S. K–12 educators through June 2028.",
-          "support_span": "ChatGPT for Teachers remains a free tool for verified U.S. K–12 educators through June 2028.",
-          "status": "entailed"
         }
       ],
       "trust_score": 70,
       "interest_score": 50,
       "corroboration": 1,
       "blend": 47.5,
-      "is_new": false,
+      "is_new": true,
       "alt_keys": [
-        "d6bb1031e66bcecd"
+        "d831d8cec0740599"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "OpenAI Blog",
-          "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
-          "domain": "openai.com",
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2608.28978",
+          "domain": "arxiv.org",
           "tier": "A"
         }
       ],
       "primary_links": [
-        "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts"
+        "https://arxiv.org/abs/2608.28978"
       ],
-      "published": "2026-08-26T10:00:00+00:00",
+      "published": "2026-09-01T04:00:00+00:00",
       "trace": [
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "importance 3/5 from cache",
+        "importance 3/5 from gemini-3.5-flash-lite",
         "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "fe535b77f63e6411",
+      "title": "51 Of 227 Indians Recruited In Russian Army Are Dead: Centre",
+      "category": "india_world",
+      "one_liner": "A significant number of Indian citizens recruited into the Russian army have been killed in the conflict, necessitating government intervention for repatriation.",
+      "tags": [
+        "india",
+        "policy"
+      ],
+      "summary": "The Indian government has confirmed that 51 out of 227 Indian nationals recruited into the Russian military have died. India is actively monitoring the situation to facilitate the release and repatriation of its citizens. This follows reports of Indian nationals being caught up in the ongoing conflict.",
+      "key_facts": [
+        "Total recruited: 227",
+        "Confirmed deaths: 51"
+      ],
+      "bottom_line": "The Indian government is actively managing the repatriation of citizens caught in the Russian military recruitment pipeline.",
+      "claims": [
+        {
+          "text": "51 out of 227 Indian nationals recruited into the Russian military have died.",
+          "support_span": "51 Of 227 Indians Recruited In Russian Army Are Dead: Centre",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": true,
+      "alt_keys": [
+        "fe535b77f63e6411"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/india-news/51-of-227-indians-recruited-in-russian-army-are-dead-centre-11984631#publisher=newsstand",
+          "domain": "ndtv.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-01T02:08:43+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 5/5 from gemini-3.1-flash-lite",
+        "blend 59 = trust 25 / interest 100 / corrob 25",
+        "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     }
