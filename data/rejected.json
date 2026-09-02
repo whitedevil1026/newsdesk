@@ -1,83 +1,16 @@
 {
-  "generated_at": "2026-09-01T06:45:41.513345+00:00",
+  "generated_at": "2026-09-02T06:18:42.557357+00:00",
   "items": [
     {
-      "cluster_key": "a79493b21229c965",
-      "title": "Extortion Group Claims Manchester Airports Group Data Breach",
-      "category": "cyber_attacks",
-      "one_liner": "Cyber Attacks: carried by 2 outlets.",
+      "cluster_key": "dd34fd3792bada91",
+      "title": "🚨Our new research examines agentic shopping: can you consistently predict (or, using marketing, influence) what an agent chooses? Nope. We found that…",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
-        "incident",
-        "ransomware",
-        "threat-intel"
+        "agents",
+        "ai"
       ],
-      "summary": "The FulcrumSec extortion group has claimed responsibility for the recently disclosed Manchester Airports Group (MAG) data breach. The largest airport group in the UK, MAG owns and operates Manchester, London Stansted, and East Midlands airports. MAG disclosed the incident on August 27, notifying customers that hackers stole data associated with car park, lounge, and Fast Track bookings, as well as in-airport Wi-Fi sign-ups at all three airports.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "The FulcrumSec extortion group has claimed responsibility for the recently disclosed Manchester Airports Group (MAG) data breach.",
-          "support_span": "The FulcrumSec extortion group has claimed responsibility for the recently disclosed Manchester Airports Group (MAG) data breach.",
-          "status": "entailed"
-        },
-        {
-          "text": "The largest airport group in the UK, MAG owns and operates Manchester, London Stansted, and East Midlands airports.",
-          "support_span": "The largest airport group in the UK, MAG owns and operates Manchester, London Stansted, and East Midlands airports.",
-          "status": "entailed"
-        },
-        {
-          "text": "MAG disclosed the incident on August 27, notifying customers that hackers stole data associated with car park, lounge, and Fast Track bookings, as well as in-airport Wi-Fi sign-ups at all three airports.",
-          "support_span": "MAG disclosed the incident on August 27, notifying customers that hackers stole data associated with car park, lounge, and Fast Track bookings, as well as in-airport Wi-Fi sign-ups at all three airports.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 2,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "a79493b21229c965",
-        "ce128ed0b2969793",
-        "dd458a8db5bc209d"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "SecurityWeek",
-          "url": "https://www.securityweek.com/extortion-group-claims-manchester-airports-group-data-breach/",
-          "domain": "securityweek.com",
-          "tier": "B"
-        },
-        {
-          "name": "Troy Hunt",
-          "url": "https://bsky.app/profile/troyhunt.com/post/3mtwyanq7xc2k",
-          "domain": "bsky.app",
-          "tier": "C"
-        },
-        {
-          "name": "SecurityWeek",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPTnBHekxPVVI1enFweDYybllISkYxeVVJcndpS2dyMmNJR2dvZTVyNW04bDZpdzVKTDZrMXI1eHkzZEZ2TmQ0VGFkeXg1SFZTOXpLNURfMDFVMW84T2FPd01fU3NjaWMtLXRwbmYxUVEtUWlGV2hGTkI5NHozUzEzN1BWNEFaOFV3R0NBYlZLN1ZkMjF60gGaAUFVX3lxTE81Nld2UGFlSVhHckZWeU9zdDNmVlNJdFRmRThOcVc1UGhOSjlUTFdnb0JCQ09iWXUwc2ZZT094ZThnQk1ycjQyQUljWGtlV3hxdEV6TWs3Z1k4ME5mNEI3RXFiY0JkQXRjeF9pLXZqWTg4Tnk1UUF0SUJvR0JFY2RiVWR3cV9QM2V3VUNIQ3ppbm1sbThlY3pXUlE?oc=5",
-          "domain": "securityweek.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-25T23:35:00.645000+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-25 — outside lookback window"
-    },
-    {
-      "cluster_key": "6712f333434e288d",
-      "title": "Brevard County deputy sheriff Michael Fultz resigned from the force after an internal investigation detailed extreme cases of alleged sexual miscondu…",
-      "category": "cyber_attacks",
-      "one_liner": "Cyber Attacks: single report, unconfirmed.",
-      "tags": [],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post 404 Media 404media.co did:plc:vcepp6trx4vpe5ourxso4tjl Brevard County deputy sheriff Michael Fultz resigned from the force after an internal investigation detailed extreme cases of alleged sexual misconduct, racism, and abuse, including Fultz’s use of Flock to stalk his ex-girlfriend.",
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu 🚨Our new research examines agentic shopping: can you consistently predict (or, using marketing, influence) what an agent chooses?",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
@@ -92,8 +25,8 @@
           "status": "entailed"
         },
         {
-          "text": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  Brevard County deputy sheriff Michael Fultz resigned from the force after an internal investigation detailed extreme cases of alleged sexual misconduct, racism, and abuse, including Fultz’s use of Flock to stalk his ex-girlfriend.",
-          "support_span": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  Brevard County deputy sheriff Michael Fultz resigned from the force after an internal investigation detailed extreme cases of alleged sexual misconduct, racism, and abuse, including Fultz’s use of Flock to stalk his ex-girlfriend.",
+          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  🚨Our new research examines agentic shopping: can you consistently predict (or, using marketing, influence) what an agent chooses?",
+          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  🚨Our new research examines agentic shopping: can you consistently predict (or, using marketing, influence) what an agent chooses?",
           "status": "entailed"
         }
       ],
@@ -103,28 +36,21 @@
       "blend": 0.0,
       "is_new": true,
       "alt_keys": [
-        "6712f333434e288d",
-        "deb10f0cef4df2ee"
+        "dd34fd3792bada91"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "404 Media",
-          "url": "https://bsky.app/profile/404media.co/post/3muara256bx2w",
-          "domain": "bsky.app",
-          "tier": "C"
-        },
-        {
-          "name": "404 Media",
-          "url": "https://bsky.app/profile/404media.co/post/3mu3idq5n222x",
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mu35oijits2v",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-27T18:33:44.060000+00:00",
+      "published": "2026-08-27T15:22:54.003000+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
@@ -185,12 +111,16 @@
       "reject_reason": "published 2026-08-26 — outside lookback window"
     },
     {
-      "cluster_key": "b7a59ddf27c4afd2",
-      "title": "How does the U.S. government weaponize private data to surveil and kill abroad and at home? 404 Media is joining The Intercept for a LIVE discussion…",
-      "category": "cyber_attacks",
-      "one_liner": "Cyber Attacks: single report, unconfirmed.",
-      "tags": [],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post 404 Media 404media.co did:plc:vcepp6trx4vpe5ourxso4tjl How does the U.S.",
+      "cluster_key": "6e5a914bb84e2720",
+      "title": "\"No way to prevent this\" say users of only language where this regularly happens https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CV…",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "ai",
+        "vulnerability",
+        "windows"
+      ],
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Xe xeiaso.net did:plc:e5nncb3dr5thdkjir5cfaqfe \"No way to prevent this\" say users of only language where this regularly happens https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-41992/ https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-41992/?utm_campaign=mi_irl&utm_medium=social&ut…",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
@@ -205,8 +135,8 @@
           "status": "entailed"
         },
         {
-          "text": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  How does the U.S.",
-          "support_span": "Post\n  404 Media\n  404media.co\n  did:plc:vcepp6trx4vpe5ourxso4tjl\n  How does the U.S.",
+          "text": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  \"No way to prevent this\" say users of only language where this regularly happens\nhttps://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-41992/\nhttps://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-41992/?utm_campaign=mi_irl&utm_medium=social&utm_source=bluesky\n  2026-08-27T12:21:29.168Z",
+          "support_span": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  \"No way to prevent this\" say users of only language where this regularly happens\nhttps://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-41992/\nhttps://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-41992/?utm_campaign=mi_irl&utm_medium=social&utm_source=bluesky\n  2026-08-27T12:21:29.168Z",
           "status": "entailed"
         }
       ],
@@ -216,21 +146,21 @@
       "blend": 0.0,
       "is_new": true,
       "alt_keys": [
-        "b7a59ddf27c4afd2"
+        "6e5a914bb84e2720"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "404 Media",
-          "url": "https://bsky.app/profile/404media.co/post/3mu3iy5c5w52z",
+          "name": "Xe Iaso",
+          "url": "https://bsky.app/profile/xeiaso.net/post/3mu2tk3pwql2i",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-27T18:45:08.283000+00:00",
+      "published": "2026-08-27T12:21:28.754000+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
@@ -356,37 +286,33 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "e3b4be7837eb0826",
-      "title": "UditAkhourii/cdaf — CDAF (Cached Descriptive Asset Files) - open sidecar format for video so AI agents stop re-analyzing the same ",
+      "cluster_key": "1bcc29f9f8147fb7",
+      "title": "JordyZomer/lemmalog — A Datalog engine for LLM agent memory: stratified rules, provenance-tracked facts, incremental derivation, and",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
         "agents",
         "ai",
-        "linux",
         "llm",
-        "opensource",
-        "research",
-        "tool",
-        "windows"
+        "opensource"
       ],
-      "summary": "Stop making AI agents watch the same video twice. CDAF is an open sidecar format for video: a plain-text, timestamped description that lives next to the video file with the same basename. Generate it once, and every AI agent that touches that footage afterward reads a few hundred text tokens instead of running a full video-understanding pass.",
+      "summary": "This repo contains the engine (Rust crate, MCP server, REPL, agent skill) plus the design document (datalog-context-engine-design.md, with an honest status log of what shipped). The thesis: an agent's memory should be a deductive database — the agent builds a verifiable model of what it knows and mechanically reasons over how that knowledge changes, rather than \"remembering better\" than a vector store. Base facts are asserted at the ingestion boundary (LLM extraction); rules…",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
         {
-          "text": "Stop making AI agents watch the same video twice.",
-          "support_span": "Stop making AI agents watch the same video twice.",
+          "text": "This repo contains the engine\n(Rust crate, MCP server, REPL, agent skill) plus the design document\n(datalog-context-engine-design.md,\nwith an honest status log of what shipped).",
+          "support_span": "This repo contains the engine\n(Rust crate, MCP server, REPL, agent skill) plus the design document\n(datalog-context-engine-design.md,\nwith an honest status log of what shipped).",
           "status": "entailed"
         },
         {
-          "text": "CDAF is an open sidecar format for video: a plain-text, timestamped description that lives next to the video file with the same basename.",
-          "support_span": "CDAF is an open sidecar format for video: a plain-text, timestamped description that lives next to the video file with the same basename.",
+          "text": "The thesis: an agent's memory should be a deductive database — the agent builds a verifiable model of what it knows and mechanically reasons over how that knowledge changes, rather than \"remembering better\" than a vector store.",
+          "support_span": "The thesis: an agent's memory should be a deductive database — the agent builds a verifiable model of what it knows and mechanically reasons over how that knowledge changes, rather than \"remembering better\" than a vector store.",
           "status": "entailed"
         },
         {
-          "text": "Generate it once, and every AI agent that touches that footage afterward reads a few hundred text tokens instead of running a full video-understanding pass.",
-          "support_span": "Generate it once, and every AI agent that touches that footage afterward reads a few hundred text tokens instead of running a full video-understanding pass.",
+          "text": "Base facts are asserted at the ingestion boundary (LLM extraction); rules derive closures, temporal projections, contradiction candidates, and relevance diffusion; every fact carries provenance back to its source episodes; and each conversation turn updates derived views incrementally instead of re-deriving them (or worse, re-reasoning them in-context).",
+          "support_span": "Base facts are asserted at the ingestion boundary (LLM extraction); rules derive closures, temporal projections, contradiction candidates, and relevance diffusion; every fact carries provenance back to its source episodes; and each conversation turn updates derived views incrementally instead of re-deriving them (or worse, re-reasoning them in-context).",
           "status": "entailed"
         }
       ],
@@ -396,7 +322,7 @@
       "blend": 0.0,
       "is_new": true,
       "alt_keys": [
-        "e3b4be7837eb0826"
+        "1bcc29f9f8147fb7"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -404,38 +330,219 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/UditAkhourii/cdaf",
+          "url": "https://github.com/JordyZomer/lemmalog",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-26T09:12:41+00:00",
+      "published": "2026-08-27T07:06:55+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-26 — outside lookback window"
+      "reject_reason": "published 2026-08-27 — outside lookback window"
     },
     {
-      "cluster_key": "1b3a221aac349c90",
+      "cluster_key": "9a55acaf53b7ce08",
+      "title": "OnlyTerp/opengrok — Run any model in Grok Bot — one-command setup, model picker UI, evidence-based provider wire maps, and an upda",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "llm",
+        "opensource",
+        "release",
+        "vulnerability"
+      ],
+      "summary": "It talks native and survives Grok Bot updates. Every wire claim in this repo is probe-verified, not vibed. git clone https://github.com/OnlyTerp/opengrok cd opengrok python setup.py That's the whole install: it detects your Grok Bot install and live services, adopts existing bindings or asks 3 questions, writes its config, baselines your machine, and opens the picker.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "It talks native and survives Grok Bot updates.",
+          "support_span": "It talks native and survives Grok Bot updates.",
+          "status": "entailed"
+        },
+        {
+          "text": "Every wire claim in this repo is probe-verified, not vibed.",
+          "support_span": "Every wire claim in this repo is probe-verified, not vibed.",
+          "status": "entailed"
+        },
+        {
+          "text": "git clone https://github.com/OnlyTerp/opengrok\ncd opengrok\npython setup.py\nThat's the whole install: it detects your Grok Bot install and live services, adopts existing bindings or asks 3 questions, writes its config, baselines your machine, and opens the picker.",
+          "support_span": "git clone https://github.com/OnlyTerp/opengrok\ncd opengrok\npython setup.py\nThat's the whole install: it detects your Grok Bot install and live services, adopts existing bindings or asks 3 questions, writes its config, baselines your machine, and opens the picker.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "9a55acaf53b7ce08"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/OnlyTerp/opengrok",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-27T18:30:44+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-27 — outside lookback window"
+    },
+    {
+      "cluster_key": "9392f5653a1a34dc",
+      "title": "Nanako0129/sepia — De-AI writing skill for any Agent Skills-compatible agent (77+ via the Skills CLI), with native plugins for Cl",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "howto",
+        "llm",
+        "opensource",
+        "tool"
+      ],
+      "summary": "De-AI writing at the layer that actually gives AI away. Fiction gets its narrative architecture repaired before anyone touches word choice; professional documents (release notes, PR replies, postmortems, tickets, technical articles) each get rules matched to their venue. A portable Agent Skill: any agent that speaks the standard can load it, and the Skills CLI, which supports 77+ agents, installs it with one command.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "De-AI writing at the layer that actually gives AI away.",
+          "support_span": "De-AI writing at the layer that actually gives AI away.",
+          "status": "entailed"
+        },
+        {
+          "text": "Fiction gets its narrative architecture repaired before anyone touches word choice; professional documents (release notes, PR replies, postmortems, tickets, technical articles) each get rules matched to their venue.",
+          "support_span": "Fiction gets its narrative architecture repaired before anyone touches word choice; professional documents (release notes, PR replies, postmortems, tickets, technical articles) each get rules matched to their venue.",
+          "status": "entailed"
+        },
+        {
+          "text": "A portable Agent Skill: any agent that speaks the standard can load it, and the Skills CLI, which supports 77+ agents, installs it with one command.",
+          "support_span": "A portable Agent Skill: any agent that speaks the standard can load it, and the Skills CLI, which supports 77+ agents, installs it with one command.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "9392f5653a1a34dc"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/Nanako0129/sepia",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-28T05:56:49+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-28 — outside lookback window"
+    },
+    {
+      "cluster_key": "01f63dbd63f25f15",
+      "title": "ZJU-REAL/Easel — An open-source AI agent for social media — discover trends, create content, publish everywhere, and learn what",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: carried by 2 outlets.",
+      "tags": [
+        "agents",
+        "ai",
+        "linux",
+        "opensource",
+        "tool"
+      ],
+      "summary": "简体中文 · English 你的私人、持续进化的社媒运营助手 从一个想法开始，完成发现、策划、创作、发布与复盘。 Easel 是一个面向社交媒体创作者的开源内容工作台。它把 OpenClaw Agent、账号画像、内容技能和真实的媒体工具接在一起，让 Agent 不只回答“应该怎么做”，而是直接把内容做出来并归档，且可实现直接/按需发布。 你可以把它理解成一个会记住你的内容搭档：它了解账号定位、受众、风格、平台限制和历史表现，从热点发现一直陪你做到发布，再把结果带回下一次创作。 Easel 围绕五个连续工作流展开：发现适合账号的热点与机会，策划选题、标题、脚本和排期， 创作图文、音频与视频内容，发布经过检查和平台适配的成品直接到对应平台，再通过归因分析表现并把有效经验沉淀回账号画像。 - 推荐使用 Web 前端：前端提供完整的会话、素材、账号、画像、内容库和发布管理能力，体验和功能比单独使用 CLI 更全面。 - 谨慎自动发布到小红书：小红书平台可能检测自动化操作，存在验证、限流或账号风控风险；建议使用预览与发布前检查，并由用户确认后手动发布…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "简体中文 · English\n  你的私人、持续进化的社媒运营助手\n  从一个想法开始，完成发现、策划、创作、发布与复盘。\nEasel 是一个面向社交媒体创作者的开源内容工作台。它把 OpenClaw Agent、账号画像、内容技能和真实的媒体工具接在一起，让 Agent 不只回答“应该怎么做”，而是直接把内容做出来并归档，且可实现直接/按需发布。\n你可以把它理解成一个会记住你的内容搭档：它了解账号定位、受众、风格、平台限制和历史表现，从热点发现一直陪你做到发布，再把结果带回下一次创作。\nEasel 围绕五个连续工作流展开：发现适合账号的热点与机会，策划选题、标题、脚本和排期， 创作图文、音频与视频内容，发布经过检查和平台适配的成品直接到对应平台，再通过归因分析表现并把有效经验沉淀回账号画像。\n- 推荐使用 Web 前端：前端提供完整的会话、素材、账号、画像、内容库和发布管理能力，体验和功能比单独使用 CLI 更全面。\n- 谨慎自动发布到小红书：小红书平台可能检测自动化操作，存在验证、限流或账号风控风险；建议使用预览与发布前检查，并由用户确认后手动发布，其他平台正常。\n- 从研究走向真实生活：Easel 是我们将研究成果应用到真实社媒创作场景的一次实践。后续我们会继续研究 AI 在社媒场景中的社交智能，让 Agent 更好地理解创作者、受众与真实互动。\n- 一个 Agent 贯穿完整链路：发现热点、评估选题、规划日历、生成文案与视觉、制作视频、发布和归因在同一个工作流中完成。\n- 画像驱动，而不是一次性生成：每个账号有独立的定位、风格、受众、平台、偏好和记忆，输出会越来越贴合真实账号。\n- 技能是真执行，不是功能清单：图片、卡片、配音、字幕、剪辑、短剧和发布技能都配有可运行脚本，成品写入 outputs/ 。\n- 一份素材，多种平台形态：同一主题可以改写成小红书卡片、短视频、知乎长文或短帖，并遵循不同平台的格式和字数要求。\n- 项目化保存产物：内容、素材、中间文件和元数据按项目归档，后续修改、重试和发布不会散落在聊天记录里。\n- 真实发布与复盘闭环：目前支持小红书、抖音、快手、知乎、B 站、微信视频号六个平台的登录、适配和发布，并可回收账号数据。\n- 发现：聚合热榜、行业新闻、竞品动态和用户讨论，筛选真正适合账号的机会。\n- 策划：把机会变成选题、标题、脚本和内容矩阵，写入内容日历。\n- 创作：生成文案、卡片、海报、信息图、音频、视频、短剧和论文解读等可发布素材。\n- 发布：按平台适配标题、正文、画幅和媒体要求，执行发布前检查并发送到已登录账号。\n- 归因：读取播放、互动、评论和内容表现，把有效结构和偏好沉淀回账号画像。\n下面只展示 Easel 工作台中的四个代表性功能，并不是完整功能清单。更多发现、策划、创作、发布和归因能力， 可以在工作台的技能库或能力地图中查看。\n这些文件来自 Easel 的实际工作流，主页中也有同一批案例的分类展示。\nREADME 的品牌图、海报、案例图片和视频统一保存在 assets/readme/；产品主页使用独立的\nweb/static/showcase/ 素材，其中视频保持为 6 秒轻量预览。\nSpatialEvo · 论文解读 / SpatialLadder · VLM 视觉叙事\nCULTURE-MT · 文化翻译 / KnowU-Bench · 侦探漫画\nAGENT G2 · 暗夜英雄 / Pause or Fabricate · 角色化科普\n搞笑修仙 / 恐怖短篇 / 爱情喜剧 / 悬疑故事\n生活方式 / 自然记录\n城市生活 / 梗内容\n为便于快速浏览，这里使用可点击的视频封面。点击封面查看最长 1 分钟的轻量预览，点击封面下方的标题 查看完整成片。\n论文解读视频\n▶ 点击封面播放预览 · 查看完整视频：SpatialLadder / CULTURE-MT\n口播、连续剧与 AI 角色短视频\n▶ 点击封面播放预览 · 查看完整视频：普通人 / 花子的转变 / 赛博修仙 / 赛博吃播甲鱼\n氛围影像与横版内容\n▶ 点击封面播放预览 · 查看完整视频：西藏吉隆泥石流 / 盗墓笔记小说介绍 / 浙江大学\n环境要求：Linux 或 macOS、Python 3.10 及以上、git。还需要 Node.js 22.19 及以上；Linux x86_64\n缺少 Node.js 时安装脚本会自动处理，macOS 建议先通过 Homebrew 或 Node.js 官网安装。\ngit clone git@github.com:ZJU-REAL/Easel.git\ncd Easel\ncp .env.example .env\nvim .env\nbash setup.sh\neasel web\n# 或：easel chat\n启动 Web 工作台后访问 http://localhost:7860。安装完成后可以运行 easel doctor 检查环境，\n运行 easel ping 检查 gateway 和 Agent 连通性。\n需要图片、音视频或浏览器发布能力时，安装可选依赖：\npip install -e \".[media]\"\nplaywright install chromium\n# 系统还需要 ffmpeg\n最小配置只需要在项目根目录 .env 中提供一个可用的 LLM：\nANTHROPIC_API_KEY=你的_API_Key\nCLAUDE_MODEL=anthropic/claude-sonnet-4-6\n.env.example 还列出了视频、音乐、语音等可选模型配置。只需要配置实际使用的能力，也可以在 Web\n工作台的“技能库”中填写；没有配置的媒体 Skill 不会影响聊天、策划和文本创作。常见可选项包括：\n常用入口：\n所有技能都通过 Easel 的 Agent 执行。Agent 会读取对应 SKILL.md，调用脚本和工具，并把产物保存到 outputs/。\neasel skill quality-gate -i \"帮我检查这条小红书文案\"\neasel skill social-content -i \"写一条介绍空间智能的微博\"\neasel skill quality-gate -i \"这是一段待发布文案\" -p 科技数码达人\nWeb 工作台提供同样的能力，并额外管理会话、素材、账号、画像、内容库和发布状态。拖入对话框的素材会作为结构化附件传给 Agent，用户消息只显示实际输入的文字。\n一个画像对应 profiles/<名字>/ 目录，包含六个维度：定位、风格、受众、平台、偏好与红线、长期记忆。\ncp -r profiles/_template \"profiles/我的账号\"\n在 Web 的“画像”页面可以直接创建和编辑；同一画像可以跨多个已登录平台使用。\nEasel/\n├── easel/                    Python CLI：chat / web / skill / doctor / ping\n├── web/                      FastAPI 后端与 React 工作台\n├── skills/openclaw/          发现、策划、制作、发布、归因技能\n├── skills/shared/            跨技能脚本与参考资料\n├── assets/                   品牌、README 媒体与用户导入素材\n├── profiles/                 账号画像（每个画像一个目录）\n├── outputs/                  内容项目与最终产物\n├── openclaw/                 隔离 profile、workspace 与同步脚本\n└── docs/                     能力规范、能力地图与架构文档\nEasel 使用独立的 easel OpenClaw profile，不会覆盖你本机已有的 OpenClaw 配置。Web 默认运行在 7860，gateway 默认运行在 18789。\nEasel 的技能体系和工作流受益于许多优秀的开源项目、工具与内容方法论。感谢所有原作者和社区贡献者； 具体项目、用途和许可信息请查看完整致谢。",
+          "support_span": "简体中文 · English\n  你的私人、持续进化的社媒运营助手\n  从一个想法开始，完成发现、策划、创作、发布与复盘。\nEasel 是一个面向社交媒体创作者的开源内容工作台。它把 OpenClaw Agent、账号画像、内容技能和真实的媒体工具接在一起，让 Agent 不只回答“应该怎么做”，而是直接把内容做出来并归档，且可实现直接/按需发布。\n你可以把它理解成一个会记住你的内容搭档：它了解账号定位、受众、风格、平台限制和历史表现，从热点发现一直陪你做到发布，再把结果带回下一次创作。\nEasel 围绕五个连续工作流展开：发现适合账号的热点与机会，策划选题、标题、脚本和排期， 创作图文、音频与视频内容，发布经过检查和平台适配的成品直接到对应平台，再通过归因分析表现并把有效经验沉淀回账号画像。\n- 推荐使用 Web 前端：前端提供完整的会话、素材、账号、画像、内容库和发布管理能力，体验和功能比单独使用 CLI 更全面。\n- 谨慎自动发布到小红书：小红书平台可能检测自动化操作，存在验证、限流或账号风控风险；建议使用预览与发布前检查，并由用户确认后手动发布，其他平台正常。\n- 从研究走向真实生活：Easel 是我们将研究成果应用到真实社媒创作场景的一次实践。后续我们会继续研究 AI 在社媒场景中的社交智能，让 Agent 更好地理解创作者、受众与真实互动。\n- 一个 Agent 贯穿完整链路：发现热点、评估选题、规划日历、生成文案与视觉、制作视频、发布和归因在同一个工作流中完成。\n- 画像驱动，而不是一次性生成：每个账号有独立的定位、风格、受众、平台、偏好和记忆，输出会越来越贴合真实账号。\n- 技能是真执行，不是功能清单：图片、卡片、配音、字幕、剪辑、短剧和发布技能都配有可运行脚本，成品写入 outputs/ 。\n- 一份素材，多种平台形态：同一主题可以改写成小红书卡片、短视频、知乎长文或短帖，并遵循不同平台的格式和字数要求。\n- 项目化保存产物：内容、素材、中间文件和元数据按项目归档，后续修改、重试和发布不会散落在聊天记录里。\n- 真实发布与复盘闭环：目前支持小红书、抖音、快手、知乎、B 站、微信视频号六个平台的登录、适配和发布，并可回收账号数据。\n- 发现：聚合热榜、行业新闻、竞品动态和用户讨论，筛选真正适合账号的机会。\n- 策划：把机会变成选题、标题、脚本和内容矩阵，写入内容日历。\n- 创作：生成文案、卡片、海报、信息图、音频、视频、短剧和论文解读等可发布素材。\n- 发布：按平台适配标题、正文、画幅和媒体要求，执行发布前检查并发送到已登录账号。\n- 归因：读取播放、互动、评论和内容表现，把有效结构和偏好沉淀回账号画像。\n下面只展示 Easel 工作台中的四个代表性功能，并不是完整功能清单。更多发现、策划、创作、发布和归因能力， 可以在工作台的技能库或能力地图中查看。\n这些文件来自 Easel 的实际工作流，主页中也有同一批案例的分类展示。\nREADME 的品牌图、海报、案例图片和视频统一保存在 assets/readme/；产品主页使用独立的\nweb/static/showcase/ 素材，其中视频保持为 6 秒轻量预览。\nSpatialEvo · 论文解读 / SpatialLadder · VLM 视觉叙事\nCULTURE-MT · 文化翻译 / KnowU-Bench · 侦探漫画\nAGENT G2 · 暗夜英雄 / Pause or Fabricate · 角色化科普\n搞笑修仙 / 恐怖短篇 / 爱情喜剧 / 悬疑故事\n生活方式 / 自然记录\n城市生活 / 梗内容\n为便于快速浏览，这里使用可点击的视频封面。点击封面查看最长 1 分钟的轻量预览，点击封面下方的标题 查看完整成片。\n论文解读视频\n▶ 点击封面播放预览 · 查看完整视频：SpatialLadder / CULTURE-MT\n口播、连续剧与 AI 角色短视频\n▶ 点击封面播放预览 · 查看完整视频：普通人 / 花子的转变 / 赛博修仙 / 赛博吃播甲鱼\n氛围影像与横版内容\n▶ 点击封面播放预览 · 查看完整视频：西藏吉隆泥石流 / 盗墓笔记小说介绍 / 浙江大学\n环境要求：Linux 或 macOS、Python 3.10 及以上、git。还需要 Node.js 22.19 及以上；Linux x86_64\n缺少 Node.js 时安装脚本会自动处理，macOS 建议先通过 Homebrew 或 Node.js 官网安装。\ngit clone git@github.com:ZJU-REAL/Easel.git\ncd Easel\ncp .env.example .env\nvim .env\nbash setup.sh\neasel web\n# 或：easel chat\n启动 Web 工作台后访问 http://localhost:7860。安装完成后可以运行 easel doctor 检查环境，\n运行 easel ping 检查 gateway 和 Agent 连通性。\n需要图片、音视频或浏览器发布能力时，安装可选依赖：\npip install -e \".[media]\"\nplaywright install chromium\n# 系统还需要 ffmpeg\n最小配置只需要在项目根目录 .env 中提供一个可用的 LLM：\nANTHROPIC_API_KEY=你的_API_Key\nCLAUDE_MODEL=anthropic/claude-sonnet-4-6\n.env.example 还列出了视频、音乐、语音等可选模型配置。只需要配置实际使用的能力，也可以在 Web\n工作台的“技能库”中填写；没有配置的媒体 Skill 不会影响聊天、策划和文本创作。常见可选项包括：\n常用入口：\n所有技能都通过 Easel 的 Agent 执行。Agent 会读取对应 SKILL.md，调用脚本和工具，并把产物保存到 outputs/。\neasel skill quality-gate -i \"帮我检查这条小红书文案\"\neasel skill social-content -i \"写一条介绍空间智能的微博\"\neasel skill quality-gate -i \"这是一段待发布文案\" -p 科技数码达人\nWeb 工作台提供同样的能力，并额外管理会话、素材、账号、画像、内容库和发布状态。拖入对话框的素材会作为结构化附件传给 Agent，用户消息只显示实际输入的文字。\n一个画像对应 profiles/<名字>/ 目录，包含六个维度：定位、风格、受众、平台、偏好与红线、长期记忆。\ncp -r profiles/_template \"profiles/我的账号\"\n在 Web 的“画像”页面可以直接创建和编辑；同一画像可以跨多个已登录平台使用。\nEasel/\n├── easel/                    Python CLI：chat / web / skill / doctor / ping\n├── web/                      FastAPI 后端与 React 工作台\n├── skills/openclaw/          发现、策划、制作、发布、归因技能\n├── skills/shared/            跨技能脚本与参考资料\n├── assets/                   品牌、README 媒体与用户导入素材\n├── profiles/                 账号画像（每个画像一个目录）\n├── outputs/                  内容项目与最终产物\n├── openclaw/                 隔离 profile、workspace 与同步脚本\n└── docs/                     能力规范、能力地图与架构文档\nEasel 使用独立的 easel OpenClaw profile，不会覆盖你本机已有的 OpenClaw 配置。Web 默认运行在 7860，gateway 默认运行在 18789。\nEasel 的技能体系和工作流受益于许多优秀的开源项目、工具与内容方法论。感谢所有原作者和社区贡献者； 具体项目、用途和许可信息请查看完整致谢。",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 2,
+      "blend": 0.0,
+      "is_new": false,
+      "alt_keys": [
+        "01f63dbd63f25f15",
+        "040e5bce232e16e2",
+        "a3da6e9bd3e76f60"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/ZJU-REAL/Easel",
+          "domain": "github.com",
+          "tier": "C"
+        },
+        {
+          "name": "Built In",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5YLUNMRllFMWg1ajYwMTlDdGhYOXBSWGtnT3Z3YTZrdEcwV0FtRUV4bnlHZjQ1YlpQaDRJX2xhSF9MUmJEcnVidDNwcDJONTRTX3VHR0FXalVONkhqLVE?oc=5",
+          "domain": "built-in.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Fast Company",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPTkZkR3lUSXZVamlyR1JpNTdGYUhLSVctZ0NoazNublplaG5VN3ZNV0dOMkFqYnplNHBKbGtXVnFUWW02SHd5TjdoLTB4OXpVaGlHWGcxSm1wUF90WXB5eUx1U1ZBU1p6UDNoYkdfWHh1OFRQMVI0XzhDWGNQZlJGY1htWTZhMmRmOFlHaVJGVnVjRE9LM1JsNmNoLXNhMDZoNUxEODdhQ0RPNk8taExSMDRsb0lVVGNubC1pR3RLamRlZ252UG5Uenh5ZFNra0o1RlZQWnZwT3UyUQ?oc=5",
+          "domain": "fast-company.publisher",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-28T02:22:27+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-28 — outside lookback window"
+    },
+    {
+      "cluster_key": "187d493f79cf3a54",
       "title": "[webapps] C-MOR  6.0104 - Cross-Site Scripting (XSS)",
       "category": "cyber_attacks",
-      "one_liner": "C-MOR Video Surveillance XSS flaws allow client-side code execution via manipulated URL parameters.",
+      "one_liner": "Cross-site scripting vulnerabilities in C-MOR Video Surveillance <= 6.0104 allow remote execution of client-side code via crafted component parameters.",
       "tags": [
         "appsec",
         "exploit",
         "privacy",
         "release",
+        "research",
         "vulnerability",
         "writeup"
       ],
-      "summary": "C-MOR Video Surveillance versions up to 6.0104 contain a cross-site scripting vulnerability via the 'size' parameter in the ptzpreset.pml component and the 'anyparam' parameter in the show-movies.pml component. An attacker can execute arbitrary client-side code by tricking an authenticated user into visiting a crafted URL. The issue is tracked as CVE-2026-51133.",
+      "summary": "A cross-site scripting (XSS) vulnerability in za-internet GmbH C-MOR Video Surveillance up to version 6.0104 allows remote attackers to execute arbitrary client-side code. Discovered by Samir Shamdin, the flaw can be triggered by enticing an authenticated user to click crafted URLs targeting parameters in the ptzpreset.pml and show-movies.pml components. Security researchers have published proof-of-concept exploit URLs demonstrating script execution. Users should apply vendor patches or restrict access to video surveillance interfaces.",
       "key_facts": [
-        "Product: C-MOR Video Surveillance",
-        "Affected Versions: <= 6.0104",
-        "CVE: CVE-2026-51133"
+        "Software: C-MOR Video Surveillance",
+        "Affected versions: <= V6.0104",
+        "CVE ID: CVE-2026-51133"
       ],
-      "bottom_line": "C-MOR Video Surveillance versions up to 6.0104 are vulnerable to authenticated stored or reflected XSS via parameter inputs.",
+      "bottom_line": "Authenticated C-MOR Video Surveillance users can be coerced into executing arbitrary client-side code via crafted XSS URLs targeting surveillance components.",
       "claims": [
         {
           "text": "A Cross-Site Scripting (XSS) vulnerability in za-internet GmbH C-MOR Video Surveillance <= V6.0104 allows a remote attacker to execute arbitrary client-side code via the 'size' parameter in the ptzpreset.pml component and the 'anyparam' in the show-movies.pml component.",
@@ -449,14 +556,10 @@
       "blend": 58.0,
       "is_new": true,
       "alt_keys": [
-        "1b3a221aac349c90",
+        "187d493f79cf3a54",
         "53eac309a10652cb",
-        "5bcc91e5e35f360c",
-        "792df0bb952bc6a0",
-        "79f2ffd00ccff24c",
-        "86b5ea410189fbc9",
         "9513d1261508613d",
-        "c7bc86d270177b3d",
+        "a4e459d81ef61ae4",
         "d4636c790d3f64ec",
         "ed5fd06ddb329556"
       ],
@@ -464,6 +567,12 @@
       "priority": "important",
       "verdict": "rejected",
       "sources": [
+        {
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-73781",
+          "domain": "cvefeed.io",
+          "tier": "A"
+        },
         {
           "name": "Exploit-DB",
           "url": "https://www.exploit-db.com/exploits/52665",
@@ -489,39 +598,9 @@
           "tier": "A"
         },
         {
-          "name": "oss-security",
-          "url": "https://seclists.org/oss-sec/2026/q3/617",
-          "domain": "seclists.org",
-          "tier": "A"
-        },
-        {
-          "name": "oss-security",
-          "url": "https://seclists.org/oss-sec/2026/q3/623",
-          "domain": "seclists.org",
-          "tier": "A"
-        },
-        {
-          "name": "oss-security",
-          "url": "https://seclists.org/oss-sec/2026/q3/620",
-          "domain": "seclists.org",
-          "tier": "A"
-        },
-        {
-          "name": "oss-security",
-          "url": "https://seclists.org/oss-sec/2026/q3/621",
-          "domain": "seclists.org",
-          "tier": "A"
-        },
-        {
-          "name": "oss-security",
-          "url": "https://seclists.org/oss-sec/2026/q3/622",
-          "domain": "seclists.org",
-          "tier": "A"
-        },
-        {
-          "name": "oss-security",
-          "url": "https://seclists.org/oss-sec/2026/q3/619",
-          "domain": "seclists.org",
+          "name": "Exploit-DB",
+          "url": "https://www.exploit-db.com/exploits/52670",
+          "domain": "exploit-db.com",
           "tier": "A"
         }
       ],
@@ -529,9 +608,10 @@
         "https://www.exploit-db.com/exploits/52661",
         "https://www.exploit-db.com/exploits/52662",
         "https://www.exploit-db.com/exploits/52665",
-        "https://www.exploit-db.com/exploits/52666"
+        "https://www.exploit-db.com/exploits/52666",
+        "https://www.exploit-db.com/exploits/52670"
       ],
-      "published": "2026-08-30T23:11:05+00:00",
+      "published": "2026-08-31T00:00:00+00:00",
       "trace": [
         "tier A (+40)",
         "2 independent outlets (+12)",
@@ -544,28 +624,38 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "d831d8cec0740599",
-      "title": "Selective Forgetting: A Graph-Based Memory Framework for Long-Term LLM Agents",
+      "cluster_key": "7121ad64487e0f0b",
+      "title": "SciTrue: Reliable Scientific Claim Validation with Frontier and Open Language Models at the NTCIR SciClaimEval Task",
       "category": "tech_ai",
-      "one_liner": "Graph-based memory frameworks for LLM agents do not outperform flat vector baselines, but automated pruning effectively reduces storage size.",
+      "one_liner": "SciTrue won the NTCIR SciClaimEval task by pairing frontier multimodal models with a leak-free pair prior that dramatically outpaced model architecture changes.",
       "tags": [
         "agents",
         "ai",
         "llm",
-        "research",
-        "tool"
+        "policy",
+        "release",
+        "research"
       ],
-      "summary": "Researchers evaluated a graph-based memory framework for long-term LLM agents that extracts conversational turns into typed nodes and relations while periodically pruning low-scoring memories. On the LongMemEval benchmark, the graph structure did not outperform a flat vector retrieval baseline at matched candidate generation budgets, with token F1 dropping from 0.468 to 0.417. However, the forgetting module successfully pruned 9.8 percent of nodes and 9.5 percent of stored bytes from a large persistent graph without altering token F1 performance.",
+      "summary": "The SciTrue team secured first place in three out of four subtask combinations at the NTCIR SciClaimEval task for scientific claim validation against paper tables and figures. Benchmarking eleven frontier and open multimodal models under a uniform protocol, they demonstrated that strong instruction-tuned models like Claude Opus 4.8 and Gemma-4-31B are highly competitive, while GPT-5.5 and Claude Fable 5 achieved top scores reaching 97.7 on Subtask 2. Their analysis revealed that a leak-free pair prior—which recovers the Supported/Refuted pairing from the claim text alone—boosted Subtask 1 pair accuracy from 72.2 to 93.5, proving that data packaging levers outweigh model swaps. Additionally, a case-by-case audit identified that residual errors stem largely from visual label-mapping swaps or dataset noise, while also exposing a measurement leak in the released file ordering.",
       "key_facts": [
-        "Graph token F1: 0.417",
-        "Vector baseline token F1: 0.468",
-        "Pruned graph nodes: 9.8%"
+        "Subtask 2 score: 97.7 by GPT-5.5 and Claude Fable 5",
+        "Subtask-1 pair-accuracy increase: from 72.2 to 93.5"
       ],
-      "bottom_line": "Flat vector retrieval outperforms knowledge graph structures for long-term LLM agent conversation recall.",
+      "bottom_line": "Data leakage in file ordering and structural pair priors can dwarf model architecture improvements in scientific claim validation benchmarks.",
       "claims": [
         {
-          "text": "On LongMemEval, the graph does not outperform a flat vector baseline at a matched candidate-generation budget of five retrieval roots: token F1 is $0.417$ against $0.468$, and a paired bootstrap over 500 questions gives $\rfloor = -0.050$ (95% CI $[-0.085, -0.016]$).",
-          "support_span": "On LongMemEval, the graph does not outperform a flat vector baseline at a matched candidate-generation budget of five retrieval roots: token F1 is $0.417$ against $0.468$, and a paired bootstrap over 500 questions gives $\\Delta = -0.050$ (95% CI $[-0.085, -0.016]$).",
+          "text": "On the official, blind test leaderboard (Section~\ref{sec:results}), SciTrue placed first by a clear margin in three of the four evidence-category/subtask combinations, and tied for first on the primary metric in the fourth.",
+          "support_span": "On the official, blind test leaderboard (Section~\\ref{sec:results}), SciTrue placer first by a clear margin in three of the four evidence-category/subtask combinations, and tied for first on the primary metric in the fourth.",
+          "status": "contradicted"
+        },
+        {
+          "text": "GPT-5.5 and Claude Fable~5 lead both subtasks (97.7 on Subtask~2).",
+          "support_span": "GPT-5.5 and Claude Fable~5 lead both subtasks (97.7 on Subtask~2).",
+          "status": "entailed"
+        },
+        {
+          "text": "a leak-free pair prior that recovers the Supported/Refuted pairing from the claim text alone (a visible field) and assigns Supported to the higher-confidence evidence raises Subtask-1 pair-accuracy from 72.2 to 93.5, far more than any model swap or ensemble weighting.",
+          "support_span": "a leak-free pair prior that recovers the Supported/Refuted pairing from the claim text alone (a visible field) and assigns Supported to the higher-confidence evidence raises Subtask-1 pair-accuracy from 72.2 to 93.5, far more than any model swap or ensemble weighting.",
           "status": "contradicted"
         }
       ],
@@ -575,7 +665,7 @@
       "blend": 47.5,
       "is_new": true,
       "alt_keys": [
-        "d831d8cec0740599"
+        "7121ad64487e0f0b"
       ],
       "critical_signal": "",
       "priority": "important",
@@ -583,15 +673,15 @@
       "sources": [
         {
           "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2608.28978",
+          "url": "https://arxiv.org/abs/2609.00654",
           "domain": "arxiv.org",
           "tier": "A"
         }
       ],
       "primary_links": [
-        "https://arxiv.org/abs/2608.28978"
+        "https://arxiv.org/abs/2609.00654"
       ],
-      "published": "2026-09-01T04:00:00+00:00",
+      "published": "2026-09-02T04:00:00+00:00",
       "trace": [
         "tier A (+40)",
         "primary source anchor (+30)",
@@ -599,57 +689,309 @@
         "importance 3/5 from gemini-3.5-flash-lite",
         "blend 48 = trust 70 / interest 50 / corrob 25"
       ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "2 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "fe535b77f63e6411",
-      "title": "51 Of 227 Indians Recruited In Russian Army Are Dead: Centre",
-      "category": "india_world",
-      "one_liner": "A significant number of Indian citizens recruited into the Russian army have been killed in the conflict, necessitating government intervention for repatriation.",
+      "cluster_key": "88b3ca09bcf645f2",
+      "title": "Deepa Jewellers IPO Day 2: GMP hints 25% listing gain. Check subscription, review, key dates. Apply or skip?",
+      "category": "markets",
+      "one_liner": "An analysis of the Deepa Jewellers IPO pricing, valuations, and broker recommendations for retail and institutional investors in the Indian market.",
       "tags": [
         "india",
-        "policy"
+        "markets",
+        "research"
       ],
-      "summary": "The Indian government has confirmed that 51 out of 227 Indian nationals recruited into the Russian military have died. India is actively monitoring the situation to facilitate the release and repatriation of its citizens. This follows reports of Indian nationals being caught up in the ongoing conflict.",
+      "summary": "Deepa Jewellers has opened its IPO for subscription with a price band set between ₹168 and ₹177 per equity share, aiming for a tentative listing on the BSE and NSE on September 8. The grey market premium currently hints at an estimated listing price of ₹221, representing a potential 25% gain over the issue price. Brokerages have issued generally positive reviews highlighting strong earnings growth and an attractive P/E valuation relative to peers, though they caution against risks including high customer concentration and working capital requirements. The issue allocates up to 50% for qualified institutional buyers, at least 15% for non-institutional investors, and a minimum of 35% for retail investors.",
       "key_facts": [
-        "Total recruited: 227",
-        "Confirmed deaths: 51"
+        "Price band: ₹168 to ₹177 per equity share",
+        "Lot size: 84 equity shares",
+        "Grey market premium: +44",
+        "RoNW: 56.45%"
       ],
-      "bottom_line": "The Indian government is actively managing the repatriation of citizens caught in the Russian military recruitment pipeline.",
+      "bottom_line": "Deepa Jewellers' IPO offers strong earnings growth at a discount to peers, but high customer concentration warrants caution.",
       "claims": [
         {
-          "text": "51 out of 227 Indian nationals recruited into the Russian military have died.",
-          "support_span": "51 Of 227 Indians Recruited In Russian Army Are Dead: Centre",
+          "text": "The Deepa Jewellers IPO opened for subscription on Tuesday, 1 September, and will close on Thursday, 3 September.",
+          "support_span": "The Deepa Jewellers IPO opened for subscription on Tuesday, 1 September, and will close on Thursday, 3 September.",
+          "status": "entailed"
+        },
+        {
+          "text": "The Deepa Jewellers IPO price band has been fixed at ₹168 to ₹177 per equity share, with a face value of ₹2 per share.",
+          "support_span": "The Deepa Jewellers IPO price band has been fixed at ₹168 to ₹177 per equity share, with a face value of ₹2 per share.",
+          "status": "entailed"
+        },
+        {
+          "text": "Deepa Jewellers IPO GMP today, or grey market premium, is +44.",
+          "support_span": "Deepa Jewellers IPO GMP today, or grey market premium, is +44.",
+          "status": "entailed"
+        },
+        {
+          "text": "The company reported the highest return on net worth (RoNW) among its listed peers at 56.45%.",
+          "support_span": "the company reported the highest return on net worth (RoNW) among its listed peers at 56.45%.",
           "status": "contradicted"
         }
       ],
       "trust_score": 25,
-      "interest_score": 100,
+      "interest_score": 25,
       "corroboration": 1,
-      "blend": 58.8,
+      "blend": 25.0,
       "is_new": true,
       "alt_keys": [
-        "fe535b77f63e6411"
+        "88b3ca09bcf645f2"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Livemint Markets",
+          "url": "https://www.livemint.com/market/ipo/deepa-jewellers-ipo-day-2-gmp-hints-25-listing-gain-check-subscription-review-key-dates-apply-or-skip-11788313439516.html",
+          "domain": "livemint.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-02T02:26:29+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 25 = trust 25 / interest 25 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "c44a5fa39c9d9d0e",
+      "title": "Stocks to watch today: Reason why these shares are in focus for Wednesday's trading session | Full list",
+      "category": "markets",
+      "one_liner": "Corporate updates from major Indian firms highlight operational milestones amid broader market volatility.",
+      "tags": [
+        "dfir",
+        "india",
+        "markets",
+        "privacy",
+        "research"
+      ],
+      "summary": "Indian market investors are tracking key corporate updates from major firms including Hero Motocorp, Reliance Industries, Adani Green Energy, and Tata Motors following market hours. Hero Motocorp reported a 4.5% year-on-year increase in August domestic dispatches, while Adani Green Energy commissioned a 139 MW solar plant at Khavda, Gujarat, pushing its operational capacity past 20 GW. Tata Motors secured all regulatory approvals for its acquisition of Italy's Iveco Group, and Gland Pharma cleared a US FDA inspection with zero observations. These developments unfold against a backdrop of volatile benchmark indices pressured by rising crude prices and geopolitical tensions in the Middle East.",
+      "key_facts": [
+        "Hero Motocorp dispatches: 5,42,305 units",
+        "Adani Green solar project: 139 MW",
+        "Adani operational capacity: >20 GW"
+      ],
+      "bottom_line": "Major Indian corporations report robust production and strategic acquisitions even as broader equity markets face geopolitical headwinds.",
+      "claims": [
+        {
+          "text": "Hero Motocorp’s domestic dispatches increased 4.5% year-on-year to 5,42,305 units in August 2026",
+          "support_span": "Hero Motocorp’s domestic dispatches increased 4.5% year-on-year to 5,42,305 units in August 2026",
+          "status": "contradicted"
+        },
+        {
+          "text": "Adani Green Energy commissioned a 139 MW solar power project at Khavda in Gujarat, taking its operational renewable energy capacity to more than 20 GW.",
+          "support_span": "Adani Green Energy commissioned a 139 MW solar power project at Khavda in Gujarat, taking its operational renewable energy capacity to more than 20 GW.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 25.0,
+      "is_new": true,
+      "alt_keys": [
+        "c44a5fa39c9d9d0e"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Livemint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/stocks-to-watch-today-reason-why-these-shares-are-in-focus-for-wednesdays-trading-session-full-list-11788311231011.html",
+          "domain": "livemint.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-02T01:37:11+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 25 = trust 25 / interest 25 / corrob 25"
+      ],
+      "reject_reason": "2 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "33fdf3de4a33f797",
+      "title": "Zelensky says airlines should avoid Russian airspace as Ukraine escalates drone operations",
+      "category": "india_world",
+      "one_liner": "Escalating Ukrainian drone operations deep inside Russia threaten remaining commercial flight paths over Russian airspace.",
+      "tags": [
+        "network",
+        "policy",
+        "vulnerability"
+      ],
+      "summary": "Ukrainian President Volodymyr Zelensky warned international airlines and insurers that Russian airspace is becoming completely dangerous as Ukraine escalates drone strikes against targets deep inside Russia. Russian President Vladimir Putin condemned the remarks as a declaration of state terrorism and stated that Russia would continue its own heavy attacks on Ukrainian energy infrastructure. Aviation risk advisory firms confirm that daily strikes inside Russian territory are almost certain to continue, raising the risk of miscalculation for civilian air carriers still using Russian routes. Meanwhile, ongoing military strikes continue to cause civilian casualties on both sides.",
+      "key_facts": [
+        "Casualties: 12 people killed in recent strikes",
+        "Target proximity: Drone operations reaching deep inside Russian territory"
+      ],
+      "bottom_line": "Ukraine's escalation of drone strikes inside Russia threatens remaining commercial aviation routes and prompts reciprocal vows of intensified attacks from Moscow.",
+      "claims": [
+        {
+          "text": "Ukraine's president has told airlines that Russian airspace will be 'effectively closing' as his country escalates its drone strikes.",
+          "support_span": "Ukraine's president has told airlines that Russian airspace will be 'effectively closing' as his country escalates its drone strikes.",
+          "status": "contradicted"
+        },
+        {
+          "text": "Russian President Vladimir Putin responded by saying that Zelensky's comments amounted to a 'declaration of state terrorism', while adding that Russia would continue its own intensifying attacks on Ukraine.",
+          "support_span": "Russian President Vladimir Putin responded by saying that Zelensky's comments amounted to a 'declaration of state terrorism', while adding that Russia would continue its own intensifying attacks on Ukraine.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 40.0,
+      "is_new": true,
+      "alt_keys": [
+        "33fdf3de4a33f797"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c9v9yydy2wvo?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-02T04:23:23+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 40 = trust 40 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "2 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "35d900d158e508e0",
+      "title": "OpenAgentFlow: Enabling System-Wide Safety Boundaries for Heterogeneous AI Agent Fleets",
+      "category": "tech_ai",
+      "one_liner": "OpenAgentFlow enforces system-wide safety boundaries at the action-commit boundary for heterogeneous AI agent fleets.",
+      "tags": [
+        "agents",
+        "ai",
+        "android",
+        "appsec",
+        "llm",
+        "research",
+        "tool"
+      ],
+      "summary": "To address fragmented safety enforcement across heterogeneous AI agent fleets, researchers present OpenAgentFlow, a control-plane and action-plane architecture that normalizes pending GUI, API, tool, and LLM calls into a unified event stream. Each event passes through a pre-execution Policy Enforcement Point at the action-commit boundary. Instantiated on Android, OpenAgentFlow achieved a 95.3% attack block rate on a 300-case action-event benchmark.",
+      "key_facts": [
+        "Attack block rate: 95.3% on a 300-case benchmark",
+        "Android evaluation: 90.8% raw accuracy and 92.9% trace-adjusted pass rate"
+      ],
+      "bottom_line": "Implement centralized pre-execution policy enforcement points to secure heterogeneous multi-agent action flows without modifying underlying models.",
+      "claims": [
+        {
+          "text": "We present OpenAgentFlow, a control-plane/action-plane architecture that enforces safety at the action-commit boundary.",
+          "support_span": "We present OpenAgentFlow, a control-plane/action-plane architecture that enforces safety at the action-commit boundary. It normalizes pending GUI actions, API calls, tool calls, and LLM-generated invocations into a unified AgentEvent stream...",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": true,
+      "alt_keys": [
+        "35d900d158e508e0"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.CR",
+          "url": "https://arxiv.org/abs/2609.00015",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2609.00015"
+      ],
+      "published": "2026-09-02T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "98612dd7bdb4bd03",
+      "title": "NTA Invites Applications For Rashtriya Indian Military College Entrance Exam 2026",
+      "category": "india_world",
+      "one_liner": "An administrative notice announces entrance exam applications for the Rashtriya Indian Military College.",
+      "tags": [
+        "india",
+        "policy",
+        "release",
+        "research"
+      ],
+      "summary": "The National Testing Agency (NTA) has invited applications for the Rashtriya Indian Military College (RIMC) Entrance Exam 2026, which will be conducted in a traditional pen-and-paper format.",
+      "key_facts": [
+        "Exam: Rashtriya Indian Military College Entrance Exam 2026",
+        "Mode: Pen-and-paper"
+      ],
+      "bottom_line": "The NTA opened applications for the RIMC Entrance Exam 2026 to be held in pen-and-paper mode.",
+      "claims": [
+        {
+          "text": "NTA Invites Applications For Rashtriya Indian Military College Entrance Exam 2026",
+          "support_span": "NTA Invites Applications For Rashtriya Indian Military College Entrance Exam 2026",
+          "status": "contradicted"
+        },
+        {
+          "text": "The examination will be conducted in pen-and-paper mode.",
+          "support_span": "The examination will be conducted in pen-and-paper mode.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 13.8,
+      "is_new": true,
+      "alt_keys": [
+        "98612dd7bdb4bd03"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
           "name": "NDTV India",
-          "url": "https://www.ndtv.com/india-news/51-of-227-indians-recruited-in-russian-army-are-dead-centre-11984631#publisher=newsstand",
+          "url": "https://www.ndtv.com/education/nta-invites-applications-for-rashtriya-indian-military-college-entrance-exam-2026-11990069#publisher=newsstand",
           "domain": "ndtv.com",
           "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-01T02:08:43+00:00",
+      "published": "2026-09-02T03:57:16+00:00",
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 5/5 from gemini-3.1-flash-lite",
-        "blend 59 = trust 25 / interest 100 / corrob 25",
-        "demoted: critical capped at 5"
+        "importance 1/5 from gemini-3.5-flash-lite",
+        "blend 14 = trust 25 / interest 0 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     }
