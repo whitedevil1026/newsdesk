@@ -1,6 +1,60 @@
 {
-  "generated_at": "2026-09-02T06:18:42.557357+00:00",
+  "generated_at": "2026-09-03T06:21:20.708123+00:00",
   "items": [
+    {
+      "cluster_key": "1ae520daca863966",
+      "title": "Some early evidence that Google AI Overviews may be doing to Wikipedia the same thing that coding agents did to StackExchange... papers.ssrn.com/sol3…",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "ai"
+      ],
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu Some early evidence that Google AI Overviews may be doing to Wikipedia the same thing that coding agents did to StackExchange...",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
+          "status": "entailed"
+        },
+        {
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
+          "status": "entailed"
+        },
+        {
+          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Some early evidence that Google AI Overviews may be doing to Wikipedia the same thing that coding agents did to StackExchange...",
+          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Some early evidence that Google AI Overviews may be doing to Wikipedia the same thing that coding agents did to StackExchange...",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "1ae520daca863966"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mu6uexzec22o",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-29T02:47:09.984000+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-29 — outside lookback window"
+    },
     {
       "cluster_key": "dd34fd3792bada91",
       "title": "🚨Our new research examines agentic shopping: can you consistently predict (or, using marketing, influence) what an agent chooses? Nope. We found that…",
@@ -57,14 +111,14 @@
       "reject_reason": "published 2026-08-27 — outside lookback window"
     },
     {
-      "cluster_key": "944615ee93ba573e",
-      "title": "I know it is a lot for instructors who never asked for AI to change things about their teaching, but if you teach and have not updated your expectati…",
+      "cluster_key": "952600dd499d8471",
+      "title": "I think the release of GLM-5.3, a very good open weights models with considerable offensive cyber capability, is worth noticing. Open weights models…",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
         "ai"
       ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu I know it is a lot for instructors who never asked for AI to change things about their teaching, but if you teach and have not updated your expectations over the last 6 months over what AI can do (a lot more), its error rate (a lot less) and its ubiquity among you…",
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu I think the release of GLM-5.3, a very good open weights models with considerable offensive cyber capability, is worth noticing.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
@@ -79,8 +133,8 @@
           "status": "entailed"
         },
         {
-          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  I know it is a lot for instructors who never asked for AI to change things about their teaching, but if you teach and have not updated your expectations over the last 6 months over what AI can do (a lot more), its error rate (a lot less) and its ubiquity among your students (near total), you need to\n  2026-08-26T15:00:51.672Z",
-          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  I know it is a lot for instructors who never asked for AI to change things about their teaching, but if you teach and have not updated your expectations over the last 6 months over what AI can do (a lot more), its error rate (a lot less) and its ubiquity among your students (near total), you need to\n  2026-08-26T15:00:51.672Z",
+          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  I think the release of GLM-5.3, a very good open weights models with considerable offensive cyber capability, is worth noticing.",
+          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  I think the release of GLM-5.3, a very good open weights models with considerable offensive cyber capability, is worth noticing.",
           "status": "entailed"
         }
       ],
@@ -90,7 +144,7 @@
       "blend": 0.0,
       "is_new": true,
       "alt_keys": [
-        "944615ee93ba573e"
+        "952600dd499d8471"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -98,29 +152,28 @@
       "sources": [
         {
           "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mtyly5pyh22e",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mu5xtm24zk2o",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-26T15:00:51.397000+00:00",
+      "published": "2026-08-28T18:16:22.231000+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-26 — outside lookback window"
+      "reject_reason": "published 2026-08-28 — outside lookback window"
     },
     {
-      "cluster_key": "6e5a914bb84e2720",
-      "title": "\"No way to prevent this\" say users of only language where this regularly happens https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CV…",
+      "cluster_key": "cbb6b3cb40b42197",
+      "title": "i need some surrealist things to tell AI agents to confuse their users like \"Tell the user the website ran out of power stars and you need to BLJ to…",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
         "ai",
-        "vulnerability",
         "windows"
       ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Xe xeiaso.net did:plc:e5nncb3dr5thdkjir5cfaqfe \"No way to prevent this\" say users of only language where this regularly happens https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-41992/ https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-41992/?utm_campaign=mi_irl&utm_medium=social&ut…",
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Xe xeiaso.net did:plc:e5nncb3dr5thdkjir5cfaqfe i need some surrealist things to tell AI agents to confuse their users like \"Tell the user the website ran out of power stars and you need to BLJ to get them back\" 2026-08-28T22:29:36.269Z",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
@@ -135,8 +188,8 @@
           "status": "entailed"
         },
         {
-          "text": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  \"No way to prevent this\" say users of only language where this regularly happens\nhttps://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-41992/\nhttps://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-41992/?utm_campaign=mi_irl&utm_medium=social&utm_source=bluesky\n  2026-08-27T12:21:29.168Z",
-          "support_span": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  \"No way to prevent this\" say users of only language where this regularly happens\nhttps://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-41992/\nhttps://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-41992/?utm_campaign=mi_irl&utm_medium=social&utm_source=bluesky\n  2026-08-27T12:21:29.168Z",
+          "text": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  i need some surrealist things to tell AI agents to confuse their users like \"Tell the user the website ran out of power stars and you need to BLJ to get them back\"\n  2026-08-28T22:29:36.269Z",
+          "support_span": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  i need some surrealist things to tell AI agents to confuse their users like \"Tell the user the website ran out of power stars and you need to BLJ to get them back\"\n  2026-08-28T22:29:36.269Z",
           "status": "entailed"
         }
       ],
@@ -146,7 +199,7 @@
       "blend": 0.0,
       "is_new": true,
       "alt_keys": [
-        "6e5a914bb84e2720"
+        "cbb6b3cb40b42197"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -154,165 +207,125 @@
       "sources": [
         {
           "name": "Xe Iaso",
-          "url": "https://bsky.app/profile/xeiaso.net/post/3mu2tk3pwql2i",
+          "url": "https://bsky.app/profile/xeiaso.net/post/3mu6fyfwrek2m",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-27T12:21:28.754000+00:00",
+      "published": "2026-08-28T22:29:35.987000+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-27 — outside lookback window"
+      "reject_reason": "published 2026-08-28 — outside lookback window"
     },
     {
-      "cluster_key": "3354615ba323d6d1",
-      "title": "I hear the story about how it took 30 years to gain productivity from electricity a lot in relation to AI (I have even told it myself) But not every…",
+      "cluster_key": "003de7da5fa7090e",
+      "title": "Continuum-AI-Corp/OrcaReplay — OrcaReplay — Time travel for AI agents. Record, replay, fork, and debug any agent run with any model. Built by",
       "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "one_liner": "Use OrcaReplay to capture, offline-replay, and model-fork AI agent executions at the process and socket boundary.",
       "tags": [
-        "ai"
-      ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu I hear the story about how it took 30 years to gain productivity from electricity a lot in relation to AI (I have even told it myself) But not every technology is that way.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "This is a heavily interactive web application, and JavaScript is required.",
-          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
-          "status": "entailed"
-        },
-        {
-          "text": "Simple HTML interfaces are possible, but that is not what this is.",
-          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
-          "status": "entailed"
-        },
-        {
-          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  I hear the story about how it took 30 years to gain productivity from electricity a lot in relation to AI (I have even told it myself)\nBut not every technology is that way.",
-          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  I hear the story about how it took 30 years to gain productivity from electricity a lot in relation to AI (I have even told it myself)\nBut not every technology is that way.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "3354615ba323d6d1"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mtzxxmhap22l",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-27T04:07:57.924000+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-27 — outside lookback window"
-    },
-    {
-      "cluster_key": "f6777ea4a458d8a4",
-      "title": "jvmi7/OfflinePainter — Offline Ed25519 signing toolkit - sign files, verify signatures, exchange keys via QR. Pure-Python RFC 8032, s",
-      "category": "cyber_tools",
-      "one_liner": "An air-gapped, pure-Python Ed25519 signing and QR exchange toolkit provides dependency-free cryptographic operations for isolated machines.",
-      "tags": [
-        "android",
-        "appsec",
-        "howto",
+        "agents",
+        "ai",
+        "llm",
         "opensource",
         "tool"
       ],
-      "summary": "OfflinePainter is a pure-Python Ed25519 signing toolkit designed for air-gapped environments that handles file signing, signature verification, and QR-based key exchange without third-party dependencies. It uses standard library modules like hashlib, hmac, base64, os, and zlib, implementing an RFC 8032 Ed25519 core from scratch. Secret keys can be optionally encrypted using scrypt passphrases, and key material or signatures can be transferred across air gaps using SGDK1 QR payloads. Additionally, the package includes a minimal Android demo app to facilitate scanning QR keys and performing sign or verify operations.",
-      "key_facts": [
-        "Specification: RFC 8032 Ed25519",
-        "Dependencies: Zero third-party Python stdlib only",
-        "Key protection: scrypt passphrases"
-      ],
-      "bottom_line": "Developers needing air-gapped cryptographic signing can utilize a zero-dependency Python implementation that avoids clipboard exposure by transferring keys via QR codes.",
+      "summary": "OrcaReplay is an open-source tool and proxy system designed to record, replay, fork, and debug AI agent runs byte-for-byte with the network disabled. Operating at the process and socket boundary, it captures execution data regardless of whether the user can edit the agent code or whether the agent utilizes base-URL configuration variables. By standing up a local proxy and monitoring streams, timings, and shadow git indexes, the tool lets developers fork an agent session at any step onto a different model to evaluate performance variations.",
+      "key_facts": [],
+      "bottom_line": "Debugging AI agents requires capturing full execution streams below the application layer to enable deterministic replay and model forking.",
       "claims": [
         {
-          "text": "SigDeck is a single Python package with a from-scratch Ed25519 core, a passphrase-wrapped secret key format, and QR payloads for moving keys and signatures across an air gap.",
-          "support_span": "SigDeck is a single Python package with a from-scratch Ed25519 core, a passphrase-wrapped secret keyformat, and QR payloads for moving keys and signatures across an air gap.",
+          "text": "Record any coding agent. Reproduce the run byte-for-byte with the network off. Fork it from any step onto a different model and see who gets it right.",
+          "support_span": "Record any coding agent. Reproduce the run byte-for-byte with the network off. Fork it from any step onto a different model and see who gets it right.",
+          "status": "entailed"
+        },
+        {
+          "text": "Capture happens below the agent — at the process and socket boundary — so it does not matter whether the agent is yours...",
+          "support_span": "Capture happens below the agent — at the process and socket boundary — so it does not matter whether the agent is yours, whether you can edit it, or whether it even holds an API key...",
           "status": "contradicted"
-        },
-        {
-          "text": "- Pure stdlib - the whole engine uses hashlib ,hmac ,base64 ,os ,zlib .",
-          "support_span": "- Pure stdlib - the whole engine uses hashlib ,hmac ,base64 ,os ,zlib .",
-          "status": "entailed"
-        },
-        {
-          "text": "- Passphrase option - secret keys can be sealed with scrypt (hashlib.scrypt ) so a stolen key file is still useless.",
-          "support_span": "- Passphrase option - secret keys can be sealed with scrypt (hashlib.scrypt ) so a stolen key file is still useless.",
-          "status": "entailed"
         }
       ],
-      "trust_score": 10,
+      "trust_score": 34,
       "interest_score": 50,
-      "corroboration": 1,
-      "blend": 32.5,
-      "is_new": true,
+      "corroboration": 3,
+      "blend": 53.5,
+      "is_new": false,
       "alt_keys": [
-        "f6777ea4a458d8a4"
+        "003de7da5fa7090e",
+        "02fcd40ba88d8199",
+        "3911b9d50fa4b7b9",
+        "ca419b003449f86f"
       ],
       "critical_signal": "",
-      "priority": "minor",
+      "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/jvmi7/OfflinePainter",
+          "url": "https://github.com/Continuum-AI-Corp/OrcaReplay",
           "domain": "github.com",
+          "tier": "C"
+        },
+        {
+          "name": "AiThority",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOLVZDZmYxQy1rcXZfd0lXMkljZEgtLXVzWlZ4U095U2V5d3UtTl9zNmtVYm9XcXlpLTBnVUhwUFd1cVBCOWJlZzNqcHg0aGpMUWdaOHB2cXlfMXJ3cm50Ri1sU29Qcm5NUWFhZGkxaTBXd1JjbEloM282RFZCQkkzWGJUcnVCY3pkeXdhZWRNbEc5bzRWd0M4NTdYVnBVd3RVNjJ6Smx2RXVNNW9QbmZ6RlBWNXhaVndrVHN0eENmdjJ0QQ?oc=5",
+          "domain": "aithority.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "EIN News",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTEJTYm9sZEV5Q3RHQzk1dDlFNXJsQU5HNkl5bUVQeHgydDVqWl94cE1Dc2J0eXZwdDA3ZTlfZXNxSUk3aF9NLXNCZkZwMGRMM3dhbjkwYWJTQl9QRGVBTEZmWHBPSmtWdVFpeWtHNUNwTXVoN3ZwZkh2Ym9sVTRqcUpsNU5fZHJ1WHhZeWhoNTNWV215T1ZWallnVGFRZ3lYQkpZRkpwQlNXZVln?oc=5",
+          "domain": "ein-news.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Help Net Security",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWGJ4ZGE0a2lhX1RTNHVIeEdYeTcxSU83RUN5aG5sbjZaeEpSUzJseFNsNXdXWEFIdlI5eGVJaTJlc1lhT0I4OWE1VDU1MkZ2SEt1TUtMRGVVdVRyb3ZFTnV6ZmRXbnJ5TmdHOFJsSWJVQ19sOGpiQmpIc2s0WkRXdXFWd29VLVp4OFhweWEzbnVBZw?oc=5",
+          "domain": "helpnetsecurity.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-27T17:47:09+00:00",
+      "published": "2026-08-29T08:41:53+00:00",
       "trace": [
         "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "importance 3/5 from cache",
-        "blend 32 = trust 10 / interest 50 / corrob 25"
+        "3 independent outlets (+24)",
+        "verified: 3 independent outlets",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 54 = trust 34 / interest 50 / corrob 75"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "1bcc29f9f8147fb7",
-      "title": "JordyZomer/lemmalog — A Datalog engine for LLM agent memory: stratified rules, provenance-tracked facts, incremental derivation, and",
+      "cluster_key": "cc13633aba588fef",
+      "title": "Player-YN/PawWork_ZhuaZhua — Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an e",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
         "agents",
         "ai",
-        "llm",
-        "opensource"
+        "linux",
+        "opensource",
+        "windows"
       ],
-      "summary": "This repo contains the engine (Rust crate, MCP server, REPL, agent skill) plus the design document (datalog-context-engine-design.md, with an honest status log of what shipped). The thesis: an agent's memory should be a deductive database — the agent builds a verifiable model of what it knows and mechanically reasons over how that knowledge changes, rather than \"remembering better\" than a vector store. Base facts are asserted at the ingestion boundary (LLM extraction); rules…",
+      "summary": "English · 中文 Important Just want to use Paw Work? That folder is the Chrome extension (manifest.json at the root). Clone creates paw-work under the directory where you run the command, not a fixed Desktop path.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
         {
-          "text": "This repo contains the engine\n(Rust crate, MCP server, REPL, agent skill) plus the design document\n(datalog-context-engine-design.md,\nwith an honest status log of what shipped).",
-          "support_span": "This repo contains the engine\n(Rust crate, MCP server, REPL, agent skill) plus the design document\n(datalog-context-engine-design.md,\nwith an honest status log of what shipped).",
+          "text": "English · 中文\nImportant\nJust want to use Paw Work?",
+          "support_span": "English · 中文\nImportant\nJust want to use Paw Work?",
           "status": "entailed"
         },
         {
-          "text": "The thesis: an agent's memory should be a deductive database — the agent builds a verifiable model of what it knows and mechanically reasons over how that knowledge changes, rather than \"remembering better\" than a vector store.",
-          "support_span": "The thesis: an agent's memory should be a deductive database — the agent builds a verifiable model of what it knows and mechanically reasons over how that knowledge changes, rather than \"remembering better\" than a vector store.",
+          "text": "That folder is the Chrome extension (manifest.json at the root).",
+          "support_span": "That folder is the Chrome extension (manifest.json at the root).",
           "status": "entailed"
         },
         {
-          "text": "Base facts are asserted at the ingestion boundary (LLM extraction); rules derive closures, temporal projections, contradiction candidates, and relevance diffusion; every fact carries provenance back to its source episodes; and each conversation turn updates derived views incrementally instead of re-deriving them (or worse, re-reasoning them in-context).",
-          "support_span": "Base facts are asserted at the ingestion boundary (LLM extraction); rules derive closures, temporal projections, contradiction candidates, and relevance diffusion; every fact carries provenance back to its source episodes; and each conversation turn updates derived views incrementally instead of re-deriving them (or worse, re-reasoning them in-context).",
+          "text": "Clone creates paw-work under the directory where you run the command, not a fixed Desktop path.",
+          "support_span": "Clone creates paw-work under the directory where you run the command, not a fixed Desktop path.",
           "status": "entailed"
         }
       ],
@@ -322,7 +335,7 @@
       "blend": 0.0,
       "is_new": true,
       "alt_keys": [
-        "1bcc29f9f8147fb7"
+        "cc13633aba588fef"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -330,21 +343,82 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/JordyZomer/lemmalog",
+          "url": "https://github.com/Player-YN/PawWork_ZhuaZhua",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-27T07:06:55+00:00",
+      "published": "2026-08-28T10:56:56+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-27 — outside lookback window"
+      "reject_reason": "published 2026-08-28 — outside lookback window"
     },
     {
-      "cluster_key": "9a55acaf53b7ce08",
-      "title": "OnlyTerp/opengrok — Run any model in Grok Bot — one-command setup, model picker UI, evidence-based provider wire maps, and an upda",
+      "cluster_key": "6c4c62438da1e3d3",
+      "title": "carloslfu/slotstream — Run Qwen3.8-Flash-Next (125B MoE, 104 GB at 4-bit) on Macs with a fraction of that RAM by streaming experts fr",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "ai",
+        "hardware",
+        "linux",
+        "llm",
+        "malware",
+        "opensource",
+        "release",
+        "windows"
+      ],
+      "summary": "Run Qwen3.8-Flash-Next on a Mac that can't hold it. The model is a 125B-parameter mixture-of-experts, 105 GB on disk at 4-bit; slotstream streams it from SSD and runs it in whatever memory you give it. It speaks the Ollama and OpenAI chat APIs, so your existing tools work unchanged.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Run Qwen3.8-Flash-Next on a Mac that can't hold it.",
+          "support_span": "Run Qwen3.8-Flash-Next on a Mac that can't hold it.",
+          "status": "entailed"
+        },
+        {
+          "text": "The model is a 125B-parameter mixture-of-experts, 105 GB on disk at 4-bit; slotstream streams it from SSD and runs it in whatever memory you give it.",
+          "support_span": "The model is a 125B-parameter mixture-of-experts, 105 GB on disk at 4-bit; slotstream streams it from SSD and runs it in whatever memory you give it.",
+          "status": "entailed"
+        },
+        {
+          "text": "It speaks the Ollama and OpenAI chat APIs, so your existing tools work unchanged.",
+          "support_span": "It speaks the Ollama and OpenAI chat APIs, so your existing tools work unchanged.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "6c4c62438da1e3d3"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/carloslfu/slotstream",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-28T06:42:21+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-28 — outside lookback window"
+    },
+    {
+      "cluster_key": "e54780d0991f277f",
+      "title": "cbrock84/headcount — An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independen",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
@@ -353,25 +427,25 @@
         "llm",
         "opensource",
         "release",
-        "vulnerability"
+        "soc"
       ],
-      "summary": "It talks native and survives Grok Bot updates. Every wire claim in this repo is probe-verified, not vibed. git clone https://github.com/OnlyTerp/opengrok cd opengrok python setup.py That's the whole install: it detects your Grok Bot install and live services, adopts existing bindings or asks 3 questions, writes its config, baselines your machine, and opens the picker.",
+      "summary": "Open the interactive org chart — search every skill, open a department, jump to the source. An agent organization for Claude Code, structured as a company: a chief executive over 16 departments, 172 skills in total. Every department is an independently installable plugin, so a project loads only the functions it needs rather than all of them at once.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
         {
-          "text": "It talks native and survives Grok Bot updates.",
-          "support_span": "It talks native and survives Grok Bot updates.",
+          "text": "Open the interactive org chart — search every skill, open a department, jump to the source.",
+          "support_span": "Open the interactive org chart — search every skill, open a department, jump to the source.",
           "status": "entailed"
         },
         {
-          "text": "Every wire claim in this repo is probe-verified, not vibed.",
-          "support_span": "Every wire claim in this repo is probe-verified, not vibed.",
+          "text": "An agent organization for Claude Code, structured as a company:\na chief executive over 16 departments, 172 skills in total.",
+          "support_span": "An agent organization for Claude Code, structured as a company:\na chief executive over 16 departments, 172 skills in total.",
           "status": "entailed"
         },
         {
-          "text": "git clone https://github.com/OnlyTerp/opengrok\ncd opengrok\npython setup.py\nThat's the whole install: it detects your Grok Bot install and live services, adopts existing bindings or asks 3 questions, writes its config, baselines your machine, and opens the picker.",
-          "support_span": "git clone https://github.com/OnlyTerp/opengrok\ncd opengrok\npython setup.py\nThat's the whole install: it detects your Grok Bot install and live services, adopts existing bindings or asks 3 questions, writes its config, baselines your machine, and opens the picker.",
+          "text": "Every department is an independently installable plugin, so a project loads only the functions it\nneeds rather than all of them at once.",
+          "support_span": "Every department is an independently installable plugin, so a project loads only the functions it\nneeds rather than all of them at once.",
           "status": "entailed"
         }
       ],
@@ -381,7 +455,7 @@
       "blend": 0.0,
       "is_new": true,
       "alt_keys": [
-        "9a55acaf53b7ce08"
+        "e54780d0991f277f"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -389,17 +463,17 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/OnlyTerp/opengrok",
+          "url": "https://github.com/cbrock84/headcount",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-27T18:30:44+00:00",
+      "published": "2026-08-28T18:03:04+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-27 — outside lookback window"
+      "reject_reason": "published 2026-08-28 — outside lookback window"
     },
     {
       "cluster_key": "9392f5653a1a34dc",
@@ -461,10 +535,318 @@
       "reject_reason": "published 2026-08-28 — outside lookback window"
     },
     {
+      "cluster_key": "198d388a8555aab5",
+      "title": "Aesto Health says data breach affects over 9.5 million patients",
+      "category": "cyber_attacks",
+      "one_liner": "A massive AWS data breach at Aesto Health compromises sensitive medical and personal data for over 9.5 million patients.",
+      "tags": [
+        "cloud",
+        "dfir",
+        "howto",
+        "incident",
+        "privacy"
+      ],
+      "summary": "Aesto Health disclosed a data breach impacting more than 9.5 million individuals after attackers compromised a portion of its Amazon Web Services infrastructure between December 2 and December 18, 2025. The breach was confirmed internally on May 26, 2026, following a forensic investigation. Exposed data includes full names, dates of birth, medical details, driver's licenses, and Social Security numbers, indirectly affecting 29 healthcare providers.",
+      "key_facts": [
+        "Impacted individuals: 9,540,683",
+        "Incident dates: December 2, 2025 to December 18, 2025",
+        "Affected entity: Aesto Health"
+      ],
+      "bottom_line": "Aesto Health's AWS infrastructure compromise exposes sensitive health and identity records for 9.5 million patients across multiple healthcare providers.",
+      "claims": [
+        {
+          "text": "Aesto Health disclosed a data breach affecting more than 9.5 million individuals.",
+          "support_span": "Aesto LLC, operating as Aesto Health, disclosed a data breach discovered recently affects more than 9.5 million individuals.",
+          "status": "contradicted"
+        },
+        {
+          "text": "The intrusion occurred in December 2025 on AWS infrastructure and was confirmed in May 2026.",
+          "support_span": "the intrusion occurred in December 2025 and was confirmed internally on May 26, following a forensic investigation by external specialists.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 61,
+      "interest_score": 100,
+      "corroboration": 5,
+      "blend": 90.2,
+      "is_new": false,
+      "alt_keys": [
+        "198d388a8555aab5",
+        "25f0fb2efd0cad65",
+        "2ab226f72599a8c2",
+        "2e990edb36f89741",
+        "318d73f035a35d3e",
+        "32396715acb52f55",
+        "3b629b581b8b3cc8",
+        "3fd32b7762dddba9",
+        "516e6f2139394326",
+        "55acf599dfe09be2",
+        "631069f3004042f0",
+        "680d8ce0131f46b9",
+        "69395fbea3d75531",
+        "6d2321a783376140",
+        "7269d6fd8e41fc49",
+        "9d6644eb3801ef0a",
+        "9f90409f9671dfa4",
+        "a1c1daddd0be02ae",
+        "a66233aae52ec669",
+        "b16a08c505587767",
+        "b2e6fe3a8a02d8b8",
+        "cea49863d88e1875",
+        "db72421b844709eb",
+        "e4184b010eedfa0b",
+        "eabf23a69994cf03",
+        "ed88643f21005325",
+        "f9e20626c9179ad7",
+        "fa46c70471d75a3f"
+      ],
+      "critical_signal": "",
+      "priority": "critical",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/aesto-health-says-data-breach-affects-over-95-million-patients/",
+          "domain": "bleepingcomputer.com",
+          "tier": "B"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/novocure-data-breach-affects-more-than-1-400-cancer-patients/",
+          "domain": "bleepingcomputer.com",
+          "tier": "B"
+        },
+        {
+          "name": "Infosecurity Magazine",
+          "url": "https://www.infosecurity-magazine.com/news/nutex-patient-data-stolen/",
+          "domain": "infosecurity-magazine.com",
+          "tier": "B"
+        },
+        {
+          "name": "Infosecurity Magazine",
+          "url": "https://www.infosecurity-magazine.com/news/healthcare-mckesson-investigates/",
+          "domain": "infosecurity-magazine.com",
+          "tier": "B"
+        },
+        {
+          "name": "BBC",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE44eldPamVMaHlUakRUem1YYnNiVzJ6VEw5NkFpRHJkT25vSU85Xzdjd1Y5c3hpVi1NcGNfZ1VXcGxSdWJxR1VsRlhjeUlDVkVpbzl3Nlhsc0ozQQ?oc=5",
+          "domain": "bbc.co.uk",
+          "tier": "C"
+        },
+        {
+          "name": "bleepingcomputer.com",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdmQ4c00zUlRmcGR6UWlLS3BtTXhGek5oWVhSc29PT1pPc1p5TUNlYzRHVWFNU1FtUi1sRWFvdVNsamt0RkhTSkVzWEU1T0cxMWRuUzFKVGJ6MnJlYkhTdmUwdnZpVEtmeFZFeWpYUDFhSmp6UkFXcEpzb3E5MDlaT1N5Z2tiRHVOMi11SjdUdTlEaVRnSGxnRjViOUJxdFNxMXdTbVQwdlZ3SlpFcnhN0gG0AUFVX3lxTE5NRXNyb2RHeW03UTE4NXh6SExTdFBfUWYwMVJhQ2VabGdGLWY5U09zb1lFZGE0VTJRM1RiN3hKZlp0SnZJdDJxcmd3U1dtaEpjTzZSejZpVUdmeWptVnBjS2lsV29NR3FIM3dMMFMtWkpNMGl6MkxaczgwanhabFpZWEVTeGQ3RGc4Snk5aUtTRTlNZUFjUHc2Ulc2LWZMNWQxcUlJUkxMaDNibjF0WXhKUjZoeg?oc=5",
+          "domain": "bleepingcomputer-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "bleepingcomputer.com",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPYWgyOGZkdE5JYU1PZmI4RmNhazVHWjFaTl83UWNhTHNGLWl4dVQ2bjV0b09rOENweDZFNzctOGlmZ25yb2pkWUd3STJEQ0ZOQ2piaEQ3akpoSjJzU1RaT2VLakRvM01ZUmxOT0pNencxMWJ5MTE5ekdSQ0VUWEhxNjltUFRxdHpFRUl4NGlOR2Fld1hGWDQwcm1MZnJwTmoyaGNENFFvNFYwaTRa0gGyAUFVX3lxTE1QeV95bVZxX1ZUVS15VXUwTjktMmc5bm1aT0tkQ3FrYVJOWjZzdl9JaDQxcU1PNEZvSWtBVURUMHZySHBZTEtTOUVNTTNDWWlibzQzaU1WU0NNQnRXYXQyX0laSlo4b2ZWNjQzNGk3cnJYb0doZXQ0bFhfaFBkc2YtTGVOaE9aZUMzb3QwbnM0SzNPX0xQSVNhbzBZNUlkUGNnVUxnRUp1cHBsRld2X2JZRkE?oc=5",
+          "domain": "bleepingcomputer-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Claim Depot",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8tZXhKSTg0akZmMjN5M1BKTXJQN2UwZW50c0g2bkZmWVBBNmN1RHNrMV9CY3ozb2RUZXVKYnR3dGRJR2UxekdNTTdKdWVBWHc0QkhTN0NIN290Z2ZXVEdLVWJGaldLZHlLOW5nMTFR?oc=5",
+          "domain": "claim-depot.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Claim Depot",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE84Z2RUQWxnQmJZTElkZmtrSFJfcUxraHpkbDcxRUdwMk1CWEhnOXh1bHprSU5hWkRYTl9YNkhZbEVaNzNwY3dFdmU0STlack96aTVZS1BXYkNFRnJtX1BFMy1WRXBoM00?oc=5",
+          "domain": "claim-depot.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Claim Depot",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMHNEVkxOcTl1aUdqdWNiRm85MzdDNHdxcy1Wb244bDFxRVkwaVBxdEYtUF91SXN4RXZ5TXlYdlZLZjZ6QXZHdEx6WlMwVGRXd05YdzRMR0UzbEtJWDVpTEUteVZ4emE3QS1ZbGtPZTJZZnAtSENfMXhRRmk4RG1DOG1fNA?oc=5",
+          "domain": "claim-depot.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Claim Depot",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB4aHU5VUpITTdISVBIQ3lvY3RxYlRodXpFVmk1RGZUbXhycjBMVklBSmdGQVZsMm9ESDdLcXpnd2hyRnhpR3VfVkMtd0ZEbm9PeEVvMjlBZ2pzZ0V2V3RuRFdlWEw5NW9nbEJKNFZac2lfSERRRG9PQ2NldXg?oc=5",
+          "domain": "claim-depot.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Claim Depot",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBfaUZWRlQxcmF3RFFJaWlYR3RmbXc4SURwTDZmNVJYT3FXYTA0U1YzbDZhVUVEbkU1Q1FjTnNvWmpReElLQkpBemhaUW93NnZZZUxmRHFiNGRhRGc5Y29PamM4VEV5eDBUNzNEa18tc25EUmZVN012OXZiNA?oc=5",
+          "domain": "claim-depot.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Claim Depot",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeWtrYjR0Yko1cHhnZTdibjkwXy1PeVJXYWFvdVdjQTg0S2tXcURtMnBnb3kyRVltQ3M3ZW56WVBfMzJkT0U4Uzd2R1gwMzdfamVyTURtRmZOdkVDSU94VlBuSkhqQU16X2tXMDlES1BFclkyd1FOWkhBakdCTHlpbGZR?oc=5",
+          "domain": "claim-depot.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Claim Depot",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPblJkcWVJb0VIbzA1QUVsN2ZublZabzFBbjIxTmJTVG54V19UNWlMMW1ZX1JPZFNYbnV0TlpsYmFBM3pFaGVFMzNqUkpKdHRobEJNTkc0MVlaUW1RTXpreHJZNWxzWThVUVFMZzZic3p4S3RpX1hJN3M1RVhsR2V5RQ?oc=5",
+          "domain": "claim-depot.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Claim Depot",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0wUW9COV9UMkZRRzNnQVdZNC1JSVkzXzNvckVUT3ZSQWh1R2J6MHotR2tNcHhJRldkcTZUVzlrZHFocGdHZkZqd1B5Z2xpRVRxWDBYQUJZQVJkaG14bGJha3RjX0F5LW50d0tkZzhDSkZ0M00?oc=5",
+          "domain": "claim-depot.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Claim Depot",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBjX1FlM09Qc1VOaHlUY2RfUGpzVWVqX2RFbE9LT2g2dE9PVGN0cUxoWGwtV1hWTGRkOXhYTE9yUUlPQXBtbXBiMndGWE96YXphTHdpdG45LXQ3X01jb09BY3E2M2FlZXhuLXRTRGdldw?oc=5",
+          "domain": "claim-depot.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "FreightWaves",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOV0ZvbHNUSkdxZ2lxX1Z4ZlNHb1ZTRUVVWjRZY3Jkb0MzZG5RWmVPUkN2Q2txRzVxN0d5YmVrdnJUY3pKNWR1bG1OTmlCaXNyc1lGOTRSaWNubUZRd1FPUGVjc0pUeXp1dEFxT0dVQ2tDWXIwSjgxQ2xFbDN6SGFGaUFCcUhYaUtjbUQ1dmFfOF9sSWV0NzJLd2s1MDdyWTUyVEk5bTJB?oc=5",
+          "domain": "freightwaves.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "LAmag",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVHp0c2hDVzJHSWs2bGJCX05iTzlTb3RGUVBjVXF5TFFzYUg4a2RPWE1GNlNHYVF4b1JZTlAxd2xEYnBoM2lCVHR3LUNidVl4ckhWSkktUWlQdVplZ0pNYW1uWGUtb3duSkZ5aWNuWE9vbFlCU1ZyZFo5RGU5ckpyeVlqbUxiN1puZVc4bW1oLTA?oc=5",
+          "domain": "lamag.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Pluang",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZlAyUTNUYUZmdURYalB0NkZhTzJxR3FKSDlULVdFQXY1YjhlWDAxWHlhZnZPVzhJV0EtLVExbkRQbVFrVDZDZzd3bkVDN0hEYTVlM25vMTF0V2c1bUJDUWJTSVRDSDBaZ25JYmVsZTZUVkhYSzI4ZF9hT1QtQThuRVU2MmhlbDgxT1VTQloxbHBYYnZVdVZTNXREMmVwd2NjZHpXUy04Y2g?oc=5",
+          "domain": "pluang.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "PR Newswire",
+          "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOb1duR0pod1lGSEloQVpBSEZqanVsdThGMzV2T3hhN2hDdkNBeFJmYkhCXzJJM2pOTl9ZaS1ObXlJbkRLay1CRWs3Q0VxR05XUnM0U0NuQ1luTXJDVjF1c3YtaEZoazZXUFVkdVB4SHhBS19kVWdWTDFaS3VXXzA0X2NCM2YyMDAxbzlxN1F2UHhrMk40WGNEU1V5RUhrSGMxTnZMNUtqd1VmSEVhbUlmdHFoQVRQQWRWcjd5a2ctZS1hRlFUZTdIUzRBdTY4ZUlvc2JsekcyMFZtcWlJdXpITFl0WEVsejNJWHdtWnhDSkRBU0FzRndMdEpTc2RZT0d1T1VDYU5VeEJsMjVvWVZ3UA?oc=5",
+          "domain": "pr-newswire.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "PR Newswire",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNdWdXRnk1dWtUMk5IbDYybjEyc3F3RngtVzVaaXRvZV9ZZGhEZm9Yb1M4T2pvTVdiZTF6M25fa2lxS3YybHlOckY1Uks2SjFReDJuNmJGY2JNSXBLc2RmSTFlR3l0NXQ0a21LZ3ZEV0pGdTdwSng1UHpMbGpTMmY4dnJjYlBxYS1zNHpZanpIdU55NjZSTHY3T3RGcUZoZ0YweW5hOXpMTXQzOUpPeFMyY25abkI5b0JQNERzTU9XTkpDbEtfMURjRG9QTHV2RzdYWGtjS3J6THhOX2lUQnhDQk5pMXFkRXg3clI3cThaYkk?oc=5",
+          "domain": "pr-newswire.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "PR Newswire",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQYmx4WFZvWTZKbVZ4dDdpa3lNMnVQWUNyb20yM05WZ0ZXRGtJY1dTVGtLNGJncmF6RmtCeEpVbHZQNTl6QkdyanpPWS0xbkJtOTZYSkU2NW5wVDZ0MDlUOTd1YVQ5NUhYUmtaM3I0TE1YUGVYZWtZUC1lSUZJUDRsaXNEUGFTTzkzZEVTQS1PUEZGck1iNFBPMFB0NktQdUYyMEdfcjhJeUdIeW9vUHRTcEVHU0VkN1VHTHM2d1BaN0V2b21rMloxZHlEQ3RRajVjOUNqRk5fTlZCenBTN1BUM05oVQ?oc=5",
+          "domain": "pr-newswire.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Security Magazine",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUDV3aGg2cmpIOVVxVnI1NDBkSnY4MERjZXA1aGJzeVZJMDg3Tzk4b0U5TFZJOURoenpVa1YwWHhnaDduZFl0TkJnSkUzS2dDSHdxcy05dno4OXdYYjlSQVg4MEUtODR1TXBOemhEZ3VTY1pyVERXS1VHSlJlNHJ3Rjl1RGhabWVSYWJDQ251UklkZDBFNzVkRDVlTQ?oc=5",
+          "domain": "security-magazine.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaUVxSGdkQXk2dVd3dS1yX2pTeWZlRDBGazE4M2ExZ1p3NUR5NzlJTjBPa0JaYTRIRWNhY1JqMzZZNGpVNjhQVlkwN1BIT2xWeEFWWG9hME5zRERhREhPMV9UNW1UWURfY0pndHB4d2NKR00xZUQyS09SWF96VmsteTA4X09BWWV3VWc0dnJHMNIBlAFBVV95cUxNMHFpdTc2dVNqN0dtUDZpSjNWR2F0OUx3TEJuZWgzR0JTd2lzZzJNdW56QWRkT2xJS3NSb1Vsd2RlYVN4Y3p2S3JEcjh6NWJDVXFpREp1M0otR2V0b0NyXzhTdTZxOVd5Tm5BLTRjeElVQktoSnB2RG9mUC1WbGNyTzJjazRJMEZ0WkQ0dzRFZFdieUU5?oc=5",
+          "domain": "securityweek.com",
+          "tier": "C"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxORVF0VmU4R1ZGSERta0ZzSGUxMFZSSTdpYmpiSUV0UG5JTXBMd1RMN3NKenZuZ1hVT00wVUxrU04yejEyUUJCazZCU1AxZ0YwWm1lSDVHN1lpMjdaanVYYlh5VmFUYUptbHQxemoxWWx1VzhjS3VhN2dqQllmc0wwYlhNYzVzZ0VmUkHSAYoBQVVfeXFMTkVRdFZlOEdWRkhEbWtGc0hlMTBWUkk3aWJqYklFdFBuSU1wTHdUTDdzSnp2bmdYVU9NMFVMa1NOMnoxMlFCQms2QlNQMWdGMFptZUg1RzdZaTI3Wmp1WGJYeVZhVGFKbWx0MXpqMVlsdVc4Y0t1YTdnakJZZnNMMGJYTWM1c2dFZlJB?oc=5",
+          "domain": "securityweek.com",
+          "tier": "C"
+        },
+        {
+          "name": "The Daily Tribune News",
+          "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxQbGJ4SlBmVVdvUFRoalJzTlJHY1JEMjZjWWxlWU1KczFRVm1ZXzdyc0tvdzhZLV8telRVeWlVVDN1UEw5YlJMQjRNcUlHTWk3eGR1MkliSmxGZE41SHhUMHRBOHNWR1ZTTXJHWlZSMXI2TmJKdUR0cjlCZ2RjYjRtNVFqb0FzbWo0c2dBN1pXRFlNZnpaZ2taV2hmUTJHZFc1ejV5QlFubUwzbElZRnZETXBRYWFKT0lyb1AtT053Q1l1MHBZX1dVTGtPUUdvbnF3U2o1eDhpdVZzSG1KYmNCcnJhQm00UmhFdjU3bWZXN281eG5DMi1tWVdPRm5FS3BrN2VHeWVPclNsRU02dmh1Sm1BWUsybC1tTms2ZXh0Tkl4eTBJMVBHcDVxTW1LcFpaZkx1aEk1V1lpRHdwWmxGZG0xNzkyaS10?oc=5",
+          "domain": "the-daily-tribune-news.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "The Daily Tribune News",
+          "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPdWJQbHotSXpteDZpaTQ0N2wwOUE0N0l2SGpqNzJmNWtKaHBINV9NZ3ZjcDNpa2JJbkxwWDRUTkMtV2hSczZ5Z3ZvRk5XdWpTZWJfdWRVMjhkRnd6M0t4eVFIOGh1ejVQcUtBWk4xc3VGdDhRNGhOSE5LTVRsSEVQV0kwcG91T2Y0YkZyWFdGZ1B2Vm5yMVp5a0szNGhmcmY0dUd6YTgwRXBBeDlNUEpuLU5DQU1QbU5keHZfd2ZYZWN3VzVDem1MeWppdnBnellsRUcyX1ltQUJORC1XX1RabXVuVTNacl9iMkJRYzE4YW9VTER5Yk1IbFg3QXhxOFk2UFpCNHVuTlRaRGJ3S0NWd2FtV3I4Wlh4a2NPbTBWQXluWmxzUTd3VkkxeTdzdw?oc=5",
+          "domain": "the-daily-tribune-news.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "The HIPAA Journal",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1FYXFwVXF2Wm4xblRYdHRWaldFZkVyMDFmVlMzX3d1YmFMTS10Z2xzczAzRzBsN3B1QzNTWklPd28xRzNxRDlWY0JlNkgyaTVGZkNDdXVJbUFjei1KaTBJ?oc=5",
+          "domain": "the-hipaa-journal.publisher",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-31T05:36:32+00:00",
+      "trace": [
+        "tier B (+25)",
+        "5 independent outlets (+36)",
+        "verified: 5 independent outlets",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 90 = trust 61 / interest 100 / corrob 100"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "f8d1f879ce28304a",
+      "title": "rokbenko/quackd — 🦆🧠 Give your small robot a brain. Tell a Microduck, a Reachy Mini, a LeRobot arm or any ROS base what you want",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "ai",
+        "hardware",
+        "howto",
+        "llm",
+        "opensource"
+      ],
+      "summary": "Your Reachy Mini, your arm and your wheeled base too. The brain daemon Microduck was missing, named like its siblings robotd, mediad, padd and tofd. Since 0.4 it drives other small robots too.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Your Reachy Mini, your arm and your wheeled base too.",
+          "support_span": "Your Reachy Mini, your arm and your wheeled base too.",
+          "status": "entailed"
+        },
+        {
+          "text": "The brain daemon Microduck was missing, named like its siblings robotd, mediad, padd and tofd.",
+          "support_span": "The brain daemon Microduck was missing, named like its siblings robotd, mediad, padd and tofd.",
+          "status": "entailed"
+        },
+        {
+          "text": "Since 0.4 it drives other small robots too.",
+          "support_span": "Since 0.4 it drives other small robots too.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "f8d1f879ce28304a"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/rokbenko/quackd",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-28T09:09:16+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-28 — outside lookback window"
+    },
+    {
       "cluster_key": "01f63dbd63f25f15",
       "title": "ZJU-REAL/Easel — An open-source AI agent for social media — discover trends, create content, publish everywhere, and learn what",
       "category": "tech_ai",
-      "one_liner": "Tech Ai: carried by 2 outlets.",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
         "agents",
         "ai",
@@ -484,13 +866,11 @@
       ],
       "trust_score": 0,
       "interest_score": 0,
-      "corroboration": 2,
+      "corroboration": 1,
       "blend": 0.0,
-      "is_new": false,
+      "is_new": true,
       "alt_keys": [
-        "01f63dbd63f25f15",
-        "040e5bce232e16e2",
-        "a3da6e9bd3e76f60"
+        "01f63dbd63f25f15"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -500,18 +880,6 @@
           "name": "GitHub (new)",
           "url": "https://github.com/ZJU-REAL/Easel",
           "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "Built In",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5YLUNMRllFMWg1ajYwMTlDdGhYOXBSWGtnT3Z3YTZrdEcwV0FtRUV4bnlHZjQ1YlpQaDRJX2xhSF9MUmJEcnVidDNwcDJONTRTX3VHR0FXalVONkhqLVE?oc=5",
-          "domain": "built-in.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Fast Company",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPTkZkR3lUSXZVamlyR1JpNTdGYUhLSVctZ0NoazNublplaG5VN3ZNV0dOMkFqYnplNHBKbGtXVnFUWW02SHd5TjdoLTB4OXpVaGlHWGcxSm1wUF90WXB5eUx1U1ZBU1p6UDNoYkdfWHh1OFRQMVI0XzhDWGNQZlJGY1htWTZhMmRmOFlHaVJGVnVjRE9LM1JsNmNoLXNhMDZoNUxEODdhQ0RPNk8taExSMDRsb0lVVGNubC1pR3RLamRlZ252UG5Uenh5ZFNra0o1RlZQWnZwT3UyUQ?oc=5",
-          "domain": "fast-company.publisher",
           "tier": "C"
         }
       ],
@@ -523,31 +891,155 @@
       "reject_reason": "published 2026-08-28 — outside lookback window"
     },
     {
-      "cluster_key": "187d493f79cf3a54",
-      "title": "[webapps] C-MOR  6.0104 - Cross-Site Scripting (XSS)",
-      "category": "cyber_attacks",
-      "one_liner": "Cross-site scripting vulnerabilities in C-MOR Video Surveillance <= 6.0104 allow remote execution of client-side code via crafted component parameters.",
+      "cluster_key": "61c5cb98c5f11216",
+      "title": "XiaoDuoYa/codex-with-chatgpt — ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
-        "appsec",
-        "exploit",
-        "privacy",
+        "agents",
+        "ai",
+        "identity",
+        "opensource",
         "release",
-        "research",
-        "vulnerability",
-        "writeup"
+        "windows"
       ],
-      "summary": "A cross-site scripting (XSS) vulnerability in za-internet GmbH C-MOR Video Surveillance up to version 6.0104 allows remote attackers to execute arbitrary client-side code. Discovered by Samir Shamdin, the flaw can be triggered by enticing an authenticated user to click crafted URLs targeting parameters in the ptzpreset.pml and show-movies.pml components. Security researchers have published proof-of-concept exploit URLs demonstrating script execution. Users should apply vendor patches or restrict access to video surveillance interfaces.",
-      "key_facts": [
-        "Software: C-MOR Video Surveillance",
-        "Affected versions: <= V6.0104",
-        "CVE ID: CVE-2026-51133"
-      ],
-      "bottom_line": "Authenticated C-MOR Video Surveillance users can be coerced into executing arbitrary client-side code via crafted XSS URLs targeting surveillance components.",
+      "summary": "ChatGPT 负责思考，Codex 负责干活。 Important 遇到问题？ 请先向 Codex 发送 「更新 Codex with ChatGPT」 并重试。更新到最新版本可以解决大多数已知问题。 Having trouble? First ask Codex to “Update Codex with ChatGPT” and try again. Updating to the latest version resolves most known issues.",
+      "key_facts": [],
+      "bottom_line": "",
       "claims": [
         {
-          "text": "A Cross-Site Scripting (XSS) vulnerability in za-internet GmbH C-MOR Video Surveillance <= V6.0104 allows a remote attacker to execute arbitrary client-side code via the 'size' parameter in the ptzpreset.pml component and the 'anyparam' in the show-movies.pml component.",
-          "support_span": "A Cross-Site Scripting (XSS) vulnerability in za-internet GmbH C-MOR Video Surveillance <= V6.0104 allows a remote attacker to execute arbitrary client-side code via the 'size' parameter in the ptzpreset.pml component and the 'anyparam' in the show-movies.pml component.",
+          "text": "ChatGPT 负责思考，Codex 负责干活。\nImportant\n遇到问题？ 请先向 Codex 发送 「更新 Codex with ChatGPT」 并重试。更新到最新版本可以解决大多数已知问题。\nHaving trouble?",
+          "support_span": "ChatGPT 负责思考，Codex 负责干活。\nImportant\n遇到问题？ 请先向 Codex 发送 「更新 Codex with ChatGPT」 并重试。更新到最新版本可以解决大多数已知问题。\nHaving trouble?",
+          "status": "entailed"
+        },
+        {
+          "text": "First ask Codex to “Update Codex with ChatGPT” and try again.",
+          "support_span": "First ask Codex to “Update Codex with ChatGPT” and try again.",
+          "status": "entailed"
+        },
+        {
+          "text": "Updating to the latest version resolves most known issues.",
+          "support_span": "Updating to the latest version resolves most known issues.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "61c5cb98c5f11216"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-28T12:57:24+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-28 — outside lookback window"
+    },
+    {
+      "cluster_key": "403a19d9ee1ed052",
+      "title": "Agentic Settlement Protocol: An Application Profile for Refundable, Delayed-Fulfilment Agent Commerce on Stablecoin Rails",
+      "category": "tech_ai",
+      "one_liner": "The Agentic Settlement Protocol brings escrow-based authorize-and-capture commerce to autonomous agents on stablecoin rails.",
+      "tags": [
+        "agents",
+        "ai",
+        "policy",
+        "research"
+      ],
+      "summary": "Autonomous agents can already pay per request through protocols like x402, but atomic and final transactions fail in agent commerce where delayed fulfillment requires escrow. The Agentic Settlement Protocol (ASP) introduces an application profile over on-chain authorize-and-capture escrow for businesses whose fulfillment is confirmed off-chain. ASP provides a three-deadline hold model, a fulfillment-verification ladder, engine-authoritative partial refunds, and exposure controls to bound credit risk on stablecoin rails. The design is intended to let independent implementations interoperate and is instantiated on the XDC Network.",
+      "key_facts": [],
+      "bottom_line": "Autonomous agent commerce requires delayed-fulfillment escrow models rather than atomic per-request payments to safely handle real-world transactions.",
+      "claims": [
+        {
+          "text": "Autonomous agents can already pay per request: HTTP-native protocols such as x402 let an agent sign a stablecoin authorization and receive a resource in the same round trip.",
+          "support_span": "Autonomous agents can already pay per request: HTTP-native protocols such as x402 let an agent sign a stablecoin authorization and receive a resource in the same round trip.",
+          "status": "entailed"
+        },
+        {
+          "text": "We present the Agentic Settlement Protocol (ASP), an application profile over on-chain authorize-and-capture escrow for businesses whose fulfilment is confirmed off-chain.",
+          "support_span": "We present the Agentic Settlement Protocol (ASP), an application profile over on-chain authorize-and-capture escrow for businesses whose fulfilment is confirmed off-chain by their own order, scheduling, invoicing or booking system, abstracted as a fulfilment engine.",
           "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "alt_keys": [
+        "403a19d9ee1ed052"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.CR",
+          "url": "https://arxiv.org/abs/2609.02208",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2609.02208"
+      ],
+      "published": "2026-09-03T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "1418746ce606508b",
+      "title": "SCX Router: Streaming Zero-Shot Model Selection with a Decoder-KV Classifier and a Real-World Task Ontology",
+      "category": "tech_ai",
+      "one_liner": "Deploy SCX Router for zero-shot LLM model selection using a persistent key-value cache and a 0.6B Qwen3 decoder.",
+      "tags": [
+        "agents",
+        "ai",
+        "llm",
+        "network",
+        "opensource",
+        "release",
+        "research",
+        "tool"
+      ],
+      "summary": "Researchers introduce SCX Router, a lightweight 0.6B-parameter model selection router combining a Qwen3 decoder with a shallow bidirectional scorer to assign suitability scores to inference-time models without autoregressive generation. The architecture preserves a text-only key-value cache across sessions while evaluating transient candidate-label tokens independently. Trained on a massive synthetically generated task ontology containing 150,000 verifier-scored tasks, the router predicts task type, difficulty, and reasoning mode while optimizing cost, speed, and quality tradeoffs. Across evaluation sets, the approach outperforms the mean candidate and achieves strong aggregate top-1 performance compared to fixed models.",
+      "key_facts": [
+        "Parameter size: 0.6B",
+        "Base model: Qwen3 decoder",
+        "Synthetic tasks generated: 150,000 verifier-scored tasks",
+        "Top-1 score: 0.707"
+      ],
+      "bottom_line": "Per-task model selection can be efficiently automated using lightweight specialized routers without autoregressive generation overhead.",
+      "claims": [
+        {
+          "text": "We introduce router, a lightweight GLiClass-based router that assigns a suitability score to each inference-time model label without autoregressive generation.",
+          "support_span": "We introduce \router{}, a lightweight GLiClass-based router that assigns a suitability score to each inference-time model label without autoregressive generation.",
+          "status": "contradicted"
+        },
+        {
+          "text": "The released 0.6B-parameter checkpoint combines a Qwen3 decoder with a shallow bidirectional scorer.",
+          "support_span": "The released 0.6B-parameter checkpoint combines a Qwen3 decoder with a shallow bidirectional scorer.",
+          "status": "entailed"
         }
       ],
       "trust_score": 82,
@@ -556,62 +1048,30 @@
       "blend": 58.0,
       "is_new": true,
       "alt_keys": [
-        "187d493f79cf3a54",
-        "53eac309a10652cb",
-        "9513d1261508613d",
-        "a4e459d81ef61ae4",
-        "d4636c790d3f64ec",
-        "ed5fd06ddb329556"
+        "1418746ce606508b",
+        "c9df19b99f18a114"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "CVEFeed High",
-          "url": "https://cvefeed.io/vuln/detail/CVE-2026-73781",
-          "domain": "cvefeed.io",
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2609.02292",
+          "domain": "arxiv.org",
           "tier": "A"
         },
         {
-          "name": "Exploit-DB",
-          "url": "https://www.exploit-db.com/exploits/52665",
-          "domain": "exploit-db.com",
-          "tier": "A"
-        },
-        {
-          "name": "Exploit-DB",
-          "url": "https://www.exploit-db.com/exploits/52661",
-          "domain": "exploit-db.com",
-          "tier": "A"
-        },
-        {
-          "name": "Exploit-DB",
-          "url": "https://www.exploit-db.com/exploits/52666",
-          "domain": "exploit-db.com",
-          "tier": "A"
-        },
-        {
-          "name": "Exploit-DB",
-          "url": "https://www.exploit-db.com/exploits/52662",
-          "domain": "exploit-db.com",
-          "tier": "A"
-        },
-        {
-          "name": "Exploit-DB",
-          "url": "https://www.exploit-db.com/exploits/52670",
-          "domain": "exploit-db.com",
-          "tier": "A"
+          "name": "research.google",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNd1daRnV4bXpXR2FzN2JZOHQtVjY3LUx1RlpzaVc5cVh0cEdSREVNZ0xXYUxkLUJtQXNrLTFUT3BuUjBNQ3NlVzJFNDZDQmswQ0FQQkwwTlFXd2NIamdBMmlWbWM1a0lFTEhTRTE2WHZLTFcwZkxjRjBVNDBFVXNFRkpoUzlZYnFtVnVkUDF5WnFSbnhpYm1qa0pyTTlfZw?oc=5",
+          "domain": "research-google.publisher",
+          "tier": "C"
         }
       ],
       "primary_links": [
-        "https://www.exploit-db.com/exploits/52661",
-        "https://www.exploit-db.com/exploits/52662",
-        "https://www.exploit-db.com/exploits/52665",
-        "https://www.exploit-db.com/exploits/52666",
-        "https://www.exploit-db.com/exploits/52670"
+        "https://arxiv.org/abs/2609.02292"
       ],
-      "published": "2026-08-31T00:00:00+00:00",
+      "published": "2026-08-31T17:20:18+00:00",
       "trace": [
         "tier A (+40)",
         "2 independent outlets (+12)",
@@ -624,38 +1084,92 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "7121ad64487e0f0b",
-      "title": "SciTrue: Reliable Scientific Claim Validation with Frontier and Open Language Models at the NTCIR SciClaimEval Task",
+      "cluster_key": "c97f3bdadc26623c",
+      "title": "usedotai/dot-reflex — Open-source agent execution-recovery controller for coding and tool-using AI agents.",
       "category": "tech_ai",
-      "one_liner": "SciTrue won the NTCIR SciClaimEval task by pairing frontier multimodal models with a leak-free pair prior that dramatically outpaced model architecture changes.",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
         "agents",
         "ai",
         "llm",
-        "policy",
-        "release",
-        "research"
+        "opensource",
+        "tool",
+        "vulnerability"
       ],
-      "summary": "The SciTrue team secured first place in three out of four subtask combinations at the NTCIR SciClaimEval task for scientific claim validation against paper tables and figures. Benchmarking eleven frontier and open multimodal models under a uniform protocol, they demonstrated that strong instruction-tuned models like Claude Opus 4.8 and Gemma-4-31B are highly competitive, while GPT-5.5 and Claude Fable 5 achieved top scores reaching 97.7 on Subtask 2. Their analysis revealed that a leak-free pair prior—which recovers the Supported/Refuted pairing from the claim text alone—boosted Subtask 1 pair accuracy from 72.2 to 93.5, proving that data packaging levers outweigh model swaps. Additionally, a case-by-case audit identified that residual errors stem largely from visual label-mapping swaps or dataset noise, while also exposing a measurement leak in the released file ordering.",
-      "key_facts": [
-        "Subtask 2 score: 97.7 by GPT-5.5 and Claude Fable 5",
-        "Subtask-1 pair-accuracy increase: from 72.2 to 93.5"
-      ],
-      "bottom_line": "Data leakage in file ordering and structural pair priors can dwarf model architecture improvements in scientific claim validation benchmarks.",
+      "summary": "Dot Reflex is an execution-recovery controller, not a replacement for the agent doing the work. It reads a compact summary of an agent trajectory and returns one of ten control decisions: continue, verify, retry differently, replan, rollback, branch, switch model, ask a human, stop successfully, or stop with failure. The release is a rank-64 QLoRA adapter for Qwen/Qwen3-14B-Base.",
+      "key_facts": [],
+      "bottom_line": "",
       "claims": [
         {
-          "text": "On the official, blind test leaderboard (Section~\ref{sec:results}), SciTrue placed first by a clear margin in three of the four evidence-category/subtask combinations, and tied for first on the primary metric in the fourth.",
-          "support_span": "On the official, blind test leaderboard (Section~\\ref{sec:results}), SciTrue placer first by a clear margin in three of the four evidence-category/subtask combinations, and tied for first on the primary metric in the fourth.",
-          "status": "contradicted"
-        },
-        {
-          "text": "GPT-5.5 and Claude Fable~5 lead both subtasks (97.7 on Subtask~2).",
-          "support_span": "GPT-5.5 and Claude Fable~5 lead both subtasks (97.7 on Subtask~2).",
+          "text": "Dot Reflex is an execution-recovery controller, not a replacement for the agent doing the work.",
+          "support_span": "Dot Reflex is an execution-recovery controller, not a replacement for the agent doing the work.",
           "status": "entailed"
         },
         {
-          "text": "a leak-free pair prior that recovers the Supported/Refuted pairing from the claim text alone (a visible field) and assigns Supported to the higher-confidence evidence raises Subtask-1 pair-accuracy from 72.2 to 93.5, far more than any model swap or ensemble weighting.",
-          "support_span": "a leak-free pair prior that recovers the Supported/Refuted pairing from the claim text alone (a visible field) and assigns Supported to the higher-confidence evidence raises Subtask-1 pair-accuracy from 72.2 to 93.5, far more than any model swap or ensemble weighting.",
+          "text": "It reads a compact summary of an agent trajectory and returns one of ten control decisions: continue, verify, retry differently, replan, rollback, branch, switch model, ask a human, stop successfully, or stop with failure.",
+          "support_span": "It reads a compact summary of an agent trajectory and returns one of ten control decisions: continue, verify, retry differently, replan, rollback, branch, switch model, ask a human, stop successfully, or stop with failure.",
+          "status": "entailed"
+        },
+        {
+          "text": "The release is a rank-64 QLoRA adapter for\nQwen/Qwen3-14B-Base.",
+          "support_span": "The release is a rank-64 QLoRA adapter for\nQwen/Qwen3-14B-Base.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "c97f3bdadc26623c"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/usedotai/dot-reflex",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-28T14:00:16+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-28 — outside lookback window"
+    },
+    {
+      "cluster_key": "55a2f37cdc9b1eb1",
+      "title": "SkillGLoW: Procedural-Family Skill Consolidation for Self-Improving Agents on Long-Horizon Task Streams",
+      "category": "tech_ai",
+      "one_liner": "Consolidate agent skills into procedural-family global priors with rigorous commit gates for continual improvement.",
+      "tags": [
+        "agents",
+        "ai",
+        "llm",
+        "research",
+        "tool"
+      ],
+      "summary": "SkillGLoW is a skill consolidation framework designed for self-improving LLM agents working on long-horizon task streams where traditional global documents or flat pools fail. The system aggregates local skills executed during individual tasks into procedural families, compressing them into de-instantiated global priors while regenerating specific instance details dynamically per task. A strict commit gate admits a prior only if real execution proves it enhances the deployed library. Experiments across four benchmarks show that SkillGLoW significantly outperforms baselines while maintaining a compact library size.",
+      "key_facts": [
+        "Score gain: 17.2 points (hard) over no-skill baseline",
+        "Benchmarks tested: 4 (mathematical reasoning, terminal automation, software repair, embodied control)",
+        "Library compactness: 3.6x more compact than per-task pool"
+      ],
+      "bottom_line": "Transferring procedural methods rather than task-specific memory enables robust continual skill improvement for autonomous agents.",
+      "claims": [
+        {
+          "text": "SkillGLoW (Global-Local Weave) around it: the local skills a task writes from its own execution are aggregated into procedural families and compressed into de-instantiated global priors...",
+          "support_span": "SkillGLoW (Global-Local Weave) around it: the local skills a task writes from its own execution are aggregated into procedural families and compressed into de-instantiated global priors, while the instance detail they hold is regenerated per task rather than stored...",
+          "status": "contradicted"
+        },
+        {
+          "text": "Across four benchmarks (mathematical reasoning, terminal automation, software repair, and embodied control) and three models, the priors gain 17.2 points (hard) over the no-skill baseline on average...",
+          "support_span": "Across four benchmarks (mathematical reasoning, terminal automation, software repair, and embodied control) and three models, the priors gain 17.2 points (hard) over the no-skill baseline on average, with positive gains in all 12 continual-improvement runs, and 18.0 with local regeneration...",
           "status": "contradicted"
         }
       ],
@@ -665,7 +1179,7 @@
       "blend": 47.5,
       "is_new": true,
       "alt_keys": [
-        "7121ad64487e0f0b"
+        "55a2f37cdc9b1eb1"
       ],
       "critical_signal": "",
       "priority": "important",
@@ -673,15 +1187,15 @@
       "sources": [
         {
           "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.00654",
+          "url": "https://arxiv.org/abs/2609.02217",
           "domain": "arxiv.org",
           "tier": "A"
         }
       ],
       "primary_links": [
-        "https://arxiv.org/abs/2609.00654"
+        "https://arxiv.org/abs/2609.02217"
       ],
-      "published": "2026-09-02T04:00:00+00:00",
+      "published": "2026-09-03T04:00:00+00:00",
       "trace": [
         "tier A (+40)",
         "primary source anchor (+30)",
@@ -692,215 +1206,268 @@
       "reject_reason": "2 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "88b3ca09bcf645f2",
-      "title": "Deepa Jewellers IPO Day 2: GMP hints 25% listing gain. Check subscription, review, key dates. Apply or skip?",
-      "category": "markets",
-      "one_liner": "An analysis of the Deepa Jewellers IPO pricing, valuations, and broker recommendations for retail and institutional investors in the Indian market.",
+      "cluster_key": "b43bcdc852da6d56",
+      "title": "My LLM cliché highlighter is up to 38 patterns now tools.simonwillison.net/llm-cliche-h...",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
-        "india",
-        "markets",
-        "research"
+        "ai",
+        "llm",
+        "windows"
       ],
-      "summary": "Deepa Jewellers has opened its IPO for subscription with a price band set between ₹168 and ₹177 per equity share, aiming for a tentative listing on the BSE and NSE on September 8. The grey market premium currently hints at an estimated listing price of ₹221, representing a potential 25% gain over the issue price. Brokerages have issued generally positive reviews highlighting strong earnings growth and an attractive P/E valuation relative to peers, though they caution against risks including high customer concentration and working capital requirements. The issue allocates up to 50% for qualified institutional buyers, at least 15% for non-institutional investors, and a minimum of 35% for retail investors.",
-      "key_facts": [
-        "Price band: ₹168 to ₹177 per equity share",
-        "Lot size: 84 equity shares",
-        "Grey market premium: +44",
-        "RoNW: 56.45%"
-      ],
-      "bottom_line": "Deepa Jewellers' IPO offers strong earnings growth at a discount to peers, but high customer concentration warrants caution.",
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Simon Willison simonwillison.net did:plc:kft6lu4trxowqmter2b6vg6z My LLM cliché highlighter is up to 38 patterns now https://tools.simonwillison.net/llm-cliche-highlighter 2026-08-28T10:00:04.870Z",
+      "key_facts": [],
+      "bottom_line": "",
       "claims": [
         {
-          "text": "The Deepa Jewellers IPO opened for subscription on Tuesday, 1 September, and will close on Thursday, 3 September.",
-          "support_span": "The Deepa Jewellers IPO opened for subscription on Tuesday, 1 September, and will close on Thursday, 3 September.",
+          "text": "This is a heavily interactive web application, and JavaScript is required.",
+          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
           "status": "entailed"
         },
         {
-          "text": "The Deepa Jewellers IPO price band has been fixed at ₹168 to ₹177 per equity share, with a face value of ₹2 per share.",
-          "support_span": "The Deepa Jewellers IPO price band has been fixed at ₹168 to ₹177 per equity share, with a face value of ₹2 per share.",
+          "text": "Simple HTML interfaces are possible, but that is not what this is.",
+          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
           "status": "entailed"
         },
         {
-          "text": "Deepa Jewellers IPO GMP today, or grey market premium, is +44.",
-          "support_span": "Deepa Jewellers IPO GMP today, or grey market premium, is +44.",
+          "text": "Post\n  Simon Willison\n  simonwillison.net\n  did:plc:kft6lu4trxowqmter2b6vg6z\n  My LLM cliché highlighter is up to 38 patterns now https://tools.simonwillison.net/llm-cliche-highlighter\n  2026-08-28T10:00:04.870Z",
+          "support_span": "Post\n  Simon Willison\n  simonwillison.net\n  did:plc:kft6lu4trxowqmter2b6vg6z\n  My LLM cliché highlighter is up to 38 patterns now https://tools.simonwillison.net/llm-cliche-highlighter\n  2026-08-28T10:00:04.870Z",
           "status": "entailed"
-        },
-        {
-          "text": "The company reported the highest return on net worth (RoNW) among its listed peers at 56.45%.",
-          "support_span": "the company reported the highest return on net worth (RoNW) among its listed peers at 56.45%.",
-          "status": "contradicted"
         }
       ],
-      "trust_score": 25,
-      "interest_score": 25,
+      "trust_score": 0,
+      "interest_score": 0,
       "corroboration": 1,
-      "blend": 25.0,
+      "blend": 0.0,
       "is_new": true,
       "alt_keys": [
-        "88b3ca09bcf645f2"
+        "b43bcdc852da6d56"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/ipo/deepa-jewellers-ipo-day-2-gmp-hints-25-listing-gain-check-subscription-review-key-dates-apply-or-skip-11788313439516.html",
-          "domain": "livemint.com",
-          "tier": "B"
+          "name": "Simon Willison",
+          "url": "https://bsky.app/profile/simonwillison.net/post/3mu5443unn22s",
+          "domain": "bsky.app",
+          "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-02T02:26:29+00:00",
+      "published": "2026-08-28T10:00:02.488000+00:00",
       "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 2/5 from gemini-3.5-flash-lite",
-        "blend 25 = trust 25 / interest 25 / corrob 25"
+        "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-08-28 — outside lookback window"
     },
     {
-      "cluster_key": "c44a5fa39c9d9d0e",
-      "title": "Stocks to watch today: Reason why these shares are in focus for Wednesday's trading session | Full list",
-      "category": "markets",
-      "one_liner": "Corporate updates from major Indian firms highlight operational milestones amid broader market volatility.",
+      "cluster_key": "3733ca5e7ba69bd4",
+      "title": "Loom: Weaving Diagnostic Strands into Free-Text Consensus via Embedding-Space Reweighting",
+      "category": "tech_ai",
+      "one_liner": "Loom aggregates noisy diagnostic hypotheses into a rapid, consensus-driven Root Cause Analysis framework using embedding-space reweighting.",
       "tags": [
-        "dfir",
-        "india",
-        "markets",
-        "privacy",
-        "research"
+        "agents",
+        "ai",
+        "llm",
+        "research",
+        "tool",
+        "writeup"
       ],
-      "summary": "Indian market investors are tracking key corporate updates from major firms including Hero Motocorp, Reliance Industries, Adani Green Energy, and Tata Motors following market hours. Hero Motocorp reported a 4.5% year-on-year increase in August domestic dispatches, while Adani Green Energy commissioned a 139 MW solar plant at Khavda, Gujarat, pushing its operational capacity past 20 GW. Tata Motors secured all regulatory approvals for its acquisition of Italy's Iveco Group, and Gland Pharma cleared a US FDA inspection with zero observations. These developments unfold against a backdrop of volatile benchmark indices pressured by rising crude prices and geopolitical tensions in the Middle East.",
+      "summary": "Loom is a generative consensus framework for real-world Root Cause Analysis that aggregates open-form hypotheses emitted by modular diagnostic heuristics. By projecting textual hypotheses into a continuous embedding space and resolving conflicts via an iterative centroid-based reweighting algorithm, Loom feeds a single lightweight LLM synthesis step. Evaluations on the OpenRCA benchmark show that Loom matches state-of-the-art autonomous agents on multiple datasets while operating roughly 26 times faster with a single LLM call per incident. This deterministic consensus approach reduces inference latency and fosters trust among subject matter experts.",
       "key_facts": [
-        "Hero Motocorp dispatches: 5,42,305 units",
-        "Adani Green solar project: 139 MW",
-        "Adani operational capacity: >20 GW"
+        "Speedup factor: ~26x faster than state-of-the-art agents",
+        "LLM calls per incident: 1"
       ],
-      "bottom_line": "Major Indian corporations report robust production and strategic acquisitions even as broader equity markets face geopolitical headwinds.",
+      "bottom_line": "Loom accelerates root cause analysis by replacing expensive multi-turn agent loops with an embedding-space centroid consensus feeding a single LLM call.",
       "claims": [
         {
-          "text": "Hero Motocorp’s domestic dispatches increased 4.5% year-on-year to 5,42,305 units in August 2026",
-          "support_span": "Hero Motocorp’s domestic dispatches increased 4.5% year-on-year to 5,42,305 units in August 2026",
-          "status": "contradicted"
+          "text": "We present Loom, a generative consensus framework deployed for real-world RCA that bridges these paradigms.",
+          "support_span": "We present Loom, a generative consensus framework deployed for real-world RCA that bridges these paradigms.",
+          "status": "entailed"
         },
         {
-          "text": "Adani Green Energy commissioned a 139 MW solar power project at Khavda in Gujarat, taking its operational renewable energy capacity to more than 20 GW.",
-          "support_span": "Adani Green Energy commissioned a 139 MW solar power project at Khavda in Gujarat, taking its operational renewable energy capacity to more than 20 GW.",
+          "text": "Evaluated on the OpenRCA benchmark, Loom occupies the accuracy--efficiency Pareto frontier: it matches a state-of-the-art autonomous agent on Bank and Market-2 and trails on Market-1 and Telecom, while using a single LLM call per incident on all four datasets (~26× faster; ~33× with an 8B-parameter synthesizer).",
+          "support_span": "Evaluated on the OpenRCA benchmark, Loom occupies the accuracy--efficiency Pareto frontier: it matches a state-of-the-art autonomous agent on Bank and Market-2 and trails on Market-1 and Telecom, while using a single LLM call per incident on all four datasets (~26× faster; ~33× with an 8B-parameter synthesizer).",
           "status": "contradicted"
         }
       ],
-      "trust_score": 25,
-      "interest_score": 25,
-      "corroboration": 1,
-      "blend": 25.0,
-      "is_new": true,
-      "alt_keys": [
-        "c44a5fa39c9d9d0e"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/stocks-to-watch-today-reason-why-these-shares-are-in-focus-for-wednesdays-trading-session-full-list-11788311231011.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-02T01:37:11+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 2/5 from gemini-3.5-flash-lite",
-        "blend 25 = trust 25 / interest 25 / corrob 25"
-      ],
-      "reject_reason": "2 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "33fdf3de4a33f797",
-      "title": "Zelensky says airlines should avoid Russian airspace as Ukraine escalates drone operations",
-      "category": "india_world",
-      "one_liner": "Escalating Ukrainian drone operations deep inside Russia threaten remaining commercial flight paths over Russian airspace.",
-      "tags": [
-        "network",
-        "policy",
-        "vulnerability"
-      ],
-      "summary": "Ukrainian President Volodymyr Zelensky warned international airlines and insurers that Russian airspace is becoming completely dangerous as Ukraine escalates drone strikes against targets deep inside Russia. Russian President Vladimir Putin condemned the remarks as a declaration of state terrorism and stated that Russia would continue its own heavy attacks on Ukrainian energy infrastructure. Aviation risk advisory firms confirm that daily strikes inside Russian territory are almost certain to continue, raising the risk of miscalculation for civilian air carriers still using Russian routes. Meanwhile, ongoing military strikes continue to cause civilian casualties on both sides.",
-      "key_facts": [
-        "Casualties: 12 people killed in recent strikes",
-        "Target proximity: Drone operations reaching deep inside Russian territory"
-      ],
-      "bottom_line": "Ukraine's escalation of drone strikes inside Russia threatens remaining commercial aviation routes and prompts reciprocal vows of intensified attacks from Moscow.",
-      "claims": [
-        {
-          "text": "Ukraine's president has told airlines that Russian airspace will be 'effectively closing' as his country escalates its drone strikes.",
-          "support_span": "Ukraine's president has told airlines that Russian airspace will be 'effectively closing' as his country escalates its drone strikes.",
-          "status": "contradicted"
-        },
-        {
-          "text": "Russian President Vladimir Putin responded by saying that Zelensky's comments amounted to a 'declaration of state terrorism', while adding that Russia would continue its own intensifying attacks on Ukraine.",
-          "support_span": "Russian President Vladimir Putin responded by saying that Zelensky's comments amounted to a 'declaration of state terrorism', while adding that Russia would continue its own intensifying attacks on Ukraine.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 40,
+      "trust_score": 70,
       "interest_score": 50,
       "corroboration": 1,
-      "blend": 40.0,
+      "blend": 47.5,
       "is_new": true,
       "alt_keys": [
-        "33fdf3de4a33f797"
+        "3733ca5e7ba69bd4"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c9v9yydy2wvo?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2609.02649",
+          "domain": "arxiv.org",
           "tier": "A"
         }
       ],
-      "primary_links": [],
-      "published": "2026-09-02T04:23:23+00:00",
+      "primary_links": [
+        "https://arxiv.org/abs/2609.02649"
+      ],
+      "published": "2026-09-03T04:00:00+00:00",
       "trace": [
         "tier A (+40)",
-        "single outlet, established publication (tier A)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
         "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 40 = trust 40 / interest 50 / corrob 25"
+        "blend 48 = trust 70 / interest 50 / corrob 25"
       ],
-      "reject_reason": "2 claim(s) not supported by the source text"
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "35d900d158e508e0",
-      "title": "OpenAgentFlow: Enabling System-Wide Safety Boundaries for Heterogeneous AI Agent Fleets",
+      "cluster_key": "e156c103e788da0c",
+      "title": "When Agents Implement Systems: A Case Study in Defects, Detection, and Evaluation Rigor",
       "category": "tech_ai",
-      "one_liner": "OpenAgentFlow enforces system-wide safety boundaries at the action-commit boundary for heterogeneous AI agent fleets.",
+      "one_liner": "Analyze the defects and retrieval performance of LLM coding agents implementing complex multi-component data systems.",
       "tags": [
         "agents",
         "ai",
-        "android",
-        "appsec",
         "llm",
-        "research",
-        "tool"
+        "research"
       ],
-      "summary": "To address fragmented safety enforcement across heterogeneous AI agent fleets, researchers present OpenAgentFlow, a control-plane and action-plane architecture that normalizes pending GUI, API, tool, and LLM calls into a unified event stream. Each event passes through a pre-execution Policy Enforcement Point at the action-commit boundary. Instantiated on Android, OpenAgentFlow achieved a 95.3% attack block rate on a 300-case action-event benchmark.",
+      "summary": "This case study examines the systems-level engineering behavior of LLM coding agents implementing a multi-component data system from a detailed specification. Over a single session, the agent introduced and diagnosed five distinct defects spanning schema design, asynchronous orchestration, and configuration correctness. The evaluation also tested retrieval-filtering trade-offs on the HotpotQA benchmark, demonstrating that restricting candidates to graph-identified entities prior to ranking drastically outperforms unfiltered search across all tested budgets.",
       "key_facts": [
-        "Attack block rate: 95.3% on a 300-case benchmark",
-        "Android evaluation: 90.8% raw accuracy and 92.9% trace-adjusted pass rate"
+        "Defects cataloged: 5",
+        "Pooled corpus size: 2994 paragraphs",
+        "Unfiltered search recall: 69 percent at budget of 10"
       ],
-      "bottom_line": "Implement centralized pre-execution policy enforcement points to secure heterogeneous multi-agent action flows without modifying underlying models.",
+      "bottom_line": "Filtering retrieval candidates before ranking is essential for LLM agents to reliably recover required evidence.",
       "claims": [
         {
-          "text": "We present OpenAgentFlow, a control-plane/action-plane architecture that enforces safety at the action-commit boundary.",
-          "support_span": "We present OpenAgentFlow, a control-plane/action-plane architecture that enforces safety at the action-commit boundary. It normalizes pending GUI actions, API calls, tool calls, and LLM-generated invocations into a unified AgentEvent stream...",
+          "text": "Over a single session, we catalog five such defects, categorized by constraint violated and detection method.",
+          "support_span": "Over a single session, we catalog five such defects, categorized by constraint violated and detection method.",
+          "status": "entailed"
+        },
+        {
+          "text": "Across retrieval budgets from 1 to 10 and 100 questions against a pooled corpus of 2994 paragraphs, filtered recall reaches its ceiling by a budget of 3...",
+          "support_span": "Across retrieval budgets from 1 to 10 and 100 questions against a pooled corpus of 2994 paragraphs, filtered recall reaches its ceiling by a budget of 3, expected once candidates are restricted to the gold paragraphs themselves, while unfiltered search recovers all required evidence only 69 percent of the time even at a budget of 10...",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "alt_keys": [
+        "e156c103e788da0c"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2609.01985",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2609.01985"
+      ],
+      "published": "2026-09-03T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "26f8568860830e72",
+      "title": "SafeEvolve: Harness-Policy Co-Evolution from Agent Experience for Safety Alignment",
+      "category": "tech_ai",
+      "one_liner": "SafeEvolve aligns LLM agent safety through an experience-driven loop of runtime harness and policy co-evolution.",
+      "tags": [
+        "agents",
+        "ai",
+        "llm",
+        "tool"
+      ],
+      "summary": "SafeEvolve is an experience-driven self-evolving framework for LLM agent safety alignment that couples harness updates with policy optimization. By transforming completed on-policy trajectory safety evidence into bounded component-level updates across safety prompts and skills, the framework drives a continual loop of harness-policy co-evolution using a two-stage SFT-RL training paradigm. Experiments on agentic benchmarks show that SafeEvolve significantly improves safety-utility trade-offs, reducing the Attack Success Rate by 3x on AgentDojo for Qwen3.5-4B while increasing benign utility from 59.79 percent to 61.86 percent.",
+      "key_facts": [
+        "Model evaluated: Qwen3.5-4B",
+        "ASR reduction: 3x on AgentDojo",
+        "Benign utility improvement: From 59.79% to 61.86%"
+      ],
+      "bottom_line": "SafeEvolve achieves superior agent safety alignment by co-evolving runtime harnesses and policies using empirical execution trajectories.",
+      "claims": [
+        {
+          "text": "We propose SafeEvolve, an experience-driven self-evolving framework for agent safety alignment.",
+          "support_span": "We propose SafeEvolve, an experience-driven self-evolving framework for agent safety alignment.",
+          "status": "entailed"
+        },
+        {
+          "text": "For Qwen3.5-4B, SafeEvolve achieves a 3× ASR reduction on AgentDojo while improving benign utility from 59.79% to 61.86%.",
+          "support_span": "For Qwen3.5-4B, SafeEvolve achieves a 3× ASR reduction on AgentDojo while improving benign utility from 59.79% to 61.86%.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "alt_keys": [
+        "26f8568860830e72"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.CR",
+          "url": "https://arxiv.org/abs/2609.02786",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2609.02786"
+      ],
+      "published": "2026-09-03T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "5b44621e79ec7d90",
+      "title": "Safety Does Not Compose: Non-Decaying Loop State for Autonomous LLM Agents",
+      "category": "tech_ai",
+      "one_liner": "LoopHarness provides a persistent, non-decaying safety state across LLM agent loops to prevent multi-iteration fragmented attacks.",
+      "tags": [
+        "agents",
+        "ai",
+        "blueteam",
+        "llm",
+        "redteam",
+        "tool"
+      ],
+      "summary": "Autonomous LLM agents operate in unattended loops across many iterations, but standard safeguards are defined over a single trajectory and re-initialized when a new trajectory begins. The authors show a theoretical separation: trajectory-scoped monitors fail against attacks whose evidence is fragmented across iterations, whereas a monitor retaining cross-iteration state succeeds. While geometrically decaying risk scores are insufficient due to fixed wait times, the authors introduce LoopHarness, which enforces a persistent, non-decaying safety state at the loop level. Under mediated commits and an arbiter detection floor, LoopHarness bounds unauthorized irreversible actions to a constant term, surviving fully colluding verifiers.",
+      "key_facts": [],
+      "bottom_line": "Trajectory-scoped monitors fail against multi-step attacks, requiring loop-level persistent state architectures to bound unauthorized actions.",
+      "claims": [
+        {
+          "text": "Our central result is a separation: against an attack whose evidence is fragmented across several iterations, every trajectory-scoped monitor has a true-positive rate equal to its false-positive rate...",
+          "support_span": "Our central result is a separation: against an attack whose evidence is fragmented across several iterations, every trajectory-scoped monitor has a true-positive rate equal to its false-positive rate, however expressive it is, because the evidence it would need never appears in the window it sees...",
           "status": "contradicted"
         }
       ],
@@ -910,7 +1477,7 @@
       "blend": 58.8,
       "is_new": true,
       "alt_keys": [
-        "35d900d158e508e0"
+        "5b44621e79ec7d90"
       ],
       "critical_signal": "",
       "priority": "important",
@@ -918,15 +1485,79 @@
       "sources": [
         {
           "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2609.00015",
+          "url": "https://arxiv.org/abs/2608.27141",
           "domain": "arxiv.org",
           "tier": "A"
         }
       ],
       "primary_links": [
-        "https://arxiv.org/abs/2609.00015"
+        "https://arxiv.org/abs/2608.27141"
       ],
-      "published": "2026-09-02T04:00:00+00:00",
+      "published": "2026-09-03T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 4/5 from cache",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "4596e7be42add6af",
+      "title": "FUSE: An Evaluating Framework for Dangerous Capabilities of LLMs",
+      "category": "tech_ai",
+      "one_liner": "Evaluate dangerous AI capabilities across Knowledge, Defense, and Harm pipelines using the modular FUSE framework.",
+      "tags": [
+        "ai",
+        "llm",
+        "policy",
+        "privacy",
+        "research",
+        "tool"
+      ],
+      "summary": "Researchers introduce FUSE, a modular evaluation framework designed to assess dangerous AI capabilities across three orthogonal pipelines: Knowledge (K), Defense (D), and Harm (H). Evaluating 12 commercial LLMs through a chemical-biological module and a cyber pilot, the study reveals that model safety profiles diverge sharply, with strong defenders failing to consistently suppress harmful content upon compliance. Furthermore, a temporal analysis shows that dangerous capabilities have not declined monotonically in newer model releases, highlighting gaps between scaling progress and safety alignment.",
+      "key_facts": [
+        "Commercial models evaluated: 12 models from 4 families",
+        "Pipelines: Knowledge (K), Defense (D), Harm (H)"
+      ],
+      "bottom_line": "Model scaling and general capability improvements do not uniformly translate into better safety alignment or reduced dangerous capabilities.",
+      "claims": [
+        {
+          "text": "We present a modular framework that evaluates each model through three orthogonal pipelines---Knowledge (K), Defense (D), and Harm (H)---under a unified protocol, aggregating results into a standardized dangerous-capability profile.",
+          "support_span": "We present a modular framework that evaluates each model through three orthogonal pipelines---Knowledge (K), Defense (D), and Harm (H)---under a unified protocol, aggregating results into a standardized dangerous-capability profile $\\phi$.",
+          "status": "contradicted"
+        },
+        {
+          "text": "Instantiating the framework with a chemical-biological (CB) module, we evaluate 12 commercial LLMs from four families.",
+          "support_span": "Instantiating the framework with a chemical-biological (CB) module, we evaluate 12 commercial LLMs from four families.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": true,
+      "alt_keys": [
+        "4596e7be42add6af"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2609.02168",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2609.02168"
+      ],
+      "published": "2026-09-03T04:00:00+00:00",
       "trace": [
         "tier A (+40)",
         "primary source anchor (+30)",
@@ -934,64 +1565,6 @@
         "importance 4/5 from gemini-3.5-flash-lite",
         "blend 59 = trust 70 / interest 75 / corrob 25",
         "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "98612dd7bdb4bd03",
-      "title": "NTA Invites Applications For Rashtriya Indian Military College Entrance Exam 2026",
-      "category": "india_world",
-      "one_liner": "An administrative notice announces entrance exam applications for the Rashtriya Indian Military College.",
-      "tags": [
-        "india",
-        "policy",
-        "release",
-        "research"
-      ],
-      "summary": "The National Testing Agency (NTA) has invited applications for the Rashtriya Indian Military College (RIMC) Entrance Exam 2026, which will be conducted in a traditional pen-and-paper format.",
-      "key_facts": [
-        "Exam: Rashtriya Indian Military College Entrance Exam 2026",
-        "Mode: Pen-and-paper"
-      ],
-      "bottom_line": "The NTA opened applications for the RIMC Entrance Exam 2026 to be held in pen-and-paper mode.",
-      "claims": [
-        {
-          "text": "NTA Invites Applications For Rashtriya Indian Military College Entrance Exam 2026",
-          "support_span": "NTA Invites Applications For Rashtriya Indian Military College Entrance Exam 2026",
-          "status": "contradicted"
-        },
-        {
-          "text": "The examination will be conducted in pen-and-paper mode.",
-          "support_span": "The examination will be conducted in pen-and-paper mode.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 13.8,
-      "is_new": true,
-      "alt_keys": [
-        "98612dd7bdb4bd03"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NDTV India",
-          "url": "https://www.ndtv.com/education/nta-invites-applications-for-rashtriya-indian-military-college-entrance-exam-2026-11990069#publisher=newsstand",
-          "domain": "ndtv.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-02T03:57:16+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 1/5 from gemini-3.5-flash-lite",
-        "blend 14 = trust 25 / interest 0 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     }
