@@ -1,14 +1,58 @@
-# Newsdesk
+# Newsdesk — a self-hosted cyber threat intel & tech news dashboard
 
-A batch news agent for one reader. It sweeps ~56 sources across security,
-AI/tech, markets and world news, checks what it finds, summarises it, and
-writes one static page you open whenever you like.
+**Live site: https://breachwire.vercel.app**
 
-Every card carries a **priority**, a **bottom line**, the **key facts**, a
-full **summary**, **tags**, and **every source link**. Nothing reaches the page
-without passing a validation gate.
+An automated **OSINT news aggregator** that runs itself once a day, harvests
+**~120 RSS/Atom feeds** plus **GitHub**, **Bluesky**, **public Telegram
+channels**, the **CISA KEV catalogue** and the **NVD CVE API**, checks what it
+finds against the source article, summarises it with an LLM, and publishes a
+single fast static page.
 
-Runs on free tiers only. Current cost: **zero**.
+Built for one reader who wants **cyber attacks, actively exploited CVEs,
+security tooling, bug bounty writeups and AI releases** in one place, without
+paying for anything and without a newsletter in sight.
+
+### 👉 [Have a look — breachwire.vercel.app](https://breachwire.vercel.app)
+
+## What makes it different
+
+**Nothing is published on trust.** Every generated summary is checked sentence
+by sentence against the article it came from, and a *second, different model*
+re-reads the result. Anything that cannot be traced back is held off the page
+with the reason printed on the card. On a measured run 10-25 stories are
+refused — you can read them, and the reason for each, right there.
+
+**It shows its working.** Every card opens to reveal the scoring: publisher
+tier, how many independent outlets carried it, whether it is anchored to a
+primary source, and the claim-by-claim check. In plain English, not jargon.
+
+**Full-day coverage, not a top ten.** A measured run harvests ~1,800
+articles into ~1,200 clustered stories and publishes all of them. Roughly 150 get a full
+model summary; the rest carry the headline, source and tags, clearly labelled
+so you always know which is which.
+
+**Free, permanently.** Free LLM tiers with an eight-model fallback ladder and
+hard quota accounting, GitHub Actions for the schedule, Vercel for hosting.
+Running cost: **zero**.
+
+## Features
+
+- **Cross-checked summaries** — claim-level entailment plus an independent
+  judge model
+- **Source transparency** — every outlet named and linked, syndication
+  collapsed so three copies of one wire story count as one
+- **Tags and full-text search** — `dfir`, `soc`, `ransomware`, `exploit`,
+  `bugbounty`, `llm`, `supply-chain` and 27 more
+- **Date filters** — today, since yesterday, last 3 days, this week
+- **CVE and exploit tracking** — CISA KEV and NVD, both keyless
+- **Telegram channel reader** — public channels, no bot and no token needed
+- **Reading-first design** — 55-character measure, layer-cake scanning,
+  keyboard navigation (`j`/`k`/`/`), light and dark
+- **SSRF and XSS hardened**, secrets sanitised at load, 104 tests
+
+**Keywords:** cybersecurity news aggregator · threat intelligence dashboard ·
+CVE tracker · CISA KEV feed · RSS news bot · OSINT tool · bug bounty writeups ·
+security automation · LLM summarisation · self-hosted · free tier · Python
 
 ---
 
