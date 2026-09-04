@@ -11,7 +11,7 @@ cyber_attacks:
   - {name: "CISA Advisories",      url: "https://www.cisa.gov/cybersecurity-advisories/all.xml",      tier: A, primary: true}
   - {name: "CISA News",            url: "https://www.cisa.gov/news.xml",                              tier: A, primary: true}
   - {name: "BleepingComputer",     url: "https://www.bleepingcomputer.com/feed/",                     tier: B}
-  - {name: "The Hacker News",      url: "https://feeds.feedburner.com/TheHackersNews",                tier: B}
+  - {name: "The Hacker News",      url: "https://thehackernews.com/feeds/posts/default",              tier: B}
   - {name: "Krebs on Security",    url: "https://krebsonsecurity.com/feed/",                          tier: B}
   - {name: "Google Project Zero",  url: "https://googleprojectzero.blogspot.com/feeds/posts/default", tier: A, primary: true, window_hours: 720}
   - {name: "SANS ISC Diary",       url: "https://isc.sans.edu/rssfeed_full.xml",                      tier: A}

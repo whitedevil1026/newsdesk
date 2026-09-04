@@ -5,7 +5,7 @@ on:
     # 01:30 UTC = 07:00 IST. Keep this in step with `schedule.cron_utc` in
     # config/settings.yaml — the site reads that to tell readers when the page
     # next refreshes, and a mismatch makes it lie.
-    - cron: "30 1 * * *"
+    - cron: "0 3 * * *"
   workflow_dispatch:            # manual "refresh now"
 
 permissions:
@@ -76,6 +76,7 @@ jobs:
             data/cache/summaries.json \
             data/cache/usage.json \
             data/cache/gnews_urls.json \
+            data/cache/totals.json \
             data/cache/iffy_blocklist.txt \
             site/news.json \
             site/rejected.json

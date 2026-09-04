@@ -37,9 +37,9 @@ window:
 # The site reads it to tell the reader when the page will next refresh, which
 # is the difference between "this looks stale" and "this is expected".
 schedule:
-  cron_utc: "30 1 * * *"    # 01:30 UTC daily
+  cron_utc: "0 3 * * *"     # 03:00 UTC daily
   display_tz: "Asia/Kolkata"
-  display_name: "07:00 IST"
+  display_name: "08:30 IST"
 
 dedupe:
   # A dashboard shows a rolling window, so an article seen in an earlier run

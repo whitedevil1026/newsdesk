@@ -45,6 +45,7 @@ vocabulary:
   - hardware
   - markets
   - india
+  - political        # elections, diplomacy, legislation, statecraft
 
 # Keyword -> tag. Matched case-insensitively against title + summary.
 # These only ADD tags; they never remove what the model chose.
@@ -110,3 +111,19 @@ rules:
   markets:      ["nifty", "sensex", "rbi", "ipo", "earnings", "funding round",
                  "valuation", "acquisition"]
   india:        ["india", "indian", "delhi", "mumbai", "bengaluru", "upi ", "aadhaar"]
+
+  # Deliberately narrow. "government", "policy" and "official" all appear
+  # constantly in ordinary security reporting ("government agencies must
+  # patch by..."), so tagging on those would mark half the security feed
+  # political. These are terms that only show up when the story really is
+  # about statecraft.
+  political:    ["election", "parliament", "minister", "diplomat", "diplomatic",
+                 "bilateral", "geopolitic", "lok sabha", "rajya sabha",
+                 "opposition party", "referendum", "ballot", "treaty",
+                 "coalition government", "white house", "kremlin",
+                 "united nations", "state visit", "summit talks",
+                 "supreme court", "high court", "senate", "congress",
+                 "ambassador", "governor", "sanctions", "tariff", "tariffs",
+                 "foreign policy", "legislation", "border talks",
+                 "border dispute", "border delimitation", "peace talks",
+                 "cabinet", "geopolitical"]

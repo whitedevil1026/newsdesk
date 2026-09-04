@@ -262,9 +262,42 @@ class TestNetGuard:
                     "http://10.0.0.5/", "http://localhost/"):
             assert check(url) is not None, url
 
-    def test_ordinary_public_urls_allowed(self):
-        from pipeline.netguard import check
-        assert check("https://www.bbc.co.uk/news") is None
+    def test_ordinary_public_urls_allowed(self, monkeypatch):
+        """Hermetic: the old version called real DNS, so it passed or failed
+        depending on the network the suite happened to run on."""
+        import socket as _s
+        from pipeline import netguard
+        monkeypatch.setattr(netguard.socket, "getaddrinfo",
+                            lambda *a, **k: [(_s.AF_INET, None, None, "",
+                                              ("151.101.156.81", 0))])
+        assert netguard.check("https://www.bbc.co.uk/news") is None
+
+    def test_nat64_public_address_allowed(self, monkeypatch):
+        """A DNS64 resolver answers with 64:ff9b::<ipv4>, which Python calls
+        `is_reserved`. Treating the prefix as the address blocked every
+        public host on any IPv6-only or mobile network - the entire harvest."""
+        import socket as _s
+        from pipeline import netguard
+        monkeypatch.setattr(netguard.socket, "getaddrinfo",
+                            lambda *a, **k: [(_s.AF_INET6, None, None, "",
+                                              ("64:ff9b::9765:9c51", 0, 0, 0))])
+        assert netguard.check("https://www.bbc.co.uk/news") is None
+
+    def test_nat64_cannot_smuggle_a_private_address(self, monkeypatch):
+        """The other direction, and the one that matters: unwrapping must not
+        become a way past the guard. 64:ff9b::a9fe:a9fe carries the cloud
+        metadata address and has to stay blocked."""
+        import socket as _s
+        from pipeline import netguard
+        for wrapped in ("64:ff9b::a9fe:a9fe",      # 169.254.169.254
+                        "64:ff9b::c0a8:0101",      # 192.168.1.1
+                        "64:ff9b::7f00:0001",      # 127.0.0.1
+                        "::ffff:10.0.0.5"):        # IPv4-mapped private
+            monkeypatch.setattr(
+                netguard.socket, "getaddrinfo",
+                lambda *a, w=wrapped, **k: [(_s.AF_INET6, None, None, "",
+                                             (w, 0, 0, 0))])
+            assert netguard.check("https://evil.example/") is not None, wrapped
 
     def test_scheme_only_mode_skips_dns(self):
         """The cheap path still catches the scheme abuses, which is what the

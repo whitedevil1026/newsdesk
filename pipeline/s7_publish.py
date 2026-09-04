@@ -10,13 +10,17 @@ from __future__ import annotations
 import hashlib
 from pathlib import Path
 
-from .config import DATA_DIR, SITE_DIR, settings
+from .config import CACHE_DIR, DATA_DIR, SITE_DIR, settings
 from .models import Item, Priority, Verdict, canonical_url
 from .s2_clean import save_seen
 from .utils import domain_of, log, now_utc, snapshot
 
 NEWS_JSON = DATA_DIR / "news.json"
 REJECTS_JSON = DATA_DIR / "rejected.json"
+# A running tally across every run there has ever been. news.json only ever
+# describes TODAY, so without this the page can say "40 stories" for months
+# and never answer "how much has this thing actually found for me".
+TOTALS_JSON = CACHE_DIR / "totals.json"
 
 _ORDER = {Priority.CRITICAL: 0, Priority.IMPORTANT: 1, Priority.MINOR: 2}
 
@@ -126,6 +130,36 @@ def _apply_quotas(ranked: list, wcfg: dict) -> list:
     return chosen
 
 
+def _tally(published: int, held: int, generated_at: str) -> dict:
+    """Add this run to the lifetime totals and return them.
+
+    Keyed by run date so a re-run on the same day corrects that day's figure
+    instead of double-counting it — reruns happen (a failed push, a manual
+    trigger), and a total that inflates every time you retry is worse than
+    no total at all.
+    """
+    import json
+
+    state = {"runs": {}, "first_run": generated_at}
+    if TOTALS_JSON.exists():
+        try:
+            state = json.loads(TOTALS_JSON.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            log("publish", "! totals.json unreadable, starting a new tally")
+    runs = state.setdefault("runs", {})
+    state.setdefault("first_run", generated_at)
+
+    runs[generated_at[:10]] = {"published": published, "held": held}
+    totals = {
+        "runs": len(runs),
+        "since": state["first_run"][:10],
+        "published": sum(r["published"] for r in runs.values()),
+        "held": sum(r.get("held", 0) for r in runs.values()),
+    }
+    TOTALS_JSON.write_text(json.dumps(state, indent=1), encoding="utf-8")
+    return totals
+
+
 def _held_back(dead: list[Item]) -> list[dict]:
     """Rejected stories, carried onto the page but marked and defanged.
 
@@ -214,6 +248,7 @@ def run(items: list[Item], dry_run: bool = False) -> dict:
         },
         "items": [i.to_json() for i in live] + _held_back(dead),
     }
+    payload["totals"] = _tally(len(live), len(dead), payload["generated_at"])
 
     if dry_run:
         log("publish", f"DRY RUN - would publish {len(live)}, reject {len(dead)}")

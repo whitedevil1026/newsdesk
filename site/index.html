@@ -1073,6 +1073,16 @@ function updateLine(d){
     out+=' <span class="sep2">&middot;</span> <span class="dim" title="'+tip+
          '">next '+esc(until(d.next_update))+"</span>";
   }
+  // news.json only ever describes today, so the page could say "40 stories"
+  // for months without ever answering "how much has this found for me".
+  const t=d.totals;
+  if(t && t.published){
+    out+=' <span class="sep2">&middot;</span> <span class="dim" title="'+
+         esc(t.published+" published and "+(t.held||0)+" held back across "+
+             t.runs+" daily runs since "+t.since)+'">'+
+         esc(t.published.toLocaleString())+" stories over "+esc(t.runs)+
+         (t.runs===1?" run":" runs")+"</span>";
+  }
   return out;
 }
 
