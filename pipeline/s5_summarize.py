@@ -245,8 +245,15 @@ def top_up(items: list[Item], bodies: dict[str, str]) -> list[Item]:
     than the summarised ones — these were not filler.
 
     Widening the shortlist cannot fix this, because the promotion happens
-    after the shortlist is chosen. Only a second pass can. It is bounded to
-    the publish cap, so the worst case is two extra calls.
+    after the shortlist is chosen. Only a second pass can.
+
+    This used to be bounded "to the publish cap, so the worst case is two
+    extra calls". That was true while the cap was 40 and false the instant it
+    became 900: the gap set would have been every unsummarised publishable
+    item, roughly 750 of them, or ~38 extra batches on top of a run that
+    normally makes TEN CALLS IN TOTAL. It would have emptied the daily quota
+    on the first run and then failed for the rest of the day. It is bounded
+    explicitly now, by llm.top_up_max.
     """
     from .config import settings as _settings
     from .s7_publish import _apply_quotas
@@ -259,13 +266,26 @@ def top_up(items: list[Item], bodies: dict[str, str]) -> list[Item]:
     live.sort(key=lambda i: (i.priority.value != "critical", -i.blend))
     will_publish = _apply_quotas(live, cfg["window"])
 
-    gaps = [i for i in will_publish
-            if any("extractive" in t or "heuristic" in t for t in i.trace)]
+    # Was: search each item's trace for the words "extractive" or
+    # "heuristic". Rewording that log line - which happened one commit ago -
+    # silently emptied this list and turned the whole top-up pass off with no
+    # error anywhere. The field says what the string was standing in for.
+    gaps = [i for i in will_publish if i.summary_source != "model"]
     if not gaps:
         return items
 
-    log("summarize", f"top-up: {len(gaps)} publishable items have no model "
-                     f"summary")
+    budget = int(cfg["llm"].get("top_up_max", 40))
+    if len(gaps) > budget:
+        # Highest blend first: these are the items the model's own reordering
+        # pushed up, so the top of that list is exactly what the pass exists
+        # to rescue.
+        gaps.sort(key=lambda i: -i.blend)
+        log("summarize", f"top-up: {len(gaps)} publishable items lack a model "
+                         f"summary, taking the top {budget}")
+        gaps = gaps[:budget]
+    else:
+        log("summarize", f"top-up: {len(gaps)} publishable items have no model "
+                         f"summary")
     # run() mutates the Item objects in place and returns the list it was
     # given, so the ORIGINAL list must be returned here — returning run()'s
     # value would silently reduce the pipeline to just the gap items.

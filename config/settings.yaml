@@ -389,6 +389,11 @@ llm:
   # 150 costs ~8 calls against a ladder that allows 36 batches a run, and the
   # summary cache means repeat items are not paid for twice.
   max_items_summarized: 150
+  # Hard ceiling on the second pass that rescues publishable items the model
+  # promoted after the shortlist was chosen. Without it the pass sizes itself
+  # from the publish cap, which is now 900 — that would be ~38 extra batches
+  # on a run that otherwise makes about ten calls in total.
+  top_up_max: 40
   shortlist_multiplier: 2.0   # per-category allocation = publish quota x this
   api_key_env: "GEMINI_API_KEY"
 

@@ -307,6 +307,42 @@ class TestNetGuard:
         assert check("https://example.com", resolve_dns=False) is None
 
 
+class TestApiBudget:
+    """The free tier is the whole constraint, so the number of CALLS a run can
+    make has to be provably bounded by config rather than by how much news
+    happened to break that day."""
+
+    def test_top_up_is_bounded_by_its_own_limit_not_the_publish_cap(self):
+        """top_up() used to size itself from the publish cap. That was two
+        extra calls at a cap of 40 and ~38 at a cap of 900 — enough to empty
+        the daily quota on the first run of the day."""
+        from pipeline.config import settings
+        cfg = settings()
+        cap = cfg["window"]["max_items_published"]
+        budget = cfg["llm"]["top_up_max"]
+        batch = cfg["llm"]["batch_size"]
+        assert budget < cap, (
+            "top_up_max must be a real ceiling, not the publish cap")
+        # The whole run has to stay inside the smallest daily quota on the
+        # ladder, which is the flagship tier's rpd.
+        worst_case = -(-cfg["llm"]["max_items_summarized"] // batch)                      + -(-budget // batch)                      + -(-cfg["judge"]["max_items"] // cfg["judge"]["batch_size"])
+        assert worst_case <= 40, f"worst case {worst_case} calls per run"
+
+    def test_gap_detection_does_not_depend_on_log_wording(self):
+        """The gap set was found by searching each item's trace for the words
+        'extractive' or 'heuristic'. Rewording that log line turned the whole
+        pass off silently, with no error anywhere."""
+        import inspect
+        from pipeline import s5_summarize
+        src = inspect.getsource(s5_summarize.top_up)
+        # Strip comments and docstrings: this checks the CODE, not the prose
+        # explaining why the code looks like this.
+        code = " ".join(l.split("#")[0] for l in src.splitlines())
+        assert "summary_source" in code, "top_up must test the field"
+        assert '"extractive"' not in code and '"heuristic"' not in code, (
+            "top_up is matching on log wording again")
+
+
 class TestNoSecretsInRepo:
     def test_env_is_gitignored(self):
         """A key reaching a git remote is the one unrecoverable mistake here."""
