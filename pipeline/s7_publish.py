@@ -130,34 +130,66 @@ def _apply_quotas(ranked: list, wcfg: dict) -> list:
     return chosen
 
 
-def _tally(published: int, held: int, generated_at: str) -> dict:
-    """Add this run to the lifetime totals and return them.
+def _tally(published: int, held: int, generated_at: str,
+           persist: bool = True) -> dict | None:
+    """Add this run to the lifetime totals and return them, or None.
 
     Keyed by run date so a re-run on the same day corrects that day's figure
     instead of double-counting it — reruns happen (a failed push, a manual
     trigger), and a total that inflates every time you retry is worse than
     no total at all.
+
+    `persist=False` computes without touching the file, which is what a dry
+    run needs.
+
+    NOTHING in here may raise. This is a counter: it is not load-bearing, it
+    is written before news.json, and an exception would abort stage 7 and
+    lose the whole run to a corrupt file that nothing actually depends on.
+    Every failure returns None and the caller simply omits the totals.
     """
     import json
 
-    state = {"runs": {}, "first_run": generated_at}
-    if TOTALS_JSON.exists():
-        try:
-            state = json.loads(TOTALS_JSON.read_text(encoding="utf-8"))
-        except (json.JSONDecodeError, OSError):
-            log("publish", "! totals.json unreadable, starting a new tally")
-    runs = state.setdefault("runs", {})
-    state.setdefault("first_run", generated_at)
+    try:
+        state = {"runs": {}, "first_run": generated_at}
+        if TOTALS_JSON.exists():
+            try:
+                loaded = json.loads(TOTALS_JSON.read_text(encoding="utf-8"))
+                # json.loads happily returns a list, a string or None for
+                # input that is valid JSON but not an object — a truncated
+                # write, a hand edit, a half-committed file from an
+                # interrupted run. setdefault() on any of those raises
+                # AttributeError, which is not a JSONDecodeError.
+                if isinstance(loaded, dict):
+                    state = loaded
+                else:
+                    log("publish", "! totals.json is not an object, "
+                                   "starting a new tally")
+            except (json.JSONDecodeError, OSError, ValueError):
+                log("publish", "! totals.json unreadable, starting a new tally")
 
-    runs[generated_at[:10]] = {"published": published, "held": held}
-    totals = {
-        "runs": len(runs),
-        "since": state["first_run"][:10],
-        "published": sum(r["published"] for r in runs.values()),
-        "held": sum(r.get("held", 0) for r in runs.values()),
-    }
-    TOTALS_JSON.write_text(json.dumps(state, indent=1), encoding="utf-8")
-    return totals
+        runs = state.setdefault("runs", {})
+        if not isinstance(runs, dict):
+            runs = state["runs"] = {}
+        first = state.setdefault("first_run", generated_at)
+        if not isinstance(first, str) or len(first) < 10:
+            first = state["first_run"] = generated_at
+
+        runs[generated_at[:10]] = {"published": published, "held": held}
+        # .get on both, not just one: an entry missing "published" is exactly
+        # as likely as one missing "held", and indexing would raise.
+        rows = [r for r in runs.values() if isinstance(r, dict)]
+        totals = {
+            "runs": len(rows),
+            "since": first[:10],
+            "published": sum(int(r.get("published", 0) or 0) for r in rows),
+            "held": sum(int(r.get("held", 0) or 0) for r in rows),
+        }
+        if persist:
+            TOTALS_JSON.write_text(json.dumps(state, indent=1), encoding="utf-8")
+        return totals
+    except Exception as exc:                      # never take down a run
+        log("publish", f"! tally failed ({exc}); publishing without totals")
+        return None
 
 
 def _held_back(dead: list[Item]) -> list[dict]:
@@ -248,7 +280,14 @@ def run(items: list[Item], dry_run: bool = False) -> dict:
         },
         "items": [i.to_json() for i in live] + _held_back(dead),
     }
-    payload["totals"] = _tally(len(live), len(dead), payload["generated_at"])
+    # persist=not dry_run: --dry-run is documented as "run everything, write
+    # nothing", and this used to rewrite totals.json before the guard below
+    # ever ran — so debugging the pipeline permanently inflated the lifetime
+    # figure the page prints, and the workflow committed it.
+    totals = _tally(len(live), len(dead), payload["generated_at"],
+                    persist=not dry_run)
+    if totals:
+        payload["totals"] = totals
 
     if dry_run:
         log("publish", f"DRY RUN - would publish {len(live)}, reject {len(dead)}")

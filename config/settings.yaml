@@ -13,7 +13,10 @@ window:
   # (llm.max_items_summarized); everything else ships with the headline, the
   # source, the tags and the feed's own blurb. Coverage is complete and the
   # model spend is unchanged.
-  max_items_published: 900  # cards written to the site
+  # Set ABOVE the largest run ever measured so it never binds. 900 was still
+  # a cut: a live harvest produces ~1,154 publishable items and the cap threw
+  # away 254 of them, 111 from tech_ai alone.
+  max_items_published: 2000 # cards written to the site
 
   # PER-CATEGORY WINDOWS. One window for everything was the single biggest
   # content bug in this project: on a live harvest, 21 of 43 feeds returned
@@ -36,9 +39,12 @@ window:
 
   # Per-category floor/ceiling so one prolific feed cannot own the page.
   # Without this a single high-volume wire filled 39 of 40 slots on a live run.
-  # Still a ceiling, but a real one rather than a page-size limit: it exists
-  # only so a single prolific wire cannot own the whole page.
-  per_category_max: 260
+  # Also set so it does not bind. At 260 it silently dropped 111 tech_ai and
+  # 59 cyber_attacks items on a measured run — the exact "only reads one or
+  # two and leaves the rest" behaviour this work exists to remove. The floor
+  # below is what actually protects the quieter sections; a ceiling this high
+  # only guards against a single feed going haywire.
+  per_category_max: 900
   # Guaranteed floor per category. Without it the topic scans flooded cyber
   # and AI and squeezed markets down to a single item on a live run — the
   # cap alone does not stop one section crowding out another.
@@ -164,6 +170,10 @@ telegram:
   require_link: true        # commentary with no link has nothing to verify
   # These are PUBLIC channels being read, not owned. Reading needs no bot, no
   # token and no permission — it is the same page a browser would load.
+  # How many preview pages to walk back per channel. t.me/s/<channel> serves
+  # only the ~20 newest messages, so a channel posting more than that between
+  # runs was being truncated with no sign of it. Overridable per channel.
+  max_pages: 2
   channels:
     #
     # window_hours overrides the 72h default FOR THAT CHANNEL. Measured post
@@ -177,7 +187,7 @@ telegram:
     # Without the overrides the last two scored 0 posts on EVERY run: their
     # newest post is always older than 72h, so the window did not filter them,
     # it deleted them permanently.
-    - {channel: "ctinow",         name: "CTI Now",        category: cyber_attacks, tier: C}
+    - {channel: "ctinow",         name: "CTI Now",        category: cyber_attacks, tier: C, max_pages: 5}
     - {channel: "vxunderground",  name: "vx-underground", category: cyber_attacks, tier: C}
     - {channel: "androidMalware", name: "Android Malware", category: cyber_attacks, tier: C, window_hours: 336}
     - {channel: "Cyber_Security_Channel", name: "Cyber Security Channel", category: cyber_attacks, tier: C}
@@ -394,7 +404,11 @@ llm:
   # from the publish cap, which is now 900 — that would be ~38 extra batches
   # on a run that otherwise makes about ten calls in total.
   top_up_max: 40
-  shortlist_multiplier: 2.0   # per-category allocation = publish quota x this
+  # Headroom on each category's share of max_items_summarized, NOT of the
+  # publish quota — reading the publish quota here was the bug fixed in
+  # 3c950dc. Allocation per category is max_items_summarized / categories,
+  # times this.
+  shortlist_multiplier: 2.0
   api_key_env: "GEMINI_API_KEY"
 
   # Hard stop on API usage. The counter is persistent and keyed by UTC date,

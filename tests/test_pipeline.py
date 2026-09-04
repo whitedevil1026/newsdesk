@@ -343,6 +343,67 @@ class TestApiBudget:
             "top_up is matching on log wording again")
 
 
+class TestTally:
+    """The lifetime counter is not load-bearing. It runs before news.json is
+    written, so anything it can raise costs the entire run."""
+
+    def _tally_into(self, tmp_path, monkeypatch, content=None):
+        from pipeline import s7_publish
+        f = tmp_path / "totals.json"
+        if content is not None:
+            f.write_text(content, encoding="utf-8")
+        monkeypatch.setattr(s7_publish, "TOTALS_JSON", f)
+        return s7_publish, f
+
+    def test_survives_valid_json_that_is_not_an_object(self, tmp_path, monkeypatch):
+        """json.loads returns a list/None/str for these, and setdefault on any
+        of them raises AttributeError, which is not a JSONDecodeError."""
+        for junk in ("[]", "null", '"nope"', "42"):
+            mod, f = self._tally_into(tmp_path, monkeypatch, junk)
+            out = mod._tally(10, 2, "2026-09-04T06:00:00+00:00")
+            assert out is not None, f"crashed on {junk}"
+            assert out["published"] == 10
+
+    def test_survives_rows_missing_keys(self, tmp_path, monkeypatch):
+        """An entry without 'published' used to raise KeyError while the very
+        next line used .get for 'held'."""
+        mod, f = self._tally_into(
+            tmp_path, monkeypatch,
+            '{"runs": {"2026-09-01": {}, "2026-09-02": 7}, '
+            '"first_run": "2026-09-01T00:00:00+00:00"}')
+        out = mod._tally(5, 1, "2026-09-04T06:00:00+00:00")
+        assert out is not None
+        assert out["published"] == 5      # the empty row contributes 0
+
+    def test_never_raises_even_when_the_file_is_unwritable(self, tmp_path, monkeypatch):
+        from pipeline import s7_publish
+        monkeypatch.setattr(s7_publish, "TOTALS_JSON", tmp_path / "nope" / "x.json")
+        # parent does not exist -> write fails; must degrade, not explode
+        assert s7_publish._tally(1, 0, "2026-09-04T06:00:00+00:00") is None
+
+    def test_dry_run_does_not_touch_the_file(self, tmp_path, monkeypatch):
+        """--dry-run is documented as 'run everything, write nothing'. The
+        tally used to be written before the dry_run guard was even reached."""
+        before = '{"runs": {"2026-09-01": {"published": 3, "held": 1}}, '                  '"first_run": "2026-09-01T00:00:00+00:00"}'
+        mod, f = self._tally_into(tmp_path, monkeypatch, before)
+        out = mod._tally(99, 99, "2026-09-04T06:00:00+00:00", persist=False)
+        assert out["published"] == 102          # computed
+        assert f.read_text(encoding="utf-8") == before   # but not written
+
+
+class TestCoverageCapsDoNotBind:
+    def test_caps_are_above_a_real_run(self):
+        """The point of the change was that nothing in the window is dropped.
+        A measured harvest yields ~1,154 publishable items; caps of 900 and
+        260 silently discarded 254 of them, 111 from tech_ai alone."""
+        from pipeline.config import settings
+        w = settings()["window"]
+        assert w["max_items_published"] >= 1500, (
+            "total cap would bind on a normal run")
+        assert w["per_category_max"] >= 800, (
+            "per-category cap would bind on tech_ai")
+
+
 class TestNoSecretsInRepo:
     def test_env_is_gitignored(self):
         """A key reaching a git remote is the one unrecoverable mistake here."""

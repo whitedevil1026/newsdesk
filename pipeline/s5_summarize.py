@@ -50,7 +50,6 @@ def _save_cache(cache: dict[str, dict]) -> None:
 
 
 def _apply(item: Item, payload: dict, source: str, body: str = "") -> None:
-    item.summary_source = "model"
     item.summary = payload.get("summary", "")
     item.one_liner = payload.get("one_liner", "")
     item.bottom_line = payload.get("bottom_line", "")
@@ -75,6 +74,16 @@ def _apply(item: Item, payload: dict, source: str, body: str = "") -> None:
         item.interest_score = int((imp - 1) / 4 * 100)
         item.note(f"importance {imp}/5 from {source}")
 
+    # LAST, and only if the response actually carried prose. Setting this on
+    # the first line marked an item "model" even when the payload parsed but
+    # was empty — and top_up() selects gaps by `summary_source != "model"`
+    # while the site suppresses the "unsummarised" chip for the same value.
+    # So a blank card became invisible to both the pass meant to rescue it
+    # and the label meant to disclose it, while implying it had been
+    # summarised and checked.
+    if item.summary.strip() or item.bottom_line.strip():
+        item.summary_source = "model"
+
 
 # ----------------------------------------------------------- fallback ----
 
@@ -82,8 +91,12 @@ def _heuristic(item: Item, body: str) -> None:
     """No-LLM fallback. Honest about what it is: extractive, not abstractive."""
     sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", body)
                  if len(s.strip()) > 40]
-    item.summary = truncate(" ".join(sentences[:3]), 480) if sentences \
-        else "(no article text available — headline only)"
+    # Was: "(no article text available - headline only)". Invisible at a
+    # cap of 40 published cards; at ~1,150 it is roughly 166 cards a day
+    # whose entire body is an apology string, which reads as the page
+    # being broken. The card already renders cleanly with no summary and
+    # the "unsummarised" chip already says what it is, so say nothing.
+    item.summary = truncate(" ".join(sentences[:3]), 480) if sentences else ""
 
     bits = []
     if item.primary_links:

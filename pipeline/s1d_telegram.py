@@ -56,6 +56,7 @@ _MESSAGE = re.compile(
 _TEXT_IN_MSG = re.compile(
     r'<div class="tgme_widget_message_text[^"]*"[^>]*>(.*?)</div>', re.S)
 _TIME_IN_MSG = re.compile(r'<time datetime="([^"]+)"')
+_POST_ID = re.compile(r'data-post="[^"/]+/(\d+)"')
 _HREF = re.compile(r'href="(https?://[^"]+)"')
 _TAG = re.compile(r"<[^>]+>")
 _BR = re.compile(r"<br\s*/?>", re.I)
@@ -95,20 +96,76 @@ def _known_sources() -> dict[str, tuple[str, str]]:
     return out
 
 
-def _fetch(channel: str, ua: str, timeout: int) -> str | None:
-    try:
-        req = urllib.request.Request(PREVIEW.format(channel=channel),
-                                     headers={"User-Agent": ua})
-        with urllib.request.urlopen(req, timeout=timeout, context=_SSL) as resp:
-            return resp.read().decode("utf-8", "replace")
-    except urllib.error.HTTPError as exc:
-        # 404 means no public preview: the channel is private, renamed, or
-        # does not exist. Worth saying plainly rather than failing silently.
-        log("telegram", f"! {channel}: HTTP {exc.code}"
-                        f"{' (private or missing?)' if exc.code == 404 else ''}")
-    except Exception as exc:
-        log("telegram", f"! {channel}: {exc}")
+def _fetch_page(url: str, ua: str, timeout: int,
+                attempts: int = 3) -> str | None:
+    """One preview page, with backoff.
+
+    t.me resets connections under concurrent load - observed repeatedly with
+    WinError 10054 while probing five channels at once. Without a retry a
+    single reset dropped that channel for the whole day, silently, and the
+    collector reported nothing at all.
+    """
+    import random
+    import time
+
+    for attempt in range(1, attempts + 1):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": ua})
+            with urllib.request.urlopen(req, timeout=timeout,
+                                        context=_SSL) as resp:
+                return resp.read().decode("utf-8", "replace")
+        except urllib.error.HTTPError as exc:
+            # 404 means no public preview: private, renamed, or nonexistent.
+            # Retrying will not change that.
+            if exc.code == 404:
+                log("telegram", f"! {url}: HTTP 404 (private or missing?)")
+                return None
+            if attempt == attempts:
+                log("telegram", f"! {url}: HTTP {exc.code} after {attempts} tries")
+                return None
+        except Exception as exc:
+            if attempt == attempts:
+                log("telegram", f"! {url}: {exc} (after {attempts} tries)")
+                return None
+        # Jittered backoff: a fixed sleep would resynchronise the workers
+        # that just collided.
+        # Patient on purpose. t.me rate-limits by IP, and the penalty
+        # outlasts a one-second pause: repeated probing during development
+        # put this machine into a state where every request was reset for
+        # minutes. A daily run never sees that, but a retried run should not
+        # make it worse either.
+        time.sleep(attempt * 3.0 + random.random() * 2)
     return None
+
+
+def _fetch(channel: str, ua: str, timeout: int, max_pages: int = 1) -> str | None:
+    """The channel preview, walking back through older pages if asked.
+
+    t.me/s/<channel> returns only the ~20 most recent messages. For a channel
+    posting more than that between runs - ctinow files about 20 a day and
+    came back 20-of-20 kept with its newest post 0 hours old, which is what
+    saturation looks like - everything past the first page was invisible.
+    ?before=<id> walks backwards, so pages are concatenated and the existing
+    per-message parsing sees the lot.
+    """
+    pages: list[str] = []
+    url = PREVIEW.format(channel=channel)
+    for _ in range(max(1, max_pages)):
+        page = _fetch_page(url, ua, timeout)
+        if not page:
+            break
+        pages.append(page)
+        ids = _POST_ID.findall(page)
+        if not ids:
+            break
+        try:
+            oldest = min(int(i) for i in ids)
+        except ValueError:
+            break
+        if oldest <= 1:
+            break
+        url = PREVIEW.format(channel=channel) + f"?before={oldest}"
+    return "".join(pages) if pages else None
 
 
 def _resolve_short(url: str, ua: str, timeout: int) -> str:
@@ -144,12 +201,16 @@ def _channel_articles(spec: dict, cutoff: datetime, cfg: dict) -> list[Article]:
     ua = cfg["harvest"]["user_agent"]
     timeout = cfg["harvest"]["timeout_seconds"]
     channel = spec["channel"]
+    tg = cfg["telegram"]
 
-    page = _fetch(channel, ua, timeout)
+    # A channel that fills its first page every run is truncated, so let the
+    # busy ones walk back further. Per-channel because ctinow needs several
+    # pages a day and secharvester needs one a week.
+    pages = int(spec.get("max_pages") or tg.get("max_pages", 1))
+    page = _fetch(channel, ua, timeout, max_pages=pages)
     if not page:
         return []
 
-    tg = cfg["telegram"]
     # A channel's own window, when it has one. Channels post at wildly
     # different rates: ctinow runs 20 posts a day, secharvester about one a
     # week. Judging both against a single 72h cutoff does not filter the slow
@@ -251,7 +312,12 @@ def run() -> list[Article]:
     channels = tg.get("channels", [])
 
     out: list[Article] = []
-    with ThreadPoolExecutor(max_workers=4) as pool:
+    # Two, not four. t.me resets connections under concurrent load: at four
+    # workers three of five channels died with WinError 10054 on a single
+    # run, and pagination multiplies the request count per channel. The
+    # collector is not on the critical path for time - the whole stage is
+    # seconds - so trade throughput for actually getting the posts.
+    with ThreadPoolExecutor(max_workers=2) as pool:
         futures = [pool.submit(_channel_articles, c, cutoff, cfg)
                    for c in channels]
         for fut in as_completed(futures):
