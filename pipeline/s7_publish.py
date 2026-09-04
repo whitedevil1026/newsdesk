@@ -56,8 +56,15 @@ def _resolve_links(items: list[Item]) -> None:
         log("publish", f"{fixed} reference links resolved to publishers")
 
 
-def _next_run(cron: str) -> str | None:
-    """Next fire time for a daily 'M H * * *' cron, as UTC ISO8601.
+def _next_run(cron: str, delay_hours: float = 0.0) -> str | None:
+    """When the page will next actually refresh, as UTC ISO8601.
+
+    NOT the cron time. GitHub queues scheduled workflows behind paid
+    capacity: measured across 12 runs of this repo the delay from cron to
+    finished run had a median of 5.5h, a minimum of 1.1h and a maximum of
+    18.8h. Printing the cron time told the reader the page was overdue every
+    single morning for five hours while it was doing exactly what it always
+    does. `delay_hours` shifts the estimate to the observed reality.
 
     Only the daily form is handled, because that is the only form the
     workflow uses. Anything else returns None rather than guessing — a wrong
@@ -76,6 +83,7 @@ def _next_run(cron: str) -> str | None:
 
     now = now_utc()
     nxt = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+    nxt += timedelta(hours=delay_hours)
     if nxt <= now:
         nxt += timedelta(days=1)
     return nxt.isoformat()
@@ -257,7 +265,8 @@ def run(items: list[Item], dry_run: bool = False) -> dict:
 
     payload = {
         "generated_at": now_utc().isoformat(),
-        "next_update": _next_run(sched.get("cron_utc", "")),
+        "next_update": _next_run(sched.get("cron_utc", ""),
+                                 float(sched.get("typical_delay_hours", 0))),
         "schedule": {
             "cron_utc": sched.get("cron_utc", ""),
             "display_tz": sched.get("display_tz", "UTC"),

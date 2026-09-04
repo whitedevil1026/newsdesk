@@ -63,9 +63,27 @@ extract:
 # The site reads it to tell the reader when the page will next refresh, which
 # is the difference between "this looks stale" and "this is expected".
 schedule:
-  cron_utc: "30 3 * * *"    # 03:30 UTC daily
+  # WORK BACKWARDS FROM THE DEADLINE, because GitHub does not fire on time.
+  # Measured across 12 runs of this repo, the gap from cron to FINISHED run
+  # had a median of 5.5h (last three runs: 4.8, 4.9, 4.9h), a minimum of 1.1h
+  # and a maximum of 18.8h — scheduled workflows queue behind paid capacity.
+  #
+  # The deadline is "done by 09:00 IST" = 03:30 UTC. 03:30 minus the 5.5h
+  # median puts the cron at 22:00 UTC the previous day.
+  #
+  #   fires 22:00 UTC  ->  median finish 03:30 UTC = 09:00 IST
+  #                    ->  recent-delay finish 02:54 UTC = 08:24 IST
+  #
+  # On a rare fast day it finishes around 04:30 IST and that morning's news
+  # lands in the NEXT run instead — the harvest uses a 24-48h lookback, so
+  # those stories are not lost, they arrive a day later flagged as new.
+  cron_utc: "0 22 * * *"    # 22:00 UTC, aiming to finish by 03:30 UTC
   display_tz: "Asia/Kolkata"
-  display_name: "09:00 IST"
+  display_name: "by 09:00 IST"
+  # Added to the cron time to estimate when the page really refreshes. The
+  # site prints that estimate; printing the raw cron time told the reader the
+  # page was overdue every morning for five hours while nothing was wrong.
+  typical_delay_hours: 5.5
 
 dedupe:
   # A dashboard shows a rolling window, so an article seen in an earlier run

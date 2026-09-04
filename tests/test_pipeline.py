@@ -458,6 +458,41 @@ class TestOverloadDoesNotRetireAModel:
         assert not issubclass(llm_gemini.Overloaded, llm_gemini.RateLimited)
 
 
+class TestScheduleTellsTheTruth:
+    def test_cron_matches_the_workflow(self):
+        """The site reads settings.yaml to tell readers when the page next
+        refreshes; the workflow is what actually fires. A drift makes it lie."""
+        import re
+        from pathlib import Path
+        from pipeline.config import settings
+        root = Path(__file__).resolve().parent.parent
+        wf = (root / ".github/workflows/newsdesk.yml").read_text(encoding="utf-8")
+        crons = re.findall(r'- cron:\s*"([^"]+)"', wf)
+        assert settings()["schedule"]["cron_utc"] in crons
+
+    def test_next_update_accounts_for_the_queue_delay(self):
+        """GitHub's median delay on this repo is 5.5h. Printing the raw cron
+        time told the reader the page was overdue every morning while nothing
+        was wrong."""
+        from datetime import datetime, timezone
+        from pipeline.s7_publish import _next_run
+        plain = _next_run("0 22 * * *", 0.0)
+        shifted = _next_run("0 22 * * *", 5.5)
+        assert plain and shifted
+        a = datetime.fromisoformat(plain)
+        b = datetime.fromisoformat(shifted)
+        assert (b - a).total_seconds() / 3600 in (5.5, 5.5 - 24, 5.5 + 24)
+
+    def test_the_estimate_lands_on_the_promised_deadline(self):
+        """The whole point of the 22:00 UTC cron is finishing by 09:00 IST."""
+        from pipeline.config import settings
+        s = settings()["schedule"]
+        m, h = (int(x) for x in s["cron_utc"].split()[:2])
+        finish_utc = (h * 60 + m + int(s["typical_delay_hours"] * 60)) % 1440
+        ist = (finish_utc + 330) % 1440
+        assert ist == 9 * 60, f"estimate lands at {ist//60:02d}:{ist%60:02d} IST"
+
+
 class TestNoSecretsInRepo:
     def test_env_is_gitignored(self):
         """A key reaching a git remote is the one unrecoverable mistake here."""

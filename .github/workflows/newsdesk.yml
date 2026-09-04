@@ -2,7 +2,8 @@ name: newsdesk
 
 on:
   schedule:
-    # 03:30 UTC = 09:00 IST. Keep this in step with `schedule.cron_utc` in
+    # 22:00 UTC, chosen to FINISH by 03:30 UTC = 09:00 IST. Keep this in step
+    # with `schedule.cron_utc` in
     # config/settings.yaml — the site reads that to tell readers when the page
     # next refreshes, and a mismatch makes it lie.
     #
@@ -12,7 +13,7 @@ on:
     # window is 24-48h of lookback, so a late run loses no stories; it just
     # arrives later than this line claims. workflow_dispatch below is the
     # "I want it now" button.
-    - cron: "30 3 * * *"
+    - cron: "0 22 * * *"
   workflow_dispatch:            # manual "refresh now"
 
 permissions:
