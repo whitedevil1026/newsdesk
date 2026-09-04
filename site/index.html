@@ -110,6 +110,10 @@ h1{margin:0;font-family:"Newsreader",Georgia,serif;font-weight:600;
 #applied .ap-x:hover{background:var(--accent);color:var(--bg)}
 @media (max-width:600px){ #applied{margin-top:10px;padding:8px 10px} }
 
+.chip-raw{background:transparent;color:var(--minor);
+ border:1px dashed var(--line2);border-radius:5px;padding:1px 7px;
+ font-size:10.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+ cursor:help}
 .chip-held{background:color-mix(in srgb, var(--bad) 20%, transparent);
  color:var(--bad);border:1px solid color-mix(in srgb, var(--bad) 45%, transparent);
  border-radius:5px;padding:1px 7px;font-size:10.5px;font-weight:600;
@@ -703,6 +707,14 @@ function card(it){
   // that the others did not.
   const held = it.held_back
     ? '<span class="chip-held">not published</span>' : "";
+  // Most of the page is now extractive: the article's own opening sentences,
+  // with no model summary and no claim checking behind it. Saying so is the
+  // difference between broad coverage and quietly implying that 900 stories
+  // were all verified.
+  const raw = (it.summary_source==="extract" && !it.held_back)
+    ? '<span class="chip-raw" title="The article&#39;s own opening lines. '+
+      'No model summary and no fact-check — open the source to read it.">'+
+      'unsummarised</span>' : "";
   const heldWhy = it.held_back && it.reject_reason
     ? '<p class="heldwhy">Held back: '+esc(_heldReason(it.reject_reason))+'</p>'
     : "";
@@ -725,7 +737,8 @@ function card(it){
     : scoreBlock;
 
   return '<article class="'+esc(it.priority)+'">'+
-    (pri||vd||isNew||held ? '<div class="rail">'+isNew+held+pri+vd+'</div>' : "")+
+    (pri||vd||isNew||held||raw
+      ? '<div class="rail">'+isNew+held+pri+vd+raw+'</div>' : "")+
     '<h3><a href="'+esc(it.sources[0].url)+'" target="_blank" rel="noopener">'+
       hl(it.title)+'</a></h3>'+
     (it.bottom_line?'<p class="deck">'+hl(it.bottom_line)+'</p>':"")+

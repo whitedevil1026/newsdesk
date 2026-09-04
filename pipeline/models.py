@@ -121,6 +121,11 @@ class Item:
     corroboration: int = 1
     blend: float = 0.0
     is_new: bool = False         # not on the page in any previous run
+    # "model" once a model has written the summary, "extract" while it is
+    # still the first few sentences lifted from the article. With the page
+    # publishing everything in the window, most cards are extractive and the
+    # reader has to be able to tell which is which.
+    summary_source: str = "extract"
     alt_keys: list[str] = field(default_factory=list)  # every member article uid
     critical_signal: str = ""
     priority: Priority = Priority.MINOR

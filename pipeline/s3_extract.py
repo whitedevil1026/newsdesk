@@ -57,7 +57,34 @@ def run(clusters: list[Cluster], lead_only: bool = True) -> list[Cluster]:
     targets = [cl.lead for cl in clusters] if lead_only else \
               [a for cl in clusters for a in cl.articles]
 
-    log("extract", f"fetching {len(targets)} article bodies")
+    # One HTTP fetch each, so this - not the number of published cards - is
+    # the run's clock. Now that the page publishes everything in the window
+    # instead of a top 40, fetching every lead would mean ~1,070 requests for
+    # the sake of the ~150 a model will actually read. Rank cheaply and fetch
+    # only that many; the rest keep the feed's own blurb, which is all a
+    # headline-level card needs.
+    limit = (cfg.get("extract") or {}).get("max_items")
+    skipped = []
+    if limit and len(targets) > limit:
+        owner = {id(cl.lead): cl for cl in clusters}
+
+        def worth(art):
+            # No model scores exist yet here, so use what is already known:
+            # whether it is a primary artifact, how many outlets carried it,
+            # how good the source is, and how fresh it is.
+            cl = owner.get(id(art))
+            return (art.is_primary,
+                    len(cl.articles) if cl else 1,
+                    {"A": 3, "B": 2, "C": 1}.get(art.tier, 0),
+                    art.published.timestamp() if art.published else 0)
+
+        targets.sort(key=worth, reverse=True)
+        targets, skipped = targets[:limit], targets[limit:]
+        for art in skipped:
+            art.body = art.summary_raw
+
+    log("extract", f"fetching {len(targets)} article bodies"
+                   + (f", {len(skipped)} kept as blurbs" if skipped else ""))
     ok = 0
     with ThreadPoolExecutor(max_workers=8) as pool:
         futures = {pool.submit(_extract, a.url, timeout): a for a in targets}

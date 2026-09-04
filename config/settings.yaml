@@ -3,7 +3,17 @@
 
 window:
   lookback_hours: 48        # default, and the floor for fast-moving categories
-  max_items_published: 40   # cap on cards written to the site
+  # Publish EVERYTHING that survives the window. Measured 2026-09-04: a run
+  # harvests 1615 articles into 1070 clusters, 538 of them inside 24h — and
+  # was publishing 40. Missing 93% of the day is not a summary, it is a
+  # sample, and it is why The Hacker News looked like it was contributing
+  # one story a day when it files a dozen.
+  #
+  # This costs no API calls. Only the shortlist is summarised by a model
+  # (llm.max_items_summarized); everything else ships with the headline, the
+  # source, the tags and the feed's own blurb. Coverage is complete and the
+  # model spend is unchanged.
+  max_items_published: 900  # cards written to the site
 
   # PER-CATEGORY WINDOWS. One window for everything was the single biggest
   # content bug in this project: on a live harvest, 21 of 43 feeds returned
@@ -26,20 +36,30 @@ window:
 
   # Per-category floor/ceiling so one prolific feed cannot own the page.
   # Without this a single high-volume wire filled 39 of 40 slots on a live run.
-  per_category_max: 12
+  # Still a ceiling, but a real one rather than a page-size limit: it exists
+  # only so a single prolific wire cannot own the whole page.
+  per_category_max: 260
   # Guaranteed floor per category. Without it the topic scans flooded cyber
   # and AI and squeezed markets down to a single item on a live run — the
   # cap alone does not stop one section crowding out another.
   per_category_min: 3
+
+# Full-text extraction. One HTTP fetch per cluster lead, so this — not the
+# number of published cards — is what sets the run's length. Everything past
+# this limit keeps the feed's own blurb as its body, which is exactly what a
+# card needs when no model is going to summarise it anyway.
+extract:
+  max_items: 220            # ~2x llm.max_items_summarized, so the shortlist
+                            # always has real article text behind it
 
 # When the pipeline is scheduled to run. This is metadata only — the actual
 # schedule lives in .github/workflows/newsdesk.yml and must be kept in step.
 # The site reads it to tell the reader when the page will next refresh, which
 # is the difference between "this looks stale" and "this is expected".
 schedule:
-  cron_utc: "0 3 * * *"     # 03:00 UTC daily
+  cron_utc: "30 3 * * *"    # 03:30 UTC daily
   display_tz: "Asia/Kolkata"
-  display_name: "08:30 IST"
+  display_name: "09:00 IST"
 
 dedupe:
   # A dashboard shows a rolling window, so an article seen in an earlier run

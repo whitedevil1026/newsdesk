@@ -441,21 +441,38 @@ class TestShortlistCoverage:
                 out.append(it)
         return out
 
-    def test_allocation_exceeds_publish_quota(self):
-        """Each category must get more slots than it can publish, or the
-        model's reordering has nowhere to promote from."""
+    def test_shortlist_is_bounded_by_the_model_budget(self):
+        """The shortlist is a spending decision. It used to size itself from
+        the PUBLISH quota, which was fine while the page showed a top 40 and
+        catastrophic once it started publishing everything in the window —
+        it would have asked the model for hundreds of summaries a day the
+        free tier cannot pay for."""
         from pipeline.config import settings
-        import collections
         from pipeline.s5_summarize import _shortlist
+        from pipeline.models import Item, Priority, Verdict
+        import collections
 
-        cfg = settings()
-        quota = cfg["window"]["per_category_max"]
-        short, _ = _shortlist(self._items(),
-                              cfg["llm"]["max_items_summarized"], quota,
-                              cfg["llm"].get("shortlist_multiplier", 2.0))
-        per = collections.Counter(i.category for i in short)
-        for cat, n in per.items():
-            assert n > quota, f"{cat}: {n} slots vs publish quota {quota}"
+        cfg = settings()["llm"]
+        budget = cfg["max_items_summarized"]
+        cats = ["cyber_attacks", "cyber_tools", "tech_ai", "markets",
+                "india_world"]
+        items = []
+        for c in cats:
+            for n in range(400):           # far more than any budget
+                items.append(Item(cluster_key=f"{c}{n}", title="t",
+                                  category=c, blend=float(n),
+                                  priority=Priority.MINOR,
+                                  verdict=Verdict.ESTABLISHED))
+        per_cat = max(1, budget // len(cats))
+        chosen, rest = _shortlist(items, budget, per_cat,
+                                  cfg.get("shortlist_multiplier", 2.0))
+        assert len(chosen) <= budget, (
+            f"shortlist {len(chosen)} exceeds the {budget} the budget allows")
+        assert len(chosen) + len(rest) == len(items), "items were lost"
+        # and every category has to be represented, or a quiet section ships
+        # with no model summaries at all
+        seen = collections.Counter(i.category for i in chosen)
+        assert set(seen) == set(cats), f"category starved: {sorted(seen)}"
 
     def test_shortlist_is_not_starved_by_a_dominant_category(self):
         """A category with 10x the volume must not consume the whole budget."""

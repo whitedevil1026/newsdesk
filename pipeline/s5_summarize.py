@@ -50,6 +50,7 @@ def _save_cache(cache: dict[str, dict]) -> None:
 
 
 def _apply(item: Item, payload: dict, source: str, body: str = "") -> None:
+    item.summary_source = "model"
     item.summary = payload.get("summary", "")
     item.one_liner = payload.get("one_liner", "")
     item.bottom_line = payload.get("bottom_line", "")
@@ -92,12 +93,17 @@ def _heuristic(item: Item, body: str) -> None:
     item.one_liner = f"{item.category.replace('_', ' ').title()}: " + \
                      (", ".join(bits) if bits else "single report, unconfirmed") + "."
 
-    # Extractive text is quoted verbatim, so every claim is trivially entailed.
-    item.claims = [Claim(text=s, support_span=s, status="entailed")
-                   for s in sentences[:3]]
+    # These are the article's own sentences quoted back, so "entailed" is
+    # true by construction and means nothing. Keeping them under the heading
+    # "Claims checked against the source" would have read as verification on
+    # most of the page once it started publishing everything in the window.
+    # No check happened here, so no claims are reported.
+    item.claims = []
     item.bottom_line = ""      # only the model can judge what the point is
     tagging.apply(item, body)  # keyword tags still work with no model
-    item.note("summary: heuristic extractive (no LLM configured)")
+    item.summary_source = "extract"
+    item.note("summary: the article's opening sentences, not model-written "
+              "and not fact-checked")
 
 
 def _fallback_all(items: list[Item], bodies: dict[str, str], why: str) -> list[Item]:
@@ -133,12 +139,22 @@ def _shortlist(items: list[Item], limit: int, per_category: int,
     allocation = max(1, int(per_category * multiplier))
     chosen: list[Item] = []
     picked: set[int] = set()
-    for group in by_cat.values():
-        for item in group[:allocation]:
+    # ROUND-ROBIN, not category-by-category. Filling one category's whole
+    # allocation before starting the next only works while every allocation
+    # fits inside the limit; the moment it does not, the categories that
+    # happen to come first eat the entire budget and the rest get nothing.
+    # With five categories, a 150 budget and a 60 allocation that is exactly
+    # what happened - three categories took all 150 and markets and
+    # india_world shipped with no model summaries at all.
+    for rank in range(allocation):
+        if len(chosen) >= limit:
+            break
+        for group in by_cat.values():
             if len(chosen) >= limit:
                 break
-            chosen.append(item)
-            picked.add(id(item))
+            if rank < len(group):
+                chosen.append(group[rank])
+                picked.add(id(group[rank]))
 
     for item in sorted(live, key=lambda i: -i.blend):
         if len(chosen) >= limit:
@@ -289,9 +305,17 @@ def run(items: list[Item], bodies: dict[str, str],
     if _is_top_up:
         shortlist, rest = items, []      # caller already chose the exact set
     else:
+        # The per-category allocation used to be the PUBLISH quota. That
+        # coupling broke the moment the page started publishing everything
+        # in the window: per_category_max is now a guard against one wire
+        # owning the page, not a page size, so reading it here asked the
+        # model for hundreds of summaries the budget cannot pay for.
+        # The shortlist is a spending decision, so derive it from the
+        # spending limit.
+        cats = len({i.category for i in items}) or 1
+        per_cat = max(1, cfg["max_items_summarized"] // cats)
         shortlist, rest = _shortlist(
-            items, cfg["max_items_summarized"],
-            settings()["window"]["per_category_max"],
+            items, cfg["max_items_summarized"], per_cat,
             cfg.get("shortlist_multiplier", 2.0))
     if rest:
         log("summarize", f"shortlist {len(shortlist)} to the model, "
