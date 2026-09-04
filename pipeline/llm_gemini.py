@@ -156,6 +156,19 @@ class RateLimited(GeminiError):
     """
 
 
+class Overloaded(GeminiError):
+    """The model was busy (5xx) or did not answer in time.
+
+    Says nothing about the key, the model name or the batch — only that this
+    instant was a bad one. It exists because the caller used to treat it
+    exactly like a configuration error and blacklist the model for the whole
+    run: one 503 on the first batch retired gemini-3.7-flash, then 3.6, then
+    3.5, then 3-flash-preview, and every remaining batch went to the cheap
+    tiers. Ten days of usage data show ZERO successful calls to any of the
+    four best models, which is what that looks like from the outside.
+    """
+
+
 def _post(model: str, key: str, payload: dict, timeout: int) -> dict:
     req = urllib.request.Request(
         ENDPOINT.format(model=model),
@@ -205,6 +218,10 @@ def _post_with_retries(model: str, key: str, payload: dict,
                         f"quota exhausted (HTTP 429) after {attempt} attempts "
                         f"on {model}. See aistudio.google.com/rate-limit."
                     ) from exc
+                if exc.code >= 500:
+                    raise Overloaded(
+                        f"HTTP {exc.code} after {attempt} attempts on "
+                        f"{model} — busy, not broken") from exc
                 raise GeminiError(
                     f"HTTP {exc.code} after {attempt} attempts: {body}") from exc
             log("gemini", f"HTTP {exc.code} on {model}, "
@@ -213,8 +230,9 @@ def _post_with_retries(model: str, key: str, payload: dict,
             delay *= 2
         except (urllib.error.URLError, TimeoutError) as exc:
             if attempt == max_retries:
-                raise GeminiError(
-                    f"network failure after {attempt} attempts: {exc}") from exc
+                raise Overloaded(
+                    f"network failure after {attempt} attempts on {model}: "
+                    f"{exc}") from exc
             log("gemini", f"network error, retry {attempt}/{max_retries} "
                           f"in {delay:.0f}s")
             time.sleep(delay)

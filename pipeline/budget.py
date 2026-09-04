@@ -72,10 +72,22 @@ class ModelBudget:
         self.used_today: int = used_today
         self.this_run: int = 0
         self.blocked: str = ""          # set when the provider itself refuses
+        # A 5xx means "busy right now", not "broken". Blacklisting a model for
+        # the whole run on one of those is why the four best models on the
+        # ladder recorded zero successful calls across ten days: the first
+        # batch 503'd on each of them in turn and every later batch went
+        # straight to the cheap tiers, even though the flagship was fine
+        # thirty seconds later.
+        self.cool_until: float = 0.0
+        self.failures: int = 0          # transient failures seen this run
+
+    @property
+    def cooling(self) -> bool:
+        return time.monotonic() < self.cool_until
 
     @property
     def remaining(self) -> int:
-        if self.blocked:
+        if self.blocked or self.cooling:
             return 0
         return max(0, min(self.usable_rpd - self.used_today,
                           self.per_run - self.this_run))
@@ -185,6 +197,42 @@ class Budget:
         for old in sorted(self._data)[:-14]:       # keep a fortnight
             self._data.pop(old, None)
         USAGE_PATH.write_text(json.dumps(self._data, indent=2), encoding="utf-8")
+
+    def cool(self, tier: ModelBudget, why: str, seconds: float = 45.0) -> None:
+        """Bench a model briefly instead of retiring it for the run.
+
+        Overload is a property of the moment, not of the model. Three strikes
+        in one run does start to look like the model, so at that point it is
+        blocked properly and the ladder moves on for good.
+        """
+        tier.failures += 1
+        if tier.failures >= 3:
+            self.block(tier, f"{why} (3 strikes this run)")
+            return
+        tier.cool_until = time.monotonic() + seconds
+        self._record_failure(tier)
+        log("budget", f"{tier.model} busy — benched {seconds:.0f}s "
+                      f"(strike {tier.failures}/3): {why}")
+
+    def _record_failure(self, tier: ModelBudget) -> None:
+        """Count an attempt that did not succeed, in the usage file.
+
+        record() only ever ran AFTER a successful call, so a model that was
+        tried and failed every single day left no trace anywhere. Ten days of
+        usage data showed nothing at all for the four best models on the
+        ladder, which reads as "never selected" when the truth was "selected
+        first, every run, and never once answered". A number that only counts
+        wins cannot tell you which of those you are looking at.
+        """
+        try:
+            day = self._data.setdefault(_today(), {})
+            fails = day.setdefault("_failed", {})
+            if isinstance(fails, dict):
+                fails[tier.model] = fails.get(tier.model, 0) + 1
+                USAGE_PATH.write_text(json.dumps(self._data, indent=2),
+                                      encoding="utf-8")
+        except Exception:
+            pass          # accounting must never break a run
 
     def block(self, tier: ModelBudget, why: str, persist: bool = False) -> None:
         """Stop using this model; fall through to the next tier.

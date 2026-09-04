@@ -240,6 +240,14 @@ def _generate(batch, budget, key, profile, tag_list, llm_gemini,
         except llm_gemini.RateLimited as exc:
             # Quota refusals last until the quota resets, so remember them.
             budget.block(tier, f"rate limited — {str(exc)[:60]}", persist=True)
+        except llm_gemini.Overloaded as exc:
+            # Busy, not broken. Bench it briefly so a LATER batch can come
+            # back to it — this is the whole reason the four best models had
+            # never served a single batch: one 503 retired each of them for
+            # the run and everything fell to the cheap tiers.
+            log("summarize", f"  batch {n}/{total}: {tier.model} busy, "
+                             f"trying the next tier")
+            budget.cool(tier, str(exc)[:60])
         except llm_gemini.GeminiError as exc:
             # Config errors (bad key, retired model) are permanent for this
             # model but say nothing about the others, so block and move on.

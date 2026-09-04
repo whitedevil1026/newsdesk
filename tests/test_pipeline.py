@@ -404,6 +404,60 @@ class TestCoverageCapsDoNotBind:
             "per-category cap would bind on tech_ai")
 
 
+class TestOverloadDoesNotRetireAModel:
+    """Ten days of usage data showed zero successful calls to any of the four
+    best models on the ladder. They were being selected first every run, 503
+    on the first batch, and blacklisted for the whole run — so every later
+    batch went to the cheap tiers, and nothing recorded the attempt."""
+
+    def test_5xx_benches_rather_than_blocks(self, monkeypatch, tmp_path):
+        from pipeline import budget as B
+        monkeypatch.setattr(B, "USAGE_PATH", tmp_path / "usage.json")
+        monkeypatch.setattr(B, "_RUN_BLOCKS", {})
+        bud = B.Budget()
+        top = bud.tiers[0]
+        assert top.remaining > 0
+
+        bud.cool(top, "HTTP 503")
+        assert top.blocked == "", "a 5xx must not retire the model for the run"
+        assert top.remaining == 0, "but it must be skipped while cooling"
+
+        # ...and it comes back once the bench expires, which is the whole point
+        top.cool_until = 0.0
+        assert top.remaining > 0, "model never became available again"
+
+    def test_three_strikes_does_block(self, monkeypatch, tmp_path):
+        """Persistent failure IS the model, and should stop costing time."""
+        from pipeline import budget as B
+        monkeypatch.setattr(B, "USAGE_PATH", tmp_path / "usage.json")
+        monkeypatch.setattr(B, "_RUN_BLOCKS", {})
+        bud = B.Budget()
+        top = bud.tiers[0]
+        for _ in range(3):
+            bud.cool(top, "HTTP 503")
+        assert top.blocked, "three strikes in one run should retire it"
+
+    def test_failed_attempts_are_recorded(self, monkeypatch, tmp_path):
+        """record() only ran after SUCCESS, so a model that failed every day
+        left no trace and looked unused rather than broken."""
+        import json
+        from pipeline import budget as B
+        usage = tmp_path / "usage.json"
+        monkeypatch.setattr(B, "USAGE_PATH", usage)
+        monkeypatch.setattr(B, "_RUN_BLOCKS", {})
+        bud = B.Budget()
+        bud.cool(bud.tiers[0], "HTTP 503")
+        data = json.loads(usage.read_text(encoding="utf-8"))
+        day = next(iter(data.values()))
+        assert day["_failed"][bud.tiers[0].model] == 1
+
+    def test_overloaded_is_its_own_exception(self):
+        """_generate must be able to tell 'busy' from 'misconfigured'."""
+        from pipeline import llm_gemini
+        assert issubclass(llm_gemini.Overloaded, llm_gemini.GeminiError)
+        assert not issubclass(llm_gemini.Overloaded, llm_gemini.RateLimited)
+
+
 class TestNoSecretsInRepo:
     def test_env_is_gitignored(self):
         """A key reaching a git remote is the one unrecoverable mistake here."""
