@@ -2,9 +2,16 @@ name: newsdesk
 
 on:
   schedule:
-    # 01:30 UTC = 07:00 IST. Keep this in step with `schedule.cron_utc` in
+    # 03:30 UTC = 09:00 IST. Keep this in step with `schedule.cron_utc` in
     # config/settings.yaml — the site reads that to tell readers when the page
     # next refreshes, and a mismatch makes it lie.
+    #
+    # NOTE: GitHub does not honour this precisely. Measured over 12 runs, the
+    # median delay from cron time to finished run is 5.5h (min 1.1h, max
+    # 18.8h) — scheduled workflows queue behind paid capacity. The harvest
+    # window is 24-48h of lookback, so a late run loses no stories; it just
+    # arrives later than this line claims. workflow_dispatch below is the
+    # "I want it now" button.
     - cron: "30 3 * * *"
   workflow_dispatch:            # manual "refresh now"
 
