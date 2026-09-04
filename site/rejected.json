@@ -1,15 +1,18 @@
 {
-  "generated_at": "2026-09-03T06:21:20.708123+00:00",
+  "generated_at": "2026-09-04T06:23:22.340116+00:00",
   "items": [
     {
-      "cluster_key": "1ae520daca863966",
-      "title": "Some early evidence that Google AI Overviews may be doing to Wikipedia the same thing that coding agents did to StackExchange... papers.ssrn.com/sol3…",
+      "cluster_key": "ca0c96ef9f863d65",
+      "title": "After a literal year of development, the WASM check patch has been merged into Anubis. This will be released with the next stable version of Anubis n…",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
-        "ai"
+        "ai",
+        "release",
+        "vulnerability",
+        "windows"
       ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu Some early evidence that Google AI Overviews may be doing to Wikipedia the same thing that coding agents did to StackExchange...",
+      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Xe xeiaso.net did:plc:e5nncb3dr5thdkjir5cfaqfe After a literal year of development, the WASM check patch has been merged into Anubis.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
@@ -24,8 +27,8 @@
           "status": "entailed"
         },
         {
-          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Some early evidence that Google AI Overviews may be doing to Wikipedia the same thing that coding agents did to StackExchange...",
-          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  Some early evidence that Google AI Overviews may be doing to Wikipedia the same thing that coding agents did to StackExchange...",
+          "text": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  After a literal year of development, the WASM check patch has been merged into Anubis.",
+          "support_span": "Post\n  Xe\n  xeiaso.net\n  did:plc:e5nncb3dr5thdkjir5cfaqfe\n  After a literal year of development, the WASM check patch has been merged into Anubis.",
           "status": "entailed"
         }
       ],
@@ -35,134 +38,25 @@
       "blend": 0.0,
       "is_new": true,
       "alt_keys": [
-        "1ae520daca863966"
+        "ca0c96ef9f863d65"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mu6uexzec22o",
+          "name": "Xe Iaso",
+          "url": "https://bsky.app/profile/xeiaso.net/post/3mubllseiic2c",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-29T02:47:09.984000+00:00",
+      "published": "2026-08-30T04:47:54.477000+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-29 — outside lookback window"
-    },
-    {
-      "cluster_key": "dd34fd3792bada91",
-      "title": "🚨Our new research examines agentic shopping: can you consistently predict (or, using marketing, influence) what an agent chooses? Nope. We found that…",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai"
-      ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu 🚨Our new research examines agentic shopping: can you consistently predict (or, using marketing, influence) what an agent chooses?",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "This is a heavily interactive web application, and JavaScript is required.",
-          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
-          "status": "entailed"
-        },
-        {
-          "text": "Simple HTML interfaces are possible, but that is not what this is.",
-          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
-          "status": "entailed"
-        },
-        {
-          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  🚨Our new research examines agentic shopping: can you consistently predict (or, using marketing, influence) what an agent chooses?",
-          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  🚨Our new research examines agentic shopping: can you consistently predict (or, using marketing, influence) what an agent chooses?",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "dd34fd3792bada91"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mu35oijits2v",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-27T15:22:54.003000+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-27 — outside lookback window"
-    },
-    {
-      "cluster_key": "952600dd499d8471",
-      "title": "I think the release of GLM-5.3, a very good open weights models with considerable offensive cyber capability, is worth noticing. Open weights models…",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "ai"
-      ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu I think the release of GLM-5.3, a very good open weights models with considerable offensive cyber capability, is worth noticing.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "This is a heavily interactive web application, and JavaScript is required.",
-          "support_span": "This is a heavily interactive web application, and JavaScript is required.",
-          "status": "entailed"
-        },
-        {
-          "text": "Simple HTML interfaces are possible, but that is not what this is.",
-          "support_span": "Simple HTML interfaces are possible, but that is not what this is.",
-          "status": "entailed"
-        },
-        {
-          "text": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  I think the release of GLM-5.3, a very good open weights models with considerable offensive cyber capability, is worth noticing.",
-          "support_span": "Post\n  Ethan Mollick\n  emollick.bsky.social\n  did:plc:flxq4uyjfotciovpw3x3fxnu\n  I think the release of GLM-5.3, a very good open weights models with considerable offensive cyber capability, is worth noticing.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "952600dd499d8471"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mu5xtm24zk2o",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-28T18:16:22.231000+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-28 — outside lookback window"
+      "reject_reason": "published 2026-08-30 — outside lookback window"
     },
     {
       "cluster_key": "cbb6b3cb40b42197",
@@ -220,45 +114,108 @@
       "reject_reason": "published 2026-08-28 — outside lookback window"
     },
     {
+      "cluster_key": "653e3f8164b221df",
+      "title": "Ryze-AI-Adgent/open-seo-mcp-skills — Open-source SEO + GEO skills for Claude — keyword research, rank tracking, site audits, backlinks, competitor ",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "howto",
+        "llm",
+        "opensource",
+        "privacy",
+        "tool"
+      ],
+      "summary": "Open-source SEO + GEO skills for Claude — keyword research, rank tracking, site audits, backlinks, competitor gaps, AI visibility — running on your own Search Console, Analytics and ads data through the Ryze MCP, with DataForSEO built in for the data Google won't give you. The skills are MIT — take them, change them, ship them. \"Open source SEO tools\" are having a moment.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "Open-source SEO + GEO skills for Claude — keyword research, rank tracking, site audits, backlinks, competitor gaps, AI visibility — running on your own Search Console, Analytics and ads data through the Ryze MCP, with DataForSEO built in for the data Google won't give you.",
+          "support_span": "Open-source SEO + GEO skills for Claude — keyword research, rank tracking, site audits, backlinks, competitor gaps, AI visibility — running on your own Search Console, Analytics and ads data through the Ryze MCP, with DataForSEO built in for the data Google won't give you.",
+          "status": "entailed"
+        },
+        {
+          "text": "The skills are MIT — take them, change them, ship them.",
+          "support_span": "The skills are MIT — take them, change them, ship them.",
+          "status": "entailed"
+        },
+        {
+          "text": "\"Open source SEO tools\" are having a moment.",
+          "support_span": "\"Open source SEO tools\" are having a moment.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "alt_keys": [
+        "653e3f8164b221df"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/Ryze-AI-Adgent/open-seo-mcp-skills",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-29T23:37:01+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-29 — outside lookback window"
+    },
+    {
       "cluster_key": "003de7da5fa7090e",
       "title": "Continuum-AI-Corp/OrcaReplay — OrcaReplay — Time travel for AI agents. Record, replay, fork, and debug any agent run with any model. Built by",
       "category": "tech_ai",
-      "one_liner": "Use OrcaReplay to capture, offline-replay, and model-fork AI agent executions at the process and socket boundary.",
+      "one_liner": "Tech Ai: carried by 2 outlets.",
       "tags": [
         "agents",
         "ai",
         "llm",
-        "opensource",
-        "tool"
+        "opensource"
       ],
-      "summary": "OrcaReplay is an open-source tool and proxy system designed to record, replay, fork, and debug AI agent runs byte-for-byte with the network disabled. Operating at the process and socket boundary, it captures execution data regardless of whether the user can edit the agent code or whether the agent utilizes base-URL configuration variables. By standing up a local proxy and monitoring streams, timings, and shadow git indexes, the tool lets developers fork an agent session at any step onto a different model to evaluate performance variations.",
+      "summary": "English · 简体中文 · 日本語 · 한국어 · Deutsch · Français · Español · العربية Record any coding agent. Reproduce the run byte-for-byte with the network off. Fork it from any step onto a different model and see who gets it right.",
       "key_facts": [],
-      "bottom_line": "Debugging AI agents requires capturing full execution streams below the application layer to enable deterministic replay and model forking.",
+      "bottom_line": "",
       "claims": [
         {
-          "text": "Record any coding agent. Reproduce the run byte-for-byte with the network off. Fork it from any step onto a different model and see who gets it right.",
-          "support_span": "Record any coding agent. Reproduce the run byte-for-byte with the network off. Fork it from any step onto a different model and see who gets it right.",
+          "text": "English · 简体中文 · 日本語 · 한국어 · Deutsch · Français · Español · العربية\nRecord any coding agent.",
+          "support_span": "English · 简体中文 · 日本語 · 한국어 · Deutsch · Français · Español · العربية\nRecord any coding agent.",
           "status": "entailed"
         },
         {
-          "text": "Capture happens below the agent — at the process and socket boundary — so it does not matter whether the agent is yours...",
-          "support_span": "Capture happens below the agent — at the process and socket boundary — so it does not matter whether the agent is yours, whether you can edit it, or whether it even holds an API key...",
-          "status": "contradicted"
+          "text": "Reproduce the run byte-for-byte with the network off.",
+          "support_span": "Reproduce the run byte-for-byte with the network off.",
+          "status": "entailed"
+        },
+        {
+          "text": "Fork it from any step onto a different model and see who gets it right.",
+          "support_span": "Fork it from any step onto a different model and see who gets it right.",
+          "status": "entailed"
         }
       ],
-      "trust_score": 34,
-      "interest_score": 50,
-      "corroboration": 3,
-      "blend": 53.5,
-      "is_new": false,
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 2,
+      "blend": 0.0,
+      "is_new": true,
       "alt_keys": [
         "003de7da5fa7090e",
-        "02fcd40ba88d8199",
-        "3911b9d50fa4b7b9",
-        "ca419b003449f86f"
+        "d4eb067ef8a756b3",
+        "f2057ce1e9235af0"
       ],
       "critical_signal": "",
-      "priority": "important",
+      "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
@@ -268,157 +225,28 @@
           "tier": "C"
         },
         {
-          "name": "AiThority",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOLVZDZmYxQy1rcXZfd0lXMkljZEgtLXVzWlZ4U095U2V5d3UtTl9zNmtVYm9XcXlpLTBnVUhwUFd1cVBCOWJlZzNqcHg0aGpMUWdaOHB2cXlfMXJ3cm50Ri1sU29Qcm5NUWFhZGkxaTBXd1JjbEloM282RFZCQkkzWGJUcnVCY3pkeXdhZWRNbEc5bzRWd0M4NTdYVnBVd3RVNjJ6Smx2RXVNNW9QbmZ6RlBWNXhaVndrVHN0eENmdjJ0QQ?oc=5",
-          "domain": "aithority.publisher",
+          "name": "Pluang",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOd1FKOVQ0ZFE4cjV4R1NyVWRpWmFQdmdHQ2d5T2pldENtcnlBS000ZWdGX21aVV9LdXRPaTdwSGxJLXRoR25DYjBsU2ZmS19kcUtWTGs5blVfYWRjWGw0R08xVkZHR0F0VjhiQVIwakVMT29oNzRFeGlLNlJlMGNGNFZPbXJZRjNYUFdkSEtPbDh5VHc0bjRrRFQtMkh6QUFBWURZaVBtR2pCSlYwODUyTQ?oc=5",
+          "domain": "pluang.publisher",
           "tier": "C"
         },
         {
-          "name": "EIN News",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTEJTYm9sZEV5Q3RHQzk1dDlFNXJsQU5HNkl5bUVQeHgydDVqWl94cE1Dc2J0eXZwdDA3ZTlfZXNxSUk3aF9NLXNCZkZwMGRMM3dhbjkwYWJTQl9QRGVBTEZmWHBPSmtWdVFpeWtHNUNwTXVoN3ZwZkh2Ym9sVTRqcUpsNU5fZHJ1WHhZeWhoNTNWV215T1ZWallnVGFRZ3lYQkpZRkpwQlNXZVln?oc=5",
-          "domain": "ein-news.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Help Net Security",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWGJ4ZGE0a2lhX1RTNHVIeEdYeTcxSU83RUN5aG5sbjZaeEpSUzJseFNsNXdXWEFIdlI5eGVJaTJlc1lhT0I4OWE1VDU1MkZ2SEt1TUtMRGVVdVRyb3ZFTnV6ZmRXbnJ5TmdHOFJsSWJVQ19sOGpiQmpIc2s0WkRXdXFWd29VLVp4OFhweWEzbnVBZw?oc=5",
-          "domain": "helpnetsecurity.com",
+          "name": "PR Newswire",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNYzBPSmRBaGlsdE5ma0xENDdrVVZMZmx2YXdRcFhGMXZSWnBjQ0NYV1FVMlhfdnhSTnRoaFFXSUlwdjRBY0VxUTZPRS1SUFQ3X19OYUZEaXJld3JmVG9xdjllTkZoQ004S2xEczJ4SXNMMHUtbW5NX09aa0w1aGhISkg2aUVZbnJpZDhaN0RST3VsSDN5cXVWOG8yaGNZSUFQX3R2LW50MVc2aEt4OEVsNFdmcXE0RV9yWXAxTzhYWk9ORlRESXpKek15NFNhcGZEWVpvT3ktYw?oc=5",
+          "domain": "pr-newswire.publisher",
           "tier": "C"
         }
       ],
       "primary_links": [],
       "published": "2026-08-29T08:41:53+00:00",
       "trace": [
-        "tier C (+10)",
-        "3 independent outlets (+24)",
-        "verified: 3 independent outlets",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 54 = trust 34 / interest 50 / corrob 75"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "cc13633aba588fef",
-      "title": "Player-YN/PawWork_ZhuaZhua — Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an e",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai",
-        "linux",
-        "opensource",
-        "windows"
-      ],
-      "summary": "English · 中文 Important Just want to use Paw Work? That folder is the Chrome extension (manifest.json at the root). Clone creates paw-work under the directory where you run the command, not a fixed Desktop path.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "English · 中文\nImportant\nJust want to use Paw Work?",
-          "support_span": "English · 中文\nImportant\nJust want to use Paw Work?",
-          "status": "entailed"
-        },
-        {
-          "text": "That folder is the Chrome extension (manifest.json at the root).",
-          "support_span": "That folder is the Chrome extension (manifest.json at the root).",
-          "status": "entailed"
-        },
-        {
-          "text": "Clone creates paw-work under the directory where you run the command, not a fixed Desktop path.",
-          "support_span": "Clone creates paw-work under the directory where you run the command, not a fixed Desktop path.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "cc13633aba588fef"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/Player-YN/PawWork_ZhuaZhua",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-28T10:56:56+00:00",
-      "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-28 — outside lookback window"
+      "reject_reason": "published 2026-08-29 — outside lookback window"
     },
     {
-      "cluster_key": "6c4c62438da1e3d3",
-      "title": "carloslfu/slotstream — Run Qwen3.8-Flash-Next (125B MoE, 104 GB at 4-bit) on Macs with a fraction of that RAM by streaming experts fr",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "ai",
-        "hardware",
-        "linux",
-        "llm",
-        "malware",
-        "opensource",
-        "release",
-        "windows"
-      ],
-      "summary": "Run Qwen3.8-Flash-Next on a Mac that can't hold it. The model is a 125B-parameter mixture-of-experts, 105 GB on disk at 4-bit; slotstream streams it from SSD and runs it in whatever memory you give it. It speaks the Ollama and OpenAI chat APIs, so your existing tools work unchanged.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "Run Qwen3.8-Flash-Next on a Mac that can't hold it.",
-          "support_span": "Run Qwen3.8-Flash-Next on a Mac that can't hold it.",
-          "status": "entailed"
-        },
-        {
-          "text": "The model is a 125B-parameter mixture-of-experts, 105 GB on disk at 4-bit; slotstream streams it from SSD and runs it in whatever memory you give it.",
-          "support_span": "The model is a 125B-parameter mixture-of-experts, 105 GB on disk at 4-bit; slotstream streams it from SSD and runs it in whatever memory you give it.",
-          "status": "entailed"
-        },
-        {
-          "text": "It speaks the Ollama and OpenAI chat APIs, so your existing tools work unchanged.",
-          "support_span": "It speaks the Ollama and OpenAI chat APIs, so your existing tools work unchanged.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "6c4c62438da1e3d3"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/carloslfu/slotstream",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-28T06:42:21+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-28 — outside lookback window"
-    },
-    {
-      "cluster_key": "e54780d0991f277f",
-      "title": "cbrock84/headcount — An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independen",
+      "cluster_key": "620ce310e211ff4a",
+      "title": "ashutoshsinghpr7/wikiskill — WikiSkill (arXiv:2608.27454) for Hermes Agent — self-evolving agent skills via a persistent knowledge wiki. Fa",
       "category": "tech_ai",
       "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
@@ -426,693 +254,27 @@
         "ai",
         "llm",
         "opensource",
-        "release",
-        "soc"
-      ],
-      "summary": "Open the interactive org chart — search every skill, open a department, jump to the source. An agent organization for Claude Code, structured as a company: a chief executive over 16 departments, 172 skills in total. Every department is an independently installable plugin, so a project loads only the functions it needs rather than all of them at once.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "Open the interactive org chart — search every skill, open a department, jump to the source.",
-          "support_span": "Open the interactive org chart — search every skill, open a department, jump to the source.",
-          "status": "entailed"
-        },
-        {
-          "text": "An agent organization for Claude Code, structured as a company:\na chief executive over 16 departments, 172 skills in total.",
-          "support_span": "An agent organization for Claude Code, structured as a company:\na chief executive over 16 departments, 172 skills in total.",
-          "status": "entailed"
-        },
-        {
-          "text": "Every department is an independently installable plugin, so a project loads only the functions it\nneeds rather than all of them at once.",
-          "support_span": "Every department is an independently installable plugin, so a project loads only the functions it\nneeds rather than all of them at once.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "e54780d0991f277f"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/cbrock84/headcount",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-28T18:03:04+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-28 — outside lookback window"
-    },
-    {
-      "cluster_key": "9392f5653a1a34dc",
-      "title": "Nanako0129/sepia — De-AI writing skill for any Agent Skills-compatible agent (77+ via the Skills CLI), with native plugins for Cl",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai",
-        "howto",
-        "llm",
-        "opensource",
-        "tool"
-      ],
-      "summary": "De-AI writing at the layer that actually gives AI away. Fiction gets its narrative architecture repaired before anyone touches word choice; professional documents (release notes, PR replies, postmortems, tickets, technical articles) each get rules matched to their venue. A portable Agent Skill: any agent that speaks the standard can load it, and the Skills CLI, which supports 77+ agents, installs it with one command.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "De-AI writing at the layer that actually gives AI away.",
-          "support_span": "De-AI writing at the layer that actually gives AI away.",
-          "status": "entailed"
-        },
-        {
-          "text": "Fiction gets its narrative architecture repaired before anyone touches word choice; professional documents (release notes, PR replies, postmortems, tickets, technical articles) each get rules matched to their venue.",
-          "support_span": "Fiction gets its narrative architecture repaired before anyone touches word choice; professional documents (release notes, PR replies, postmortems, tickets, technical articles) each get rules matched to their venue.",
-          "status": "entailed"
-        },
-        {
-          "text": "A portable Agent Skill: any agent that speaks the standard can load it, and the Skills CLI, which supports 77+ agents, installs it with one command.",
-          "support_span": "A portable Agent Skill: any agent that speaks the standard can load it, and the Skills CLI, which supports 77+ agents, installs it with one command.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "9392f5653a1a34dc"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/Nanako0129/sepia",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-28T05:56:49+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-28 — outside lookback window"
-    },
-    {
-      "cluster_key": "198d388a8555aab5",
-      "title": "Aesto Health says data breach affects over 9.5 million patients",
-      "category": "cyber_attacks",
-      "one_liner": "A massive AWS data breach at Aesto Health compromises sensitive medical and personal data for over 9.5 million patients.",
-      "tags": [
-        "cloud",
-        "dfir",
-        "howto",
-        "incident",
-        "privacy"
-      ],
-      "summary": "Aesto Health disclosed a data breach impacting more than 9.5 million individuals after attackers compromised a portion of its Amazon Web Services infrastructure between December 2 and December 18, 2025. The breach was confirmed internally on May 26, 2026, following a forensic investigation. Exposed data includes full names, dates of birth, medical details, driver's licenses, and Social Security numbers, indirectly affecting 29 healthcare providers.",
-      "key_facts": [
-        "Impacted individuals: 9,540,683",
-        "Incident dates: December 2, 2025 to December 18, 2025",
-        "Affected entity: Aesto Health"
-      ],
-      "bottom_line": "Aesto Health's AWS infrastructure compromise exposes sensitive health and identity records for 9.5 million patients across multiple healthcare providers.",
-      "claims": [
-        {
-          "text": "Aesto Health disclosed a data breach affecting more than 9.5 million individuals.",
-          "support_span": "Aesto LLC, operating as Aesto Health, disclosed a data breach discovered recently affects more than 9.5 million individuals.",
-          "status": "contradicted"
-        },
-        {
-          "text": "The intrusion occurred in December 2025 on AWS infrastructure and was confirmed in May 2026.",
-          "support_span": "the intrusion occurred in December 2025 and was confirmed internally on May 26, following a forensic investigation by external specialists.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 61,
-      "interest_score": 100,
-      "corroboration": 5,
-      "blend": 90.2,
-      "is_new": false,
-      "alt_keys": [
-        "198d388a8555aab5",
-        "25f0fb2efd0cad65",
-        "2ab226f72599a8c2",
-        "2e990edb36f89741",
-        "318d73f035a35d3e",
-        "32396715acb52f55",
-        "3b629b581b8b3cc8",
-        "3fd32b7762dddba9",
-        "516e6f2139394326",
-        "55acf599dfe09be2",
-        "631069f3004042f0",
-        "680d8ce0131f46b9",
-        "69395fbea3d75531",
-        "6d2321a783376140",
-        "7269d6fd8e41fc49",
-        "9d6644eb3801ef0a",
-        "9f90409f9671dfa4",
-        "a1c1daddd0be02ae",
-        "a66233aae52ec669",
-        "b16a08c505587767",
-        "b2e6fe3a8a02d8b8",
-        "cea49863d88e1875",
-        "db72421b844709eb",
-        "e4184b010eedfa0b",
-        "eabf23a69994cf03",
-        "ed88643f21005325",
-        "f9e20626c9179ad7",
-        "fa46c70471d75a3f"
-      ],
-      "critical_signal": "",
-      "priority": "critical",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/aesto-health-says-data-breach-affects-over-95-million-patients/",
-          "domain": "bleepingcomputer.com",
-          "tier": "B"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/novocure-data-breach-affects-more-than-1-400-cancer-patients/",
-          "domain": "bleepingcomputer.com",
-          "tier": "B"
-        },
-        {
-          "name": "Infosecurity Magazine",
-          "url": "https://www.infosecurity-magazine.com/news/nutex-patient-data-stolen/",
-          "domain": "infosecurity-magazine.com",
-          "tier": "B"
-        },
-        {
-          "name": "Infosecurity Magazine",
-          "url": "https://www.infosecurity-magazine.com/news/healthcare-mckesson-investigates/",
-          "domain": "infosecurity-magazine.com",
-          "tier": "B"
-        },
-        {
-          "name": "BBC",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE44eldPamVMaHlUakRUem1YYnNiVzJ6VEw5NkFpRHJkT25vSU85Xzdjd1Y5c3hpVi1NcGNfZ1VXcGxSdWJxR1VsRlhjeUlDVkVpbzl3Nlhsc0ozQQ?oc=5",
-          "domain": "bbc.co.uk",
-          "tier": "C"
-        },
-        {
-          "name": "bleepingcomputer.com",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdmQ4c00zUlRmcGR6UWlLS3BtTXhGek5oWVhSc29PT1pPc1p5TUNlYzRHVWFNU1FtUi1sRWFvdVNsamt0RkhTSkVzWEU1T0cxMWRuUzFKVGJ6MnJlYkhTdmUwdnZpVEtmeFZFeWpYUDFhSmp6UkFXcEpzb3E5MDlaT1N5Z2tiRHVOMi11SjdUdTlEaVRnSGxnRjViOUJxdFNxMXdTbVQwdlZ3SlpFcnhN0gG0AUFVX3lxTE5NRXNyb2RHeW03UTE4NXh6SExTdFBfUWYwMVJhQ2VabGdGLWY5U09zb1lFZGE0VTJRM1RiN3hKZlp0SnZJdDJxcmd3U1dtaEpjTzZSejZpVUdmeWptVnBjS2lsV29NR3FIM3dMMFMtWkpNMGl6MkxaczgwanhabFpZWEVTeGQ3RGc4Snk5aUtTRTlNZUFjUHc2Ulc2LWZMNWQxcUlJUkxMaDNibjF0WXhKUjZoeg?oc=5",
-          "domain": "bleepingcomputer-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "bleepingcomputer.com",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPYWgyOGZkdE5JYU1PZmI4RmNhazVHWjFaTl83UWNhTHNGLWl4dVQ2bjV0b09rOENweDZFNzctOGlmZ25yb2pkWUd3STJEQ0ZOQ2piaEQ3akpoSjJzU1RaT2VLakRvM01ZUmxOT0pNencxMWJ5MTE5ekdSQ0VUWEhxNjltUFRxdHpFRUl4NGlOR2Fld1hGWDQwcm1MZnJwTmoyaGNENFFvNFYwaTRa0gGyAUFVX3lxTE1QeV95bVZxX1ZUVS15VXUwTjktMmc5bm1aT0tkQ3FrYVJOWjZzdl9JaDQxcU1PNEZvSWtBVURUMHZySHBZTEtTOUVNTTNDWWlibzQzaU1WU0NNQnRXYXQyX0laSlo4b2ZWNjQzNGk3cnJYb0doZXQ0bFhfaFBkc2YtTGVOaE9aZUMzb3QwbnM0SzNPX0xQSVNhbzBZNUlkUGNnVUxnRUp1cHBsRld2X2JZRkE?oc=5",
-          "domain": "bleepingcomputer-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8tZXhKSTg0akZmMjN5M1BKTXJQN2UwZW50c0g2bkZmWVBBNmN1RHNrMV9CY3ozb2RUZXVKYnR3dGRJR2UxekdNTTdKdWVBWHc0QkhTN0NIN290Z2ZXVEdLVWJGaldLZHlLOW5nMTFR?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE84Z2RUQWxnQmJZTElkZmtrSFJfcUxraHpkbDcxRUdwMk1CWEhnOXh1bHprSU5hWkRYTl9YNkhZbEVaNzNwY3dFdmU0STlack96aTVZS1BXYkNFRnJtX1BFMy1WRXBoM00?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMHNEVkxOcTl1aUdqdWNiRm85MzdDNHdxcy1Wb244bDFxRVkwaVBxdEYtUF91SXN4RXZ5TXlYdlZLZjZ6QXZHdEx6WlMwVGRXd05YdzRMR0UzbEtJWDVpTEUteVZ4emE3QS1ZbGtPZTJZZnAtSENfMXhRRmk4RG1DOG1fNA?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB4aHU5VUpITTdISVBIQ3lvY3RxYlRodXpFVmk1RGZUbXhycjBMVklBSmdGQVZsMm9ESDdLcXpnd2hyRnhpR3VfVkMtd0ZEbm9PeEVvMjlBZ2pzZ0V2V3RuRFdlWEw5NW9nbEJKNFZac2lfSERRRG9PQ2NldXg?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBfaUZWRlQxcmF3RFFJaWlYR3RmbXc4SURwTDZmNVJYT3FXYTA0U1YzbDZhVUVEbkU1Q1FjTnNvWmpReElLQkpBemhaUW93NnZZZUxmRHFiNGRhRGc5Y29PamM4VEV5eDBUNzNEa18tc25EUmZVN012OXZiNA?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeWtrYjR0Yko1cHhnZTdibjkwXy1PeVJXYWFvdVdjQTg0S2tXcURtMnBnb3kyRVltQ3M3ZW56WVBfMzJkT0U4Uzd2R1gwMzdfamVyTURtRmZOdkVDSU94VlBuSkhqQU16X2tXMDlES1BFclkyd1FOWkhBakdCTHlpbGZR?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPblJkcWVJb0VIbzA1QUVsN2ZublZabzFBbjIxTmJTVG54V19UNWlMMW1ZX1JPZFNYbnV0TlpsYmFBM3pFaGVFMzNqUkpKdHRobEJNTkc0MVlaUW1RTXpreHJZNWxzWThVUVFMZzZic3p4S3RpX1hJN3M1RVhsR2V5RQ?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0wUW9COV9UMkZRRzNnQVdZNC1JSVkzXzNvckVUT3ZSQWh1R2J6MHotR2tNcHhJRldkcTZUVzlrZHFocGdHZkZqd1B5Z2xpRVRxWDBYQUJZQVJkaG14bGJha3RjX0F5LW50d0tkZzhDSkZ0M00?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBjX1FlM09Qc1VOaHlUY2RfUGpzVWVqX2RFbE9LT2g2dE9PVGN0cUxoWGwtV1hWTGRkOXhYTE9yUUlPQXBtbXBiMndGWE96YXphTHdpdG45LXQ3X01jb09BY3E2M2FlZXhuLXRTRGdldw?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "FreightWaves",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOV0ZvbHNUSkdxZ2lxX1Z4ZlNHb1ZTRUVVWjRZY3Jkb0MzZG5RWmVPUkN2Q2txRzVxN0d5YmVrdnJUY3pKNWR1bG1OTmlCaXNyc1lGOTRSaWNubUZRd1FPUGVjc0pUeXp1dEFxT0dVQ2tDWXIwSjgxQ2xFbDN6SGFGaUFCcUhYaUtjbUQ1dmFfOF9sSWV0NzJLd2s1MDdyWTUyVEk5bTJB?oc=5",
-          "domain": "freightwaves.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "LAmag",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVHp0c2hDVzJHSWs2bGJCX05iTzlTb3RGUVBjVXF5TFFzYUg4a2RPWE1GNlNHYVF4b1JZTlAxd2xEYnBoM2lCVHR3LUNidVl4ckhWSkktUWlQdVplZ0pNYW1uWGUtb3duSkZ5aWNuWE9vbFlCU1ZyZFo5RGU5ckpyeVlqbUxiN1puZVc4bW1oLTA?oc=5",
-          "domain": "lamag.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Pluang",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZlAyUTNUYUZmdURYalB0NkZhTzJxR3FKSDlULVdFQXY1YjhlWDAxWHlhZnZPVzhJV0EtLVExbkRQbVFrVDZDZzd3bkVDN0hEYTVlM25vMTF0V2c1bUJDUWJTSVRDSDBaZ25JYmVsZTZUVkhYSzI4ZF9hT1QtQThuRVU2MmhlbDgxT1VTQloxbHBYYnZVdVZTNXREMmVwd2NjZHpXUy04Y2g?oc=5",
-          "domain": "pluang.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "PR Newswire",
-          "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOb1duR0pod1lGSEloQVpBSEZqanVsdThGMzV2T3hhN2hDdkNBeFJmYkhCXzJJM2pOTl9ZaS1ObXlJbkRLay1CRWs3Q0VxR05XUnM0U0NuQ1luTXJDVjF1c3YtaEZoazZXUFVkdVB4SHhBS19kVWdWTDFaS3VXXzA0X2NCM2YyMDAxbzlxN1F2UHhrMk40WGNEU1V5RUhrSGMxTnZMNUtqd1VmSEVhbUlmdHFoQVRQQWRWcjd5a2ctZS1hRlFUZTdIUzRBdTY4ZUlvc2JsekcyMFZtcWlJdXpITFl0WEVsejNJWHdtWnhDSkRBU0FzRndMdEpTc2RZT0d1T1VDYU5VeEJsMjVvWVZ3UA?oc=5",
-          "domain": "pr-newswire.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "PR Newswire",
-          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNdWdXRnk1dWtUMk5IbDYybjEyc3F3RngtVzVaaXRvZV9ZZGhEZm9Yb1M4T2pvTVdiZTF6M25fa2lxS3YybHlOckY1Uks2SjFReDJuNmJGY2JNSXBLc2RmSTFlR3l0NXQ0a21LZ3ZEV0pGdTdwSng1UHpMbGpTMmY4dnJjYlBxYS1zNHpZanpIdU55NjZSTHY3T3RGcUZoZ0YweW5hOXpMTXQzOUpPeFMyY25abkI5b0JQNERzTU9XTkpDbEtfMURjRG9QTHV2RzdYWGtjS3J6THhOX2lUQnhDQk5pMXFkRXg3clI3cThaYkk?oc=5",
-          "domain": "pr-newswire.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "PR Newswire",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQYmx4WFZvWTZKbVZ4dDdpa3lNMnVQWUNyb20yM05WZ0ZXRGtJY1dTVGtLNGJncmF6RmtCeEpVbHZQNTl6QkdyanpPWS0xbkJtOTZYSkU2NW5wVDZ0MDlUOTd1YVQ5NUhYUmtaM3I0TE1YUGVYZWtZUC1lSUZJUDRsaXNEUGFTTzkzZEVTQS1PUEZGck1iNFBPMFB0NktQdUYyMEdfcjhJeUdIeW9vUHRTcEVHU0VkN1VHTHM2d1BaN0V2b21rMloxZHlEQ3RRajVjOUNqRk5fTlZCenBTN1BUM05oVQ?oc=5",
-          "domain": "pr-newswire.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Security Magazine",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUDV3aGg2cmpIOVVxVnI1NDBkSnY4MERjZXA1aGJzeVZJMDg3Tzk4b0U5TFZJOURoenpVa1YwWHhnaDduZFl0TkJnSkUzS2dDSHdxcy05dno4OXdYYjlSQVg4MEUtODR1TXBOemhEZ3VTY1pyVERXS1VHSlJlNHJ3Rjl1RGhabWVSYWJDQ251UklkZDBFNzVkRDVlTQ?oc=5",
-          "domain": "security-magazine.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "SecurityWeek",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaUVxSGdkQXk2dVd3dS1yX2pTeWZlRDBGazE4M2ExZ1p3NUR5NzlJTjBPa0JaYTRIRWNhY1JqMzZZNGpVNjhQVlkwN1BIT2xWeEFWWG9hME5zRERhREhPMV9UNW1UWURfY0pndHB4d2NKR00xZUQyS09SWF96VmsteTA4X09BWWV3VWc0dnJHMNIBlAFBVV95cUxNMHFpdTc2dVNqN0dtUDZpSjNWR2F0OUx3TEJuZWgzR0JTd2lzZzJNdW56QWRkT2xJS3NSb1Vsd2RlYVN4Y3p2S3JEcjh6NWJDVXFpREp1M0otR2V0b0NyXzhTdTZxOVd5Tm5BLTRjeElVQktoSnB2RG9mUC1WbGNyTzJjazRJMEZ0WkQ0dzRFZFdieUU5?oc=5",
-          "domain": "securityweek.com",
-          "tier": "C"
-        },
-        {
-          "name": "SecurityWeek",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxORVF0VmU4R1ZGSERta0ZzSGUxMFZSSTdpYmpiSUV0UG5JTXBMd1RMN3NKenZuZ1hVT00wVUxrU04yejEyUUJCazZCU1AxZ0YwWm1lSDVHN1lpMjdaanVYYlh5VmFUYUptbHQxemoxWWx1VzhjS3VhN2dqQllmc0wwYlhNYzVzZ0VmUkHSAYoBQVVfeXFMTkVRdFZlOEdWRkhEbWtGc0hlMTBWUkk3aWJqYklFdFBuSU1wTHdUTDdzSnp2bmdYVU9NMFVMa1NOMnoxMlFCQms2QlNQMWdGMFptZUg1RzdZaTI3Wmp1WGJYeVZhVGFKbWx0MXpqMVlsdVc4Y0t1YTdnakJZZnNMMGJYTWM1c2dFZlJB?oc=5",
-          "domain": "securityweek.com",
-          "tier": "C"
-        },
-        {
-          "name": "The Daily Tribune News",
-          "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxQbGJ4SlBmVVdvUFRoalJzTlJHY1JEMjZjWWxlWU1KczFRVm1ZXzdyc0tvdzhZLV8telRVeWlVVDN1UEw5YlJMQjRNcUlHTWk3eGR1MkliSmxGZE41SHhUMHRBOHNWR1ZTTXJHWlZSMXI2TmJKdUR0cjlCZ2RjYjRtNVFqb0FzbWo0c2dBN1pXRFlNZnpaZ2taV2hmUTJHZFc1ejV5QlFubUwzbElZRnZETXBRYWFKT0lyb1AtT053Q1l1MHBZX1dVTGtPUUdvbnF3U2o1eDhpdVZzSG1KYmNCcnJhQm00UmhFdjU3bWZXN281eG5DMi1tWVdPRm5FS3BrN2VHeWVPclNsRU02dmh1Sm1BWUsybC1tTms2ZXh0Tkl4eTBJMVBHcDVxTW1LcFpaZkx1aEk1V1lpRHdwWmxGZG0xNzkyaS10?oc=5",
-          "domain": "the-daily-tribune-news.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "The Daily Tribune News",
-          "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPdWJQbHotSXpteDZpaTQ0N2wwOUE0N0l2SGpqNzJmNWtKaHBINV9NZ3ZjcDNpa2JJbkxwWDRUTkMtV2hSczZ5Z3ZvRk5XdWpTZWJfdWRVMjhkRnd6M0t4eVFIOGh1ejVQcUtBWk4xc3VGdDhRNGhOSE5LTVRsSEVQV0kwcG91T2Y0YkZyWFdGZ1B2Vm5yMVp5a0szNGhmcmY0dUd6YTgwRXBBeDlNUEpuLU5DQU1QbU5keHZfd2ZYZWN3VzVDem1MeWppdnBnellsRUcyX1ltQUJORC1XX1RabXVuVTNacl9iMkJRYzE4YW9VTER5Yk1IbFg3QXhxOFk2UFpCNHVuTlRaRGJ3S0NWd2FtV3I4Wlh4a2NPbTBWQXluWmxzUTd3VkkxeTdzdw?oc=5",
-          "domain": "the-daily-tribune-news.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "The HIPAA Journal",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1FYXFwVXF2Wm4xblRYdHRWaldFZkVyMDFmVlMzX3d1YmFMTS10Z2xzczAzRzBsN3B1QzNTWklPd28xRzNxRDlWY0JlNkgyaTVGZkNDdXVJbUFjei1KaTBJ?oc=5",
-          "domain": "the-hipaa-journal.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-31T05:36:32+00:00",
-      "trace": [
-        "tier B (+25)",
-        "5 independent outlets (+36)",
-        "verified: 5 independent outlets",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 90 = trust 61 / interest 100 / corrob 100"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "f8d1f879ce28304a",
-      "title": "rokbenko/quackd — 🦆🧠 Give your small robot a brain. Tell a Microduck, a Reachy Mini, a LeRobot arm or any ROS base what you want",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "ai",
-        "hardware",
-        "howto",
-        "llm",
-        "opensource"
-      ],
-      "summary": "Your Reachy Mini, your arm and your wheeled base too. The brain daemon Microduck was missing, named like its siblings robotd, mediad, padd and tofd. Since 0.4 it drives other small robots too.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "Your Reachy Mini, your arm and your wheeled base too.",
-          "support_span": "Your Reachy Mini, your arm and your wheeled base too.",
-          "status": "entailed"
-        },
-        {
-          "text": "The brain daemon Microduck was missing, named like its siblings robotd, mediad, padd and tofd.",
-          "support_span": "The brain daemon Microduck was missing, named like its siblings robotd, mediad, padd and tofd.",
-          "status": "entailed"
-        },
-        {
-          "text": "Since 0.4 it drives other small robots too.",
-          "support_span": "Since 0.4 it drives other small robots too.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "f8d1f879ce28304a"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/rokbenko/quackd",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-28T09:09:16+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-28 — outside lookback window"
-    },
-    {
-      "cluster_key": "01f63dbd63f25f15",
-      "title": "ZJU-REAL/Easel — An open-source AI agent for social media — discover trends, create content, publish everywhere, and learn what",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai",
-        "linux",
-        "opensource",
-        "tool"
-      ],
-      "summary": "简体中文 · English 你的私人、持续进化的社媒运营助手 从一个想法开始，完成发现、策划、创作、发布与复盘。 Easel 是一个面向社交媒体创作者的开源内容工作台。它把 OpenClaw Agent、账号画像、内容技能和真实的媒体工具接在一起，让 Agent 不只回答“应该怎么做”，而是直接把内容做出来并归档，且可实现直接/按需发布。 你可以把它理解成一个会记住你的内容搭档：它了解账号定位、受众、风格、平台限制和历史表现，从热点发现一直陪你做到发布，再把结果带回下一次创作。 Easel 围绕五个连续工作流展开：发现适合账号的热点与机会，策划选题、标题、脚本和排期， 创作图文、音频与视频内容，发布经过检查和平台适配的成品直接到对应平台，再通过归因分析表现并把有效经验沉淀回账号画像。 - 推荐使用 Web 前端：前端提供完整的会话、素材、账号、画像、内容库和发布管理能力，体验和功能比单独使用 CLI 更全面。 - 谨慎自动发布到小红书：小红书平台可能检测自动化操作，存在验证、限流或账号风控风险；建议使用预览与发布前检查，并由用户确认后手动发布…",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "简体中文 · English\n  你的私人、持续进化的社媒运营助手\n  从一个想法开始，完成发现、策划、创作、发布与复盘。\nEasel 是一个面向社交媒体创作者的开源内容工作台。它把 OpenClaw Agent、账号画像、内容技能和真实的媒体工具接在一起，让 Agent 不只回答“应该怎么做”，而是直接把内容做出来并归档，且可实现直接/按需发布。\n你可以把它理解成一个会记住你的内容搭档：它了解账号定位、受众、风格、平台限制和历史表现，从热点发现一直陪你做到发布，再把结果带回下一次创作。\nEasel 围绕五个连续工作流展开：发现适合账号的热点与机会，策划选题、标题、脚本和排期， 创作图文、音频与视频内容，发布经过检查和平台适配的成品直接到对应平台，再通过归因分析表现并把有效经验沉淀回账号画像。\n- 推荐使用 Web 前端：前端提供完整的会话、素材、账号、画像、内容库和发布管理能力，体验和功能比单独使用 CLI 更全面。\n- 谨慎自动发布到小红书：小红书平台可能检测自动化操作，存在验证、限流或账号风控风险；建议使用预览与发布前检查，并由用户确认后手动发布，其他平台正常。\n- 从研究走向真实生活：Easel 是我们将研究成果应用到真实社媒创作场景的一次实践。后续我们会继续研究 AI 在社媒场景中的社交智能，让 Agent 更好地理解创作者、受众与真实互动。\n- 一个 Agent 贯穿完整链路：发现热点、评估选题、规划日历、生成文案与视觉、制作视频、发布和归因在同一个工作流中完成。\n- 画像驱动，而不是一次性生成：每个账号有独立的定位、风格、受众、平台、偏好和记忆，输出会越来越贴合真实账号。\n- 技能是真执行，不是功能清单：图片、卡片、配音、字幕、剪辑、短剧和发布技能都配有可运行脚本，成品写入 outputs/ 。\n- 一份素材，多种平台形态：同一主题可以改写成小红书卡片、短视频、知乎长文或短帖，并遵循不同平台的格式和字数要求。\n- 项目化保存产物：内容、素材、中间文件和元数据按项目归档，后续修改、重试和发布不会散落在聊天记录里。\n- 真实发布与复盘闭环：目前支持小红书、抖音、快手、知乎、B 站、微信视频号六个平台的登录、适配和发布，并可回收账号数据。\n- 发现：聚合热榜、行业新闻、竞品动态和用户讨论，筛选真正适合账号的机会。\n- 策划：把机会变成选题、标题、脚本和内容矩阵，写入内容日历。\n- 创作：生成文案、卡片、海报、信息图、音频、视频、短剧和论文解读等可发布素材。\n- 发布：按平台适配标题、正文、画幅和媒体要求，执行发布前检查并发送到已登录账号。\n- 归因：读取播放、互动、评论和内容表现，把有效结构和偏好沉淀回账号画像。\n下面只展示 Easel 工作台中的四个代表性功能，并不是完整功能清单。更多发现、策划、创作、发布和归因能力， 可以在工作台的技能库或能力地图中查看。\n这些文件来自 Easel 的实际工作流，主页中也有同一批案例的分类展示。\nREADME 的品牌图、海报、案例图片和视频统一保存在 assets/readme/；产品主页使用独立的\nweb/static/showcase/ 素材，其中视频保持为 6 秒轻量预览。\nSpatialEvo · 论文解读 / SpatialLadder · VLM 视觉叙事\nCULTURE-MT · 文化翻译 / KnowU-Bench · 侦探漫画\nAGENT G2 · 暗夜英雄 / Pause or Fabricate · 角色化科普\n搞笑修仙 / 恐怖短篇 / 爱情喜剧 / 悬疑故事\n生活方式 / 自然记录\n城市生活 / 梗内容\n为便于快速浏览，这里使用可点击的视频封面。点击封面查看最长 1 分钟的轻量预览，点击封面下方的标题 查看完整成片。\n论文解读视频\n▶ 点击封面播放预览 · 查看完整视频：SpatialLadder / CULTURE-MT\n口播、连续剧与 AI 角色短视频\n▶ 点击封面播放预览 · 查看完整视频：普通人 / 花子的转变 / 赛博修仙 / 赛博吃播甲鱼\n氛围影像与横版内容\n▶ 点击封面播放预览 · 查看完整视频：西藏吉隆泥石流 / 盗墓笔记小说介绍 / 浙江大学\n环境要求：Linux 或 macOS、Python 3.10 及以上、git。还需要 Node.js 22.19 及以上；Linux x86_64\n缺少 Node.js 时安装脚本会自动处理，macOS 建议先通过 Homebrew 或 Node.js 官网安装。\ngit clone git@github.com:ZJU-REAL/Easel.git\ncd Easel\ncp .env.example .env\nvim .env\nbash setup.sh\neasel web\n# 或：easel chat\n启动 Web 工作台后访问 http://localhost:7860。安装完成后可以运行 easel doctor 检查环境，\n运行 easel ping 检查 gateway 和 Agent 连通性。\n需要图片、音视频或浏览器发布能力时，安装可选依赖：\npip install -e \".[media]\"\nplaywright install chromium\n# 系统还需要 ffmpeg\n最小配置只需要在项目根目录 .env 中提供一个可用的 LLM：\nANTHROPIC_API_KEY=你的_API_Key\nCLAUDE_MODEL=anthropic/claude-sonnet-4-6\n.env.example 还列出了视频、音乐、语音等可选模型配置。只需要配置实际使用的能力，也可以在 Web\n工作台的“技能库”中填写；没有配置的媒体 Skill 不会影响聊天、策划和文本创作。常见可选项包括：\n常用入口：\n所有技能都通过 Easel 的 Agent 执行。Agent 会读取对应 SKILL.md，调用脚本和工具，并把产物保存到 outputs/。\neasel skill quality-gate -i \"帮我检查这条小红书文案\"\neasel skill social-content -i \"写一条介绍空间智能的微博\"\neasel skill quality-gate -i \"这是一段待发布文案\" -p 科技数码达人\nWeb 工作台提供同样的能力，并额外管理会话、素材、账号、画像、内容库和发布状态。拖入对话框的素材会作为结构化附件传给 Agent，用户消息只显示实际输入的文字。\n一个画像对应 profiles/<名字>/ 目录，包含六个维度：定位、风格、受众、平台、偏好与红线、长期记忆。\ncp -r profiles/_template \"profiles/我的账号\"\n在 Web 的“画像”页面可以直接创建和编辑；同一画像可以跨多个已登录平台使用。\nEasel/\n├── easel/                    Python CLI：chat / web / skill / doctor / ping\n├── web/                      FastAPI 后端与 React 工作台\n├── skills/openclaw/          发现、策划、制作、发布、归因技能\n├── skills/shared/            跨技能脚本与参考资料\n├── assets/                   品牌、README 媒体与用户导入素材\n├── profiles/                 账号画像（每个画像一个目录）\n├── outputs/                  内容项目与最终产物\n├── openclaw/                 隔离 profile、workspace 与同步脚本\n└── docs/                     能力规范、能力地图与架构文档\nEasel 使用独立的 easel OpenClaw profile，不会覆盖你本机已有的 OpenClaw 配置。Web 默认运行在 7860，gateway 默认运行在 18789。\nEasel 的技能体系和工作流受益于许多优秀的开源项目、工具与内容方法论。感谢所有原作者和社区贡献者； 具体项目、用途和许可信息请查看完整致谢。",
-          "support_span": "简体中文 · English\n  你的私人、持续进化的社媒运营助手\n  从一个想法开始，完成发现、策划、创作、发布与复盘。\nEasel 是一个面向社交媒体创作者的开源内容工作台。它把 OpenClaw Agent、账号画像、内容技能和真实的媒体工具接在一起，让 Agent 不只回答“应该怎么做”，而是直接把内容做出来并归档，且可实现直接/按需发布。\n你可以把它理解成一个会记住你的内容搭档：它了解账号定位、受众、风格、平台限制和历史表现，从热点发现一直陪你做到发布，再把结果带回下一次创作。\nEasel 围绕五个连续工作流展开：发现适合账号的热点与机会，策划选题、标题、脚本和排期， 创作图文、音频与视频内容，发布经过检查和平台适配的成品直接到对应平台，再通过归因分析表现并把有效经验沉淀回账号画像。\n- 推荐使用 Web 前端：前端提供完整的会话、素材、账号、画像、内容库和发布管理能力，体验和功能比单独使用 CLI 更全面。\n- 谨慎自动发布到小红书：小红书平台可能检测自动化操作，存在验证、限流或账号风控风险；建议使用预览与发布前检查，并由用户确认后手动发布，其他平台正常。\n- 从研究走向真实生活：Easel 是我们将研究成果应用到真实社媒创作场景的一次实践。后续我们会继续研究 AI 在社媒场景中的社交智能，让 Agent 更好地理解创作者、受众与真实互动。\n- 一个 Agent 贯穿完整链路：发现热点、评估选题、规划日历、生成文案与视觉、制作视频、发布和归因在同一个工作流中完成。\n- 画像驱动，而不是一次性生成：每个账号有独立的定位、风格、受众、平台、偏好和记忆，输出会越来越贴合真实账号。\n- 技能是真执行，不是功能清单：图片、卡片、配音、字幕、剪辑、短剧和发布技能都配有可运行脚本，成品写入 outputs/ 。\n- 一份素材，多种平台形态：同一主题可以改写成小红书卡片、短视频、知乎长文或短帖，并遵循不同平台的格式和字数要求。\n- 项目化保存产物：内容、素材、中间文件和元数据按项目归档，后续修改、重试和发布不会散落在聊天记录里。\n- 真实发布与复盘闭环：目前支持小红书、抖音、快手、知乎、B 站、微信视频号六个平台的登录、适配和发布，并可回收账号数据。\n- 发现：聚合热榜、行业新闻、竞品动态和用户讨论，筛选真正适合账号的机会。\n- 策划：把机会变成选题、标题、脚本和内容矩阵，写入内容日历。\n- 创作：生成文案、卡片、海报、信息图、音频、视频、短剧和论文解读等可发布素材。\n- 发布：按平台适配标题、正文、画幅和媒体要求，执行发布前检查并发送到已登录账号。\n- 归因：读取播放、互动、评论和内容表现，把有效结构和偏好沉淀回账号画像。\n下面只展示 Easel 工作台中的四个代表性功能，并不是完整功能清单。更多发现、策划、创作、发布和归因能力， 可以在工作台的技能库或能力地图中查看。\n这些文件来自 Easel 的实际工作流，主页中也有同一批案例的分类展示。\nREADME 的品牌图、海报、案例图片和视频统一保存在 assets/readme/；产品主页使用独立的\nweb/static/showcase/ 素材，其中视频保持为 6 秒轻量预览。\nSpatialEvo · 论文解读 / SpatialLadder · VLM 视觉叙事\nCULTURE-MT · 文化翻译 / KnowU-Bench · 侦探漫画\nAGENT G2 · 暗夜英雄 / Pause or Fabricate · 角色化科普\n搞笑修仙 / 恐怖短篇 / 爱情喜剧 / 悬疑故事\n生活方式 / 自然记录\n城市生活 / 梗内容\n为便于快速浏览，这里使用可点击的视频封面。点击封面查看最长 1 分钟的轻量预览，点击封面下方的标题 查看完整成片。\n论文解读视频\n▶ 点击封面播放预览 · 查看完整视频：SpatialLadder / CULTURE-MT\n口播、连续剧与 AI 角色短视频\n▶ 点击封面播放预览 · 查看完整视频：普通人 / 花子的转变 / 赛博修仙 / 赛博吃播甲鱼\n氛围影像与横版内容\n▶ 点击封面播放预览 · 查看完整视频：西藏吉隆泥石流 / 盗墓笔记小说介绍 / 浙江大学\n环境要求：Linux 或 macOS、Python 3.10 及以上、git。还需要 Node.js 22.19 及以上；Linux x86_64\n缺少 Node.js 时安装脚本会自动处理，macOS 建议先通过 Homebrew 或 Node.js 官网安装。\ngit clone git@github.com:ZJU-REAL/Easel.git\ncd Easel\ncp .env.example .env\nvim .env\nbash setup.sh\neasel web\n# 或：easel chat\n启动 Web 工作台后访问 http://localhost:7860。安装完成后可以运行 easel doctor 检查环境，\n运行 easel ping 检查 gateway 和 Agent 连通性。\n需要图片、音视频或浏览器发布能力时，安装可选依赖：\npip install -e \".[media]\"\nplaywright install chromium\n# 系统还需要 ffmpeg\n最小配置只需要在项目根目录 .env 中提供一个可用的 LLM：\nANTHROPIC_API_KEY=你的_API_Key\nCLAUDE_MODEL=anthropic/claude-sonnet-4-6\n.env.example 还列出了视频、音乐、语音等可选模型配置。只需要配置实际使用的能力，也可以在 Web\n工作台的“技能库”中填写；没有配置的媒体 Skill 不会影响聊天、策划和文本创作。常见可选项包括：\n常用入口：\n所有技能都通过 Easel 的 Agent 执行。Agent 会读取对应 SKILL.md，调用脚本和工具，并把产物保存到 outputs/。\neasel skill quality-gate -i \"帮我检查这条小红书文案\"\neasel skill social-content -i \"写一条介绍空间智能的微博\"\neasel skill quality-gate -i \"这是一段待发布文案\" -p 科技数码达人\nWeb 工作台提供同样的能力，并额外管理会话、素材、账号、画像、内容库和发布状态。拖入对话框的素材会作为结构化附件传给 Agent，用户消息只显示实际输入的文字。\n一个画像对应 profiles/<名字>/ 目录，包含六个维度：定位、风格、受众、平台、偏好与红线、长期记忆。\ncp -r profiles/_template \"profiles/我的账号\"\n在 Web 的“画像”页面可以直接创建和编辑；同一画像可以跨多个已登录平台使用。\nEasel/\n├── easel/                    Python CLI：chat / web / skill / doctor / ping\n├── web/                      FastAPI 后端与 React 工作台\n├── skills/openclaw/          发现、策划、制作、发布、归因技能\n├── skills/shared/            跨技能脚本与参考资料\n├── assets/                   品牌、README 媒体与用户导入素材\n├── profiles/                 账号画像（每个画像一个目录）\n├── outputs/                  内容项目与最终产物\n├── openclaw/                 隔离 profile、workspace 与同步脚本\n└── docs/                     能力规范、能力地图与架构文档\nEasel 使用独立的 easel OpenClaw profile，不会覆盖你本机已有的 OpenClaw 配置。Web 默认运行在 7860，gateway 默认运行在 18789。\nEasel 的技能体系和工作流受益于许多优秀的开源项目、工具与内容方法论。感谢所有原作者和社区贡献者； 具体项目、用途和许可信息请查看完整致谢。",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "01f63dbd63f25f15"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/ZJU-REAL/Easel",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-28T02:22:27+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-28 — outside lookback window"
-    },
-    {
-      "cluster_key": "61c5cb98c5f11216",
-      "title": "XiaoDuoYa/codex-with-chatgpt — ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai",
-        "identity",
-        "opensource",
-        "release",
-        "windows"
-      ],
-      "summary": "ChatGPT 负责思考，Codex 负责干活。 Important 遇到问题？ 请先向 Codex 发送 「更新 Codex with ChatGPT」 并重试。更新到最新版本可以解决大多数已知问题。 Having trouble? First ask Codex to “Update Codex with ChatGPT” and try again. Updating to the latest version resolves most known issues.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [
-        {
-          "text": "ChatGPT 负责思考，Codex 负责干活。\nImportant\n遇到问题？ 请先向 Codex 发送 「更新 Codex with ChatGPT」 并重试。更新到最新版本可以解决大多数已知问题。\nHaving trouble?",
-          "support_span": "ChatGPT 负责思考，Codex 负责干活。\nImportant\n遇到问题？ 请先向 Codex 发送 「更新 Codex with ChatGPT」 并重试。更新到最新版本可以解决大多数已知问题。\nHaving trouble?",
-          "status": "entailed"
-        },
-        {
-          "text": "First ask Codex to “Update Codex with ChatGPT” and try again.",
-          "support_span": "First ask Codex to “Update Codex with ChatGPT” and try again.",
-          "status": "entailed"
-        },
-        {
-          "text": "Updating to the latest version resolves most known issues.",
-          "support_span": "Updating to the latest version resolves most known issues.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "alt_keys": [
-        "61c5cb98c5f11216"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-28T12:57:24+00:00",
-      "trace": [
-        "summary: heuristic extractive (no LLM configured)"
-      ],
-      "reject_reason": "published 2026-08-28 — outside lookback window"
-    },
-    {
-      "cluster_key": "403a19d9ee1ed052",
-      "title": "Agentic Settlement Protocol: An Application Profile for Refundable, Delayed-Fulfilment Agent Commerce on Stablecoin Rails",
-      "category": "tech_ai",
-      "one_liner": "The Agentic Settlement Protocol brings escrow-based authorize-and-capture commerce to autonomous agents on stablecoin rails.",
-      "tags": [
-        "agents",
-        "ai",
-        "policy",
-        "research"
-      ],
-      "summary": "Autonomous agents can already pay per request through protocols like x402, but atomic and final transactions fail in agent commerce where delayed fulfillment requires escrow. The Agentic Settlement Protocol (ASP) introduces an application profile over on-chain authorize-and-capture escrow for businesses whose fulfillment is confirmed off-chain. ASP provides a three-deadline hold model, a fulfillment-verification ladder, engine-authoritative partial refunds, and exposure controls to bound credit risk on stablecoin rails. The design is intended to let independent implementations interoperate and is instantiated on the XDC Network.",
-      "key_facts": [],
-      "bottom_line": "Autonomous agent commerce requires delayed-fulfillment escrow models rather than atomic per-request payments to safely handle real-world transactions.",
-      "claims": [
-        {
-          "text": "Autonomous agents can already pay per request: HTTP-native protocols such as x402 let an agent sign a stablecoin authorization and receive a resource in the same round trip.",
-          "support_span": "Autonomous agents can already pay per request: HTTP-native protocols such as x402 let an agent sign a stablecoin authorization and receive a resource in the same round trip.",
-          "status": "entailed"
-        },
-        {
-          "text": "We present the Agentic Settlement Protocol (ASP), an application profile over on-chain authorize-and-capture escrow for businesses whose fulfilment is confirmed off-chain.",
-          "support_span": "We present the Agentic Settlement Protocol (ASP), an application profile over on-chain authorize-and-capture escrow for businesses whose fulfilment is confirmed off-chain by their own order, scheduling, invoicing or booking system, abstracted as a fulfilment engine.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "alt_keys": [
-        "403a19d9ee1ed052"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2609.02208",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.02208"
-      ],
-      "published": "2026-09-03T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "1418746ce606508b",
-      "title": "SCX Router: Streaming Zero-Shot Model Selection with a Decoder-KV Classifier and a Real-World Task Ontology",
-      "category": "tech_ai",
-      "one_liner": "Deploy SCX Router for zero-shot LLM model selection using a persistent key-value cache and a 0.6B Qwen3 decoder.",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "network",
-        "opensource",
-        "release",
         "research",
-        "tool"
-      ],
-      "summary": "Researchers introduce SCX Router, a lightweight 0.6B-parameter model selection router combining a Qwen3 decoder with a shallow bidirectional scorer to assign suitability scores to inference-time models without autoregressive generation. The architecture preserves a text-only key-value cache across sessions while evaluating transient candidate-label tokens independently. Trained on a massive synthetically generated task ontology containing 150,000 verifier-scored tasks, the router predicts task type, difficulty, and reasoning mode while optimizing cost, speed, and quality tradeoffs. Across evaluation sets, the approach outperforms the mean candidate and achieves strong aggregate top-1 performance compared to fixed models.",
-      "key_facts": [
-        "Parameter size: 0.6B",
-        "Base model: Qwen3 decoder",
-        "Synthetic tasks generated: 150,000 verifier-scored tasks",
-        "Top-1 score: 0.707"
-      ],
-      "bottom_line": "Per-task model selection can be efficiently automated using lightweight specialized routers without autoregressive generation overhead.",
-      "claims": [
-        {
-          "text": "We introduce router, a lightweight GLiClass-based router that assigns a suitability score to each inference-time model label without autoregressive generation.",
-          "support_span": "We introduce \router{}, a lightweight GLiClass-based router that assigns a suitability score to each inference-time model label without autoregressive generation.",
-          "status": "contradicted"
-        },
-        {
-          "text": "The released 0.6B-parameter checkpoint combines a Qwen3 decoder with a shallow bidirectional scorer.",
-          "support_span": "The released 0.6B-parameter checkpoint combines a Qwen3 decoder with a shallow bidirectional scorer.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 82,
-      "interest_score": 50,
-      "corroboration": 2,
-      "blend": 58.0,
-      "is_new": true,
-      "alt_keys": [
-        "1418746ce606508b",
-        "c9df19b99f18a114"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.02292",
-          "domain": "arxiv.org",
-          "tier": "A"
-        },
-        {
-          "name": "research.google",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNd1daRnV4bXpXR2FzN2JZOHQtVjY3LUx1RlpzaVc5cVh0cEdSREVNZ0xXYUxkLUJtQXNrLTFUT3BuUjBNQ3NlVzJFNDZDQmswQ0FQQkwwTlFXd2NIamdBMmlWbWM1a0lFTEhTRTE2WHZLTFcwZkxjRjBVNDBFVXNFRkpoUzlZYnFtVnVkUDF5WnFSbnhpYm1qa0pyTTlfZw?oc=5",
-          "domain": "research-google.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.02292"
-      ],
-      "published": "2026-08-31T17:20:18+00:00",
-      "trace": [
-        "tier A (+40)",
-        "2 independent outlets (+12)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 58 = trust 82 / interest 50 / corrob 50",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "c97f3bdadc26623c",
-      "title": "usedotai/dot-reflex — Open-source agent execution-recovery controller for coding and tool-using AI agents.",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource",
         "tool",
         "vulnerability"
       ],
-      "summary": "Dot Reflex is an execution-recovery controller, not a replacement for the agent doing the work. It reads a compact summary of an agent trajectory and returns one of ten control decisions: continue, verify, retry differently, replan, rollback, branch, switch model, ask a human, stop successfully, or stop with failure. The release is a rank-64 QLoRA adapter for Qwen/Qwen3-14B-Base.",
+      "summary": "Compile agent experience into a persistent wiki — and let skills evolve themselves. 📚 Docs site: ashutoshsinghpr7.github.io/wikiskill · arXiv: 2608.27454 A faithful, production-minded implementation of WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution (arXiv:2608.27454, Google Research). The loop is agent-agnostic — Hermes Agent is the reference backend (built natively), Claude Code, Codex and GitHub Copilot CLI ship in the box, and OpenCode…",
       "key_facts": [],
       "bottom_line": "",
       "claims": [
         {
-          "text": "Dot Reflex is an execution-recovery controller, not a replacement for the agent doing the work.",
-          "support_span": "Dot Reflex is an execution-recovery controller, not a replacement for the agent doing the work.",
+          "text": "Compile agent experience into a persistent wiki — and let skills evolve themselves.",
+          "support_span": "Compile agent experience into a persistent wiki — and let skills evolve themselves.",
           "status": "entailed"
         },
         {
-          "text": "It reads a compact summary of an agent trajectory and returns one of ten control decisions: continue, verify, retry differently, replan, rollback, branch, switch model, ask a human, stop successfully, or stop with failure.",
-          "support_span": "It reads a compact summary of an agent trajectory and returns one of ten control decisions: continue, verify, retry differently, replan, rollback, branch, switch model, ask a human, stop successfully, or stop with failure.",
+          "text": "📚 Docs site: ashutoshsinghpr7.github.io/wikiskill · arXiv: 2608.27454\nA faithful, production-minded implementation of WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution (arXiv:2608.27454, Google Research).",
+          "support_span": "📚 Docs site: ashutoshsinghpr7.github.io/wikiskill · arXiv: 2608.27454\nA faithful, production-minded implementation of WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution (arXiv:2608.27454, Google Research).",
           "status": "entailed"
         },
         {
-          "text": "The release is a rank-64 QLoRA adapter for\nQwen/Qwen3-14B-Base.",
-          "support_span": "The release is a rank-64 QLoRA adapter for\nQwen/Qwen3-14B-Base.",
+          "text": "The loop is agent-agnostic — Hermes Agent is the reference backend (built natively), Claude Code, Codex and GitHub Copilot CLI ship in the box, and OpenCode is on the roadmap (issue #13).",
+          "support_span": "The loop is agent-agnostic — Hermes Agent is the reference backend (built natively), Claude Code, Codex and GitHub Copilot CLI ship in the box, and OpenCode is on the roadmap (issue #13).",
           "status": "entailed"
         }
       ],
@@ -1122,7 +284,7 @@
       "blend": 0.0,
       "is_new": true,
       "alt_keys": [
-        "c97f3bdadc26623c"
+        "620ce310e211ff4a"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -1130,80 +292,129 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/usedotai/dot-reflex",
+          "url": "https://github.com/ashutoshsinghpr7/wikiskill",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-28T14:00:16+00:00",
+      "published": "2026-08-29T20:44:02+00:00",
       "trace": [
         "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "published 2026-08-28 — outside lookback window"
+      "reject_reason": "published 2026-08-29 — outside lookback window"
     },
     {
-      "cluster_key": "55a2f37cdc9b1eb1",
-      "title": "SkillGLoW: Procedural-Family Skill Consolidation for Self-Improving Agents on Long-Horizon Task Streams",
+      "cluster_key": "79186003ddb836a8",
+      "title": "jiabaobei/memory-bridge — 记忆桥 MemoryBridge — 跨设备、跨平台的 AI 共享记忆层 | Cross-device and cross-platform shared memory for AI (CDSMP implementat",
       "category": "tech_ai",
-      "one_liner": "Consolidate agent skills into procedural-family global priors with rigorous commit gates for continual improvement.",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
       "tags": [
         "agents",
         "ai",
         "llm",
-        "research",
-        "tool"
+        "opensource",
+        "research"
       ],
-      "summary": "SkillGLoW is a skill consolidation framework designed for self-improving LLM agents working on long-horizon task streams where traditional global documents or flat pools fail. The system aggregates local skills executed during individual tasks into procedural families, compressing them into de-instantiated global priors while regenerating specific instance details dynamically per task. A strict commit gate admits a prior only if real execution proves it enhances the deployed library. Experiments across four benchmarks show that SkillGLoW significantly outperforms baselines while maintaining a compact library size.",
-      "key_facts": [
-        "Score gain: 17.2 points (hard) over no-skill baseline",
-        "Benchmarks tested: 4 (mathematical reasoning, terminal automation, software repair, embodied control)",
-        "Library compactness: 3.6x more compact than per-task pool"
-      ],
-      "bottom_line": "Transferring procedural methods rather than task-specific memory enables robust continual skill improvement for autonomous agents.",
+      "summary": "🌉 给 AI 一个跟着你走的记忆 —— 跨设备 × 跨平台的共享记忆层 CDSMP（大模型跨设备语义记忆连续性架构）的官方工程实现。 English · 设计 RFC · 容器一致性 RFC · 路线图 · 移动端接入 · 隐私威胁模型 · 版本历程 早上通勤时你在手机上和 AI 讨论到一半的推理，回到办公室想在 PC 上继续—— 今天的做法是：翻聊天记录、复制粘贴、重新解释一遍背景。 云全量同步很重也未必安全；RAG 是\"到了新设备再被动检索\"；主流记忆系统 （Mem0、MemGPT/Letta 等）本质上是单机的。记忆桥的答案是三个差异化主张： - 跨设备连续性：记忆跟着人走，而不是跟着 App 走。手机、PC、平板共享同一份语义记忆，通过增量差分同步。 - 边缘预加载：在你打开新设备之前，高热度的记忆已经被推送到位——切换即连续，而不是切换后等待检索。 - 内容冻结原则：记忆桥只提取语义关联、只调节结构参数，永不改写你的原始记忆内容。这正是论文所依据的 Faulty Memory 研究的结论：让 LLM 自动改写/摘要记忆，必然引入幻觉式…",
+      "key_facts": [],
+      "bottom_line": "",
       "claims": [
         {
-          "text": "SkillGLoW (Global-Local Weave) around it: the local skills a task writes from its own execution are aggregated into procedural families and compressed into de-instantiated global priors...",
-          "support_span": "SkillGLoW (Global-Local Weave) around it: the local skills a task writes from its own execution are aggregated into procedural families and compressed into de-instantiated global priors, while the instance detail they hold is regenerated per task rather than stored...",
-          "status": "contradicted"
+          "text": "🌉 给 AI 一个跟着你走的记忆 —— 跨设备 × 跨平台的共享记忆层\nCDSMP（大模型跨设备语义记忆连续性架构）的官方工程实现。 English · 设计 RFC · 容器一致性 RFC · 路线图 · 移动端接入 · 隐私威胁模型 · 版本历程\n早上通勤时你在手机上和 AI 讨论到一半的推理，回到办公室想在 PC 上继续—— 今天的做法是：翻聊天记录、复制粘贴、重新解释一遍背景。\n云全量同步很重也未必安全；RAG 是\"到了新设备再被动检索\"；主流记忆系统 （Mem0、MemGPT/Letta 等）本质上是单机的。记忆桥的答案是三个差异化主张：\n- 跨设备连续性：记忆跟着人走，而不是跟着 App 走。手机、PC、平板共享同一份语义记忆，通过增量差分同步。\n- 边缘预加载：在你打开新设备之前，高热度的记忆已经被推送到位——切换即连续，而不是切换后等待检索。\n- 内容冻结原则：记忆桥只提取语义关联、只调节结构参数，永不改写你的原始记忆内容。这正是论文所依据的 Faulty Memory 研究的结论：让 LLM 自动改写/摘要记忆，必然引入幻觉式失真。\n同时，记忆桥是跨平台的：通过 MCP 协议，同一个记忆库可以被 Claude Code、Cursor、Cline 等任意 MCP 客户端共享使用（平台覆盖详情见下文矩阵）。\nmemU 值得尊敬：它的「技能自动提炼」（会话历史自动变成可复用技能）与\n「服务端零 LLM」都很出色。分歧在记忆内容的来源——memU 让 LLM 蒸馏生成，\n记忆桥坚持明面上的显式写入（memory_add），经验沉淀用\nkind=procedure 标注（见下方约定），幻觉没有进库通道。\n记忆桥的三个差异化主张不是孤立的设计选择。2026 年的前沿工作正从三个独立方向 收敛到同一条路线：\n- Metis（记忆基础模型，arXiv 2607.26760） 把历史压进模型内部参数， 但论文自己承认：固定容量必然遗忘、参数态难以审计、难以精确删除、隐私 边界难保证，并给出混合蓝图——低频、可审计、超长历史继续留在外部存储， 由外部系统负责容量、可解释检索与纠错。这正是记忆桥所在的生态位： 原生记忆是互补者，不是替代者。\n- Proactive Memory Agent（Meta，arXiv 2607.08716） 证明长程任务的 关键不是\"存更多\"，而是\"哪条记忆应该在什么时候重新进入决策回路\"—— 其核心载体就是一个独立于模型的外置结构化记忆库 + 守门策略，且消融显示 「把沉默当作动作」比全量暴露更稳。记忆桥 v0.9 的沉默契约与相对阈值 过滤与之同构。\n- Perplexity Portable Computer（本地 Agent，零 token 成本）的工程纪律 ——极小系统提示、极少核心工具、按需加载——验证了记忆桥「极度省 token」 原则的普适性；其\"敏感内容不出设备 + 出口显式门控\"与 PAMS 设计哲学一致。\nv0.9 即是一次对照这三份研究的集中借鉴（检索质量 / token 经济 / 缺口发现）， 全部只落在检索、注入与调度层——不改写任何记忆内容，详见 路线图「借鉴版」一节。\n第四个数据点来自开源竞品 memU（NevaMind-AI）：它同样坚持记忆服务端\n零 LLM——「什么值得记」的判断交还给宿主 Agent，记忆服务只做存储、嵌入、\n检索这件确定性的事。这与记忆桥核心的分工完全同构。路线分歧在两点：\nmemU 用 LLM 蒸馏生成记忆内容（记忆桥拒绝：内容冻结），跨设备走其\n云托管（记忆桥坚持端到端加密的自持通道）。v0.10 借鉴了它「记忆就是文件」\n的可审计性（membridge export，只读视图永不回写），见\n路线图「memU 借鉴版」一节。\n第五个数据点来自端侧：边缘设备正在成为 AI 基础设施的一等公民。\nOrnith-1.5 的 9B 量化版（约 1.5GB）已能在手机上直接运行；OlliteRT 把\n旧手机变成了 24 小时在线的局域网模型服务器。当手机同时装得下模型与\n服务，记忆桥的基站模式恰好补上这块拼图缺的「记忆」——一部旧手机跑\nOlliteRT（本地推理）+ membridge gateway（记忆底座），就是完全自持、\n零云端的个人 AI 栈（配方见 移动端指南）。边界仍然\n清晰：本地模型在宿主侧，记忆层核心零 LLM。\n第六个数据点来自参数派内部：连高通也在实践「冻结本体 + 外挂记忆」。 Qualcomm AI Research 的 MoNe（ICML 2026）给冻结的模型骨干外挂「在线可写 的神经记忆」，上下文写入一次、提问不再重读——其架构纪律与记忆桥同构： 本体冻结，只外挂可写。分歧只在记忆住在哪：MoNe 把历史写进权重（参数态）， 而 Metis 已承认这条路线难审计、难精确删除、隐私边界难保证；记忆桥坚持 把记忆留在人人可审计的外部存储。冻结是这个领域两派共同的纪律，区别 只在冻什么——他们冻模型，我们冻内容。\n用户只需运行 membridge init：自动检测本机已安装的平台并接入（幂等安全，重复执行无副作用）。\n对完全封闭、不支持任何外部接入的 App，兜底方案是\"剪贴板/分享\"通道\n（membridge context 复制粘贴），永远可用。\ngit clone https://github.com/jiabaobei/memory-bridge.git\ncd memory-bridge\npip install -e .",
+          "support_span": "🌉 给 AI 一个跟着你走的记忆 —— 跨设备 × 跨平台的共享记忆层\nCDSMP（大模型跨设备语义记忆连续性架构）的官方工程实现。 English · 设计 RFC · 容器一致性 RFC · 路线图 · 移动端接入 · 隐私威胁模型 · 版本历程\n早上通勤时你在手机上和 AI 讨论到一半的推理，回到办公室想在 PC 上继续—— 今天的做法是：翻聊天记录、复制粘贴、重新解释一遍背景。\n云全量同步很重也未必安全；RAG 是\"到了新设备再被动检索\"；主流记忆系统 （Mem0、MemGPT/Letta 等）本质上是单机的。记忆桥的答案是三个差异化主张：\n- 跨设备连续性：记忆跟着人走，而不是跟着 App 走。手机、PC、平板共享同一份语义记忆，通过增量差分同步。\n- 边缘预加载：在你打开新设备之前，高热度的记忆已经被推送到位——切换即连续，而不是切换后等待检索。\n- 内容冻结原则：记忆桥只提取语义关联、只调节结构参数，永不改写你的原始记忆内容。这正是论文所依据的 Faulty Memory 研究的结论：让 LLM 自动改写/摘要记忆，必然引入幻觉式失真。\n同时，记忆桥是跨平台的：通过 MCP 协议，同一个记忆库可以被 Claude Code、Cursor、Cline 等任意 MCP 客户端共享使用（平台覆盖详情见下文矩阵）。\nmemU 值得尊敬：它的「技能自动提炼」（会话历史自动变成可复用技能）与\n「服务端零 LLM」都很出色。分歧在记忆内容的来源——memU 让 LLM 蒸馏生成，\n记忆桥坚持明面上的显式写入（memory_add），经验沉淀用\nkind=procedure 标注（见下方约定），幻觉没有进库通道。\n记忆桥的三个差异化主张不是孤立的设计选择。2026 年的前沿工作正从三个独立方向 收敛到同一条路线：\n- Metis（记忆基础模型，arXiv 2607.26760） 把历史压进模型内部参数， 但论文自己承认：固定容量必然遗忘、参数态难以审计、难以精确删除、隐私 边界难保证，并给出混合蓝图——低频、可审计、超长历史继续留在外部存储， 由外部系统负责容量、可解释检索与纠错。这正是记忆桥所在的生态位： 原生记忆是互补者，不是替代者。\n- Proactive Memory Agent（Meta，arXiv 2607.08716） 证明长程任务的 关键不是\"存更多\"，而是\"哪条记忆应该在什么时候重新进入决策回路\"—— 其核心载体就是一个独立于模型的外置结构化记忆库 + 守门策略，且消融显示 「把沉默当作动作」比全量暴露更稳。记忆桥 v0.9 的沉默契约与相对阈值 过滤与之同构。\n- Perplexity Portable Computer（本地 Agent，零 token 成本）的工程纪律 ——极小系统提示、极少核心工具、按需加载——验证了记忆桥「极度省 token」 原则的普适性；其\"敏感内容不出设备 + 出口显式门控\"与 PAMS 设计哲学一致。\nv0.9 即是一次对照这三份研究的集中借鉴（检索质量 / token 经济 / 缺口发现）， 全部只落在检索、注入与调度层——不改写任何记忆内容，详见 路线图「借鉴版」一节。\n第四个数据点来自开源竞品 memU（NevaMind-AI）：它同样坚持记忆服务端\n零 LLM——「什么值得记」的判断交还给宿主 Agent，记忆服务只做存储、嵌入、\n检索这件确定性的事。这与记忆桥核心的分工完全同构。路线分歧在两点：\nmemU 用 LLM 蒸馏生成记忆内容（记忆桥拒绝：内容冻结），跨设备走其\n云托管（记忆桥坚持端到端加密的自持通道）。v0.10 借鉴了它「记忆就是文件」\n的可审计性（membridge export，只读视图永不回写），见\n路线图「memU 借鉴版」一节。\n第五个数据点来自端侧：边缘设备正在成为 AI 基础设施的一等公民。\nOrnith-1.5 的 9B 量化版（约 1.5GB）已能在手机上直接运行；OlliteRT 把\n旧手机变成了 24 小时在线的局域网模型服务器。当手机同时装得下模型与\n服务，记忆桥的基站模式恰好补上这块拼图缺的「记忆」——一部旧手机跑\nOlliteRT（本地推理）+ membridge gateway（记忆底座），就是完全自持、\n零云端的个人 AI 栈（配方见 移动端指南）。边界仍然\n清晰：本地模型在宿主侧，记忆层核心零 LLM。\n第六个数据点来自参数派内部：连高通也在实践「冻结本体 + 外挂记忆」。 Qualcomm AI Research 的 MoNe（ICML 2026）给冻结的模型骨干外挂「在线可写 的神经记忆」，上下文写入一次、提问不再重读——其架构纪律与记忆桥同构： 本体冻结，只外挂可写。分歧只在记忆住在哪：MoNe 把历史写进权重（参数态）， 而 Metis 已承认这条路线难审计、难精确删除、隐私边界难保证；记忆桥坚持 把记忆留在人人可审计的外部存储。冻结是这个领域两派共同的纪律，区别 只在冻什么——他们冻模型，我们冻内容。\n用户只需运行 membridge init：自动检测本机已安装的平台并接入（幂等安全，重复执行无副作用）。\n对完全封闭、不支持任何外部接入的 App，兜底方案是\"剪贴板/分享\"通道\n（membridge context 复制粘贴），永远可用。\ngit clone https://github.com/jiabaobei/memory-bridge.git\ncd memory-bridge\npip install -e .",
+          "status": "entailed"
         },
         {
-          "text": "Across four benchmarks (mathematical reasoning, terminal automation, software repair, and embodied control) and three models, the priors gain 17.2 points (hard) over the no-skill baseline on average...",
-          "support_span": "Across four benchmarks (mathematical reasoning, terminal automation, software repair, and embodied control) and three models, the priors gain 17.2 points (hard) over the no-skill baseline on average, with positive gains in all 12 continual-improvement runs, and 18.0 with local regeneration...",
-          "status": "contradicted"
+          "text": "membridge init               # 强制完成云盘通道配置（默认必做，检测已装同步盘自动配好；\n                             # 没有则引导免费云盘；确要跳过需显式确认），\n                             # 随后自动接入本机各 AI 平台\npython examples/demo.py      # 90 秒看懂：手机记忆 → 差分包 → PC 无缝继续\n为什么第一件事是配云盘？记忆不上云，跨设备无从谈起。 早上手机上的讨论， 只有进了云盘通道，办公室的电脑才能接着继续。按论文测算你的记忆一年仅约 1GB， 任何免费云盘都够用；且同步的是端到端加密的差分包——云盘服务商也看不到内容。\nmembridge init                                           # 一键接入本机检测到的 AI 平台\nmembridge add \"用户在开发记忆桥项目\" --tags dev          # 写入记忆（可选 --kind fact / procedure / handover）\nmembridge search \"记忆桥\" -k 3                          # 三路混合检索（向量 + 关键词 + 图谱，RRF 融合；--scope tag:dev 范围直达）\nmembridge context \"继续早上的讨论\"                       # 输出 Path A 上下文块（最新交接卡恒定注入在【工作台】小节；无命中时明确\"本轮不注入\"）\nmembridge handoff                                       # 查看当前工作台：最新交接卡原文与生效状态\nmembridge handoff-hint                                  # 打印常驻交接提示（自愿粘贴进 CLAUDE.md / AGENTS.md）\nmembridge preload 我的手机                               # 预加载候选（PAMS 门控）\nmembridge delta phone.db --out delta.json               # 生成到另一设备的差分包\nmembridge apply delta.json                              # 并入差分包\nmembridge publish --dir \"D:\\百度网盘同步盘\\membridge\" --passphrase 我的口令   # 发到网盘通道\nmembridge fetch   --dir \"D:\\百度网盘同步盘\\membridge\" --passphrase 我的口令   # 从网盘取回\nmembridge stats                                         # 记忆库概况\nmembridge channel                                       # 通道一致性体检：本机与其他设备是否指向同一云盘通道\nmembridge gateway                                       # 手机/平板接入网关（基站模式，口令保护；--allow 加 IP 白名单）\nmembridge gateway-token                                 # 显示网关访问口令（配置手机时用）\nmembridge export                                        # 导出人类可读的 Markdown 视图（--out 落盘）\nmembridge recall-hint                                   # 打印常驻召回提示（自愿粘贴进 CLAUDE.md / AGENTS.md）\nmembridge rebuild-edges                                 # 全量重建语义关联边（常规 add 只增量建边）\nmembridge doctor                                        # 环境自检（库位置健康 + 通道健康 + 记忆缺口提醒）\nmembridge autosync                                      # 自动同步（init 已注册计划任务，每 15 分钟自动运行）\nmembridge show-passphrase                               # 配对新设备时查看同步口令（系统已替你生成并托管）\nmembridge set-passphrase                                # 手动设置/修改同步口令（一般不需要）\n口令也可由环境变量 MEMBRIDGE_PASSPHRASE 提供，免得每次手输。\n解决完一个难题、调通一个坑，值得存一条经验记忆，未来遇到同类任务 直接命中：\nmembridge add \"部署到 arm64 会段错误，换 x86 镜像后通过\" --kind procedure --tags dev\n--kind procedure = 「试过什么、结果怎样」；--kind fact = 稳定事实。\n纯可选标注，不改变任何默认行为。\nAgent 的上下文有限，长任务靠反复压缩续命，而压缩是有损的—— 「方案B被否决」或许留下了，「为什么被否决」往往先丢。记忆桥的答案： 收工方显式写一张交接卡，完整历史仍由记忆库承载。\nmembridge add \"goal: 修好同步模块\ndone: 差分计算已落地\nfailed: 全量AST解析；依赖太重；除非放弃零依赖否则别重试\nnext: 收敛行前缀解析\nrefs: membridge/store.py\" --kind handover\n- 五行约定 goal / done / failed / next / refs ，正文原文冻结不改写；failed 行用硬句式：试过什么；因为什么失败；除非什么改变否则别重试；\n- 新卡自动取代旧卡——最新一张即生效的工作台，旧的自动降级为历史， 可检索、可审计，永不删除；\n- 注入时工作台恒定在场（不受沉默契约约束——它是状态声明，不是检索命中）， 检索命中的其他记忆照常走原契约；\n- 超 7 天未更新的卡不再恒定注入（过期工作台比没有更危险），降级为\n普通记忆；membridge doctor 会提醒；\n- membridge handoff-hint 打印常驻提示，粘贴进 CLAUDE.md / AGENTS.md，\n让宿主 Agent 养成\"收工前交接、接班先看工作台\"的习惯（软约束，\n与 recall-hint 同款哲学）。\n手机侧不需要记命令：网关随身记页面内置交接卡表单，填五行点「交接班」即可。\npublish 只发送「本地记录中尚未发布过」的记忆。若云盘侧差分包被误删、\n或同步故障清空了通道，本地仍认为已发布——此时：\nmembridge publish --dir \"...\" --force    # 忽略本地记录，重发全量重建通道\n不加 --force 会输出「没有需要发布的新记忆。」，这是幂等表现，不是故障。\n各端共享的前提是「每台设备都能到达同一个网盘文件夹」。电脑有网盘客户端、\n手机平板有 App，唯独网页端容器这类无头 Linux 环境没有任何网盘客户端——\nnetdisk-* 命令组补的就是这一环（经 rclone）。两家都配，主备分明：\n坚果云作主通道（WebDAV 全端可达），OneDrive 作备胎（坚果云出问题时顶上，\n不是淘汰）——始终保持一条主通道：\n# 网页端容器接坚果云（主通道；无浏览器往返：账号 + 应用密码直接交入）：\n#   应用密码在坚果云网页「账户信息 → 安全选项 → 第三方应用管理」生成\nmembridge netdisk-connect --provider jianguoyun --dir /path/to/channel \\\n    --webdav-user <账号> --webdav-pass <应用密码>\n# 网页端容器接 OneDrive（备胎；三步：装同步工具 → 授权 → 首次拉取）：\nmembridge netdisk-connect --dir /path/to/channel\n#   ② 会提示去有浏览器的电脑跑：rclone authorize \"onedrive\"\n#      把得到的 {\"access_token\":...} 交给本端：\nmembridge netdisk-connect --dir /path/to/channel --paste-token '{\"access_token\":...}'\n# 日常同步（主通道先跑、备胎殿后，再跑包级同步）：\nmembridge netdisk-sync --dir /path/to/channel\nmembridge sync --netdisk --dir /path/to/channel   # 同效\n# 电脑（已装网盘客户端，零配置捷径）：\nmembridge netdisk-connect --dir \"D:\\sync\\membridge\"  # 探测到本机云盘目录直接指向\n# 迁通道宿主（v0.20）：复制通道文件 + 改本机指向，差分包去重天然安全\nmembridge channel --move /path/to/new/channel\nmembridge netdisk-status                          # 体检：两家授权与主备角色分开报\nmembridge netdisk-disconnect [--provider onedrive|jianguoyun]  # 按家或全撤（幂等）\n纪律：OAuth token / 应用密码只落盘（rclone 配置文件，权限 600，坚果云密码\n先混淆再落盘），永不打印、永不写进记忆或日志；基线标记与 devices/ 心跳\n目录排除出双向同步；同一通道目录可同时接两家（状态按家登记、主备分明，\nv0.18 旧接线自动兼容）；老通道与既有命令行为不变。\n核心思路：通道的「身份」记在通道自己身上，而不是记在每台设备上——\n认领代替记路径。你唯一要做的，是让各台设备的通道文件夹落在同一个会被\n云盘同步的位置（例如都用 D:\\OneDrive\\membridge，或都用坚果云的\n我的坚果云\\membridge）。之后：\n- 首个设备发布记忆时，会在通道目录写一份通道身份证 channel.json （通道 ID / 创建设备 / 创建时间 / 嵌入器指纹）——纯元数据，不含口令、\n不含任何记忆内容；\n- 之后的每台设备运行 membridge init （或第一次publish /fetch /autosync ）时，检测到目录里已有身份证就自动认领同一通道，并输出\n「已加入既有通道（由某设备创建）」——不需要你手动记路径、不需要复制配置；\n- 若某台设备被误配到另一个通道（本机记录的通道 ID 与身份证对不上），\nmembridge channel /doctor /publish /fetch / 自动同步都会显式\n告警（先到先得不改写，避免两台设备互相覆盖身份证）；\n- 随时用 membridge channel 一屏体检：本机通道、通道身份证、通道里出现过\n的其他设备。\n手机 / 平板不需要通道——它们经 membridge gateway 基站模式直连家里那台\n常开设备（见 移动端指南），天然只指向那一个库。\n个别平台如需手动配置，Claude Code：\nclaude mcp add memory-bridge -- membridge mcp\nCursor / 其他 MCP 客户端（mcp.json）：\n{\n  \"mcpServers\": {\n    \"memory-bridge\": {\n      \"command\": \"membridge\",\n      \"args\": [\"mcp\"],\n      \"env\": { \"MEMBRIDGE_DB\": \"D:/mem/my.db\", \"MEMBRIDGE_DEVICE\": \"我的PC\" }\n    }\n  }\n}\n可用工具：memory_add（Add，可选 kind 标注：fact / procedure / handover）、\nmemory_search（Search，三路混合检索；已知记忆在哪可用 scope 范围直达，\n如 tag:dev；as_context=true 直接返回带预算的 Path A 注入块——最新交接卡\n恒定注入在【工作台】小节，无高质量命中时明确告知本轮不注入）、\nmemory_preload（Preload）——严格限定在 UEP 权限边界内，没有\"改写记忆\"的工具。\n              ┌────────────────────────────────────────────────┐\n              │           跨平台接入层（连接器）                  │\n              │  MCP Server │ CLI │ 平台技能（WorkBuddy 等）     │\n              │   手机/平板（网关 ✅）│ 浏览器插件（计划中）        │\n              └───────────────────────┬────────────────────────┘\n                                      │ 仅开放 Add / Search / Preload\n   ┌──────────────────────────────────▼───────────────────────────────────┐\n   │                 CDSMP 六阶段流水线（记忆桥核心）                        │\n   │                                                                      │\n   │   感知 ──▶ 蒸馏 ──▶ 缓存 ──▶ 同步 ──▶ 注入 ──▶ 反馈                   │\n   │            SAN    TMT    DSS    Path A    AEE(Phase 4)               │\n   │                                                                      │\n   │        PAMS 三级隐私隔离（贯穿所有阶段的数据出口）                       │\n   └──────────────────────────────────┬───────────────────────────────────┘\n                                      │ DSS 差分包（默认端到端加密）\n                                      │ 通道：网盘中转 ✅ / 局域网直连 / 实时中继（Phase 2）\n                        ┌─────────────▼──────────┐\n                        │  本设备记忆库（SQLite）   │◀──▶ 手机 / 平板 / 边缘网关\n                        └────────────────────────┘\n模块与论文公式的逐条映射见 docs/RFC-001-architecture.md。\n- Phase 0 ✅ 仓库与骨架、核心引擎 v0（SAN + Path A + DSS 本地差分 + PAMS L1/L2）、MCP Server\n- Phase 1 🔄 membridge init 一键接入 + doctor 自检 + WorkBuddy 技能 + 远程 MCP 已完成（v0.2）；待办：PyPI 发布、真实 embedding 后端、TS SDK\n- Phase 2 跨设备传输通道：网盘三端直达已完成（v0.18–v0.20，双网盘主备分明，详见路线图）；待办：E2E 加密中继（自托管）、版本向量、冲突解决\n- Phase 3 TMT 边缘驻留（hot/cold 两级）、预加载时机、移动端原生壳（网关已先行，v0.11）、L2 授权流\n- Phase 4 AEE 自适应进化（α / π_nav / θ_window）、Path B experimental 分支、L3 差分隐私、UEP 评测复现脚本\n详见 docs/roadmap.md。\n记忆桥是论文《大模型跨设备语义记忆连续性架构（CDSMP）》的工程实现，论文中\n未实现/后置的组件（Path B、AEE、L3、完整评测）在项目中按同样的顺序后置。\n论文预印本已发布于 Zenodo（含完整 LaTeX 源文件包）：DOI 10.5281/zenodo.22064641。\nREADME 与文档中引用的实验数字（如 TCR 94.7%、带宽 −89%、token 开销 −87.1%）\n均为论文报告值，对应复现脚本将在 Phase 4 随 benchmark/ 目录提供。\n@techreport{cdsmp2026,\n  title  = {大模型跨设备语义记忆连续性架构：基于边缘预加载与多级热缓存的零认知开销推理（CDSMP）},\n  author = {鲜妤佳},\n  year   = {2026},\n  doi    = {10.5281/zenodo.22064641},\n  note   = {预印本 v7}\n}\n三条不变承诺（详细威胁模型见 docs/threat-model.md）：\n- local 标签的记忆在代码路径上就不可能离开原设备（不是策略承诺，是结构保证）；\n- 跨设备同步的默认门控为 PAMS L1/L2，敏感内容自动降级为 local；\n- 记忆库是单机单文件（SQLite），可以整库加密、整库删除、整库带走。\npip install -e \".[dev]\"    # 或不装任何东西：python tests/run_tests.py\npytest -q\n设计变更请先提 Issue 或阅读 docs/RFC-001-architecture.md。 特别欢迎：真实 embedding 后端、移动端连接器、同步中继实现、评测复现。\n- Tencent ncnn：v0.4 起借鉴其零依赖、自描述模型文件 （param/bin）与便携免安装发布的工程实践，映射详见 docs/design-notes/ncnn-borrowings.md。\n- Metis（arXiv 2607.26760）、Proactive Memory Agent（arXiv 2607.08716）与 Perplexity Portable Computer：v0.9 的检索融合、预算注入、沉默契约与工具 描述瘦身借鉴自这三份工作，逐项映射与\"明确不借\"清单见 路线图「借鉴版」一节；airllm 的\"只载入当前需要的层\" 启发了超额条目的原文前缀注入。\n- memU：v0.10 借鉴其「记忆就是文件」\n的可审计性与常驻召回指令思路（分别落为 export 只读视图与recall-hint ）；其「服务端零 LLM」架构与记忆桥同构。自动蒸馏管线与\n云托管不在借鉴之列，理由见 路线图「memU 借鉴版」一节。\n- OlliteRT（旧手机变局域网模型 服务器）：v0.12 借鉴其运行时状态页与「监听范围 + IP 白名单 + Bearer 口令」的安全默认项；「旧手机 24 小时基站」与两者组合的端侧全栈配方 见 移动端指南。Ornith-1.5 9B 上手机的进展则印证了 端侧趋势（见「领域收敛」）。\n- Context7（最新文档直接注入\nprompt）：其三大机制（生成时注入 / 预算控制 / 常驻提醒）与记忆桥\nv0.9/v0.10 同构，是路线的外部背书；v0.13.1 仅借鉴其「已知目标直达」\n洞察（检索 scope 范围直达）。云端托管索引、爬取入库、多包生态不在\n借鉴之列，理由见 路线图「Context7 借鉴版」一节。\n- GitNexus（零服务器代码\n知识图谱引擎）：v0.14 借鉴其「图谱的价值在关系确定」这一核心思路，\n降级落地为确定性实体锚点（零依赖正则抽取，不解析 AST）与类型化边；\n其 [[file:line]] 溯源思路落为召回理由标注，社区检测落为整簇预加载。\n图数据库、Tree-sitter 全量 AST、PDG 污点分析、提交后重索引一律不借\n（与三原则相悖），理由见 路线图「GitNexus 借鉴版」一节。",
+          "support_span": "membridge init               # 强制完成云盘通道配置（默认必做，检测已装同步盘自动配好；\n                             # 没有则引导免费云盘；确要跳过需显式确认），\n                             # 随后自动接入本机各 AI 平台\npython examples/demo.py      # 90 秒看懂：手机记忆 → 差分包 → PC 无缝继续\n为什么第一件事是配云盘？记忆不上云，跨设备无从谈起。 早上手机上的讨论， 只有进了云盘通道，办公室的电脑才能接着继续。按论文测算你的记忆一年仅约 1GB， 任何免费云盘都够用；且同步的是端到端加密的差分包——云盘服务商也看不到内容。\nmembridge init                                           # 一键接入本机检测到的 AI 平台\nmembridge add \"用户在开发记忆桥项目\" --tags dev          # 写入记忆（可选 --kind fact / procedure / handover）\nmembridge search \"记忆桥\" -k 3                          # 三路混合检索（向量 + 关键词 + 图谱，RRF 融合；--scope tag:dev 范围直达）\nmembridge context \"继续早上的讨论\"                       # 输出 Path A 上下文块（最新交接卡恒定注入在【工作台】小节；无命中时明确\"本轮不注入\"）\nmembridge handoff                                       # 查看当前工作台：最新交接卡原文与生效状态\nmembridge handoff-hint                                  # 打印常驻交接提示（自愿粘贴进 CLAUDE.md / AGENTS.md）\nmembridge preload 我的手机                               # 预加载候选（PAMS 门控）\nmembridge delta phone.db --out delta.json               # 生成到另一设备的差分包\nmembridge apply delta.json                              # 并入差分包\nmembridge publish --dir \"D:\\百度网盘同步盘\\membridge\" --passphrase 我的口令   # 发到网盘通道\nmembridge fetch   --dir \"D:\\百度网盘同步盘\\membridge\" --passphrase 我的口令   # 从网盘取回\nmembridge stats                                         # 记忆库概况\nmembridge channel                                       # 通道一致性体检：本机与其他设备是否指向同一云盘通道\nmembridge gateway                                       # 手机/平板接入网关（基站模式，口令保护；--allow 加 IP 白名单）\nmembridge gateway-token                                 # 显示网关访问口令（配置手机时用）\nmembridge export                                        # 导出人类可读的 Markdown 视图（--out 落盘）\nmembridge recall-hint                                   # 打印常驻召回提示（自愿粘贴进 CLAUDE.md / AGENTS.md）\nmembridge rebuild-edges                                 # 全量重建语义关联边（常规 add 只增量建边）\nmembridge doctor                                        # 环境自检（库位置健康 + 通道健康 + 记忆缺口提醒）\nmembridge autosync                                      # 自动同步（init 已注册计划任务，每 15 分钟自动运行）\nmembridge show-passphrase                               # 配对新设备时查看同步口令（系统已替你生成并托管）\nmembridge set-passphrase                                # 手动设置/修改同步口令（一般不需要）\n口令也可由环境变量 MEMBRIDGE_PASSPHRASE 提供，免得每次手输。\n解决完一个难题、调通一个坑，值得存一条经验记忆，未来遇到同类任务 直接命中：\nmembridge add \"部署到 arm64 会段错误，换 x86 镜像后通过\" --kind procedure --tags dev\n--kind procedure = 「试过什么、结果怎样」；--kind fact = 稳定事实。\n纯可选标注，不改变任何默认行为。\nAgent 的上下文有限，长任务靠反复压缩续命，而压缩是有损的—— 「方案B被否决」或许留下了，「为什么被否决」往往先丢。记忆桥的答案： 收工方显式写一张交接卡，完整历史仍由记忆库承载。\nmembridge add \"goal: 修好同步模块\ndone: 差分计算已落地\nfailed: 全量AST解析；依赖太重；除非放弃零依赖否则别重试\nnext: 收敛行前缀解析\nrefs: membridge/store.py\" --kind handover\n- 五行约定 goal / done / failed / next / refs ，正文原文冻结不改写；failed 行用硬句式：试过什么；因为什么失败；除非什么改变否则别重试；\n- 新卡自动取代旧卡——最新一张即生效的工作台，旧的自动降级为历史， 可检索、可审计，永不删除；\n- 注入时工作台恒定在场（不受沉默契约约束——它是状态声明，不是检索命中）， 检索命中的其他记忆照常走原契约；\n- 超 7 天未更新的卡不再恒定注入（过期工作台比没有更危险），降级为\n普通记忆；membridge doctor 会提醒；\n- membridge handoff-hint 打印常驻提示，粘贴进 CLAUDE.md / AGENTS.md，\n让宿主 Agent 养成\"收工前交接、接班先看工作台\"的习惯（软约束，\n与 recall-hint 同款哲学）。\n手机侧不需要记命令：网关随身记页面内置交接卡表单，填五行点「交接班」即可。\npublish 只发送「本地记录中尚未发布过」的记忆。若云盘侧差分包被误删、\n或同步故障清空了通道，本地仍认为已发布——此时：\nmembridge publish --dir \"...\" --force    # 忽略本地记录，重发全量重建通道\n不加 --force 会输出「没有需要发布的新记忆。」，这是幂等表现，不是故障。\n各端共享的前提是「每台设备都能到达同一个网盘文件夹」。电脑有网盘客户端、\n手机平板有 App，唯独网页端容器这类无头 Linux 环境没有任何网盘客户端——\nnetdisk-* 命令组补的就是这一环（经 rclone）。两家都配，主备分明：\n坚果云作主通道（WebDAV 全端可达），OneDrive 作备胎（坚果云出问题时顶上，\n不是淘汰）——始终保持一条主通道：\n# 网页端容器接坚果云（主通道；无浏览器往返：账号 + 应用密码直接交入）：\n#   应用密码在坚果云网页「账户信息 → 安全选项 → 第三方应用管理」生成\nmembridge netdisk-connect --provider jianguoyun --dir /path/to/channel \\\n    --webdav-user <账号> --webdav-pass <应用密码>\n# 网页端容器接 OneDrive（备胎；三步：装同步工具 → 授权 → 首次拉取）：\nmembridge netdisk-connect --dir /path/to/channel\n#   ② 会提示去有浏览器的电脑跑：rclone authorize \"onedrive\"\n#      把得到的 {\"access_token\":...} 交给本端：\nmembridge netdisk-connect --dir /path/to/channel --paste-token '{\"access_token\":...}'\n# 日常同步（主通道先跑、备胎殿后，再跑包级同步）：\nmembridge netdisk-sync --dir /path/to/channel\nmembridge sync --netdisk --dir /path/to/channel   # 同效\n# 电脑（已装网盘客户端，零配置捷径）：\nmembridge netdisk-connect --dir \"D:\\sync\\membridge\"  # 探测到本机云盘目录直接指向\n# 迁通道宿主（v0.20）：复制通道文件 + 改本机指向，差分包去重天然安全\nmembridge channel --move /path/to/new/channel\nmembridge netdisk-status                          # 体检：两家授权与主备角色分开报\nmembridge netdisk-disconnect [--provider onedrive|jianguoyun]  # 按家或全撤（幂等）\n纪律：OAuth token / 应用密码只落盘（rclone 配置文件，权限 600，坚果云密码\n先混淆再落盘），永不打印、永不写进记忆或日志；基线标记与 devices/ 心跳\n目录排除出双向同步；同一通道目录可同时接两家（状态按家登记、主备分明，\nv0.18 旧接线自动兼容）；老通道与既有命令行为不变。\n核心思路：通道的「身份」记在通道自己身上，而不是记在每台设备上——\n认领代替记路径。你唯一要做的，是让各台设备的通道文件夹落在同一个会被\n云盘同步的位置（例如都用 D:\\OneDrive\\membridge，或都用坚果云的\n我的坚果云\\membridge）。之后：\n- 首个设备发布记忆时，会在通道目录写一份通道身份证 channel.json （通道 ID / 创建设备 / 创建时间 / 嵌入器指纹）——纯元数据，不含口令、\n不含任何记忆内容；\n- 之后的每台设备运行 membridge init （或第一次publish /fetch /autosync ）时，检测到目录里已有身份证就自动认领同一通道，并输出\n「已加入既有通道（由某设备创建）」——不需要你手动记路径、不需要复制配置；\n- 若某台设备被误配到另一个通道（本机记录的通道 ID 与身份证对不上），\nmembridge channel /doctor /publish /fetch / 自动同步都会显式\n告警（先到先得不改写，避免两台设备互相覆盖身份证）；\n- 随时用 membridge channel 一屏体检：本机通道、通道身份证、通道里出现过\n的其他设备。\n手机 / 平板不需要通道——它们经 membridge gateway 基站模式直连家里那台\n常开设备（见 移动端指南），天然只指向那一个库。\n个别平台如需手动配置，Claude Code：\nclaude mcp add memory-bridge -- membridge mcp\nCursor / 其他 MCP 客户端（mcp.json）：\n{\n  \"mcpServers\": {\n    \"memory-bridge\": {\n      \"command\": \"membridge\",\n      \"args\": [\"mcp\"],\n      \"env\": { \"MEMBRIDGE_DB\": \"D:/mem/my.db\", \"MEMBRIDGE_DEVICE\": \"我的PC\" }\n    }\n  }\n}\n可用工具：memory_add（Add，可选 kind 标注：fact / procedure / handover）、\nmemory_search（Search，三路混合检索；已知记忆在哪可用 scope 范围直达，\n如 tag:dev；as_context=true 直接返回带预算的 Path A 注入块——最新交接卡\n恒定注入在【工作台】小节，无高质量命中时明确告知本轮不注入）、\nmemory_preload（Preload）——严格限定在 UEP 权限边界内，没有\"改写记忆\"的工具。\n              ┌────────────────────────────────────────────────┐\n              │           跨平台接入层（连接器）                  │\n              │  MCP Server │ CLI │ 平台技能（WorkBuddy 等）     │\n              │   手机/平板（网关 ✅）│ 浏览器插件（计划中）        │\n              └───────────────────────┬────────────────────────┘\n                                      │ 仅开放 Add / Search / Preload\n   ┌──────────────────────────────────▼───────────────────────────────────┐\n   │                 CDSMP 六阶段流水线（记忆桥核心）                        │\n   │                                                                      │\n   │   感知 ──▶ 蒸馏 ──▶ 缓存 ──▶ 同步 ──▶ 注入 ──▶ 反馈                   │\n   │            SAN    TMT    DSS    Path A    AEE(Phase 4)               │\n   │                                                                      │\n   │        PAMS 三级隐私隔离（贯穿所有阶段的数据出口）                       │\n   └──────────────────────────────────┬───────────────────────────────────┘\n                                      │ DSS 差分包（默认端到端加密）\n                                      │ 通道：网盘中转 ✅ / 局域网直连 / 实时中继（Phase 2）\n                        ┌─────────────▼──────────┐\n                        │  本设备记忆库（SQLite）   │◀──▶ 手机 / 平板 / 边缘网关\n                        └────────────────────────┘\n模块与论文公式的逐条映射见 docs/RFC-001-architecture.md。\n- Phase 0 ✅ 仓库与骨架、核心引擎 v0（SAN + Path A + DSS 本地差分 + PAMS L1/L2）、MCP Server\n- Phase 1 🔄 membridge init 一键接入 + doctor 自检 + WorkBuddy 技能 + 远程 MCP 已完成（v0.2）；待办：PyPI 发布、真实 embedding 后端、TS SDK\n- Phase 2 跨设备传输通道：网盘三端直达已完成（v0.18–v0.20，双网盘主备分明，详见路线图）；待办：E2E 加密中继（自托管）、版本向量、冲突解决\n- Phase 3 TMT 边缘驻留（hot/cold 两级）、预加载时机、移动端原生壳（网关已先行，v0.11）、L2 授权流\n- Phase 4 AEE 自适应进化（α / π_nav / θ_window）、Path B experimental 分支、L3 差分隐私、UEP 评测复现脚本\n详见 docs/roadmap.md。\n记忆桥是论文《大模型跨设备语义记忆连续性架构（CDSMP）》的工程实现，论文中\n未实现/后置的组件（Path B、AEE、L3、完整评测）在项目中按同样的顺序后置。\n论文预印本已发布于 Zenodo（含完整 LaTeX 源文件包）：DOI 10.5281/zenodo.22064641。\nREADME 与文档中引用的实验数字（如 TCR 94.7%、带宽 −89%、token 开销 −87.1%）\n均为论文报告值，对应复现脚本将在 Phase 4 随 benchmark/ 目录提供。\n@techreport{cdsmp2026,\n  title  = {大模型跨设备语义记忆连续性架构：基于边缘预加载与多级热缓存的零认知开销推理（CDSMP）},\n  author = {鲜妤佳},\n  year   = {2026},\n  doi    = {10.5281/zenodo.22064641},\n  note   = {预印本 v7}\n}\n三条不变承诺（详细威胁模型见 docs/threat-model.md）：\n- local 标签的记忆在代码路径上就不可能离开原设备（不是策略承诺，是结构保证）；\n- 跨设备同步的默认门控为 PAMS L1/L2，敏感内容自动降级为 local；\n- 记忆库是单机单文件（SQLite），可以整库加密、整库删除、整库带走。\npip install -e \".[dev]\"    # 或不装任何东西：python tests/run_tests.py\npytest -q\n设计变更请先提 Issue 或阅读 docs/RFC-001-architecture.md。 特别欢迎：真实 embedding 后端、移动端连接器、同步中继实现、评测复现。\n- Tencent ncnn：v0.4 起借鉴其零依赖、自描述模型文件 （param/bin）与便携免安装发布的工程实践，映射详见 docs/design-notes/ncnn-borrowings.md。\n- Metis（arXiv 2607.26760）、Proactive Memory Agent（arXiv 2607.08716）与 Perplexity Portable Computer：v0.9 的检索融合、预算注入、沉默契约与工具 描述瘦身借鉴自这三份工作，逐项映射与\"明确不借\"清单见 路线图「借鉴版」一节；airllm 的\"只载入当前需要的层\" 启发了超额条目的原文前缀注入。\n- memU：v0.10 借鉴其「记忆就是文件」\n的可审计性与常驻召回指令思路（分别落为 export 只读视图与recall-hint ）；其「服务端零 LLM」架构与记忆桥同构。自动蒸馏管线与\n云托管不在借鉴之列，理由见 路线图「memU 借鉴版」一节。\n- OlliteRT（旧手机变局域网模型 服务器）：v0.12 借鉴其运行时状态页与「监听范围 + IP 白名单 + Bearer 口令」的安全默认项；「旧手机 24 小时基站」与两者组合的端侧全栈配方 见 移动端指南。Ornith-1.5 9B 上手机的进展则印证了 端侧趋势（见「领域收敛」）。\n- Context7（最新文档直接注入\nprompt）：其三大机制（生成时注入 / 预算控制 / 常驻提醒）与记忆桥\nv0.9/v0.10 同构，是路线的外部背书；v0.13.1 仅借鉴其「已知目标直达」\n洞察（检索 scope 范围直达）。云端托管索引、爬取入库、多包生态不在\n借鉴之列，理由见 路线图「Context7 借鉴版」一节。\n- GitNexus（零服务器代码\n知识图谱引擎）：v0.14 借鉴其「图谱的价值在关系确定」这一核心思路，\n降级落地为确定性实体锚点（零依赖正则抽取，不解析 AST）与类型化边；\n其 [[file:line]] 溯源思路落为召回理由标注，社区检测落为整簇预加载。\n图数据库、Tree-sitter 全量 AST、PDG 污点分析、提交后重索引一律不借\n（与三原则相悖），理由见 路线图「GitNexus 借鉴版」一节。",
+          "status": "entailed"
         }
       ],
-      "trust_score": 70,
-      "interest_score": 50,
+      "trust_score": 0,
+      "interest_score": 0,
       "corroboration": 1,
-      "blend": 47.5,
+      "blend": 0.0,
       "is_new": true,
       "alt_keys": [
-        "55a2f37cdc9b1eb1"
+        "79186003ddb836a8"
       ],
       "critical_signal": "",
-      "priority": "important",
+      "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.02217",
-          "domain": "arxiv.org",
-          "tier": "A"
+          "name": "GitHub (new)",
+          "url": "https://github.com/jiabaobei/memory-bridge",
+          "domain": "github.com",
+          "tier": "C"
         }
       ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.02217"
-      ],
-      "published": "2026-09-03T04:00:00+00:00",
+      "primary_links": [],
+      "published": "2026-08-29T04:34:06+00:00",
       "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
+        "summary: heuristic extractive (no LLM configured)"
       ],
-      "reject_reason": "2 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-08-29 — outside lookback window"
+    },
+    {
+      "cluster_key": "2ee9a84eaf19ac9a",
+      "title": "useagenthq/useagent — The open-source AI coworker for your team: agents with their own cloud computer, your tools and context, handi",
+      "category": "tech_ai",
+      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "tags": [
+        "agents",
+        "ai",
+        "dfir",
+        "linux",
+        "llm",
+        "opensource"
+      ],
+      "summary": "The open-source AI coworker for your team. Quick Start · Self-hosting · Documentation · Architecture Alpha software. useAgent is under active development: expect rough edges, and APIs/schemas may change between releases.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [
+        {
+          "text": "The open-source AI coworker for your team.",
+          "support_span": "The open-source AI coworker for your team.",
+          "status": "entailed"
+        },
+        {
+          "text": "Quick Start · Self-hosting · Documentation · Architecture\nAlpha software.",
+          "support_span": "Quick Start · Self-hosting · Documentation · Architecture\nAlpha software.",
+          "status": "entailed"
+        },
+        {
+          "text": "useAgent is under active development: expect rough edges, and APIs/schemas may change between releases.",
+          "support_span": "useAgent is under active development: expect rough edges, and APIs/schemas may change between releases.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "alt_keys": [
+        "2ee9a84eaf19ac9a"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/useagenthq/useagent",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-29T21:14:31+00:00",
+      "trace": [
+        "summary: heuristic extractive (no LLM configured)"
+      ],
+      "reject_reason": "published 2026-08-29 — outside lookback window"
     },
     {
       "cluster_key": "b43bcdc852da6d56",
@@ -1262,309 +473,105 @@
       "reject_reason": "published 2026-08-28 — outside lookback window"
     },
     {
-      "cluster_key": "3733ca5e7ba69bd4",
-      "title": "Loom: Weaving Diagnostic Strands into Free-Text Consensus via Embedding-Space Reweighting",
-      "category": "tech_ai",
-      "one_liner": "Loom aggregates noisy diagnostic hypotheses into a rapid, consensus-driven Root Cause Analysis framework using embedding-space reweighting.",
+      "cluster_key": "881f9938855149b8",
+      "title": "KTR Sets September 14 Deadline, Threatens Padyatra Over Nagarjuna Sagar Water",
+      "category": "india_world",
+      "one_liner": "BRS leader KTR sets a September 14 deadline and threatens a padyatra over Nagarjuna Sagar water distribution.",
       "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "research",
-        "tool",
-        "writeup"
+        "india",
+        "policy"
       ],
-      "summary": "Loom is a generative consensus framework for real-world Root Cause Analysis that aggregates open-form hypotheses emitted by modular diagnostic heuristics. By projecting textual hypotheses into a continuous embedding space and resolving conflicts via an iterative centroid-based reweighting algorithm, Loom feeds a single lightweight LLM synthesis step. Evaluations on the OpenRCA benchmark show that Loom matches state-of-the-art autonomous agents on multiple datasets while operating roughly 26 times faster with a single LLM call per incident. This deterministic consensus approach reduces inference latency and fosters trust among subject matter experts.",
+      "summary": "BRS leader K.T. Rama Rao (KTR) has issued a September 14 deadline to the ruling Congress government in Telangana over water allocations from Nagarjuna Sagar, threatening to launch a padyatra if demands are unmet. KTR criticized the administration for failing to fulfill election promises made to local farmers regarding irrigation and water supply. The ultimatum ramps up regional political friction ahead of the announced protest march.",
       "key_facts": [
-        "Speedup factor: ~26x faster than state-of-the-art agents",
-        "LLM calls per incident: 1"
+        "Deadline: September 14",
+        "Leader: KTR",
+        "Key issue: Nagarjuna Sagar water"
       ],
-      "bottom_line": "Loom accelerates root cause analysis by replacing expensive multi-turn agent loops with an embedding-space centroid consensus feeding a single LLM call.",
+      "bottom_line": "Telangana's Congress government faces a September 14 ultimatum from BRS leader KTR over agricultural water allocations, threatening widespread protests.",
       "claims": [
         {
-          "text": "We present Loom, a generative consensus framework deployed for real-world RCA that bridges these paradigms.",
-          "support_span": "We present Loom, a generative consensus framework deployed for real-world RCA that bridges these paradigms.",
-          "status": "entailed"
-        },
-        {
-          "text": "Evaluated on the OpenRCA benchmark, Loom occupies the accuracy--efficiency Pareto frontier: it matches a state-of-the-art autonomous agent on Bank and Market-2 and trails on Market-1 and Telecom, while using a single LLM call per incident on all four datasets (~26× faster; ~33× with an 8B-parameter synthesizer).",
-          "support_span": "Evaluated on the OpenRCA benchmark, Loom occupies the accuracy--efficiency Pareto frontier: it matches a state-of-the-art autonomous agent on Bank and Market-2 and trails on Market-1 and Telecom, while using a single LLM call per incident on all four datasets (~26× faster; ~33× with an 8B-parameter synthesizer).",
+          "text": "KTR Sets September 14 Deadline, Threatens Padyatra Over Nagarjuna Sagar Water",
+          "support_span": "KTR Sets September 14 Deadline, Threatens Padyatra Over Nagarjuna Sagar Water",
           "status": "contradicted"
         }
       ],
-      "trust_score": 70,
+      "trust_score": 25,
       "interest_score": 50,
       "corroboration": 1,
-      "blend": 47.5,
+      "blend": 36.2,
       "is_new": true,
       "alt_keys": [
-        "3733ca5e7ba69bd4"
+        "881f9938855149b8"
       ],
       "critical_signal": "",
-      "priority": "important",
+      "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.02649",
-          "domain": "arxiv.org",
-          "tier": "A"
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/india-news/ktr-sets-september-14-deadline-threatens-padyatra-over-nagarjuna-sagar-water-12000565#publisher=newsstand",
+          "domain": "ndtv.com",
+          "tier": "B"
         }
       ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.02649"
-      ],
-      "published": "2026-09-03T04:00:00+00:00",
+      "primary_links": [],
+      "published": "2026-09-04T04:51:25+00:00",
       "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
         "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
+        "blend 36 = trust 25 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "e156c103e788da0c",
-      "title": "When Agents Implement Systems: A Case Study in Defects, Detection, and Evaluation Rigor",
-      "category": "tech_ai",
-      "one_liner": "Analyze the defects and retrieval performance of LLM coding agents implementing complex multi-component data systems.",
+      "cluster_key": "827a8712ea7bc1c9",
+      "title": "Slogans, Torn Kurtas In AAP vs BJP During Delhi Civic Body Panel Election",
+      "category": "india_world",
+      "one_liner": "Clashes, slogans, and torn kurtas mark confrontations between AAP and BJP councillors during Delhi civic body panel elections.",
       "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "research"
+        "india",
+        "policy"
       ],
-      "summary": "This case study examines the systems-level engineering behavior of LLM coding agents implementing a multi-component data system from a detailed specification. Over a single session, the agent introduced and diagnosed five distinct defects spanning schema design, asynchronous orchestration, and configuration correctness. The evaluation also tested retrieval-filtering trade-offs on the HotpotQA benchmark, demonstrating that restricting candidates to graph-identified entities prior to ranking drastically outperforms unfiltered search across all tested budgets.",
+      "summary": "Aam Aadmi Party (AAP) and Bharatiya Janata Party (BJP) councillors clashed at the Delhi Mayor's office during the Delhi civic body panel election, resulting in disrupted proceedings, slogans, and torn kurtas. Tensions flared as political rivals confronted each other over panel positions. Such incidents highlight ongoing friction between opposing municipal political factions in Delhi.",
       "key_facts": [
-        "Defects cataloged: 5",
-        "Pooled corpus size: 2994 paragraphs",
-        "Unfiltered search recall: 69 percent at budget of 10"
+        "Parties involved: AAP, BJP",
+        "Location: Delhi Mayor's office"
       ],
-      "bottom_line": "Filtering retrieval candidates before ranking is essential for LLM agents to reliably recover required evidence.",
+      "bottom_line": "Municipal elections in Delhi turned chaotic as AAP and BJP councillors clashed physically inside the Mayor's office.",
       "claims": [
         {
-          "text": "Over a single session, we catalog five such defects, categorized by constraint violated and detection method.",
-          "support_span": "Over a single session, we catalog five such defects, categorized by constraint violated and detection method.",
-          "status": "entailed"
-        },
-        {
-          "text": "Across retrieval budgets from 1 to 10 and 100 questions against a pooled corpus of 2994 paragraphs, filtered recall reaches its ceiling by a budget of 3...",
-          "support_span": "Across retrieval budgets from 1 to 10 and 100 questions against a pooled corpus of 2994 paragraphs, filtered recall reaches its ceiling by a budget of 3, expected once candidates are restricted to the gold paragraphs themselves, while unfiltered search recovers all required evidence only 69 percent of the time even at a budget of 10...",
+          "text": "Slogans, Torn Kurtas In AAP vs BJP During Delhi Civic Body Panel Election",
+          "support_span": "Slogans, Torn Kurtas In AAP vs BJP During Delhi Civic Body Panel Election",
           "status": "contradicted"
         }
       ],
-      "trust_score": 70,
-      "interest_score": 50,
+      "trust_score": 25,
+      "interest_score": 25,
       "corroboration": 1,
-      "blend": 47.5,
+      "blend": 25.0,
       "is_new": true,
       "alt_keys": [
-        "e156c103e788da0c"
+        "827a8712ea7bc1c9"
       ],
       "critical_signal": "",
-      "priority": "important",
+      "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.01985",
-          "domain": "arxiv.org",
-          "tier": "A"
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/india-news/mcd-sc-panel-election-slogans-torn-kurtas-in-aap-vs-bjp-during-delhi-civic-body-panel-election-12000311#publisher=newsstand",
+          "domain": "ndtv.com",
+          "tier": "B"
         }
       ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.01985"
-      ],
-      "published": "2026-09-03T04:00:00+00:00",
+      "primary_links": [],
+      "published": "2026-09-04T03:26:28+00:00",
       "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "26f8568860830e72",
-      "title": "SafeEvolve: Harness-Policy Co-Evolution from Agent Experience for Safety Alignment",
-      "category": "tech_ai",
-      "one_liner": "SafeEvolve aligns LLM agent safety through an experience-driven loop of runtime harness and policy co-evolution.",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "tool"
-      ],
-      "summary": "SafeEvolve is an experience-driven self-evolving framework for LLM agent safety alignment that couples harness updates with policy optimization. By transforming completed on-policy trajectory safety evidence into bounded component-level updates across safety prompts and skills, the framework drives a continual loop of harness-policy co-evolution using a two-stage SFT-RL training paradigm. Experiments on agentic benchmarks show that SafeEvolve significantly improves safety-utility trade-offs, reducing the Attack Success Rate by 3x on AgentDojo for Qwen3.5-4B while increasing benign utility from 59.79 percent to 61.86 percent.",
-      "key_facts": [
-        "Model evaluated: Qwen3.5-4B",
-        "ASR reduction: 3x on AgentDojo",
-        "Benign utility improvement: From 59.79% to 61.86%"
-      ],
-      "bottom_line": "SafeEvolve achieves superior agent safety alignment by co-evolving runtime harnesses and policies using empirical execution trajectories.",
-      "claims": [
-        {
-          "text": "We propose SafeEvolve, an experience-driven self-evolving framework for agent safety alignment.",
-          "support_span": "We propose SafeEvolve, an experience-driven self-evolving framework for agent safety alignment.",
-          "status": "entailed"
-        },
-        {
-          "text": "For Qwen3.5-4B, SafeEvolve achieves a 3× ASR reduction on AgentDojo while improving benign utility from 59.79% to 61.86%.",
-          "support_span": "For Qwen3.5-4B, SafeEvolve achieves a 3× ASR reduction on AgentDojo while improving benign utility from 59.79% to 61.86%.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "alt_keys": [
-        "26f8568860830e72"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2609.02786",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.02786"
-      ],
-      "published": "2026-09-03T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "5b44621e79ec7d90",
-      "title": "Safety Does Not Compose: Non-Decaying Loop State for Autonomous LLM Agents",
-      "category": "tech_ai",
-      "one_liner": "LoopHarness provides a persistent, non-decaying safety state across LLM agent loops to prevent multi-iteration fragmented attacks.",
-      "tags": [
-        "agents",
-        "ai",
-        "blueteam",
-        "llm",
-        "redteam",
-        "tool"
-      ],
-      "summary": "Autonomous LLM agents operate in unattended loops across many iterations, but standard safeguards are defined over a single trajectory and re-initialized when a new trajectory begins. The authors show a theoretical separation: trajectory-scoped monitors fail against attacks whose evidence is fragmented across iterations, whereas a monitor retaining cross-iteration state succeeds. While geometrically decaying risk scores are insufficient due to fixed wait times, the authors introduce LoopHarness, which enforces a persistent, non-decaying safety state at the loop level. Under mediated commits and an arbiter detection floor, LoopHarness bounds unauthorized irreversible actions to a constant term, surviving fully colluding verifiers.",
-      "key_facts": [],
-      "bottom_line": "Trajectory-scoped monitors fail against multi-step attacks, requiring loop-level persistent state architectures to bound unauthorized actions.",
-      "claims": [
-        {
-          "text": "Our central result is a separation: against an attack whose evidence is fragmented across several iterations, every trajectory-scoped monitor has a true-positive rate equal to its false-positive rate...",
-          "support_span": "Our central result is a separation: against an attack whose evidence is fragmented across several iterations, every trajectory-scoped monitor has a true-positive rate equal to its false-positive rate, however expressive it is, because the evidence it would need never appears in the window it sees...",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "alt_keys": [
-        "5b44621e79ec7d90"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2608.27141",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2608.27141"
-      ],
-      "published": "2026-09-03T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from cache",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "4596e7be42add6af",
-      "title": "FUSE: An Evaluating Framework for Dangerous Capabilities of LLMs",
-      "category": "tech_ai",
-      "one_liner": "Evaluate dangerous AI capabilities across Knowledge, Defense, and Harm pipelines using the modular FUSE framework.",
-      "tags": [
-        "ai",
-        "llm",
-        "policy",
-        "privacy",
-        "research",
-        "tool"
-      ],
-      "summary": "Researchers introduce FUSE, a modular evaluation framework designed to assess dangerous AI capabilities across three orthogonal pipelines: Knowledge (K), Defense (D), and Harm (H). Evaluating 12 commercial LLMs through a chemical-biological module and a cyber pilot, the study reveals that model safety profiles diverge sharply, with strong defenders failing to consistently suppress harmful content upon compliance. Furthermore, a temporal analysis shows that dangerous capabilities have not declined monotonically in newer model releases, highlighting gaps between scaling progress and safety alignment.",
-      "key_facts": [
-        "Commercial models evaluated: 12 models from 4 families",
-        "Pipelines: Knowledge (K), Defense (D), Harm (H)"
-      ],
-      "bottom_line": "Model scaling and general capability improvements do not uniformly translate into better safety alignment or reduced dangerous capabilities.",
-      "claims": [
-        {
-          "text": "We present a modular framework that evaluates each model through three orthogonal pipelines---Knowledge (K), Defense (D), and Harm (H)---under a unified protocol, aggregating results into a standardized dangerous-capability profile.",
-          "support_span": "We present a modular framework that evaluates each model through three orthogonal pipelines---Knowledge (K), Defense (D), and Harm (H)---under a unified protocol, aggregating results into a standardized dangerous-capability profile $\\phi$.",
-          "status": "contradicted"
-        },
-        {
-          "text": "Instantiating the framework with a chemical-biological (CB) module, we evaluate 12 commercial LLMs from four families.",
-          "support_span": "Instantiating the framework with a chemical-biological (CB) module, we evaluate 12 commercial LLMs from four families.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "alt_keys": [
-        "4596e7be42add6af"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.02168",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.02168"
-      ],
-      "published": "2026-09-03T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 25 = trust 25 / interest 25 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     }

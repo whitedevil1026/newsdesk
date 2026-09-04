@@ -43,5 +43,10 @@
     "gemini-3.5-flash-lite": 7,
     "gemma-4-31b-it": 5,
     "gemini-3.1-flash-lite": 3
+  },
+  "2026-09-04": {
+    "gemini-3.5-flash-lite": 4,
+    "gemini-3.1-flash-lite": 3,
+    "gemma-4-26b-a4b-it": 2
   }
 }
