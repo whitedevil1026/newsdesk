@@ -773,6 +773,9 @@ class TestSecretsFilePermissions:
 
     def test_matcher_allows_an_owner_only_acl(self):
         from pipeline.config import _ACL_RISKY
+        # Generic on purpose: this fixture was originally pasted from a real
+        # icacls run, which put a machine name and a local account name into
+        # a file destined for a public repository.
         safe = ".env DESKTOP-EXAMPLE" + chr(92) + "owner:(R,W)"
         assert not list(_ACL_RISKY.finditer(safe))
 
