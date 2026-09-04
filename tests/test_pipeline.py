@@ -468,6 +468,12 @@ class TestScheduleTellsTheTruth:
         root = Path(__file__).resolve().parent.parent
         wf = (root / ".github/workflows/newsdesk.yml").read_text(encoding="utf-8")
         crons = re.findall(r'- cron:\s*"([^"]+)"', wf)
+        if not crons:
+            # The public mirror carries the workflow for reference but has no
+            # schedule — it holds no API key, so a cron there would fail every
+            # morning. Nothing to keep in step in that copy.
+            import pytest
+            pytest.skip("no schedule in this copy of the workflow")
         assert settings()["schedule"]["cron_utc"] in crons
 
     def test_next_update_accounts_for_the_queue_delay(self):
