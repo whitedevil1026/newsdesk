@@ -29,15 +29,34 @@ def _resolve_links(items: list[Item]) -> None:
     """Turn Google News redirects into real publisher URLs, in place.
 
     Runs here rather than at harvest because it costs two HTTP requests per
-    link. Only what is actually being published is worth that — roughly 40
-    links instead of several hundred, and the results are cached forever.
+    link, and the results are cached forever.
+
+    BOUNDED, because "only what is being published" stopped meaning 40 items.
+    When the publish cap went from 40 to everything in the window this became
+    ~1,150 items' worth of links, and a rebuild sat for forty minutes at 1.2
+    seconds of CPU — blocked on network, one redirect at a time, on course to
+    blow the workflow's 75-minute budget.
+
+    Items arrive ranked, so the cap spends the requests on the stories nearest
+    the top of the page. An unresolved Google News link is not broken: it
+    still redirects correctly in a browser, it just shows news.google.com as
+    the source until a later run resolves it from cache.
     """
     from . import gnews
 
-    targets = [s["url"] for i in items for s in i.sources
-               if gnews.is_gnews(s["url"])]
+    limit = int((settings().get("publish") or {}).get("max_link_resolutions", 150))
+    targets, seen = [], set()
+    for item in items:                       # already ranked best-first
+        for s in item.sources:
+            u = s["url"]
+            if gnews.is_gnews(u) and u not in seen:
+                seen.add(u)
+                targets.append(u)
+        if len(targets) >= limit:
+            break
     if not targets:
         return
+    log("publish", f"resolving {len(targets)} Google News links (cap {limit})")
 
     resolved = gnews.resolve_many(targets)
     fixed = 0

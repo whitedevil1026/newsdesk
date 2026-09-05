@@ -50,6 +50,14 @@ window:
   # cap alone does not stop one section crowding out another.
   per_category_min: 3
 
+# Publishing.
+publish:
+  # Google News links need two HTTP requests each to resolve to the real
+  # publisher. That was ~40 requests when the page showed 40 stories; at
+  # ~1,150 it stalled a rebuild for forty minutes. Spend them on the top of
+  # the page — an unresolved link still redirects correctly in a browser.
+  max_link_resolutions: 150
+
 # Full-text extraction. One HTTP fetch per cluster lead, so this — not the
 # number of published cards — is what sets the run's length. Everything past
 # this limit keeps the feed's own blurb as its body, which is exactly what a

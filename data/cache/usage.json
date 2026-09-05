@@ -64,6 +64,7 @@
     "_failed": {
       "gemini-3.7-flash": 1,
       "gemini-3-flash-preview": 1
-    }
+    },
+    "gemma-4-26b-a4b-it": 2
   }
 }

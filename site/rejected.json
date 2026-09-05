@@ -1,18 +1,79 @@
 {
-  "generated_at": "2026-09-05T00:09:45.535829+00:00",
+  "generated_at": "2026-09-05T16:51:07.143966+00:00",
   "items": [
     {
-      "cluster_key": "088447e1a36fa442",
-      "title": "Vuk97/forward-implementation-first — Stop your coding agent from stalling real work on self-invented bookkeeping - receipts, hashes, locks, certifi",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "cluster_key": "ed99da94672b0bfe",
+      "title": "mukul975/Anthropic-Cybersecurity-Skills — 817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ",
+      "category": "cyber_tools",
+      "one_liner": "An Apache 2.0 project provides 817 agent-ready cybersecurity skills mapped to MITRE ATT&CK, D3FEND, and NIST frameworks.",
       "tags": [
         "agents",
         "ai",
+        "appsec",
         "llm",
-        "opensource"
+        "opensource",
+        "soc",
+        "threat-intel",
+        "tool"
       ],
-      "summary": "Stop your coding agent from stalling real work on self-invented bookkeeping - receipts, hashes, locks, certification rituals. Skill for Claude Code, Codex, and other agents. GitHub repository Vuk97/forward-implementation-first, 163 stars, language Shell.",
+      "summary": "An open-source repository titled Anthropic-Cybersecurity-Skills has been updated with 817 structured cybersecurity skills for AI agents. The dataset maps across six major frameworks, including MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF, and MITRE F3 across 29 security domains. It supports integration with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI, and over 20 other platforms under an Apache 2.0 license.",
+      "key_facts": [
+        "Skills Count: 817",
+        "Frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF, MITRE F3",
+        "Security Domains: 29",
+        "License: Apache 2.0"
+      ],
+      "bottom_line": "AI agent builders can integrate 817 standardized cybersecurity skill definitions directly into Claude Code, Copilot, or CLI tooling.",
+      "claims": [
+        {
+          "text": "The repository includes 817 structured cybersecurity skills mapped to 6 frameworks.",
+          "support_span": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0 GitHub repository mukul975/Anthropic-Cybersecurity-Skills, 32,179 stars, language Python.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 32.5,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "ed99da94672b0bfe"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (updated)",
+          "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-31T04:32:44+00:00",
+      "trace": [
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "importance 3/5 from cache",
+        "blend 32 = trust 10 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "4a1101f9cb349f57",
+      "title": "neuronto/agentic-resource-discovery — Neuronto Agentic Resource Discovery (ARD) Index. Federated search across every public ARD registry, plus a ver",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "agents",
+        "ai",
+        "opensource",
+        "tool",
+        "windows"
+      ],
+      "summary": "Neuronto Agentic Resource Discovery (ARD) Index. Federated search across every public ARD registry, plus a verified tool index read from each MCP server's own tools/list, hybrid lexical and semantic retrieval, and ARD-Bench. GitHub repository neuronto/agentic-resource-discovery, 52 stars, language Python. Topics: a2a, agent-discovery, agent-registry, agentic-ai, agentic-resource-discovery, ai-agent-discovery, ai-agent-tools, ai-agents.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -23,7 +84,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "088447e1a36fa442"
+        "4a1101f9cb349f57"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -31,69 +92,25 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/Vuk97/forward-implementation-first",
+          "url": "https://github.com/neuronto/agentic-resource-discovery",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-29T23:16:12+00:00",
+      "published": "2026-08-31T13:53:20+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-08-29 — outside lookback window"
-    },
-    {
-      "cluster_key": "653e3f8164b221df",
-      "title": "Ryze-AI-Adgent/open-seo-mcp-skills — Open-source SEO + GEO skills for Claude — keyword research, rank tracking, site audits, backlinks, competitor ",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource",
-        "privacy"
-      ],
-      "summary": "Open-source SEO + GEO skills for Claude — keyword research, rank tracking, site audits, backlinks, competitor gaps, AI visibility. Runs on your real Search Console / GA4 / ads data via MCP, with DataForSEO built in. GitHub repository Ryze-AI-Adgent/open-seo-mcp-skills, 458 stars, language Shell.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "summary_source": "extract",
-      "alt_keys": [
-        "653e3f8164b221df"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/Ryze-AI-Adgent/open-seo-mcp-skills",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-29T23:37:01+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-08-29 — outside lookback window"
+      "reject_reason": "published 2026-08-31 — outside lookback window"
     },
     {
       "cluster_key": "68514bfe45cab1d8",
       "title": "nickname21kmr/gameops-investigator — Evidence-first game operations incident investigation agent with read-only MCP tools and reproducible evaluati",
       "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "one_liner": "",
       "tags": [
         "agents",
-        "ai",
         "llm",
         "opensource"
       ],
@@ -129,74 +146,96 @@
       "reject_reason": "published 2026-08-30 — outside lookback window"
     },
     {
-      "cluster_key": "003de7da5fa7090e",
-      "title": "Continuum-AI-Corp/OrcaReplay — OrcaReplay — Time travel for AI agents. Record, replay, fork, and debug any agent run with any model. Built by",
+      "cluster_key": "459131b8a152555f",
+      "title": "Here's my attempt at explaining what ChatGPT Work can actually do - it's a deeply confusing but extremely powerful tool with a whole lot of useful…",
       "category": "tech_ai",
-      "one_liner": "Tech Ai: carried by 2 outlets.",
+      "one_liner": "",
       "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource"
+        "tool",
+        "windows"
       ],
-      "summary": "English · 简体中文 · 日本語 · 한국어 · Deutsch · Français · Español · العربية Record any coding agent. Reproduce the run byte-for-byte with the network off. Fork it from any step onto a different model and see who gets it right.",
+      "summary": "Here's my attempt at explaining what ChatGPT Work can actually do - it's a deeply confusing but extremely powerful tool with a whole lot of useful features that aren't available in regular ChatGPT simonwillison.net/2026/Aug/30/... (Bluesky post by @simonwillison.net — 135 likes, 20 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
       "trust_score": 0,
       "interest_score": 0,
-      "corroboration": 2,
+      "corroboration": 1,
       "blend": 0.0,
-      "is_new": true,
+      "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "003de7da5fa7090e",
-        "d4eb067ef8a756b3",
-        "f2057ce1e9235af0"
+        "459131b8a152555f"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/Continuum-AI-Corp/OrcaReplay",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "Pluang",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOd1FKOVQ0ZFE4cjV4R1NyVWRpWmFQdmdHQ2d5T2pldENtcnlBS000ZWdGX21aVV9LdXRPaTdwSGxJLXRoR25DYjBsU2ZmS19kcUtWTGs5blVfYWRjWGw0R08xVkZHR0F0VjhiQVIwakVMT29oNzRFeGlLNlJlMGNGNFZPbXJZRjNYUFdkSEtPbDh5VHc0bjRrRFQtMkh6QUFBWURZaVBtR2pCSlYwODUyTQ?oc=5",
-          "domain": "pluang.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "PR Newswire",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNYzBPSmRBaGlsdE5ma0xENDdrVVZMZmx2YXdRcFhGMXZSWnBjQ0NYV1FVMlhfdnhSTnRoaFFXSUlwdjRBY0VxUTZPRS1SUFQ3X19OYUZEaXJld3JmVG9xdjllTkZoQ004S2xEczJ4SXNMMHUtbW5NX09aa0w1aGhISkg2aUVZbnJpZDhaN0RST3VsSDN5cXVWOG8yaGNZSUFQX3R2LW50MVc2aEt4OEVsNFdmcXE0RV9yWXAxTzhYWk9ORlRESXpKek15NFNhcGZEWVpvT3ktYw?oc=5",
-          "domain": "pr-newswire.publisher",
+          "name": "Simon Willison",
+          "url": "https://bsky.app/profile/simonwillison.net/post/3mudmaynuz22c",
+          "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-29T08:41:53+00:00",
+      "published": "2026-08-31T00:05:05.196000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-08-29 — outside lookback window"
+      "reject_reason": "published 2026-08-31 — outside lookback window"
     },
     {
-      "cluster_key": "620ce310e211ff4a",
-      "title": "ashutoshsinghpr7/wikiskill — WikiSkill (arXiv:2608.27454) for Hermes Agent — self-evolving agent skills via a persistent knowledge wiki. Fa",
+      "cluster_key": "e76c0471894d4346",
+      "title": "Trying to calibrate the difficulty in prod, but how fast does this load for you? It uses the new wasm challenge method: anubis.techaro.lol",
       "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "one_liner": "",
+      "tags": [
+        "windows"
+      ],
+      "summary": "Trying to calibrate the difficulty in prod, but how fast does this load for you? It uses the new wasm challenge method: anubis.techaro.lol (Bluesky post by @xeiaso.net — 28 likes, 4 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "e76c0471894d4346"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Xe Iaso",
+          "url": "https://bsky.app/profile/xeiaso.net/post/3mue2fl27vk24",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-31T04:18:11.078000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-08-31 — outside lookback window"
+    },
+    {
+      "cluster_key": "510a9f6c4c66ca71",
+      "title": "fitchmultz/pi-posthorse — Posthorse: fresh context, same journey. Native no-summary context windows for the fitchmultz/pi fork of the Pi",
+      "category": "tech_ai",
+      "one_liner": "",
       "tags": [
         "agents",
-        "ai",
         "llm",
         "opensource",
-        "research"
+        "windows"
       ],
-      "summary": "WikiSkill (arXiv:2608.27454) for Hermes Agent — self-evolving agent skills via a persistent knowledge wiki. Faithful Algorithm 1 implementation with real agent runs, isolated skill gating, and a documented live run log. GitHub repository ashutoshsinghpr7/wikiskill, 107 stars, language Python.",
+      "summary": "Native no-summary context windows for the fitchmultz/pi fork of the Pi coding agent, with rollover tools, durable notes, and history recovery. GitHub repository fitchmultz/pi-posthorse, 155 stars, language TypeScript. Topics: coding-agent, context-window, llm, pi, pi-extension, pi-package.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -207,7 +246,7 @@
       "is_new": true,
       "summary_source": "extract",
       "alt_keys": [
-        "620ce310e211ff4a"
+        "510a9f6c4c66ca71"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -215,190 +254,23 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/ashutoshsinghpr7/wikiskill",
+          "url": "https://github.com/fitchmultz/pi-posthorse",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-29T20:44:02+00:00",
+      "published": "2026-08-31T15:06:23+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-08-29 — outside lookback window"
-    },
-    {
-      "cluster_key": "59569ca1595c75f1",
-      "title": "Jantar Mantar assault row: Delhi police add attempt-to-murder, SC/ST charges; assure Swatantra Bhardwaj’s arrest within 72 hours, says CJP",
-      "category": "india_world",
-      "one_liner": "Delhi police have escalated charges to attempt-to-murder in a high-profile assault case following activist protests.",
-      "tags": [
-        "india",
-        "political"
-      ],
-      "summary": "Delhi police have upgraded charges in the Jantar Mantar assault case to include attempt-to-murder and SC/ST Act violations following protests. The case involves an alleged assault on Sanjay Kumar, the father of a student activist. Authorities have reportedly assured the arrest of suspect Swatantra Bhardwaj within 72 hours.",
-      "key_facts": [
-        "Suspect: Swatantra Bhardwaj",
-        "Arrest timeline: 72 hours"
-      ],
-      "bottom_line": "The escalation of charges to attempt-to-murder indicates a significant shift in the legal handling of the Jantar Mantar assault case.",
-      "claims": [
-        {
-          "text": "Police added attempt-to-murder and SC/ST charges to the case.",
-          "support_span": "Jantar Mantar assault row: Delhi police add attempt-to-murder, SC/ST charges; assure Swatantra Bhardwaj’s arrest within 72 hours, says CJP",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 37,
-      "interest_score": 25,
-      "corroboration": 2,
-      "blend": 35.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "59569ca1595c75f1",
-        "9a69a79fe4cba27b"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NDTV India",
-          "url": "https://www.ndtv.com/india-news/swatantra-bhardwaj-man-who-hit-student-protester-nishus-father-with-kada-as-cjp-protests-in-delhi-will-do-again-if-12001115#publisher=newsstand",
-          "domain": "ndtv.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/cities/Delhi/cockroach-janta-party-cjp-parliament-street-protest-jantar-mantar-september-4-2026/article71427170.ece",
-          "domain": "thehindu.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-04T16:56:42+00:00",
-      "trace": [
-        "tier B (+25)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 2/5 from gemini-3-flash-preview",
-        "blend 36 = trust 37 / interest 25 / corrob 50"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "3138f3170a7ff1a8",
-      "title": "CVE-2026-19806 (HIGH 8.8): The Support Genix – Helpdesk, AI Chatbot, Knowledge Base & Customer Support Ticketing System plugin for WordP…",
-      "category": "cyber_attacks",
-      "one_liner": "A critical authentication bypass in a WordPress support plugin allows for full site takeover via token forgery.",
-      "tags": [
-        "ai",
-        "appsec",
-        "exploit",
-        "release",
-        "vulnerability"
-      ],
-      "summary": "The 'Support Genix' WordPress plugin (up to version 1.4.52) contains a critical authentication bypass vulnerability that allows for full administrator account takeover. Attackers can exploit the weak encryption key generation process—which relies on insufficient entropy—to forge authentication tokens for any administrator. By submitting these forged tokens to the `/sgnix/?p=<token>` endpoint, an attacker can gain complete control over the WordPress site. Users are urged to update immediately to mitigate this high-severity risk.",
-      "key_facts": [
-        "CVE-2026-19806: CVSS 8.8",
-        "Affected versions: <= 1.4.52",
-        "Vulnerability: Authentication Bypass / Admin Takeover"
-      ],
-      "bottom_line": "If you manage WordPress sites using the Support Genix plugin, you are at risk of total administrative compromise and must patch immediately.",
-      "claims": [
-        {
-          "text": "The Support Genix – Helpdesk, AI Chatbot, Knowledge Base & Customer Support Ticketing System plugin for WordPress is vulnerable to Authentication Bypass leading to Administrator Account Takeover in all versions up to, and including, 1.4.52",
-          "support_span": "The Support Genix – Helpdesk, AI Chatbot, Knowledge Base & Customer Support Ticketing System plugin for WordPress is vulnerable to Authentication Bypass leading to Administrator Account Takeover in all versions up to, and including, 1.4.52",
-          "status": "entailed"
-        },
-        {
-          "text": "Submitting the forged token to the unprotected endpoint causes wp_set_auth_cookie() to be called for that administrator, granting the attacker full administrative access to the WordPress site.",
-          "support_span": "Submitting the forged token to the unprotected endpoint causes wp_set_auth_cookie() to be called for that administrator, granting the attacker full administrative access to the WordPress site.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 70.0,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "3138f3170a7ff1a8"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19806",
-          "domain": "nist.gov",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-19806"
-      ],
-      "published": "2026-09-01T05:17:09.487000+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 5/5 from gemini-3.1-flash-lite",
-        "blend 70 = trust 70 / interest 100 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "79186003ddb836a8",
-      "title": "jiabaobei/memory-bridge — 记忆桥 MemoryBridge — 跨设备、跨平台的 AI 共享记忆层 | Cross-device and cross-platform shared memory for AI (CDSMP implementat",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource"
-      ],
-      "summary": "记忆桥 MemoryBridge — 跨设备、跨平台的 AI 共享记忆层 | Cross-device and cross-platform shared memory for AI (CDSMP implementation) GitHub repository jiabaobei/memory-bridge, 43 stars, language Python. Topics: agent, ai, cdsmp, cross-device, cross-platform, llm, mcp, memory.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "summary_source": "extract",
-      "alt_keys": [
-        "79186003ddb836a8"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/jiabaobei/memory-bridge",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-29T04:34:06+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-08-29 — outside lookback window"
+      "reject_reason": "published 2026-08-31 — outside lookback window"
     },
     {
       "cluster_key": "b08295e1be4211f2",
       "title": "justadityaraj/shim-mcp — WordPress MCP server plugin, live on WordPress.org. Connect Claude Code, Cursor, or any MCP client to WordPres",
       "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "one_liner": "",
       "tags": [
         "agents",
         "ai",
@@ -406,7 +278,7 @@
         "opensource",
         "tool"
       ],
-      "summary": "WordPress MCP server plugin, live on WordPress.org. Connect Claude Code, Cursor, or any MCP client to WordPress over stdio (WP-CLI) or HTTP. GitHub repository justadityaraj/shim-mcp, 47 stars, language PHP.",
+      "summary": "WordPress MCP server plugin, live on WordPress.org. Connect Claude Code, Cursor, or any MCP client to WordPress over stdio (WP-CLI) or HTTP. GitHub repository justadityaraj/shim-mcp, 47 stars, language PHP. Topics: ai, anthropic, claude, cursor, mcp, mcp-server, model-context-protocol, wordpress.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -438,386 +310,17 @@
       "reject_reason": "published 2026-08-30 — outside lookback window"
     },
     {
-      "cluster_key": "2ee9a84eaf19ac9a",
-      "title": "useagenthq/useagent — The open-source AI coworker for your team: agents with their own cloud computer, your tools and context, handi",
-      "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource"
-      ],
-      "summary": "The open-source AI coworker for your team: agents with their own cloud computer, your tools and context, handing back finished work websites, decks, spreadsheets, reports, PRs. Runs Claude Code, Codex, OpenCode on your subscription. GitHub repository useagenthq/useagent, 284 stars, language TypeScript.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "2ee9a84eaf19ac9a"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/useagenthq/useagent",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-29T21:14:31+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-08-29 — outside lookback window"
-    },
-    {
-      "cluster_key": "d4904574ba000b97",
-      "title": "Penny stock under 10 rupees: Upper circuit — Leather share jumps 74% in 4 sessions | Back-to-back surge for third day",
-      "category": "markets",
-      "one_liner": "A highly volatile penny stock in the Indian market is showing extreme price movement, which may be of interest to those tracking Indian markets.",
-      "tags": [
-        "india",
-        "markets",
-        "privacy"
-      ],
-      "summary": "A penny stock priced under 10 rupees has experienced a significant price surge, hitting a 10% upper circuit daily since September 2, 2026. The share price has jumped 74% over four sessions. This is the third consecutive day of surges.",
-      "key_facts": [
-        "Price: Under 10 rupees",
-        "Growth: 74% in 4 sessions",
-        "Upper Circuit: 10%"
-      ],
-      "bottom_line": "A specific penny stock under 10 rupees is experiencing as surge of 74% over four sessions.",
-      "claims": [
-        {
-          "text": "A penny stock under 10 rupees has been hitting a 10% upper circuit since September 2, 2026.",
-          "support_span": "Penny stock under 10 rupees has been hitting 10% upper circuit since September 2, 2026",
-          "status": "entailed"
-        },
-        {
-          "text": "The share price jumped 74% in four sessions.",
-          "support_span": "Leather share jumps 74% in 4 sessions",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 13.8,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "d4904574ba000b97"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/penny-stock-under-10-rupees-upper-circuit-leather-share-jumps-74-in-4-sessions-back-to-back-surge-for-third-day-11788501766213.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-04T07:00:56+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 1/5 from gemma-4-31b-it",
-        "blend 14 = trust 25 / interest 0 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "38ca5140b794c104",
-      "title": "₹94/share dividend stock alert! Last chance to buy today for the special and interim benefit — check payment date",
-      "category": "markets",
-      "one_liner": "A rare 25-year dividend gap is closing for Federal-Mogul Goetze (India) Limited, offering a significant per-share payout for current holders.",
-      "tags": [
-        "india",
-        "markets"
-      ],
-      "summary": "Federal-Mogul Goetze (India) Limited is paying a total dividend of ‘94 per share, consisting of a ‘86.50 special dividend and a ‘7.50 interim dividend. This is the company's first dividend payment in 25 years, with the last payment occurring on August 10, 2001. Shareholders must hold the stock by the end of the session on Friday, September 4, 2026, to be eligible. Payments will be distributed on or before September 25, 2026.",
-      "key_facts": [
-        "Total Dividend: ‘94 per share",
-        "Special Dividend: ‘86.50 per share",
-        "Interim Dividend: ‘7.50 per share",
-        "Record Date: September 4, 2026",
-        "Payment Date: September 25, 2026"
-      ],
-      "bottom_line": "Investors must hold Federal-Mogul Goetze (India) Limited shares by September 4, 2026, to receive a total dividend of ‘94 per share.",
-      "claims": [
-        {
-          "text": "Federal-Mogul Goetze (India) Limited is paying a total dividend of ‘94 per share.",
-          "support_span": "shareholders of the company who hold the dividend stock at the end of Friday's session will be eligible for a dividend of ‘94 per share",
-          "status": "contradicted"
-        },
-        {
-          "text": "This is the company's first dividend payment in 25 years.",
-          "support_span": "The auto company has declared this whopping dividend after a 25-year gap.",
-          "status": "entailed"
-        },
-        {
-          "text": "The record date for eligibility is September 4, 2026.",
-          "support_span": "The company has already declared the record date on 4th September 2026.",
-          "status": "entailed"
-        },
-        {
-          "text": "Payments will be made by September 25, 2026.",
-          "support_span": "The interim dividend and the special dividend will be paid on or before Friday, 25th September 2026",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 13.8,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "38ca5140b794c104",
-        "57e8d45db2c36efd",
-        "79cdc2aa83072e31"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/rs-94-share-dividend-stock-alert-last-chance-to-buy-today-for-the-special-and-interim-benefit-check-payment-date-11788506428351.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        },
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/600-dividend-stock-kajaria-ceramics-share-price-check-amount-per-share-record-date-payment-timeline-do-you-own-11788502317637.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        },
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/461-bonus-stock-record-date-soon-check-face-value-and-share-price-performance-11788503774857.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-04T07:11:49+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 1/5 from gemma-4-31b-it",
-        "blend 14 = trust 25 / interest 0 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "621adfed0ee3585b",
-      "title": "White House has vetted candidates for key CFTC vacancies, sources tell CNBC. It's unclear if they will be filled",
-      "category": "markets",
-      "one_liner": "Regulatory uncertainty at the CFTC may impact financial markets and the implementation of the Clarity Act.",
-      "tags": [
-        "markets",
-        "policy",
-        "political"
-      ],
-      "summary": "The White House has vetted candidates for key vacancies at the Commodity Futures Trading Commission (CFTC). However, it remains unclear if these positions will be filled. The filling of these commissioner positions has become a point of contention in negotiations regarding the Clarity Act.",
-      "key_facts": [
-        "Agency: CFTC",
-        "Legislation: Clarity Act"
-      ],
-      "bottom_line": "CFTC commissioner vacancies remain unfilled due to political negotiations over the Clarity Act.",
-      "claims": [
-        {
-          "text": "The White House has vetted candidates for CFTC vacancies.",
-          "support_span": "White House has vetted candidates for key CFTC vacancies, sources tell CNBC.",
-          "status": "contradicted"
-        },
-        {
-          "text": "It is unclear if the positions will be filled.",
-          "support_span": "It's unclear if they will be filled",
-          "status": "contradicted"
-        },
-        {
-          "text": "Filling these positions is a sticking point in Clarity Act negotiations.",
-          "support_span": "Filling open commissioner positions at the regulatory agency has been a sticking point in negotiations over the Clarity Act.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 25,
-      "corroboration": 1,
-      "blend": 25.0,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "621adfed0ee3585b"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "CNBC Finance",
-          "url": "https://www.cnbc.com/2026/09/04/white-house-has-vetted-candidates-for-key-cftc-vacancies-sources-tell-cnbc.html",
-          "domain": "cnbc.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-04T17:53:07+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 2/5 from gemma-4-31b-it",
-        "blend 25 = trust 25 / interest 25 / corrob 25"
-      ],
-      "reject_reason": "2 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "eccedbf8635df31e",
-      "title": "Jane Street seeks Sebi-NSE correspondence in market manipulation case; alleges role of UAE-based hedge fund",
-      "category": "markets",
-      "one_liner": "A major global trading firm is challenging Sebi's investigation into market manipulation in the Indian markets.",
-      "tags": [
-        "india",
-        "markets"
-      ],
-      "summary": "Jane Street is requesting correspondence between the Securities and Exchange Board of India (Sebi) and the National Stock Exchange (NSE) to defend itself against market manipulation allegations. The firm alleges that a UAE-based hedge fund played a role in the situation. Jane Street argues these documents would explain why Sebi launched a new investigation after two previous reviews found no evidence of manipulation.",
-      "key_facts": [
-        "Regulator: Sebi",
-        "Exchange: NSE",
-        "Actor: Jane Street",
-        "Actor: UAE-based hedge fund"
-      ],
-      "bottom_line": "Jane Street's defense hinges on proving that Sebi's current investigation is inconsistent with previous findings and influenced by external actors.",
-      "claims": [
-        {
-          "text": "Jane Street is seeking documents between Sebi and the NSE.",
-          "support_span": "Jane Street said the documents are important for its defence against Sebi’s allegations of market manipulation",
-          "status": "entailed"
-        },
-        {
-          "text": "Jane Street alleges a UAE-based hedge fund was involved.",
-          "support_span": "Jane Street seeks Sebi-NSE correspondence in market manipulation case; alleges role of UAE-based hedge fund",
-          "status": "contradicted"
-        },
-        {
-          "text": "Two previous reviews found no evidence of manipulation.",
-          "support_span": "could explain why the regulator pursued a fresh investigation despite two earlier reviews finding no evidence of manipulation",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "eccedbf8635df31e"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/jane-street-market-manipulation-case-sebi-nse-uae-based-hedge-fund-11788511942850.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-04T10:02:29+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 4/5 from gemma-4-31b-it",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "90daeb215b1549d2",
-      "title": "China hits back at G20 statement on its reliance on exports, accusing them of 'promoting protectionism'",
-      "category": "markets",
-      "one_liner": "Geopolitical trade tensions between China and the G20/US/EU are escalating, potentially impacting global business events and markets.",
-      "tags": [
-        "markets",
-        "policy",
-        "political"
-      ],
-      "summary": "China has rejected pressure from the G20 regarding its export-driven growth model. The Chinese government accused the G20 of promoting protectionism while simultaneously challenging U.S. sanctions on Iran and trade measures implemented by Europe.",
-      "key_facts": [
-        "Actors: China, G20, US, Europe"
-      ],
-      "bottom_line": "China is resisting G20 pressure on its export strategy, signaling a continued conflict over global trade protectionism.",
-      "claims": [
-        {
-          "text": "China rejected G20 pressure over export-driven growth.",
-          "support_span": "China rejected G20 pressure over export-driven growth",
-          "status": "entailed"
-        },
-        {
-          "text": "China accused the G20 of promoting protectionism.",
-          "support_span": "accusing them of 'promoting protectionism'",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 25,
-      "corroboration": 1,
-      "blend": 25.0,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "90daeb215b1549d2"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "CNBC Finance",
-          "url": "https://www.cnbc.com/2026/09/03/china-g20-exports-trade.html",
-          "domain": "cnbc.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-03T11:12:54+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 2/5 from gemma-4-31b-it",
-        "blend 25 = trust 25 / interest 25 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
       "cluster_key": "b9749f899570deaa",
       "title": "AbuZar-Ansarii/Needle — This 14 MB Agentic LLM(Cactus Needle 2) can control your phone completely.",
       "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "one_liner": "",
       "tags": [
         "agents",
         "ai",
         "llm",
         "opensource"
       ],
-      "summary": "This 14 MB Agentic LLM(Cactus Needle 2) can control your phone completely. GitHub repository AbuZar-Ansarii/Needle, 81 stars, language Python. Topics: ai, ai-agents, ai-tools, cactus-needle, llm, llm-agents, llm-tools.",
+      "summary": "This 14 MB Agentic LLM(Cactus Needle 2) can control your phone completely. GitHub repository AbuZar-Ansarii/Needle, 84 stars, language Python. Topics: ai, ai-agents, ai-tools, cactus-needle, llm, llm-agents, llm-tools.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -849,16 +352,16 @@
       "reject_reason": "published 2026-08-30 — outside lookback window"
     },
     {
-      "cluster_key": "064f445c5e801d04",
-      "title": "devnoname120/codexify — Bring Codex inside ChatGPT for unlimited vibecoding — no Codex quota used!",
+      "cluster_key": "ca0c96ef9f863d65",
+      "title": "After a literal year of development, the WASM check patch has been merged into Anubis.",
       "category": "tech_ai",
-      "one_liner": "Tech Ai: single report, unconfirmed.",
+      "one_liner": "",
       "tags": [
-        "agents",
-        "ai",
-        "opensource"
+        "release",
+        "vulnerability",
+        "windows"
       ],
-      "summary": "Bring Codex inside ChatGPT for unlimited vibecoding — no Codex quota used! GitHub repository devnoname120/codexify, 40 stars, language Rust. Topics: chatgpt, codex, codex-free, codexify, codexpro, connector, mcp.",
+      "summary": "After a literal year of development, the WASM check patch has been merged into Anubis. This will be released with the next stable version of Anubis next week. (Bluesky post by @xeiaso.net — 40 likes, 1 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -866,10 +369,51 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
-      "is_new": true,
+      "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "064f445c5e801d04"
+        "ca0c96ef9f863d65"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Xe Iaso",
+          "url": "https://bsky.app/profile/xeiaso.net/post/3mubllseiic2c",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-08-30T04:47:54.477000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-08-30 — outside lookback window"
+    },
+    {
+      "cluster_key": "7cd5021f5ef4dead",
+      "title": "AMAP-ML/LoopArena — Benchmarking models as runtime Controllers for Loop Engineering",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "llm",
+        "opensource",
+        "research"
+      ],
+      "summary": "Benchmarking models as runtime Controllers for Loop Engineering GitHub repository AMAP-ML/LoopArena, 87 stars, language Python. Topics: benchmark, coding-agents, evaluation, llm, loop-engineering, software-engineering.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "7cd5021f5ef4dead"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -877,657 +421,59 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/devnoname120/codexify",
+          "url": "https://github.com/AMAP-ML/LoopArena",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-29T07:52:26+00:00",
+      "published": "2026-08-31T02:47:02+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-08-29 — outside lookback window"
+      "reject_reason": "published 2026-08-31 — outside lookback window"
     },
     {
-      "cluster_key": "0388086a2d741c75",
-      "title": "French hospital fined €500,000 after breach exposes data of 727,000",
-      "category": "cyber_attacks",
-      "one_liner": "A French hospital was fined €500,000 for GDPR violations after a breach exposed 727,000 records due to lack of MFA.",
+      "cluster_key": "6ec9b989ada8f6f2",
+      "title": "Human-Agent-Society/reef — Continual learning infra for self-improving agents",
+      "category": "tech_ai",
+      "one_liner": "",
       "tags": [
-        "identity",
-        "incident",
-        "network",
-        "policy",
-        "privacy"
-      ],
-      "summary": "France's CNIL has fined Hôpital privé de la Loire (HPL) €500,000 for failing to protect the data of over 727,000 individuals following a 2025 breach. The investigation found that external users could access the system without MFA or a VPN, and a single compromised account allowed access to all patient records. The attacker, a teen hacker known as 'Marak,' extracted sensitive data over several days without detection. HPL was also cited for failing to notify over 200,000 trusted third parties whose data was compromised.",
-      "key_facts": [
-        "Fine: €500,000 ($580,000)",
-        "Total records: 727,000",
-        "Patients affected: 524,867",
-        "Third parties affected: 202,246",
-        "GDPR violations: Article 32, Article 34"
-      ],
-      "bottom_line": "This fine underscores the severe regulatory consequences for healthcare providers that fail to implement basic security measures like MFA and robust access controls.",
-      "claims": [
-        {
-          "text": "CNIL fined the hospital €500,000 for security failures.",
-          "support_span": "France’s data protection authority (CNIL) has fined Hôpital privé de la Loire €500,000 ($580,000) for failing to adequately protect patients’ and their relatives’ data.",
-          "status": "entailed"
-        },
-        {
-          "text": "External users could access the system without MFA or a VPN.",
-          "support_span": "External users, including private-practice physicians, could access the system without a VPN or multi-factor authentication.",
-          "status": "entailed"
-        },
-        {
-          "text": "The breach exposed data of 727,000 people.",
-          "support_span": "exposed sensitive data belonging to 524,867 patients and another 202,246 people designated as trusted third parties.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 37,
-      "interest_score": 50,
-      "corroboration": 2,
-      "blend": 46.8,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "0388086a2d741c75",
-        "1a5e1be067eb54d8",
-        "2b530d8edfe727b7",
-        "318d73f035a35d3e",
-        "5df3786cc5253610",
-        "7d7ddb965d4fdeb6",
-        "7e48a140b66c50e4",
-        "98e30921c3a881a5",
-        "ab9ac045f45665ff",
-        "aed38cb1c247afbd",
-        "c6415b46457bf948",
-        "cd4a63c6ba34ecb1",
-        "e69127db2b725fc6",
-        "ef8b18c976e4ab8a",
-        "f9a0c328b542a36b",
-        "fc67e42bc945b0ca"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/french-hospital-fined-500-000-after-breach-exposes-data-of-727-000/",
-          "domain": "bleepingcomputer.com",
-          "tier": "B"
-        },
-        {
-          "name": "Bitcoin Magazine",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE94bzJXTElmU2RHYndmU2RVWEFCTzhQLXBLUjdraVhEOWVUdE00TFJ0RkpwTlhlbkxmSU5MRjkwWWI0SENjRENobE40b215dTRSc2xLc2Uwb1JvbE96NGhjRDQtY081TkdlOUNQQjduTTNpS0p4a01TNHpZcw?oc=5",
-          "domain": "bitcoin-magazine.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Bloomberg.com",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVENuNkV3QkQ1S3EzLUpuRkU4Z0ZHeGtOZ2NCc0NOLTZsQzNGa1JSWFBoU2VlckEzdlNNRGduQkJaRFVDbHZyT3NlbElJcjJabGJBTkxjQ0I2b1lLaW96ZnVsa2o5eWJpajdLQ3hUTDFvbnVVcWxKOUtRMllaUmpFd3Qtb3lxZnlnUkpMV1V3d3F1eXZZWVBQNEE3VW9iMTRuSGxBNUVxdzNNdlFCcmZvQVBsRFdaMjUxWkE?oc=5",
-          "domain": "bloomberg-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "claimdepot.com",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSk42RmtDRXUtZ09udkRqaEJsTENUZWFINTI4bWI5YVQwYmUzMU50UWQwckI2bWFMWEZwckZ0a0xFaFZlZm1ESjhyZWZ3ejhydUFheWZwVGFETU9Fc293N1pWTHN4M3IyRjRkZW9tdTFDb1BYeTFHbC1lakZhNDJyZnI2MC0?oc=5",
-          "domain": "claimdepot-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Cybernews",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBCS29VOUhMZUJ4Qk9vSVdUUUFFck5ubmJXaXNMQi1mUVpfODl4bnhhTFpoNHdzdHlLaEhIQXZVX1Z5MnZCU25hSFh0MWNZZ19sSV9CWXM2MENxN1ppa1d2eXpQTFM?oc=5",
-          "domain": "cybernews.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "CyberSecurityNews",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5sektPNWRwajBoaUo0X29SZ1VkbmJ4UTF6VGQ0UmxWUl9RUngzY0QyQ25Vd01LZi1FUE9sbnpTYmlFQmp3UzRxNTRiXzNYRElSRkEwcTZQTDIteElDdmc4VnhhU00tR29uekFXTjI3ZGtSTUFkYmfSAXtBVV95cUxORnA3c2JsanVGQ3NpVTNIeFVBcjdLc3VaNXNLUHpHM3BSVl9Qd3lkdzRmSVU5aUs3MWZIMUswcm9ETDltUmZ6azhYcURMcjhSUG1zNDJMQ0d0YWJkdUFsZ0pPaGdGWTZDQWZwNEhXd1VhQ1hReHZhUUpEaGs?oc=5",
-          "domain": "cybersecuritynews.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Dallas News",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeHhoRm51QnoyeUdBTjg2Sk42X3FCUG1QeEE2eUdacTRQQ1JGY1RWT2QzaVEwaXpUSEFfaWR5clJfZXFfb3UxNG1UVG5RX2xaaWVOYUd5TzFQMWUzYUIxeU1ORlRMTmRNdTJ5bGFBNXR1SUR0V1Z1elI2aG1tY2U5ZlJWRDlnNUNkdHZRdUpsYkxPS09KQThmbVo2SFl4ZXpxVkpWTVpwYw?oc=5",
-          "domain": "dallas-news.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Decrypt",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOLTRpQWlVeWZBcU9sa0JpMlNxMm16VzhGSWI3MkVlekJOWG9qNzc2VThFVTdqNmZFMjI1QmpsMHh2ZVl6WURFXzdDS1o2LWJqNGVxR3Jya3R0dHhuNndwQ2pNM3NIbFRwb1p4TkZEYlRqYlBlY05iVzg4RDdsTnVNOVhYaFNxbkw0bndJ0gGTAUFVX3lxTFBaSGd5ZWNGOVFYTTVDNDZBTGw5SXIwTEQ2TGRTUXJad2JNclctajlrZmhTcDJnOGhuSE04RTF4TTk3RWh3eko3Vm9aOTBlY3lUNE0xYzJTUGVvRHJMVWlZVjRiaDIyeTBqN195bm9Gb1Z3THpCYW1IS21Lb1ZBYVBRRTZibVB4X3JPbDFxaXhCeU9PVQ?oc=5",
-          "domain": "decrypt.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "GovTech",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdjdPZVBxN0ZVQldjRXMzT1lLT0Z1cXZfSnljQVBuYXNXOHFrTWJoLUstT1NPSGFEOU9Ub3JOMjFEdld4YnUzTTd0dGxsbDY0LWlMTEVKbTV3cWUxUXpXbHJsTW1BaWZpZTVuRmVKemhKQmJfWG5NdHBZV0ptSzBtZ0xrbkFGbW5nMHZDbDhIdFlWaUttOC1QbE93?oc=5",
-          "domain": "govtech.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "lifesciencenordic.com",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPa3BicldSVTRSQkJ3bnhWZjJUTi10XzcxYWFXQ0Nkd0lzaURZdk5RVkdFejNLc203VTh3YnVRZ3VHQTI5YWdpckFWdHFSNUU3SEJKT0xndkxPMXEtS1VrV3lldU1uR0MzS1lSc0ticU1MZ1hKOE1hRldjbXBlYm4wWW9NVk9vR1ZWQkp0XzJvdFpoYXJGdTlUcW9KSkpqVGNkNnhaVGFVUU9taDF0ZGZXRnVSWnFMU3ZFWGx4TjJxbw?oc=5",
-          "domain": "lifesciencenordic-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Pluang",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZlAyUTNUYUZmdURYalB0NkZhTzJxR3FKSDlULVdFQXY1YjhlWDAxWHlhZnZPVzhJV0EtLVExbkRQbVFrVDZDZzd3bkVDN0hEYTVlM25vMTF0V2c1bUJDUWJTSVRDSDBaZ25JYmVsZTZUVkhYSzI4ZF9hT1QtQThuRVU2MmhlbDgxT1VTQloxbHBYYnZVdVZTNXREMmVwd2NjZHpXUy04Y2g?oc=5",
-          "domain": "pluang.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Record Searchlight",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSUVUOFdnQjlKalZQUTJ6RVRDbS1WTmU1dzE4SHUtWjh1Qy1JNGF6OEtKWGdiWGNpcU1oZHFJdTF4T052NndwLXBqY1BIaldHdXlwdGRnU3NvUzRLTXY0SUtrWEkxd3ZjMG05REhsaVdIUGlCekNyYzRVZUd6ODZzUnhIdDU4WlVDaEQyQUw2SzB1QTdEX0plX0Y4WkJWWUxuVzRZUjFfRXVOZEFCSmJHb2NNbnllLW5fN21vTTctdmVpNjF4QWNhczBBdEgxQQ?oc=5",
-          "domain": "record-searchlight.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Safestate",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdzRyaXRVd0d0U3NyYmtDRi1yVG5MaG9QOHJucjl3bHQyX2hqaUZDbGh2UFVnbW9lM0JYOHFDcHF3OW1hQ1NFUEhmd2tEVkJERUR1VmtERGotRnlvWmtDWDY3UGhEOWZVeTZ4SV9aaDBtVEs3NXNmYmU5Y1huS1RmZzJZNkJpMXFaeFlNX0RpZ0dwRlM1d1Fib0tnOUloMjBIY3c?oc=5",
-          "domain": "safestate.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "teiss",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxORzNNSjNPeVRYb3pNZnVDVVp2eVZQaVdrWDdIRXlMZlRpVnhjaUp0MXRaeVNEX3FpVFVvZEN2X2pySW9adUxqdmVKOVNDb1RJcl84MlppMkpPNVAyMmh5blhwX083amZFYi1ZWS1vSmlOOWlwWUhFLU9aeWMwWUlpbUZpc2RiT0YzbU14SmQ5R3A3UHVxbklnUzVFaGNFS1hxR3prNG1tcWZUZFR4WEVrZ2NGci15Q0xhRUZURzZSREpfUVl5MHc?oc=5",
-          "domain": "teiss.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Yahoo Finance Singapore",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbDRkcElSTHB3Z083cHg0NnJZMXFkempWUXRZX0RQLTg5V1RxMFE4cmozM3BLSXVaWDlORVQwX0FENlYwQWN0UHh1N0gzdDBuTG1DNFZJN3ZpMkk5X3hTbk1Kbk9ZNE9STmdpa2lKTHM0Smh1RWhkdUdYYlV5UlI4NmR3?oc=5",
-          "domain": "yahoo-finance-singapore.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Yahoo",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNjhxSHFlOVptUzd3QV9BUl9PcC1STmVsQl9vZzBNM3d0TlJrR1FXMmF6V0VacmNRMUpuUnZXQjdXdTljajliOGw1LTRyaURGa2Jyem1RMnZjMGx2N1VzdnZhSmdaNm5HaXEzMzBjZHBmeG9DT2dhU1FxX0lYSTU4QmVaVlZTTGU1c3dWeW5B?oc=5",
-          "domain": "yahoo.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-02T02:15:59+00:00",
-      "trace": [
-        "tier B (+25)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 3/5 from gemini-3-flash-preview",
-        "blend 47 = trust 37 / interest 50 / corrob 50"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "0ab311770fb1fe7e",
-      "title": "UK support for Falkland Islands 'unwavering' after Argentina restates claims, No 10 says",
-      "category": "india_world",
-      "one_liner": "Renewed diplomatic tension between the UK and Argentina over the Falkland Islands could lead to geopolitical instability in the region.",
-      "tags": [
-        "india",
-        "political"
-      ],
-      "summary": "The UK government has reaffirmed its unwavering support for the Falkland Islands following renewed claims by Argentinian President Javier Milei. President Milei stated that the \"winds of change\" now favor Argentina's claim to the British overseas territory. This represents a continuation of the long-standing territorial dispute between the two nations.",
-      "key_facts": [],
-      "bottom_line": "The UK remains committed to the Falkland Islands despite Argentina's renewed assertions of sovereignty.",
-      "claims": [
-        {
-          "text": "The UK government's support for the Falkland Islands remains unwavering.",
-          "support_span": "UK support for Falkland Islands 'unwavering' after Argentina restates claims, No 10 says",
-          "status": "contradicted"
-        },
-        {
-          "text": "Argentinian President Javier Milei claims the situation favors Argentina.",
-          "support_span": "Argentinian president Javier Milei says the \"winds of change\" favoured his country's claim on the British overseas territory.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 25,
-      "corroboration": 1,
-      "blend": 28.8,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "0ab311770fb1fe7e"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cn45jg3zlz4o?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-04T11:54:51+00:00",
-      "trace": [
-        "tier A (+40)",
-        "single outlet, established publication (tier A)",
-        "importance 2/5 from gemma-4-31b-it",
-        "blend 29 = trust 40 / interest 25 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "6ee4fa1549268559",
-      "title": "From asteroid hunter to Maths wizard, 82 educators to receive National Teachers’ Awards",
-      "category": "india_world",
-      "one_liner": "National awards for Indian teachers now highlight the intersection of traditional knowledge and AI.",
-      "tags": [
+        "agents",
         "ai",
-        "india"
+        "llm",
+        "opensource"
       ],
-      "summary": "The Indian government has selected 82 educators to receive the National Teachers’ Awards, highlighting creative pedagogy and community leadership. The awardees include faculty specializing in Indian Knowledge Systems, such as Vaastu Shastra and the Bhagavad Gita. Notably, the awards recognize the integration of traditional subjects like Sanskrit with modern technology such as AI.",
-      "key_facts": [
-        "Awardees: 82"
-      ],
-      "bottom_line": "Indian educational recognition is shifting toward the integration of traditional knowledge systems with modern AI technology.",
-      "claims": [
-        {
-          "text": "82 educators will receive the National Teachers’ Awards.",
-          "support_span": "From asteroid hunter to Maths wizard, 82 educators to receive National Teachers’ Awards",
-          "status": "contradicted"
-        },
-        {
-          "text": "Awardees include those integrating Sanskrit with AI.",
-          "support_span": "integrating Sanskrit with AI",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 25,
-      "corroboration": 1,
-      "blend": 25.0,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "6ee4fa1549268559"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/national/from-asteroid-hunter-to-maths-wizard-82-educators-to-receive-national-teachers-awards/article71424436.ece",
-          "domain": "thehindu.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-04T17:24:41+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 2/5 from gemini-3-flash-preview",
-        "blend 25 = trust 25 / interest 25 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "9aa318ab3d6cfe62",
-      "title": "Body of world's youngest traditional king returns home to Uganda amid succession row",
-      "category": "india_world",
-      "one_liner": "A significant geopolitical event in Uganda involving the death of a traditional leader and potential instability due to succession disputes.",
-      "tags": [
-        "india",
-        "political"
-      ],
-      "summary": "King Oyo of Uganda, the world's youngest traditional king, has died at age 34 in the United States. He passed away after receiving treatment for an aggressive form of cancer. His body is now returning home to Uganda amid an ongoing succession row.",
-      "key_facts": [
-        "Age: 34",
-        "Location of death: US",
-        "Cause of death: Aggressive cancer"
-      ],
-      "bottom_line": "The death of King Oyo at 34 due to cancer creates a leadership vacuum and a succession row in Uganda.",
-      "claims": [
-        {
-          "text": "King Oyo died in the US at age 34.",
-          "support_span": "King Oyo died in the US last week aged 34 after receiving treatment for an aggressive form of cancer.",
-          "status": "entailed"
-        },
-        {
-          "text": "He died from an aggressive form of cancer.",
-          "support_span": "King Oyo died in the US last week aged 34 after receiving treatment for an aggressive form of cancer.",
-          "status": "entailed"
-        },
-        {
-          "text": "His body is returning to Uganda amid a succession row.",
-          "support_span": "Body of world's youngest traditional king returns home to Uganda amid succession row",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 40.0,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "9aa318ab3d6cfe62"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/clylwgn8jk3o?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-04T13:00:44+00:00",
-      "trace": [
-        "tier A (+40)",
-        "single outlet, established publication (tier A)",
-        "importance 3/5 from gemma-4-31b-it",
-        "blend 40 = trust 40 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "0e6020405e8f53ff",
-      "title": "Volkswagen board approves plan to cut another 50,000 jobs",
-      "category": "india_world",
-      "one_liner": "Volkswagen is executing a massive long-term workforce reduction of 100,000 jobs by 2030.",
-      "tags": [
-        "markets"
-      ],
-      "summary": "The Volkswagen Group, including brands like Audi, Porsche, and Skoda, has approved a plan to cut a total of 100,000 jobs by 2030. This includes a recent board approval to cut an additional 50,000 positions.",
-      "key_facts": [
-        "Total Job Cuts: 100,000 by 2030",
-        "Recent Cut: 50,000"
-      ],
-      "bottom_line": "Volkswagen is significantly downsizing its workforce to manage costs or transition its business model by 2030.",
-      "claims": [
-        {
-          "text": "Volkswagen plans to cut 100,000 posts by 2030.",
-          "support_span": "The group - which includes Audi, Porsche, Skoda as well as the VW brand - plans to cut a total of 100,000 posts by 2030.",
-          "status": "entailed"
-        },
-        {
-          "text": "The board approved cutting another 50,000 jobs.",
-          "support_span": "Volkswagen board approves plan to cut another 50,000 jobs",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 52,
-      "interest_score": 25,
-      "corroboration": 2,
-      "blend": 39.2,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "0e6020405e8f53ff",
-        "f2b84f239fb421b5"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cx2z0kvy4n4o?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        },
-        {
-          "name": "reuters.com",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONHJWZnhzWG5faWZEaUhXbDE4aUFUZ3JNWlp0SjB1RzRXS1JZT1hmSy10WDJFbE9kSVhUSE9YVzZ2NkRTY2REMEk3UHFadFp5UUgtVEdMcXowcnlmZGhjNTBVS01DQWJ4UUQ3OHhnakZjdm5IRzBaVlhQMzFaa0lVbW05X0RpRFZuV29SX0MyYVpkZGpCQ3psSlpuc0tLajZJTUIzc1hEdGdWV2swR2pQblJQZHQ2dkVmVkpkZWlFZVM?oc=5",
-          "domain": "reuters-com.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-03T19:04:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 2/5 from gemma-4-31b-it",
-        "blend 39 = trust 52 / interest 25 / corrob 50"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "680032f35d444f31",
-      "title": "Russia hits Ukrainian security headquarters in drone attack, Zelensky says",
-      "category": "india_world",
-      "one_liner": "Russia continues to use drone warfare to target critical security infrastructure in Kyiv.",
-      "tags": [
-        "india",
-        "political"
-      ],
-      "summary": "Russia has launched a drone attack targeting the Ukrainian security headquarters in the heart of the capital city. According to President Zelensky, the unmanned aerial vehicle struck without warning.",
-      "key_facts": [
-        "Target: Ukrainian security headquarters",
-        "Location: Kyiv"
-      ],
-      "bottom_line": "The attack on security headquarters indicates a continued focus on high-value strategic targets in Ukraine.",
-      "claims": [
-        {
-          "text": "A drone struck the Ukrainian security headquarters.",
-          "support_span": "Russia hits Ukrainian security headquarters in drone attack, Zelensky says",
-          "status": "contradicted"
-        },
-        {
-          "text": "The attack occurred in the heart of the Ukrainian capital.",
-          "support_span": "The unmanned aerial vehicle struck without warning in the heart of the Ukrainian capital.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 40.0,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "680032f35d444f31"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c5yep7y48x2o?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-04T16:02:32+00:00",
-      "trace": [
-        "tier A (+40)",
-        "single outlet, established publication (tier A)",
-        "importance 3/5 from gemma-4-31b-it",
-        "blend 40 = trust 40 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "3b0ef52f23abbf75",
-      "title": "Nepal says it will need billions in funding to rebuild after flash floods",
-      "category": "india_world",
-      "one_liner": "Nepal is facing a massive rebuilding effort following flash floods, which may have regional economic impact.",
-      "tags": [
-        "political"
-      ],
-      "summary": "The article is truncated and only provides a brief mention that Nepal authorities are attempting to rebuild after flash floods and will require billions in funding.",
+      "summary": "Continual learning infra for self-improving agents GitHub repository Human-Agent-Society/reef, 479 stars, language Python. Topics: agent-infrastructure, ai-agents, continual-learning, inference, llm, llm-training, reinforcement-learning, self-improving-agents.",
       "key_facts": [],
-      "bottom_line": "Nepal requires billions in funding to rebuild its infrastructure after devastating flash floods.",
-      "claims": [
-        {
-          "text": "Nepal needs billions in funding to rebuild after flash floods.",
-          "support_span": "Nepal says it will need billions in funding to rebuild after flash floods",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 40,
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
       "interest_score": 0,
       "corroboration": 1,
-      "blend": 17.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "3b0ef52f23abbf75"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/videos/ce8x2401zdeo?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-04T02:20:37+00:00",
-      "trace": [
-        "tier A (+40)",
-        "single outlet, established publication (tier A)",
-        "importance 1/5 from gemma-4-31b-it",
-        "blend 18 = trust 40 / interest 0 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "927cc7266ac1ac19",
-      "title": "Congress to expand ‘Chhatron Ki Goonj’ campaign to more than 800 cities",
-      "category": "india_world",
-      "one_liner": "The Congress party is launching a massive nationwide student outreach campaign across 800 cities.",
-      "tags": [
-        "india",
-        "political",
-        "threat-intel"
-      ],
-      "summary": "The Indian National Congress plans to expand its 'Chhatron Ki Goonj' campaign to over 800 cities. Leader of the Opposition Rahul Gandhi is scheduled to lead 28 student interactions during the initial phase. The party is also appointing coordinators to manage the scale of this nationwide outreach effort.",
-      "key_facts": [
-        "Cities targeted: >800",
-        "Interactions: 28"
-      ],
-      "bottom_line": "The expansion of 'Chhatron Ki Goonj' signals a major strategic push by the Congress to mobilize student support across India.",
-      "claims": [
-        {
-          "text": "The campaign will expand to more than 800 cities.",
-          "support_span": "Congress to expand ‘Chhatron Ki Goonj’ campaign to more than 800 cities",
-          "status": "contradicted"
-        },
-        {
-          "text": "Rahul Gandhi will address 28 student interactions in the first phase.",
-          "support_span": "Leader of the Opposition in Parliament Rahul Gandhi to address 28 student interactions in the first phase of the campaign",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 25,
-      "corroboration": 1,
-      "blend": 25.0,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "927cc7266ac1ac19"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/national/congress-to-expand-chhatron-ki-goonj-campaign-to-more-than-800-cities/article71429097.ece",
-          "domain": "thehindu.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-04T16:50:00+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 2/5 from gemini-3-flash-preview",
-        "blend 25 = trust 25 / interest 25 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "9f74d525c2f6782c",
-      "title": "Flip, Don't Shuffle: Watermarking LLMs at the Speed of Inference",
-      "category": "tech_ai",
-      "one_liner": "SBW provides a near-zero-overhead LLM watermarking mechanism suitable for high-throughput distributed inference pipelines.",
-      "tags": [
-        "ai",
-        "hardware",
-        "linux",
-        "llm",
-        "research",
-        "tool"
-      ],
-      "summary": "Researchers have introduced Stateless Bernoulli Watermarking (SBW), an O(1) statistical watermarking method for Large Language Models that determines green list membership via independent per-token Bernoulli trials. Unlike existing approaches like KGW or SynthID, SBW requires only a single comparison against a counter-based random number generator, enabling single-kernel GPU execution with zero intermediate allocations. The technique supports full-vocabulary self-salt watermarking at over 6,000 times the speed of KGW and adds less than 1% overhead across batch sizes in generation benchmarks. Detection guarantees remain equivalent to fixed-size green list methods while preserving text diversity.",
-      "key_facts": [
-        "Complexity: O(1) membership check",
-        "Performance: Under 1% overhead across batch sizes",
-        "Speedup: >6000x faster than KGW self-salt"
-      ],
-      "bottom_line": "Stateless Bernoulli Watermarking eliminates the computational bottleneck of LLM watermarking by enabling single-kernel O(1) execution with under 1% latency overhead.",
-      "claims": [
-        {
-          "text": "SBW reduces green list membership complexity to O(1) using a counter-based random number generator.",
-          "support_span": "Unlike KGW's vocabulary permutation or SynthID's multi-layer tournament, SBW requires only a single comparison per token against a counter-based random number generator, reducing membership complexity to $O(1)$ and enabling single-kernel execution with zero intermediate allocations.",
-          "status": "entailed"
-        },
-        {
-          "text": "SBW adds less than 1% generation overhead across all tested batch sizes.",
-          "support_span": "In end-to-end generation benchmarks, SBW adds less than 1% overhead at all batch sizes.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
+      "blend": 0.0,
       "is_new": false,
-      "summary_source": "model",
+      "summary_source": "extract",
       "alt_keys": [
-        "9f74d525c2f6782c"
+        "6ec9b989ada8f6f2"
       ],
       "critical_signal": "",
-      "priority": "important",
+      "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2609.03844",
-          "domain": "arxiv.org",
-          "tier": "A"
+          "name": "GitHub (new)",
+          "url": "https://github.com/Human-Agent-Society/reef",
+          "domain": "github.com",
+          "tier": "C"
         }
       ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.03844"
-      ],
-      "published": "2026-09-04T04:00:00+00:00",
+      "primary_links": [],
+      "published": "2026-08-31T01:39:18+00:00",
       "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from gemini-3.7-flash",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
+        "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-08-31 — outside lookback window"
     }
   ]
 }
