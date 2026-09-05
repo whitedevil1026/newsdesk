@@ -159,10 +159,38 @@ def _vuln_facts(item: Item, body: str) -> list[str]:
     return facts[:4]
 
 
+_BOILERPLATE = re.compile(
+    r"^\s*(?:Posted by .{0,60}?on \w{3} \d{1,2}"          # seclists / oss-sec
+    r"|=+|-{4,}|_{4,}"                                     # ASCII rules
+    r"|(?:Read|View) (?:more|the full article)\b"
+    r"|Click here\b|Subscribe\b|Share this\b"
+    r"|The post .{0,80}? appeared first on\b"              # WordPress footer
+    r"|This (?:article|post) (?:originally )?appeared\b)",
+    re.I)
+
+
+def _clean_sentence(s: str) -> str:
+    """Strip the furniture a feed wraps around its actual text."""
+    s = re.sub(r"https?://\S+", "", s)          # bare URLs read as noise
+    return " ".join(s.split()).strip(" -–—|·")
+
+
 def _heuristic(item: Item, body: str) -> None:
     """No-LLM fallback. Honest about what it is: extractive, not abstractive."""
-    sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", body)
-                 if len(s.strip()) > 40]
+    # Mailing lists and WordPress feeds bury the story under furniture. Taking
+    # the first three sentences verbatim produced card bodies like "Posted by
+    # Alan Coopersmith on Sep 04 https://github.com/... The GHSA advisories
+    # listed above can be found on https://..." — a byline, two URLs and a
+    # cross-reference, which is not a summary of anything.
+    raw = [s.strip() for s in re.split(r"(?<=[.!?])\s+", body)]
+    sentences = []
+    for s in raw:
+        if _BOILERPLATE.match(s):
+            continue
+        s = _clean_sentence(s)
+        # After stripping URLs a "sentence" can collapse to nothing useful.
+        if len(s) > 40 and re.search(r"[a-z]{3}", s):
+            sentences.append(s)
     # Was: "(no article text available - headline only)". Invisible at a
     # cap of 40 published cards; at ~1,150 it is roughly 166 cards a day
     # whose entire body is an apology string, which reads as the page
@@ -170,13 +198,12 @@ def _heuristic(item: Item, body: str) -> None:
     # the "unsummarised" chip already says what it is, so say nothing.
     item.summary = truncate(" ".join(sentences[:3]), 480) if sentences else ""
 
-    bits = []
-    if item.primary_links:
-        bits.append("anchored to an official source")
-    if item.corroboration > 1:
-        bits.append(f"carried by {item.corroboration} outlets")
-    item.one_liner = f"{item.category.replace('_', ' ').title()}: " + \
-                     (", ".join(bits) if bits else "single report, unconfirmed") + "."
+    # Was: "Cyber Attacks: single report, unconfirmed." on 909 of 1,146 cards
+    # — 79% of the page carrying a line that restated the card's own section
+    # heading and the verdict chip already sitting above it, in the slot a
+    # reader looks to for what the story MEANS. Saying nothing there is more
+    # informative than saying something empty.
+    item.one_liner = ""
 
     # These are the article's own sentences quoted back, so "entailed" is
     # true by construction and means nothing. Keeping them under the heading

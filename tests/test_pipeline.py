@@ -687,6 +687,83 @@ class TestFeedTitlesAreDecoded:
             assert html.unescape(html.unescape(raw)).strip() == want, raw
 
 
+class TestExtractiveBodiesAreReadable:
+    """Most of the page is extractive, so the fallback's output IS the page."""
+
+    def _run(self, title, body, **kw):
+        from pipeline.s5_summarize import _heuristic
+        from pipeline.models import Item
+        it = Item(cluster_key="k", title=title, category="cyber_attacks", **kw)
+        _heuristic(it, body)
+        return it
+
+    def test_mailing_list_furniture_is_stripped(self):
+        """seclists and oss-security wrap the story in a byline and links, so
+        the first three sentences were "Posted by Alan Coopersmith on Sep 04
+        https://... The GHSA advisories listed above can be found on https://..."
+        — a byline, two URLs and a cross-reference."""
+        it = self._run(
+            "pcre2 version 10.48 released with security fixes",
+            "Posted by Alan Coopersmith on Sep 04 "
+            "https://github.com/PCRE2Project/pcre2/NEWS reports: The GHSA "
+            "advisories listed above can be found on "
+            "https://github.com/PCRE2Project/pcre2/security None seem to have "
+            "CVE ids assigned at this time. This release fixes a heap buffer "
+            "overflow triggered by a crafted pattern during JIT compilation.")
+        assert "Posted by" not in it.summary
+        assert "http" not in it.summary
+        assert "heap buffer overflow" in it.summary
+
+    def test_no_generic_one_liner(self):
+        """"Cyber Attacks: single report, unconfirmed." sat on 909 of 1,146
+        cards, restating the section heading and the verdict chip already
+        above it, in the slot a reader looks to for what the story means."""
+        it = self._run("Some breach happened at a company", "A breach occurred "
+                       "at the company and data was taken from its servers.")
+        assert it.one_liner == ""
+        it2 = self._run("Corroborated story", "Body text that is long enough "
+                        "to survive the forty character sentence filter here.",
+                        corroboration=3)
+        assert it2.one_liner == ""
+
+    def test_a_body_of_pure_furniture_yields_nothing_not_junk(self):
+        it = self._run("Advisory", "Posted by Someone on Sep 04 "
+                       "======================================== "
+                       "Read more https://example.com/thing")
+        assert it.summary == ""
+
+
+class TestVendorMarketingIsMuted:
+    def test_webinar_and_signup_titles_are_muted(self):
+        """"[Virtual Event] What Every Enterprise Should Know About Securing
+        Cloud Assets in the Age of AI" is a webinar signup published by a real
+        security outlet, and it reached the page looking like reporting."""
+        from pipeline.config import interests
+        from pipeline.s2_clean import _is_muted
+        from pipeline.models import Article
+        mutes = interests()["mute"]
+        for title in ("[Virtual Event] What Every Enterprise Should Know",
+                      "[Webinar] Securing the cloud",
+                      "New research: register now to save your seat"):
+            a = Article(url="https://x.test/a", title=title, source="S",
+                        domain="x.test", category="cyber_attacks", tier="B",
+                        published=None)
+            assert _is_muted(a, mutes), title
+
+    def test_real_reporting_is_not_muted(self):
+        from pipeline.config import interests
+        from pipeline.s2_clean import _is_muted
+        from pipeline.models import Article
+        mutes = interests()["mute"]
+        for title in ("Lazarus exploits CVE-2026-1234 in the wild",
+                      "Cisco patches critical Nexus 9000 flaw",
+                      "Event logging bypass found in Windows"):
+            a = Article(url="https://x.test/a", title=title, source="S",
+                        domain="x.test", category="cyber_attacks", tier="B",
+                        published=None)
+            assert not _is_muted(a, mutes), title
+
+
 class TestNoSecretsInRepo:
     def test_env_is_gitignored(self):
         """A key reaching a git remote is the one unrecoverable mistake here."""

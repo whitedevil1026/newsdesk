@@ -47,5 +47,13 @@ critical_signals:
   - "supply chain compromise"
   - "mass exploitation"
 
+# Matched as substrings against title + blurb. Vendor marketing wears news
+# clothing — "[Virtual Event] What Every Enterprise Should Know About Securing
+# Cloud Assets in the Age of AI" is a webinar signup, published by a real
+# security outlet, and it reached the page looking exactly like reporting.
 mute: ["horoscope", "sponsored", "deal of the day", "coupon", "giveaway",
-       "best laptops under", "top 10 gadgets", "casino", "betting"]
+       "best laptops under", "top 10 gadgets", "casino", "betting",
+       "[virtual event]", "[webinar]", "[sponsored]", "[whitepaper]",
+       "[podcast]", "[ebook]", "register now", "save your seat",
+       "reserve your spot", "sign up today", "watch on demand",
+       "download the report", "request a demo", "book a demo"]
