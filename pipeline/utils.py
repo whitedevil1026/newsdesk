@@ -114,7 +114,10 @@ def headline(text: str, n: int) -> str:
     if len(text) <= n:
         return text
 
-    m = re.match(r"(.{40,%d}?[.!?])(?:\s|$)" % n, text)
+    # min(40, n): interpolating n straight in built ".{40,30}" for any limit
+    # under 40, which is not a valid repeat and raised re.error instead of
+    # truncating. truncate() next door accepts any n, and so should this.
+    m = re.match(r"(.{%d,%d}?[.!?])(?:\s|$)" % (min(40, n), n), text)
     if m:
         return m.group(1).strip()
 

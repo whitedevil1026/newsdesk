@@ -536,6 +536,43 @@ class TestUnsummarisedCardsStillCarryFacts:
         assert self._facts("Google announces a new AI model",
                            "Google today announced a model.") == []
 
+    def test_ordinary_prose_never_produces_advisory_bullets(self):
+        """Every branch is gated on a CVE. Without that gate the Affected and
+        Patched patterns matched business and politics copy, and a markets
+        card displayed "Affected: prior to 2019" as if it were an advisory."""
+        for title, body in [
+            ("Reliance Q2 earnings beat estimates",
+             "Revenue prior to 2019 was unaudited. The firm updated in 2023 "
+             "its accounting."),
+            ("India signs trade pact with Canada",
+             "Tariffs earlier than 2015 levels will return. Talks resolved "
+             "in 2024."),
+            ("OpenAI ships GPT-6",
+             "Available to users before 5.0 tier subscribers."),
+        ]:
+            assert self._facts(title, body) == [], title
+
+    def test_a_nearby_number_is_not_a_cvss_score(self):
+        """The score has to sit beside an explicit CVSS marker, or be joined
+        to its label by whitespace alone as the NVD collector formats it.
+        Accepting any digit within twelve characters of a severity word read
+        "HIGH: 10 products affected" as CVSS 10 - the maximum rating - and
+        "Rated LOW; 10 vendors" as the self-contradictory CVSS 10, LOW."""
+        for body in ("HIGH: 10 products affected by this issue.",
+                     "Rated LOW; 10 vendors confirmed.",
+                     "A HIGH impact bug in v2.3 of the library."):
+            joined = " | ".join(self._facts("CVE-2026-12345 flaw", body))
+            assert "CVSS" not in joined, f"{body} -> {joined}"
+
+    def test_real_cvss_formats_still_parse(self):
+        """Both shapes the collectors actually emit."""
+        a = " | ".join(self._facts("CVE-2026-85786 flaw",
+                                   "CVSS base score 7.5 (HIGH)."))
+        assert "CVSS 7.5, HIGH" in a, a
+        b = " | ".join(self._facts(
+            "CVE-2026-58574 (CRITICAL 9.8): Dell PowerStore", "body"))
+        assert "CVSS 9.8, CRITICAL" in b, b
+
     def test_never_exceeds_four_facts(self):
         f = self._facts(
             "CVE-2026-11111 thing",
@@ -566,6 +603,32 @@ class TestHeadlinesAreNotSeveredMidWord:
     def test_short_text_is_untouched(self):
         from pipeline.utils import headline
         assert headline("Short headline", 160) == "Short headline"
+
+    def test_a_limit_under_forty_does_not_raise(self):
+        """The sentence pattern interpolated n as the upper bound of a
+        {40,n} repeat, so any limit under 40 built an invalid regex and
+        raised re.error instead of truncating. truncate() next door accepts
+        any n."""
+        from pipeline.utils import headline
+        for n in (1, 5, 10, 30, 39):
+            out = headline("some fairly long text that needs cutting down "
+                           "to size here", n)
+            assert isinstance(out, str) and out, n
+
+
+class TestCapacityCountsBatchesNotCalls:
+    def test_a_tier_that_slices_a_batch_counts_as_fewer_batches(self):
+        """remaining counts CALLS. The gemma tiers take batch_size 3, so a
+        20-item batch costs them 7 calls — 8 remaining calls is about one
+        batch, not eight. Counting calls as batches overstated the ladder by
+        ~14 batches, so the pre-emptive truncation would not fire and the
+        shortfall surfaced as failed batches late in the run instead."""
+        from pipeline.budget import Budget
+        b = Budget()
+        assert b.capacity(20) < b.capacity(), (
+            "batch-aware capacity must be lower than the raw call count")
+        # No argument keeps the old meaning, so nothing else shifts under it.
+        assert b.capacity() == sum(t.remaining for t in b.tiers)
 
 
 class TestNoSecretsInRepo:

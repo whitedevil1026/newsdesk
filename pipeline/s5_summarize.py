@@ -100,21 +100,42 @@ def _vuln_facts(item: Item, body: str) -> list[str]:
     returned is copied out of the source text, never inferred.
     """
     text = f"{item.title} {body}"
+
+    # EVERYTHING here is gated on a real CVE identifier. Without this the
+    # "Affected" and "Patched in" patterns match ordinary prose: a markets
+    # story reading "revenue prior to 2019 was unaudited ... the firm updated
+    # in 2023" produced the bullets "Affected: prior to 2019" and "Patched
+    # in: 2023", which is meaningless and looks like a security advisory.
+    cve = re.search(r"CVE-\d{4}-\d{4,7}", text)
+    if not cve:
+        return []
+
     facts: list[str] = []
 
-    cve = re.search(r"CVE-\d{4}-\d{4,7}", text)
-    sev = re.search(r"(CRITICAL|HIGH|MEDIUM|LOW)[^0-9]{0,12}(10|[0-9]\.[0-9])",
-                    text, re.I) or           re.search(r"CVSS[^0-9]{0,20}(10|[0-9]\.[0-9])[^A-Z]{0,4}"
-                    r"\(?(CRITICAL|HIGH|MEDIUM|LOW)", text, re.I)
-    if cve:
-        line = cve.group(0)
-        if sev:
-            groups = [g for g in sev.groups() if g]
-            score = next((g for g in groups if any(c.isdigit() for c in g)), "")
-            label = next((g for g in groups if g.isalpha()), "")
-            if score and label:
-                line += f": CVSS {score}, {label.upper()}"
-        facts.append(f"Identifier: {line}")
+    # The score must sit beside an explicit CVSS marker, or be joined to its
+    # label by whitespace alone as the NVD collector formats it
+    # ("CVE-1234-5678 (CRITICAL 9.8)"). Accepting any number within twelve
+    # characters of a severity word turned "HIGH: 10 products affected" into
+    # "CVSS 10, HIGH" and "Rated LOW; 10 vendors" into "CVSS 10, LOW" — the
+    # latter self-contradictory, since CVSS 10 is CRITICAL by definition.
+    sev = re.search(
+        r"CVSS[^0-9]{0,25}(10(?:\.0)?|[0-9]\.[0-9])"
+        r"(?:[^A-Za-z0-9]{0,4}\(?(CRITICAL|HIGH|MEDIUM|LOW))?",
+        text, re.I)
+    if not sev:
+        sev = re.search(r"(CRITICAL|HIGH|MEDIUM|LOW)\s+(10(?:\.0)?|[0-9]\.[0-9])",
+                        text, re.I)
+
+    line = cve.group(0)
+    if sev:
+        groups = [g for g in sev.groups() if g]
+        score = next((g for g in groups if any(c.isdigit() for c in g)), "")
+        label = next((g for g in groups if g.isalpha()), "")
+        if score and label:
+            line += f": CVSS {score}, {label.upper()}"
+        elif score:
+            line += f": CVSS {score}"
+    facts.append(f"Identifier: {line}")
 
     aff = re.search(r"((?:versions?\s+)?(?:prior to|before|earlier than|up to"
                     r"(?: and including)?)\s+v?[0-9][0-9A-Za-z.\-]*)", text, re.I)
@@ -455,7 +476,9 @@ def run(items: list[Item], bodies: dict[str, str],
     # part-way through. Batches are already ordered best-first, so the ones
     # that get dropped are the least important.
     budget = Budget()
-    capacity = budget.capacity()
+    # Pass the batch size so tiers that slice a batch into several calls are
+    # counted as the fraction of a batch they can actually serve.
+    capacity = budget.capacity(size)
     if capacity < len(batches):
         log("summarize", f"! quota covers {capacity}/{len(batches)} batches")
         log("budget", budget.report())

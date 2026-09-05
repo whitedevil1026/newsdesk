@@ -167,11 +167,35 @@ class Budget:
                                "remaining items use extractive summaries")
         return None
 
-    def capacity(self) -> int:
-        """Total batches the ladder can serve this run."""
+    def capacity(self, batch_size: int = 0) -> int:
+        """How many batches of `batch_size` the ladder can really serve.
+
+        `remaining` counts a tier's remaining CALLS. That equals batches only
+        while the tier takes a whole batch in one call. The gemma tiers have
+        batch_size 3, so _generate slices a 20-item batch into 7 calls and
+        debits 7 — meaning 8 remaining calls is about ONE batch, not eight.
+
+        Counting calls as batches overstated the ladder by ~14 batches. At a
+        summarisation budget of 150 the slack hid it; at 400 the run needs 20
+        batches, so if the flagship and flash-lite tiers are spent the caller
+        would believe it had capacity it does not have, skip its pre-emptive
+        truncation, and instead discover the shortfall one failed batch at a
+        time late in the run.
+
+        Called with no argument it keeps the old call-counting meaning.
+        """
         if not self.enabled:
             return 10 ** 6
-        return sum(t.remaining for t in self.tiers)
+        if batch_size <= 0:
+            return sum(t.remaining for t in self.tiers)
+        total = 0
+        for t in self.tiers:
+            per_batch = 1
+            if t.batch_size and t.batch_size < batch_size:
+                # ceil: a 20-item batch at batch_size 3 costs 7 calls.
+                per_batch = -(-batch_size // t.batch_size)
+            total += t.remaining // per_batch
+        return total
 
     # --- execution -------------------------------------------------------
 
