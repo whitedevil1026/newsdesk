@@ -499,6 +499,75 @@ class TestScheduleTellsTheTruth:
         assert ist == 9 * 60, f"estimate lands at {ist//60:02d}:{ist%60:02d} IST"
 
 
+class TestUnsummarisedCardsStillCarryFacts:
+    """Most of the page is extractive now that everything in the window is
+    published. A CVE card that ships as a bare headline while its identifier,
+    severity and fixed version sit unparsed in the body is a wasted card."""
+
+    def _facts(self, title, body):
+        from pipeline.s5_summarize import _vuln_facts
+        from pipeline.models import Item
+        return _vuln_facts(Item(cluster_key="k", title=title,
+                                category="cyber_attacks"), body)
+
+    def test_cve_severity_affected_and_fix_are_extracted(self):
+        f = self._facts(
+            "CVE-2026-85786 - memory amplification in Amazon ion-java",
+            "Affects ion-java versions prior to 1.11.9. Fixed in version "
+            "1.11.9. CVSS base score 7.5 (HIGH). Published 2026-09-04.")
+        joined = " | ".join(f)
+        assert "CVE-2026-85786" in joined
+        assert "7.5" in joined and "HIGH" in joined
+        assert "1.11.9" in joined
+        assert not any(x.endswith(".") for x in f), f"trailing period: {f}"
+
+    def test_kev_flags_ransomware_and_deadline(self):
+        f = self._facts(
+            "CVE-2026-21962: Oracle WebLogic Server Proxy Plug-in",
+            "Required action: apply mitigations. Federal remediation due: "
+            "2026-08-27. Known ransomware campaign use: Known. Added to the "
+            "CISA KEV catalogue on 2026-08-25.")
+        joined = " | ".join(f)
+        assert "ransomware" in joined.lower()
+        assert "2026-08-27" in joined
+
+    def test_returns_nothing_for_ordinary_news(self):
+        """It must not invent structure where there is none."""
+        assert self._facts("Google announces a new AI model",
+                           "Google today announced a model.") == []
+
+    def test_never_exceeds_four_facts(self):
+        f = self._facts(
+            "CVE-2026-11111 thing",
+            "versions prior to 2.0. Fixed in version 2.0. CVSS base score "
+            "9.8 (CRITICAL). Known ransomware campaign use: Known. Federal "
+            "remediation due: 2026-01-01. Actively exploited in the wild.")
+        assert len(f) <= 4
+
+
+class TestHeadlinesAreNotSeveredMidWord:
+    def test_prefers_a_complete_sentence(self):
+        from pipeline.utils import headline
+        # The limit has to bite, or nothing is truncated and the test proves
+        # nothing. The first sentence is 85 characters; the whole post is 139.
+        out = headline("After a literal year of development, the WASM check "
+                       "patch has been merged into Anubis. This will be "
+                       "enabled by default in the next release.", 100)
+        assert out.endswith("Anubis."), out
+        assert "This will be" not in out
+
+    def test_falls_back_to_a_whole_word(self):
+        from pipeline.utils import headline
+        long = "word " * 60
+        out = headline(long, 100)
+        assert not out.rstrip("…").endswith("wor")
+        assert out.endswith("…")
+
+    def test_short_text_is_untouched(self):
+        from pipeline.utils import headline
+        assert headline("Short headline", 160) == "Short headline"
+
+
 class TestNoSecretsInRepo:
     def test_env_is_gitignored(self):
         """A key reaching a git remote is the one unrecoverable mistake here."""

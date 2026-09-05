@@ -416,7 +416,13 @@ llm:
   #
   # 150 costs ~8 calls against a ladder that allows 36 batches a run, and the
   # summary cache means repeat items are not paid for twice.
-  max_items_summarized: 150
+  # The ladder can serve ~440 items a run (4 flagship x 2 batches x 20, plus
+  # 2 flash-lite x 6 x 20, plus what the gemma tiers manage at batch_size 3).
+  # Sitting at 150 left ~290 items of FREE capacity unused every single day
+  # while most of the page shipped as bare headlines — the single biggest
+  # quality win available, and it costs nothing. Anything past the ladder's
+  # real capacity still degrades to extractive exactly as before.
+  max_items_summarized: 400
   # Hard ceiling on the second pass that rescues publishable items the model
   # promoted after the shortlist was chosen. Without it the pass sizes itself
   # from the publish cap, which is now 900 — that would be ~38 extra batches

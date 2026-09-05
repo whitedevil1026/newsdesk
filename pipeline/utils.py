@@ -95,3 +95,31 @@ def snapshot(obj: Any, path: Path, label: str = "") -> None:
 def truncate(text: str, n: int) -> str:
     text = " ".join(text.split())
     return text if len(text) <= n else text[: n - 1].rstrip() + "\u2026"
+
+
+def headline(text: str, n: int) -> str:
+    """Cut prose down to something that reads as a headline.
+
+    A plain truncate is right for a body preview and wrong for a title.
+    Social posts are the whole reason: a Telegram or Bluesky post is prose,
+    so chopping it at 160 characters produced titles that stopped mid-word -
+    "After a literal year of development, the WASM check patch has been
+    merged into Anubis. This will be" - which is not a headline, it is a
+    sentence someone interrupted.
+
+    Prefer the first COMPLETE sentence. Otherwise break on the last whole
+    word, so the worst case is still a clean cut rather than a severed one.
+    """
+    text = " ".join(text.split())
+    if len(text) <= n:
+        return text
+
+    m = re.match(r"(.{40,%d}?[.!?])(?:\s|$)" % n, text)
+    if m:
+        return m.group(1).strip()
+
+    cut = text[:n].rstrip()
+    space = cut.rfind(" ")
+    if space > n * 0.6:                  # do not strand a tiny fragment
+        cut = cut[:space].rstrip()
+    return cut.rstrip(",;:-") + "\u2026"

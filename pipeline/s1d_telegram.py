@@ -30,7 +30,7 @@ from datetime import datetime, timedelta, timezone
 from . import netguard
 from .config import settings
 from .models import Article
-from .utils import log, truncate
+from .utils import headline, log, truncate
 
 try:
     import certifi
@@ -279,7 +279,7 @@ def _channel_articles(spec: dict, cutoff: datetime, cfg: dict) -> list[Article]:
 
         out.append(Article(
             url=url,
-            title=truncate(title, 160),
+            title=headline(title, 160),
             source=src_name,
             domain=dom,
             category=spec["category"],

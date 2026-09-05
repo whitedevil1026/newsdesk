@@ -22,7 +22,7 @@ from datetime import datetime, timedelta, timezone
 
 from .config import settings
 from .models import Article
-from .utils import log, truncate
+from .utils import headline, log, truncate
 
 try:
     import certifi
@@ -110,7 +110,7 @@ def run() -> list[Article]:
 
             out.append(Article(
                 url=_post_url(post, handle),
-                title=truncate(text.replace("\n", " "), 150),
+                title=headline(text.replace("\n", " "), 150),
                 source=spec.get("name", handle),
                 domain="bsky.app",
                 category=spec["category"],

@@ -87,6 +87,57 @@ def _apply(item: Item, payload: dict, source: str, body: str = "") -> None:
 
 # ----------------------------------------------------------- fallback ----
 
+def _vuln_facts(item: Item, body: str) -> list[str]:
+    """Structured facts for a vulnerability, pulled out with no model call.
+
+    A CVE card carries its own facts in plain text — the identifier, the
+    severity, the affected range, the fixed version — and they sit in a
+    predictable shape because they come from NVD, CISA KEV or a CVE feed.
+    Before this, an unsummarised CVE shipped as a bare headline while the
+    numbers a reader actually needs were sitting in the body unparsed.
+
+    Deterministic, so it costs nothing and cannot hallucinate: every value
+    returned is copied out of the source text, never inferred.
+    """
+    text = f"{item.title} {body}"
+    facts: list[str] = []
+
+    cve = re.search(r"CVE-\d{4}-\d{4,7}", text)
+    sev = re.search(r"(CRITICAL|HIGH|MEDIUM|LOW)[^0-9]{0,12}(10|[0-9]\.[0-9])",
+                    text, re.I) or           re.search(r"CVSS[^0-9]{0,20}(10|[0-9]\.[0-9])[^A-Z]{0,4}"
+                    r"\(?(CRITICAL|HIGH|MEDIUM|LOW)", text, re.I)
+    if cve:
+        line = cve.group(0)
+        if sev:
+            groups = [g for g in sev.groups() if g]
+            score = next((g for g in groups if any(c.isdigit() for c in g)), "")
+            label = next((g for g in groups if g.isalpha()), "")
+            if score and label:
+                line += f": CVSS {score}, {label.upper()}"
+        facts.append(f"Identifier: {line}")
+
+    aff = re.search(r"((?:versions?\s+)?(?:prior to|before|earlier than|up to"
+                    r"(?: and including)?)\s+v?[0-9][0-9A-Za-z.\-]*)", text, re.I)
+    if aff:
+        facts.append(f"Affected: {aff.group(1).strip().rstrip(chr(46))}")
+
+    fix = re.search(r"(?:fixed|patched|resolved|remediated|updated)\s+in\s+"
+                    r"(?:version\s+)?(v?[0-9][0-9A-Za-z.\-]*)", text, re.I)
+    if fix:
+        facts.append(f"Patched in: {fix.group(1).rstrip(chr(46))}")
+
+    if re.search(r"known ransomware campaign use:\s*known", text, re.I):
+        facts.append("Ransomware: used in known ransomware campaigns")
+    due = re.search(r"Federal remediation due:\s*(\d{4}-\d{2}-\d{2})", text, re.I)
+    if due:
+        facts.append(f"CISA remediation due: {due.group(1)}")
+    if re.search(r"actively exploited|exploitation in the wild|"
+                 r"KEV catalogue|KEV catalog", text, re.I):
+        facts.append("Status: exploitation reported in the wild")
+
+    return facts[:4]
+
+
 def _heuristic(item: Item, body: str) -> None:
     """No-LLM fallback. Honest about what it is: extractive, not abstractive."""
     sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", body)
@@ -113,6 +164,10 @@ def _heuristic(item: Item, body: str) -> None:
     # No check happened here, so no claims are reported.
     item.claims = []
     item.bottom_line = ""      # only the model can judge what the point is
+    # A vulnerability carries its own facts in the text. Lift them out rather
+    # than shipping a bare headline while the CVE id, the severity and the
+    # fixed version sit unread in the body.
+    item.key_facts = _vuln_facts(item, body)
     tagging.apply(item, body)  # keyword tags still work with no model
     item.summary_source = "extract"
     item.note("summary: the article's opening sentences, not model-written "
