@@ -168,10 +168,58 @@ _BOILERPLATE = re.compile(
     r"|This (?:article|post) (?:originally )?appeared\b)",
     re.I)
 
+# Feeds that publish a teaser and cut it off mid-thought, then append their
+# own advert. Medium is the worst: the blurb ends "... Continue reading on
+# Medium »", which is not part of the article at all.
+_TEASER_TAIL = re.compile(
+    r"\s*(?:\.{3}|…)?\s*Continue reading on .{0,40}?(?:»|>>|$)"
+    r"|\s*Continue reading\.{0,3}\s*$"
+    r"|\s*\[\.{3}\]\s*$", re.I)
+
+# Scripts this page does not render summaries in. The site is written in
+# English and a reader cannot use a summary they cannot read; the headline
+# and the source link still get published so nothing is hidden.
+_NON_LATIN = re.compile(
+    r"[Ѐ-ӿ"      # Cyrillic
+    r"֐-׿"       # Hebrew
+    r"؀-ۿݐ-ݿﭐ-﷿ﹰ-﻿"   # Arabic
+    r"ऀ-ॿ"       # Devanagari
+    r"฀-๿"       # Thai
+    r"぀-ヿ"       # Kana
+    r"一-鿿"       # CJK
+    r"가-힯]")     # Hangul
+
+
+def _mostly_non_english(text: str) -> bool:
+    """True when the text is not usable by an English-reading audience.
+
+    A ratio, not a single character: a legitimate English story routinely
+    names a Chinese company or quotes a Russian handle, and dropping those
+    would lose real reporting. Only when a THIRD of the letters are another
+    script is the summary genuinely unreadable here.
+    """
+    letters = [c for c in text if c.isalpha()]
+    if len(letters) < 20:
+        return False
+    return sum(bool(_NON_LATIN.match(c)) for c in letters) / len(letters) > 0.33
+
 
 def _clean_sentence(s: str) -> str:
     """Strip the furniture a feed wraps around its actual text."""
     s = re.sub(r"https?://\S+", "", s)          # bare URLs read as noise
+    s = _TEASER_TAIL.sub("", s)
+    # Exploit-DB and packetstorm prefix every entry with a metadata header
+    # written as shell comments — "# Exploit Title: ... # Date: ... # Exploit
+    # Author: ... # CVE: ..." — which has no sentence terminator, so the
+    # splitter kept it as one long "sentence" and it became the whole card.
+    # The prose starts after "# Description:".
+    m = re.search(r"#\s*Description\s*:\s*", s, re.I)
+    if m:
+        s = s[m.end():]
+    s = re.sub(r"#\s*(?:Exploit Title|Date|Exploit Author|Author|Vendor"
+               r"(?: Homepage)?|Software Link|Version|CVE|Tested on|Category|"
+               r"Platform|Type)\s*:[^#]*", "", s, flags=re.I)
+    s = re.sub(r"\s*#+\s*", " ", s)
     return " ".join(s.split()).strip(" -–—|·")
 
 
@@ -189,14 +237,21 @@ def _heuristic(item: Item, body: str) -> None:
             continue
         s = _clean_sentence(s)
         # After stripping URLs a "sentence" can collapse to nothing useful.
-        if len(s) > 40 and re.search(r"[a-z]{3}", s):
-            sentences.append(s)
+        if len(s) <= 40 or not re.search(r"[a-z]{3}", s):
+            continue
+        if _mostly_non_english(s):
+            continue
+        sentences.append(s)
     # Was: "(no article text available - headline only)". Invisible at a
     # cap of 40 published cards; at ~1,150 it is roughly 166 cards a day
     # whose entire body is an apology string, which reads as the page
     # being broken. The card already renders cleanly with no summary and
     # the "unsummarised" chip already says what it is, so say nothing.
-    item.summary = truncate(" ".join(sentences[:3]), 480) if sentences else ""
+    # Five sentences at 700, not three at 480. Extractive bodies ran to a
+    # median of 141 characters against 438 for model-written ones, which
+    # is the difference between a summary and a caption. Now that most
+    # items have real article text behind them there is something to take.
+    item.summary = truncate(" ".join(sentences[:5]), 700) if sentences else ""
 
     # Was: "Cyber Attacks: single report, unconfirmed." on 909 of 1,146 cards
     # — 79% of the page carrying a line that restated the card's own section

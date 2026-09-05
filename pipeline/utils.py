@@ -17,6 +17,21 @@ _STOP = {"the", "a", "an", "of", "in", "on", "to", "for", "and", "is", "are",
          "at", "by", "with", "as", "from", "after", "over", "new", "says"}
 
 
+# Windows hands a bare `python` a cp1252 stdout, which raises
+# UnicodeEncodeError on anything this pipeline routinely handles: an emoji in
+# a feed title, an Arabic or CJK headline, a box-drawing character in a
+# banner. run.py forced UTF-8 on its own streams, but that only protected the
+# one entry point — pytest, a direct `from pipeline import ...`, or any
+# ad-hoc script bypassed it and died on a headline it merely tried to print.
+# Doing it here covers every caller, and errors="replace" means logging can
+# never be the thing that kills a run.
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+    except (AttributeError, ValueError):        # already wrapped, or not a tty
+        pass
+
+
 def log(stage: str, msg: str) -> None:
     ts = datetime.now().strftime("%H:%M:%S")
     print(f"  [{ts}] {stage:<12} {msg}", file=sys.stderr)

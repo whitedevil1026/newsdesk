@@ -55,8 +55,13 @@ window:
 # this limit keeps the feed's own blurb as its body, which is exactly what a
 # card needs when no model is going to summarise it anyway.
 extract:
-  max_items: 220            # ~2x llm.max_items_summarized, so the shortlist
-                            # always has real article text behind it
+  # Was 220. Extractive summaries ran to a median of 141 characters against
+  # 438 for model-written ones — "not much" — because 944 of ~1,160 clusters
+  # never had their article fetched and fell back to the feed blurb, whose
+  # own median is 118 characters. There is nothing to extract from a blurb
+  # that short. 220 fetches took 20-30s against a 75-minute workflow budget,
+  # so the ceiling was pure caution.
+  max_items: 700
 
 # When the pipeline is scheduled to run. This is metadata only — the actual
 # schedule lives in .github/workflows/newsdesk.yml and must be kept in step.

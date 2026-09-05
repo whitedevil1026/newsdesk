@@ -764,6 +764,66 @@ class TestVendorMarketingIsMuted:
             assert not _is_muted(a, mutes), title
 
 
+class TestSummariesAreReadableEnglish:
+    def _sum(self, body, title="X"):
+        from pipeline.s5_summarize import _heuristic
+        from pipeline.models import Item
+        it = Item(cluster_key="k", title=title, category="cyber_tools")
+        _heuristic(it, body)
+        return it.summary
+
+    def test_medium_teaser_advert_is_stripped(self):
+        """Medium publishes a truncated teaser and appends its own advert, so
+        the card body ended '... Continue reading on Medium >>'."""
+        out = self._sum("A long enough English sentence about pivoting "
+                        "through the internal network here. "
+                        "Continue reading on Medium »")
+        assert "Continue reading" not in out
+        assert "pivoting" in out
+
+    def test_a_summary_in_another_script_is_dropped(self):
+        """The page is written in English; a reader cannot use a summary they
+        cannot read. The headline and source link still publish."""
+        arabic = ("قال الله تعالى "
+                  "يرفع الله الذين "
+                  "آمنوا منكم والذين "
+                  "أوتوا العلم درجات")
+        assert self._sum(arabic) == ""
+
+    def test_english_text_naming_a_foreign_entity_is_kept(self):
+        """A ratio, not a single character. English reporting routinely names
+        a Chinese company or quotes a Russian handle, and dropping those would
+        lose real security coverage."""
+        out = self._sum("Researchers at the Chinese firm 腾讯 disclosed a "
+                        "flaw in gateway software this week. The bug allows "
+                        "unauthenticated remote code execution on appliances.")
+        assert "remote code execution" in out
+
+    def test_extractive_summaries_are_not_one_liners(self):
+        """Extractive bodies ran to a median of 141 characters against 438 for
+        model-written ones — the difference between a summary and a caption."""
+        body = " ".join(
+            f"This is sentence number {i} and it carries enough detail about "
+            f"the vulnerability to be worth reading on its own." 
+            for i in range(8))
+        out = self._sum(body)
+        assert len(out) > 400, len(out)
+
+
+class TestConsoleEncodingIsSafeFromAnyEntryPoint:
+    def test_importing_the_package_forces_utf8(self):
+        """Windows hands a bare python a cp1252 stdout, which raises on an
+        emoji in a feed title or a CJK headline. run.py forced UTF-8 on its
+        own streams, but pytest and any direct import bypassed that guard."""
+        import sys
+        import pipeline.utils                     # noqa: F401  (import is the point)
+        for stream in (sys.stdout, sys.stderr):
+            enc = (getattr(stream, "encoding", "") or "").lower()
+            # pytest swaps in its own capture object; accept anything that can
+            # actually encode the characters we handle.
+            "⚠️ 腾讯 قال".encode(enc or "utf-8")
+
+
 class TestNoSecretsInRepo:
     def test_env_is_gitignored(self):
         """A key reaching a git remote is the one unrecoverable mistake here."""

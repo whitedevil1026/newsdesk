@@ -280,6 +280,9 @@ ul.facts b{color:var(--ink);font-weight:600}
 .srcs a:hover{color:var(--ink);border-bottom-color:var(--muted)}
 .srcs a.primary{color:var(--ok);border-bottom-color:var(--ok)}
 .srcs .dot2{opacity:.4}
+/* An explicit label. "Who says this" is the first question a reader asks of
+   an unfamiliar headline, and a bare underlined name did not answer it. */
+.srcs .srclabel{color:var(--minor);font-weight:600;letter-spacing:.02em}
 .srcs .srcmore{margin:0;display:inline-block}
 .srcs .srcmore summary{font-size:12.5px;color:var(--muted);min-height:0;
  display:inline-block;padding:0}
@@ -754,7 +757,8 @@ function card(it){
     (it.bottom_line?'<p class="deck">'+hl(it.bottom_line)+'</p>':"")+
     heldWhy+
     factHtml+
-    '<div class="srcs">'+shown.join('<span class="dot2">·</span>')+more+prim+
+    '<div class="srcs"><span class="srclabel">Source:</span>'+
+      shown.join('<span class="dot2">·</span>')+more+prim+
       (band(it.published)?'<span class="when">'+esc(band(it.published))+'</span>':"")+
     '</div>'+
     tagHtml+
