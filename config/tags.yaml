@@ -15,7 +15,9 @@ vocabulary:
   - howto            # tutorial, guide, walkthrough, usage
   - research         # paper, technical writeup, analysis
   - incident         # a breach or attack that happened
-  - vulnerability    # CVE, flaw, advisory
+  - vulnerability    # a flaw or advisory, with or without a CVE number
+  - cve              # carries an actual CVE-YYYY-NNNN identifier
+  - threat-actor     # a NAMED group: APT crew, ransomware gang
   - policy           # regulation, legal, compliance
 
   # subject areas
@@ -56,8 +58,38 @@ rules:
                  "alert triage", "threat hunting", "elastic security", "wazuh"]
   threat-intel: ["threat intel", "apt", "ioc", "ttp", "mitre att&ck", "attribution",
                  "threat actor", "campaign"]
+  # Named families as well as the generic words. "Attacks" was one
+  # undifferentiated pile of 339 items — a reader hunting a specific family
+  # could not separate it from advisory noise.
   malware:      ["malware", "trojan", "backdoor", "loader", "stealer", "rootkit",
-                 "botnet", "rat ", "infostealer"]
+                 "botnet", "rat", "infostealer", "wiper", "dropper", "webshell",
+                 "emotet", "trickbot", "qakbot", "qbot", "icedid", "cobalt strike",
+                 "mimikatz", "asyncrat", "remcos", "agent tesla", "agenttesla",
+                 "redline", "vidar", "lumma", "raccoon", "rhadamanthys",
+                 "stealc", "amadey", "smokeloader", "bumblebee", "gootloader",
+                 "latrodectus", "darkgate", "pikabot", "netsupport", "xworm",
+                 "njrat", "formbook", "snake keylogger", "ursnif", "gozi",
+                 "dridex", "zloader", "socgholish", "fakeupdates", "mirai",
+                 "gafgyt", "xmrig", "sliver", "havoc", "brute ratel",
+                 "meterpreter", "bruteratel"]
+
+  # A NAMED adversary, not the generic word "hacker". Ambiguous gang names are
+  # qualified on purpose - bare "play", "hive", "royal" and "cactus" are
+  # ordinary English and would mis-tag half the feed.
+  threat-actor: ["apt28", "apt29", "apt41", "apt38", "apt10", "lazarus",
+                 "kimsuky", "sandworm", "turla", "fancy bear", "cozy bear",
+                 "charming kitten", "mustang panda", "volt typhoon",
+                 "salt typhoon", "silk typhoon", "midnight blizzard",
+                 "scattered spider", "lockbit", "blackcat", "alphv", "cl0p",
+                 "clop", "black basta", "blackbasta", "akira", "ransomhub",
+                 "play ransomware", "medusa ransomware", "qilin",
+                 "hunters international", "fin7", "fin11", "wizard spider",
+                 "ta505", "evil corp", "conti", "revil", "hive ransomware",
+                 "royal ransomware", "rhysida", "inc ransom", "8base",
+                 "cactus ransomware", "dragonforce", "interlock", "safepay",
+                 "brain cipher", "anonymous sudan", "killnet", "noname057",
+                 "threat actor", "threat group", "apt group", "nation-state",
+                 "state-sponsored", "advanced persistent threat"]
   ransomware:   ["ransomware", "lockbit", "ransom", "extortion", "double extortion"]
   exploit:      ["exploit", "poc", "proof of concept", "rce", "privilege escalation",
                  "zero-day", "0-day", "actively exploited", "weaponized"]

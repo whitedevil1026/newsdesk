@@ -151,6 +151,15 @@ ul.rejlist .dom{display:block;color:var(--muted);font-size:12px;margin-top:2px}
 .strip::-webkit-scrollbar{display:none}
 .strip .chips{flex-wrap:nowrap;margin-top:0;padding-right:22px}
 .strip .chip{flex:0 0 auto;white-space:nowrap}
+/* The focus row sits under the sections and reads as a refinement of them,
+   so it is one step quieter: smaller, no border until hovered or active. */
+#focusStrip{margin-top:6px}
+#focusStrip .chip{font-size:11.5px;padding:3px 9px;border-color:transparent;
+ background:var(--factbg)}
+#focusStrip .chip:hover{border-color:var(--line2)}
+#focusStrip .chip[aria-pressed=true]{background:var(--accent);color:var(--bg);
+ border-color:var(--accent)}
+#focusStrip[hidden]{display:none}
 
 /* Everything secondary. Closed on load; opening it costs one tap and the
    reader keeps the whole first screen for stories until they ask for it. */
@@ -455,6 +464,7 @@ footer p{margin:14px 0 0}
               aria-controls="panel">Filters<span class="fdot" id="fdot" hidden></span></button>
     </div>
     <div class="strip"><div class="chips" id="cats"></div></div>
+    <div class="strip" id="focusStrip"><div class="chips" id="focus"></div></div>
     <div class="active-tags" id="activeTags"></div>
     <div id="panel">
       <div class="tagbar">
@@ -921,7 +931,10 @@ function paintApplied(count){
   if(flag)               bits.push(esc(FLAG_LABEL[flag]||flag));
   if(onlyNew)            bits.push("new only");
   if(sort!==DEFAULT_SORT) bits.push("by "+esc(SORTS[sort].label.toLowerCase()));
-  for(const t of activeTags) bits.push(esc(t));
+  // Show the focus row's label, not the raw tag: the chip says "CVEs"
+  // so the summary should not say "cve".
+  const FLABEL=Object.fromEntries(FOCUS);
+  for(const t of activeTags) bits.push(esc(FLABEL[t]||t));
   if(query)              bits.push('"'+esc(query)+'"');
 
   const total=DATA?DATA.items.length:count;
@@ -967,6 +980,7 @@ function draw(){
   const on=anyFilter();
   if(dot) dot.hidden = !on;
   paintApplied(items.length);
+  drawFocus();
   // Disabled when there is nothing to clear, so the button reports the state
   // of the page rather than sitting there looking equally clickable always.
   const ca=document.getElementById("clearAll");
@@ -1027,6 +1041,43 @@ function windowNote(catKey){
 
 // Tag chips reflect what is actually on screen, so the facets never offer a
 // filter that would return nothing.
+// The facets worth a permanent control, in the order a security reader
+// reaches for them. "Attacks & Exploits" was one pile of 339 stories a day
+// and the only way to split it was a drawer that is shut by default — so a
+// reader hunting a named ransomware gang had to know the tag existed, open
+// the drawer and find it among thirty others.
+const FOCUS=[["cve","CVEs"],["threat-actor","Threat actors"],
+             ["malware","Malware"],["ransomware","Ransomware"],
+             ["exploit","Exploits"],["incident","Breaches"],
+             ["bugbounty","Bug bounty"],["writeup","Write-ups"],
+             ["tool","Tools"],["howto","How-to"]];
+
+function drawFocus(){
+  const box=document.getElementById("focus");
+  if(!box) return;
+  // Counted against everything EXCEPT the focus tags themselves, so the
+  // numbers say what each one would add rather than what survives the
+  // selection already made.
+  const base=DATA.items.filter(it=>{
+    if(cat!=="all" && it.category!==cat) return false;
+    if(flag && FLAGS[flag] && !FLAGS[flag](it)) return false;
+    const lim=AGES[age] && AGES[age].hours;
+    if(lim){
+      if(!it.published) return false;
+      if((Date.now()-new Date(it.published))/36e5 > lim) return false;
+    }
+    return true;
+  });
+  const rows=FOCUS
+    .map(([t,label])=>[t,label,base.filter(i=>(i.tags||[]).includes(t)).length])
+    .filter(r=>r[2]>0);
+  document.getElementById("focusStrip").hidden = rows.length < 2;
+  box.innerHTML=rows.map(([t,label,n])=>
+    '<button class="chip" data-tag="'+esc(t)+'" aria-pressed="'+
+    activeTags.has(t)+'">'+esc(label)+
+    '<span class="n"><span class="sep3">&middot;</span>'+n+'</span></button>').join("");
+}
+
 function drawTags(visible){
   const counts={};
   for(const it of DATA.items){
@@ -1161,6 +1212,13 @@ function boot(d){
     shown=PAGE;
     [...cbox.children].forEach(x=>x.setAttribute("aria-pressed",x===b));
     toTop(); draw();
+  };
+  const fbox=document.getElementById("focus");
+  if(fbox) fbox.onclick=e=>{
+    const b=e.target.closest("button[data-tag]"); if(!b) return;
+    const t=b.dataset.tag;
+    activeTags.has(t)?activeTags.delete(t):activeTags.add(t);
+    shown=PAGE; toTop(); draw();
   };
   document.getElementById("tagchips").onclick=e=>{
     const b=e.target.closest("button[data-tag]"); if(!b) return;

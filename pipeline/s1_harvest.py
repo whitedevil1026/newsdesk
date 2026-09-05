@@ -7,6 +7,7 @@ feed is logged and skipped.
 
 from __future__ import annotations
 
+import html
 import ssl
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -97,7 +98,12 @@ def _fetch_one(category: str, spec: dict, cutoff: datetime, cfg: dict) -> list[A
     out: list[Article] = []
     for entry in parsed.entries[: cfg["harvest"]["max_per_feed"]]:
         link = entry.get("link") or ""
-        title = (entry.get("title") or "").strip()
+        # Feeds escape their titles, and nothing downstream decoded them, so
+        # cards rendered "Brazilian &amp; Global Financial Systems" and
+        # "GoPro says it&#8217;s still committed". unescape twice: a few feeds
+        # double-encode, which leaves "&amp;amp;" after one pass.
+        title = html.unescape(html.unescape(
+            (entry.get("title") or "").strip())).strip()
         if not link or not title:
             continue
         # Google News wraps every story in a redirect and names the real

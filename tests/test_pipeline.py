@@ -631,6 +631,62 @@ class TestCapacityCountsBatchesNotCalls:
         assert b.capacity() == sum(t.remaining for t in b.tiers)
 
 
+class TestAttackFacets:
+    """"Attacks & Exploits" was one pile of 339 stories a day with no way to
+    separate an advisory from a malware family from a named gang."""
+
+    def _tags(self, title, summary=""):
+        from pipeline import tagging
+        from pipeline.models import Item
+        it = Item(cluster_key="k", title=title, category="cyber_attacks",
+                  summary=summary)
+        tagging.apply(it, "")
+        return set(it.tags)
+
+    def test_cve_is_matched_not_guessed(self):
+        """`vulnerability` fires on the word "patch" and covers advisories
+        with no number at all. `cve` means there is an identifier to look up."""
+        assert "cve" in self._tags("CVE-2026-83548: SonicWall SMA1000 SSRF")
+        assert "cve" not in self._tags("Cisco ships a security patch today")
+
+    def test_named_gangs_are_separated_from_generic_attack_words(self):
+        assert "threat-actor" in self._tags("Lazarus Windows Zero-Day Exploit")
+        assert "threat-actor" in self._tags("INC Ransom claims attack on clinic")
+        assert "threat-actor" not in self._tags("Router flaw lets attackers in")
+
+    def test_ambiguous_gang_names_need_qualifying(self):
+        """Bare "play", "hive", "royal" and "cactus" are ordinary English and
+        would mis-tag half the feed."""
+        for benign in ("Apple Play Store revenue climbs",
+                       "Royal Mail confirms delivery delays",
+                       "Cactus plant retailer opens in Pune"):
+            assert "threat-actor" not in self._tags(benign), benign
+
+    def test_priority_tags_survive_the_eight_tag_cap(self):
+        """Sorting alphabetically and slicing cut `threat-actor` before `ai`
+        and `cloud`, dropping the one tag that said what the story was."""
+        t = self._tags(
+            "Lazarus exploits CVE-2026-1234 with ransomware on AWS",
+            "An AI-assisted attack on Windows and Linux cloud identity "
+            "systems using appsec and network tooling for red team access.")
+        assert "cve" in t and "threat-actor" in t
+
+
+class TestFeedTitlesAreDecoded:
+    def test_html_entities_do_not_reach_the_card(self):
+        """Feeds escape their titles and nothing decoded them, so cards read
+        "Brazilian &amp; Global" and "it&#8217;s still committed"."""
+        import html
+        for raw, want in [
+            ("Brazilian &amp; Global Financial Systems",
+             "Brazilian & Global Financial Systems"),
+            ("GoPro says it&#8217;s committed", "GoPro says it’s committed"),
+            ("batch.py &#x5b;Guest Diary&#x5d;", "batch.py [Guest Diary]"),
+            ("Double &amp;amp; encoded", "Double & encoded"),
+        ]:
+            assert html.unescape(html.unescape(raw)).strip() == want, raw
+
+
 class TestNoSecretsInRepo:
     def test_env_is_gitignored(self):
         """A key reaching a git remote is the one unrecoverable mistake here."""

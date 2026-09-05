@@ -68,6 +68,16 @@ def clean(candidates: list[str] | None) -> set[str]:
     return {t.strip().lower() for t in candidates if t and t.strip().lower() in vocab}
 
 
+_CVE_ID = re.compile(r"\bCVE-\d{4}-\d{4,7}\b", re.I)
+
+# Tags that tell a reader what KIND of story this is. When the cap bites,
+# these survive. Sorting alphabetically and slicing meant "threat-actor" was
+# cut before "ai" and "cloud" on a story about a named ransomware gang, which
+# is precisely backwards: the discriminating tag is the one worth keeping.
+_PRIORITY = ("cve", "threat-actor", "malware", "ransomware", "exploit",
+             "vulnerability", "incident", "bugbounty", "writeup", "tool")
+
+
 def apply(item: Item, body: str = "", model_tags: list[str] | None = None) -> None:
     """Merge model tags with keyword tags onto the item, capped and sorted."""
     text = f"{item.title} {item.one_liner} {item.summary} {body[:2000]}"
@@ -77,5 +87,16 @@ def apply(item: Item, body: str = "", model_tags: list[str] | None = None) -> No
     if any(s.get("domain", "").endswith("github.com") for s in item.sources):
         merged.add("opensource")
 
+    # `cve` is an identifier, not a topic, so it is matched rather than
+    # guessed. "vulnerability" fires on the word "patch" and covers advisories
+    # with no number at all; this separates the 17% that carry a real CVE and
+    # can be looked up from the rest of the pile.
+    if _CVE_ID.search(f"{item.title} {item.summary} {body[:2000]}"):
+        merged.add("cve")
+        merged.add("vulnerability")
+
     # Eight is roughly where a tag row stops being scannable on a card.
-    item.tags = sorted(merged)[:8]
+    ranked = sorted(merged, key=lambda t: (_PRIORITY.index(t)
+                                           if t in _PRIORITY else len(_PRIORITY),
+                                           t))
+    item.tags = sorted(ranked[:8])
