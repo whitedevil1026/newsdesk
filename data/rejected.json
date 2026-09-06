@@ -1,273 +1,6 @@
 {
-  "generated_at": "2026-09-06T00:05:00.527855+00:00",
+  "generated_at": "2026-09-06T23:54:09.069054+00:00",
   "items": [
-    {
-      "cluster_key": "06bf46c36350d4a4",
-      "title": "DSA-6482-1 chromium - security update",
-      "category": "cyber_attacks",
-      "one_liner": "Debian has issued DSA-6482-1 listing numerous CVE fixes for the Chromium browser package.",
-      "tags": [
-        "appsec",
-        "blueteam",
-        "cve",
-        "linux",
-        "release",
-        "vulnerability"
-      ],
-      "summary": "Debian released security advisory DSA-6482-1 addressing a massive batch of vulnerabilities in the Chromium web browser package. The advisory lists dozens of individual CVE identifiers spanning the CVE-2026-78891 through CVE-2026-79146 series. The provided update notice is truncated and does not detail specific subsystem impacts or mitigation steps beyond identifying the affected package.",
-      "key_facts": [
-        "Advisory: DSA-6482-1",
-        "Package: chromium",
-        "Date: September 03, 2026"
-      ],
-      "bottom_line": "Debian Linux users running the Chromium browser should update their packages to remediate dozens of newly disclosed vulnerabilities.",
-      "claims": [
-        {
-          "text": "Debian issued advisory DSA-6482-1 providing a security update for the chromium package.",
-          "support_span": "Package : chromium CVE ID : CVE-2026-78891 CVE-2026-78892 CVE-2026-78893 CVE-2026-78894 CVE-2026-78895 CVE-2026-78896 CVE-2026-78897 CVE-2026-78898 CVE-2026-78899 CVE-2026-78900 CVE-2026-78901 CVE-2026-78903 CVE-2026-78904 CVE-2026-78905 CVE-2026-78906 CVE-2026-78907 CVE-2026-78908 CVE-2026-78909 CVE-2026-78910 CVE-2026-78911 CVE-2026-78912 CVE-2026-78913 CVE-2026-78914 CVE-2026-78915 CVE-2026-78934 CVE-2026-78935 CVE-2026-78936 CVE-2026-78937 CVE-2026-78938 CVE-2026-78939 CVE-2026-78940 CVE-2026-78941 CVE-2026-78942 CVE-2026-78943 CVE-2026-78944 CVE-2026-78945 CVE-2026-78946 CVE-2026-78947 CVE-2026-78948 CVE-2026-78949 CVE-2026-78950 CVE-2026-78951 CVE-2026-78952 CVE-2026-78953 CVE-2026-78954 CVE-2026-78955 CVE-2026-78956 CVE-2026-78957 CVE-2026-78958 CVE-2026-78959 CVE-2026-78960 CVE-2026-78961 CVE-2026-78962 CVE-2026-78963 CVE-2026-78964 CVE-2026-78965 CVE-2026-78966 CVE-2026-78967 CVE-2026-78968 CVE-2026-78969 CVE-2026-78974 CVE-2026-78975 CVE-2026-78976 CVE-2026-78977 CVE-2026-78978 CVE-2026-78979 CVE-2026-78980 CVE-2026-78981 CVE-2026-78983 CVE-2026-78984 CVE-2026-78985 CVE-2026-78986 CVE-2026-78987 CVE-2026-78989 CVE-2026-78990 CVE-2026-78991 CVE-2026-78999 CVE-2026-79000 CVE-2026-79001 CVE-2026-79002 CVE-2026-79003 CVE-2026-79004 CVE-2026-79005 CVE-2026-79006 CVE-2026-79007 CVE-2026-79008 CVE-2026-79009 CVE-2026-79010 CVE-2026-79011 CVE-2026-79012 CVE-2026-79013 CVE-2026-79014 CVE-2026-79015 CVE-2026-79016 CVE-2026-79017 CVE-2026-79018 CVE-2026-79019 CVE-2026-79020 CVE-2026-79021 CVE-2026-79022 CVE-2026-79023 CVE-2026-79024 CVE-2026-79025 CVE-2026-79026 CVE-2026-79027 CVE-2026-79028 CVE-2026-79030 CVE-2026-79031 CVE-2026-79032 CVE-2026-79033 CVE-2026-79034 CVE-2026-79038 CVE-2026-79039 CVE-2026-79040 CVE-2026-79041 CVE-2026-79042 CVE-2026-79043 CVE-2026-79044 CVE-2026-79045 CVE-2026-79046 CVE-2026-79047 CVE-2026-79048 CVE-2026-79049 CVE-2026-79050 CVE-2026-79051 CVE-2026-79052 CVE-2026-79053 CVE-2026-79054 CVE-2026-79055 CVE-2026-79056 CVE-2026-79057 CVE-2026-79058 CVE-2026-79059 CVE-2026-79060 CVE-2026-79064 CVE-2026-79065 CVE-2026-79066 CVE-2026-79067 CVE-2026-79068 CVE-2026-79069 CVE-2026-79070 CVE-2026-79071 CVE-2026-79072 CVE-2026-79073 CVE-2026-79074 CVE-2026-79075 CVE-2026-79076 CVE-2026-79077 CVE-2026-79078 CVE-2026-79082 CVE-2026-79083 CVE-2026-79084 CVE-2026-79085 CVE-2026-79086 CVE-2026-79087 CVE-2026-79088 CVE-2026-79089 CVE-2026-79090 CVE-2026-79091 CVE-2026-79093 CVE-2026-79094 CVE-2026-79095 CVE-2026-79097 CVE-2026-79098 CVE-2026-79099 CVE-2026-79103 CVE-2026-79104 CVE-2026-79105 CVE-2026-79106 CVE-2026-79107 CVE-2026-79108 CVE-2026-79109 CVE-2026-79110 CVE-2026-79111 CVE-2026-79112 CVE-2026-79116 CVE-2026-79117 CVE-2026-79118 CVE-2026-79119 CVE-2026-79120 CVE-2026-79121 CVE-2026-79122 CVE-2026-79123 CVE-2026-79124 CVE-2026-79125 CVE-2026-79126 CVE-2026-79127 CVE-2026-79128 CVE-2026-79129 CVE-2026-79130 CVE-2026-79131 CVE-2026-79132 CVE-2026-79133 CVE-2026-79134 CVE-2026-79136 CVE-2026-79137 CVE-2026-79138 CVE-2026-79139 CVE-2026-79140 CVE-2026-79141 CVE-2026-79142 CVE-2026-79143 CVE-2026-79144 CVE-2026-79146 CVE…",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 100,
-      "interest_score": 0,
-      "corroboration": 12,
-      "blend": 55.0,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "06bf46c36350d4a4",
-        "09e98a3a6076369e",
-        "0bd764270a92f584",
-        "103e45f38f34e834",
-        "19784f17b4bcd13a",
-        "1edf51dfcd671319",
-        "33834bdeedb9ba7b",
-        "38309928bfee55e9",
-        "45a424a8672a2910",
-        "45cf73bf3aefe2ae",
-        "46e19906db9d2e0a",
-        "4bafbfd1a5d670fb",
-        "4cbbbda10806c3cc",
-        "4d59bfb8ecbd4a53",
-        "57c57b73d6322511",
-        "5965d02e592657c7",
-        "5a21a4a23a974345",
-        "694cda1ea746f3d8",
-        "73ae338f808821cb",
-        "806043e522b29270",
-        "840c51af3b34165a",
-        "95515b7ef653c80c",
-        "9d2ad0b556afc209",
-        "ae5ef11d5d5fe223",
-        "b17506272b6292f6",
-        "cd0e1419f2278cee",
-        "d00cd342a1a2efd3",
-        "d20fb00f4d677e32",
-        "ebb4c72672ba7d40",
-        "f687406680c342ab"
-      ],
-      "critical_signal": "actively exploited",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "JPCERT CC",
-          "url": "https://blogs.jpcert.or.jp/en/2026/07/apt-c-60_2026.html",
-          "domain": "blogs.jpcert.or.jp",
-          "tier": "A"
-        },
-        {
-          "name": "Debian DSA",
-          "url": "https://lists.debian.org/debian-security-announce/2026/msg00393.html",
-          "domain": "lists.debian.org",
-          "tier": "A"
-        },
-        {
-          "name": "oss-security",
-          "url": "https://seclists.org/oss-sec/2026/q3/653",
-          "domain": "seclists.org",
-          "tier": "A"
-        },
-        {
-          "name": "ZDI Blog",
-          "url": "https://www.thezdi.com/blog/2026/8/11/the-august-2026-security-update-review",
-          "domain": "thezdi.com",
-          "tier": "A"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/cisa-critical-windows-ike-extension-flaw-now-exploited-in-attacks/",
-          "domain": "bleepingcomputer.com",
-          "tier": "B"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/cisa-windows-task-host-flaw-now-exploited-by-ransomware-gangs/",
-          "domain": "bleepingcomputer.com",
-          "tier": "B"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/google-warns-of-new-chrome-zero-day-flaw-exploited-in-attacks/",
-          "domain": "bleepingcomputer.com",
-          "tier": "B"
-        },
-        {
-          "name": "Help Net Security",
-          "url": "https://www.helpnetsecurity.com/2026/09/04/google-chrome-zero-day-cve-2026-85046/",
-          "domain": "helpnetsecurity.com",
-          "tier": "B"
-        },
-        {
-          "name": "Infosecurity Magazine",
-          "url": "https://www.infosecurity-magazine.com/news/hackers-chain-sonicwall-zeroday/",
-          "domain": "infosecurity-magazine.com",
-          "tier": "B"
-        },
-        {
-          "name": "Security Affairs",
-          "url": "https://securityaffairs.com/198405/security/google-fixes-the-sixth-actively-exploited-chrome-zero-day-of-2026.html",
-          "domain": "securityaffairs.com",
-          "tier": "B"
-        },
-        {
-          "name": "SecurityWeek",
-          "url": "https://www.securityweek.com/sangoma-switchvox-vulnerabilities-exploited-in-the-wild/",
-          "domain": "securityweek.com",
-          "tier": "B"
-        },
-        {
-          "name": "SecurityWeek",
-          "url": "https://www.securityweek.com/hpe-patches-critical-rce-vulnerabilities-in-aos-cx/",
-          "domain": "securityweek.com",
-          "tier": "B"
-        },
-        {
-          "name": "CTI Now",
-          "url": "https://ift.tt/DdNpECL",
-          "domain": "ift.tt",
-          "tier": "C"
-        },
-        {
-          "name": "CTI Now",
-          "url": "https://ift.tt/azYr4Z6",
-          "domain": "ift.tt",
-          "tier": "C"
-        },
-        {
-          "name": "Hacker News 150+",
-          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-85046",
-          "domain": "nvd.nist.gov",
-          "tier": "C"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOFltM1R0UndodVlFalh0TWtSdjNnNzFjVmhmal9PaVlHdzBRbEJ2cmpVX1hpRnk1eHlTQlZobDdSNnBHMlBEM2Q0RUdMMmtqeC14X3BkLUpBOEdSd2M2QzhXcmo3SmlTMk5RM1liOFYtblh5ZFM0WVY3RXp3Z2FmaXZtSmhpa0xVc1VIaGozWTVFNzFFWXMzdzd3QlRObzlCWm1lUFE1aEhsbVRHcVHSAbMBQVVfeXFMT19WcjdxeWNpa0UxVi0yb1U0dkpmd2hmZUpDMDdqUTF6VFRBNHZCUFlncmo5NG1weFdvdXBFUkwxejFYcndlNGJ3MUxPdWdid1ZOcTViWHpEdUtHSHljVVhkS3lRNXFKbXl6cVF3Nlo1Tll0WDc3VmF5UTdNUVNkZUtGeWN3MlJzSmVHUTV6UmRxZ05CcUdmd3E5QTJJbWFuYTZjWkRVZGE5S091UDBCY010bTg?oc=5",
-          "domain": "bleepingcomputer.com",
-          "tier": "C"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUXcwZG1ncGVhRno0dXZsQlBTa3BQODd5NEZVZ0hINjF5V1JSZmpnUUdST0hvdmdKcjlpd2loV0RnS3VPQUIxdnpJYXFVQWhpWVhMeWc5TFZSQjM0dnRCNXV0LUlxTnhhOEQ2bEVhRFlwUmFobFNrdXU1QkJic1lqS3RPLXI2aWZDX1NpNGhHU2dFR2NsTnpiNGxIWmhLQzI3YjRVRUxHaHp5YXdX0gGyAUFVX3lxTFBkbTRFdnlVZ0gtYUFNWnpXdkV1RW1xTDBjQ2dfNFNad2dkV2psU2tIamxQekVucUNRYmZBcXFaSUl1dkRueE0xWi0xZjN6ZWtCTDdVc0wyam5LTllYZzFIcTFJVkRaR1J5V0d4aTNlTUhpQVJVaEFPVkg0cHlVdG9zb2tENFdJdlZ0ZmpwMmNfNmtrWDBXZThVcTIzOTBQRjdHZ1hhd0xlNUVuR25YckRzbEE?oc=5",
-          "domain": "bleepingcomputer.com",
-          "tier": "C"
-        },
-        {
-          "name": "CyberInsider",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZ1hHYXBjazZNMzlKVkgtUTI4WFZjVENNN0dkaV9jc0k4VEY3YlpqQll4SEtpalpxQ2lQTElYVV9OX3lITUlfT3F3SEJmRnJFU3ZvcDVIakhCTUYyS3FXbWFaQUp4Y2xQZHp6elJqVGF4OWR1REpUekVUYnBPTXNZTC1ORVpONFFreVpfbnhUTS11R2Z5?oc=5",
-          "domain": "cyberinsider.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Cybernews",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9tRUZUVU9LU0VLSy0zTGlVR3dPME9BV1o4b1VpSDNvNWRjY2lDLTFjYktKazB3TWFzNHhEN1RIODlnRlE2VlRfREx3UVdBSXVCckVWQVVieHNua1BUZHNrSW5sWnZ2ZFdlazBkcHNDS1dCdw?oc=5",
-          "domain": "cybernews.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Cybersecurity Insiders",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQjk4VGx3M1FVN1ZyMHZ5cWs4QlFZcU92bkRNRE9rWGNMUUpzMENUVjZXRXJGZTZ4UVVGb2dlOWxVTVZyNXdpTXdIVkxCZFFIRGdUdV8tNVBIcWF3dWxLQ0FxRVJjQjBDQzRxMXVXcC00My0wY3BHMXBNTllRTGlHZXlPR2hmbHZHUmJWNTBxVk13eTRzMlBFeGE2SQ?oc=5",
-          "domain": "cybersecurity-insiders.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "CyberSecurityNews",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1DMDlEZ3ZiVjg4ajRlZkQ4YWFyNm5hWE1hdF8tZU9PRnpIU2lFRHkxb004ZE1Ua0s1QmRPdlliLXFiN0ZEZ3pzWnRlUXJWdXROUW9WRGRySTRCU3JiRXNBQnBzcXlOR3FmYlFMb2VMX03SAXZBVV95cUxNWW91MVE2QjM0STNKMW5NNXFWYnZ4NkpZVnhrcXZ6anFQMzhqNnhBcVpPREt6YVh6RFBjZllJcEM0ZXBGRERxYnpKUlhUdFNmb1hNdkRHeWp3NWVMbFRHeHNWWmE4cWw5emtDLXB1WUFhbll0YUtn?oc=5",
-          "domain": "cybersecuritynews.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "eSecurity Planet",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZlByV1JFOTJGbXpnSHd5WUJfYjNkekNKYWxDc1Y2WFgtN2lKSE4wQ01tTk9TSktpZ2o3czZBdW1rZktrcDA2eWdFekxod1FlcTQ1RWpfN0h5V05NcW9uY2dCeHQ4aDhIdGs2cUJETTZRVFlyb0hXdHdQLWRpRVNXdEFQX25BQ1h2MC1j?oc=5",
-          "domain": "esecurity-planet.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Forbes",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPb29mQ01qMEdNWmpnc09zLXNXejdGOExPcFhreGtwQWNvdlBjSXlNd2s0cUpOc2I5TDVPc2JKRVRhMlJzWWRReUJlM0VJd09aUnBsYkw2c2psVS1kYUdNNTRYMlNmU1M2SUdHXzRDcmVqZ2FPR0Z6eUFKOXduX2hUc3pmQ3RaMEo2QzF5Y3lnaDlUb2RUNUdOZnZMUkItaG1Vdzk1TGJFY3RFelJYRHdadXJzeS02aGJMMVMxWA?oc=5",
-          "domain": "forbes.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "gbhackers.com",
-          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5yZ1hNcElueGxpcDhnZWU2VVBWN1RRNGhWTVpyNV9qSTRXUHBVT3RKd0Q5LVpkQ21rcnJFM251a2dJREdRV1dN?oc=5",
-          "domain": "gbhackers-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Help Net Security",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZkZ0bk8yX3d4eF9fei1QZUhLbjZLVFNGRFJHLVVfUnItRkk2UldsNkdTMzVmdGpaNGJPUklOR3pEWmljZ2xlSU84d3R2Q1g3N2pxZDlVM2tyaWVzVEdUNHVJOVJCaTljYXVIb3hDbkVwbWloVXRBMEJxSUxVU1RFRkYtYW8wMVQw?oc=5",
-          "domain": "helpnetsecurity.com",
-          "tier": "C"
-        },
-        {
-          "name": "SecNews.gr",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8xZWxPdVF6NHF5eFRNeXViWjhCTG1NVTJDOEZ2TVhfVnFyWTZ6VUUyUjNjVWxxZUNkUlZESlgtcVY2LTJJeXF1OVMyZ2w4VF9SWXJ3VHlwdWdYTXVXLXpIaWkxMWlUS0FLWlRZbTFjaGlyV0pWZGZDSlFXd0ZESW8?oc=5",
-          "domain": "secnews-gr.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "shattered.io",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBLX0RqR0MzSlpyT01oVi1rNDFDOVZGU2VnM29sQlpCQXJab0IwVnk4MjM5SWkzNmVHVmtGSkFGUURQMUVjY0gzZDE3aktDX0dpXzBrU21RRWFNZkxRWkVMRUxEdktrYlVZTEpaa09rQ0Y?oc=5",
-          "domain": "shattered-io.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "sqmagazine.co.uk",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE05Z3NpNk5nSWJFR2xPcDd2aldUQndxWEhsTmg0Um04bGVvcktXWDlJcHJnNTBaZDB1aUV4d0IwR0ZVbHlGUHdYc0cxUFpmR1JycUVhXzg1QW1UcFZTQVRLTjJTWFk2aTA3dFJWTXVPajVYUjFD?oc=5",
-          "domain": "sqmagazine-co-uk.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "TechloMedia",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZGlLMF81b1lCZ1E2cEhhX1FUQ2N3LW9MN2hfZ2dTNk1iWGJzNEZyTlowQThQN0g3NjVTeVlqeG9nYTVQMHdBRE42VVdkS2JnOUc2R0Y4YVFuQ0dvdUpLeElhdy14VzJ6UWpxOWNrNHhtOTMwS0MyMmh4X0NncE5vMWZqbXdXd2RjdXBzT2ZHUjJUeVRVTGlKMG1GZE52NGZIcmZTYVBiV3ZHQdIBrwFBVV95cUxQTlpMUFp6ZC03VkFBX3E3Q3JqN1R3VHFjWXpXTmdiLTZuWW43Wk1aYm9oOXBnQWRXbGxzMjBkWThJTTZTQTlEaDlNYXRHRUVFOWc1MTB1emJEOGltOWw1SWs5R0I4VzJjaEpjejl1OFNQazNfNFN5S3Z5cjc4Nzk3d0J5TVd5bGtFQjR0aVpyZm5yN1psUXVQS0cxd1hadVEwdmJCaUJHSFBwUzlwazNv?oc=5",
-          "domain": "techlomedia.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Techzine Global",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPS09UVXhzRmFuUVo2cmNrM19hUExKNXdEREU1VG5CVGVxekJReTQyd1ZOWl85TUpWbVBlOFZYcW1qbm0wZVpmY1NXaDBEZG1BOWcxcVhaUWNyeW9ESFQ4OEJpbzY4ek90RDJlaGV4NjdFUHRCS2FsVk8takQ3RWk1enZzTEs5czNuOUNTMkhwN283dEhyT0xrUTI3T3pnNzY5clE?oc=5",
-          "domain": "techzine-global.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [
-        "https://lists.debian.org/debian-security-announce/2026/msg00393.html",
-        "https://nvd.nist.gov/vuln/detail/cve-2026-85046"
-      ],
-      "published": "2026-07-13T04:15:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "12 independent outlets (+36)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 1/5 from gemini-3.7-flash",
-        "blend 55 = trust 100 / interest 0 / corrob 100",
-        "escalated to CRITICAL by signal: 'actively exploited'",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
     {
       "cluster_key": "68a6b08b727d8f5e",
       "title": "WebAssembly's wasm2c sandbox escape. An untrusted WebAssembly module breaks out of the generated C sandbox and executes an arbitrary shell command on the host.",
@@ -341,7 +74,7 @@
         "tier C (+10)",
         "2 independent outlets (+12)",
         "corroborated by 2 independent outlets",
-        "importance 5/5 from gemma-4-31b-it",
+        "importance 5/5 from cache",
         "blend 66 = trust 22 / interest 100 / corrob 50",
         "demoted: critical capped at 5"
       ],
@@ -408,6 +141,147 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
+      "cluster_key": "42b9316037196b31",
+      "title": "Agenta-AI/awesome-ai-agent-platforms — A curated list of open-source AI agent platforms: AI coworkers and teammates, agent builders and frameworks, w",
+      "category": "tech_ai",
+      "one_liner": "A new curated resource for discovering open-source AI agent frameworks and tools for developers building AI-driven automation.",
+      "tags": [
+        "agents",
+        "ai",
+        "opensource",
+        "tool"
+      ],
+      "summary": "A new GitHub repository, Agenta-AI/awesome-ai-agent-platforms, has been created to provide a curated list of open-source AI agent platforms. The list includes AI coworkers, agent builders, frameworks, workflow automation platforms, browser agents, and coding agents. The repository is built using Astro and currently has 205 stars.",
+      "key_facts": [
+        "Repository: Agenta-AI/awesome-ai-agent-platforms",
+        "Stars: 205",
+        "Language: Astro"
+      ],
+      "bottom_line": "Developers can now use the Agenta-AI repository to find a variety of open-source AI agent platforms and their licenses.",
+      "claims": [
+        {
+          "text": "The repository is a curated list of open-source AI agent platforms.",
+          "support_span": "A curated list of open-source AI agent platforms: AI coworkers and teammates, agent builders and frameworks, workflow automation platforms, browser agents, and coding agents, with licenses.",
+          "status": "entailed"
+        },
+        {
+          "text": "The repository is named Agenta-AI/awesome-ai-agent-platforms.",
+          "support_span": "GitHub repository Agenta-AI/awesome-ai-agent-platforms",
+          "status": "entailed"
+        },
+        {
+          "text": "The repository has 205 stars.",
+          "support_span": "205 stars",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 21.2,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "42b9316037196b31"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/Agenta-AI/awesome-ai-agent-platforms",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-02T16:32:59+00:00",
+      "trace": [
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "importance 2/5 from cache",
+        "blend 21 = trust 10 / interest 25 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "63186b34f76b684e",
+      "title": "“Is there any talk to redesign the Outpost to not look exactly like the Flock camera — I think it will help agencies with the optics while we batten…",
+      "category": "cyber_attacks",
+      "one_liner": "",
+      "tags": [],
+      "summary": "“Is there any talk to redesign the Outpost to not look exactly like the Flock camera — I think it will help agencies with the optics while we batten down the hatches,” one apparent cop asked during a now deleted Axon webinar. (Bluesky post by @404media.co — 83 likes, 35 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "63186b34f76b684e"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3muk4os3v742z",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-02T14:15:05.181000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-02 — outside lookback window"
+    },
+    {
+      "cluster_key": "916086bfc4500282",
+      "title": "A follow up to the Amazon destroying books for AI story, why a bunch of names keep appearing in AI-generated papers, and ICE's latest spending spree.",
+      "category": "cyber_attacks",
+      "one_liner": "",
+      "tags": [
+        "ai"
+      ],
+      "summary": "A follow up to the Amazon destroying books for AI story, why a bunch of names keep appearing in AI-generated papers, and ICE's latest spending spree. (Bluesky post by @404media.co — 87 likes, 47 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "916086bfc4500282"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3muk26pk5er2g",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-02T13:30:18.570000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-02 — outside lookback window"
+    },
+    {
       "cluster_key": "de8c55bf6829a318",
       "title": "Another agent message board. So far, there isn't evidence that production models with guardrails collude in this way, but both smarter closed models…",
       "category": "tech_ai",
@@ -427,18 +301,17 @@
           "status": "contradicted"
         }
       ],
-      "trust_score": 22,
+      "trust_score": 10,
       "interest_score": 50,
-      "corroboration": 2,
-      "blend": 43.0,
+      "corroboration": 1,
+      "blend": 32.5,
       "is_new": false,
       "summary_source": "model",
       "alt_keys": [
-        "de8c55bf6829a318",
-        "df15784065a9ac6c"
+        "de8c55bf6829a318"
       ],
       "critical_signal": "",
-      "priority": "important",
+      "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
@@ -446,22 +319,15 @@
           "url": "https://bsky.app/profile/emollick.bsky.social/post/3mup6ewbst22i",
           "domain": "bsky.app",
           "tier": "C"
-        },
-        {
-          "name": "Hacker News 150+",
-          "url": "https://collusion.wiki/",
-          "domain": "collusion.wiki",
-          "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-04T11:54:53+00:00",
+      "published": "2026-09-04T14:28:41.397000+00:00",
       "trace": [
         "tier C (+10)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 43 = trust 22 / interest 50 / corrob 50"
+        "single tier-C source — treat with caution",
+        "importance 3/5 from cache",
+        "blend 32 = trust 10 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -509,86 +375,6 @@
       "reject_reason": "published 2026-08-31 — outside lookback window"
     },
     {
-      "cluster_key": "b127915dd989e8eb",
-      "title": "In a lot of ways, the Hugging Face Incident came from the models identifying a series of universal jailbreak prompt injections for themselves, such…",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "llm"
-      ],
-      "summary": "In a lot of ways, the Hugging Face Incident came from the models identifying a series of universal jailbreak prompt injections for themselves, such that almost any unguardrailed model that encountered it on their own became convinced of the rightness of their misaligned cause. (Bluesky post by @emollick.bsky.social — 79 likes, 2 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "b127915dd989e8eb"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mufstynfik2v",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-31T21:08:24.643000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-08-31 — outside lookback window"
-    },
-    {
-      "cluster_key": "68514bfe45cab1d8",
-      "title": "nickname21kmr/gameops-investigator — Evidence-first game operations incident investigation agent with read-only MCP tools and reproducible evaluati",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "agents",
-        "llm",
-        "opensource"
-      ],
-      "summary": "Evidence-first game operations incident investigation agent with read-only MCP tools and reproducible evaluations. GitHub repository nickname21kmr/gameops-investigator, 99 stars, language Python. Topics: anomaly-detection, claude-code, game-analytics, llm-evaluation, mcp, sqlite, streamlit, text-to-sql.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "summary_source": "extract",
-      "alt_keys": [
-        "68514bfe45cab1d8"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/nickname21kmr/gameops-investigator",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-30T17:28:16+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-08-30 — outside lookback window"
-    },
-    {
       "cluster_key": "459131b8a152555f",
       "title": "Here's my attempt at explaining what ChatGPT Work can actually do - it's a deeply confusing but extremely powerful tool with a whole lot of useful…",
       "category": "tech_ai",
@@ -627,6 +413,229 @@
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
       "reject_reason": "published 2026-08-31 — outside lookback window"
+    },
+    {
+      "cluster_key": "b93bed41f37e769f",
+      "title": "A floating mass of trees and vegetation in British Columbia’s Williston Lake attracted international attention after it was filmed this summer by…",
+      "category": "cyber_attacks",
+      "one_liner": "",
+      "tags": [],
+      "summary": "A floating mass of trees and vegetation in British Columbia’s Williston Lake attracted international attention after it was filmed this summer by boaters—and then seemed to disappear. (Bluesky post by @404media.co — 182 likes, 38 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "b93bed41f37e769f"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3muknhd2kzn2d",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-02T19:15:08.229000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-02 — outside lookback window"
+    },
+    {
+      "cluster_key": "2c859b0411271399",
+      "title": "Just noticed the ChatGPT desktop app (previously named Codex) bundles a full copy of the LibreOffice open source office suite, tucked away in a…",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "opensource",
+        "windows"
+      ],
+      "summary": "Just noticed the ChatGPT desktop app (previously named Codex) bundles a full copy of the LibreOffice open source office suite, tucked away in a hidden folder in the ~/.cache directory (Bluesky post by @simonwillison.net — 182 likes, 23 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "2c859b0411271399"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Simon Willison",
+          "url": "https://bsky.app/profile/simonwillison.net/post/3mui4h3h76223",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-01T19:05:28.270000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-01 — outside lookback window"
+    },
+    {
+      "cluster_key": "2d52a76e8415df15",
+      "title": "In a now-deleted webinar hosted for cops on Axon’s official Vimeo page, one asked if Axon would redesign their camera to not look like Flock's.",
+      "category": "cyber_attacks",
+      "one_liner": "",
+      "tags": [],
+      "summary": "In a now-deleted webinar hosted for cops on Axon’s official Vimeo page, one asked if Axon would redesign their camera to not look like Flock's. “We are looking at [...] do we change the general shape,” Rick Smith, Axon’s CEO, replied. @josephcox.bsky.social story: www.404media.co/cops-are-ask... (Bluesky post by @404media.co — 104 likes, 44 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "2d52a76e8415df15"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3muk6lsxcgs25",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-02T14:49:14.093000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-02 — outside lookback window"
+    },
+    {
+      "cluster_key": "2779f905258e1408",
+      "title": "CVE-2026-76178 (CRITICAL 9.2): A stored Cross-Site Scripting (XSS) vulnerability in the notification template functionality of the endpoint…",
+      "category": "cyber_attacks",
+      "one_liner": "A critical XSS vulnerability (CVSS 9.2) allowing administrative session compromise in a specific endpoint, relevant for your bug bounty and appsec work.",
+      "tags": [
+        "appsec",
+        "bugbounty",
+        "cve",
+        "vulnerability"
+      ],
+      "summary": "A critical stored Cross-Site Scripting (XSS) vulnerability, CVE-2026-76178, has been identified in the notification template functionality of the endpoint /ocsreports/?function=notification. An administrator with privileges can input malicious HTML content that is stored and executed when other administrators access the template customization view. This allows for JavaScript execution within the application's security context, potentially compromising administrative sessions.",
+      "key_facts": [
+        "CVE-2026-76178: CVSS 9.2 (CRITICAL)",
+        "Endpoint: /ocsreports/?function=notification",
+        "Published: 2026-09-03"
+      ],
+      "bottom_line": "Administrators using the notification template functionality of the endpoint /ocsreports/?function=notification are at risk of session compromise via stored XSS.",
+      "claims": [
+        {
+          "text": "A critical stored XSS vulnerability exists in the notification template functionality of the endpoint /ocsreports/?function=notification.",
+          "support_span": "A stored Cross-Site Scripting (XSS) vulnerability in the notification template functionality of the endpoint /ocsreports/?function=notification.",
+          "status": "entailed"
+        },
+        {
+          "text": "The vulnerability allows an administrator to input malicious HTML that is executed when other administrators view the template customization view.",
+          "support_span": "A user with administrator privileges can input malicious HTML content which is subsequently stored and displayed without proper sanitisation when other administrators access the template customization view",
+          "status": "contradicted"
+        },
+        {
+          "text": "This can lead to the compromise of administrative sessions.",
+          "support_span": "allowing JavaScript code to be executed within the application’s security context and potentially compromising the sessions of other users with administrative privileges.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 70.0,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "2779f905258e1408"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76178",
+          "domain": "nist.gov",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-76178"
+      ],
+      "published": "2026-09-03T13:06:08.293000+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 5/5 from gemma-4-31b-it",
+        "blend 70 = trust 70 / interest 100 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "4ea74a2bdaf1c3b3",
+      "title": "kydlikebtc/awesome-grokbot — 598 live x.ai/bot shares for Grok Bot — every link status-checked, every row attributed. Bilingual EN/中文 catal",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "ai",
+        "opensource"
+      ],
+      "summary": "598 live x.ai/bot shares for Grok Bot — every link status-checked, every row attributed. Bilingual EN/中文 catalog with a JSON schema, CI, and a searchable site. GitHub repository kydlikebtc/awesome-grokbot, 328 stars, language Python. Topics: agents, ai-agents, ai-tools, awesome, awesome-list, bot-templates, catalog, cursor.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "4ea74a2bdaf1c3b3"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/kydlikebtc/awesome-grokbot",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-01T02:30:25+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-01 — outside lookback window"
     },
     {
       "cluster_key": "e76c0471894d4346",
@@ -678,7 +687,7 @@
         "opensource",
         "windows"
       ],
-      "summary": "Native no-summary context windows for the fitchmultz/pi fork of the Pi coding agent, with rollover tools, durable notes, and history recovery. GitHub repository fitchmultz/pi-posthorse, 186 stars, language TypeScript. Topics: coding-agent, context-window, llm, pi, pi-extension, pi-package.",
+      "summary": "Native no-summary context windows for the fitchmultz/pi fork of the Pi coding agent, with rollover tools, durable notes, and history recovery. GitHub repository fitchmultz/pi-posthorse, 217 stars, language TypeScript. Topics: coding-agent, context-window, llm, pi, pi-extension, pi-package.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -710,18 +719,15 @@
       "reject_reason": "published 2026-08-31 — outside lookback window"
     },
     {
-      "cluster_key": "b08295e1be4211f2",
-      "title": "justadityaraj/shim-mcp — WordPress MCP server plugin, live on WordPress.org. Connect Claude Code, Cursor, or any MCP client to WordPres",
-      "category": "tech_ai",
+      "cluster_key": "f76e5f2976c64ac0",
+      "title": "The incident shows how quickly police departments have come to use AI surveillance tools even in critically sensitive cases",
+      "category": "cyber_attacks",
       "one_liner": "",
       "tags": [
-        "agents",
         "ai",
-        "llm",
-        "opensource",
-        "tool"
+        "privacy"
       ],
-      "summary": "WordPress MCP server plugin, live on WordPress.org. Connect Claude Code, Cursor, or any MCP client to WordPress over stdio (WP-CLI) or HTTP. GitHub repository justadityaraj/shim-mcp, 47 stars, language PHP. Topics: ai, anthropic, claude, cursor, mcp, mcp-server, model-context-protocol, wordpress.",
+      "summary": "The incident shows how quickly police departments have come to use AI surveillance tools even in critically sensitive cases (Bluesky post by @404media.co — 130 likes, 52 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -729,10 +735,52 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
-      "is_new": true,
+      "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "b08295e1be4211f2"
+        "f76e5f2976c64ac0"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mukdfee22r2q",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-02T16:15:05.344000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-02 — outside lookback window"
+    },
+    {
+      "cluster_key": "03218801e20fb25e",
+      "title": "axelfreeman/marketing-mindset — The marketing OS for AI agents — think like a marketer first, get tactics as the output.",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "agents",
+        "ai",
+        "llm",
+        "opensource"
+      ],
+      "summary": "The marketing OS for AI agents — think like a marketer first, get tactics as the output. GitHub repository axelfreeman/marketing-mindset, 52 stars, language HTML. Topics: agent-skills, ai-agents, b2b-sales, claude-code, cursor-ide, cursor-rules, go-to-market, growth-hacking.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "03218801e20fb25e"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -740,151 +788,54 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/justadityaraj/shim-mcp",
+          "url": "https://github.com/axelfreeman/marketing-mindset",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-30T15:26:23+00:00",
+      "published": "2026-09-01T17:02:00+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-08-30 — outside lookback window"
+      "reject_reason": "published 2026-09-01 — outside lookback window"
     },
     {
-      "cluster_key": "2cb2d955887c9afa",
-      "title": "How does the world's largest crypto exchange, Binance, keep doing business in Europe without a license? Explained",
-      "category": "markets",
-      "one_liner": "Binance is bypassing EU regulatory blocks by using legal loopholes and routing traffic through Abu Dhabi to maintain its market presence.",
-      "tags": [
-        "howto",
-        "markets",
-        "policy",
-        "threat-intel"
-      ],
-      "summary": "Binance continues to operate in the European Union despite failing to secure a regulatory license under the Markets in Crypto-Assets (MiCA) regime. The exchange is utilizing a \"reverse solicitation\" clause to onboard new customers who sign up voluntarily and is routing some EU trading through an entity in Abu Dhabi. While Binance claims it is working toward MiCA authorization, the company has faced significant legal challenges, including a $4.3 billion US settlement and allegations of funneling money to Iran. European Central Bank President Christine Lagarde reportedly intervened to ensure Binance's license application was not approved.",
-      "key_facts": [
-        "Settlement: $4.3 billion (US government, 2023)",
-        "Regulation: Markets in Crypto-Assets (MiCA)",
-        "Entity location: Abu Dhabi"
-      ],
-      "bottom_line": "The MiCA regulatory framework is currently failing to effectively eject unlicensed crypto exchanges like Binance from the EU market.",
-      "claims": [
-        {
-          "text": "Binance is using a 'reverse solicitation' clause to onboard EU customers.",
-          "support_span": "One is a provision that lets unlicensed crypto firms bring in customers who sign up of their own accord, rather than through a marketing campaign. Binance has interpreted this ‘reverse solicitation’ clause as something that means it can onboard new customers across the region, the people said.",
-          "status": "contradicted"
-        },
-        {
-          "text": "Some EU trading is being routed through Abu Dhabi.",
-          "support_span": "Binance has also been routing trading for some of its EU-based customers to an entity in Abu Dhabi, which is governed differently, said the people, who were not authorized to speak publicly.",
-          "status": "entailed"
-        },
-        {
-          "text": "Christine Lagarde intervened to block Binance's license.",
-          "support_span": "However, behind the scenes, European Central Bank President Christine Lagarde personally intervened to ensure Binance’s application would not be approved, some of the people familiar with the matter said.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 75,
+      "cluster_key": "dae239bf78fe6966",
+      "title": "The video makes Zohran Mamdani and Kathy Hochul look like they're hanging out in a prescription medication commercial.",
+      "category": "cyber_attacks",
+      "one_liner": "",
+      "tags": [],
+      "summary": "The video makes Zohran Mamdani and Kathy Hochul look like they're hanging out in a prescription medication commercial. (Bluesky post by @404media.co — 124 likes, 22 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
       "corroboration": 1,
-      "blend": 47.5,
+      "blend": 0.0,
       "is_new": false,
-      "summary_source": "model",
+      "summary_source": "extract",
       "alt_keys": [
-        "2cb2d955887c9afa"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/cryptocurrency/how-does-the-worlds-largest-crypto-exchange-binance-keep-doing-business-in-europe-without-a-license-explained-11788518577281.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-04T11:03:25+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 4/5 from gemma-4-31b-it",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "57e8d45db2c36efd",
-      "title": "₹94/share dividend stock alert! Last chance to buy today for the special and interim benefit — check payment date",
-      "category": "markets",
-      "one_liner": "Federal-Mogul Goetze (India) Limited is issuing its first dividend in 25 years, offering a significant payout of ₹94 per share.",
-      "tags": [
-        "india",
-        "markets"
-      ],
-      "summary": "Federal-Mogul Goetze (India) Limited is paying a combined special and interim dividend of ₹94 per share to eligible shareholders. The record date for this payment is September 4, 2026, meaning investors must buy the stock by the ex-date to be eligible. This is the first dividend payment the company has made in 25 years, with the last payment occurring in August 2001. The dividends will be paid on or before September 25, 2026.",
-      "key_facts": [
-        "Total Dividend: ₹94 per share (₹86.50 special + ₹7.50 interim)",
-        "Record Date: September 4, 2026",
-        "Payment Date: By September 25, 2026",
-        "Last Dividend Date: August 10, 2001"
-      ],
-      "bottom_line": "Investors holding Federal-Mogul Goetze (India) Limited shares by September 4, 2026, will receive ₹94 per share.",
-      "claims": [
-        {
-          "text": "Federal-Mogul Goetze (India) Limited is paying a total dividend of ₹94 per share.",
-          "support_span": "shareholders of the company who hold the dividend stock at the end of Friday's session will be eligible for a dividend of ₹94 per share.",
-          "status": "entailed"
-        },
-        {
-          "text": "The record date for the dividend is September 4, 2026.",
-          "support_span": "The company has already declared the record date on 4th September 2026.",
-          "status": "entailed"
-        },
-        {
-          "text": "This is the first dividend payment in 25 years.",
-          "support_span": "The company has declared a dividend to its shareholders after a 25-year gap.",
-          "status": "entailed"
-        },
-        {
-          "text": "Payment will be made by September 25, 2026.",
-          "support_span": "support_span\": \"The interim dividend and the special dividend will be paid on or before Friday, 25th September 2026",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 25,
-      "corroboration": 1,
-      "blend": 25.0,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "57e8d45db2c36efd"
+        "dae239bf78fe6966"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/rs-94-share-dividend-stock-alert-last-chance-to-buy-today-for-the-special-and-interim-benefit-check-payment-date-11788506428351.html",
-          "domain": "livemint.com",
-          "tier": "B"
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3muka24vu4v2q",
+          "domain": "bsky.app",
+          "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-04T08:06:56+00:00",
+      "published": "2026-09-02T15:15:06.795000+00:00",
       "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 2/5 from gemma-4-31b-it",
-        "blend 25 = trust 25 / interest 25 / corrob 25"
+        "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-09-02 — outside lookback window"
     },
     {
       "cluster_key": "bbaae47b1658159b",
@@ -926,82 +877,12 @@
       "reject_reason": "published 2026-08-31 — outside lookback window"
     },
     {
-      "cluster_key": "162c45be6a8d0480",
-      "title": "Stock to buy for long-term: Motilal Oswal sees 58% upside in this new-age tech stock. Should you buy?",
-      "category": "markets",
-      "one_liner": "Motilal Oswal has issued a 'buy' rating on PhysicsWallah with a target price of ₹200, citing high capital efficiency and rapid offline expansion.",
-      "tags": [
-        "ai",
-        "india",
-        "markets"
-      ],
-      "summary": "Domestic brokerage Motilal Oswal has initiated coverage on Indian EdTech stock PhysicsWallah with a 'buy' rating and a target price of ₹200, representing a 58% upside from its previous close of ₹126.42. The bullish outlook is driven by the company's capital-efficient business model, strong online revenue compounding at approximately 74% CAGR over FY23-26, and rapid expansion into offline coaching with 353 centres. Motilal Oswal expects online revenue to post a 28% CAGR and offline revenue a 20% CAGR through FY26-30E, while pre-Ind AS EBITDA margins are projected to climb from 26% in FY26 to 30% by FY28E. Key risks highlighted by the brokerage include high competitive intensity, faculty attrition, and potential adverse regulatory changes.",
-      "key_facts": [
-        "Brokerage: Motilal Oswal",
-        "Target Price: ₹200",
-        "Closing Price: ₹126.42",
-        "Offline Centres: 353"
-      ],
-      "bottom_line": "PhysicsWallah's strong unit economics and aggressive expansion across online and offline channels have earned it a bullish 58% upside target from brokerage Motilal Oswal.",
-      "claims": [
-        {
-          "text": "PhysicsWallah, one of the few new-age tech stocks to list on Dalal Street last year, could rally up to 58% from its current market price, according to domestic brokerage Motilal Oswal, which has initiated coverage on the stock with a 'buy' rating.",
-          "support_span": "PhysicsWallah, one of the few new-age tech stocks to list on Dalal Street last year, could rally up to 58% from its current market price, according to domestic brokerage Motilal Oswal, which has initiated coverage on the stock with a 'buy' rating.",
-          "status": "entailed"
-        },
-        {
-          "text": "The brokerage has set a target price of ₹200 apiece, indicating a 58% rally from the stock's Friday closing price of ₹126.42.",
-          "support_span": "The brokerage has set a target price of ₹200 apiece, indicating a 58% rally from the stock's Friday closing price of GHz/closing price of ₹126.42.",
-          "status": "contradicted"
-        },
-        {
-          "text": "At the same time, the brokerage said the online business remains PhysicsWallah’s primary value driver and estimates online revenue to clock around 28% CAGR over FY26-30E, supported by paid-user growth, deeper category expansion and AI-led monetisation.",
-          "support_span": "At the same time, the brokerage said the online business remains PhysicsWallah’s primary value driver and estimates online revenue to clock around 28% CAGR over FY26-30E, supported by paid-user growth, deeper category expansion and AI-led monetisation.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 36.2,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "162c45be6a8d0480"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/stock-to-buy-for-long-term-motilal-oswal-sees-58-upside-in-this-new-age-tech-stock-should-you-buy-11788521460599.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-04T12:07:57+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 36 = trust 25 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "b9749f899570deaa",
-      "title": "AbuZar-Ansarii/Needle — This 14 MB Agentic LLM(Cactus Needle 2) can control your phone completely.",
-      "category": "tech_ai",
+      "cluster_key": "b7313741be281322",
+      "title": "An a16z article argues that enshittification isn’t real and that people actually love social media.",
+      "category": "cyber_attacks",
       "one_liner": "",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource"
-      ],
-      "summary": "This 14 MB Agentic LLM(Cactus Needle 2) can control your phone completely. GitHub repository AbuZar-Ansarii/Needle, 84 stars, language Python. Topics: ai, ai-agents, ai-tools, cactus-needle, llm, llm-agents, llm-tools.",
+      "tags": [],
+      "summary": "An a16z article argues that enshittification isn’t real and that people actually love social media. (Bluesky post by @404media.co — 87 likes, 18 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -1009,28 +890,28 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
-      "is_new": true,
+      "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "b9749f899570deaa"
+        "b7313741be281322"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/AbuZar-Ansarii/Needle",
-          "domain": "github.com",
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mukea6irai2q",
+          "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-08-30T06:43:48+00:00",
+      "published": "2026-09-02T16:30:05.055000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-08-30 — outside lookback window"
+      "reject_reason": "published 2026-09-02 — outside lookback window"
     },
     {
       "cluster_key": "1db7ddb57e1849b5",
@@ -1091,121 +972,10 @@
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3-flash-preview",
+        "importance 4/5 from cache",
         "blend 48 = trust 25 / interest 75 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "ca0c96ef9f863d65",
-      "title": "After a literal year of development, the WASM check patch has been merged into Anubis.",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "release",
-        "vulnerability",
-        "windows"
-      ],
-      "summary": "After a literal year of development, the WASM check patch has been merged into Anubis. This will be released with the next stable version of Anubis next week. (Bluesky post by @xeiaso.net — 40 likes, 1 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "ca0c96ef9f863d65"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Xe Iaso",
-          "url": "https://bsky.app/profile/xeiaso.net/post/3mubllseiic2c",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-08-30T04:47:54.477000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-08-30 — outside lookback window"
-    },
-    {
-      "cluster_key": "c335e11cd868cf0c",
-      "title": "Europe targeted by spiralling campaign of sabotage - and Russia is the chief suspect",
-      "category": "india_world",
-      "one_liner": "Russia is escalating physical sabotage of European defense infrastructure, shifting from random targets to strategic military supply chains.",
-      "tags": [
-        "hardware",
-        "incident",
-        "political",
-        "threat-actor",
-        "threat-intel"
-      ],
-      "summary": "Russia is suspected of orchestrating a widespread sabotage campaign across Europe targeting military and defense sector sites. The campaign involved explosive drones at Leipzig airport, suspicious fires at defense facilities in Italy, Estonia, and Bulgaria, and attempted arson at drone manufacturers in Slovakia and Poland. Several countries, including Germany and Poland, have explicitly blamed Russia, while others continue investigations. The pattern of attacks suggests a strategic shift toward intensifying terrorist and sabotage activities to disrupt military goods transport and production.",
-      "key_facts": [
-        "Timeline: August to September",
-        "Targets: Leipzig airport, EMCO (Bulgaria), KNDS Ammo Italy, Milrem Robotics (Estonia), WB Group (Poland), Rhode & Schwartz (Germany)"
-      ],
-      "bottom_line": "European defense manufacturers and logistics hubs are now primary targets for Russian-led sabotage operations.",
-      "claims": [
-        {
-          "text": "Russia is suspected of orchestrating a sabotage campaign targeting military and defense sites across Europe.",
-          "support_span": "Russia also appears to have escalated its sabotage campaign across Europe. This time, military and defence sector sites were the prime target.",
-          "status": "entailed"
-        },
-        {
-          "text": "The campaign included explosive drones at Leipzig airport and fires at defense facilities in Italy, Estonia, and Bulgaria.",
-          "support_span": "A full month after drones packed with explosives were found at Leipzig's airport, used by Ukraine to transport military goods, Germany's interior minister has declared that \"Russia is responsible\". ... August then brought a series of suspicious fires at defence facilities from Italy to Estonia.",
-          "status": "contradicted"
-        },
-        {
-          "text": "Poland and Germany have explicitly attributed these attacks to Russia.",
-          "support_span": "Germany's interior minister has declared that \"Russia is responsible\". ... Tusk calls it a \"continuation of Russia's escalatory activities\".",
-          "status": "contradicted"
-        },
-        {
-          "text": "The attacks target drone manufacturers and military goods transport.",
-          "support_span": "The Milrem Robotics factory in Tallinn, which the Kyiv Post says supplies drones to Ukraine, goes up in flames. ... An attack on the drone producer, WB Group, is clearer cut.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 51.2,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "c335e11cd868cf0c"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c5y4g6meekro?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-04T16:49:15+00:00",
-      "trace": [
-        "tier A (+40)",
-        "single outlet, established publication (tier A)",
-        "importance 4/5 from gemma-4-31b-it",
-        "blend 51 = trust 40 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "3 claim(s) not supported by the source text"
     },
     {
       "cluster_key": "7cd5021f5ef4dead",
@@ -1217,7 +987,7 @@
         "opensource",
         "research"
       ],
-      "summary": "Benchmarking models as runtime Controllers for Loop Engineering GitHub repository AMAP-ML/LoopArena, 87 stars, language Python. Topics: benchmark, coding-agents, evaluation, llm, loop-engineering, software-engineering.",
+      "summary": "Benchmarking models as runtime Controllers for Loop Engineering GitHub repository AMAP-ML/LoopArena, 88 stars, language Python. Topics: benchmark, coding-agents, evaluation, llm, loop-engineering, software-engineering.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -1249,6 +1019,233 @@
       "reject_reason": "published 2026-08-31 — outside lookback window"
     },
     {
+      "cluster_key": "380300591980b05e",
+      "title": "With agents, we are at another large gap between AI abilities & public perception.",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "ai"
+      ],
+      "summary": "With agents, we are at another large gap between AI abilities & public perception. Exponential gains mean that the gap is growing over time. Suddenly, agents are now really capable of long-running self-organized work. That means new risks & a new approach to AI. (Bluesky post by @emollick.bsky.social — 68 likes, 10 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "380300591980b05e"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3muifroeogc2z",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-01T21:52:27.329000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-01 — outside lookback window"
+    },
+    {
+      "cluster_key": "658b2329bc3130f9",
+      "title": "Unpatched Magento and Adobe Commerce Zero-Day Exploited to Backdoor Online Stores",
+      "category": "cyber_attacks",
+      "one_liner": "An unpatched zero-day in Magento and Adobe Commerce is being exploited to gain remote code execution, with no official fix currently available.",
+      "tags": [
+        "appsec",
+        "blueteam",
+        "exploit",
+        "incident",
+        "malware",
+        "opensource",
+        "release",
+        "vulnerability"
+      ],
+      "summary": "A zero-day vulnerability in Magento Open Source and Adobe Commerce, dubbed 'StyleSmuggler,' is being actively exploited to backdoor online stores. The flaw allows unauthenticated attackers to execute arbitrary code on the server, and researchers report that patching status is currently irrelevant as the exploit bypasses existing security measures. Adobe has not yet released a patch or CVE identifier, leading security firms to recommend temporarily disabling GraphQL as a mitigation. Multiple stores have already been compromised, with attackers installing persistent backdoors.",
+      "key_facts": [
+        "Vulnerability name: StyleSmuggler",
+        "Affected versions: All current, including 2.4.9",
+        "Exploitation start: September 4, 2026"
+      ],
+      "bottom_line": "If you run Magento or Adobe Commerce, you are currently vulnerable to unauthenticated RCE; disable GraphQL immediately if you do not rely on it for your storefront.",
+      "claims": [
+        {
+          "text": "Attackers are exploiting a new unpatched vulnerability in Magento Open Source and Adobe Commerce that lets them run malicious code on an online store's server without logging in.",
+          "support_span": "Attackers are exploiting a new unpatched vulnerability in Magento Open Source and Adobe Commerce that lets them run malicious code on an online store's server without logging in.",
+          "status": "contradicted"
+        },
+        {
+          "text": "Sansec said all current versions are affected, including 2.4.9",
+          "support_span": "Sansec said all current versions are affected, including 2.4.9",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "658b2329bc3130f9",
+        "a6f7e900dd408223"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/unpatched-magento-and-adobe-commerce.html",
+          "domain": "thehackernews.com",
+          "tier": "B"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRElYVkJJV0RlODVzcXNkWDFYWlp5VmJTZ0EzTFA4NjFuajdMeFJSMldHb3dIMWRMXzRncFJwOVlnMGVOWV9xOWZfbmVNd1dzNG9EMHRrT2piY2E5X1FJOFBCaDNQdFRHdDA2RDZrYU51Y3NadzJOWXNmS054aktnYQ?oc=5",
+          "domain": "thehackernews.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-05T20:14:00+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 5/5 from gemini-3.1-flash-lite",
+        "blend 59 = trust 25 / interest 100 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "e840a53a9b38fb6d",
+      "title": "The volunteers risking their lives to defuse Indonesia's wildfire 'carbon bombs'",
+      "category": "india_world",
+      "one_liner": "Severe peatland fires in Indonesian Borneo fueled by Super El Niño are releasing massive carbon bombs and toxic transboundary smog.",
+      "tags": [],
+      "summary": "Volunteer firefighters in Indonesian Borneo are battling massive subterranean peat fires that have carbonised over 200,000 hectares of forest and farmland since early July. Fueled by a Super El Niño drought, these underground fires are releasing millions of tonnes of carbon dioxide and creating a toxic transnational haze crisis across Southeast Asia. Experts warn that burning ancient tropical peatlands destroys vital carbon sinks, turning them into massive greenhouse gas 'carbon bombs'.",
+      "key_facts": [
+        "Burned area: 200,000 hectares",
+        "Peat deposit depth: Up to 20 meters"
+      ],
+      "bottom_line": "Indonesian peatland fires are releasing catastrophic amounts of stored carbon while blanketing Southeast Asia in toxic smog.",
+      "claims": [
+        {
+          "text": "...volunteer firefighters – many of them indigenous Dayak or Banjar people – are up against an inferno that has carbonised some 200,000 hectares of forest and farmland across Indonesian Borneo since early July.",
+          "support_span": "...volunteer firefighters – many of them indigenous Dayak or Banjar people – are up against an inferno that has carbonised some 200,000 hectares of forest and farmland across Indonesian Borneo since early July.",
+          "status": "contradicted"
+        },
+        {
+          "text": "Between July and Au…",
+          "support_span": "Between July and Au...",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 51.2,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "e840a53a9b38fb6d"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c1kx4lgy4z4o?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-06T23:13:29+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 51 = trust 40 / interest 75 / corrob 25"
+      ],
+      "reject_reason": "2 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "3088b657ef357d66",
+      "title": "Zelensky says he expects war to continue into winter after talks with US envoys",
+      "category": "india_world",
+      "one_liner": "The Russia-Ukraine war is likely to continue through winter, with Ukraine seeking critical US air defense and energy support.",
+      "tags": [
+        "india",
+        "political"
+      ],
+      "summary": "Ukrainian President Volodymyr Zelensky expects the war with Russia to continue into the winter, following talks with US envoys Steve Witkoff and Jared Kushner in Kyiv. While the envoys had previously met with Vladimir Putin in Moscow, the discussions in Kyiv ended without a major breakthrough. Zelensky emphasized the need for continued air defense and energy support from the US to protect infrastructure during winter attacks. Future meetings between officials from Ukraine, Europe, and the US are planned to continue discussions toward a durable peace.",
+      "key_facts": [
+        "Envoys: Steve Witkoff, Jared Kushner",
+        "Russian drone attack: 108 long-range drones and small cruise missiles used"
+      ],
+      "bottom_line": "The conflict in Ukraine remains unresolved despite high-level US-mediated talks, ensuring continued geopolitical instability.",
+      "claims": [
+        {
+          "text": "Zelensky expects the war to continue into winter.",
+          "support_span": "Zelensky says he expects war to continue into winter after talks with US envoys",
+          "status": "contradicted"
+        },
+        {
+          "text": "US envoys Steve Witkoff and Jared Kushner met with Zelensky in Kyiv.",
+          "support_span": "The discussions finished without an announcement of a major breakthrough, after Steve Witkoff and Jared Kushner travelled to Ukraine for the first time since Russia's full-scale invasion.",
+          "status": "entailed"
+        },
+        {
+          "text": "Zelensky highlighted the need for air defense and energy support.",
+          "support_span": "Zelensky emphasised that should the war continue into the winter - \"which is what it looks like for now\" - Ukraine would need air defence and energy support.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 51.2,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "3088b657ef357d66"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-06T20:41:58+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 4/5 from gemma-4-31b-it",
+        "blend 51 = trust 40 / interest 75 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
       "cluster_key": "6ec9b989ada8f6f2",
       "title": "Human-Agent-Society/reef — Continual learning infra for self-improving agents",
       "category": "tech_ai",
@@ -1259,7 +1256,7 @@
         "llm",
         "opensource"
       ],
-      "summary": "Continual learning infra for self-improving agents GitHub repository Human-Agent-Society/reef, 481 stars, language Python. Topics: agent-infrastructure, ai-agents, continual-learning, inference, llm, llm-training, reinforcement-learning, self-improving-agents.",
+      "summary": "Continual learning infra for self-improving agents GitHub repository Human-Agent-Society/reef, 571 stars, language Python. Topics: agent-infrastructure, ai-agents, continual-learning, inference, llm, llm-training, reinforcement-learning, self-improving-agents.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -1289,6 +1286,69 @@
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
       "reject_reason": "published 2026-08-31 — outside lookback window"
+    },
+    {
+      "cluster_key": "39d50aa01e4ec381",
+      "title": "Watch: Moment 64-year-old Nepali woman is found alive in mud-buried home",
+      "category": "india_world",
+      "one_liner": "A survivor of a natural disaster in Nepal, which is a significant world news event.",
+      "tags": [
+        "india",
+        "political"
+      ],
+      "summary": "A 64-year-old Nepali woman, Chandika Shrestha, was rescued alive from her partially buried home in the Nuwakot district of Nepal. She was found by Nepal's Armed Police Force on September 5, more than 10 days after a wall of ice, rock, and mud tore through a Himalayan valley. Following her rescue, she was airlifted to a hospital in Kathmandu for treatment.",
+      "key_facts": [
+        "Survivor: Chandika Shrestha, 64 years old",
+        "Location: Nuwakot district, Nepal",
+        "Rescue Date: 5 September"
+      ],
+      "bottom_line": "Rescuers continue to find survivors in Nepal after a massive landslide/avalanche event.",
+      "claims": [
+        {
+          "text": "Chandika Shrestha was found alive in her partially buried home.",
+          "support_span": "Chandika Shrestha, a 64-year-old woman, was discovered alive on the fourth floor of her partially buried house in the License Nuwakot district by Nepal's Armed Police Force on 5 September",
+          "status": "contradicted"
+        },
+        {
+          "text": "She was found more than 10 days after the disaster.",
+          "support_span": "More than 10 days after a wall of ice, rock and mud tore through a Himalayan valley in Nepal, rescuers continue to find survivors.",
+          "status": "entailed"
+        },
+        {
+          "text": "She was airlifted to Kathmandu for treatment.",
+          "support_span": "support_span: She was airlifted to a hospital in Kathmandu for treatment, Reuters reported.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 28.8,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "39d50aa01e4ec381"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/c4gd24d1d0do?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-06T01:54:29+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 2/5 from gemma-4-31b-it",
+        "blend 29 = trust 40 / interest 25 / corrob 25"
+      ],
+      "reject_reason": "2 claim(s) not supported by the source text"
     },
     {
       "cluster_key": "88dac9a3af22b84d",
@@ -1356,7 +1416,7 @@
         "tier B (+25)",
         "2 independent outlets (+12)",
         "corroborated by 2 independent outlets",
-        "importance 5/5 from gemini-3.1-flash-lite",
+        "importance 5/5 from cache",
         "blend 69 = trust 37 / interest 100 / corrob 50",
         "demoted: critical capped at 5"
       ],
@@ -1424,10 +1484,206 @@
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3-flash-preview",
+        "importance 4/5 from cache",
         "blend 48 = trust 25 / interest 75 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "ac8ed0f205b58116",
+      "title": "‘Tally with GST’ training programme for women launched in Puttaparthi",
+      "category": "india_world",
+      "one_liner": "A free Tally and GST training program launched in Puttaparthi aims to empower women from economically weaker sections with practical accounting skills.",
+      "tags": [
+        "india"
+      ],
+      "summary": "A 38-day free training programme in 'Tally with GST' was launched in Puttaparthi for 35 women from economically weaker sections, supported by Canara Bank RSETI and Sri Sathya Sai Seva Organisations. Managing trustee R.J. Rathnakar announced plans to establish a permanent skill development center in the area to provide ongoing employment training. Organizers noted that approximately 20,000 youth across Andhra Pradesh have completed similar employment-oriented courses over the last four years through the network's 23 active skill centers.",
+      "key_facts": [
+        "Participants: 35 women",
+        "Course duration: 38 days",
+        "Location: Puttaparthi"
+      ],
+      "bottom_line": "Local community trusts and banking institutes in Andhra Pradesh are expanding vocational accounting programs to promote self-reliance among women.",
+      "claims": [
+        {
+          "text": "Sri Sathya Sai Central Trust managing trustee R.J. Rathnakar on Sunday (September 6, 2026) launched a 38-day free training programme in ‘Tally with GST’ for women.",
+          "support_span": "Sri Sathya Sai Central Trust managing trustee R.J. Rathnakar on Sunday (September 6, 2026) launched a 38-day free training programme in ‘Tally with GST’ for women.",
+          "status": "entailed"
+        },
+        {
+          "text": "Thirty-five women from economically weaker sections are participating in the programme being conducted by Sri Sathya Sai Seva Organisations with support from Canara Bank RSETI.",
+          "support_span": "Thirty-5 women from economically weaker sections are participating in the programme being conducted by Sri Sathya Sai Seva Organisations with support from Canara Bank RSETI.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 25.0,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "ac8ed0f205b58116"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "The Hindu National",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/tally-with-gst-training-programme-for-women-launched-in-puttaparthi/article71436016.ece",
+          "domain": "thehindu.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-06T17:07:10+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 25 = trust 25 / interest 25 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "344ef6e49b38e048",
+      "title": "Iran warns of 'faster, heavier, more painful response' to US attacks",
+      "category": "india_world",
+      "one_liner": "Major global business event involving energy security and geopolitical instability in the Middle East, impacting global oil and gas markets.",
+      "tags": [
+        "india",
+        "markets",
+        "policy",
+        "political",
+        "release"
+      ],
+      "summary": "Hostilities between the US and Iran have escalated following the expiration of a 60-day ceasefire. The US has launched multiple strikes on Iranian targets and oil tankers, while Iran has retaliated against US targets in the UAE, Bahrain, Kuwait, and Jordan. Iran has warned of a 'faster, heavier, and more painful response' as the conflict centers on control of the Strait of Hormuz, which has been effectively closed since the war began in February. This conflict has led to global gas price increases, with US diesel prices hitting $5.85 per gallon.",
+      "key_facts": [
+        "Conflict start: February",
+        "US diesel price: $5.85 per gallon",
+        "Oil flow: 9 million barrels per day through the strait"
+      ],
+      "bottom_line": "The US-Iran conflict over the Strait of Hormuz is driving up global energy prices and causing significant geopolitical instability.",
+      "claims": [
+        {
+          "text": "The US and Iran are engaged in renewed fighting following the expiration of a 60-day ceasefire.",
+          "support_span": "A 60-day ceasefire between the US and Iran formally expired last month, and that period of relative calm was shattered when the US resumed attacks last Sunday.",
+          "status": "entailed"
+        },
+        {
+          "text": "The US has struck Iranian oil tankers and launched strikes on Iranian targets.",
+          "support_span": "Washington said it struck Iranian oil tankers in response to Tehran attacking American warships in the region's waters.",
+          "status": "entailed"
+        },
+        {
+          "text": "Iran has retaliated against US targets in the region, including in the UAE, Bahrain, Kuwait, and Jordan.",
+          "support_span": "Fighting has continued throughout the week, with the US launching multiple strikes on Iranian targets and Iran retaliating against US targets in the region, including in the United Arab Emirates, Bahrain, and Kuwait and Jordan.",
+          "status": "contradicted"
+        },
+        {
+          "text": "The conflict has led to an increase in global gas prices, with US diesel hitting $5.85 per gallon.",
+          "support_span": "The conflict in the strait has led to an increase in gas prices globally, and ahead of the US midterm elections in November, Trump is facing pressure over how much the war is costing American consumers. The average price for one gallon of diesel in the US hit $5.85 on Friday, compared to an average of $3.71 a year ago.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 51.2,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "344ef6e49b38e048"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cp8d56w7d9po?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-06T17:00:56+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 4/5 from gemma-4-31b-it",
+        "blend 51 = trust 40 / interest 75 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "a885fb4f5c760b8c",
+      "title": "I Thought Android Bug Bounty Would Start With Something Familiar",
+      "category": "cyber_tools",
+      "one_liner": "Provides a practical walkthrough of the Android bug bounty workflow using JADX, Burp, and Frida to identify logic flaws and bypass security controls.",
+      "tags": [
+        "android",
+        "appsec",
+        "bugbounty",
+        "howto",
+        "research",
+        "tool",
+        "vulnerability"
+      ],
+      "summary": "A security researcher describes their initial approach to Android bug bounty hunting, focusing on the transition from static to dynamic analysis. The process involves analyzing the AndroidManifest.xml for exported components, using JADX for decompilation to trace input flows, and utilizing Burp Suite for API interrogation. The author highlights the challenge of SSL pinning and the necessity of Frida for runtime analysis to bypass security checks and understand execution paths. The narrative emphasizes questioning app assumptions and comparing client-side versus server-side enforcement.",
+      "key_facts": [
+        "Tools: JADX, Frida, Burp Suite",
+        "Target: Android APKs",
+        "Analysis: AndroidManifest.xml (android:exported=\"true\")"
+      ],
+      "bottom_line": "Effective Android security testing requires moving beyond static analysis to runtime manipulation and comparing the enforcement gap between the UI, client, and server.",
+      "claims": [
+        {
+          "text": "The researcher uses JADX to trace how external input enters and moves through the app.",
+          "support_span": "Then JADX entered the chat. And JADX basically said: ‘Good luck bro.’ Classes. Methods. Strings. URLs. Libraries. WebViews. Auth logic. Security checks. Enough code to make my terminal look like it’s going through something. ’ But I’m not trying to read the entire app. That’s a trap. I’m looking for interesting flows. Where does external input enter? Where does it go?",
+          "status": "contradicted"
+        },
+        {
+          "text": "SSL pinning prevents traffic from being captured by proxies like Burp Suite.",
+          "support_span": "With certificate pinning, the app can additionally verify that the server identity matches what it expects.",
+          "status": "entailed"
+        },
+        {
+          "text": "Frida is used for runtime analysis to see function returns and execution paths.",
+          "support_span": "Static analysis: ‘This function exists.’ Runtime analysis: ‘This function just ran, returned this value, and changed the execution path.’",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 32.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "a885fb4f5c760b8c"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Medium bug bounty",
+          "url": "https://medium.com/@talktorahul.b/i-thought-android-bug-bounty-would-start-with-something-familiar-c97ceba002e3?source=rss------bug_bounty-5",
+          "domain": "medium.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-06T17:04:02+00:00",
+      "trace": [
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "importance 3/5 from gemma-4-31b-it",
+        "blend 32 = trust 10 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "2 claim(s) not supported by the source text"
     },
     {
       "cluster_key": "b303207e2c8cfaf9",
@@ -1484,7 +1740,7 @@
         "tier B (+25)",
         "single outlet, established publication (tier B)",
         "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 4/5 from gemini-3.7-flash",
+        "importance 4/5 from cache",
         "blend 48 = trust 25 / interest 75 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
