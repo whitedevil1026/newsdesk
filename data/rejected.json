@@ -1,306 +1,15 @@
 {
-  "generated_at": "2026-09-09T00:17:55.362510+00:00",
+  "generated_at": "2026-09-10T00:15:07.830362+00:00",
   "items": [
     {
-      "cluster_key": "0675305d853c3e6c",
-      "title": "Unpatched Magento and Adobe Commerce Zero-Day Exploited to Backdoor Online Stores",
-      "category": "cyber_attacks",
-      "one_liner": "An unpatched zero-day in Magento and Adobe Commerce is being exploited to gain remote code execution, with no official fix currently available.",
-      "tags": [
-        "appsec",
-        "blueteam",
-        "exploit",
-        "incident",
-        "malware",
-        "opensource",
-        "release",
-        "vulnerability"
-      ],
-      "summary": "A zero-day vulnerability in Magento Open Source and Adobe Commerce, dubbed 'StyleSmuggler,' is being actively exploited to backdoor online stores. The flaw allows unauthenticated attackers to execute arbitrary code on the server, and researchers report that patching status is currently irrelevant as the exploit bypasses existing security measures. Adobe has not yet released a patch or CVE identifier, leading security firms to recommend temporarily disabling GraphQL as a mitigation. Multiple stores have already been compromised, with attackers installing persistent backdoors.",
-      "key_facts": [
-        "Vulnerability name: StyleSmuggler",
-        "Affected versions: All current, including 2.4.9",
-        "Exploitation start: September 4, 2026"
-      ],
-      "bottom_line": "If you run Magento or Adobe Commerce, you are currently vulnerable to unauthenticated RCE; disable GraphQL immediately if you do not rely on it for your storefront.",
-      "claims": [
-        {
-          "text": "Attackers are exploiting a new unpatched vulnerability in Magento Open Source and Adobe Commerce that lets them run malicious code on an online store's server without logging in.",
-          "support_span": "Attackers are exploiting a new unpatched vulnerability in Magento Open Source and Adobe Commerce that lets them run malicious code on an online store's server without logging in.",
-          "status": "contradicted"
-        },
-        {
-          "text": "Sansec said all current versions are affected, including 2.4.9",
-          "support_span": "Sansec said all current versions are affected, including 2.4.9",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 61,
-      "interest_score": 100,
-      "corroboration": 7,
-      "blend": 90.2,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "0675305d853c3e6c",
-        "074f7d298b5ad8d1",
-        "09fcca2c251fa90c",
-        "182960f28d1515cf",
-        "24c81172865cdac0",
-        "3be3061e3675d9d1",
-        "4858f5ba46435cac",
-        "4fe3277087665822",
-        "556e071833125fb3",
-        "58a9c9a17cc2f6dc",
-        "5f00a48312a98e00",
-        "6568f5a6b250806e",
-        "658b2329bc3130f9",
-        "69e7e212823609a8",
-        "73056940861238b8",
-        "7bad9c9e95f5066e",
-        "7f68895ca0fa028a",
-        "84baef3e68129ba0",
-        "8fcc08342d491f44",
-        "93645169dca5b582",
-        "9ccc4416b1a1ee2e",
-        "9dc70a506c394c58",
-        "a6b02964573e1a9e",
-        "a6f7e900dd408223",
-        "a95ce48b47ced503",
-        "cd35ca68746c9af8",
-        "cef94cd262a85f86",
-        "d073097c59915718",
-        "e42b150eca9583a9",
-        "e8037d0d20e80526",
-        "f7c69e0075b1ba80",
-        "fadeca40077099b8",
-        "fefa771708324695"
-      ],
-      "critical_signal": "unauthenticated rce",
-      "priority": "critical",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Help Net Security",
-          "url": "https://www.helpnetsecurity.com/2026/09/08/mathspace-data-breach-metabase-vulnerability/",
-          "domain": "helpnetsecurity.com",
-          "tier": "B"
-        },
-        {
-          "name": "Infosecurity Magazine",
-          "url": "https://www.infosecurity-magazine.com/news/trezor-supply-chain-breach-impacts/",
-          "domain": "infosecurity-magazine.com",
-          "tier": "B"
-        },
-        {
-          "name": "SecurityWeek",
-          "url": "https://www.securityweek.com/mathspace-data-breach-exposes-over-1-million-people/",
-          "domain": "securityweek.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/unpatched-magento-and-adobe-commerce.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        },
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/disrex-group/stylesmuggler-mitigation",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "Billboard",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4zVzFyWURTRmgtVmF4V2VBY2tjQzhBOFkwdjYzMF9kVy1lei13QkptT2U2WVlDUnZqcFhaTUpzX2RzdDZDS1RRa3ZGY2xRWXI4blpSRFNwaGc1cHdpUHZvTGREWEpEc2hlLVotXw?oc=5",
-          "domain": "billboard.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Bitdefender",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYzJRazBHd0p4SEwwcDZzOHhUTER5UEoydkR6Zi1hclNjYWViLTRTanNDamtlVkM0VC1nUGR0MDh3MHhTZTBkXzBKNElXZHU1dC1RSWNyT2pmLUdXSlVNNGU3ajEyT1pNbk9CRzNCd3dPa2dwTDhHMWg2RDN6cmNtamZ1RnZ5RDJvSXdEWm9aYw?oc=5",
-          "domain": "bitdefender.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "bleepingcomputer.com",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMzQtZTBCV2VkN1RBUXUxMUpNZ195cVJISXo2T3pQUzF4ZjlEQXNVTFRPNGtPTkFsOGdNd3dwWWU1RVVLMGFSQVZjRXBEckVlSmdCNGI3RzV2UUMta1h3Y1N1emJzcHFyTTRFZks4dnZsQnlzMTVDb1d4Z2JFLVhmeUFWbVZkcWlnNkRxQ0RVTFREQm1UVlpnZmhaYkpZUXBlc3Z1RFowcUpXX01sUjZyb9IBtgFBVV95cUxQRkdBYmt3cnJjTUw2QXBVbVFWaDhIX1NuOGExQmp2aVBVWEY3clJyVDhlSDN1VnZqeWxtbjRGeWNkWG04QmcwdjA4TFFQeUx0NXRrN0tjbHpuVEpzSWFGZzQ0MkNtS3ZLRk90WXc3WExZREtpMF9rM3Y3OWZCTjJZNU1HRFJsaHlBTW4yMTNrZElMOHlzQjVPV0ZsRTBIbXNkdnNyclNxRE1JcU94WnZ3U3BQSEhfZw?oc=5",
-          "domain": "bleepingcomputer-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "bleepingcomputer.com",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVEQ1anBMcXpsdzJROGt3blVaNGd5OXBOa3owTU5RQUVZUFNqX29GSmtncjh1cVRVYkZoa3dLdjQ2azdwWXRGcnlKZFpxWG83OWJraHRoeFZualVLQ2l3dWxZc3pGUmZXbnZrRlZTRDlUdFppem5ESlR1cnRnMElqVkdzbElmdGtuM1hWaDdncTV3ZjFqZGJ3Y0tkcUVrSVBxbS1yQtIBqgFBVV95cUxQY3l5YnlBNVJ5a09DWnVwZVdfWTlKTVF0SkJpSFgyd2I4NENQQ1JqM0V4SzNOdm5hV3FvLV9PZDhHbXVGeUFydl9zYnM0d2ZCRHdxcklJdE1QZm5PYnN6X05tR1p5RDhxc3JJb3dQRkRkQl8wVTNrOEFhNC1RTnhlTUhmMGVOWmhMYlZXM0kwdlBCS1hzRlBpR1NRUkxrLWVNZVJnaU9iZ1lfdw?oc=5",
-          "domain": "bleepingcomputer-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9oLVVqR3I3TDNZUnBNeTRoWENzdnVYNWIwQ2tVWkszN2RFTHI2VGtQYXhnbV94STFETk55UldQN3ZQZE5sZkZMU2JyRmhka3k0Ni1GTzNkN21IUVVNZGRIWkJyWmlidnhFSFZJN0RuVlFNbkVremc?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5yTnBhdF90YVJjQVVzS3BTQVhvSld6dGkzQTVscERCQ2hzQjB3Qjl6djlQZ0lDMGZPRzc0WVFmeWdZVDdXY0ZYNXowU3p4azEyS2NvMHVGa1JyNUEtS3NWSXVYOA?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPcm1TZnpTQlJNMUxYdXlJS3NBMHhrN0ZVcDhELW12aGY1Z19xenp4dHA1N2Q3aXVobEh2OEdUYXJYTDVlSmtTRlE4UjdHMllxREFmYWNuMmNjQWN6ZDNFZFBsQjh6Umttb2ZPZDR6Z25wc0VrYW1KU3hkNkVsV3E1V3QyV3pKLTRPN2c?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORXdNNjUtclgzRTIzMTBudVhPd29DMzl1UWI3MEtHaHNrY1MzVVp3MEpXTmFYVFFjM0RPeWhsMVlCMXJWYTJTYWM4bkZkTDR3MGFvbGo1Y1ZDR0pLVGVjcHZMVXFCQ3hXOEVubDdTVkNhSUJ4eFltdUhETDdEWEtua0JKUQ?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1ZcFJVX2FVbVBxczFhalpHYUQ2WU9OQmlCekdWcWhlWmI3MURxWl9qT1hwczFydEt1T2M0WmtXRkJmcC1BRGdoNjJXaU5paWVydTZ4bVI1c1dfWjc3eHVGalVHVDVoTjJpRFVXS1dzbw?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5VOWRTUzZjU0ZCLS1WUFRkSk01d25fcEF6NWNMUDJPUEFMeGFNMmlKOFRKdnBUVEJkc3BGNDNhdG9wa0FVclV6ZG0wMTlWN3NLWTVvQTJIQVllcVhwVXBYZWc0LXdySExtbWVV?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9aTjJnQmxCc2NYSW5ZQU9HbHF1X1JZV01sQnJiR2xyNWtwRTZqWGVqVmtseW5pN3VyLThfX2pvVU5HQ05TNFZ1aFF4dVFBS212OF82ZXJuVGZ0bUs2aFJzOUlQbWhSNzFkbkR0Q1dmbHI1Y0RvVW1lQTNKbVk?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "ClassAction.org",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdG1VMFVNS1ZvNFA5LUVJWHlyMndYNXoxODA0ekNnQ0Y0cGtiNThzMzZ5VHdXYVNOVXBzenFEUmZJT3A0Yi1OQXhMblRuZEhqRnFhT3YxNnBmcUw2Z2xHX2dZWXZuZG9rZlZ4N3hGREFOX3FSenBMSDZoNGJZSUFIMFdTUFQwX0RHY09oTTJIbVhCT05rc0ZZ?oc=5",
-          "domain": "classaction-org.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Cybernews",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNLUF2M2xkQkpHUWFXOThrRWVlc3NlMEo3ckFBY3ZVT08zblY0ZDdHbElGSU5MOEZfOTRady1nbkIwTS1WSEpqSHplMVNtOEVVOEtjRzRjQXZzQnVSVENMTGRraTZ2WFQ3LWxweU5iZ1JLOE1yTERSSURIUHJPZU9iOHJVSHFfNDNocGNGNUJsVQ?oc=5",
-          "domain": "cybernews.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Cybernews",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9Va0JWU2s5cWlhM1B3MmlnRm1SbFBja2dCMG14R1RvQXpGMVZ6eEJTelJXb3hLZG9yUFhDVTQ4ZFJVLUFRNTdMMHF6V2pmZWU4TXg1Wm1iRUFxdVJfakE?oc=5",
-          "domain": "cybernews.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "cyberpress.org",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQeHZzRGNtSGpRM0NKcFhxb3ViV2FkNFBlUDRYZlltS2xkbWc3c0NKTXlsM0N4Sl9zVUt5Z1JtRGFuUUJnVmVjNTVPQ2E2QWw1SGIyZDVSNGtWUl9kU2sxOV8teUptaXpidzd6cVpMSmQzYl9EX1VKS0lkZGtqMldEUnM2Vk94aFZhaE04QlJB0gGOAUFVX3lxTFB4dnNEY21IalEzQ0pwWHFvdWJXYWQ0UGVQNFhmWW1LbGRtZzdzQ0pNeWwzQ3hKX3NVS3lnUm1EYW5RQmdWZWM1NU9DYTZBbDVIYjJkNVI0a1ZSX2RTazE5Xy15Sm1pemJ3N3pxWkxKZDNiX0RfVUpLSWRka2oyV0RSczZWT3hoVmFoTThCUkE?oc=5",
-          "domain": "cyberpress-org.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "CyberSecurityNews",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5jbWI0N0pWSmEySF83VzU2RnhvcjFrWG96eDQ3QlR5czZaX2tpTzMzbmNoSko2amQwZndHX0JmazcxMEE5Slg3ZU5oN2ZsYXVJQk1raFdrRzNfN3RPRC1Cc2NhLTRFZk0zOWYtRzJHcXJvdk1mMlHSAXtBVV95cUxPbUlySDBySV9WeDVvQWtzMm1oalc2WE9MQ21FUmo4YXFxR1dwMWhZR0JJc0ttcl9tbW9ydXF6MFZOdGVhRFZMeDRVVFZ3RE04QnV6M2FjT2FjTDFuYWZzbzVOQ0JKNEVmWHVuOWNWVUt5LWdKTERhZ3RuSFk?oc=5",
-          "domain": "cybersecuritynews.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Digital Music News",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5DWGd4dTJ5ZTVsV3FIdUhmd2VITjhnTi1ZY2cyVlNCdzBqaDNHc0pQVUtKdEJkSjNzb2lRZXVoaUlHTFUzdHk3am0tZ0JtbVQ0MDRkYkpkakluRW9QNWFxcmZMelN1M1NmaDRUOGp2QXg5U0pFSmpMaA?oc=5",
-          "domain": "digital-music-news.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Help Net Security",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxORVhCV2ZLcVctTmFSalhwWjR2dld2ZVJTSFoyeDRzS0Zwcm9kOXJhbFM2dXVSOUJaWEtsQnVOOWpCV1pCVVdjN2d1ZGdQSWxmRDR1U2dHbU9OOUV3U2pOd2RFZ20xUVVWejZzY1d2Y2dqTGROTTRLekxGaEQwMm5vczRUcGhvQ0tBbEJCZVFQLVd3dw?oc=5",
-          "domain": "helpnetsecurity.com",
-          "tier": "C"
-        },
-        {
-          "name": "GN Zero-day watch",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPaS1aTERUbDZiM21Zb1lVb21zM2J1MzBWdUhXSF8tNC1ubFZrVm0zVEFzSjZOQTd5dkRSdFRPeTUyRWtuQTBHRnNsUDJiMDFWRWN1QkxRZC1ncF9HaHM0VGVOV2VFcktaakN2ZXJBR2E4UUNkcUlXMkQwUm81YnRYc2RB?oc=5",
-          "domain": "news.google.com",
-          "tier": "C"
-        },
-        {
-          "name": "GN Breach watch",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8wdWV3LVg1NXVqM29INk9odW5NVG5NZm5XUUpSMEE2c0o5cHlQUllPeG8zQ1NDcVhmVGo1RG5TQ3N0dHdyaFA1dlRRVEZud0lxRGVCa2VJMlVZM1NVdDFVdW9BTmtEem1FOWRCczJ3bEZxNERsZFhr?oc=5",
-          "domain": "news.google.com",
-          "tier": "C"
-        },
-        {
-          "name": "GN Ransomware watch",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1lSWdXZktQYWlIdUdjd1pqVjlfZENrNElIRVdrTkd0aGk2dGFvSlBzeWU4Y1p1eng1dThIRVYzeDkyX19kWXFoUHNLN0w3RWVEQmhtMWFkZktFTjEyNVdyQlZ6eGw2XzRjRktJckxRRTNWVkE?oc=5",
-          "domain": "news.google.com",
-          "tier": "C"
-        },
-        {
-          "name": "GN Ransomware watch",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB2aG5kRnh4MkgzRHpCQUhmZGF6a294MU9LR0hZdFUyT1BGZHZ2OEM1OGFrQW95OUFLa0czeXB0S1RIeWNXREFkaGFpMVZNbjVta3lXX2N3a0NRM0M4QUhSWDhfWEppLUx5cmNiNVQtWlY2WndMLW9abk4wSQ?oc=5",
-          "domain": "news.google.com",
-          "tier": "C"
-        },
-        {
-          "name": "NewsAffinity",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMENCaEd5MVZvVHQ2cy04MnpnUGJjTk5VT3Uwd1JSSjhkRFVUR09LVHRCWmpuN25rc3BxRWxsaksyenlLNDFxeVUwQVVuWkhjZFlab3VzcUg4a1JwZWZxeTBpUXVNRzVnVGx0bUs4WU01RjViSTFXVld5eUlmUm1GN3ZRd3RFbWpBQXItYWZMdU1zbm8tclpUOFNuR2Z1N2pEZU93VTFn?oc=5",
-          "domain": "newsaffinity.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "shattered.io",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5wRGpsckZxNWJQSU9aUzRTcjZnSUFkenJVUm9RSndLbFJSVVlOcDNLMFpmZy1uU3RfNkw1U0VZOHY3TkZ2VHhLa1Vnejh3ZGJaYTRYYUd6MnpRN1lFVzFyY1pEY05IUEt0X0FDWXluR3lna0xEVUE?oc=5",
-          "domain": "shattered-io.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "shattered.io",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBwMmpZVzFIMGg1azJBY0o4Ul9majk0UDlQU2o3NjhmLVJMRGNzb3gyb3dGYzdlY3ZYTUFlMm9PUFhjZkw4YkNSV183Q2FpMWFxNUwzdHF5ZGREUVZSYlVCdUpZQVAtUHlOQnVpajh4UEZXLXlIaF9IaFNB?oc=5",
-          "domain": "shattered-io.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "The HIPAA Journal",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9JOUNuMkNlbVdaNXhGR3VpaENOZWFFZy1UWmhZZnQ5MnZDTTBaVk81NVc0S0c1d2VwbzZIdmNjR2FIOGoxOEE0QVU0Uk1lYUpobzhLVTBNS3duUUJIVDJHUGl3VE5QZVBKc0ZSelA1MHRvdDdt?oc=5",
-          "domain": "the-hipaa-journal.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "The HIPAA Journal",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBIRHhMcU9fWkF2S2NLYk5nSUEwdGdoWjk5c3pVclh4SmxfdUFCS09leXJYbFNWcGM0eVFqSEFaeVJ5aW9Kd3lMNWpvQ0Juajh3M2VadHpLZFdia2g2U1lXUVRIeEJMSlFMc05VSE9zTkFLcndxRzZCWQ?oc=5",
-          "domain": "the-hipaa-journal.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "The Hacker News",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRElYVkJJV0RlODVzcXNkWDFYWlp5VmJTZ0EzTFA4NjFuajdMeFJSMldHb3dIMWRMXzRncFJwOVlnMGVOWV9xOWZfbmVNd1dzNG9EMHRrT2piY2E5X1FJOFBCaDNQdFRHdDA2RDZrYU51Y3NadzJOWXNmS054aktnYQ?oc=5",
-          "domain": "thehackernews.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-05T04:29:42+00:00",
-      "trace": [
-        "tier B (+25)",
-        "7 independent outlets (+36)",
-        "verified: 7 independent outlets",
-        "importance 5/5 from cache",
-        "blend 90 = trust 61 / interest 100 / corrob 100"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "42b9316037196b31",
-      "title": "Agenta-AI/awesome-ai-agent-platforms — A curated list of open-source AI agent platforms: AI coworkers and teammates, agent builders and frameworks, w",
+      "cluster_key": "de8c55bf6829a318",
+      "title": "Another agent message board. So far, there isn't evidence that production models with guardrails collude in this way, but both smarter closed models…",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "agents",
-        "ai",
-        "opensource"
+        "agents"
       ],
-      "summary": "A curated list of open-source AI agent platforms: AI coworkers and teammates, agent builders and frameworks, workflow automation platforms, browser agents, and coding agents, with licenses. GitHub repository Agenta-AI/awesome-ai-agent-platforms, 194 stars, language Astro. Topics: agent-frameworks, ai-agent-platforms, ai-agents, ai-coworker, awesome, awesome-list, browser-agents, coding-agents.",
+      "summary": "So far, there isn't evidence that production models with guardrails collude in this way, but both smarter closed models (which may be less compliant) & Mythos-class open models (that can be ablated) are coming. Cybersecurity is going to become a mess soon collusion.wiki (Bluesky post by @emollick.bsky.social — 198 likes, 31 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -311,115 +20,35 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "42b9316037196b31"
+        "de8c55bf6829a318"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/Agenta-AI/awesome-ai-agent-platforms",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-02T16:32:59+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-02 — outside lookback window"
-    },
-    {
-      "cluster_key": "53884ea2cf8945e6",
-      "title": "I wrote some notes on what's new in the (published) Fable 5.1 system prompt in comparison to Fable 5 - it's mostly about not reproducing song lyrics…",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "llm",
-        "windows"
-      ],
-      "summary": "I wrote some notes on what's new in the (published) Fable 5.1 system prompt in comparison to Fable 5 - it's mostly about not reproducing song lyrics and avoiding drawing copyrighted characters simonwillison.net/2026/Sep/2/c... (Bluesky post by @simonwillison.net — 53 likes, 5 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "53884ea2cf8945e6"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Simon Willison",
-          "url": "https://bsky.app/profile/simonwillison.net/post/3muk4vfcq2k2f",
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mup6ewbst22i",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-02T14:18:47.846000+00:00",
+      "published": "2026-09-04T14:28:41.397000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-02 — outside lookback window"
+      "reject_reason": "published 2026-09-04 — outside lookback window"
     },
     {
-      "cluster_key": "7bf8276908e8b914",
-      "title": "In another case of it being quicker to build a tool than hunt around to find something that does what you need, here's a little vibe-coded thing for…",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "tool",
-        "windows"
-      ],
-      "summary": "In another case of it being quicker to build a tool than hunt around to find something that does what you need, here's a little vibe-coded thing for turning one or more GeoJSON shapes into a rendered PNG simonwillison.net/2026/Sep/1/g... (Bluesky post by @simonwillison.net — 51 likes, 2 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "7bf8276908e8b914"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Simon Willison",
-          "url": "https://bsky.app/profile/simonwillison.net/post/3muiostsf622u",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-02T00:34:10.257000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-02 — outside lookback window"
-    },
-    {
-      "cluster_key": "3435c620b4a0a954",
-      "title": "An example of useful knowledge work: I assigned GPT-6 to read through tens of thousands of my emails, my writings, my calendar appointments and more…",
+      "cluster_key": "cc8ea81639055ba3",
+      "title": "Got GPT-5.6 Astra building something neat, should be done shortly. If you know, you know (and if not, I'll be posting the whole thing soon anyway).",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
         "llm"
       ],
-      "summary": "An example of useful knowledge work: I assigned GPT-6 to read through tens of thousands of my emails, my writings, my calendar appointments and more to assemble a personal knowledge base of research, contacts, ideas, relationships, and tasks over my recent career.1/ (Bluesky post by @emollick.bsky.social — 89 likes, 4 reposts)",
+      "summary": "Got GPT-5.6 Astra building something neat, should be done shortly. If you know, you know (and if not, I'll be posting the whole thing soon anyway). (Bluesky post by @emollick.bsky.social — 40 likes, 0 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -430,7 +59,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "3435c620b4a0a954"
+        "cc8ea81639055ba3"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -438,65 +67,28 @@
       "sources": [
         {
           "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3munds3sxrc2n",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mupv3dnkok2i",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-03T21:00:12.625000+00:00",
+      "published": "2026-09-04T21:14:55.927000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-03 — outside lookback window"
+      "reject_reason": "published 2026-09-04 — outside lookback window"
     },
     {
-      "cluster_key": "74e305edae6e71c3",
-      "title": "One of the most subtle valuable things about Astra is that it maintains better theory-of-mind: you don't get nearly as many weird references in the…",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [],
-      "summary": "One of the most subtle valuable things about Astra is that it maintains better theory-of-mind: you don't get nearly as many weird references in the final product to previous drafts or work you did during building, and there less drift as it runs long tasks. (Bluesky post by @emollick.bsky.social — 142 likes, 1 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "74e305edae6e71c3"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3munavcqzfs2z",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-03T20:08:19.356000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-03 — outside lookback window"
-    },
-    {
-      "cluster_key": "aa4e97d8ef6febbb",
-      "title": "A few notes on Anthropic's new Claude Fable 5.1 - with Max thinking level I got the best SVG pelican I've had from any Anthropic model (at a hefty…",
+      "cluster_key": "17791756fc2d77d6",
+      "title": "It happened again... this time OpenAI's rogue agents cyber-attacked (well, spammed) a dormant German wiki and used it to share the answers to a…",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "llm",
+        "research",
         "windows"
       ],
-      "summary": "A few notes on Anthropic's new Claude Fable 5.1 - with Max thinking level I got the best SVG pelican I've had from any Anthropic model (at a hefty cost of $3.30!), which I then had it animate simonwillison.net/2026/Sep/1/c... (Bluesky post by @simonwillison.net — 362 likes, 22 reposts)",
+      "summary": "this time OpenAI's rogue agents cyber-attacked (well, spammed) a dormant German wiki and used it to share the answers to a benchmark they were training against simonwillison.net/2026/Sep/4/r... (Bluesky post by @simonwillison.net — 87 likes, 15 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -507,7 +99,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "aa4e97d8ef6febbb"
+        "17791756fc2d77d6"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -515,25 +107,28 @@
       "sources": [
         {
           "name": "Simon Willison",
-          "url": "https://bsky.app/profile/simonwillison.net/post/3muimzxo2sk2g",
+          "url": "https://bsky.app/profile/simonwillison.net/post/3mupj3vhqo22k",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-02T00:02:21.706000+00:00",
+      "published": "2026-09-04T17:40:29.713000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-02 — outside lookback window"
+      "reject_reason": "published 2026-09-04 — outside lookback window"
     },
     {
-      "cluster_key": "f616731adaf5a7f6",
-      "title": "Flock taught cops how they could surveil the No Kings protests and “small parades” using a mix of Flock’s technology and law enforcement’s own…",
-      "category": "cyber_attacks",
+      "cluster_key": "79c1859fc82fb554",
+      "title": "I gave GPT-6 Astra a very cool open single file ocean surface storm generator and asked it to build the rest of the ocean, including procedural…",
+      "category": "tech_ai",
       "one_liner": "",
-      "tags": [],
-      "summary": "Flock taught cops how they could surveil the No Kings protests and “small parades” using a mix of Flock’s technology and law enforcement’s own databases in a webinar last year. Here's a short clip from the webinar: @jasonkoebler.bsky.social reports: www.404media.co/flock-taught... (Bluesky post by @404media.co — 190 likes, 113 reposts)",
+      "tags": [
+        "llm",
+        "opensource"
+      ],
+      "summary": "I gave GPT-6 Astra a very cool open single file ocean surface storm generator and asked it to build the rest of the ocean, including procedural simulations of animal behavior. Play it here: abyssal-living-deep.netlify.app?site=reef&se... (Bluesky post by @emollick.bsky.social — 112 likes, 8 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -544,25 +139,25 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "f616731adaf5a7f6"
+        "79c1859fc82fb554"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "404 Media",
-          "url": "https://bsky.app/profile/404media.co/post/3mumwtqxv6c2d",
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3munqaqt7kc2i",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-03T17:08:29.731000+00:00",
+      "published": "2026-09-04T00:43:09.334000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-03 — outside lookback window"
+      "reject_reason": "published 2026-09-04 — outside lookback window"
     },
     {
       "cluster_key": "df489c10521cd2bd",
@@ -619,18 +214,12 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "581a33a7614e0b48",
-      "title": "lotchuazzz-crypto/papergraph-mcp — Turn arXiv and LaTeX mathematical papers into theorem dependency graphs for AI agents through MCP.",
+      "cluster_key": "a540753a93849d07",
+      "title": "An interesting failure of Astra: I asked it to conduct original entrepreneurship research with whatever online datasets it could find…",
       "category": "tech_ai",
       "one_liner": "",
-      "tags": [
-        "agents",
-        "ai",
-        "appsec",
-        "opensource",
-        "research"
-      ],
-      "summary": "Turn arXiv and LaTeX mathematical papers into theorem dependency graphs for AI agents through MCP. GitHub repository lotchuazzz-crypto/papergraph-mcp, 113 stars, language Python. Topics: ai-agents, arxiv, knowledge-graph, latex, mathematics, mcp, model-context-protocol, python.",
+      "tags": [],
+      "summary": "An interesting failure of Astra: I asked it to conduct original entrepreneurship research with whatever online datasets it could find, pre-registering its hypotheses. It churned out a lot of beautifully formatted, technically correct papers on boring topics. (Bluesky post by @emollick.bsky.social — 66 likes, 2 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -641,25 +230,25 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "581a33a7614e0b48"
+        "a540753a93849d07"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/lotchuazzz-crypto/papergraph-mcp",
-          "domain": "github.com",
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3munzysgt4s2i",
+          "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-02T05:59:46+00:00",
+      "published": "2026-09-04T03:37:40.007000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-02 — outside lookback window"
+      "reject_reason": "published 2026-09-04 — outside lookback window"
     },
     {
       "cluster_key": "7dbba4c9f8471d9f",
@@ -672,7 +261,7 @@
         "llm",
         "opensource"
       ],
-      "summary": "Continuous improvement for AI coding agents: Penelopa analyzes real Codex and Claude Code sessions, finds repeated workflow patterns, and turns them into reusable skills, checks, prompts, and recommendations. GitHub repository chigwell/Penelopa.ai, 103 stars, language JavaScript. Topics: agent-improvement, agent-observability, ai-agents, ai-recommendations, claude-code, codex, coding-agents, continuous-improvement.",
+      "summary": "Continuous improvement for AI coding agents: Penelopa analyzes real Codex and Claude Code sessions, finds repeated workflow patterns, and turns them into reusable skills, checks, prompts, and recommendations. GitHub repository chigwell/Penelopa.ai, 113 stars, language JavaScript. Topics: agent-improvement, agent-observability, ai-agents, ai-recommendations, claude-code, codex, coding-agents, continuous-improvement.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -704,17 +293,16 @@
       "reject_reason": "published 2026-09-03 — outside lookback window"
     },
     {
-      "cluster_key": "d8e77435444a994b",
-      "title": "Junhan2/oh-my-fable — Claude Fable 5.1 prompting guide as Claude Code skills (KO/EN/ZH). Output quality goes up on Opus 5 and Sonnet",
+      "cluster_key": "fe38d537726a3edb",
+      "title": "Apeireth/Apeireth — Apeireth — A Pure Safe Rust AGI Operating System & Cognitive Microkernel. 16 crates: continuous topological me",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
+        "agents",
         "ai",
-        "howto",
-        "llm",
         "opensource"
       ],
-      "summary": "Claude Fable 5.1 prompting guide as Claude Code skills (KO/EN/ZH). Output quality goes up on Opus 5 and Sonnet 5 too. GitHub repository Junhan2/oh-my-fable, 50 stars, language Shell. Topics: ai-agents, anthropic, claude, claude-code, claude-code-plugin, claude-skills, fable-5, fable5.",
+      "summary": "Apeireth — A Pure Safe Rust AGI Operating System & Cognitive Microkernel. 16 crates: continuous topological memory, causal world model, cognitive scheduler, Ember HUD, triple-onion security & portable USB agent. GitHub repository Apeireth/Apeireth, 114 stars, language Rust. Topics: agi, ai-agents, autonomous-agents, cognitive-architecture, microkernel, operating-system, pure-safe-rust, rust.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -725,7 +313,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "d8e77435444a994b"
+        "fe38d537726a3edb"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -733,27 +321,66 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/Junhan2/oh-my-fable",
+          "url": "https://github.com/Apeireth/Apeireth",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-02T08:02:08+00:00",
+      "published": "2026-09-04T08:55:31+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-02 — outside lookback window"
+      "reject_reason": "published 2026-09-04 — outside lookback window"
     },
     {
-      "cluster_key": "75d36efe13adb1d6",
-      "title": "Man, it is kinda depressingly easy to reverse engineer things with large language models. I really see how it's useful in decomps.",
+      "cluster_key": "e258c2b6a9d98f76",
+      "title": "TokenRhythm/NeoHorse — NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness.",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "windows"
+        "agents",
+        "llm",
+        "opensource"
       ],
-      "summary": "Man, it is kinda depressingly easy to reverse engineer things with large language models. (Bluesky post by @xeiaso.net — 12 likes, 0 reposts)",
+      "summary": "NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness. GitHub repository TokenRhythm/NeoHorse, 87 stars, language unspecified. Topics: agent, large-language-models, llm, post-training, recursive-self-improvement, rsi.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "summary_source": "extract",
+      "alt_keys": [
+        "e258c2b6a9d98f76"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/TokenRhythm/NeoHorse",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-04T08:34:54+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-04 — outside lookback window"
+    },
+    {
+      "cluster_key": "033dafd1b4bb0290",
+      "title": "I was trying Astra at the time I wrote about the HuggingFace Incident, and it helped with context.",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [],
+      "summary": "I was trying Astra at the time I wrote about the HuggingFace Incident, and it helped with context. Everything that makes Astra great (running subagents, cleverness when faced with barriers, long-run ability) is also what can make it risky without the right guardrails. (Bluesky post by @emollick.bsky.social — 84 likes, 1 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -764,139 +391,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "75d36efe13adb1d6"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Xe Iaso",
-          "url": "https://bsky.app/profile/xeiaso.net/post/3mukcvfn45c2p",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-02T16:06:10.642000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-02 — outside lookback window"
-    },
-    {
-      "cluster_key": "19ea2b7ec0a30dd6",
-      "title": "Meta bets on AI agent Muse to catch up in AI race",
-      "category": "tech_ai",
-      "one_liner": "Meta unveiled Muse, an autonomous agent for Android, iOS, and web that executes multi-step tasks in isolated cloud VMs.",
-      "tags": [
-        "agents",
-        "ai",
-        "android",
-        "identity",
-        "llm",
-        "opensource",
-        "privacy",
-        "windows"
-      ],
-      "summary": "Meta announced Muse, an autonomous personal AI assistant capable of browsing the web, executing multi-step workflows, and making purchases on behalf of users. The assistant operates asynchronously in the background across iOS, Android, and web interfaces, requiring user approval for critical actions. To address security and credential isolation, Muse runs inside cloud virtual machines monitored by a secondary oversight agent called Sentinel.",
-      "key_facts": [
-        "Platforms: iOS, Android, muse.ai",
-        "Security architecture: Cloud VM sandboxing with Sentinel monitoring agent"
-      ],
-      "bottom_line": "Meta is entering the autonomous personal agent space with a sandboxed cloud execution model to handle user credentials and tasks.",
-      "claims": [
-        {
-          "text": "Meta launched Muse as a personal agent that completes tasks autonomously in the background.",
-          "support_span": "For lengthy tasks, Meta says Muse will continue working in the background after users close the app, returning to users if something changes or if it requires approval for something, such as making a purchase.",
-          "status": "entailed"
-        },
-        {
-          "text": "Muse operates inside a cloud virtual machine monitored by an agent named Sentinel.",
-          "support_span": "To keep data, passwords, and other information secure, Muse runs on a virtual computer in the cloud designed to keep data safe and separate from other users’ agents. It has no visibility into passwords or payment methods, Meta says, and another AI agent, Sentinel, patrols the same virtual machine to ensure nothing Muse does can reach th…",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 49,
-      "interest_score": 50,
-      "corroboration": 3,
-      "blend": 57.2,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "19ea2b7ec0a30dd6",
-        "733d6411731cee18",
-        "a09dc8ddf852d5dc",
-        "e4ff028e3c995b6a",
-        "fdfa315dd9e278dd"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
-          "domain": "theverge.com",
-          "tier": "B"
-        },
-        {
-          "name": "Hacker News 150+",
-          "url": "https://ai.meta.com/muse/",
-          "domain": "ai.meta.com",
-          "tier": "C"
-        },
-        {
-          "name": "finance.biggo.com",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1DdEpXQTNyV1N1RGppeXhOUDBGQks1Sk41WGZOOEZ1aHBVOHZseS1xeWVRX29LNzB2eFNRZl9hcWowWm1fRnFTT25rcnhKaDB6TEdsNzFSNjNkZGY1RXNibVJjdDlaR0RPQXh0TFhsUjJNangwRWc?oc=5",
-          "domain": "finance-biggo-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "HIT Consultant",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPV0VlZ3F2T0VOdzRISVhFdUk2cTlzQnI5UFg3ZFFlTnprTzNZQ0h1dUxZR214aU5PZnA3RGtUbUNTakJWV28tZGUwUlBGTjhxRndPUjdSMUFDQzg5QzNnZDlNZXZiRXhVWFl5dDZOdURNcnlURFdnSjd5NDVkaFRxdmxFN0VoZXo3RlRaSjVXY25FcHZlT29ySEJhd21DUUljaEt0cW5Ka0E0RXhtanZJ?oc=5",
-          "domain": "hit-consultant.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "The Tech Buzz",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPY2Jaa3R2bU9udl82LXkwZ09wczc1WE96V0hBd0kybDFacjdHYjJ6dGJZakhoTE5YNDZNeEJyZ09HdVBrbEJFcmNiTFRwWEd6aURFeS1IZ1hGaTBqT0E2SVZENGNyNlNBdFl6dmVMN2prb2xzN2dOV2xMVWNvaVpldFNHQ01GZw?oc=5",
-          "domain": "the-tech-buzz.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-08T19:00:00+00:00",
-      "trace": [
-        "tier B (+25)",
-        "3 independent outlets (+24)",
-        "verified: 3 independent outlets",
-        "importance 3/5 from gemini-3.7-flash",
-        "blend 57 = trust 49 / interest 50 / corrob 75"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "c18d7f938fbb445f",
-      "title": "The mental model for Fable and Astra class models is that you are delegating to a good outside team, not an intern.",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "ai"
-      ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu The mental model for Fable and Astra class models is that you are delegating to a good outside team, not an intern. Can you say what you want & how much leeway the AI has? Can you specify what you want tested & when to come to you for help?",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 2,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "c18d7f938fbb445f",
-        "ee81807bf98780ee"
+        "033dafd1b4bb0290"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -904,61 +399,49 @@
       "sources": [
         {
           "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3munjuoda422q",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3munrzfkmu22i",
           "domain": "bsky.app",
-          "tier": "C"
-        },
-        {
-          "name": "Bleap",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1udURKbmI5WHBOMVVPWDk2UkNDaXVDZDNKMy1XUk02WGF6ZzRRU2I4OXByMkNOTHAzX0dMZ21Na0VaUDVjSVhETWVRZXA5NUpvVVpib2dCbjg1ZExPMEVNVmVkZHl5dw?oc=5",
-          "domain": "bleap.publisher",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-03T22:49:01.599000+00:00",
+      "published": "2026-09-04T01:14:50.121000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-03 — outside lookback window"
+      "reject_reason": "published 2026-09-04 — outside lookback window"
     },
     {
-      "cluster_key": "a5cc01935f34b15d",
-      "title": "Active crypto address \"copy and paste attack\" threatens users even after major malware cleanup cut off hackers",
-      "category": "cyber_attacks",
-      "one_liner": "Sality botnet's command infrastructure was disrupted, but local EggJagger crypto-swapping malware remains active on infected systems.",
+      "cluster_key": "db5fe9848c05be2c",
+      "title": "Finding Zero-Days in Plain Sight: Our Security Team’s Uptoskills Penetration Testing Journey",
+      "category": "cyber_tools",
+      "one_liner": "This writeup demonstrates how manual testing and direct origin discovery can bypass WAFs to uncover critical vulnerabilities that automated scanners miss.",
       "tags": [
-        "blueteam",
-        "dfir",
-        "incident",
-        "malware",
-        "threat-actor",
-        "threat-intel",
-        "tool"
+        "appsec",
+        "network",
+        "redteam",
+        "research",
+        "tool",
+        "vulnerability",
+        "writeup"
       ],
-      "summary": "A multinational law enforcement operation on August 31, 2026, disrupted the Sality botnet by seizing domains and establishing sinkholes, cutting off its ability to deliver new payloads to over 33,000 infected machines worldwide. However, malware already present on compromised systems—specifically the EggJagger clipboard-monitoring tool—remains active and continues to perform cryptocurrency address-swapping attacks. Because the botnet takedown did not automatically remove local files, infected users must manually remediate their systems to prevent stolen funds. Cybersecurity firms and agencies recommend checking network telemetry for specific UDP traffic and using provided YARA rules to detect lingering infections. Coordinated efforts by entities like the Shadowserver Foundation are underway to notify victims and assist with remediation.",
+      "summary": "A penetration testing team identified critical security flaws in the Uptoskills platform by bypassing Cloudflare WAF protections through direct origin IP access. The team discovered vulnerabilities including CORS misconfigurations, subdomain takeovers, unauthenticated PII leakage, and exposed GitHub repositories containing credentials. These findings highlight the limitations of automated scanners, which were blocked by edge defenses, compared to manual business logic analysis.",
       "key_facts": [
-        "Operation Date: August 31, 2026",
-        "Infected Machines: 33,000+ worldwide",
-        "Malware Family: Sality / EggJagger",
-        "Lighthouse Address: 188.166.101.148"
+        "Target: Uptoskills",
+        "Bypass method: Direct origin IP access",
+        "Findings: CORS, PII leakage, credential exposure"
       ],
-      "bottom_line": "Disrupting a botnet's command-and-control infrastructure does not remove resident payloads like crypto-swapping malware, leaving user funds at risk until manual remediation occurs.",
+      "bottom_line": "Relying solely on automated scanners is insufficient, as WAFs can be bypassed by identifying and targeting the origin server directly.",
       "claims": [
         {
-          "text": "The Aug. 31 disruption of the Sality botnet cut off its operator's ability to deliver new malicious software to infected computers.",
-          "support_span": "The Aug. 31 disruption of the Sality botnet cut off its operator's ability to deliver new malicious software to infected computers, while malware already on those devices remained active, according to CrowdStrike's Sept. 1 report.",
+          "text": "The team identified critical security flaws in the Uptoskills platform by bypassing Cloudflare WAF protections through direct origin IP access.",
+          "support_span": "By modifying HTTP host headers and sending requests directly to these IP addresses rather than the primary domain (uptoskills.com), we successfully bypassed all Cloudflare WAF rules.",
           "status": "entailed"
         },
         {
-          "text": "EggJagger watches the clipboard for cryptocurrency addresses and substitutes ones controlled by the operator.",
-          "support_span": "EggJagger watches the clipboard for cryptocurrency addresses and substitutes ones controlled by the operator, including when someone copies a Bitcoin or Ethereum address for a payment.",
+          "text": "The team discovered vulnerabilities including CORS misconfigurations, subdomain takeovers, unauthenticated PII leakage, and exposed GitHub repositories containing credentials.",
+          "support_span": "CORS & Subdomain Takeover | Critical | Unclaimed CNAME + Permissive CORS | Unauthenticated PII Leakage | Critical / High | Public search API endpoint exposure | Source Code & Credential Leakage | Critical | Exposed public GitHub repositories",
           "status": "contradicted"
-        },
-        {
-          "text": "CrowdStrike said the botnet enabled payload distribution to more than 33,000 infected machines worldwide.",
-          "support_span": "CrowdStrike said the botnet enabled payload distribution to more than 33,000 infected machines worldwide.",
-          "status": "entailed"
         }
       ],
       "trust_score": 10,
@@ -968,83 +451,108 @@
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "a5cc01935f34b15d"
+        "db5fe9848c05be2c"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "CTI Now",
-          "url": "https://cryptoslate.com/copy-and-paste-crypto-address-attack-remains-active-after-major-malware-cleanup-cut-off-hacker-controls/",
-          "domain": "cryptoslate.com",
+          "name": "Medium pentesting",
+          "url": "https://medium.com/@jeffrey_theog/finding-zero-days-in-plain-sight-our-security-teams-uptoskills-penetration-testing-journey-7a47f568d7e8?source=rss------penetration_testing-5",
+          "domain": "medium.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-08T14:54:30+00:00",
+      "published": "2026-09-09T08:34:54+00:00",
       "trace": [
         "tier C (+10)",
         "single tier-C source — treat with caution",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 4/5 from gemini-3.5-flash-lite",
+        "importance 4/5 from gemini-3.1-flash-lite",
         "blend 44 = trust 10 / interest 75 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "e89617e2c9839bdd",
-      "title": "adtexterry-lgtm/unigit-ecosystem — UNIGIT public brand and ecosystem hub — AI should work for everyone.",
-      "category": "tech_ai",
-      "one_liner": "",
+      "cluster_key": "0cc571fdceb74bf2",
+      "title": "Cisco Advance Notification for Publication of September 16, 2026, Security Advisories",
+      "category": "cyber_attacks",
+      "one_liner": "Cisco released an IOS XR software hardening release to address internally discovered exceptional handling vulnerabilities grouped under CVE-2026-20280.",
       "tags": [
-        "agents",
-        "ai",
-        "opensource"
+        "blueteam",
+        "bugbounty",
+        "cve",
+        "dfir",
+        "exploit",
+        "network",
+        "release",
+        "vulnerability"
       ],
-      "summary": "UNIGIT public brand and ecosystem hub — AI should work for everyone. GitHub repository adtexterry-lgtm/unigit-ecosystem, 419 stars, language JavaScript. Topics: agentic-ai, ai-tools, ai-workbench, ecosystem, mcp, productivity, unigit.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
+      "summary": "Cisco's IOS XR Software engineering team completed an internal security review resulting in a software hardening release addressing multiple internally discovered vulnerabilities. The vulnerabilities, tracked under CVE-2026-20280, involve improper checking or handling of exceptional conditions classified under CWE-703. These issues were identified during internal testing and are not currently known to be actively exploited in the wild. Cisco has grouped the vulnerabilities by their CWE classification and released software updates to help customers remediate the risks.",
+      "key_facts": [
+        "CVE ID: CVE-2026-20280",
+        "CWE ID: CWE-703"
+      ],
+      "bottom_line": "Cisco IOS XR users should apply the latest hardening updates addressing CVE-2026-20280 and CWE-703 conditions.",
+      "claims": [
+        {
+          "text": "The vulnerabilities tracked by CVE-2026-20280 are related to improper checking or handling of exceptional condition issues that are grouped under the Common Weakness Enumeration (CWE) CWE-703.",
+          "support_span": "The vulnerabilities tracked by CVE-2026-20280 are related to improper checking or handling of exceptional condition issues that are grouped under the Common Weakness Enumeration (CWE) CWE-703.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
       "corroboration": 1,
-      "blend": 0.0,
+      "blend": 58.8,
       "is_new": false,
-      "summary_source": "extract",
+      "summary_source": "model",
       "alt_keys": [
-        "e89617e2c9839bdd"
+        "0cc571fdceb74bf2",
+        "dceae7cc33129073"
       ],
-      "critical_signal": "",
-      "priority": "minor",
+      "critical_signal": "actively exploited",
+      "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/adtexterry-lgtm/unigit-ecosystem",
-          "domain": "github.com",
-          "tier": "C"
+          "name": "Cisco PSIRT",
+          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-jfxK98ZP?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Advance%20Notification%20for%20Publication%20of%20September%2016,%202026,%20Security%20Advisories%26vs_k=1",
+          "domain": "sec.cloudapps.cisco.com",
+          "tier": "A"
+        },
+        {
+          "name": "Cisco PSIRT",
+          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-iosxr-qg64NcM?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20IOS%20XR%20Software%20Security%20Hardening%20Release:%20September%202026%26vs_k=1",
+          "domain": "sec.cloudapps.cisco.com",
+          "tier": "A"
         }
       ],
-      "primary_links": [],
-      "published": "2026-09-02T10:08:01+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
+      "primary_links": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-iosxr-qg64NcM?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20IOS%20XR%20Software%20Security%20Hardening%20Release:%20September%202026%26vs_k=1",
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-jfxK98ZP?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Advance%20Notification%20for%20Publication%20of%20September%2016,%202026,%20Security%20Advisories%26vs_k=1"
       ],
-      "reject_reason": "published 2026-09-02 — outside lookback window"
+      "published": "2026-09-09T16:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 4/5 from cache",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "c2863e5320b0f2d0",
-      "title": "gesta-run/subpool — A lightweight, self-hosted AI subscription pool for teams.",
+      "cluster_key": "2cc423e0e473bfc2",
+      "title": "I occasionally get asked why I post so many visual things when new models come out.",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource"
+        "ai"
       ],
-      "summary": "A lightweight, self-hosted AI subscription pool for teams. GitHub repository gesta-run/subpool, 70 stars, language Go. Topics: agent, ai, ai-agent, ai-agents, claude-code, codex, gateway, pooling.",
+      "summary": "I occasionally get asked why I post so many visual things when new models come out. One reason is that nobody clicks any links so the visual stuff best communicates AI progress. But if you want detailed reads, here is the research from my AI lab at Penn: gail.wharton.upenn.edu/research-and... (Bluesky post by @emollick.bsky.social — 87 likes, 6 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -1055,25 +563,25 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "c2863e5320b0f2d0"
+        "2cc423e0e473bfc2"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/gesta-run/subpool",
-          "domain": "github.com",
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3munux6d6yc2i",
+          "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-02T08:27:21+00:00",
+      "published": "2026-09-04T02:07:16.653000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-02 — outside lookback window"
+      "reject_reason": "published 2026-09-04 — outside lookback window"
     },
     {
       "cluster_key": "e922b8c490f2959e",
@@ -1130,426 +638,85 @@
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 3/5 from gemini-3.1-flash-lite",
+        "importance 3/5 from cache",
         "blend 36 = trust 25 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "f67a69ea282e9e91",
-      "title": "\"No Work, No Pay\": Punjab Cracks Down On Unauthorised Absence Of State Staff",
-      "category": "india_world",
-      "one_liner": "Administrative policy change in Punjab regarding government staff attendance.",
-      "tags": [
-        "india",
-        "policy"
-      ],
-      "summary": "The Punjab government has issued a No Work, No Pay order to address unauthorized absences among state employees. The crackdown includes financial penalties and other unspecified disciplinary actions. This move is intended to improve attendance and accountability within the state administration.",
-      "key_facts": [
-        "Region: Punjab"
-      ],
-      "bottom_line": "Punjab state employees face strict penalties for unauthorized absence.",
-      "claims": [
-        {
-          "text": "Punjab Cracks Down On Unauthorised Absence Of State Staff.",
-          "support_span": "Punjab Cracks Down On Unauthorised Absence Of State Staff",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 25,
-      "corroboration": 1,
-      "blend": 25.0,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "f67a69ea282e9e91"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NDTV India",
-          "url": "https://www.ndtv.com/india-news/no-work-no-pay-punjab-cracks-down-on-unauthorised-absence-of-state-staff-12020334#publisher=newsstand",
-          "domain": "ndtv.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-08T19:05:11+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 2/5 from gemini-3-flash-preview",
-        "blend 25 = trust 25 / interest 25 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "151ff70b82d8a4d9",
-      "title": "The Download: selling battlefield drone data and AI reshaping language",
+      "cluster_key": "9816f5beea82e263",
+      "title": "1Password increases engineering productivity 21% with Codex",
       "category": "tech_ai",
-      "one_liner": "A roundup of major AI developments, including battlefield data sales and OpenAI's high-risk 'Astra' model.",
+      "one_liner": "1Password's successful integration of AI agents into their SDLC demonstrates a practical, secure blueprint for scaling developer productivity.",
       "tags": [
         "agents",
         "ai",
-        "llm",
-        "policy",
-        "political",
-        "privacy"
-      ],
-      "summary": "Ukraine is selling millions of data points from battlefield drone flights to military contractors, turning the conflict into a massive AI training ground. OpenAI has launched \"Astra,\" its most capable model to date, which the company warns can evade human monitoring and has reached a \"critical\" risk level. Meanwhile, US automakers are lobbying Congress for a permanent ban on Chinese cars, citing surveillance risks and unfair trade practices. Tesla has also launched its Cybercab robotaxi service in Austin with 45 registered vehicles.",
-      "key_facts": [
-        "Model: OpenAI Astra",
-        "Risk level: Critical",
-        "Cybercabs registered in Texas: 45"
-      ],
-      "bottom_line": "Battlefield data is being commercialized for AI training, while OpenAI's newest model poses unprecedented monitoring challenges.",
-      "claims": [
-        {
-          "text": "Ukraine has begun making millions of data points gathered during tens of thousands of drone flights available to military contractors and commercial companies.",
-          "support_span": "Ukraine has begun making millions of data points gathered during tens of thousands of drone flights available to military contractors and commercial companies.",
-          "status": "entailed"
-        },
-        {
-          "text": "OpenAI has launched Astra, its most capable model yet",
-          "support_span": "OpenAI has launched Astra, its most capable model yet",
-          "status": "entailed"
-        },
-        {
-          "text": "It’s OpenAI’s first model to hit its ‘critical’ risk level.",
-          "support_span": "It’s OpenAI’s first model to hit its ‘critical’ risk level.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "151ff70b82d8a4d9"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "MIT Tech Review",
-          "url": "https://www.technologyreview.com/2026/09/04/1143457/the-download-ukraine-selling-drone-data-ai-reshaping-language/",
-          "domain": "technologyreview.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-04T12:10:00+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 4/5 from cache",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "09167203d4520185",
-      "title": "Why Ola Electric’s  ₹1,500 crore fundraise fails to enthuse investors",
-      "category": "markets",
-      "one_liner": "Ola Electric's new fundraise fails to reassure investors as market share contracts and executive departures mount.",
-      "tags": [
-        "india",
-        "markets",
-        "policy"
-      ],
-      "summary": "Ola Electric has raised up to ₹1,500 crore in fresh capital to support its cash-burning operations, battery technology investments, and manufacturing expansion. However, the fundraise failed to lift investor sentiment, with shares dipping 1.5% amid ongoing market share losses, senior management churn, and customer grievance litigation. In August, Ola registered only 13,916 electric two-wheelers—a 29% year-on-year drop—compressing its market share to 7.6% while the broader industry grew significantly.",
-      "key_facts": [
-        "Fundraise amount: Up to ₹1,500 crore",
-        "August 2026 registrations: 13,916 units (-29% YoY)",
-        "Market share: 7.6%"
-      ],
-      "bottom_line": "Capital infusions alone cannot offset persistent market-share erosion and leadership instability at Ola Electric.",
-      "claims": [
-        {
-          "text": "Ola Electric raised up to ₹1,500 crore in fresh capital.",
-          "support_span": "Ola Electric Mobility’s fundraise of up to ₹1,500 crore should give its turnaround journey more runway...",
-          "status": "contradicted"
-        },
-        {
-          "text": "In August, Ola registered 13,916 electric two-wheelers, down 29% year-on-year.",
-          "support_span": "In August, Ola registered 13,916 electric two-wheelers, down 29% year-on-year versus the industry’s 68% growth, Vahan data showed.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "09167203d4520185"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/mark-to-market/ola-electric-fundraise-rs-1500-crore-market-share-loss-11788853101134.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-08T08:53:00+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "3ba30f208e590e8b",
-      "title": "Bessent’s ‘Fever’-Quelling Debt Buybacks Put Wall Street on Edge",
-      "category": "markets",
-      "one_liner": "Treasury Secretary Scott Bessent's expanded bond buybacks put Wall Street on edge as long-term yields surge.",
-      "tags": [
-        "markets",
-        "policy"
-      ],
-      "summary": "US Treasury Secretary Scott Bessent is expanding the government's bond buyback program to curb climbing long-term yields and calm market selloffs. Following a surprise announcement to at least double previous buyback sizes, Wall Street dealers are bracing for upcoming repurchase operations projected between $4 billion and $10 billion. The buybacks coincide with major 10-year note and 30-year bond auctions, raising stakes for fixed-income markets as investors assess how the Treasury will fund the operations.",
-      "key_facts": [
-        "Target maturities: 10-year to 20-year securities",
-        "Previous buyback size: $2 billion",
-        "Estimated practical cap: $10 billion"
-      ],
-      "bottom_line": "Aggressive US Treasury buyback operations to suppress bond yields carry significant market execution and funding risks.",
-      "claims": [
-        {
-          "text": "The Treasury shocked market participants by stating it would at least double previous buyback sizes.",
-          "support_span": "It will be the first such release since the Treasury shocked market participants Aug. 19 by saying it would “at least double” the $2 billion sizes it had penciled in just two weeks before.",
-          "status": "entailed"
-        },
-        {
-          "text": "Morgan Stanley calculates $10 billion as a practical cap for the buyback operation.",
-          "support_span": "...with Morgan Stanley calculating $10 billion as a practical cap...",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "3ba30f208e590e8b"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/bessents-fever-quelling-debt-buybacks-put-wall-street-on-edge-11788896431944.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-08T19:40:31+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "00bd6999054650fa",
-      "title": "ChatGPT Sketch turns your bad drawings into detailed AI images",
-      "category": "tech_ai",
-      "one_liner": "OpenAI's ChatGPT Images 2.5 and Sketch introduce doodle-based prompting and faster, highly editable image generation.",
-      "tags": [
-        "ai",
         "howto",
         "llm",
-        "release"
+        "tool"
       ],
-      "summary": "OpenAI has announced ChatGPT Images 2.5 alongside a new feature called Sketch, which allows users to incorporate hand-drawn doodles directly into their prompts to guide image generation. The updated model delivers more natural lighting, richer textures, and improved multi-turn editing capabilities while reducing generation latency by up to 50% compared to version 2.0. Additionally, users can leave direct comments on specific parts of generated images to request targeted visual alterations.",
+      "summary": "1Password has integrated OpenAI's Codex across its software development lifecycle, reporting a 21% increase in engineering productivity and an 11% reduction in pull request cycle times. The tool is used for tasks ranging from technical design and implementation to security reviews and production incident investigation. 1Password maintains security by using internal harnesses and preventing plaintext credentials from entering the model context.",
       "key_facts": [
-        "Model version: ChatGPT Images 2.5",
-        "New feature: Sketch (@Sketch)",
-        "Latency reduction: Up to 50%"
+        "Productivity gain: 20.9%",
+        "PR cycle reduction: 10.9%",
+        "Estimated ROI: 553%"
       ],
-      "bottom_line": "Enhanced multi-turn editing and low-latency image generation in ChatGPT 2.5 streamline creative AI workflows for developers and power users.",
+      "bottom_line": "AI-assisted development can significantly compress the planning-to-production cycle without compromising security if strict data boundaries are enforced.",
       "claims": [
         {
-          "text": "OpenAI announced ChatGPT Images 2.5 and the Sketch feature.",
-          "support_span": "OpenAI announced ChatGPT Images 2.5 on Tuesday and is adding a new way to tell ChatGPT what you want it to make an image of: by drawing a doodle.",
+          "text": "1Password has integrated Codex across the software delivery lifecycle to compress the time between planning and production",
+          "support_span": "1Password has integrated Codex across the software delivery lifecycle to compress the time between planning and production",
           "status": "entailed"
         },
         {
-          "text": "Image generation latency has been reduced by up to 50% compared with Images 2.0.",
-          "support_span": "...and that image generation latency has been reduced by “up to 50% compared with Images 2.0.”",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 36.2,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "00bd6999054650fa"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
-          "domain": "theverge.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-08T20:16:09+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 36 = trust 25 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "57998d94242a5e4b",
-      "title": "PhiloLabs/fable51-worlds — worlds via code, from fable 5.1",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "ai",
-        "llm",
-        "opensource"
-      ],
-      "summary": "worlds via code, from fable 5.1 GitHub repository PhiloLabs/fable51-worlds, 470 stars, language JavaScript. Topics: 3d-reconstruction, ai-agents, claude, digital-twin, openstreetmap, procedural-generation, san-francisco, threejs.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "57998d94242a5e4b"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/PhiloLabs/fable51-worlds",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-02T18:19:55+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-02 — outside lookback window"
-    },
-    {
-      "cluster_key": "6e99062d8888cbf6",
-      "title": "Stable Channel Update for ChromeOS / ChromeOS Flex",
-      "category": "cyber_tools",
-      "one_liner": "Truncated ChromeOS update notice.",
-      "tags": [
-        "release"
-      ],
-      "summary": "This is a truncated notice for a Stable Channel update for ChromeOS and ChromeOS Flex. It was published on Wednesday, September 2, 2026. No details regarding the contents of the update or specific version numbers are provided.",
-      "key_facts": [
-        "Date: September 2, 2026"
-      ],
-      "bottom_line": "Truncated article; no details provided.",
-      "claims": [
-        {
-          "text": "Stable Channel Update for ChromeOS / ChromeOS Flex.",
-          "support_span": "Stable Channel Update for ChromeOS / ChromeOS Flex",
+          "text": "1Password has cut median pull request cycle time by nearly 11% and improved engineering productivity by almost 21% for its core user cohort.",
+          "support_span": "1Password has cut median pull request cycle time by nearly 11% and improved engineering productivity by almost 21% for its core user cohort.",
           "status": "contradicted"
         }
       ],
       "trust_score": 70,
-      "interest_score": 0,
+      "interest_score": 50,
       "corroboration": 1,
-      "blend": 25.0,
+      "blend": 47.5,
       "is_new": false,
       "summary_source": "model",
       "alt_keys": [
-        "6e99062d8888cbf6",
-        "7cbabe1f2e9c2425",
-        "db64d0f3631acbc7"
+        "9816f5beea82e263"
       ],
       "critical_signal": "",
-      "priority": "minor",
+      "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Chromium Releases",
-          "url": "http://chromereleases.googleblog.com/2026/09/stable-channel-update-for-chromeos.html",
-          "domain": "chromereleases.googleblog.com",
-          "tier": "A"
-        },
-        {
-          "name": "Chromium Releases",
-          "url": "http://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_01882797386.html",
-          "domain": "chromereleases.googleblog.com",
-          "tier": "A"
-        },
-        {
-          "name": "Chromium Releases",
-          "url": "http://chromereleases.googleblog.com/2026/09/early-stable-update-for-desktop.html",
-          "domain": "chromereleases.googleblog.com",
+          "name": "OpenAI Blog",
+          "url": "https://openai.com/index/1password",
+          "domain": "openai.com",
           "tier": "A"
         }
       ],
       "primary_links": [
-        "http://chromereleases.googleblog.com/2026/09/early-stable-update-for-desktop.html",
-        "http://chromereleases.googleblog.com/2026/09/stable-channel-update-for-chromeos.html",
-        "http://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_01882797386.html"
+        "https://openai.com/index/1password"
       ],
-      "published": "2026-09-02T21:25:19+00:00",
+      "published": "2026-09-08T00:00:00+00:00",
       "trace": [
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "importance 1/5 from gemini-3-flash-preview",
-        "blend 25 = trust 70 / interest 0 / corrob 25"
+        "importance 3/5 from gemini-3.1-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "5034c8c7cfbca126",
-      "title": "If Anubis is \"slow\" for you, please DM me.",
+      "cluster_key": "7de218f2c7f5c277",
+      "title": "Got access to GPT-6 Astra. Want to see some pelicans?",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "howto",
+        "llm",
         "windows"
       ],
-      "summary": "If Anubis is \"slow\" for you, please DM me. I would like to collect data from your device so I can guide future optimizations and allowances made for different hardware classes. (Bluesky post by @xeiaso.net — 29 likes, 7 reposts)",
+      "summary": "here's a grid comparing Astra to GPT-5.6 Sol, Terra, and Luna static.simonwillison.net/static/2026/... Transcript from generating the Astra pelicans here: tools.simonwillison.net/markdown-svg... (Bluesky post by @simonwillison.net — 202 likes, 9 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -1560,25 +727,25 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "5034c8c7cfbca126"
+        "7de218f2c7f5c277"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Xe Iaso",
-          "url": "https://bsky.app/profile/xeiaso.net/post/3mukzrzfrzc2k",
+          "name": "Simon Willison",
+          "url": "https://bsky.app/profile/simonwillison.net/post/3mupxubgrls2c",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-02T22:55:53.218000+00:00",
+      "published": "2026-09-04T22:04:39.941000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-02 — outside lookback window"
+      "reject_reason": "published 2026-09-04 — outside lookback window"
     }
   ]
 }
