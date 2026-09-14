@@ -1,6 +1,408 @@
 {
-  "generated_at": "2026-09-13T00:09:44.074430+00:00",
+  "generated_at": "2026-09-14T00:17:30.628509+00:00",
   "items": [
+    {
+      "cluster_key": "3b588a9b2b0a8652",
+      "title": "GitHub - grm2ngo/turnstile: Cloudflare Turnstile — measured research notes: the 2-POST chain, the per-fetch build pool, the capture protocol, and the FO1…",
+      "category": "cyber_tools",
+      "one_liner": "Researchers have published technical notes detailing the architecture and capture protocols of Cloudflare Turnstile.",
+      "tags": [
+        "network",
+        "opensource",
+        "research",
+        "tool"
+      ],
+      "summary": "A public repository (grm2ngo/turnstile) provides measured research notes detailing the inner workings of Cloudflare Turnstile. The documentation covers the 2-POST chain, the per-fetch build pool, the capture protocol, and the FO1 bag-binding mechanism incorporating per-draw execution and nonce binding. Strict evidence constraints and python verification scripts are utilized to ensure research accuracy.",
+      "key_facts": [],
+      "bottom_line": "Security researchers analyzing bot mitigation mechanisms can leverage detailed reverse-engineered notes on Cloudflare Turnstile's capture protocol.",
+      "claims": [
+        {
+          "text": "GitHub - grm2ngo/turnstile: Cloudflare Turnstile — measured research notes: the 2-POST chain, the per-fetch build pool, the capture protocol, and the FO1…",
+          "support_span": "GitHub - grm2ngo/turnstile: Cloudflare Turnstile — measured research notes: the 2-POST chain, the per-fetch build pool, the capture protocol, and the FO1…",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 32.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "3b588a9b2b0a8652"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "SecHarvester",
+          "url": "https://github.com/grm2ngo/turnstile",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-13T09:06:55+00:00",
+      "trace": [
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 32 = trust 10 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "339d18aad30839ef",
+      "title": "krmisystems/fantasy-football-manager — ESPN draft and lineup tools for Codex and other MCP clients, with browser sign-in, approval modes, per-team li",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "agents",
+        "opensource"
+      ],
+      "summary": "ESPN draft and lineup tools for Codex and other MCP clients, with browser sign-in, approval modes, per-team limits, and server monitoring. GitHub repository krmisystems/fantasy-football-manager, 66 stars, language Python. Topics: browser-automation, codex, codex-plugin, espn, fantasy-draft, fantasy-football, lineup-optimization, mcp.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "339d18aad30839ef"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/krmisystems/fantasy-football-manager",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-08T02:55:36+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-08 — outside lookback window"
+    },
+    {
+      "cluster_key": "6ec5c193cb04acfb",
+      "title": "Mullenweg, co-founder of Wordpress, wrote in a company-wide Slack channel on Wednesday that board members \"conspired\" behind his back to vote to put…",
+      "category": "cyber_attacks",
+      "one_liner": "",
+      "tags": [],
+      "summary": "Mullenweg, co-founder of Wordpress, wrote in a company-wide Slack channel on Wednesday that board members \"conspired\" behind his back to vote to put him on leave. (Bluesky post by @404media.co — 128 likes, 36 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "6ec5c193cb04acfb"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mv4ibds3tq2f",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-09T21:30:14.653000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-09 — outside lookback window"
+    },
+    {
+      "cluster_key": "09ba438a0936e9be",
+      "title": "Ukrainian Conti Ransomware Developer Sentenced to 4 Years in US Prison",
+      "category": "cyber_attacks",
+      "one_liner": "",
+      "tags": [
+        "malware",
+        "policy",
+        "ransomware",
+        "threat-actor"
+      ],
+      "summary": "A United States court sentenced Ukrainian national Oleksii Oleksiyovych Lytvynenko to four years in prison this week for his role in the Conti ransomware operation. Lytvynenko, 44, was arrested in Ireland in 2023 and extradited to the United States in late 2025. He pleaded guilty to wire fraud in June 2026, admitting to helping the Conti group develop malware and possessing stolen victim data. Authorities initially indicated that the Ukrainian man worked with the Conti group between 2020 and 2022, when the operation was shut down. However, at his guilty plea, Lytvynenko admitted joining the cybercrime gang in September 2021.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 6,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "09ba438a0936e9be",
+        "12d5745432df3e07",
+        "16d389f64f3bba35",
+        "2d637dad4356efcb",
+        "525b3be9312dc09c",
+        "66caef420443e93e",
+        "74f5e9b2dbfbc955",
+        "8016f6d2c1400d5a",
+        "c0a4f6fe429e030c",
+        "c1ea390cf610e36a",
+        "c64be156dd5e6e30",
+        "eab5649d83cc3336"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/conti-ransomware-gang-member-sentenced-to-four-years-in-prison/",
+          "domain": "bleepingcomputer.com",
+          "tier": "B"
+        },
+        {
+          "name": "CyberScoop",
+          "url": "https://cyberscoop.com/conti-ransomware-developer-sentenced/",
+          "domain": "cyberscoop.com",
+          "tier": "B"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://www.securityweek.com/ukrainian-conti-ransomware-developer-sentenced-to-4-years-in-us-prison/",
+          "domain": "securityweek.com",
+          "tier": "B"
+        },
+        {
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mv3wodsvto2c",
+          "domain": "bsky.app",
+          "tier": "C"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcVl6WHNaWGRXMm5JVkNiWWtBbWl2cGZpTkhVY0ZCMElvMFZONU01VXR0c1RZeUJWUm1BU0RCVzNTRFduMndQZjg3SW5LUjkyeTJsTktIcFRWY2ZtLXhINUFvbDgzT1d6dUNLZGlKS0JvSWNfT1VMdU1ZSDJnaEo0NXVMRzd4REFHbUl5cjU5YVJDRmtiU0VHQlBSalhMOXhicXkxc0ZlaTVOWUZfci1v0gG0AUFVX3lxTFBVTmdmVVNyVXhTZmM5OVZqNWxqS2F0cU9uQU5kUl82T1UzcHZ6ZXhUTUdMOHRaRFdRX0JYaUdTVXMwV3V1SlRMVXpDb3IwUWk1UFpiX2EyY0ExYmVqS1RxNC1jaGRwdEJwZ0ZMcEVxMjFSZWhTZ2pzTFd1Q01HLWNJWmFvOERpaGlsaFZSSDNneHc4U19XUEFST1JacDc5UGwtWkZZODM3Z3EyU1dvLXV1ZF9rTg?oc=5",
+          "domain": "bleepingcomputer.com",
+          "tier": "C"
+        },
+        {
+          "name": "GN Ransomware watch",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5BVW1TQWNkN2JYVTREaHBoWVdEZHktZEZHd01WMUw4Tkc3aGY5V1ExUjRydTh6VlY3NGRpTmQzSFZPRVlaMnVLa2hyNXE2V2pxd2wyQURFUlBIcnE2OXZEbWtKc3hqMk13Z3BrVTRmOGpwSVZKcTNtNGRBRGJkTW8?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "GN Ransomware watch",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQM093andXRWhtam1rcjRJLWF5ZTd4cjVaQmJ2Qm1aWWJoNW5MSWhBa1dCZFJ4STJvajdDcFFKdjJqdDN0c3dva1pZbGZPSjBXNnA1XzNJSHd6T01OdlozVXBLc2s4b1RCRW5yU3lOMEhQdnBUMG9oeF9iRy1WZTZmZw?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "GN Ransomware watch",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1VbnpDZDRZNjdacldkNzdBX05EdGtFaGROWUsybnl5ZGNJbzU4RFJKSWVMSUlXMGpGcEdEaUFUSkoyUURtNFRRUnpnUzR0RXJqeDVrUWhLRUNtNlZxYTZNZ1NXd21vV0hEdjJjakNkNjBUcHRLMnVqaUpkLXFnSVU?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdVYxakZtS3J2bUlTNVZROFhTUXJzcEpXUDc0TENKY2kyRzM3VGcxZTRjeEIyYV9SQTJ2V1ZOUzJYUlEzdkNrVU5Da1hxWnA1dGxKd0x6TFZpQ1AwSTlaU2dBWWlyNzkzSDNwdE5zN3NvWVdud2h3ZlRvRG4wZHI3S0ticzI0R1k4SHNkSDJMcll3bEk0T2E0NTVsZlBaV21ycWfSAacBQVVfeXFMTjhHbi0tQ2dMS01BUVFUZW1tOVJWZTRVcWdKTzlqTEpld2lJUnJkZGVTWmJmN1QyWGlCVnhLMERPZ2RKSy1PV0w3TnYxbXZsbllya1VCR1Y1T3U1QXg3Rmd4V0wyeHFiOEpvTkQzVE9GdVV2R0xEVE9FNDVWR3JGWnJFZ19oVjRfZ2FZdDdoSHRiRWJWeFNSMTIzb3lXcVY4YVlJbVE3S1E?oc=5",
+          "domain": "securityweek.com",
+          "tier": "C"
+        },
+        {
+          "name": "shattered.io",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBXQmNpZlZiNVY3QWtYSVF3QU5LMFBKRy1ocTdpRDJOSFM1MERtdldSem9BZFI0cmx3aExNTHUwblNQUk93M1lTXzVMaEU5SmIzcUtjdVBscVVHN1NBLWFSNk4yYkJSYjZvbEZKc3ptSVN4Q0pzSkhob3Rvbl8?oc=5",
+          "domain": "shattered-io.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "SWI swissinfo.ch",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNV0xGUVpHUW1lMnZ6VEpiQldIRzE1OGlDMXU1WmNha1VhQ3E0OWhmWWhYOGgySjZraU9lRFVZb1R0aUU4X3NrS3p5d2t6UXFsaEFEek5jbmE5M1ZaYnM2bkw3UkhsRWRHd1FSWXhsRjNTdDRLOEhNZzBtX3U1dDhqcHJmMjFrVHVMcnZqMEFZM3UzR29PazVKNUFSSTVVUDlzNzRrTkRic2NwdkpQV256OGxhMFdydw?oc=5",
+          "domain": "swi-swissinfo-ch.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "UA.NEWS",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTjhHbDBfbzluRzRDellkTXBxV3lYLXU5X2VNUVRwNTVmbkc5NVc3WlRaLV9KTXRlSkpmREhWNmRIZnJ6c29YRUd1cUYycExUa1FKdDhRSkR3eEdFYkVGY0NmUFRiRkVUUUxiYS16aHJHYWlJN1JnamhnanpJWGp2YUJmVklMZVhweTBlUVZsN2tQbGRMbzdqY3ZpYUhVeGNnQ0dRd0Zn?oc=5",
+          "domain": "ua-news.publisher",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-09T16:15:20.641000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-09 — outside lookback window"
+    },
+    {
+      "cluster_key": "842929a57849dd6d",
+      "title": "Weakly General AI achieved (at least according to the criteria set in Metaculus in 2020) & a year before the most recent predictions: ✅Loebner prize…",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "ai",
+        "llm"
+      ],
+      "summary": "Weakly General AI achieved (at least according to the criteria set in Metaculus in 2020) & a year before the most recent predictions: ✅Loebner prize was a weak Turing Test, equivalent achieved by GPT-4.5 ✅Winograd passed by GPT-3 ✅SAT passed at 75% by GPT-4 ✅Montezuma's Revenge beaten by GPT-6 (Bluesky post by @emollick.bsky.social — 37 likes, 7 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "842929a57849dd6d"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3muzidaqxes2v",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-08T16:53:20.071000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-08 — outside lookback window"
+    },
+    {
+      "cluster_key": "5dc5b9d78fc6fcaf",
+      "title": "Another informal nerd benchmark that AIs had struggled with has been passed: Astra successfully designed a Magic the Gathering deck and then used it…",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "research"
+      ],
+      "summary": "Another informal nerd benchmark that AIs had struggled with has been passed: Astra successfully designed a Magic the Gathering deck and then used it to defeat a bot on Arena. (the deck may not be stunning, but it does seem to be original, and it worked) (Bluesky post by @emollick.bsky.social — 94 likes, 4 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "5dc5b9d78fc6fcaf"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3muy6d3lnwk2u",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-08T04:21:37.496000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-08 — outside lookback window"
+    },
+    {
+      "cluster_key": "bc1315edc1bb062e",
+      "title": "‘We must work to crush any dissent to Doom’s vision of public safety,’ the Marvel supervillain told the city as it considered multiple surveillance…",
+      "category": "cyber_attacks",
+      "one_liner": "",
+      "tags": [
+        "privacy"
+      ],
+      "summary": "‘We must work to crush any dissent to Doom’s vision of public safety,’ the Marvel supervillain told the city as it considered multiple surveillance proposals. (Bluesky post by @404media.co — 617 likes, 167 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "bc1315edc1bb062e"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mv4bkpq4a32s",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-09T19:30:11.951000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-09 — outside lookback window"
+    },
+    {
+      "cluster_key": "3e47bd05470874a7",
+      "title": "Lindsey Isaacs was falsely arrested and imprisoned after authorities used Flock’s system to pull over the wrong person in a hit-and-run that killed…",
+      "category": "cyber_attacks",
+      "one_liner": "",
+      "tags": [],
+      "summary": "Lindsey Isaacs was falsely arrested and imprisoned after authorities used Flock’s system to pull over the wrong person in a hit-and-run that killed three people. @jasonkoebler.bsky.social spoke to Lindsey and her lawyer about the ordeal. Watch now: www.youtube.com/watch?v=Xc_6... (Bluesky post by @404media.co — 2572 likes, 1342 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "3e47bd05470874a7"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mv3kqez3t22c",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-09T12:41:47.692000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-09 — outside lookback window"
+    },
     {
       "cluster_key": "e07c1445814358bb",
       "title": "\"I don't know the answer myself, but I asked a blowhard I know and he took a wild guess, here's what he said: \" How I interpret pasted replies from…",
@@ -42,6 +444,43 @@
       "reject_reason": "published 2026-09-07 — outside lookback window"
     },
     {
+      "cluster_key": "505c8182ef33ec8a",
+      "title": "This is a VERY big one. (And yes, the fights over academic credit and what happened in the race for the proof needs to be resolved, but it is still…",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [],
+      "summary": "(And yes, the fights over academic credit and what happened in the race for the proof needs to be resolved, but it is still appears that this is a big one, if true.) openai.com/index/navier... (Bluesky post by @emollick.bsky.social — 197 likes, 30 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "505c8182ef33ec8a"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3muzke4uexs2v",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-08T17:29:37.028000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-08 — outside lookback window"
+    },
+    {
       "cluster_key": "8710a05d6eb5ca40",
       "title": "I don't think this was the goal, but the fact that Astra is incredibly good at visually pleasing 3D work (blender, etc.) gives it a perception edge…",
       "category": "tech_ai",
@@ -79,95 +518,17 @@
       "reject_reason": "published 2026-09-07 — outside lookback window"
     },
     {
-      "cluster_key": "501a42a279585e8f",
-      "title": "Sparks of AGI was a remarkably prescient paper that got a lot of pushback at the time, but absolutely sensed where the vibes were heading with LLMs…",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "research",
-        "windows"
-      ],
-      "summary": "Sparks of AGI was a remarkably prescient paper that got a lot of pushback at the time, but absolutely sensed where the vibes were heading with LLMs based on a lot of qualitative experiments. (Bluesky post by @emollick.bsky.social — 101 likes, 6 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "501a42a279585e8f"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3musqxshmjk2h",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-06T00:39:21.494000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-06 — outside lookback window"
-    },
-    {
-      "cluster_key": "212982c4df3baac6",
-      "title": "A secretive DHS ‘predictive policing’ unit analyzed the financial activity of a man who was driving across Montana, and local authorities stopped…",
-      "category": "cyber_attacks",
-      "one_liner": "",
-      "tags": [],
-      "summary": "A secretive DHS ‘predictive policing’ unit analyzed the financial activity of a man who was driving across Montana, and local authorities stopped him under the pretense of an obstructed license plate and charged him with a DUI. (Bluesky post by @404media.co — 962 likes, 597 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "212982c4df3baac6"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "404 Media",
-          "url": "https://bsky.app/profile/404media.co/post/3muzl57fxjc26",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-08T17:43:38.561000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-08 — outside lookback window"
-    },
-    {
-      "cluster_key": "71b49fd87fed6b66",
-      "title": "jangtrinh/design-os-3d-blender — AI-agent operating system for Blender 5.2: skills, verified bpy knowledge base, AGENT_OK/AGENT_FAIL execution ",
+      "cluster_key": "6030e95c9b03c33e",
+      "title": "Vincentwei1021/anything2explainer — Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas m",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
         "agents",
         "ai",
-        "hardware",
         "llm",
         "opensource"
       ],
-      "summary": "AI-agent operating system for Blender 5.2: skills, verified bpy knowledge base, AGENT_OK/AGENT_FAIL execution contract, production gate for 3D-printable parts, robot-arm demo GitHub repository jangtrinh/design-os-3d-blender, 68 stars, language Python. Topics: 3d-printing, ai-agent, blender, bpy, claude-code, codex, mcp, robotics.",
+      "summary": "A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion. GitHub repository Vincentwei1021/anything2explainer, 1,164 stars, language TypeScript. Topics: agent-skills, ai-agents, ai-video, claude-code, claude-code-skill, codex, edge-tts, educational-video.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -178,7 +539,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "71b49fd87fed6b66"
+        "6030e95c9b03c33e"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -186,17 +547,17 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/jangtrinh/design-os-3d-blender",
+          "url": "https://github.com/Vincentwei1021/anything2explainer",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-06T00:18:05+00:00",
+      "published": "2026-09-08T17:19:54+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-06 — outside lookback window"
+      "reject_reason": "published 2026-09-08 — outside lookback window"
     },
     {
       "cluster_key": "97f5fdba78612334",
@@ -209,7 +570,7 @@
         "llm",
         "opensource"
       ],
-      "summary": "OKF (Open Knowledge Format) — curated catalog of tools, plugins, skills, proposals, and docs for agent-friendly knowledge. YAML-driven, agent-searchable, MCP-ready. GitHub repository Albertchamberlain/Awesome-OKF, 103 stars, language Python. Topics: agent-memory, agent-skills, ai-agents, ai-memory, awesome, awesome-list, claude-code, knowledge-base.",
+      "summary": "OKF (Open Knowledge Format) — curated catalog of tools, plugins, skills, proposals, and docs for agent-friendly knowledge. YAML-driven, agent-searchable, MCP-ready. GitHub repository Albertchamberlain/Awesome-OKF, 104 stars, language Python. Topics: agent-memory, agent-skills, ai-agents, ai-memory, awesome, awesome-list, claude-code, knowledge-base.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -284,17 +645,12 @@
       "reject_reason": "published 2026-09-07 — outside lookback window"
     },
     {
-      "cluster_key": "74125c1888538f5d",
-      "title": "Atomburstofficial/geiger — A Geiger counter for AI agents — one read-only command that inventories every agent, MCP server, plugin, and A",
-      "category": "tech_ai",
+      "cluster_key": "58090f243af64971",
+      "title": "A team discovered that Gondwana, an ancient landmass that formed more than 500 million years ago, was in fact large enough to be deemed a…",
+      "category": "cyber_attacks",
       "one_liner": "",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource"
-      ],
-      "summary": "A Geiger counter for AI agents — one read-only command that inventories every agent, MCP server, plugin, and AI extension on a machine GitHub repository Atomburstofficial/geiger, 114 stars, language JavaScript. Topics: ai-agents, ai-governance, ai-safety, ai-security, claude-code, governance, mcp, mcp-server.",
+      "tags": [],
+      "summary": "A team discovered that Gondwana, an ancient landmass that formed more than 500 million years ago, was in fact large enough to be deemed a supercontinent, a finding that sheds light on the “explosion” of ancient Cambrian life. (Bluesky post by @404media.co — 83 likes, 16 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -305,25 +661,25 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "74125c1888538f5d"
+        "58090f243af64971"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/Atomburstofficial/geiger",
-          "domain": "github.com",
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mv45eghb332k",
+          "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-06T17:45:50+00:00",
+      "published": "2026-09-09T18:15:06.677000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-06 — outside lookback window"
+      "reject_reason": "published 2026-09-09 — outside lookback window"
     },
     {
       "cluster_key": "ad6f81141e810b9c",
@@ -333,7 +689,7 @@
       "tags": [
         "privacy"
       ],
-      "summary": "A data protection lawyer told 404 Media the sharing was likely illegal, and Channel 5’s own privacy policy explicitly says it won't give subscribers’ emails away to people for marketing purposes. (Bluesky post by @404media.co — 267 likes, 40 reposts)",
+      "summary": "A data protection lawyer told 404 Media the sharing was likely illegal, and Channel 5’s own privacy policy explicitly says it won't give subscribers’ emails away to people for marketing purposes. (Bluesky post by @404media.co — 268 likes, 40 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -365,33 +721,70 @@
       "reject_reason": "published 2026-09-08 — outside lookback window"
     },
     {
-      "cluster_key": "61e1548ee070d4a4",
-      "title": "Da7-Tech/SureForge — Agent Skill for complex work: research before asking, ask before planning, plan before building, verify before",
+      "cluster_key": "57b1c00af35a8363",
+      "title": "After allegedly becoming emotionally reliant on ChatGPT, Austin died at 40 years old, leaving behind family and friends who loved him.",
+      "category": "cyber_attacks",
+      "one_liner": "",
+      "tags": [],
+      "summary": "After allegedly becoming emotionally reliant on ChatGPT, Austin died at 40 years old, leaving behind family and friends who loved him. Megan wants everyone to know what happened. (Bluesky post by @404media.co — 435 likes, 161 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "57b1c00af35a8363"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mv3pxcuquy2p",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-09T14:15:08.242000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-09 — outside lookback window"
+    },
+    {
+      "cluster_key": "c9d8dc1ab5578b6f",
+      "title": "blixvip/MotionClone — Turn reference videos into editable motion graphics with Codex + ChatGPT. Compare, customize, and export MP4s ",
       "category": "tech_ai",
-      "one_liner": "SureForge is a structured agent skill that enforces rigorous research, planning, and verification phases for complex AI coding workflows.",
+      "one_liner": "MotionClone uses Codex and ChatGPT to convert reference videos into editable motion graphics.",
       "tags": [
         "agents",
         "ai",
-        "llm",
         "opensource",
-        "tool"
+        "tool",
+        "windows"
       ],
-      "summary": "Da7-Tech/SureForge is a Python-based agent skill designed to enforce rigorous workflows for complex development tasks. It mandates a strict protocol: research before asking, ask before planning, plan before building, verify before delivering, and conduct an independent review before completion. Implemented as plain text with no runtime overhead, it helps AI coding assistants systematically structure multi-step tasks.",
+      "summary": "Blixvip has launched MotionClone, a local Windows application and online studio that turns reference videos into editable motion graphics using Codex and ChatGPT. The tool allows users to compare, customize, and export MP4s or HyperFrames projects.",
       "key_facts": [
-        "Repository: Da7-Tech/SureForge",
-        "Stars: 87",
-        "Language: Python"
+        "Repository: blixvip/MotionClone",
+        "Language: Python",
+        "Stars: 120"
       ],
-      "bottom_line": "AI coding agents can be forced into disciplined software engineering workflows by adopting protocol-driven skills that mandate planning and verification steps.",
+      "bottom_line": "Local developer tools are increasingly combining LLMs with animation software to automate video remixing and editing workflows.",
       "claims": [
         {
-          "text": "Agent Skill for complex work: research before asking, ask before planning, plan before building, verify before delivering, independent review before calling it done.",
-          "support_span": "Agent Skill for complex work: research before asking, ask before planning, plan before building, verify before delivering, independent review before calling it done.",
+          "text": "Turn reference videos into editable motion graphics with Codex + ChatGPT.",
+          "support_span": "Turn reference videos into editable motion graphics with Codex + ChatGPT.",
           "status": "entailed"
         },
         {
-          "text": "GitHub repository Da7-Tech/SureForge, 87 stars, language Python.",
-          "support_span": "GitHub repository Da7-Tech/SureForge, 87 stars, language Python.",
+          "text": "GitHub repository blixvip/MotionClone, 120 stars, language Python.",
+          "support_span": "GitHub repository blixvip/MotionClone, 120 stars, language Python.",
           "status": "contradicted"
         }
       ],
@@ -402,7 +795,7 @@
       "is_new": false,
       "summary_source": "model",
       "alt_keys": [
-        "61e1548ee070d4a4"
+        "c9d8dc1ab5578b6f"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -410,13 +803,13 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/Da7-Tech/SureForge",
+          "url": "https://github.com/blixvip/MotionClone",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-09T12:59:04+00:00",
+      "published": "2026-09-10T02:29:35+00:00",
       "trace": [
         "tier C (+10)",
         "single tier-C source — treat with caution",
@@ -436,7 +829,7 @@
         "llm",
         "opensource"
       ],
-      "summary": "BankMCP™: your AI can now read your bank. Self-hosted, read-only MCP server for your own bank accounts via open banking (Enable Banking). Standard MCP; tested with Claude and Ollama. GitHub repository noskillish/bankmcp, 200 stars, language TypeScript. Topics: chatgpt, claude, enable-banking, mcp, mcp-server, ollama, open-banking, personal-finance.",
+      "summary": "BankMCP™: your AI can now read your bank. Self-hosted, read-only MCP server for your own bank accounts via open banking (Enable Banking). Standard MCP; tested with Claude and Ollama. GitHub repository noskillish/bankmcp, 214 stars, language TypeScript. Topics: chatgpt, claude, enable-banking, mcp, mcp-server, ollama, open-banking, personal-finance.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -515,7 +908,7 @@
         "ai",
         "opensource"
       ],
-      "summary": "Create GTA-style 3D models and scenes with your AI and Blender, using models and textures from your game. GitHub repository Dryxio/gta-scout, 51 stars, language Python. Topics: ai-agents, blender, gta, san-andreas, semantic-search.",
+      "summary": "Create GTA-style 3D models and scenes with your AI and Blender, using models and textures from your game. GitHub repository Dryxio/gta-scout, 55 stars, language Python. Topics: ai-agents, blender, gta, san-andreas, semantic-search.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -598,7 +991,7 @@
       "alt_keys": [
         "1145faf41258475f",
         "22143b891b816207",
-        "57726bd22cd9a778"
+        "d9ad1ebe696cb73b"
       ],
       "critical_signal": "",
       "priority": "important",
@@ -618,17 +1011,17 @@
         },
         {
           "name": "ZDI Advisories",
-          "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-623/",
+          "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-654/",
           "domain": "zerodayinitiative.com",
           "tier": "A"
         }
       ],
       "primary_links": [
-        "http://www.zerodayinitiative.com/advisories/ZDI-26-623/",
         "http://www.zerodayinitiative.com/advisories/ZDI-26-652/",
-        "http://www.zerodayinitiative.com/advisories/ZDI-26-653/"
+        "http://www.zerodayinitiative.com/advisories/ZDI-26-653/",
+        "http://www.zerodayinitiative.com/advisories/ZDI-26-654/"
       ],
-      "published": "2026-09-09T05:00:00+00:00",
+      "published": "2026-09-10T05:00:00+00:00",
       "trace": [
         "tier A (+40)",
         "primary source anchor (+30)",
@@ -640,16 +1033,12 @@
       "reject_reason": "3 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "f1dded41928340a1",
-      "title": "Noisyxl/brier — Anyone can predict the future. Almost nobody keeps the receipt. A hash-chained prediction ledger for LLMs — se",
-      "category": "tech_ai",
+      "cluster_key": "6561fae1a1cf0e99",
+      "title": "Sinclair Broadcasting is pushing the idea that China and the No Kings protesters are the reason people don't like Flock.",
+      "category": "cyber_attacks",
       "one_liner": "",
-      "tags": [
-        "ai",
-        "llm",
-        "opensource"
-      ],
-      "summary": "A hash-chained prediction ledger for LLMs — sealed before the answer exists, graded with proper scoring rules. GitHub repository Noisyxl/brier, 92 stars, language HTML. Topics: ai, ai-agents, llm, robinhood-chain.",
+      "tags": [],
+      "summary": "Sinclair Broadcasting is pushing the idea that China and the No Kings protesters are the reason people don't like Flock. (Bluesky post by @404media.co — 137 likes, 60 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -657,28 +1046,28 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
-      "is_new": true,
+      "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "f1dded41928340a1"
+        "6561fae1a1cf0e99"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/Noisyxl/brier",
-          "domain": "github.com",
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mv42twxb7e2t",
+          "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-06T13:42:25+00:00",
+      "published": "2026-09-09T17:30:05.669000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-06 — outside lookback window"
+      "reject_reason": "published 2026-09-09 — outside lookback window"
     },
     {
       "cluster_key": "b17e55307172955f",
@@ -738,112 +1127,66 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "f75cba9668a1d1d3",
-      "title": "Here is an impressive one-shot result from Fable 5.1: \"build out at least 8 games based on Edgar Allen Poe.",
+      "cluster_key": "15fb7628df2d3c6f",
+      "title": "GPT-6 Astra appears to show a \"step change\" in spatial reasoning based on early benchmarks - the-decoder.com",
       "category": "tech_ai",
-      "one_liner": "",
-      "tags": [],
-      "summary": "Here is an impressive one-shot result from Fable 5.1: \"build out at least 8 games based on Edgar Allen Poe. they should all be great and very distinctive\" The games are surprisingly different, fun to play and evocative, and some are actually a bit creepy poe-arcade.netlify.app/index.html (Bluesky post by @emollick.bsky.social — 87 likes, 6 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
+      "one_liner": "GPT-6 Astra benchmarks suggest a major generational leap in spatial reasoning capabilities.",
+      "tags": [
+        "ai",
+        "llm",
+        "research"
+      ],
+      "summary": "Early benchmark evaluations indicate that OpenAI's GPT-6 Astra exhibits a major step change in spatial reasoning capabilities compared to previous models. (Note: Truncated source item).",
+      "key_facts": [
+        "Model: GPT-6 Astra"
+      ],
+      "bottom_line": "New multimodal AI model generations are demonstrating measurable leaps in advanced spatial reasoning benchmarks.",
+      "claims": [
+        {
+          "text": "GPT-6 Astra appears to show a \"step change\" in spatial reasoning based on early benchmarks - the-decoder.com",
+          "support_span": "GPT-6 Astra appears to show a \"step change\" in spatial reasoning based on early benchmarks - the-decoder.com",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 50,
       "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
+      "blend": 32.5,
+      "is_new": true,
+      "summary_source": "model",
       "alt_keys": [
-        "f75cba9668a1d1d3"
+        "15fb7628df2d3c6f"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3muugwdch322o",
-          "domain": "bsky.app",
+          "name": "GN AI research",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUDhMelMya0tLVWxpamh1Uk5qZkRPcEFsZks4cTBsYU9xYjRXT2VVWU9VZnp3YTR3V3h5NVdvcWJicWVFNnBvWkwxNE00RVJLOTg0MzZwcVdrRDdPUWJUTWZ6cVItUEMxSE9jcFBsbGFCek1xOHJVV1hna3hzWll0dnlsNTFLdlEyYTh1Mjk1VmI5M1JQVUpFNV8xR29McUpDTDRvTWs1WjQ1S3R3cldiWlRkUQ?oc=5",
+          "domain": "news.google.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-06T16:44:54.101000+00:00",
+      "published": "2026-09-12T14:29:24+00:00",
       "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-06 — outside lookback window"
-    },
-    {
-      "cluster_key": "e8d92bc4f1862f7c",
-      "title": "Debate-to-Skill: Capability-Bound Process Supervision for Industrial Query-to-Agent Annotation",
-      "category": "tech_ai",
-      "one_liner": "Debate-to-Skill introduces capability-bound process supervision to improve query-to-agent annotation and avoid false capability matches.",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "privacy",
-        "research",
-        "tool"
-      ],
-      "summary": "Researchers address the failure of industrial query-to-agent matching where topical relevance is mistaken for executable capability, particularly in edge cases. They formulate annotation as capability-bound process supervision and introduce Debate-to-Skill. This method utilizes reusable decision principles, structured deliberation, verifier-based verdict extraction, and disagreement-driven refinement to improve query-to-agent training.",
-      "key_facts": [],
-      "bottom_line": "Supervising the decision-making process rather than using direct-label supervision improves agent capability matching on boundary-sensitive queries.",
-      "claims": [
-        {
-          "text": "Industrial query-to-agent matching fails when topical relevance is mistaken for executable capability.",
-          "support_span": "Industrial query-to-agent matching fails when topical relevance is mistaken for executable capability, especially on long-tail and boundary-sensitive requests.",
-          "status": "entailed"
-        },
-        {
-          "text": "We formulate annotation as capability-bound process supervision and instantiate it with Debate-to-Skill.",
-          "support_span": "We formulate annotation as \textbackslash emph{capability-bound process supervision} and instantiate it with Debate-to-Skill, which uses reusable decision principles, structured deliberation, verifier-based verdict extraction, and disagreement-driven refinement.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "e8d92bc4f1862f7c"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.11176",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.11176"
-      ],
-      "published": "2026-09-12T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
         "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
+        "blend 32 = trust 10 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "7deb8bd9aa6ecec2",
-      "title": "This is both an interesting experiment and a sign of a tsunami coming for academia.",
-      "category": "tech_ai",
+      "cluster_key": "510d2acd3f80cb6f",
+      "title": "Secretive predictive policing units; a funk shirt designed to fool AI; and our third anniversary party.",
+      "category": "cyber_attacks",
       "one_liner": "",
       "tags": [
-        "windows"
+        "ai"
       ],
-      "summary": "This is both an interesting experiment and a sign of a tsunami coming for academia. AIs retroactively reading the research and finding both opportunities and issues with published papers, then sharing those judgements publicly. d3jhl7jsny6f2h.cloudfront.net (Bluesky post by @emollick.bsky.social — 108 likes, 21 reposts)",
+      "summary": "Secretive predictive policing units; a funk shirt designed to fool AI; and our third anniversary party. (Bluesky post by @404media.co — 56 likes, 22 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -854,7 +1197,44 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "7deb8bd9aa6ecec2"
+        "510d2acd3f80cb6f"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mv3zz3ucj72f",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-09T17:15:05.307000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-09 — outside lookback window"
+    },
+    {
+      "cluster_key": "49ff58e7e8a03ef8",
+      "title": "Quick, spread some rumors about other really hard problems that Anthropic is on the verge of solving.",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [],
+      "summary": "Quick, spread some rumors about other really hard problems that Anthropic is on the verge of solving. (Bluesky post by @emollick.bsky.social — 160 likes, 5 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "49ff58e7e8a03ef8"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -862,17 +1242,141 @@
       "sources": [
         {
           "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3muuhy3m6jc2o",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mv225r63tc2v",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-06T17:03:46.881000+00:00",
+      "published": "2026-09-08T22:12:23.306000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-06 — outside lookback window"
+      "reject_reason": "published 2026-09-08 — outside lookback window"
+    },
+    {
+      "cluster_key": "5a7d99a3d438e327",
+      "title": "BRICS Summit 2026 Highlights: PM Modi Thanks Leaders For Making BRICS Summit In Delhi \"Productive\"",
+      "category": "india_world",
+      "one_liner": "The BRICS 2026 summit in Delhi concluded with a focus on sustainable energy transitions and fair competition in renewable markets.",
+      "tags": [
+        "india",
+        "policy",
+        "political"
+      ],
+      "summary": "Discussions at the two-day BRICS Summit 2026 in Delhi centred on the theme \"Strengthening Cooperation to Promote Fair Competition, including in Renewable Energy Markets,\" focusing heavily on advancing sustainable energy transitions. Prime Minister Modi thanked leaders for making the summit productive. The event brought together international delegations in India for bilateral and multilateral talks.",
+      "key_facts": [],
+      "bottom_line": "The 2026 BRICS Summit in Delhi formally wrapped up its agenda centered on renewable energy cooperation.",
+      "claims": [
+        {
+          "text": "Discussions at the two-day summit were centred on the theme \"Strengthening Cooperation to Promote Fair Competition, including in Renewable Energy Markets,\" with a primary focus on advancing sustainable energy transitions.",
+          "support_span": "Discussions at the two-day summit were centred on the theme \"Strengthening Cooperation to Promote Fair Competition, including in Renewable Energy Markets,\" with a primary focus on advancing sustainable energy transitions.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 25.0,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "5a7d99a3d438e327"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/india-news/brics-summit-2026-live-updates-today-pm-narendra-modi-putin-xi-jinping-meet-bharat-mandapam-traffic-new-delhi-declaration-backs-return-of-antiquities-12039405#publisher=newsstand",
+          "domain": "ndtv.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-13T19:04:19+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 25 = trust 25 / interest 25 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "41e178d9ec854106",
+      "title": "The Restroom Archive is a museum-style repository of 3D scans of the world's restrooms.",
+      "category": "cyber_attacks",
+      "one_liner": "",
+      "tags": [],
+      "summary": "The Restroom Archive is a museum-style repository of 3D scans of the world's restrooms. (Bluesky post by @404media.co — 73 likes, 21 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "41e178d9ec854106"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mv3nh6ywjy2f",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-09T13:30:19.697000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-09 — outside lookback window"
+    },
+    {
+      "cluster_key": "a3f3a2da5de3c4be",
+      "title": "The breakthrough that solved Navier-Stokes in 88 hours used 130 billion output tokens.",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [],
+      "summary": "The breakthrough that solved Navier-Stokes in 88 hours used 130 billion output tokens. It seems clear that other breakthroughs will be possible, especially as models get better. However much compute we have, it is increasingly likely that we are going to need more compute. (Bluesky post by @emollick.bsky.social — 161 likes, 10 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "a3f3a2da5de3c4be"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3muzus5msw22v",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-08T20:36:25.009000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-08 — outside lookback window"
     },
     {
       "cluster_key": "a29ef0e34e0ccf6c",
@@ -934,7 +1438,7 @@
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 5/5 from gemini-3.5-flash-lite",
+        "importance 5/5 from cache",
         "blend 59 = trust 25 / interest 100 / corrob 25",
         "demoted: critical capped at 5"
       ],
@@ -995,304 +1499,54 @@
         }
       ],
       "primary_links": [],
-      "published": "2026-09-12T21:05:27+00:00",
+      "published": "2026-09-13T18:24:45+00:00",
       "trace": [
         "tier C (+10)",
         "single tier-C source — treat with caution",
-        "importance 3/5 from gemini-3.1-flash-lite",
+        "importance 3/5 from cache",
         "blend 32 = trust 10 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "fa6b0c5937458434",
-      "title": "Lightning Houthi advance in Yemen may bring dangerous new dimension to Iran war",
-      "category": "india_world",
-      "one_liner": "Houthi territorial gains along the Red Sea coast significantly increase their ability to disrupt global shipping and expand Iranian influence.",
-      "tags": [
-        "political"
-      ],
-      "summary": "Houthi rebels have captured approximately 130km of Yemen's Red Sea coastline, marking a significant military advancement that strengthens their control over the Bab al-Mandab strait. This development gives the group increased leverage over global shipping, as they now overlook one of the world's most critical maritime choke points. Analysts note that the Houthis are receiving redirected support from Iran, which now effectively exerts influence over both the Strait of Hormuz and the Bab al-Mandab. Shipping companies remain skeptical of Houthi claims that maritime navigation is safe, given the group's history of targeting vessels regardless of their national affiliation.",
-      "key_facts": [
-        "Coastline captured: 130km",
-        "Global trade impact: >35% of fuel and oil"
-      ],
-      "bottom_line": "The Houthis' new control over the Bab al-Mandab gateway creates a persistent, high-stakes threat to global fuel and oil trade routes.",
-      "claims": [
-        {
-          "text": "According to some estimates, the Iranian-backed rebels have captured as much as 130km (81 miles) of the country's strategically important coastline.",
-          "support_span": "According to some estimates, the Iranian-backed rebels have captured as much as 130km (81 miles) of the country's strategically important coastline.",
-          "status": "entailed"
-        },
-        {
-          "text": "Now Iran, directly and through proxies, controls two of the most strategic choke points in the Middle East and the world, says Farea al-Muslimi, a research fellow at London's Chatham House think tank, controlling more than 35% of the fuel and oil trade globally.",
-          "support_span": "Now Iran, directly and through proxies, controls two of the most strategic choke points in the Middle East and the world, says Farea al-Muslimi, a research fellow at London's Chatham House think tank, controlling more than 35% of the fuel and oil trade globally.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 52,
-      "interest_score": 75,
-      "corroboration": 2,
-      "blend": 61.8,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "fa6b0c5937458434",
-        "fccde8572e9fa65f"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c3v4zgzr1kxo?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        },
-        {
-          "name": "Al Jazeera",
-          "url": "https://www.aljazeera.com/video/inside-story/2026/9/12/will-houthi-advances-in-yemen-give-iran-leverage-in-its-war-with-the-us?traffic_source=rss",
-          "domain": "aljazeera.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-11T19:44:58+00:00",
-      "trace": [
-        "tier A (+40)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 4/5 from cache",
-        "blend 62 = trust 52 / interest 75 / corrob 50",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "8a690a2200d41c3b",
-      "title": "US stocks rebound as oil prices ease, inflation data steadies market sentiment",
-      "category": "markets",
-      "one_liner": "US stock markets recovered as crude oil prices eased and inflation readings matched economic forecasts.",
-      "tags": [
-        "markets",
-        "research"
-      ],
-      "summary": "Major US stock indexes rebounded on Friday as crude oil prices retreated from a surge near $110 a barrel driven by Iran-US tensions. Market sentiment was further steadied by US consumer inflation figures matching expectations, with the Consumer Price Index rising 0.4% in August and 3.4% year-over-year. These inflation numbers reinforced expectations that the Federal Reserve might raise its benchmark interest rate at the upcoming policy meeting. Meanwhile, individual corporate moves saw Oracle gain 2.6% on strong earnings, Adobe slip 2.5% on forecasts, and ACV Auctions rally 44.4% following a nearly $1.9 billion acquisition agreement by Copart.",
-      "key_facts": [
-        "S&P 500 increase: 1.1%",
-        "Dow Jones increase: 1.1%",
-        "Nasdaq Composite increase: 1.2%",
-        "Monthly CPI increase: 0.4%",
-        "Year-over-year inflation: 3.4%"
-      ],
-      "bottom_line": "Easing oil prices and in-line inflation data helped US stock markets rebound while keeping Fed rate hike expectations intact.",
-      "claims": [
-        {
-          "text": "The Consumer Price Index increased 0.4% in August after edging up 0.1% in July, the Labor Department's Bureau of Labor Statistics said on Friday.",
-          "support_span": "The Consumer Price Index increased 0.4% in August after edging up 0.1% in July, the Labor Department's Bureau of Labor Statistics said on Friday.",
-          "status": "contradicted"
-        },
-        {
-          "text": "In the 12 months through August, consumer inflation advanced 3.4% after rising by the same margin in July.",
-          "support_span": "In the 12 months through August, consumer inflation advanced 3.4% after rising by the same margin in July.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 36.2,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "8a690a2200d41c3b"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/us-stocks-rebound-as-oil-prices-ease-inflation-data-steadies-market-sentiment-11789132216174.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-11T13:54:20+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 3/5 from cache",
-        "blend 36 = trust 25 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "2d3bdd1c34fa7c1f",
-      "title": "'Won't Field Candidate': Trinamool Rebels' Nandigram Offer To Mamata Banerjee",
-      "category": "india_world",
-      "one_liner": "Trinamool rebels in Nandigram offer their constituency seat to Mamata Banerjee for the October 6 bypoll.",
-      "tags": [
-        "india",
-        "political"
-      ],
-      "summary": "Trinamool Congress rebels in Nandigram have offered to drop their candidate to support Chief Minister Mamata Banerjee in an upcoming assembly bypoll on October 6. Ritabrata Banerjee announced the political move, inviting Banerjee to contest the seat. The development highlights local political realignments within West Bengal ahead of the polls.",
-      "key_facts": [
-        "Date: October 6"
-      ],
-      "bottom_line": "Mamata Banerjee has been invited by local Trinamool rebels to contest the Nandigram assembly bypoll on October 6.",
-      "claims": [
-        {
-          "text": "Ritabrata Banerjee said, referring to the bypoll to be held on October 6.",
-          "support_span": "“We also want Mamata Banerjee to come to the assembly,” Ritabrata Banerjee said, referring to the bypoll to be held on October 6.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 13.8,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "2d3bdd1c34fa7c1f"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NDTV India",
-          "url": "https://www.ndtv.com/india-news/fight-nandigram-bypoll-trinamool-rebels-no-candidate-offer-to-mamata-banerjee-12038269#publisher=newsstand",
-          "domain": "ndtv.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-12T18:29:42+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 1/5 from gemini-3.5-flash-lite",
-        "blend 14 = trust 25 / interest 0 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "6fe1236dc48f9fe7",
-      "title": "Grounding Agent Memory: Environment-Probing Curation for Enterprise Agents",
+      "cluster_key": "bab6552aac012661",
+      "title": "punkpeye/awesome-remote-mcp-servers — A collection of remote MCP servers.",
       "category": "tech_ai",
-      "one_liner": "This provides a practical, deployment-compatible method to improve AI agent memory reliability without the overhead of model retraining.",
+      "one_liner": "",
       "tags": [
         "agents",
-        "ai",
-        "research",
-        "tool"
+        "opensource"
       ],
-      "summary": "Researchers introduced environment-probing curation to improve how enterprise AI agents manage persistent memory. By giving asynchronous curator agents read-only tools to verify and refresh candidate memories, the system reduces stale knowledge and overgeneralization without requiring model retraining. Testing on a GitHub Copilot-based harness showed significant improvements in pass rates and cost efficiency, with task-agent tool calls dropping by up to 75%.",
-      "key_facts": [
-        "Pass rate improvement: 39% to 73%",
-        "Cost reduction: $3.38 to $1.68 per task",
-        "Tool call reduction: 16-75%"
-      ],
-      "bottom_line": "Environment-probing allows AI agents to verify their own memory state against real-world tools, significantly reducing hallucination and operational costs.",
-      "claims": [
-        {
-          "text": "We introduce environment-probing curation, a deployment-compatible extension that gives an existing asynchronous curator agent least-privilege, read-only world tools to check, scope, and refresh candidate memories.",
-          "support_span": "We introduce environment-probing curation, a deployment-compatible extension that gives an existing asynchronous curator agent least-privilege, read-only world tools to check, scope, and refresh candidate memories.",
-          "status": "entailed"
-        },
-        {
-          "text": "On CLBench, probing raises pass rate from 39% to 73% and pass-discounted reward from 8.60 to 22.60 while reducing queries from 8.8 to 4.7 per question and task-agent cost from $3.38 to $1.68.",
-          "support_span": "On CLBench, probing raises pass rate from 39% to 73% and pass-discounted reward from 8.60 to 22.60 while reducing queries from 8.8 to 4.7 per question and task-agent cost from $3.38 to $1.68.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "6fe1236dc48f9fe7"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.11060",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.11060"
-      ],
-      "published": "2026-09-12T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 3/5 from gemini-3.1-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "dc61515371702646",
-      "title": "'Optics Of Xi Visiting India Very Important': Ex-Envoy On BRICS Bilateral",
-      "category": "india_world",
-      "one_liner": "A former envoy highlights the significant diplomatic importance of bilateral meetings at the BRICS summit.",
-      "tags": [
-        "india",
-        "policy",
-        "political"
-      ],
-      "summary": "A former ambassador to China noted that the bilateral meeting involving Chinese President Xi Jinping during the BRICS summit carries significant diplomatic optics and could pave the way for long-term positive outcomes.",
+      "summary": "GitHub repository punkpeye/awesome-remote-mcp-servers, 192 stars, language unspecified.",
       "key_facts": [],
-      "bottom_line": "High-level bilateral engagements at multilateral summits are viewed as crucial steps for future diplomatic relations.",
-      "claims": [
-        {
-          "text": "The former ambassador to China said the meeting could pave the way for a strong outcome in the future.",
-          "support_span": "The former ambassador to China said the meeting could pave the way for and strong outcome in the future.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 25,
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
       "corroboration": 1,
-      "blend": 25.0,
-      "is_new": true,
-      "summary_source": "model",
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
       "alt_keys": [
-        "dc61515371702646"
+        "bab6552aac012661"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "NDTV India",
-          "url": "https://www.ndtv.com/india-news/ex-envoy-on-india-china-meet-xi-jinping-visiting-india-important-optics-12038910#publisher=newsstand",
-          "domain": "ndtv.com",
-          "tier": "B"
+          "name": "GitHub (new)",
+          "url": "https://github.com/punkpeye/awesome-remote-mcp-servers",
+          "domain": "github.com",
+          "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-12T18:45:16+00:00",
+      "published": "2026-09-08T00:43:30+00:00",
       "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 2/5 from gemini-3.5-flash-lite",
-        "blend 25 = trust 25 / interest 25 / corrob 25"
+        "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-09-08 — outside lookback window"
     },
     {
       "cluster_key": "589ed9cf9d91ff59",
@@ -1404,48 +1658,6 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "a78cd68708b903c4",
-      "title": "tshemsedinov/reslop — 👁️ Review AI generated code and plan changes",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource"
-      ],
-      "summary": "👁️ Review AI generated code and plan changes GitHub repository tshemsedinov/reslop, 86 stars, language JavaScript. Topics: agent, ai, code-review, diff, llm, neuroslop, planning, refactoring.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "summary_source": "extract",
-      "alt_keys": [
-        "a78cd68708b903c4"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/tshemsedinov/reslop",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-06T21:28:21+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-06 — outside lookback window"
-    },
-    {
       "cluster_key": "83a8ee5b3514d342",
       "title": "It is less than a decade since the development of the transformer.",
       "category": "tech_ai",
@@ -1483,6 +1695,110 @@
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
       "reject_reason": "published 2026-09-07 — outside lookback window"
+    },
+    {
+      "cluster_key": "88750d2c422e96c7",
+      "title": "AI Must Not Get Out Of Control: South Africa President At BRICS",
+      "category": "india_world",
+      "one_liner": "South Africa's President stresses the need for AI governance at a BRICS summit.",
+      "tags": [
+        "ai",
+        "india",
+        "political"
+      ],
+      "summary": "South African President Cyril Ramaphosa stated at a BRICS gathering that artificial intelligence must not be allowed to get out of control, while also praising India's leadership within the expanded BRICS grouping. (Note: Truncated source item).",
+      "key_facts": [
+        "Speaker: South Africa President"
+      ],
+      "bottom_line": "Global political leaders are increasingly using multilateral forums to call for international oversight on artificial intelligence.",
+      "claims": [
+        {
+          "text": "AI Must Not Get Out Of Control: South Africa President At BRICS",
+          "support_span": "AI Must Not Get Out Of Control: South Africa President At BRICS",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 25.0,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "88750d2c422e96c7"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/india-news/ai-must-not-get-out-of-control-south-africa-president-at-brics-12042113#publisher=newsstand",
+          "domain": "ndtv.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-13T17:17:44+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 25 = trust 25 / interest 25 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "6233f6dc33a7a442",
+      "title": "nhovongoc0-max/meme-radar — Meme雷达开源版：本地只读、多链 Meme 候选扫描与人工复核工具",
+      "category": "cyber_tools",
+      "one_liner": "An open-source, local multi-chain meme token scanner and manual review tool.",
+      "tags": [
+        "opensource",
+        "tool"
+      ],
+      "summary": "The article presents meme-radar, an open-source tool hosted on GitHub by user nhovongoc0-max with 206 stars, written in JavaScript. It functions as a local, read-only multi-chain Meme candidate scanner and manual review tool supporting platforms like Solana and BSC.",
+      "key_facts": [
+        "GitHub Stars: 206",
+        "Language: JavaScript"
+      ],
+      "bottom_line": "meme-radar provides a local, read-only tool for scanning and reviewing multi-chain meme tokens.",
+      "claims": [
+        {
+          "text": "GitHub repository nhovongoc0-max/meme-radar, 206 stars, language JavaScript.",
+          "support_span": "GitHub repository nhovongoc0-max/meme-radar, 206 stars, language JavaScript.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 21.2,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "6233f6dc33a7a442"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/nhovongoc0-max/meme-radar",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-11T12:14:57+00:00",
+      "trace": [
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "importance 2/5 from cache",
+        "blend 21 = trust 10 / interest 25 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
       "cluster_key": "ef965e3e8454eb01",
@@ -1532,117 +1848,11 @@
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 5/5 from gemini-3.5-flash-lite",
+        "importance 5/5 from cache",
         "blend 59 = trust 25 / interest 100 / corrob 25",
         "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "9816f5beea82e263",
-      "title": "1Password increases engineering productivity 21% with Codex",
-      "category": "tech_ai",
-      "one_liner": "1Password's successful integration of AI agents into their SDLC demonstrates a practical, secure blueprint for scaling developer productivity.",
-      "tags": [
-        "agents",
-        "ai",
-        "howto",
-        "llm",
-        "tool"
-      ],
-      "summary": "1Password has integrated OpenAI's Codex across its software development lifecycle, reporting a 21% increase in engineering productivity and an 11% reduction in pull request cycle times. The tool is used for tasks ranging from technical design and implementation to security reviews and production incident investigation. 1Password maintains security by using internal harnesses and preventing plaintext credentials from entering the model context.",
-      "key_facts": [
-        "Productivity gain: 20.9%",
-        "PR cycle reduction: 10.9%",
-        "Estimated ROI: 553%"
-      ],
-      "bottom_line": "AI-assisted development can significantly compress the planning-to-production cycle without compromising security if strict data boundaries are enforced.",
-      "claims": [
-        {
-          "text": "1Password has integrated Codex across the software delivery lifecycle to compress the time between planning and production",
-          "support_span": "1Password has integrated Codex across the software delivery lifecycle to compress the time between planning and production",
-          "status": "entailed"
-        },
-        {
-          "text": "1Password has cut median pull request cycle time by nearly 11% and improved engineering productivity by almost 21% for its core user cohort.",
-          "support_span": "1Password has cut median pull request cycle time by nearly 11% and improved engineering productivity by almost 21% for its core user cohort.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "9816f5beea82e263"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "OpenAI Blog",
-          "url": "https://openai.com/index/1password",
-          "domain": "openai.com",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://openai.com/index/1password"
-      ],
-      "published": "2026-09-08T00:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 3/5 from cache",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "cbce8e00073ffa89",
-      "title": "aimeoa/hanshuang-codex — 针对GPT 6.0,V4flash的破甲实验项目",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "ai",
-        "llm",
-        "opensource",
-        "tool"
-      ],
-      "summary": "针对GPT 6.0,V4flash的破甲实验项目 GitHub repository aimeoa/hanshuang-codex, 124 stars, language Python. Topics: ai, codex, codex-cli, desktop-app, jailbreak, llm, openai-codex, prompt-injection.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "cbce8e00073ffa89"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/aimeoa/hanshuang-codex",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-06T08:42:57+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-06 — outside lookback window"
     },
     {
       "cluster_key": "da4e0a24d8fc304a",
@@ -1702,7 +1912,7 @@
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 3/5 from gemini-3.5-flash-lite",
+        "importance 3/5 from cache",
         "blend 36 = trust 25 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
@@ -1758,9 +1968,9 @@
           "tier": "A"
         },
         {
-          "name": "OpenAI",
+          "name": "openai.com",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBkSzF3UlMxcWo0MVFPSDM0WHJwSGkzdkgyWmdJOE91Wks1cjNQNFZMS2JEUUNYYmUwcDR5cW5xdVlvMjVhcTM4YWhQNTJqOVhzR3ZOaA?oc=5",
-          "domain": "openai.publisher",
+          "domain": "openai-com.publisher",
           "tier": "C"
         }
       ],
