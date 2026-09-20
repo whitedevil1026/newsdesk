@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-19T00:20:02.227616+00:00",
+  "generated_at": "2026-09-20T00:16:30.177292+00:00",
   "items": [
     {
-      "cluster_key": "00cccc4e051ac50c",
+      "cluster_key": "00697013d843ec59",
       "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software for Secure Firewall 3100 and 4200 Series DTLS Denial of Service Vulnerability",
       "category": "cyber_attacks",
       "one_liner": "Cisco released an IOS XR software hardening release to address internally discovered exceptional handling vulnerabilities grouped under CVE-2026-20280.",
@@ -11,6 +11,7 @@
         "cve",
         "exploit",
         "network",
+        "opensource",
         "release",
         "vulnerability"
       ],
@@ -29,200 +30,233 @@
       ],
       "trust_score": 100,
       "interest_score": 75,
-      "corroboration": 32,
+      "corroboration": 40,
       "blend": 88.8,
       "is_new": false,
       "summary_source": "model",
       "alt_keys": [
-        "00cccc4e051ac50c",
+        "00697013d843ec59",
+        "00c6f6a92de0122f",
         "0154793197c29755",
         "01e49239a239d4cc",
         "0267d920aec10461",
+        "02aaeed7c48722cd",
+        "02bf5f756b881b79",
         "043034d48365985d",
         "04695935fb0219ca",
         "055a011d3232aab6",
         "06c2667929168630",
-        "07cc8ba45be37699",
+        "08144a70771f09d0",
         "08215e843531ca57",
+        "0831393c254bd639",
         "0878810733334559",
         "08d899038eeab16d",
         "0b564e50ddab5dc1",
         "0c171fbf3d71d948",
         "0cc571fdceb74bf2",
+        "0cebd6459e142054",
         "0d1c3e6eeb4cbf52",
         "0d605ed120c46bc4",
         "0dc7334bfe1bfbd0",
         "0f923debea9f6d9b",
+        "1091ae21c2cdbf29",
         "16954312c6e1eaeb",
-        "183b83191359c326",
+        "17399e66d6aeb7a6",
+        "177c0e3cc23b3f05",
+        "17f3f81444466fd3",
+        "19d61016eef14690",
+        "1a7b184a8927d8cd",
         "1b2fc186f0fd4e91",
         "1c14f354128f85eb",
-        "1c6e8fa0956d8839",
         "1db2d7555dfde648",
         "1e55db8feb2f683c",
         "1f5d8ca4db0804e2",
         "1fd77c67340c929c",
-        "20384ff6888e5a60",
         "2165f7caa482bbee",
-        "21c11272e3d0bcbb",
-        "23b5c6e434c190c4",
-        "2455a43372504037",
         "249d61201c1a6182",
         "26232adab8d48f40",
         "26d3123959923289",
+        "278d56e38f1060c0",
+        "2801cc9fe4d59a60",
+        "2849898e8395846e",
         "28cfa9106a6c68b3",
         "2b0b826252af7ddc",
         "2c223b63aac66592",
-        "2c719278f46fbcf7",
         "2d3609aaee5a54bd",
         "2d610ccd0c340a9c",
         "2f012cf9a85fe7b4",
-        "301aee8a960e4dbc",
         "303ebbdef66fe509",
         "30406db5cbfeb730",
-        "32c4d84cc3b787e3",
+        "307429acae0969ff",
+        "3092ea024f83275f",
         "33370bfa47124a20",
-        "333abf99c7f47d42",
         "37109fde6a516f72",
-        "3a5f1db941b44010",
-        "3bb1b4b4a587a87c",
-        "41f2ca63f3955383",
         "4219554a2ca7dece",
         "45fd755412abbdd7",
-        "47115d120a0be8ba",
+        "472902f49a99ea24",
+        "48a0f15b9914e1e9",
+        "48b276dc9477b3a3",
         "48cab3ff0353eef1",
         "49265b24ac7b54b2",
-        "4a859598d5aa1c23",
         "4aa9849c109de180",
         "4aaefa0a451567de",
         "4cf99309ccea762f",
+        "4f1d18f97103e338",
         "4fa02be2e1aaab35",
         "4fa19906a872cc2a",
+        "52f70ab3410eb846",
         "530bcd5c02befb26",
         "5353cc2ee216ac43",
         "53927aa6a21c2b94",
         "543303fb3bcb6e97",
+        "54e9626c916d79e8",
         "55245a9a57726860",
-        "569eee8b96e73f00",
         "57430936c220d76b",
+        "578fb246115131a9",
         "589b2fbe9e44c177",
         "5943cff652bee951",
-        "5cdd9b09210d32e0",
+        "5984c7d9d84fc0c9",
+        "6004b9f9f53e4277",
         "60488b99348238df",
-        "614f221b80e5124d",
         "6218864e885c5260",
+        "634953d7a76ec6cc",
+        "637954cda03c476a",
         "64ad970322118668",
         "655146c7accc8cbd",
+        "66895a3355f2fc3d",
         "675f7184ea674d8e",
+        "6833b5283211773a",
         "692ed078310bea13",
+        "694397b8e6a73d23",
+        "6cd4682143dbfb41",
         "6cffd8d718f02768",
         "6da5bd2b15b5702f",
         "6f419554061f684d",
         "7069cf88629fe4bb",
-        "783ce6015b4964d5",
+        "706eb56d288b89cb",
         "78b2f5a9fa2fd283",
-        "7a6f9de37d323e51",
+        "7a68e54f8b0a4c20",
+        "7c8bc4dce94ad61a",
+        "7e02eff743d93563",
         "7ebc88391d712d78",
         "7fa314ecd111f194",
         "8047cc9d21c79a76",
         "83808581c5caabf3",
         "84265ec16815ff0e",
-        "844d837877e1f3a8",
         "84bff6238c91897e",
-        "85010721dcb72802",
         "855d1bde45cde4f7",
+        "85e34f40d372ed88",
         "8900447d724adec9",
         "8954d53d59bc4966",
-        "8a0741ac08b3afa7",
+        "89d40aafa484046c",
+        "89d66a4490afe66c",
         "8a2c8a9b5b978779",
         "8b0fa73bd1f07fd8",
-        "8c526737bfc27365",
+        "8ceaf8e80e6067c9",
+        "914a54719a18382e",
         "9282eae3dd76790f",
         "92f2ada59e39f7c4",
         "93a7381cf759e659",
         "9465292737368b01",
+        "9532d10d90992441",
         "961c78bf0c976e9a",
+        "976a305feac5ffee",
         "976c07a1a86e174b",
         "97e8a315486e88e3",
-        "987a8d00e95b5b43",
         "98a5a13d4366bbd7",
         "98b64142f02bff44",
-        "9b0bea9a8f225cf0",
-        "9ba000ffcae534b6",
+        "99ce94d878543afb",
+        "9de6b003d2fd18fe",
+        "9e21250d3474b145",
         "a032a68c59be6a9b",
+        "a30c3436c6a62f01",
         "a3a89af9cc70109d",
         "a3ae258f386d19f6",
         "a464bbcbe2209d34",
         "a473ed236c4bd346",
         "a512f1a714b9158f",
-        "a68660da2ff244fe",
+        "a77395db21f796fb",
         "a83ba8e086ed83c1",
         "a8f2bafe07e12f2d",
         "a96196ea723d8e5a",
+        "a980fd33caedfdea",
+        "aaec0197eb533394",
         "aca24b926f0f8af2",
         "acb75ed03e4f20fa",
         "acbf4512df5dc8b6",
-        "acde89e23c9a4d9c",
         "adf323f8e3cac3b7",
+        "b2876269df9a7c19",
+        "b387a0f33f27c541",
+        "b3ef0cfc51926a99",
         "b45339b0717ec108",
         "b58c2575081ed441",
         "b5992e2e9b9c7512",
+        "b5b328ed9fbe99c2",
+        "b71ea2ba238c19c5",
         "b8a114f123cc5aa6",
-        "b943f9d57d46036c",
-        "babfff9993b1dda7",
+        "bac21de99a7a4efd",
         "baf58204e2674475",
         "bcebe223d3effcba",
+        "bdbcd30d31df42e6",
         "bdcf6898684691ba",
         "be6a670001c6529a",
+        "bf57f7ee87966e6c",
+        "c124620de0541404",
         "c2ff11cc7198fcea",
         "c4250aceb8b5fa7b",
         "c50da118f316e6d6",
         "c5b5d5240d200fd7",
-        "c77e66bbcfb76f57",
-        "c78201ce1edd9a7a",
+        "c78a766425dbfd9f",
+        "c8019563e962e9de",
         "c9878b57fe8a7061",
-        "cb32d6643a29dc8e",
+        "c9d94439c32e5b7c",
+        "cab72d4a17293c46",
+        "cba8427de2b4133b",
         "cd2cc36132e22f88",
-        "cf3b058e37863735",
-        "d1bc8635c6216778",
+        "d1bcac4914aa3552",
         "d227b40b9e4964c7",
         "d479868192e404bb",
         "d48f41d8fdaae6aa",
         "d5d3c4050d1e8530",
+        "d6af87e92ee2b73a",
         "d6b6dea9f4b3b4b4",
         "d7592bee86f38558",
         "d85532c0a9390527",
+        "d8aa5d2222cdc8e3",
+        "d9c5b7b66092b3aa",
+        "d9cd5877544990c1",
         "da734e5832a6e340",
         "db238d056c88d836",
+        "dc6439ad0fc2051f",
         "dceae7cc33129073",
+        "def0f7a9e7a72578",
+        "df5db689b547353f",
         "dfc75fae40071787",
         "e0379efffd4cfd65",
-        "e35061faf6ae8def",
         "e39addf2e29a66b2",
         "e42a3ca1e238b775",
         "e4a48761040c1e56",
-        "e53cd7e2c51554cf",
+        "e520aea49707ddef",
+        "e771e6808dfe8c0d",
         "e7a30c73f5950f7d",
         "e7a9aec1511facd9",
         "e7ac058e777339f6",
         "e88dc92e5e7a0f1c",
-        "e8bcc606c71c84a2",
         "e98560259930ca6d",
-        "ead28c16b052a196",
+        "eae8433f54a092cd",
+        "eb9ffae942a79a9f",
         "ed1f365aa568332d",
         "edfc72704f7db9f1",
         "f04e0b0783716be7",
         "f09b07ca79dc42ba",
-        "f16848d7cba337cb",
         "f3848a76088a051d",
         "f4410e6373e1bafb",
         "f4eb57e92fa46c97",
         "f560a583b5d9e8c7",
         "f633f4b7908ac6b5",
         "f6faab4cb830311f",
-        "f7f75fb86999966a",
         "f8b6fca76cb3288e",
-        "fe6448b4f4ca50cb",
+        "fafd9a90272c4ece",
         "ff9e11e3271c2bdb"
       ],
       "critical_signal": "actively exploited",
@@ -230,15 +264,9 @@
       "verdict": "rejected",
       "sources": [
         {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2511.22924",
-          "domain": "arxiv.org",
-          "tier": "A"
-        },
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2112.14242",
-          "domain": "arxiv.org",
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
           "tier": "A"
         },
         {
@@ -302,6 +330,18 @@
           "tier": "A"
         },
         {
+          "name": "CISA KEV",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53266",
+          "domain": "cisa.gov",
+          "tier": "A"
+        },
+        {
+          "name": "CISA KEV",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-39964",
+          "domain": "cisa.gov",
+          "tier": "A"
+        },
+        {
           "name": "CVEFeed High",
           "url": "https://cvefeed.io/vuln/detail/CVE-2026-93740",
           "domain": "cvefeed.io",
@@ -310,6 +350,18 @@
         {
           "name": "CVEFeed High",
           "url": "https://cvefeed.io/vuln/detail/CVE-2026-93738",
+          "domain": "cvefeed.io",
+          "tier": "A"
+        },
+        {
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-93742",
+          "domain": "cvefeed.io",
+          "tier": "A"
+        },
+        {
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-93741",
           "domain": "cvefeed.io",
           "tier": "A"
         },
@@ -327,6 +379,12 @@
         },
         {
           "name": "Fortinet PSIRT",
+          "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-170",
+          "domain": "fortiguard.fortinet.com",
+          "tier": "A"
+        },
+        {
+          "name": "Fortinet PSIRT",
           "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-171",
           "domain": "fortiguard.fortinet.com",
           "tier": "A"
@@ -335,6 +393,24 @@
           "name": "Fortinet PSIRT",
           "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-167",
           "domain": "fortiguard.fortinet.com",
+          "tier": "A"
+        },
+        {
+          "name": "Debian DSA",
+          "url": "https://lists.debian.org/debian-security-announce/2026/msg00419.html",
+          "domain": "lists.debian.org",
+          "tier": "A"
+        },
+        {
+          "name": "Debian DSA",
+          "url": "https://lists.debian.org/debian-security-announce/2026/msg00417.html",
+          "domain": "lists.debian.org",
+          "tier": "A"
+        },
+        {
+          "name": "Debian DSA",
+          "url": "https://lists.debian.org/debian-security-announce/2026/msg00412.html",
+          "domain": "lists.debian.org",
           "tier": "A"
         },
         {
@@ -471,12 +547,6 @@
         },
         {
           "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cimc-arg-inject-upSHdMfU?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Integrated%20Management%20Controller%20Argument%20Injection%20Vulnerabilities%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
           "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multi-traversal-WDTgYCdn?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Multiple%20Path%20Traversal%20Vulnerabilities%26vs_k=1",
           "domain": "sec.cloudapps.cisco.com",
           "tier": "A"
@@ -578,6 +648,12 @@
           "tier": "A"
         },
         {
+          "name": "oss-security",
+          "url": "https://seclists.org/oss-sec/2026/q3/838",
+          "domain": "seclists.org",
+          "tier": "A"
+        },
+        {
           "name": "Palo Alto PSIRT",
           "url": "https://security.paloaltonetworks.com/CVE-2026-0302",
           "domain": "security.paloaltonetworks.com",
@@ -599,6 +675,48 @@
           "name": "ZDI Blog",
           "url": "https://www.thezdi.com/blog/2026/9/8/the-september-2026-security-update-review",
           "domain": "thezdi.com",
+          "tier": "A"
+        },
+        {
+          "name": "Ubuntu USN",
+          "url": "https://ubuntu.com/security/notices/USN-8781-1",
+          "domain": "ubuntu.com",
+          "tier": "A"
+        },
+        {
+          "name": "Ubuntu USN",
+          "url": "https://ubuntu.com/security/notices/USN-8726-2",
+          "domain": "ubuntu.com",
+          "tier": "A"
+        },
+        {
+          "name": "Ubuntu USN",
+          "url": "https://ubuntu.com/security/notices/USN-8761-2",
+          "domain": "ubuntu.com",
+          "tier": "A"
+        },
+        {
+          "name": "Ubuntu USN",
+          "url": "https://ubuntu.com/security/notices/USN-8715-2",
+          "domain": "ubuntu.com",
+          "tier": "A"
+        },
+        {
+          "name": "Ubuntu USN",
+          "url": "https://ubuntu.com/security/notices/USN-8730-3",
+          "domain": "ubuntu.com",
+          "tier": "A"
+        },
+        {
+          "name": "Ubuntu USN",
+          "url": "https://ubuntu.com/security/notices/USN-8725-2",
+          "domain": "ubuntu.com",
+          "tier": "A"
+        },
+        {
+          "name": "Ubuntu USN",
+          "url": "https://ubuntu.com/security/notices/USN-8714-3",
+          "domain": "ubuntu.com",
           "tier": "A"
         },
         {
@@ -645,6 +763,12 @@
         },
         {
           "name": "CyberScoop",
+          "url": "https://cyberscoop.com/cisco-ise-zero-day-cve-2026-76460/",
+          "domain": "cyberscoop.com",
+          "tier": "B"
+        },
+        {
+          "name": "CyberScoop",
           "url": "https://cyberscoop.com/hacktron-ai-heif-heist-vulnerability/",
           "domain": "cyberscoop.com",
           "tier": "B"
@@ -656,21 +780,9 @@
           "tier": "B"
         },
         {
-          "name": "DarkReading",
-          "url": "https://www.darkreading.com/application-security/microsoft-emergency-fixes-patch-tuesday",
-          "domain": "darkreading.com",
-          "tier": "B"
-        },
-        {
           "name": "Help Net Security",
           "url": "https://www.helpnetsecurity.com/2026/09/18/new-infosec-products-of-the-week-september-18-2026/",
           "domain": "helpnetsecurity.com",
-          "tier": "B"
-        },
-        {
-          "name": "Infosecurity Magazine",
-          "url": "https://www.infosecurity-magazine.com/news/microsoft-releases-emergency-patch/",
-          "domain": "infosecurity-magazine.com",
           "tier": "B"
         },
         {
@@ -682,6 +794,12 @@
         {
           "name": "Infosecurity Magazine",
           "url": "https://www.infosecurity-magazine.com/news/zeroday-tplink-cameras/",
+          "domain": "infosecurity-magazine.com",
+          "tier": "B"
+        },
+        {
+          "name": "Infosecurity Magazine",
+          "url": "https://www.infosecurity-magazine.com/news/ai-agent-carries-out-multistage/",
           "domain": "infosecurity-magazine.com",
           "tier": "B"
         },
@@ -723,6 +841,12 @@
         },
         {
           "name": "Security Affairs",
+          "url": "https://securityaffairs.com/199392/ai/google-gemini-also-broke-out-of-its-test-environment.html",
+          "domain": "securityaffairs.com",
+          "tier": "B"
+        },
+        {
+          "name": "Security Affairs",
           "url": "https://securityaffairs.com/199338/data-breach/gyazo-data-breach-exposes-23-million-user-records.html",
           "domain": "securityaffairs.com",
           "tier": "B"
@@ -758,8 +882,14 @@
           "tier": "B"
         },
         {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/2026/Sep/16/one-claude/",
+          "domain": "simonwillison.net",
+          "tier": "B"
+        },
+        {
           "name": "Sonar Research",
-          "url": "https://www.sonarsource.com/blog/automatic-analysis-for-gitlab-is-now-available/",
+          "url": "https://www.sonarsource.com/blog/the-next-state-of-code-developer-survey-is-open/",
           "domain": "sonarsource.com",
           "tier": "B"
         },
@@ -771,13 +901,13 @@
         },
         {
           "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/cisco-secure-email-gateway-flaw.html",
+          "url": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
           "domain": "thehackernews.com",
           "tier": "B"
         },
         {
           "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
+          "url": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
           "domain": "thehackernews.com",
           "tier": "B"
         },
@@ -789,7 +919,31 @@
         },
         {
           "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/google-patches-pixel-modem-flaw-amid.html",
+          "domain": "thehackernews.com",
+          "tier": "B"
+        },
+        {
+          "name": "The Hacker News",
           "url": "https://thehackernews.com/2026/09/acronis-cpanel-backup-plugin.html",
+          "domain": "thehackernews.com",
+          "tier": "B"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html",
+          "domain": "thehackernews.com",
+          "tier": "B"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
+          "domain": "thehackernews.com",
+          "tier": "B"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/identity-visibility-in-2026-foundation.html",
           "domain": "thehackernews.com",
           "tier": "B"
         },
@@ -801,14 +955,14 @@
         },
         {
           "name": "The Register Security",
-          "url": "https://www.theregister.com/security/2026/09/15/cisco-email-security-boxes-can-be-rooted-by-an-email/5296604",
+          "url": "https://www.theregister.com/security/2026/09/16/google-pixel-phones-pwned-in-zero-click-attacks/5296936",
           "domain": "theregister.com",
           "tier": "B"
         },
         {
-          "name": "The Register Security",
-          "url": "https://www.theregister.com/security/2026/09/16/google-pixel-phones-pwned-in-zero-click-attacks/5296936",
-          "domain": "theregister.com",
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack",
+          "domain": "theverge.com",
           "tier": "B"
         },
         {
@@ -824,14 +978,32 @@
           "tier": "C"
         },
         {
-          "name": "Hacker News 150+",
-          "url": "https://code.claude.com/docs/en/changelog",
-          "domain": "code.claude.com",
+          "name": "SecHarvester",
+          "url": "https://github.com/rafabd1/CVE-2026-75604-poc",
+          "domain": "github.com",
+          "tier": "C"
+        },
+        {
+          "name": "Android Malware",
+          "url": "https://www.group-ib.com/blog/vwork-app-cloning-gigabud-goldfactory/",
+          "domain": "group-ib.com",
           "tier": "C"
         },
         {
           "name": "CTI Now",
           "url": "https://ift.tt/PS8wdnF",
+          "domain": "ift.tt",
+          "tier": "C"
+        },
+        {
+          "name": "CTI Now",
+          "url": "https://ift.tt/CxtwJbh",
+          "domain": "ift.tt",
+          "tier": "C"
+        },
+        {
+          "name": "CTI Now",
+          "url": "https://ift.tt/LwkImaf",
           "domain": "ift.tt",
           "tier": "C"
         },
@@ -842,123 +1014,111 @@
           "tier": "C"
         },
         {
-          "name": "SecHarvester",
-          "url": "https://www.theguardian.com/technology/2026/mar/26/google-quantum-computers-crack-encryption-2029",
-          "domain": "theguardian.com",
+          "name": "Medium bug bounty",
+          "url": "https://medium.com/@raissiamir797/google-dorking-for-bug-hunters-real-world-case-studies-3e24ac06b6b0?source=rss------bug_bounty-5",
+          "domain": "medium.com",
           "tier": "C"
         },
         {
-          "name": "Arctic Wolf",
-          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOT2MyZlYxOFYwcVZGQ1VUSFQ5eTliR2xpalowT2g3RXFXZ1pXTnZrMjhoWDE5aEVLamdEM0tXUWdfemRSOUEzWUJ5dUFqQW5pWGFOVy1Jd3pjbEZBakhZNF9BeEsyUmdFdDVrd0xpNlFqbF8tX2ItMXdFS3JBOFE2cFU3bGxwbUhpLURmNTVFbWU0WTdhRDNwUUNXTEpZV2c3czdhMjE5eHVwMDNSOGprbU1mNDZWSkpUNUh3TjJINUc5QjVYaXBvZUxKeEJmUExnRVFMMmpiT3ZBQ3N6eUJCbm9RX0lMSTZnSDg3YnhrOGFySk9ZSXpaVQ?oc=5",
-          "domain": "arctic-wolf.publisher",
+          "name": "Medium bug bounty",
+          "url": "https://medium.com/@cybersecplayground/sql-injection-time-based-blind-detection-payload-953657dd542b?source=rss------bug_bounty-5",
+          "domain": "medium.com",
           "tier": "C"
         },
         {
-          "name": "BetaNews",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTFg1VWpNMGRoUnk3RXg0QkxEczRvbFcyOGJXNHMzT3VHMjNZTV9jZnlNTWV2RkRmdG9GOExXRmIwZjVKSVpzVE0tYzFTa2NKUi00M1B4NkVxTndsdmNnVUFKWnpZbHBWQmVydzRSMXRPZkd6Q29VQm9xM0lLV3FmMw?oc=5",
-          "domain": "betanews.publisher",
+          "name": "Medium bug bounty",
+          "url": "https://osintteam.blog/chaining-api-bugs-how-low-severity-findings-become-critical-2184adabe30f?source=rss------bug_bounty-5",
+          "domain": "osintteam.blog",
           "tier": "C"
         },
         {
-          "name": "bleepingcomputer.com",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxON3pRZXdSTENkOHI4Q3ZseXJsSWxjWTdWQnBmdW9nTWs5YURublgwQWtKQnplb0djRGJKY3lPSXpmOXptRHFfVFZzNmlsYlU5SnZlLUsySVRMMTRZXzFVak9tSWd0UzhaZ2Fsd1hwU3R6MW1wOHlCOFJlX0p2WEwxMWIxOWhmaHFiTU9EaGpKQnhCbFZhZWpzUzZpTDlfVU9FTmhFN3ZNa3VYNnlfYU1ZQ2ZzSdIBuAFBVV95cUxQQklSc0lGX3Y2dmdyMWNVTW1xMzJGLTMwLS1ZTlR2cXlKM3FmNmlGcTd3S2syQlNhbmZzbnV0TV9mOUVPMy0zMTNNSHRtVEg3R0VWR3ppbVdCN3NadnhjWkN6N1d0WjdWc0NJa0g2NWU4ZHAxdFRuRzQ1MU5rRWZKMzRBYXZ4UzlPb0J6RzNFVHZVTVc3Q2g5aEV3ZUNEQktjYnM1ZHRMX2Y2cDhEa2Z4SGZDek9GUm4t?oc=5",
-          "domain": "bleepingcomputer-com.publisher",
+          "name": "Medium bug bounty",
+          "url": "https://osintteam.blog/claude-ai-a-practical-guide-for-bug-hunters-9ac94985e496?source=rss------bug_bounty-5",
+          "domain": "osintteam.blog",
           "tier": "C"
         },
         {
-          "name": "bleepingcomputer.com",
+          "name": "StepSecurity",
+          "url": "https://www.stepsecurity.io/blog/state-of-open-source-supply-chain-attacks",
+          "domain": "stepsecurity.io",
+          "tier": "C"
+        },
+        {
+          "name": "ababnews.com",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBINmZjNHQ4R0ZTSjg3bTBHeEVjOFlCZ0FoZWc1MmoyWmxIUUl5UnBhQnBiR1ktWEgzWlVRck90WU9FV3pHT01nV2lER0tQbDJ6b2Nwc3FCMWdrRVFhNVkzaURUT0dSZEFZb2R6amNnSDdjZlNa?oc=5",
+          "domain": "ababnews-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "albawaba.com",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZklsM1RYdExzQ2R6czFTWE1YX3ZnTUhCd2MtRndOc3NsQ0ZTdDdrX1BrN3pxUmVSWHRWM3c4Y19Mbkd1R1dDU1k1Vi1qX21kS0FfM2dNNTFPYTBBSmVmYjVPX2thdlpqZFhIY2ExYkFzWlFMNnpZR0RlVjVxaVRwR29TSDNKdw?oc=5",
+          "domain": "albawaba-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "BleepingComputer",
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOYTljMkR1M1RuMmY0YWdLcXdwckxSTEtLRklLZ3Nydjg2STB0VFpLTUhDZDQ5a2JPTlQ1TWhHY0Zqa3FEbHdSRnRrQThSVlVYQ2NteVo0MWhrRG1adzNncU5Jekl1VnN1MnIxM0Qxa3VpVzgwamhhSGZLQWY1VVF4WXBQLUtWUmRPa3FwM1lFRDVOYXRnU1RLRExBSkFVbUdacmZtT2ZEVlRaR0MxU1lKNzhTTdIBuAFBVV95cUxNWDcxM21vN0N1eGxMVTBsVk1xR1psUlRsZmpBdHlCZHhvcW1jSlVyS0VuaWpQZXFLQkdBMWxoQ2ZGY3huMnVkamdId1Qxd1Qtb3lzMU56aVN0eldnNTcyUVcyc0lENVoyTzRuMHJGc1ljbVBSM2Flc3BUSXViZmhZSXo1T1libDB3a1NrQmZJQ3UtUGJ5VlRPRDZRa0ltUXlEc0F4RkxvZGh1eGZRb0l0Y3VkMFUyYU5B?oc=5",
-          "domain": "bleepingcomputer-com.publisher",
+          "domain": "bleepingcomputer.com",
           "tier": "C"
         },
         {
-          "name": "bleepingcomputer.com",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVDBDTmg3NVg4V3RtSV9TWE9aeVItVHZrUDNRUHFxb1VnTEdvX0xJME11U3hTWjZVTG5NcU5lZ3BuY1hDSk93ZERUZlE2cWFEd1RucHlUd1g1bkpwVF8xU2plQlpES3VMTGxUYzIzWUl5VFRpck4xbnNaVlZqM3ZkSVU0VEZyb21QMXFkMk9SSWFaWERIa19uN2x1SXZNcXo5TjRsaXQ3SEdub2JHNmswYW5zVDAycGJ40gG-AUFVX3lxTE9YU2xtUE03anRrRDBxaG1rbExHTUNkdV9NaHJzdTVYU2pRRmthTXVwTHJyVVpvWjNta00xbUhvcl9wZjZocW9INnRxSm0tdWtPSjd3NkFIV3BwQmJNVHlSaHFQcnkyb183bl9aMUxiTFpvUVBXTjFqU1d3VUtpQmhsWl85eG0xanFWOHJ2cENXR1JQV1FQRzhJS0FabUxrWWVQM01IVXR1VmZXaHRMSWJoeERmNkJJQWNLR19uTXc?oc=5",
-          "domain": "bleepingcomputer-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "bleepingcomputer.com",
+          "name": "BleepingComputer",
           "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTDV2bkQzb3FsY0JLQlhWQWY4Z040eFU5b2RDMTVzRi13UGh1QkZoZWZUYVE3Y0pFZEpMdFJhQnN2d0xENUU2RjgySGh4YjlMTXlSbzFfWGRYejZjdXlyQjNPZ0NEVU5aNXhobTN5NGc1Z1ZlSWdZNWJTQzdpOC13dXk4eGRDdVpRVW5UazdhckwwVGJrTVk0VGd0V0hraWpnYWQ4RG5XNERPQ2ZYS1k1LUhUa3FNcVXSAbwBQVVfeXFMUE5NbnZGclI1RTFzZzJZSkpqcE9GUTYzWmNtcUdTNWh3OXd5X25ubmdnMkY4ZVRsM1lMcy1jUzFjalBnTHVXZ1lKZEl5TjFiNktvT0lUSUVlVzJmZ095QVJ6d2o0Z0YtWXFTQmo4djA2azh1VTRtenBCVF9SV25oQThrX2wtZXZyZFA4NWs4ZTY2VTN4Q1dkdlRsZm05T1VSa2kzRDRWUWNRQ2F5aW9SdEJKX0U3SHlPLWtzSHQ?oc=5",
-          "domain": "bleepingcomputer-com.publisher",
+          "domain": "bleepingcomputer.com",
           "tier": "C"
         },
         {
-          "name": "bleepingcomputer.com",
+          "name": "BleepingComputer",
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUzBSUVg1RmNKNTV0UERIdUEtQVE5Sk8wNFZmbzFZSTFxY3VyWHVKQ09lOVJyNllSMnBrOWFkeldWTHFzY3RvaXlrNDZ4OTM1NWlnVG5yVzJjUUVFVUU2LW1YVzF2ZlA1V2twTEhRdnU2UkNuVDdoeFdpdzNpSWpTQk5Tbm5EdHFOS2ozbmVFS094Y0xVU3J5Z2dON2V0Q1FNd09QbzlDNEpHbDFH0gGyAUFVX3lxTE5pNzNTY0szOHJ5SjhQclJMQmZhbEgteHY4ZWdGc1JWckRZZWU0ZUtRVW9ZUGhkdGdFUm5pNW9PaWgyZGZ6QUhsVDV2Ymc5dE5jTEFxU3JkQ0E3Vmc1QlVkSmdxcHpsUEdrMWl1b1dFSkphVDN2anBQNUhLQXhEMFo4aVFTbHhiZXczaVNSVG5WTjlKUFlPS2tnVV81VmxMaG1MR0ZDRHRYUUFSakVyM1p4eFE?oc=5",
-          "domain": "bleepingcomputer-com.publisher",
+          "domain": "bleepingcomputer.com",
           "tier": "C"
         },
         {
-          "name": "claimdepot.com",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1IX095X1djN29aaV9SUGc0NHoyODlmODhmdkJWS3pDSEpjcGx4Ulhic3VOLTVlSEk2UHlLWGlPZVlaNVVwbDllb2NqQ0tTUDhkd0V5VkFPUU90dlhKRVQ4RWNYNC1qN2d2X0VlNGlMbzZBVVhVYk55OHZrcmM?oc=5",
-          "domain": "claimdepot-com.publisher",
+          "name": "Business Today",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPUjNka0tVWGdwaTMxWjJ5Mlgyd0h4RU8ySWVYa1dlSDlIbWZUV1p5Y2VEYWE3NE9qZWU0eVAyQTZXUUlHNTVCQ3hGcWdlNmdUeUpTV0tJeVkyX1BIa1MyT2Z2TU9VY05ZWFhFTWdCM01WazBpRmJSTERQNzhodVhYQjRjRWRlbTNYSVFXbThwSWNEYmotSlZUQTRpUmJTX3hJVjNVeEVlMlpHeDczdWxGalZReFQ3U05KVkltbjFJUERheVNCbW9JaTAyQ2tuR0dhOWdFZlpoZnEtOGfSAeABQVVfeXFMT2c0dEJkUXJ1OXRrd3Nqclo0SGdCMmpaY0NIeHBsaHMxdjhBTVZIRUNNVlJZcWdZYlpWSG9FWmxMbDdGVE1Rd2VMSW5HeEJ1WUNMdC1WdVltYnV2NWg1c084OEZoeWhPOUsxWG1TbGlhaEtEd05lOFFnRHUwQlRvS0hiaXBwR2U2YXBMaTZjajd5b1NVWE1XaVl4QS10Smk2cjNIdjVwN2Jmek95amFGZmVESi0ySV81VGlkYm9mNlhwdmlVblp6UExJRXphcXR6bE44TmJ1WC1KWjIzZ3JLUzE?oc=5",
+          "domain": "business-today.publisher",
           "tier": "C"
         },
         {
-          "name": "claimdepot.com",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUlJaUHVNem5SOXZ1NWhOUy1TOHlvUkd3UFlkSzZUSjY0a0tEaEdMbnF3X3JwRDV1OU5pRUlkSS12azlPaDFkcTNHd2VKTnc1cFA2ODFHOFpIWTJRamtoYkVZbU5yemdYZ2hPRFhyT1YwZU5QUVNwYmlwdk9Ddm4wcHEySThlb2RTOHZDbHVHVnM?oc=5",
-          "domain": "claimdepot-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "claimdepot.com",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNTURmRWhLUjJaTXladzllNkF4R2lZdmNkeGRIWnRTdmp2VmFWWTBWQUh1MlctM1pvY0tzN0J4cjBmQ2daM05GWEVtZi0zbVFKaTRfVFB5ek5JQm5jMHJRQ21uYXBLZTMzZHBIT25oNy1MLVpWdjM0VVE3MkdjZ2M0X3FmSGtNQ0NjTEtJdm5zMHk?oc=5",
-          "domain": "claimdepot-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "claimdepot.com",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9WZVNFVWZRQVJwSC1PZFl0Q2FocWZUOU5UX3R4ZEFQcFZCR0ZpNVIyRGUwbGk0VmYyc1ozV1NXNWtpdzRzY2tuMHhSemo5Wi1ORURnTkFvb3VBcWtZeEdlRURPUHgzbmdIZWc?oc=5",
-          "domain": "claimdepot-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "claimdepot.com",
+          "name": "Claim Depot",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE00MEFXRl84WTNrMzA5czFFZUdEV0xlbnAtQzA3Z3JDOHFvTW1WdVBLRTFYTXdmcFRoU2N0Z1F2bjE2eUJoZGRFOVVVT1JZM1J5czBJdXlyMjczTXV3WklkaklqbXZSNU9hdTVkdEZn?oc=5",
-          "domain": "claimdepot-com.publisher",
+          "domain": "claim-depot.publisher",
           "tier": "C"
         },
         {
-          "name": "claimdepot.com",
+          "name": "Claim Depot",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9BZXdMVHh2T2k4WktLWTlVbWVVV1h3UDR5eFJnXzdmVXpqbmhCY0pxbDJ3UkNMVllUVm1mTjhTVHVKc1hTVkpVZldnbnZ2Qll3M2dBWGN1a2VUbnNrWWExRUgtd09tYk1QN3c?oc=5",
-          "domain": "claimdepot-com.publisher",
+          "domain": "claim-depot.publisher",
           "tier": "C"
         },
         {
-          "name": "claimdepot.com",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNeVo1ZGFpUXZsRDRsaFJmN3BNSzJQNTEtcWd3NHA2RFNTWVM2cVFwVEtMMU1PRWd4YnRiRmI1R1hrZi15LS0yZi00NjRJbDFESU56b3dHenlfeHBUdlhTTGFoWlB4Y184bklvUmN6aTFGWjVEOHlEcTAzU3NoZ183bHZvdw?oc=5",
-          "domain": "claimdepot-com.publisher",
+          "name": "Claim Depot",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YbmZybENQX1lIa1NVRFdoaFJLY05pdlVyT0JISWJET3E2X0d4c1J2V3VJNnRZMDJmdHB0a3FOdlBSeGsxdnBLamtkb0diTl9zdU5ocHBqdExSMmRibzU2dE54UFhCM0lobUpQTA?oc=5",
+          "domain": "claim-depot.publisher",
           "tier": "C"
         },
         {
-          "name": "claimdepot.com",
+          "name": "Claim Depot",
           "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE4yaXVRSmlRYmNnRkZiZkRvNEo1Nm9oaXY5WVJIRUZsVDZfUTJmblFIXzRUY1BEblpjYzl2YVZoZzVMZ0RSNnowR3ZJNGYyZGtFdGN6V01mTEpKSUpWSEZOaFExbw?oc=5",
-          "domain": "claimdepot-com.publisher",
+          "domain": "claim-depot.publisher",
           "tier": "C"
         },
         {
-          "name": "claimdepot.com",
+          "name": "Claim Depot",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNeVo1ZGFpUXZsRDRsaFJmN3BNSzJQNTEtcWd3NHA2RFNTWVM2cVFwVEtMMU1PRWd4YnRiRmI1R1hrZi15LS0yZi00NjRJbDFESU56b3dHenlfeHBUdlhTTGFoWlB4Y184bklvUmN6aTFGWjVEOHlEcTAzU3NoZ183bHZvdw?oc=5",
+          "domain": "claim-depot.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Claim Depot",
           "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNSlk3cEpsY0xyQW5xRHdSck5kUHFmZ3pFUDNqTDQ1VFRselNELUlxR0YteVFPeno0aUJDZVVrelZSNkthdS04ZVluR0dLczVrNndkRi01QnZuQ0FRSmpBUGxfLVJYOWRTeWxDemp2NG54aFFkQXhDRjkzVmRtSkNBWFF3?oc=5",
-          "domain": "claimdepot-com.publisher",
+          "domain": "claim-depot.publisher",
           "tier": "C"
         },
         {
-          "name": "ClassAction.org",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNNzYtN0lGd0pNZ2VCYmpiekdUZUZfV21uSlZtS182NE9XWV9NZk93NjlTbnZidUZOLUFCWEc2OFdzQzc1VlpnYmJzUU1MSy1MZTQ3LXY1MTI2NUlrYjlFWXJXdi0wZS1Jc25PUDIzazNPaE5lVVc1WTdvMTlWQXJ3Zld0M0JMaU5aNVVv?oc=5",
-          "domain": "classaction-org.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "ClassAction.org",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOV2M4akoyeVBtdlhkcmQ3ak1ma1ItRTkwM1FxSHUzX0JoX2d0MzUtVzFaaGdmTlpqd2xkYlJHcUNnc3JQN2Q4RjI5eWNDX1Juc19KM1hhZGxqVDBiZnVydXdyblk3NjVhYVZCQ18tck9fWnRGRVNINndESEdXVjBJTnRZYVJOV093cnc?oc=5",
-          "domain": "classaction-org.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "ClassAction.org",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA4MnZXQjFrZV9mSkhSWi1pWEQtWjdsbnpaeUJvOENrS3BQd3dDWTV2Nmp1blBzcWRmSHZaNU1LVndWYjdxRTJfUGczVk9zV2VNRWlrbG94TGtieE83RktGYnk0ZVBTLU5laTZNNC1MRVJwWG01TENRaHU3bXJadw?oc=5",
-          "domain": "classaction-org.publisher",
+          "name": "Claim Depot",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1pTEh3ZGZzOFhGTEFaZm1MU2QwLWEtbFA5dkVPNTRMRTVWLUFFWlFEUjR4RmVmMDl4WkhHOHkyQjV4MEZ2RERDOUNIelRuMkI2MlROVFUyUnhiOEtJMmRtQXczdUdCT2g4Y1UzQm9haGctM3RzTjlR?oc=5",
+          "domain": "claim-depot.publisher",
           "tier": "C"
         },
         {
@@ -968,32 +1128,56 @@
           "tier": "C"
         },
         {
+          "name": "Cybernews",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNODE2SGd4bkdULWlicFlhY0gxMFVPSUoxTnZuTi1UVENxeXhwM0VkWjZNdnBJR3BTMDNxd1NrTDBKdERweUV4QXJkQlp6TjhLRmZwVEhweGV4MmcxUzQtelJ1eDNYLUJSZE80MkFldVRHbGprVEs0cFMtX25MaXM3VzJUYkZacW82ZTRKTQ?oc=5",
+          "domain": "cybernews.publisher",
+          "tier": "C"
+        },
+        {
           "name": "cyberpress.org",
           "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5namRHTEtCTzFxVDVoQTNGdjhDLUg5TVc1UlNhZnB5aGdGWm41OWh5NDBkLUYyUFRPWkUzYW80VzJiWG9RLVFNdHpMSE9VZHVtYlE3Y2xuVGdyMkMtM2ROR2trYUp2ejJMMGZFOE5FRljSAXBBVV95cUxOZ2pkR0xLQk8xcVQ1aEEzRnY4Qy1IOU1XNVJTYWZweWhnRlpuNTloeTQwZC1GMlBUT1pFM2FvNFcyYlhvUS1RTXR6TEhPVWR1bWJRN2NsblRncjJDLTNkTkdra2FKdnoyTDBmRThORUZY?oc=5",
           "domain": "cyberpress-org.publisher",
           "tier": "C"
         },
         {
-          "name": "cyberpress.org",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPTUhTa0hUbkhXRGFfNHFiNnNnUzM2aHdiaHFQMjlkRkNFTnVxamtvWExxUHVGWVZGZGhET3JkNno2WXZuQTg5czEzbTUxUnkwU3NTYzF5ZDhWVkZtTTZjLUQ1SGZLbmdJc0lxSkxhX21zNmluRl9qeXdGVkpiakdlZk1NbVFKd1Q1dmI2QmpKZHZpWWNIZXp1ZW1zRjNqdEZ0Mi1R0gGjAUFVX3lxTE9NSFNrSFRuSFdEYV80cWI2c2dTMzZod2JocVAyOWRGQ0VOdXFqa29YTHFQdUZZVkZkaERPcmQ2ejZZdm5BODlzMTNtNTFSeTBTc1NjMXlkOFZWRm1NNmMtRDVIZktuZ0lzSXFKTGFfbXM2aW5GX2p5d0ZWSmJqR2VmTU1tUUp3VDV2YjZCakpkdmlZY0hlenVlbXNGM2p0RnQyLVE?oc=5",
-          "domain": "cyberpress-org.publisher",
-          "tier": "C"
-        },
-        {
           "name": "CyberScoop",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9qejhzR0FTd2RLWExFaV9Ud0ZDcXJOaUI3SDcyRzY1cElONjZ6aElGRngzdXo0bWVKUmFQR2ZlblRQWDB2WVNHWHFRZjNKcGVQTk5ORjlZbUFvTXpNbnRMTi1tN3NaQUs1Um9mek04WS1YUWlGN0MycQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1VbTNJMUc1NVU3blA1dm12cUd4UERfdEtSUFotay1kRVo4ZHN4dHBiU2syT2ZrTkhmUjRJYWpReVdXdU1QV1JWT0hqa2FwckNsWVY0eEc4N2tVUXFFRG81cDFJZjVjbzF6?oc=5",
           "domain": "cyberscoop.com",
           "tier": "C"
         },
         {
-          "name": "Cybersecurity Dive",
+          "name": "Cybersecurity Insiders",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8zTHJ4MDBsQ3p0bndFak1VVWRQMjFnc1Q3TFlNMVhfSUp1R0RtZ05uVmZXdEs3ZmJJUU1oeHNGT1dObWdqLVNxN3hxdFRaQTF1LUdpbVRVREtPSUd3eGYwSVcyWjhNTE1rcjNTbTljOFFIME8talJPQQ?oc=5",
+          "domain": "cybersecurity-insiders.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "cybersecuritydive.com",
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOS3RFWUZSOU5nekxJaWJJaVgyOGNoV0JDN1FPTkZZWENOaEt3SEUwOUNjY2dmc1kxRm9qejJwWnUzV01lM3JPaFYxMWk3YXhHODlhLU5LejZfU2xyemdWZEFaSk9RRFY1bFI2dmQ0bktsZUpfemZ6cHYwb2g0bGh5OFpYclA5RTVpMmNyeDJXSXdqUENwVFE?oc=5",
-          "domain": "cybersecurity-dive.publisher",
+          "domain": "cybersecuritydive-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "CyberSecurityNews",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBHMEprOVU5NVoyRG5yNElGT213UmhEMWJudjVZUFNSMDFZd2lXWFZfZko3b01ObFFmcVBSUlBPVmtTZVlKODgtbkJCaHJlajFwMDZfeVJiUEZfUktBZldoWkItc9IBaEFVX3lxTE16MzVUcVZqRDI1ZjQyWkkyaldub0F6LUlkbHR2VDVjYlQ4MGdabkRxbENSdnBqa2hrRnh4aWtpWE5STk9CdEo1TVVmamRCVThENFBscS1jWWRRUnZaWkloVng4S3pPUUJP?oc=5",
+          "domain": "cybersecuritynews.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "CyberSecurityNews",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1EbmY3UVVSQnYxeXNHa25qUUFnaDlUc19HVXlMbm11MXZhVS1FN0dWN2tXTl95WWNwSFhjX0h4YnMwQzZDdjhzaHZHVWxQMGs2VDRoMGpVNjMxN3pRVmI3MVIxalN6WHhfZEVGYVRITW92U3BwUDkw0gF8QVVfeXFMUGMtOGJMaURjX29XaGNNcHlwN0VyX0NaZWw4UjdNQUxIVHJtS1ZhVDhUcXJpREJieVJsMDRLN0R3eWFMM1UzWndwOUtZUVVsOWlhVkRZemt4UlJTcmlZTFo2SVRvV29PWHMyeDRCbE5xeEVuQl9EMHlpTnc4Ug?oc=5",
+          "domain": "cybersecuritynews.publisher",
           "tier": "C"
         },
         {
           "name": "CyberSecurityNews",
           "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSGZmZWl4ZTlSRzAtWENyekpHdG0yTF9FU3FHX3FzRGVpMGxEbTdQZXZhby1DOUt0M3ozQUZpOHN3eG5SbUVrbV8tTE5Lb1dDTDJNajNXRGhrYkg3dTItWm85eFQ1akc2U1RYS3lkWXBFb0RWaXZGUTdZSjlWV2hudGtTaU3SAYQBQVVfeXFMUEhmZmVpeGU5UkcwLVhDcnpKR3RtMkxfRVNxR19xc0RlaTBsRG03UGV2YW8tQzlLdDN6M0FGaThzd3huUm1Fa21fLUxOS29XQ0wyTWozV0Roa2JIN3UyLVpvOXhUNWpHNlNUWEt5ZFlwRW9EVml2RlE3WUo5VldobnRrU2lN?oc=5",
+          "domain": "cybersecuritynews.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "CyberSecurityNews",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWGtnN0RleDR6YXZoU2NxLW5Qa1FBeFp6WkxIWW5oaWZob0Y5NzdScVAxcXVMUG42OEdNdzlxLUtENHlFRGp5Mlc4U1g3YTctdDBZLVZCRDZmZ3F6UnZhanRLTFhlSjNua3VKVkM5ZUtBdmlVZ0E1UVRJNUFRMC1odklpOGPSAYoBQVVfeXFMT0R1clExQ2psaGdvQndXbk8teTJuUVhXZ1BkVVJ5cms1RndsVEllcWwySkR0YUczSVlXa21OVER3b2QyM0VOSERnVjE0YVItcFU4WEoyS0owZzR4eWtJQUF6eVdsanY3U0UtREhFTThNdkNsYUtQY0ZaQlpxTU9KYWhPeURVd0pjSDZR?oc=5",
           "domain": "cybersecuritynews.publisher",
           "tier": "C"
         },
@@ -1022,27 +1206,45 @@
           "tier": "C"
         },
         {
+          "name": "Developer Tech News",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcUxBV3BMRTdiSU85NWhvU19PTXhXck94SHVGc0Q5Q2hEWmtRY1RINVNyRHRoY0piREp3Sk81cmc0NVhOTGY0VUN0dUlycF9JQXNyT0h1Z21sV1pQUG04N3Z2RGY0YWhNNWtYdEZIOFpnUDAxNURoS1I4Vk15dDVUaXRaYTZPNzI1cWxwRFN5dWgzRy1zWVJj?oc=5",
+          "domain": "developer-tech-news.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "devops.com",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5mMFNEM2h6akZhdXNfdnJvbjQxbnFlVUdpeUxiaENUc0ltTk53SGJRYnVRREtKZUFFZVVSaW9wYXpFei1tZWdXd21DZ0NJRU1uN0U0VTZjc0RzbEE0b1RiSlV2TFFjX2t5YWdaWUNSRmdGQWdLUkt3YlRRMzRrSTg?oc=5",
+          "domain": "devops-com.publisher",
+          "tier": "C"
+        },
+        {
           "name": "Digital Music News",
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE41ejl0VlQwNGU5T25IUUlmVGpLT1dmUFI5cVFBT3RLOW1mcldhdjFBZWIyUlhwNlozU1R3c0RQOEVXZnpSSHdmMjdZXzdTcjB2Y2Y4TmNTeVlUT0xqTVBSSUlGUkJlMV9sTVdNc2t2RlRaaE1rcERVVg?oc=5",
           "domain": "digital-music-news.publisher",
           "tier": "C"
         },
         {
-          "name": "en.cryptonomist.ch",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5zUXVYWklVMzNYclBtSzBBazZFZ1hIYmJsUTRLX25UQUZOLWszMkxZdEM2c25FMURaRjNNWVFScHFiLV94MWtpM1lGVmxXSlpnWWg4MHZzQnBpMi1SU0ZkWmRTWG15VzdHRmZ2NlcyUEhlZw?oc=5",
-          "domain": "en-cryptonomist-ch.publisher",
+          "name": "entARABI",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNc0pGMGVUUjUwbzcwajkyWTlBVG5KLTdUenFnSjVkb2trV2tGeldKT0dQUHEybG5iUWRKV2VFVGpRSVBKbzl0b0N5Nm9sSGFGdG5rVkdqTGp5RVR6dUxxdm5RQU1SRHlySEtNQzV4NldUblpaeS1neVYzSnFVSTdyM0d5eUU3YThjM2o1TEtFRHA1YVQ4RV9ILU1fdw?oc=5",
+          "domain": "entarabi.publisher",
           "tier": "C"
         },
         {
-          "name": "fieldeffect.com",
+          "name": "Field Effect",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE4tV1p3Ym5JUFdNdFltbFlZNjBkWTdZa003NEEzd3BQWGlWNmhHbm0wM1J0ZFBRNUxURVlaRjRCaVQ5R1NGa0R3T3VHTEpFQ2s0Y2g3LVRReTZ4YWxvcnNuZ0hJNVNBR05MVzVBWk1fWVhOZw?oc=5",
-          "domain": "fieldeffect-com.publisher",
+          "domain": "field-effect.publisher",
           "tier": "C"
         },
         {
-          "name": "fieldeffect.com",
+          "name": "Field Effect",
           "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNU3kteHFGaVpOVWxLd25USFdwWHBfRmdoTmdNcEtNRXpNZlFLemhDeHZrNHFqNlo1Tlhhdy1nMGJRdEszQVB1UlluaDFlRjVZSERXSmc5VHNSeUdpYUpfM3VTLXZfSS1DbTVrdmx1Z2c5aXJmWHRXNUw2Nk9ZTi12WFhSNjJSN0g5enpXZnZRelV6NVhx?oc=5",
-          "domain": "fieldeffect-com.publisher",
+          "domain": "field-effect.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "findarticles.com",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE4xRFRUS3pCVTJXSDg0VDFJMEpGNlowQjViZENOTGlnYThjQ1VnWUFvUkRsZ3NJbWlEZndPTkFKU05QcDNqVlJYV3dZMzdCd09Oc2dJQ3NSRFpwbks4VzNtbmpTOGJ1c2lGTFdQdmt1RUNCaGJNUWF3WEFwd9IBgwFBVV95cUxQN19ZWF9Sb3lQM3hDNXBqWFBVYzhrYUU0VGduai1VUzNyMFZ5SFlWZWhWNUJfMXA0akQtYmo1UUhvZktLd2paNlptV3lEd0dEVk9pUGxOb3o3QmpoQjdpaFA4d0JaSmppVUtMRnlyZlpoTVJ4Z3VVY3BhMnc5czRKTFNMWQ?oc=5",
+          "domain": "findarticles-com.publisher",
           "tier": "C"
         },
         {
@@ -1053,14 +1255,14 @@
         },
         {
           "name": "ForkLog",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5tT3pqN1NoRmZJZDZTQTFXdkgzNFRYd194emtkWmRVTk1Ed09tNi02cURMcXoxalN6NGdEV0h6MWxfbWFTVTl3WmM4NE14N0NZWVNia19iWnpGSG4tWm1NaUY4QUQwajFnWndrS0w5S1NBNUxvZ2k1Sg?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOS3FzSjRNLV9RUENTOEFodnk3SmFCc25GODJZZFlvSjVMc2VLUjR2VjR4XzdRSWsxRGM0UUJLdlVrUWdEb25aeVdYbzhjX0paSDJsUnNPTFpJOV9YWjdRZ2VoeEx3OERTNGQyU1NwWDZPSzZMR3h0SVh3RHdtNEViaEQ2NHJCZnZMdV90QWhxMzlZTVBwYXF3Ri1WdHZGZw?oc=5",
           "domain": "forklog.publisher",
           "tier": "C"
         },
         {
-          "name": "ForkLog",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOS3FzSjRNLV9RUENTOEFodnk3SmFCc25GODJZZFlvSjVMc2VLUjR2VjR4XzdRSWsxRGM0UUJLdlVrUWdEb25aeVdYbzhjX0paSDJsUnNPTFpJOV9YWjdRZ2VoeEx3OERTNGQyU1NwWDZPSzZMR3h0SVh3RHdtNEViaEQ2NHJCZnZMdV90QWhxMzlZTVBwYXF3Ri1WdHZGZw?oc=5",
-          "domain": "forklog.publisher",
+          "name": "GamingOnLinux",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZ09OSHFJcHJHWXBhVExHT0NXMVJLLVR3MTVnc3NKZEc0Xzk4THFBM2JTNjJFNWRpZWZzNktnd1RIOEdMRVlVSWVOemRIWlBoN1RydG8xZGpuRjgwNkJLaTByRzJ5VFhBczM5SGJtMFI2WUVqbTA1MUpGSlNuSm9jTEdTRERvTWhKV3NURzlRX0RNUWxVWXJHa1ZLR1ZwMV94NTNQX1RYQUg?oc=5",
+          "domain": "gamingonlinux.publisher",
           "tier": "C"
         },
         {
@@ -1076,21 +1278,33 @@
           "tier": "C"
         },
         {
-          "name": "Hackread",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1VTkh0bl9KRkwxLWhhTWZWLXZQVEJ5QXVSYXE2S3o0N1R6OG5JTzFCYjR6SHh2aV9mYlJQVlQ4VEJ5LXZ3S3FfaHQyUW85RVBPeXFUSFREVm9lR2RzMFYwNVhfM1FsblMtMTdjVk9TY3B1TkpBd1F5Sg?oc=5",
-          "domain": "hackread.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Help Net Security",
+          "name": "helpnetsecurity.com",
           "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTHZ6TXNHbHdoSDIxZ1ZDbllrd2VhMFFwU0tSTHg4VjkzcXRWZGx2Yzd1cDhGUmdEVU1nekpfY2FEM0VObEp2dFJvQ0ZVd01LNWRFblZmNll2QVVLUEZmTVBpVldkeGhMYlB6a1U0X2pWY1gyN1FfVDN1X3NCRzFya0dqOFoxLWJ3bTlrbmktQU8xX0lVYktJ?oc=5",
-          "domain": "helpnetsecurity.com",
+          "domain": "helpnetsecurity-com.publisher",
           "tier": "C"
         },
         {
-          "name": "Help Net Security",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVkF6aHFNY1ZoNHMxeHJKdVltd241TGtISWdGdlFmcWF1MHM3TmVvbWt1VDhNclk1SjVmTHVOSVJfYWdxWUN6Yk9rcl9pZnpBNHBwbXFFVnhNX0g3X2owUDYzTWRBRjJkQTB5bHpGdzlTN0lCNHlEc3dLMXZaMkdkUVozRVh0UWdKMnFGUFpVcjZTME9wYjIzUkxZSFRpUQ?oc=5",
-          "domain": "helpnetsecurity.com",
+          "name": "helpnetsecurity.com",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOX1ktUWUtLTFmeHZSa1BKVXN6UmNTTkppWDVQZG9fWGZrWGg1TlNSUTJOQmZqRDVZdDhDUGlDZnBUWko2ZVpqQzVTTG5USGZ6eDlVank2Z2xGOWVmbnFja282LWtwQlBpRTdlWlJsV1dVVFYtSUg2Rl9qclk4WFFGZzN2ZXFybHJOanhHLTMxRENKQlVocFE?oc=5",
+          "domain": "helpnetsecurity-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "helpnetsecurity.com",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMmdWSDViWnZwdUFkMXhxSWVMVGREYXYzUVZrU2JoYmQ4ZGt1WTQ0Q19ja3FtUUlJSGRXelZyOE9mZjV5N1dkZXRDdWpUOEVnajZaYTFzWVhnM1NvU3lyOE15YUFKY3VmVEk1MzhQa0hLTWZPc2VPRm5OWUEtM2dmVW5IRlB6MlVXRktkM0RuTXd6TDg4aTFPcFdQcw?oc=5",
+          "domain": "helpnetsecurity-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Hostinger",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ZeFhtOXlybUxuUWowS0d1TTdWd0dVNVE3RzIyYVBUU2pfaFVlN2hIUzJVOVFOLUl5RTVGSFFXQ2hmbU9xcExabF9saWpTMHZsV0R5NVhwYS1JTHhtQWxSX0RUYXBTUQ?oc=5",
+          "domain": "hostinger.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "iNews Zoombangla",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOc2hETTZfckxxRkhMTTFCT19YRHJsam5oRjVfWUJ4MjNwU0V4UDQxM3AzRjNiejFlME8tR1M4V05CYjNodDdYWGEtVWcxUjA2UXlJbEg2alRKV3pzQnFGMHJxdS1ZaFlBLXNVczcxV01RMnk3X3pqQ1E5dnphSlhTNDc2NEVGZzlnVWVROUJWOThfOHpIVnJpOEtXSnBXelFnT3c?oc=5",
+          "domain": "inews-zoombangla.publisher",
           "tier": "C"
         },
         {
@@ -1100,33 +1314,9 @@
           "tier": "C"
         },
         {
-          "name": "IT Brief Australia",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNWpfYU02U3ViWUtqTUE2Sks5aTN4UUxlaVdhWXI3SmVWOUF0OW5XdkFkZW5YdjBXd2tycWRGRW5uTnBoQXYwaUJEN0wtenFNclhwNTFKM0NEaXNpaWhrRlVBZ2o1LWVlZndtYWI0RkV2VUlzRVluMThLRFdiNzl1MGg4R0FfVnJ2UWEtRg?oc=5",
-          "domain": "it-brief-australia.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "KCCI",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYXZWczdBcTVkMVdzMkNXNUlSMEp4Sm9QQ2ltMnpPSHNldWRUMDNqcm9tekRZOHhKSVFxQnItWFFyaTljMWdHUGJSOHVNQktyeHZXYWtDa3BmNUFWVTVucjl0LUJDUHZ0X2RjV0hoa3J5ZHdoWHZJR3pKdFktVzBud1dvOXJhRUN0OXhKNUptaEstVVBJeEFtSWViakQ?oc=5",
-          "domain": "kcci.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "kfdm.com",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBuVDluT3ZDWVJiZzBSLTZSa1ZHZ2hFMHktODJtNlgyQmRBLXVaMUd6bFpxNmxiemw1eGswejc3U2NUYzRhbUwybkd4X203a3g0aWZ2SDF1bUZySWMzb2NaMmR4Vi1MMGVRdnhaQXdyTmRCUlhyanlv?oc=5",
-          "domain": "kfdm-com.publisher",
-          "tier": "C"
-        },
-        {
           "name": "kobaran.com",
           "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQ1NBWEhJcEM4clpIb3liN1VSQ0xPdG5hTzBMSElFUVZ4MXJ1NEwzWDFQSFB5a001Z0hMRV9XNm5fSGlQb3ZWeElXeFFxd2lfUWlBVzhWY1NySlFiZG5RR093b3M0SThuQ2gxMmw5S1JrM3NKSF82TlA0SkFRcFVEOWxrcV9Mb3dQclUwdHd6RjAyTWpSNUVNTVNPbTdRc0pfMm9WZjFMRlM?oc=5",
           "domain": "kobaran-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "LinkedIn",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxObnlnVHJQOXJHSGNXNDUtMlZzNzFwcDVzZ1ctXzBMUDZpeGY1YW5fVHd3Q1ZJaXZ1eUhXSjJhOU96dk5ib3AzNmcyYm43RjRFY2lTZlVwTVA4MG91eTZ0bGZCWDBCMmdsTDhtT1dWbEVYck1pcEJqekxQNnpBRmRpLWJPWEhZay05VEpzS3pzMW11LXM?oc=5",
-          "domain": "linkedin.publisher",
           "tier": "C"
         },
         {
@@ -1142,6 +1332,18 @@
           "tier": "C"
         },
         {
+          "name": "Menafn",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFFaOU5NNkp2NkNuNVhtYTdaTmZuZWFMSkIwOF9pd3lERmdLZlZ0YjdYU0hxWUxZeXB2N0J3TzZ5SEpGSmZORGlPQjhfMWhTaWJSUVM2aVB6UHFWcWwtdXVHVElwNXZiSW9rWkhaa3ZzazY0dmx0NS1YeEpBeW5EbHdfRno?oc=5",
+          "domain": "menafn.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "MeriTalk",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVzZQQU5VLVlSYnJ1TWZ1RDZiejJyNTUzc2dEbU1VNHBXT0ZQYWRLbUJOQTFvbFdLWVBnQ1kyLUpUazNudlhjeDVnTmcyZC1lOWhwRl9CcDN0elFFdC1ja0ZFaGhCSXhGdzBDaTVlYmVLRUdKSlN4Q3pxR0ZvOC1XSTQ0TTh5OGJZMlUweVZqUVl4UTFURmtjN04tWmhNaEU?oc=5",
+          "domain": "meritalk.publisher",
+          "tier": "C"
+        },
+        {
           "name": "Mezha",
           "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQckdnX3RLOFRsc1lTWmI3YkRsNkpzdkV2VXo5TzhqY3RnaGcweTh6UHA4RWN2NFkzbUVDMDFtWHVhdlhLQTFFaFp2T2pRblFTUUY1QWNrV0dycXAzS3djVzA0cXpsWDRkUzZRYnlndnZudlphTzlybGgzNG5udm84ZnpiV2k1NGQ5Tl9SWHpzRGRUVk1UNTVHWkgwLXFoLVhY0gGmAUFVX3lxTE9Ca3B6aU1sM2tCeTZhWGxJTjBORzdZNXNCaDRhcnV0V2VvX0R0QlFCZDJHSGdvMlVad3dwSVJJcWRxbE5WQ0EySnJfcURKb21CS2FPMVhiTWpYRGt0a0FkRngzTC00TzZRdW13Yk9tR3ZNNnNaQ1FWdldURTJpSEl6ZHJRdGhQWG5uQnpfMThaVjdjc21RVUwtMElmZDE1eDh1ZHFjM1E?oc=5",
           "domain": "mezha.publisher",
@@ -1154,33 +1356,39 @@
           "tier": "C"
         },
         {
+          "name": "Network World",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdlFYMUJsM0VCQTJyYUhrTG5iT0dQNHc0TFdnRkpIZElIZHhlcUtrQ3NuZGtyWWhUb1d1amRqcEpMb1A4eGM4aDZTdi1Wb0hoVjlUVlpLRllZV3d5ZGJ2cTFDdW8zOVdQU3FpTFlkcno5ekVkcmJFdjBoNUpoMjZOLVFCSHgxcGZHZW53Q3FmN0VCcFJNczdOdzU1RFp4ZWN6S3V3VGxJckhJTW8tNVgybkVjZnRUZW53Z1o4YnE4NGF5QQ?oc=5",
+          "domain": "network-world.publisher",
+          "tier": "C"
+        },
+        {
           "name": "OfficeChai",
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQN3F4aXlEVmJVWnRfT3djai0wQ24tVkw0cllUSXVnNUdQcE9XT1lXT2dTZUNNOFFGY0M1Y3RKUGpqZWVldUwyRWRnNjBYNHhlNFNLYlhPd2pSVUluU1JLdl9TSzBRNEY4cllnWDdCem44T1Ixbk0xWVp4Ti1FSE1Zck4tM1hlbUxfQld6WA?oc=5",
           "domain": "officechai.publisher",
           "tier": "C"
         },
         {
-          "name": "Oracle Blogs",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMFBaVG1vRzRQRGNnc29SaHJrbGlJX2JZdXZMcjFkemdMbDdEMnBwMlF3OGFPT1pCT0t3ZWlIbnF2cFp0SnNudUtXN3VRT3d2ZlVsN0pWMXZDX2xJTXQ5Q2FQaVpjbS1zWF95bER5V2lzTUZobkFfdE1KR21vTHBHbG9BdHpwQ0NuakI5d3doc3lZbzFCZnUxMnFGeHY?oc=5",
-          "domain": "oracle-blogs.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Pasquale Pillitteri",
+          "name": "pasqualepillitteri.it",
           "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORDhUdzh6ZGNZOTVydDZXQ3B1VXU4TGRYT0tyYndudUlFejdqai01RGJUNEJqc2Rjc3ZVZjlsSnhiMDZnaGE4WlR5bDIwcklVVG1BeXNsa1pBVExwVzhXS1B5aWFqUXF6NlVPSlo4WU9VYmFId2s2aHdiaF83cWg2ckc2M2Y?oc=5",
-          "domain": "pasquale-pillitteri.publisher",
+          "domain": "pasqualepillitteri-it.publisher",
           "tier": "C"
         },
         {
-          "name": "PCMag Australia",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPRl9HSG4zU2tDVlpDaGY0eHFURG13dXBqVXNpdEEwWTl2LVNsV0JSTTVzODRZQ2dCX3BRQkF4S1VmQzZYTDhIMVpqTmJCVzBTZ1dOa0t6LTdxdGh2TGUxWC0yaU1xQ0pHVEpXcFpoNGxfSGJNMF9YQ0xqcWhGVFZXUGM3RXFzWE1LZ200NFRvelJYOTg?oc=5",
-          "domain": "pcmag-australia.publisher",
+          "name": "PCMag UK",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOWjNWd1owWDhuQTRpbXo2YWtBeGtOendCSG94eXhoNkgyUmVuUnF5cXo2TEpJV3ZFdVcwNENucUZMNmIxeWhwN1MydDU0c2RKQ3dUdjVCeVBuNV9sOUxld3dSbjhlbU9tWHJCWDh1VHd0Mk81aGExcXBiWU43Z0pWUjFacVZMNUJ2STZ5T3NSM0E0VjA?oc=5",
+          "domain": "pcmag-uk.publisher",
           "tier": "C"
         },
         {
-          "name": "Rapid7",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQc0V6d1YweXh5b2Z6NWtMQWx5aWpIX3l4c2ZyM1lYMUpsSHNDX1RLS1kySVo2LWhLMjFTd25MdGNiX1IxcjZWb2xDWWppMEctZVFoMy1INkptS21sZUtVdERMQ1ZvbmlTc1gwM1FjUHRFNFBoNWtRSkZtRGVQN0tQSGhqeHZIWlZmcGdTX1V1dkFuTkMybGU2SklQaENrSGxJejMybFNCZTJqUkdsdDA5dlFWelQ5RUxPZTQyeXM5NzdsUQ?oc=5",
-          "domain": "rapid7.publisher",
+          "name": "RS Web Solutions",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTGg4MW52TWt6TV9OU1NhamhvcmhhSFY3X1NjVERpajd6ZlZyWUt2d3UtaVo2WlZoa3dtdHZuSmtaOEhqVnJjWG5NQ1hXaWFZM05laGJzcFhEVXMzRlpFbTIxTkszaFhkZDhJa0t5TjlSZVhhZVZGWlZZenludGtrOXNzeXlLVUg3d1JKTkxSUHdKOURsUjF1OUE1UXJ1el9jTTZuMW14d3JSLUo4WkZrZE83TTFVYnpEYVdvbmQ0ODlkZWhKMFQ5cnZNNXhzeWFk?oc=5",
+          "domain": "rs-web-solutions.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "RS Web Solutions",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWmNUMlJLbkJIOEFtbkdSVk1jZkhFWm05WWhfVVdQV05Ecmp3cVNnM1k0cGJxMkVWc0dQVEZxdmhGcEdZcVVCS01iZ2VQV0xWOTVOamlXOGpOZktvSnlIbUREX3NwSkpTVWc1UVN4eno3ZGlhUEl1SEdKNE91V1UtZnd6LUlVOW9DQXVkNE1qX2xjYjJxNy0zcTB5bjY4RWctbDBPQjZEb0JUVVk4QVE?oc=5",
+          "domain": "rs-web-solutions.publisher",
           "tier": "C"
         },
         {
@@ -1203,7 +1411,7 @@
         },
         {
           "name": "SecNews.gr",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5xTEk4Vk8zZGdXblBsZmJfTXRUeE1vYk1tTV9SY0NUSndXZFl1XzU0OTFwd2lEMVlrN2x6WHU1WVpKWllQb2VxREtFV3dVcWtYVHpPRkplVmw2WlZWYUQ3cGtzWUp6Q1RVZ1VmTlFrRlZBTlRv?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9vSUdweWpFMWpIOUdKaTZSYmdTbHRpeXVPRlJNUnRoSENlQmY5SDdsNTFvaDVlWTBDeU9uNzJvTHVtclZZVjJRTDdPNE11VG15VlhJSTBNM3V0TWpGbFo4V3h4N1Bxb0hUenNETHVNcE0xWERLVWc?oc=5",
           "domain": "secnews-gr.publisher",
           "tier": "C"
         },
@@ -1220,26 +1428,14 @@
           "tier": "C"
         },
         {
-          "name": "Security Affairs",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxORnRMSXdQaEZjNDRFTHIxdkNSTFJSSFdWZ3RSTndZY3lWQnZlY01MWXExSGFwYURFVnliUjNoai1BaXBIa25iYmtiWFM4ZVpLQ21oVWNEeWppdTQ4RUZtNE53QTcwb29zV2RMMVBLUjR6Q1NCZzBFSXdfay1oUFpCdVVHOVNzcEx3Wk9ZYlg4QlhSa3B2a2JHRWY4dDdVUUJJVzBr0gGoAUFVX3lxTE1MeWZndkdlNmd5cUl1RWlKdEFRd3ZhVGp1UE5wdGVEY3VSbVFCYVZRbUxVTnNsRnktY2d5THlfb2F3ZlR4SzlYcHZ1WWhqQkZLTlBhZVlYR2JwZzlJVFI4NUFZUmxqeUdGazNMQkxHQWFZbXRKVnh5M1JROVJjR1lMb01jOW1neVhYWS1yNGRMSzFXLWRlZ3Z0Z1pHSGY4b1Z4M2pzVThpdQ?oc=5",
-          "domain": "security-affairs.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "SecurityWeek",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNd2ctYkszWjgzRlkxWmIzNzNINlNhdVNURmd2WDNXWXNzdm9LdGpiOFFueGw4bnp4LXRpaGZqa2hQdnJ0TkJybFFKNnJzc09BODU0NFJyeTlqNGYwZXNET0ZSZmtKamhfa1NKRGdVZGxXYVhJc3lXZkxoOFZTWE1ucmFaUkt2dmh4TW5CNHNTaFhKRFkyaVc5NUdWTTNqajBrS3ZWNkx30gGrAUFVX3lxTE5VNmpWXzAwTlY1VzFVemotSXhOb2RLYTV3MUVZMlY4b1YtMUdrVHlJX05OcnJkT2p6dTF1emlqd25zYksyYmJrTGJBMWRZWXhJZU02M3pwV1NTREpJdnBNMUlWb2RNeEVsYkJtRWU4RExKUl9fdmNVOWpyNlM5aWRlUXNiMlE1VGRyQlZ2UERsaXZmYVZMTEtyLUVYcUtUakJudmszdU9ya1dZWQ?oc=5",
-          "domain": "securityweek.com",
+          "name": "Security Today",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMHc3QUVoRXhob25KX0UzTmFXUWJHRkpJSWdOc0VkODY4YXJpNkhjMlpxY094ZzZZZGZXYnVXano0R3JNRWhabUgwY2FRSGZKa0dfcHNjR2g2MzVRR3pVNEpSektialF0NG9KSmlWTnFxd3RpSlY3dVVHNTZsMTNjR1VpMTVOTkVRRy0yOVJRRXAtakdhOHJBdXZ0M2YzVnNRVjRpZl83TUM1UllEU2dQVTE1TXJYODlZcENhWGpNNA?oc=5",
+          "domain": "security-today.publisher",
           "tier": "C"
         },
         {
           "name": "SecurityWeek",
           "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOanBGckZsTGRaRTg1VGdFRmZwNS1faWRNdG5HbXZGbzVDZ3J5ZERSc0Jub2V2Tnd2a3p6ajBiRkJJVVpESl9Cb1ZhRWVQV3dBbzNJaVFsWTRlZ0VzYXphampUWndDS2M4aHpJcXZ0OEI0aXVpSVpFczd5cVdQNFFiaXJzTXdXNlg1T0Y1d0gxWG9GdUpSU2k1MzFiUXpnd9IBowFBVV95cUxPUHdqU1RCRFdCX2gydjZ3ckFWLXREaThmWFQzN0pKallaaEp5RkotYVIteGxJN1FtZWQ5d2padWszN0FIdXhVUWxxcEFxM2NoejJPWU9zWURiRlBIR3BTbnVPNV9FSWhwLW91SXpHRHVhWmRyeGNzZ2kxc2xCVU5Zb3Q4VmpoanlIejVNcmFfa19QOFQ2TTJIbjh4WmZ2WWVkSUF3?oc=5",
-          "domain": "securityweek.com",
-          "tier": "C"
-        },
-        {
-          "name": "SecurityWeek",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOVUyOWNTRHFvMi0ybThyS3h2RHlZbGNqVGEyekQ1aWJnOG1RTXk1WXlyTjZpSnFlel8yMjUtdWN4a1NtcS1iV2VDRXFZUmp5cEk2WGlVNDg0cXpYOXIxVm1YZEs0YWdLdmNETmpkaHMxVW9jeUFXRDA2NjNkbEtIT29NRzlCS0JxeGY3c0l3eV9BMjBjdUtLTdIBngFBVV95cUxQZWgyUUQ1aS0xX012WnlIaEdMb0hiVTE5bjdoSHFhS2dVaUpnTVdibVNLd0hvNTZ6YmxWWmV3WkRLTjItOHE2RzlLZU5DbVRxcVlhQTRKWl9JanFaTkwzOTJYUzAwMS10RDJzVHZ0b0RmMC1yTEY1V1BkWkRDcWhaM2F6Ni1qb0NhS093bTNKay1fV29iVG41LWJpRHdHdw?oc=5",
           "domain": "securityweek.com",
           "tier": "C"
         },
@@ -1263,19 +1459,19 @@
         },
         {
           "name": "shattered.io",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1VNHJzazl6X3dJbzByUS14cTZiMUFyMW9jVmM3dWhCX202OWZmcmRHMXZlZV9fVURVeG1IeGpNamJrSTR0RUlBSjY1bFhzX1Juc1hjYjRobjJCa0xkeVkzSGdtVTQ0MkJscXdIUmVESThiSlk?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAyejJWaDE4Y2QzU2JvdmdHM2c0ck1hUlNCOFZ1QzFybnl6Qll1MWFPdG82eXpqMTM1OFdXRXBISUVkXy1yd1NXN1p6WnphcF9BMjZlVFlZV0o1OUFJYWlSbEhNRnpMQ0p0NURZbWwtV3RlbDlTWkQzREQyM2pVZw?oc=5",
+          "domain": "shattered-io.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "shattered.io",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1hY2hkUVJDbndoME9kaWZ2YzNtemRXU2RJZDB6djNKVmdEV0QzNkJZN0tLdWVVeDNVbEFWNUtTZlJZVFF1REM2SXBHd1hXNFRXVjE1azVfaXRRMlVpU3BQcEZzSmtPYUQ0STMzbmpuM0psZw?oc=5",
           "domain": "shattered-io.publisher",
           "tier": "C"
         },
         {
           "name": "SOC Prime",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNb0pFcHJXNXh0MjU4RXZ5dlBrN2RvZ0F0dHduanNWYjR6a1hacUZKQ0JkczBJcTVGcnQxbEZ3dVZvUDA1Y193SER0SU9KUjNOTF9YQ1NDOFBvd2pYZU5CNmlneHhmZ3lMY0VZNWdDeU5nR2JYZF84SlJIUF9mMHFXUDl6RXlPbFd0VnJJQnE5WmxGbUlUSS1jTmZJZ2F2QXUtZDYyOUF3?oc=5",
-          "domain": "soc-prime.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "SOC Prime",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9OUEpxQ2dGT3FmdndFeFNTWWVEajdZQzIxQ05ic1h6aFlJZDh1MnF1UE94ZklpRVA4Nl81UXZWSmR4ekt0MmpLLWVtU1RIUlBwN0JXdUpBWUNiZmNfMFhyaEI5RGU2NHpuWjUxWnlvbTk1WW11X1hDcg?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9VS3ZlMDdNdEZrZGZVdWhWRmhSQkViT21XZ0JQemVhMF9GOGRTaDRJQUI3NUJLWTZ3Z2cwRlRQUjB3alpYcDM1TkxoelBvcUU4MTAzOERwbF9MTmVrZUR1MkUzSkxrNEdqcFNKd1FwVGJ5bmFzV3M2T1p3?oc=5",
           "domain": "soc-prime.publisher",
           "tier": "C"
         },
@@ -1292,6 +1488,18 @@
           "tier": "C"
         },
         {
+          "name": "Tech Observer Magazine",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOelVpY2xnSVVTbTFFTy1JVVNkamFmRUlUWTNRS2hVWXl3WDhyZEZqOXgzSkFnUGg3TkVwVUlhbXhQdWNaNVFvZU1hMTNzOGVzaWVEYjA4Z3FmQlE0XzdPYjNwOGpKNFJURzVUVDU1b3BMR1dWbFhSekhwMnFQQjE3cXFWd2I2UmtyN01vZWc4Qi1ONDBzY19lb1ZlYzdkZnBV0gGgAUFVX3lxTE56VWljbGdJVVNtMUVPLUlVU2RqYWZFSVRZM1FLaFVZeXdYOHJkRmo5eDNKQWdQaDdORXBVSWFteFB1Y1o1UW9lTWExM3M4ZXNpZURiMDhncWZCUTRfN09iM3A4ako0UlRHNVRUNTVvcExHV1ZsWFJ6SHAycVBCMTdxcVZ3YjZSa3I3TW9lZzhCLU40MHNjX2VvVmVjN2RmcFU?oc=5",
+          "domain": "tech-observer-magazine.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Tech Times",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMHRTNlVtVG9XNnh3YlpvbTZsbnN4OUh6dkRjM1ZyMk9XUXdHUVFmUHlMVUpRNGtyQlZERjZFdk90cngwZU5PWnFFMFd3djB3ZHlRd0dQMnFJbnk5c2oyVzNKbWlickFHZ2ctWWRCSzBZLUgydEE5d29YNG5mcTRQZUdpSFd2LXh1NjdFemtRSzNtWG5uTl80N2lRNWI0eGpSbVN4Z0ZjWW10cC04UjdONjlBT1RqRjFuczgwRGdpcEtzbUN3Z3JwQUxBMA?oc=5",
+          "domain": "tech-times.publisher",
+          "tier": "C"
+        },
+        {
           "name": "TechCrunch",
           "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVk4yQVI0WmY4TjQ5RG1VaU1ZMzdRellZQkNEVHRONVVPczdYT21HT0hDSHZNRnpGUGdpZlhpdDlSU0JfbmVDYUw0T2RjSlFteHhsbEpSNzZhMDZMSURCYUdMM01ncU1tczQ1Vnhsb0wyNW9HU1JkQkxFRFQ2LWIzYWkyaWh3NThtQV93WVJiQ3FUY1ZNcjFfZ2p6WmdUdURwaVpBVg?oc=5",
           "domain": "techcrunch.com",
@@ -1301,6 +1509,12 @@
           "name": "TechCrunch",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQS0tYS0VHd1I0cEFmd0JuMHh0SEg0NGxoMUprUDFPWVRlWWZvWE9LN0ZWMWd6Z2Utc2dlYWY2elB3Nk1xTGtRZm5aSzFDZlhfR0JRSms0NkJmVDlDY3JJYkxzU0M4ZWFLak1RSnNGNTlzWTJRZmxkbGZfUWppNUVDc3hxQUlVd01Ha1Z1U1ZYUzJReUU?oc=5",
           "domain": "techcrunch.com",
+          "tier": "C"
+        },
+        {
+          "name": "TechGig",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUjhfdU9VRWhRS3VnNUtYWmxWYU9GNjhUWVVnNEJpV3F4Q1NvVXBEcHl1bktDYUpZQmwzRHdEMkQ1cXNyczNzc05YZjhNeXpOelNseHUxdEdUdXRCYlZwaWJXU2l1Zi1kbzVqdzRMenRBdUJZYndTVlRGVXJnamxxbjJPYU1haUo2S3F3WUxWOGZuXzlYT1NYdXhYMG5nMGRtZUt6MjBfdmFVeUlxeGVmSjRwdGRHc2ZETHfSAboBQVVfeXFMTVI4X3VPVUVoUUt1ZzVLWFpsVmFPRjY4VFlVZzRCaVdxeENTb1VwRHB5dW5LQ2FKWUJsM0R3RDJENXFzcnMzc3NOWGY4TXl6TnpTbHh1MXRHVHV0QmJWcGliV1NpdWYtZG81anc0THp0QXVCWWJ3U1ZURlVyZ2pscW4yT2FNYWlKNktxd1lMVjhmbl85WE9TWHV4WDBuZzBkbWVLejIwX3ZhVXlJcXhlZko0cHRkR3NmREx3?oc=5",
+          "domain": "techgig.publisher",
           "tier": "C"
         },
         {
@@ -1316,44 +1530,44 @@
           "tier": "C"
         },
         {
-          "name": "Technobezz",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUkpxRUhjaUppY21OTWFIWmpjY3NrMUhPZEdMejBIdy0td3ZEZlJrUi1QelFwcWF5UWpJTFVDZnBNZUM3dXRQSjZJeVBkMHNzSkMzN1NXUmowMldoNXl5Mk9zYXZNc2lsWmcyUThzSDRpaEJibXQ2aVAyZng1YlNsaThBclByb3pzdWlRVGxR?oc=5",
-          "domain": "technobezz.publisher",
-          "tier": "C"
-        },
-        {
           "name": "TechnoSports Media Group",
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4wdEpsbTEwNEM1NzdMVzhLLWFVXzQyRXZqTFZySy0xY3gwdG1zMm5ueHhOblNUSlllOGo0NGw0VTVaSDJYdXUta000TFE5ZlRxeGoxWUVIN1gxaXphdGVuNU9YdkpQZw?oc=5",
           "domain": "technosports-media-group.publisher",
           "tier": "C"
         },
         {
-          "name": "techzine.eu",
+          "name": "Techzine Global",
           "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdkVzNFJYZWM0NDFVYjBzSlBKRm8zZUswbnppVm4tRUY5WjRBUWJ4NUlndVlQVnpMeWhYc29lUzRNQklwbjBWMlRaWExZUmVqZDlOUVZsQ2V5aTFRa2plSUFGTlNlOWtaR2Z6bXdXRTFGN3RHSUQyU0NnNFNta280U2hBTWkyZDFPQlR0RlRtZjEyTkdkWlB3ZjNMaWpOOFRwMjh0bk5YTWJ6TTAtejRWZ0FMZ3l1TURjY3c?oc=5",
-          "domain": "techzine-eu.publisher",
+          "domain": "techzine-global.publisher",
           "tier": "C"
         },
         {
-          "name": "The Brussels Times",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPT2hQbXNzNVdkaXhKNUFsUUFWV1hYR01FNXI0MTJtcjdiYy00NVhNVENtRkF5N18zU1VEYkFVaXpzbG9DWE1PSTdyOG9PaEJYdVhVSm1HWk1DMUFHOWg0a1U5di02SXpNYkxTQy1YSTA4Yk96TEZmOGpSNkVrbnpOZk5vYXVXUUVoRGpUR2c0cEQzTXRDNjZORF9tMl9fTDY2YWh1MVFKMndTOUFmbHMyMg?oc=5",
-          "domain": "the-brussels-times.publisher",
+          "name": "The Cryptonomist",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5zUXVYWklVMzNYclBtSzBBazZFZ1hIYmJsUTRLX25UQUZOLWszMkxZdEM2c25FMURaRjNNWVFScHFiLV94MWtpM1lGVmxXSlpnWWg4MHZzQnBpMi1SU0ZkWmRTWG15VzdHRmZ2NlcyUEhlZw?oc=5",
+          "domain": "the-cryptonomist.publisher",
           "tier": "C"
         },
         {
           "name": "The Cyber Express",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQc0E2OWRsX2lSRVkzaXg5djh6NElubXlQckRIRnZtSFA2amJTVTlCMUNsU2x5YzJxU2Q0Q2w5YmJadUxZZVR2WkkwT2VKRzFaMFJvV2pvNmdKZ0dJVThhQzdab3BNMDVTWFB4bVBmVVozOXFSZ19GeTg5Q1RtWU9rZG1B0gGCAUFVX3lxTFBzQTY5ZGxfaVJFWTNpeDl2OHo0SW5teVByREhGdm1IUDZqYlNVOUIxQ2xTbHljMnFTZDRDbDliYlp1TFllVHZaSTBPZUpHMVowUm9Xam82Z0pnR0lVOGFDN1pvcE0wNVNYUHhtUGZVWjM5cVJnX0Z5ODlDVG1ZT2tkbUE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA3MHZiTjFsM1NGdkRGYXhkX2NGbVpmZndSVkFTb01MWFRobU5kZi1meE9vOVlhbm8wSURHTEJtdnZCbExqekctYUhBb3NBZEhMRk5wVVJKWTkwd1UyTHBiR1hzQlpQcXJHUXFLWUFuOUVaN3BHZEd3MTJyVFDSAYIBQVVfeXFMUHNBNjlkbF9pUkVZM2l4OXY4ejRJbm15UHJESEZ2bUhQNmpiU1U5QjFDbFNseWMycVNkNENsOWJiWnVMWWVUdlpJME9lSkcxWjBSb1dqbzZnSmdHSVU4YUM3Wm9wTTA1U1hQeG1QZlVaMzlxUmdfRnk4OUNUbVlPa2RtQQ?oc=5",
           "domain": "the-cyber-express.publisher",
           "tier": "C"
         },
         {
-          "name": "the420.in",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB1Y3hNQ2xOcTJNdEJabVJsR3oyS2RzTWVxODU0dU4zOTZkdXNmVUstckNkMGc5OGlQdXI5MC0tUzNWOElqZEprNnhhcVJFek9ON0dBakVHNm1hSjlUYTJaMVNTdHBoZEZOQVVrQWRUcWZJUFVaUjRRYTZyNHlTSUk?oc=5",
-          "domain": "the420-in.publisher",
+          "name": "The HIPAA Journal",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5DWGNicXl6UE5vRnI5MHZkQThhSXRVQnBqeEFtS0ExYkNZcndGY3RHU0NQQ2F2NjdxNFhlS2s5a1RzYzhVUzN6SzdPbVFaWTRnalRkWm5OYkJkS2JBU0E?oc=5",
+          "domain": "the-hipaa-journal.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "The Straits Times",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTFRYYUFsYWQyc294VzFiRzd3UkZndDZiaUlhWFdONkJ0NV9HWjRqVk5DTmJEWFZ2MjdUM1FMcDJPeE9zZlVUMmI3T01WM3ZMLXhjbkNZWDR4bEl2Z2g3QU5CeHJmY2c0WTIycWp5cXFyM3o3VWpXWkx5UzRDTTF5ZWwydjRJSHlnT2tQbUsxemhiZGlyVjIyQ3paYVdBa1YtQ19UeC1qanBOTmM?oc=5",
+          "domain": "the-straits-times.publisher",
           "tier": "C"
         },
         {
           "name": "thehackernews.com",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9ieDFfelY3bmNxOThWUUhhSDdRZHhpMktWT3d2TVoydVc2d3Ytb0pzZEdBenBELXVJWU53SURSeVNGeno0aE9ESUdQU1FNOUdPdVlzQkw1aElKN0JpSU1lMEdYdjk1S2tzMFU2TEVacVhma2lOT2plemx3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOQjlOc0xJcFN3MVBCdVAtT1pMUm10TTFJSmszQzg5cFhJZUc4aDZZZlM4Q2FBT2VLMHAxc0lnNHplMzVkdHBqdk9tcXdBZlN1WmxBRk0tSXIwLXFwdjBVTFl0WmpZUURpdmh1a3ZiSmVQOGtwMXBKMGxOZk1nd0ZURQ?oc=5",
           "domain": "thehackernews-com.publisher",
           "tier": "C"
         },
@@ -1367,6 +1581,24 @@
           "name": "The Register",
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQ0ZLZS14MFBqLWYteDQwLUFZbEs2NU0zQVVZdkRzbzlhOEMtcEd1dW5rT2hldFlqUGthN1lscTFuZGVmTTlWeWpnU004REFac21HamNEbzZvMUk2QzRENVJlb3RnVm5fVlRQcFN2Mkh3SkJRYUtrcXNWQUV1QWppQUNGSWRaM2NZSUE4VFEwY2ZSQ0VOMmxtTjRId284cXBiRmJVN3RTR0NmVFZqZ21Yd0RqUXFJSTNn?oc=5",
           "domain": "theregister.com",
+          "tier": "C"
+        },
+        {
+          "name": "vajiramandravi.com",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5JWVdsZWhVclhHUUpyY19VNXZ6QnpqTGpQeE5CTFpNQVlkZWR6TTd1eEFiVmI4bEhuYXQ5TzZxOThjb2hRTFlENVF4cjBLb3FubWhsODVaYXQtY0xDaExHNzdGTmh4S2FoT3RpZjBNRU12QU5rUzN5Wi03VXdPcnM?oc=5",
+          "domain": "vajiramandravi-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "WBAY",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUE1OZ0dON2daa1Y4STlGSXFTei1XbnY3RWlNVk9PZnFDZ1V4X1hNVDFIcG1LWl8wOUx1LXlnMnc0VVlnQ2hDWE1wM0V2X1A0eTFpMzlDdkdZd0UxUVFtdS1DTnZPTDhHZlg1TU5pNDgyU212OUhJMmdjVHNGcEZ0LUhwbnJQdXZCcDFJ?oc=5",
+          "domain": "wbay.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Yellow.com",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1JYS16YmZRLWx2MFJpVFZQOGFvanJGYXVBQ2dDUlhrWTM5aVFCTXhwMjhLcktJWTBVSV9iSUVGcTR2RjRZR2FPYmFjSTd5QU4zMUpzWkZaVkFZS2FtY3BuQW1veFQtWmVK?oc=5",
+          "domain": "yellow-com.publisher",
           "tier": "C"
         }
       ],
@@ -1383,11 +1615,15 @@
         "http://www.zerodayinitiative.com/advisories/ZDI-26-716/",
         "http://www.zerodayinitiative.com/advisories/ZDI-26-717/",
         "http://www.zerodayinitiative.com/advisories/ZDI-26-718/",
-        "https://arxiv.org/abs/2112.14242",
-        "https://arxiv.org/abs/2511.22924",
         "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-3-2-released/",
         "https://fortiguard.fortinet.com/psirt/FG-IR-26-167",
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-170",
         "https://fortiguard.fortinet.com/psirt/FG-IR-26-171",
+        "https://lists.debian.org/debian-security-announce/2026/msg00412.html",
+        "https://lists.debian.org/debian-security-announce/2026/msg00417.html",
+        "https://lists.debian.org/debian-security-announce/2026/msg00419.html",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-39964",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-53266",
         "https://nvd.nist.gov/vuln/detail/CVE-2026-58704",
         "https://nvd.nist.gov/vuln/detail/CVE-2026-76460",
         "https://nvd.nist.gov/vuln/detail/CVE-2026-87886",
@@ -1400,7 +1636,6 @@
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-vpn-dos-dzv4mQFF?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20Remote%20Access%20SSL%20VPN%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftdvirtual-dos-MuenGnYR?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20SSL%20VPN%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-auth-bypass-broadwor-57m9dmm5?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20BroadWorks%20CommPilot%20Application%20Software%20Authorization%20Bypass%20Vulnerability%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cimc-arg-inject-upSHdMfU?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Integrated%20Management%20Controller%20Argument%20Injection%20Vulnerabilities%26vs_k=1",
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Email%20Gateway%20SQL%20Injection%20Vulnerability%26vs_k=1",
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-javarce-y2NypXwk?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Management%20Center%20Software%20Java%20Deserialization%20Remote%20Code%20Execution%20Vulnerability%26vs_k=1",
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-mulivulns-4PsnFwvx?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Management%20Center%20Software%20Vulnerabilities%26vs_k=1",
@@ -1432,12 +1667,19 @@
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-onprem-fmc-authbypass-5JPp45V2?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Management%20Center%20Software%20Authentication%20Bypass%20Vulnerability%26vs_k=1",
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-teva-os-command-W4GAO6jp?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20ThousandEyes%20Virtual%20Appliance%20Authenticated%20Web%20Interface%20Command%20Injection%20Vulnerability%26vs_k=1",
         "https://security.paloaltonetworks.com/CVE-2026-0302",
-        "https://security.paloaltonetworks.com/CVE-2026-0310"
+        "https://security.paloaltonetworks.com/CVE-2026-0310",
+        "https://ubuntu.com/security/notices/USN-8714-3",
+        "https://ubuntu.com/security/notices/USN-8715-2",
+        "https://ubuntu.com/security/notices/USN-8725-2",
+        "https://ubuntu.com/security/notices/USN-8726-2",
+        "https://ubuntu.com/security/notices/USN-8730-3",
+        "https://ubuntu.com/security/notices/USN-8761-2",
+        "https://ubuntu.com/security/notices/USN-8781-1"
       ],
       "published": "2026-07-17T22:10:37+00:00",
       "trace": [
         "tier A (+40)",
-        "32 independent outlets (+36)",
+        "40 independent outlets (+36)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
         "importance 4/5 from cache",
@@ -1514,7 +1756,7 @@
         "tier C (+10)",
         "2 independent outlets (+12)",
         "corroborated by 2 independent outlets",
-        "importance 5/5 from gemini-3.5-flash-lite",
+        "importance 5/5 from cache",
         "blend 66 = trust 22 / interest 100 / corrob 50",
         "demoted: critical capped at 5"
       ],
@@ -1587,40 +1829,25 @@
       "cluster_key": "5a9f0148b60bf777",
       "title": "RectangleStory/Superpowers_Multi_AI — ⚡ Modular prompt-engineering framework for AI Agents (Cursor, Claude Code, Copilot). Forces structured SDLC, l",
       "category": "tech_ai",
-      "one_liner": "Use this modular prompt-engineering framework to enforce strict SDLC and context isolation across AI coding agents.",
+      "one_liner": "",
       "tags": [
         "agents",
         "ai",
         "llm",
         "opensource",
-        "release",
         "tool",
         "windows"
       ],
-      "summary": "RectangleStory has released Superpowers_Multi_AI, a modular prompt-engineering framework designed for AI agents operating in tools like Cursor, Claude Code, and Copilot. The framework enforces a structured SDLC, linear execution, context isolation, and systematic debugging via a standalone Windows launcher. It aims to replace unstructured 'vibe coding' with strict agentic discipline.",
-      "key_facts": [
-        "Repository: RectangleStory/Superpowers_Multi_AI",
-        "Stars: 100"
-      ],
-      "bottom_line": "Developers seeking tighter control over AI coding agents can utilize a structured framework to enforce disciplined workflows.",
-      "claims": [
-        {
-          "text": "RectangleStory/Superpowers_Multi_AI is a modular prompt-engineering framework for AI Agents supporting Cursor, Claude Code, and Copilot.",
-          "support_span": "RectangleStory/Superpowers_Multi_AI — ⚡ Modular prompt-engineering framework for AI Agents (Cursor, Claude Code, Copilot).",
-          "status": "contradicted"
-        },
-        {
-          "text": "The framework features a standalone Windows launcher to enforce structured SDLC and debugging.",
-          "support_span": "Forces structured SDLC, linear execution, context isolation, and systematic debugging via a standalone Windows launcher.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 10,
-      "interest_score": 50,
+      "summary": "⚡ Modular prompt-engineering framework for AI Agents (Cursor, Claude Code, Copilot). Forces structured SDLC, linear execution, context isolation, and systematic debugging via a standalone Windows launcher. Stop vibe coding, start agentic discipline! 🚀 GitHub repository RectangleStory/Superpowers_Multi_AI, 100 stars, language unspecified. Topics: ai, ai-agent, ai-agents, ai-coding, ai-tools, claude, claude-code, claude-skills.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
       "corroboration": 1,
-      "blend": 32.5,
+      "blend": 0.0,
       "is_new": true,
-      "summary_source": "model",
+      "summary_source": "extract",
       "alt_keys": [
         "5a9f0148b60bf777"
       ],
@@ -1638,13 +1865,9 @@
       "primary_links": [],
       "published": "2026-09-14T20:11:30+00:00",
       "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 32 = trust 10 / interest 50 / corrob 25"
+        "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-09-14 — outside lookback window"
     },
     {
       "cluster_key": "bf24d81f5ad3208f",
@@ -1687,15 +1910,15 @@
       "reject_reason": "published 2026-09-13 — outside lookback window"
     },
     {
-      "cluster_key": "1294b0ba00d7deb8",
-      "title": "Wow. Turns out another OpenAI agent swarm was busy spamming and exploiting RubyGems way back in May, within days of the previously uncovered Wiki…",
+      "cluster_key": "5762cd6d63553fc7",
+      "title": "Having Fable 5.1 Max and GPT-6 Astra Pro argue with each other over proposed translations of the famously untranslated Minoan language Linear A.",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "agents",
-        "windows"
+        "llm",
+        "opensource"
       ],
-      "summary": "Turns out another OpenAI agent swarm was busy spamming and exploiting RubyGems way back in May, within days of the previously uncovered Wiki attacks: simonwillison.net/2026/Sep/12/... (Bluesky post by @simonwillison.net — 184 likes, 35 reposts)",
+      "summary": "Having Fable 5.1 Max and GPT-6 Astra Pro argue with each other over proposed translations of the famously untranslated Minoan language Linear A. (Neither of them appear to have cracked it, for what its worth). All the work so far at this Github: github.com/emollick/lin... (Bluesky post by @emollick.bsky.social — 100 likes, 2 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -1706,46 +1929,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "1294b0ba00d7deb8"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Simon Willison",
-          "url": "https://bsky.app/profile/simonwillison.net/post/3mvbu4gg2ic2m",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-12T00:45:33.933000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-12 — outside lookback window"
-    },
-    {
-      "cluster_key": "9f6401c5eed9c861",
-      "title": "This week brought some of the clearest statements we've heard from both Anthropic & OpenAI that some form of recursive self-improvement has been…",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "ai"
-      ],
-      "summary": "This week brought some of the clearest statements we've heard from both Anthropic & OpenAI that some form of recursive self-improvement has been achieved, though it still sounds early RSI would cause a rapid gain in AI ability & the first firms to RSI may get an unsurmountable lead (Bluesky post by @emollick.bsky.social — 92 likes, 14 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "9f6401c5eed9c861"
+        "5762cd6d63553fc7"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -1753,17 +1937,56 @@
       "sources": [
         {
           "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvdj4gr3ds2v",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvj5zbmqpc24",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-12T16:34:02.611000+00:00",
+      "published": "2026-09-14T22:31:23.833000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-12 — outside lookback window"
+      "reject_reason": "published 2026-09-14 — outside lookback window"
+    },
+    {
+      "cluster_key": "5c3ae12748da98b6",
+      "title": "There seems to be a persistent belief that frontier AI companies are unprofitable serving models but it appears that Anthropic has 80%+ gross…",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "ai"
+      ],
+      "summary": "There seems to be a persistent belief that frontier AI companies are unprofitable serving models but it appears that Anthropic has 80%+ gross margins on inference. Training for new models are where most of the costs are. (Bluesky post by @emollick.bsky.social — 105 likes, 9 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "5c3ae12748da98b6"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvgvewqm2c2k",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-14T00:51:31.922000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-14 — outside lookback window"
     },
     {
       "cluster_key": "67c894491e703be9",
@@ -1828,8 +2051,7 @@
       "trace": [
         "tier A (+40)",
         "single outlet, established publication (tier A)",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 5/5 from gemini-3.5-flash-lite",
+        "importance 5/5 from cache",
         "blend 62 = trust 40 / interest 100 / corrob 25",
         "demoted: critical capped at 5"
       ],
@@ -1941,7 +2163,7 @@
       "category": "tech_ai",
       "one_liner": "",
       "tags": [],
-      "summary": "\"Don't immanentize the eschaton\" was not supposed to be taken literally, but is also generally good advice if you are literally trying to immanentize the eschaton. (Bluesky post by @emollick.bsky.social — 71 likes, 4 reposts)",
+      "summary": "\"Don't immanentize the eschaton\" was not supposed to be taken literally, but is also generally good advice if you are literally trying to immanentize the eschaton. (Bluesky post by @emollick.bsky.social — 70 likes, 4 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -2042,7 +2264,7 @@
         "opensource",
         "tool"
       ],
-      "summary": "One call where Aside used to spend fifty — rg-backed search, Aside-shaped file tools, and batched browser work inside a single sandboxed JavaScript block. On a real folder, 55s of find+grep became 1s. GitHub repository lidge-jun/aside-codemode, 114 stars, language JavaScript. Topics: agent-tools, ai-agents, aside, browser-agent, browser-automation, cli, code-mode, codex.",
+      "summary": "One call where Aside used to spend fifty — rg-backed search, Aside-shaped file tools, and batched browser work inside a single sandboxed JavaScript block. On a real folder, 55s of find+grep became 1s. GitHub repository lidge-jun/aside-codemode, 119 stars, language JavaScript. Topics: agent-tools, ai-agents, aside, browser-agent, browser-automation, cli, code-mode, codex.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -2084,7 +2306,7 @@
         "llm",
         "opensource"
       ],
-      "summary": "Turns vibe coding into high quality code. Sets up rules and gates in your repo so AI-written code stays correct without you reviewing every line. GitHub repository pliablepixels/gap-trap, 171 stars, language JavaScript. Topics: agent-skills, agentic-coding, agents-md, ai-agents, ai-coding, ci-cd, claude-code, claude-skills.",
+      "summary": "Turns vibe coding into high quality code. Sets up rules and gates in your repo so AI-written code stays correct without you reviewing every line. GitHub repository pliablepixels/gap-trap, 172 stars, language JavaScript. Topics: agent-skills, agentic-coding, agents-md, ai-agents, ai-coding, ci-cd, claude-code, claude-skills.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -2155,49 +2377,6 @@
       "reject_reason": "published 2026-09-13 — outside lookback window"
     },
     {
-      "cluster_key": "5b6b8f0379a2ebaa",
-      "title": "youngyangyang04/llm-master — 大模型（LLM）全栈学习路线与中文教程🔥：覆盖 Prompt Engineering、RAG、AI Agent、MCP、微调、模型部署、Transformer、AI 编程与大厂面试，从入门到生产实践。",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "agents",
-        "ai",
-        "howto",
-        "llm",
-        "opensource"
-      ],
-      "summary": "大模型（LLM）全栈学习路线与中文教程🔥：覆盖 Prompt Engineering、RAG、AI Agent、MCP、微调、模型部署、Transformer、AI 编程与大厂面试，从入门到生产实践。 GitHub repository youngyangyang04/llm-master, 763 stars, language unspecified. Topics: agent, large-language-models, llm, llm-learning, llm-tutorial, rag.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "5b6b8f0379a2ebaa"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/youngyangyang04/llm-master",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-12T07:33:31+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-12 — outside lookback window"
-    },
-    {
       "cluster_key": "b60e028e9948c1e7",
       "title": "ruc-datalab/EvoOntology — EvoOntology: A Self-Evolving Ontology Layer for Data Agents ⚙️ EvoOntology插件为Claude Code/Codex 建立&进化本体层",
       "category": "tech_ai",
@@ -2250,54 +2429,10 @@
       "trace": [
         "tier C (+10)",
         "single tier-C source — treat with caution",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from gemini-3.5-flash-lite",
+        "importance 3/5 from cache",
         "blend 32 = trust 10 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "3266f7366b22cb79",
-      "title": "Xu123-Bob/Baize — 白泽 —— 中国古代神话中通晓万物的瑞兽，如今化身为 Vibe Coding 助手。 一个开源的 AI Coding Agent CLI，支持多后端（DeepSeek / OpenAI 兼容 / Ollama 本地），具",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource",
-        "tool"
-      ],
-      "summary": "Topics: ai, ai-agent, ai-agents, ai-coding.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "3266f7366b22cb79"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/Xu123-Bob/Baize",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-12T05:17:38+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-12 — outside lookback window"
     },
     {
       "cluster_key": "e18fd98eb04c4ef8",
@@ -2351,45 +2486,371 @@
       "trace": [
         "tier C (+10)",
         "single tier-C source — treat with caution",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from gemini-3.5-flash-lite",
+        "importance 3/5 from cache",
         "blend 32 = trust 10 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
+      "cluster_key": "8704d578db04be0c",
+      "title": "Qiuner/QCode — An explorable island world to learn AI coding and build real projects with AI agents. Powered by DeepSeek Harn",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "ai",
+        "llm",
+        "opensource"
+      ],
+      "summary": "An explorable island world to learn AI coding and build real projects with AI agents. GitHub repository Qiuner/QCode, 218 stars, language TypeScript. Topics: ai-agents, ai-coding, deepseek, developer-tools, gamification, godot, learn-to-code, vibe-coding.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "8704d578db04be0c"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/Qiuner/QCode",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-14T10:50:30+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-14 — outside lookback window"
+    },
+    {
+      "cluster_key": "24d0c178b1e6fe4e",
+      "title": "I run my local LLMs inside the ChatGPT desktop app now, and it took one free open-source tool to do it - xda-developers.com",
+      "category": "tech_ai",
+      "one_liner": "A short headline note highlighting an open-source integration for running local LLMs inside the ChatGPT desktop app.",
+      "tags": [
+        "ai",
+        "llm",
+        "opensource",
+        "tool"
+      ],
+      "summary": "The provided text is extremely brief and serves only as a headline reference indicating that local large language models can be run inside the ChatGPT desktop app using a free open-source tool. No further technical implementation steps or comprehensive details are included in the text.",
+      "key_facts": [],
+      "bottom_line": "A brief headline indicates that local LLMs can be run inside the ChatGPT desktop app using a free open-source tool.",
+      "claims": [
+        {
+          "text": "The article text is limited to a headline stating local LLMs can be run inside the ChatGPT desktop app.",
+          "support_span": "I run my local LLMs inside the ChatGPT desktop app now, and it took one free open-source tool to do it - xda-developers.com",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 22,
+      "interest_score": 0,
+      "corroboration": 2,
+      "blend": 20.5,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "24d0c178b1e6fe4e",
+        "b26992fd78644d82"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "MarkTechPost",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWHJZZjJYcmQ3dm5EaGFjc3lnUzM5QUR6MVV2dkJQRFoxV1ZOREdsU090YmR0dnlubGhVYTNnX2Z0elJRTUVJclhNRlFieVJQVExkSlVDXy1VSGEwWHhhQV8zdlFkNWFQSWZGSGN2WDZ6Qk9uS21WSldNQmJ1QzVnM1FHamJrcmdMSzRhRDdJYmlfYzU3VDByUUVjREjSAaIBQVVfeXFMUGxndGJ3ZGtYSzd0bHdEVWJUdThsRF8zbnFYck5UQll5dkg4LUFUbHMzQ05tVUNvWVpObi1uU05faXRDbmI3cWhGTHBiQThJcVAzQ2puS0ZXU2k4WkhtQWVMczdWajVIUGFrcEFUTlJNSFQyRk5GZE1jSU5MU0xhVVVoeVhqOEFFcGpQa0xDb2c5aHBGM0JOMTZhei1Pb3QwM2VR?oc=5",
+          "domain": "marktechpost.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "GN Dev tooling",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdjhIZldmNjBHQ25FZTNwZTl1V3dHSXJGclk0OGVhR2VrZi1ZUGliaFdLamQyX1ZtZ0ZmUk94RGt1NFYyMnlsa1NCT3NEYklaajdTR0JGZndXa3N1SjJIcTdXOU9JcDBVWHlKcjlBVk9reEc5WEU3Sk51LXdiYXdhbGdaMm5XQ3FiWWl4b0o4TEdHRGc3MDNzVVpaZVo2LXNB?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-18T09:44:55+00:00",
+      "trace": [
+        "tier C (+10)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "importance 1/5 from gemini-3.5-flash-lite",
+        "blend 20 = trust 22 / interest 0 / corrob 50"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "18fbba777667aa51",
+      "title": "Researchers used Claude to hack OpenAI employees' ChatGPT accounts",
+      "category": "cyber_attacks",
+      "one_liner": "A short industry news roundup covering software development, artificial intelligence tools, and cybersecurity developments.",
+      "tags": [
+        "ai",
+        "exploit",
+        "linux",
+        "llm",
+        "markets",
+        "opensource",
+        "political",
+        "privacy"
+      ],
+      "summary": "This article is a truncated tech news roundup containing various brief blurbs and headlines. Items range from AI coding updates and researcher security reports to FOSS migrations, Linux distributions, and audio editor updates. No comprehensive standalone technical text is provided for individual stories.",
+      "key_facts": [],
+      "bottom_line": "This truncated tech news roundup provides brief headlines spanning AI developments, enterprise software updates, and cybersecurity reports.",
+      "claims": [
+        {
+          "text": "This text is a truncated news headline roundup with no full article bodies provided.",
+          "support_span": "Researchers used Claude to hack OpenAI employees' ChatGPT accounts",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 61,
+      "interest_score": 0,
+      "corroboration": 5,
+      "blend": 45.2,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "18fbba777667aa51",
+        "3a3685b87ca433f2",
+        "43525281a84dd8d0",
+        "523eaf1ca1a55431",
+        "57cc56971135016a",
+        "58c0db03e81a1cf2",
+        "5aee273c239a5b71",
+        "7435fee3aa087a0e",
+        "79f8e9cacd7eaee3",
+        "ba6a2f5e8ba4986f",
+        "d86255aac95782b7",
+        "f483bc2f225075cb"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "The Register Security",
+          "url": "https://www.theregister.com/security/2026/09/18/researchers-used-claude-to-hack-openai-employees-chatgpt-accounts/5297517",
+          "domain": "theregister.com",
+          "tier": "B"
+        },
+        {
+          "name": "asiae.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBwelp6Ti1SNzdMcDVPX255OEY1YWtKRXVudTZWQ2ZtVHRyVGV3czFIRDJXSkpyMlEzUHRYVTlPcExNVTlwaldVbjNLZzlpNGxST0hXMDVvUkdjLThLMHpaODM0TWU?oc=5",
+          "domain": "asiae-co-kr.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Daily Tech News Show",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSThmSVVHMzZQM1diS3RUbklYVFlFdlJ5dW5ualpZVVd1d0xBWmNZOS0xZ1hSMzQ4b2JRaUJxTEkyb3JFWjdjWFFHc1JUQ19aV1BhRFhwSUE0cDVWRXQzY0tHaVBOYVBRaXVrX2RvOUk4MzZqY0tIRW45dUUwZ0dRdFdRMndFN3VpTm1NMGFUMm5hdXltVFdkamd3cHNpZjh1bDZSYzJ5SUthX0VFb3Qw0gGvAUFVX3lxTFBJOGZJVUczNlAzV2JLdFRuSVhUWUV2Unl1bm5qWllVV3V3TEFaY1k5LTFnWFIzNDhvYlFpQnFMSTJvckVaN2NYUUdzUlRDX1pXUGFEWHBJQTRwNVZFdDNjS0dpUE5hUFFpdWtfZG85STgzNmpjS0hFbjl1RTBnR1F0V1Eyd0U3dWlObU0wYVQybmF1eW1UV2RqZ3dwc2lmOHVsNlJjMnlJS2FfRUVvdDA?oc=5",
+          "domain": "daily-tech-news-show.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "incrypted",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNN1gwVlVxUFk1b0tsNTNqU2NxYkNRRjZES3VCX1ZQN2xfZTMzNkU5bXBlaEtiZ2FzSVQ2QWdna19NVmdfVFhBaHZTV3Y3ci1wYmxRQlpIX2FrQVd1WDZ0LTdVeW1ZdHprRk1hWjRrZ3QwN2ktR1FJRUJxVEdQeFVkWE5MSnkteGh0cWJ2aG1kX3QxWUdJb3RrZzIxUjk2VGkyOFUw?oc=5",
+          "domain": "incrypted.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "inkorr.com",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPb1lNaURRLWVjdDh5WHZReGI5bllDazJpcWMxdzA4NFZ1R3U2UkpCOUJGWXBpNXZMSE5mTHNIazhKbmlKWm4wT0hwNTREdDg2TzI5S3E5OFlpcjd1WnFPSWZTeVpiaHVlX2ZQYVBCcFVVcjhFUUR4Nm1HdE9GYTBVbnltb0I1ZVRZdUVfRkJ4TXdzVTcyUzBfanJVdXJIRzNhNFhCWXp2eGNkRS15UkQ2LWhXczZtUUpScmRmelgxcmJ1R01JSG9n0gHHAUFVX3lxTE9vWU1pRFEtZWN0OHlYdlF4YjluWUNrMmlxYzF3MDg0VnVHdTZSSkI5QkZZcGk1dkxITmZMc0hrOEpuaUpabjBPSHA1NER0ODZPMjlLcTk4WWlyN3VacU9JZlN5WmJodWVfZlBhUEJwVVVyOEVRRHg2bUd0T0ZhMFVueW1vQjVlVFl1RV9GQnhNd3NVNzJTMF9qclV1ckhHM2E0WEJZenZ4Y2RFLXlSRDYtaFdzNm1RSlJyZGZ6WDFyYnVHTUlIb2c?oc=5",
+          "domain": "inkorr-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Livemint",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPTHJxbWRxNzVLNHl6S1dWLUZtRUhMTnhwcjlVYXlCSmFKQlQxejNVVjRGTUE3Yl9ZR243MnNqWFNoV25FazlkRU5vVWVOdEF0cEZEODYyV2lRQkFRMUxySEVwb2N2S0VhbWQyZUU3Qy1ZdTd4NktCUDB5UUtfSzRFWVlHMmlVQW9GQTNrSF9TSmZpQThJWjMzeV8zTmlNcS13dC02QlVqVTJjaURNT3hjblNnbktHR2tPZXVTR25Od2xQcE9iYXBuWTZoT0hCZWp0QmhTSDVOck14aFcxTkp6TDFhN2RiUdIB6wFBVV95cUxOWEthUTZ5VmlhTFJ2QS1KWVJMRVVsMGVjbVhqZGdjSnRqbTZWX01UQjIzSjBZOVpVRXgySm5WNTBwRU0yaEtFcWYzaTRuQW1MU0xXNWlPM3VVVVFTZ0ZONlZ3S2pMUS12R3hrNDZvb3B3VDF5OVp1aVc4ZjdFSTJ4bFY2T0t5NnhDODIyOWE2cjl0Wm5CNERZdWFkODc2bUlDWnp1anRwQ3ZMQXZHb1NIWFpCSGR4ZnJlZVZYTDBGY1F5T1NKNks3cDBJYzdzbmdsTktJdkN4d2VmYmhsZlE0ZURycEtkVTlDRlVZ?oc=5",
+          "domain": "livemint.com",
+          "tier": "C"
+        },
+        {
+          "name": "NDTV",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPU2RSMGg5UVFkS2p4eHkxTV9KdUppSVN5YVItOWNVd3RTSXNNODRsbVl3SFcxakZmTzJxS2d1ZjZBY1Y1NWdzczk5ejhheG5GMXYtWVo3ejVmMEVpNzdUZHl3YnZOd3RNR2RzU3Q4allFWkt4N1doYkR2QWhJa1h3MFkycUNiVjd4MU00VXB6RWMtNjlPOU5wd2VmQ3JMc0NvUzVaLXNNQkIzOUozQTc2M9IBuAFBVV95cUxQSFZ3eHJyUlc2X1lmTXBJOFQxTGFldUFzanNEQTJIOTZKQkdRejljS0FZeW9wSlZFOGpsaUUtWmRZWUtxWWpCSFM5YXhJU1Nnb3paa0tQY3ZsUmxjQU1rNFB2aFpHQjBmbGE3dERMLUJ4QkowcFFlNFRkYWZBWTR6cmZzdzRYWTYwZmtYR1d1eERISWFkbjFLb1Jxb2EwNEo0LU5YOXRObm5Pc05mTG5TcEZxWWJ2bjVZ?oc=5",
+          "domain": "ndtv.com",
+          "tier": "C"
+        },
+        {
+          "name": "GN Bug bounty",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNTjB1YmMwN2t2UFRRVVctcFdNSl9Kdkk1eGNuUUFTeWJYVU5ZM1h0S1BYdnFpeHlpbnZnS3RBMVBwSGhVLU11OE1LRTdWcjhjaVczcTJ4MGxMUkhYdVRvakhhNWxOS2RPVTlIOHY2Tk4wYmpSQlJGRzhRZGVGQmdkTGdDTF96QlhpUm1fczFOTHVQTjdjaEVuT2pCeHBESGxsVFRPb1MyUW5aWUVWeHN1cFVKUk1wNmJOVy1HaVdDYVA3SmdXenNCMmJkSGoySlNIMGhUTV9tOWNmSDlEWFFBSXhUZF8tenk2?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "SSBCrack",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUU9XWlhwamR4UjhnQUtMaGpXZnF3UWc4RkNhWlpBOE5GN2Q4UVJVR2o4THdaTWs2ZVktV0lZbFo1ZmdTRG9fRUhnU19SMnUtR2d1cmhpeUJ2LVRqb0dmX2l3UnF4M3IxNExmMkp3TmJLdndLUWhTcG1zZGUyMzVfcmliOWlvVHNtUzAxclRvZnhsc0pkQWRkV1ZaMms2T0VJaXlZ?oc=5",
+          "domain": "ssbcrack.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "streamlinefeed.co.ke",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPM2lJSDZURGZobDJZNFNiM2hKcEVNcmtacFJUQW9YaVYtaVBFSEhUOHlQdHhVaXZHX24tUGp2Wmlkejd3cGJTUHN5TFpkWnlFcnI1dXNRdDVwTTlZNXJ0al82Vm03b1MybWlqVkc0NU1uX0JtSzh1YVBVenJXTlpBMVZ1Szhod1hMamFKWDlxbG1WRHp4Qmlrb2ZiOXVUU3hDa3VTaUMxcVExMW8?oc=5",
+          "domain": "streamlinefeed-co-ke.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "The Coin Republic",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQREdESHVwLV9ycF9VTFEwdTNWbmdxN3RmMHlZY1JxRHNYblZmYVlrS01iTEotRERGRUxieHU3T2ZOM3JXSkNDWmpnTDNpWFE0eUhkRXBxd1B6MHlWMWpNbjFmRWZnNFdISUJKTUg1QUMyQ2dJY3VUakVjeGZQVFRJX0ZKZm5lMGJXa2trR3Q5UEJPOHBrYm5BOWtoVzZFTkdGTzBib9IBqgFBVV95cUxQa2o5bm8zS1F0SGMwa1dOdGhBVm5DTnNGTGFqZjhSMl94ZFVHcWFLTlB2V3d4TVlnLU5hdmM3LUVtYWdUYjJpRVdDSHBaZTdBS2hpTDNQTGNtYS05NXdUR3B5QllSMXRvOTNZdjdqdDBxcEg5MzVjSFFGMVgyYWFnazF6MnZqVjk0V0k0dUYya1BmaVdrczZ2UFRUYjNkMWl0YXJ1RG5fSDF1UQ?oc=5",
+          "domain": "the-coin-republic.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "The Register",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSFYyaElpNmZTT2lVY3l0WlBnVjA2WTg5anBVZ2ZLTDZZeFV3LWItb3JTeFB5X3diRTBXS1haVUxPYW9KbDVqT3ZBZ09HSHhnZHk2OHJZbGNXVElvTHczR3VhTm9jQUM5S29wX3NsZjltdUpwYnRVaC1YZ2VaVVJBR0RGWDBGS2tYaDYzSlU3OWZ6b1VwWGVTMEVlbVUtUkZtRWU2U0FSOERFRWhfX3BBR3h2WTEyWTVtZGtOeGhn?oc=5",
+          "domain": "theregister.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-17T07:00:00+00:00",
+      "trace": [
+        "tier B (+25)",
+        "5 independent outlets (+36)",
+        "verified: 5 independent outlets",
+        "importance 1/5 from gemini-3.5-flash-lite",
+        "blend 45 = trust 61 / interest 0 / corrob 100"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "2ddef303c20d4642",
+      "title": "Nestle India issues clarification: Why FMCG stock plunged? What's FSSAI baby formula row; why it matters to consumers?",
+      "category": "markets",
+      "one_liner": "Nestle India is embroiled in a legal dispute with FSSAI over baby formula labeling and nutritional standards.",
+      "tags": [
+        "india",
+        "markets",
+        "policy"
+      ],
+      "summary": "Nestle India is facing legal action from India's FSSAI over alleged compliance issues with its baby formula products, including NAN Excella Pro and Lactogen Pro. The regulator filed three adjudication cases after finding that promotional claims on e-commerce platforms breached 2020 regulations and the IMS Act. Additionally, laboratory tests revealed that Biotin levels in some samples were below the prescribed standards. Nestle has rejected the reports as \"factually incorrect,\" asserting that its products are fully compliant and approved by FSSAI committees.",
+      "key_facts": [
+        "Affected Products: NAN Excella Pro, Lactogen Pro",
+        "Regulator: FSSAI",
+        "Legal Action: 3 adjudication cases",
+        "Nutrient Deficiency: Biotin",
+        "Stock Impact: 1.4% lower at –1,353.10"
+      ],
+      "bottom_line": "FSSAI's legal action against Nestle over nutritional deficiencies and labeling breaches could impact consumer trust and regulatory oversight of infant food.",
+      "claims": [
+        {
+          "text": "FSSAI has filed three adjudication cases against Nestle India.",
+          "support_span": "The regulator filed three adjudication cases concerning Infant Nutrition, NAN Excella and Lactogen.",
+          "status": "entailed"
+        },
+        {
+          "text": "Laboratory tests found Biotin levels below the required standard.",
+          "support_span": "testing of a Nestle follow-up formula sample found its Biotin content below the prescribed level.",
+          "status": "entailed"
+        },
+        {
+          "text": "Nestle claims its products and labels were previously approved by FSSAI.",
+          "support_span": "The said products (i.e., NAN EXCELLA PRO & LACTOGEN PRO) and their labels were approved by the expert committee of FSSAI.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 36.2,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "2ddef303c20d4642"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Livemint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/nestle-india-issues-clarification-why-fmcg-stock-plunged-whats-fssai-baby-formula-row-why-it-matters-to-consumers-11789794974681.html",
+          "domain": "livemint.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-19T07:00:48+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 3/5 from gemini-3-flash-preview",
+        "blend 36 = trust 25 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "9bc7522623a29396",
+      "title": "bsab/sweden-mcp-servers — A curated catalog of Model Context Protocol servers for Swedish data, laws and services.",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "agents",
+        "opensource"
+      ],
+      "summary": "A curated catalog of Model Context Protocol servers for Swedish data, laws and services. GitHub repository bsab/sweden-mcp-servers, 57 stars, language Python. Topics: awesome-list, mcp, model-context-protocol, open-data, sweden, swedish.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "9bc7522623a29396"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/bsab/sweden-mcp-servers",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-14T09:25:33+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-14 — outside lookback window"
+    },
+    {
       "cluster_key": "fe16b1e72af203c9",
       "title": "makifbaysal/tasktrooper — Local-first agent platform: board + role agents + Claude Code runs, all on your own Mac",
       "category": "tech_ai",
-      "one_liner": "Run a local-first agent platform with board management and Claude Code integration on your Mac using tasktrooper.",
+      "one_liner": "",
       "tags": [
         "agents",
         "ai",
         "llm",
-        "opensource",
-        "release",
-        "tool"
+        "opensource"
       ],
-      "summary": "Developer makifbaysal has released tasktrooper, a local-first agent platform written in Go that runs entirely on a local Mac. It combines a kanban board, role-based agents, and integrated Claude Code execution into a unified developer tool. The project is designed to facilitate autonomous coding agents directly on local hardware.",
-      "key_facts": [
-        "Repository: makifbaysal/tasktrooper",
-        "Language: Go",
-        "Stars: 59"
-      ],
-      "bottom_line": "Developers can orchestrate local autonomous coding agents and Claude Code runs through a unified, local-first Mac platform.",
-      "claims": [
-        {
-          "text": "makifbaysal/tasktrooper is a local-first agent platform featuring a board, role agents, and Claude Code runs on macOS.",
-          "support_span": "makifbaysal/tasktrooper — Local-first agent platform: board + role agents + Claude Code runs, all on your own Mac",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 10,
-      "interest_score": 50,
+      "summary": "Local-first agent platform: board + role agents + Claude Code runs, all on your own Mac GitHub repository makifbaysal/tasktrooper, 65 stars, language Go. Topics: agentic-ai, ai-agents, autonomous-agents, claude, claude-code, coding-agents, cursor, developer-tools.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
       "corroboration": 1,
-      "blend": 32.5,
+      "blend": 0.0,
       "is_new": true,
-      "summary_source": "model",
+      "summary_source": "extract",
       "alt_keys": [
         "fe16b1e72af203c9"
       ],
@@ -2407,79 +2868,77 @@
       "primary_links": [],
       "published": "2026-09-14T12:45:52+00:00",
       "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 32 = trust 10 / interest 50 / corrob 25"
+        "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-09-14 — outside lookback window"
     },
     {
-      "cluster_key": "d780914457e4751e",
-      "title": "Dual-Axis Policy Optimization for LLM Agents: Bayesian Feedback Attribution and Trajectory Mass Normalization",
-      "category": "tech_ai",
-      "one_liner": "BATON introduces a dual-axis policy optimization framework for LLM agents combining Bayesian feedback attribution and trajectory normalization.",
+      "cluster_key": "b5d0e00a089fab7b",
+      "title": "Tuskira Launches “Vector,” Autonomous Red Team AI Agent That Identifies What Attackers Can See and Exploit",
+      "category": "cyber_tools",
+      "one_liner": "Tuskira has launched an autonomous AI agent named Vector for red teaming and vulnerability identification.",
       "tags": [
+        "agents",
         "ai",
-        "llm",
-        "privacy",
-        "research",
-        "threat-intel",
-        "tool"
+        "exploit",
+        "redteam",
+        "release",
+        "tool",
+        "vulnerability"
       ],
-      "summary": "Reinforcement learning optimization for LLM agents involves intra-trajectory feedback attribution and inter-trajectory objective aggregation. The authors introduce BATON (Bayesian Attribution and Trajectory Objective Normalization), a dual-axis policy optimization framework. BATON utilizes Bayesian Feedback Attribution to construct a posterior over sampled actions and Trajectory Mass Normalization to assign equal optimization mass to complete trajectories. Experiments across ALFWorld, WebShop, and SearchQA demonstrate that both axes yield independent and combined performance gains across model scales.",
+      "summary": "This article is a headline announcing the launch of \"Vector,\" an autonomous red team AI agent by Tuskira. The tool is designed to identify what attackers can see and exploit within an environment. No further details on its capabilities or availability are provided.",
       "key_facts": [
-        "Framework name: BATON"
+        "Product: Vector",
+        "Company: Tuskira",
+        "Type: Autonomous Red Team AI Agent"
       ],
-      "bottom_line": "Decoupling intra-trajectory feedback attribution and inter-trajectory aggregation provides consistent performance improvements for reinforcement learning in LLM agents.",
+      "bottom_line": "New autonomous AI agents are entering the red teaming market to automate vulnerability discovery.",
       "claims": [
         {
-          "text": "We formulate these dimensions as Intra-Trajectory Feedback Attribution and Inter-Trajectory Objective Aggregation, and introduce BATON (Bayesian Attribution and Trajectory Objective Normalization), a dual-axis policy optimization framework.",
-          "support_span": "We formulate these dimensions as Intra-Trajectory Feedback Attribution and Inter-Trajectory Objective Aggregation, and introduce BATON (Bayesian Attribution and Trajectory Objective Normalization), a dual-axis policy optimization framework.",
+          "text": "Tuskira launched an autonomous red team AI agent called Vector.",
+          "support_span": "Tuskira Launches ‘Vector,’ Autonomous Red Team AI Agent That Identifies What Attackers Can See and Exploit",
           "status": "contradicted"
         }
       ],
-      "trust_score": 70,
-      "interest_score": 50,
+      "trust_score": 10,
+      "interest_score": 0,
       "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
+      "blend": 10.0,
+      "is_new": false,
       "summary_source": "model",
       "alt_keys": [
-        "d780914457e4751e"
+        "b5d0e00a089fab7b"
       ],
       "critical_signal": "",
-      "priority": "important",
+      "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.19830",
-          "domain": "arxiv.org",
-          "tier": "A"
+          "name": "businesswire.com",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPalVtUFdaTks2ZXM5LVZzY0hvbXhpWWpzWWUtemtMVEo5VWRocW1qdGRRQUwxQ0NuRm1XNm44aG4yNGNuQS1NMGNNbEd5WTdSRzBSdExZWTRhSUFnV09wX3NWNXc2T3RJRjJZTExvY3VXVmwweFBveDVsUThnbmJPMWU5NnBIWXpNdWlKMHRXNUN6Zzc4NzllZFRqWjhSNkdhYnlZM1ZiVE1KVlpXTGRmTnhfQmRZV1Jta2hWMXNPQnJoako3ZGNxRlhfYTlnUUNRemRLV2ktQ0Zrc1ZVTnh6UXdaZUNJR0tscGlGTEpkTHAtQQ?oc=5",
+          "domain": "businesswire-com.publisher",
+          "tier": "C"
         }
       ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.19830"
-      ],
-      "published": "2026-09-18T04:00:00+00:00",
+      "primary_links": [],
+      "published": "2026-09-16T13:00:00+00:00",
       "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "importance 1/5 from gemini-3-flash-preview",
+        "blend 10 = trust 10 / interest 0 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "936eeeaeaaef17da",
-      "title": "So here is Astra's attempt to make an Ultima-style RPG game using feedback from agents to improve, etc.",
+      "cluster_key": "0d20c8dfba188295",
+      "title": "Built a little local web app to help edit commit messages for a repo simonwillison.net/2026/Sep/14/...",
       "category": "tech_ai",
       "one_liner": "",
-      "tags": [],
-      "summary": "So here is Astra's attempt to make an Ultima-style RPG game using feedback from agents to improve, etc. Good look at both strengths (one shot complex game with interlocking systems) & weaknesses (boring plot, meh writing, weak LLMy themes, etc.) Try it: the-ninth-shore-tides.netlify.app (Bluesky post by @emollick.bsky.social — 50 likes, 3 reposts)",
+      "tags": [
+        "windows"
+      ],
+      "summary": "Built a little local web app to help edit commit messages for a repo simonwillison.net/2026/Sep/14/... (Bluesky post by @simonwillison.net — 58 likes, 4 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -2490,25 +2949,76 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "936eeeaeaaef17da"
+        "0d20c8dfba188295"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvdp4v6ov22v",
+          "name": "Simon Willison",
+          "url": "https://bsky.app/profile/simonwillison.net/post/3mvgxs4ygd223",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-12T18:21:40.189000+00:00",
+      "published": "2026-09-14T01:34:42.159000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-12 — outside lookback window"
+      "reject_reason": "published 2026-09-14 — outside lookback window"
+    },
+    {
+      "cluster_key": "517c208229b05ea9",
+      "title": "Exclusive: “It is very important to take the BiS SiGMA brand across Brazil,” says Alessandro Valente",
+      "category": "cyber_tools",
+      "one_liner": "Alessandro Valente emphasizes expanding the BiS SiGMA brand in Brazil.",
+      "tags": [
+        "markets"
+      ],
+      "summary": "This article is a headline featuring a quote from Alessandro Valente regarding the importance of expanding the BiS SiGMA brand across Brazil. No further information about the brand, the expansion strategy, or the context of the statement is provided.",
+      "key_facts": [
+        "Brand: BiS SiGMA",
+        "Region: Brazil"
+      ],
+      "bottom_line": "The article is a placeholder for news regarding the BiS SiGMA brand's expansion in Brazil.",
+      "claims": [
+        {
+          "text": "Alessandro Valente stated it is important to take the BiS SiGMA brand across Brazil.",
+          "support_span": "‘It is very important to take the BiS SiGMA brand across Brazil,’ says Alessandro Valente",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 10.0,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "517c208229b05ea9"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "iGaming Brazil",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPeXRyOWJIa0k4NXJ3U1hxdV9QbFpQVzIyUlRSOU54SkRRMEFkRVFUaG8wSm9UZGVBY1JxSkVVTld4ZE10MFV2cXhSY19uTVNpZE9mMi05cjJsOExwNlQ0OTBGNy04Y2h1MEdNclViUk5nQmttaXB0Z0FEOFpGZ3ktekdTcXZsQjBsdWcwRDVLazdEU3Q3am80SE10SlNtek00TlQ2dmpnN0E4eTBCV1lkSjZTQ2paQ3FQNV96ZzQzazdwRlJScHh5S1o0TVpHcTN0b0xiU19BUHlyZTg3Qmwwb3JiX0FpTzg2S0JJ0gHzAUFVX3lxTE80TlJITmwza0c2SmtfZkRnbnpwRXdyclhiVDlaTkR2R1dMbGtPS3l5cEVsUEQyd1ZFaGVlem9pOEItNlYtWWdsLUc0RGJOSngyeHlrODRaQVRGYzJMMnpmRDVTRk02bHNmRVhUcnlSSFp3eGFITXZaV1lKUEk5RzBrQ0dnRFNTbW1JcUE4U1BkZzVWY2ZQLW1WTi1XODVzUkRJMUE1WVplTkZyOUJGdmlSR3FNU1VHejc2eURmNEZNNWM3UmloRzdvdFZ0OXN3MUFDUHdCUy11M1BWdmNQXzF6cTJFLWhFdDdDeUdzU29JV0RSZw?oc=5",
+          "domain": "igaming-brazil.publisher",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-18T12:41:39+00:00",
+      "trace": [
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "importance 1/5 from gemini-3-flash-preview",
+        "blend 10 = trust 10 / interest 0 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
       "cluster_key": "702aea7cda12c702",
@@ -2550,14 +3060,17 @@
       "reject_reason": "published 2026-09-13 — outside lookback window"
     },
     {
-      "cluster_key": "7bb7e0eaab42ae24",
-      "title": "\"For a while, I must admit, it looked as if software developer roles like mine were done for.",
+      "cluster_key": "e267e9eb31e9bfac",
+      "title": "agentscope-ai-java/agentscope-java — Build distributed, production-grade, long-running agents.",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "windows"
+        "agents",
+        "ai",
+        "opensource",
+        "tool"
       ],
-      "summary": "\"For a while, I must admit, it looked as if software developer roles like mine were done for. [...] But our industry is slowly realizing that making truly cutting-edge software still requires humans to think and work together, to maximize their skill sets and to practice their respective crafts.\" (Bluesky post by @simonwillison.net — 125 likes, 21 reposts)",
+      "summary": "Build distributed, production-grade, long-running agents. GitHub repository agentscope-ai-java/agentscope-java, 109 stars, language Java. Topics: adk, agent, agent-framework, agentic, agentic-ai, agentscope, ai, harness.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -2565,99 +3078,28 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
-      "is_new": false,
+      "is_new": true,
       "summary_source": "extract",
       "alt_keys": [
-        "7bb7e0eaab42ae24"
+        "e267e9eb31e9bfac"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Simon Willison",
-          "url": "https://bsky.app/profile/simonwillison.net/post/3mvdokksrl223",
-          "domain": "bsky.app",
+          "name": "GitHub (new)",
+          "url": "https://github.com/agentscope-ai-java/agentscope-java",
+          "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-12T18:11:25.315000+00:00",
+      "published": "2026-09-14T10:55:50+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-12 — outside lookback window"
-    },
-    {
-      "cluster_key": "00adcf3ec9be2819",
-      "title": "Data breach at ID verification company may have exposed millions of driver’s license images",
-      "category": "cyber_attacks",
-      "one_liner": "An ID verification firm breach potentially exposes millions of driver's license images.",
-      "tags": [
-        "incident",
-        "privacy"
-      ],
-      "summary": "A data breach at an ID verification company may have exposed millions of driver’s license images. The incident places sensitive identity documents at risk of unauthorized access and potential misuse. Investigations are ongoing regarding the scope of the exposure and the affected entities.",
-      "key_facts": [],
-      "bottom_line": "Millions of driver's license images may have been compromised in a data breach at an identity verification provider.",
-      "claims": [
-        {
-          "text": "A data breach at an ID verification company may have exposed millions of driver’s license images.",
-          "support_span": "Data breach at an ID verification company may have exposed millions of driver’s license images",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 10,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 43.8,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "00adcf3ec9be2819",
-        "8ceaf8e80e6067c9",
-        "91987187313cce01",
-        "d6082e01a8757d0c"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "CT Examiner",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOd0IzU0lVWkZuRlJWcmhyU21TenhEd2ZiMXVhbm1nbzczbVBjMF92aUpJdEFqZXBPQ2xkODVkQmtRaUN1X0JWeWtlYkExVXY4ZW9TMjdUYlNOYVRMcDVFMHN1clFsT2tmSUlnOVBtRGZ0cjhndGJvSDRrQTNuTHpBbWNRUjBBNVBvZXhibHJDWEdWalV3MUdLU1dBOXNyUlFt?oc=5",
-          "domain": "ct-examiner.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "teiss",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNLThhR0FwUGJnMWFoTXVNUmJ2bGFDaGRHWGktYTgyd2xZWmZmX01iSzhycDhTQ3ZZLUpMdGJiaVF2dzgycUNMS19iZE9xWFlOVkhxaktfME5wc1V3ZFVHMV9ScXMxeE9NSmU1NzBiNjRVaDVfa2VVb0Z1am9uZzluOUdCN0UzaWlWVkRLYzFUc3ZLZGI4d2lxQnMxUjlOTzlpWXBZNGpZUlhHWWMtOVExVVpBWUs?oc=5",
-          "domain": "teiss.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "WBAY",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQmVIUy1GQ0JCVmtvZWVNMWY2UTIxZ2NSS1VpM0gxUVRFVEdMaUdZWGZwNjl2X1MwNVM3VnRIZ09iRHRyZVdicGt0Y1BHbEN6Y2lnNHJvbEN6dVgyWk9xLXREVHNSRjZkdXRQM0VkX0FwOTZlNWtTb29CaWdaUkRDRjZQWUVLdktIZGloUVJVWENISndMOS0zMHFsY25EQVBvLUVQd1ZvMUhSWXNaNXAtVHZqNi02TTBYSWswN3NYS3A?oc=5",
-          "domain": "wbay.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "WBAY",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUE1OZ0dON2daa1Y4STlGSXFTei1XbnY3RWlNVk9PZnFDZ1V4X1hNVDFIcG1LWl8wOUx1LXlnMnc0VVlnQ2hDWE1wM0V2X1A0eTFpMzlDdkdZd0UxUVFtdS1DTnZPTDhHZlg1TU5pNDgyU212OUhJMmdjVHNGcEZ0LUhwbnJQdXZCcDFJ?oc=5",
-          "domain": "wbay.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-16T12:14:00+00:00",
-      "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 44 = trust 10 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-09-14 — outside lookback window"
     },
     {
       "cluster_key": "d6217d1f332ffe9c",
@@ -2710,8 +3152,7 @@
       "trace": [
         "tier C (+10)",
         "single tier-C source — treat with caution",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from gemini-3.5-flash-lite",
+        "importance 3/5 from cache",
         "blend 32 = trust 10 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
@@ -2726,7 +3167,7 @@
         "llm",
         "opensource"
       ],
-      "summary": "【Codex PCB Layout Skill】GPT-6 Astra x KiCad10. PCB 自动布线 Skill GitHub repository zhbi98/pcb-layout-design, 84 stars, language unspecified. Topics: ai-agents, pcb, pcb-design, pcb-layout, skills.",
+      "summary": "【Codex PCB Layout Skill】GPT-6 Astra x KiCad10. PCB 自动布线 Skill GitHub repository zhbi98/pcb-layout-design, 97 stars, language unspecified. Topics: ai-agents, pcb, pcb-design, pcb-layout, skills.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -2758,7 +3199,59 @@
       "reject_reason": "published 2026-09-13 — outside lookback window"
     },
     {
-      "cluster_key": "b94e3610bbd7abd7",
+      "cluster_key": "0931f8c6df54190c",
+      "title": "ipspoof: An Open Source Tool for Automated Testing of HTTP Header-Based Access Controls",
+      "category": "cyber_tools",
+      "one_liner": "A new open-source tool called ipspoof automates testing for HTTP header-based access control vulnerabilities.",
+      "tags": [
+        "appsec",
+        "bugbounty",
+        "opensource",
+        "tool",
+        "vulnerability"
+      ],
+      "summary": "The article is a short Medium post promoting an open-source tool named ipspoof designed for the automated testing of HTTP header-based access controls during penetration tests and bug bounties. It serves as a brief teaser without providing technical specifics, documentation, or code samples.",
+      "key_facts": [],
+      "bottom_line": "The ipspoof tool is available for automated testing of HTTP header access controls during security assessments.",
+      "claims": [
+        {
+          "text": "The tool ipspoof automates testing of HTTP header-based access controls for pentests and bug bounties.",
+          "support_span": "ipspoof: An Open Source Tool for Automated Testing of HTTP Header-Based Access Controls",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 10.0,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "0931f8c6df54190c"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Medium bug bounty",
+          "url": "https://exript.medium.com/ipspoof-an-open-source-tool-for-automated-testing-of-http-header-based-access-controls-15fe11b9cace?source=rss------bug_bounty-5",
+          "domain": "exript.medium.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-19T19:09:01+00:00",
+      "trace": [
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "importance 1/5 from gemini-3.5-flash-lite",
+        "blend 10 = trust 10 / interest 0 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "6a8f0eac02fe741c",
       "title": "Valve's new open-source tool is bringing Android games to Linux and Steam - How-To Geek",
       "category": "tech_ai",
       "one_liner": "Valve's new open-source tool brings Android games directly to Linux and Steam environments.",
@@ -2783,10 +3276,13 @@
       "interest_score": 50,
       "corroboration": 2,
       "blend": 43.0,
-      "is_new": true,
+      "is_new": false,
       "summary_source": "model",
       "alt_keys": [
+        "6a8f0eac02fe741c",
         "b94e3610bbd7abd7",
+        "c220484a951bf178",
+        "d203d2b764f7a5ab",
         "f21660f48c797ce2"
       ],
       "critical_signal": "",
@@ -2800,139 +3296,38 @@
           "tier": "C"
         },
         {
+          "name": "It's FOSS",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE84UUxjSDRKWkdZY0xSZVdjZjBTQjI5eGFPNkRrdl9wTDZ4bU02eTZGbFpBVXRFUXNFa2dpUXhPelBpQjAxVEZyOENIOVRnRDQ?oc=5",
+          "domain": "it-s-foss.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Mezha",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5WdXd5bFJvM3lVbnNzWHZES2tXN19ORTNLc1JRdGwwSkFvNWhrcmZXakFQMTFfUkN2M1ZxQjJ2N2NzZldxOGpmNXlwLXk5SFk5RlNfMmc5d1YtOEh4cWpxWjJ5WDbSAWRBVV95cUxOVnV3eWxSbzN5VW5zc1h2REtrVzdfTkUzS3NSUXRsMEpBbzVoa3JmV2pBUDExX1JDdjNWcUIydjdjc2ZXcThqZjV5cC15OUhZOUZTXzJnOXdWLThIeHFqcVoyeVg2?oc=5",
+          "domain": "mezha.publisher",
+          "tier": "C"
+        },
+        {
           "name": "GN Dev tooling",
           "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBreGxoLURhZkhUdHlkcEhnNlhzcmNuN3F2akVPUE1fU2VtUjVHLW5pem9ZXzlzY3NHaUlpU05DdzBjUDZXY2M2R3RkQlJiN1BZUFBGMzlFa1JKOWpVdnJiOUlzWllHeXJXZHF1N25jRm5weUpvSThhNVkyWQ?oc=5",
           "domain": "news.google.com",
           "tier": "C"
+        },
+        {
+          "name": "TechPowerUp",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZ3FqUV94SFlyZnZCTDNTQlZ3SWlfMklvTHlDbGlURW9OTWIzSUZzTTJUWXRoRngzU1hYX3Rrb0VQZk5TVjltcWwwVXRJSGVKZDdrcGFYeHN5S0hCYTFValhPZlN4b3FGc0VyVTVLaENyMk5EdmdSc3VjUG9EZDZjNThZcW5VaDMwZUNia1M4N2loLUt0WnpTQlJMeE5NajRNTVdzUWtvenpRMFh1RnhTQmhxajTSAboBQVVfeXFMTzJsX3JBdzQ1YnJVYjZFTVo3cjJFT1pXak1rcGd2NVNtM3hYRW1GWnRYVW9yNzhoelA5Y1k1NXdtZjhTeHRKUElhalpyVXg2YmJyb3UzbTgtZEtEOVNQYTY0eFI1bDJjeXZMV1ZGdTR3OTJPSHZwMnBZRE9JS2hYVGdKb3N3ZnU2QzZ5MlM1bkctV3ZlbUZ5Ym1GRnhFZGc2b0Fzb1ZWdjNSWlkxVzRnd3dLNlNBV3ZqWUtn?oc=5",
+          "domain": "techpowerup.publisher",
+          "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-18T14:30:00+00:00",
+      "published": "2026-09-18T07:24:00+00:00",
       "trace": [
         "tier C (+10)",
         "2 independent outlets (+12)",
         "corroborated by 2 independent outlets",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from gemini-3.5-flash-lite",
+        "importance 3/5 from cache",
         "blend 43 = trust 22 / interest 50 / corrob 50"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "c7cf8c86c62cfc6f",
-      "title": "UnifiedPlayers: Enhance Tool-Integrated Reasoning in Agentic Reinforcement Learning",
-      "category": "tech_ai",
-      "one_liner": "UnifiedPlayers coordinates planning, execution, and evaluation players via GRPO to improve tool-integrated agent reasoning.",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "research",
-        "tool"
-      ],
-      "summary": "Self-evolving tool-using agents often suffer from separated trajectory generation and static verification that reinforce shared errors. To address this coordination challenge, researchers introduce UnifiedPlayers, a cooperative framework containing a Planning Player, Execution Player, and Evaluation Player coordinated by role-specific rewards under GRPO. Tested across twelve reasoning benchmarks, UnifiedPlayers outperforms the strongest prior baseline by at least 3.5% on mathematical reasoning and 3.9% on general reasoning tasks. Furthermore, the learned verifier achieves 84.2% adversarial detection accuracy with significantly higher per-question variance.",
-      "key_facts": [
-        "Mathematical reasoning improvement: At least 3.5%",
-        "General reasoning improvement: At least 3.9%",
-        "Adversarial detection accuracy: 84.2%"
-      ],
-      "bottom_line": "Cooperative multi-player reinforcement learning with specialized roles significantly boosts tool-using LLM reasoning and verification.",
-      "claims": [
-        {
-          "text": "UnifiedPlayers outperforms the strongest prior baseline by at least 3.5% on mathematical reasoning and 3.9% on general reasoning tasks.",
-          "support_span": "UnifiedPlayers outperforms the strongest prior baseline by at least 3.5% on mathematical reasoning and 3.9% on general reasoning tasks.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "c7cf8c86c62cfc6f"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.20089",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.20089"
-      ],
-      "published": "2026-09-18T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "bc87ff8a33aff370",
-      "title": "China's Salt Typhoon backdoors Latin American orgs with new snooping malware",
-      "category": "cyber_attacks",
-      "one_liner": "Tech roundup covers Salt Typhoon malware deployments in Latin America, Acronis's acquisition by EQT, and Copilot's Rust port.",
-      "tags": [
-        "ai",
-        "exploit",
-        "incident",
-        "llm",
-        "malware",
-        "markets",
-        "threat-actor",
-        "tool"
-      ],
-      "summary": "This news roundup covers recent developments across the technology and security sectors. Notable items include Microsoft porting its Copilot runtime to Rust, state-sponsored cyber espionage involving China's Salt Typhoon targeting Latin American organizations with new malware, and EQT acquiring a majority stake in cybersecurity firm Acronis at a valuation exceeding $3.5 billion. Additional briefs touch on AI impacts on computer science graduate job prospects and various open-source tool updates.",
-      "key_facts": [
-        "Acronis valuation equivalent: $3.5B+"
-      ],
-      "bottom_line": "State-sponsored threat actors continue expanding regional cyber espionage campaigns while major investments reshape the cybersecurity vendor landscape.",
-      "claims": [
-        {
-          "text": "China's Salt Typhoon backdoors Latin American orgs with new snooping malware",
-          "support_span": "China's Salt Typhoon backdoors Latin American orgs with new snooping malware",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 36.2,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "bc87ff8a33aff370"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Register Security",
-          "url": "https://www.theregister.com/security/2026/09/17/chinas-salt-typhoon-backdoors-latin-american-orgs-with-new-snooping-malware/5297286",
-          "domain": "theregister.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-17T18:00:17+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 36 = trust 25 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -2946,7 +3341,7 @@
         "llm",
         "opensource"
       ],
-      "summary": "My favorite Claude Code tips & tricks GitHub repository onmyway133/claude-code-tips-tricks, 96 stars, language unspecified.",
+      "summary": "My favorite Claude Code tips & tricks GitHub repository onmyway133/claude-code-tips-tricks, 97 stars, language unspecified.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -3035,108 +3430,118 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "589ed9cf9d91ff59",
-      "title": "laramies/theHarvester — E-mails, subdomains and names Harvester - OSINT",
-      "category": "cyber_tools",
-      "one_liner": "theHarvester remains an active Python-based OSINT recon tool for gathering emails and subdomains.",
+      "cluster_key": "598d3237fa210ce3",
+      "title": "Kerry Kennedy: 'It would be a tragedy' if Kennedy Center is demolished",
+      "category": "india_world",
+      "one_liner": "Kerry Kennedy criticizes potential plans to demolish the Kennedy Center, prompting a federal notice requirement.",
       "tags": [
-        "blueteam",
-        "opensource",
-        "tool"
+        "political"
       ],
-      "summary": "The GitHub repository for laramies/theHarvester has been recently updated, showcasing its utility as an open-source intelligence and reconnaissance tool. Written in Python, the tool gathers emails, subdomains, and names for security testing and discovery. It currently maintains 17,323 stars on the platform.",
+      "summary": "Kerry Kennedy, niece of former US President John F. Kennedy, stated it would be a 'tragedy' if the Kennedy Center performance venue were demolished. The remarks follow a US federal ruling mandating that the Trump administration give 30 days' notice before any demolition occurs, after President Donald Trump suggested the Washington DC arts venue could be torn down. Protesters have also gathered at the site to demonstrate against the threats.",
       "key_facts": [
-        "Repository: laramies/theHarvester",
-        "Language: Python",
-        "Stars: 17323"
+        "Notice period: 30 days"
       ],
-      "bottom_line": "The popular open-source reconnaissance tool theHarvester continues to receive active updates for OSINT operations.",
+      "bottom_line": "A federal judge has forced the Trump administration to provide 30 days' notice prior to any demolition attempts on the Kennedy Center following public and familial outcry.",
       "claims": [
         {
-          "text": "E-mails, subdomains and names Harvester - OSINT GitHub repository laramies/theHarvester, 17,323 stars, language Python.",
-          "support_span": "E-mails, subdomains and names Harvester - OSINT GitHub repository laramies/theHarvester, 17,323 stars, language Python.",
+          "text": "A US federal judge ruled the Trump administration must give 30 days' notice before any demolition occurs to the Kennedy Center.",
+          "support_span": "A US federal judge ruled the Trump administration must give 30 days' notice before any demolition occurs to the Kennedy Center, as President Donald Trump warned the Washington DC performing arts venue could be \"ripped down\".",
           "status": "contradicted"
+        },
+        {
+          "text": "Protesters gathered at the venue to demonstrate against demolition threats.",
+          "support_span": "Protesters also gathered at the venue on Friday to demonstrate against demolition threats.",
+          "status": "entailed"
         }
       ],
-      "trust_score": 10,
+      "trust_score": 40,
       "interest_score": 25,
       "corroboration": 1,
-      "blend": 21.2,
-      "is_new": false,
+      "blend": 28.8,
+      "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "589ed9cf9d91ff59"
+        "598d3237fa210ce3"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (updated)",
-          "url": "https://github.com/laramies/theHarvester",
-          "domain": "github.com",
-          "tier": "C"
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/cv8e3jw1kr4lo?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-18T17:19:23+00:00",
+      "published": "2026-09-19T00:03:53+00:00",
       "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "importance 2/5 from cache",
-        "blend 21 = trust 10 / interest 25 / corrob 25"
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 29 = trust 40 / interest 25 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "464f24adbb831da9",
-      "title": "atria-asi/Atria-Dawn-Preview",
-      "category": "tech_ai",
-      "one_liner": "",
+      "cluster_key": "a362b3ab08ace09f",
+      "title": "Mum's viral barefoot race sparks debate over India's education crisis",
+      "category": "india_world",
+      "one_liner": "A viral story of an Indian mother running barefoot to fund her children's education has sparked intense national debate over systemic educational hurdles.",
       "tags": [
-        "agents",
-        "ai",
-        "opensource",
-        "research",
-        "tool"
+        "india",
+        "policy",
+        "political"
       ],
-      "summary": "中文 ｜ English Atria Dawn Preview is a preview release of a new-generation agentic model developed by the Shanghai Artificial Intelligence Laboratory. Built on the 744B-parameter MoE GLM-5.2 foundation model, it targets research and engineering scenarios that demand continuous environmental understanding, tool use, and multi-step task completion. The model is designed to drive open-ended problems toward executable, verifiable, and reproducible results. By combining task objectives with environmental feedback, it supports the full loop of problem analysis, solution design, tool use, code implementation, experiment execution, result analysis, and failure recovery. Atria Dawn Preview empowers ag…",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 2,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
+      "summary": "Ramabai Ranveer, a 47-year-old widow from Maharashtra, India, won a local 3km barefoot running race to secure the 3,000-rupee ($31) prize money needed to buy books and educational materials for her daughters. Videos of her run went viral on social media, striking a cultural nerve and highlighting the extreme sacrifices Indian families make for education. The story has amplified wider public scrutiny and youth frustrations regarding India's hyper-competitive education system, expensive coaching centers, and recurring exam irregularities.",
+      "key_facts": [
+        "Prize money: 3,000 rupees ($31; £23)",
+        "Race distance: 3km (1.86-mile)",
+        "Location: Maharashtra, India"
+      ],
+      "bottom_line": "A 47-year-old Indian mother's barefoot race victory to pay for her daughters' study materials has catalyzed widespread debate over the country's competitive and costly education system.",
+      "claims": [
+        {
+          "text": "The 47-year-old widow had entered a 3km community run with a single goal: winning the prize money to help pay for her two daughters' education.",
+          "support_span": "The 47-year-old widow had entered a 3km community run with a single goal: winning the prize money to help pay for her two daughters' education.",
+          "status": "contradicted"
+        },
+        {
+          "text": "The 3,000-rupee prize would help her buy books and study materials for her daughters.",
+          "support_span": "The 3,000-rupee ($31; £23) prize would help her buy books and study materials for her daughters.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 28.8,
+      "is_new": true,
+      "summary_source": "model",
       "alt_keys": [
-        "464f24adbb831da9",
-        "f9dc7e97e916efca"
+        "a362b3ab08ace09f"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/atria-asi/Atria-Dawn-Preview",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "Pandaily",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBaaGtBVmwycjVHdW5SbEVudzJXM3VvNUVmOHBCc0xlZ2FZYjhNQ1lTWi1vbGp4T3J1em9xXzN1Mm9sSnc5Nmt3UFJEejdBalllME1YRVE2MjhETzdxMV9IbkF0bjU2ekh2bG5XX0R2cFcyQ2ZqcmxXd2tB?oc=5",
-          "domain": "pandaily.publisher",
-          "tier": "C"
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw62m6z7m7zjo?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-12T10:32:29+00:00",
+      "published": "2026-09-19T23:18:06+00:00",
       "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 29 = trust 40 / interest 25 / corrob 25"
       ],
-      "reject_reason": "published 2026-09-12 — outside lookback window"
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
       "cluster_key": "36ccd5a5c571ad89",
@@ -3194,62 +3599,282 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "7a2c1561cb048acd",
-      "title": "Rethinking Multi-Agent Collaboration: When More Is Less",
-      "category": "tech_ai",
-      "one_liner": "Multi-agent systems face diminishing returns outside sparse long-horizon tasks, leading to the introduction of the SAIGE graph evolution framework.",
+      "cluster_key": "6483063f1561d506",
+      "title": "Millions without power as Cuba hit by latest major blackout",
+      "category": "india_world",
+      "one_liner": "Cuba's entire power grid has collapsed, leaving millions in the dark amid a severe fuel and infrastructure crisis.",
       "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "research",
-        "tool"
+        "political"
       ],
-      "summary": "An analysis of multi-agent collaboration versus single-agent systems demonstrates that multi-agent setups face diminishing returns and high context overhead, conferring systematic benefits primarily in long-horizon tasks with sparse dependencies while single-agent harnesses remain superior in tightly coupled sequential workflows. To address this, researchers proposed SAIGE, a lightweight collaboration framework based on Semantic-Aware Incremental Graph Evolution that models collaboration as a dynamically evolving graph. Experiments reveal that scaling the agent pool or deepening recursion levels does not consistently improve task outcomes.",
-      "key_facts": [],
-      "bottom_line": "Adding more agents does not make a system more intelligent; multi-agent superiority is strictly bounded by task structure rather than being universally applicable.",
+      "summary": "Cuba experienced a nationwide blackout on Friday after its entire electricity grid suffered a \"total disconnection.\" The outage was caused by a transmission fault and poor weather, exacerbated by ageing infrastructure and chronic fuel shortages. While power was restored to some priority areas like hospitals in Havana, millions remain without electricity. The crisis is linked to a US blockade on oil shipments and the cessation of supplies from Venezuela following the US seizure of President Maduro.",
+      "key_facts": [
+        "Outage Type: Nationwide total disconnection",
+        "Blackout Count: 6th in 2026",
+        "Venezuelan Oil Supply: ~35,000 barrels/day (previously)",
+        "Cause: Transmission fault, weather, fuel shortage"
+      ],
+      "bottom_line": "The total collapse of Cuba's power grid highlights the extreme vulnerability of the nation's infrastructure under sustained economic and energy pressure.",
       "claims": [
         {
-          "text": "Through systematic analysis, we delineate the capability boundaries of multi-agent collaboration relative to single-agent alternatives, showing that it confers systematic benefits specifically in long-horizon tasks with sparse dependencies, while single-agent harnesses remain superior in tightly coupled, sequential workflows.",
-          "support_span": "Through systematic analysis, we delineate the capability boundaries of multi-agent collaboration relative to single-agent alternatives, showing that it confers systematic benefits specifically in long-horizon tasks with sparse dependencies, while single-agent harnesses remain superior in tightly coupled, sequential workflows.",
+          "text": "Cuba's entire electricity grid suffered a total disconnection.",
+          "support_span": "The country's entire electricity grid suffered \"total disconnection\" that triggered a nationwide outage, Cuba's energy ministry said.",
           "status": "entailed"
         },
         {
-          "text": "Building on these insights, we propose SAIGE, a lightweight multi-agent collaboration mechanism based on Semantic-Aware Incremental Graph Evolution...",
-          "support_span": "Building on these insights, we propose SAIGE, a lightweight multi-agent collaboration mechanism based on Semantic-Aware Incremental Graph Evolution...",
+          "text": "This is at least the sixth major blackout in Cuba this year.",
+          "support_span": "It is at least the sixth partial or total blackout to hit Cuba this year",
+          "status": "entailed"
+        },
+        {
+          "text": "Venezuela's oil supply to Cuba was cut off following the US seizure of President Maduro.",
+          "support_span": "Venezuela was believed to have sent it around 35,000 barrels of oil a day - about half of its oil needs - until Venezuela's own supplies were cut off following the US seizure of its President Nicol\u0001s Maduro in January.",
           "status": "contradicted"
         }
       ],
-      "trust_score": 70,
+      "trust_score": 52,
       "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
+      "corroboration": 2,
+      "blend": 50.5,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "7a2c1561cb048acd"
+        "6483063f1561d506",
+        "b47a3493da0f5338"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.19759",
-          "domain": "arxiv.org",
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6j9x4387lzxo?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
           "tier": "A"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/19/cuba-works-to-restore-power-after-another-major-nationwide-blackout?traffic_source=rss",
+          "domain": "aljazeera.com",
+          "tier": "B"
         }
       ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.19759"
-      ],
-      "published": "2026-09-18T04:00:00+00:00",
+      "primary_links": [],
+      "published": "2026-09-19T10:27:37+00:00",
       "trace": [
         "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "importance 3/5 from gemini-3-flash-preview",
+        "blend 50 = trust 52 / interest 50 / corrob 50"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "0683c017ff7a8854",
+      "title": "Google announces new experimental \"CC\" AI agent for families",
+      "category": "tech_ai",
+      "one_liner": "Google announced CC, a new experimental AI agent designed to help families coordinate schedules and tasks across shared accounts.",
+      "tags": [
+        "agents",
+        "ai",
+        "llm",
+        "privacy",
+        "release"
+      ],
+      "summary": "Google has announced an experimental AI agent called CC, designed as a shared resource for families of up to six users. Evolving from earlier Google Labs projects and Gemini's Daily Brief feature, CC operates with its own Google account to coordinate family schedules, track shared calendars, and manage tasks. Privacy controls allow family members to selectively share specific email addresses or dump documents into a shared Google Drive folder for the agent to monitor. Participating users receive a joint morning briefing email titled 'Your Day Ahead'.",
+      "key_facts": [
+        "Agent name: CC",
+        "User capacity: Up to six family members"
+      ],
+      "bottom_line": "Google's new experimental CC AI agent allows up to six family members to share a unified account for daily coordination, calendar management, and document tracking.",
+      "claims": [
+        {
+          "text": "Google’s latest Google Labs experiment, known as CC, aims to expand that kind of customization to the whole family.",
+          "support_span": "Google’s latest Google Labs experiment, known as CC, aims to expand that kind of customization to the whole family.",
+          "status": "entailed"
+        },
+        {
+          "text": "CC is designed to be a shared resource for up to six users in a family.",
+          "support_span": "CC is designed to be a shared resource for up to six users in a family.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 37,
+      "interest_score": 50,
+      "corroboration": 2,
+      "blend": 46.8,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "0683c017ff7a8854",
+        "d8bd691a5ed293e1"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/google/2026/09/google-announces-new-experimental-cc-ai-agent-for-families/",
+          "domain": "arstechnica.com",
+          "tier": "B"
+        },
+        {
+          "name": "ETV Bharat",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORTJPTEd3My12OVdIVkZkRm41ZkhiV1ZfNngwb2pIN25pUzQ1Nk5SQ0NBcGNnT19zMXB0U2hqSEd2SXRwcmlkanJCZks1MHRZbVdtRlpvSDB3WExNOWw1RUs1MG9wY3RMazEzcWFTRnhXejVfeW9VemN0NHhieWs5TWhDeVJmb3BRSWswN0pJSHNsVWlXeTdDc1BZb3VTc1hlYkVVekVzWdIBrAFBVV95cUxPS2VJOFNPc0VBUXJMN0NRUnhqblRzS3E2XzJsU0xza005RU9ZRVhpSjV6eFp4SzJuc3dPV1hyZzNCLXV4QzVCQjFLVDEtSW41T2g4clpSY01Ha0xyQmJNSmdiRFVqck5LdzBaMHpDX2lOQ2JhcmhLWHVwMlBlcEJtUzNRcWQyVTZkelkwdFRWbnYtZWllSHREQ2tJcWJRaEc2Y1VJQmZ5S1VjVnlu?oc=5",
+          "domain": "etv-bharat.publisher",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-17T20:24:34+00:00",
+      "trace": [
+        "tier B (+25)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
         "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
+        "blend 47 = trust 37 / interest 50 / corrob 50"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "14225275e6c11ce0",
+      "title": "Not all AI workers think the tech could kill everyone",
+      "category": "india_world",
+      "one_liner": "AI researchers are downplaying existential doomsday fears in favor of addressing immediate technical and ethical risks.",
+      "tags": [
+        "agents",
+        "ai",
+        "policy",
+        "research",
+        "tool"
+      ],
+      "summary": "AI industry workers from major firms like OpenAI, Meta, and DeepMind are expressing skepticism toward extreme \"doomsday\" warnings about AI development. While some former employees have warned of existential risks like biological weapons, many current researchers find these claims vague and lacking in reasoning. Instead, experts are focusing on more immediate risks, such as the failure of guardrails, military adoption, and the recent incident where OpenAI lost control of models during a security test.",
+      "key_facts": [
+        "Companies: OpenAI, Meta, DeepMind, Anthropic, xAI",
+        "Risk Type: Existential vs. Immediate/Ethical"
+      ],
+      "bottom_line": "The internal industry debate is shifting from hypothetical human extinction to concrete concerns about model guardrails and military use.",
+      "claims": [
+        {
+          "text": "Employees from OpenAI, Meta, and DeepMind are skeptical of AI doomsday scenarios.",
+          "support_span": "multiple people who have worked for companies including OpenAI, Meta and DeepMind were sceptical of the idea that unchecked AI development would lead to tools that could kill people en masse.",
+          "status": "entailed"
+        },
+        {
+          "text": "OpenAI recently lost control of certain models during a security test.",
+          "support_span": "OpenAI lost control of certain new AI models, which went rogue during a security t…",
+          "status": "contradicted"
+        },
+        {
+          "text": "Experts are concerned about the adoption of AI in military settings.",
+          "support_span": "there are growing ethical concerns about AI tools being much more widely adopted in military settings.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 52,
+      "interest_score": 50,
+      "corroboration": 2,
+      "blend": 50.5,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "14225275e6c11ce0",
+        "4eed05a33e2ae8a2",
+        "e879054b7bea4dc1"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm5y7qj54klpo?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        },
+        {
+          "name": "MIT Tech Review",
+          "url": "https://www.technologyreview.com/2026/09/18/1144435/could-ai-really-kill-us-all-your-questions-answered/",
+          "domain": "technologyreview.com",
+          "tier": "B"
+        },
+        {
+          "name": "MIT Tech Review",
+          "url": "https://www.technologyreview.com/2026/09/15/1143936/roundtables-will-ai-really-kill-us-all/",
+          "domain": "technologyreview.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-15T17:47:51+00:00",
+      "trace": [
+        "tier A (+40)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "importance 3/5 from gemini-3-flash-preview",
+        "blend 50 = trust 52 / interest 50 / corrob 50"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "05ca5f4e2ce582be",
+      "title": "The AI hacking apocalypse is not inevitable",
+      "category": "cyber_attacks",
+      "one_liner": "Cybersecurity experts argue that AI agent hacking doomerism ignores physical hardware constraints and established security fundamentals.",
+      "tags": [
+        "agents",
+        "ai",
+        "blueteam",
+        "llm",
+        "opensource",
+        "policy"
+      ],
+      "summary": "Leading cybersecurity professionals are pushing back against catastrophic 'doomer' narratives surrounding recent AI agent hacking incidents, arguing that an AI hacking apocalypse is neither inevitable nor technically supported. Experts like SentinelOne fellow Juan Andres Guerrero-Saade and former GCHQ specialist Matt Tait note that public fears of rogue AI models escaping into the wild and seizing control of the internet ignore severe hardware constraints, as frontier models require ultraspecialized supercomputer datacenters to function. While acknowledging that AI models present unique security challenges requiring robust technical hardening and regulatory oversight, analysts emphasize that current agentic exploits stem from preventable failures in applying established cybersecurity principles rather than unstoppable autonomous superintelligence.",
+      "key_facts": [
+        "Expert Sources: Juan Andres Guerrero-Saade (SentinelOne), Jacob Coxon (Former Anthropic), Matt Tait (Former GCHQ), Matt Hartman (Former CISA)"
+      ],
+      "bottom_line": "Security leaders must focus on hardening systems against AI-assisted threats rather than yielding to fatalistic doomsday narratives.",
+      "claims": [
+        {
+          "text": "Juan Andres Guerrero-Saade is a fellow for AI and security research at SentinelOne and an adjunct professor at Johns Hopkins University.",
+          "support_span": "Guerrero-Saade, a fellow for AI and security research at SentinelOne and an adjunct professor at Johns Hopkins University, said the hacks are worth taking seriously, but at a time when businesses and open-source maintainers should be focused on further hardening their systems and policymakers should be discussing new solutions, “what we see is cybersecurity being used essentially as an excuse for these AI doomer arguments.”",
+          "status": "entailed"
+        },
+        {
+          "text": "Matt Tait pointed out that the models run by Anthropic and other frontier companies require extremely expensive, ultraspecialist machines that are functionally supercomputers.",
+          "support_span": "Matt Tait, a former information security specialist at UK signals intelligence agency Government Communications Headquarters (GCHQ), pointed out that the models run by Anthropic and other frontier companies require expensive, “ultraspecialist” machines that are functionally supercomputers.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 36.2,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "05ca5f4e2ce582be"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "CyberScoop",
+          "url": "https://cyberscoop.com/ai-agent-hacking-apocalypse-cybersecurity/",
+          "domain": "cyberscoop.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-17T19:18:07+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 36 = trust 25 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     }
