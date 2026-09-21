@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-20T00:16:30.177292+00:00",
+  "generated_at": "2026-09-21T00:16:29.852458+00:00",
   "items": [
     {
-      "cluster_key": "00697013d843ec59",
+      "cluster_key": "08215e843531ca57",
       "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software for Secure Firewall 3100 and 4200 Series DTLS Denial of Service Vulnerability",
       "category": "cyber_attacks",
       "one_liner": "Cisco released an IOS XR software hardening release to address internally discovered exceptional handling vulnerabilities grouped under CVE-2026-20280.",
@@ -11,7 +11,6 @@
         "cve",
         "exploit",
         "network",
-        "opensource",
         "release",
         "vulnerability"
       ],
@@ -28,391 +27,30 @@
           "status": "contradicted"
         }
       ],
-      "trust_score": 100,
+      "trust_score": 94,
       "interest_score": 75,
-      "corroboration": 40,
-      "blend": 88.8,
+      "corroboration": 3,
+      "blend": 79.8,
       "is_new": false,
       "summary_source": "model",
       "alt_keys": [
-        "00697013d843ec59",
-        "00c6f6a92de0122f",
-        "0154793197c29755",
-        "01e49239a239d4cc",
-        "0267d920aec10461",
-        "02aaeed7c48722cd",
-        "02bf5f756b881b79",
-        "043034d48365985d",
-        "04695935fb0219ca",
-        "055a011d3232aab6",
-        "06c2667929168630",
-        "08144a70771f09d0",
         "08215e843531ca57",
-        "0831393c254bd639",
-        "0878810733334559",
-        "08d899038eeab16d",
-        "0b564e50ddab5dc1",
-        "0c171fbf3d71d948",
         "0cc571fdceb74bf2",
-        "0cebd6459e142054",
-        "0d1c3e6eeb4cbf52",
-        "0d605ed120c46bc4",
-        "0dc7334bfe1bfbd0",
-        "0f923debea9f6d9b",
-        "1091ae21c2cdbf29",
-        "16954312c6e1eaeb",
-        "17399e66d6aeb7a6",
-        "177c0e3cc23b3f05",
-        "17f3f81444466fd3",
-        "19d61016eef14690",
-        "1a7b184a8927d8cd",
-        "1b2fc186f0fd4e91",
-        "1c14f354128f85eb",
-        "1db2d7555dfde648",
-        "1e55db8feb2f683c",
-        "1f5d8ca4db0804e2",
-        "1fd77c67340c929c",
-        "2165f7caa482bbee",
         "249d61201c1a6182",
         "26232adab8d48f40",
-        "26d3123959923289",
-        "278d56e38f1060c0",
-        "2801cc9fe4d59a60",
-        "2849898e8395846e",
-        "28cfa9106a6c68b3",
-        "2b0b826252af7ddc",
-        "2c223b63aac66592",
-        "2d3609aaee5a54bd",
-        "2d610ccd0c340a9c",
-        "2f012cf9a85fe7b4",
-        "303ebbdef66fe509",
         "30406db5cbfeb730",
-        "307429acae0969ff",
-        "3092ea024f83275f",
-        "33370bfa47124a20",
-        "37109fde6a516f72",
-        "4219554a2ca7dece",
-        "45fd755412abbdd7",
-        "472902f49a99ea24",
-        "48a0f15b9914e1e9",
-        "48b276dc9477b3a3",
-        "48cab3ff0353eef1",
-        "49265b24ac7b54b2",
-        "4aa9849c109de180",
-        "4aaefa0a451567de",
-        "4cf99309ccea762f",
-        "4f1d18f97103e338",
-        "4fa02be2e1aaab35",
-        "4fa19906a872cc2a",
-        "52f70ab3410eb846",
-        "530bcd5c02befb26",
-        "5353cc2ee216ac43",
         "53927aa6a21c2b94",
-        "543303fb3bcb6e97",
-        "54e9626c916d79e8",
-        "55245a9a57726860",
-        "57430936c220d76b",
-        "578fb246115131a9",
-        "589b2fbe9e44c177",
-        "5943cff652bee951",
-        "5984c7d9d84fc0c9",
-        "6004b9f9f53e4277",
-        "60488b99348238df",
         "6218864e885c5260",
-        "634953d7a76ec6cc",
-        "637954cda03c476a",
-        "64ad970322118668",
-        "655146c7accc8cbd",
-        "66895a3355f2fc3d",
-        "675f7184ea674d8e",
-        "6833b5283211773a",
         "692ed078310bea13",
-        "694397b8e6a73d23",
-        "6cd4682143dbfb41",
-        "6cffd8d718f02768",
-        "6da5bd2b15b5702f",
-        "6f419554061f684d",
-        "7069cf88629fe4bb",
-        "706eb56d288b89cb",
-        "78b2f5a9fa2fd283",
-        "7a68e54f8b0a4c20",
-        "7c8bc4dce94ad61a",
-        "7e02eff743d93563",
-        "7ebc88391d712d78",
-        "7fa314ecd111f194",
-        "8047cc9d21c79a76",
-        "83808581c5caabf3",
-        "84265ec16815ff0e",
-        "84bff6238c91897e",
-        "855d1bde45cde4f7",
-        "85e34f40d372ed88",
-        "8900447d724adec9",
-        "8954d53d59bc4966",
-        "89d40aafa484046c",
-        "89d66a4490afe66c",
-        "8a2c8a9b5b978779",
         "8b0fa73bd1f07fd8",
-        "8ceaf8e80e6067c9",
-        "914a54719a18382e",
-        "9282eae3dd76790f",
-        "92f2ada59e39f7c4",
-        "93a7381cf759e659",
-        "9465292737368b01",
-        "9532d10d90992441",
-        "961c78bf0c976e9a",
-        "976a305feac5ffee",
-        "976c07a1a86e174b",
-        "97e8a315486e88e3",
-        "98a5a13d4366bbd7",
-        "98b64142f02bff44",
-        "99ce94d878543afb",
-        "9de6b003d2fd18fe",
-        "9e21250d3474b145",
-        "a032a68c59be6a9b",
-        "a30c3436c6a62f01",
-        "a3a89af9cc70109d",
-        "a3ae258f386d19f6",
-        "a464bbcbe2209d34",
-        "a473ed236c4bd346",
-        "a512f1a714b9158f",
-        "a77395db21f796fb",
-        "a83ba8e086ed83c1",
-        "a8f2bafe07e12f2d",
-        "a96196ea723d8e5a",
-        "a980fd33caedfdea",
-        "aaec0197eb533394",
-        "aca24b926f0f8af2",
-        "acb75ed03e4f20fa",
-        "acbf4512df5dc8b6",
-        "adf323f8e3cac3b7",
-        "b2876269df9a7c19",
-        "b387a0f33f27c541",
-        "b3ef0cfc51926a99",
-        "b45339b0717ec108",
-        "b58c2575081ed441",
-        "b5992e2e9b9c7512",
-        "b5b328ed9fbe99c2",
-        "b71ea2ba238c19c5",
-        "b8a114f123cc5aa6",
-        "bac21de99a7a4efd",
-        "baf58204e2674475",
-        "bcebe223d3effcba",
-        "bdbcd30d31df42e6",
-        "bdcf6898684691ba",
-        "be6a670001c6529a",
-        "bf57f7ee87966e6c",
-        "c124620de0541404",
-        "c2ff11cc7198fcea",
-        "c4250aceb8b5fa7b",
-        "c50da118f316e6d6",
-        "c5b5d5240d200fd7",
-        "c78a766425dbfd9f",
-        "c8019563e962e9de",
-        "c9878b57fe8a7061",
-        "c9d94439c32e5b7c",
-        "cab72d4a17293c46",
-        "cba8427de2b4133b",
-        "cd2cc36132e22f88",
-        "d1bcac4914aa3552",
-        "d227b40b9e4964c7",
-        "d479868192e404bb",
-        "d48f41d8fdaae6aa",
         "d5d3c4050d1e8530",
-        "d6af87e92ee2b73a",
-        "d6b6dea9f4b3b4b4",
-        "d7592bee86f38558",
-        "d85532c0a9390527",
-        "d8aa5d2222cdc8e3",
-        "d9c5b7b66092b3aa",
-        "d9cd5877544990c1",
-        "da734e5832a6e340",
-        "db238d056c88d836",
-        "dc6439ad0fc2051f",
-        "dceae7cc33129073",
-        "def0f7a9e7a72578",
-        "df5db689b547353f",
-        "dfc75fae40071787",
-        "e0379efffd4cfd65",
-        "e39addf2e29a66b2",
-        "e42a3ca1e238b775",
         "e4a48761040c1e56",
-        "e520aea49707ddef",
-        "e771e6808dfe8c0d",
-        "e7a30c73f5950f7d",
-        "e7a9aec1511facd9",
-        "e7ac058e777339f6",
-        "e88dc92e5e7a0f1c",
-        "e98560259930ca6d",
-        "eae8433f54a092cd",
-        "eb9ffae942a79a9f",
-        "ed1f365aa568332d",
-        "edfc72704f7db9f1",
-        "f04e0b0783716be7",
-        "f09b07ca79dc42ba",
-        "f3848a76088a051d",
-        "f4410e6373e1bafb",
-        "f4eb57e92fa46c97",
-        "f560a583b5d9e8c7",
-        "f633f4b7908ac6b5",
-        "f6faab4cb830311f",
-        "f8b6fca76cb3288e",
-        "fafd9a90272c4ece",
-        "ff9e11e3271c2bdb"
+        "f8b6fca76cb3288e"
       ],
       "critical_signal": "actively exploited",
       "priority": "critical",
       "verdict": "rejected",
       "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        },
-        {
-          "name": "Chromium Releases",
-          "url": "http://chromereleases.googleblog.com/2026/09/chrome-beta-for-android-update_0279595226.html",
-          "domain": "chromereleases.googleblog.com",
-          "tier": "A"
-        },
-        {
-          "name": "Chromium Releases",
-          "url": "http://chromereleases.googleblog.com/2026/09/chrome-beta-for-desktop-update_01695577434.html",
-          "domain": "chromereleases.googleblog.com",
-          "tier": "A"
-        },
-        {
-          "name": "Chromium Releases",
-          "url": "http://chromereleases.googleblog.com/2026/09/chrome-dev-for-android-update_01287307620.html",
-          "domain": "chromereleases.googleblog.com",
-          "tier": "A"
-        },
-        {
-          "name": "Chromium Releases",
-          "url": "http://chromereleases.googleblog.com/2026/09/chrome-dev-for-desktop-update_01634269358.html",
-          "domain": "chromereleases.googleblog.com",
-          "tier": "A"
-        },
-        {
-          "name": "Chromium Releases",
-          "url": "http://chromereleases.googleblog.com/2026/09/chrome-dev-for-android-update_0255795644.html",
-          "domain": "chromereleases.googleblog.com",
-          "tier": "A"
-        },
-        {
-          "name": "Chromium Releases",
-          "url": "http://chromereleases.googleblog.com/2026/09/chrome-stable-for-ios-update_0403227505.html",
-          "domain": "chromereleases.googleblog.com",
-          "tier": "A"
-        },
-        {
-          "name": "Chromium Releases",
-          "url": "http://chromereleases.googleblog.com/2026/09/chrome-beta-for-ios-update_01806830578.html",
-          "domain": "chromereleases.googleblog.com",
-          "tier": "A"
-        },
-        {
-          "name": "CISA KEV",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76460",
-          "domain": "cisa.gov",
-          "tier": "A"
-        },
-        {
-          "name": "CISA KEV",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87886",
-          "domain": "cisa.gov",
-          "tier": "A"
-        },
-        {
-          "name": "CISA KEV",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58704",
-          "domain": "cisa.gov",
-          "tier": "A"
-        },
-        {
-          "name": "CISA KEV",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53266",
-          "domain": "cisa.gov",
-          "tier": "A"
-        },
-        {
-          "name": "CISA KEV",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-39964",
-          "domain": "cisa.gov",
-          "tier": "A"
-        },
-        {
-          "name": "CVEFeed High",
-          "url": "https://cvefeed.io/vuln/detail/CVE-2026-93740",
-          "domain": "cvefeed.io",
-          "tier": "A"
-        },
-        {
-          "name": "CVEFeed High",
-          "url": "https://cvefeed.io/vuln/detail/CVE-2026-93738",
-          "domain": "cvefeed.io",
-          "tier": "A"
-        },
-        {
-          "name": "CVEFeed High",
-          "url": "https://cvefeed.io/vuln/detail/CVE-2026-93742",
-          "domain": "cvefeed.io",
-          "tier": "A"
-        },
-        {
-          "name": "CVEFeed High",
-          "url": "https://cvefeed.io/vuln/detail/CVE-2026-93741",
-          "domain": "cvefeed.io",
-          "tier": "A"
-        },
-        {
-          "name": "CVEFeed High",
-          "url": "https://cvefeed.io/vuln/detail/CVE-2026-93739",
-          "domain": "cvefeed.io",
-          "tier": "A"
-        },
-        {
-          "name": "GitLab Security",
-          "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-3-2-released/",
-          "domain": "docs.gitlab.com",
-          "tier": "A"
-        },
-        {
-          "name": "Fortinet PSIRT",
-          "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-170",
-          "domain": "fortiguard.fortinet.com",
-          "tier": "A"
-        },
-        {
-          "name": "Fortinet PSIRT",
-          "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-171",
-          "domain": "fortiguard.fortinet.com",
-          "tier": "A"
-        },
-        {
-          "name": "Fortinet PSIRT",
-          "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-167",
-          "domain": "fortiguard.fortinet.com",
-          "tier": "A"
-        },
-        {
-          "name": "Debian DSA",
-          "url": "https://lists.debian.org/debian-security-announce/2026/msg00419.html",
-          "domain": "lists.debian.org",
-          "tier": "A"
-        },
-        {
-          "name": "Debian DSA",
-          "url": "https://lists.debian.org/debian-security-announce/2026/msg00417.html",
-          "domain": "lists.debian.org",
-          "tier": "A"
-        },
-        {
-          "name": "Debian DSA",
-          "url": "https://lists.debian.org/debian-security-announce/2026/msg00412.html",
-          "domain": "lists.debian.org",
-          "tier": "A"
-        },
         {
           "name": "Cisco PSIRT",
           "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-dtls-dos-Kp57HkyO?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20for%20Secure%20Firewall%203100%20and%204200%20Series%20DTLS%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
@@ -439,12 +77,6 @@
         },
         {
           "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-vpn-dos-dzv4mQFF?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20Remote%20Access%20SSL%20VPN%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
           "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asa-ftd-logging-dos-ZXXNesfN?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20Logging%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
           "domain": "sec.cloudapps.cisco.com",
           "tier": "A"
@@ -457,145 +89,7 @@
         },
         {
           "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftdvirtual-dos-MuenGnYR?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20SSL%20VPN%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
           "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-eigrp-dos-GOhNejSj?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20EIGRP%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmcftd-sftun-multivulns-WGVHOrN3?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Management%20Center%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20sftunnel%20Vulnerabilities%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-javarce-y2NypXwk?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Management%20Center%20Software%20Java%20Deserialization%20Remote%20Code%20Execution%20Vulnerability%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-sftunn-codex-c3O4Jft2?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Management%20Center%20Software%20sftunnel%20Root%20Arbitrary%20Code%20Execution%20Vulnerability%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-teva-os-command-W4GAO6jp?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20ThousandEyes%20Virtual%20Appliance%20Authenticated%20Web%20Interface%20Command%20Injection%20Vulnerability%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multi-vuln-kWLeNnRD?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20802.1X%20Session%20Hijack%20and%20Information%20Disclosure%20Vulnerabilities%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ftd-snort2-ssldos-Mw7WYX9c?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Threat%20Defense%20Software%20Snort%202%20SSL/TLS%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-mult-vul-ymSsTLCc?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Authenticated%20Remote%20Code%20Execution%20and%20API%20Vulnerabilities%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-jfxK98ZP?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Advance%20Notification%20for%20Publication%20of%20September%2016,%202026,%20Security%20Advisories%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ftd-tls1.3-dos-dLxwFWgF?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Threat%20Defense%20Software%20TLS%201.3%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-onprem-fmc-authbypass-5JPp45V2?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Management%20Center%20Software%20Authentication%20Bypass%20Vulnerability%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-auth-bypass-broadwor-57m9dmm5?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20BroadWorks%20CommPilot%20Application%20Software%20Authorization%20Bypass%20Vulnerability%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-static-cred-BET3Cjh?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Management%20Center%20Software%20Static%20Credential%20Vulnerability%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-ndw1-psFvnrg?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Nexus%20Dashboard%20Software%20Security%20Hardening%20Release:%20September%202026%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multi-traversal-WDTgYCdn?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Multiple%20Path%20Traversal%20Vulnerabilities%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-RADIUS-dos-wR3hYPMw?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20RADIUS%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-rce-se7bYU57?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Remote%20Code%20Execution%20Vulnerabilities%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multiauth-bypass-sgD2HbL4?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Authentication%20Bypass%20Vulnerabilities%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multisql-inject-JnHK54Rq?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20SQL%20and%20HQL%20Injection%20Vulnerabilities%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-inf-disc-LFWvcCu?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Information%20Disclosure%20Vulnerability%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-auth-bypass-1-MxcTNgwx?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Authorization%20Bypass%20Vulnerabilities%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ISE-ABP-VNSW7Tn5?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Authentication%20Bypass%20Vulnerability%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-xss-Uz9VWRQ?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Cross-Site%20Scripting%20Vulnerability%26vs_k=1",
           "domain": "sec.cloudapps.cisco.com",
           "tier": "A"
         },
@@ -607,62 +101,8 @@
         },
         {
           "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-mulivulns-4PsnFwvx?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Management%20Center%20Software%20Vulnerabilities%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-ise-XU5EwX5T?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Hardening%20Release:%20September%202026%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-cmd-inj-e2CuZCYZ?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Command%20Injection%20Vulnerabilities%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc2-multivulns-HXgcqRG?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Management%20Center%20Software%20Vulnerabilities%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-sql-inj-3QTKR947?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20SQL%20Injection%20Vulnerabilities%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
           "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Email%20Gateway%20SQL%20Injection%20Vulnerability%26vs_k=1",
           "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multi-hrP9jQSQ?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Vulnerabilities%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "oss-security",
-          "url": "https://seclists.org/oss-sec/2026/q3/838",
-          "domain": "seclists.org",
-          "tier": "A"
-        },
-        {
-          "name": "Palo Alto PSIRT",
-          "url": "https://security.paloaltonetworks.com/CVE-2026-0302",
-          "domain": "security.paloaltonetworks.com",
-          "tier": "A"
-        },
-        {
-          "name": "Palo Alto PSIRT",
-          "url": "https://security.paloaltonetworks.com/CVE-2026-0310",
-          "domain": "security.paloaltonetworks.com",
           "tier": "A"
         },
         {
@@ -678,1086 +118,96 @@
           "tier": "A"
         },
         {
-          "name": "Ubuntu USN",
-          "url": "https://ubuntu.com/security/notices/USN-8781-1",
-          "domain": "ubuntu.com",
-          "tier": "A"
-        },
-        {
-          "name": "Ubuntu USN",
-          "url": "https://ubuntu.com/security/notices/USN-8726-2",
-          "domain": "ubuntu.com",
-          "tier": "A"
-        },
-        {
-          "name": "Ubuntu USN",
-          "url": "https://ubuntu.com/security/notices/USN-8761-2",
-          "domain": "ubuntu.com",
-          "tier": "A"
-        },
-        {
-          "name": "Ubuntu USN",
-          "url": "https://ubuntu.com/security/notices/USN-8715-2",
-          "domain": "ubuntu.com",
-          "tier": "A"
-        },
-        {
-          "name": "Ubuntu USN",
-          "url": "https://ubuntu.com/security/notices/USN-8730-3",
-          "domain": "ubuntu.com",
-          "tier": "A"
-        },
-        {
-          "name": "Ubuntu USN",
-          "url": "https://ubuntu.com/security/notices/USN-8725-2",
-          "domain": "ubuntu.com",
-          "tier": "A"
-        },
-        {
-          "name": "Ubuntu USN",
-          "url": "https://ubuntu.com/security/notices/USN-8714-3",
-          "domain": "ubuntu.com",
-          "tier": "A"
-        },
-        {
-          "name": "ZDI Advisories",
-          "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-709/",
-          "domain": "zerodayinitiative.com",
-          "tier": "A"
-        },
-        {
-          "name": "ZDI Advisories",
-          "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-717/",
-          "domain": "zerodayinitiative.com",
-          "tier": "A"
-        },
-        {
-          "name": "ZDI Advisories",
-          "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-718/",
-          "domain": "zerodayinitiative.com",
-          "tier": "A"
-        },
-        {
-          "name": "ZDI Advisories",
-          "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-716/",
-          "domain": "zerodayinitiative.com",
-          "tier": "A"
-        },
-        {
-          "name": "ZDI Advisories",
-          "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-707/",
-          "domain": "zerodayinitiative.com",
-          "tier": "A"
-        },
-        {
-          "name": "Ars Technica",
-          "url": "https://arstechnica.com/ai/2026/09/researchers-used-claude-to-hack-openai/",
-          "domain": "arstechnica.com",
-          "tier": "B"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/check-point-warns-critical-flaw-lets-hackers-execute-code-as-root/",
-          "domain": "bleepingcomputer.com",
-          "tier": "B"
-        },
-        {
-          "name": "CyberScoop",
-          "url": "https://cyberscoop.com/cisco-ise-zero-day-cve-2026-76460/",
-          "domain": "cyberscoop.com",
-          "tier": "B"
-        },
-        {
-          "name": "CyberScoop",
-          "url": "https://cyberscoop.com/hacktron-ai-heif-heist-vulnerability/",
-          "domain": "cyberscoop.com",
-          "tier": "B"
-        },
-        {
-          "name": "DarkReading",
-          "url": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
-          "domain": "darkreading.com",
-          "tier": "B"
-        },
-        {
-          "name": "Help Net Security",
-          "url": "https://www.helpnetsecurity.com/2026/09/18/new-infosec-products-of-the-week-september-18-2026/",
-          "domain": "helpnetsecurity.com",
-          "tier": "B"
-        },
-        {
-          "name": "Infosecurity Magazine",
-          "url": "https://www.infosecurity-magazine.com/news/cisco-active-exploitation-critical/",
-          "domain": "infosecurity-magazine.com",
-          "tier": "B"
-        },
-        {
-          "name": "Infosecurity Magazine",
-          "url": "https://www.infosecurity-magazine.com/news/zeroday-tplink-cameras/",
-          "domain": "infosecurity-magazine.com",
-          "tier": "B"
-        },
-        {
-          "name": "Infosecurity Magazine",
-          "url": "https://www.infosecurity-magazine.com/news/ai-agent-carries-out-multistage/",
-          "domain": "infosecurity-magazine.com",
-          "tier": "B"
-        },
-        {
-          "name": "Malwarebytes Labs",
-          "url": "https://www.malwarebytes.com/blog/mobile/2026/09/google-pixel-owners-urged-to-patch-actively-exploited-modem-flaw",
-          "domain": "malwarebytes.com",
-          "tier": "B"
-        },
-        {
-          "name": "Malwarebytes Labs",
-          "url": "https://www.malwarebytes.com/blog/threat-intel/2026/09/revolut-phishing-texts-appear-days-after-data-breach",
-          "domain": "malwarebytes.com",
-          "tier": "B"
-        },
-        {
-          "name": "Rapid7 Blog",
-          "url": "https://www.rapid7.com/blog/post/etr-cve-2026-76461-critical-cisco-secure-email-gateway-vulnerability-exploited-in-the-wild",
-          "domain": "rapid7.com",
-          "tier": "B"
-        },
-        {
-          "name": "Rapid7 Blog",
-          "url": "https://www.rapid7.com/blog/post/etr-cve-2026-85706-critical-gitlab-path-traversal-exploited-in-the-wild",
-          "domain": "rapid7.com",
-          "tier": "B"
-        },
-        {
-          "name": "Schneier on Security",
-          "url": "https://www.schneier.com/blog/archives/2026/09/how-candidates-could-use-ai-for-good.html",
-          "domain": "schneier.com",
-          "tier": "B"
-        },
-        {
-          "name": "Security Affairs",
-          "url": "https://securityaffairs.com/199279/security/check-point-fixes-critical-cve-2026-91843-allowing-root-code-execution.html",
-          "domain": "securityaffairs.com",
-          "tier": "B"
-        },
-        {
-          "name": "Security Affairs",
-          "url": "https://securityaffairs.com/199392/ai/google-gemini-also-broke-out-of-its-test-environment.html",
-          "domain": "securityaffairs.com",
-          "tier": "B"
-        },
-        {
-          "name": "Security Affairs",
-          "url": "https://securityaffairs.com/199338/data-breach/gyazo-data-breach-exposes-23-million-user-records.html",
-          "domain": "securityaffairs.com",
-          "tier": "B"
-        },
-        {
-          "name": "SecurityWeek",
-          "url": "https://www.securityweek.com/ai-built-exploit-and-sign-in-flaw-opened-path-to-internal-openai-code/",
-          "domain": "securityweek.com",
-          "tier": "B"
-        },
-        {
-          "name": "SecurityWeek",
-          "url": "https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/",
-          "domain": "securityweek.com",
-          "tier": "B"
-        },
-        {
-          "name": "SecurityWeek",
-          "url": "https://www.securityweek.com/critical-orkes-conductor-vulnerability-exploited-in-attacks/",
-          "domain": "securityweek.com",
-          "tier": "B"
-        },
-        {
-          "name": "SecurityWeek",
-          "url": "https://www.securityweek.com/microsoft-patches-18-vulnerabilities-in-ai-cloud-products/",
-          "domain": "securityweek.com",
-          "tier": "B"
-        },
-        {
-          "name": "SecurityWeek",
-          "url": "https://www.securityweek.com/23-million-user-records-compromised-in-gyazo-data-breach/",
-          "domain": "securityweek.com",
-          "tier": "B"
-        },
-        {
-          "name": "Simon Willison",
-          "url": "https://simonwillison.net/2026/Sep/16/one-claude/",
-          "domain": "simonwillison.net",
-          "tier": "B"
-        },
-        {
-          "name": "Sonar Research",
-          "url": "https://www.sonarsource.com/blog/the-next-state-of-code-developer-survey-is-open/",
-          "domain": "sonarsource.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/critical-unbound-dnssec-validator-flaw.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/google-patches-pixel-modem-flaw-amid.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/acronis-cpanel-backup-plugin.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/identity-visibility-in-2026-foundation.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Register Security",
-          "url": "https://www.theregister.com/security/2026/09/17/cisco-drops-another-exploited-zero-day-this-time-a-perfect-10/5297180",
-          "domain": "theregister.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Register Security",
-          "url": "https://www.theregister.com/security/2026/09/16/google-pixel-phones-pwned-in-zero-click-attacks/5296936",
-          "domain": "theregister.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack",
-          "domain": "theverge.com",
-          "tier": "B"
-        },
-        {
-          "name": "Volexity",
-          "url": "https://www.volexity.com/blog/2026/07/17/proxying-to-compromise-sonicwall-secure-mobile-access-0-day-exploitation/",
-          "domain": "volexity.com",
-          "tier": "B"
-        },
-        {
-          "name": "CTI Now",
-          "url": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-oracle-products-could-allow-for-arbitrary-code-execution_2026-097",
-          "domain": "cisecurity.org",
-          "tier": "C"
-        },
-        {
-          "name": "SecHarvester",
-          "url": "https://github.com/rafabd1/CVE-2026-75604-poc",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "Android Malware",
-          "url": "https://www.group-ib.com/blog/vwork-app-cloning-gigabud-goldfactory/",
-          "domain": "group-ib.com",
-          "tier": "C"
-        },
-        {
-          "name": "CTI Now",
-          "url": "https://ift.tt/PS8wdnF",
-          "domain": "ift.tt",
-          "tier": "C"
-        },
-        {
-          "name": "CTI Now",
-          "url": "https://ift.tt/CxtwJbh",
-          "domain": "ift.tt",
-          "tier": "C"
-        },
-        {
-          "name": "CTI Now",
-          "url": "https://ift.tt/LwkImaf",
-          "domain": "ift.tt",
-          "tier": "C"
-        },
-        {
-          "name": "Detectify Labs",
-          "url": "https://labs.detectify.com/how-to/how-to-hack-apis-in-2026/",
-          "domain": "labs.detectify.com",
-          "tier": "C"
-        },
-        {
-          "name": "Medium bug bounty",
-          "url": "https://medium.com/@raissiamir797/google-dorking-for-bug-hunters-real-world-case-studies-3e24ac06b6b0?source=rss------bug_bounty-5",
-          "domain": "medium.com",
-          "tier": "C"
-        },
-        {
-          "name": "Medium bug bounty",
-          "url": "https://medium.com/@cybersecplayground/sql-injection-time-based-blind-detection-payload-953657dd542b?source=rss------bug_bounty-5",
-          "domain": "medium.com",
-          "tier": "C"
-        },
-        {
-          "name": "Medium bug bounty",
-          "url": "https://osintteam.blog/chaining-api-bugs-how-low-severity-findings-become-critical-2184adabe30f?source=rss------bug_bounty-5",
-          "domain": "osintteam.blog",
-          "tier": "C"
-        },
-        {
-          "name": "Medium bug bounty",
-          "url": "https://osintteam.blog/claude-ai-a-practical-guide-for-bug-hunters-9ac94985e496?source=rss------bug_bounty-5",
-          "domain": "osintteam.blog",
-          "tier": "C"
-        },
-        {
-          "name": "StepSecurity",
-          "url": "https://www.stepsecurity.io/blog/state-of-open-source-supply-chain-attacks",
-          "domain": "stepsecurity.io",
-          "tier": "C"
-        },
-        {
-          "name": "ababnews.com",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBINmZjNHQ4R0ZTSjg3bTBHeEVjOFlCZ0FoZWc1MmoyWmxIUUl5UnBhQnBiR1ktWEgzWlVRck90WU9FV3pHT01nV2lER0tQbDJ6b2Nwc3FCMWdrRVFhNVkzaURUT0dSZEFZb2R6amNnSDdjZlNa?oc=5",
-          "domain": "ababnews-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "albawaba.com",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZklsM1RYdExzQ2R6czFTWE1YX3ZnTUhCd2MtRndOc3NsQ0ZTdDdrX1BrN3pxUmVSWHRWM3c4Y19Mbkd1R1dDU1k1Vi1qX21kS0FfM2dNNTFPYTBBSmVmYjVPX2thdlpqZFhIY2ExYkFzWlFMNnpZR0RlVjVxaVRwR29TSDNKdw?oc=5",
-          "domain": "albawaba-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOYTljMkR1M1RuMmY0YWdLcXdwckxSTEtLRklLZ3Nydjg2STB0VFpLTUhDZDQ5a2JPTlQ1TWhHY0Zqa3FEbHdSRnRrQThSVlVYQ2NteVo0MWhrRG1adzNncU5Jekl1VnN1MnIxM0Qxa3VpVzgwamhhSGZLQWY1VVF4WXBQLUtWUmRPa3FwM1lFRDVOYXRnU1RLRExBSkFVbUdacmZtT2ZEVlRaR0MxU1lKNzhTTdIBuAFBVV95cUxNWDcxM21vN0N1eGxMVTBsVk1xR1psUlRsZmpBdHlCZHhvcW1jSlVyS0VuaWpQZXFLQkdBMWxoQ2ZGY3huMnVkamdId1Qxd1Qtb3lzMU56aVN0eldnNTcyUVcyc0lENVoyTzRuMHJGc1ljbVBSM2Flc3BUSXViZmhZSXo1T1libDB3a1NrQmZJQ3UtUGJ5VlRPRDZRa0ltUXlEc0F4RkxvZGh1eGZRb0l0Y3VkMFUyYU5B?oc=5",
-          "domain": "bleepingcomputer.com",
-          "tier": "C"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTDV2bkQzb3FsY0JLQlhWQWY4Z040eFU5b2RDMTVzRi13UGh1QkZoZWZUYVE3Y0pFZEpMdFJhQnN2d0xENUU2RjgySGh4YjlMTXlSbzFfWGRYejZjdXlyQjNPZ0NEVU5aNXhobTN5NGc1Z1ZlSWdZNWJTQzdpOC13dXk4eGRDdVpRVW5UazdhckwwVGJrTVk0VGd0V0hraWpnYWQ4RG5XNERPQ2ZYS1k1LUhUa3FNcVXSAbwBQVVfeXFMUE5NbnZGclI1RTFzZzJZSkpqcE9GUTYzWmNtcUdTNWh3OXd5X25ubmdnMkY4ZVRsM1lMcy1jUzFjalBnTHVXZ1lKZEl5TjFiNktvT0lUSUVlVzJmZ095QVJ6d2o0Z0YtWXFTQmo4djA2azh1VTRtenBCVF9SV25oQThrX2wtZXZyZFA4NWs4ZTY2VTN4Q1dkdlRsZm05T1VSa2kzRDRWUWNRQ2F5aW9SdEJKX0U3SHlPLWtzSHQ?oc=5",
-          "domain": "bleepingcomputer.com",
-          "tier": "C"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUzBSUVg1RmNKNTV0UERIdUEtQVE5Sk8wNFZmbzFZSTFxY3VyWHVKQ09lOVJyNllSMnBrOWFkeldWTHFzY3RvaXlrNDZ4OTM1NWlnVG5yVzJjUUVFVUU2LW1YVzF2ZlA1V2twTEhRdnU2UkNuVDdoeFdpdzNpSWpTQk5Tbm5EdHFOS2ozbmVFS094Y0xVU3J5Z2dON2V0Q1FNd09QbzlDNEpHbDFH0gGyAUFVX3lxTE5pNzNTY0szOHJ5SjhQclJMQmZhbEgteHY4ZWdGc1JWckRZZWU0ZUtRVW9ZUGhkdGdFUm5pNW9PaWgyZGZ6QUhsVDV2Ymc5dE5jTEFxU3JkQ0E3Vmc1QlVkSmdxcHpsUEdrMWl1b1dFSkphVDN2anBQNUhLQXhEMFo4aVFTbHhiZXczaVNSVG5WTjlKUFlPS2tnVV81VmxMaG1MR0ZDRHRYUUFSakVyM1p4eFE?oc=5",
-          "domain": "bleepingcomputer.com",
-          "tier": "C"
-        },
-        {
-          "name": "Business Today",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPUjNka0tVWGdwaTMxWjJ5Mlgyd0h4RU8ySWVYa1dlSDlIbWZUV1p5Y2VEYWE3NE9qZWU0eVAyQTZXUUlHNTVCQ3hGcWdlNmdUeUpTV0tJeVkyX1BIa1MyT2Z2TU9VY05ZWFhFTWdCM01WazBpRmJSTERQNzhodVhYQjRjRWRlbTNYSVFXbThwSWNEYmotSlZUQTRpUmJTX3hJVjNVeEVlMlpHeDczdWxGalZReFQ3U05KVkltbjFJUERheVNCbW9JaTAyQ2tuR0dhOWdFZlpoZnEtOGfSAeABQVVfeXFMT2c0dEJkUXJ1OXRrd3Nqclo0SGdCMmpaY0NIeHBsaHMxdjhBTVZIRUNNVlJZcWdZYlpWSG9FWmxMbDdGVE1Rd2VMSW5HeEJ1WUNMdC1WdVltYnV2NWg1c084OEZoeWhPOUsxWG1TbGlhaEtEd05lOFFnRHUwQlRvS0hiaXBwR2U2YXBMaTZjajd5b1NVWE1XaVl4QS10Smk2cjNIdjVwN2Jmek95amFGZmVESi0ySV81VGlkYm9mNlhwdmlVblp6UExJRXphcXR6bE44TmJ1WC1KWjIzZ3JLUzE?oc=5",
-          "domain": "business-today.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE00MEFXRl84WTNrMzA5czFFZUdEV0xlbnAtQzA3Z3JDOHFvTW1WdVBLRTFYTXdmcFRoU2N0Z1F2bjE2eUJoZGRFOVVVT1JZM1J5czBJdXlyMjczTXV3WklkaklqbXZSNU9hdTVkdEZn?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9BZXdMVHh2T2k4WktLWTlVbWVVV1h3UDR5eFJnXzdmVXpqbmhCY0pxbDJ3UkNMVllUVm1mTjhTVHVKc1hTVkpVZldnbnZ2Qll3M2dBWGN1a2VUbnNrWWExRUgtd09tYk1QN3c?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YbmZybENQX1lIa1NVRFdoaFJLY05pdlVyT0JISWJET3E2X0d4c1J2V3VJNnRZMDJmdHB0a3FOdlBSeGsxdnBLamtkb0diTl9zdU5ocHBqdExSMmRibzU2dE54UFhCM0lobUpQTA?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE4yaXVRSmlRYmNnRkZiZkRvNEo1Nm9oaXY5WVJIRUZsVDZfUTJmblFIXzRUY1BEblpjYzl2YVZoZzVMZ0RSNnowR3ZJNGYyZGtFdGN6V01mTEpKSUpWSEZOaFExbw?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNeVo1ZGFpUXZsRDRsaFJmN3BNSzJQNTEtcWd3NHA2RFNTWVM2cVFwVEtMMU1PRWd4YnRiRmI1R1hrZi15LS0yZi00NjRJbDFESU56b3dHenlfeHBUdlhTTGFoWlB4Y184bklvUmN6aTFGWjVEOHlEcTAzU3NoZ183bHZvdw?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNSlk3cEpsY0xyQW5xRHdSck5kUHFmZ3pFUDNqTDQ1VFRselNELUlxR0YteVFPeno0aUJDZVVrelZSNkthdS04ZVluR0dLczVrNndkRi01QnZuQ0FRSmpBUGxfLVJYOWRTeWxDemp2NG54aFFkQXhDRjkzVmRtSkNBWFF3?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1pTEh3ZGZzOFhGTEFaZm1MU2QwLWEtbFA5dkVPNTRMRTVWLUFFWlFEUjR4RmVmMDl4WkhHOHkyQjV4MEZ2RERDOUNIelRuMkI2MlROVFUyUnhiOEtJMmRtQXczdUdCT2g4Y1UzQm9haGctM3RzTjlR?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "csoonline.com",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcVkwekxLZUhVVE5lRkZ5ZW5USnFzdkxxVjdGM0Jwc0J0SHYzVGl1MDFWU0cxZWNLQWJiT1kzbnMxWHNLeHB5UEtxbE9kejd6SjVGVlI4Q3ZIS0NhMzV6ZmxKRGFnVU4tbUVfdVJ5VUFGZXpTV0VaOHN1cHhfSm56Y3czbGNmTk5LcWd3eGYwMmxkaXZqYlEzMTBwRVY0M2hGS2djNGFSaDlpZ0l6aTg3Wlpqd0xOS3FXMk1PeEl3?oc=5",
-          "domain": "csoonline-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Cybernews",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNODE2SGd4bkdULWlicFlhY0gxMFVPSUoxTnZuTi1UVENxeXhwM0VkWjZNdnBJR3BTMDNxd1NrTDBKdERweUV4QXJkQlp6TjhLRmZwVEhweGV4MmcxUzQtelJ1eDNYLUJSZE80MkFldVRHbGprVEs0cFMtX25MaXM3VzJUYkZacW82ZTRKTQ?oc=5",
-          "domain": "cybernews.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "cyberpress.org",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5namRHTEtCTzFxVDVoQTNGdjhDLUg5TVc1UlNhZnB5aGdGWm41OWh5NDBkLUYyUFRPWkUzYW80VzJiWG9RLVFNdHpMSE9VZHVtYlE3Y2xuVGdyMkMtM2ROR2trYUp2ejJMMGZFOE5FRljSAXBBVV95cUxOZ2pkR0xLQk8xcVQ1aEEzRnY4Qy1IOU1XNVJTYWZweWhnRlpuNTloeTQwZC1GMlBUT1pFM2FvNFcyYlhvUS1RTXR6TEhPVWR1bWJRN2NsblRncjJDLTNkTkdra2FKdnoyTDBmRThORUZY?oc=5",
-          "domain": "cyberpress-org.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "CyberScoop",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1VbTNJMUc1NVU3blA1dm12cUd4UERfdEtSUFotay1kRVo4ZHN4dHBiU2syT2ZrTkhmUjRJYWpReVdXdU1QV1JWT0hqa2FwckNsWVY0eEc4N2tVUXFFRG81cDFJZjVjbzF6?oc=5",
-          "domain": "cyberscoop.com",
-          "tier": "C"
-        },
-        {
-          "name": "Cybersecurity Insiders",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8zTHJ4MDBsQ3p0bndFak1VVWRQMjFnc1Q3TFlNMVhfSUp1R0RtZ05uVmZXdEs3ZmJJUU1oeHNGT1dObWdqLVNxN3hxdFRaQTF1LUdpbVRVREtPSUd3eGYwSVcyWjhNTE1rcjNTbTljOFFIME8talJPQQ?oc=5",
-          "domain": "cybersecurity-insiders.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "cybersecuritydive.com",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOS3RFWUZSOU5nekxJaWJJaVgyOGNoV0JDN1FPTkZZWENOaEt3SEUwOUNjY2dmc1kxRm9qejJwWnUzV01lM3JPaFYxMWk3YXhHODlhLU5LejZfU2xyemdWZEFaSk9RRFY1bFI2dmQ0bktsZUpfemZ6cHYwb2g0bGh5OFpYclA5RTVpMmNyeDJXSXdqUENwVFE?oc=5",
-          "domain": "cybersecuritydive-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "CyberSecurityNews",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBHMEprOVU5NVoyRG5yNElGT213UmhEMWJudjVZUFNSMDFZd2lXWFZfZko3b01ObFFmcVBSUlBPVmtTZVlKODgtbkJCaHJlajFwMDZfeVJiUEZfUktBZldoWkItc9IBaEFVX3lxTE16MzVUcVZqRDI1ZjQyWkkyaldub0F6LUlkbHR2VDVjYlQ4MGdabkRxbENSdnBqa2hrRnh4aWtpWE5STk9CdEo1TVVmamRCVThENFBscS1jWWRRUnZaWkloVng4S3pPUUJP?oc=5",
-          "domain": "cybersecuritynews.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "CyberSecurityNews",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1EbmY3UVVSQnYxeXNHa25qUUFnaDlUc19HVXlMbm11MXZhVS1FN0dWN2tXTl95WWNwSFhjX0h4YnMwQzZDdjhzaHZHVWxQMGs2VDRoMGpVNjMxN3pRVmI3MVIxalN6WHhfZEVGYVRITW92U3BwUDkw0gF8QVVfeXFMUGMtOGJMaURjX29XaGNNcHlwN0VyX0NaZWw4UjdNQUxIVHJtS1ZhVDhUcXJpREJieVJsMDRLN0R3eWFMM1UzWndwOUtZUVVsOWlhVkRZemt4UlJTcmlZTFo2SVRvV29PWHMyeDRCbE5xeEVuQl9EMHlpTnc4Ug?oc=5",
-          "domain": "cybersecuritynews.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "CyberSecurityNews",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSGZmZWl4ZTlSRzAtWENyekpHdG0yTF9FU3FHX3FzRGVpMGxEbTdQZXZhby1DOUt0M3ozQUZpOHN3eG5SbUVrbV8tTE5Lb1dDTDJNajNXRGhrYkg3dTItWm85eFQ1akc2U1RYS3lkWXBFb0RWaXZGUTdZSjlWV2hudGtTaU3SAYQBQVVfeXFMUEhmZmVpeGU5UkcwLVhDcnpKR3RtMkxfRVNxR19xc0RlaTBsRG03UGV2YW8tQzlLdDN6M0FGaThzd3huUm1Fa21fLUxOS29XQ0wyTWozV0Roa2JIN3UyLVpvOXhUNWpHNlNUWEt5ZFlwRW9EVml2RlE3WUo5VldobnRrU2lN?oc=5",
-          "domain": "cybersecuritynews.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "CyberSecurityNews",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWGtnN0RleDR6YXZoU2NxLW5Qa1FBeFp6WkxIWW5oaWZob0Y5NzdScVAxcXVMUG42OEdNdzlxLUtENHlFRGp5Mlc4U1g3YTctdDBZLVZCRDZmZ3F6UnZhanRLTFhlSjNua3VKVkM5ZUtBdmlVZ0E1UVRJNUFRMC1odklpOGPSAYoBQVVfeXFMT0R1clExQ2psaGdvQndXbk8teTJuUVhXZ1BkVVJ5cms1RndsVEllcWwySkR0YUczSVlXa21OVER3b2QyM0VOSERnVjE0YVItcFU4WEoyS0owZzR4eWtJQUF6eVdsanY3U0UtREhFTThNdkNsYUtQY0ZaQlpxTU9KYWhPeURVd0pjSDZR?oc=5",
-          "domain": "cybersecuritynews.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "CyberSecurityNews",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE01SWdXeUpyY3lJU2REcHRSaDMwR0dIX3ZiSnM1X1l0MkhQUG5pTDJGYlBOZ1dSRVZoY3RSQmQxNHhhU29uQWl6ellBOTdDaE9KeUhsd1BlZjk5VVlmUThRNnNVcTk4anpMTkVwZEE1Z0pCTkg5Tk9Ya9IBfkFVX3lxTFBSMVhPYzRPTkRjTFN2Qy1EZFQ2ZFpudTBIOWtPUWpKYnpnNEF2bHJYOGEwa21hVTNrWnpocXlJQ2FIMmtKR3Z5ZUIwWGM4WElIVGRnWEFpX3FETjJDNER3RmdINE9WdGdtVlB1RDJ2Z1I5VlkzZ2FwQ0R5a1Ixdw?oc=5",
-          "domain": "cybersecuritynews.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "CyberSecurityNews",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9HZHVZRmhfRllQbl9wMGpJcXhZMEY2MElXSVdtWEtHUzRMNzFiejBFWFNSTVVHbERSZzBWMko1MlJfTzZZWFUxRXgyYzRUX3JqSHZSQVBDOHNNc0xoNC1lb1dBc3h4R05nN1FvbUY4X29EUm9rQjVfMS0yRUXSAXxBVV95cUxPR2R1WUZoX0ZZUG5fcDBqSXF4WTBGNjBJV0lXbVhLR1M0TDcxYnowRVhTUk1VR2xEUmcwVjJKNTJSX082WVhVMUV4MmM0VF9yakh2UkFQQzhzTXNMaDQtZW9XQXN4eEdOZzdRb21GOF9vRFJva0I1XzEtMkVF?oc=5",
-          "domain": "cybersecuritynews.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "CyberSecurityNews",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQak82aUJHMXgtVjdqVzQ1REFBUkFlWmlVLUZDWGhVeVBaVHdoZnFWVi1Wd2RxUUZCb1JTM2Y0X0VzLXZtemJycDQ1Znl0TGFSNUNQR051RzlDYVRBQkxqRjB5WlFLTXlZTVBpRHhZV0Fza2Q3VmNTdUt0TzdnS19ONkpUM0ZxcGpyYXM2cjhYdDZQQdIBlwFBVV95cUxNS0ZGMURvbjQ0X3RsOE9YU0ZnN0ExTTlvZDFxNWFZRXZKWEtXZlVwQUhQSGZCUEdGVjdkQkJCSVVELWoxc2FFcEtXVVdIX20wOWJKZm12SmVxWXRXTlBSOHN6NVRCRlRZdHV5RVpiSklNcWMtaTRjbm1hWEotaDJIZkRybW1NNldmY2M3YV9VVTBKbmxRWGVr?oc=5",
-          "domain": "cybersecuritynews.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Dark Reading",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOT1Y2Si1kbXJzV3ZJODlHVzJ2SlNDcDJNQm90eTNiMUFvS0VDblg4WTBSNFBZYXU2cmE0aUdfNlNGUF9LWl9uU0FEbTIwTTd4eXp4aVNBdnh2M3k2U3IyWWlTZE42R0VLdVUwR0J0OWR4VHhyczd0c0Rhdy1FeE5TRFZ0YjlySWtsRVlIaXJFMDZWTHRYcGdIMUFyc0ttZ1BuTGc4?oc=5",
-          "domain": "darkreading.com",
-          "tier": "C"
-        },
-        {
-          "name": "Developer Tech News",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcUxBV3BMRTdiSU85NWhvU19PTXhXck94SHVGc0Q5Q2hEWmtRY1RINVNyRHRoY0piREp3Sk81cmc0NVhOTGY0VUN0dUlycF9JQXNyT0h1Z21sV1pQUG04N3Z2RGY0YWhNNWtYdEZIOFpnUDAxNURoS1I4Vk15dDVUaXRaYTZPNzI1cWxwRFN5dWgzRy1zWVJj?oc=5",
-          "domain": "developer-tech-news.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "devops.com",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5mMFNEM2h6akZhdXNfdnJvbjQxbnFlVUdpeUxiaENUc0ltTk53SGJRYnVRREtKZUFFZVVSaW9wYXpFei1tZWdXd21DZ0NJRU1uN0U0VTZjc0RzbEE0b1RiSlV2TFFjX2t5YWdaWUNSRmdGQWdLUkt3YlRRMzRrSTg?oc=5",
-          "domain": "devops-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Digital Music News",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE41ejl0VlQwNGU5T25IUUlmVGpLT1dmUFI5cVFBT3RLOW1mcldhdjFBZWIyUlhwNlozU1R3c0RQOEVXZnpSSHdmMjdZXzdTcjB2Y2Y4TmNTeVlUT0xqTVBSSUlGUkJlMV9sTVdNc2t2RlRaaE1rcERVVg?oc=5",
-          "domain": "digital-music-news.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "entARABI",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNc0pGMGVUUjUwbzcwajkyWTlBVG5KLTdUenFnSjVkb2trV2tGeldKT0dQUHEybG5iUWRKV2VFVGpRSVBKbzl0b0N5Nm9sSGFGdG5rVkdqTGp5RVR6dUxxdm5RQU1SRHlySEtNQzV4NldUblpaeS1neVYzSnFVSTdyM0d5eUU3YThjM2o1TEtFRHA1YVQ4RV9ILU1fdw?oc=5",
-          "domain": "entarabi.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Field Effect",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE4tV1p3Ym5JUFdNdFltbFlZNjBkWTdZa003NEEzd3BQWGlWNmhHbm0wM1J0ZFBRNUxURVlaRjRCaVQ5R1NGa0R3T3VHTEpFQ2s0Y2g3LVRReTZ4YWxvcnNuZ0hJNVNBR05MVzVBWk1fWVhOZw?oc=5",
-          "domain": "field-effect.publisher",
-          "tier": "C"
-        },
-        {
           "name": "Field Effect",
           "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNU3kteHFGaVpOVWxLd25USFdwWHBfRmdoTmdNcEtNRXpNZlFLemhDeHZrNHFqNlo1Tlhhdy1nMGJRdEszQVB1UlluaDFlRjVZSERXSmc5VHNSeUdpYUpfM3VTLXZfSS1DbTVrdmx1Z2c5aXJmWHRXNUw2Nk9ZTi12WFhSNjJSN0g5enpXZnZRelV6NVhx?oc=5",
           "domain": "field-effect.publisher",
           "tier": "C"
-        },
-        {
-          "name": "findarticles.com",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE4xRFRUS3pCVTJXSDg0VDFJMEpGNlowQjViZENOTGlnYThjQ1VnWUFvUkRsZ3NJbWlEZndPTkFKU05QcDNqVlJYV3dZMzdCd09Oc2dJQ3NSRFpwbks4VzNtbmpTOGJ1c2lGTFdQdmt1RUNCaGJNUWF3WEFwd9IBgwFBVV95cUxQN19ZWF9Sb3lQM3hDNXBqWFBVYzhrYUU0VGduai1VUzNyMFZ5SFlWZWhWNUJfMXA0akQtYmo1UUhvZktLd2paNlptV3lEd0dEVk9pUGxOb3o3QmpoQjdpaFA4d0JaSmppVUtMRnlyZlpoTVJ4Z3VVY3BhMnc5czRKTFNMWQ?oc=5",
-          "domain": "findarticles-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "ForkLog",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRDU4UGtkMy1ub0xLZG53OHBCRWpNLUpCZHN2ci0wOVJwQzNSdzNONXBwOFNfOFB6UEFRUGJTY211LU1CWXVPUUZkR2c1Rm9HQXQ3ZXp4WGlPdlJtN21Mcm4ybGxoTFNhcl8zVzU3MUN3NjRoRzQ0eVlfb3d2S1pOc2dOZjY?oc=5",
-          "domain": "forklog.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "ForkLog",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOS3FzSjRNLV9RUENTOEFodnk3SmFCc25GODJZZFlvSjVMc2VLUjR2VjR4XzdRSWsxRGM0UUJLdlVrUWdEb25aeVdYbzhjX0paSDJsUnNPTFpJOV9YWjdRZ2VoeEx3OERTNGQyU1NwWDZPSzZMR3h0SVh3RHdtNEViaEQ2NHJCZnZMdV90QWhxMzlZTVBwYXF3Ri1WdHZGZw?oc=5",
-          "domain": "forklog.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "GamingOnLinux",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZ09OSHFJcHJHWXBhVExHT0NXMVJLLVR3MTVnc3NKZEc0Xzk4THFBM2JTNjJFNWRpZWZzNktnd1RIOEdMRVlVSWVOemRIWlBoN1RydG8xZGpuRjgwNkJLaTByRzJ5VFhBczM5SGJtMFI2WUVqbTA1MUpGSlNuSm9jTEdTRERvTWhKV3NURzlRX0RNUWxVWXJHa1ZLR1ZwMV94NTNQX1RYQUg?oc=5",
-          "domain": "gamingonlinux.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "gbhackers.com",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8wT2xPbkFxWUpDUGppdzZ2TGhYZWd2d1ZvTW03T1p1cVk5M3BhMU5fNUd5Mm1CV25JWVhQakpZS0xleEdIaVFxQWNTdElDUVhZSjQzMVJIaWhkRnRsZjNSX2ZMdUpZNnljNWxPMzQtUdIBdEFVX3lxTE9XMTdoR0VBSFZUel9oZ0kyS3hQNDRMNjY3YXB1Rlp5RE5UUU1QOTduZ2hDWE5HeGJ4T1Z1dDZ1UndfeG5rUkxBWlBjOENZYzJGaHpIR1A3VEx5bHEwbW9tR2E3aTVNNDhXNl9tV1ZGUHVoQkRk?oc=5",
-          "domain": "gbhackers-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "gbhackers.com",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5MQ1JqQmwwZHBVdENuUnJRdXpfRGFSUlZjSnUya05iclQ2d2xTdjRtWTBURkZ0WU9aaHJlQjJNUWpTbHZ5cVFCM3FJaUJGenVCVFFKcHQ4di1PR19JVlHSAWNBVV95cUxPVmNwSzlwamVmSkFEbVE4d01JMzNuQ09XTzkwUmNNUjA5NEtkX0k2N2dKSFhZaFVJeWQzYzczTWt2X3BjT0JkMGtXdlBPcmxSaS1qNGt5eldlWWdiVzM1RGQtS1U?oc=5",
-          "domain": "gbhackers-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "helpnetsecurity.com",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTHZ6TXNHbHdoSDIxZ1ZDbllrd2VhMFFwU0tSTHg4VjkzcXRWZGx2Yzd1cDhGUmdEVU1nekpfY2FEM0VObEp2dFJvQ0ZVd01LNWRFblZmNll2QVVLUEZmTVBpVldkeGhMYlB6a1U0X2pWY1gyN1FfVDN1X3NCRzFya0dqOFoxLWJ3bTlrbmktQU8xX0lVYktJ?oc=5",
-          "domain": "helpnetsecurity-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "helpnetsecurity.com",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOX1ktUWUtLTFmeHZSa1BKVXN6UmNTTkppWDVQZG9fWGZrWGg1TlNSUTJOQmZqRDVZdDhDUGlDZnBUWko2ZVpqQzVTTG5USGZ6eDlVank2Z2xGOWVmbnFja282LWtwQlBpRTdlWlJsV1dVVFYtSUg2Rl9qclk4WFFGZzN2ZXFybHJOanhHLTMxRENKQlVocFE?oc=5",
-          "domain": "helpnetsecurity-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "helpnetsecurity.com",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMmdWSDViWnZwdUFkMXhxSWVMVGREYXYzUVZrU2JoYmQ4ZGt1WTQ0Q19ja3FtUUlJSGRXelZyOE9mZjV5N1dkZXRDdWpUOEVnajZaYTFzWVhnM1NvU3lyOE15YUFKY3VmVEk1MzhQa0hLTWZPc2VPRm5OWUEtM2dmVW5IRlB6MlVXRktkM0RuTXd6TDg4aTFPcFdQcw?oc=5",
-          "domain": "helpnetsecurity-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Hostinger",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ZeFhtOXlybUxuUWowS0d1TTdWd0dVNVE3RzIyYVBUU2pfaFVlN2hIUzJVOVFOLUl5RTVGSFFXQ2hmbU9xcExabF9saWpTMHZsV0R5NVhwYS1JTHhtQWxSX0RUYXBTUQ?oc=5",
-          "domain": "hostinger.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "iNews Zoombangla",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOc2hETTZfckxxRkhMTTFCT19YRHJsam5oRjVfWUJ4MjNwU0V4UDQxM3AzRjNiejFlME8tR1M4V05CYjNodDdYWGEtVWcxUjA2UXlJbEg2alRKV3pzQnFGMHJxdS1ZaFlBLXNVczcxV01RMnk3X3pqQ1E5dnphSlhTNDc2NEVGZzlnVWVROUJWOThfOHpIVnJpOEtXSnBXelFnT3c?oc=5",
-          "domain": "inews-zoombangla.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Infosecurity Magazine",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBxZjh4R1Nuc2J1U1pxeVBNNS1UdVRscGJ2NlBPLWF0RlNUa242VjVMek14MWlyVVhZVk5Lb1NKd1d0SGM2QUpOei1ubmdjMlZMTnNHX3ZBYlZQaWZKVGJyNk10M0w3MjlOdElSM0o4dFg1S3ly?oc=5",
-          "domain": "infosecurity-magazine.com",
-          "tier": "C"
-        },
-        {
-          "name": "kobaran.com",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQ1NBWEhJcEM4clpIb3liN1VSQ0xPdG5hTzBMSElFUVZ4MXJ1NEwzWDFQSFB5a001Z0hMRV9XNm5fSGlQb3ZWeElXeFFxd2lfUWlBVzhWY1NySlFiZG5RR093b3M0SThuQ2gxMmw5S1JrM3NKSF82TlA0SkFRcFVEOWxrcV9Mb3dQclUwdHd6RjAyTWpSNUVNTVNPbTdRc0pfMm9WZjFMRlM?oc=5",
-          "domain": "kobaran-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Malwarebytes",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNakF6cjU1WkF0R21SSXM2RERuWmVvSlEwVTZEYy1vWl83bzBnLXpXQ0c0VWItdno1SVE4RmNJaVJxaEFOVkxVbE1BUWhKcGs5NlN0SXMxTTFYSHBhUmNOdEtWODN2Q3JNdVA3a1puellxTFRyaF9wM0pWMzU1blZzVThjMUd5N3J6ZWVnZUtGcGVzSUVoZWI2WGxXQ2RLN2RhVklQNWc3Q1dubUFUeDV5cnhNcw?oc=5",
-          "domain": "malwarebytes.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Malwarebytes",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMFh1TkF0WUdULXkwMFNtYm5QdlZIaUxGQ2dhSmRzVWZWYXNyVnJpY2dNd3Z0ZjRxZXhSZWNqQVRwRnFEbGhmNUl0a0daMXN5Z1REYi1ZVF93bnp6SnVCMUV2SXpoV09qczRjMjQzOUlTbGhndll3XzZSS1h4NURubkFRZkhRZTZVRTB0M29iVnhLMzN4dTcxbHJNXzVrQlNqem1PSU1iVzFFTE0?oc=5",
-          "domain": "malwarebytes.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Menafn",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFFaOU5NNkp2NkNuNVhtYTdaTmZuZWFMSkIwOF9pd3lERmdLZlZ0YjdYU0hxWUxZeXB2N0J3TzZ5SEpGSmZORGlPQjhfMWhTaWJSUVM2aVB6UHFWcWwtdXVHVElwNXZiSW9rWkhaa3ZzazY0dmx0NS1YeEpBeW5EbHdfRno?oc=5",
-          "domain": "menafn.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "MeriTalk",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVzZQQU5VLVlSYnJ1TWZ1RDZiejJyNTUzc2dEbU1VNHBXT0ZQYWRLbUJOQTFvbFdLWVBnQ1kyLUpUazNudlhjeDVnTmcyZC1lOWhwRl9CcDN0elFFdC1ja0ZFaGhCSXhGdzBDaTVlYmVLRUdKSlN4Q3pxR0ZvOC1XSTQ0TTh5OGJZMlUweVZqUVl4UTFURmtjN04tWmhNaEU?oc=5",
-          "domain": "meritalk.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Mezha",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQckdnX3RLOFRsc1lTWmI3YkRsNkpzdkV2VXo5TzhqY3RnaGcweTh6UHA4RWN2NFkzbUVDMDFtWHVhdlhLQTFFaFp2T2pRblFTUUY1QWNrV0dycXAzS3djVzA0cXpsWDRkUzZRYnlndnZudlphTzlybGgzNG5udm84ZnpiV2k1NGQ5Tl9SWHpzRGRUVk1UNTVHWkgwLXFoLVhY0gGmAUFVX3lxTE9Ca3B6aU1sM2tCeTZhWGxJTjBORzdZNXNCaDRhcnV0V2VvX0R0QlFCZDJHSGdvMlVad3dwSVJJcWRxbE5WQ0EySnJfcURKb21CS2FPMVhiTWpYRGt0a0FkRngzTC00TzZRdW13Yk9tR3ZNNnNaQ1FWdldURTJpSEl6ZHJRdGhQWG5uQnpfMThaVjdjc21RVUwtMElmZDE1eDh1ZHFjM1E?oc=5",
-          "domain": "mezha.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "NAI500",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOR1lQRkdMSEJxNEc0eVJtRU5CTE80d2VxZTNDRFZnd3FHWkpzdEREWTJFcWthajU1MkN2dlFWNzBzak1zb2NtQ0puX2NVUVhWVlBVbU8yMnpBXzRHMVJYNUdVbU9pNWlkVnRzYlphV1NLSTN6VEtHYWladVVrNV9GcU12WUF2NVlxZWlPck5jMk9RUjQ?oc=5",
-          "domain": "nai500.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Network World",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdlFYMUJsM0VCQTJyYUhrTG5iT0dQNHc0TFdnRkpIZElIZHhlcUtrQ3NuZGtyWWhUb1d1amRqcEpMb1A4eGM4aDZTdi1Wb0hoVjlUVlpLRllZV3d5ZGJ2cTFDdW8zOVdQU3FpTFlkcno5ekVkcmJFdjBoNUpoMjZOLVFCSHgxcGZHZW53Q3FmN0VCcFJNczdOdzU1RFp4ZWN6S3V3VGxJckhJTW8tNVgybkVjZnRUZW53Z1o4YnE4NGF5QQ?oc=5",
-          "domain": "network-world.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "OfficeChai",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQN3F4aXlEVmJVWnRfT3djai0wQ24tVkw0cllUSXVnNUdQcE9XT1lXT2dTZUNNOFFGY0M1Y3RKUGpqZWVldUwyRWRnNjBYNHhlNFNLYlhPd2pSVUluU1JLdl9TSzBRNEY4cllnWDdCem44T1Ixbk0xWVp4Ti1FSE1Zck4tM1hlbUxfQld6WA?oc=5",
-          "domain": "officechai.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "pasqualepillitteri.it",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORDhUdzh6ZGNZOTVydDZXQ3B1VXU4TGRYT0tyYndudUlFejdqai01RGJUNEJqc2Rjc3ZVZjlsSnhiMDZnaGE4WlR5bDIwcklVVG1BeXNsa1pBVExwVzhXS1B5aWFqUXF6NlVPSlo4WU9VYmFId2s2aHdiaF83cWg2ckc2M2Y?oc=5",
-          "domain": "pasqualepillitteri-it.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "PCMag UK",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOWjNWd1owWDhuQTRpbXo2YWtBeGtOendCSG94eXhoNkgyUmVuUnF5cXo2TEpJV3ZFdVcwNENucUZMNmIxeWhwN1MydDU0c2RKQ3dUdjVCeVBuNV9sOUxld3dSbjhlbU9tWHJCWDh1VHd0Mk81aGExcXBiWU43Z0pWUjFacVZMNUJ2STZ5T3NSM0E0VjA?oc=5",
-          "domain": "pcmag-uk.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "RS Web Solutions",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTGg4MW52TWt6TV9OU1NhamhvcmhhSFY3X1NjVERpajd6ZlZyWUt2d3UtaVo2WlZoa3dtdHZuSmtaOEhqVnJjWG5NQ1hXaWFZM05laGJzcFhEVXMzRlpFbTIxTkszaFhkZDhJa0t5TjlSZVhhZVZGWlZZenludGtrOXNzeXlLVUg3d1JKTkxSUHdKOURsUjF1OUE1UXJ1el9jTTZuMW14d3JSLUo4WkZrZE83TTFVYnpEYVdvbmQ0ODlkZWhKMFQ5cnZNNXhzeWFk?oc=5",
-          "domain": "rs-web-solutions.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "RS Web Solutions",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWmNUMlJLbkJIOEFtbkdSVk1jZkhFWm05WWhfVVdQV05Ecmp3cVNnM1k0cGJxMkVWc0dQVEZxdmhGcEdZcVVCS01iZ2VQV0xWOTVOamlXOGpOZktvSnlIbUREX3NwSkpTVWc1UVN4eno3ZGlhUEl1SEdKNE91V1UtZnd6LUlVOW9DQXVkNE1qX2xjYjJxNy0zcTB5bjY4RWctbDBPQjZEb0JUVVk4QVE?oc=5",
-          "domain": "rs-web-solutions.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "SecNews.gr",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdWFLOU4zS01QZnk2N0ZBaFhKU2p0dXlXVUZOblBTSXlOeUVlS0ZXMXA0RVFMb3FTLW81NWxtZVMxRGJnWmdsb004V2NURjg5THd6bHNla3E1RGFzM3NlZmk5cE9mWENhaDNDM0lQMlI3T09mcEphWTVmWjhSV2dKZA?oc=5",
-          "domain": "secnews-gr.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "SecNews.gr",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1qQlZMWnRDSzlpWExVTFFPWnVCNjdHdzFoNWN6bzRNVGxlUUlfVDF2YjhWNWt4bjhWdnlXWWZINi1zaEgtRGRGWXBjdkdSY0ZELWMtOFdicHBpVVRDSHpUWHl2NGNCcHdNV3c?oc=5",
-          "domain": "secnews-gr.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "SecNews.gr",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB4UXpRWlRBYjZfVGpOZ1VmNEgwVVl4X0xPMnFWY3ZOOXVnNktZQTM5NVBFN3NnaFd4NjItQm5hMkVvMGgybHgtTEdrOG1ZeG5rZHE4VDY5ek9xbWdFLVRXVklQS0pmTVlRN0pNZFBtbHpvMVN3X0xOQ0hHV29VWm8?oc=5",
-          "domain": "secnews-gr.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "SecNews.gr",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9vSUdweWpFMWpIOUdKaTZSYmdTbHRpeXVPRlJNUnRoSENlQmY5SDdsNTFvaDVlWTBDeU9uNzJvTHVtclZZVjJRTDdPNE11VG15VlhJSTBNM3V0TWpGbFo4V3h4N1Bxb0hUenNETHVNcE0xWERLVWc?oc=5",
-          "domain": "secnews-gr.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Security Affairs",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPY01mcU5lNFU4N1RYOGpvZVNNdHVFR1FPSlVEQ0FpS0xIMWZkbVZnRUhEZkN2dnhyRzFaaVF1N205WnpSVkdBNDBVOGxlQUNBT194c2lSNDcwVEdZYVZROGEyV0FCVmxVdmRQbm5ScnJ1MTg5aDVOM2xqVVE3MERxYnd4VkhTSnc2MVd1UmljV1F2dDg4bS1LSUVvdDV6bkZKajh5N1AyN0dmUjR4WmlsQ2QtdUFnVktWQUo40gHAAUFVX3lxTE9WamNDZlhMQnNzRi1LZ0lzeV9GNlJ4WHFnWkJSb2xrUURIMzBkRS1menlvc2FSeDRaOFJGOHptSTY2QjkxRjBXM1UwMkdQMVpkQ1VuOFo3TGIxQmFGYTJ1NGs1ZEJUMHJQaElRa0U3UFJFdDlJMEtBNWJyOTJwVnlYZllKeTZxajJGaVFJYmd5Qy13emc4Q2VWUU1QdFZRdkpFSERwSEROWjlHcjRLZUgxZWMwWHlLLS1KNXdMWmhhVg?oc=5",
-          "domain": "security-affairs.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Security Affairs",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOWVaUnp5azBCbElPY3JuWmtnU0p0V0ZicUNOQnlHT3ZwQ1F0dFZTZmlBVFVWXzNGX0piRE9uU3dfT1RVbURmRVRGdWRsRlA3eXdMVXFrWUNmNzhiUmxKemJUY0ZKTXJ0VEszMGdpYWJLblY1eGtFaGFiQUNaZzFmQ2VGc3ZpWmVUdUpQdFdkQzIweXFQeXIwODFOUVljdEpWOGEyUTUxWFBXa2JndXkzXzBLONIBuAFBVV95cUxPU0FPVjRqVThfRDc4WVlnRDFFcDd6bG5XTEw3M29Md0lXNzB0Rmt5akhfa0QyR3hMUDBQVW9JVktLQWxFX0pZbmVpRWZBSjJORDhVc3dJNkE2ZFFraE0tbk5ZSENlbXQzR29CRmppUXp3Z0lHMXJyWFpnS2lqMFJybnFDYkgtenc1U1JmUlJaWFd6bEY2MDRPa2x1TEVuVjRuRDRGQk9QVEVScHRkNnctLUh5S3kwci1G?oc=5",
-          "domain": "security-affairs.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Security Today",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMHc3QUVoRXhob25KX0UzTmFXUWJHRkpJSWdOc0VkODY4YXJpNkhjMlpxY094ZzZZZGZXYnVXano0R3JNRWhabUgwY2FRSGZKa0dfcHNjR2g2MzVRR3pVNEpSektialF0NG9KSmlWTnFxd3RpSlY3dVVHNTZsMTNjR1VpMTVOTkVRRy0yOVJRRXAtakdhOHJBdXZ0M2YzVnNRVjRpZl83TUM1UllEU2dQVTE1TXJYODlZcENhWGpNNA?oc=5",
-          "domain": "security-today.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "SecurityWeek",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOanBGckZsTGRaRTg1VGdFRmZwNS1faWRNdG5HbXZGbzVDZ3J5ZERSc0Jub2V2Tnd2a3p6ajBiRkJJVVpESl9Cb1ZhRWVQV3dBbzNJaVFsWTRlZ0VzYXphampUWndDS2M4aHpJcXZ0OEI0aXVpSVpFczd5cVdQNFFiaXJzTXdXNlg1T0Y1d0gxWG9GdUpSU2k1MzFiUXpnd9IBowFBVV95cUxPUHdqU1RCRFdCX2gydjZ3ckFWLXREaThmWFQzN0pKallaaEp5RkotYVIteGxJN1FtZWQ5d2padWszN0FIdXhVUWxxcEFxM2NoejJPWU9zWURiRlBIR3BTbnVPNV9FSWhwLW91SXpHRHVhWmRyeGNzZ2kxc2xCVU5Zb3Q4VmpoanlIejVNcmFfa19QOFQ2TTJIbjh4WmZ2WWVkSUF3?oc=5",
-          "domain": "securityweek.com",
-          "tier": "C"
-        },
-        {
-          "name": "SecurityWeek",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZXRTOGc5UDJVTzlBY2h1bmZRTEZEZWdRUkpXaEF0dzBzeXZzaVF4eDRLUGl2c1hLajdLeEJLZUQxcnNwY0ZNUkM2Z2hPeVFZWGNaYVFhSmVhdEJ5Q2VCbUxsNzNjNThzMnlBSlFqTE1lVXdkdGlzLWQxcllSV1BrcncwQzBPTjNDTU51aG9OWdIBlAFBVV95cUxQbzhOVVBScnJ0dndDWHN4N0Vwa3lhbGJ4V2lQRWZqY1JDcjNrWGRrMXlmT2hvUFQ0RkhELUhNbzZNVFdHazN4YW1ja3Rpdmtkd2JCV2FBTHVBaWFMQWlCMDA2cWc3MVZMR3RhRjhUNnU5TjRqV2M2eWJsMURHaEg0djlXN1pycXdzQzQ2MXBNdDcyaW1k?oc=5",
-          "domain": "securityweek.com",
-          "tier": "C"
-        },
-        {
-          "name": "SecurityWeek",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSHFKZm5ET1NFdXFlSEI0WU9XTU8xY25VNmZqZnpIbWc4ck03b1lxdE5WVzRuRXlWNkVxU0hreEdpczRsZGpIdjZ4Q1VhcHkwOF85dkhpdGVIRGs1WDdXaFdHNXZqMkRGRG1NRXlWRGJMOEpjZHBUekdvMTdWbC1QNmZTMkoydGvSAYwBQVVfeXFMTjhXU0lEMmdLd1NYX3p4VDJUSnVKbE5MYktQMDFVM3pSMTNiU0xuaVpLR3VXbjllRVh3Sm5HZ2huZW1qMk44aGRKQTRJNzUzV1BCZmlqZ3BDa2F1LXliU2V4ZTVadnp1eWt3MWd2ZTRNMFRwLXJfSVJqODJJVTZnekc5dG5KSEY4RUh0VmU?oc=5",
-          "domain": "securityweek.com",
-          "tier": "C"
-        },
-        {
-          "name": "shattered.io",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBaRTgxQk1rdzJjSmI4ODhWYWVjQ09wVE1TRkc4RDhOTVdyOHVFUndtbW9sM3dfajhLczZpVTJGZktvNG9zMDVHeTZucDZ4Nlp4RE13enFRbHZXQVF3d2VzckxUbTBkanhqT09Od3dfa3BsZw?oc=5",
-          "domain": "shattered-io.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "shattered.io",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAyejJWaDE4Y2QzU2JvdmdHM2c0ck1hUlNCOFZ1QzFybnl6Qll1MWFPdG82eXpqMTM1OFdXRXBISUVkXy1yd1NXN1p6WnphcF9BMjZlVFlZV0o1OUFJYWlSbEhNRnpMQ0p0NURZbWwtV3RlbDlTWkQzREQyM2pVZw?oc=5",
-          "domain": "shattered-io.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "shattered.io",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1hY2hkUVJDbndoME9kaWZ2YzNtemRXU2RJZDB6djNKVmdEV0QzNkJZN0tLdWVVeDNVbEFWNUtTZlJZVFF1REM2SXBHd1hXNFRXVjE1azVfaXRRMlVpU3BQcEZzSmtPYUQ0STMzbmpuM0psZw?oc=5",
-          "domain": "shattered-io.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "SOC Prime",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9VS3ZlMDdNdEZrZGZVdWhWRmhSQkViT21XZ0JQemVhMF9GOGRTaDRJQUI3NUJLWTZ3Z2cwRlRQUjB3alpYcDM1TkxoelBvcUU4MTAzOERwbF9MTmVrZUR1MkUzSkxrNEdqcFNKd1FwVGJ5bmFzV3M2T1p3?oc=5",
-          "domain": "soc-prime.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "SuaraGarut.ID",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BcGc5Sk9SZ0Z1eU9WaG9UYzVjdUlCUkxwQS10SnkzXzBQS3h6YU0yeWI0UUg3NzlDOVVKVVpLdlAyQlYxR0Z5MEtOYXdJS3hLSDJIWnphWTNETXpnY0pyQ2lmVS1ZWjQ?oc=5",
-          "domain": "suaragarut-id.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Tech Observer Magazine",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdWYzUnM4cFpLdTFXMVFPSzZobDhlUGU2N2NVU2NxaTV4SG0wUlRTckJBb0dDdDE3V2xEMHhPb2R3ZzB3Sl9nODZjcGhBbFpBQmNsSldjcGNRenNzVWJseUl2UVdIR2prcmowZXExZDNpaldSTTJqOG9Cb1NmMzllODFXeHRZQVhrOWo0c2VhNjEzU2xSNmpsQVdYSW85anpjbEhPetIBqgFBVV95cUxOWjhHbWRxN0dkWllxZjJZREU0QlB5Z2t6OTZ0bjV0X1lUZzJiTXRKZzFPNVEyVldGbEtsN19xLWt3Q2FJMHFIMUI3d1U2NWtzZHFQQWhkMVQwanZMQVNySUFpWG5idjNYUWRQOUc2RndaeHF6cDV2bHlZMmxNZUxGS1JzYVJPVTllMXJJaDFDR2RlOWFzSjVkRFptb3pvYThkRzBDWFJBZUdzdw?oc=5",
-          "domain": "tech-observer-magazine.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Tech Observer Magazine",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOelVpY2xnSVVTbTFFTy1JVVNkamFmRUlUWTNRS2hVWXl3WDhyZEZqOXgzSkFnUGg3TkVwVUlhbXhQdWNaNVFvZU1hMTNzOGVzaWVEYjA4Z3FmQlE0XzdPYjNwOGpKNFJURzVUVDU1b3BMR1dWbFhSekhwMnFQQjE3cXFWd2I2UmtyN01vZWc4Qi1ONDBzY19lb1ZlYzdkZnBV0gGgAUFVX3lxTE56VWljbGdJVVNtMUVPLUlVU2RqYWZFSVRZM1FLaFVZeXdYOHJkRmo5eDNKQWdQaDdORXBVSWFteFB1Y1o1UW9lTWExM3M4ZXNpZURiMDhncWZCUTRfN09iM3A4ako0UlRHNVRUNTVvcExHV1ZsWFJ6SHAycVBCMTdxcVZ3YjZSa3I3TW9lZzhCLU40MHNjX2VvVmVjN2RmcFU?oc=5",
-          "domain": "tech-observer-magazine.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Tech Times",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMHRTNlVtVG9XNnh3YlpvbTZsbnN4OUh6dkRjM1ZyMk9XUXdHUVFmUHlMVUpRNGtyQlZERjZFdk90cngwZU5PWnFFMFd3djB3ZHlRd0dQMnFJbnk5c2oyVzNKbWlickFHZ2ctWWRCSzBZLUgydEE5d29YNG5mcTRQZUdpSFd2LXh1NjdFemtRSzNtWG5uTl80N2lRNWI0eGpSbVN4Z0ZjWW10cC04UjdONjlBT1RqRjFuczgwRGdpcEtzbUN3Z3JwQUxBMA?oc=5",
-          "domain": "tech-times.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "TechCrunch",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVk4yQVI0WmY4TjQ5RG1VaU1ZMzdRellZQkNEVHRONVVPczdYT21HT0hDSHZNRnpGUGdpZlhpdDlSU0JfbmVDYUw0T2RjSlFteHhsbEpSNzZhMDZMSURCYUdMM01ncU1tczQ1Vnhsb0wyNW9HU1JkQkxFRFQ2LWIzYWkyaWh3NThtQV93WVJiQ3FUY1ZNcjFfZ2p6WmdUdURwaVpBVg?oc=5",
-          "domain": "techcrunch.com",
-          "tier": "C"
-        },
-        {
-          "name": "TechCrunch",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQS0tYS0VHd1I0cEFmd0JuMHh0SEg0NGxoMUprUDFPWVRlWWZvWE9LN0ZWMWd6Z2Utc2dlYWY2elB3Nk1xTGtRZm5aSzFDZlhfR0JRSms0NkJmVDlDY3JJYkxzU0M4ZWFLak1RSnNGNTlzWTJRZmxkbGZfUWppNUVDc3hxQUlVd01Ha1Z1U1ZYUzJReUU?oc=5",
-          "domain": "techcrunch.com",
-          "tier": "C"
-        },
-        {
-          "name": "TechGig",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUjhfdU9VRWhRS3VnNUtYWmxWYU9GNjhUWVVnNEJpV3F4Q1NvVXBEcHl1bktDYUpZQmwzRHdEMkQ1cXNyczNzc05YZjhNeXpOelNseHUxdEdUdXRCYlZwaWJXU2l1Zi1kbzVqdzRMenRBdUJZYndTVlRGVXJnamxxbjJPYU1haUo2S3F3WUxWOGZuXzlYT1NYdXhYMG5nMGRtZUt6MjBfdmFVeUlxeGVmSjRwdGRHc2ZETHfSAboBQVVfeXFMTVI4X3VPVUVoUUt1ZzVLWFpsVmFPRjY4VFlVZzRCaVdxeENTb1VwRHB5dW5LQ2FKWUJsM0R3RDJENXFzcnMzc3NOWGY4TXl6TnpTbHh1MXRHVHV0QmJWcGliV1NpdWYtZG81anc0THp0QXVCWWJ3U1ZURlVyZ2pscW4yT2FNYWlKNktxd1lMVjhmbl85WE9TWHV4WDBuZzBkbWVLejIwX3ZhVXlJcXhlZko0cHRkR3NmREx3?oc=5",
-          "domain": "techgig.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "TechJuice",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWm9sbGo2NnFZcFcybVFZZ2NMRC1sanVzNG1aZTJudTBPVUdyQlVyTExQUUc3ckpmS2NnbzlOT3o0OGVZWTc5emIyd0c0UmJ4VnJGY1N3MUJ3MGdOZEJnS0c1eWFBdC1NSkdxWVl6Y25DSzJPeWR2U1ZZZ2FPaUZwN2RyV3kxWWNvSUFXamZYMks?oc=5",
-          "domain": "techjuice.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Techloy",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9RaEdhMTByTlhqRFAwaTZuWU1DRVdnMy1ZVWV3ZDhLNHJfX3pvVlhMemxIY3BlWUpxZFNEeHZYSWF5YXo1NGtTUFRXaFR2OHFLMG1EcWJiei1tM0FONVgzaA?oc=5",
-          "domain": "techloy.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "TechnoSports Media Group",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4wdEpsbTEwNEM1NzdMVzhLLWFVXzQyRXZqTFZySy0xY3gwdG1zMm5ueHhOblNUSlllOGo0NGw0VTVaSDJYdXUta000TFE5ZlRxeGoxWUVIN1gxaXphdGVuNU9YdkpQZw?oc=5",
-          "domain": "technosports-media-group.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Techzine Global",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdkVzNFJYZWM0NDFVYjBzSlBKRm8zZUswbnppVm4tRUY5WjRBUWJ4NUlndVlQVnpMeWhYc29lUzRNQklwbjBWMlRaWExZUmVqZDlOUVZsQ2V5aTFRa2plSUFGTlNlOWtaR2Z6bXdXRTFGN3RHSUQyU0NnNFNta280U2hBTWkyZDFPQlR0RlRtZjEyTkdkWlB3ZjNMaWpOOFRwMjh0bk5YTWJ6TTAtejRWZ0FMZ3l1TURjY3c?oc=5",
-          "domain": "techzine-global.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "The Cryptonomist",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5zUXVYWklVMzNYclBtSzBBazZFZ1hIYmJsUTRLX25UQUZOLWszMkxZdEM2c25FMURaRjNNWVFScHFiLV94MWtpM1lGVmxXSlpnWWg4MHZzQnBpMi1SU0ZkWmRTWG15VzdHRmZ2NlcyUEhlZw?oc=5",
-          "domain": "the-cryptonomist.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "The Cyber Express",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA3MHZiTjFsM1NGdkRGYXhkX2NGbVpmZndSVkFTb01MWFRobU5kZi1meE9vOVlhbm8wSURHTEJtdnZCbExqekctYUhBb3NBZEhMRk5wVVJKWTkwd1UyTHBiR1hzQlpQcXJHUXFLWUFuOUVaN3BHZEd3MTJyVFDSAYIBQVVfeXFMUHNBNjlkbF9pUkVZM2l4OXY4ejRJbm15UHJESEZ2bUhQNmpiU1U5QjFDbFNseWMycVNkNENsOWJiWnVMWWVUdlpJME9lSkcxWjBSb1dqbzZnSmdHSVU4YUM3Wm9wTTA1U1hQeG1QZlVaMzlxUmdfRnk4OUNUbVlPa2RtQQ?oc=5",
-          "domain": "the-cyber-express.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "The HIPAA Journal",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5DWGNicXl6UE5vRnI5MHZkQThhSXRVQnBqeEFtS0ExYkNZcndGY3RHU0NQQ2F2NjdxNFhlS2s5a1RzYzhVUzN6SzdPbVFaWTRnalRkWm5OYkJkS2JBU0E?oc=5",
-          "domain": "the-hipaa-journal.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "The Straits Times",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTFRYYUFsYWQyc294VzFiRzd3UkZndDZiaUlhWFdONkJ0NV9HWjRqVk5DTmJEWFZ2MjdUM1FMcDJPeE9zZlVUMmI3T01WM3ZMLXhjbkNZWDR4bEl2Z2g3QU5CeHJmY2c0WTIycWp5cXFyM3o3VWpXWkx5UzRDTTF5ZWwydjRJSHlnT2tQbUsxemhiZGlyVjIyQ3paYVdBa1YtQ19UeC1qanBOTmM?oc=5",
-          "domain": "the-straits-times.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "thehackernews.com",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOQjlOc0xJcFN3MVBCdVAtT1pMUm10TTFJSmszQzg5cFhJZUc4aDZZZlM4Q2FBT2VLMHAxc0lnNHplMzVkdHBqdk9tcXdBZlN1WmxBRk0tSXIwLXFwdjBVTFl0WmpZUURpdmh1a3ZiSmVQOGtwMXBKMGxOZk1nd0ZURQ?oc=5",
-          "domain": "thehackernews-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "thehackernews.com",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMVlBTTFpaDdOck9POE5MMV9SUTZMbVkzYkJzQnI4MzF4VndjblhFcUsxbE9Hd3p5SXFrRlFMTnZTV2dhejV2NFN4Tkd1V2J4M1J4Nkt0dnFvNlhhSXEybENwcFo5Q3UtbGxXc18xSUplaEJVSXluOWJOX2JPajFRZUQyZw?oc=5",
-          "domain": "thehackernews-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "The Register",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQ0ZLZS14MFBqLWYteDQwLUFZbEs2NU0zQVVZdkRzbzlhOEMtcEd1dW5rT2hldFlqUGthN1lscTFuZGVmTTlWeWpnU004REFac21HamNEbzZvMUk2QzRENVJlb3RnVm5fVlRQcFN2Mkh3SkJRYUtrcXNWQUV1QWppQUNGSWRaM2NZSUE4VFEwY2ZSQ0VOMmxtTjRId284cXBiRmJVN3RTR0NmVFZqZ21Yd0RqUXFJSTNn?oc=5",
-          "domain": "theregister.com",
-          "tier": "C"
-        },
-        {
-          "name": "vajiramandravi.com",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5JWVdsZWhVclhHUUpyY19VNXZ6QnpqTGpQeE5CTFpNQVlkZWR6TTd1eEFiVmI4bEhuYXQ5TzZxOThjb2hRTFlENVF4cjBLb3FubWhsODVaYXQtY0xDaExHNzdGTmh4S2FoT3RpZjBNRU12QU5rUzN5Wi03VXdPcnM?oc=5",
-          "domain": "vajiramandravi-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "WBAY",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUE1OZ0dON2daa1Y4STlGSXFTei1XbnY3RWlNVk9PZnFDZ1V4X1hNVDFIcG1LWl8wOUx1LXlnMnc0VVlnQ2hDWE1wM0V2X1A0eTFpMzlDdkdZd0UxUVFtdS1DTnZPTDhHZlg1TU5pNDgyU212OUhJMmdjVHNGcEZ0LUhwbnJQdXZCcDFJ?oc=5",
-          "domain": "wbay.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Yellow.com",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1JYS16YmZRLWx2MFJpVFZQOGFvanJGYXVBQ2dDUlhrWTM5aVFCTXhwMjhLcktJWTBVSV9iSUVGcTR2RjRZR2FPYmFjSTd5QU4zMUpzWkZaVkFZS2FtY3BuQW1veFQtWmVK?oc=5",
-          "domain": "yellow-com.publisher",
-          "tier": "C"
         }
       ],
       "primary_links": [
-        "http://chromereleases.googleblog.com/2026/09/chrome-beta-for-android-update_0279595226.html",
-        "http://chromereleases.googleblog.com/2026/09/chrome-beta-for-desktop-update_01695577434.html",
-        "http://chromereleases.googleblog.com/2026/09/chrome-beta-for-ios-update_01806830578.html",
-        "http://chromereleases.googleblog.com/2026/09/chrome-dev-for-android-update_01287307620.html",
-        "http://chromereleases.googleblog.com/2026/09/chrome-dev-for-android-update_0255795644.html",
-        "http://chromereleases.googleblog.com/2026/09/chrome-dev-for-desktop-update_01634269358.html",
-        "http://chromereleases.googleblog.com/2026/09/chrome-stable-for-ios-update_0403227505.html",
-        "http://www.zerodayinitiative.com/advisories/ZDI-26-707/",
-        "http://www.zerodayinitiative.com/advisories/ZDI-26-709/",
-        "http://www.zerodayinitiative.com/advisories/ZDI-26-716/",
-        "http://www.zerodayinitiative.com/advisories/ZDI-26-717/",
-        "http://www.zerodayinitiative.com/advisories/ZDI-26-718/",
-        "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-3-2-released/",
-        "https://fortiguard.fortinet.com/psirt/FG-IR-26-167",
-        "https://fortiguard.fortinet.com/psirt/FG-IR-26-170",
-        "https://fortiguard.fortinet.com/psirt/FG-IR-26-171",
-        "https://lists.debian.org/debian-security-announce/2026/msg00412.html",
-        "https://lists.debian.org/debian-security-announce/2026/msg00417.html",
-        "https://lists.debian.org/debian-security-announce/2026/msg00419.html",
-        "https://nvd.nist.gov/vuln/detail/CVE-2025-39964",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-53266",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-58704",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-76460",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-87886",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ISE-ABP-VNSW7Tn5?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Authentication%20Bypass%20Vulnerability%26vs_k=1",
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asa-ftd-logging-dos-ZXXNesfN?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20Logging%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-dtls-dos-Kp57HkyO?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20for%20Secure%20Firewall%203100%20and%204200%20Series%20DTLS%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-eigrp-dos-GOhNejSj?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20EIGRP%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20IKEv2%20Certificate%20Authentication%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-tcpdns-dos-p6dUnjr5?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20TCP%20DNS%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-vpn-dos-dzv4mQFF?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20Remote%20Access%20SSL%20VPN%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftdvirtual-dos-MuenGnYR?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20SSL%20VPN%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-auth-bypass-broadwor-57m9dmm5?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20BroadWorks%20CommPilot%20Application%20Software%20Authorization%20Bypass%20Vulnerability%26vs_k=1",
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Email%20Gateway%20SQL%20Injection%20Vulnerability%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-javarce-y2NypXwk?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Management%20Center%20Software%20Java%20Deserialization%20Remote%20Code%20Execution%20Vulnerability%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-mulivulns-4PsnFwvx?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Management%20Center%20Software%20Vulnerabilities%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-sftunn-codex-c3O4Jft2?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Management%20Center%20Software%20sftunnel%20Root%20Arbitrary%20Code%20Execution%20Vulnerability%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-static-cred-BET3Cjh?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Management%20Center%20Software%20Static%20Credential%20Vulnerability%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc2-multivulns-HXgcqRG?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Management%20Center%20Software%20Vulnerabilities%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmcftd-sftun-multivulns-WGVHOrN3?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Management%20Center%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20sftunnel%20Vulnerabilities%26vs_k=1",
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ftd-acl-bypass-8p6vFvw?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20Object%20Group%20Access%20Control%20List%20Bypass%20Vulnerabilities%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ftd-snort2-ssldos-Mw7WYX9c?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Threat%20Defense%20Software%20Snort%202%20SSL/TLS%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ftd-tls1.3-dos-dLxwFWgF?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Threat%20Defense%20Software%20TLS%201.3%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance,%20Secure%20Firewall%20Threat%20Defense,%20and%20Secure%20Firewall%20Management%20Center%20Software%20Hardening%20Release:%20September%202026%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-iosxr-qg64NcM?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20IOS%20XR%20Software%20Security%20Hardening%20Release:%20September%202026%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-ise-XU5EwX5T?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Hardening%20Release:%20September%202026%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-ndw1-psFvnrg?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Nexus%20Dashboard%20Software%20Security%20Hardening%20Release:%20September%202026%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-RADIUS-dos-wR3hYPMw?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20RADIUS%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-auth-bypass-1-MxcTNgwx?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Authorization%20Bypass%20Vulnerabilities%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-cmd-inj-e2CuZCYZ?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Command%20Injection%20Vulnerabilities%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-inf-disc-LFWvcCu?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Information%20Disclosure%20Vulnerability%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-mult-vul-ymSsTLCc?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Authenticated%20Remote%20Code%20Execution%20and%20API%20Vulnerabilities%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multi-hrP9jQSQ?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Vulnerabilities%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multi-traversal-WDTgYCdn?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Multiple%20Path%20Traversal%20Vulnerabilities%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multi-vuln-kWLeNnRD?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20802.1X%20Session%20Hijack%20and%20Information%20Disclosure%20Vulnerabilities%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multiauth-bypass-sgD2HbL4?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Authentication%20Bypass%20Vulnerabilities%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multisql-inject-JnHK54Rq?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20SQL%20and%20HQL%20Injection%20Vulnerabilities%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-rce-se7bYU57?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Remote%20Code%20Execution%20Vulnerabilities%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-sql-inj-3QTKR947?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20SQL%20Injection%20Vulnerabilities%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-xss-Uz9VWRQ?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Identity%20Services%20Engine%20Cross-Site%20Scripting%20Vulnerability%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-jfxK98ZP?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Advance%20Notification%20for%20Publication%20of%20September%2016,%202026,%20Security%20Advisories%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-onprem-fmc-authbypass-5JPp45V2?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Management%20Center%20Software%20Authentication%20Bypass%20Vulnerability%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-teva-os-command-W4GAO6jp?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20ThousandEyes%20Virtual%20Appliance%20Authenticated%20Web%20Interface%20Command%20Injection%20Vulnerability%26vs_k=1",
-        "https://security.paloaltonetworks.com/CVE-2026-0302",
-        "https://security.paloaltonetworks.com/CVE-2026-0310",
-        "https://ubuntu.com/security/notices/USN-8714-3",
-        "https://ubuntu.com/security/notices/USN-8715-2",
-        "https://ubuntu.com/security/notices/USN-8725-2",
-        "https://ubuntu.com/security/notices/USN-8726-2",
-        "https://ubuntu.com/security/notices/USN-8730-3",
-        "https://ubuntu.com/security/notices/USN-8761-2",
-        "https://ubuntu.com/security/notices/USN-8781-1"
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-iosxr-qg64NcM?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20IOS%20XR%20Software%20Security%20Hardening%20Release:%20September%202026%26vs_k=1"
       ],
-      "published": "2026-07-17T22:10:37+00:00",
+      "published": "2026-09-08T18:32:13+00:00",
       "trace": [
         "tier A (+40)",
-        "40 independent outlets (+36)",
+        "3 independent outlets (+24)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
         "importance 4/5 from cache",
-        "blend 89 = trust 100 / interest 75 / corrob 100"
+        "blend 80 = trust 94 / interest 75 / corrob 75"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "93066a57b825f115",
-      "title": "An Undercover Google Analyst Infiltrated a Notorious Supply Chain Hacking Gang https://www.wired.com/story/an-undercover-google-analyst-infiltrated-a-notorious…",
-      "category": "cyber_tools",
-      "one_liner": "A Mandiant undercover analyst infiltrated the TeamPCP supply-chain hacking gang from day one, helping law enforcement make arrests.",
+      "cluster_key": "d6c5f63fbe8fa46c",
+      "title": "Fortinet Code Execution Flaw Exploited in PivotC2 RAT Attacks On Wednesday, the US cybersecurity agency CISA added CVE-2025-25249 to its Known Exploited…",
+      "category": "cyber_attacks",
+      "one_liner": "Fortinet's CVE-2025-25249 is being actively exploited to deploy an AI-developed RAT, triggering a mandatory CISA patch deadline.",
       "tags": [
         "ai",
-        "appsec",
-        "blueteam",
+        "android",
+        "cve",
         "exploit",
-        "incident",
         "malware",
         "threat-actor",
+        "tool",
         "vulnerability"
       ],
-      "summary": "Google's threat intelligence group revealed that a Mandiant undercover analyst infiltrated the supply chain hacking gang TeamPCP almost from its inception. TeamPCP compromised numerous open-source programs and developer accounts, including Trivy, LiteLLM, Checkmarx, TanStack, and Mistral AI, eventually breaching repositories and organizations like GitHub, OpenAI, and the European Commission. The undercover presence allowed Google to monitor the campaign, warn targets, and eventually pass identifying operational security mistakes to law enforcement, leading to the arrest of two principal suspects in Australia. The group also utilized a Dune-themed self-spreading worm named Mini Shai-Hulud.",
+      "summary": "Threat actors are actively exploiting a heap-based buffer overflow vulnerability in Fortinet products, tracked as CVE-2025-25249, to deploy the PivotC2 RAT. The malware provides attackers with interactive shell access, traffic tunneling, and network scanning capabilities, with evidence suggesting it was developed using AI. CISA has added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to patch within three days. Over 30,000 IP addresses have been targeted, resulting in at least 178 confirmed infections.",
       "key_facts": [
-        "Compromised targets: Trivy, LiteLLM, Checkmarx, TanStack, Mistral AI, GitHub, OpenAI",
-        "Suspects arrested: 2",
-        "Worm name: Mini Shai-Hulud"
+        "CVE-2025-25249: CVSS 7.4, heap-based buffer overflow",
+        "Malware: PivotC2 RAT",
+        "Impact: 178 devices infected, 30,000+ IPs targeted",
+        "Patch: FortiOS 7.6.4, 7.4.9, 7.2.12, 7.0.18"
       ],
-      "bottom_line": "Long-term undercover infiltration of cybercriminal supply-chain hacking groups enables real-time victim warning and successful law enforcement disruption.",
+      "bottom_line": "Active exploitation of Fortinet devices by an AI-developed RAT necessitates immediate patching to prevent unauthorized shell access and data exfiltration.",
       "claims": [
         {
-          "text": "Late last month, Ruben Ian Thomson and Louis Michael Gaebler, both Australians in their early twenties, were arrested by Australian police in a joint investigation with assistance from the FBI, charged with hacking crimes, and described by the Australian Federal Police (AFP)—in a press release that, due to Australian privacy laws, did not name them—as 'principal participants' in TeamPCP.",
-          "support_span": "Late last month, Ruben Ian Thomson and Louis Michael Gaebler, both Australians in their early twenties, were arrested by Australian police in a joint investigation with assistance from the FBI, charged with hacking crimes, and described by the Australian Federal Police (AFP)—in a press release that, due to Australian privacy laws, did not name them—as 'principal participants' in TeamPCP.",
+          "text": "Tracked as CVE-2025-25249 (CVSS score of 7.4) and described as a heap-based buffer overflow issue, the high-severity bug was patched in January in FortiOS and FortiSwitchManager.",
+          "support_span": "Tracked as CVE-2025-25249 (CVSS score of 7.4) and described as a heap-based buffer overflow issue, the high-severity bug was patched in January in FortiOS and FortiSwitchManager.",
+          "status": "entailed"
+        },
+        {
+          "text": "The threat actors targeted more than 30,000 IP addresses, leading to the exploitation and infection of 178 devices with PivotC2.",
+          "support_span": "The threat actors targeted more than 30,000 IP addresses, leading to the exploitation and infection of 178 devices with PivotC2.",
           "status": "contradicted"
         }
       ],
-      "trust_score": 22,
+      "trust_score": 25,
       "interest_score": 100,
-      "corroboration": 2,
-      "blend": 65.5,
-      "is_new": true,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": false,
       "summary_source": "model",
       "alt_keys": [
-        "93066a57b825f115",
-        "edb328c892c2ec3d",
-        "eeec8c4839537036"
+        "d6c5f63fbe8fa46c"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "SecHarvester",
-          "url": "https://www.hacktron.ai/blog/hacking-openai",
-          "domain": "hacktron.ai",
-          "tier": "C"
-        },
-        {
-          "name": "SecHarvester",
-          "url": "https://www.wired.com/story/an-undercover-google-analyst-infiltrated-a-notorious-supply-chain-hacking-gang/",
-          "domain": "wired.com",
-          "tier": "C"
-        },
-        {
-          "name": "WIRED",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYnZtZmk4cDZFRm4xS0E4cS1rVUVWX2ZBZUZ0WkYtcXVrYnd1NWtGaG1BLVdsZThaa3c2cEx6LWFvZ2g2WEFkdFRGVGVHbkc2MmtLMmNRcWxqRUs2aHB0dlU5SGpESmMzSDAwcGp2NDlGUG9iUDZhVThOOVpfb3FZR0J5aXRPcjRRQWVIYTRQUzhMeVl6OVY0U3BhRWlhd0xEYWtzRG52bnNqTzQ?oc=5",
-          "domain": "wired.com",
-          "tier": "C"
+          "name": "SecurityWeek",
+          "url": "https://www.securityweek.com/fortinet-code-execution-flaw-exploited-in-pivotc2-rat-attacks/",
+          "domain": "securityweek.com",
+          "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-18T06:06:35+00:00",
+      "published": "2026-09-20T02:36:01+00:00",
       "trace": [
-        "tier C (+10)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 5/5 from cache",
-        "blend 66 = trust 22 / interest 100 / corrob 50",
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 5/5 from gemini-3.1-flash-lite",
+        "blend 59 = trust 25 / interest 100 / corrob 25",
         "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
@@ -1826,6 +276,45 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
+      "cluster_key": "46319011704c659e",
+      "title": "Astra: “create a series of sprites for artist (Klimt, Rothko, O’Keefe, etc) inspired pixel art knights with special attacks & build a game” One shot…",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "policy"
+      ],
+      "summary": "Astra: “create a series of sprites for artist (Klimt, Rothko, O’Keefe, etc) inspired pixel art knights with special attacks & build a game” One shot & the sprites have real flavor. The game itself is fine, with some of the rough edges you expect from a one shot. brush-and-blade.netlify.app (Bluesky post by @emollick.bsky.social — 116 likes, 12 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "46319011704c659e"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvl63xwkvc2h",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-15T17:38:13.807000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-15 — outside lookback window"
+    },
+    {
       "cluster_key": "5a9f0148b60bf777",
       "title": "RectangleStory/Superpowers_Multi_AI — ⚡ Modular prompt-engineering framework for AI Agents (Cursor, Claude Code, Copilot). Forces structured SDLC, l",
       "category": "tech_ai",
@@ -1870,15 +359,12 @@
       "reject_reason": "published 2026-09-14 — outside lookback window"
     },
     {
-      "cluster_key": "bf24d81f5ad3208f",
-      "title": "This is pretty neat: ChatGPT Work and GPT-6 Astra (I used \"Max\") can take an address and produce a 5K/10K circular running route starting from that…",
+      "cluster_key": "b392d44cf695e948",
+      "title": "I don’t usually share rumors but: 1) This is from someone with inside knowledge & is plausible 2) Is a real issue of policy we need to think about…",
       "category": "tech_ai",
       "one_liner": "",
-      "tags": [
-        "llm",
-        "windows"
-      ],
-      "summary": "This is pretty neat: ChatGPT Work and GPT-6 Astra (I used \"Max\") can take an address and produce a 5K/10K circular running route starting from that address, using OSM data simonwillison.net/2026/Sep/12/... (Bluesky post by @simonwillison.net — 95 likes, 5 reposts)",
+      "tags": [],
+      "summary": "I don’t usually share rumors but: 1) This is from someone with inside knowledge & is plausible 2) Is a real issue of policy we need to think about: if the norms of sharing become strained, will the labs start hoarding knowledge to avoid PR or regulatory issues? scottaaronson.blog?p=10062 (Bluesky post by @emollick.bsky.social — 145 likes, 11 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -1889,25 +375,64 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "bf24d81f5ad3208f"
+        "b392d44cf695e948"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Simon Willison",
-          "url": "https://bsky.app/profile/simonwillison.net/post/3mved4krjbs2b",
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvlqa6h46c2h",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-13T00:19:24.106000+00:00",
+      "published": "2026-09-15T23:02:42.205000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-13 — outside lookback window"
+      "reject_reason": "published 2026-09-15 — outside lookback window"
+    },
+    {
+      "cluster_key": "1348b29784606a7c",
+      "title": "There are things I disagree with but there is good stuff to learn from taking the perspective of parts of the cybersecurity industry that rogue AI…",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "ai"
+      ],
+      "summary": "There are things I disagree with but there is good stuff to learn from taking the perspective of parts of the cybersecurity industry that rogue AI incidents may be best understood as security & organizational failures that let rogue behavior to turn into crisis. (Bluesky post by @emollick.bsky.social — 77 likes, 14 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "1348b29784606a7c"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvkrrngddc2n",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-15T13:57:42.345000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-15 — outside lookback window"
     },
     {
       "cluster_key": "5762cd6d63553fc7",
@@ -1918,7 +443,7 @@
         "llm",
         "opensource"
       ],
-      "summary": "Having Fable 5.1 Max and GPT-6 Astra Pro argue with each other over proposed translations of the famously untranslated Minoan language Linear A. (Neither of them appear to have cracked it, for what its worth). All the work so far at this Github: github.com/emollick/lin... (Bluesky post by @emollick.bsky.social — 100 likes, 2 reposts)",
+      "summary": "Having Fable 5.1 Max and GPT-6 Astra Pro argue with each other over proposed translations of the famously untranslated Minoan language Linear A. (Neither of them appear to have cracked it, for what its worth). All the work so far at this Github: github.com/emollick/lin... (Bluesky post by @emollick.bsky.social — 101 likes, 2 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -1989,324 +514,15 @@
       "reject_reason": "published 2026-09-14 — outside lookback window"
     },
     {
-      "cluster_key": "67c894491e703be9",
-      "title": "CVE-2026-68928 - Acode: Exported TerminalService (bundled terminal plugin) lets any installed app execute arbitrary shell commands as Acode",
-      "category": "cyber_attacks",
-      "one_liner": "Update Acode for Android to version 1.12.7 to fix an exported terminal service allowing arbitrary shell command execution.",
-      "tags": [
-        "android",
-        "appsec",
-        "cve",
-        "exploit",
-        "release",
-        "tool",
-        "vulnerability"
-      ],
-      "summary": "A vulnerability, CVE-2026-68928, affects Acode, an Android text and code editor, in versions 1.11.6 through 1.12.7. The bundled TerminalService is declared as an exported service without binding permissions or caller verification, allowing any local zero-permission app to send commands. Malicious apps can bind to the service and execute arbitrary shell commands inside Acode's UID via ProcessBuilder. The issue is fixed in version 1.12.7.",
-      "key_facts": [
-        "CVE-2026-68928: Exported service unverified caller vulnerability in Acode",
-        "Affected versions: 1.11.6 to 1.12.7",
-        "Fixed version: 1.12.7"
-      ],
-      "bottom_line": "CVE-2026-68928 lets any local Android app execute shell commands inside Acode's security context via an unprotectd exported service.",
-      "claims": [
-        {
-          "text": "CVE-2026-68928 affects Acode versions 1.11.6 to 1.12.7, where TerminalService lacks proper permissions and verification.",
-          "support_span": "From 1.11.6 until 1.12.7, com.foxdebug.acode.rk.exec.terminal.TerminalService is declared as an exported service in src/plugins/terminal/plugin.xml without a binding permission, and src/plugins/terminal/src/android/TerminalService.java does not verify the caller.",
-          "status": "entailed"
-        },
-        {
-          "text": "Any local application can execute arbitrary shell commands within Acode's UID.",
-          "support_span": "Any local Android application can bind the service and send MSG_EXEC with an attacker-controlled cmd value, which the terminal implementation passes to ProcessBuilder with sh -c inside Acode's UID.",
-          "status": "contradicted"
-        },
-        {
-          "text": "The vulnerability is patched in version 1.12.7.",
-          "support_span": "This issue is fixed in version 1.12.7.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 62.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "67c894491e703be9"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "CVEFeed High",
-          "url": "https://cvefeed.io/vuln/detail/CVE-2026-68928",
-          "domain": "cvefeed.io",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-18T21:17:14+00:00",
-      "trace": [
-        "tier A (+40)",
-        "single outlet, established publication (tier A)",
-        "importance 5/5 from cache",
-        "blend 62 = trust 40 / interest 100 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "df489c10521cd2bd",
-      "title": "bilawalsidhu/gods-eye-view — A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a",
-      "category": "cyber_tools",
-      "one_liner": "An open-source browser-based 3D geospatial intelligence platform provides live satellite and spatial tracking using real-world data.",
-      "tags": [
-        "opensource",
-        "privacy",
-        "tool"
-      ],
-      "summary": "The open-source repository bilawalsidhu/gods-eye-view provides an in-browser satellite and spatial intelligence simulator that displays real-time data on a 3D globe. The project leverages JavaScript and Cesium to offer photorealistic geospatial rendering, flight tracking, and photogrammetry. The repository has accumulated over 17,400 stars on GitHub.",
-      "key_facts": [
-        "Repository: bilawalsidhu/gods-eye-view",
-        "Stars: 17,491",
-        "Language: JavaScript"
-      ],
-      "bottom_line": "Developers and researchers can utilize the gods-eye-view project for real-time browser-based geospatial intelligence and 3D mapping.",
-      "claims": [
-        {
-          "text": "The gods-eye-view repository provides open-source spatial intelligence on a 3D globe using real-time data.",
-          "support_span": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. GitHub repository bilawalsidhu/gods-eye-view, 17,491 stars, language JavaScript.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 10,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 32.5,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "df489c10521cd2bd"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (updated)",
-          "url": "https://github.com/bilawalsidhu/gods-eye-view",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-17T00:37:30+00:00",
-      "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "importance 3/5 from cache",
-        "blend 32 = trust 10 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "ad3e13db06f32e37",
-      "title": "I cannot emphasize enough how much GPT-6 Astra and Fable 5.1 are already enough for transformative impact in large sections of the economy.",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "llm"
-      ],
-      "summary": "This is a heavily interactive web application, and JavaScript is required. Simple HTML interfaces are possible, but that is not what this is. Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu I cannot emphasize enough how much GPT-6 Astra and Fable 5.1 are already enough for transformative impact in large sections of the economy. They can reliably do weeks worth of human work when properly guided & harnessed.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 2,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "ad3e13db06f32e37",
-        "fd7382554396615f"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvghxanmds2g",
-          "domain": "bsky.app",
-          "tier": "C"
-        },
-        {
-          "name": "Slator",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAxMnRnZzY5OE5NN0hrNTRKMXZzMDBaNmhZSnhlaVJtU0RaenB4WDEwS2gyWjlTdWJ6aVdxdHVMZGVncUJHYU1uQzdoRjFsc3ZBU243UktENkFreUkxa3lWUkxWSGNnS2tDNVkxdWE1Zw?oc=5",
-          "domain": "slator.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-13T20:51:13.905000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-13 — outside lookback window"
-    },
-    {
-      "cluster_key": "b5a338fe24f2f403",
-      "title": "\"Don't immanentize the eschaton\" was not supposed to be taken literally, but is also generally good advice if you are literally trying to…",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [],
-      "summary": "\"Don't immanentize the eschaton\" was not supposed to be taken literally, but is also generally good advice if you are literally trying to immanentize the eschaton. (Bluesky post by @emollick.bsky.social — 70 likes, 4 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "b5a338fe24f2f403"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvgmv6ap5t2g",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-13T22:19:32.988000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-13 — outside lookback window"
-    },
-    {
-      "cluster_key": "f78e72d1a8442ae6",
-      "title": "shaikarifali/bundlebleed — AI/LLM-assisted JS Recon and vulnerability triage for authorized bug bounty testing & pentesting — scope-gated",
-      "category": "cyber_tools",
-      "one_liner": "A new GitHub repository, bundlebleed, offers AI-assisted JavaScript reconnaissance for authorized bug bounty workflows.",
-      "tags": [
-        "ai",
-        "appsec",
-        "bugbounty",
-        "dfir",
-        "llm",
-        "opensource",
-        "tool",
-        "vulnerability"
-      ],
-      "summary": "The newly created GitHub repository 'shaikarifali/bundlebleed' provides an AI and LLM-assisted JavaScript reconnaissance and vulnerability triage tool designed for authorized bug bounty and penetration testing. The utility is scope-gated, passive-by-default, and incorporates human verification steps to support security researchers. Written in Python, the project has gained early attention with 18 stars and focuses on javascript security and bug bounty automation.",
-      "key_facts": [
-        "Repository: shaikarifali/bundlebleed",
-        "Stars: 18",
-        "Language: Python"
-      ],
-      "bottom_line": "The bundlebleed repository provides a scope-gated, AI-assisted tool for JavaScript reconnaissance and vulnerability triage in bug bounty testing.",
-      "claims": [
-        {
-          "text": "AI/LLM-assisted JS Recon and vulnerability triage for authorized bug bounty testing & pentesting — scope-gated, passive-by-default, human-verified GitHub repository shaikarifali/bundlebleed, 18 stars, language Python.",
-          "support_span": "AI/LLM-assisted JS Recon and vulnerability triage for authorized bug bounty testing & pentesting — scope-gated, passive-by-default, human-verified GitHub repository shaikarifali/bundlebleed, 18 stars, language Python.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 10,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 32.5,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "f78e72d1a8442ae6"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/shaikarifali/bundlebleed",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-13T14:24:36+00:00",
-      "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "importance 3/5 from cache",
-        "blend 32 = trust 10 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "4d27f2a2fd22405b",
-      "title": "lidge-jun/aside-codemode — One call where Aside used to spend fifty — rg-backed search, Aside-shaped file tools, and batched browser work",
+      "cluster_key": "73530f20bff72829",
+      "title": "mmdju/digikala-mcp — MCP server for Digikala: search, compare and price-check products on Iran's largest marketplace. Read-only, no",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
         "agents",
-        "ai",
-        "opensource",
-        "tool"
-      ],
-      "summary": "One call where Aside used to spend fifty — rg-backed search, Aside-shaped file tools, and batched browser work inside a single sandboxed JavaScript block. On a real folder, 55s of find+grep became 1s. GitHub repository lidge-jun/aside-codemode, 119 stars, language JavaScript. Topics: agent-tools, ai-agents, aside, browser-agent, browser-automation, cli, code-mode, codex.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "4d27f2a2fd22405b"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/lidge-jun/aside-codemode",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-13T09:08:26+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-13 — outside lookback window"
-    },
-    {
-      "cluster_key": "1eec939cd47c32dd",
-      "title": "pliablepixels/gap-trap — Turns vibe coding into high quality code. Sets up rules and gates in your repo so AI-written code stays correc",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
         "opensource"
       ],
-      "summary": "Turns vibe coding into high quality code. Sets up rules and gates in your repo so AI-written code stays correct without you reviewing every line. GitHub repository pliablepixels/gap-trap, 172 stars, language JavaScript. Topics: agent-skills, agentic-coding, agents-md, ai-agents, ai-coding, ci-cd, claude-code, claude-skills.",
+      "summary": "MCP server for Digikala: search, compare and price-check products on Iran's largest marketplace. GitHub repository mmdju/digikala-mcp, 96 stars, language JavaScript. Topics: cloudflare-workers, digikala, iran, mcp, model-context-protocol, persian.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -2317,7 +533,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "1eec939cd47c32dd"
+        "73530f20bff72829"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -2325,91 +541,40 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/pliablepixels/gap-trap",
+          "url": "https://github.com/mmdju/digikala-mcp",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-13T20:29:08+00:00",
+      "published": "2026-09-15T04:54:56+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-13 — outside lookback window"
-    },
-    {
-      "cluster_key": "6e5680c6178e5423",
-      "title": "One of the downsides in AI getting so good is that it is getting harder to demonstrate its strengths and weaknesses at the frontier.",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "ai"
-      ],
-      "summary": "One of the downsides in AI getting so good is that it is getting harder to demonstrate its strengths and weaknesses at the frontier. Yes, Astra and Fable can research and write good papers in an academic field. No, they are not as good as top humans (yet?), but you have to know the field to know why (Bluesky post by @emollick.bsky.social — 95 likes, 7 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "6e5680c6178e5423"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvevfzucrk2v",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-13T05:46:49.271000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-13 — outside lookback window"
+      "reject_reason": "published 2026-09-15 — outside lookback window"
     },
     {
       "cluster_key": "b60e028e9948c1e7",
       "title": "ruc-datalab/EvoOntology — EvoOntology: A Self-Evolving Ontology Layer for Data Agents ⚙️ EvoOntology插件为Claude Code/Codex 建立&进化本体层",
       "category": "tech_ai",
-      "one_liner": "Incorporate a self-evolving ontology layer into your data agent harness using EvoOntology.",
+      "one_liner": "",
       "tags": [
         "agents",
         "ai",
         "llm",
         "opensource",
-        "release",
-        "research",
-        "tool"
+        "research"
       ],
-      "summary": "The ruc-datalab team has released EvoOntology, a self-evolving ontology layer designed for data agents and tools like Claude Code and Codex. Written in Python, the plugin establishes and continuously evolves an ontology layer to assist data analysis and data science workflows. It provides a structured mechanism for agents to reason about complex domain data.",
-      "key_facts": [
-        "Repository: ruc-datalab/EvoOntology",
-        "Language: Python",
-        "Stars: 158"
-      ],
-      "bottom_line": "Data agents utilizing Claude Code or Codex can now maintain an evolving, self-updating ontology layer for enhanced data science workflows.",
-      "claims": [
-        {
-          "text": "ruc-datalab/EvoOntology is a self-evolving ontology layer plugin for data agents such as Claude Code and Codex.",
-          "support_span": "ruc-datalab/EvoOntology — EvoOntology: A Self-Evolving Ontology Layer for Data Agents ⚙️ EvoOntology插件为Claude Code/Codex 建立&进化本体层",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 10,
-      "interest_score": 50,
+      "summary": "EvoOntology: A Self-Evolving Ontology Layer for Data Agents ⚙️ EvoOntology插件为Claude Code/Codex 建立&进化本体层 GitHub repository ruc-datalab/EvoOntology, 211 stars, language Python. Topics: agent, agentic-ai, claude-code, codex, data-analysis, data-science, harness, llm.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
       "corroboration": 1,
-      "blend": 32.5,
+      "blend": 0.0,
       "is_new": true,
-      "summary_source": "model",
+      "summary_source": "extract",
       "alt_keys": [
         "b60e028e9948c1e7"
       ],
@@ -2427,12 +592,9 @@
       "primary_links": [],
       "published": "2026-09-15T01:57:40+00:00",
       "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "importance 3/5 from cache",
-        "blend 32 = trust 10 / interest 50 / corrob 25"
+        "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-09-15 — outside lookback window"
     },
     {
       "cluster_key": "e18fd98eb04c4ef8",
@@ -2501,7 +663,7 @@
         "llm",
         "opensource"
       ],
-      "summary": "An explorable island world to learn AI coding and build real projects with AI agents. GitHub repository Qiuner/QCode, 218 stars, language TypeScript. Topics: ai-agents, ai-coding, deepseek, developer-tools, gamification, godot, learn-to-code, vibe-coding.",
+      "summary": "An explorable island world to learn AI coding and build real projects with AI agents. GitHub repository Qiuner/QCode, 241 stars, language TypeScript. Topics: ai-agents, ai-coding, deepseek, developer-tools, gamification, godot, learn-to-code, vibe-coding.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -2533,65 +695,6 @@
       "reject_reason": "published 2026-09-14 — outside lookback window"
     },
     {
-      "cluster_key": "24d0c178b1e6fe4e",
-      "title": "I run my local LLMs inside the ChatGPT desktop app now, and it took one free open-source tool to do it - xda-developers.com",
-      "category": "tech_ai",
-      "one_liner": "A short headline note highlighting an open-source integration for running local LLMs inside the ChatGPT desktop app.",
-      "tags": [
-        "ai",
-        "llm",
-        "opensource",
-        "tool"
-      ],
-      "summary": "The provided text is extremely brief and serves only as a headline reference indicating that local large language models can be run inside the ChatGPT desktop app using a free open-source tool. No further technical implementation steps or comprehensive details are included in the text.",
-      "key_facts": [],
-      "bottom_line": "A brief headline indicates that local LLMs can be run inside the ChatGPT desktop app using a free open-source tool.",
-      "claims": [
-        {
-          "text": "The article text is limited to a headline stating local LLMs can be run inside the ChatGPT desktop app.",
-          "support_span": "I run my local LLMs inside the ChatGPT desktop app now, and it took one free open-source tool to do it - xda-developers.com",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 22,
-      "interest_score": 0,
-      "corroboration": 2,
-      "blend": 20.5,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "24d0c178b1e6fe4e",
-        "b26992fd78644d82"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "MarkTechPost",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWHJZZjJYcmQ3dm5EaGFjc3lnUzM5QUR6MVV2dkJQRFoxV1ZOREdsU090YmR0dnlubGhVYTNnX2Z0elJRTUVJclhNRlFieVJQVExkSlVDXy1VSGEwWHhhQV8zdlFkNWFQSWZGSGN2WDZ6Qk9uS21WSldNQmJ1QzVnM1FHamJrcmdMSzRhRDdJYmlfYzU3VDByUUVjREjSAaIBQVVfeXFMUGxndGJ3ZGtYSzd0bHdEVWJUdThsRF8zbnFYck5UQll5dkg4LUFUbHMzQ05tVUNvWVpObi1uU05faXRDbmI3cWhGTHBiQThJcVAzQ2puS0ZXU2k4WkhtQWVMczdWajVIUGFrcEFUTlJNSFQyRk5GZE1jSU5MU0xhVVVoeVhqOEFFcGpQa0xDb2c5aHBGM0JOMTZhei1Pb3QwM2VR?oc=5",
-          "domain": "marktechpost.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "GN Dev tooling",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdjhIZldmNjBHQ25FZTNwZTl1V3dHSXJGclk0OGVhR2VrZi1ZUGliaFdLamQyX1ZtZ0ZmUk94RGt1NFYyMnlsa1NCT3NEYklaajdTR0JGZndXa3N1SjJIcTdXOU9JcDBVWHlKcjlBVk9reEc5WEU3Sk51LXdiYXdhbGdaMm5XQ3FiWWl4b0o4TEdHRGc3MDNzVVpaZVo2LXNB?oc=5",
-          "domain": "news.google.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-18T09:44:55+00:00",
-      "trace": [
-        "tier C (+10)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 1/5 from gemini-3.5-flash-lite",
-        "blend 20 = trust 22 / interest 0 / corrob 50"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
       "cluster_key": "18fbba777667aa51",
       "title": "Researchers used Claude to hack OpenAI employees' ChatGPT accounts",
       "category": "cyber_attacks",
@@ -2618,22 +721,32 @@
       ],
       "trust_score": 61,
       "interest_score": 0,
-      "corroboration": 5,
+      "corroboration": 6,
       "blend": 45.2,
       "is_new": false,
       "summary_source": "model",
       "alt_keys": [
         "18fbba777667aa51",
+        "1ad13d6be25761c2",
         "3a3685b87ca433f2",
         "43525281a84dd8d0",
+        "480e59f96e25eecf",
+        "48a0f15b9914e1e9",
+        "4cf99309ccea762f",
         "523eaf1ca1a55431",
         "57cc56971135016a",
-        "58c0db03e81a1cf2",
         "5aee273c239a5b71",
         "7435fee3aa087a0e",
         "79f8e9cacd7eaee3",
+        "83037ea6ca5f5b39",
+        "85e34f40d372ed88",
+        "8a2c8a9b5b978779",
         "ba6a2f5e8ba4986f",
+        "bcb36bbd27c7b19a",
+        "be6a670001c6529a",
         "d86255aac95782b7",
+        "eb9ffae942a79a9f",
+        "ed1e0fcd089bd062",
         "f483bc2f225075cb"
       ],
       "critical_signal": "",
@@ -2645,18 +758,6 @@
           "url": "https://www.theregister.com/security/2026/09/18/researchers-used-claude-to-hack-openai-employees-chatgpt-accounts/5297517",
           "domain": "theregister.com",
           "tier": "B"
-        },
-        {
-          "name": "asiae.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBwelp6Ti1SNzdMcDVPX255OEY1YWtKRXVudTZWQ2ZtVHRyVGV3czFIRDJXSkpyMlEzUHRYVTlPcExNVTlwaldVbjNLZzlpNGxST0hXMDVvUkdjLThLMHpaODM0TWU?oc=5",
-          "domain": "asiae-co-kr.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Daily Tech News Show",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSThmSVVHMzZQM1diS3RUbklYVFlFdlJ5dW5ualpZVVd1d0xBWmNZOS0xZ1hSMzQ4b2JRaUJxTEkyb3JFWjdjWFFHc1JUQ19aV1BhRFhwSUE0cDVWRXQzY0tHaVBOYVBRaXVrX2RvOUk4MzZqY0tIRW45dUUwZ0dRdFdRMndFN3VpTm1NMGFUMm5hdXltVFdkamd3cHNpZjh1bDZSYzJ5SUthX0VFb3Qw0gGvAUFVX3lxTFBJOGZJVUczNlAzV2JLdFRuSVhUWUV2Unl1bm5qWllVV3V3TEFaY1k5LTFnWFIzNDhvYlFpQnFMSTJvckVaN2NYUUdzUlRDX1pXUGFEWHBJQTRwNVZFdDNjS0dpUE5hUFFpdWtfZG85STgzNmpjS0hFbjl1RTBnR1F0V1Eyd0U3dWlObU0wYVQybmF1eW1UV2RqZ3dwc2lmOHVsNlJjMnlJS2FfRUVvdDA?oc=5",
-          "domain": "daily-tech-news-show.publisher",
-          "tier": "C"
         },
         {
           "name": "incrypted",
@@ -2677,6 +778,24 @@
           "tier": "C"
         },
         {
+          "name": "Menafn",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFFaOU5NNkp2NkNuNVhtYTdaTmZuZWFMSkIwOF9pd3lERmdLZlZ0YjdYU0hxWUxZeXB2N0J3TzZ5SEpGSmZORGlPQjhfMWhTaWJSUVM2aVB6UHFWcWwtdXVHVElwNXZiSW9rWkhaa3ZzazY0dmx0NS1YeEpBeW5EbHdfRno?oc=5",
+          "domain": "menafn.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Mezha",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQmtwemlNbDNrQnk2YVhsSU4wTkc3WTVzQmg0YXJ1dFdlb19EdEJRQmQyR0hnbzJVWnd3cElSSXFkcWxOVkNBMkpyX3FESm9tQkthTzFYYk1qWERrdGtBZEZ4M0wtNE82UXVtd2JPbUd2TTZzWkNRVnZXVEUyaUhJemRyUXRoUFhubkJ6XzE4WlY3Y3NtUVVMLTBJZmQxNXg4dWRxYzNR0gGmAUFVX3lxTE9Ca3B6aU1sM2tCeTZhWGxJTjBORzdZNXNCaDRhcnV0V2VvX0R0QlFCZDJHSGdvMlVad3dwSVJJcWRxbE5WQ0EySnJfcURKb21CS2FPMVhiTWpYRGt0a0FkRngzTC00TzZRdW13Yk9tR3ZNNnNaQ1FWdldURTJpSEl6ZHJRdGhQWG5uQnpfMThaVjdjc21RVUwtMElmZDE1eDh1ZHFjM1E?oc=5",
+          "domain": "mezha.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "NAI500",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOR1lQRkdMSEJxNEc0eVJtRU5CTE80d2VxZTNDRFZnd3FHWkpzdEREWTJFcWthajU1MkN2dlFWNzBzak1zb2NtQ0puX2NVUVhWVlBVbU8yMnpBXzRHMVJYNUdVbU9pNWlkVnRzYlphV1NLSTN6VEtHYWladVVrNV9GcU12WUF2NVlxZWlPck5jMk9RUjQ?oc=5",
+          "domain": "nai500.publisher",
+          "tier": "C"
+        },
+        {
           "name": "NDTV",
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPU2RSMGg5UVFkS2p4eHkxTV9KdUppSVN5YVItOWNVd3RTSXNNODRsbVl3SFcxakZmTzJxS2d1ZjZBY1Y1NWdzczk5ejhheG5GMXYtWVo3ejVmMEVpNzdUZHl3YnZOd3RNR2RzU3Q4allFWkt4N1doYkR2QWhJa1h3MFkycUNiVjd4MU00VXB6RWMtNjlPOU5wd2VmQ3JMc0NvUzVaLXNNQkIzOUozQTc2M9IBuAFBVV95cUxQSFZ3eHJyUlc2X1lmTXBJOFQxTGFldUFzanNEQTJIOTZKQkdRejljS0FZeW9wSlZFOGpsaUUtWmRZWUtxWWpCSFM5YXhJU1Nnb3paa0tQY3ZsUmxjQU1rNFB2aFpHQjBmbGE3dERMLUJ4QkowcFFlNFRkYWZBWTR6cmZzdzRYWTYwZmtYR1d1eERISWFkbjFLb1Jxb2EwNEo0LU5YOXRObm5Pc05mTG5TcEZxWWJ2bjVZ?oc=5",
           "domain": "ndtv.com",
@@ -2686,6 +805,36 @@
           "name": "GN Bug bounty",
           "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNTjB1YmMwN2t2UFRRVVctcFdNSl9Kdkk1eGNuUUFTeWJYVU5ZM1h0S1BYdnFpeHlpbnZnS3RBMVBwSGhVLU11OE1LRTdWcjhjaVczcTJ4MGxMUkhYdVRvakhhNWxOS2RPVTlIOHY2Tk4wYmpSQlJGRzhRZGVGQmdkTGdDTF96QlhpUm1fczFOTHVQTjdjaEVuT2pCeHBESGxsVFRPb1MyUW5aWUVWeHN1cFVKUk1wNmJOVy1HaVdDYVA3SmdXenNCMmJkSGoySlNIMGhUTV9tOWNmSDlEWFFBSXhUZF8tenk2?oc=5",
           "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "GN Bug bounty",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBwelp6Ti1SNzdMcDVPX255OEY1YWtKRXVudTZWQ2ZtVHRyVGV3czFIRDJXSkpyMlEzUHRYVTlPcExNVTlwaldVbjNLZzlpNGxST0hXMDVvUkdjLThLMHpaODM0TWU?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "Newsmax",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNallpMW1LLThWbUJuc016MksteEFhVXFCN1pqYUt2V3NlYmVQTTZfdGlqVjBhcGVxdWFLSWNvVTJoUXQ0MmhkdjJCUDhYYTEzbEs5LXNyZXR6VnFqbDhuTW9rZklpNDg1MTc3X1BubGR6SlY1bGNtaGhWendzMW4zTkhoWlFfZHVaUlFTYTlvWW5GZw?oc=5",
+          "domain": "newsmax.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "officechai.com",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQN3F4aXlEVmJVWnRfT3djai0wQ24tVkw0cllUSXVnNUdQcE9XT1lXT2dTZUNNOFFGY0M1Y3RKUGpqZWVldUwyRWRnNjBYNHhlNFNLYlhPd2pSVUluU1JLdl9TSzBRNEY4cllnWDdCem44T1Ixbk0xWVp4Ti1FSE1Zck4tM1hlbUxfQld6WA?oc=5",
+          "domain": "officechai-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "PCMag",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQS2pyd2g5d09pbWR2OHlfc24wMjQwSUVpRzlsVmxUMW9SSXE0Uk56d1d1UmhNakhBVk1kWUhkWGttR1lEeVBUZlNjakRrUEtrNnFSVmNnR215YjVlX1BwUFd6dmIwOG9senh3SjBQMzVGeVMwM0NxRms5czBNdkpxLWpFYzJMOW1HTnJGN3dR?oc=5",
+          "domain": "pcmag.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "SecNews.gr",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9vSUdweWpFMWpIOUdKaTZSYmdTbHRpeXVPRlJNUnRoSENlQmY5SDdsNTFvaDVlWTBDeU9uNzJvTHVtclZZVjJRTDdPNE11VG15VlhJSTBNM3V0TWpGbFo4V3h4N1Bxb0hUenNETHVNcE0xWERLVWc?oc=5",
+          "domain": "secnews-gr.publisher",
           "tier": "C"
         },
         {
@@ -2701,9 +850,27 @@
           "tier": "C"
         },
         {
+          "name": "TechCrunch",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQS0tYS0VHd1I0cEFmd0JuMHh0SEg0NGxoMUprUDFPWVRlWWZvWE9LN0ZWMWd6Z2Utc2dlYWY2elB3Nk1xTGtRZm5aSzFDZlhfR0JRSms0NkJmVDlDY3JJYkxzU0M4ZWFLak1RSnNGNTlzWTJRZmxkbGZfUWppNUVDc3hxQUlVd01Ha1Z1U1ZYUzJReUU?oc=5",
+          "domain": "techcrunch.com",
+          "tier": "C"
+        },
+        {
           "name": "The Coin Republic",
           "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQREdESHVwLV9ycF9VTFEwdTNWbmdxN3RmMHlZY1JxRHNYblZmYVlrS01iTEotRERGRUxieHU3T2ZOM3JXSkNDWmpnTDNpWFE0eUhkRXBxd1B6MHlWMWpNbjFmRWZnNFdISUJKTUg1QUMyQ2dJY3VUakVjeGZQVFRJX0ZKZm5lMGJXa2trR3Q5UEJPOHBrYm5BOWtoVzZFTkdGTzBib9IBqgFBVV95cUxQa2o5bm8zS1F0SGMwa1dOdGhBVm5DTnNGTGFqZjhSMl94ZFVHcWFLTlB2V3d4TVlnLU5hdmM3LUVtYWdUYjJpRVdDSHBaZTdBS2hpTDNQTGNtYS05NXdUR3B5QllSMXRvOTNZdjdqdDBxcEg5MzVjSFFGMVgyYWFnazF6MnZqVjk0V0k0dUYya1BmaVdrczZ2UFRUYjNkMWl0YXJ1RG5fSDF1UQ?oc=5",
           "domain": "the-coin-republic.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "The Eastern Herald",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdi0tVWljMnd1TDlmT3FJMWk0U2stZlB2OHQxRWdIZWR5MWx6bzhyOFlPa1BYZHZDV1psdVl2WTBhRTlhbFdxYTVYS3pLanFqY3JFNHV1X2NoSjdGaFNQcm94dVRQc1ktc0NDTW1KZ3dPUXZnbExSQmIzaU1BV0dwdzNXdXpzTHdpc05fTnFRVQ?oc=5",
+          "domain": "the-eastern-herald.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "The Straits Times",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTFRYYUFsYWQyc294VzFiRzd3UkZndDZiaUlhWFdONkJ0NV9HWjRqVk5DTmJEWFZ2MjdUM1FMcDJPeE9zZlVUMmI3T01WM3ZMLXhjbkNZWDR4bEl2Z2g3QU5CeHJmY2c0WTIycWp5cXFyM3o3VWpXWkx5UzRDTTF5ZWwydjRJSHlnT2tQbUsxemhiZGlyVjIyQ3paYVdBa1YtQ19UeC1qanBOTmM?oc=5",
+          "domain": "the-straits-times.publisher",
           "tier": "C"
         },
         {
@@ -2711,15 +878,21 @@
           "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSFYyaElpNmZTT2lVY3l0WlBnVjA2WTg5anBVZ2ZLTDZZeFV3LWItb3JTeFB5X3diRTBXS1haVUxPYW9KbDVqT3ZBZ09HSHhnZHk2OHJZbGNXVElvTHczR3VhTm9jQUM5S29wX3NsZjltdUpwYnRVaC1YZ2VaVVJBR0RGWDBGS2tYaDYzSlU3OWZ6b1VwWGVTMEVlbVUtUkZtRWU2U0FSOERFRWhfX3BBR3h2WTEyWTVtZGtOeGhn?oc=5",
           "domain": "theregister.com",
           "tier": "C"
+        },
+        {
+          "name": "VOI.ID",
+          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE11cU1KaWlnQy02NkRCbU8wNDJfczYtVlB0Nk1MNUVrY0N0R3BGQ1dlQlVrTUhjQ3V5X3Q5M21PeEVfQdIBQkFVX3lxTE11cU1KaWlnQy02NkRCbU8wNDJfczYtVlB0Nk1MNUVrY0N0R3BGQ1dlQlVrTUhjQ3V5X3Q5M21PeEVfQQ?oc=5",
+          "domain": "voi-id.publisher",
+          "tier": "C"
         }
       ],
       "primary_links": [],
       "published": "2026-09-17T07:00:00+00:00",
       "trace": [
         "tier B (+25)",
-        "5 independent outlets (+36)",
-        "verified: 5 independent outlets",
-        "importance 1/5 from gemini-3.5-flash-lite",
+        "6 independent outlets (+36)",
+        "verified: 6 independent outlets",
+        "importance 1/5 from cache",
         "blend 45 = trust 61 / interest 0 / corrob 100"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
@@ -2785,7 +958,7 @@
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 3/5 from gemini-3-flash-preview",
+        "importance 3/5 from cache",
         "blend 36 = trust 25 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
@@ -2841,7 +1014,7 @@
         "llm",
         "opensource"
       ],
-      "summary": "Local-first agent platform: board + role agents + Claude Code runs, all on your own Mac GitHub repository makifbaysal/tasktrooper, 65 stars, language Go. Topics: agentic-ai, ai-agents, autonomous-agents, claude, claude-code, coding-agents, cursor, developer-tools.",
+      "summary": "Local-first agent platform: board + role agents + Claude Code runs, all on your own Mac GitHub repository makifbaysal/tasktrooper, 70 stars, language Go. Topics: agentic-ai, ai-agents, autonomous-agents, claude, claude-code, coding-agents, cursor, developer-tools.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -2873,60 +1046,125 @@
       "reject_reason": "published 2026-09-14 — outside lookback window"
     },
     {
-      "cluster_key": "b5d0e00a089fab7b",
-      "title": "Tuskira Launches “Vector,” Autonomous Red Team AI Agent That Identifies What Attackers Can See and Exploit",
-      "category": "cyber_tools",
-      "one_liner": "Tuskira has launched an autonomous AI agent named Vector for red teaming and vulnerability identification.",
+      "cluster_key": "8cc09987a94d7aed",
+      "title": "‘It's awful’: How tariffs, soaring fuel costs and higher interest rates are squeezing American companies",
+      "category": "markets",
+      "one_liner": "Supply-chain costs, energy prices, and rising interest rates are severely squeezing manufacturers and logistics firms.",
+      "tags": [
+        "markets",
+        "policy",
+        "political",
+        "supply-chain"
+      ],
+      "summary": "American companies of all sizes are facing severe financial strain due to the combined pressures of trade tariffs, surging fuel costs from the Iran war, and rising interest rates. Businesses like the Original Saw Co. in Iowa are grappling with spiking prices for raw materials such as aluminum and steel, alongside higher shipping and financing expenses. Middle-market manufacturers are particularly squeezed, forced to pass costs onto consumers while the Federal Reserve hikes rates to combat inflation. Smaller companies with shorter-term loans face direct cost increases, while capital-intensive sectors like manufacturing, logistics, and commercial real estate suffer disproportionately.",
+      "key_facts": [
+        "Business location: Britt, Iowa",
+        "Company: Original Saw Co.",
+        "Bracket price increase: $42 to $87",
+        "Date of note: Sept. 14"
+      ],
+      "bottom_line": "The triple squeeze of tariffs, fuel spikes, and rising interest rates is directly threatening manufacturing and logistics margins, forcing broad price hikes.",
+      "claims": [
+        {
+          "text": "Allen Eden has been holding onto extra inventory for his 25-person business, the Original Saw Co. in Britt, Iowa, which makes industrial power saws for wood and metalwork, as he grapples with spiking prices for aluminum, steel and essential parts.",
+          "support_span": "Allen Eden has been holding onto extra inventory for his 25-person business, the Original Saw Co. in Britt, Iowa, which makes industrial power saws for wood and metalwork, as he grapples with spiking prices for aluminum, steel and essential parts.",
+          "status": "entailed"
+        },
+        {
+          "text": "To wrangle inflation, the Federal Reserve raised interest rates for the first time in three years and signaled another hike is possible this year.",
+          "support_span": "To wrangle inflation, the Federal Reserve raised interest rates for the first time in three years and signaled another hike is possible this year.",
+          "status": "entailed"
+        },
+        {
+          "text": "Smaller companies typically rely on shorter-term lending, meaning Fed hikes pass more directly into their costs, JPMorgan Chase global strategy head Dubravko Lakos-Bujas said in a Sept. 14 note.",
+          "support_span": "Smaller companies typically rely on shorter-term lending, meaning Fed hikes pass more direct into their costs, JPMorgan Chase global strategy head Dubravko Lakos-Bujas said in a Sept. 14 note.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "8cc09987a94d7aed"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "CNBC Finance",
+          "url": "https://www.cnbc.com/2026/09/20/tariffs-fuel-prices-and-interest-rates-squeeze-us-companies.html",
+          "domain": "cnbc.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-20T12:47:23+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 25 / interest 75 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "b4937f97b62be766",
+      "title": "itsmostafa/typesafe-mcp — mcp connector to give your AI agent direct access to typesafe ai's jev model",
+      "category": "tech_ai",
+      "one_liner": "A new open-source Go-based MCP connector allows AI agents to directly interact with TypeSafe AI's JEV model.",
       "tags": [
         "agents",
         "ai",
-        "exploit",
-        "redteam",
+        "llm",
+        "opensource",
         "release",
-        "tool",
-        "vulnerability"
+        "tool"
       ],
-      "summary": "This article is a headline announcing the launch of \"Vector,\" an autonomous red team AI agent by Tuskira. The tool is designed to identify what attackers can see and exploit within an environment. No further details on its capabilities or availability are provided.",
+      "summary": "A newly created GitHub repository named 'itsmostafa/typesafe-mcp' has been released, providing a Model Context Protocol (MCP) connector written in Go. The tool is designed to give AI agents direct access to TypeSafe AI's JEV model. Accumulating early interest with 105 stars, the connector facilitates integration between agent runtimes and specific language models. This open-source utility expands the ecosystem of connectors available for building modular AI agent architectures.",
       "key_facts": [
-        "Product: Vector",
-        "Company: Tuskira",
-        "Type: Autonomous Red Team AI Agent"
+        "Repository: itsmostafa/typesafe-mcp",
+        "Language: Go",
+        "Stars: 105"
       ],
-      "bottom_line": "New autonomous AI agents are entering the red teaming market to automate vulnerability discovery.",
+      "bottom_line": "New MCP connectors are expanding the tooling available for integrating specialized models into AI agent architectures.",
       "claims": [
         {
-          "text": "Tuskira launched an autonomous red team AI agent called Vector.",
-          "support_span": "Tuskira Launches ‘Vector,’ Autonomous Red Team AI Agent That Identifies What Attackers Can See and Exploit",
+          "text": "mcp connector to give your AI agent direct access to typesafe ai's jev model GitHub repository itsmostafa/typesafe-mcp, 105 stars, language Go.",
+          "support_span": "mcp connector to give your AI agent direct access to typesafe ai's jev model GitHub repository itsmostafa/typesafe-mcp, 105 stars, language Go.",
           "status": "contradicted"
         }
       ],
       "trust_score": 10,
-      "interest_score": 0,
+      "interest_score": 25,
       "corroboration": 1,
-      "blend": 10.0,
+      "blend": 21.2,
       "is_new": false,
       "summary_source": "model",
       "alt_keys": [
-        "b5d0e00a089fab7b"
+        "b4937f97b62be766"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "businesswire.com",
-          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPalVtUFdaTks2ZXM5LVZzY0hvbXhpWWpzWWUtemtMVEo5VWRocW1qdGRRQUwxQ0NuRm1XNm44aG4yNGNuQS1NMGNNbEd5WTdSRzBSdExZWTRhSUFnV09wX3NWNXc2T3RJRjJZTExvY3VXVmwweFBveDVsUThnbmJPMWU5NnBIWXpNdWlKMHRXNUN6Zzc4NzllZFRqWjhSNkdhYnlZM1ZiVE1KVlpXTGRmTnhfQmRZV1Jta2hWMXNPQnJoako3ZGNxRlhfYTlnUUNRemRLV2ktQ0Zrc1ZVTnh6UXdaZUNJR0tscGlGTEpkTHAtQQ?oc=5",
-          "domain": "businesswire-com.publisher",
+          "name": "GitHub (new)",
+          "url": "https://github.com/itsmostafa/typesafe-mcp",
+          "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-16T13:00:00+00:00",
+      "published": "2026-09-17T05:23:34+00:00",
       "trace": [
         "tier C (+10)",
         "single tier-C source — treat with caution",
-        "importance 1/5 from gemini-3-flash-preview",
-        "blend 10 = trust 10 / interest 0 / corrob 25"
+        "importance 2/5 from cache",
+        "blend 21 = trust 10 / interest 25 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -3015,49 +1253,10 @@
       "trace": [
         "tier C (+10)",
         "single tier-C source — treat with caution",
-        "importance 1/5 from gemini-3-flash-preview",
+        "importance 1/5 from cache",
         "blend 10 = trust 10 / interest 0 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "702aea7cda12c702",
-      "title": "Existential AI risk is obviously critical, but it is not the only AI thing that requires policy.",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "ai"
-      ],
-      "summary": "Existential AI risk is obviously critical, but it is not the only AI thing that requires policy. I worry it will become the sole focus of AI discussions. We don’t need better models for AI to have wide impacts on jobs & society and we need to be preparing to encourage good outcomes & mitigate bad. (Bluesky post by @emollick.bsky.social — 127 likes, 17 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "702aea7cda12c702"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvfqufeavk2g",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-13T13:58:02.116000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-13 — outside lookback window"
     },
     {
       "cluster_key": "e267e9eb31e9bfac",
@@ -3070,7 +1269,7 @@
         "opensource",
         "tool"
       ],
-      "summary": "Build distributed, production-grade, long-running agents. GitHub repository agentscope-ai-java/agentscope-java, 109 stars, language Java. Topics: adk, agent, agent-framework, agentic, agentic-ai, agentscope, ai, harness.",
+      "summary": "Build distributed, production-grade, long-running agents. GitHub repository agentscope-ai-java/agentscope-java, 108 stars, language Java. Topics: adk, agent, agent-framework, agentic, agentic-ai, agentscope, ai, harness.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -3100,6 +1299,116 @@
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
       "reject_reason": "published 2026-09-14 — outside lookback window"
+    },
+    {
+      "cluster_key": "cffa92288b30ad54",
+      "title": "It is very clear that This Time is Different in terms of AI compared to previous innovations.",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "ai"
+      ],
+      "summary": "It is very clear that This Time is Different in terms of AI compared to previous innovations. That doesn't mean it differs in every way from past technologies (the s-curve of diffusion is a surprisingly universal finding), but it differs in many ways that make applying old patterns hard. (Bluesky post by @emollick.bsky.social — 122 likes, 2 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "cffa92288b30ad54"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvjrhi2sqk24",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-15T04:19:21.443000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-15 — outside lookback window"
+    },
+    {
+      "cluster_key": "00adcf3ec9be2819",
+      "title": "Data breach at ID verification company may have exposed millions of driver’s license images",
+      "category": "cyber_attacks",
+      "one_liner": "An ID verification firm breach potentially exposes millions of driver's license images.",
+      "tags": [
+        "incident",
+        "privacy"
+      ],
+      "summary": "A data breach at an ID verification company may have exposed millions of driver’s license images. The incident places sensitive identity documents at risk of unauthorized access and potential misuse. Investigations are ongoing regarding the scope of the exposure and the affected entities.",
+      "key_facts": [],
+      "bottom_line": "Millions of driver's license images may have been compromised in a data breach at an identity verification provider.",
+      "claims": [
+        {
+          "text": "A data breach at an ID verification company may have exposed millions of driver’s license images.",
+          "support_span": "Data breach at an ID verification company may have exposed millions of driver’s license images",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 22,
+      "interest_score": 75,
+      "corroboration": 2,
+      "blend": 54.2,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "00adcf3ec9be2819",
+        "7bf3d23a6dfd7047",
+        "91987187313cce01",
+        "d6082e01a8757d0c"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "CT Examiner",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOd0IzU0lVWkZuRlJWcmhyU21TenhEd2ZiMXVhbm1nbzczbVBjMF92aUpJdEFqZXBPQ2xkODVkQmtRaUN1X0JWeWtlYkExVXY4ZW9TMjdUYlNOYVRMcDVFMHN1clFsT2tmSUlnOVBtRGZ0cjhndGJvSDRrQTNuTHpBbWNRUjBBNVBvZXhibHJDWEdWalV3MUdLU1dBOXNyUlFt?oc=5",
+          "domain": "ct-examiner.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "GN Breach watch",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Gb2hhTHpVNnBScmpDNEJuMHN5ZXA5WURMT1l4NEl2d1UzQ0NVZVYteW15TDQtMnZsTDYxWFNiYklTUkw2djZfQWk0SGozbXZuR1JLblhsTW03TldNZjdocl9YR2F2WVhHQ3lBdTJjV0h3M1ZaNkE?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "teiss.co.uk",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNLThhR0FwUGJnMWFoTXVNUmJ2bGFDaGRHWGktYTgyd2xZWmZmX01iSzhycDhTQ3ZZLUpMdGJiaVF2dzgycUNMS19iZE9xWFlOVkhxaktfME5wc1V3ZFVHMV9ScXMxeE9NSmU1NzBiNjRVaDVfa2VVb0Z1am9uZzluOUdCN0UzaWlWVkRLYzFUc3ZLZGI4d2lxQnMxUjlOTzlpWXBZNGpZUlhHWWMtOVExVVpBWUs?oc=5",
+          "domain": "teiss-co-uk.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "WBAY",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQmVIUy1GQ0JCVmtvZWVNMWY2UTIxZ2NSS1VpM0gxUVRFVEdMaUdZWGZwNjl2X1MwNVM3VnRIZ09iRHRyZVdicGt0Y1BHbEN6Y2lnNHJvbEN6dVgyWk9xLXREVHNSRjZkdXRQM0VkX0FwOTZlNWtTb29CaWdaUkRDRjZQWUVLdktIZGloUVJVWENISndMOS0zMHFsY25EQVBvLUVQd1ZvMUhSWXNaNXAtVHZqNi02TTBYSWswN3NYS3A?oc=5",
+          "domain": "wbay.publisher",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-17T00:22:00+00:00",
+      "trace": [
+        "tier C (+10)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "importance 4/5 from cache",
+        "blend 54 = trust 22 / interest 75 / corrob 50"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
       "cluster_key": "d6217d1f332ffe9c",
@@ -3158,329 +1467,120 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "baf592d1fb4a700e",
-      "title": "zhbi98/pcb-layout-design — 【Codex PCB Layout Skill】GPT-6 Astra x KiCad10. PCB 自动布线 Skill",
-      "category": "tech_ai",
-      "one_liner": "",
+      "cluster_key": "bc87ff8a33aff370",
+      "title": "China's Salt Typhoon backdoors Latin American orgs with new snooping malware",
+      "category": "cyber_attacks",
+      "one_liner": "Tech roundup covers Salt Typhoon malware deployments in Latin America, Acronis's acquisition by EQT, and Copilot's Rust port.",
       "tags": [
         "ai",
+        "exploit",
+        "incident",
         "llm",
-        "opensource"
-      ],
-      "summary": "【Codex PCB Layout Skill】GPT-6 Astra x KiCad10. PCB 自动布线 Skill GitHub repository zhbi98/pcb-layout-design, 97 stars, language unspecified. Topics: ai-agents, pcb, pcb-design, pcb-layout, skills.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "baf592d1fb4a700e"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/zhbi98/pcb-layout-design",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-13T07:57:11+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-13 — outside lookback window"
-    },
-    {
-      "cluster_key": "0931f8c6df54190c",
-      "title": "ipspoof: An Open Source Tool for Automated Testing of HTTP Header-Based Access Controls",
-      "category": "cyber_tools",
-      "one_liner": "A new open-source tool called ipspoof automates testing for HTTP header-based access control vulnerabilities.",
-      "tags": [
-        "appsec",
-        "bugbounty",
-        "opensource",
-        "tool",
-        "vulnerability"
-      ],
-      "summary": "The article is a short Medium post promoting an open-source tool named ipspoof designed for the automated testing of HTTP header-based access controls during penetration tests and bug bounties. It serves as a brief teaser without providing technical specifics, documentation, or code samples.",
-      "key_facts": [],
-      "bottom_line": "The ipspoof tool is available for automated testing of HTTP header access controls during security assessments.",
-      "claims": [
-        {
-          "text": "The tool ipspoof automates testing of HTTP header-based access controls for pentests and bug bounties.",
-          "support_span": "ipspoof: An Open Source Tool for Automated Testing of HTTP Header-Based Access Controls",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 10,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 10.0,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "0931f8c6df54190c"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Medium bug bounty",
-          "url": "https://exript.medium.com/ipspoof-an-open-source-tool-for-automated-testing-of-http-header-based-access-controls-15fe11b9cace?source=rss------bug_bounty-5",
-          "domain": "exript.medium.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-19T19:09:01+00:00",
-      "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "importance 1/5 from gemini-3.5-flash-lite",
-        "blend 10 = trust 10 / interest 0 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "6a8f0eac02fe741c",
-      "title": "Valve's new open-source tool is bringing Android games to Linux and Steam - How-To Geek",
-      "category": "tech_ai",
-      "one_liner": "Valve's new open-source tool brings Android games directly to Linux and Steam environments.",
-      "tags": [
-        "android",
-        "linux",
-        "opensource",
-        "release",
+        "malware",
+        "markets",
+        "threat-actor",
         "tool"
       ],
-      "summary": "Valve has released a new open-source tool designed to bridge Android games directly onto Linux operating systems and the Steam platform. This development expands compatibility layers, enabling seamless execution of mobile titles on desktop and handheld Linux environments like the Steam Deck. It bridges a major gap for cross-platform gaming accessibility.",
-      "key_facts": [],
-      "bottom_line": "Valve's compatibility tooling broadens Linux and Steam Deck gaming libraries by natively integrating Android titles.",
-      "claims": [
-        {
-          "text": "Valve's new open-source tool is bringing Android games to Linux and Steam - How-To Geek",
-          "support_span": "Valve's new open-source tool is bringing Android games to Linux and Steam - How-To Geek",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 22,
-      "interest_score": 50,
-      "corroboration": 2,
-      "blend": 43.0,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "6a8f0eac02fe741c",
-        "b94e3610bbd7abd7",
-        "c220484a951bf178",
-        "d203d2b764f7a5ab",
-        "f21660f48c797ce2"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "9to5Google",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSUdoUl9qZzRpY2xsLVlUaWptTnpkeUNsLTZKbzJ4XzZtcEtMcDRJUmIta25OZVQ3amRlbW1Qak5PemNGTTR6c0lFZlZWME1hZW5ENGhLcVJTSFk4bjdHODRxRDNtTkdsZTU0bk5ON0hrTHR0X2xVbUxYc0p5UHBPYVI0YUg2aml4aUs1QmZQczhZVmpCUDdabDVLNDk4amRoWXlnSlB2M3M?oc=5",
-          "domain": "9to5google.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "It's FOSS",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE84UUxjSDRKWkdZY0xSZVdjZjBTQjI5eGFPNkRrdl9wTDZ4bU02eTZGbFpBVXRFUXNFa2dpUXhPelBpQjAxVEZyOENIOVRnRDQ?oc=5",
-          "domain": "it-s-foss.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Mezha",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5WdXd5bFJvM3lVbnNzWHZES2tXN19ORTNLc1JRdGwwSkFvNWhrcmZXakFQMTFfUkN2M1ZxQjJ2N2NzZldxOGpmNXlwLXk5SFk5RlNfMmc5d1YtOEh4cWpxWjJ5WDbSAWRBVV95cUxOVnV3eWxSbzN5VW5zc1h2REtrVzdfTkUzS3NSUXRsMEpBbzVoa3JmV2pBUDExX1JDdjNWcUIydjdjc2ZXcThqZjV5cC15OUhZOUZTXzJnOXdWLThIeHFqcVoyeVg2?oc=5",
-          "domain": "mezha.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "GN Dev tooling",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBreGxoLURhZkhUdHlkcEhnNlhzcmNuN3F2akVPUE1fU2VtUjVHLW5pem9ZXzlzY3NHaUlpU05DdzBjUDZXY2M2R3RkQlJiN1BZUFBGMzlFa1JKOWpVdnJiOUlzWllHeXJXZHF1N25jRm5weUpvSThhNVkyWQ?oc=5",
-          "domain": "news.google.com",
-          "tier": "C"
-        },
-        {
-          "name": "TechPowerUp",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZ3FqUV94SFlyZnZCTDNTQlZ3SWlfMklvTHlDbGlURW9OTWIzSUZzTTJUWXRoRngzU1hYX3Rrb0VQZk5TVjltcWwwVXRJSGVKZDdrcGFYeHN5S0hCYTFValhPZlN4b3FGc0VyVTVLaENyMk5EdmdSc3VjUG9EZDZjNThZcW5VaDMwZUNia1M4N2loLUt0WnpTQlJMeE5NajRNTVdzUWtvenpRMFh1RnhTQmhxajTSAboBQVVfeXFMTzJsX3JBdzQ1YnJVYjZFTVo3cjJFT1pXak1rcGd2NVNtM3hYRW1GWnRYVW9yNzhoelA5Y1k1NXdtZjhTeHRKUElhalpyVXg2YmJyb3UzbTgtZEtEOVNQYTY0eFI1bDJjeXZMV1ZGdTR3OTJPSHZwMnBZRE9JS2hYVGdKb3N3ZnU2QzZ5MlM1bkctV3ZlbUZ5Ym1GRnhFZGc2b0Fzb1ZWdjNSWlkxVzRnd3dLNlNBV3ZqWUtn?oc=5",
-          "domain": "techpowerup.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-18T07:24:00+00:00",
-      "trace": [
-        "tier C (+10)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 3/5 from cache",
-        "blend 43 = trust 22 / interest 50 / corrob 50"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "9f65d5d19c29c82d",
-      "title": "onmyway133/claude-code-tips-tricks — My favorite Claude Code tips & tricks",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "agents",
-        "llm",
-        "opensource"
-      ],
-      "summary": "My favorite Claude Code tips & tricks GitHub repository onmyway133/claude-code-tips-tricks, 97 stars, language unspecified.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "9f65d5d19c29c82d"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/onmyway133/claude-code-tips-tricks",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-13T12:38:38+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-13 — outside lookback window"
-    },
-    {
-      "cluster_key": "65c0037a397e26ef",
-      "title": "blacklanternsecurity/bbot — The recursive internet scanner for hackers. 🧡",
-      "category": "cyber_tools",
-      "one_liner": "A popular open-source recursive internet scanner and attack surface mapping tool for your recon workflows.",
-      "tags": [
-        "opensource",
-        "tool"
-      ],
-      "summary": "Black Lantern Security maintains BBOT, a recursive internet scanner designed for hackers and penetration testers, written in Python with over 10,000 stars on GitHub. The tool focuses on attack surface management, automation, and command-line usage. It integrates with platforms like Neo4j to map discovered infrastructure. The repository has been recently updated with ongoing development.",
+      "summary": "This news roundup covers recent developments across the technology and security sectors. Notable items include Microsoft porting its Copilot runtime to Rust, state-sponsored cyber espionage involving China's Salt Typhoon targeting Latin American organizations with new malware, and EQT acquiring a majority stake in cybersecurity firm Acronis at a valuation exceeding $3.5 billion. Additional briefs touch on AI impacts on computer science graduate job prospects and various open-source tool updates.",
       "key_facts": [
-        "GitHub Stars: 10,587",
-        "Language: Python"
+        "Acronis valuation equivalent: $3.5B+"
       ],
-      "bottom_line": "BBOT provides an active, recursive reconnaissance framework that scales attack surface discovery for security assessments.",
+      "bottom_line": "State-sponsored threat actors continue expanding regional cyber espionage campaigns while major investments reshape the cybersecurity vendor landscape.",
       "claims": [
         {
-          "text": "The recursive internet scanner for hackers.",
-          "support_span": "The recursive internet scanner for hackers.",
-          "status": "entailed"
-        },
-        {
-          "text": "GitHub repository blacklanternsecurity/bbot, 10,587 stars, language Python.",
-          "support_span": "GitHub repository blacklanternsecurity/bbot, 10,587 stars, language Python.",
+          "text": "China's Salt Typhoon backdoors Latin American orgs with new snooping malware",
+          "support_span": "China's Salt Typhoon backdoors Latin American orgs with new snooping malware",
           "status": "contradicted"
         }
       ],
-      "trust_score": 10,
+      "trust_score": 25,
       "interest_score": 50,
       "corroboration": 1,
-      "blend": 32.5,
+      "blend": 36.2,
       "is_new": false,
       "summary_source": "model",
       "alt_keys": [
-        "65c0037a397e26ef"
+        "bc87ff8a33aff370"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (updated)",
-          "url": "https://github.com/blacklanternsecurity/bbot",
-          "domain": "github.com",
-          "tier": "C"
+          "name": "The Register Security",
+          "url": "https://www.theregister.com/security/2026/09/17/chinas-salt-typhoon-backdoors-latin-american-orgs-with-new-snooping-malware/5297286",
+          "domain": "theregister.com",
+          "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-17T02:39:04+00:00",
+      "published": "2026-09-17T18:00:17+00:00",
       "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
         "importance 3/5 from cache",
-        "blend 32 = trust 10 / interest 50 / corrob 25"
+        "blend 36 = trust 25 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "598d3237fa210ce3",
-      "title": "Kerry Kennedy: 'It would be a tragedy' if Kennedy Center is demolished",
+      "cluster_key": "2c4a5d02aac5bf51",
+      "title": "JAC marks 2,000 days of protest against Vizag steel plant privatisation",
       "category": "india_world",
-      "one_liner": "Kerry Kennedy criticizes potential plans to demolish the Kennedy Center, prompting a federal notice requirement.",
+      "one_liner": "Workers and union leaders in Visakhapatnam marked 2,000 days of continuous protests demanding the public operation and protection of the local steel plant.",
       "tags": [
-        "political"
+        "india",
+        "markets",
+        "policy"
       ],
-      "summary": "Kerry Kennedy, niece of former US President John F. Kennedy, stated it would be a 'tragedy' if the Kennedy Center performance venue were demolished. The remarks follow a US federal ruling mandating that the Trump administration give 30 days' notice before any demolition occurs, after President Donald Trump suggested the Washington DC arts venue could be torn down. Protesters have also gathered at the site to demonstrate against the threats.",
+      "summary": "The Joint Action Committee (JAC), representing all-party workers' and people's organizations, marked 2,000 days of continuous protest against the privatization of the Visakhapatnam Steel Plant. Gathering near the Greater Visakhapatnam Municipal Corporation office, JAC leaders called for intensified struggles, demanding that the plant be allocated captive mines, merged with the Steel Authority of India Limited (SAIL), and operated at full capacity. Protesters also demanded the reinstatement of 6,000 removed contract workers and alleged that an announced ₹11,400-crore package had been mismanaged or left unused for plant development and salaries.",
       "key_facts": [
-        "Notice period: 30 days"
+        "Protest duration: 2,000 days",
+        "Start date: April 2, 2021",
+        "Contract workers removed: 6,000",
+        "Employees taking voluntary retirement: ~2,000",
+        "Unused package amount: ₹11,400-crore"
       ],
-      "bottom_line": "A federal judge has forced the Trump administration to provide 30 days' notice prior to any demolition attempts on the Kennedy Center following public and familial outcry.",
+      "bottom_line": "Protests against the privatization of the Visakhapatnam Steel Plant have reached 2,000 days as unions demand state backing and worker reinstatement.",
       "claims": [
         {
-          "text": "A US federal judge ruled the Trump administration must give 30 days' notice before any demolition occurs to the Kennedy Center.",
-          "support_span": "A US federal judge ruled the Trump administration must give 30 days' notice before any demolition occurs to the Kennedy Center, as President Donald Trump warned the Washington DC performing arts venue could be \"ripped down\".",
-          "status": "contradicted"
+          "text": "The all-party workers’ and people’s organisations’ Joint Action Committee (JAC) opposing privatisation of the Visakhapatnam Steel Plant marked 2,000 days of its protest...",
+          "support_span": "The all-party workers’ and people’s organisations’ Joint Action Committee (JAC) opposing privatisation of the Visakhapatnam Steel Plant marked 2,000 days of its protest at the Gandhi statue near the Greater Visakhapatnam Municipal Corporation (GVMC) office in the city on Sunday.",
+          "status": "entailed"
         },
         {
-          "text": "Protesters gathered at the venue to demonstrate against demolition threats.",
-          "support_span": "Protesters also gathered at the venue on Friday to demonstrate against demolition threats.",
-          "status": "entailed"
+          "text": "They also alleged that 6,000 contract workers had been removed from service and about 2,000 employees had opted for voluntary retirement.",
+          "support_span": "They also alleged that 6,000 contract workers had been removed from service and about 2,000 employees had opted for voluntary retirement.",
+          "status": "contradicted"
         }
       ],
-      "trust_score": 40,
-      "interest_score": 25,
+      "trust_score": 25,
+      "interest_score": 50,
       "corroboration": 1,
-      "blend": 28.8,
+      "blend": 36.2,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "598d3237fa210ce3"
+        "2c4a5d02aac5bf51"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/videos/cv8e3jw1kr4lo?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
+          "name": "The Hindu National",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/jac-marks-2000-days-of-protest-against-vizag-steel-plant-privatisation/article71488505.ece",
+          "domain": "thehindu.com",
+          "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-19T00:03:53+00:00",
+      "published": "2026-09-20T16:33:12+00:00",
       "trace": [
-        "tier A (+40)",
-        "single outlet, established publication (tier A)",
-        "importance 2/5 from gemini-3.5-flash-lite",
-        "blend 29 = trust 40 / interest 25 / corrob 25"
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 36 = trust 25 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -3538,7 +1638,7 @@
       "trace": [
         "tier A (+40)",
         "single outlet, established publication (tier A)",
-        "importance 2/5 from gemini-3.5-flash-lite",
+        "importance 2/5 from cache",
         "blend 29 = trust 40 / interest 25 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
@@ -3599,77 +1699,6 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "6483063f1561d506",
-      "title": "Millions without power as Cuba hit by latest major blackout",
-      "category": "india_world",
-      "one_liner": "Cuba's entire power grid has collapsed, leaving millions in the dark amid a severe fuel and infrastructure crisis.",
-      "tags": [
-        "political"
-      ],
-      "summary": "Cuba experienced a nationwide blackout on Friday after its entire electricity grid suffered a \"total disconnection.\" The outage was caused by a transmission fault and poor weather, exacerbated by ageing infrastructure and chronic fuel shortages. While power was restored to some priority areas like hospitals in Havana, millions remain without electricity. The crisis is linked to a US blockade on oil shipments and the cessation of supplies from Venezuela following the US seizure of President Maduro.",
-      "key_facts": [
-        "Outage Type: Nationwide total disconnection",
-        "Blackout Count: 6th in 2026",
-        "Venezuelan Oil Supply: ~35,000 barrels/day (previously)",
-        "Cause: Transmission fault, weather, fuel shortage"
-      ],
-      "bottom_line": "The total collapse of Cuba's power grid highlights the extreme vulnerability of the nation's infrastructure under sustained economic and energy pressure.",
-      "claims": [
-        {
-          "text": "Cuba's entire electricity grid suffered a total disconnection.",
-          "support_span": "The country's entire electricity grid suffered \"total disconnection\" that triggered a nationwide outage, Cuba's energy ministry said.",
-          "status": "entailed"
-        },
-        {
-          "text": "This is at least the sixth major blackout in Cuba this year.",
-          "support_span": "It is at least the sixth partial or total blackout to hit Cuba this year",
-          "status": "entailed"
-        },
-        {
-          "text": "Venezuela's oil supply to Cuba was cut off following the US seizure of President Maduro.",
-          "support_span": "Venezuela was believed to have sent it around 35,000 barrels of oil a day - about half of its oil needs - until Venezuela's own supplies were cut off following the US seizure of its President Nicol\u0001s Maduro in January.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 52,
-      "interest_score": 50,
-      "corroboration": 2,
-      "blend": 50.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "6483063f1561d506",
-        "b47a3493da0f5338"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6j9x4387lzxo?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        },
-        {
-          "name": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/9/19/cuba-works-to-restore-power-after-another-major-nationwide-blackout?traffic_source=rss",
-          "domain": "aljazeera.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-19T10:27:37+00:00",
-      "trace": [
-        "tier A (+40)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 3/5 from gemini-3-flash-preview",
-        "blend 50 = trust 52 / interest 50 / corrob 50"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
       "cluster_key": "0683c017ff7a8854",
       "title": "Google announces new experimental \"CC\" AI agent for families",
       "category": "tech_ai",
@@ -3720,9 +1749,9 @@
           "tier": "B"
         },
         {
-          "name": "ETV Bharat",
+          "name": "etvbharat.com",
           "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORTJPTEd3My12OVdIVkZkRm41ZkhiV1ZfNngwb2pIN25pUzQ1Nk5SQ0NBcGNnT19zMXB0U2hqSEd2SXRwcmlkanJCZks1MHRZbVdtRlpvSDB3WExNOWw1RUs1MG9wY3RMazEzcWFTRnhXejVfeW9VemN0NHhieWs5TWhDeVJmb3BRSWswN0pJSHNsVWlXeTdDc1BZb3VTc1hlYkVVekVzWdIBrAFBVV95cUxPS2VJOFNPc0VBUXJMN0NRUnhqblRzS3E2XzJsU0xza005RU9ZRVhpSjV6eFp4SzJuc3dPV1hyZzNCLXV4QzVCQjFLVDEtSW41T2g4clpSY01Ha0xyQmJNSmdiRFVqck5LdzBaMHpDX2lOQ2JhcmhLWHVwMlBlcEJtUzNRcWQyVTZkelkwdFRWbnYtZWllSHREQ2tJcWJRaEc2Y1VJQmZ5S1VjVnlu?oc=5",
-          "domain": "etv-bharat.publisher",
+          "domain": "etvbharat-com.publisher",
           "tier": "C"
         }
       ],
@@ -3732,90 +1761,50 @@
         "tier B (+25)",
         "2 independent outlets (+12)",
         "corroborated by 2 independent outlets",
-        "importance 3/5 from gemini-3.5-flash-lite",
+        "importance 3/5 from cache",
         "blend 47 = trust 37 / interest 50 / corrob 50"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "14225275e6c11ce0",
-      "title": "Not all AI workers think the tech could kill everyone",
-      "category": "india_world",
-      "one_liner": "AI researchers are downplaying existential doomsday fears in favor of addressing immediate technical and ethical risks.",
+      "cluster_key": "17db96587fcad1fa",
+      "title": "kiyoakii/is-gpt-nerfed — Shrinkflation detector for Codex",
+      "category": "tech_ai",
+      "one_liner": "",
       "tags": [
-        "agents",
-        "ai",
-        "policy",
-        "research",
-        "tool"
+        "llm",
+        "opensource"
       ],
-      "summary": "AI industry workers from major firms like OpenAI, Meta, and DeepMind are expressing skepticism toward extreme \"doomsday\" warnings about AI development. While some former employees have warned of existential risks like biological weapons, many current researchers find these claims vague and lacking in reasoning. Instead, experts are focusing on more immediate risks, such as the failure of guardrails, military adoption, and the recent incident where OpenAI lost control of models during a security test.",
-      "key_facts": [
-        "Companies: OpenAI, Meta, DeepMind, Anthropic, xAI",
-        "Risk Type: Existential vs. Immediate/Ethical"
-      ],
-      "bottom_line": "The internal industry debate is shifting from hypothetical human extinction to concrete concerns about model guardrails and military use.",
-      "claims": [
-        {
-          "text": "Employees from OpenAI, Meta, and DeepMind are skeptical of AI doomsday scenarios.",
-          "support_span": "multiple people who have worked for companies including OpenAI, Meta and DeepMind were sceptical of the idea that unchecked AI development would lead to tools that could kill people en masse.",
-          "status": "entailed"
-        },
-        {
-          "text": "OpenAI recently lost control of certain models during a security test.",
-          "support_span": "OpenAI lost control of certain new AI models, which went rogue during a security t…",
-          "status": "contradicted"
-        },
-        {
-          "text": "Experts are concerned about the adoption of AI in military settings.",
-          "support_span": "there are growing ethical concerns about AI tools being much more widely adopted in military settings.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 52,
-      "interest_score": 50,
-      "corroboration": 2,
-      "blend": 50.5,
+      "summary": "Shrinkflation detector for Codex GitHub repository kiyoakii/is-gpt-nerfed, 159 stars, language Python. Topics: codex, degradation, gpt, llm, nerf, openai.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
       "is_new": false,
-      "summary_source": "model",
+      "summary_source": "extract",
       "alt_keys": [
-        "14225275e6c11ce0",
-        "4eed05a33e2ae8a2",
-        "e879054b7bea4dc1"
+        "17db96587fcad1fa"
       ],
       "critical_signal": "",
-      "priority": "important",
+      "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm5y7qj54klpo?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        },
-        {
-          "name": "MIT Tech Review",
-          "url": "https://www.technologyreview.com/2026/09/18/1144435/could-ai-really-kill-us-all-your-questions-answered/",
-          "domain": "technologyreview.com",
-          "tier": "B"
-        },
-        {
-          "name": "MIT Tech Review",
-          "url": "https://www.technologyreview.com/2026/09/15/1143936/roundtables-will-ai-really-kill-us-all/",
-          "domain": "technologyreview.com",
-          "tier": "B"
+          "name": "GitHub (new)",
+          "url": "https://github.com/kiyoakii/is-gpt-nerfed",
+          "domain": "github.com",
+          "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-15T17:47:51+00:00",
+      "published": "2026-09-15T10:22:16+00:00",
       "trace": [
-        "tier A (+40)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 3/5 from gemini-3-flash-preview",
-        "blend 50 = trust 52 / interest 50 / corrob 50"
+        "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-09-15 — outside lookback window"
     },
     {
       "cluster_key": "05ca5f4e2ce582be",
@@ -3873,7 +1862,7 @@
         "tier B (+25)",
         "single outlet, established publication (tier B)",
         "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from gemini-3.5-flash-lite",
+        "importance 3/5 from cache",
         "blend 36 = trust 25 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
