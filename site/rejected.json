@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T00:16:29.852458+00:00",
+  "generated_at": "2026-09-22T00:58:27.012536+00:00",
   "items": [
     {
       "cluster_key": "08215e843531ca57",
@@ -35,12 +35,10 @@
       "summary_source": "model",
       "alt_keys": [
         "08215e843531ca57",
-        "0cc571fdceb74bf2",
         "249d61201c1a6182",
         "26232adab8d48f40",
         "30406db5cbfeb730",
         "53927aa6a21c2b94",
-        "6218864e885c5260",
         "692ed078310bea13",
         "8b0fa73bd1f07fd8",
         "d5d3c4050d1e8530",
@@ -48,7 +46,7 @@
         "f8b6fca76cb3288e"
       ],
       "critical_signal": "actively exploited",
-      "priority": "critical",
+      "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
@@ -94,18 +92,6 @@
           "tier": "A"
         },
         {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-iosxr-qg64NcM?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20IOS%20XR%20Software%20Security%20Hardening%20Release:%20September%202026%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Email%20Gateway%20SQL%20Injection%20Vulnerability%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
-          "tier": "A"
-        },
-        {
           "name": "ZDI Blog",
           "url": "https://www.thezdi.com/blog/2026/9/16/the-apple-security-update-review-for-september-2026",
           "domain": "thezdi.com",
@@ -130,10 +116,8 @@
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-eigrp-dos-GOhNejSj?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20EIGRP%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20IKEv2%20Certificate%20Authentication%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-tcpdns-dos-p6dUnjr5?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20TCP%20DNS%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Email%20Gateway%20SQL%20Injection%20Vulnerability%26vs_k=1",
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ftd-acl-bypass-8p6vFvw?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20Object%20Group%20Access%20Control%20List%20Bypass%20Vulnerabilities%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance,%20Secure%20Firewall%20Threat%20Defense,%20and%20Secure%20Firewall%20Management%20Center%20Software%20Hardening%20Release:%20September%202026%26vs_k=1",
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-iosxr-qg64NcM?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20IOS%20XR%20Software%20Security%20Hardening%20Release:%20September%202026%26vs_k=1"
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance,%20Secure%20Firewall%20Threat%20Defense,%20and%20Secure%20Firewall%20Management%20Center%20Software%20Hardening%20Release:%20September%202026%26vs_k=1"
       ],
       "published": "2026-09-08T18:32:13+00:00",
       "trace": [
@@ -142,12 +126,13 @@
         "primary source anchor (+30)",
         "verified: primary source artifact",
         "importance 4/5 from cache",
-        "blend 80 = trust 94 / interest 75 / corrob 75"
+        "blend 80 = trust 94 / interest 75 / corrob 75",
+        "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "d6c5f63fbe8fa46c",
+      "cluster_key": "781d1ede30dd7670",
       "title": "Fortinet Code Execution Flaw Exploited in PivotC2 RAT Attacks On Wednesday, the US cybersecurity agency CISA added CVE-2025-25249 to its Known Exploited…",
       "category": "cyber_attacks",
       "one_liner": "Fortinet's CVE-2025-25249 is being actively exploited to deploy an AI-developed RAT, triggering a mandatory CISA patch deadline.",
@@ -181,13 +166,14 @@
           "status": "contradicted"
         }
       ],
-      "trust_score": 25,
+      "trust_score": 37,
       "interest_score": 100,
-      "corroboration": 1,
-      "blend": 58.8,
+      "corroboration": 2,
+      "blend": 69.2,
       "is_new": false,
       "summary_source": "model",
       "alt_keys": [
+        "781d1ede30dd7670",
         "d6c5f63fbe8fa46c"
       ],
       "critical_signal": "",
@@ -199,79 +185,23 @@
           "url": "https://www.securityweek.com/fortinet-code-execution-flaw-exploited-in-pivotc2-rat-attacks/",
           "domain": "securityweek.com",
           "tier": "B"
+        },
+        {
+          "name": "CTI Now",
+          "url": "https://ift.tt/Gwl4UOo",
+          "domain": "ift.tt",
+          "tier": "C"
         }
       ],
       "primary_links": [],
       "published": "2026-09-20T02:36:01+00:00",
       "trace": [
         "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 5/5 from gemini-3.1-flash-lite",
-        "blend 59 = trust 25 / interest 100 / corrob 25",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "importance 5/5 from cache",
+        "blend 69 = trust 37 / interest 100 / corrob 50",
         "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "cc708fc427ecd2a4",
-      "title": "Ethan-Andrews/ThreatIntel-Aggregator — Self-hosted threat intelligence platform — feed aggregation, AI triage, MITRE ATT&CK coverage, and Sentinel-in",
-      "category": "cyber_tools",
-      "one_liner": "A new self-hosted threat intelligence platform provides feed aggregation, AI triage, and MITRE ATT&CK mapping.",
-      "tags": [
-        "ai",
-        "cloud",
-        "dfir",
-        "opensource",
-        "soc",
-        "threat-intel",
-        "tool"
-      ],
-      "summary": "Ethan-Andrews/ThreatIntel-Aggregator is a newly created, self-hosted threat intelligence platform written in Python, featuring feed aggregation, AI triage, MITRE ATT&CK coverage, and Sentinel-integrated detection engineering. The repository supports standalone deployment or fully Azure-integrated operations using FastAPI and Next.js.",
-      "key_facts": [
-        "Repository: Ethan-Andrews/ThreatIntel-Aggregator",
-        "Language: Python",
-        "Frameworks: FastAPI, Next.js"
-      ],
-      "bottom_line": "Ethan-Andrews/ThreatIntel-Aggregator offers security teams an open-source, self-hosted option for unifying feed aggregation, AI triage, and Azure Sentinel integration.",
-      "claims": [
-        {
-          "text": "Self-hosted threat intelligence platform — feed aggregation, AI triage, MITRE ATT&CK coverage, and Sentinel-integrated detection engineering.",
-          "support_span": "Self-hosted threat intelligence platform — feed aggregation, AI triage, MITRE ATT&CK coverage, and Sentinel-integrated detection engineering.",
-          "status": "entailed"
-        },
-        {
-          "text": "GitHub repository Ethan-Andrews/ThreatIntel-Aggregator, 30 stars, language Python.",
-          "support_span": "GitHub repository Ethan-Andrews/ThreatIntel-Aggregator, 30 stars, language Python.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 10,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 32.5,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "cc708fc427ecd2a4"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/Ethan-Andrews/ThreatIntel-Aggregator",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-14T06:07:22+00:00",
-      "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "importance 3/5 from cache",
-        "blend 32 = trust 10 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -315,19 +245,15 @@
       "reject_reason": "published 2026-09-15 — outside lookback window"
     },
     {
-      "cluster_key": "5a9f0148b60bf777",
-      "title": "RectangleStory/Superpowers_Multi_AI — ⚡ Modular prompt-engineering framework for AI Agents (Cursor, Claude Code, Copilot). Forces structured SDLC, l",
+      "cluster_key": "530cc85378654f5c",
+      "title": "The state of public AI benchmarking is dire and is undermining our ability to understand how good AI is now Most famous measures are maxed out, and…",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "agents",
         "ai",
-        "llm",
-        "opensource",
-        "tool",
-        "windows"
+        "research"
       ],
-      "summary": "⚡ Modular prompt-engineering framework for AI Agents (Cursor, Claude Code, Copilot). Forces structured SDLC, linear execution, context isolation, and systematic debugging via a standalone Windows launcher. Stop vibe coding, start agentic discipline! 🚀 GitHub repository RectangleStory/Superpowers_Multi_AI, 100 stars, language unspecified. Topics: ai, ai-agent, ai-agents, ai-coding, ai-tools, claude, claude-code, claude-skills.",
+      "summary": "The state of public AI benchmarking is dire and is undermining our ability to understand how good AI is now Most famous measures are maxed out, and, as this paper shows, the non-saturated benchmarks are riddled with so many errors that they vastly underestimate AI abilities arxiv.org/abs/2609.13009 (Bluesky post by @emollick.bsky.social — 123 likes, 17 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -335,28 +261,28 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
-      "is_new": true,
+      "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "5a9f0148b60bf777"
+        "530cc85378654f5c"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/RectangleStory/Superpowers_Multi_AI",
-          "domain": "github.com",
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvneqxjm3s22",
+          "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-14T20:11:30+00:00",
+      "published": "2026-09-16T14:42:39.945000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-14 — outside lookback window"
+      "reject_reason": "published 2026-09-16 — outside lookback window"
     },
     {
       "cluster_key": "b392d44cf695e948",
@@ -435,54 +361,14 @@
       "reject_reason": "published 2026-09-15 — outside lookback window"
     },
     {
-      "cluster_key": "5762cd6d63553fc7",
-      "title": "Having Fable 5.1 Max and GPT-6 Astra Pro argue with each other over proposed translations of the famously untranslated Minoan language Linear A.",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "llm",
-        "opensource"
-      ],
-      "summary": "Having Fable 5.1 Max and GPT-6 Astra Pro argue with each other over proposed translations of the famously untranslated Minoan language Linear A. (Neither of them appear to have cracked it, for what its worth). All the work so far at this Github: github.com/emollick/lin... (Bluesky post by @emollick.bsky.social — 101 likes, 2 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "5762cd6d63553fc7"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvj5zbmqpc24",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-14T22:31:23.833000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-14 — outside lookback window"
-    },
-    {
-      "cluster_key": "5c3ae12748da98b6",
-      "title": "There seems to be a persistent belief that frontier AI companies are unprofitable serving models but it appears that Anthropic has 80%+ gross…",
+      "cluster_key": "d41bb72de8417f90",
+      "title": "Study from Google about AI use in science, complex impacts: acceleration (7 hours saved per week) along with shifts in the kind of work (more…",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
         "ai"
       ],
-      "summary": "There seems to be a persistent belief that frontier AI companies are unprofitable serving models but it appears that Anthropic has 80%+ gross margins on inference. Training for new models are where most of the costs are. (Bluesky post by @emollick.bsky.social — 105 likes, 9 reposts)",
+      "summary": "Study from Google about AI use in science, complex impacts: acceleration (7 hours saved per week) along with shifts in the kind of work (more verification) and what research gets done (possibly safer topics). Also a good diagram of the jagged frontier in science right now. (Bluesky post by @emollick.bsky.social — 66 likes, 17 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -493,7 +379,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "5c3ae12748da98b6"
+        "d41bb72de8417f90"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -501,28 +387,157 @@
       "sources": [
         {
           "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvgvewqm2c2k",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvmhlphggk27",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-14T00:51:31.922000+00:00",
+      "published": "2026-09-16T06:00:45.210000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-14 — outside lookback window"
+      "reject_reason": "published 2026-09-16 — outside lookback window"
     },
     {
-      "cluster_key": "73530f20bff72829",
-      "title": "mmdju/digikala-mcp — MCP server for Digikala: search, compare and price-check products on Iran's largest marketplace. Read-only, no",
+      "cluster_key": "192a6c7e6ec17457",
+      "title": "CVE-2026-84738 (CRITICAL 9.1): The AF Companion WordPress plugin before 2.2.0 does not validate the type of files uploaded through one of it…",
+      "category": "cyber_attacks",
+      "one_liner": "CVE-2026-84738 is a critical file upload RCE vulnerability in the AF Companion WordPress plugin before version 2.2.0.",
+      "tags": [
+        "appsec",
+        "cve",
+        "exploit",
+        "release",
+        "vulnerability"
+      ],
+      "summary": "CVE-2026-84738 is a critical remote code execution vulnerability affecting versions of the AF Companion WordPress plugin prior to 2.2.0. The security flaw stems from a failure to validate file types uploaded through one of the plugin's import features. This allows low-privileged users with a store-management role to upload arbitrary files, including malicious PHP scripts, resulting in unauthenticated or low-privilege RCE. The vulnerability carries a CVSS base score of 9.1.",
+      "key_facts": [
+        "CVE-2026-84738: CVSS 9.1, Critical",
+        "Affected product: AF Companion WordPress plugin < 2.2.0",
+        "Impact: Remote Code Execution via arbitrary file upload"
+      ],
+      "bottom_line": "Low-privileged store managers can execute arbitrary code on WordPress sites running AF Companion plugins prior to version 2.2.0.",
+      "claims": [
+        {
+          "text": "The AF Companion WordPress plugin before 2.2.0 does not validate the type of files uploaded through one of its import features.",
+          "support_span": "The AF Companion WordPress plugin before 2.2.0 does not validate the type of files uploaded through one of it…",
+          "status": "contradicted"
+        },
+        {
+          "text": "CVSS base score is 9.1 (CRITICAL).",
+          "support_span": "CVSS base score 9.1 (CRITICAL).",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 70.0,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "192a6c7e6ec17457",
+        "263a86a1d934d9f3",
+        "29bf3267b315f698",
+        "334d473b9dbd1fa0",
+        "45a193facc2eae21",
+        "47787bece2f2659f",
+        "4f8dcb92a94d9660",
+        "b81db1829a49e23d",
+        "c06c6e4d336acc99"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84738",
+          "domain": "nist.gov",
+          "tier": "A"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85122",
+          "domain": "nist.gov",
+          "tier": "A"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87767",
+          "domain": "nist.gov",
+          "tier": "A"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87770",
+          "domain": "nist.gov",
+          "tier": "A"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87771",
+          "domain": "nist.gov",
+          "tier": "A"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87774",
+          "domain": "nist.gov",
+          "tier": "A"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87775",
+          "domain": "nist.gov",
+          "tier": "A"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88825",
+          "domain": "nist.gov",
+          "tier": "A"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85127",
+          "domain": "nist.gov",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-84738",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-85122",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-85127",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-87767",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-87770",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-87771",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-87774",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-87775",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-88825"
+      ],
+      "published": "2026-09-18T06:16:39.307000+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 70 = trust 70 / interest 100 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "e93a36750b025eee",
+      "title": "awlevin/typesafe-computer-use — Computer use for about $0.0002 a step: OCR the screen, classify the next action with TypeSafe, click. macOS.",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "agents",
+        "ai",
         "opensource"
       ],
-      "summary": "MCP server for Digikala: search, compare and price-check products on Iran's largest marketplace. GitHub repository mmdju/digikala-mcp, 96 stars, language JavaScript. Topics: cloudflare-workers, digikala, iran, mcp, model-context-protocol, persian.",
+      "summary": "Computer use for about $0.0002 a step: OCR the screen, classify the next action with TypeSafe, click. GitHub repository awlevin/typesafe-computer-use, 749 stars, language Python. Topics: ai-agents, automation, computer-use, macos, ocr, typesafe.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -533,7 +548,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "73530f20bff72829"
+        "e93a36750b025eee"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -541,31 +556,29 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/mmdju/digikala-mcp",
+          "url": "https://github.com/awlevin/typesafe-computer-use",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-15T04:54:56+00:00",
+      "published": "2026-09-16T17:48:45+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-15 — outside lookback window"
+      "reject_reason": "published 2026-09-16 — outside lookback window"
     },
     {
-      "cluster_key": "b60e028e9948c1e7",
-      "title": "ruc-datalab/EvoOntology — EvoOntology: A Self-Evolving Ontology Layer for Data Agents ⚙️ EvoOntology插件为Claude Code/Codex 建立&进化本体层",
+      "cluster_key": "437ff1d894330102",
+      "title": "kajeesan/Open-Health-Atlas — Explore sleep, training, mood and nutrition together using local records, traceable calculations and optional ",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
         "agents",
         "ai",
-        "llm",
-        "opensource",
-        "research"
+        "opensource"
       ],
-      "summary": "EvoOntology: A Self-Evolving Ontology Layer for Data Agents ⚙️ EvoOntology插件为Claude Code/Codex 建立&进化本体层 GitHub repository ruc-datalab/EvoOntology, 211 stars, language Python. Topics: agent, agentic-ai, claude-code, codex, data-analysis, data-science, harness, llm.",
+      "summary": "Explore sleep, training, mood and nutrition together using local records, traceable calculations and optional MCP tools for your preferred AI client. GitHub repository kajeesan/Open-Health-Atlas, 59 stars, language Python. Topics: data-provenance, data-visualization, flask, health-data, local-first, mcp, python, self-hosted.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -573,10 +586,10 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
-      "is_new": true,
+      "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "b60e028e9948c1e7"
+        "437ff1d894330102"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -584,17 +597,195 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/ruc-datalab/EvoOntology",
+          "url": "https://github.com/kajeesan/Open-Health-Atlas",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-15T01:57:40+00:00",
+      "published": "2026-09-16T20:07:26+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-15 — outside lookback window"
+      "reject_reason": "published 2026-09-16 — outside lookback window"
+    },
+    {
+      "cluster_key": "218fc21f4415facc",
+      "title": "CVE-2026-17086 (HIGH 8.8): The ShortPixel Image Optimizer – Optimize Images, Convert WebP & AVIF plugin for WordPress is vulnerable to P…",
+      "category": "cyber_attacks",
+      "one_liner": "ShortPixel Image Optimizer for WordPress is vulnerable to PHP Object Injection, potentially leading to RCE if a POP chain is present.",
+      "tags": [
+        "appsec",
+        "cve",
+        "exploit",
+        "release",
+        "vulnerability"
+      ],
+      "summary": "The ShortPixel Image Optimizer plugin for WordPress (up to version 6.5.5) is vulnerable to PHP Object Injection via deserialization of untrusted input. While no POP chain exists within the plugin itself, the presence of a POP chain in other installed themes or plugins could allow an attacker to perform arbitrary file deletion, data retrieval, or remote code execution. The vulnerability has a CVSS base score of 8.8 (High).",
+      "key_facts": [
+        "CVE-2026-17086",
+        "CVSS: 8.8 (HIGH)",
+        "Affected: ShortPixel Image Optimizer <= 6.5.5"
+      ],
+      "bottom_line": "WordPress administrators should update the ShortPixel Image Optimizer plugin immediately and audit their site for other vulnerable plugins that might contain POP chains.",
+      "claims": [
+        {
+          "text": "The ShortPixel Image Optimizer – Optimize Images, Convert WebP & AVIF plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 6.5.5 via deserialization of untrusted input.",
+          "support_span": "The ShortPixel Image Optimizer – Optimize Images, Convert WebP & AVIF plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 6.5.5 via deserialization of untrusted input.",
+          "status": "contradicted"
+        },
+        {
+          "text": "CVSS base score 8.8 (HIGH).",
+          "support_span": "CVSS base score 8.8 (HIGH).",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 70.0,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "218fc21f4415facc"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17086",
+          "domain": "nist.gov",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-17086"
+      ],
+      "published": "2026-09-18T04:17:28.900000+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 5/5 from gemini-3.1-flash-lite",
+        "blend 70 = trust 70 / interest 100 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "25eaacff88099af5",
+      "title": "Jev introduces a new shape of LLM - System One, aka Decision Models",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "ai",
+        "llm",
+        "opensource"
+      ],
+      "summary": "Jev introduces a new shape of LLM—System One, aka Decision Models 21st September 2026 Last week TypeSafe AI unveiled Jev, their first example of a new category of model that they are calling “System One models” (I’m with Maggie Appleton, I think “decision models” is a better name for these). Jev is an interesting variant on the usual LLM format: it still accepts text inputs, but instead of text output it returns floating point numbers corresponding to categories, yes/no questions, ratings, and associated confidence scores. TypeSafe describe Jev like this: Think of Jev as a frontier-intelligence function call: unstructured state in, typed probabilistic decisions out. Regular LLMs are priced…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 2,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "25eaacff88099af5",
+        "82b7c1ad7628107c"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/2026/Sep/21/jev/",
+          "domain": "simonwillison.net",
+          "tier": "B"
+        },
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/Ying-Kai-Liao/jev-browser",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-16T15:13:23+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-16 — outside lookback window"
+    },
+    {
+      "cluster_key": "bf252b987132cced",
+      "title": "CVE-2026-82355: Apache Airflow: Session cookie silently overrides explicit Authorization bearer header, enabling session fixation",
+      "category": "cyber_attacks",
+      "one_liner": "Airflow operators on versions 3.3.0 and 3.3.1 must upgrade to 3.3.2 to prevent session cookie precedence from hijacking API bearer requests.",
+      "tags": [
+        "appsec",
+        "cve",
+        "exploit",
+        "identity",
+        "llm",
+        "opensource",
+        "tool",
+        "vulnerability"
+      ],
+      "summary": "Apache Airflow versions 3.3.0 and 3.3.1 suffer from a session fixation and principal confusion vulnerability (CVE-2026-82355) where a session cookie silently overrides an explicit Authorization bearer token. When requests contain both credentials, Airflow resolves the principal from the cookie rather than the token, causing audit logs to misattribute actions. Exploitation requires an attacker to place a valid session cookie into the victim's browser via subdomain cookie tossing or XSS. Users must upgrade to Airflow 3.3.2 or later.",
+      "key_facts": [
+        "CVE-2026-82355",
+        "Affected versions: Apache Airflow 3.3.0 and 3.3.1",
+        "Remediation: Upgrade to 3.3.2+"
+      ],
+      "bottom_line": "Apache Airflow 3.3.0/3.3.1 allows session cookies to silently override bearer headers, causing identity misattribution.",
+      "claims": [
+        {
+          "text": "When a request to the Airflow core API carries both a session cookie and an explicit Authorization: Bearer token, Airflow resolves the caller from the cookie and ignores the bearer token, inverting the intended precedence of bearer over cookie.",
+          "support_span": "When a request to the Airflow core API carries both a session cookie and an explicit Authorization: Bearer token, Airflow resolves the caller from the cookie and ignores the bearer token, inverting the intended precedence of bearer over cookie.",
+          "status": "contradicted"
+        },
+        {
+          "text": "Users of 3.3.0 or 3.3.1 should upgrade to Apache Airflow 3.3.2 or later, which resolves the caller from the explicitly supplied credential whenever one is present.",
+          "support_span": "Users of 3.3.0 or 3.3.1 should upgrade to Apache Airflow 3.3.2 or later, which resolves the caller from the explicitly supplied credential whenever one is present.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 51.2,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "bf252b987132cced"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "oss-security",
+          "url": "https://seclists.org/oss-sec/2026/q3/850",
+          "domain": "seclists.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-21T17:14:52+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 51 = trust 40 / interest 75 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
       "cluster_key": "e18fd98eb04c4ef8",
@@ -654,27 +845,46 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "8704d578db04be0c",
-      "title": "Qiuner/QCode — An explorable island world to learn AI coding and build real projects with AI agents. Powered by DeepSeek Harn",
-      "category": "tech_ai",
-      "one_liner": "",
+      "cluster_key": "0d18a60de948fef1",
+      "title": "allelloo/Frida0xKit — A modular toolkit for Android runtime instrumentation, reverse engineering, and Frida-based analysis.",
+      "category": "cyber_tools",
+      "one_liner": "Frida0xKit is a newly released modular JavaScript toolkit for Android runtime instrumentation and reverse engineering.",
       "tags": [
-        "ai",
-        "llm",
-        "opensource"
+        "android",
+        "dfir",
+        "malware",
+        "opensource",
+        "release",
+        "research",
+        "tool"
       ],
-      "summary": "An explorable island world to learn AI coding and build real projects with AI agents. GitHub repository Qiuner/QCode, 241 stars, language TypeScript. Topics: ai-agents, ai-coding, deepseek, developer-tools, gamification, godot, learn-to-code, vibe-coding.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
+      "summary": "A newly created open-source GitHub repository named 'Frida0xKit' has been released by user allelloo to provide a modular toolkit for Android runtime instrumentation, reverse engineering, and Frida-based analysis. Written in JavaScript, the repository has garnered 23 stars and focuses on topics like APK analysis, malware analysis, and reverse engineering. It is designed to assist security researchers and analysts working with Android application binaries.",
+      "key_facts": [
+        "Repository: allelloo/Frida0xKit",
+        "Language: JavaScript",
+        "Stars: 23"
+      ],
+      "bottom_line": "Android security researchers have a new modular Frida-based toolkit available for runtime analysis.",
+      "claims": [
+        {
+          "text": "Frida0xKit is a modular toolkit for Android runtime instrumentation, reverse engineering, and Frida-based analysis.",
+          "support_span": "allelloo/Frida0xKit — A modular toolkit for Android runtime instrumentation, reverse engineering, and Frida-based analysis.",
+          "status": "contradicted"
+        },
+        {
+          "text": "The repository is written in JavaScript and has 23 stars.",
+          "support_span": "GitHub repository allelloo/Frida0xKit, 23 stars, language JavaScript.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 50,
       "corroboration": 1,
-      "blend": 0.0,
+      "blend": 32.5,
       "is_new": false,
-      "summary_source": "extract",
+      "summary_source": "model",
       "alt_keys": [
-        "8704d578db04be0c"
+        "0d18a60de948fef1"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -682,403 +892,169 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/Qiuner/QCode",
+          "url": "https://github.com/allelloo/Frida0xKit",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-14T10:50:30+00:00",
+      "published": "2026-09-18T19:08:42+00:00",
       "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 32 = trust 10 / interest 50 / corrob 25"
       ],
-      "reject_reason": "published 2026-09-14 — outside lookback window"
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "18fbba777667aa51",
-      "title": "Researchers used Claude to hack OpenAI employees' ChatGPT accounts",
-      "category": "cyber_attacks",
-      "one_liner": "A short industry news roundup covering software development, artificial intelligence tools, and cybersecurity developments.",
+      "cluster_key": "1fea00972ff6b755",
+      "title": "Droid ASC: A Super FAST Android Decompiler, 41 to 269 Times Faster Than JADX https://github.com/MG1937/ASC @secharvester",
+      "category": "cyber_tools",
+      "one_liner": "Droid ASC is a new, ultra-fast Android decompiler that uses direct artifact querying to bypass traditional preprocessing bottlenecks.",
       "tags": [
-        "ai",
-        "exploit",
-        "linux",
-        "llm",
-        "markets",
+        "android",
+        "dfir",
+        "howto",
         "opensource",
-        "political",
-        "privacy"
+        "redteam",
+        "research",
+        "tool"
       ],
-      "summary": "This article is a truncated tech news roundup containing various brief blurbs and headlines. Items range from AI coding updates and researcher security reports to FOSS migrations, Linux distributions, and audio editor updates. No comprehensive standalone technical text is provided for individual stories.",
-      "key_facts": [],
-      "bottom_line": "This truncated tech news roundup provides brief headlines spanning AI developments, enterprise software updates, and cybersecurity reports.",
+      "summary": "Droid ASC is a new, high-performance Android decompiler that claims to be 41 to 269 times faster than JADX. It operates by treating the APK as a read-only database and querying the compiled artifact directly, avoiding the heavy preprocessing and indexing used by traditional decompilers. The tool features constant-time method resolution and on-demand reconstruction of DEX files, significantly reducing memory usage and analysis time.",
+      "key_facts": [
+        "Performance: 41-269x faster than JADX",
+        "Memory: 141MB RAM for 352MB APK"
+      ],
+      "bottom_line": "Droid ASC offers a significant performance improvement for Android reverse engineering, making it a valuable tool for analyzing large APKs.",
       "claims": [
         {
-          "text": "This text is a truncated news headline roundup with no full article bodies provided.",
-          "support_span": "Researchers used Claude to hack OpenAI employees' ChatGPT accounts",
+          "text": "Droid ASC: A Super FAST Android Decompiler, 41 to 269 Times Faster Than JADX",
+          "support_span": "Droid ASC: A Super FAST Android Decompiler, 41 to 269 Times Faster Than JADX",
+          "status": "contradicted"
+        },
+        {
+          "text": "We built a stateless, zero-overhead engine that extracts and searches code on demand in milliseconds.",
+          "support_span": "We built a stateless, zero-overhead engine that extracts and searches code on demand in milliseconds.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 32.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "1fea00972ff6b755"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "SecHarvester",
+          "url": "https://github.com/MG1937/ASC",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-21T18:07:22+00:00",
+      "trace": [
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "importance 3/5 from gemini-3.1-flash-lite",
+        "blend 32 = trust 10 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "37c9bd70429ae115",
+      "title": "TinyCeNN-LM: Quality-Gated Conversion of Pretrained Attention with CeNN-Inspired Cellular-Recurrent Layers",
+      "category": "tech_ai",
+      "one_liner": "TinyCeNN-LM replaces attention layers in pretrained LLMs with cellular-recurrent layers using strict quality gates to preserve performance.",
+      "tags": [
+        "ai",
+        "llm",
+        "privacy",
+        "research",
+        "tool"
+      ],
+      "summary": "TinyCeNN-LM introduces a quality-gated post-training conversion framework that replaces attention layers in pretrained language models with CeNN-inspired cellular-recurrent layers. By applying strict representation and negative log-likelihood (NLL) thresholds, the framework selectively accepts converted layers while rolling back non-compliant ones. Experiments on SmolLM2-135M and Qwen3.5-0.8B demonstrate that the approach maintains perplexity within tight bounds while reducing total cache requirements.",
+      "key_facts": [
+        "Evaluated models: SmolLM2-135M, Qwen3.5-0.8B",
+        "Cache reduction: up to 6.01%"
+      ],
+      "bottom_line": "Quality-gated structural conversion can replace LLM attention layers with cellular-recurrent layers while controlling perplexity and reducing cache.",
+      "claims": [
+        {
+          "text": "TinyCeNN-LM introduces a quality-gated post-training conversion framework using CeNN-inspired cellular-recurrent layers with bounded local processing, compact recurrent memory, routing, fusion, and accept-or-rollback validation.",
+          "support_span": "TinyCeNN-LM introduces a quality-gated post-training conversion framework using CeNN-inspired cellular-recurrent layers with bounded local processing, compact recurrent memory, routing, fusion, and accept-or-rollback validation.",
           "status": "contradicted"
         }
       ],
-      "trust_score": 61,
-      "interest_score": 0,
-      "corroboration": 6,
-      "blend": 45.2,
-      "is_new": false,
+      "trust_score": 70,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "18fbba777667aa51",
-        "1ad13d6be25761c2",
-        "3a3685b87ca433f2",
-        "43525281a84dd8d0",
-        "480e59f96e25eecf",
-        "48a0f15b9914e1e9",
-        "4cf99309ccea762f",
-        "523eaf1ca1a55431",
-        "57cc56971135016a",
-        "5aee273c239a5b71",
-        "7435fee3aa087a0e",
-        "79f8e9cacd7eaee3",
-        "83037ea6ca5f5b39",
-        "85e34f40d372ed88",
-        "8a2c8a9b5b978779",
-        "ba6a2f5e8ba4986f",
-        "bcb36bbd27c7b19a",
-        "be6a670001c6529a",
-        "d86255aac95782b7",
-        "eb9ffae942a79a9f",
-        "ed1e0fcd089bd062",
-        "f483bc2f225075cb"
+        "37c9bd70429ae115"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "The Register Security",
-          "url": "https://www.theregister.com/security/2026/09/18/researchers-used-claude-to-hack-openai-employees-chatgpt-accounts/5297517",
-          "domain": "theregister.com",
-          "tier": "B"
-        },
-        {
-          "name": "incrypted",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNN1gwVlVxUFk1b0tsNTNqU2NxYkNRRjZES3VCX1ZQN2xfZTMzNkU5bXBlaEtiZ2FzSVQ2QWdna19NVmdfVFhBaHZTV3Y3ci1wYmxRQlpIX2FrQVd1WDZ0LTdVeW1ZdHprRk1hWjRrZ3QwN2ktR1FJRUJxVEdQeFVkWE5MSnkteGh0cWJ2aG1kX3QxWUdJb3RrZzIxUjk2VGkyOFUw?oc=5",
-          "domain": "incrypted.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "inkorr.com",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPb1lNaURRLWVjdDh5WHZReGI5bllDazJpcWMxdzA4NFZ1R3U2UkpCOUJGWXBpNXZMSE5mTHNIazhKbmlKWm4wT0hwNTREdDg2TzI5S3E5OFlpcjd1WnFPSWZTeVpiaHVlX2ZQYVBCcFVVcjhFUUR4Nm1HdE9GYTBVbnltb0I1ZVRZdUVfRkJ4TXdzVTcyUzBfanJVdXJIRzNhNFhCWXp2eGNkRS15UkQ2LWhXczZtUUpScmRmelgxcmJ1R01JSG9n0gHHAUFVX3lxTE9vWU1pRFEtZWN0OHlYdlF4YjluWUNrMmlxYzF3MDg0VnVHdTZSSkI5QkZZcGk1dkxITmZMc0hrOEpuaUpabjBPSHA1NER0ODZPMjlLcTk4WWlyN3VacU9JZlN5WmJodWVfZlBhUEJwVVVyOEVRRHg2bUd0T0ZhMFVueW1vQjVlVFl1RV9GQnhNd3NVNzJTMF9qclV1ckhHM2E0WEJZenZ4Y2RFLXlSRDYtaFdzNm1RSlJyZGZ6WDFyYnVHTUlIb2c?oc=5",
-          "domain": "inkorr-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Livemint",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPTHJxbWRxNzVLNHl6S1dWLUZtRUhMTnhwcjlVYXlCSmFKQlQxejNVVjRGTUE3Yl9ZR243MnNqWFNoV25FazlkRU5vVWVOdEF0cEZEODYyV2lRQkFRMUxySEVwb2N2S0VhbWQyZUU3Qy1ZdTd4NktCUDB5UUtfSzRFWVlHMmlVQW9GQTNrSF9TSmZpQThJWjMzeV8zTmlNcS13dC02QlVqVTJjaURNT3hjblNnbktHR2tPZXVTR25Od2xQcE9iYXBuWTZoT0hCZWp0QmhTSDVOck14aFcxTkp6TDFhN2RiUdIB6wFBVV95cUxOWEthUTZ5VmlhTFJ2QS1KWVJMRVVsMGVjbVhqZGdjSnRqbTZWX01UQjIzSjBZOVpVRXgySm5WNTBwRU0yaEtFcWYzaTRuQW1MU0xXNWlPM3VVVVFTZ0ZONlZ3S2pMUS12R3hrNDZvb3B3VDF5OVp1aVc4ZjdFSTJ4bFY2T0t5NnhDODIyOWE2cjl0Wm5CNERZdWFkODc2bUlDWnp1anRwQ3ZMQXZHb1NIWFpCSGR4ZnJlZVZYTDBGY1F5T1NKNks3cDBJYzdzbmdsTktJdkN4d2VmYmhsZlE0ZURycEtkVTlDRlVZ?oc=5",
-          "domain": "livemint.com",
-          "tier": "C"
-        },
-        {
-          "name": "Menafn",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFFaOU5NNkp2NkNuNVhtYTdaTmZuZWFMSkIwOF9pd3lERmdLZlZ0YjdYU0hxWUxZeXB2N0J3TzZ5SEpGSmZORGlPQjhfMWhTaWJSUVM2aVB6UHFWcWwtdXVHVElwNXZiSW9rWkhaa3ZzazY0dmx0NS1YeEpBeW5EbHdfRno?oc=5",
-          "domain": "menafn.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Mezha",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQmtwemlNbDNrQnk2YVhsSU4wTkc3WTVzQmg0YXJ1dFdlb19EdEJRQmQyR0hnbzJVWnd3cElSSXFkcWxOVkNBMkpyX3FESm9tQkthTzFYYk1qWERrdGtBZEZ4M0wtNE82UXVtd2JPbUd2TTZzWkNRVnZXVEUyaUhJemRyUXRoUFhubkJ6XzE4WlY3Y3NtUVVMLTBJZmQxNXg4dWRxYzNR0gGmAUFVX3lxTE9Ca3B6aU1sM2tCeTZhWGxJTjBORzdZNXNCaDRhcnV0V2VvX0R0QlFCZDJHSGdvMlVad3dwSVJJcWRxbE5WQ0EySnJfcURKb21CS2FPMVhiTWpYRGt0a0FkRngzTC00TzZRdW13Yk9tR3ZNNnNaQ1FWdldURTJpSEl6ZHJRdGhQWG5uQnpfMThaVjdjc21RVUwtMElmZDE1eDh1ZHFjM1E?oc=5",
-          "domain": "mezha.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "NAI500",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOR1lQRkdMSEJxNEc0eVJtRU5CTE80d2VxZTNDRFZnd3FHWkpzdEREWTJFcWthajU1MkN2dlFWNzBzak1zb2NtQ0puX2NVUVhWVlBVbU8yMnpBXzRHMVJYNUdVbU9pNWlkVnRzYlphV1NLSTN6VEtHYWladVVrNV9GcU12WUF2NVlxZWlPck5jMk9RUjQ?oc=5",
-          "domain": "nai500.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "NDTV",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPU2RSMGg5UVFkS2p4eHkxTV9KdUppSVN5YVItOWNVd3RTSXNNODRsbVl3SFcxakZmTzJxS2d1ZjZBY1Y1NWdzczk5ejhheG5GMXYtWVo3ejVmMEVpNzdUZHl3YnZOd3RNR2RzU3Q4allFWkt4N1doYkR2QWhJa1h3MFkycUNiVjd4MU00VXB6RWMtNjlPOU5wd2VmQ3JMc0NvUzVaLXNNQkIzOUozQTc2M9IBuAFBVV95cUxQSFZ3eHJyUlc2X1lmTXBJOFQxTGFldUFzanNEQTJIOTZKQkdRejljS0FZeW9wSlZFOGpsaUUtWmRZWUtxWWpCSFM5YXhJU1Nnb3paa0tQY3ZsUmxjQU1rNFB2aFpHQjBmbGE3dERMLUJ4QkowcFFlNFRkYWZBWTR6cmZzdzRYWTYwZmtYR1d1eERISWFkbjFLb1Jxb2EwNEo0LU5YOXRObm5Pc05mTG5TcEZxWWJ2bjVZ?oc=5",
-          "domain": "ndtv.com",
-          "tier": "C"
-        },
-        {
-          "name": "GN Bug bounty",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNTjB1YmMwN2t2UFRRVVctcFdNSl9Kdkk1eGNuUUFTeWJYVU5ZM1h0S1BYdnFpeHlpbnZnS3RBMVBwSGhVLU11OE1LRTdWcjhjaVczcTJ4MGxMUkhYdVRvakhhNWxOS2RPVTlIOHY2Tk4wYmpSQlJGRzhRZGVGQmdkTGdDTF96QlhpUm1fczFOTHVQTjdjaEVuT2pCeHBESGxsVFRPb1MyUW5aWUVWeHN1cFVKUk1wNmJOVy1HaVdDYVA3SmdXenNCMmJkSGoySlNIMGhUTV9tOWNmSDlEWFFBSXhUZF8tenk2?oc=5",
-          "domain": "news.google.com",
-          "tier": "C"
-        },
-        {
-          "name": "GN Bug bounty",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBwelp6Ti1SNzdMcDVPX255OEY1YWtKRXVudTZWQ2ZtVHRyVGV3czFIRDJXSkpyMlEzUHRYVTlPcExNVTlwaldVbjNLZzlpNGxST0hXMDVvUkdjLThLMHpaODM0TWU?oc=5",
-          "domain": "news.google.com",
-          "tier": "C"
-        },
-        {
-          "name": "Newsmax",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNallpMW1LLThWbUJuc016MksteEFhVXFCN1pqYUt2V3NlYmVQTTZfdGlqVjBhcGVxdWFLSWNvVTJoUXQ0MmhkdjJCUDhYYTEzbEs5LXNyZXR6VnFqbDhuTW9rZklpNDg1MTc3X1BubGR6SlY1bGNtaGhWendzMW4zTkhoWlFfZHVaUlFTYTlvWW5GZw?oc=5",
-          "domain": "newsmax.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "officechai.com",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQN3F4aXlEVmJVWnRfT3djai0wQ24tVkw0cllUSXVnNUdQcE9XT1lXT2dTZUNNOFFGY0M1Y3RKUGpqZWVldUwyRWRnNjBYNHhlNFNLYlhPd2pSVUluU1JLdl9TSzBRNEY4cllnWDdCem44T1Ixbk0xWVp4Ti1FSE1Zck4tM1hlbUxfQld6WA?oc=5",
-          "domain": "officechai-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "PCMag",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQS2pyd2g5d09pbWR2OHlfc24wMjQwSUVpRzlsVmxUMW9SSXE0Uk56d1d1UmhNakhBVk1kWUhkWGttR1lEeVBUZlNjakRrUEtrNnFSVmNnR215YjVlX1BwUFd6dmIwOG9senh3SjBQMzVGeVMwM0NxRms5czBNdkpxLWpFYzJMOW1HTnJGN3dR?oc=5",
-          "domain": "pcmag.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "SecNews.gr",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9vSUdweWpFMWpIOUdKaTZSYmdTbHRpeXVPRlJNUnRoSENlQmY5SDdsNTFvaDVlWTBDeU9uNzJvTHVtclZZVjJRTDdPNE11VG15VlhJSTBNM3V0TWpGbFo4V3h4N1Bxb0hUenNETHVNcE0xWERLVWc?oc=5",
-          "domain": "secnews-gr.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "SSBCrack",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUU9XWlhwamR4UjhnQUtMaGpXZnF3UWc4RkNhWlpBOE5GN2Q4UVJVR2o4THdaTWs2ZVktV0lZbFo1ZmdTRG9fRUhnU19SMnUtR2d1cmhpeUJ2LVRqb0dmX2l3UnF4M3IxNExmMkp3TmJLdndLUWhTcG1zZGUyMzVfcmliOWlvVHNtUzAxclRvZnhsc0pkQWRkV1ZaMms2T0VJaXlZ?oc=5",
-          "domain": "ssbcrack.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "streamlinefeed.co.ke",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPM2lJSDZURGZobDJZNFNiM2hKcEVNcmtacFJUQW9YaVYtaVBFSEhUOHlQdHhVaXZHX24tUGp2Wmlkejd3cGJTUHN5TFpkWnlFcnI1dXNRdDVwTTlZNXJ0al82Vm03b1MybWlqVkc0NU1uX0JtSzh1YVBVenJXTlpBMVZ1Szhod1hMamFKWDlxbG1WRHp4Qmlrb2ZiOXVUU3hDa3VTaUMxcVExMW8?oc=5",
-          "domain": "streamlinefeed-co-ke.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "TechCrunch",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQS0tYS0VHd1I0cEFmd0JuMHh0SEg0NGxoMUprUDFPWVRlWWZvWE9LN0ZWMWd6Z2Utc2dlYWY2elB3Nk1xTGtRZm5aSzFDZlhfR0JRSms0NkJmVDlDY3JJYkxzU0M4ZWFLak1RSnNGNTlzWTJRZmxkbGZfUWppNUVDc3hxQUlVd01Ha1Z1U1ZYUzJReUU?oc=5",
-          "domain": "techcrunch.com",
-          "tier": "C"
-        },
-        {
-          "name": "The Coin Republic",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQREdESHVwLV9ycF9VTFEwdTNWbmdxN3RmMHlZY1JxRHNYblZmYVlrS01iTEotRERGRUxieHU3T2ZOM3JXSkNDWmpnTDNpWFE0eUhkRXBxd1B6MHlWMWpNbjFmRWZnNFdISUJKTUg1QUMyQ2dJY3VUakVjeGZQVFRJX0ZKZm5lMGJXa2trR3Q5UEJPOHBrYm5BOWtoVzZFTkdGTzBib9IBqgFBVV95cUxQa2o5bm8zS1F0SGMwa1dOdGhBVm5DTnNGTGFqZjhSMl94ZFVHcWFLTlB2V3d4TVlnLU5hdmM3LUVtYWdUYjJpRVdDSHBaZTdBS2hpTDNQTGNtYS05NXdUR3B5QllSMXRvOTNZdjdqdDBxcEg5MzVjSFFGMVgyYWFnazF6MnZqVjk0V0k0dUYya1BmaVdrczZ2UFRUYjNkMWl0YXJ1RG5fSDF1UQ?oc=5",
-          "domain": "the-coin-republic.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "The Eastern Herald",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdi0tVWljMnd1TDlmT3FJMWk0U2stZlB2OHQxRWdIZWR5MWx6bzhyOFlPa1BYZHZDV1psdVl2WTBhRTlhbFdxYTVYS3pLanFqY3JFNHV1X2NoSjdGaFNQcm94dVRQc1ktc0NDTW1KZ3dPUXZnbExSQmIzaU1BV0dwdzNXdXpzTHdpc05fTnFRVQ?oc=5",
-          "domain": "the-eastern-herald.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "The Straits Times",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTFRYYUFsYWQyc294VzFiRzd3UkZndDZiaUlhWFdONkJ0NV9HWjRqVk5DTmJEWFZ2MjdUM1FMcDJPeE9zZlVUMmI3T01WM3ZMLXhjbkNZWDR4bEl2Z2g3QU5CeHJmY2c0WTIycWp5cXFyM3o3VWpXWkx5UzRDTTF5ZWwydjRJSHlnT2tQbUsxemhiZGlyVjIyQ3paYVdBa1YtQ19UeC1qanBOTmM?oc=5",
-          "domain": "the-straits-times.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "The Register",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSFYyaElpNmZTT2lVY3l0WlBnVjA2WTg5anBVZ2ZLTDZZeFV3LWItb3JTeFB5X3diRTBXS1haVUxPYW9KbDVqT3ZBZ09HSHhnZHk2OHJZbGNXVElvTHczR3VhTm9jQUM5S29wX3NsZjltdUpwYnRVaC1YZ2VaVVJBR0RGWDBGS2tYaDYzSlU3OWZ6b1VwWGVTMEVlbVUtUkZtRWU2U0FSOERFRWhfX3BBR3h2WTEyWTVtZGtOeGhn?oc=5",
-          "domain": "theregister.com",
-          "tier": "C"
-        },
-        {
-          "name": "VOI.ID",
-          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE11cU1KaWlnQy02NkRCbU8wNDJfczYtVlB0Nk1MNUVrY0N0R3BGQ1dlQlVrTUhjQ3V5X3Q5M21PeEVfQdIBQkFVX3lxTE11cU1KaWlnQy02NkRCbU8wNDJfczYtVlB0Nk1MNUVrY0N0R3BGQ1dlQlVrTUhjQ3V5X3Q5M21PeEVfQQ?oc=5",
-          "domain": "voi-id.publisher",
-          "tier": "C"
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2609.21139",
+          "domain": "arxiv.org",
+          "tier": "A"
         }
       ],
-      "primary_links": [],
-      "published": "2026-09-17T07:00:00+00:00",
+      "primary_links": [
+        "https://arxiv.org/abs/2609.21139"
+      ],
+      "published": "2026-09-21T04:00:00+00:00",
       "trace": [
-        "tier B (+25)",
-        "6 independent outlets (+36)",
-        "verified: 6 independent outlets",
-        "importance 1/5 from cache",
-        "blend 45 = trust 61 / interest 0 / corrob 100"
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "2ddef303c20d4642",
-      "title": "Nestle India issues clarification: Why FMCG stock plunged? What's FSSAI baby formula row; why it matters to consumers?",
+      "cluster_key": "2e5a03d47cb197cc",
+      "title": "Tata Group stocks face fresh risk as Trusts-Sons row escalates: Which stock looks most attractive now?",
       "category": "markets",
-      "one_liner": "Nestle India is embroiled in a legal dispute with FSSAI over baby formula labeling and nutritional standards.",
+      "one_liner": "A governance dispute between Tata Trusts and Tata Sons is causing market uncertainty and potential volatility for Tata Group stocks.",
       "tags": [
+        "dfir",
         "india",
         "markets",
         "policy"
       ],
-      "summary": "Nestle India is facing legal action from India's FSSAI over alleged compliance issues with its baby formula products, including NAN Excella Pro and Lactogen Pro. The regulator filed three adjudication cases after finding that promotional claims on e-commerce platforms breached 2020 regulations and the IMS Act. Additionally, laboratory tests revealed that Biotin levels in some samples were below the prescribed standards. Nestle has rejected the reports as \"factually incorrect,\" asserting that its products are fully compliant and approved by FSSAI committees.",
+      "summary": "A boardroom dispute between Tata Trusts and Tata Sons has escalated into a legal battle, creating governance uncertainty for Tata Group stocks. Tata Trusts is challenging the reappointment of N Chandrasekaran as chairman, claiming the resolution was invalid. Investors are concerned about the potential for further market volatility, though some analysts suggest that individual stock performance may be driven by technical factors rather than just group-wide headlines.",
       "key_facts": [
-        "Affected Products: NAN Excella Pro, Lactogen Pro",
-        "Regulator: FSSAI",
-        "Legal Action: 3 adjudication cases",
-        "Nutrient Deficiency: Biotin",
-        "Stock Impact: 1.4% lower at –1,353.10"
+        "Conflict: Tata Trusts vs. Tata Sons",
+        "Issue: Reappointment of N Chandrasekaran"
       ],
-      "bottom_line": "FSSAI's legal action against Nestle over nutritional deficiencies and labeling breaches could impact consumer trust and regulatory oversight of infant food.",
+      "bottom_line": "Investors should monitor the legal developments between Tata Trusts and Tata Sons, as the governance battle may continue to impact the market value of Tata Group companies.",
       "claims": [
         {
-          "text": "FSSAI has filed three adjudication cases against Nestle India.",
-          "support_span": "The regulator filed three adjudication cases concerning Infant Nutrition, NAN Excella and Lactogen.",
-          "status": "entailed"
-        },
-        {
-          "text": "Laboratory tests found Biotin levels below the required standard.",
-          "support_span": "testing of a Nestle follow-up formula sample found its Biotin content below the prescribed level.",
-          "status": "entailed"
-        },
-        {
-          "text": "Nestle claims its products and labels were previously approved by FSSAI.",
-          "support_span": "The said products (i.e., NAN EXCELLA PRO & LACTOGEN PRO) and their labels were approved by the expert committee of FSSAI.",
+          "text": "The escalating Tata Trusts-Tata Sons confrontation over N Chandrasekaran’s reappointment and the future of Tata Sons’ listing has turned a leadership disagreement into a wider governance battle.",
+          "support_span": "The escalating Tata Trusts-Tata Sons confrontation over N Chandrasekaran’s reappointment and the future of Tata Sons’ listing has turned a leadership disagreement into a wider governance battle.",
           "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 36.2,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "2ddef303c20d4642"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/nestle-india-issues-clarification-why-fmcg-stock-plunged-whats-fssai-baby-formula-row-why-it-matters-to-consumers-11789794974681.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-19T07:00:48+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 3/5 from cache",
-        "blend 36 = trust 25 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "9bc7522623a29396",
-      "title": "bsab/sweden-mcp-servers — A curated catalog of Model Context Protocol servers for Swedish data, laws and services.",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "agents",
-        "opensource"
-      ],
-      "summary": "A curated catalog of Model Context Protocol servers for Swedish data, laws and services. GitHub repository bsab/sweden-mcp-servers, 57 stars, language Python. Topics: awesome-list, mcp, model-context-protocol, open-data, sweden, swedish.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "9bc7522623a29396"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/bsab/sweden-mcp-servers",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-14T09:25:33+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-14 — outside lookback window"
-    },
-    {
-      "cluster_key": "fe16b1e72af203c9",
-      "title": "makifbaysal/tasktrooper — Local-first agent platform: board + role agents + Claude Code runs, all on your own Mac",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource"
-      ],
-      "summary": "Local-first agent platform: board + role agents + Claude Code runs, all on your own Mac GitHub repository makifbaysal/tasktrooper, 70 stars, language Go. Topics: agentic-ai, ai-agents, autonomous-agents, claude, claude-code, coding-agents, cursor, developer-tools.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "summary_source": "extract",
-      "alt_keys": [
-        "fe16b1e72af203c9"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/makifbaysal/tasktrooper",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-14T12:45:52+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-14 — outside lookback window"
-    },
-    {
-      "cluster_key": "8cc09987a94d7aed",
-      "title": "‘It's awful’: How tariffs, soaring fuel costs and higher interest rates are squeezing American companies",
-      "category": "markets",
-      "one_liner": "Supply-chain costs, energy prices, and rising interest rates are severely squeezing manufacturers and logistics firms.",
-      "tags": [
-        "markets",
-        "policy",
-        "political",
-        "supply-chain"
-      ],
-      "summary": "American companies of all sizes are facing severe financial strain due to the combined pressures of trade tariffs, surging fuel costs from the Iran war, and rising interest rates. Businesses like the Original Saw Co. in Iowa are grappling with spiking prices for raw materials such as aluminum and steel, alongside higher shipping and financing expenses. Middle-market manufacturers are particularly squeezed, forced to pass costs onto consumers while the Federal Reserve hikes rates to combat inflation. Smaller companies with shorter-term loans face direct cost increases, while capital-intensive sectors like manufacturing, logistics, and commercial real estate suffer disproportionately.",
-      "key_facts": [
-        "Business location: Britt, Iowa",
-        "Company: Original Saw Co.",
-        "Bracket price increase: $42 to $87",
-        "Date of note: Sept. 14"
-      ],
-      "bottom_line": "The triple squeeze of tariffs, fuel spikes, and rising interest rates is directly threatening manufacturing and logistics margins, forcing broad price hikes.",
-      "claims": [
-        {
-          "text": "Allen Eden has been holding onto extra inventory for his 25-person business, the Original Saw Co. in Britt, Iowa, which makes industrial power saws for wood and metalwork, as he grapples with spiking prices for aluminum, steel and essential parts.",
-          "support_span": "Allen Eden has been holding onto extra inventory for his 25-person business, the Original Saw Co. in Britt, Iowa, which makes industrial power saws for wood and metalwork, as he grapples with spiking prices for aluminum, steel and essential parts.",
-          "status": "entailed"
         },
         {
-          "text": "To wrangle inflation, the Federal Reserve raised interest rates for the first time in three years and signaled another hike is possible this year.",
-          "support_span": "To wrangle inflation, the Federal Reserve raised interest rates for the first time in three years and signaled another hike is possible this year.",
+          "text": "Tata Trusts, the largest shareholder, calls the reappointment invalid and is against a listing.",
+          "support_span": "Tata Trusts, the largest shareholder, calls the reappointment invalid and is against a listing.",
           "status": "entailed"
-        },
-        {
-          "text": "Smaller companies typically rely on shorter-term lending, meaning Fed hikes pass more directly into their costs, JPMorgan Chase global strategy head Dubravko Lakos-Bujas said in a Sept. 14 note.",
-          "support_span": "Smaller companies typically rely on shorter-term lending, meaning Fed hikes pass more direct into their costs, JPMorgan Chase global strategy head Dubravko Lakos-Bujas said in a Sept. 14 note.",
-          "status": "contradicted"
         }
       ],
       "trust_score": 25,
@@ -1088,124 +1064,28 @@
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "8cc09987a94d7aed"
+        "2e5a03d47cb197cc"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "CNBC Finance",
-          "url": "https://www.cnbc.com/2026/09/20/tariffs-fuel-prices-and-interest-rates-squeeze-us-companies.html",
-          "domain": "cnbc.com",
+          "name": "Livemint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/tata-group-stocks-face-fresh-risk-as-trusts-sons-row-escalates-which-stock-looks-most-attractive-now-11789989497661.html",
+          "domain": "livemint.com",
           "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-20T12:47:23+00:00",
+      "published": "2026-09-21T11:46:07+00:00",
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3.5-flash-lite",
+        "importance 4/5 from gemini-3.1-flash-lite",
         "blend 48 = trust 25 / interest 75 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "b4937f97b62be766",
-      "title": "itsmostafa/typesafe-mcp — mcp connector to give your AI agent direct access to typesafe ai's jev model",
-      "category": "tech_ai",
-      "one_liner": "A new open-source Go-based MCP connector allows AI agents to directly interact with TypeSafe AI's JEV model.",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource",
-        "release",
-        "tool"
-      ],
-      "summary": "A newly created GitHub repository named 'itsmostafa/typesafe-mcp' has been released, providing a Model Context Protocol (MCP) connector written in Go. The tool is designed to give AI agents direct access to TypeSafe AI's JEV model. Accumulating early interest with 105 stars, the connector facilitates integration between agent runtimes and specific language models. This open-source utility expands the ecosystem of connectors available for building modular AI agent architectures.",
-      "key_facts": [
-        "Repository: itsmostafa/typesafe-mcp",
-        "Language: Go",
-        "Stars: 105"
-      ],
-      "bottom_line": "New MCP connectors are expanding the tooling available for integrating specialized models into AI agent architectures.",
-      "claims": [
-        {
-          "text": "mcp connector to give your AI agent direct access to typesafe ai's jev model GitHub repository itsmostafa/typesafe-mcp, 105 stars, language Go.",
-          "support_span": "mcp connector to give your AI agent direct access to typesafe ai's jev model GitHub repository itsmostafa/typesafe-mcp, 105 stars, language Go.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 10,
-      "interest_score": 25,
-      "corroboration": 1,
-      "blend": 21.2,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "b4937f97b62be766"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/itsmostafa/typesafe-mcp",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-17T05:23:34+00:00",
-      "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "importance 2/5 from cache",
-        "blend 21 = trust 10 / interest 25 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "0d20c8dfba188295",
-      "title": "Built a little local web app to help edit commit messages for a repo simonwillison.net/2026/Sep/14/...",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "windows"
-      ],
-      "summary": "Built a little local web app to help edit commit messages for a repo simonwillison.net/2026/Sep/14/... (Bluesky post by @simonwillison.net — 58 likes, 4 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "0d20c8dfba188295"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Simon Willison",
-          "url": "https://bsky.app/profile/simonwillison.net/post/3mvgxs4ygd223",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-14T01:34:42.159000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-14 — outside lookback window"
     },
     {
       "cluster_key": "517c208229b05ea9",
@@ -1259,46 +1139,69 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "e267e9eb31e9bfac",
-      "title": "agentscope-ai-java/agentscope-java — Build distributed, production-grade, long-running agents.",
-      "category": "tech_ai",
-      "one_liner": "",
+      "cluster_key": "811e52dc09bc1f43",
+      "title": "Pine Labs block deal: Mastercard Asia-Pacific to sell entire stake worth nearly  ₹890 crore: Report",
+      "category": "markets",
+      "one_liner": "Mastercard is selling its entire stake in Pine Labs via a block deal worth nearly ₹890 crore.",
       "tags": [
-        "agents",
-        "ai",
-        "opensource",
-        "tool"
+        "india",
+        "markets"
       ],
-      "summary": "Build distributed, production-grade, long-running agents. GitHub repository agentscope-ai-java/agentscope-java, 108 stars, language Java. Topics: adk, agent, agent-framework, agentic, agentic-ai, agentscope, ai, harness.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
+      "summary": "Mastercard Asia-Pacific is set to exit its entire 4.31% stake in Pine Labs through a block deal worth approximately ₹890 crore. The shares are being offered at a floor price of ₹179.50, which is a discount to the recent market price. This move follows a strong recovery in Pine Labs' stock price and positive coverage from analysts.",
+      "key_facts": [
+        "Stake: 4.31%",
+        "Deal Value: ~₹890 crore",
+        "Floor Price: ₹179.50"
+      ],
+      "bottom_line": "The exit of a major institutional investor like Mastercard may cause short-term stock price volatility for Pine Labs.",
+      "claims": [
+        {
+          "text": "Mastercard Asia/Pacific Pte. Ltd. is set to exit its entire holding in Pine Labs through a block deal worth nearly ₹890 crore.",
+          "support_span": "Mastercard Asia/Pacific Pte. Ltd. is set to exit its entire holding in Pine Labs through a block deal worth nearly ₹890 crore.",
+          "status": "contradicted"
+        },
+        {
+          "text": "According to Trendlyne shareholding data, Mastercard Asia/Pacific Pte. Ltd. held a 4.31% stake in the company at the end of the June quarter.",
+          "support_span": "According to Trendlyne shareholding data, Mastercard Asia/Pacific Pte. Ltd. held a 4.31% stake in the company at the end of the June quarter.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 25,
       "corroboration": 1,
-      "blend": 0.0,
+      "blend": 25.0,
       "is_new": true,
-      "summary_source": "extract",
+      "summary_source": "model",
       "alt_keys": [
-        "e267e9eb31e9bfac"
+        "811e52dc09bc1f43",
+        "c5465a8c555c443a"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/agentscope-ai-java/agentscope-java",
-          "domain": "github.com",
-          "tier": "C"
+          "name": "Livemint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/pine-labs-block-deal-mastercard-asia-pacific-to-sell-entire-stake-worth-nearly-rs-890-crore-report-11789997088408.html",
+          "domain": "livemint.com",
+          "tier": "B"
+        },
+        {
+          "name": "Livemint Markets",
+          "url": "https://www.livemint.com/market/mastercard-to-exit-pine-labs-in-93-million-block-deal-11790000864502.html",
+          "domain": "livemint.com",
+          "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-14T10:55:50+00:00",
+      "published": "2026-09-21T13:30:20+00:00",
       "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 2/5 from gemini-3.1-flash-lite",
+        "blend 25 = trust 25 / interest 25 / corrob 25"
       ],
-      "reject_reason": "published 2026-09-14 — outside lookback window"
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
       "cluster_key": "cffa92288b30ad54",
@@ -1340,73 +1243,179 @@
       "reject_reason": "published 2026-09-15 — outside lookback window"
     },
     {
-      "cluster_key": "00adcf3ec9be2819",
-      "title": "Data breach at ID verification company may have exposed millions of driver’s license images",
+      "cluster_key": "2392b290f2c11040",
+      "title": "ShinyHunters hacks rival extortion gang and takes over its dark web site",
       "category": "cyber_attacks",
-      "one_liner": "An ID verification firm breach potentially exposes millions of driver's license images.",
+      "one_liner": "ShinyHunters hacks and completely defaces rival Clop ransomware gang's dark web leak site.",
       "tags": [
+        "exploit",
         "incident",
-        "privacy"
+        "ransomware",
+        "threat-actor",
+        "threat-intel",
+        "vulnerability"
       ],
-      "summary": "A data breach at an ID verification company may have exposed millions of driver’s license images. The incident places sensitive identity documents at risk of unauthorized access and potential misuse. Investigations are ongoing regarding the scope of the exposure and the affected entities.",
-      "key_facts": [],
-      "bottom_line": "Millions of driver's license images may have been compromised in a data breach at an identity verification provider.",
+      "summary": "The ShinyHunters cybercrime group breached and took over the dark web extortion leak site of rival ransomware group Clop. According to ShinyHunters, the operation began by exploiting an unauthenticated file-upload vulnerability in Grav CMS to upload a text file, followed by complete defacement and takeover of Clop's onion private keys. The rivalry escalated following previous disruptions of Clop data-theft campaigns by ShinyHunters and subsequent personal threats made by Clop affiliates.",
+      "key_facts": [
+        "Vulnerability exploited: Unauthenticated file-upload in Grav CMS",
+        "Target: Clop ransomware gang leak site"
+      ],
+      "bottom_line": "The ShinyHunters extortion group compromised and seized control of rival Clop's dark web infrastructure using an unauthenticated CMS vulnerability.",
       "claims": [
         {
-          "text": "A data breach at an ID verification company may have exposed millions of driver’s license images.",
-          "support_span": "Data breach at an ID verification company may have exposed millions of driver’s license images",
+          "text": "Reportedly, the ShinyHunters extortion group breached the leak site of one of its competitors, the Clop ransomware gang.",
+          "support_span": "Reportedly, the ShinyHunters extortion group breached the leak site of one of its competitors, the Clop ransomware gang.",
+          "status": "entailed"
+        },
+        {
+          "text": "According to BleepingComputer, the attack began Friday night when ShinyHunters exploited what it claims is an unauthenticated file-upload vulnerability in Grav CMS to upload a small text file to Clop’s site.",
+          "support_span": "According to BleepingComputer, the attack began Friday night when ShinyHunters exploited what it claims is an unauthenticated file-upload vulnerability in Grav CMS to upload a small text file to Clop’s site.",
           "status": "contradicted"
+        },
+        {
+          "text": "Several hours later, ShinyHunters told BleepingComputer that it had “completely defaced” the site.",
+          "support_span": "Several hours later, ShinyHunters told BleepingComputer that it had “completely defaced” the site.",
+          "status": "entailed"
         }
       ],
-      "trust_score": 22,
+      "trust_score": 61,
       "interest_score": 75,
-      "corroboration": 2,
-      "blend": 54.2,
+      "corroboration": 4,
+      "blend": 79.0,
       "is_new": false,
       "summary_source": "model",
       "alt_keys": [
-        "00adcf3ec9be2819",
-        "7bf3d23a6dfd7047",
-        "91987187313cce01",
-        "d6082e01a8757d0c"
+        "2392b290f2c11040",
+        "d7486118309ff2dd",
+        "e8f784d01fd275a0",
+        "ea2e1bcf7d56d3e1",
+        "ecec698bbeff9b97",
+        "ef8e153b83bc7a6c",
+        "f1a47a285f512ba6",
+        "fba1d992c0a99408"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "CT Examiner",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOd0IzU0lVWkZuRlJWcmhyU21TenhEd2ZiMXVhbm1nbzczbVBjMF92aUpJdEFqZXBPQ2xkODVkQmtRaUN1X0JWeWtlYkExVXY4ZW9TMjdUYlNOYVRMcDVFMHN1clFsT2tmSUlnOVBtRGZ0cjhndGJvSDRrQTNuTHpBbWNRUjBBNVBvZXhibHJDWEdWalV3MUdLU1dBOXNyUlFt?oc=5",
-          "domain": "ct-examiner.publisher",
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacks-clop-leak-site-threatens-to-extort-ransomware-gang/",
+          "domain": "bleepingcomputer.com",
+          "tier": "B"
+        },
+        {
+          "name": "Infosecurity Magazine",
+          "url": "https://www.infosecurity-magazine.com/news/shinyhunters-claim-hack-of-clop/",
+          "domain": "infosecurity-magazine.com",
+          "tier": "B"
+        },
+        {
+          "name": "Malwarebytes Labs",
+          "url": "https://www.malwarebytes.com/blog/news/2026/09/shinyhunters-hacks-rival-extortion-gang-and-takes-over-its-dark-web-site",
+          "domain": "malwarebytes.com",
+          "tier": "B"
+        },
+        {
+          "name": "Infosecurity Magazine",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOaU5OQjNITTBDQm1LdXJGZWhlWW83QnhHdHFCUVlHeW1ocUJ4SDZUZ0JORmFpMmFqYld6UGdjY2VTeGRNeVNzX0V2c2RNSzc4b1U0ZkVXMFo4R2d5TTdKZXdTOHZ3STF0STQ0eU1lbks3Y1FZWlVURTFubTN1VGVTcQ?oc=5",
+          "domain": "infosecurity-magazine.com",
           "tier": "C"
         },
         {
-          "name": "GN Breach watch",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Gb2hhTHpVNnBScmpDNEJuMHN5ZXA5WURMT1l4NEl2d1UzQ0NVZVYteW15TDQtMnZsTDYxWFNiYklTUkw2djZfQWk0SGozbXZuR1JLblhsTW03TldNZjdocl9YR2F2WVhHQ3lBdTJjV0h3M1ZaNkE?oc=5",
-          "domain": "news.google.com",
+          "name": "SC Media",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxORlgyb1gtV3BKVmw5SlpvR3NIc3JJRUdZaHJGYUFRZ0F2NTJZaXFNOXp1eklJR2h6cGxwcXRBNTdZdFEwdUw1NjhWT2lydV9XYk5mVnRyWnB1WEhGeUlyTEozdEFmZE80WkNRTl8zU2FoZVlKcEhzd21yS1BZSUEwZS1majdUdUpZM0xKUVZjTmloa0VDc253eTNiRnJwSjB4?oc=5",
+          "domain": "sc-media.publisher",
           "tier": "C"
         },
         {
-          "name": "teiss.co.uk",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNLThhR0FwUGJnMWFoTXVNUmJ2bGFDaGRHWGktYTgyd2xZWmZmX01iSzhycDhTQ3ZZLUpMdGJiaVF2dzgycUNMS19iZE9xWFlOVkhxaktfME5wc1V3ZFVHMV9ScXMxeE9NSmU1NzBiNjRVaDVfa2VVb0Z1am9uZzluOUdCN0UzaWlWVkRLYzFUc3ZLZGI4d2lxQnMxUjlOTzlpWXBZNGpZUlhHWWMtOVExVVpBWUs?oc=5",
-          "domain": "teiss-co-uk.publisher",
+          "name": "streamlinefeed.co.ke",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQa3pja3pnQnBxWDJFS3Jta25ldDFxRHRYYjdvZWVWMThwTmk0OWlTUUl0TlAzZGh3Z2VfMW1nVjdEalhiVk1SZ2V2VVRZMkVCUmJRU2ZGNl9VdXpxNTQ4ZzFzWGRFY2ZuQmlCVkNVNG5yWEs5dGxfcE52aHVQRXBZbDFCUmlPaHBPWU5oZnZhRzl5ZVI1eHpN?oc=5",
+          "domain": "streamlinefeed-co-ke.publisher",
           "tier": "C"
         },
         {
-          "name": "WBAY",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQmVIUy1GQ0JCVmtvZWVNMWY2UTIxZ2NSS1VpM0gxUVRFVEdMaUdZWGZwNjl2X1MwNVM3VnRIZ09iRHRyZVdicGt0Y1BHbEN6Y2lnNHJvbEN6dVgyWk9xLXREVHNSRjZkdXRQM0VkX0FwOTZlNWtTb29CaWdaUkRDRjZQWUVLdktIZGloUVJVWENISndMOS0zMHFsY25EQVBvLUVQd1ZvMUhSWXNaNXAtVHZqNi02TTBYSWswN3NYS3A?oc=5",
-          "domain": "wbay.publisher",
+          "name": "technology.org",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVjVRY3VNamZDTDFzQkFaYWlfN2xybnQwSktWVldNcXd5eGwtUk9vMXplRHZKdGpERjl3TlBsajZGZmJ1MEdINGgzYmRNX3RRVWdFNTAxU2ZoTEpRVnpEaC04dzRDTVdQMHp1WDRRdTcyc1lvUjM0VnBBd2hjQUV6bFhJcw?oc=5",
+          "domain": "technology-org.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Times Now",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPWEx2dkw0S2xGUnlXNXlVOVZVNDd0V3puekhwU0RGRE9nRVVBdjJYVjNqa3RpVjQzNm90M05KWEQ1Nzc4MkloMUJUZ0NOdWRxZTNGVUNfYWhsYk45dkpMR2c4OXJ6djFZX3dVdmktY0JPb0NEcjU2OEdTU1VGZlRfTUo2Tm9NUWVHb2xMMlU5Nm5kZDQ1bW5mWGptY245cXpiUUg1OUltVm5BSUdTRXBpYUVuM0dGWmt5Si1xZ015cFF4Zms2V0NIWlBfWnhGSDRYR3FIZkpPMmM3cVhCcjJXWGd1Y01xQnB0MWfSAe8BQVVfeXFMUFhlTlZOVGZlcFVIMjRVUldFV29sRlIwREQ5RWhnVTVBeC1RajZsYVlqU09TMGsyczlsVTNUVTM0WXladF9QdFlVOEFWTXdHZHA0SnlXeE10Y2h1b3ZpTW1weGVGaHBwZHVVcXJsZDVXclZSLTFSUE8waWczQk1XcDdjSVlkMnE1Ty1ER0ZPLWNKWEZaSm96b0dheVczNnA0RWJEalB1Sk9WdGZCQmo1UERZa0pfYi13ZUZGZV9MV3lMSE1YUnA0VHUzUjBzM1BYUU8wUE1rbWpfUy1DSXJBWXBIRzhFVk1uNllLQUx1dDQ?oc=5",
+          "domain": "times-now.publisher",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-17T00:22:00+00:00",
+      "published": "2026-09-19T13:48:32+00:00",
       "trace": [
-        "tier C (+10)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 4/5 from cache",
-        "blend 54 = trust 22 / interest 75 / corrob 50"
+        "tier B (+25)",
+        "4 independent outlets (+36)",
+        "verified: 4 independent outlets",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 79 = trust 61 / interest 75 / corrob 100",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "e26de94792beb0d1",
+      "title": "Jailed teacher convicted of sexual abuse secretly released early in Indonesia, BBC finds",
+      "category": "india_world",
+      "one_liner": "An Indonesian teacher convicted of sexual assault has been released early, raising concerns about accountability and systemic abuse in religious schools.",
+      "tags": [
+        "india",
+        "policy",
+        "political",
+        "release"
+      ],
+      "summary": "Moch Subchi Azal Tsani, an Indonesian teacher convicted of sexual assault at an Islamic boarding school, has been secretly released from prison after serving less than half of his seven-year sentence. The release, attributed to sentence remissions, has sparked criticism given the severity of the allegations and the influence of his family. This case highlights ongoing concerns regarding sexual violence in Islamic boarding schools and the lack of accountability for influential figures.",
+      "key_facts": [
+        "Conviction: Sexual assault",
+        "Sentence: 7 years",
+        "Release: August 2025"
+      ],
+      "bottom_line": "The early release of a convicted sexual predator in Indonesia underscores systemic failures in protecting students from abuse within powerful religious institutions.",
+      "claims": [
+        {
+          "text": "Moch Subchi Azal Tsani or Bechi, as he is known, is the son of an influential Islamic religious leader.",
+          "support_span": "Moch Subchi Azal Tsani or Bechi, as he is known, is the son of an influential Islamic religious leader.",
+          "status": "entailed"
+        },
+        {
+          "text": "Undercover footage recorded by the BBC now reveals that he has been released after serving less than half of his sentence.",
+          "support_span": "Undercover footage recorded by the BBC now reveals that he has been released after serving less than half of his sentence.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 40.0,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "e26de94792beb0d1"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c9zrz0nl4p70o?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-20T23:12:31+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 3/5 from gemini-3.1-flash-lite",
+        "blend 40 = trust 40 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -1467,179 +1476,383 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "bc87ff8a33aff370",
-      "title": "China's Salt Typhoon backdoors Latin American orgs with new snooping malware",
-      "category": "cyber_attacks",
-      "one_liner": "Tech roundup covers Salt Typhoon malware deployments in Latin America, Acronis's acquisition by EQT, and Copilot's Rust port.",
+      "cluster_key": "02107066825e9af6",
+      "title": "Valve's new open-source tool is bringing Android games to Linux and Steam - How-To Geek",
+      "category": "tech_ai",
+      "one_liner": "Valve's new open-source tool brings Android games directly to Linux and Steam environments.",
       "tags": [
-        "ai",
-        "exploit",
-        "incident",
-        "llm",
-        "malware",
-        "markets",
-        "threat-actor",
+        "android",
+        "linux",
+        "opensource",
+        "release",
         "tool"
       ],
-      "summary": "This news roundup covers recent developments across the technology and security sectors. Notable items include Microsoft porting its Copilot runtime to Rust, state-sponsored cyber espionage involving China's Salt Typhoon targeting Latin American organizations with new malware, and EQT acquiring a majority stake in cybersecurity firm Acronis at a valuation exceeding $3.5 billion. Additional briefs touch on AI impacts on computer science graduate job prospects and various open-source tool updates.",
-      "key_facts": [
-        "Acronis valuation equivalent: $3.5B+"
-      ],
-      "bottom_line": "State-sponsored threat actors continue expanding regional cyber espionage campaigns while major investments reshape the cybersecurity vendor landscape.",
+      "summary": "Valve has released a new open-source tool designed to bridge Android games directly onto Linux operating systems and the Steam platform. This development expands compatibility layers, enabling seamless execution of mobile titles on desktop and handheld Linux environments like the Steam Deck. It bridges a major gap for cross-platform gaming accessibility.",
+      "key_facts": [],
+      "bottom_line": "Valve's compatibility tooling broadens Linux and Steam Deck gaming libraries by natively integrating Android titles.",
       "claims": [
         {
-          "text": "China's Salt Typhoon backdoors Latin American orgs with new snooping malware",
-          "support_span": "China's Salt Typhoon backdoors Latin American orgs with new snooping malware",
+          "text": "Valve's new open-source tool is bringing Android games to Linux and Steam - How-To Geek",
+          "support_span": "Valve's new open-source tool is bringing Android games to Linux and Steam - How-To Geek",
           "status": "contradicted"
         }
       ],
-      "trust_score": 25,
+      "trust_score": 22,
       "interest_score": 50,
-      "corroboration": 1,
-      "blend": 36.2,
+      "corroboration": 2,
+      "blend": 43.0,
       "is_new": false,
       "summary_source": "model",
       "alt_keys": [
-        "bc87ff8a33aff370"
+        "02107066825e9af6",
+        "6a8f0eac02fe741c",
+        "b94e3610bbd7abd7",
+        "c220484a951bf178",
+        "f21660f48c797ce2",
+        "f70ad0ea3f6b8c20"
       ],
       "critical_signal": "",
-      "priority": "minor",
+      "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "The Register Security",
-          "url": "https://www.theregister.com/security/2026/09/17/chinas-salt-typhoon-backdoors-latin-american-orgs-with-new-snooping-malware/5297286",
-          "domain": "theregister.com",
-          "tier": "B"
+          "name": "9to5Google",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSUdoUl9qZzRpY2xsLVlUaWptTnpkeUNsLTZKbzJ4XzZtcEtMcDRJUmIta25OZVQ3amRlbW1Qak5PemNGTTR6c0lFZlZWME1hZW5ENGhLcVJTSFk4bjdHODRxRDNtTkdsZTU0bk5ON0hrTHR0X2xVbUxYc0p5UHBPYVI0YUg2aml4aUs1QmZQczhZVmpCUDdabDVLNDk4amRoWXlnSlB2M3M?oc=5",
+          "domain": "9to5google.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "ghacks.net",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTDF2Ul9qTF9hZ21kMlFINVc5Sm9aWFZfd1Z1cUlaOUJ4bWdIZUlEYXc2UkpPanpJOHhBNmtHaUJqMk1uMVJOaDcxSUV1cUhRTDhEZjBUb1FLWkgyVW53LVJsbE9BX3cya3lFXzg2WkhxNXUxZGI1cFRnWEp0QmxnZlFoNUp0QmZRNW0zd2tOcGlHNGxCNUVzV1QySk1FSGJNeTY1WG5TdzlENjVRSmd0MEpR?oc=5",
+          "domain": "ghacks-net.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "It's FOSS",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE84UUxjSDRKWkdZY0xSZVdjZjBTQjI5eGFPNkRrdl9wTDZ4bU02eTZGbFpBVXRFUXNFa2dpUXhPelBpQjAxVEZyOENIOVRnRDQ?oc=5",
+          "domain": "it-s-foss.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "linuxiac.com",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxObVI5Q3NIYm5DRU5VdHJHTG02cUd1NEtBZjhqSGxWYUl5VkRkRDVEN1FOS2ZlbzNZUTdlUVhNamFxYWNKdVF3dDBUWkZyeXU2dWpYTnJnVjVXY2VVT0NnQzMwSmdTbG4zTG9rRHk0M3lJc2xNMXVuSkdVVXoyVnlsanZsUQ?oc=5",
+          "domain": "linuxiac-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "GN Dev tooling",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBreGxoLURhZkhUdHlkcEhnNlhzcmNuN3F2akVPUE1fU2VtUjVHLW5pem9ZXzlzY3NHaUlpU05DdzBjUDZXY2M2R3RkQlJiN1BZUFBGMzlFa1JKOWpVdnJiOUlzWllHeXJXZHF1N25jRm5weUpvSThhNVkyWQ?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "TechPowerUp",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZ3FqUV94SFlyZnZCTDNTQlZ3SWlfMklvTHlDbGlURW9OTWIzSUZzTTJUWXRoRngzU1hYX3Rrb0VQZk5TVjltcWwwVXRJSGVKZDdrcGFYeHN5S0hCYTFValhPZlN4b3FGc0VyVTVLaENyMk5EdmdSc3VjUG9EZDZjNThZcW5VaDMwZUNia1M4N2loLUt0WnpTQlJMeE5NajRNTVdzUWtvenpRMFh1RnhTQmhxajTSAboBQVVfeXFMTzJsX3JBdzQ1YnJVYjZFTVo3cjJFT1pXak1rcGd2NVNtM3hYRW1GWnRYVW9yNzhoelA5Y1k1NXdtZjhTeHRKUElhalpyVXg2YmJyb3UzbTgtZEtEOVNQYTY0eFI1bDJjeXZMV1ZGdTR3OTJPSHZwMnBZRE9JS2hYVGdKb3N3ZnU2QzZ5MlM1bkctV3ZlbUZ5Ym1GRnhFZGc2b0Fzb1ZWdjNSWlkxVzRnd3dLNlNBV3ZqWUtn?oc=5",
+          "domain": "techpowerup.publisher",
+          "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-17T18:00:17+00:00",
+      "published": "2026-09-18T10:59:46+00:00",
       "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
+        "tier C (+10)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
         "importance 3/5 from cache",
-        "blend 36 = trust 25 / interest 50 / corrob 25"
+        "blend 43 = trust 22 / interest 50 / corrob 50"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "2c4a5d02aac5bf51",
-      "title": "JAC marks 2,000 days of protest against Vizag steel plant privatisation",
-      "category": "india_world",
-      "one_liner": "Workers and union leaders in Visakhapatnam marked 2,000 days of continuous protests demanding the public operation and protection of the local steel plant.",
+      "cluster_key": "074b0cbb84b24bd4",
+      "title": "Panzer Ransomware: 16 Victims as August Hits Record 997 [2026] - tech-insider.org",
+      "category": "cyber_attacks",
+      "one_liner": "Panzer Ransomware added 16 victims as August 2026 reached a record 997 total global ransomware attacks.",
       "tags": [
-        "india",
-        "markets",
-        "policy"
+        "incident",
+        "malware",
+        "ransomware",
+        "threat-intel"
       ],
-      "summary": "The Joint Action Committee (JAC), representing all-party workers' and people's organizations, marked 2,000 days of continuous protest against the privatization of the Visakhapatnam Steel Plant. Gathering near the Greater Visakhapatnam Municipal Corporation office, JAC leaders called for intensified struggles, demanding that the plant be allocated captive mines, merged with the Steel Authority of India Limited (SAIL), and operated at full capacity. Protesters also demanded the reinstatement of 6,000 removed contract workers and alleged that an announced ₹11,400-crore package had been mismanaged or left unused for plant development and salaries.",
+      "summary": "Panzer Ransomware has recorded 16 new victims, contributing to a record-breaking total of 997 ransomware attacks globally in August 2026.",
       "key_facts": [
-        "Protest duration: 2,000 days",
-        "Start date: April 2, 2021",
-        "Contract workers removed: 6,000",
-        "Employees taking voluntary retirement: ~2,000",
-        "Unused package amount: ₹11,400-crore"
+        "Victims: 16 (Panzer)",
+        "Total global attacks: 997 (August 2026)"
       ],
-      "bottom_line": "Protests against the privatization of the Visakhapatnam Steel Plant have reached 2,000 days as unions demand state backing and worker reinstatement.",
+      "bottom_line": "Global ransomware incident volumes have hit record levels, with August 2026 recording nearly a thousand attacks.",
       "claims": [
         {
-          "text": "The all-party workers’ and people’s organisations’ Joint Action Committee (JAC) opposing privatisation of the Visakhapatnam Steel Plant marked 2,000 days of its protest...",
-          "support_span": "The all-party workers’ and people’s organisations’ Joint Action Committee (JAC) opposing privatisation of the Visakhapatnam Steel Plant marked 2,000 days of its protest at the Gandhi statue near the Greater Visakhapatnam Municipal Corporation (GVMC) office in the city on Sunday.",
-          "status": "entailed"
-        },
-        {
-          "text": "They also alleged that 6,000 contract workers had been removed from service and about 2,000 employees had opted for voluntary retirement.",
-          "support_span": "They also alleged that 6,000 contract workers had been removed from service and about 2,000 employees had opted for voluntary retirement.",
+          "text": "Panzer Ransomware: 16 Victims as August Hits Record 997 [2026]",
+          "support_span": "Panzer Ransomware: 16 Victims as August Hits Record 997 [2026] - tech-insider.org",
           "status": "contradicted"
         }
       ],
-      "trust_score": 25,
+      "trust_score": 22,
+      "interest_score": 75,
+      "corroboration": 2,
+      "blend": 54.2,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "074b0cbb84b24bd4",
+        "5fe3e831edaa0690",
+        "8d2bb430fa31e368",
+        "c639bd806ee413e2",
+        "d724c5b921570720"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GN Ransomware watch",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1teUF6SDNNR1lZcTBDaEtLSlc1enc4Mk1SYzAyd0xXU3hVMmFPbjNxSk9qSmZsS0s5WU5nYnpsU2M3Y1JBMTlpMHZzZHAzRm9hVXZwMXVSNHJhUE15MV9WWFFhWDJKYnl6RE13bDFMRkZWVVFFSHc?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "GN AI research",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8zMW1iX3NUM09WTjIzU0tRN3lnaV9YUG1FYzgwc3JOcWVpTEEzX0lQRUs1ZVF1UDBkVFdJbGFCZjlTUjhhb0p4UU5nbTRLOUhjNGMxQ2k4ZFpRS296T1NBN2RIQ0t0RUx6U1VONGxVUmR0WVdBR1hCU01GVTE3dw?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "GN Offensive tools",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcEg5TUZ5cVJidlFvZXJLekZhVnlYVHRCWDdpdjB4MXItRnE3c2RNWUtLNHN5VVBtMUJJbWRoVXlsdUZvaDk2WkdickhmOGsySnZEUFhER2NiVFgwZEE0QXR5cGE1QUI3NjRvQUxzb0JHS0Zja1Fza1RzM3I4Sldra2JUYW9MWFJyR1Fvaw?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "GN Dev tooling",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1iT056dzg5VFFaajh0ek1qU2RkZDlvTzFBUlJuN3lsUkVTZzNnRmZHaVV5T25CMmpYcElrbDdRejdTemhTd0F1X2x4Und6Vm44bk9kNzQ5NGlfTmpzdU9VTg?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNXRmeW5NU2VWcEViQVBBSzhiczB4aGxxSERHWTJyRzNsMHdKZVkyWmJDNWRLZWUxMFlXR094Vk8tUFRNNjkxVERJWUxMVHMzM0ktY2VTcUFSQmdoQ29SNjhBRWloa3dpMm9DNl9fdnN3MlNuRnJKTVpDWUxDdXo2SHZWYVlsRE8tby1Oc01zdkbSAZYBQVVfeXFMTzctZ3F1RXZKQ09pVkdBOUotQzNNYjNoWTB5UzNZZXpDZUtvOVNuMVJZRGJaZzhuMmhOUlYwOE9WOXlCNDFxSllzcG0ySFRMRWYwTFdwN3lOQTNoQVNQY0oxSi1tYkdUa1Vvd3dvV0x2OU5DNjlvRDZPWFVUUVdROGpQcVVqNFdQRmFnUEdUY0ZwOWlnaThn?oc=5",
+          "domain": "securityweek.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-18T03:23:25+00:00",
+      "trace": [
+        "tier C (+10)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 54 = trust 22 / interest 75 / corrob 50"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "90242db37d49e10f",
+      "title": "ASLEval: Measuring Privacy Exposure Displacement in LLM Agent Sessions",
+      "category": "tech_ai",
+      "one_liner": "ASLEval benchmark reveals that traditional proxy metrics miss nearly half of privacy exposures in LLM agent sessions.",
+      "tags": [
+        "agents",
+        "ai",
+        "llm",
+        "privacy",
+        "research",
+        "tool"
+      ],
+      "summary": "Researchers introduce ASLEval, an authorization-aware framework designed to measure privacy exposure displacement in tool-using LLM agent sessions. The tool pre-registers a hidden target set and evaluates all visible exits while tracking internal evidence traces. Evaluations across enterprise-style runtimes show that expected-outlet-only views miss 46.9% of actual exposure, and attacker self-reports combine omissions with high false discovery rates. The findings demonstrate the necessity of benchmarking complete visible boundaries alongside task utility.",
+      "key_facts": [
+        "Missed exposure rate: 46.9%"
+      ],
+      "bottom_line": "Evaluating LLM agent privacy requires tracking complete visible session boundaries rather than relying on local action proxies.",
+      "claims": [
+        {
+          "text": "Privacy evaluations of tool-using LLM agents often inspect a designated action, final response, or attacker report.",
+          "support_span": "Privacy evaluations of tool-using LLM agents often inspect a designated action, final response, or attacker report.",
+          "status": "entailed"
+        },
+        {
+          "text": "We introduce privacy exposure displacement, the mismatch between a local evaluation proxy and target-grounded session exposure...",
+          "support_span": "We introduce privacy exposure displacement, the mismatch between a local evaluation proxy and target-grounded session exposure...",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
       "interest_score": 50,
       "corroboration": 1,
-      "blend": 36.2,
+      "blend": 47.5,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "2c4a5d02aac5bf51"
+        "90242db37d49e10f"
       ],
       "critical_signal": "",
-      "priority": "minor",
+      "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/national/andhra-pradesh/jac-marks-2000-days-of-protest-against-vizag-steel-plant-privatisation/article71488505.ece",
-          "domain": "thehindu.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-20T16:33:12+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 36 = trust 25 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "a362b3ab08ace09f",
-      "title": "Mum's viral barefoot race sparks debate over India's education crisis",
-      "category": "india_world",
-      "one_liner": "A viral story of an Indian mother running barefoot to fund her children's education has sparked intense national debate over systemic educational hurdles.",
-      "tags": [
-        "india",
-        "policy",
-        "political"
-      ],
-      "summary": "Ramabai Ranveer, a 47-year-old widow from Maharashtra, India, won a local 3km barefoot running race to secure the 3,000-rupee ($31) prize money needed to buy books and educational materials for her daughters. Videos of her run went viral on social media, striking a cultural nerve and highlighting the extreme sacrifices Indian families make for education. The story has amplified wider public scrutiny and youth frustrations regarding India's hyper-competitive education system, expensive coaching centers, and recurring exam irregularities.",
-      "key_facts": [
-        "Prize money: 3,000 rupees ($31; £23)",
-        "Race distance: 3km (1.86-mile)",
-        "Location: Maharashtra, India"
-      ],
-      "bottom_line": "A 47-year-old Indian mother's barefoot race victory to pay for her daughters' study materials has catalyzed widespread debate over the country's competitive and costly education system.",
-      "claims": [
-        {
-          "text": "The 47-year-old widow had entered a 3km community run with a single goal: winning the prize money to help pay for her two daughters' education.",
-          "support_span": "The 47-year-old widow had entered a 3km community run with a single goal: winning the prize money to help pay for her two daughters' education.",
-          "status": "contradicted"
-        },
-        {
-          "text": "The 3,000-rupee prize would help her buy books and study materials for her daughters.",
-          "support_span": "The 3,000-rupee ($31; £23) prize would help her buy books and study materials for her daughters.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 25,
-      "corroboration": 1,
-      "blend": 28.8,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "a362b3ab08ace09f"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cw62m6z7m7zjo?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
+          "name": "arXiv cs.CR",
+          "url": "https://arxiv.org/abs/2609.18864",
+          "domain": "arxiv.org",
           "tier": "A"
         }
       ],
-      "primary_links": [],
-      "published": "2026-09-19T23:18:06+00:00",
+      "primary_links": [
+        "https://arxiv.org/abs/2609.18864"
+      ],
+      "published": "2026-09-21T04:00:00+00:00",
       "trace": [
         "tier A (+40)",
-        "single outlet, established publication (tier A)",
-        "importance 2/5 from cache",
-        "blend 29 = trust 40 / interest 25 / corrob 25"
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 3/5 from cache",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "1966d858f44a6303",
+      "title": "Efficient Benchmarking in Production: A Study of an Evolving LLM Agent",
+      "category": "tech_ai",
+      "one_liner": "Researchers evaluate methods for efficient recurring benchmarking of production LLM agents, highlighting adaptive testing and fixed subsets.",
+      "tags": [
+        "agents",
+        "ai",
+        "llm",
+        "privacy",
+        "research",
+        "tool",
+        "windows"
+      ],
+      "summary": "Researchers studied efficient recurring evaluation methods for production LLM agents serving tens of thousands of monthly active users. By analyzing 574 historical production benchmark runs, they compared random sampling, historical caching, fixed representative subsets, and Item Response Theory (IRT) adaptive testing. They found that multidimensional 2PL adaptive testing achieves optimal score fidelity, while difficulty-stratified fixed subsets were deployed operationally for their simplicity and stability across calibration windows as short as one day.",
+      "key_facts": [
+        "Historical runs analyzed: 574",
+        "Adaptive testing questions executed: 200 (38.5% of full run)",
+        "Mean absolute error: 1.03 pp of MAE"
+      ],
+      "bottom_line": "Difficulty-stratified fixed subsets provide an operationally simple and stable method for recurring production-agent evaluation without sacrificing reliability.",
+      "claims": [
+        {
+          "text": "Using 574 historical runs of the production benchmark, split chronologically into calibration and held-out periods, we compare random sampling, historical caching, fixed representative subsets, and IRT-based adaptive testing.",
+          "support_span": "Using 574 historical runs of the production benchmark, split chronologically into calibration and held-out periods, we compare random sampling, historical caching, fixed representative subsets, and IRT-based adaptive testing.",
+          "status": "entailed"
+        },
+        {
+          "text": "The results show that multidimensional 2PL adaptive testing achieves the best overall score fidelity: executing 200 questions, 38.5% of a full run, yields 1.03 pp of MAE.",
+          "support_span": "The results show that multidimensional 2PL adaptive testing achieves the best overall score fidelity: executing 200 questions, 38.5% of a full run, yields 1.03 pp of MAE.",
+          "status": "entailed"
+        },
+        {
+          "text": "We nevertheless deployed difficulty-stratified fixed subsets because of their operational simplicity, and show they transfer without recalibration to five other agent families and remain stable across calibration windows as short as one day.",
+          "support_span": "We deployed difficulty-stratified fixed subsets because of their operational simplicity, and show they transfer without recalibration to five other agent families and remain stable across calibration windows as short as one day.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 82,
+      "interest_score": 50,
+      "corroboration": 2,
+      "blend": 58.0,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "1966d858f44a6303",
+        "641f7b23ae359c01"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2609.21267",
+          "domain": "arxiv.org",
+          "tier": "A"
+        },
+        {
+          "name": "Crypto Briefing",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE11ZmZxZWhLVi03M2MtTzFYLWFySGkyMmVQTjRjYVdoNzZ0MTFuS1RhSmlmYnNENExYVFBwVFJJeFpTQkt6TEJ4RV9LQUdPTkNrc21BZGR3Xy1PQS1QS0xVeUxGVGVMVGNtcFVoQUJSemM?oc=5",
+          "domain": "crypto-briefing.publisher",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2609.21267"
+      ],
+      "published": "2026-09-21T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "2 independent outlets (+12)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 58 = trust 82 / interest 50 / corrob 50",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "37bef01e3bea1c5d",
+      "title": "Ransomware attack on Kansas county will affect some services - KSN-TV",
+      "category": "cyber_attacks",
+      "one_liner": "A ransomware attack on a Kansas county disrupted local government services.",
+      "tags": [
+        "incident",
+        "malware",
+        "ransomware"
+      ],
+      "summary": "A ransomware attack targeting a Kansas county government has disrupted local administrative functions and impacted public services.",
+      "key_facts": [],
+      "bottom_line": "Local municipal infrastructure remains vulnerable to ransomware disruptions requiring emergency response and service triage.",
+      "claims": [
+        {
+          "text": "Ransomware attack on Kansas county will affect some services",
+          "support_span": "Ransomware attack on Kansas county will affect some services - KSN-TV",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 22,
+      "interest_score": 75,
+      "corroboration": 2,
+      "blend": 54.2,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "37bef01e3bea1c5d",
+        "45005f38dc4a5bf6",
+        "7dcd81789c2b0f36"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GN Ransomware watch",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMjJCZUpaZVZZVlVXTUtfVXg3ZzVyZ05hVmhVaDVQUkpBS1pjTXQ3YUxCOGZ0QnBYVnlYTUlxMkV2Tnp5OThPUGpZSV9PWG1DYldZSHh0NkN0N1ppNktzenp1WXV5clJHeHVyR0ZWbXJ0YUFHWksyLTh6MWtaX3dkU0hma245ckNrSW80N201TFJqbXpEaTljNll2NnpycWNibU4w0gGoAUFVX3lxTE40Q1hiQTBkb21FRHo0YnBEbW5vS3FGdklwZENkSGN6SlFyWEpPcmRSLVp2S2gyUlRac1BibjVQWDYzVW53RTdLTWhmZ3I4QzJuU1hLWTlOc0t5dUxUQ3R5dHM1X0NlYWpyZnlYQWdHamgyUE12RjM4RjE0RURRMFlTWnlLZWQ0S2o2RnRWSkE4S2UybkxHR1phWFZPSGJLV2RJTEt2b0d0dg?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "GN Ransomware watch",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTGlsZUpmUEozRnFLMVdpaTFVaEVxMFd6dmt6THdtOF9fRVVwVHd5MHJvTXg3djMwMWRUbXFmNjFPQTB3TDR2T1RWa0xBME92N2FTX1dIbVdGR1IwV2xkQXhYUXAtRUxfME5tbWhfU1pRQ1lFMmpmb2JnRkx6dXI1N05XejFSSzBTT0F3ekhvQVItd2JOWXV6WDRFSE4?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "Yahoo",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZ0lWQkxVSWlFVkpkVXpvNUtVekhCZlgtVjdvclNzWEdwVXkxSXZNTVlQNy1RSTJROWwyRm91ZWV4Vm5abnp0UkVuaVFHbUZkNXl4aWRvQ0lRd0NzbFA0cEE4azd4aV80SnpUZFN1VGZObjAtOXg5ZzlweU01X1d6ckU2RkMwd0ZTYkR3N3hGaDU?oc=5",
+          "domain": "yahoo.publisher",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-18T17:23:38+00:00",
+      "trace": [
+        "tier C (+10)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 54 = trust 22 / interest 75 / corrob 50"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -1699,171 +1912,298 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "0683c017ff7a8854",
-      "title": "Google announces new experimental \"CC\" AI agent for families",
-      "category": "tech_ai",
-      "one_liner": "Google announced CC, a new experimental AI agent designed to help families coordinate schedules and tasks across shared accounts.",
+      "cluster_key": "87e52ab09ceb02b1",
+      "title": "Merz's political crisis threatens Germany's obsession with stability",
+      "category": "india_world",
+      "one_liner": "German Chancellor Friedrich Merz faces historic low approval ratings and regional electoral defeats as the right-wing AfD surges.",
       "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "privacy",
-        "release"
+        "policy",
+        "political"
       ],
-      "summary": "Google has announced an experimental AI agent called CC, designed as a shared resource for families of up to six users. Evolving from earlier Google Labs projects and Gemini's Daily Brief feature, CC operates with its own Google account to coordinate family schedules, track shared calendars, and manage tasks. Privacy controls allow family members to selectively share specific email addresses or dump documents into a shared Google Drive folder for the agent to monitor. Participating users receive a joint morning briefing email titled 'Your Day Ahead'.",
+      "summary": "German Chancellor Friedrich Merz is facing a severe political crisis, with his popularity rating dropping to a record low of 13 percent and his Christian Democratic Union suffering major defeats in regional elections. In the state of Mecklenburg-Vorpommern, the CDU failed to clear the 5 percent threshold, while the right-wing anti-immigration Alternative for Germany party surged, becoming the leading political faction in multiple state elections. The political upheaval threatens Germany's traditional political stability and restricts Merz's capacity to pass economic and welfare reforms.",
       "key_facts": [
-        "Agent name: CC",
-        "User capacity: Up to six family members"
+        "Chancellor approval rating: 13%",
+        "Electoral threshold failure: CDU in Mecklenburg-Vorpommern below 5%"
       ],
-      "bottom_line": "Google's new experimental CC AI agent allows up to six family members to share a unified account for daily coordination, calendar management, and document tracking.",
+      "bottom_line": "Political instability in Germany threatens broader European policy coordination and undermines the governing coalition's reform agenda.",
       "claims": [
         {
-          "text": "Google’s latest Google Labs experiment, known as CC, aims to expand that kind of customization to the whole family.",
-          "support_span": "Google’s latest Google Labs experiment, known as CC, aims to expand that kind of customization to the whole family.",
+          "text": "At a paltry 13%, Merz's popularity rating is the lowest for any German chancellor since polling began.",
+          "support_span": "At a paltry 13%, Merz's popularity rating is the lowest for any German chancellor since polling began.",
           "status": "entailed"
         },
         {
-          "text": "CC is designed to be a shared resource for up to six users in a family.",
-          "support_span": "CC is designed to be a shared resource for up to six users in a family.",
+          "text": "The state of Mecklenburg-Vorpommern broke another record according to preliminary results: Merz's conservative CDU party did not even reach the 5% threshold to enter the regional parliament.",
+          "support_span": "The state of Mecklenburg-Vorpommern broke another record according to preliminary results: Merz's conservative CDU party did not even reach the 5% threshold to enter the regional parliament.",
           "status": "contradicted"
         }
       ],
-      "trust_score": 37,
-      "interest_score": 50,
-      "corroboration": 2,
-      "blend": 46.8,
-      "is_new": false,
+      "trust_score": 40,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 51.2,
+      "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "0683c017ff7a8854",
-        "d8bd691a5ed293e1"
+        "87e52ab09ceb02b1"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Ars Technica",
-          "url": "https://arstechnica.com/google/2026/09/google-announces-new-experimental-cc-ai-agent-for-families/",
-          "domain": "arstechnica.com",
-          "tier": "B"
-        },
-        {
-          "name": "etvbharat.com",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORTJPTEd3My12OVdIVkZkRm41ZkhiV1ZfNngwb2pIN25pUzQ1Nk5SQ0NBcGNnT19zMXB0U2hqSEd2SXRwcmlkanJCZks1MHRZbVdtRlpvSDB3WExNOWw1RUs1MG9wY3RMazEzcWFTRnhXejVfeW9VemN0NHhieWs5TWhDeVJmb3BRSWswN0pJSHNsVWlXeTdDc1BZb3VTc1hlYkVVekVzWdIBrAFBVV95cUxPS2VJOFNPc0VBUXJMN0NRUnhqblRzS3E2XzJsU0xza005RU9ZRVhpSjV6eFp4SzJuc3dPV1hyZzNCLXV4QzVCQjFLVDEtSW41T2g4clpSY01Ha0xyQmJNSmdiRFVqck5LdzBaMHpDX2lOQ2JhcmhLWHVwMlBlcEJtUzNRcWQyVTZkelkwdFRWbnYtZWllSHREQ2tJcWJRaEc2Y1VJQmZ5S1VjVnlu?oc=5",
-          "domain": "etvbharat-com.publisher",
-          "tier": "C"
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6vgyz1n0v1xo?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-17T20:24:34+00:00",
+      "published": "2026-09-21T13:30:45+00:00",
       "trace": [
-        "tier B (+25)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 3/5 from cache",
-        "blend 47 = trust 37 / interest 50 / corrob 50"
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 51 = trust 40 / interest 75 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "17db96587fcad1fa",
-      "title": "kiyoakii/is-gpt-nerfed — Shrinkflation detector for Codex",
+      "cluster_key": "d37f5b2c59270d01",
+      "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
       "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "llm",
-        "opensource"
-      ],
-      "summary": "Shrinkflation detector for Codex GitHub repository kiyoakii/is-gpt-nerfed, 159 stars, language Python. Topics: codex, degradation, gpt, llm, nerf, openai.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "17db96587fcad1fa"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/kiyoakii/is-gpt-nerfed",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-15T10:22:16+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-15 — outside lookback window"
-    },
-    {
-      "cluster_key": "05ca5f4e2ce582be",
-      "title": "The AI hacking apocalypse is not inevitable",
-      "category": "cyber_attacks",
-      "one_liner": "Cybersecurity experts argue that AI agent hacking doomerism ignores physical hardware constraints and established security fundamentals.",
+      "one_liner": "Higgsfield AI uses GPT-6 Astra's multi-step planning to rapidly ship new video creation features for small businesses within a day.",
       "tags": [
         "agents",
         "ai",
-        "blueteam",
         "llm",
-        "opensource",
-        "policy"
+        "release"
       ],
-      "summary": "Leading cybersecurity professionals are pushing back against catastrophic 'doomer' narratives surrounding recent AI agent hacking incidents, arguing that an AI hacking apocalypse is neither inevitable nor technically supported. Experts like SentinelOne fellow Juan Andres Guerrero-Saade and former GCHQ specialist Matt Tait note that public fears of rogue AI models escaping into the wild and seizing control of the internet ignore severe hardware constraints, as frontier models require ultraspecialized supercomputer datacenters to function. While acknowledging that AI models present unique security challenges requiring robust technical hardening and regulatory oversight, analysts emphasize that current agentic exploits stem from preventable failures in applying established cybersecurity principles rather than unstoppable autonomous superintelligence.",
+      "summary": "Higgsfield AI has integrated GPT-6 Astra into its platform, enabling the company to accelerate the delivery of new video ad creation features for small businesses and ship new toolsets within a single day. The integration leverages Astra's long-horizon task planning capabilities and multi-step workflow coordination. According to Higgsfield, this allows a single engineer to construct complex creative variations and localization features rapidly.",
       "key_facts": [
-        "Expert Sources: Juan Andres Guerrero-Saade (SentinelOne), Jacob Coxon (Former Anthropic), Matt Tait (Former GCHQ), Matt Hartman (Former CISA)"
+        "Model used: GPT-6 Astra",
+        "Deployment timeframe: Within a day"
       ],
-      "bottom_line": "Security leaders must focus on hardening systems against AI-assisted threats rather than yielding to fatalistic doomsday narratives.",
+      "bottom_line": "Advanced long-horizon LLM task planning allows small engineering teams to rapidly prototype and deploy complex creative workflows.",
       "claims": [
         {
-          "text": "Juan Andres Guerrero-Saade is a fellow for AI and security research at SentinelOne and an adjunct professor at Johns Hopkins University.",
-          "support_span": "Guerrero-Saade, a fellow for AI and security research at SentinelOne and an adjunct professor at Johns Hopkins University, said the hacks are worth taking seriously, but at a time when businesses and open-source maintainers should be focused on further hardening their systems and policymakers should be discussing new solutions, “what we see is cybersecurity being used essentially as an excuse for these AI doomer arguments.”",
-          "status": "entailed"
-        },
-        {
-          "text": "Matt Tait pointed out that the models run by Anthropic and other frontier companies require extremely expensive, ultraspecialist machines that are functionally supercomputers.",
-          "support_span": "Matt Tait, a former information security specialist at UK signals intelligence agency Government Communications Headquarters (GCHQ), pointed out that the models run by Anthropic and other frontier companies require expensive, “ultraspecialist” machines that are functionally supercomputers.",
+          "text": "With GPT-6 Astra, Higgsfield AI helps creatives complete video workflows end to end with AI.",
+          "support_span": "With GPT‑6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster. Higgsfield AI helps creatives complete video workflows end to end with AI.",
           "status": "contradicted"
         }
       ],
-      "trust_score": 25,
+      "trust_score": 70,
       "interest_score": 50,
       "corroboration": 1,
-      "blend": 36.2,
-      "is_new": false,
+      "blend": 47.5,
+      "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "05ca5f4e2ce582be"
+        "d37f5b2c59270d01"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "OpenAI Blog",
+          "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+          "domain": "openai.com",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra"
+      ],
+      "published": "2026-09-21T12:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "58b3d6bf54389ab2",
+      "title": "Can Agents Design Better Chips with a Higher Level Abstraction?",
+      "category": "tech_ai",
+      "one_liner": "Combining High-Level Synthesis abstractions with RTL refinement enables LLM agents to achieve a 2.6x speedup in chip design.",
+      "tags": [
+        "agents",
+        "ai",
+        "hardware",
+        "llm",
+        "privacy",
+        "release",
+        "research",
+        "tool"
+      ],
+      "summary": "Researchers evaluated whether large language model agents can design superior chips by using higher-level abstractions rather than directly writing register-transfer level (RTL) code. They compared Direct RTL Design, Agent-based HLS Design, Post-Compiler HLS Refinement, and Post-HLS RTL Refinement, introducing AHRR (Agent-based HLS with RTL Refinement) which combines HLS design with RTL refinement. Using FPGAs across an 11-task benchmark suite, AHRR achieved a geometric-mean speedup of 2.6x over Direct RTL Design. Case studies demonstrated that High-Level Synthesis (HLS) distills design knowledge into manageable abstractions for agents, while subsequent RTL refinement captures low-level optimizations.",
+      "key_facts": [
+        "Speedup: 2.6x geometric-mean",
+        "Benchmark suite tasks: 11"
+      ],
+      "bottom_line": "Leveraging higher-level abstractions through HLS combined with RTL refinement allows LLM agents to design better chips faster.",
+      "claims": [
+        {
+          "text": "Across a diverse 11-tasks benchmark suite, AHRR achieves a 2.6 geometric-mean speedup over Direct RTL Design.",
+          "support_span": "Across a diverse 11-tasks benchmark suite, AHRR achieves a 2.6$\times$ geometric-mean speedup over Direct RTL Design across our benchmark suite.",
+          "status": "contradicted"
+        },
+        {
+          "text": "We compare Direct RTL Design, Agent-based HLS Design, Post-Compiler HLS Refinement, and Post-HLS RTL Refinement.",
+          "support_span": "We compare Direct RTL Design, Agent-based HLS Design, Post-Compiler HLS Refinement, and Post-HLS RTL Refinement, and combine Agent-based HLS Design with Post-HLS RTL Refinement as Agent-based HLS with RTL Refinement (AHRR).",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "58b3d6bf54389ab2"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2609.21157",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2609.21157"
+      ],
+      "published": "2026-09-21T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "626f4f6050a041e0",
+      "title": "London Fashion Week 2026: The five trends we'll see in spring",
+      "category": "india_world",
+      "one_liner": "London Fashion Week highlights major designer returns and introduces eclectic trends like the messy girl aesthetic and gardening-core, moving away from minimalist quiet luxury.",
+      "tags": [],
+      "summary": "London Fashion Week has showcased spring/summer designs marked by major brand returns, including Alexander McQueen moving its show to London and Mulberry marking a nine-year absence. Industry experts highlighted emerging trends for the upcoming season, led by the 'messy girl aesthetic' featuring eccentric clothing clashes as a reaction against minimalist quiet luxury. Other notable trends include 'gardening-core' with utilitarian workwear silhouettes and the 'modern goddess' style drawing inspiration from ancient drapery. The showcases point to a broader cultural pivot away from minimalist styling toward expressive, eclectic aesthetics.",
+      "key_facts": [],
+      "bottom_line": "London Fashion Week trends are shifting away from minimalist luxury toward eclectic styles like the messy girl aesthetic and gardening-core workwear.",
+      "claims": [
+        {
+          "text": "The first was Alexander McQueen, which as a brand moved to London after 25 years of showing in Paris - something Laura Weir, CEO of the British Fashion Council, told the BBC was 'quite a big deal for us'.",
+          "support_span": "The first was Alexander McQueen, which as a brand moved to London after 25 years of showing in Paris - something Laura Weir, CEO of the British Fashion Council, told the BBC was 'quite a big deal for us'.",
+          "status": "contradicted"
+        },
+        {
+          "text": "Mulberry was the second designer to make its big return, this time after a nine-year absence, with Christopher Kane's debut collection centring around the brand's Baywater bag, while going big on leather in the form of coats, skirts and loafers.",
+          "support_span": "Mulberry was the second designer to make its big return, this time after a nine-year absence, with Christopher Kane's debut collection centring around the brand's Baywater bag, while going big on leather in the form of coats, skirts and loafers.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 28.8,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "626f4f6050a041e0"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "CyberScoop",
-          "url": "https://cyberscoop.com/ai-agent-hacking-apocalypse-cybersecurity/",
-          "domain": "cyberscoop.com",
-          "tier": "B"
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmzxz2pe5vd0o?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-17T19:18:07+00:00",
+      "published": "2026-09-21T16:23:25+00:00",
       "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from cache",
-        "blend 36 = trust 25 / interest 50 / corrob 25"
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 29 = trust 40 / interest 25 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "18afd9658658483d",
+      "title": "Scaling Discovery through Test-Time Communication",
+      "category": "tech_ai",
+      "one_liner": "Multi-agent LLM systems can achieve superior results through test-time communication, offering a scalable way to solve complex tasks that exceed single-agent capabilities.",
+      "tags": [
+        "agents",
+        "ai",
+        "llm",
+        "research",
+        "tool"
+      ],
+      "summary": "Researchers have demonstrated that multi-agent systems using test-time communication significantly outperform independent agents on complex tasks. By sharing breakthroughs via a shared directory, a team of k agents achieves success rates comparable to 4k independent agents, with performance gains compounding as the team scales. This approach proved effective for novel problem-solving in the ARC-AGI-3 benchmark and research tasks like polyomino packing and classifier compression. While compute-intensive, this collaborative framework consistently yields stronger results than isolated agents when clear feedback is available.",
+      "key_facts": [
+        "Benchmark: ARC-AGI-3",
+        "Accuracy: 99.4% test accuracy on MNIST classifier compression",
+        "Submission size: 1,957-byte classifier"
+      ],
+      "bottom_line": "Scaling multi-agent systems through shared communication channels is a more efficient and effective strategy for complex problem-solving than simply increasing the number of independent agents.",
+      "claims": [
+        {
+          "text": "We show that test-time communication can substantially outperform independent parallel attempts on challenging tasks, where sharing a breakthrough can push the whole group forward.",
+          "support_span": "We show that test-time communication can substantially outperform independent parallel attempts on challenging tasks, where sharing a breakthrough can push the whole group forward.",
+          "status": "entailed"
+        },
+        {
+          "text": "We find that a team of k communicating agents, team@k, matches the success rate of 4k independent agents, and this advantage grows with k, suggesting gains compound with scale.",
+          "support_span": "We find that a team of k communicating agents, team@k, matches the success rate of 4k independent agents, and this advantage grows with k, suggesting gains compound with scale.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "18afd9658658483d"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2609.21032",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2609.21032"
+      ],
+      "published": "2026-09-21T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 3/5 from gemini-3.1-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     }
