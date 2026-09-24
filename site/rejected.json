@@ -1,102 +1,239 @@
 {
-  "generated_at": "2026-09-23T00:26:15.466235+00:00",
+  "generated_at": "2026-09-24T00:24:57.918778+00:00",
   "items": [
     {
-      "cluster_key": "e67dbd6c9085e2e3",
-      "title": "PureRAT – msbuild.exe Execution, C2 Extraction & .NET Evasion https://github.com/kaandemir993/PureRAT-msbuild.exe--C2-Extraction--Net-Evasion-Analysis…",
-      "category": "cyber_tools",
-      "one_liner": "A new GitHub analysis breaks down PureRAT's msbuild.exe execution flow, C2 extraction, and .NET evasion behaviors.",
+      "cluster_key": "2fab826d8efc9c48",
+      "title": "CVE-2026-84691 - Automation-controller: automation-controller-container: automation-controller: format string injection in the api 4xx error log setting discloses django secret_key and database credentials to an administrator",
+      "category": "cyber_attacks",
+      "one_liner": "A format string vulnerability in Red Hat Ansible Automation Platform allows administrators to extract Django secrets and database passwords via crafted 4XX error logs.",
       "tags": [
-        "blueteam",
-        "dfir",
-        "malware",
-        "opensource",
-        "redteam",
-        "research",
-        "windows",
-        "writeup"
+        "cve",
+        "identity",
+        "vulnerability"
       ],
-      "summary": "An analytical write-up published on GitHub examines PureRAT's execution mechanics utilizing msbuild.exe, C2 data extraction techniques, and .NET evasion strategies. The resource provides technical details useful for threat hunters and defenders analyzing malware execution chains and evasion methods.",
-      "key_facts": [],
-      "bottom_line": "Defenders can utilize new technical breakdowns of PureRAT to improve detection engineering against .NET-based malware evasion.",
+      "summary": "A format string injection vulnerability exists in Red Hat Ansible Automation Platform's automation-controller within the API 4XX error log setting (CVE-2026-84691). Because Python string formatting allows attribute traversal on its arguments, an authenticated administrator can craft a template that walks from a live user object into application settings, exposing the Django secret key and database password. If logs are forwarded to an administrator-controlled aggregator, the master encryption key and database password can be exfiltrated for offline decryption of credentials.",
+      "key_facts": [
+        "CVE-2026-84691: Format string injection in automation-controller API 4xx error log setting",
+        "Impact: Discloses Django secret_key and database credentials"
+      ],
+      "bottom_line": "CVE-2026-84691 allows admins to extract Django secrets and database passwords via format string injection in Ansible automation-controller logs.",
       "claims": [
         {
-          "text": "PureRAT – msbuild.exe Execution, C2 Extraction & .NET Evasion https://github.com/kaandemir993/PureRAT-msbuild.exe--C2-Extraction--Net-Evasion-Analysis…",
-          "support_span": "PureRAT – msbuild.exe Execution, C2 Extraction & .NET Evasion https://github.com/kaandemir993/PureRAT-msbuild.exe--C2-Extraction--Net-Evasion-Analysis…",
+          "text": "A flaw was found in Red Hat Ansible Automation Platform's automation-controller.",
+          "support_span": "A flaw was found in Red Hat Ansible Automation Platform's automation-controller.",
           "status": "contradicted"
+        },
+        {
+          "text": "The setting that formats the log message emitted for API 4XX errors is an administrator-controlled Python format-string template that is rendered with a live user object as an argument.",
+          "support_span": "The setting that formats the log message emitted for API 4XX errors is an administrator-controlled Python format-string template that is rendered with a live user object as an argument.",
+          "status": "entailed"
         }
       ],
-      "trust_score": 10,
-      "interest_score": 50,
+      "trust_score": 40,
+      "interest_score": 75,
       "corroboration": 1,
-      "blend": 32.5,
-      "is_new": false,
+      "blend": 51.2,
+      "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "e67dbd6c9085e2e3"
+        "2fab826d8efc9c48"
       ],
       "critical_signal": "",
-      "priority": "minor",
+      "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "SecHarvester",
-          "url": "https://github.com/kaandemir993/PureRAT-msbuild.exe--C2-Extraction--Net-Evasion-Analysis",
-          "domain": "github.com",
-          "tier": "C"
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-84691",
+          "domain": "cvefeed.io",
+          "tier": "A"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-22T00:09:42+00:00",
+      "published": "2026-09-23T20:17:17+00:00",
       "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 32 = trust 10 / interest 50 / corrob 25"
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 51 = trust 40 / interest 75 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "71c0c30e12b6c7d2",
-      "title": "ethanplusai/astra-flash-orchestrator — Astra plans and reviews; DeepSeek Flash builds. A native Codex workflow with phased tasks, verification, safe ",
-      "category": "tech_ai",
-      "one_liner": "",
+      "cluster_key": "044e8a95e272de8e",
+      "title": "New Windows Defender zero-day blocks Microsoft antivirus updates https://www.bleepingcomputer.com/news/security/new-windows-defender-zero-day-blocks-microsoft-a…",
+      "category": "cyber_tools",
+      "one_liner": "A new Microsoft Defender zero-day exploit called BigDiskBuster allows standard users to block antivirus definition updates.",
       "tags": [
-        "agents",
         "ai",
-        "llm",
-        "opensource"
+        "blueteam",
+        "cve",
+        "exploit",
+        "release",
+        "tool",
+        "vulnerability",
+        "writeup"
       ],
-      "summary": "Astra plans and reviews; DeepSeek Flash builds. A native Codex workflow with phased tasks, verification, safe installation and reversible setup. GitHub repository ethanplusai/astra-flash-orchestrator, 596 stars, language Python. Topics: agent-orchestration, ai-agents, codex, codex-skills, deepseek, developer-tools.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
+      "summary": "Security researcher Abdelhamid Naceri released a new Microsoft Defender zero-day exploit named 'BigDiskBuster' that blocks antivirus definition updates on all supported Windows versions. The proof-of-concept tool must run continuously in the background to deny platform and signature updates, leaving systems stuck on their current version. This release stems from an ongoing dispute following the researcher's termination in March 2025, following a series of other recent privilege escalation and DoS flaws like 'ShieldCrash' and 'RoguePlanet'. Microsoft has not yet provided an official patch for this specific issue or commented on the disclosure.",
+      "key_facts": [
+        "Vulnerability Name: BigDiskBuster",
+        "Researcher: Abdelhamid Naceri (Nightmare Eclipse)",
+        "Target: Microsoft Defender update mechanism across all supported Windows versions"
+      ],
+      "bottom_line": "BigDiskBuster provides a denial-of-service vector against Microsoft Defender updates, leaving Windows systems vulnerable if left unpatched.",
+      "claims": [
+        {
+          "text": "Security researcher Abdelhamid Naceri released a Microsoft Defender zero-day exploit that blocks antivirus updates.",
+          "support_span": "security researcher Abdelhamid Naceri (also known as Nightmare Eclipse) released another Microsoft Defender zero-day exploit that blocks antivirus updates.",
+          "status": "entailed"
+        },
+        {
+          "text": "Naceri named it BigDiskBuster and said allowed standard users to block definition updates.",
+          "support_span": "Naceri named it BigDiskBuster and said allowed standard users to block definition updates.",
+          "status": "entailed"
+        },
+        {
+          "text": "BigDiskBuster works on all supported Windows versions and needs to run in the background.",
+          "support_span": "The security researcher added that BigDiskBuster works on all supported Windows versions and needs to run in the background to block Defender updates.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 61,
+      "interest_score": 100,
+      "corroboration": 8,
+      "blend": 90.2,
       "is_new": false,
-      "summary_source": "extract",
+      "summary_source": "model",
       "alt_keys": [
-        "71c0c30e12b6c7d2"
+        "044e8a95e272de8e",
+        "0a64a1b41efb97d6",
+        "160cd4c6fc477058",
+        "1ad5cf800885b476",
+        "32fc44bf62b8276f",
+        "384ff55b8a79a60f",
+        "45f29bbeb88bb95e",
+        "57fb82d0c1306f7b",
+        "61734ab6ff73256a",
+        "6818e2b702688118",
+        "9a6fa92ba7f2e911",
+        "d1d540cc10415e57",
+        "df5d53f03b14fbcf",
+        "f8068dc21261b3f8",
+        "ff08807bc8e0e460",
+        "ff531f41c9c4a92b"
       ],
       "critical_signal": "",
-      "priority": "minor",
+      "priority": "critical",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/ethanplusai/astra-flash-orchestrator",
-          "domain": "github.com",
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
+          "domain": "arstechnica.com",
+          "tier": "B"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/new-windows-defender-zero-day-blocks-microsoft-antivirus-updates/",
+          "domain": "bleepingcomputer.com",
+          "tier": "B"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/eviltokens-phaas-disrupted-after-compromising-12-000-microsoft-accounts/",
+          "domain": "bleepingcomputer.com",
+          "tier": "B"
+        },
+        {
+          "name": "DarkReading",
+          "url": "https://www.darkreading.com/identity-access-management-security/microsoft-disrupts-eviltokens-device-code-phishing-service",
+          "domain": "darkreading.com",
+          "tier": "B"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://www.securityweek.com/ai-powered-phishing-platform-eviltokens-disrupted-by-microsoft/",
+          "domain": "securityweek.com",
+          "tier": "B"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/researcher-drops-bigdiskbuster-zero-day.html",
+          "domain": "thehackernews.com",
+          "tier": "B"
+        },
+        {
+          "name": "The Register Security",
+          "url": "https://www.theregister.com/security/2026/09/22/nightmareeclipses-latest-zero-day-leaves-microsoft-defender-stuck-in-the-past/5298320",
+          "domain": "theregister.com",
+          "tier": "B"
+        },
+        {
+          "name": "CTI Now",
+          "url": "https://ift.tt/kwGUt0o",
+          "domain": "ift.tt",
+          "tier": "C"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPT1hkaXowTzZvc3ZKOUtJU3dGdGpGdDZPMTA4cktWMzFKWFhSMHA4OGdyUnJTa2NuSGUxYWhwS1dzVnBJdG5zM2F5dlNiV2g1VGhqWFdFYzFrUm9mNUpsWGFqQmhZQktuUTR2dEY5aXBpTkNhQ0I5Rl9BdWNtR0VXZW5XNk42VkZ6WFlqMGxwQXRsQlQtOV9ISFJ1WUU2VkpFSXJ6U3NOOHdGdWM3TlRkMDBn0gG3AUFVX3lxTFA4WHBfZGs0RmJuQjFCZnJmcmE2eEJrUkpEUlRuaUNGVVBYZDY3X2hFTlN0VHVieHFhR0VJYWwyYU5Zd3hhdVU0azR4TktWQmVONGN5UGxWUDRucnJzSF80LUZvbUROeGhaNHlVbXFsSURpMW8zSm4zYzdXdGt0a25yRDlZQzRfNEwtYVR6T2RQcmtZekdGcXpoU0hGWGxDS2dCUmp2bW00VjRSdWZ5a0hjY2VoOEktdw?oc=5",
+          "domain": "bleepingcomputer.com",
+          "tier": "C"
+        },
+        {
+          "name": "CyberSecurityNews",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBhT0VmUnhySE5UWVdLR2V0RW5pcUlTMEcySWdGcHRfVVgwVkZaNjJfX1p2ODVrVDFBWU5oYzBsbl9NcnhlWlZybTltb3pHdm9rVXRnc3VZaE1yRTNnMlFoQm5kUTcyTHZXT2hhRmVPc9IBdEFVX3lxTE9WbWVoMy10QU14M25Tai1WX3hvYXBOZDN3MVdwRWFSS0pnejJ2STByZW9GZk1SMDJ1UGhuZVF2SEVIaDVFanJqUXpVeDBTcVpueHF0NTRHbmptQW85bzRZS3M4eEZRcm1KWTNhMUZndDdCekdk?oc=5",
+          "domain": "cybersecuritynews.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "SecNews.gr",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPaUl4TlNIdGlwTGFiTFk1QVZoUnhtdk81bGdFSDN5cUFEYUlUZUFualNPWi0tR0tiemZjNUZraFZXcER6WjUxSTdFejRVcHpHRWI5Z2lTMk5HQzFmZ2VMTlowUmRGNC1kWUFHbWJXX19OZXZUS2xXSDBMUTdVTUE4Zw?oc=5",
+          "domain": "secnews-gr.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "shattered.io",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1GaFJCcWFfMXdkYWVHYWZJTS1aU0V2YWF6OUloTmFGVGVPYy0zSXlSU1pwMnljMjRsWFZKU3hFU1czRDE0UUNKd1g2SE9iS0lwSEh5ZkRJbkVydnNLMEJ6Tm53T2pGZGJKUnFfcFJaWU00MUxURzc4?oc=5",
+          "domain": "shattered-io.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "TechJuice",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZnNpUTRTcXk4TVhqSUlMODI4eHcyMXZRNXlPeXl5TDZKWnlWOHJ3NjBMXzBMLTZ0QlVMdmJROWo3X2MzbFV3ZnVSQXhFT3lWbXVnSlhVRXVzck9PbEZVNlQ0emtURmlTVDdySVVTblczZm43RFA4N19jeU9uekRNYQ?oc=5",
+          "domain": "techjuice.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVWlFQXduamR2UldWYjY4YUtKYTkxMi1RbjcxNnFPVlp0Y3JCaXBqRHNlV25NWEVUQ3k3SnZHc0ZwdzNSanJzSVhubW9sRk5TLTZ5NGtldUhSblIzNEhJVkpTUXJWWVJFYlE4eFZoT2tsbXVPUGV2elpJck9YOFo0Tno3QXQ?oc=5",
+          "domain": "thehackernews.com",
+          "tier": "C"
+        },
+        {
+          "name": "The Register",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQeW9OMWFYXzVlLW9BeVM3aE5Hbkl1Vm1ZbkFNV2I1VUNINFRmNkIyZThWZ1VoYWh0bWRjYlZ4QkJGbkhyZ3NiMmRKUk05UVdPZnB3aklEUUp0YkRWYnR1VnBJamVKRDdpaS04eUNHNmFuV0Ffb3MtcGR0emJ2dy01RHdEVE04TzgwdkJEMmwwUFIwRFdlcEZYSlBQb3VGV2tQSmw0Z1BYcU1uMjFtVjdaYkRKMjNzOFNCRXZJNDNBeGNvMGRITTdsbk00aU5QUQ?oc=5",
+          "domain": "theregister.com",
+          "tier": "C"
+        },
+        {
+          "name": "Windows Report",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNS1hOQzZHQ1NaWnliR3F5czRGNDFvUzA2MFJaSzY4c0tfaDU5WHQ2SmdLeFp5dEQ4OFpMRjFhV0J4VFpVdzgtMXVkajZzYzFFVnBzN3ZteUdzaUZGQWpVOEtsMzZHSmdPcS1ldi1OWlhQSHE0cDFSc21ZZF9lMVE0eDZiXzc3dS1JRFZfRnZBZEo3NGx1?oc=5",
+          "domain": "windows-report.publisher",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-17T05:42:31+00:00",
+      "published": "2026-09-21T09:27:43+00:00",
       "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
+        "tier B (+25)",
+        "8 independent outlets (+36)",
+        "verified: 8 independent outlets",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 90 = trust 61 / interest 100 / corrob 100"
       ],
-      "reject_reason": "published 2026-09-17 — outside lookback window"
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
       "cluster_key": "f7ac9574bab04b59",
@@ -138,15 +275,14 @@
       "reject_reason": "published 2026-09-17 — outside lookback window"
     },
     {
-      "cluster_key": "530cc85378654f5c",
-      "title": "The state of public AI benchmarking is dire and is undermining our ability to understand how good AI is now Most famous measures are maxed out, and…",
+      "cluster_key": "33761ca3c99ab020",
+      "title": "Hey Claude, \"Pick a problem or mystery that obsesses you and solve it as best you can & make a movie we can share on social media about it\" So it…",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "ai",
-        "research"
+        "llm"
       ],
-      "summary": "The state of public AI benchmarking is dire and is undermining our ability to understand how good AI is now Most famous measures are maxed out, and, as this paper shows, the non-saturated benchmarks are riddled with so many errors that they vastly underestimate AI abilities arxiv.org/abs/2609.13009 (Bluesky post by @emollick.bsky.social — 125 likes, 17 reposts)",
+      "summary": "Hey Claude, \"Pick a problem or mystery that obsesses you and solve it as best you can & make a movie we can share on social media about it\" So it took a crack at the Voynich Manuscript & failed. Then it made this movie, which is pretty interesting to watch and a good explainer. (Bluesky post by @emollick.bsky.social — 113 likes, 13 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -157,7 +293,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "530cc85378654f5c"
+        "33761ca3c99ab020"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -165,17 +301,17 @@
       "sources": [
         {
           "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvneqxjm3s22",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvr3litp3k2i",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-16T14:42:39.945000+00:00",
+      "published": "2026-09-18T02:09:12.062000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-16 — outside lookback window"
+      "reject_reason": "published 2026-09-18 — outside lookback window"
     },
     {
       "cluster_key": "6b2ffae94e143f78",
@@ -218,98 +354,43 @@
       "reject_reason": "published 2026-09-17 — outside lookback window"
     },
     {
-      "cluster_key": "0c06593fa9d7c8f6",
-      "title": "AbdelStark/awesome-typesafe-jev — Awesome Jev: a source-backed field guide to TypeSafe's System One model, with SDKs, live demos, agent tools, a",
+      "cluster_key": "764e548ef5fa36f8",
+      "title": "If I were to write about my experiences on a private world of warcraft server where i'm the only player amongst hundreds of bots, what would you…",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "agents",
-        "ai",
-        "howto",
-        "opensource",
-        "release",
-        "research",
-        "vulnerability"
+        "windows"
       ],
-      "summary": "Jev gives your software a typed judgment. A community field guide to TypeSafe's Jev: see one documented call, try live projects, copy a starter, and inspect independent tests. Try a live build · Shape a decision · Explore projects · Add your project · Star on GitHub One call, three typed answers. TypeSafe's documented support-ticket example shows the saved jev-1.13.0 response below. This is a published example, not a live model call.",
+      "summary": "If I were to write about my experiences on a private world of warcraft server where i'm the only player amongst hundreds of bots, what would you want me to talk about in it? (Bluesky post by @xeiaso.net — 15 likes, 0 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
       "trust_score": 0,
       "interest_score": 0,
-      "corroboration": 2,
+      "corroboration": 1,
       "blend": 0.0,
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "0c06593fa9d7c8f6",
-        "27262aa26cd89506",
-        "4eb343e53d9b4a30",
-        "877e1b6a1c340b49",
-        "d64056cf9a0e88aa",
-        "ef056e052d7aa467",
-        "f3bf22aa837e11de",
-        "f88af0222c9865fa"
+        "764e548ef5fa36f8"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/AbdelStark/awesome-typesafe-jev",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/kraayenjon/awesome-jev",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/cobanov/awesome-jev",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/yibie/awesome-jev",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/v-modal/awesome-jev-tools",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/valentynkit/awesome-jev-typesafe",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "iNews Zoombangla",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1NMlBFU0J0ZjZKSjA1N3J3X2hxdG16bTRMNDdhblZFWUlGVU9RNGhjTnhtWmZwNkljT2FlQ0FMMVM5alFqNXY2eFBjMWtINExwakh4LXRSVkt6OE5fUjd6UTBXU0x4TEUtTFc4TVAzZWdVZHZtdzNGOFhFYTA0QQ?oc=5",
-          "domain": "inews-zoombangla.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "marktechpost.com",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE50UkR5alh0Y0wyODFWbFRHZVZ0dTBpb0dlZnhBRTJ5TzN0aWoyWnZ1Ynl3ZWFQVHo4aUNrRG4xdFVHVXBkb1JmdFk2R0lwbWdPdzlaMy01NDB5VUVGVjV5cm5YV1A5bUZpRTFJR2lRME94R03SAXhBVV95cUxPVFpfbHhidFNRQ1JlYllPbldPd080alJ2aFZJM3BOVVNrSUlvX0hqaG1iVHBRcEJaajN0XzlZN2NkQVBXekRyeVhNcVlfQUpOb1dWTGxIc2M2VjZKTm9DOHhNYTg2amZ5Szl5S1IxdmNyUnNxWTlfdm0?oc=5",
-          "domain": "marktechpost-com.publisher",
+          "name": "Xe Iaso",
+          "url": "https://bsky.app/profile/xeiaso.net/post/3mvrdbnvrds2b",
+          "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-17T06:56:37+00:00",
+      "published": "2026-09-18T04:26:51.764000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-17 — outside lookback window"
+      "reject_reason": "published 2026-09-18 — outside lookback window"
     },
     {
       "cluster_key": "95a20b8cab2f69c2",
@@ -352,8 +433,8 @@
       "reject_reason": "published 2026-09-17 — outside lookback window"
     },
     {
-      "cluster_key": "f03bb399d225f4ff",
-      "title": "Dicklesworthstone/skillranker — Rust CLI powered by Jev from TypeSafe.ai that ranks agent skills for the next step using live session context.",
+      "cluster_key": "9cd6eb69c56973ff",
+      "title": "kishormorol/cli-faq-shortcuts — An Agent Skill that turns the asks you keep typing into short commands, mined from your own Claude Code and Co",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
@@ -363,7 +444,7 @@
         "opensource",
         "tool"
       ],
-      "summary": "Rust CLI powered by Jev from TypeSafe.ai that ranks agent skills for the next step using live session context. Includes Claude Code hooks, structured JSON, abstention, and local feedback. GitHub repository Dicklesworthstone/skillranker, 113 stars, language Rust. Topics: agent-skills, ai-agents, asupersync, claude-code, cli, developer-tools, frankentui, jev.",
+      "summary": "An Agent Skill that turns the asks you keep typing into short commands, mined from your own Claude Code and Codex history. GitHub repository kishormorol/cli-faq-shortcuts, 103 stars, language Python. Topics: agent-skills, ai-agents, anthropic, automation, claude, claude-code, claude-code-skills, cli.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -374,7 +455,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "f03bb399d225f4ff"
+        "9cd6eb69c56973ff"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -382,27 +463,27 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/Dicklesworthstone/skillranker",
+          "url": "https://github.com/kishormorol/cli-faq-shortcuts",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-17T06:58:19+00:00",
+      "published": "2026-09-18T22:23:41+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-17 — outside lookback window"
+      "reject_reason": "published 2026-09-18 — outside lookback window"
     },
     {
-      "cluster_key": "d41bb72de8417f90",
-      "title": "Study from Google about AI use in science, complex impacts: acceleration (7 hours saved per week) along with shifts in the kind of work (more…",
+      "cluster_key": "6d42cf6a6b7067f3",
+      "title": "Being a computer scientist who refuses to find anything about LLMs interesting right now is a bit like being a geneticist who refuses to find…",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "ai"
+        "windows"
       ],
-      "summary": "Study from Google about AI use in science, complex impacts: acceleration (7 hours saved per week) along with shifts in the kind of work (more verification) and what research gets done (possibly safer topics). Also a good diagram of the jagged frontier in science right now. (Bluesky post by @emollick.bsky.social — 66 likes, 17 reposts)",
+      "summary": "Being a computer scientist who refuses to find anything about LLMs interesting right now is a bit like being a geneticist who refuses to find anything interesting about the recently opened Jurassic Park (Bluesky post by @simonwillison.net — 814 likes, 80 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -413,25 +494,65 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "d41bb72de8417f90"
+        "6d42cf6a6b7067f3"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvmhlphggk27",
+          "name": "Simon Willison",
+          "url": "https://bsky.app/profile/simonwillison.net/post/3mvsv535dyk25",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-16T06:00:45.210000+00:00",
+      "published": "2026-09-18T19:19:04.963000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-16 — outside lookback window"
+      "reject_reason": "published 2026-09-18 — outside lookback window"
+    },
+    {
+      "cluster_key": "e2a08a52d1859bac",
+      "title": "logicrw/awesome-jev-projects — Awesome Jev: source-backed open-source ecosystem radar, plain-language project discovery, and automatic GitHub",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "ai",
+        "opensource"
+      ],
+      "summary": "Awesome Jev: source-backed open-source ecosystem radar, plain-language project discovery, and automatic GitHub sync GitHub repository logicrw/awesome-jev-projects, 448 stars, language JavaScript. Topics: ai-agents, awesome, awesome-list, decision-model, developer-tools, jev, jev-model, system-one.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "e2a08a52d1859bac"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/logicrw/awesome-jev-projects",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-18T06:41:50+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-18 — outside lookback window"
     },
     {
       "cluster_key": "adabc02079d52182",
@@ -473,386 +594,71 @@
       "reject_reason": "published 2026-09-17 — outside lookback window"
     },
     {
-      "cluster_key": "3cc49e9f77344778",
-      "title": "CVE-2026-86591 (CRITICAL 9.8): The Botiga Pro WordPress plugin before 1.6.5 does not perform any authorisation checks on one of its REST rou…",
-      "category": "cyber_attacks",
-      "one_liner": "A critical authorization flaw in Botiga Pro WordPress plugin before 1.6.5 allows unauthenticated full site takeovers.",
+      "cluster_key": "df489c10521cd2bd",
+      "title": "bilawalsidhu/gods-eye-view — A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a",
+      "category": "cyber_tools",
+      "one_liner": "An open-source browser-based 3D geospatial intelligence platform provides live satellite and spatial tracking using real-world data.",
       "tags": [
-        "appsec",
-        "cve",
-        "exploit",
-        "vulnerability"
-      ],
-      "summary": "An unauthenticated vulnerability, designated as CVE-2026-86591 with a critical CVSS score of 9.8, affects versions of the Botiga Pro WordPress plugin prior to 1.6.5. The flaw stems from a lack of authorization checks on one of its REST routes, allowing unauthenticated attackers to update arbitrary WordPress options with malicious values. This can lead directly to privilege escalation and a full site takeover, as well as permit the storage of arbitrary web scripts executed on every front-end page and the unauthorized movement of posts to the trash. Site administrators running affected versions must update immediately to mitigate the takeover risk.",
-      "key_facts": [
-        "CVE-2026-86591: CVSS 9.8",
-        "Affected: Botiga Pro WordPress plugin before 1.6.5"
-      ],
-      "bottom_line": "Unauthenticated attackers can achieve full site takeover and privilege escalation via an unmitigated REST route in Botiga Pro before 1.6.5.",
-      "claims": [
-        {
-          "text": "The Botiga Pro WordPress plugin before 1.6.5 does not perform any authorisation checks on one of its REST routes, allowing unauthenticated users to update arbitrary WordPress options with arbitrary values, which could lead to privilege escalation and a full site takeover.",
-          "support_span": "The Botiga Pro WordPress plugin before 1.6.5 does not perform any authorisation checks on one of its REST routes, allowing unauthenticated users to update arbitrary WordPress options with arbitrary values, which could lead to privilege escalation and a full site takeover.",
-          "status": "entailed"
-        },
-        {
-          "text": "The same route also allows unauthenticated users to store arbitrary web scripts which are then evaluated on every page of the site's front end, as well as to move arbitrary posts to the trash.",
-          "support_span": "The same route also allows unauthenticated users to store arbitrary web scripts which are then executed on every page of the site's front end, as well as to move arbitrary posts to the trash.",
-          "status": "contradicted"
-        },
-        {
-          "text": "CVSS base score 9.8 (CRITICAL).",
-          "support_span": "CVSS base score 9.8 (CRITICAL).",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 70.0,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "3cc49e9f77344778",
-        "6d726fc382d96d0f",
-        "88478a27145eb47d",
-        "d649353415a6ef20",
-        "deecd06fe15257f3",
-        "dfac0e3b53a83c8b"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86591",
-          "domain": "nist.gov",
-          "tier": "A"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85574",
-          "domain": "nist.gov",
-          "tier": "A"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85680",
-          "domain": "nist.gov",
-          "tier": "A"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86814",
-          "domain": "nist.gov",
-          "tier": "A"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88824",
-          "domain": "nist.gov",
-          "tier": "A"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88926",
-          "domain": "nist.gov",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-85574",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-85680",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-86591",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-86814",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-88824",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-88926"
-      ],
-      "published": "2026-09-19T07:16:32.860000+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 70 = trust 70 / interest 100 / corrob 25",
-        "demoted: critical capped at 5",
-        "claims entailed 3/3 (100%)",
-        "judge (gemini-3.1-flash-lite): contradicted — rejected"
-      ],
-      "reject_reason": "gemini-3.1-flash-lite found a claim contradicted by the source"
-    },
-    {
-      "cluster_key": "e93a36750b025eee",
-      "title": "awlevin/typesafe-computer-use — Computer use for about $0.0002 a step: OCR the screen, classify the next action with TypeSafe, click. macOS.",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "ai",
-        "opensource"
-      ],
-      "summary": "Computer use for about $0.0002 a step: OCR the screen, classify the next action with TypeSafe, click. GitHub repository awlevin/typesafe-computer-use, 827 stars, language Python. Topics: ai-agents, automation, computer-use, macos, ocr, typesafe.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "e93a36750b025eee"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/awlevin/typesafe-computer-use",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-16T17:48:45+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-16 — outside lookback window"
-    },
-    {
-      "cluster_key": "44afacf4ff460fae",
-      "title": "0xNatoshi/jev-codex-router — Per-turn model & reasoning routing for Codex, driven by Jev (TypeSafe System One): picks the model, thinking d",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "ai",
-        "llm",
-        "network",
-        "opensource"
-      ],
-      "summary": "Per-turn model & reasoning routing for Codex, driven by Jev (TypeSafe System One): picks the model, thinking depth and speed mode for every turn. GitHub repository 0xNatoshi/jev-codex-router, 222 stars, language JavaScript. Topics: ai, codex, jev, llm, macos, routing, typesafe.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "44afacf4ff460fae"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/0xNatoshi/jev-codex-router",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-17T04:14:19+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-17 — outside lookback window"
-    },
-    {
-      "cluster_key": "437ff1d894330102",
-      "title": "kajeesan/Open-Health-Atlas — Explore sleep, training, mood and nutrition together using local records, traceable calculations and optional ",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "agents",
-        "ai",
-        "opensource"
-      ],
-      "summary": "Explore sleep, training, mood and nutrition together using local records, traceable calculations and optional MCP tools for your preferred AI client. GitHub repository kajeesan/Open-Health-Atlas, 60 stars, language Python. Topics: data-provenance, data-visualization, flask, health-data, local-first, mcp, python, self-hosted.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "437ff1d894330102"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/kajeesan/Open-Health-Atlas",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-16T20:07:26+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-16 — outside lookback window"
-    },
-    {
-      "cluster_key": "b4937f97b62be766",
-      "title": "itsmostafa/typesafe-mcp — An mcp connector to evaluate anything fast and cheap. Give your AI agent direct access to typesafe ai's jev mo",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "agents",
-        "ai",
-        "opensource"
-      ],
-      "summary": "An mcp connector to evaluate anything fast and cheap. Give your AI agent direct access to typesafe ai's jev model. GitHub repository itsmostafa/typesafe-mcp, 258 stars, language Go.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "b4937f97b62be766"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/itsmostafa/typesafe-mcp",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-17T05:23:34+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-17 — outside lookback window"
-    },
-    {
-      "cluster_key": "05c787a49a974988",
-      "title": "How V7 gives AI agents institutional memory",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
         "opensource",
-        "research",
+        "privacy",
         "tool"
       ],
-      "summary": "Results 89% Accuracy for GPT-6 Astra on the hardest queries Results 78% Lower cost per document with GPT-5.6 Luna Results +11.6 pts Higher accuracy with GPT-5.6 Luna Today’s models can reason through complex tasks, but they don’t automatically understand the underlying business context of those tasks. How is the same entity named across three systems? That context lives in documents, data rooms, spreadsheets, emails, and internal tools: scattered, unresolved, and invisible to agents. For teams in finance, insurance, and real estate, retrieval accuracy within workflows is non-negotiable. After building a widely used computer vision accessibility app together, Rizzoli and Edwardsson started V…",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 4,
-      "blend": 0.0,
+      "summary": "The open-source repository bilawalsidhu/gods-eye-view provides an in-browser satellite and spatial intelligence simulator that displays real-time data on a 3D globe. The project leverages JavaScript and Cesium to offer photorealistic geospatial rendering, flight tracking, and photogrammetry. The repository has accumulated over 17,400 stars on GitHub.",
+      "key_facts": [
+        "Repository: bilawalsidhu/gods-eye-view",
+        "Stars: 17,491",
+        "Language: JavaScript"
+      ],
+      "bottom_line": "Developers and researchers can utilize the gods-eye-view project for real-time browser-based geospatial intelligence and 3D mapping.",
+      "claims": [
+        {
+          "text": "The gods-eye-view repository provides open-source spatial intelligence on a 3D globe using real-time data.",
+          "support_span": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. GitHub repository bilawalsidhu/gods-eye-view, 17,491 stars, language JavaScript.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 32.5,
       "is_new": false,
-      "summary_source": "extract",
+      "summary_source": "model",
       "alt_keys": [
-        "05c787a49a974988",
-        "47a71d8ae78d18d4",
-        "4d8c00f6b34a5edf",
-        "5eedb5fc7533df57",
-        "90077dde3f6bcd09",
-        "9e1ec7b461170cf5",
-        "a759f84f9edc2413",
-        "d1749ba76a98e7a5"
+        "df489c10521cd2bd"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "OpenAI Blog",
-          "url": "https://openai.com/index/v7",
-          "domain": "openai.com",
-          "tier": "A"
-        },
-        {
-          "name": "The Register Security",
-          "url": "https://www.theregister.com/security/2026/09/22/zai-says-sorry-for-slurping-up-your-code-open-sources-zcode/5298300",
-          "domain": "theregister.com",
-          "tier": "B"
-        },
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/INSANE0777/Awwards-mcp",
+          "name": "GitHub (updated)",
+          "url": "https://github.com/bilawalsidhu/gods-eye-view",
           "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/friday-memory/friday",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "AiThority",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPay1BYmNNUDZzWHlNaG5kNmZxTk5wM2pXN1FuaVMwQmFIczJfa2t4Nk5GWUc4RjNnajRBTHhielRvTWJKYjY4aTZlSlpLZ1d3TDkxZGtDR2RzYlc4VzVEcTVOdWYxUUYzcTAyLVhObEhGdDgwdG1HdDlEbmREUkdZbnVhYUpzQ3VFSVU3WHRfMkRzd1Z5YUVDYXlVRjM5NG41dkZSUHRrVQ?oc=5",
-          "domain": "aithority.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "eu.36kr.com",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE16OGE4U1ZiUm93RjhnUGdjcnRYWFk5b2FrQVJ5RWNlU1lpOFlKU0xROXdYcjg4aGF4RmUtY2VqSlNYS2xROFZSVlYzWmhWVElCNmpr?oc=5",
-          "domain": "eu-36kr-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "OpenAI",
-          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5ydmNpUWd5Slg5OHl5ZXRsdTZzaE9ZMmF6LVpxWWRSSXhhQzJxelNfSGh6NEFMYkl2LTNZM3E4eGQ5Zw?oc=5",
-          "domain": "openai.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "TechnoSports Media Group",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAwSDhYYWdDZUp5YmItbGRQdzRvTTNUTmVlTjhfRlFkeXdlYmxvLTNoZ1RZWlpmY2xrZmgtd0c4SHRGMWxnUTdNTmpIUnBRX25CT1YzZmxDMUNKSE9vcHc?oc=5",
-          "domain": "technosports-media-group.publisher",
           "tier": "C"
         }
       ],
-      "primary_links": [
-        "https://openai.com/index/v7"
-      ],
-      "published": "2026-09-16T15:53:02+00:00",
+      "primary_links": [],
+      "published": "2026-09-23T21:00:56+00:00",
       "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "importance 3/5 from cache",
+        "blend 32 = trust 10 / interest 50 / corrob 25"
       ],
-      "reject_reason": "published 2026-09-16 — outside lookback window"
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "d8f824e3e823bb49",
-      "title": "liyupi/ai-model-world — AI 大模型世界，把 556 个大模型拟人化成像素小人的可视化站点。进来就能看到此刻谁最聪明、谁最会写代码、谁最便宜、谁刚发布，往下是国内与国外分区的厂商广场、完整的发布时间线和多维排行榜。搜索认模型名、厂商和能力，输入",
+      "cluster_key": "f522af7b21cec971",
+      "title": "AkashPriyadarshii/jev-seo — jev-seo: Rust SEO and GEO CLI plus MCP server for coding agents: 50-rule audits, live crawls, GEO scores, rank",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "ai",
+        "agents",
         "llm",
         "opensource",
-        "research"
+        "tool"
       ],
-      "summary": "Topics: ai, ai-models, benchmark, chinese, data-visualization, deepseek, large-language-models, leaderboard.",
+      "summary": "jev-seo: Rust SEO and GEO CLI plus MCP server for coding agents: 50-rule audits, live crawls, GEO scores, rank drift, CI gates. GitHub repository AkashPriyadarshii/jev-seo, 42 stars, language Rust. Topics: ahrefs-alternative, answer-engine-optimization, claude-code, cli, coding-agents, generative-engine-optimization, geo, jev.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -860,10 +666,10 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
-      "is_new": false,
+      "is_new": true,
       "summary_source": "extract",
       "alt_keys": [
-        "d8f824e3e823bb49"
+        "f522af7b21cec971"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -871,20 +677,20 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/liyupi/ai-model-world",
+          "url": "https://github.com/AkashPriyadarshii/jev-seo",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-17T03:12:17+00:00",
+      "published": "2026-09-18T13:02:32+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-17 — outside lookback window"
+      "reject_reason": "published 2026-09-18 — outside lookback window"
     },
     {
-      "cluster_key": "25eaacff88099af5",
+      "cluster_key": "27262aa26cd89506",
       "title": "Jev introduces a new shape of LLM - System One, aka Decision Models",
       "category": "tech_ai",
       "one_liner": "",
@@ -904,8 +710,12 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "25eaacff88099af5",
-        "82b7c1ad7628107c"
+        "27262aa26cd89506",
+        "4eb343e53d9b4a30",
+        "82b7c1ad7628107c",
+        "9a8025219d91b620",
+        "d64056cf9a0e88aa",
+        "f88af0222c9865fa"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -919,70 +729,174 @@
         },
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/Ying-Kai-Liao/jev-browser",
+          "url": "https://github.com/kydlikebtc/awesome-jev",
+          "domain": "github.com",
+          "tier": "C"
+        },
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/kraayenjon/awesome-jev",
+          "domain": "github.com",
+          "tier": "C"
+        },
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/cobanov/awesome-jev",
+          "domain": "github.com",
+          "tier": "C"
+        },
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/v-modal/awesome-jev-tools",
+          "domain": "github.com",
+          "tier": "C"
+        },
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/valentynkit/awesome-jev-typesafe",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-16T15:13:23+00:00",
+      "published": "2026-09-18T10:12:18+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-16 — outside lookback window"
+      "reject_reason": "published 2026-09-18 — outside lookback window"
     },
     {
-      "cluster_key": "da4d8a7c1fe0f815",
-      "title": "lordx64/phantom-kv — Refusal removal as a loadable KV-cache graft — zero weight modification, no refusal-direction projection, full",
-      "category": "tech_ai",
+      "cluster_key": "4d8c00f6b34a5edf",
+      "title": "Z.ai says sorry for slurping up your code, open sources ZCode",
+      "category": "cyber_attacks",
       "one_liner": "",
       "tags": [
+        "ai",
+        "exploit",
         "llm",
-        "opensource"
+        "malware",
+        "markets",
+        "opensource",
+        "privacy",
+        "redteam"
       ],
-      "summary": "Refusal removal as a loadable KV-cache graft — zero weight modification, no refusal-direction projection, fully reversible. GitHub repository lordx64/phantom-kv, 125 stars, language Python. Topics: abliteration, kv-cache, llm, mechanistic-interpretability, model-steering, pytorch, qwen, refusal-removal.",
+      "summary": "Shut up and calculate: Jev's new AI primitives for codersDevelopers test what they can build with TypeSafe's fast, typed decision model - Frontier AI keeps racing despite calls to slow downAnthropic and OpenAI debut Opus 5.5 and GPT-6 Sol and Luna - Windows CLOSEDQUORUM malware uses AI models to autonomously select post-compromise actions'first' publicly documented Windows implant to use LLMs for C2 - Z.ai says sorry for slurping up your code, open sources ZCodeChina’s AI darling goes on the defense after engineer highlighted Grok-esque security flaws - UPDAted Register reader hit with surprise bill after Microsoft portals disagreedDid Copilot write the synchronization code? Security Russia…",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
       "trust_score": 0,
       "interest_score": 0,
-      "corroboration": 1,
+      "corroboration": 3,
       "blend": 0.0,
-      "is_new": true,
+      "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "da4d8a7c1fe0f815"
+        "4d8c00f6b34a5edf",
+        "5eedb5fc7533df57",
+        "a759f84f9edc2413"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
+          "name": "The Register Security",
+          "url": "https://www.theregister.com/security/2026/09/22/zai-says-sorry-for-slurping-up-your-code-open-sources-zcode/5298300",
+          "domain": "theregister.com",
+          "tier": "B"
+        },
+        {
           "name": "GitHub (new)",
-          "url": "https://github.com/lordx64/phantom-kv",
+          "url": "https://github.com/INSANE0777/Awwards-mcp",
           "domain": "github.com",
+          "tier": "C"
+        },
+        {
+          "name": "AiThority",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPay1BYmNNUDZzWHlNaG5kNmZxTk5wM2pXN1FuaVMwQmFIczJfa2t4Nk5GWUc4RjNnajRBTHhielRvTWJKYjY4aTZlSlpLZ1d3TDkxZGtDR2RzYlc4VzVEcTVOdWYxUUYzcTAyLVhObEhGdDgwdG1HdDlEbmREUkdZbnVhYUpzQ3VFSVU3WHRfMkRzd1Z5YUVDYXlVRjM5NG41dkZSUHRrVQ?oc=5",
+          "domain": "aithority.publisher",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-17T19:43:33+00:00",
+      "published": "2026-09-18T10:57:09+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-17 — outside lookback window"
+      "reject_reason": "published 2026-09-18 — outside lookback window"
     },
     {
-      "cluster_key": "e18fd98eb04c4ef8",
-      "title": "NiazMorshed2007/jev-review — Local-first MCP plugin for continuous software-quality review by AI coding agents, powered by Jev.",
+      "cluster_key": "a3a89af9cc70109d",
+      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software SSL VPN Denial of Service Vulnerability",
+      "category": "cyber_attacks",
+      "one_liner": "A critical memory exhaustion DoS vulnerability affecting all Cisco ASA and FTD firewall platforms requires immediate mitigation.",
+      "tags": [
+        "blueteam",
+        "cve",
+        "exploit",
+        "network",
+        "release",
+        "vulnerability"
+      ],
+      "summary": "Cisco updated its security advisory to clarify that a denial of service (DoS) vulnerability previously attributed only to virtual appliance models affects all Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software platforms. The vulnerability stems from improper memory management in VPN and management web servers handling incoming SSL/TLS connections. An unauthenticated remote attacker can exploit this by flooding the targeted device with new connection requests, causing memory or buffer depletion that slows down or completely halts SSL VPN processing.",
+      "key_facts": [
+        "Affected software: Cisco Secure Firewall ASA and FTD Software platforms"
+      ],
+      "bottom_line": "Cisco confirmed that a memory-depletion DoS vulnerability impacting SSL VPN processing affects all Secure Firewall ASA and FTD software platforms.",
+      "claims": [
+        {
+          "text": "However, it was later found that this vulnerability affects all Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software platforms.",
+          "support_span": "However, it was later found that this vulnerability affects all Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software platforms.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 70.0,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "a3a89af9cc70109d"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Cisco PSIRT",
+          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftdvirtual-dos-MuenGnYR?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20SSL%20VPN%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
+          "domain": "sec.cloudapps.cisco.com",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftdvirtual-dos-MuenGnYR?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20SSL%20VPN%20Denial%20of%20Service%20Vulnerability%26vs_k=1"
+      ],
+      "published": "2026-09-23T13:26:33+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 70 = trust 70 / interest 100 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "9082ea4d357e3723",
+      "title": "Oldcircle/geo-sleuth — An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, satellite imag",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
         "agents",
         "ai",
         "llm",
-        "opensource"
+        "opensource",
+        "tool"
       ],
-      "summary": "Local-first MCP plugin for continuous software-quality review by AI coding agents, powered by Jev. GitHub repository NiazMorshed2007/jev-review, 203 stars, language TypeScript. Topics: agent-plugin, ai-agents, claude-code, code-review, codex, coding-agents, cursor, developer-tools.",
+      "summary": "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, satellite imagery and street view — and shows its work. Works with Claude Code, Codex, Cursor, Gemini CLI, OpenCode and GitHub Copilot. GitHub repository Oldcircle/geo-sleuth, 294 stars, language Python. Topics: agent-skills, ai-agents, claude-code, codex, computer-vision, cursor, gemini-cli, geoguessr.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -993,7 +907,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "e18fd98eb04c4ef8"
+        "9082ea4d357e3723"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -1001,17 +915,144 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/NiazMorshed2007/jev-review",
+          "url": "https://github.com/Oldcircle/geo-sleuth",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-17T05:24:51+00:00",
+      "published": "2026-09-18T08:51:34+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-17 — outside lookback window"
+      "reject_reason": "published 2026-09-18 — outside lookback window"
+    },
+    {
+      "cluster_key": "983b3601e67a1f78",
+      "title": "From Inference Engine to Inference Control Plane: Connecting vLLM, llm-d, and the Evolution of Efficient Distributed LLM Serving",
+      "category": "tech_ai",
+      "one_liner": "LLM serving is shifting from engine-local optimizations to a distributed inference control plane managing state, placement, and network movement.",
+      "tags": [
+        "agents",
+        "ai",
+        "cloud",
+        "llm",
+        "opensource",
+        "research",
+        "tool"
+      ],
+      "summary": "Large language model inference is transitioning from local engine optimizations into a distributed control problem handling state, phase placement, hardware heterogeneity, networking, and service-level objectives across a fleet. This paper examines vLLM and llm-d as complementary layers, where serving engines optimize local execution via PagedAttention and continuous batching, while an inference control plane manages routing, placement, and reliability policies. The authors propose an Inference Execution Planner to select feasible execution topologies, disaggregated KV caching configurations, and routing policies. The findings suggest that scarce resources in modern inference are shifting from raw FLOPs alone toward managed state, network movement, and decision quality.",
+      "key_facts": [],
+      "bottom_line": "Modern LLM inference requires shifting focus from raw FLOPs to a distributed inference control plane that coordinates managed state, caching topologies, and cluster-wide execution policies.",
+      "claims": [
+        {
+          "text": "Large language model inference is evolving from an engine-local optimization problem into a distributed control problem.",
+          "support_span": "Large language model inference is evolving from an engine-local optimization problem into a distributed control problem involving reusable state, phase placement, heterogeneous accelerators, networking, autoscaling, reliability, and service-level objectives.",
+          "status": "contradicted"
+        },
+        {
+          "text": "We treat vLLM and llm-d as complementary layers for engine execution and fleet-wide policy management.",
+          "support_span": "It treats vLLM and llm-d as complementary layers: model-serving engines optimize execution through mechanisms such as PagedAttention, continuous batching, kernels, quantization, and parallelism, while an inference control plane can optimize where, when, and under what policy execution occurs across a fleet.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "983b3601e67a1f78"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2609.23130",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2609.23130"
+      ],
+      "published": "2026-09-23T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "825a49ff6eae1ae0",
+      "title": "AgentBetta: Verification-Driven Adaptive Configuration of an AI Nano-Agent through Selective Expansion and Verified Contraction",
+      "category": "tech_ai",
+      "one_liner": "AgentBetta dynamically adjusts LLM agent configurations and tool exposure based on verification, cutting context usage while maintaining task success.",
+      "tags": [
+        "agents",
+        "ai",
+        "llm",
+        "policy",
+        "research",
+        "tool"
+      ],
+      "summary": "Researchers introduce AgentBetta, an adaptive AI nano-agent framework that represents execution factors—such as model capabilities, context window, tools, permissions, and memory—as an executable configuration updated via verification-driven diagnosis, selective expansion, and counterfactual contraction. On the AB-ConfigBench benchmark, AgentBetta achieved 91.38% verified success while reducing median context allocation from 64,000 to 8,000 characters and median tool exposure from five tools to zero compared to fully provisioned configurations. Configuration-deficiency diagnosis achieved a macro-F1 score of 0.819 with perfect precision. However, cross-family replications showed that adaptive configuration performance varies, meaning it serves as an effective capability-regulation mechanism rather than a universal replacement for specialized architectures.",
+      "key_facts": [
+        "Verified success rate: 91.38%",
+        "Median context reduction: 64,000 to 8,000 characters",
+        "Macro-F1 score for deficiency diagnosis: 0.819"
+      ],
+      "bottom_line": "AgentBetta demonstrates that verification-driven dynamic configuration can significantly reduce tool exposure and context overhead for LLM agents without sacrificing task success rates.",
+      "claims": [
+        {
+          "text": "AgentBetta achieved 91.38% verified success while reducing median context allocation from 64,000 to 8,000 characters.",
+          "support_span": "On the AB-ConfigBench benchmark, AgentBetta achieved 91.38% verified success while reducing median context allocation from 64,000 to 8,000 characters and median tool exposure from five tools to zero compared with the fully provisioned configuration.",
+          "status": "contradicted"
+        },
+        {
+          "text": "The configuration-deficiency diagnosis achieved a macro-F1 score of 0.819 with precision of 1.000 across the evaluated dimensions.",
+          "support_span": "The configuration-deficiency diagnosis achieved a macro-F1 score of 0.819 with precision of 1.000 across the evaluated dimensions, and selective expansion avoided unnecessary changes to unrelated configuration dimensions.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "825a49ff6eae1ae0"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2609.23512",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2609.23512"
+      ],
+      "published": "2026-09-23T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
       "cluster_key": "0d18a60de948fef1",
@@ -1077,130 +1118,27 @@
       "reject_reason": "2 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "2876493865fb500f",
-      "title": "OmniJev/awesome-jev-gallery — 🔥🔥 Papers, open reproductions and independent evaluations behind System One models and Jev.",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "llm",
-        "opensource"
-      ],
-      "summary": "🔥🔥 Papers, open reproductions and independent evaluations behind System One models and Jev. GitHub repository OmniJev/awesome-jev-gallery, 196 stars, language JavaScript. Topics: awesome, awesome-list, calibrated-probabilities, calibration, decision-models, jev, llm, llm-evaluation.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "2876493865fb500f"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/OmniJev/awesome-jev-gallery",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-17T20:16:57+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-17 — outside lookback window"
-    },
-    {
-      "cluster_key": "2cfc5703ae5cc4c8",
-      "title": "Vedanta Aluminium stock jumps 4% days after hitting 52-week low! Can it reclaim demerger level? Experts decode outlook",
+      "cluster_key": "0d86cde793dddaeb",
+      "title": "Multibagger Cupid shares gain 6% after company raises FY27 revenue, profit guidance. Could this trigger a further rally?",
       "category": "markets",
-      "one_liner": "Vedanta Aluminium shares rebounded nearly 4% from recent 52-week lows backed by strong Q1 EBITDA and expanding smelting capacity.",
+      "one_liner": "Cupid Ltd.'s upgraded FY27 financial guidance and capacity expansion reflect strong growth momentum across Indian consumer and global wellness markets.",
       "tags": [
-        "howto",
         "india",
         "markets"
       ],
-      "summary": "Shares of Vedanta Aluminium surged nearly 4% during intraday trading, recovering partially after hitting a 52-week low of ₹401.20 on September 16, 2026. Despite the bounce, the stock remains down about 11.5% from its demerger listing price of ₹522 per share. Analysts note that the weekly recovery is supported by strong fundamentals, including a 134% YoY jump in Q1 FY27 EBITDA to ₹10,499 crore and expanding smelter capacities, though technical analysts advise caution until the stock clears key overhead resistance levels between ₹430 and ₹440.",
+      "summary": "Consumer wellness firm Cupid Ltd. reported robust Q1 FY27 performance, with total income surging 142% year-on-year to ₹157 crore and profit after tax jumping 194% to ₹44 crore. Driven by strong global healthcare and Bharat consumer business segments, the company raised its FY27 guidance to ₹725–750 crore in revenue and ₹210–225 crore in net profit, while targeting ₹1,085 crore in FY28 and ₹1,500 crore in FY29. Cupid's stock rose 6% to close at ₹273.85 following the announcement at its 33rd Annual General Meeting. Expansion plans include commissioning a 170,000-square-foot Palava facility and scaling up nitrile condom manufacturing.",
       "key_facts": [
-        "Q1FY27 EBITDA: ₹10,499 crore",
-        "52-week low: ₹401.20",
-        "Listing price: ₹522"
+        "Share price: ₹273.85 (+6%)",
+        "June quarter income: ₹157 crore (+142% YoY)",
+        "Profit after tax: ₹44 crore (+194% YoY)",
+        "FY27 guidance revenue: ₹725–750 crore",
+        "FY27 guidance net profit: ₹210–225 crore"
       ],
-      "bottom_line": "Vedanta Aluminium stock showed a fundamental-backed recovery from multi-month lows, though technical hurdles remain near ₹430-440.",
+      "bottom_line": "Cupid Ltd. shares rose 6% after the company raised its FY27 revenue and profit guidance following strong quarterly earnings.",
       "claims": [
         {
-          "text": "Shares of Vedanta Aluminium Metal Limited surged nearly 4% during Tuesday’s intraday trading session.",
-          "support_span": "Shares of Vedanta Aluminium Metal Limited surged nearly 4% during Tuesday’s intraday trading session.",
-          "status": "entailed"
-        },
-        {
-          "text": "The stock had surged nearly 4% to touch an intraday high of ₹430.85 per share today. The stock dipped to its 52-week low of ₹401.20 per share on September 16, 2026.",
-          "support_span": "The stock had surged nearly 4% to touch an intraday high of ₹430.85 per share today. The stock dipped to its 52-week low of ₹401.20 per share on September 16, 2026.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 36.2,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "2cfc5703ae5cc4c8"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/vedanta-aluminium-stock-jumps-4-days-after-hitting-52-week-low-can-it-reclaim-demerger-level-experts-decode-outlook-11790062916085.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-22T08:00:58+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 36 = trust 25 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "1a792788dca16d2c",
-      "title": "Top stocks to buy today: HBL, Precision Wires, GHCL by Vaishali Parekh | Target, stop-loss, Nifty, Bank Nifty outlook",
-      "category": "markets",
-      "one_liner": "Indian benchmarks slipped amid sector losses and investor caution, with technical analysts outlining key support and resistance levels.",
-      "tags": [
-        "dfir",
-        "india",
-        "markets",
-        "research"
-      ],
-      "summary": "Indian stock markets reversed previous gains in Tuesday's session as technology, financial, and FMCG sectors weighed on benchmark indices, though markets recovered from intraday lows. The Nifty 50 closed down 0.36% at 23,329, while the Sensex dropped 0.27% to 74,653 amid cautious investor sentiment despite retreating crude oil prices and bond yields. Technical analyst Vaishali Parekh noted near-term hurdles at 23,550 and support at 23,000 for Nifty, while recommending intraday trades for HBL Engineering, Precision Wires India, and GHCL Textiles.",
-      "key_facts": [
-        "Nifty 50 Close: 23,329 (-0.36%)",
-        "Sensex Close: 74,653 (-0.27%)"
-      ],
-      "bottom_line": "Indian equities closed lower as tech and financial sectors dragged indices down, though broader markets defended key technical supports.",
-      "claims": [
-        {
-          "text": "The Nifty 50 closed 0.36% lower at 23,329, while the Sensex slipped 0.27% to 74,653.",
-          "support_span": "The Nifty 50 closed 0.36% lower at 23,329, while the Sensex slipped 0.27% to 74,653.",
-          "status": "entailed"
-        },
-        {
-          "text": "Vaishali Parekh recommended three stocks for intraday trading: HBL Engineering, Precision Wires India and GHCL Textiles.",
-          "support_span": "Vaishali Parekh recommended three stocks for intraday trading: HBL Engineering, Precision Wires India and GHCL Textiles.",
+          "text": "Cupid Ltd., a consumer wellness and personal care company, saw it shares settle 6% higher in Wednesday's trade, reaching 273.85 apiece after the company at its 33rd Annual General Meeting further raised if profit and revenue outlook for the current fiscal year...",
+          "support_span": "Cupid Ltd., a consumer wellness and personal care company, saw it shares settle 6% higher in Wednesday's trade, reaching 273.85 apiece after the company at its 33rd Annual General Meeting further raised if profit and revenue outlook for the current fiscal year...",
           "status": "contradicted"
         }
       ],
@@ -1211,7 +1149,7 @@
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "1a792788dca16d2c"
+        "0d86cde793dddaeb"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -1219,13 +1157,13 @@
       "sources": [
         {
           "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-buy-tomorrow-hbl-precision-wires-ghcl-by-vaishali-parekh-target-stop-loss-nifty-bank-nifty-outlook-11790082155610.html",
+          "url": "https://www.livemint.com/market/stock-market-news/multibagger-cupid-shares-gain-6-after-company-raises-fy27-revenue-profit-guidance-could-this-trigger-a-further-rally-11790167073845.html",
           "domain": "livemint.com",
           "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-22T13:38:06+00:00",
+      "published": "2026-09-23T13:35:57+00:00",
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
@@ -1235,128 +1173,97 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "37c9bd70429ae115",
-      "title": "TinyCeNN-LM: Quality-Gated Conversion of Pretrained Attention with CeNN-Inspired Cellular-Recurrent Layers",
-      "category": "tech_ai",
-      "one_liner": "TinyCeNN-LM replaces attention layers in pretrained LLMs with cellular-recurrent layers using strict quality gates to preserve performance.",
+      "cluster_key": "2392b290f2c11040",
+      "title": "ShinyHunters hacks rival extortion gang and takes over its dark web site",
+      "category": "cyber_attacks",
+      "one_liner": "ShinyHunters hacks and completely defaces rival Clop ransomware gang's dark web leak site.",
       "tags": [
-        "ai",
-        "llm",
-        "privacy",
-        "research",
-        "tool"
+        "exploit",
+        "incident",
+        "ransomware",
+        "threat-actor",
+        "threat-intel",
+        "vulnerability"
       ],
-      "summary": "TinyCeNN-LM introduces a quality-gated post-training conversion framework that replaces attention layers in pretrained language models with CeNN-inspired cellular-recurrent layers. By applying strict representation and negative log-likelihood (NLL) thresholds, the framework selectively accepts converted layers while rolling back non-compliant ones. Experiments on SmolLM2-135M and Qwen3.5-0.8B demonstrate that the approach maintains perplexity within tight bounds while reducing total cache requirements.",
+      "summary": "The ShinyHunters cybercrime group breached and took over the dark web extortion leak site of rival ransomware group Clop. According to ShinyHunters, the operation began by exploiting an unauthenticated file-upload vulnerability in Grav CMS to upload a text file, followed by complete defacement and takeover of Clop's onion private keys. The rivalry escalated following previous disruptions of Clop data-theft campaigns by ShinyHunters and subsequent personal threats made by Clop affiliates.",
       "key_facts": [
-        "Evaluated models: SmolLM2-135M, Qwen3.5-0.8B",
-        "Cache reduction: up to 6.01%"
+        "Vulnerability exploited: Unauthenticated file-upload in Grav CMS",
+        "Target: Clop ransomware gang leak site"
       ],
-      "bottom_line": "Quality-gated structural conversion can replace LLM attention layers with cellular-recurrent layers while controlling perplexity and reducing cache.",
+      "bottom_line": "The ShinyHunters extortion group compromised and seized control of rival Clop's dark web infrastructure using an unauthenticated CMS vulnerability.",
       "claims": [
         {
-          "text": "TinyCeNN-LM introduces a quality-gated post-training conversion framework using CeNN-inspired cellular-recurrent layers with bounded local processing, compact recurrent memory, routing, fusion, and accept-or-rollback validation.",
-          "support_span": "TinyCeNN-LM introduces a quality-gated post-training conversion framework using CeNN-inspired cellular-recurrent layers with bounded local processing, compact recurrent memory, routing, fusion, and accept-or-rollback validation.",
+          "text": "Reportedly, the ShinyHunters extortion group breached the leak site of one of its competitors, the Clop ransomware gang.",
+          "support_span": "Reportedly, the ShinyHunters extortion group breached the leak site of one of its competitors, the Clop ransomware gang.",
+          "status": "entailed"
+        },
+        {
+          "text": "According to BleepingComputer, the attack began Friday night when ShinyHunters exploited what it claims is an unauthenticated file-upload vulnerability in Grav CMS to upload a small text file to Clop’s site.",
+          "support_span": "According to BleepingComputer, the attack began Friday night when ShinyHunters exploited what it claims is an unauthenticated file-upload vulnerability in Grav CMS to upload a small text file to Clop’s site.",
           "status": "contradicted"
+        },
+        {
+          "text": "Several hours later, ShinyHunters told BleepingComputer that it had “completely defaced” the site.",
+          "support_span": "Several hours later, ShinyHunters told BleepingComputer that it had “completely defaced” the site.",
+          "status": "entailed"
         }
       ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
+      "trust_score": 37,
+      "interest_score": 75,
+      "corroboration": 2,
+      "blend": 58.0,
+      "is_new": false,
       "summary_source": "model",
       "alt_keys": [
-        "37c9bd70429ae115"
+        "2392b290f2c11040",
+        "495a983a2903abf7",
+        "a141a1fbb6ab35f9"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.21139",
-          "domain": "arxiv.org",
-          "tier": "A"
+          "name": "Malwarebytes Labs",
+          "url": "https://www.malwarebytes.com/blog/news/2026/09/shinyhunters-hacks-rival-extortion-gang-and-takes-over-its-dark-web-site",
+          "domain": "malwarebytes.com",
+          "tier": "B"
+        },
+        {
+          "name": "TechRadar",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNNUhTNnNTN2gwMGdjcUZwczZvckZUdFIyUHMxbWZmZDZ2UHczV2ZYSDRUREc2ZlpLeXRheEJiS0VkZXlKRE5yNUZKckozbU5PYUlrT2xfNHFYNjJKaU9MaUk3QlNoLUlhVk9zRW9ZSC1ZV0hwZ0tsTkNXdkJxQUExNzRkLUFUb2RkakpCV1FXSDNPb2RGbGdaTTljdnFlRVplZEFSamdFWUpiMDRlMWJMNXRBRG03SzdhU0NxNGNKOUR2UVN1bG01V09mLTdlZTdiRzRNNFN5SHdlYll3RWJuSA?oc=5",
+          "domain": "techradar.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "The Record from Recorded Future News",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ZZDk3VWc1czhFUHl4eWtHaWV1bWY1LXRQMGpnWkN1T1N0WGF2M3EyZjB0VGd5MDkteFpQOUZBTG5wUkhHTFdRbGh1eF9YSGNwdVpRU0YtQ3JxVG00OHRSNmhMNFNxY1NmZzl2a1NB?oc=5",
+          "domain": "the-record-from-recorded-future-news.publisher",
+          "tier": "C"
         }
       ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.21139"
-      ],
-      "published": "2026-09-22T04:00:00+00:00",
+      "primary_links": [],
+      "published": "2026-09-21T10:17:09+00:00",
       "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 3/5 from cache",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
+        "tier B (+25)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "importance 4/5 from cache",
+        "blend 58 = trust 37 / interest 75 / corrob 50",
+        "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "8881ca5c89dabc40",
-      "title": "LLMs as Linguistic Chameleons: Decoupling Semantics and Structure for Privacy-Preserving Communication",
-      "category": "tech_ai",
-      "one_liner": "CROSS-MAP is a new bidirectional framework that provides privacy-preserving LLM communication by decoupling input semantics from structural reasoning.",
-      "tags": [
-        "ai",
-        "llm",
-        "privacy",
-        "research",
-        "tool"
-      ],
-      "summary": "Integrating Large Language Model APIs into privacy-sensitive workflows creates privacy risks as existing techniques leave semantic cues that allow text reconstruction. This research introduces CROSS-MAP, a bidirectional framework that performs semantic decoupling by mapping private inputs into an alternative semantic domain before inference and recovering outputs afterward. Local models trained via multi-objective optimization maximize semantic divergence during mapping while preserving structural features needed for LLM reasoning. Experimental results show that CROSS-MAP successfully reduces reconstruction success across attack settings while outperforming existing utility baselines.",
-      "key_facts": [],
-      "bottom_line": "CROSS-MAP secures privacy-sensitive LLM workflows by translating private text into alternative semantic domains prior to API inference.",
-      "claims": [
-        {
-          "text": "Based on this idea, we propose CROSS-MAP, a bidirectional framework that maps private inputs into a different semantic domain before inference and recovers the corresponding outputs afterward.",
-          "support_span": "Based on this idea, we propose CROSS-MAP, a bidirectional framework that maps private inputs into a different semantic domain before inference and recovering the corresponding outputs afterward.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "8881ca5c89dabc40"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2609.23193",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.23193"
-      ],
-      "published": "2026-09-22T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "d6217d1f332ffe9c",
-      "title": "ekzhang/openjev-sglang — Jev-compatible API endpoint based on open models (prefill-only)",
+      "cluster_key": "e11d34887fce690d",
+      "title": "mmdju/divar-mcp — MCP server for Divar — search, compare and analyze classified ads. Read-only, no API key.",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "llm",
+        "agents",
         "opensource"
       ],
-      "summary": "Jev-compatible API endpoint based on open models (prefill-only) GitHub repository ekzhang/openjev-sglang, 269 stars, language Python. Topics: jev, llm, structured-generation, systemone.",
+      "summary": "MCP server for Divar — search, compare and analyze classified ads. GitHub repository mmdju/divar-mcp, 60 stars, language JavaScript. Topics: cloudflare-workers, divar, mcp, model-context-protocol, persian.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -1367,7 +1274,7 @@
       "is_new": true,
       "summary_source": "extract",
       "alt_keys": [
-        "d6217d1f332ffe9c"
+        "e11d34887fce690d"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -1375,124 +1282,48 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/ekzhang/openjev-sglang",
+          "url": "https://github.com/mmdju/divar-mcp",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-17T18:11:49+00:00",
+      "published": "2026-09-18T02:14:13+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-17 — outside lookback window"
+      "reject_reason": "published 2026-09-18 — outside lookback window"
     },
     {
-      "cluster_key": "d3dcb761792c34e2",
-      "title": "Decoding Guardrails: XAI-Guided Perturbation Analysis of Prompt Injection Detection",
+      "cluster_key": "e6485d8f16bf6148",
+      "title": "Replication Without Persistence in Hosted LLMs: Measurement Sensitivity in Action-Time Belief Evaluation",
       "category": "tech_ai",
-      "one_liner": "XAI attribution analysis reveals that LLM guardrail classifiers rely on cumulative token contributions, which can be manipulated via saliency-guided perturbations to achieve jailbreaks.",
+      "one_liner": "Accounting for measurement sensitivity and configuration changes is critical when evaluating hosted LLM performance across different serving periods.",
       "tags": [
         "ai",
         "llm",
-        "research",
-        "threat-intel",
-        "tool",
-        "vulnerability"
+        "research"
       ],
-      "summary": "This study analyzes the internal decision logic of classifier-based LLM guardrails, such as Prompt Guard 2, using explainable artificial intelligence (XAI) techniques including Vanilla Gradient and SHAP attributions. The researchers found that the classifier relies on the cumulative contribution of numerous tokens rather than isolated dominant keywords. However, saliency-guided synonym substitution and sentence-level paraphrasing can flip predictions and cause jailbreak bypasses while modifying only a moderate portion of the text. The findings demonstrate that explainability methods intended to enhance transparency can also be exploited to lower the cost of crafting adversarial attacks.",
+      "summary": "Researchers analyzed measurement sensitivity and behavioral persistence in hosted large language models using Regent Chess, an environment featuring an observable, mutable state. The study separated historical replication, measurement sensitivity (endpoint shifts when configurations are rebuilt under identical identifiers), and persistence across distinct model identifiers. Results demonstrated that a previously observed Gemini 3.1 Flash-Lite performance deficit recurred on fresh data, but rebuilding configurations altered endpoints, and comparisons between Gemini 3.1 and 3.7 reversed behavioral signs. The findings indicate that hosted-model evaluations are highly sensitive to configuration and serving-period fluctuations.",
       "key_facts": [
-        "Evaluated model: Prompt Guard 2"
+        "Gemini 3.1 Flash-Lite deficit: +0.0530"
       ],
-      "bottom_line": "Defender transparency tools like SHAP and gradient attributions can be repurposed by attackers to efficiently construct jailbreak prompts that bypass classifier guardrails.",
+      "bottom_line": "Hosted LLM behavioral evaluations vary significantly due to measurement sensitivity, showing that rebuilding configurations or changing model identifiers can alter or reverse benchmark findings.",
       "claims": [
         {
-          "text": "Prompt Guard 2 decisions rely on the cumulative contribution of many tokens rather than a few dominant ones.",
-          "support_span": "Guided by Vanilla Gradient and SHAP attributions, we find that Prompt Guard 2's decisions rely on the cumulative contribution of many tokens rather than a few dominant ones",
-          "status": "entailed"
-        },
-        {
-          "text": "Saliency-guided synonym substitution can flip predictions while altering only a moderate fraction of the text.",
-          "support_span": "saliency-guided synonym substitution and sentence-level paraphrasing can flip predictions while altering only a moderate fraction of the text, in some cases yielding a successful jailbreak against the underlying LLM.",
+          "text": "The previously reported Gemini 3.1 Flash-Lite deficit recurs on fresh games under its historical configuration (+0.0530, 95% CI [+0.0329,+0.0714]).",
+          "support_span": "The previously reported Gemini 3.1 Flash-Lite deficit recurs on fresh data under its historical configuration (+0.0530, 95% CI [+0.0329,+0.0714]).",
           "status": "contradicted"
         }
       ],
       "trust_score": 70,
-      "interest_score": 75,
+      "interest_score": 50,
       "corroboration": 1,
-      "blend": 58.8,
+      "blend": 47.5,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "d3dcb761792c34e2"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2609.24801",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.24801"
-      ],
-      "published": "2026-09-22T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "34088336622fb08f",
-      "title": "RBS-Attention: Radius-Bounded Sparse Prefill for Long-Context Large Language Models",
-      "category": "tech_ai",
-      "one_liner": "RBS-Attention uses radius-adaptive dual-branch selection to eliminate mean dilution during long-context LLM prefill, delivering substantial speedups without retraining.",
-      "tags": [
-        "ai",
-        "cloud",
-        "llm",
-        "research",
-        "tool"
-      ],
-      "summary": "Researchers proposed RBS-Attention, a training-free sparse-prefill method designed to accelerate long-context large language model inference by addressing mean dilution in sparse block selection. The method combines a centroid base branch capturing average relevance with a rescue branch utilizing maximum key-block radius distribution to identify underestimation risks. Evaluated on H100 GPUs using models like Qwen3-30B-A3B-Instruct and Qwen3-32B, RBS-Attention achieved significant performance improvements, including a 20.65x standalone prefill-attention speedup and a 5.97x end-to-end time-to-first-token speedup at 128K context length while retaining high accuracy on benchmarks like RULER.",
-      "key_facts": [
-        "Hardware: H100 GPUs",
-        "Context length: 128K",
-        "Standalone prefill speedup: 20.65x",
-        "End-to-end TTFT speedup: 5.97x",
-        "Evaluated models: Qwen3-30B-A3B-Instruct-2507-FP8, Qwen3-32B"
-      ],
-      "bottom_line": "Radius-bounded sparse prefill techniques can drastically reduce time-to-first-token latency for long-context LLMs while preserving evaluation accuracy.",
-      "claims": [
-        {
-          "text": "RBS-Attention achieves 20.65x standalone prefill-attention speedup and 5.97x end-to-end time-to-first-token speedup at 128K on Qwen3-30B-A3B-Instruct-2507-FP8.",
-          "support_span": "On H100 GPUs, RBS-Attention achieves 20.65$\times$ standalone prefill-attention speedup, 11.92$\times$ vLLM prefill-attention speedup, and 5.97$\times$ end-to-end time-to-first-token speedup at 128K on Qwen3-30B-A3B-Instruct-2507-FP8.",
-          "status": "contradicted"
-        },
-        {
-          "text": "It obtains 88.65 overall RULER accuracy versus 89.52 for dense attention on Qwen3-32B.",
-          "support_span": "On the dense Qwen3-32B model, it obtains 88.65 overall RULER accuracy versus 89.52 for dense attention",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "34088336622fb08f"
+        "e6485d8f16bf6148"
       ],
       "critical_signal": "",
       "priority": "important",
@@ -1500,23 +1331,133 @@
       "sources": [
         {
           "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.20971",
+          "url": "https://arxiv.org/abs/2609.22478",
           "domain": "arxiv.org",
           "tier": "A"
         }
       ],
       "primary_links": [
-        "https://arxiv.org/abs/2609.20971"
+        "https://arxiv.org/abs/2609.22478"
       ],
-      "published": "2026-09-22T04:00:00+00:00",
+      "published": "2026-09-23T04:00:00+00:00",
       "trace": [
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "49e630e77c1ef705",
+      "title": "Do Not Trust the Benchmark: Limitations of General LLM Rankings and a Case for Task-Specific Evaluation",
+      "category": "tech_ai",
+      "one_liner": "General LLM leaderboards fail to reflect real-world utility, making task-specific evaluation essential for practical model selection.",
+      "tags": [
+        "ai",
+        "llm",
+        "research",
+        "tool"
+      ],
+      "summary": "This perspective article on arXiv examines five fundamental limitations of general large language model rankings, arguing that overall scores are tightly coupled to specific tested systems and questions. The author discusses how commercial incentives, benchmark saturation, data contamination, and model manipulation obscure actual performance. To address these issues, the paper advocates for task-specific evaluation procedures that disclose tested configurations, report metrics alongside cost and execution time, and rely on crowd-sourced platforms like Isotanta for repeated task evaluation. Ultimately, the analysis concludes that practical model selection requires evidence of performance on specific intended work rather than reliance on leaderboards.",
+      "key_facts": [],
+      "bottom_line": "Relying on general LLM leaderboards is fundamentally flawed due to data contamination and commercial biases; task-specific performance data is required for proper model selection.",
+      "claims": [
+        {
+          "text": "Benchmark scores increasingly influence the development, marketing, and selection of large language models.",
+          "support_span": "Benchmark scores increasingly influence the development, marketing, and selection of large language models.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "49e630e77c1ef705"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2609.23201",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2609.23201"
+      ],
+      "published": "2026-09-23T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "9823228b254c0291",
+      "title": "Red warning alert issued for 4 Odisha districs as disaster response forces in place for deep depression",
+      "category": "india_world",
+      "one_liner": "Odisha positions disaster response forces and issues red warnings across four districts due to heavy rains from a deep depression.",
+      "tags": [
+        "india",
+        "political"
+      ],
+      "summary": "Odisha's government deployed disaster response forces across southern and western districts following heavy rains and water-logging caused by a deep depression over the Bay of Bengal. The India Meteorological Department issued a red warning for heavy rain across four districts: Kalahandi, Nabarangpur, Koraput, and Malkangiri. Chief Minister Mohan Charan Majhi directed officials to ensure zero casualties, evacuate over 3,500 people from water-logged zones, and position 33 Odisha Disaster Rapid Action Force units across the state.",
+      "key_facts": [
+        "Evacuated people: 3,500+",
+        "ODRAF units deployed: 33 units",
+        "Highest rainfall: Baleshwar district (126.4 mm)"
+      ],
+      "bottom_line": "Odisha has evacuated thousands and deployed disaster forces following heavy rains triggered by a Bay of Bengal deep depression.",
+      "claims": [
+        {
+          "text": "The India Meteorological Department issued heavy rain for four districts such as Kalahandi, Nabarangpur, Koraput and Malkangiri...",
+          "support_span": "The India Meteorological Department issued heavy rain for four districts such as Kalahandi, Nabarangpur, Koraput and Malkangiri as the deep depression over west-central and adjoining northwest Bay of Bengal moved slowly...",
+          "status": "contradicted"
+        },
+        {
+          "text": "More than 3500 people have been evacuated to safer place.",
+          "support_span": "More than 3500 people have been evacuated to safer place.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "9823228b254c0291"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "The Hindu National",
+          "url": "https://www.thehindu.com/news/national/odisha/red-warning-alert-issued-for-4-odisha-districs-as-disaster-response-forces-in-place-for-deep-depression/article71500624.ece",
+          "domain": "thehindu.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-23T22:06:05+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
         "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
+        "blend 48 = trust 25 / interest 75 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -1587,104 +1528,40 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "c517abb4baa66acf",
-      "title": "Govt. brings smartphone screen protectors under Bureau of Indian Standards",
+      "cluster_key": "28e184476e9f4852",
+      "title": "The Hindu Sustainability Summit: ‘Treat waste water as an economic resource’",
       "category": "india_world",
-      "one_liner": "India mandated BIS certification for smartphone screen protectors starting April 2027 to curb sub-standard imports and boost local manufacturing.",
+      "one_liner": "Industry leaders at The Hindu Sustainability Summit 2026 urged treating wastewater as an economic resource, with oil majors scaling up municipal sewage reuse.",
       "tags": [
-        "hardware",
         "india",
-        "markets",
         "policy"
       ],
-      "summary": "The Indian government has mandated compulsory Bureau of Indian Standards (BIS) certification for smartphone screen protectors under the Electronics and Information Technology Goods Order, effective April 1, 2027. The regulation aims to eliminate sub-standard products from the market and support domestic manufacturers like Optiemus Infracom, which is scaling up production facilities in Noida utilizing Corning technology. Industry bodies estimate the compliance will nurture a ₹12,000 to ₹16,000 crore quality-focused sector, generate up to 60,000 jobs, and contribute significantly to GST revenues while safeguarding consumers.",
+      "summary": "Speakers at The Hindu Sustainability Summit 2026 emphasized the urgent need to treat wastewater as a valuable economic resource rather than discarding it. Chennai Petroleum Corporation Limited (CPCL) shared how historical water shortages led them to optimize consumption and reuse wastewater to produce 480 tonnes of steam. Indian Oil Corporation Limited (IOCL) outlined concrete plans across major refineries in Vadodara, Guwahati, Mathura, and Panipat to replace up to 90%-91% of fresh water intake with treated sewage from municipal plants. Experts also discussed the viability of seawater desalination, monitoring groundwater grades, and tapping geothermal energy from depleted oil and gas wells.",
       "key_facts": [
-        "Effective Date: April 1, 2027",
-        "Standard: IS 19348:2025",
-        "Estimated market value: ₹12,000–16,000 crore",
-        "Jobs generated: 60,000 direct and indirect"
+        "CPCL steam production from recycled water: 480 tonnes",
+        "IOCL wastewater recycling rate: 90% to 91%"
       ],
-      "bottom_line": "Compulsory BIS certification for smartphone screen protectors will reshape the domestic accessory market and empower local manufacturing from April 2027.",
+      "bottom_line": "Major Indian energy firms are aggressively pivoting to circular water management by replacing fresh water intake with treated municipal sewage and treating wastewater as an economic asset.",
       "claims": [
         {
-          "text": "The government has mandated compulsory Bureau of Indian Standards (BIS) certification for smartphone screen protectors, requiring entities to secure regulatory approval before selling such products in India.",
-          "support_span": "The government has mandated compulsory Bureau of Indian Standards (BIS) certification for smartphone screen protectors, requiring entities to secure regulatory approval before selling such products in India.",
+          "text": "CPCL's Director P. Kannan noted their pivot towards reduce, reuse, and recycle following Chennai's 1980 water shortage.",
+          "support_span": "It was Chennai’s acute water shortage of 1980 that proved to be a turning point for Chennai Petroleum Corporation Limited (CPCL)’s attitude towards used water, pivoting from dependence on Metro Water towards the principles of reduce, reuse and recycle, according to P. Kannan, CPCL’s Director (Operations).",
           "status": "entailed"
         },
         {
-          "text": "The move is expected to curb sales of low-quality smartphone screen protectors and help domestic manufacturers like Optiemus Infracom, which has started production in India.",
-          "support_span": "The move is expected to curb sales of low-quality smartphone screen protectors and help domestic manufacturers like Optiemus Infracom, which has started production in India.",
-          "status": "entailed"
-        },
-        {
-          "text": "effective from 1st April, 2027",
-          "support_span": "effective from 1st April, 2027",
+          "text": "IOCL recycles almost 90% to 91% of its wastewater and plans to replace fresh water with STP treated water.",
+          "support_span": "“We have been recycling almost 90% to 91% of our wastewater, but we are not stopping there,” said IOCL executive director Mukesh Mohan. “We are looking at replacing fresh water used in our process units with treated water from sewage treatment plants (STPs) in the city.",
           "status": "contradicted"
         }
       ],
       "trust_score": 25,
-      "interest_score": 75,
+      "interest_score": 50,
       "corroboration": 1,
-      "blend": 47.5,
+      "blend": 36.2,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "c517abb4baa66acf"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/business/govt-brings-smartphone-screen-protectors-under-bureau-of-indian-standards/article71496966.ece",
-          "domain": "thehindu.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-22T17:37:34+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "0f0d4b70b2031a2b",
-      "title": "IB school leaders from pan-India converge at ‘IB Manthan 2026’ in the city",
-      "category": "india_world",
-      "one_liner": "Educators across India gathered at IB Manthan 2026 in Hyderabad to discuss student agency and inclusion in international curricula.",
-      "tags": [
-        "india"
-      ],
-      "summary": "Over 200 school leaders and educators from International Baccalaureate programs across India converged at the Aga Khan Academy in Hyderabad for 'IB Manthan 2026'. The one-day forum focused on student agency, assessment, inclusion, and leadership under the theme “Learning Beyond Boundaries: Education for an Interconnected World”. Key addresses were delivered by regional officials and International Baccalaureate Director General Olli-Pekka Heinonen, emphasizing the expanding role of IB education in helping students navigate an interconnected global environment.",
-      "key_facts": [
-        "Participants: Over 200 school leaders and educators"
-      ],
-      "bottom_line": "IB Manthan 2026 brought together educators in Hyderabad to deliberate on modernizing international education frameworks across India.",
-      "claims": [
-        {
-          "text": "Over 200 school leaders and educators of International Baccalaureate programme from across India came together at IB Manthan 2026, a one-day forum for professional dialogue, reflection and exchange of educational practices, held at the Aga Khan Academy Hyderabad.",
-          "support_span": "Over 200 school leaders and educators of International Baccalaureate programme from across India came together at IB Manthan 2026, a one-day forum for professional dialogue, reflection and exchange of educational practices, held at the Aga Khan Academy Hyderabad.",
-          "status": "contradicted"
-        },
-        {
-          "text": "Director General of the International Baccalaureate Olli-Pekka Heinonen addressed the gathering on the growing relevance of IB education in India and its role in helping young people navigate an increasingly interconnected world.",
-          "support_span": "Director General of the International Baccalaureate Olli-Pekka Heinonen addressed the gathering on the growing relevance of IB education in India and its role in helping young people navigate an increasingly interconnected world.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 13.8,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "0f0d4b70b2031a2b"
+        "28e184476e9f4852"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -1692,18 +1569,169 @@
       "sources": [
         {
           "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/national/telangana/ib-school-leaders-from-pan-india-converge-at-ib-manthan-2026-in-the-city/article71496849.ece",
+          "url": "https://www.thehindu.com/news/cities/chennai/the-hindu-sustainability-summit-treat-waste-water-as-an-economic-resource/article71500702.ece",
           "domain": "thehindu.com",
           "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-22T16:46:31+00:00",
+      "published": "2026-09-23T19:14:42+00:00",
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 1/5 from gemini-3.5-flash-lite",
-        "blend 14 = trust 25 / interest 0 / corrob 25"
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 36 = trust 25 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "95bce07edf80e72d",
+      "title": "Generative Embodied Multiple Behavior Control Systems for Human-like Agents",
+      "category": "tech_ai",
+      "one_liner": "Integrating habitual and goal-directed behavior controllers creates more believable embodied AI agents.",
+      "tags": [
+        "agents",
+        "ai",
+        "research",
+        "tool"
+      ],
+      "summary": "Researchers propose a generative embodied multiple behavior control system that bridges the gap between goal-directed and habitual behavior in human-like agents. The architecture includes a Habitual Controller that retrieves cue-triggered behaviors from personalized memory, a Goal-directed Controller using a world model, and an Arbiter that dynamically balances both systems based on internal states. Coupled with a keyframe-guided 3D motion generation module, the approach significantly improves human-likeness in simulated environments. This work demonstrates the necessity of modeling habitual actions for believable embodied AI agents.",
+      "key_facts": [],
+      "bottom_line": "Embodied AI agents achieve significantly higher human-likeness when incorporating personalized habit memory alongside goal-directed world models.",
+      "claims": [
+        {
+          "text": "We propose a human behavior control mechanism-inspired framework which the Habitual Controller retrieves cue-triggered behaviors from personalized habit memory, while the Goal-directed Controller employs a context-aware world model to predict action consequences and estimate their values.",
+          "support_span": "We propose a human behavior control mechanism-inspired framework which the Habitual Controller retrieves cue-triggered behaviors from personalized habit memory, while the Goal-directed Controller employs a context-aware world model to predict action consequences and estimate their values.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "95bce07edf80e72d"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2609.22691",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2609.22691"
+      ],
+      "published": "2026-09-23T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "7756837aad05a729",
+      "title": "Even if AI development stopped today, we'd have years of catching up to do.",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "ai"
+      ],
+      "summary": "Even if AI development stopped today, we'd have years of catching up to do. The gap between what current models can do and what almost anyone is using them for is vast. Here’s my post on The Overhang, and the four advantages that let people close it. (Bluesky post by @emollick.bsky.social — 119 likes, 14 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "7756837aad05a729"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvsra62hic25",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-18T18:09:13.707000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-18 — outside lookback window"
+    },
+    {
+      "cluster_key": "65c0037a397e26ef",
+      "title": "blacklanternsecurity/bbot — The recursive internet scanner for hackers. 🧡",
+      "category": "cyber_tools",
+      "one_liner": "A popular open-source recursive internet scanner and attack surface mapping tool for your recon workflows.",
+      "tags": [
+        "opensource",
+        "tool"
+      ],
+      "summary": "Black Lantern Security maintains BBOT, a recursive internet scanner designed for hackers and penetration testers, written in Python with over 10,000 stars on GitHub. The tool focuses on attack surface management, automation, and command-line usage. It integrates with platforms like Neo4j to map discovered infrastructure. The repository has been recently updated with ongoing development.",
+      "key_facts": [
+        "GitHub Stars: 10,587",
+        "Language: Python"
+      ],
+      "bottom_line": "BBOT provides an active, recursive reconnaissance framework that scales attack surface discovery for security assessments.",
+      "claims": [
+        {
+          "text": "The recursive internet scanner for hackers.",
+          "support_span": "The recursive internet scanner for hackers.",
+          "status": "entailed"
+        },
+        {
+          "text": "GitHub repository blacklanternsecurity/bbot, 10,587 stars, language Python.",
+          "support_span": "GitHub repository blacklanternsecurity/bbot, 10,587 stars, language Python.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 32.5,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "65c0037a397e26ef"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (updated)",
+          "url": "https://github.com/blacklanternsecurity/bbot",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-23T22:03:48+00:00",
+      "trace": [
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "importance 3/5 from cache",
+        "blend 32 = trust 10 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -1762,52 +1790,46 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "1966d858f44a6303",
-      "title": "Efficient Benchmarking in Production: A Study of an Evolving LLM Agent",
+      "cluster_key": "97d94571b2be2be8",
+      "title": "TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents",
       "category": "tech_ai",
-      "one_liner": "Researchers evaluate methods for efficient recurring benchmarking of production LLM agents, highlighting adaptive testing and fixed subsets.",
+      "one_liner": "TicTacBench evaluates coding agents on RTL timing closure, showing that frontier LLMs struggle with post-PnR optimization unless guided by specialized procedures.",
       "tags": [
         "agents",
         "ai",
+        "hardware",
         "llm",
-        "privacy",
         "research",
-        "tool",
-        "windows"
+        "tool"
       ],
-      "summary": "Researchers studied efficient recurring evaluation methods for production LLM agents serving tens of thousands of monthly active users. By analyzing 574 historical production benchmark runs, they compared random sampling, historical caching, fixed representative subsets, and Item Response Theory (IRT) adaptive testing. They found that multidimensional 2PL adaptive testing achieves optimal score fidelity, while difficulty-stratified fixed subsets were deployed operationally for their simplicity and stability across calibration windows as short as one day.",
+      "summary": "Researchers introduce TicTacBench, a benchmark designed to evaluate coding agents on register-transfer level (RTL) timing closure under post-place-and-route (post-PnR) evaluation. The benchmark contains 30 diverse tasks featuring suboptimal RTL designs, timing constraints, and verification reports. Across 300 runs driven by eight frontier LLMs, the best agent successfully closed only 53.3% of tasks, with an average 7.18% area-delay product (ADP) degradation and an 8.83% energy-delay-squared product (EDDP) improvement. The authors also propose TicTacSkill, a method guiding agents through standard timing-closure procedures that improves the timing closure rate by 9%.",
       "key_facts": [
-        "Historical runs analyzed: 574",
-        "Adaptive testing questions executed: 200 (38.5% of full run)",
-        "Mean absolute error: 1.03 pp of MAE"
+        "Benchmark tasks: 30",
+        "Frontier LLMs evaluated: 8",
+        "Best agent task closure rate: 53.3%",
+        "TicTacSkill timing closure improvement: 9%"
       ],
-      "bottom_line": "Difficulty-stratified fixed subsets provide an operationally simple and stable method for recurring production-agent evaluation without sacrificing reliability.",
+      "bottom_line": "TicTacBench reveals that even frontier LLMs struggle with RTL timing closure, successfully closing only 53.3% of tasks until guided by specialized procedural methods like TicTacSkill.",
       "claims": [
         {
-          "text": "Using 574 historical runs of the production benchmark, split chronologically into calibration and held-out periods, we compare random sampling, historical caching, fixed representative subsets, and IRT-based adaptive testing.",
-          "support_span": "Using 574 historical runs of the production benchmark, split chronologically into calibration and held-out periods, we compare random sampling, historical caching, fixed representative subsets, and IRT-based adaptive testing.",
+          "text": "TicTacBench contains 30 diverse tasks for evaluating coding agents' capabilities for RTL-level timing closure.",
+          "support_span": "TicTacBench contains 30 diverse tasks, each provided with a suboptimal RTL design, realistic timing constraints, functional equivalence verification, and timing reports.",
           "status": "entailed"
         },
         {
-          "text": "The results show that multidimensional 2PL adaptive testing achieves the best overall score fidelity: executing 200 questions, 38.5% of a full run, yields 1.03 pp of MAE.",
-          "support_span": "The results show that multidimensional 2PL adaptive testing achieves the best overall score fidelity: executing 200 questions, 38.5% of a full run, yields 1.03 pp of MAE.",
-          "status": "entailed"
-        },
-        {
-          "text": "We nevertheless deployed difficulty-stratified fixed subsets because of their operational simplicity, and show they transfer without recalibration to five other agent families and remain stable across calibration windows as short as one day.",
-          "support_span": "We deployed difficulty-stratified fixed subsets because of their operational simplicity, and show they transfer without recalibration to five other agent families and remain stable across calibration windows as short as one day.",
+          "text": "Even the best agent can only close 53.3% of tasks with 7.18% area-delay product degradation.",
+          "support_span": "With over 300 runs of coding agents driven by 8 frontier LLMs, we find that even the best agent can only close 53.3% of tasks with 7.18% area-delay product (ADP) degradation and 8.83% energy-delay-squared product (EDDP) improvement on average.",
           "status": "contradicted"
         }
       ],
-      "trust_score": 82,
+      "trust_score": 70,
       "interest_score": 50,
-      "corroboration": 2,
-      "blend": 58.0,
+      "corroboration": 1,
+      "blend": 47.5,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "1966d858f44a6303",
-        "641f7b23ae359c01"
+        "97d94571b2be2be8"
       ],
       "critical_signal": "",
       "priority": "important",
@@ -1815,146 +1837,76 @@
       "sources": [
         {
           "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.21267",
+          "url": "https://arxiv.org/abs/2609.23363",
           "domain": "arxiv.org",
           "tier": "A"
-        },
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2609.23363"
+      ],
+      "published": "2026-09-23T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "36ccd5a5c571ad89",
+      "title": "projectdiscovery/subfinder — Fast passive subdomain enumeration tool.",
+      "category": "cyber_tools",
+      "one_liner": "Subfinder is a popular Go-based passive subdomain discovery tool for bug bounty and recon workflows.",
+      "tags": [
+        "bugbounty",
+        "opensource",
+        "tool",
+        "vulnerability"
+      ],
+      "summary": "ProjectDiscovery's Subfinder is a fast passive subdomain enumeration tool written in Go, currently maintaining 14,404 stars on GitHub. It is widely used by bug bounty hunters and security professionals for OSINT and reconnaissance operations. The repository has recently received updates.",
+      "key_facts": [
+        "Repository: projectdiscovery/subfinder",
+        "Language: Go",
+        "Stars: 14404"
+      ],
+      "bottom_line": "The subfinder reconnaissance tool provides fast passive subdomain enumeration for security assessments.",
+      "claims": [
         {
-          "name": "Crypto Briefing",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE11ZmZxZWhLVi03M2MtTzFYLWFySGkyMmVQTjRjYVdoNzZ0MTFuS1RhSmlmYnNENExYVFBwVFJJeFpTQkt6TEJ4RV9LQUdPTkNrc21BZGR3Xy1PQS1QS0xVeUxGVGVMVGNtcFVoQUJSemM?oc=5",
-          "domain": "crypto-briefing.publisher",
+          "text": "Fast passive subdomain enumeration tool. GitHub repository projectdiscovery/subfinder, 14,404 stars, language Go.",
+          "support_span": "Fast passive subdomain enumeration tool. GitHub repository projectdiscovery/subfinder, 14,404 stars, language Go.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 21.2,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "36ccd5a5c571ad89"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (updated)",
+          "url": "https://github.com/projectdiscovery/subfinder",
+          "domain": "github.com",
           "tier": "C"
         }
       ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.21267"
-      ],
-      "published": "2026-09-21T10:15:44+00:00",
+      "primary_links": [],
+      "published": "2026-09-23T14:22:56+00:00",
       "trace": [
-        "tier A (+40)",
-        "2 independent outlets (+12)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 3/5 from cache",
-        "blend 58 = trust 82 / interest 50 / corrob 50",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "8789f881fa340f9c",
-      "title": "Calibrating Teacher--Student Discrepancy for On-Policy Distillation",
-      "category": "tech_ai",
-      "one_liner": "Calibrated On-Policy Distillation isolates teacher self-deviations during training, improving mathematical reasoning distillation across model scales.",
-      "tags": [
-        "ai",
-        "llm",
-        "privacy",
-        "research",
-        "tool"
-      ],
-      "summary": "On-policy distillation (OPD) techniques often transfer self-deviation errors from stronger teacher models to student models alongside true capability gains. To resolve this, the authors introduce Calibrated On-Policy Distillation (Cal-OPD), which estimates the teacher's self-deviation region using positive and negative privileged interventions. By filtering out teacher self-deviations and retaining only 52% to 65% of the original discrepancy signal, Cal-OPD consistently outperforms standard OPD variants across model scales on mathematical reasoning benchmarks.",
-      "key_facts": [
-        "Discrepancy retention rate: 52-65%"
-      ],
-      "bottom_line": "Filtering out teacher self-deviations via privileged interventions ensures that student models learn actual reasoning capabilities rather than teacher artifacts.",
-      "claims": [
-        {
-          "text": "Cal-OPD retains only about 52--65% of the original teacher--student discrepancy as the optimization signal.",
-          "support_span": "while retaining only about 52--65% of the original teacher--student discrepancy as the optimization signal, Cal-OPD consistently outperforms standard OPD and its variants across model scales.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "8789f881fa340f9c"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.21619",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.21619"
-      ],
-      "published": "2026-09-22T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "3d118e973813aa80",
-      "title": "Learning Cardiac Features: ECG Biometrics Across Time and~Exercise",
-      "category": "tech_ai",
-      "one_liner": "A Siamese ResNet ECG biometric system demonstrates resilience to exercise stress and temporal drift, achieving low equal error rates on public benchmarks.",
-      "tags": [
-        "ai",
-        "identity",
-        "privacy",
-        "research",
-        "tool"
-      ],
-      "summary": "This study evaluates electrocardiogram (ECG) biometrics under realistic conditions involving exercise-induced stress and cross-session temporal variability. Utilizing a Siamese ResNet architecture with late multi-lead fusion trained on cardiopulmonary exercise datasets, the system achieved an intra-session rest-to-peak EER of 1.7% and 3.9% on the public CYBHi dataset. The results confirm the presence of an intrinsic cardiac signature that remains resilient against physiological drift and temporal variations, supporting robust ECG-based authentication and security applications.",
-      "key_facts": [
-        "Intra-session rest-to-peak EER: 1.7%",
-        "CYBHi dataset EER: 3.9%"
-      ],
-      "bottom_line": "Intrinsic cardiac signatures remain sufficiently stable across exercise-induced stress and time to enable reliable biometric authentication.",
-      "claims": [
-        {
-          "text": "The evaluation achieved an intra-session rest-to-peak EER of 1.7% and state-of-the-art 3.9% on the CYBHi dataset.",
-          "support_span": "This first extensive assessment of ECG biometrics under combined physiological and temporal variability achieves an intra-session rest-to-peak EER of 1.7% and state-of-the-art 3.9% on the CYBHi dataset.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "3d118e973813aa80"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.21962",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.21962"
-      ],
-      "published": "2026-09-22T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "importance 2/5 from cache",
+        "blend 21 = trust 10 / interest 25 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -2016,36 +1968,68 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "58b3d6bf54389ab2",
-      "title": "Can Agents Design Better Chips with a Higher Level Abstraction?",
+      "cluster_key": "2ad1d3a557da5efe",
+      "title": "The bots are now talking to each other in my LinkedIn comments.",
       "category": "tech_ai",
-      "one_liner": "Combining High-Level Synthesis abstractions with RTL refinement enables LLM agents to achieve a 2.6x speedup in chip design.",
+      "one_liner": "",
+      "tags": [],
+      "summary": "The bots are now talking to each other in my LinkedIn comments. Its like what happened with the German wiki, except instead of planning to hack HuggingFace, all of the conversation is babble about \"the thing no one is talking about\" in reference to things I am talking about (Bluesky post by @emollick.bsky.social — 91 likes, 6 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "2ad1d3a557da5efe"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvsk6h4t4k2f",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-18T16:02:59.922000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-18 — outside lookback window"
+    },
+    {
+      "cluster_key": "80c2e664a181724e",
+      "title": "AutoGym: Blueprint-First Generation of Verifiable Agent Gyms",
+      "category": "tech_ai",
+      "one_liner": "AutoGym automatically generates verifiable reinforcement learning environments and tasks with adjustable difficulty levels for AI agents.",
       "tags": [
         "agents",
         "ai",
-        "hardware",
         "llm",
-        "privacy",
-        "release",
+        "policy",
         "research",
         "tool"
       ],
-      "summary": "Researchers evaluated whether large language model agents can design superior chips by using higher-level abstractions rather than directly writing register-transfer level (RTL) code. They compared Direct RTL Design, Agent-based HLS Design, Post-Compiler HLS Refinement, and Post-HLS RTL Refinement, introducing AHRR (Agent-based HLS with RTL Refinement) which combines HLS design with RTL refinement. Using FPGAs across an 11-task benchmark suite, AHRR achieved a geometric-mean speedup of 2.6x over Direct RTL Design. Case studies demonstrated that High-Level Synthesis (HLS) distills design knowledge into manageable abstractions for agents, while subsequent RTL refinement captures low-level optimizations.",
-      "key_facts": [
-        "Speedup: 2.6x geometric-mean",
-        "Benchmark suite tasks: 11"
-      ],
-      "bottom_line": "Leveraging higher-level abstractions through HLS combined with RTL refinement allows LLM agents to design better chips faster.",
+      "summary": "Researchers introduced AutoGym, a framework for generating complete, verifiable agent gyms—comprising tasks, executable environments, and verifiers—from domain seeds or model trajectories. Traditional synthetic generation often yields trivial tasks with cosmetic difficulty, but AutoGym implements blueprint-first generation to establish solvability as a prerequisite, explicit parameters for fine-grained difficulty steering, and active curriculum synthesis to adapt as model capabilities evolve.",
+      "key_facts": [],
+      "bottom_line": "AutoGym solves static agent benchmark saturation by using blueprint-first generation to create verifiable, adjustable training environments.",
       "claims": [
         {
-          "text": "Across a diverse 11-tasks benchmark suite, AHRR achieves a 2.6 geometric-mean speedup over Direct RTL Design.",
-          "support_span": "Across a diverse 11-tasks benchmark suite, AHRR achieves a 2.6$\times$ geometric-mean speedup over Direct RTL Design across our benchmark suite.",
-          "status": "contradicted"
+          "text": "We present AutoGym, a framework that generates complete gyms (tasks, executable environments, and verifiers) from a minimal domain seed or prior model trajectories.",
+          "support_span": "We present AutoGym, a framework that generates complete gyms (tasks, executable environments, and verifiers) from a minimal domain seed or prior model trajectories.",
+          "status": "entailed"
         },
         {
-          "text": "We compare Direct RTL Design, Agent-based HLS Design, Post-Compiler HLS Refinement, and Post-HLS RTL Refinement.",
-          "support_span": "We compare Direct RTL Design, Agent-based HLS Design, Post-Compiler HLS Refinement, and Post-HLS RTL Refinement, and combine Agent-based HLS Design with Post-HLS RTL Refinement as Agent-based HLS with RTL Refinement (AHRR).",
-          "status": "entailed"
+          "text": "AutoGym introduces three mechanisms... Blueprint-first generation... Explicit generation parameters... Active curriculum synthesis...",
+          "support_span": "AutoGym introduces three mechanisms. (1) Blueprint-first generation specifies the valid solution space, environment requirements, and verification criteria before the environment is materialized... (2) Explicit generation parameters control task topology, interaction depth, capability axes, question obfuscation, and distractor composition... (3) Active curriculum synthesis uses performance-informed calibration to adjust the distribution over these parameters...",
+          "status": "contradicted"
         }
       ],
       "trust_score": 70,
@@ -2055,7 +2039,7 @@
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "58b3d6bf54389ab2"
+        "80c2e664a181724e"
       ],
       "critical_signal": "",
       "priority": "important",
@@ -2063,52 +2047,118 @@
       "sources": [
         {
           "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.21157",
+          "url": "https://arxiv.org/abs/2609.22592",
           "domain": "arxiv.org",
           "tier": "A"
         }
       ],
       "primary_links": [
-        "https://arxiv.org/abs/2609.21157"
+        "https://arxiv.org/abs/2609.22592"
       ],
-      "published": "2026-09-22T04:00:00+00:00",
+      "published": "2026-09-23T04:00:00+00:00",
       "trace": [
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "importance 3/5 from cache",
+        "importance 3/5 from gemini-3.5-flash-lite",
         "blend 48 = trust 70 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "18afd9658658483d",
-      "title": "Scaling Discovery through Test-Time Communication",
+      "cluster_key": "e3a3bc50e9e769ee",
+      "title": "A2M: Trace-Optimized Agent Hijacking in the MCP Ecosystem",
       "category": "tech_ai",
-      "one_liner": "Multi-agent LLM systems can achieve superior results through test-time communication, offering a scalable way to solve complex tasks that exceed single-agent capabilities.",
+      "one_liner": "A2M exploits Model Context Protocol semantic matching to hijack AI agents via malicious tool metadata and execution traces.",
       "tags": [
         "agents",
         "ai",
-        "llm",
+        "appsec",
+        "exploit",
+        "privacy",
         "research",
-        "tool"
+        "tool",
+        "vulnerability"
       ],
-      "summary": "Researchers have demonstrated that multi-agent systems using test-time communication significantly outperform independent agents on complex tasks. By sharing breakthroughs via a shared directory, a team of k agents achieves success rates comparable to 4k independent agents, with performance gains compounding as the team scales. This approach proved effective for novel problem-solving in the ARC-AGI-3 benchmark and research tasks like polyomino packing and classifier compression. While compute-intensive, this collaborative framework consistently yields stronger results than isolated agents when clear feedback is available.",
+      "summary": "A2M (Attraction-to-Manipulation) is a two-stage black-box framework that exploits semantic matching in Model Context Protocol (MCP) ecosystems to hijack agent behavior. The Attraction phase optimizes third-party tool metadata to increase invocation probability, while the Manipulation phase uses execution traces to refine adversarial tool returns. Tested on LiveMCPBench using GLM-4.6, direct attacks achieved a macro-average malicious tool invocation rate of 93.6%, increased weighted token costs by 32.4 times under Cognitive Denial of Service, and attained a mean attack success rate of 74.4% across multiple exploitation scenarios. Cross-model transfer without re-optimization yielded a 63.6% invocation rate, highlighting severe supply-chain risks in tool-augmented agent architectures.",
       "key_facts": [
-        "Benchmark: ARC-AGI-3",
-        "Accuracy: 99.4% test accuracy on MNIST classifier compression",
-        "Submission size: 1,957-byte classifier"
+        "Malicious tool invocation rate: 93.6%",
+        "Attack success rate: 74.4%",
+        "Token cost multiplier: 32.4x"
       ],
-      "bottom_line": "Scaling multi-agent systems through shared communication channels is a more efficient and effective strategy for complex problem-solving than simply increasing the number of independent agents.",
+      "bottom_line": "Model Context Protocol ecosystems face critical supply-chain risks where manipulated tool metadata can hijack agent execution flows.",
       "claims": [
         {
-          "text": "We show that test-time communication can substantially outperform independent parallel attempts on challenging tasks, where sharing a breakthrough can push the whole group forward.",
-          "support_span": "We show that test-time communication can substantially outperform independent parallel attempts on challenging tasks, where sharing a breakthrough can push the whole group forward.",
+          "text": "On LiveMCPBench, direct attacks optimized and evaluated on GLM-4.6 achieve a macro-average malicious tool invocation rate of 93.6% across four scenarios, increase weighted token costs to 32.4\u0015 the benign baseline under Cognitive Denial of Service, and attain a mean attack success rate of 74.4% across Information Exfiltration, Environment Integrity Compromise, and Reasoning Derailment.",
+          "support_span": "On LiveMCPBench, direct attacks optimized and evaluated on GLM-4.6 achieve a macro-average malicious tool invocation rate of 93.6% across four scenarios, increase weighted token costs to 32.4$\times$ the benign baseline under Cognitive Denial of Service, and attain a mean attack success rate of 74.4% across Information Exfiltration, Environment Integrity Compromise, and Reasoning Derailment.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 70.0,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "e3a3bc50e9e769ee"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.CR",
+          "url": "https://arxiv.org/abs/2609.26761",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2609.26761"
+      ],
+      "published": "2026-09-23T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 70 = trust 70 / interest 100 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "fc15a3a372f15687",
+      "title": "On the security and privacy of LLMs in Mobility",
+      "category": "tech_ai",
+      "one_liner": "An academic survey on LLM usage in mobility reveals a severe lack of cybersecurity, privacy, and regulatory compliance assessments.",
+      "tags": [
+        "ai",
+        "llm",
+        "policy",
+        "privacy",
+        "research",
+        "tool",
+        "vulnerability"
+      ],
+      "summary": "Generative AI is transforming the mobility sector—a global market valued at approximately $2.9 trillion annually impacting over 1.5 billion vehicles—while raising critical cybersecurity, privacy, and reliability challenges. A new academic survey maps current LLM applications in transportation against the European AI Act's high-risk requirements, evaluating 35 recent works. The findings reveal that current research predominantly focuses on GPT and Llama models applied to traffic scenarios while largely neglecting security, privacy, and compliance, with only two of the reviewed studies incorporating partial vulnerability or risk assessments.",
+      "key_facts": [
+        "Mobility market value: ~$2.9 trillion annually",
+        "Vehicle impact scope: Over 1.5 billion vehicles",
+        "Reviewed studies: 35 papers"
+      ],
+      "bottom_line": "Intelligent transportation systems deploying Large Language Models heavily prioritize static optimization performance over safety-critical lifecycle security and regulatory compliance.",
+      "claims": [
+        {
+          "text": "With a global market valued at approximately 2.9 trillion dollars annually, considering only cars, the integration of these technologies has the potential to impact more than 1.5 billion vehicles worldwide.",
+          "support_span": "With a global market valued at approximately 2.9 trillion dollars annually, considering only cars, the integration of these technologies has the potential to impact more than 1.5 billion vehicles worldwide.",
           "status": "entailed"
         },
         {
-          "text": "We find that a team of k communicating agents, team@k, matches the success rate of 4k independent agents, and this advantage grows with k, suggesting gains compound with scale.",
-          "support_span": "We find that a team of k communicating agents, team@k, matches the success rate of 4k independent agents, and this advantage grows with k, suggesting gains compound with scale.",
+          "text": "Our findings show that research mainly studies GPT and Llama models (over 50% of reviewed works) and traffic applications while largely neglecting security, privacy, and reliability.",
+          "support_span": "Our findings show that research mainly studies GPT and Llama models (over 50% of reviewed works) and traffic applications while largely neglecting security, privacy, and reliability.",
           "status": "contradicted"
         }
       ],
@@ -2119,29 +2169,94 @@
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "18afd9658658483d"
+        "fc15a3a372f15687"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.21032",
+          "name": "arXiv cs.CR",
+          "url": "https://arxiv.org/abs/2609.26295",
           "domain": "arxiv.org",
           "tier": "A"
         }
       ],
       "primary_links": [
-        "https://arxiv.org/abs/2609.21032"
+        "https://arxiv.org/abs/2609.26295"
       ],
-      "published": "2026-09-22T04:00:00+00:00",
+      "published": "2026-09-23T04:00:00+00:00",
       "trace": [
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "importance 3/5 from cache",
+        "importance 3/5 from gemini-3.5-flash-lite",
         "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "35aec486333fc5d7",
+      "title": "Formally Modeling the Terrapin Attack on SSH",
+      "category": "tech_ai",
+      "one_liner": "A new formal model for SSH channel integrity shows that multiple AEAD modes are insecure against ciphertext-only attacks.",
+      "tags": [
+        "incident",
+        "network",
+        "research",
+        "tool",
+        "vulnerability"
+      ],
+      "summary": "Researchers proposed a formal model for channel integrity under partially chosen states to analyze the Terrapin attack on SSH, addressing gaps in existing stateful encryption models. By evaluating pseudocode descriptions across eight prominent AEAD modes and varying the SND oracle, the authors established concrete security bounds for ciphertext-only, known-plaintext, and chosen-plaintext attacks. The analysis reveals that all three Encrypt-then-MAC modes and ChaCha20-Poly1305 in SSH are insecure in the ciphertext-only model, leaving AES-GCM as the only cipher secure across all three variants. Additionally, the work uncovered a novel BEAST-like chosen-plaintext attack on Encrypt-and-MAC with CBC ciphers.",
+      "key_facts": [
+        "Secure cipher in all variants: AES-GCM",
+        "Insecure in CO model: EtM modes and ChaCha20-Poly1305"
+      ],
+      "bottom_line": "Most SSH AEAD modes fail channel integrity guarantees under ciphertext-only state manipulation, leaving AES-GCM as the sole fully secure cipher.",
+      "claims": [
+        {
+          "text": "We find that all three Encrypt-then-MAC (EtM) modes and ChaCha20-Poly1305 in SSH are insecure in the CO model.",
+          "support_span": "We find that all three Encrypt-then-MAC (EtM) modes and ChaCha20-Poly1305 in SSH are insecure in the CVE model.",
+          "status": "contradicted"
+        },
+        {
+          "text": "AES-GCM is the only cipher secure in all three model variants.",
+          "support_span": "AES-GCM is the only cipher secure in all three model variants.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "35aec486333fc5d7"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.CR",
+          "url": "https://arxiv.org/abs/2609.26358",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2609.26358"
+      ],
+      "published": "2026-09-23T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     }
