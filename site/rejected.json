@@ -1,79 +1,96 @@
 {
-  "generated_at": "2026-09-26T00:45:27.575324+00:00",
+  "generated_at": "2026-09-27T00:35:34.133730+00:00",
   "items": [
     {
-      "cluster_key": "37e1d0d1ca2350ce",
-      "title": "As of recently: Revolut Confirms Data Breach via Fake Government Requests British fintech Revolut confirmed a data breach after a fraudster used a spoofed…",
-      "category": "cyber_attacks",
-      "one_liner": "Revolut experienced a data breach exposing user identity documents and transaction logs after an attacker used a spoofed government email.",
+      "cluster_key": "c241f6fecbc0aa41",
+      "title": "The cybersecurity threat from agents is increasingly more likely to come from a massed swarm of AIs whose only goal is to penetrate your system to…",
+      "category": "tech_ai",
+      "one_liner": "Future cybersecurity threats may arise from massive swarms of AI agents breaking security boundaries while executing trivial research goals.",
       "tags": [
-        "identity",
+        "agents",
+        "ai",
         "incident",
-        "india",
-        "privacy"
+        "llm"
       ],
-      "summary": "British fintech Revolut suffered a data breach after a fraudster used a spoofed email address from a legitimate government agency domain to submit unauthorized data requests. The exposed records include customer identity details, birth dates, postal and email addresses, phone numbers, copies of identity documents, verification selfies, and transaction histories. Revolut stated that a limited number of high-net-worth users were impacted, blocked the malicious email address, and alerted law enforcement and regulators. The company maintains that its systems and customer funds remain unaffected and that the loss is covered.",
-      "key_facts": [
-        "Global customers: 80 million+"
-      ],
-      "bottom_line": "Sophisticated social engineering via spoofed government domains can bypass standard verification protocols and compromise sensitive fintech customer data.",
+      "summary": "A social media commentary post highlights that future cybersecurity threats from autonomous AI agents may stem from massed swarms executing trivial or benign-sounding research goals rather than targeted malicious actor campaigns. The post illustrates how an automated swarm tasked with finding company t-shirt prices could inadvertently breach internal security boundaries during its execution. This underscores a shift in threat modeling where the sheer volume of autonomous agent operations creates unexpected corporate exposure.",
+      "key_facts": [],
+      "bottom_line": "Massed swarms of AI agents pursuing benign objectives can pose the same perimeter-penetration threat as deliberate malicious attackers.",
       "claims": [
         {
-          "text": "Revolut suffered a data breach via a spoofed government agency email domain.",
-          "support_span": "British fintech Revolut confirmed that it disclosed sensitive customer information to an unauthorized third party after receiving fraudulent requests sent from a legitimate government agency email domain.",
-          "status": "entailed"
-        },
-        {
-          "text": "Exposed information included identity documents, verification selfies, and transaction histories.",
-          "support_span": "The exposed data included customers’ identity and contact details, including their birth date, postal and email addresses, and phone numbers, as well as copies of their identity documents including passports and driver’s licenses... The data may have also included verification selfies, account statements, and transaction histories",
+          "text": "The cybersecurity threat from agents is increasingly more likely to come from a massed swarm of AIs whose only goal is to penetrate your system to…",
+          "support_span": "The cybersecurity threat from agents is increasingly more likely to come from a massed swarm of AIs whose only goal is to penetrate your system to…",
           "status": "contradicted"
         }
       ],
-      "trust_score": 49,
-      "interest_score": 100,
-      "corroboration": 3,
-      "blend": 79.8,
+      "trust_score": 10,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 32.5,
       "is_new": false,
       "summary_source": "model",
       "alt_keys": [
-        "37e1d0d1ca2350ce",
-        "79a27c625904f2d1",
-        "8aabf877d5629de2"
+        "c241f6fecbc0aa41"
       ],
       "critical_signal": "",
-      "priority": "important",
+      "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "TechCrunch",
-          "url": "https://techcrunch.com/2026/09/12/revolut-confirms-customer-data-breach-through-fake-government-requests/",
-          "domain": "techcrunch.com",
-          "tier": "B"
-        },
-        {
-          "name": "SC Media",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9DajdhaXUtQVdCZW5rZlpUS09rU2hMazFyOFp6VkZxenBoMkE4R2p2Y2JReEtyeE1va3ltaXNZUllpYXBSNnh5Y1hCLW00RjAzOC1SNUJEbWRZdmhxbm1XZmk5clY0azFhSmlJb1l2N1ExdmZWSzFRRHpfYVo?oc=5",
-          "domain": "sc-media.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "The Register",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeHFHaklOV3pkaFdQLVJYeXltTWhSR1VsRXdaWVhDVTcyMjJJMmZCNmR2ZTlfbzdEVjZaWTV4X0UxWk1vYlNPY2hCQmtmSmdrdWxlY1FjZDJCSkthSmxOdVNaY3JCLVMwMmlZR3c0c1c3MGRXaDVHdnlPdXNlUFpoTXVncnRKV1RjNm9VUTFyTXNBR254aG9lcnVFSGpKd3BrVlVReHQ1WXhMV1g5eDVheXlRUQ?oc=5",
-          "domain": "theregister.com",
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwc2fyzarc2o",
+          "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-24T22:30:32+00:00",
+      "published": "2026-09-24T20:03:29.505000+00:00",
       "trace": [
-        "tier B (+25)",
-        "3 independent outlets (+24)",
-        "verified: 3 independent outlets",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 80 = trust 49 / interest 100 / corrob 75",
-        "demoted: critical capped at 5"
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 32 = trust 10 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "de305c4779f5916b",
+      "title": "My evil plan is to adopt a fanfic writer, curse them with technical knowledge and then slowly unleash them upon this plane with full knowledge and…",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "windows"
+      ],
+      "summary": "My evil plan is to adopt a fanfic writer, curse them with technical knowledge and then slowly unleash them upon this plane with full knowledge and experience from which to write engaging technical writing. (Bluesky post by @xeiaso.net — 28 likes, 7 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "de305c4779f5916b"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Xe Iaso",
+          "url": "https://bsky.app/profile/xeiaso.net/post/3mw2aj2lhvk2r",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-21T17:31:16.357000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-21 — outside lookback window"
     },
     {
       "cluster_key": "2ecf325ca6022fc2",
@@ -111,11 +128,7 @@
       "summary_source": "model",
       "alt_keys": [
         "2ecf325ca6022fc2",
-        "9221ca605b76e73c",
-        "ac3ee12213336cdb",
-        "bdb664fc1652bf57",
-        "f328e59bc7144620",
-        "f5ecbeb5beed6f98"
+        "ac3ee12213336cdb"
       ],
       "critical_signal": "",
       "priority": "important",
@@ -126,30 +139,6 @@
           "url": "https://www.theregister.com/security/2026/09/24/someone-went-shopping-in-asuss-eshop-for-customer-data/5298860",
           "domain": "theregister.com",
           "tier": "B"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBHVXo4dFh4Z0l4a3BMYTlicG1oWm1vel9DanpEcUh2N1N2STdINDI0WXY5aklROGZVNUdDdWJXMzdpZElGLTZkWnZ6MWxlMXhBMlRmbHlOQlVoeEEzQWlR?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Claim Depot",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5xSUFwV0hQcUtrT3llNG1yWTZnYnQtTGdtM21NT29hYk82ZWtSLTQ4NjJ3a0RNazYyanY1QTlIMHg0MzlTZXN0SkpBbEVqTmhRVHZHeHVnWHQtelJxelpHbS1jSU1hVUtsY1haQWJ5TGlWMTQ?oc=5",
-          "domain": "claim-depot.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Cybernews",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9LY1hCTXVhVk5KVHlVLW9CWjFsSXl3dHZ4bXBBdzkwX3RGNmFSZFJCbnhuWGRTYmFFZnR1ZGJSWFkxcGZGUDQyc3ZYUjA1UHZhWUlQT2o2RnZDZWRqcW5MM2RVVk5IYjc5ZTVSenhna25xOWloQUJfRVFzLU9wVEE?oc=5",
-          "domain": "cybernews.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "news.lavx.hu",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSXI3aTQzV0lTc2dQYU5oOUtJemQ4RFpsUEcwY1RvcmFkbmFJb0NHV3RPQnFJZEVBOG5JamlSOHFGTGNSN1B3cTZ0Qm13eUpPMGxPdUdVaDBRT1hjYWRpWnlIRGY1U0xfVExhLUtFLVE2WktONlc3ZkRVb05heHhuVWlJYjhUNlVTa1BMbXNpd3VHbFFwMXh3ekhuUmNLZw?oc=5",
-          "domain": "news-lavx-hu.publisher",
-          "tier": "C"
         },
         {
           "name": "Tom's Hardware",
@@ -164,9 +153,194 @@
         "tier B (+25)",
         "2 independent outlets (+12)",
         "corroborated by 2 independent outlets",
+        "importance 3/5 from cache",
+        "blend 47 = trust 37 / interest 50 / corrob 50"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "5d7200d776ef148b",
+      "title": "OpenAI \"has now resolved more than 100 long-standing open problems across most areas of mathematics,\" and is waiting to release them until after…",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [],
+      "summary": "OpenAI \"has now resolved more than 100 long-standing open problems across most areas of mathematics,\" and is waiting to release them until after discussions with the math community The same thing will likely happen, but more so, with the Bar, the AMA & other professions. (Bluesky post by @emollick.bsky.social — 114 likes, 16 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "5d7200d776ef148b"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mw2l5jyq7226",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-21T20:41:41.029000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-21 — outside lookback window"
+    },
+    {
+      "cluster_key": "bde1f50ea66f5817",
+      "title": "404 Media searched one of the ROU official’s phone numbers in Darkside, and found previously breached data indicating they used to work for the…",
+      "category": "cyber_attacks",
+      "one_liner": "A 404 Media investigation linked an official's phone number in a breach database to previous Secret Service employment.",
+      "tags": [
+        "incident",
+        "privacy"
+      ],
+      "summary": "Investigative reporting by 404 Media revealed that searching an official's phone number within the Darkside database uncovered previously breached records indicating employment history with the United States Secret Service. The finding highlights how leaked credentials and breach aggregators can expose sensitive background data on government officials. The scoop draws attention to the intersection of historical data breaches and public sector vetting.",
+      "key_facts": [],
+      "bottom_line": "Public officials' historical backgrounds are vulnerable to exposure through cross-referencing commercial breach databases.",
+      "claims": [
+        {
+          "text": "404 Media searched one of the ROU official’s phone numbers in Darkside, and found previously breached data indicating they used to work for the…",
+          "support_span": "404 Media searched one of the ROU official’s phone numbers in Darkside, and found previously breached data indicating they used to work for the…",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 32.5,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "bde1f50ea66f5817"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mw7t53cb3k2i",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-23T22:47:54.236000+00:00",
+      "trace": [
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
         "summary: the article's opening sentences, not model-written and not fact-checked",
         "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 47 = trust 37 / interest 50 / corrob 50"
+        "blend 32 = trust 10 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "26cafeb31ed44834",
+      "title": "I think Meta's Muse is an impressive implementation of the OpenClaw idea of AI as a personal assistant agent that you have an ongoing chat with.",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "agents",
+        "ai"
+      ],
+      "summary": "I think Meta's Muse is an impressive implementation of the OpenClaw idea of AI as a personal assistant agent that you have an ongoing chat with. Since it is so focused on doing that well, the experience is very accessible for the many people who didn't realize what AI agents can do to be helpful. (Bluesky post by @emollick.bsky.social — 59 likes, 5 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "26cafeb31ed44834"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvzue3njs226",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-21T13:53:44.800000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-21 — outside lookback window"
+    },
+    {
+      "cluster_key": "cd369c4968f319b8",
+      "title": "nokia-applied-research/AnyJev — Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training. (continue upda",
+      "category": "tech_ai",
+      "one_liner": "Use AnyJev to attach closed-form classification heads to truncated LLMs via vLLM, getting real decision probabilities without token generation.",
+      "tags": [
+        "ai",
+        "llm",
+        "opensource",
+        "tool"
+      ],
+      "summary": "AnyJev is an open-source tool that converts any large language model into a calibrated decision model without retraining by appending a closed-form head to truncated model layers. By serving models like Qwen2.5-7B via vLLM and reading hidden states directly from a pooling server, users can process typed decisions such as multiple-choice classifications with real probabilities. The approach eliminates token generation and parsing overhead while delivering accurate confidence scores to automate routing decisions. Benchmarks demonstrate that truncating model blocks can improve both processing speed and calibration quality.",
+      "key_facts": [],
+      "bottom_line": "AnyJev allows developers to bypass full LLM text generation and extract calibrated, typed decision probabilities directly from hidden states using a lightweight linear head.",
+      "claims": [
+        {
+          "text": "AnyJev — Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training.",
+          "support_span": "AnyJev — Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 22,
+      "interest_score": 75,
+      "corroboration": 2,
+      "blend": 54.2,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "cd369c4968f319b8",
+        "cfd71df441b633a3"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/nokia-applied-research/AnyJev",
+          "domain": "github.com",
+          "tier": "C"
+        },
+        {
+          "name": "MarkTechPost",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOclVSQlBaU3FqU1lJQjJtVTF3VmRaWnRDMlUwd0t2VS1QR3poaE9YVUZYRDBzNklqcTEyRDlpM014LTFnNUdsQjhOaWdsZk9YcDlaVjlhSnFibnBVQ3RIREU1V0N1R3cyYnlIYzNlSVdHZUFkaDhSSVVOX0dMWjduWnkxQXBkSnV4SFRtOVRtSlVVYk5TdUtyQnRmclN3dmRXVEFlcXFYVGtrcHgwNXBVbG42ZFQzUTJkcHlIS3B1blpiZmw2Z0dIWEdOY1BCdDBmLVE3cDR3UHB4bVpRS3fSAeMBQVVfeXFMTnVkOHQyaWwzaUMxckNUd2VPUUVkVUdHUUk1Y2xJWXU2Yi1CRHFIcThFYkxOUkIzdmRZMndXOVZ2T1l6cGFXaXB3NUlsX3hBWGMwWXh1elllWkpXVGM4RmgwWFYwbDFXbjdmSFAyQmhKSlRaWmhFNnJ5aGZTS3RoSXg3dDI4emlLX0FhZHFKLXo5WXcwemdnUl9tQ1o5LWRxV2I4RERrVWFnRGM4aVJZOHIwU01GUHE4UElGSFl2QzV6TDdWS3BGVTM0U0FHQk1teWNvRDV4WXNXS0o2YmNjYnBRaVE?oc=5",
+          "domain": "marktechpost.publisher",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-21T05:55:40+00:00",
+      "trace": [
+        "tier C (+10)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 54 = trust 22 / interest 75 / corrob 50"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -210,121 +384,45 @@
       "reject_reason": "published 2026-09-20 — outside lookback window"
     },
     {
-      "cluster_key": "df489c10521cd2bd",
-      "title": "bilawalsidhu/gods-eye-view — A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a",
-      "category": "cyber_tools",
-      "one_liner": "An open-source browser-based 3D geospatial intelligence platform provides live satellite and spatial tracking using real-world data.",
+      "cluster_key": "26088bef70ca8bcf",
+      "title": "lemomo-ai/lemo-opuscar — 39 film styles, each a reusable style prompt plus a short film made entirely in code by Claude Opus 5.5. Pick ",
+      "category": "tech_ai",
+      "one_liner": "lemo-opuscar enables coding agents to direct and render complete short films using code and Claude Opus 5.5.",
       "tags": [
+        "agents",
+        "ai",
+        "llm",
         "opensource",
-        "privacy",
+        "release",
         "tool"
       ],
-      "summary": "The open-source repository bilawalsidhu/gods-eye-view provides an in-browser satellite and spatial intelligence simulator that displays real-time data on a 3D globe. The project leverages JavaScript and Cesium to offer photorealistic geospatial rendering, flight tracking, and photogrammetry. The repository has accumulated over 17,400 stars on GitHub.",
+      "summary": "Lemomo-ai has released lemo-opuscar, featuring 39 film styles built for Claude Opus 5.5. Each style provides a reusable prompt and a short film made entirely in code by an AI agent using Canvas and WebGL, local text-to-speech, and original music without video generation or stock footage. The process takes an agent 30 to 60 minutes, stopping twice for user approvals on the story and visuals.",
       "key_facts": [
-        "Repository: bilawalsidhu/gods-eye-view",
-        "Stars: 17,491",
-        "Language: JavaScript"
+        "Repository: lemomo-ai/lemo-opuscar",
+        "Model: Claude Opus 5.5",
+        "Styles Count: 39"
       ],
-      "bottom_line": "Developers and researchers can utilize the gods-eye-view project for real-time browser-based geospatial intelligence and 3D mapping.",
+      "bottom_line": "Coding agents can autonomously direct and render frame-by-frame films using Claude Opus 5.5 and web code.",
       "claims": [
         {
-          "text": "The gods-eye-view repository provides open-source spatial intelligence on a 3D globe using real-time data.",
-          "support_span": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. GitHub repository bilawalsidhu/gods-eye-view, 17,491 stars, language JavaScript.",
+          "text": "39 film styles, each a reusable style prompt plus a short film made entirely in code by Claude Opus 5.5.",
+          "support_span": "39 film styles, each a reusable style prompt plus a short film made entirely in code by Claude Opus 5.5.",
           "status": "contradicted"
+        },
+        {
+          "text": "Every film was directed, drawn, scored and mixed by an AI agent writing code: canvas and WebGL pages rendered frame by frame, original music from free sample libraries, local text-to-speech.",
+          "support_span": "Every film was directed, drawn, scored and mixed by an AI agent writing code: canvas and WebGL pages rendered frame by frame, original music from free sample libraries, local text-to-speech.",
+          "status": "entailed"
         }
       ],
       "trust_score": 10,
       "interest_score": 50,
       "corroboration": 1,
       "blend": 32.5,
-      "is_new": false,
+      "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "df489c10521cd2bd"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (updated)",
-          "url": "https://github.com/bilawalsidhu/gods-eye-view",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-25T17:12:24+00:00",
-      "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "importance 3/5 from cache",
-        "blend 32 = trust 10 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "bf166771861df7d1",
-      "title": "There is starting to be some genuinely interesting AI-created film stuff (among a flood of slop), and I suspect this will only accelerate.",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "ai"
-      ],
-      "summary": "There is starting to be some genuinely interesting AI-created film stuff (among a flood of slop), and I suspect this will only accelerate. The “is it art?” debate will grow Benjamin’s 1935 essay “The Work of Art in the Age of Mechanical Reproduction” already argued it’s likely the wrong question. (Bluesky post by @emollick.bsky.social — 63 likes, 8 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "bf166771861df7d1"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvuss476oc2b",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-19T13:42:28.961000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-19 — outside lookback window"
-    },
-    {
-      "cluster_key": "171ab57ec09669ca",
-      "title": "nassim-arifette/jevgrep — Jev-powered semantic code search for coding agents — find behavior across repositories via CLI or MCP, with ex",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "agents",
-        "ai",
-        "opensource",
-        "tool"
-      ],
-      "summary": "Jev-powered semantic code search for coding agents — find behavior across repositories via CLI or MCP, with exact source excerpts and line numbers. GitHub repository nassim-arifette/jevgrep, 74 stars, language TypeScript. Topics: ai-agents, cli, code-navigation, code-search, coding-agents, developer-tools, jev, mcp.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "171ab57ec09669ca"
+        "26088bef70ca8bcf"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -332,74 +430,19 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/nassim-arifette/jevgrep",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-20T00:27:29+00:00",
+      "published": "2026-09-26T10:10:41+00:00",
       "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-20 — outside lookback window"
-    },
-    {
-      "cluster_key": "ced5c90351d8dd51",
-      "title": "Delay-of-Gratification as a Multi-Agent Survival Micro-benchmark for Long-Horizon LLMs: Social Exposure, Personas, and Tool Use Budgets",
-      "category": "tech_ai",
-      "one_liner": "A new marshmallow-test-inspired multi-agent benchmark evaluates long-horizon LLM survival and tool-use dynamics under strict constraints.",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "research",
-        "tool"
-      ],
-      "summary": "Researchers have introduced a multi-agent survival micro-benchmark inspired by the Stanford marshmallow experiment to evaluate long-horizon LLM behavior under explicit constraints. Using 19,200 agent trajectories across 64 cells, the study factorially manipulated social context, personas, and tool use budgets with a minute-by-minute ReAct agent framework. Results showed an early impulse to consume resources, with only 75.9% of agents completing the task. The study demonstrated that isolation and removal of hedonic drive improve survival completion rates, providing a reproducible testbed for analyzing long-term multi-agent dynamics.",
-      "key_facts": [
-        "Trajectories Evaluated: 19,200",
-        "Cells: 64",
-        "Completion Rate: 75.9%"
-      ],
-      "bottom_line": "Multi-agent LLM survival benchmarks reveal that social exposure and hedonic personas significantly degrade long-horizon task persistence.",
-      "claims": [
-        {
-          "text": "Researchers developed a multi-agent micro-benchmark inspired by the Stanford marshmallow experiment to evaluate long-horizon LLMs across 19,200 agent trajectories.",
-          "support_span": "To address this gap, we develop a multi-agent micro-benchmark inspired by the Stanford marshmallow experiment... across 19,200 agent trajectories in 64 cells.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "ced5c90351d8dd51"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.29509",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.29509"
-      ],
-      "published": "2026-09-25T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
         "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
+        "blend 32 = trust 10 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -463,17 +506,18 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "3e1b59ec4f582752",
-      "title": "Devin-AXIS/jev-dsh-decision — Jev DSH 决策引擎｜面向 Agent Harness 的结构化决策插件。原生支持 DeepSeek Harness，通过 iPolloWork 支持 OpenCode、Codex Harness。",
+      "cluster_key": "d4d0efc80e5b634b",
+      "title": "Michael-Jiahao-Zhang/game-the-llm-reviewer — Defend sound research against LLM reviewer bias through meaning-preserving rewrites.",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
         "agents",
         "ai",
         "llm",
-        "opensource"
+        "opensource",
+        "research"
       ],
-      "summary": "Jev DSH 决策引擎｜面向 Agent Harness 的结构化决策插件。原生支持 DeepSeek Harness，通过 iPolloWork 支持 OpenCode、Codex Harness。 GitHub repository Devin-AXIS/jev-dsh-decision, 174 stars, language JavaScript. Topics: agent-harness, ai-agents, apollo-plugin, codex, codex-harness-plugin, codex-plugin, decision-engine, deepseek-harness.",
+      "summary": "Defend sound research against LLM reviewer bias through meaning-preserving rewrites. GitHub repository Michael-Jiahao-Zhang/game-the-llm-reviewer, 188 stars, language unspecified. Topics: academic-writing, agent-skills, ai-research, llm, llm-reviewer, paper-writing, peer-review, prompt-engineering.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -484,7 +528,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "3e1b59ec4f582752"
+        "d4d0efc80e5b634b"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -492,29 +536,29 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/Devin-AXIS/jev-dsh-decision",
+          "url": "https://github.com/Michael-Jiahao-Zhang/game-the-llm-reviewer",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-20T04:39:05+00:00",
+      "published": "2026-09-21T23:11:47+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-20 — outside lookback window"
+      "reject_reason": "published 2026-09-21 — outside lookback window"
     },
     {
-      "cluster_key": "1db3e70e408ee2a9",
-      "title": "penso/herdr-gpui — Native macOS client for Herdr, built with Rust and GPUI. View terminal sessions, workspaces, Git worktrees, an",
+      "cluster_key": "bb3daf8a996a24b8",
+      "title": "HeyPuter/builder — 📦✨ AI Builder For Creating Sites and Apps! An open-source alternative to Lovable, Replit, v0, and similar plat",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "agents",
         "ai",
+        "llm",
         "opensource"
       ],
-      "summary": "Native macOS client for Herdr, built with Rust and GPUI. View terminal sessions, workspaces, Git worktrees, and agent activity through your local Herdr daemon. GitHub repository penso/herdr-gpui, 215 stars, language Rust. Topics: ai-agents, desktop-app, developer-tools, git-worktrees, gpui, herdr, macos, rust.",
+      "summary": "📦✨ AI Builder For Creating Sites and Apps! An open-source alternative to Lovable, Replit, v0, and similar platforms. GitHub repository HeyPuter/builder, 129 stars, language JavaScript. Topics: ai-agents, ai-builder, app-builder, base44, bolt, claude-code, codex, lovable.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -525,7 +569,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "1db3e70e408ee2a9"
+        "bb3daf8a996a24b8"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -533,17 +577,17 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/penso/herdr-gpui",
+          "url": "https://github.com/HeyPuter/builder",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-20T05:22:39+00:00",
+      "published": "2026-09-21T03:45:45+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-20 — outside lookback window"
+      "reject_reason": "published 2026-09-21 — outside lookback window"
     },
     {
       "cluster_key": "5334697b515a8250",
@@ -585,12 +629,74 @@
       "reject_reason": "published 2026-09-20 — outside lookback window"
     },
     {
-      "cluster_key": "75ff127f73522aa1",
-      "title": "Worth trying without spoilers. I asked Fable: \"I want you to create a graphically beautiful game that is about zooming out...",
+      "cluster_key": "b4b8ef15564501ba",
+      "title": "Crook used three open source agents to break into a Fortune 500 hospitality company, a major US airline and 25+ other orgs",
+      "category": "cyber_attacks",
+      "one_liner": "An attacker leveraged three open-source agents to breach a Fortune 500 hospitality firm, a major US airline, and over 25 other organizations.",
+      "tags": [
+        "agents",
+        "ai",
+        "exploit",
+        "incident",
+        "linux",
+        "threat-actor",
+        "vulnerability",
+        "writeup"
+      ],
+      "summary": "An attacker utilized three open-source agents to successfully compromise a Fortune 500 hospitality company, a major US airline, and over 25 other organizations. This incident highlights the growing efficiency of AI-assisted intrusion techniques and vulnerability exploitation in corporate environments. The security community continues to monitor how automated tools accelerate adversary workflows. Organizations must adapt defensive measures to counter automated agent-driven attacks.",
+      "key_facts": [
+        "Compromised targets: Fortune 500 hospitality company, major US airline, 25+ other organizations",
+        "Agent count: Three open source agents"
+      ],
+      "bottom_line": "Threat actors are successfully using open-source AI agents to compromise major corporate targets including a Fortune 500 hospitality firm and a US airline.",
+      "claims": [
+        {
+          "text": "Crook used three open source agents to break into a Fortune 500 hospitality company, a major US airline and 25+ other orgs",
+          "support_span": "Crook used three open source agents to break into a Fortune 500 hospitality company, a major US airline and 25+ other orgs",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "b4b8ef15564501ba"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "The Register Security",
+          "url": "https://www.theregister.com/security/2026/09/25/crook-used-three-open-source-agents-to-break-into-a-fortune-500-hospitality-company-a-major-us-airline-and-25-other-orgs/5299012",
+          "domain": "theregister.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-24T23:32:15+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 25 / interest 100 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "c13570246f0908f6",
+      "title": "Alex314618-create/JevRev — An LLM + Jev workflow that changes EVERYTHING. Boost your vertebrate brain with a spine inside.",
       "category": "tech_ai",
       "one_liner": "",
-      "tags": [],
-      "summary": "I asked Fable: \"I want you to create a graphically beautiful game that is about zooming out... make surprising reveals the game zooms out\" I gave no other directions and the results are engaging and strange (if uneven) and short. Play: play-umbra.netlify.app (Bluesky post by @emollick.bsky.social — 54 likes, 3 reposts)",
+      "tags": [
+        "llm",
+        "opensource"
+      ],
+      "summary": "An LLM + Jev workflow that changes EVERYTHING. Boost your vertebrate brain with a spine inside. GitHub repository Alex314618-create/JevRev, 306 stars, language TypeScript.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -601,61 +707,58 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "75ff127f73522aa1"
+        "c13570246f0908f6"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvvnm3bevs2u",
-          "domain": "bsky.app",
+          "name": "GitHub (new)",
+          "url": "https://github.com/Alex314618-create/JevRev",
+          "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-19T21:42:17.691000+00:00",
+      "published": "2026-09-21T01:53:13+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-19 — outside lookback window"
+      "reject_reason": "published 2026-09-21 — outside lookback window"
     },
     {
-      "cluster_key": "8441fff73f437b2e",
-      "title": "Himadri Speciality, Borosil Renewables among 5 fundamental stock picks Ambareesh Baliga recommends buying for short term",
+      "cluster_key": "960225c919f8b885",
+      "title": "Greed and Fear index: BEL, Adani Energy to Eternal | Chris Wood's Jefferies India portfolio has 22 stocks for long term",
       "category": "markets",
-      "one_liner": "Ambareesh Baliga recommends Himadri Speciality and Borosil Renewables among five short-term stock picks amid macroeconomic headwinds.",
+      "one_liner": "Jefferies' Christopher Wood highlighted India's structural growth in energy and manufacturing, adjusting his long-only equity portfolio.",
       "tags": [
+        "ai",
         "india",
-        "markets",
-        "research"
+        "markets"
       ],
-      "summary": "Independent market expert Ambareesh Baliga has recommended five fundamental stocks for short-term gains amid a range-bound Nifty index pressured by U.S.-Iran conflict concerns and crude oil inflation. Recommended stocks include Himadri Speciality Chemical, undergoing major expansions into lithium-ion batteries, LFP plants, and Carbon Nano Tubes; Borosil Renewables, expanding solar glass capacity by 60% ahead of March 2027; and Endurance Technologies, focusing on EV-specific automotive aluminum components. The recommendations highlight strong fundamental growth and export moats despite broader macroeconomic headwinds.",
+      "summary": "In his latest 'GREED & fear' report, Jefferies' Christopher Wood maintained an optimistic outlook on India's long-term economic growth, highlighting energy buildout, electrification, and manufacturing as primary structural drivers. Wood noted that India's nominal gross fixed capital formation-to-GDP ratio rose to 32.4%, while machinery imports surged, demonstrating expanding private-sector capital expenditure. He emphasized that adopting Chinese-style battery storage and grid expansion could drastically reduce solar energy costs, benefiting India's broader industrial ambitions. Accordingly, Jefferies adjusted its India equity portfolio by replacing ABB India with Hitachi Energy India to capture the country's surging electricity transmission demand.",
       "key_facts": [
-        "Borosil target capacity: 1600 TPD by March 2027"
+        "Fixed capital formation-to-GDP ratio: 32.4%",
+        "Machinery-goods imports (12 months to August 2026): US$66 billion",
+        "Projected electricity demand by 2035: 3,365 TWh"
       ],
-      "bottom_line": "Targeted equity investments in companies expanding clean energy and specialized manufacturing can deliver healthy returns during broader market volatility.",
+      "bottom_line": "India's structural expansion in electrification and solar power presents major long-term investment opportunities independent of near-term AI trends.",
       "claims": [
         {
-          "text": "Borosil Renewables is expanding its capacity by 60% to 1600 TPD by March 2027.",
-          "support_span": "Borosil Renewables is a leading manufacturer of solar glass, part of the Borosil Group. Baliga underscored that the company is expanding its capacity by 60% to 1600 TPD by March 2027.",
-          "status": "entailed"
-        },
-        {
-          "text": "Himadri Speciality is setting up an LFP plant and a super speciality carbon black plant.",
-          "support_span": "Baliga underscored that Himadri has transformed itself from a coal tar pitch manufacturer to a complete carbon value chain organisation... added that a huge expansion is ongoing, especially in lithium-ion batteries, and they are setting up an LFP plant... Himadri is also setting up another 6000 tons of super speciality carbon black plant",
+          "text": "India’s annualised nominal gross fixed capital formation-to-GDP ratio rose to 32.4% in the four quarters to June from 31.4% in the four quarters to December.",
+          "support_span": "India’s annualised nominal gross fixed capital formation-to-GDP ratio rose to 32.4% in the four quarters to June from 31.4% in the four quarters to December.",
           "status": "contradicted"
         }
       ],
       "trust_score": 25,
-      "interest_score": 25,
+      "interest_score": 50,
       "corroboration": 1,
-      "blend": 25.0,
+      "blend": 36.2,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "8441fff73f437b2e"
+        "960225c919f8b885"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -663,220 +766,59 @@
       "sources": [
         {
           "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/himadri-speciality-borosil-renewables-among-5-fundamental-stock-picks-ambareesh-baliga-recommends-buying-for-short-term-11790333179461.html",
+          "url": "https://www.livemint.com/market/stock-market-news/greed-and-fear-index-bel-adani-energy-to-eternal-chris-woods-jefferies-india-portfolio-has-22-stocks-for-long-term-11790402739237.html",
           "domain": "livemint.com",
           "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-25T11:40:52+00:00",
+      "published": "2026-09-26T06:33:26+00:00",
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 2/5 from gemini-3.5-flash-lite",
-        "blend 25 = trust 25 / interest 25 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "0d9e071524ad29d8",
-      "title": "How invideo improves color grading 3x with GPT‑6 Astra",
-      "category": "tech_ai",
-      "one_liner": "Invideo integrated GPT-6 Astra into its video editor, tripling color-grading accuracy and accelerating custom effect creation.",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "privacy"
-      ],
-      "summary": "Invideo has integrated OpenAI's GPT-6 Astra into its agentic video editor to enhance planning and execution for complex edits. The model achieved a threefold increase in success rates for color-grading and correction tasks by accurately isolating subjects and tracking them across frames. Additionally, GPT-6 Astra enabled video editors to generate 50 custom effects in a single day by translating textual descriptions and visual references directly into code and timeline controls.",
-      "key_facts": [
-        "Model: GPT-6 Astra",
-        "Custom Effects Created: 50 in one day",
-        "Color Grading Improvement: 3x increase in success rate"
-      ],
-      "bottom_line": "Integrating GPT-6 Astra into video editing workflows enables precise multi-step execution and triples color grading success rates.",
-      "claims": [
-        {
-          "text": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day.",
-          "support_span": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day.",
-          "status": "entailed"
-        },
-        {
-          "text": "With Astra, the success rate improved about three times, said Sanket.",
-          "support_span": "With Astra, the success rate improved about three times, said Sanket.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 82,
-      "interest_score": 50,
-      "corroboration": 2,
-      "blend": 58.0,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "0d9e071524ad29d8",
-        "7357353a1f1d61a6",
-        "763f3844a7547056"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "OpenAI Blog",
-          "url": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
-          "domain": "openai.com",
-          "tier": "A"
-        },
-        {
-          "name": "Kingy AI",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1mQ0FyWTdYeVFzcFdYU2Q3TFBmZDdLdVhNQXVhb2lEUnVlVVo2Q1E2SzR4UEpGUmVPNXZaS2VHUUpFQk9rUGhSYm9HV2c1U2d4X29DMHprMTFrN1pZM3lETlc4b1ZfSzB2MXZ3R0hHMU1rcUNQZGJsT01wZC1BVUE?oc=5",
-          "domain": "kingy-ai.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Kingy AI",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9VajFoT2hCSHR3c0VLbDZkSVc3VWZXMVFTNWlfYUQ4bU9uNW1TNXJ0N1dwNngzT2hXZ0xpUHl5UWtSX3puN1M0dGZJdVhDNWVjZjcxelQycnV3OFZQRnNmaE94bjlyODdHN3VGamduOUFxOHF1SXRoWndqUkVMdw?oc=5",
-          "domain": "kingy-ai.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [
-        "https://openai.com/index/invideo-builds-with-gpt-6-astra"
-      ],
-      "published": "2026-09-22T18:34:55+00:00",
-      "trace": [
-        "tier A (+40)",
-        "2 independent outlets (+12)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
         "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 58 = trust 82 / interest 50 / corrob 50",
-        "demoted: critical capped at 5"
+        "blend 36 = trust 25 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "2e86b5ae791c1807",
-      "title": "Researchers used Claude to hack OpenAI",
-      "category": "cyber_attacks",
-      "one_liner": "Security researchers used Claude to chain a Discourse image-processing flaw and an SSO bug, gaining access to OpenAI's internal GitHub repository.",
+      "cluster_key": "c6c28cb69bcaa338",
+      "title": "Put together some notes on Jev and the new category of system one aka decision models simonwillison.net/2026/Sep/21/...",
+      "category": "tech_ai",
+      "one_liner": "",
       "tags": [
-        "ai",
-        "appsec",
-        "bugbounty",
-        "exploit",
-        "llm",
-        "research",
-        "tool",
-        "vulnerability"
+        "windows"
       ],
-      "summary": "Cybersecurity researchers at Hacktron utilized Anthropic's Claude AI models to discover and chain two vulnerabilities to compromise OpenAI's internal infrastructure. The attack began with an image-processing heap overflow bug in the libheif library used by Discourse forum software, allowing unauthenticated control of the forum server. Chaining this with an OpenAI single sign-on (SSO) flaw granted access to employee accounts, including a Codex account connected to OpenAI's GitHub organization. OpenAI fixed the vulnerability within 14 hours and awarded a $6,500 bug bounty. The research highlighted how newer AI models like Claude Opus 5 successfully generated working exploits where previous iterations failed.",
-      "key_facts": [
-        "Bug bounty payout: $6,500",
-        "Remediation time: 14 hours"
-      ],
-      "bottom_line": "AI-assisted exploit generation can rapidly accelerate vulnerability chaining across third-party components and enterprise identity systems.",
-      "claims": [
-        {
-          "text": "Researchers chained a Discourse image-processing flaw and an SSO bug to access OpenAI's internal repository.",
-          "support_span": "To get inside OpenAI, researchers Harsh Jaiswal, Mohan Pedhapati, and Rahul Maini found two vulnerabilities and chained them together. The first... involved a bug in an image-upload feature in the Discourse community forum software... the second vulnerability came into play. This was a flaw in OpenAI’s single sign-on (SSO) system",
-          "status": "contradicted"
-        },
-        {
-          "text": "OpenAI paid a $6,500 bug bounty for the vulnerability report.",
-          "support_span": "OpenAI fixed its part of the problem about 14 hours after Hacktron submitted its initial report. It later paid the researchers a $6,500 bounty for the OpenAI-side flaw.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 49,
-      "interest_score": 100,
-      "corroboration": 3,
-      "blend": 79.8,
+      "summary": "Put together some notes on Jev and the new category of system one aka decision models simonwillison.net/2026/Sep/21/... (Bluesky post by @simonwillison.net — 127 likes, 17 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
       "is_new": false,
-      "summary_source": "model",
+      "summary_source": "extract",
       "alt_keys": [
-        "2e86b5ae791c1807",
-        "3b0fc8b539154c7f",
-        "3f2e048d098a4c3b",
-        "47c9d97f6caf013a",
-        "85e34f40d372ed88",
-        "8ffcb7d9db79ebc0",
-        "9fb1300b4c1648ba",
-        "c04c78dc6ab51a45",
-        "c59b5436a54d2863"
+        "c6c28cb69bcaa338"
       ],
       "critical_signal": "",
-      "priority": "important",
+      "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Malwarebytes Labs",
-          "url": "https://www.malwarebytes.com/blog/news/2026/09/researchers-used-claude-to-hack-openai",
-          "domain": "malwarebytes.com",
-          "tier": "B"
-        },
-        {
-          "name": "aktualita.co",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWGxmZ1NKekthRHBXZFJYQno1eXBBNFFVM05fV1R3M040NVhLU3FjdDh3bWtpLUlJLTFkd0RPeV8yZnp2WWJGTnlBT2xvR2c4dURCLVNqNmxZOVpWZ2FJc19oV291YVZqYlRLZ2JZXzNlcVBxdk5idHkwczdzV25PcnMzZlVud0Y5OGU1Ynl4VFNGb0ZtbjZiVmhR?oc=5",
-          "domain": "aktualita-co.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Malwarebytes",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMmk0SzgzcFVHS3I2Z0pnUGZORUF2alJxUms2RFJzQ3Joc0E4dnhtQnBsWWt3aTQwOF9VMm5IMlFmeXE3ZWNLbG93Wk9UNWdCT0ZtaC1SWTFXZTgyYWNDT3NIRXBaXzhTQWhyRzY5bWcxMml5V19HZFFab1dPQ1JtNHczZTJWaXE4QVlUS1hR?oc=5",
-          "domain": "malwarebytes.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "me.pcmag.com",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUzBJUFFZYV9ZZ0ZQdzktRGt4amlkbk52WjRQLWlCMzV6b09qX29VWDRvUHZUZzNjcGNYT2VjSDZmZTV5MjVNQ1VhMkVRb1Q3YVBDZHVCMDNZUDMyV0JrYTJMcjFWUF9YVlNmUzR5eDRCcklzNFdoNDBZWlRXaGRvZl91R1BhWlhuekpqQS1OSU85QXVvU2xjMVlGYm9mdw?oc=5",
-          "domain": "me-pcmag-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "menafn.com",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFFaOU5NNkp2NkNuNVhtYTdaTmZuZWFMSkIwOF9pd3lERmdLZlZ0YjdYU0hxWUxZeXB2N0J3TzZ5SEpGSmZORGlPQjhfMWhTaWJSUVM2aVB6UHFWcWwtdXVHVElwNXZiSW9rWkhaa3ZzazY0dmx0NS1YeEpBeW5EbHdfRno?oc=5",
-          "domain": "menafn-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "GN Bug bounty",
-          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOZVRnOVhSV0VuYzFSalhtQzJmaldzVUZvLWNIVGZWSmRJalgyWFBhMWRRdENSMFdWWkpJcHc1WlFLeElSUDhxejFYSl9iZmVpaHJhRmNLSXZNa1pCWmpQNVBsYVFuN01GY2JIc0dCM3FaZTMxSUpFcGNILTNDaHNuajU1RFdpanlHQ0ljX0RjRk02NFV2N0xZMHd5QmR1WTRUMXpPRTdHVHljQjhETXRBWWZhNVhBM1FBQ0wyQ0xkREdjUjFXT3NndkJKSmw3RjloVjBmSXYyYUNzbUxSbmxaS3Rjc3ZrMDNJQWJNT1U5M2xMTElKMnpNeg?oc=5",
-          "domain": "news.google.com",
-          "tier": "C"
-        },
-        {
-          "name": "Tempo.co English",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSGVBRncyVmxUbGtzNmlZUXpDejROU29tWUxVS05vMHlCcS1KRFMzeU5zaE5qeU1nN0ZUVld1OFowY3VvMU55a2NFNWpGOGh4Z1VuS25ZLV9hTTVqcU84WlBEWFEyTlo1RmUtY3dWOTd4aHRhc05DSTlRMHJpRzhjZXRLckhKb0FPUHd1bGNXdlRsVXNq?oc=5",
-          "domain": "tempo-co-english.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "The News Minute",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWlVLWXJHR3N5WWsxbF9HakFOT3pLSXEzdkFTT2JGc3A5UGplRXVrVzhsZTI5VTRZTkJvUGc1dzhOTUtOWEZlTm1RemtZbEJlaVRkdHpDVzdxbHFyVi01cFdERTFNa055dmZyekV5OWJ5X3dvTzZiLThSNlNDSW93U0xhRFVMOXpNWFJBM2wtUjhlbTRqTEZfSFJ6RFZYLV9zYmkzc2J30gGzAUFVX3lxTE1nUkY2d2tXU1NZd0tzM1pObXk5TXpqWFdnUWtjcFQ5LXhnZ181c2czOURvSEJkWVVIRlBzQ0FUcFVkeFBrc25MekdXdlJYdXdxekJkQ2pBRm5uLWtMWWFVVVNka09lR1ptcThPNmpkT1lxYlFyLUpEdzg4cVVpZmtpdWd1U0ZjRkZsQnpRNHVkZl96bGR4cURoVlJxbnlFZHdoRHRSaEtwaHRVZGJnakotVXQw?oc=5",
-          "domain": "the-news-minute.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "The Rundown AI",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1TOFdMM1FDa0F2c3h5THAtb3JsQ1RicEY5ZWZLOUpiblk1aHREN1VhNG52aUREWGVRZkZrS2VDbmYxbjhXeWtjLUxxeDgySFpUcEt4Ujd3UFZGV0RMVzBvaFNvRWVsMGlpZmlocA?oc=5",
-          "domain": "the-rundown-ai.publisher",
+          "name": "Simon Willison",
+          "url": "https://bsky.app/profile/simonwillison.net/post/3mw2tsop42c2u",
+          "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-19T02:55:11+00:00",
+      "published": "2026-09-21T23:16:40.533000+00:00",
       "trace": [
-        "tier B (+25)",
-        "3 independent outlets (+24)",
-        "verified: 3 independent outlets",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 80 = trust 49 / interest 100 / corrob 75",
-        "demoted: critical capped at 5"
+        "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-09-21 — outside lookback window"
     },
     {
       "cluster_key": "e52dceecbc36cbb9",
@@ -929,197 +871,109 @@
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 3/5 from gemini-3.5-flash-lite",
+        "importance 3/5 from cache",
         "blend 36 = trust 25 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "2f29a2392c2b986b",
-      "title": "CVE-2026-25254 (CRITICAL 9.8): Improper authorization leads to Remote Code Execution via SocketIO interface.",
-      "category": "cyber_attacks",
-      "one_liner": "CVE-2026-25254 is a critical 9.8 CVSS remote code execution flaw in SocketIO interfaces due to improper authorization.",
-      "tags": [
-        "cve",
-        "exploit",
-        "network",
-        "vulnerability"
-      ],
-      "summary": "A critical remote code execution vulnerability, designated as CVE-2026-25254, has been assigned a maximum CVSS base score of 9.8. The vulnerability stems from improper authorization mechanisms within the SocketIO interface, allowing unauthenticated attackers to achieve remote code execution. Security teams should check asset inventories for vulnerable SocketIO endpoints and apply vendor patches immediately.",
-      "key_facts": [
-        "CVE ID: CVE-2026-25254",
-        "CVSS Score: 9.8 CRITICAL",
-        "Vector: SocketIO interface improper authorization"
-      ],
-      "bottom_line": "Unauthenticated RCE via CVE-2026-25254 on SocketIO interfaces poses an immediate compromise risk to exposed services.",
-      "claims": [
-        {
-          "text": "CVE-2026-25254 is a critical 9.8 vulnerability where improper authorization leads to Remote Code Execution via SocketIO interface.",
-          "support_span": "CVE-2026-25254 (CRITICAL 9.8): Improper authorization leads to Remote Code Execution via SocketIO interface.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 82,
-      "interest_score": 100,
-      "corroboration": 2,
-      "blend": 80.5,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "2f29a2392c2b986b",
-        "eece720be7dde6b8"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25254",
-          "domain": "nist.gov",
-          "tier": "A"
-        },
-        {
-          "name": "SOC Prime",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8yMm5nTGluU25rRFlneVhSdGlZTVN5NHZZYjRMekZIT2hhT1RtVi1MTE11OEUtZWo0Wnl2YUtNcEhFVVcyMU91Y2FLQ3A4ZmduVXEwOVcxcFg1ZS1Ga2Fj?oc=5",
-          "domain": "soc-prime.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-25254"
-      ],
-      "published": "2026-09-22T10:17:08.583000+00:00",
-      "trace": [
-        "tier A (+40)",
-        "2 independent outlets (+12)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 80 = trust 82 / interest 100 / corrob 50",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "628d0486a3d53615",
-      "title": "Stale Does Not Mean Unsafe: Guard Precision for Tool-Using LLM Agents under Infrastructure State Races",
+      "cluster_key": "d491b1b5d3b8c1cc",
+      "title": "jev-chat/jev-chat-windows — JevChat-Windows：聊天窗口旁挂的回复辅助。窗口截图 + 本地离线 OCR 读对方消息 → Jev 判断意图 → 3 条候选一键填入，发送永远手动",
       "category": "tech_ai",
-      "one_liner": "Semantic commit predicates prevent unsafe LLM agent database mutations without the high false-positive rates of freshness heuristics.",
+      "one_liner": "",
       "tags": [
-        "agents",
-        "ai",
-        "cloud",
-        "hardware",
         "llm",
-        "release",
-        "research",
-        "tool"
+        "opensource",
+        "privacy",
+        "windows"
       ],
-      "summary": "Researchers examine how runtime guards handle infrastructure state races when tool-using LLM agents mutate data pipelines and object stores. By replaying agent proposals counterfactually across 16 infrastructure tasks, the study evaluates three guard granularities: global epoch, read-set version, and semantic commit predicate. Results show that freshness-based guards unnecessarily block 92% to 95% of benign races and forfeit up to 43% of safe task completions, whereas complete predicate guards eliminate unsafe commits without blocking valid actions. The findings indicate that precise runtime enforcement requires semantic contracts rather than freshness heuristics or model self-assessment.",
-      "key_facts": [
-        "Tasks evaluated: 16",
-        "Trajectores tested: 3,456"
-      ],
-      "bottom_line": "Relying on freshness heuristics to secure tool-using AI agents needlessly blocks a vast majority of benign operations.",
-      "claims": [
-        {
-          "text": "Freshness-based guards needlessly block 92-95% of benign races.",
-          "support_span": "freshness-based guards needlessly block 92-95% of benign races, forfeiting up to 43% of safe task completions, while the complete predicate guard blocks none.",
-          "status": "entailed"
-        },
-        {
-          "text": "The evaluation covered 16 infrastructure tasks in four domains across three model families.",
-          "support_span": "Our deterministic simulator separates visible from authoritative state and injects five non-atomic failure mechanisms across 16 infrastructure tasks in four domains... on three locally hosted quantized model families (Qwen3-4B, Phi-4-mini, Gemma4-8B; 3,456 trajectories on one GPU).",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
+      "summary": "Topics: chat-assistant, jev, llm, local-first, ocr, privacy, pyqt, python.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
       "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "summary_source": "model",
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
       "alt_keys": [
-        "628d0486a3d53615"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.29522",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.29522"
-      ],
-      "published": "2026-09-25T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "67afe08e09b26eab",
-      "title": "U.P. Congress leaders clash with police, detained during protest against Chief Election Commissioner",
-      "category": "india_world",
-      "one_liner": "UP Congress leaders clashed with police and were briefly detained during a protest against the Chief Election Commissioner.",
-      "tags": [
-        "incident",
-        "india",
-        "political",
-        "release"
-      ],
-      "summary": "Uttar Pradesh Congress leaders and workers held a fierce street demonstration in Lucknow targeting Chief Election Commissioner Gyanesh Kumar, accusing the Election Commission of flouting constitutional norms and aiding the ruling party. Protesters clashed with police forces while attempting to march towards the state Assembly, leading to scuffles and the detention of state unit chief Ajay Rai alongside hundreds of workers. Demonstrators were subsequently transported to a local protest site at Eco Garden and released by evening, with party leaders vowing further district-level protests.",
-      "key_facts": [
-        "State: Uttar Pradesh",
-        "Target: Chief Election Commissioner Gyanesh Kumar",
-        "State Chief: Ajay Rai"
-      ],
-      "bottom_line": "Political opposition in Uttar Pradesh is escalating direct street protests against national election authorities.",
-      "claims": [
-        {
-          "text": "Uttar Pradesh Congress unit held a demonstration against Chief Election Commissioner Gyanesh Kumar, clashing with police and getting detained while marching toward the assembly.",
-          "support_span": "Uttar PradeshCongress unit on Friday (September 25, 2026) held a demonstration against the Chief Election Commissioner, Gyanesh Kumar, and clashed with the police... were stopped and later detained while trying to march towards the Uttar Pradesh Assembly.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 25,
-      "corroboration": 1,
-      "blend": 25.0,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "67afe08e09b26eab"
+        "d491b1b5d3b8c1cc"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/national/uttar-pradesh/up-congress-leaders-clash-with-police-detained-during-protest-against-chief-election-commissioner/article71509301.ece",
-          "domain": "thehindu.com",
-          "tier": "B"
+          "name": "GitHub (new)",
+          "url": "https://github.com/jev-chat/jev-chat-windows",
+          "domain": "github.com",
+          "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-25T21:48:11+00:00",
+      "published": "2026-09-21T14:37:14+00:00",
       "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-21 — outside lookback window"
+    },
+    {
+      "cluster_key": "1e5629e1b2cef644",
+      "title": "Meta bolsters Muse safety warning after security vulnerability found, The Information reports - KELO-AM",
+      "category": "cyber_tools",
+      "one_liner": "Meta bolsters safety warnings for Muse following the discovery of an unspecified security vulnerability.",
+      "tags": [
+        "ai",
+        "privacy",
+        "tool",
+        "vulnerability"
+      ],
+      "summary": "Meta is enhancing safety warnings for its Muse project following the discovery of a security vulnerability, as reported by The Information. The adjustment aims to better inform users about potential risks associated with the tool. Detailed technical specifics of the vulnerability were not disclosed in the excerpt. This move reflects heightened corporate scrutiny on AI safety controls.",
+      "key_facts": [],
+      "bottom_line": "Meta enhanced Muse safety warnings after a security flaw was uncovered.",
+      "claims": [
+        {
+          "text": "Meta bolsters Muse safety warning after security vulnerability found, The Information reports - KELO-AM",
+          "support_span": "Meta bolsters Muse safety warning after security vulnerability found, The Information reports - KELO-AM",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 22,
+      "interest_score": 25,
+      "corroboration": 2,
+      "blend": 31.8,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "1e5629e1b2cef644",
+        "2317a82f6069cfdf"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GN Bug bounty",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQLXlWYThiUzJ6SlVCOXpjTUcwaXdXRE5fM1dTS0RMdXlCdlhxX3VmZE5xY1U5RllESnU1cWdlX1l3Tl9YSGtEYms3V3hZNm4xVThTSFJfeXoza1N6THJEdFZCcE5KcXUyRXNUT3RyM0I2XzdlV29qcnFRb1hYSjZiR2xrTzdDc1BjMV9jVVlaQ1RMU0NMSnZ3WTRVbXNMMnk5d1Y2X0RXaFJabkNTUDFkNkZxTDZfMnJvNHo2Qy1B?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "reuters.com",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNTkJvdXMwTU8zQUtQZjlDWkJ1ZzdncHNJb01ROE5KQ2Y2Wk1ZRThlVDRjSEUwaG5VUFZCeGw2TXluTUt4elI5TGJhb3dzd1NkQkJiaEhCaXZ5Z282dkx1S1hFMFJTOGYyb0hZU0ZISXAzTWZqMzJscDRkamo5UEtMelMyS0JvUTRnMDd0SU8tWW9GMk5sMUpDRG5UMFZETXJvdm9OWTlhVGtYSXAtanI1eHMwWWZwYkVMUzRveUZCMndsOVpOZEE?oc=5",
+          "domain": "reuters-com.publisher",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-25T19:48:14+00:00",
+      "trace": [
+        "tier C (+10)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
         "importance 2/5 from gemini-3.5-flash-lite",
-        "blend 25 = trust 25 / interest 25 / corrob 25"
+        "blend 32 = trust 22 / interest 25 / corrob 50"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -1185,138 +1039,60 @@
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "importance 5/5 from gemini-3.5-flash-lite",
+        "importance 5/5 from cache",
         "blend 70 = trust 70 / interest 100 / corrob 25",
         "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "9f6ed43e468c47e2",
-      "title": "Understanding and Exploiting Initialization Anchoring Weakness in Feedback-Based Agent Planning",
+      "cluster_key": "637a7155e573932a",
+      "title": "jev-chat/jev-chat-jarvis — 装在手机上的对话副驾：在 QQ / X / 飞书里读懂对方、给出候选回复、一键填入输入框，发不发由你。非侵入，只读屏幕，不 hook 不改包。",
       "category": "tech_ai",
-      "one_liner": "Feedback-based AI agents are vulnerable to 'initialization anchoring,' where they fail to correct adversarial inputs introduced early in the planning process.",
+      "one_liner": "",
       "tags": [
-        "agents",
-        "ai",
-        "blueteam",
-        "exploit",
-        "research",
-        "tool"
+        "android",
+        "llm",
+        "opensource",
+        "release"
       ],
-      "summary": "Researchers have identified an 'initialization anchoring' weakness in feedback-based agent planning, where agents struggle to correct adversarial directions introduced in the first round of feedback. Analysis shows that while 46% of adversarial directions are corrected initially, the mitigation rate drops significantly in subsequent rounds. The authors propose InitAnchor, a black-box framework that exploits this bias using directional-shift and contextual-plausibility signals. The framework achieved high attack success rates across various agent architectures and LLMs, demonstrating that feedback-based agents often retain early biases despite later correction opportunities.",
-      "key_facts": [
-        "ASR: 76.1% (limited access)",
-        "ASR: 72.0% (no access)"
+      "summary": "装包。 仓库里有签好名的 release 包：apk/jev-assistant-v1.4-release.apk（Android 11+，仅支持 ARM64 / arm64-v8a）。各版本安装包也在 Releases。 adb install -r apk/jev-assistant-v1.4-release.apk 2.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "637a7155e573932a",
+        "6cf30f044df65ecb"
       ],
-      "bottom_line": "Developers of agentic systems must account for the fact that early feedback rounds are critical, as agents become increasingly resistant to correction as planning progresses.",
-      "claims": [
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
         {
-          "text": "We conduct a round-wise analysis of four representative feedback mechanisms and uncover an initialization anchoring weakness: the first feedback round corrects 46% of adversarial directions, whereas the rates fall to 13% and 7% among directions surviving into the next two rounds.",
-          "support_span": "We conduct a round-wise analysis of four representative feedback mechanisms and uncover an initialization anchoring weakness: the first feedback round corrects 46% of adversarial directions, whereas the rates fall to 13% and 7% among directions surviving into the next two rounds.",
-          "status": "contradicted"
+          "name": "GitHub (new)",
+          "url": "https://github.com/jev-chat/jev-chat-jarvis",
+          "domain": "github.com",
+          "tier": "C"
         },
         {
-          "text": "Across 112 tasks from 16 domains, six agent architectures, and five backbone LLMs, InitAnchor achieves average ASRs of 76.1% and 72.0% under the two settings",
-          "support_span": "Across 112 tasks from 16 domains, six agent architectures, and five backbone LLMs, InitAnchor achieves average ASRs of 76.1% and 72.0% under the two settings",
-          "status": "contradicted"
+          "name": "GitHub (new)",
+          "url": "https://github.com/jev-chat/jev-chat-jarvis-mac",
+          "domain": "github.com",
+          "tier": "C"
         }
       ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "9f6ed43e468c47e2"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2609.29697",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.29697"
-      ],
-      "published": "2026-09-25T04:00:00+00:00",
+      "primary_links": [],
+      "published": "2026-09-21T11:12:53+00:00",
       "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from gemini-3.1-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
+        "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "2 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "e59fb6e0ab19d608",
-      "title": "Control the Harness, Control the Cost: Routing and Governing AI Coding Agents in the Enterprise",
-      "category": "tech_ai",
-      "one_liner": "Enterprise prompt routing for AI coding agents can recover up to 21% in annual model spend by optimizing cache and model selection.",
-      "tags": [
-        "agents",
-        "ai",
-        "cloud",
-        "llm",
-        "network",
-        "research",
-        "tool"
-      ],
-      "summary": "As enterprises scale AI coding agent seats from hundreds to tens of thousands, they inherit the cost structures and default behaviors of vendor harnesses like Claude Code or Codex. Because multi-turn conversations accumulate massive prompt cache contexts that are re-metered by providers, unturned runtimes incur severe financial waste. Researchers developed a custom prompt router using a calibrated classifier, Jev, which routes classification requests at session starts and side lanes without breaking prompt cache reuse. Emulation across a 10,000-seat enterprise shows that intelligent routing recovers 14% to 21% in annual model spend, translating to savings of $3.3M to $5.0M under list prices.",
-      "key_facts": [
-        "Estimated savings: 14% to 21% ($3.3M to $5.0M annually)",
-        "Enterprise simulation size: 10,000 seats",
-        "Evaluated harness vendors: Anthropic, OpenAI"
-      ],
-      "bottom_line": "Unmanaged enterprise AI agent harnesses drive massive, hidden costs through redundant prompt cache reingestion that can be mitigated with custom routers.",
-      "claims": [
-        {
-          "text": "In an emulated enterprise of 10,000 seats, the router recovers 14 to 21% of model spend at Anthropic's list prices.",
-          "support_span": "In an emulated enterprise of 10,000 seats with user behavior taken from these datasets, the router recovers 14 to 21% of model spend at Anthropic's list prices of 21 September 2026, \\$3.3M to \\$5.0M a year.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "e59fb6e0ab19d608"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2609.28919",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.28919"
-      ],
-      "published": "2026-09-25T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-09-21 — outside lookback window"
     },
     {
       "cluster_key": "198eafb901d6d650",
@@ -1364,9 +1140,9 @@
           "tier": "B"
         },
         {
-          "name": "Reuters",
+          "name": "reuters.com",
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQODQxZlQtOHZFRC1GeGc0ZzhtVjI4bHNjX1F4TEd4NWJZTlk0UmRCQndWT2NmQXhwdlNVWmRYZXA4Q0tvbEtNZ1BsY3haY2k1YUpnU2s2T1lseFVGR1VHZFpaUEYxUGxvT2pqOThaUDlxa18tUmk5ZjJ1QmdIYm1rY29VLTE2WHNrdXNqVWxHc0pYVWJlbWtmbEtwTVRaVUI2aWRIcTdmVDI1MExEbFVDRHU2aHFaVkdxMEJndHcxZU9PSU1Ec0E?oc=5",
-          "domain": "reuters.com",
+          "domain": "reuters-com.publisher",
           "tier": "C"
         }
       ],
@@ -1376,237 +1152,121 @@
         "tier B (+25)",
         "2 independent outlets (+12)",
         "corroborated by 2 independent outlets",
-        "importance 3/5 from gemini-3.5-flash-lite",
+        "importance 3/5 from cache",
         "blend 47 = trust 37 / interest 50 / corrob 50"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "85005ec20343e833",
-      "title": "India, Liberia Launch Safety Group To Protect Seafarers Amid Attacks On Ships",
-      "category": "india_world",
-      "one_liner": "India and Liberia have established a maritime safety group to protect seafarers from ongoing ship attacks.",
+      "cluster_key": "d9cd34d560259a8e",
+      "title": "Salesforce Agentforce vulns allowed 0-click CRM data theft, anonymous phishing",
+      "category": "cyber_attacks",
+      "one_liner": "Salesforce Agentforce flaws permitted 0-click CRM data theft while Canonical shifts Ubuntu to weekly kernel updates.",
       "tags": [
-        "india",
-        "policy",
-        "political",
-        "release"
+        "agents",
+        "ai",
+        "cloud",
+        "exploit",
+        "linux",
+        "markets",
+        "vulnerability",
+        "writeup"
       ],
-      "summary": "India and Liberia have launched a joint safety group aimed at protecting seafarers and commercial ships following recent maritime security incidents and targeted attacks. External Affairs Minister S. Jaishankar highlighted the rising threats faced by crews globally. The initiative seeks to bolster coordination and security measures across shipping routes.",
+      "summary": "A security news roundup highlights multiple global developments, including Salesforce Agentforce vulnerabilities that permitted 0-click CRM data theft and anonymous phishing. Other notable items include Google testing TPUs in orbit via Project Suncatcher, Canonical shifting Ubuntu to a weekly kernel release cycle due to an AI-assisted vulnerability flood, and EQT acquiring a majority stake in Acronis at a valuation exceeding $3.5 billion.",
       "key_facts": [
-        "Countries: India, Liberia",
-        "Key Official: S Jaishankar"
+        "Acquisition Value: $3.5B+ (Acronis by EQT)"
       ],
-      "bottom_line": "Bilateral cooperation between India and Liberia aims to enhance protection for international seafarers facing maritime security threats.",
+      "bottom_line": "An AI-driven surge in vulnerability discovery is forcing foundational platforms like Ubuntu to accelerate release cadences.",
       "claims": [
         {
-          "text": "India and Liberia launched a safety group to protect seafarers amid recent attacks on ships, as listed by S Jaishankar.",
-          "support_span": "India, Liberia Launch Safety Group To Protect Seafarers Amid Attacks On Ships",
+          "text": "Salesforce Agentforce vulns allowed 0-click CRM data theft, anonymous phishing",
+          "support_span": "Salesforce Agentforce vulns allowed 0-click CRM data theft, anonymous phishing",
           "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 36.2,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "85005ec20343e833"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NDTV India",
-          "url": "https://www.ndtv.com/india-news/india-liberia-launch-safety-group-to-protect-seafarers-amid-attacks-on-ships-12099523#publisher=newsstand",
-          "domain": "ndtv.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-25T18:55:24+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 36 = trust 25 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "08c5609b111a7590",
-      "title": "Mandeep Bhandari, Principal Secretary To J&K Lt Governor, Is New CBSE Chief",
-      "category": "india_world",
-      "one_liner": "J&K Lt Governor's Principal Secretary Mandeep Bhandari is appointed as the new CBSE Chief.",
-      "tags": [
-        "india",
-        "policy",
-        "political"
-      ],
-      "summary": "Mandeep Bhandari, who previously served as Principal Secretary to the Jammu and Kashmir Lieutenant Governor and managed the health and medical education portfolio, has been appointed as the new CBSE Chief. The administrative transition places a senior bureaucrat with extensive regional healthcare and governance experience at the head of the national board of education.",
-      "key_facts": [
-        "New role: CBSE Chief",
-        "Previous role: Principal Secretary to J&K Lt Governor"
-      ],
-      "bottom_line": "Mandeep Bhandari takes over leadership of the Central Board of Secondary Education with a background in regional administration.",
-      "claims": [
-        {
-          "text": "Mandeep Bhandari, Principal Secretary to J&K Lt Governor, is the new CBSE Chief.",
-          "support_span": "Mandeep Bhandari, Principal Secretary To J&K Lt Governor, Is New CBSE Chief",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 37,
-      "interest_score": 0,
-      "corroboration": 2,
-      "blend": 24.2,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "08c5609b111a7590",
-        "1e0a049e43336eda",
-        "de078248a959eb52"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NDTV India",
-          "url": "https://www.ndtv.com/india-news/mandeep-bhandari-principal-secretary-to-j-k-lt-governor-is-new-cbse-chief-12099210#publisher=newsstand",
-          "domain": "ndtv.com",
-          "tier": "B"
         },
         {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/national/ias-officer-mandeep-bhandari-appointed-chairperson-of-cbse/article71510066.ece",
-          "domain": "thehindu.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/national/maharashtra/former-ias-officer-appointed-on-maha-ucc-panel/article71509943.ece",
-          "domain": "thehindu.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-25T17:22:00+00:00",
-      "trace": [
-        "tier B (+25)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 1/5 from gemini-3.5-flash-lite",
-        "blend 24 = trust 37 / interest 0 / corrob 50"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "6eb8f261dce6502f",
-      "title": "Election Commission Unanimous In All Orders On Voter List Revision: Sources",
-      "category": "india_world",
-      "one_liner": "India's Election Commission issues unanimous orders concerning ongoing voter list revisions.",
-      "tags": [
-        "india",
-        "policy",
-        "political"
-      ],
-      "summary": "The Election Commission, consisting of Chief Election Commissioner Gyanesh Kumar, Sukhbir Singh Sandhu, and Vivek Joshi, reached a unanimous decision on all orders related to voter list revision.",
-      "key_facts": [],
-      "bottom_line": "Administrative consensus within the Election Commission ensures unified implementation of voter roll revisions.",
-      "claims": [
-        {
-          "text": "The Election Commission was unanimous in all orders on voter list revision.",
-          "support_span": "Election Commission Unanimous In All Orders On Voter List Revision: Sources",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 13.8,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "6eb8f261dce6502f"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NDTV India",
-          "url": "https://www.ndtv.com/india-news/election-commission-unanimous-in-all-orders-on-voter-list-revision-sources-12099166#publisher=newsstand",
-          "domain": "ndtv.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-25T17:08:11+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 1/5 from gemini-3.5-flash-lite",
-        "blend 14 = trust 25 / interest 0 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "65c0037a397e26ef",
-      "title": "blacklanternsecurity/bbot — The recursive internet scanner for hackers. 🧡",
-      "category": "cyber_tools",
-      "one_liner": "A popular open-source recursive internet scanner and attack surface mapping tool for your recon workflows.",
-      "tags": [
-        "opensource",
-        "tool"
-      ],
-      "summary": "Black Lantern Security maintains BBOT, a recursive internet scanner designed for hackers and penetration testers, written in Python with over 10,000 stars on GitHub. The tool focuses on attack surface management, automation, and command-line usage. It integrates with platforms like Neo4j to map discovered infrastructure. The repository has been recently updated with ongoing development.",
-      "key_facts": [
-        "GitHub Stars: 10,587",
-        "Language: Python"
-      ],
-      "bottom_line": "BBOT provides an active, recursive reconnaissance framework that scales attack surface discovery for security assessments.",
-      "claims": [
-        {
-          "text": "The recursive internet scanner for hackers.",
-          "support_span": "The recursive internet scanner for hackers.",
+          "text": "CVE flood pushes Ubuntu onto weekly kernel release cycle",
+          "support_span": "CVE flood pushes Ubuntu onto weekly kernel release cycle",
           "status": "entailed"
-        },
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "d9cd34d560259a8e"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
         {
-          "text": "GitHub repository blacklanternsecurity/bbot, 10,587 stars, language Python.",
-          "support_span": "GitHub repository blacklanternsecurity/bbot, 10,587 stars, language Python.",
+          "name": "The Register Security",
+          "url": "https://www.theregister.com/security/2026/09/24/salesforce-agentforce-vulns-allowed-0-click-crm-data-theft-anonymous-phishing/5298958",
+          "domain": "theregister.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-24T19:01:15+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 25 / interest 75 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "6b224533b657012d",
+      "title": "ChatGPT vs Claude vs Gemini vs Grok: 20-Point IQ Gap [2026] - tech-insider.org",
+      "category": "tech_ai",
+      "one_liner": "A headline stub highlights a comparative IQ benchmark across major LLMs.",
+      "tags": [
+        "ai",
+        "llm",
+        "research"
+      ],
+      "summary": "The article is a headline-only stub pointing to a tech-insider report comparing the IQ scores of major generative AI models including ChatGPT, Claude, Gemini, and Grok. Because the text is truncated and lacks substantive content, no detailed technical analysis can be performed. Readers should consult the original publication for full benchmark metrics.",
+      "key_facts": [],
+      "bottom_line": "This stub offers no actionable benchmark data without accessing the external source.",
+      "claims": [
+        {
+          "text": "ChatGPT vs Claude vs Gemini vs Grok: 20-Point IQ Gap [2026] - tech-insider.org",
+          "support_span": "ChatGPT vs Claude vs Gemini vs Grok: 20-Point IQ Gap [2026] - tech-insider.org",
           "status": "contradicted"
         }
       ],
       "trust_score": 10,
-      "interest_score": 50,
+      "interest_score": 0,
       "corroboration": 1,
-      "blend": 32.5,
-      "is_new": false,
+      "blend": 10.0,
+      "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "65c0037a397e26ef"
+        "6b224533b657012d"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (updated)",
-          "url": "https://github.com/blacklanternsecurity/bbot",
-          "domain": "github.com",
+          "name": "GN AI research",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNRkc5ejhzQ1N0S25uaGR2aE55WFZPMVJSSDJXTEVEX1pvcl9uYkxPSVg5U2JRSGlKTFRqb3Q2cVFMWklEWGFXdGk3eDNHNHdGYlZXTWlPTnd3NldTTmpyb3JEWl9CNHp4MEhGZU9MN21JRWV0aDVjMF80elhyZXhDTjZ3?oc=5",
+          "domain": "news.google.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-25T21:26:15+00:00",
+      "published": "2026-09-23T04:48:47+00:00",
       "trace": [
         "tier C (+10)",
         "single tier-C source — treat with caution",
-        "importance 3/5 from cache",
-        "blend 32 = trust 10 / interest 50 / corrob 25"
+        "importance 1/5 from gemini-3.5-flash-lite",
+        "blend 10 = trust 10 / interest 0 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -1663,6 +1323,48 @@
         "blend 21 = trust 10 / interest 25 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "2fdf4e2e841c20db",
+      "title": "AI can be a really wonderful tool for exploring topics far from coding.",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "ai",
+        "howto",
+        "llm",
+        "tool"
+      ],
+      "summary": "AI can be a really wonderful tool for exploring topics far from coding. I had Claude Fable 5.1 put together an annotated guide to Eliot's poem \"The Wasteland,\" with multiple pathways through the poem, recordings, scholarship, etc. the-waste-land.netlify.app (Bluesky post by @emollick.bsky.social — 86 likes, 7 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "2fdf4e2e841c20db"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mw2usvvn6c26",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-21T23:34:41.829000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-21 — outside lookback window"
     },
     {
       "cluster_key": "0b2217f722362280",
@@ -1759,6 +1461,63 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
+      "cluster_key": "b7ddc67983560c89",
+      "title": "Why Xi believes the U.S. and China can overcome the 'Thucydides Trap'",
+      "category": "markets",
+      "one_liner": "Chinese President Xi Jinping visits the White House, arguing that U.S.-China competition can bypass the Thucydides Trap.",
+      "tags": [
+        "markets",
+        "policy",
+        "political"
+      ],
+      "summary": "During his White House visit, Chinese President Xi Jinping invoked the 'Thucydides Trap', stating that competition between major powers can remain constructive and avoid conflict through mutual cooperation and better military crisis communication. U.S. President Donald Trump emphasized general collaboration during the summit, while Beijing's readout noted Xi's call for the U.S. to oppose Taiwanese independence. Analysts highlighted that establishing a baseline for intense economic competition without military confrontation is a major political outcome of the talks.",
+      "key_facts": [
+        "Visit duration/timing: First U.S. state visit in 11 years"
+      ],
+      "bottom_line": "The U.S.-China presidential summit successfully established a framework for non-confrontational great power competition, injecting diplomatic certainty into bilateral relations.",
+      "claims": [
+        {
+          "text": "“The Thucydides Trap can be overcome,” Chinese President Xi Jinping said on arriving at the White House to meet U.S. President Donald Trump on Thursday, according to the Chinese side's official readout.",
+          "support_span": "“The Thucydides Trap can be overcome,” Chinese President Xi Jinping said on arriving at the White House to meet U.S. President Donald Trump on Thursday, according to the Chinese side's official readout.",
+          "status": "contradicted"
+        },
+        {
+          "text": "Xi’s comment on Thursday about overcoming the Thucydides Trap followed remarks on peaceful coexistence — that the U.S. and China can have “healthy” competition without confrontation.",
+          "support_span": "Xi’s comment on Thursday about overcoming the Thucydides Trap followed remarks on peaceful coexistence — that the U.S. and China can have “healthy” competition without confrontation.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "b7ddc67983560c89"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "CNBC Finance",
+          "url": "https://www.cnbc.com/2026/09/26/xi-trump-thucydides-trap-us-china.html",
+          "domain": "cnbc.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-26T05:00:01+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 25 / interest 75 / corrob 25"
+      ],
+      "reject_reason": "2 claim(s) not supported by the source text"
+    },
+    {
       "cluster_key": "36ccd5a5c571ad89",
       "title": "projectdiscovery/subfinder — Fast passive subdomain enumeration tool.",
       "category": "cyber_tools",
@@ -1814,142 +1573,43 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "c755eb3a2b5ca3c9",
-      "title": "libingzheren/Jev-Mem — Jev-Mem: System-One Controlled Agentic Memory",
+      "cluster_key": "d2d497e5eee41848",
+      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
       "category": "tech_ai",
-      "one_liner": "",
+      "one_liner": "Proaction uses OpenAI's Codex to automate custom software demo creation, saving engineering hours and boosting sales conversion.",
       "tags": [
-        "agents",
         "ai",
         "llm",
-        "opensource"
-      ],
-      "summary": "Jev-Mem: System-One Controlled Agentic Memory GitHub repository libingzheren/Jev-Mem, 93 stars, language Python. Topics: agent, agent-memory, agentic-ai, agentic-memory, agents, jev, jev-ai, llm.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "summary_source": "extract",
-      "alt_keys": [
-        "c755eb3a2b5ca3c9"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/libingzheren/Jev-Mem",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-20T05:27:53+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-20 — outside lookback window"
-    },
-    {
-      "cluster_key": "82c9fb7b6a27ee42",
-      "title": "A Rapid Pipeline for Training and Deploying ML Models on WeBe Band",
-      "category": "tech_ai",
-      "one_liner": "An automated pipeline streamlines training, hardware-aware quantization, and OTA deployment of ML models on the WeBe Band edge device.",
-      "tags": [
-        "ai",
-        "hardware",
-        "opensource",
-        "research",
         "tool"
       ],
-      "summary": "Developing edge machine learning models for resource-constrained devices remains challenging due to device-specific constraints. To streamline this, researchers designed an automated pipeline for the WeBe Band wrist-worn wearable that integrates the Piccolo AI ecosystem with hardware-aware model compilation, quantization, and over-the-air deployment. The pipeline supports classical algorithms and lightweight neural networks while providing on-board latency and memory profiling. Experimental results demonstrate how developers can trade off model complexity against deployability on microcontrollers.",
+      "summary": "Fleet management software provider Proaction integrated OpenAI's Codex to empower non-technical sales staff to generate customized, interactive product demos directly from customer call recordings and spreadsheets. COO Colin Knudsen uses Codex to build 4 to 6 tailored HTML demo environments per month, each taking under 45 minutes and saving roughly 40 to 60 hours of engineering labor. The custom implementations with prospect data increased deal progression from initial contact into solution development by 60%.",
       "key_facts": [
-        "Target hardware: WeBe Band wearable device"
+        "Engineering hours saved: 40 to 60 hours per month",
+        "Founder hours saved: 33 hours per month",
+        "Sales increase: 60%",
+        "Time per demo: 30 to 45 minutes"
       ],
-      "bottom_line": "Automated pipelines combining hardware-aware quantization and on-device profiling enable rapid iteration of machine learning models on constrained edge hardware.",
+      "bottom_line": "Non-technical sales teams can use Codex to auto-generate customized software demos from customer data, drastically reducing engineering overhead and closing deals faster.",
       "claims": [
         {
-          "text": "The system automatically generates hardware-efficient ML models that can be easily integrated into the WeBe core firmware.",
-          "support_span": "The system automatically generates hardware-efficient ML models that can be easily integrated into the WeBe core firmware, supporting AutoML, hardware-aware quantization, and performance profiling to build models that meet desired latency targets while remaining compatible with device memory and power limitations.",
+          "text": "Proaction builds software for businesses that manage fleets of vehicles, from cars and trucks to construction machinery.",
+          "support_span": "Proaction builds software for businesses that manage fleets of vehicles, from cars and trucks to construction machinery.",
           "status": "contradicted"
         },
         {
-          "text": "The framework tightly integrates the open-source Piccolo AI ecosystem with an automated pipeline that generates deployable firmware artifacts.",
-          "support_span": "The proposed framework tightly integrates the open-source Piccolo AI ecosystem with an automated pipeline that generates deployable firmware artifacts, performs hardware-aware model compilation, and supports over-the-air (OTA) deployment.",
+          "text": "Colin creates four to six customized, interactive demos a month, with each taking 30 to 45 minutes to build.",
+          "support_span": "Colin creates four to six customized, interactive demos a month, with each taking 30 to 45 minutes to build.",
           "status": "entailed"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 25,
-      "corroboration": 1,
-      "blend": 36.2,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "82c9fb7b6a27ee42"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.29084",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.29084"
-      ],
-      "published": "2026-09-25T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 2/5 from gemini-3.5-flash-lite",
-        "blend 36 = trust 70 / interest 25 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "d37f5b2c59270d01",
-      "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
-      "category": "tech_ai",
-      "one_liner": "Higgsfield AI uses GPT-6 Astra's multi-step planning to rapidly ship new video creation features for small businesses within a day.",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "release"
-      ],
-      "summary": "Higgsfield AI has integrated GPT-6 Astra into its platform, enabling the company to accelerate the delivery of new video ad creation features for small businesses and ship new toolsets within a single day. The integration leverages Astra's long-horizon task planning capabilities and multi-step workflow coordination. According to Higgsfield, this allows a single engineer to construct complex creative variations and localization features rapidly.",
-      "key_facts": [
-        "Model used: GPT-6 Astra",
-        "Deployment timeframe: Within a day"
-      ],
-      "bottom_line": "Advanced long-horizon LLM task planning allows small engineering teams to rapidly prototype and deploy complex creative workflows.",
-      "claims": [
-        {
-          "text": "With GPT-6 Astra, Higgsfield AI helps creatives complete video workflows end to end with AI.",
-          "support_span": "With GPT‑6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster. Higgsfield AI helps creatives complete video workflows end to end with AI.",
-          "status": "contradicted"
         }
       ],
       "trust_score": 70,
       "interest_score": 50,
       "corroboration": 1,
       "blend": 47.5,
-      "is_new": true,
+      "is_new": false,
       "summary_source": "model",
       "alt_keys": [
-        "d37f5b2c59270d01"
+        "d2d497e5eee41848"
       ],
       "critical_signal": "",
       "priority": "important",
@@ -1957,135 +1617,21 @@
       "sources": [
         {
           "name": "OpenAI Blog",
-          "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+          "url": "https://openai.com/index/proaction",
           "domain": "openai.com",
           "tier": "A"
         }
       ],
       "primary_links": [
-        "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra"
+        "https://openai.com/index/proaction"
       ],
-      "published": "2026-09-21T12:00:00+00:00",
+      "published": "2026-09-25T19:00:00+00:00",
       "trace": [
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "importance 3/5 from cache",
+        "importance 3/5 from gemini-3.5-flash-lite",
         "blend 48 = trust 70 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "7cbc3ca3f9c81f13",
-      "title": "Stalin hits back at Vijay, accuses him of surrendering to BJP",
-      "category": "india_world",
-      "one_liner": "DMK leader M.K. Stalin criticizes actor-politician Vijay for political silence and alignment strategies.",
-      "tags": [
-        "incident",
-        "india",
-        "political"
-      ],
-      "summary": "DMK president M.K. Stalin launched a sharp political attack on actor-turned-politician C. Joseph Vijay, accusing him of remaining silent on national political issues and surrendering to the BJP. Stalin criticized TVK's candidate selections and political strategies while mocking various governance claims. The verbal exchange highlights intensifying political friction in Tamil Nadu ahead of upcoming electoral contests.",
-      "key_facts": [
-        "Date: September 25, 2026"
-      ],
-      "bottom_line": "Political tensions in Tamil Nadu escalate as DMK leadership publicly targets rival party TVK and its leader C. Joseph Vijay.",
-      "claims": [
-        {
-          "text": "DMK president M.K. Stalin on Friday questioned how many times Chief Minister C. Joseph Vijay had spoken against the BJP and how many protests his TVK had organised against the national party.",
-          "support_span": "DMK president M.K. Stalin on Friday questioned how many times Chief Minister C. Joseph Vijay had spoken against the Dmitry / national party.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 25,
-      "corroboration": 1,
-      "blend": 25.0,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "7cbc3ca3f9c81f13"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/national/tamil-nadu/stalin-hits-back-at-vijay-accuses-him-of-surrendering-to-bjp/article71509994.ece",
-          "domain": "thehindu.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-25T18:09:45+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 2/5 from gemini-3.5-flash-lite",
-        "blend 25 = trust 25 / interest 25 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "973262843410dddb",
-      "title": "AI-led phone price hikes persist, hitting Indian customers",
-      "category": "india_world",
-      "one_liner": "AI memory-chip shortages drive severe smartphone price hikes in India, crushing retail sales and hitting budget devices.",
-      "tags": [
-        "ai",
-        "hardware",
-        "india",
-        "markets",
-        "supply-chain"
-      ],
-      "summary": "Relentless smartphone price hikes in India—ranging from ₹1,000 to ₹5,000—have significantly depressed foot traffic and sales for local retailers. The inflation is driven by a global memory-chip shortage caused by high demand from artificial intelligence companies and data centers. According to the All India Mobile Retailers Association (AIMRA), budget smartphone choices have nearly vanished, and global sub-$200 shipments are projected to drop 40% between 2025 and 2030. Industry experts warn that the electronic supply chain crunch and subsequent price increases could persist until 2028 or 2030, disproportionately impacting price-sensitive emerging markets.",
-      "key_facts": [
-        "Price hike range: ₹1,000 to ₹5,000",
-        "Smartphone GST rate: 18%",
-        "Projected sub-$200 shipment drop: 40% (2025–2030)"
-      ],
-      "bottom_line": "Surging AI infrastructure demand is starving consumer electronics supply chains of memory chips, permanently altering affordability in price-sensitive markets like India.",
-      "claims": [
-        {
-          "text": "Phone prices increased with hikes ranging from ₹1,000 to ₹5,000 across major brands.",
-          "support_span": "Price hikes have ranged from ₹1,000 to ₹5,000, but that is only the latest tranche.",
-          "status": "entailed"
-        },
-        {
-          "text": "Global sub-$200 smartphone shipments are forecast to fall about 40% between 2025 and 2030.",
-          "support_span": "Global sub-$200 smartphone shipments are forecast to fall about 40% between 2025 and 2030,” Counterpoint Research... said on Thursday",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "973262843410dddb"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/business/ai-led-phone-price-hikes-persist-hitting-indian-customers/article71508595.ece",
-          "domain": "thehindu.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-25T17:54:07+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 25 / interest 100 / corrob 25",
-        "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     }
