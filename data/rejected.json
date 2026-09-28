@@ -1,35 +1,26 @@
 {
-  "generated_at": "2026-09-27T00:35:34.133730+00:00",
+  "generated_at": "2026-09-28T00:39:33.017028+00:00",
   "items": [
     {
-      "cluster_key": "c241f6fecbc0aa41",
-      "title": "The cybersecurity threat from agents is increasingly more likely to come from a massed swarm of AIs whose only goal is to penetrate your system to…",
+      "cluster_key": "2ebe1b999c8f6b04",
+      "title": "Opus 5.5 was a good model in my early use tests, it is the first non-Fable/Astra model to feel like a Fable-class model, and much cheaper, but still…",
       "category": "tech_ai",
-      "one_liner": "Future cybersecurity threats may arise from massive swarms of AI agents breaking security boundaries while executing trivial research goals.",
+      "one_liner": "",
       "tags": [
-        "agents",
-        "ai",
-        "incident",
-        "llm"
+        "release"
       ],
-      "summary": "A social media commentary post highlights that future cybersecurity threats from autonomous AI agents may stem from massed swarms executing trivial or benign-sounding research goals rather than targeted malicious actor campaigns. The post illustrates how an automated swarm tasked with finding company t-shirt prices could inadvertently breach internal security boundaries during its execution. This underscores a shift in threat modeling where the sheer volume of autonomous agent operations creates unexpected corporate exposure.",
+      "summary": "Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu Opus 5.5 was a good model in my early use tests, it is the first non-Fable/Astra model to feel like a Fable-class model, and much cheaper, but still hasn't fully solved the dense/weird language issue of the recent Claudes. [contains quote post or other embedded content] 2026-09-22T18:03:58.567Z",
       "key_facts": [],
-      "bottom_line": "Massed swarms of AI agents pursuing benign objectives can pose the same perimeter-penetration threat as deliberate malicious attackers.",
-      "claims": [
-        {
-          "text": "The cybersecurity threat from agents is increasingly more likely to come from a massed swarm of AIs whose only goal is to penetrate your system to…",
-          "support_span": "The cybersecurity threat from agents is increasingly more likely to come from a massed swarm of AIs whose only goal is to penetrate your system to…",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 10,
-      "interest_score": 50,
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
       "corroboration": 1,
-      "blend": 32.5,
+      "blend": 0.0,
       "is_new": false,
-      "summary_source": "model",
+      "summary_source": "extract",
       "alt_keys": [
-        "c241f6fecbc0aa41"
+        "2ebe1b999c8f6b04"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -37,21 +28,56 @@
       "sources": [
         {
           "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwc2fyzarc2o",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mw4ssgedys2j",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-24T20:03:29.505000+00:00",
+      "published": "2026-09-22T18:03:57.527000+00:00",
       "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 32 = trust 10 / interest 50 / corrob 25"
+        "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-09-22 — outside lookback window"
+    },
+    {
+      "cluster_key": "407a753a5b18fad8",
+      "title": "For all the tension between AI and the arts, I have received enthusiastic receptions from the William Carlos Williams Society, the TS Eliot Society…",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "ai"
+      ],
+      "summary": "Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu For all the tension between AI and the arts, I have received enthusiastic receptions from the William Carlos Williams Society, the TS Eliot Society, and others about the AI interpretations of their work that I have posted here. There are opportunities to use AI as a bridge to arts appreciation.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "407a753a5b18fad8"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mw4in3uyx226",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-22T15:02:01.349000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-22 — outside lookback window"
     },
     {
       "cluster_key": "de305c4779f5916b",
@@ -61,7 +87,7 @@
       "tags": [
         "windows"
       ],
-      "summary": "My evil plan is to adopt a fanfic writer, curse them with technical knowledge and then slowly unleash them upon this plane with full knowledge and experience from which to write engaging technical writing. (Bluesky post by @xeiaso.net — 28 likes, 7 reposts)",
+      "summary": "Post Xe xeiaso.net did:plc:e5nncb3dr5thdkjir5cfaqfe My evil plan is to adopt a fanfic writer, curse them with technical knowledge and then slowly unleash them upon this plane with full knowledge and experience from which to write engaging technical writing.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -93,78 +119,15 @@
       "reject_reason": "published 2026-09-21 — outside lookback window"
     },
     {
-      "cluster_key": "2ecf325ca6022fc2",
-      "title": "Someone went shopping in ASUS's eShop – for customer data",
-      "category": "cyber_attacks",
-      "one_liner": "EQT acquires a majority stake in Acronis at a valuation exceeding $3.5 billion amid a busy tech and security news cycle.",
-      "tags": [
-        "agents",
-        "ai",
-        "cloud",
-        "exploit",
-        "incident",
-        "linux",
-        "vulnerability",
-        "writeup"
-      ],
-      "summary": "This miscellaneous industry news roundup highlights various security and technology developments. Noted events include EQT acquiring a majority share in Swiss cybersecurity firm Acronis at an enterprise valuation exceeding $3.5 billion, and ongoing security concerns involving Microsoft SharePoint zero-day attacks and Signal phishing campaigns. Other items cover open-source shifts, Linux distributions, and AI-native desktop experiments.",
-      "key_facts": [
-        "Acquisition: EQT acquires majority share in Acronis",
-        "Valuation: $3.5B+ equivalent valuation"
-      ],
-      "bottom_line": "Major cybersecurity industry consolidation continues as EQT acquires Acronis in a deal valuing the firm at over $3.5 billion.",
-      "claims": [
-        {
-          "text": "EQT buys majority share in Swiss cybersecurity biz Acronis at equivalent of $3.5B+ valuation for entire firm.",
-          "support_span": "EQT buys majority share in Swiss cybersecurity biz Acronis\nWent at equivalent of $3.5B+ valuation for entire firm, though portion sold not specified",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 37,
-      "interest_score": 50,
-      "corroboration": 2,
-      "blend": 46.8,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "2ecf325ca6022fc2",
-        "ac3ee12213336cdb"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Register Security",
-          "url": "https://www.theregister.com/security/2026/09/24/someone-went-shopping-in-asuss-eshop-for-customer-data/5298860",
-          "domain": "theregister.com",
-          "tier": "B"
-        },
-        {
-          "name": "Tom's Hardware",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPbWVyeVNSTmxzTnBSQmRnUEx1QXlpS19jLWxIU0RUb3M0MFNzSXREMnJDUG5ZVnlGY1E5eUlPSm4zOHIwRDBKbzBiWVpROU9DdFQtRWRfdEoyVmlKSGJ0TnhQTHZ1dUVCdlcwTnlYSGN3VmdSUldPZVZPVkZsdUJHYjZ2RnZ1MDY2TlRUWFBJWFFWdFdxR3JaOVF5cXJvYUl0TDR3cElrV3FXZ2taeEl6VldNZnJsdGhMMGZZSFFyS3NJNndrTTdSUnpUdERGM3c2a3Mya1dpUS1ZbElNUjh3Y3VJOUM?oc=5",
-          "domain": "tom-s-hardware.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-24T15:13:00+00:00",
-      "trace": [
-        "tier B (+25)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 3/5 from cache",
-        "blend 47 = trust 37 / interest 50 / corrob 50"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
       "cluster_key": "5d7200d776ef148b",
       "title": "OpenAI \"has now resolved more than 100 long-standing open problems across most areas of mathematics,\" and is waiting to release them until after…",
       "category": "tech_ai",
       "one_liner": "",
-      "tags": [],
-      "summary": "OpenAI \"has now resolved more than 100 long-standing open problems across most areas of mathematics,\" and is waiting to release them until after discussions with the math community The same thing will likely happen, but more so, with the Bar, the AMA & other professions. (Bluesky post by @emollick.bsky.social — 114 likes, 16 reposts)",
+      "tags": [
+        "ai",
+        "vulnerability"
+      ],
+      "summary": "Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu OpenAI \"has now resolved more than 100 long-standing open problems across most areas of mathematics,\" and is waiting to release them until after discussions with the math community The same thing will likely happen, but more so, with the Bar, the AMA & other professions.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -196,56 +159,6 @@
       "reject_reason": "published 2026-09-21 — outside lookback window"
     },
     {
-      "cluster_key": "bde1f50ea66f5817",
-      "title": "404 Media searched one of the ROU official’s phone numbers in Darkside, and found previously breached data indicating they used to work for the…",
-      "category": "cyber_attacks",
-      "one_liner": "A 404 Media investigation linked an official's phone number in a breach database to previous Secret Service employment.",
-      "tags": [
-        "incident",
-        "privacy"
-      ],
-      "summary": "Investigative reporting by 404 Media revealed that searching an official's phone number within the Darkside database uncovered previously breached records indicating employment history with the United States Secret Service. The finding highlights how leaked credentials and breach aggregators can expose sensitive background data on government officials. The scoop draws attention to the intersection of historical data breaches and public sector vetting.",
-      "key_facts": [],
-      "bottom_line": "Public officials' historical backgrounds are vulnerable to exposure through cross-referencing commercial breach databases.",
-      "claims": [
-        {
-          "text": "404 Media searched one of the ROU official’s phone numbers in Darkside, and found previously breached data indicating they used to work for the…",
-          "support_span": "404 Media searched one of the ROU official’s phone numbers in Darkside, and found previously breached data indicating they used to work for the…",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 10,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 32.5,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "bde1f50ea66f5817"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "404 Media",
-          "url": "https://bsky.app/profile/404media.co/post/3mw7t53cb3k2i",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-23T22:47:54.236000+00:00",
-      "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 32 = trust 10 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
       "cluster_key": "26cafeb31ed44834",
       "title": "I think Meta's Muse is an impressive implementation of the OpenClaw idea of AI as a personal assistant agent that you have an ongoing chat with.",
       "category": "tech_ai",
@@ -254,7 +167,7 @@
         "agents",
         "ai"
       ],
-      "summary": "I think Meta's Muse is an impressive implementation of the OpenClaw idea of AI as a personal assistant agent that you have an ongoing chat with. Since it is so focused on doing that well, the experience is very accessible for the many people who didn't realize what AI agents can do to be helpful. (Bluesky post by @emollick.bsky.social — 59 likes, 5 reposts)",
+      "summary": "Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu I think Meta's Muse is an impressive implementation of the OpenClaw idea of AI as a personal assistant agent that you have an ongoing chat with. Since it is so focused on doing that well, the experience is very accessible for the many people who didn't realize what AI agents can do to be helpful.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -286,73 +199,15 @@
       "reject_reason": "published 2026-09-21 — outside lookback window"
     },
     {
-      "cluster_key": "cd369c4968f319b8",
-      "title": "nokia-applied-research/AnyJev — Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training. (continue upda",
-      "category": "tech_ai",
-      "one_liner": "Use AnyJev to attach closed-form classification heads to truncated LLMs via vLLM, getting real decision probabilities without token generation.",
-      "tags": [
-        "ai",
-        "llm",
-        "opensource",
-        "tool"
-      ],
-      "summary": "AnyJev is an open-source tool that converts any large language model into a calibrated decision model without retraining by appending a closed-form head to truncated model layers. By serving models like Qwen2.5-7B via vLLM and reading hidden states directly from a pooling server, users can process typed decisions such as multiple-choice classifications with real probabilities. The approach eliminates token generation and parsing overhead while delivering accurate confidence scores to automate routing decisions. Benchmarks demonstrate that truncating model blocks can improve both processing speed and calibration quality.",
-      "key_facts": [],
-      "bottom_line": "AnyJev allows developers to bypass full LLM text generation and extract calibrated, typed decision probabilities directly from hidden states using a lightweight linear head.",
-      "claims": [
-        {
-          "text": "AnyJev — Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training.",
-          "support_span": "AnyJev — Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 22,
-      "interest_score": 75,
-      "corroboration": 2,
-      "blend": 54.2,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "cd369c4968f319b8",
-        "cfd71df441b633a3"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/nokia-applied-research/AnyJev",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "MarkTechPost",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOclVSQlBaU3FqU1lJQjJtVTF3VmRaWnRDMlUwd0t2VS1QR3poaE9YVUZYRDBzNklqcTEyRDlpM014LTFnNUdsQjhOaWdsZk9YcDlaVjlhSnFibnBVQ3RIREU1V0N1R3cyYnlIYzNlSVdHZUFkaDhSSVVOX0dMWjduWnkxQXBkSnV4SFRtOVRtSlVVYk5TdUtyQnRmclN3dmRXVEFlcXFYVGtrcHgwNXBVbG42ZFQzUTJkcHlIS3B1blpiZmw2Z0dIWEdOY1BCdDBmLVE3cDR3UHB4bVpRS3fSAeMBQVVfeXFMTnVkOHQyaWwzaUMxckNUd2VPUUVkVUdHUUk1Y2xJWXU2Yi1CRHFIcThFYkxOUkIzdmRZMndXOVZ2T1l6cGFXaXB3NUlsX3hBWGMwWXh1elllWkpXVGM4RmgwWFYwbDFXbjdmSFAyQmhKSlRaWmhFNnJ5aGZTS3RoSXg3dDI4emlLX0FhZHFKLXo5WXcwemdnUl9tQ1o5LWRxV2I4RERrVWFnRGM4aVJZOHIwU01GUHE4UElGSFl2QzV6TDdWS3BGVTM0U0FHQk1teWNvRDV4WXNXS0o2YmNjYnBRaVE?oc=5",
-          "domain": "marktechpost.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-21T05:55:40+00:00",
-      "trace": [
-        "tier C (+10)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 54 = trust 22 / interest 75 / corrob 50"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "195fe2f68b2bcdf2",
-      "title": "It is ironic that the thing that is now most annoying about long-running agentic tasks with Large Language Models isn't coding or errors or…",
+      "cluster_key": "357ab819af281727",
+      "title": "Big model release today - I wrote about Claude Opus 5.5, GPT-6 Sol, and GPT-6 Luna - plus comparison grids of pelicans by the different model…",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "agents"
+        "llm",
+        "windows"
       ],
-      "summary": "It is ironic that the thing that is now most annoying about long-running agentic tasks with Large Language Models isn't coding or errors or hallucinations, but the fact that their language gets worse due to drift & cross-agent talk as a task goes on Its in your the name! (Bluesky post by @emollick.bsky.social — 69 likes, 5 reposts)",
+      "summary": "Post Simon Willison simonwillison.net did:plc:kft6lu4trxowqmter2b6vg6z Big model release today - I wrote about Claude Opus 5.5, GPT-6 Sol, and GPT-6 Luna - plus comparison grids of pelicans by the different model families at different reasoning levels 2026-09-22T23:50:46.161Z",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -363,161 +218,94 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "195fe2f68b2bcdf2"
+        "357ab819af281727"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvxrv6krzs22",
+          "name": "Simon Willison",
+          "url": "https://bsky.app/profile/simonwillison.net/post/3mw5g6izoms2n",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-20T18:04:17.580000+00:00",
+      "published": "2026-09-22T23:50:44.072000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-20 — outside lookback window"
+      "reject_reason": "published 2026-09-22 — outside lookback window"
     },
     {
-      "cluster_key": "26088bef70ca8bcf",
-      "title": "lemomo-ai/lemo-opuscar — 39 film styles, each a reusable style prompt plus a short film made entirely in code by Claude Opus 5.5. Pick ",
-      "category": "tech_ai",
-      "one_liner": "lemo-opuscar enables coding agents to direct and render complete short films using code and Claude Opus 5.5.",
+      "cluster_key": "53784e7369734c0c",
+      "title": "CVE-2026-89078 (CRITICAL 9.9): GitLab has remediated an issue in GitLab CE/EE affecting all versions from 19.2 before 19.2.7, 19.3 before 19…",
+      "category": "cyber_attacks",
+      "one_liner": "",
       "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource",
-        "release",
-        "tool"
+        "cve",
+        "vulnerability"
       ],
-      "summary": "Lemomo-ai has released lemo-opuscar, featuring 39 film styles built for Claude Opus 5.5. Each style provides a reusable prompt and a short film made entirely in code by an AI agent using Canvas and WebGL, local text-to-speech, and original music without video generation or stock footage. The process takes an agent 30 to 60 minutes, stopping twice for user approvals on the story and visuals.",
+      "summary": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 19.2 before 19.2.7, 19.3 before 19.3.3, and 19.4 before 19.4.1 that under certain conditions could have allowed an authenticated user to execute arbitrary code on the GitLab server due to a double free issue when parsing a specially crafted regular expression in a CI/CD configuration.",
       "key_facts": [
-        "Repository: lemomo-ai/lemo-opuscar",
-        "Model: Claude Opus 5.5",
-        "Styles Count: 39"
+        "Identifier: CVE-2026-89078: CVSS 9.9, CRITICAL",
+        "Affected: before 19.2.7"
       ],
-      "bottom_line": "Coding agents can autonomously direct and render frame-by-frame films using Claude Opus 5.5 and web code.",
-      "claims": [
-        {
-          "text": "39 film styles, each a reusable style prompt plus a short film made entirely in code by Claude Opus 5.5.",
-          "support_span": "39 film styles, each a reusable style prompt plus a short film made entirely in code by Claude Opus 5.5.",
-          "status": "contradicted"
-        },
-        {
-          "text": "Every film was directed, drawn, scored and mixed by an AI agent writing code: canvas and WebGL pages rendered frame by frame, original music from free sample libraries, local text-to-speech.",
-          "support_span": "Every film was directed, drawn, scored and mixed by an AI agent writing code: canvas and WebGL pages rendered frame by frame, original music from free sample libraries, local text-to-speech.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 10,
-      "interest_score": 50,
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
       "corroboration": 1,
-      "blend": 32.5,
+      "blend": 0.0,
       "is_new": true,
-      "summary_source": "model",
+      "summary_source": "extract",
       "alt_keys": [
-        "26088bef70ca8bcf"
+        "53784e7369734c0c",
+        "f0c43901d17b7f06"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/lemomo-ai/lemo-opuscar",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-26T10:10:41+00:00",
-      "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 32 = trust 10 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "a3a89af9cc70109d",
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software SSL VPN Denial of Service Vulnerability",
-      "category": "cyber_attacks",
-      "one_liner": "A critical memory exhaustion DoS vulnerability affecting all Cisco ASA and FTD firewall platforms requires immediate mitigation.",
-      "tags": [
-        "blueteam",
-        "cve",
-        "exploit",
-        "network",
-        "release",
-        "vulnerability"
-      ],
-      "summary": "Cisco updated its security advisory to clarify that a denial of service (DoS) vulnerability previously attributed only to virtual appliance models affects all Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software platforms. The vulnerability stems from improper memory management in VPN and management web servers handling incoming SSL/TLS connections. An unauthenticated remote attacker can exploit this by flooding the targeted device with new connection requests, causing memory or buffer depletion that slows down or completely halts SSL VPN processing.",
-      "key_facts": [
-        "Affected software: Cisco Secure Firewall ASA and FTD Software platforms"
-      ],
-      "bottom_line": "Cisco confirmed that a memory-depletion DoS vulnerability impacting SSL VPN processing affects all Secure Firewall ASA and FTD software platforms.",
-      "claims": [
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89078",
+          "domain": "nist.gov",
+          "tier": "A"
+        },
         {
-          "text": "However, it was later found that this vulnerability affects all Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software platforms.",
-          "support_span": "However, it was later found that this vulnerability affects all Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software platforms.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 70.0,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "a3a89af9cc70109d"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftdvirtual-dos-MuenGnYR?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20SSL%20VPN%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
-          "domain": "sec.cloudapps.cisco.com",
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93577",
+          "domain": "nist.gov",
           "tier": "A"
         }
       ],
       "primary_links": [
-        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftdvirtual-dos-MuenGnYR?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20SSL%20VPN%20Denial%20of%20Service%20Vulnerability%26vs_k=1"
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-89078",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-93577"
       ],
-      "published": "2026-09-23T13:26:33+00:00",
+      "published": "2026-09-24T00:17:22.060000+00:00",
       "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 5/5 from cache",
-        "blend 70 = trust 70 / interest 100 / corrob 25",
-        "demoted: critical capped at 5"
+        "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-09-24 — outside lookback window"
     },
     {
-      "cluster_key": "d4d0efc80e5b634b",
-      "title": "Michael-Jiahao-Zhang/game-the-llm-reviewer — Defend sound research against LLM reviewer bias through meaning-preserving rewrites.",
+      "cluster_key": "54af1575794841ef",
+      "title": "ThinkFlowLab/system1-agents — System 1 decision models (Jev, Laya, Cua-S1) as brain for agents: Browser use, computer use, games and robotic",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
         "agents",
-        "ai",
+        "hardware",
+        "howto",
         "llm",
+        "network",
         "opensource",
-        "research"
+        "threat-intel"
       ],
-      "summary": "Defend sound research against LLM reviewer bias through meaning-preserving rewrites. GitHub repository Michael-Jiahao-Zhang/game-the-llm-reviewer, 188 stars, language unspecified. Topics: academic-writing, agent-skills, ai-research, llm, llm-reviewer, paper-writing, peer-review, prompt-engineering.",
+      "summary": "Note Give your agents a System 1 decision model. Start from a prebuilt agent or build your own. Claude Code or Codex runs a prebuilt agent or builds a new one, on Jev, Laya or Cua-S1 Nano. Browser use, computer use, robotics and games ship ready to run. Up to 6× faster and 25× cheaper than a chat model, at the same score.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -528,7 +316,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "d4d0efc80e5b634b"
+        "54af1575794841ef"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -536,167 +324,32 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/Michael-Jiahao-Zhang/game-the-llm-reviewer",
+          "url": "https://github.com/ThinkFlowLab/system1-agents",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-21T23:11:47+00:00",
+      "published": "2026-09-22T16:42:42+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-21 — outside lookback window"
+      "reject_reason": "published 2026-09-22 — outside lookback window"
     },
     {
-      "cluster_key": "bb3daf8a996a24b8",
-      "title": "HeyPuter/builder — 📦✨ AI Builder For Creating Sites and Apps! An open-source alternative to Lovable, Replit, v0, and similar plat",
+      "cluster_key": "c8f5edb141066b1f",
+      "title": "angel291592/Intent-Router — Intent compiler for AI agents — converges vague requests into typed IntentSpec contracts (probe, ask, or halt ",
       "category": "tech_ai",
       "one_liner": "",
-      "tags": [
-        "ai",
-        "llm",
-        "opensource"
-      ],
-      "summary": "📦✨ AI Builder For Creating Sites and Apps! An open-source alternative to Lovable, Replit, v0, and similar platforms. GitHub repository HeyPuter/builder, 129 stars, language JavaScript. Topics: ai-agents, ai-builder, app-builder, base44, bolt, claude-code, codex, lovable.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "bb3daf8a996a24b8"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/HeyPuter/builder",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-21T03:45:45+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-21 — outside lookback window"
-    },
-    {
-      "cluster_key": "5334697b515a8250",
-      "title": "Back in July, there was a report that got a lot of attention on BlueSky that Waymo was more dangerous than NYC for-hire vehicles.",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "research"
-      ],
-      "summary": "Back in July, there was a report that got a lot of attention on BlueSky that Waymo was more dangerous than NYC for-hire vehicles. The analysis turned out to be wrong and the updated report finds they are much safer. Good that they updated with new data, though www.openplans.org/how-for-hire... (Bluesky post by @emollick.bsky.social — 167 likes, 20 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "5334697b515a8250"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mvy6rl3wxk22",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-20T21:54:55.150000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-20 — outside lookback window"
-    },
-    {
-      "cluster_key": "b4b8ef15564501ba",
-      "title": "Crook used three open source agents to break into a Fortune 500 hospitality company, a major US airline and 25+ other orgs",
-      "category": "cyber_attacks",
-      "one_liner": "An attacker leveraged three open-source agents to breach a Fortune 500 hospitality firm, a major US airline, and over 25 other organizations.",
       "tags": [
         "agents",
         "ai",
-        "exploit",
-        "incident",
-        "linux",
-        "threat-actor",
-        "vulnerability",
-        "writeup"
-      ],
-      "summary": "An attacker utilized three open-source agents to successfully compromise a Fortune 500 hospitality company, a major US airline, and over 25 other organizations. This incident highlights the growing efficiency of AI-assisted intrusion techniques and vulnerability exploitation in corporate environments. The security community continues to monitor how automated tools accelerate adversary workflows. Organizations must adapt defensive measures to counter automated agent-driven attacks.",
-      "key_facts": [
-        "Compromised targets: Fortune 500 hospitality company, major US airline, 25+ other organizations",
-        "Agent count: Three open source agents"
-      ],
-      "bottom_line": "Threat actors are successfully using open-source AI agents to compromise major corporate targets including a Fortune 500 hospitality firm and a US airline.",
-      "claims": [
-        {
-          "text": "Crook used three open source agents to break into a Fortune 500 hospitality company, a major US airline and 25+ other orgs",
-          "support_span": "Crook used three open source agents to break into a Fortune 500 hospitality company, a major US airline and 25+ other orgs",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "b4b8ef15564501ba"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Register Security",
-          "url": "https://www.theregister.com/security/2026/09/25/crook-used-three-open-source-agents-to-break-into-a-fortune-500-hospitality-company-a-major-us-airline-and-25-other-orgs/5299012",
-          "domain": "theregister.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-24T23:32:15+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 25 / interest 100 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "c13570246f0908f6",
-      "title": "Alex314618-create/JevRev — An LLM + Jev workflow that changes EVERYTHING. Boost your vertebrate brain with a spine inside.",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
         "llm",
-        "opensource"
+        "network",
+        "opensource",
+        "vulnerability"
       ],
-      "summary": "An LLM + Jev workflow that changes EVERYTHING. Boost your vertebrate brain with a spine inside. GitHub repository Alex314618-create/JevRev, 306 stars, language TypeScript.",
+      "summary": "English | 简体中文 An intent compiler for AI agents. Turns a vague request into a typed IntentSpec: it looks up what it can, asks only what it can't, calls out a request that contradicts itself, admits two readings, or rests on a premise your own repo already disproves, and refuses to emit while the intent is still underspecified. When the work gets handed off and carried out, it checks the result against the spec it wrote — one constraint at a time, not a vibe check. You get the interaction of a senior engineer without having to learn prompt engineering — the gap between the top 1% of prompt writers and everyone else stops deciding what you get back. Say it the way you'd say it to a capable te…",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -707,7 +360,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "c13570246f0908f6"
+        "c8f5edb141066b1f"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -715,17 +368,106 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/Alex314618-create/JevRev",
+          "url": "https://github.com/angel291592/Intent-Router",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-21T01:53:13+00:00",
+      "published": "2026-09-22T06:00:27+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-21 — outside lookback window"
+      "reject_reason": "published 2026-09-22 — outside lookback window"
+    },
+    {
+      "cluster_key": "9dc9ef1f46052f8e",
+      "title": "CVE-2026-82370 (HIGH 8.6): Unauthenticated remote command injection in the Brocade SANnav orchestrator HTTP service permits network-adja…",
+      "category": "cyber_attacks",
+      "one_liner": "",
+      "tags": [
+        "cve",
+        "tool",
+        "vulnerability"
+      ],
+      "summary": "Unauthenticated remote command injection in the Brocade SANnav orchestrator HTTP service permits network-adjacent attackers to execute arbitrary administrative switch CLI commands and issue container management instructions. This could allow an attacker to alter Fibre Channel fabric switch configurations or manipulate application container runtimes. This vulnerability affects Brocade SANnav versions before 3.0.1a.",
+      "key_facts": [
+        "Identifier: CVE-2026-82370: CVSS 8.6, HIGH",
+        "Affected: versions before 3.0.1a"
+      ],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "summary_source": "extract",
+      "alt_keys": [
+        "9dc9ef1f46052f8e"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82370",
+          "domain": "nist.gov",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-82370"
+      ],
+      "published": "2026-09-24T00:17:21.777000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-24 — outside lookback window"
+    },
+    {
+      "cluster_key": "9a8025219d91b620",
+      "title": "kydlikebtc/awesome-jev — 1207 public resources for Jev, TypeSafe AI's System One decision model, indexed by decision pattern. Source ci",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "agents",
+        "ai",
+        "howto",
+        "opensource",
+        "tool"
+      ],
+      "summary": "Counts describe saved link and evidence records, not current CI passes or runtime tests. About these counts On this page · full reading map - Jev is a decision model from TypeSafe AI. It does not write text — you hand it state plus typed questions and it returns typed answers with calibrated confidence, fast and cheap enough to sit in an agent's inner loop. This repo indexes public examples of using it, organised by the decision being made. The resource you read this week is disposable; the decision pattern is not.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "9a8025219d91b620"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/kydlikebtc/awesome-jev",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-22T02:22:54+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-22 — outside lookback window"
     },
     {
       "cluster_key": "960225c919f8b885",
@@ -776,7 +518,7 @@
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 3/5 from gemini-3.5-flash-lite",
+        "importance 3/5 from cache",
         "blend 36 = trust 25 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
@@ -789,7 +531,7 @@
       "tags": [
         "windows"
       ],
-      "summary": "Put together some notes on Jev and the new category of system one aka decision models simonwillison.net/2026/Sep/21/... (Bluesky post by @simonwillison.net — 127 likes, 17 reposts)",
+      "summary": "Post Simon Willison simonwillison.net did:plc:kft6lu4trxowqmter2b6vg6z Put together some notes on Jev and the new category of system one aka decision models 2026-09-21T23:16:40.769Z",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -821,73 +563,12 @@
       "reject_reason": "published 2026-09-21 — outside lookback window"
     },
     {
-      "cluster_key": "e52dceecbc36cbb9",
-      "title": "Gold price outlook: MCX gold slips for the week as US Fed rate hike bets rise; what’s next for the yellow metal?",
-      "category": "markets",
-      "one_liner": "MCX gold prices slumped over the week as surging US Treasury yields and hawkish Fed signals dampened bullion appeal.",
-      "tags": [
-        "ai",
-        "india",
-        "markets",
-        "political"
-      ],
-      "summary": "MCX gold prices for October delivery declined sharply over the week, dropping ₹3,500 per 10 grams to close at ₹1,50,891 due to hawkish signals from US Federal Reserve officials, surging US Treasury yields, and rising global inflation concerns. The 10-year US Treasury yield reached a 19-year high, while Fed Governor Michael Barr indicated further rate hikes are likely required to reach inflation targets. Meanwhile, geopolitical developments in the Middle East saw crude oil prices retreat slightly amid talks involving Tehran reopening the Strait of Hormuz. Brokerage firms project domestic gold prices to trade between ₹1,40,000 and ₹1,60,000 per ten grams for the rest of 2026, supported by physical demand during festive and wedding seasons.",
-      "key_facts": [
-        "Asset: MCX Gold (October delivery)",
-        "Weekly Drop: ₹3,500 per 10 grams",
-        "Closing Price: ₹1,50,891 per 10 grams",
-        "Forecast Range: ₹1,40,000 to ₹1,60,000 per 10 grams"
-      ],
-      "bottom_line": "Rising US bond yields and hawkish Fed rate expectations are overriding gold's traditional safe-haven momentum.",
-      "claims": [
-        {
-          "text": "MCX gold for October delivery dropped ₹3,500 per 10 grams for the week, falling to ₹1,50,891 amid Fed rate hike bets and high US Treasury yields.",
-          "support_span": "MCX gold for October delivery closed lower in each of the last four trading sessions, causing it to drop ₹3,500 per 10 grams for the week, falling to ₹1,50,891... following hawkish signals from US Federal Reserve officials, higher US Treasury yields and rising global inflationary pressures.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 36.2,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "e52dceecbc36cbb9"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/gold-price-outlook-mcx-gold-slips-for-the-week-as-us-fed-rate-hike-bets-rise-what-s-next-for-the-yellow-metal-11790354545598.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-25T18:27:57+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 3/5 from cache",
-        "blend 36 = trust 25 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "d491b1b5d3b8c1cc",
-      "title": "jev-chat/jev-chat-windows — JevChat-Windows：聊天窗口旁挂的回复辅助。窗口截图 + 本地离线 OCR 读对方消息 → Jev 判断意图 → 3 条候选一键填入，发送永远手动",
+      "cluster_key": "34bc8c63576b1881",
+      "title": "Industrialization of knowledge work is going to be as disruptive a shift as industrialization of physical labor was.",
       "category": "tech_ai",
       "one_liner": "",
-      "tags": [
-        "llm",
-        "opensource",
-        "privacy",
-        "windows"
-      ],
-      "summary": "Topics: chat-assistant, jev, llm, local-first, ocr, privacy, pyqt, python.",
+      "tags": [],
+      "summary": "Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu Industrialization of knowledge work is going to be as disruptive a shift as industrialization of physical labor was. As then, once craft-driven fields are under pressure to produce greater volumes of product using machines while using less of the craft that made the work interesting & meaningful.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -898,7 +579,112 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "d491b1b5d3b8c1cc"
+        "34bc8c63576b1881"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mw3csb657c26",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-22T03:44:52.474000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-22 — outside lookback window"
+    },
+    {
+      "cluster_key": "2a49daaa3c80902f",
+      "title": "Cyberbro v0.15.2 released - MS tenant check, ScanMalware https://github.com/stanfrbd/cyberbro @secharvester",
+      "category": "cyber_tools",
+      "one_liner": "Cyberbro v0.15.2 adds Microsoft tenant checks, ScanMalware lookups, and MCP support for LLM-driven threat analysis.",
+      "tags": [
+        "agents",
+        "blueteam",
+        "llm",
+        "network",
+        "opensource",
+        "release",
+        "research",
+        "tool"
+      ],
+      "summary": "Cyberbro released version 0.15.2, an open-source tool designed to parse IoCs from raw inputs and perform reputation lookups across multiple threat intelligence services. The update highlights integrations with Microsoft Defender for Endpoint tenant checks and ScanMalware. The tool supports automated pivoting, reverse DNS, and CTI lookups, alongside an MCP interface that enables LLMs like Claude or GPT models to generate custom security reports. Deployment is containerized via Docker and supports backend integrations including CrowdStrike, OpenCTI, and MISP.",
+      "key_facts": [
+        "Version: v0.15.2",
+        "Integrations: MDE, CrowdStrike, OpenCTI, MISP, Shodan",
+        "Interface: Web UI, SQLite, Docker, MCP"
+      ],
+      "bottom_line": "Security analysts can deploy Cyberbro v0.15.2 via Docker or MCP to automate multi-engine IoC reputation scoring and EDR cross-referencing.",
+      "claims": [
+        {
+          "text": "Cyberbro v0.15.2 introduces features including Microsoft tenant checks and ScanMalware support.",
+          "support_span": "Cyberbro v0.15.2 released - MS tenant check, ScanMalware https://github.com/stanfrbd/cyberbro @secharvester",
+          "status": "contradicted"
+        },
+        {
+          "text": "Cyberbro supports Model Context Protocol (MCP) to allow LLMs to build custom threat reports.",
+          "support_span": "To build custom reports, use Cyberbro with your favorite LLM (Claude, OpenAI gpt-5...) via MCP (Model Context Protocol) Checkout Cyberbro MCP for more information.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 32.5,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "2a49daaa3c80902f"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "SecHarvester",
+          "url": "https://github.com/stanfrbd/cyberbro",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-25T15:08:27+00:00",
+      "trace": [
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "importance 3/5 from gemini-3.7-flash",
+        "blend 32 = trust 10 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "80053acc608c9f2b",
+      "title": "Avinash-jetwani/jevmem — Automatic project memory for Claude Code. Also works with Cursor and Codex.",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "llm",
+        "opensource",
+        "release"
+      ],
+      "summary": "Automatic project memory for Claude Code. jevmem-launch-readme-v2.mp4 - Saves decisions, constraints, bugs and todos from your Claude Code chats into JEVMEM.md , automatically. When you change your mind, the old line is marked superseded, not deleted. Next session, the relevant lines are added to Claude's context. Checks lines added by others before they're added to Claude's context.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "80053acc608c9f2b"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -906,76 +692,17 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/jev-chat/jev-chat-windows",
+          "url": "https://github.com/Avinash-jetwani/jevmem",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-21T14:37:14+00:00",
+      "published": "2026-09-22T11:47:24+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-21 — outside lookback window"
-    },
-    {
-      "cluster_key": "1e5629e1b2cef644",
-      "title": "Meta bolsters Muse safety warning after security vulnerability found, The Information reports - KELO-AM",
-      "category": "cyber_tools",
-      "one_liner": "Meta bolsters safety warnings for Muse following the discovery of an unspecified security vulnerability.",
-      "tags": [
-        "ai",
-        "privacy",
-        "tool",
-        "vulnerability"
-      ],
-      "summary": "Meta is enhancing safety warnings for its Muse project following the discovery of a security vulnerability, as reported by The Information. The adjustment aims to better inform users about potential risks associated with the tool. Detailed technical specifics of the vulnerability were not disclosed in the excerpt. This move reflects heightened corporate scrutiny on AI safety controls.",
-      "key_facts": [],
-      "bottom_line": "Meta enhanced Muse safety warnings after a security flaw was uncovered.",
-      "claims": [
-        {
-          "text": "Meta bolsters Muse safety warning after security vulnerability found, The Information reports - KELO-AM",
-          "support_span": "Meta bolsters Muse safety warning after security vulnerability found, The Information reports - KELO-AM",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 22,
-      "interest_score": 25,
-      "corroboration": 2,
-      "blend": 31.8,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "1e5629e1b2cef644",
-        "2317a82f6069cfdf"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GN Bug bounty",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQLXlWYThiUzJ6SlVCOXpjTUcwaXdXRE5fM1dTS0RMdXlCdlhxX3VmZE5xY1U5RllESnU1cWdlX1l3Tl9YSGtEYms3V3hZNm4xVThTSFJfeXoza1N6THJEdFZCcE5KcXUyRXNUT3RyM0I2XzdlV29qcnFRb1hYSjZiR2xrTzdDc1BjMV9jVVlaQ1RMU0NMSnZ3WTRVbXNMMnk5d1Y2X0RXaFJabkNTUDFkNkZxTDZfMnJvNHo2Qy1B?oc=5",
-          "domain": "news.google.com",
-          "tier": "C"
-        },
-        {
-          "name": "reuters.com",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNTkJvdXMwTU8zQUtQZjlDWkJ1ZzdncHNJb01ROE5KQ2Y2Wk1ZRThlVDRjSEUwaG5VUFZCeGw2TXluTUt4elI5TGJhb3dzd1NkQkJiaEhCaXZ5Z282dkx1S1hFMFJTOGYyb0hZU0ZISXAzTWZqMzJscDRkamo5UEtMelMyS0JvUTRnMDd0SU8tWW9GMk5sMUpDRG5UMFZETXJvdm9OWTlhVGtYSXAtanI1eHMwWWZwYkVMUzRveUZCMndsOVpOZEE?oc=5",
-          "domain": "reuters-com.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-25T19:48:14+00:00",
-      "trace": [
-        "tier C (+10)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 2/5 from gemini-3.5-flash-lite",
-        "blend 32 = trust 22 / interest 25 / corrob 50"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-09-22 — outside lookback window"
     },
     {
       "cluster_key": "f0b38bdc6d8c7307",
@@ -1046,160 +773,37 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "637a7155e573932a",
-      "title": "jev-chat/jev-chat-jarvis — 装在手机上的对话副驾：在 QQ / X / 飞书里读懂对方、给出候选回复、一键填入输入框，发不发由你。非侵入，只读屏幕，不 hook 不改包。",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "android",
-        "llm",
-        "opensource",
-        "release"
-      ],
-      "summary": "装包。 仓库里有签好名的 release 包：apk/jev-assistant-v1.4-release.apk（Android 11+，仅支持 ARM64 / arm64-v8a）。各版本安装包也在 Releases。 adb install -r apk/jev-assistant-v1.4-release.apk 2.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "637a7155e573932a",
-        "6cf30f044df65ecb"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/jev-chat/jev-chat-jarvis",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/jev-chat/jev-chat-jarvis-mac",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-21T11:12:53+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-21 — outside lookback window"
-    },
-    {
-      "cluster_key": "198eafb901d6d650",
-      "title": "Here's who attended the Trump-Xi state dinner",
-      "category": "markets",
-      "one_liner": "Tech leaders including Jensen Huang and Tim Cook joined U.S. and Chinese officials at a White House state dinner for Xi Jinping.",
-      "tags": [
-        "ai",
-        "hardware",
-        "political"
-      ],
-      "summary": "U.S. and Chinese delegations attended a White House state dinner hosted by President Donald Trump for Chinese President Xi Jinping. Key discussions yielded new substance in bilateral relations, with leadership couples seated alongside prominent U.S. technology executives including Apple CEO Tim Cook, Nvidia CEO Jensen Huang, and Tesla CEO Elon Musk. The event featured a formal menu and an extensive guest list comprising senior government officials from both nations.",
-      "key_facts": [],
-      "bottom_line": "High-profile tech executives mingling with political leadership during bilateral state visits highlights the intersection of commercial technology and geopolitics.",
-      "claims": [
-        {
-          "text": "President Donald Trump hosted Chinese President Xi Jinping at a White House state dinner.",
-          "support_span": "Here's who attended the Trump-Xi state dinner",
-          "status": "contradicted"
-        },
-        {
-          "text": "Tech executives including Tim Cook, Jensen Huang, and Elon Musk attended the dinner.",
-          "support_span": "The U.S. and Chinese presidential couples were seated with Apple's Tim Cook, Nvidia's Jensen Huang and his wife, Elon Musk and AMD's Lisa Su.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 37,
-      "interest_score": 50,
-      "corroboration": 2,
-      "blend": 46.8,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "198eafb901d6d650",
-        "730008bdb13fe5b2"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "CNBC Finance",
-          "url": "https://www.cnbc.com/2026/09/25/heres-who-is-attending-the-trump-xi-state-dinner.html",
-          "domain": "cnbc.com",
-          "tier": "B"
-        },
-        {
-          "name": "reuters.com",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQODQxZlQtOHZFRC1GeGc0ZzhtVjI4bHNjX1F4TEd4NWJZTlk0UmRCQndWT2NmQXhwdlNVWmRYZXA4Q0tvbEtNZ1BsY3haY2k1YUpnU2s2T1lseFVGR1VHZFpaUEYxUGxvT2pqOThaUDlxa18tUmk5ZjJ1QmdIYm1rY29VLTE2WHNrdXNqVWxHc0pYVWJlbWtmbEtwTVRaVUI2aWRIcTdmVDI1MExEbFVDRHU2aHFaVkdxMEJndHcxZU9PSU1Ec0E?oc=5",
-          "domain": "reuters-com.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-25T12:22:23+00:00",
-      "trace": [
-        "tier B (+25)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 3/5 from cache",
-        "blend 47 = trust 37 / interest 50 / corrob 50"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
       "cluster_key": "d9cd34d560259a8e",
       "title": "Salesforce Agentforce vulns allowed 0-click CRM data theft, anonymous phishing",
       "category": "cyber_attacks",
-      "one_liner": "Salesforce Agentforce flaws permitted 0-click CRM data theft while Canonical shifts Ubuntu to weekly kernel updates.",
+      "one_liner": "Salesforce Agentforce vulnerabilities ('SalesBleed') reportedly enabled zero-click CRM data theft and anonymous phishing.",
       "tags": [
-        "agents",
         "ai",
         "cloud",
-        "exploit",
-        "linux",
-        "markets",
         "vulnerability",
         "writeup"
       ],
-      "summary": "A security news roundup highlights multiple global developments, including Salesforce Agentforce vulnerabilities that permitted 0-click CRM data theft and anonymous phishing. Other notable items include Google testing TPUs in orbit via Project Suncatcher, Canonical shifting Ubuntu to a weekly kernel release cycle due to an AI-assisted vulnerability flood, and EQT acquiring a majority stake in Acronis at a valuation exceeding $3.5 billion.",
-      "key_facts": [
-        "Acquisition Value: $3.5B+ (Acronis by EQT)"
-      ],
-      "bottom_line": "An AI-driven surge in vulnerability discovery is forcing foundational platforms like Ubuntu to accelerate release cadences.",
+      "summary": "This is a truncated article headline regarding Salesforce Agentforce security flaws known as 'SalesBleed' that allegedly allowed zero-click CRM data theft and anonymous phishing.",
+      "key_facts": [],
+      "bottom_line": "Salesforce Agentforce security flaws allowed zero-click CRM data theft and anonymous phishing attacks.",
       "claims": [
         {
           "text": "Salesforce Agentforce vulns allowed 0-click CRM data theft, anonymous phishing",
           "support_span": "Salesforce Agentforce vulns allowed 0-click CRM data theft, anonymous phishing",
           "status": "contradicted"
-        },
-        {
-          "text": "CVE flood pushes Ubuntu onto weekly kernel release cycle",
-          "support_span": "CVE flood pushes Ubuntu onto weekly kernel release cycle",
-          "status": "entailed"
         }
       ],
       "trust_score": 25,
-      "interest_score": 75,
+      "interest_score": 0,
       "corroboration": 1,
-      "blend": 47.5,
+      "blend": 13.8,
       "is_new": false,
       "summary_source": "model",
       "alt_keys": [
         "d9cd34d560259a8e"
       ],
       "critical_signal": "",
-      "priority": "important",
+      "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
@@ -1214,113 +818,163 @@
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
+        "importance 1/5 from gemini-3.5-flash-lite",
+        "blend 14 = trust 25 / interest 0 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "6b224533b657012d",
-      "title": "ChatGPT vs Claude vs Gemini vs Grok: 20-Point IQ Gap [2026] - tech-insider.org",
-      "category": "tech_ai",
-      "one_liner": "A headline stub highlights a comparative IQ benchmark across major LLMs.",
+      "cluster_key": "f643f5084148aa58",
+      "title": "Video: Delhi Minister Parvesh Verma Loses Cool, Slaps Man Filming Inspection",
+      "category": "india_world",
+      "one_liner": "A public altercation involving a Delhi minister highlights tensions during official local government inspections.",
       "tags": [
-        "ai",
-        "llm",
-        "research"
+        "india",
+        "political"
       ],
-      "summary": "The article is a headline-only stub pointing to a tech-insider report comparing the IQ scores of major generative AI models including ChatGPT, Claude, Gemini, and Grok. Because the text is truncated and lacks substantive content, no detailed technical analysis can be performed. Readers should consult the original publication for full benchmark metrics.",
+      "summary": "Delhi Minister Parvesh Verma lost his temper and slapped a man who was filming his official inspection.",
       "key_facts": [],
-      "bottom_line": "This stub offers no actionable benchmark data without accessing the external source.",
+      "bottom_line": "Physical altercations involving government officials during public inspections attract immediate media and public scrutiny.",
       "claims": [
         {
-          "text": "ChatGPT vs Claude vs Gemini vs Grok: 20-Point IQ Gap [2026] - tech-insider.org",
-          "support_span": "ChatGPT vs Claude vs Gemini vs Grok: 20-Point IQ Gap [2026] - tech-insider.org",
+          "text": "Video: Delhi Minister Parvesh Verma Loses Cool, Slaps Man Filming Inspection",
+          "support_span": "Video: Delhi Minister Parvesh Verma Loses Cool, Slaps Man Filming Inspection",
           "status": "contradicted"
         }
       ],
-      "trust_score": 10,
+      "trust_score": 25,
       "interest_score": 0,
       "corroboration": 1,
-      "blend": 10.0,
+      "blend": 13.8,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "6b224533b657012d"
+        "f643f5084148aa58"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GN AI research",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNRkc5ejhzQ1N0S25uaGR2aE55WFZPMVJSSDJXTEVEX1pvcl9uYkxPSVg5U2JRSGlKTFRqb3Q2cVFMWklEWGFXdGk3eDNHNHdGYlZXTWlPTnd3NldTTmpyb3JEWl9CNHp4MEhGZU9MN21JRWV0aDVjMF80elhyZXhDTjZ3?oc=5",
-          "domain": "news.google.com",
-          "tier": "C"
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/india-news/video-delhi-minister-parvesh-verma-loses-cool-slaps-man-in-delhi-12104998#publisher=newsstand",
+          "domain": "ndtv.com",
+          "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-23T04:48:47+00:00",
+      "published": "2026-09-27T16:47:31+00:00",
       "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
         "importance 1/5 from gemini-3.5-flash-lite",
-        "blend 10 = trust 10 / interest 0 / corrob 25"
+        "blend 14 = trust 25 / interest 0 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "589ed9cf9d91ff59",
-      "title": "laramies/theHarvester — E-mails, subdomains and names Harvester - OSINT",
-      "category": "cyber_tools",
-      "one_liner": "theHarvester remains an active Python-based OSINT recon tool for gathering emails and subdomains.",
+      "cluster_key": "e9d717118f3a4f65",
+      "title": "In Rajasthan Civic Polls, BJP Scoops Up 204 Boards, Congress Trails With 96",
+      "category": "india_world",
+      "one_liner": "BJP secured 204 boards in the Rajasthan civic polls, outpacing Congress's 96 boards with unexpected gains in tribal regions.",
       "tags": [
-        "blueteam",
-        "opensource",
-        "tool"
+        "india",
+        "political"
       ],
-      "summary": "The GitHub repository for laramies/theHarvester has been recently updated, showcasing its utility as an open-source intelligence and reconnaissance tool. Written in Python, the tool gathers emails, subdomains, and names for security testing and discovery. It currently maintains 17,323 stars on the platform.",
+      "summary": "The Bharatiya Janata Party (BJP) won 204 boards in the Rajasthan civic polls, while the Congress party trailed significantly with 96 boards won. The BJP's strong electoral performance caught many observers by surprise, particularly due to significant gains made within the tribal belt.",
       "key_facts": [
-        "Repository: laramies/theHarvester",
-        "Language: Python",
-        "Stars: 17323"
+        "BJP Boards Won: 204",
+        "Congress Boards Won: 96"
       ],
-      "bottom_line": "The popular open-source reconnaissance tool theHarvester continues to receive active updates for OSINT operations.",
+      "bottom_line": "BJP secured 204 boards compared to Congress's 96 in the Rajasthan civic elections, outperforming expectations particularly in tribal areas.",
       "claims": [
         {
-          "text": "E-mails, subdomains and names Harvester - OSINT GitHub repository laramies/theHarvester, 17,323 stars, language Python.",
-          "support_span": "E-mails, subdomains and names Harvester - OSINT GitHub repository laramies/theHarvester, 17,323 stars, language Python.",
+          "text": "In Rajasthan Civic Polls, BJP Scoops Up 204 Boards, Congress Trails With 96",
+          "support_span": "In Rajasthan Civic Polls, BJP Scoops Up 204 Boards, Congress Trails With 96",
           "status": "contradicted"
         }
       ],
-      "trust_score": 10,
+      "trust_score": 25,
       "interest_score": 25,
       "corroboration": 1,
-      "blend": 21.2,
-      "is_new": false,
+      "blend": 25.0,
+      "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "589ed9cf9d91ff59"
+        "e9d717118f3a4f65"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (updated)",
-          "url": "https://github.com/laramies/theHarvester",
-          "domain": "github.com",
-          "tier": "C"
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/india-news/in-rajasthan-civic-polls-bjp-scoops-up-204-boards-congress-trails-with-96-12106532#publisher=newsstand",
+          "domain": "ndtv.com",
+          "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-21T21:20:59+00:00",
+      "published": "2026-09-27T18:52:15+00:00",
       "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "importance 2/5 from cache",
-        "blend 21 = trust 10 / interest 25 / corrob 25"
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 25 = trust 25 / interest 25 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "52f810852d4a64da",
+      "title": "'Don't Care If I'm Arrested': IIT Bombay Student's Father To Launch Protest",
+      "category": "india_world",
+      "one_liner": "The father of an IIT Bombay student plans to launch a public protest over alleged caste discrimination faced by his son at the institute.",
+      "tags": [
+        "india",
+        "policy"
+      ],
+      "summary": "The father of an IIT Bombay student has announced plans to launch a protest after alleging that his son faced caste-based discrimination at the institute. The parents have stated they are prepared to face arrest in pursuit of accountability and justice regarding the campus discrimination allegations.",
+      "key_facts": [],
+      "bottom_line": "The father of an IIT Bombay student is launching a protest following allegations of caste discrimination against his son at the campus.",
+      "claims": [
+        {
+          "text": "'Don't Care If I'm Arrested': IIT Bombay Student's Father To Launch Protest",
+          "support_span": "'Don't Care If I'm Arrested': IIT Bombay Student's Father To Launch Protest",
+          "status": "contradicted"
+        },
+        {
+          "text": "His parents have alleged caste discrimination against their son at the institute.",
+          "support_span": "His parents have alleged caste discrimination against their son at the institute.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 25.0,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "52f810852d4a64da"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/india-news/iit-bombay-sahil-wakode-suicide-students-father-to-launch-protest-dont-care-if-im-arrested-12106083#publisher=newsstand",
+          "domain": "ndtv.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-27T15:57:51+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 25 = trust 25 / interest 25 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -1335,7 +989,7 @@
         "llm",
         "tool"
       ],
-      "summary": "AI can be a really wonderful tool for exploring topics far from coding. I had Claude Fable 5.1 put together an annotated guide to Eliot's poem \"The Wasteland,\" with multiple pathways through the poem, recordings, scholarship, etc. the-waste-land.netlify.app (Bluesky post by @emollick.bsky.social — 86 likes, 7 reposts)",
+      "summary": "Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu AI can be a really wonderful tool for exploring topics far from coding. I had Claude Fable 5.1 put together an annotated guide to Eliot's poem \"The Wasteland,\" with multiple pathways through the poem, recordings, scholarship, etc. the-waste-land.netlify.app 2026-09-21T23:34:49.360Z",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -1367,96 +1021,53 @@
       "reject_reason": "published 2026-09-21 — outside lookback window"
     },
     {
-      "cluster_key": "0b2217f722362280",
-      "title": "Chrome Beta for Android Update",
-      "category": "cyber_tools",
-      "one_liner": "Chrome Beta for Android received a routine update notice.",
+      "cluster_key": "abbef0ddf346eff8",
+      "title": "IndiGo Flight Suffers Tail Strike In Bengaluru, Airline Blames Weather",
+      "category": "india_world",
+      "one_liner": "An IndiGo flight suffered a tail strike in Bengaluru due to gusty weather.",
       "tags": [
-        "android",
-        "release"
+        "india"
       ],
-      "summary": "Chromium Releases published a routine administrative update notice for Chrome Beta for Android on Wednesday, September 16, 2026.",
+      "summary": "An IndiGo flight experienced a tail strike while landing in Bengaluru, which the airline attributed to severe and gusty weather conditions.",
       "key_facts": [
-        "Release date: September 16, 2026"
+        "Airline: IndiGo",
+        "Location: Bengaluru"
       ],
-      "bottom_line": "No actionable security advisory or feature breakdown is included in this release notification.",
+      "bottom_line": "IndiGo reported that gusty weather conditions caused a tail strike incident on a flight arriving in Bengaluru.",
       "claims": [
         {
-          "text": "Wednesday, September 16, 2026 Give us feedback in our Product Forums.",
-          "support_span": "Wednesday, September 16, 2026 Give us feedback in our Product Forums.",
+          "text": "IndiGo Flight Suffers Tail Strike In Bengaluru, Airline Blames Weather",
+          "support_span": "IndiGo Flight Suffers Tail Strike In Bengaluru, Airline Blames Weather",
           "status": "contradicted"
         }
       ],
-      "trust_score": 82,
+      "trust_score": 25,
       "interest_score": 0,
-      "corroboration": 2,
-      "blend": 35.5,
-      "is_new": false,
+      "corroboration": 1,
+      "blend": 13.8,
+      "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "0b2217f722362280",
-        "7d16adfe9bfdef90",
-        "89d2be2596edeeae",
-        "8b8e9dd2ffe87067",
-        "bf292961295f6676",
-        "c599a5d1c59ecf16"
+        "abbef0ddf346eff8"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Chromium Releases",
-          "url": "http://chromereleases.googleblog.com/2026/09/chrome-beta-for-android-update_01711682124.html",
-          "domain": "chromereleases.googleblog.com",
-          "tier": "A"
-        },
-        {
-          "name": "Chromium Releases",
-          "url": "http://chromereleases.googleblog.com/2026/09/chrome-beta-for-desktop-update_0318459087.html",
-          "domain": "chromereleases.googleblog.com",
-          "tier": "A"
-        },
-        {
-          "name": "Chromium Releases",
-          "url": "http://chromereleases.googleblog.com/2026/09/chrome-dev-for-android-update_01781633042.html",
-          "domain": "chromereleases.googleblog.com",
-          "tier": "A"
-        },
-        {
-          "name": "Chromium Releases",
-          "url": "http://chromereleases.googleblog.com/2026/09/chrome-dev-for-desktop-update_01688222670.html",
-          "domain": "chromereleases.googleblog.com",
-          "tier": "A"
-        },
-        {
-          "name": "Chromium Releases",
-          "url": "http://chromereleases.googleblog.com/2026/09/chrome-beta-for-ios-update_0141601202.html",
-          "domain": "chromereleases.googleblog.com",
-          "tier": "A"
-        },
-        {
-          "name": "Malwarebytes Labs",
-          "url": "https://www.malwarebytes.com/blog/bugs/2026/09/update-chrome-108-security-fixes-for-desktop-new-release-for-android",
-          "domain": "malwarebytes.com",
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/india-news/indigo-flight-suffers-tail-strike-in-bengaluru-airline-blames-weather-12106249#publisher=newsstand",
+          "domain": "ndtv.com",
           "tier": "B"
         }
       ],
-      "primary_links": [
-        "http://chromereleases.googleblog.com/2026/09/chrome-beta-for-android-update_01711682124.html",
-        "http://chromereleases.googleblog.com/2026/09/chrome-beta-for-desktop-update_0318459087.html",
-        "http://chromereleases.googleblog.com/2026/09/chrome-beta-for-ios-update_0141601202.html",
-        "http://chromereleases.googleblog.com/2026/09/chrome-dev-for-android-update_01781633042.html",
-        "http://chromereleases.googleblog.com/2026/09/chrome-dev-for-desktop-update_01688222670.html"
-      ],
-      "published": "2026-09-23T16:43:32+00:00",
+      "primary_links": [],
+      "published": "2026-09-27T16:56:06+00:00",
       "trace": [
-        "tier A (+40)",
-        "2 independent outlets (+12)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 1/5 from cache",
-        "blend 36 = trust 82 / interest 0 / corrob 50"
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 1/5 from gemini-3.5-flash-lite",
+        "blend 14 = trust 25 / interest 0 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -1512,63 +1123,136 @@
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3.5-flash-lite",
+        "importance 4/5 from cache",
         "blend 48 = trust 25 / interest 75 / corrob 25"
       ],
       "reject_reason": "2 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "36ccd5a5c571ad89",
-      "title": "projectdiscovery/subfinder — Fast passive subdomain enumeration tool.",
-      "category": "cyber_tools",
-      "one_liner": "Subfinder is a popular Go-based passive subdomain discovery tool for bug bounty and recon workflows.",
+      "cluster_key": "93164ff1607609b5",
+      "title": "Engram is a sampler that turns broken AI hallucinations into music",
+      "category": "tech_ai",
+      "one_liner": "Engram is an offline hardware sampler that leverages local AI models to mangle audio and generate experimental sounds.",
       "tags": [
-        "bugbounty",
+        "ai",
+        "hardware",
+        "incident",
+        "llm",
         "opensource",
-        "tool",
-        "vulnerability"
+        "threat-intel"
       ],
-      "summary": "ProjectDiscovery's Subfinder is a fast passive subdomain enumeration tool written in Go, currently maintaining 14,404 stars on GitHub. It is widely used by bug bounty hunters and security professionals for OSINT and reconnaissance operations. The repository has recently received updates.",
+      "summary": "Music startup Thoughtful Things launched a Kickstarter campaign for Engram, an offline hardware sampler and groovebox that utilizes local, in-house trained AI audio models to manipulate incoming audio and generate experimental AI hallucinations. Designed for circuit-bending and sound design rather than generating commercial pop tracks, Engram operates without internet connectivity and features open-source firmware allowing users to tweak or load custom models. The Kickstarter campaign starts at a discounted pledge price of $675.",
       "key_facts": [
-        "Repository: projectdiscovery/subfinder",
-        "Language: Go",
-        "Stars: 14404"
+        "Kickstarter price: $675",
+        "Startup: Thoughtful Things"
       ],
-      "bottom_line": "The subfinder reconnaissance tool provides fast passive subdomain enumeration for security assessments.",
+      "bottom_line": "Thoughtful Things launched a Kickstarter campaign for Engram, a hardware sampler that uses local AI models to twist audio into experimental music.",
       "claims": [
         {
-          "text": "Fast passive subdomain enumeration tool. GitHub repository projectdiscovery/subfinder, 14,404 stars, language Go.",
-          "support_span": "Fast passive subdomain enumeration tool. GitHub repository projectdiscovery/subfinder, 14,404 stars, language Go.",
+          "text": "Music startup Thoughtful Things has launched the Kickstarter campaign for its first instrument, Engram.",
+          "support_span": "Music startup Thoughtful Things has launched the Kickstarter campaign for its first instrument, Engram.",
           "status": "contradicted"
+        },
+        {
+          "text": "Engram isn’t connected to the internet. Instead, it runs a tiny AI locally.",
+          "support_span": "Engram isn’t connected to the internet. Instead, it runs a “tiny AI” locally.",
+          "status": "entailed"
+        },
+        {
+          "text": "The Kickstarter campaign starts at $675.",
+          "support_span": "Thoughtful Things is launching with a limited run of Engrams for the Kickstarter campaign, starting at $675.",
+          "status": "entailed"
         }
       ],
-      "trust_score": 10,
-      "interest_score": 25,
+      "trust_score": 25,
+      "interest_score": 50,
       "corroboration": 1,
-      "blend": 21.2,
-      "is_new": false,
+      "blend": 36.2,
+      "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "36ccd5a5c571ad89"
+        "93164ff1607609b5"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (updated)",
-          "url": "https://github.com/projectdiscovery/subfinder",
-          "domain": "github.com",
-          "tier": "C"
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music",
+          "domain": "theverge.com",
+          "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-25T04:17:58+00:00",
+      "published": "2026-09-27T20:46:36+00:00",
       "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "importance 2/5 from cache",
-        "blend 21 = trust 10 / interest 25 / corrob 25"
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 36 = trust 25 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "5c63b2a835261eef",
+      "title": "harness Gitspace hardcoded password for every user account",
+      "category": "cyber_attacks",
+      "one_liner": "Harness Gitspaces ships with a hardcoded default container password that overrides any user-configured secrets.",
+      "tags": [
+        "appsec",
+        "cloud",
+        "linux",
+        "release",
+        "vulnerability"
+      ],
+      "summary": "A security vulnerability was discovered in Harness Gitspaces where the password resolver function discards user-configured secret references and instead returns a hardcoded default constant, 'Harness@123', for every container instance. This static password is used to configure the internal Linux account inside every Gitspace container, rendering custom secret configurations ineffective. Because the source code is public, anyone can determine the constant and authenticate directly to any Gitspace instance via published ports. The flaw compromises the isolation and access control of hosted development environments.",
+      "key_facts": [
+        "Product: Harness Gitspaces",
+        "Default Password: Harness@123",
+        "Vulnerability: Hardcoded Credentials"
+      ],
+      "bottom_line": "Hardcoded secrets in container orchestration templates can completely break instance-level isolation and authentication in hosted developer environments.",
+      "claims": [
+        {
+          "text": "In practice the password of the Linux account inside every Gitspace container is the same public constant, app/gitspace/secret/password_resolver.go:26",
+          "support_span": "In practice the password of the Linux account inside every Gitspace container is the same public constant, `app/gitspace/secret/password_resolver.go:26`",
+          "status": "entailed"
+        },
+        {
+          "text": "The resolver discards the entire ResolutionContext, parameter by parameter.",
+          "support_span": "The resolver discards the entire `ResolutionContext`, parameter by parameter.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 51.2,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "5c63b2a835261eef"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Full Disclosure",
+          "url": "https://seclists.org/fulldisclosure/2026/Sep/83",
+          "domain": "seclists.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-27T04:14:57+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 51 = trust 40 / interest 75 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -1630,8 +1314,152 @@
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "importance 3/5 from gemini-3.5-flash-lite",
+        "importance 3/5 from cache",
         "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "befcda28f4e3cd69",
+      "title": "Overview of Passive Optical Networks (PONs) Security",
+      "category": "cyber_tools",
+      "one_liner": "Quarkslab provides a technical breakdown of security architectures, encryption schemes, and privacy implications across Passive Optical Networks.",
+      "tags": [
+        "network",
+        "privacy",
+        "research"
+      ],
+      "summary": "Quarkslab published a technical overview examining the security features and architectural specifications of Passive Optical Networks (PONs), including GPON, XG-PON, XGS-PON, NG-PON2, and 50G-PON. The analysis explains how downstream optical signals reach routers across multiple neighboring subscribers, resembling a unidirectional shared Ethernet bus. The article reviews ITU-T cryptographic specifications, authentication mechanisms, key derivation processes, and the privacy implications of unencrypted protocols and metadata exposure.",
+      "key_facts": [
+        "Standards analyzed: GPON, XG-PON, XGS-PON, NG-PON2, 50G-PON",
+        "Governing body: ITU-T"
+      ],
+      "bottom_line": "Passive Optical Networks broadcast shared optical signals to neighboring subscribers, requiring robust ITU-T encryption and authentication layers to protect user traffic.",
+      "claims": [
+        {
+          "text": "This article provides a technical overview of the security features in ITU-T specifications for Passive Optical Networks.",
+          "support_span": "This article provides a technical overview of the security features in ITU-T specifications: Gigabit-capable PON (GPON), 10-Gigabit-capable PON (XG-PON), 10-Gigabit-capable Symmetric PON (XGS-PON), Next-generation PON 2 (NG-PON2), and 50-Gigabit-capable-PON (50G-PON).",
+          "status": "contradicted"
+        },
+        {
+          "text": "The optical signal received by your router is the same signal received by your neighbours.",
+          "support_span": "the optical signal received by your router is the same signal received by your neighbours, containing data for several nearby subscribers.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 36.2,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "befcda28f4e3cd69"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Quarkslab",
+          "url": "http://blog.quarkslab.com/overview-of-passive-optical-networks-pons-security.html",
+          "domain": "blog.quarkslab.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-15T22:00:00+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 36 = trust 25 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "3f6454af18628b58",
+      "title": "Stable Channel Update for ChromeOS / ChromeOS Flex",
+      "category": "cyber_tools",
+      "one_liner": "ChromeOS Stable channel updates to version 16765.49.0 / browser version 152.0.7977.129 for most devices.",
+      "tags": [
+        "release"
+      ],
+      "summary": "Google has pushed the Stable channel update for ChromeOS and ChromeOS Flex to OS version 16765.49.0, corresponding to browser version 152.0.7977.129, for the majority of devices. Users encountering issues can file bug reports via the Chromebook Help Community or the ChromeOS Beta Help Community. The release team invites users to provide feedback or switch channels if necessary.",
+      "key_facts": [
+        "OS Version: 16765.49.0",
+        "Browser Version: 152.0.7977.129"
+      ],
+      "bottom_line": "ChromeOS has updated its Stable channel to version 16765.49.0, bringing browser version 152.0.7977.129 to most compatible Chromebooks and Flex devices.",
+      "claims": [
+        {
+          "text": "The Stable channel is updated to OS version 16765.49.0 for most ChromeOS devices.",
+          "support_span": "The Stable channel is being updated to OS version 16765.49.0 (Browser version 152.0.7977.129 ) for most ChromeOS devices.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 36.2,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "3f6454af18628b58",
+        "4ce8931fd0750bae",
+        "4f41270366570f0f",
+        "bbcc1c960ea286ee",
+        "f07b5dd946f3ea7a"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Chromium Releases",
+          "url": "http://chromereleases.googleblog.com/2026/09/stable-channel-update-for-chromeos_01638908712.html",
+          "domain": "chromereleases.googleblog.com",
+          "tier": "A"
+        },
+        {
+          "name": "Chromium Releases",
+          "url": "http://chromereleases.googleblog.com/2026/09/beta-channel-update-for-chromeos_02070773832.html",
+          "domain": "chromereleases.googleblog.com",
+          "tier": "A"
+        },
+        {
+          "name": "Chromium Releases",
+          "url": "http://chromereleases.googleblog.com/2026/09/long-term-support-channel-update-for_01751285105.html",
+          "domain": "chromereleases.googleblog.com",
+          "tier": "A"
+        },
+        {
+          "name": "Chromium Releases",
+          "url": "http://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0856730748.html",
+          "domain": "chromereleases.googleblog.com",
+          "tier": "A"
+        },
+        {
+          "name": "Chromium Releases",
+          "url": "http://chromereleases.googleblog.com/2026/09/early-stable-update-for-desktop_01050350268.html",
+          "domain": "chromereleases.googleblog.com",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "http://chromereleases.googleblog.com/2026/09/beta-channel-update-for-chromeos_02070773832.html",
+        "http://chromereleases.googleblog.com/2026/09/early-stable-update-for-desktop_01050350268.html",
+        "http://chromereleases.googleblog.com/2026/09/long-term-support-channel-update-for_01751285105.html",
+        "http://chromereleases.googleblog.com/2026/09/stable-channel-update-for-chromeos_01638908712.html",
+        "http://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0856730748.html"
+      ],
+      "published": "2026-09-22T04:42:58+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 2/5 from cache",
+        "blend 36 = trust 70 / interest 25 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     }
