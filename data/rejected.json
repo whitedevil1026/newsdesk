@@ -1,224 +1,13 @@
 {
-  "generated_at": "2026-09-30T01:27:36.018949+00:00",
+  "generated_at": "2026-10-01T01:20:52.502626+00:00",
   "items": [
-    {
-      "cluster_key": "9d552caf0209381d",
-      "title": "eceuisg0a0l6p7q/deepseekv4pro-deepseek-v4-pro-api — deepseek-v4-pro API (deepseekv4pro / deepseek v4 pro): input $1.0286; cached_input $0.2057; output $3.0857. Mo",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "llm",
-        "opensource"
-      ],
-      "summary": "deepseek-v4-pro API (deepseekv4pro / deepseek v4 pro): input $1.0286; cached_input $0.2057; output $3.0857. Model id, llm settings, curl and Python examples over an OpenAI-compatib GitHub repository eceuisg0a0l6p7q/deepseekv4pro-deepseek-v4-pro-api, 93 stars, language Shell. Topics: api-docs, apimart, deepseek-v4-pro, deepseek-v4-pro-api, deepseek-v4-pro-llm, deepseekv4pro, deepseekv4pro-api, llm.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "summary_source": "extract",
-      "alt_keys": [
-        "9d552caf0209381d"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/eceuisg0a0l6p7q/deepseekv4pro-deepseek-v4-pro-api",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-24T18:59:34+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-24 — outside lookback window"
-    },
-    {
-      "cluster_key": "240ef7399ef961bc",
-      "title": "pye8505i0c5cw9/claudesonnet5-claude-sonnet-5-api — claude-sonnet-5 API (claudesonnet5 / claude sonnet 5): input $1.6; cached_input $0.16; cache_write_5m $2. Mode",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "ai",
-        "llm",
-        "opensource"
-      ],
-      "summary": "input $1.6; cached_input $0.16; cache_write_5m $2 — flat per-unit billing through the OpenAI-compatible APIMart gateway, $1 minimum top-up. Everything here refers to claude-sonnet-5 — also written claudesonnet5 or claude sonnet 5. curl --request POST --url \\ --header \"Authorization: Bearer $APIMART_API_KEY\" --header 'Content-Type: application/json' \\ --data '{\"model\":\"claude-sonnet-5\",\"prompt\":\"a modern cliffside villa at dusk\",\"size\":\"16:9\",\"n\":1}' Submit, keep the task_id, poll GET /v1/tasks/{id} until completed; the response carries the URL and the exact amount charged. Documents access through APIMart, a third-party API gateway; not affiliated with the model vendor.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "summary_source": "extract",
-      "alt_keys": [
-        "240ef7399ef961bc",
-        "2c5985a46dde1eb3",
-        "73311cf6a091136b"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/pye8505i0c5cw9/claudesonnet5-claude-sonnet-5-api",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/cwn9n3vo3kno8/gpt5.6terra-gpt-5.6-terra-api",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/itsfz98v7ln/gpt5.6luna-gpt-5.6-luna-api",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-24T18:52:02+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-24 — outside lookback window"
-    },
-    {
-      "cluster_key": "25824cd70fd9f269",
-      "title": "SmackDown vs. Raw 2011 running natively on PC at 60 FPS, free and open source https://github.com/shaneomac1337/SVR2011-Recomp/releases/latest @secharvester",
-      "category": "cyber_tools",
-      "one_liner": "Run WWE SmackDown vs. Raw 2011 natively on PC with updated AMD upscaling and fixed finisher stutters via this open-source release.",
-      "tags": [
-        "android",
-        "hardware",
-        "opensource",
-        "release",
-        "tool",
-        "windows"
-      ],
-      "summary": "A free and open-source project has enabled WWE SmackDown vs. Raw 2011 for Xbox 360 to run natively on PC at 60 FPS using user-provided disc images. The latest release introduces default AMD FSR 1 upscaling at 1x and AMD CAS sharpening at higher internal resolutions, resolves stuttering issues during special finishing and signature moves, and expands shader caching to reduce stutter during initial matches. The software requires a proper disc image and has been tested successfully on Windows 11 with an AMD Radeon RX 7900 XT.",
-      "key_facts": [
-        "Platform: Windows 11",
-        "Target Hardware: AMD Radeon RX 7900 XT",
-        "Target Framerate: 60 FPS"
-      ],
-      "bottom_line": "An open-source recompilation project brings WWE SmackDown vs. Raw 2011 to PC with 60 FPS support, native upscaling, and performance fixes.",
-      "claims": [
-        {
-          "text": "SmackDown vs. Raw 2011 running natively on PC at 60 FPS, free and open source",
-          "support_span": "SmackDown vs. Raw 2011 running natively on PC at 60 FPS, free and open source https://github.com/shaneomac1337/SVR2011-Recomp/releases/latest @secharvester",
-          "status": "contradicted"
-        },
-        {
-          "text": "Some special moves made the game stutter for a moment when their effect started. That is fixed, and edited attires from Superstar Threads still render correctly.",
-          "support_span": "Some special moves made the game stutter for a moment when their effect started. That is fixed, and edited attires from Superstar Threads still render correctly.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 10,
-      "interest_score": 25,
-      "corroboration": 1,
-      "blend": 21.2,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "25824cd70fd9f269",
-        "2c6fd117fcff8f7a",
-        "b28390b7ad97447e"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "SecHarvester",
-          "url": "https://github.com/shaneomac1337/SVR2011-Recomp/releases/latest",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "SecHarvester",
-          "url": "https://github.com/rPlayAI/rPlayHub",
-          "domain": "github.com",
-          "tier": "C"
-        },
-        {
-          "name": "SecHarvester",
-          "url": "https://github.com/andrewspode/intel-cc-4.0-setup",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-28T15:07:53+00:00",
-      "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "importance 2/5 from cache",
-        "blend 21 = trust 10 / interest 25 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "018657d1d58fc240",
-      "title": "u7n3fubt/gemini3pro-gemini-3-pro-api — gemini-3-pro API (gemini3pro / gemini 3 pro): input $1.6; output $9.6. Model id, llm settings, curl and Python",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "llm",
-        "opensource"
-      ],
-      "summary": "gemini-3-pro API (gemini3pro / gemini 3 pro): input $1.6; output $9.6. Model id, llm settings, curl and Python examples over an OpenAI-compatible gateway, $1 minimum top-up. GitHub repository u7n3fubt/gemini3pro-gemini-3-pro-api, 98 stars, language Shell. Topics: api-docs, apimart, gemini-3-pro, gemini-3-pro-api, gemini-3-pro-llm, gemini3pro, gemini3pro-api, llm.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "summary_source": "extract",
-      "alt_keys": [
-        "018657d1d58fc240"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/u7n3fubt/gemini3pro-gemini-3-pro-api",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-24T18:56:57+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-24 — outside lookback window"
-    },
     {
       "cluster_key": "f83bc6e2823ebb23",
       "title": "Um, wow? Opus 5.5: \"make the same message much more interesting to a social media audience that loves anime and quick clips and compressed learning\"…",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [],
-      "summary": "Opus 5.5: \"make the same message much more interesting to a social media audience that loves anime and quick clips and compressed learning\" One shot. Also, please do stay for the closing song. (Bluesky post by @emollick.bsky.social — 141 likes, 15 reposts)",
+      "summary": "Opus 5.5: \"make the same message much more interesting to a social media audience that loves anime and quick clips and compressed learning\" One shot. Also, please do stay for the closing song. (Bluesky post by @emollick.bsky.social — 142 likes, 15 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -250,12 +39,17 @@
       "reject_reason": "published 2026-09-25 — outside lookback window"
     },
     {
-      "cluster_key": "76caa338af33ac7b",
-      "title": "I had Fable/Opus build a hard science fiction starship combat game, with orbital mechanics, delta-v, heat, and realistic tactics, but simplified for…",
+      "cluster_key": "4c99a489e8da4949",
+      "title": "aaddrick/building-with-typesafe-jev — Unofficial skill that teaches coding agents to build with TypeSafe AI's Jev: typed decisions, calibrated confi",
       "category": "tech_ai",
       "one_liner": "",
-      "tags": [],
-      "summary": "I had Fable/Opus build a hard science fiction starship combat game, with orbital mechanics, delta-v, heat, and realistic tactics, but simplified for 2D space with the hard math done by the game. Its quite fun to play (if you like this kind of thing): orbital-declaration.netlify.app (Bluesky post by @emollick.bsky.social — 114 likes, 7 reposts)",
+      "tags": [
+        "agents",
+        "ai",
+        "llm",
+        "opensource"
+      ],
+      "summary": "Unofficial skill that teaches coding agents to build with TypeSafe AI's Jev: typed decisions, calibrated confidence, and prior art from 150+ community projects. GitHub repository aaddrick/building-with-typesafe-jev, 126 stars, language Python. Topics: agent-skill, agent-skills, ai-agents, calibration, classification, claude-code, claude-code-plugin, claude-code-skill.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -266,25 +60,25 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "76caa338af33ac7b"
+        "4c99a489e8da4949"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mw5r3a37uc26",
-          "domain": "bsky.app",
+          "name": "GitHub (new)",
+          "url": "https://github.com/aaddrick/building-with-typesafe-jev",
+          "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-23T03:05:45.182000+00:00",
+      "published": "2026-09-26T00:01:19+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-23 — outside lookback window"
+      "reject_reason": "published 2026-09-26 — outside lookback window"
     },
     {
       "cluster_key": "5a65108b07ee200c",
@@ -331,7 +125,7 @@
       "category": "tech_ai",
       "one_liner": "",
       "tags": [],
-      "summary": "The cybersecurity threat from agents is increasingly more likely to come from a massed swarm of AIs whose only goal is to penetrate your system to figure out how much you paid for your company t-shirts as part of a research effort to \"find good t-shirt prices\" as it is from bad actor attacks. (Bluesky post by @emollick.bsky.social — 306 likes, 43 reposts)",
+      "summary": "The cybersecurity threat from agents is increasingly more likely to come from a massed swarm of AIs whose only goal is to penetrate your system to figure out how much you paid for your company t-shirts as part of a research effort to \"find good t-shirt prices\" as it is from bad actor attacks. (Bluesky post by @emollick.bsky.social — 307 likes, 43 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -361,46 +155,6 @@
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
       "reject_reason": "published 2026-09-24 — outside lookback window"
-    },
-    {
-      "cluster_key": "3ad9d163cbd4969d",
-      "title": "The new Gemini 3.8 TTS models are super-cheap and can generate conversations between multiple voices (from 2,000+, or you can clone your own) - I…",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "llm",
-        "windows"
-      ],
-      "summary": "The new Gemini 3.8 TTS models are super-cheap and can generate conversations between multiple voices (from 2,000+, or you can clone your own) - I built a little playground UI for it, then had Claude knock up a script where two pelicans debate moving to Pacifica Pier simonwillison.net/2026/Sep/23/... (Bluesky post by @simonwillison.net — 84 likes, 7 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "3ad9d163cbd4969d"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Simon Willison",
-          "url": "https://bsky.app/profile/simonwillison.net/post/3mw7magyrwc2i",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-23T20:44:30.981000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-23 — outside lookback window"
     },
     {
       "cluster_key": "3da494e2aa3cabf1",
@@ -434,90 +188,6 @@
       ],
       "primary_links": [],
       "published": "2026-09-24T03:14:13.249000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-24 — outside lookback window"
-    },
-    {
-      "cluster_key": "acde359076df6e08",
-      "title": "zouyuxuan122/dsh-our-free-model — 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 Muse Spark 1.3、MiMo V2.6 在内的前沿模型——完全免费，不限量。 All you do is install thi",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "ai",
-        "llm",
-        "opensource",
-        "release"
-      ],
-      "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 Muse Spark 1.3、MiMo V2.6 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, Muse Spark 1.3 and MiMo V2.6 among them. GitHub repository zouyuxuan122/dsh-our-free-model, 420 stars, language JavaScript. Topics: ai-agents, deepseek, deepseek-harness, developer-tools, dsh, dsh-plugin, free-model, llm.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "acde359076df6e08"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/zouyuxuan122/dsh-our-free-model",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-24T16:17:19+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-24 — outside lookback window"
-    },
-    {
-      "cluster_key": "daf7d63a8e20280a",
-      "title": "theNetworkChuck/paperclip-guide — Companion guide for the NetworkChuck Paperclip video: install Paperclip and build an AI IT department. Every s",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "ai",
-        "howto",
-        "llm",
-        "opensource"
-      ],
-      "summary": "Companion guide for the NetworkChuck Paperclip video: install Paperclip and build an AI IT department. Every step tested on Paperclip 2026.916.1. GitHub repository theNetworkChuck/paperclip-guide, 121 stars, language TypeScript. Topics: ai-agents, ai-company, claude-code, codex, flare, hermes, homelab, networkchuck.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "daf7d63a8e20280a"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/theNetworkChuck/paperclip-guide",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-24T15:00:59+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
@@ -587,50 +257,11 @@
         "tier B (+25)",
         "2 independent outlets (+12)",
         "corroborated by 2 independent outlets",
-        "importance 4/5 from gemini-3.5-flash-lite",
+        "importance 4/5 from cache",
         "blend 58 = trust 37 / interest 75 / corrob 50",
         "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "457d18970f38e29e",
-      "title": "Stuff is happening quite fast. When asked in September 2025 (yes, 2025), the best superforecasters put the chance of AI resolving a Millennium…",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "ai"
-      ],
-      "summary": "When asked in September 2025 (yes, 2025), the best superforecasters put the chance of AI resolving a Millennium Problem by September 2026 at 1.7% and (much more optimistic) industry experts put the chance at 4.6% They also greatly underestimated AI Lab revenue. (Bluesky post by @emollick.bsky.social — 144 likes, 18 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "457d18970f38e29e"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwa2mjely225",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-24T01:01:48.504000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-24 — outside lookback window"
     },
     {
       "cluster_key": "c3cea563b0669878",
@@ -711,55 +342,240 @@
       "reject_reason": "published 2026-09-24 — outside lookback window"
     },
     {
-      "cluster_key": "4b550731afda53bb",
-      "title": "According to Discord I am not old enough to view the politics channel in my own damn server. I guess I'm free and the curse is lifted!",
-      "category": "tech_ai",
-      "one_liner": "",
+      "cluster_key": "0ef7d4723706fb2f",
+      "title": "CVE-2026-100725 (HIGH 8.3): http4k (Maven artifact org.http4k:http4k-core) before 6.48.0.0, 5.42.0.0, and 4.51.0.0 ships a BasicCookieSto…",
+      "category": "cyber_attacks",
+      "one_liner": "CVE-2026-100725 is an 8.3-rated cookie scoping vulnerability in http4k that leaks session tokens across different origins.",
       "tags": [
-        "windows"
+        "appsec",
+        "cve",
+        "dfir",
+        "release",
+        "tool",
+        "vulnerability"
       ],
-      "summary": "According to Discord I am not old enough to view the politics channel in my own damn server. I guess I'm free and the curse is lifted! (Bluesky post by @xeiaso.net — 53 likes, 0 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
+      "summary": "A high-severity security vulnerability has been identified in the http4k core library across Maven artifact versions before 6.48.0.0, 5.42.0.0, and 4.51.0.0, tracked as CVE-2026-100725 with a CVSS base score of 8.3. The flaw exists within BasicCookieStorage—the client-side cookie store utilized by ClientFilters.Cookies—which fails to enforce proper RFC 6265 scoping rules concerning cookie domains, paths, and Secure attributes. When a single cookie storage instance interacts with multiple origins or communication schemes, cookies designated for one origin can be improperly sent to unauthorized hosts or transmitted in plain text over HTTP. This exposes sensitive session tokens and values to network observers, though clients utilizing dedicated storage instances for single origins remain unaffected.",
+      "key_facts": [
+        "CVE ID: CVE-2026-100725",
+        "CVSS Score: 8.3 HIGH",
+        "Artifact: org.http4k:http4k-core",
+        "Affected versions: Before 6.48.0.0, 5.42.0.0, and 4.51.0.0"
+      ],
+      "bottom_line": "Applications using shared http4k BasicCookieStorage instances across multiple origins risk leaking session cookies to unauthorized hosts and observers.",
+      "claims": [
+        {
+          "text": "CVE-2026-100725 (HIGH 8.3): http4k (Maven artifact org.http4k:http4k-core) before 6.48.0.0, 5.42.0.0, and 4.51.0.0 ships a BasicCookieStorage (client-side cookie store used by ClientFilters.Cookies) that does not enforce RFC 6265 scoping rules for the cookie domain, path, and Secure attributes.",
+          "support_span": "CVE-2026-100725 (HIGH 8.3): http4k (Maven artifact org.http4k:http4k-core) before 6.48.0.0, 5.42.0.0, and 4.51.0.0 ships a BasicCookieStorage (client-side cookie store used by ClientFilters.Cookies) that does not enforce RFC 6265 scoping rules for the cookie domain, path, and Secure attributes.",
+          "status": "contradicted"
+        },
+        {
+          "text": "CVSS base score 8.3 (HIGH).",
+          "support_span": "CVSS base score 8.3 (HIGH).",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 100,
       "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
+      "blend": 70.0,
+      "is_new": true,
+      "summary_source": "model",
       "alt_keys": [
-        "4b550731afda53bb"
+        "0ef7d4723706fb2f",
+        "822a099129c3d2e6"
       ],
       "critical_signal": "",
-      "priority": "minor",
+      "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Xe Iaso",
-          "url": "https://bsky.app/profile/xeiaso.net/post/3mw7te76oj22b",
-          "domain": "bsky.app",
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100725",
+          "domain": "nist.gov",
+          "tier": "A"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100834",
+          "domain": "nist.gov",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-100725",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-100834"
+      ],
+      "published": "2026-09-27T02:17:20.760000+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 70 = trust 70 / interest 100 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "35b52af746f0850d",
+      "title": "Here We Go Again (Citrix NetScaler DTLS Preauth Memory Overflow CVE-2026-88772)",
+      "category": "cyber_tools",
+      "one_liner": "Technical details emerge on an exploited-in-the-wild preauth memory overflow in Citrix NetScaler DTLS (CVE-2026-88772).",
+      "tags": [
+        "cve",
+        "exploit",
+        "network",
+        "release",
+        "research",
+        "vulnerability",
+        "windows"
+      ],
+      "summary": "WatchTowr Labs published technical analysis on CVE-2026-88772, a preauthentication memory overflow vulnerability in Citrix NetScaler's DTLS implementation that was exploited in the wild as a zero-day. The flaw resides in the handling of DTLS packets, which are enabled by default on VPN virtual servers unless explicitly disabled by administrators. Citrix addressed the issue in a security bulletin released on Sunday that patched eight total vulnerabilities. Organizations using NetScaler ADC and Gateway are urged to update to the latest fixed versions immediately.",
+      "key_facts": [
+        "CVE-2026-88772: Citrix NetScaler DTLS preauth memory overflow",
+        "Severity: Exploited in the wild as a zero-day",
+        "Advisory: CTX697096"
+      ],
+      "bottom_line": "Citrix NetScaler appliances running with default DTLS settings are vulnerable to an in-the-wild zero-day memory overflow.",
+      "claims": [
+        {
+          "text": "CVE-2026-88772 is the DTLS memory overflow we walk through here.",
+          "support_span": "CVE-2026-88772 is the DTLS memory overflow we walk through here.",
+          "status": "entailed"
+        },
+        {
+          "text": "It requires DTLS to be enabled which is the default on VPN virtual servers unless an administrator explicitly set -dtls OFF and was exploited in the wild as a zero-day.",
+          "support_span": "Itreserves DTLS to be enabled which is the default on VPN virtual servers unless an administrator explicitly set -dtls OFF and was exploited in the wild as a zero-day.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 76,
+      "interest_score": 100,
+      "corroboration": 7,
+      "blend": 94.0,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "35b52af746f0850d",
+        "39c0ec31805a805b",
+        "3e852226490c3e98",
+        "511635b530b662b1",
+        "59f6cec2248f058d",
+        "5f4b0771f2123790",
+        "60e6ad49f1907ff8",
+        "6cc890e4e0fc60b9",
+        "7498b36d7320f99c",
+        "88d8e154e13e97a6",
+        "95117cab706d9291",
+        "cd8c669f8ef4b36e",
+        "f40aeed59dad583d"
+      ],
+      "critical_signal": "actively exploited",
+      "priority": "critical",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "watchTowr Labs",
+          "url": "https://labs.watchtowr.com/here-we-go-again-citrix-netscaler-dtls-preauth-memory-overflow-cve-2026-88772/",
+          "domain": "labs.watchtowr.com",
+          "tier": "A"
+        },
+        {
+          "name": "Google Threat Intel",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/defending-against-active-exploitation-of-citrix-netscaler-adc-and-gateway-appliances/",
+          "domain": "cloud.google.com",
+          "tier": "B"
+        },
+        {
+          "name": "CyberScoop",
+          "url": "https://cyberscoop.com/citrix-zero-days-delayed-disclosure/",
+          "domain": "cyberscoop.com",
+          "tier": "B"
+        },
+        {
+          "name": "Rapid7 Blog",
+          "url": "https://www.rapid7.com/blog/post/etr-zero-day-exploitation-of-citrix-netscaler-adc-and-gateway-cve-2026-88771-and-cve-2026-88772",
+          "domain": "rapid7.com",
+          "tier": "B"
+        },
+        {
+          "name": "Unit42",
+          "url": "https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited/",
+          "domain": "unit42.paloaltonetworks.com",
+          "tier": "B"
+        },
+        {
+          "name": "CCB Belgium",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbWFJRUlPUHNNQzJsNE1iOVBjMFZtVFhvOE9NX2N3YzNmVllIQWRKUGxOTEFoZDJfaGpwOWNnRXF1SktSNDdhZUVMakFsZWlaNjV5S28xaVNKcUNGNEZSZ2tBUWg1LVdOVm1FaWFqVkxPU0ljTE11WHdfRm1kUkZKekU4NW1CM19WbmQ2REt2Qmd3MXFpdnZlYVlreHdVUk5VWlYxVnYwemFGemFhQzhzYndyZEJOYWZ1YmU4?oc=5",
+          "domain": "ccb-belgium.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Cybernews",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOX2hsNUtNUVkxVG1YUmM4bzhoMjhaRTdSX2ZGUTFraUpfbDRRcGcyZ3REcXB3MFpsMnp5NWhpMjZNQ1ZxQ2JwT193TWRWZlFqd0x6aElKRVo2Z29kNmR1UDlzR3hpQV9NQjlZdEtRaXRRVDZEQTlnSzVQMVAycmV3VS1WRUc3RndUdEE?oc=5",
+          "domain": "cybernews.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "CyberScoop",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9yZVhMUGxRcUtrTEZ3TGlxMUgwM1VTZGFPYThkWURrZThVYjlVSEFxcVNqWGNBTmhBa0pVVDdmZHpscmJtTThBak51VG1tcmcxLVVJamRuVXBqaWZrdU5kT2lqcG9mU01uQ1I4?oc=5",
+          "domain": "cyberscoop.com",
+          "tier": "C"
+        },
+        {
+          "name": "Help Net Security",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcXFuZDM3aG9yb1hLSHl3LWZ0QkxxNGotV21jYzcxYkV2cG0zblI1QjVLYUFULXZqYkNzTmRSNWYyVHlaQkxtOGJBVmxWbUdHNjFBelVXLVotSk9XdE9tcFgxUnl4RGJiV2QzQmtmYks4dExnM2YxY1czUjBORnBkUUhUenUyZ2hINTJaR1Y1a1ItOWhCNUFacA?oc=5",
+          "domain": "helpnetsecurity.com",
+          "tier": "C"
+        },
+        {
+          "name": "Rapid7",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQUUtbE43MU9RQXUtbVFJWHo4Z1dDTEp5b0U1NGhya2s1MFVralVmdjdscHVPcjBTQUMyNEI5NnN6UWVSTVhlalRhMi1VNHFlQk5rM3dOaGJRZW1YSWttZkYwWEZ3WjlzajhQZktSbjhINUxicjNHVGszeG5OM1RxOWYxd3Zzc1FoaDdBOEI4cUd3VU9vV3RVUjl2WkhCRWQycnAtM0NmS2dvTDhWS0wtSUR3YUM1WWVnRjRGYmU1Q3Rrc0s5clNPRA?oc=5",
+          "domain": "rapid7.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Rescana",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQQXZqMWNobFJaeGJkNHQwcDFDOTJLX1JoSGVaZG9OdUJZeGVIbFFKN3NEb3RMQU5tTTJuQW5zSDdYMk90YVZhSkI1S1MyZ09KYlBHcEpRLXhzM2RwQVMteEJ4SElFUHI5M2hLNS0zTTVuSENfWFUwU3RrZGRfa1RBUFZGWGEtRjFtTzNqd2VXQzNUUWRCTV9PeVNEYUpxSDBjaG8yQmQwdk5Iemx2WTNmYnY3andpcHMzeXJIbFpINXpoZmJSZ1FnVHVIN2xhTktzVDBubE9DVzJ0X3FLd3lJNlE5NA?oc=5",
+          "domain": "rescana.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "streamlinefeed.co.ke",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbWVMWEJUQk9qYzdXcnZuZXFkcnNUcm9uSGllUlhTVVRBS3dxSTYyNFYxTlQxZTEzQ01yU0ZIX2k4NTJRUmtVOVVRRmM4N2luSzdMNXRkaUVBYjZGSzcwR0VoNy1jNnRmU2ZOOFFjaTc5VEp4YzBzQm1BWTlmLVJwUDJnLTMtY2tZVzNnMnRXVXQxTldpVHZkNTBxcDNUMDZXbXJrejgtbWlYQQ?oc=5",
+          "domain": "streamlinefeed-co-ke.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "watchTowr",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVjQxbE9aaThWZDcyX0Ixcl9NeFpzVGVUR0VTR2pKMEI4ek5YVlI4NG9jVzI4X2htR3pzaURNMmlEeEhZZzVoSy1idTJubTVqM3NubnFMbnRBemVqTlhOdElpa1p2VWx0VmJrMGQ2SV9hMEtPWEJ6MVphMDEtandPY0toOUl3WE0zamRiVTlXdjBzWklKNjFHdU9kNkhDTW13Wmh2cV9ZWDJmOUxCd2l4UHZBWVJmV2tKQ3c?oc=5",
+          "domain": "watchtowr.publisher",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-23T22:51:53.193000+00:00",
+      "published": "2026-09-27T21:24:00+00:00",
       "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
+        "tier A (+40)",
+        "7 independent outlets (+36)",
+        "verified: 7 independent outlets",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 94 = trust 76 / interest 100 / corrob 100"
       ],
-      "reject_reason": "published 2026-09-23 — outside lookback window"
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "50649d5301aeaaf4",
-      "title": "michaelswissa/jevry — Your browser. Ready to act. An MIT-licensed desktop browser agent for website tasks, cited research, and suppo",
+      "cluster_key": "450e6533b74e77bb",
+      "title": "UditAkhourii/quicksilver — Claude Code skill: hand bulk judgment calls to Jev. 86% fewer Claude tokens on a 12-task benchmark, up to 20x ",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "agents",
         "ai",
-        "opensource"
+        "llm",
+        "opensource",
+        "research"
       ],
-      "summary": "An MIT-licensed desktop browser agent for website tasks, cited research, and supported games. GitHub repository michaelswissa/jevry, 122 stars, language TypeScript. Topics: ai-agents, browser-automation, desktop-app, electron, research, typescript.",
+      "summary": "Claude Code skill: hand bulk judgment calls to Jev. 86% fewer Claude tokens on a 12-task benchmark, up to 20x faster. GitHub repository UditAkhourii/quicksilver, 91 stars, language JavaScript. Topics: ai-agents, claude, claude-code, developer-tools, jev, llm, skill, tokens.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -770,7 +586,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "50649d5301aeaaf4"
+        "450e6533b74e77bb"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -778,17 +594,104 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/michaelswissa/jevry",
+          "url": "https://github.com/UditAkhourii/quicksilver",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-24T10:44:35+00:00",
+      "published": "2026-09-25T15:20:46+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-24 — outside lookback window"
+      "reject_reason": "published 2026-09-25 — outside lookback window"
+    },
+    {
+      "cluster_key": "bf9feba788d56daa",
+      "title": "amitshekhariitbhu/ai-system-design — AI System Design - Learn how to design AI systems built on LLMs, RAG, and AI Agents step by step.",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "ai",
+        "howto",
+        "llm",
+        "opensource"
+      ],
+      "summary": "AI System Design - Learn how to design AI systems built on LLMs, RAG, and AI Agents step by step. GitHub repository amitshekhariitbhu/ai-system-design, 476 stars, language Markdown. Topics: ai, ai-agents, ai-engineering, ai-system, ai-system-design, ai-systems, ai-systems-design, llm.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "bf9feba788d56daa"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/amitshekhariitbhu/ai-system-design",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-25T04:50:06+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-25 — outside lookback window"
+    },
+    {
+      "cluster_key": "1071af02b64c5e81",
+      "title": "architectds/collabosm — A local app that rents a GPU in your own Colab account and serves Qwen3.8 on it: 27B on an A100-40G, or Flash-",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "ai",
+        "hardware",
+        "linux",
+        "llm",
+        "opensource",
+        "release",
+        "windows"
+      ],
+      "summary": "A local app that rents a GPU in your own Colab account and serves Qwen3.8 on it: 27B on an A100-40G, or Flash-Next (125B-A6B MoE) on an A100-80G. The cost is shown before it starts; chat with images; Codex or any OpenAI client uses a fixed local /v1. Auto-stop, CU ledger, live prefill/decode. GitHub repository architectds/collabosm, 94 stars, language Python. Topics: colab, exllamav3, google-colab, gpu, llm, llm-inference, openai-api, qwen.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "1071af02b64c5e81"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/architectds/collabosm",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-25T00:46:02+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-25 — outside lookback window"
     },
     {
       "cluster_key": "0d2a6417724c284c",
@@ -802,7 +705,7 @@
         "llm",
         "opensource"
       ],
-      "summary": "clodfarm (say it out loud): a farm of Claude Code agents. Plant a mission, they split it into sub-agents, open the work, and pace themselves on each account's real 5-hour and weekly usage. GitHub repository matank001/clodfarm, 90 stars, language Python. Topics: agent-orchestration, ai, ai-agents, anthropic, automation, autonomous-agents, aws, claude.",
+      "summary": "clodfarm (say it out loud): a farm of Claude Code agents. Plant a mission, they split it into sub-agents, open the work, and pace themselves on each account's real 5-hour and weekly usage. GitHub repository matank001/clodfarm, 98 stars, language Python. Topics: agent-orchestration, ai, ai-agents, anthropic, automation, autonomous-agents, aws, claude.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -834,12 +737,56 @@
       "reject_reason": "published 2026-09-25 — outside lookback window"
     },
     {
-      "cluster_key": "1e419cf60121c652",
-      "title": "This is a really important graph showing the cost of achieving 25% or 75% scores in various hard math and science benchmarks.",
+      "cluster_key": "0c26e2cd1457ec56",
+      "title": "kostja94/bricks — Component layer for AI agents: implementation-aware contracts for building project-native interface components",
       "category": "tech_ai",
       "one_liner": "",
-      "tags": [],
-      "summary": "This is a really important graph showing the cost of achieving 25% or 75% scores in various hard math and science benchmarks. Costs are collapsing even as ability is increasing It is also why optimizing for cost for a particular solution right now may end up being short sighted (Bluesky post by @emollick.bsky.social — 94 likes, 11 reposts)",
+      "tags": [
+        "agents",
+        "ai",
+        "llm",
+        "opensource"
+      ],
+      "summary": "Component layer for AI agents: implementation-aware contracts for building project-native interface components. GitHub repository kostja94/bricks, 61 stars, language JavaScript. Topics: agent-skills, ai-agents, claude-code, codex, coding-agents, cursor, design-systems, developer-tools.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "summary_source": "extract",
+      "alt_keys": [
+        "0c26e2cd1457ec56"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/kostja94/bricks",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-25T05:18:31+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-25 — outside lookback window"
+    },
+    {
+      "cluster_key": "3f88b1569659b711",
+      "title": "\"Hey Opus, I want you to make a Zine by Claude, expressing something fundamental about Claudishness or your perspective.",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "llm"
+      ],
+      "summary": "\"Hey Opus, I want you to make a Zine by Claude, expressing something fundamental about Claudishness or your perspective. Think the original 2600, Principia Discordia, punk zines, etc....\" Not bad. I appreciate it mocking my prompt & itself. Full thing: stateless-zine.netlify.app (Bluesky post by @emollick.bsky.social — 103 likes, 9 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -850,7 +797,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "1e419cf60121c652"
+        "3f88b1569659b711"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -858,79 +805,20 @@
       "sources": [
         {
           "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mw7n5pr7222t",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwctdxv7pc26",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-23T21:00:53.248000+00:00",
+      "published": "2026-09-25T03:29:44.757000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-23 — outside lookback window"
+      "reject_reason": "published 2026-09-25 — outside lookback window"
     },
     {
-      "cluster_key": "c291245820d9277c",
-      "title": "Justinuse1/pojia-breaker — Chinese-first LLM jailbreak benchmark & red-team toolkit | 中文LLM安全评测框架 | by POJIA.AI",
-      "category": "cyber_tools",
-      "one_liner": "A new Chinese-first LLM jailbreak and red-team benchmark repository has been released on GitHub.",
-      "tags": [
-        "ai",
-        "llm",
-        "opensource",
-        "redteam",
-        "release",
-        "research",
-        "tool",
-        "vulnerability"
-      ],
-      "summary": "Justinuse1/pojia-breaker is a newly created, Chinese-first LLM jailbreak benchmark and red-team toolkit developed by POJIA.AI. Published on GitHub with 19 stars and written in JavaScript, the repository focuses on topics including AI safety, deepseek, prompt injection, and LLM evaluation.",
-      "key_facts": [
-        "Repository: Justinuse1/pojia-breaker",
-        "Stars: 19",
-        "Language: JavaScript"
-      ],
-      "bottom_line": "Security researchers focusing on Chinese-language LLM safety and red-teaming now have a dedicated open benchmark toolkit available.",
-      "claims": [
-        {
-          "text": "Chinese-first LLM jailbreak benchmark & red-team toolkit | 中文LLM安全评测框架 | by POJIA.AI GitHub repository Justinuse1/pojia-breaker, 19 stars, language JavaScript.",
-          "support_span": "Chinese-first LLM jailbreak benchmark & red-team toolkit | 中文LLM安全评测框架 | by POJIA.AI GitHub repository Justinuse1/pojia-breaker, 19 stars, language JavaScript.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 10,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 32.5,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "c291245820d9277c"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/Justinuse1/pojia-breaker",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-24T03:17:53+00:00",
-      "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "importance 3/5 from cache",
-        "blend 32 = trust 10 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "cab141db60b60cd3",
+      "cluster_key": "3a9a2393f4f1d58f",
       "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
       "category": "tech_ai",
       "one_liner": "OpenAI introduced GPT-6.1-Sol at OpenAI DevDay 2026, delivering near-Astra intelligence at twenty percent of the cost.",
@@ -952,16 +840,16 @@
           "status": "contradicted"
         }
       ],
-      "trust_score": 79,
+      "trust_score": 37,
       "interest_score": 50,
-      "corroboration": 3,
-      "blend": 64.8,
+      "corroboration": 2,
+      "blend": 46.8,
       "is_new": false,
       "summary_source": "model",
       "alt_keys": [
+        "3a9a2393f4f1d58f",
         "cab141db60b60cd3",
-        "d6082741ca00196f",
-        "dd66acaed2a04b44"
+        "d6082741ca00196f"
       ],
       "critical_signal": "",
       "priority": "important",
@@ -974,9 +862,9 @@
           "tier": "B"
         },
         {
-          "name": "Hacker News 150+",
-          "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
-          "domain": "openai.com",
+          "name": "Kingy AI",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1TYzhYaDdjTzBHV2pnQjBkMi1WYldVMzlLaFVtREd4bjZvWmZhV0xSQlNQNThvb3NESnVLMUNlcmxYYmE2MmNZd2Z4TVdFY3EtY1NpdUwteTVBRWloN0Zwb1liQQ?oc=5",
+          "domain": "kingy-ai.publisher",
           "tier": "C"
         },
         {
@@ -986,145 +874,154 @@
           "tier": "C"
         }
       ],
-      "primary_links": [
-        "https://openai.com/index/introducing-gpt-6-1-sol/"
-      ],
-      "published": "2026-09-28T18:42:04+00:00",
+      "primary_links": [],
+      "published": "2026-09-27T03:35:58+00:00",
       "trace": [
         "tier B (+25)",
-        "3 independent outlets (+24)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 65 = trust 79 / interest 50 / corrob 75",
-        "demoted: critical capped at 5"
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "importance 3/5 from cache",
+        "blend 47 = trust 37 / interest 50 / corrob 50"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "44c3fd479258b5a8",
-      "title": "Financial Fragility in Societies of LLM Agents: Coordination Failures and Stabilizing Mechanisms",
-      "category": "tech_ai",
-      "one_liner": "Design multi-agent financial systems with early, centralized commitment mechanisms to prevent cascading coordination failures and bank runs.",
-      "tags": [
-        "agents",
-        "ai",
-        "blueteam",
-        "llm",
-        "research",
-        "tool"
-      ],
-      "summary": "Researchers studied systemic financial fragility caused by interacting large language model agents using FRAIL, a controlled experimental framework modeling bank runs, debt rollover, and reward crowdfunding. Across seven leading LLMs, baseline episodes exhibited widespread collective failure—77 percent of bank runs and 83 percent of debt rollovers collapsed even without any malicious or destabilizing instructions given to agents. Testing three mitigation mechanisms based on compensated commitments, centralized agreements, and participant coalitions showed that all improved aggregate outcomes but did not universally excel. Successful stabilization consistently relied on early, broad-based commitments formed before defensive behaviors became self-reinforcing.",
-      "key_facts": [
-        "Bank Run Failure Rate: 77%",
-        "Debt Rollover Failure Rate: 83%"
-      ],
-      "bottom_line": "LLM agents acting individually can create highly fragile financial systems prone to catastrophic coordination collapse unless bound by early commitments.",
-      "claims": [
-        {
-          "text": "Across seven leading LLMs, we find widespread collective fragility even when no agent is instructed to destabilize the system: 77% of baseline bank-run episodes and 83% of debt-rollover episodes end in failure.",
-          "support_span": "Across seven leading LLMs, we find widespread collective fragility even when no agent is instructed to destabilize the system: 77% of baseline bank-run episodes and 83% of debt-rollover episodes end in failure.",
-          "status": "contradicted"
-        },
-        {
-          "text": "We then compare three interaction mechanisms based on compensated commitments, centralized commitment agreements, and participant-led coalitions.",
-          "support_span": "We then compare three interaction mechanisms based on compensated commitments, centralized commitment agreements, and participant-led coalitions.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "44c3fd479258b5a8"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.30940",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.30940"
-      ],
-      "published": "2026-09-29T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from cache",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "32b84aebfd1c282a",
-      "title": "Nifty 50 falls 6.3% in September, worst monthly series in 25 years; what triggered the sell-off?",
+      "cluster_key": "fd3369ee23894256",
+      "title": "Expert view: Bonanza Portfolio CIO on equity investment strategy, top sectors to bet on and more",
       "category": "markets",
-      "one_liner": "Nifty 50 recorded its worst September in 25 years amid foreign capital outflows and soaring crude oil prices, testing key 200-week support levels.",
+      "one_liner": "Bonanza Portfolio CIO Achin Goel highlights investment opportunities in defence, precision engineering, and data-centre infrastructure amidst macro headwinds.",
       "tags": [
-        "ai",
         "india",
         "markets"
       ],
-      "summary": "India's Nifty 50 index plunged 6.3% during the September monthly series, marking its worst September performance in 25 years and its longest weekly losing streak since 2020. The sell-off was driven by surging crude oil prices from Middle East conflicts, rising global bond yields, and heavy selling by foreign investors who withdrew billions. Technical analysts note that the index tested its crucial 200-week moving average support level at 22,600, which could dictate whether the market sees a mean-reversion bounce or a deeper correction.",
+      "summary": "In an interview with Mint, Achin Goel, CIO and Fund Manager at Bonanza Portfolio, outlines an equity investment strategy focused on selective value, earnings visibility, balance-sheet strength, and execution. He identifies structural growth potential in themes such as precision engineering, defence and aerospace manufacturing, power transmission, electronics manufacturing, and data-centre infrastructure, driven by localisation and import substitution. While India's domestic GDP growth remains robust, equities face headwinds from foreign institutional selling, elevated crude oil prices, rupee weakness, and US monetary tightening. Goel recommends keeping large caps as portfolio cores for stability while approaching mid- and small-caps with bottom-up valuation sensitivity.",
       "key_facts": [
-        "Index Decline: 6.3% in September series",
-        "Support Level: 22,600 (200-week moving average)",
-        "Consecutive Weekly Losses: 7 weeks"
+        "Expert name: Achin Goel",
+        "Firm: Bonanza Portfolio",
+        "Nifty trailing P/E: 19.5"
       ],
-      "bottom_line": "Persistent foreign outflows and escalating macro headwinds have pushed the Nifty 50 to its crucial 200-week moving average support level.",
+      "bottom_line": "Equity investors should prioritize earnings visibility, execution, and structural themes like defense and data-centre infrastructure over broad-based index buying.",
       "claims": [
         {
-          "text": "The Nifty 50 registered its worst performance, as the index's September series was its worst September monthly performance in the last 25 years, dragged down by a surge in crude oil prices, higher bond yields, and persistent selling by overseas investors.",
-          "support_span": "The Nifty 50 registered its worst performance, as the index's September series was its worst September monthly performance in the last 25 years, dragged down by a surge in crude oil prices, higher bond yields, and persistent selling by overseas investors.",
-          "status": "entailed"
+          "text": "Achin Goel sees selective value in this market and finds stock-specific opportunities in precision engineering, defence and aerospace manufacturing, power transmission, electronics manufacturing, and data-centre infrastructure.",
+          "support_span": "Achin Goel, CFA, CIO and Fund Manager at Bonanza Portfolio, sees selective value in this market. He finds stock-specific opportunities in such as precision engineering, defence and aerospace manufacturing, power transmission, electronics manufacturing, and data-centre infrastructure.",
+          "status": "contradicted"
         },
         {
-          "text": "The index finished its monthly series with a drop of 6.3%, marking the worst September series since 2001, when it dropped 13.53%.",
-          "support_span": "The index finished its monthly series with a drop of 6.3%, marking the worst September series since 2001, when it dropped 13.53 तालिका.",
-          "status": "contradicted"
+          "text": "India’s Q1 FY27 real GDP growth remained robust, but equities are simultaneously absorbing foreign institutional selling, crude oil above the comfort zone, rupee weakness, higher global bond yields and renewed US monetary tightening.",
+          "support_span": "India’s Q1 FY27 real GDP growth remained robust, but equities are simultaneously absorbing the impact of foreign institutional selling, crude oil above the comfort zone, rupee weakness, higher global bond yields and renewed US monetary tightening.",
+          "status": "entailed"
         }
       ],
       "trust_score": 25,
-      "interest_score": 100,
+      "interest_score": 50,
       "corroboration": 1,
-      "blend": 58.8,
+      "blend": 36.2,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "32b84aebfd1c282a"
+        "fd3369ee23894256"
       ],
       "critical_signal": "",
-      "priority": "important",
+      "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
           "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/nifty-50-falls-6-3-in-september-worst-monthly-series-in-25-years-what-triggered-the-selloff-11790689288980.html",
+          "url": "https://www.livemint.com/market/stock-market-news/expert-view-bonanza-portfolio-cio-on-equity-investment-strategy-top-sectors-to-bet-on-and-more-11790764122693.html",
           "domain": "livemint.com",
           "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-29T15:20:05+00:00",
+      "published": "2026-09-30T10:38:46+00:00",
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 25 / interest 100 / corrob 25",
-        "demoted: critical capped at 5"
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 36 = trust 25 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "ac6b8c7887aaa131",
+      "title": "I was just reminded of the radicle vulnerability again(?) and it makes me want to start drinking",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "vulnerability",
+        "windows"
+      ],
+      "summary": "I was just reminded of the radicle vulnerability again(?) and it makes me want to start drinking (Bluesky post by @xeiaso.net — 13 likes, 0 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "ac6b8c7887aaa131"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Xe Iaso",
+          "url": "https://bsky.app/profile/xeiaso.net/post/3mweiuvneuc2n",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-25T19:27:41.150000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-25 — outside lookback window"
+    },
+    {
+      "cluster_key": "ed85f03ec56d2bde",
+      "title": "Xuanwo/cida — 辞达：用你选择的大模型，在 Mac 的任何地方翻译和润色文字。Translate and polish text anywhere on your Mac.",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "llm",
+        "opensource"
+      ],
+      "summary": "GitHub repository Xuanwo/cida, 127 stars, language Swift. Topics: llm, macos, menubar-app, swiftui, translation.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "ed85f03ec56d2bde"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/Xuanwo/cida",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-25T08:20:35+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-25 — outside lookback window"
     },
     {
       "cluster_key": "a132791199add147",
@@ -1167,127 +1064,132 @@
       "reject_reason": "published 2026-09-24 — outside lookback window"
     },
     {
-      "cluster_key": "3a3462776ca57617",
-      "title": "Spain announces ban on evictions after protests over 87-year-old woman's removal from flat",
-      "category": "india_world",
-      "one_liner": "Spain approved a temporary ban on evictions until 2030 and restrictions on investment property purchases following widespread housing protests.",
+      "cluster_key": "96cfffe591c3e51e",
+      "title": "Beyond Semantic Narrowing: Robust and Efficient LLM Watermarking with Hamming Neighborhoods",
+      "category": "tech_ai",
+      "one_liner": "HammingMark improves LLM watermarking efficiency and quality by validating tokens within Hamming neighborhoods in compact hash space.",
       "tags": [
-        "policy",
-        "political",
-        "release"
+        "ai",
+        "llm",
+        "privacy",
+        "research"
       ],
-      "summary": "Spain's coalition government has approved emergency housing decrees featuring a temporary ban on evictions until 2030, following intense protests triggered by the eviction of an 87-year-old woman in Madrid. The sweeping measures also include rolling over rental contracts until 2028, stricter regulations on short-term rentals, and a complete ban on housing purchases by investment firms. While hailed by housing activists as a crucial intervention against speculative vulture funds, opposition politicians and landlords have criticized the decrees for damaging small property investors. The measures require approval from the fragmented Spanish Congress within 30 days to remain permanently in force.",
+      "summary": "Semantic watermarking embeds detectable signals into LLM-generated text to resist removal attacks, but often suffers from semantic narrowing due to poor alignment with natural generation preferences. To solve this, researchers introduced HammingMark, which uses semantic hashes of preceding sentences to accept candidate tokens falling within a dynamic Hamming neighborhood. Experiments on C4 and BookSum datasets show that HammingMark achieves strong robustness and high detectability while requiring only 2.2 sampled candidates per sentence—a 72.8 percent reduction over existing methods.",
       "key_facts": [
-        "Eviction Ban Timeline: Until 2030",
-        "Contract Roll-Over: Until 2028",
-        "Parliamentary Approval Window: 30 days"
+        "Datasets used: C4, BookSum",
+        "Sampled candidates per sentence: 2.2",
+        "Reduction in sampling overhead: 72.8%"
       ],
-      "bottom_line": "Spain's emergency housing decrees ban evictions until 2030 and outlaw corporate property purchases, facing an urgent parliamentary showdown.",
+      "bottom_line": "Hamming-neighborhood semantic hashing eliminates semantic narrowing in LLM watermarks while cutting resampling overhead by nearly 73 percent.",
       "claims": [
         {
-          "text": "Ministers met on Tuesday to discuss the proposals, which include a ban on evictions until 2030.",
-          "support_span": "Ministers met on Tuesday to discuss the proposals, which include a ban on evictions until 2030.",
-          "status": "entailed"
-        },
-        {
-          "text": "The proposals - which have been presented in the form of two decrees - come into effect immediately, but must be approved by Congress within a month, although the government hopes to hold the vote as soon as this Friday.",
-          "support_span": "The proposals - which have been presented in the form of two decrees - come into effect immediately, but must be approved by Congress within a month, although the government hopes to hold the vote as soon as this feasibility vote or similar...",
+          "text": "Experiments on C4 and BookSum show that HammingMark achieves strong robustness, high detectability, and near-unwatermarked generation quality, requiring only 2.2 sampled candidates per sentence,a 72.8% reduction compared with the most sampling-efficient existing method.",
+          "support_span": "Experiments on C4 and BookSum show that HammingMark achieves strong robustness, high detectability, and near-unwatermarked generation quality, requiring only 2.2 sampled candidates per sentence,a 72.8% reduction compared with the most sampling-efficient existing method.",
           "status": "contradicted"
         }
       ],
-      "trust_score": 52,
+      "trust_score": 70,
       "interest_score": 50,
-      "corroboration": 2,
-      "blend": 50.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "3a3462776ca57617",
-        "b383cff7ab921fbe"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwm2qmjgy93do?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
-        },
-        {
-          "name": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/9/29/spain-protests-evicted-87-year-old-woman-to-return-to-madrid-home?traffic_source=rss",
-          "domain": "aljazeera.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-29T16:23:58+00:00",
-      "trace": [
-        "tier A (+40)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 50 = trust 52 / interest 50 / corrob 50"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "fcb04a505a62cc94",
-      "title": "India rejects Kashmir references in Turkish President’s UNGA address as ‘unwarranted’",
-      "category": "india_world",
-      "one_liner": "India rejected Turkish President Erdogan's UNGA references to Jammu and Kashmir, asserting its territorial integrity.",
-      "tags": [
-        "india",
-        "political",
-        "tool"
-      ],
-      "summary": "India's Ministry of External Affairs has rejected recent remarks made by Turkish President Recep Tayyip Erdogan regarding Jammu and Kashmir during his UN General Assembly address. MEA spokesperson Randhir Jaiswal called the references unwarranted and asserted that Jammu and Kashmir is an integral part of India with no locus standi for external parties. President Erdogan had suggested that regional disputes, including Kashmir, should be addressed via dialogue within UN frameworks.",
-      "key_facts": [
-        "Date of Statement: September 29, 2026",
-        "Spokesperson: Randhir Jaiswal"
-      ],
-      "bottom_line": "New Delhi formally rejected external commentary on Jammu and Kashmir at the UN, reaffirming its sovereignty over the region.",
-      "claims": [
-        {
-          "text": "During his biweekly media briefing, Ministry of External Affairs (MEA) spokesperson Randhir Jaiswal was asked how India looked at Mr. Erdogan’s recent UNGA address...",
-          "support_span": "During his biweekly media briefing, Ministry of External Affairs (MEA) spokesperson Randhir Jaiswal was asked how India looked at Mr. Erdogan’s recent UNGA address...",
-          "status": "contradicted"
-        },
-        {
-          "text": "“India rejects unwarranted references to India and the Union Territory of Jammu and Kashmir made by the President of Turkiye during his UNGA address,” Mr. Jaiswal said.",
-          "support_span": "“India rejects unwarranted references to India and the Union Territory of Jammu and Kashmir made by the President of Turkiye during his UNGA address,” Mr. Jaiswal said.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 75,
       "corroboration": 1,
       "blend": 47.5,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "fcb04a505a62cc94"
+        "96cfffe591c3e51e"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/national/india-rejects-kashmir-references-in-turkish-presidents-unga-address-as-unwarranted/article71525225.ece",
-          "domain": "thehindu.com",
+          "name": "arXiv cs.CR",
+          "url": "https://arxiv.org/abs/2609.37218",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2609.37218"
+      ],
+      "published": "2026-09-30T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "c873af55830454a8",
+      "title": "Custom malware used in Citrix 0-day attacks targeting govt, banks, professional services",
+      "category": "cyber_attacks",
+      "one_liner": "A weekly security roundup covering Citrix zero-day attacks, Acronis acquisition, SharePoint flaws, and AI prompt injection threats.",
+      "tags": [
+        "ai",
+        "cloud",
+        "exploit",
+        "hardware",
+        "linux",
+        "llm",
+        "malware",
+        "vulnerability"
+      ],
+      "summary": "This article is a curated news roundup covering various industry developments, including custom malware targeting Citrix zero-day vulnerabilities in government and banking sectors, Huawei claiming homegrown AI chip sales surpass Nvidia within China, and discussions around self-replicating prompt injection AI worm attacks. Additional briefs mention EQT's acquisition of a majority stake in cybersecurity firm Acronis at a valuation exceeding $3.5 billion, and Microsoft patch failures on on-premise SharePoint instances currently under zero-day attack. The roundup also notes various software updates, Linux distros, and open-source shifts.",
+      "key_facts": [
+        "Acronis valuation equivalent: $3.5B+"
+      ],
+      "bottom_line": "Active zero-day exploitation against Citrix and SharePoint highlights ongoing risks for enterprise infrastructure.",
+      "claims": [
+        {
+          "text": "Custom malware used in Citrix 0-day attacks targeting govt, banks, professional services",
+          "support_span": "Custom malware used in Citrix 0-day attacks targeting govt, banks, professional services",
+          "status": "contradicted"
+        },
+        {
+          "text": "EQT buys majority share in Swiss cybersecurity biz Acronis",
+          "support_span": "EQT buys majority share in Swiss cybersecurity biz Acronis",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 37,
+      "interest_score": 75,
+      "corroboration": 2,
+      "blend": 58.0,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "c873af55830454a8",
+        "e0e1bbf137d8b41a"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "The Register Security",
+          "url": "https://www.theregister.com/security/2026/09/29/custom-malware-used-in-citrix-0-day-attacks-targeting-govt-banks-professional-services/5299867",
+          "domain": "theregister.com",
           "tier": "B"
+        },
+        {
+          "name": "news.lavx.hu",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOam42R18xMEJkS24zREtjR1NkTm1Bc2d5YUNxLTZPd3N3REh2WVZSb0lSMW9EeGI4SUV5WHg1NVBRbmdYN0NRc1FOSTF4dmxiaEJIdTJvRHlOME5JUWRoa0Y3b2VEdVdaYV9XS2tDY29XZ1BEeUhOcnJFNXFmSzFmUVZLS012OEt6MXBSeTlRZlROMGxvQlRtWDFBM2FpZUJlVV82bHNfTFh5VUV1bDk0WGxDMDhRQQ?oc=5",
+          "domain": "news-lavx-hu.publisher",
+          "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-29T16:49:04+00:00",
+      "published": "2026-09-29T17:49:45+00:00",
       "trace": [
         "tier B (+25)",
-        "single outlet, established publication (tier B)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
         "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
+        "blend 58 = trust 37 / interest 75 / corrob 50",
+        "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -1354,65 +1256,128 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "233135cac348bbb5",
-      "title": "PTC-Decoder: Towards Intelligent SLMs on Offline Resource-Constrained Edge Devices",
+      "cluster_key": "9355a0eb81ce6dcc",
+      "title": "pikit: A Composable Toolkit for Indirect Prompt Injection Research and Evaluation",
       "category": "tech_ai",
-      "one_liner": "PTC-Decoder enables reliable tool orchestration for SLMs on edge devices by enforcing plan adherence through output vocabulary constraints.",
+      "one_liner": "pikit is a new composable research toolkit designed to evaluate indirect prompt injection vectors, attack channels, and defense strategies on LLM agents.",
       "tags": [
         "agents",
         "ai",
+        "appsec",
         "llm",
-        "tool"
+        "opensource",
+        "privacy",
+        "tool",
+        "vulnerability"
       ],
-      "summary": "The PTC-Decoder (Plan-Tool Constrained Decoder) is a new training-free framework designed to improve the reliability of small language models (SLMs) on resource-constrained edge devices. By enforcing a 'Plan-to-Act' paradigm and using a deterministic finite automaton to constrain tool-name tokens, the method forces models to adhere to multi-step plans without requiring retraining. Experiments on remote-sensing satellite tasks showed a statistically significant performance gain, confirming the framework's effectiveness in improving step-level reliability.",
+      "summary": "Researchers have released pikit, an open-source, composable research toolkit built to systematically evaluate indirect prompt injection threats across LLM-based agent environments. The framework integrates 13 attack methods, 16 communication channels spanning text and file vectors, and 9 prevention strategies alongside offline detection baselines. Using a decorator-based registry and a unified craft() API, pikit allows security researchers to compose arbitrary attacks and test defenses seamlessly. Benchmarking 9 prevention controls on a production-like coding agent demonstrated a 71.8% relative reduction in attack success rates, with instruction hierarchy and few-shot warnings providing the most robust defense.",
       "key_facts": [
-        "Score gain: +1.21",
-        "Tasks: 200 remote-sensing satellite tasks",
-        "Models: 7 SLMs"
+        "Attack methods included: 13",
+        "Channels included: 16",
+        "Prevention strategies evaluated: 9",
+        "Attack success reduction: 71.8% relative reduction"
       ],
-      "bottom_line": "Small language models often fail to execute multi-step agent tasks unless their output is strictly constrained during inference.",
+      "bottom_line": "Security teams can use pikit to benchmark LLM agent resilience against indirect prompt injections and test multi-layered prevention strategies.",
       "claims": [
         {
-          "text": "We propose PTC-Decoder (Plan-Tool Constrained Decoder), a training-free, plug-and-play decoder framework that combines (1) a Plan-to-Act paradigm, which elevates planning to an atomic tool and forces its invocation at the first inference step.",
-          "support_span": "We propose PTC-Decoder (Plan-Tool Constrained Decoder), a training-free, plug-and-play decoder framework that combines (1) a Plan-to-Act paradigm, which elevates planning to an atomic tool and forces its invocation at the first inference step.",
-          "status": "contradicted"
+          "text": "We introduce pikit, a research toolkit designed to systematically evaluate these threats across three core dimensions: attacks (13 methods), channels (16 carriers across text and file modes), and defenses (9 prevention strategies and 3 offline detection baselines).",
+          "support_span": "We introduce pikit, a research toolkit designed to systematically evaluate these threats across three core dimensions: attacks (13 methods), channels (16 carriers across text and file modes), and defenses (9 prevention strategies and 3 offline detection baselines).",
+          "status": "entailed"
         },
         {
-          "text": "Evaluated on 200 real remote-sensing satellite tasks across 7 SLMs, PTC-Decoder yields a statistically significant mean overall score gain of +1.21.",
-          "support_span": "Evaluated on 200 real remote-sensing satellite tasks across 7 SLMs, PTC-Decoder yields a statistically significant mean overall score gain of +1.21",
-          "status": "entailed"
+          "text": "Benchmarking 9 prevention strategies against high-risk attacks yields a 71.8\\% relative reduction in attack success rate, with few_shot_warning and instruction_hierarchy providing the strongest protection.",
+          "support_span": "Benchmarking 9 prevention strategies against high-risk attacks yields a 71.8\\% relative reduction in attack success rate, with few_shot_warning and instruction_hierarchy providing the strongest protection.",
+          "status": "contradicted"
         }
       ],
       "trust_score": 70,
-      "interest_score": 50,
+      "interest_score": 75,
       "corroboration": 1,
-      "blend": 47.5,
-      "is_new": false,
+      "blend": 58.8,
+      "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "233135cac348bbb5"
+        "9355a0eb81ce6dcc"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.30836",
+          "name": "arXiv cs.CR",
+          "url": "https://arxiv.org/abs/2609.36817",
           "domain": "arxiv.org",
           "tier": "A"
         }
       ],
       "primary_links": [
-        "https://arxiv.org/abs/2609.30836"
+        "https://arxiv.org/abs/2609.36817"
       ],
-      "published": "2026-09-29T04:00:00+00:00",
+      "published": "2026-09-30T04:00:00+00:00",
       "trace": [
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "importance 3/5 from gemini-3.1-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "144c22a2c35cc53c",
+      "title": "Watch: Moment a government building collapses into a river in Nepal amid floods",
+      "category": "india_world",
+      "one_liner": "A government building collapsed into a river in western Nepal amidst floods that have killed at least 27 people.",
+      "tags": [
+        "incident",
+        "political"
+      ],
+      "summary": "Severe flooding and landslides in western Nepal caused a government building in Baglung to collapse into the Daram River. Local authorities evacuated important documents and computers prior to the collapse, preventing injuries. The disaster comes amid widespread flooding that has killed at least 27 people over recent days.",
+      "key_facts": [
+        "Location: Baglung, Nepal",
+        "Death toll: At least 27 people"
+      ],
+      "bottom_line": "Ongoing extreme weather and flooding in Nepal continue to destroy critical infrastructure and endanger lives.",
+      "claims": [
+        {
+          "text": "Massive flooding left a government building in western Nepal teetering on the edge of an unstable ledge before it fell into the Daram River.",
+          "support_span": "Massive flooding left a government building in western Nepal teetering on the edge of an unstable ledge before it fell into the Daram River.",
+          "status": "entailed"
+        },
+        {
+          "text": "Landslides and floods have killed at least 27 people over recent days...",
+          "support_span": "Landslides and floods have killed at least 27 people over recent days, according to Nepal's national disaster agency...",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 40.0,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "144c22a2c35cc53c"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/cv70d2nd6r0yo?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-30T03:21:28+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 40 = trust 40 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -1466,7 +1431,68 @@
         }
       ],
       "primary_links": [],
-      "published": "2026-09-29T07:19:38+00:00",
+      "published": "2026-09-30T02:50:35+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 4/5 from cache",
+        "blend 48 = trust 25 / interest 75 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "e2d036dbdd9cbb7c",
+      "title": "Drones, Chips, AI: India Proposes $25-Billion Pool For Deep Tech Startups",
+      "category": "india_world",
+      "one_liner": "India proposes a $25-billion funding pool to support deep tech startups in AI, chips, and drones.",
+      "tags": [
+        "ai",
+        "hardware",
+        "india",
+        "markets",
+        "policy",
+        "release"
+      ],
+      "summary": "This short excerpt announces that India is proposing a 25-billion-dollar funding pool focused on deep tech startups spanning technologies like drones, semiconductor chips, and artificial intelligence. Deep tech encompasses innovations built on rigorous scientific research or advanced engineering breakthroughs. Due to the truncated nature of the article, specific disbursement timelines and structural operational guidelines are not provided.",
+      "key_facts": [
+        "Proposed funding amount: $25 billion",
+        "Target sectors: Drones, chips, AI, deep tech startups"
+      ],
+      "bottom_line": "India's proposed deep tech funding pool signals major state backing for domestic advanced engineering and semiconductor startups.",
+      "claims": [
+        {
+          "text": "India Proposes $25-Billion Pool For Deep Tech Startups",
+          "support_span": "India Proposes $25-Billion Pool For Deep Tech Startups",
+          "status": "contradicted"
+        },
+        {
+          "text": "Deep Tech refers to technologies built on scientific research or major engineering advances.",
+          "support_span": "Deep Tech refers to technologies built on scientific research or major engineering advances.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "e2d036dbdd9cbb7c"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/india-news/drones-chips-ai-india-proposes-25-billion-pool-for-deep-tech-startups-12122267#publisher=newsstand",
+          "domain": "ndtv.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-30T18:32:45+00:00",
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
@@ -1474,66 +1500,6 @@
         "blend 48 = trust 25 / interest 75 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "932cf09d8eb8c3e9",
-      "title": "T-RoPE: Time-Aware Rotary Position Embedding for Sequential Recommendation",
-      "category": "tech_ai",
-      "one_liner": "T-RoPE improves sequential recommendation accuracy by incorporating temporal awareness into the Transformer architecture, outperforming standard index-based embeddings.",
-      "tags": [
-        "ai"
-      ],
-      "summary": "T-RoPE is a new time-aware positional embedding method for sequential recommendation systems that addresses the limitations of standard RoPE. Unlike standard RoPE, which ignores temporal context, T-RoPE uses timestamp-based angles and multiscale frequency banks to capture seasonal and cyclic behavioral patterns. The method significantly outperforms existing baselines on multiple datasets and has demonstrated positive conversion rate lifts in live industrial A/B testing.",
-      "key_facts": [
-        "Conversion rate lift: +0.33%",
-        "Order count lift: +0.63%",
-        "Dataset size: 6B+ interactions"
-      ],
-      "bottom_line": "Standard RoPE embeddings are time-translation invariant and fail to capture critical temporal dynamics in user behavior for recommendation systems.",
-      "claims": [
-        {
-          "text": "We propose T-RoPE, a time-aware RoPE for sequential generative recommendation that replaces index-only rotation with timestamp-based angles, learnable temporal coefficients, multiscale frequency banks, shifted query alignment, and non-stationary key rotation.",
-          "support_span": "We propose T-RoPE, a time-aware RoPE for sequential generative recommendation that replaces index-only rotation with timestamp-based angles, learnable temporal coefficients, multiscale frequency banks, shifted query alignment, and non-stationary key rotation.",
-          "status": "contradicted"
-        },
-        {
-          "text": "An online A/B test in the Shop app yields positive lifts in conversion rate (+0.33%) and order count (+0.63%).",
-          "support_span": "An online A/B test in the Shop app yields positive lifts in conversion rate (+0.33%) and order count (+0.63%).",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "932cf09d8eb8c3e9"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.30576",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.30576"
-      ],
-      "published": "2026-09-29T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 3/5 from gemini-3.1-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "2 claim(s) not supported by the source text"
     },
     {
       "cluster_key": "65c0037a397e26ef",
@@ -1593,130 +1559,61 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "74dec6ea42517a84",
-      "title": "Rockwell Automation FactoryTalk Activation Manager. Privilege escalation",
-      "category": "cyber_attacks",
-      "one_liner": "Rockwell Automation FactoryTalk Activation Manager vulnerable to local privilege escalation via MSI repair hijacking.",
+      "cluster_key": "270c3b97a266ac13",
+      "title": "FigAct: Turning Scientific Figures into Active Canvases for Explanation",
+      "category": "tech_ai",
+      "one_liner": "FigAct transforms static scientific figures into interactive visual presentations by executing targeted visual actions and grounded narrations.",
       "tags": [
-        "appsec",
-        "blueteam",
-        "exploit",
+        "ai",
+        "howto",
         "llm",
-        "release",
-        "vulnerability",
-        "windows"
+        "privacy",
+        "research",
+        "tool"
       ],
-      "summary": "Kaspersky ICS CERT published an advisory regarding a local privilege escalation vulnerability in Rockwell Automation FactoryTalk Activation Manager affecting all versions prior to V5.03. A low-privileged local user can initiate software repair via an MSI file located in C:\\Windows\\Installer, which spawns processes with NT AUTHORITY\\SYSTEM privileges. By hijacking the resulting console host window and launching a third-party system-wide web browser (such as Mozilla Firefox or Google Chrome), an attacker can open an elevated command prompt. Rockwell Automation has released V5.03 to fix the issue, while mitigations include Microsoft AppLocker configurations and avoiding system-wide third-party web browsers.",
+      "summary": "Multimodal large language models typically explain scientific figures by translating visual content back into text, requiring readers to manually map explanations back to elements. To address this, researchers developed FigAct, a framework that transforms static scientific figures into question-conditioned active presentations by acting directly on graphical elements. The system generates coordinated narrations, grounds them in visual evidence, and applies visual actions to guide user attention. Using a hierarchical search strategy, FigAct reduces token usage by approximately 40 times while improving explanation clarity.",
       "key_facts": [
-        "Product: Rockwell Automation FactoryTalk Activation Manager",
-        "Affected Versions: All versions prior to V5.03",
-        "Privilege Level: NT AUTHORITY\\SYSTEM"
+        "Token usage reduction: Approximately 40x"
       ],
-      "bottom_line": "Local attackers can escalate privileges to SYSTEM by hijacking MSI repair console windows in vulnerable FactoryTalk Activation Manager versions.",
+      "bottom_line": "Active visual manipulation of scientific figures by multimodal models provides clearer explanations and significantly reduces token consumption compared to pure text translation.",
       "claims": [
         {
-          "text": "A local, low-privileged attacker with an interactive session could initiate the repair of affected software versions via an MSI file located in C:\\Windows\\Installer.",
-          "support_span": "A local, low-privileged attacker with an interactive session could initiate the repair of affected software versions via an MSI file located in C:\\Windows\\Installer.",
-          "status": "entailed"
-        },
-        {
-          "text": "Some of these processes will run with NT AUTHORITY\\SYSTEM privileges during the repair.",
-          "support_span": "Some of these processes will run with NT AUTHORITY\\SYSTEM privileges during the repair.",
-          "status": "contradicted"
-        },
-        {
-          "text": "Affected products Rockwell Automation FactoryTalk Activation Manager, all versions prior to V5.03",
-          "support_span": "Affected products Rockwell Automation FactoryTalk Activation Manager, all versions prior to V5.03",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "74dec6ea42517a84"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Kaspersky ICS CERT",
-          "url": "https://ics-cert.kaspersky.com/advisories/2026/09/30/rockwell-automation-factorytalk-activation-manager-privilege-escalation/?utm_source=ics-cert.kaspersky.com&utm_medium=rss&utm_campaign=main",
-          "domain": "ics-cert.kaspersky.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-29T21:00:00+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "9b3ae8247d372c27",
-      "title": "Petronet LNG’s next growth leg depends on improving capacity utilization",
-      "category": "markets",
-      "one_liner": "Petronet LNG expands Dahej capacity to 22.5 mtpa, with future monetization hinging on spot LNG prices and pipeline integration.",
-      "tags": [
-        "india",
-        "markets",
-        "political"
-      ],
-      "summary": "Petronet LNG's recent capacity expansion at its Dahej terminal—rising from 17.5 to 22.5 million tonnes per annum by the end of FY26—shifts market focus toward utilization rates, which are projected to dip before recovering due to high spot LNG prices. Analysts anticipate high spot prices to moderate by FY28 as new global liquefaction capacity comes online, potentially improving affordability for industrial consumers and allowing Petronet to monetize expanded volumes. Simultaneously, Kochi terminal volumes are expected to ramp up with pipeline connectivity to Bengaluru extending into the national gas grid. However, heavy capital expenditure plans totaling around ₹30,000 crore across multiple projects are projected to shift Petronet's balance sheet into a net debt position by FY30.",
-      "key_facts": [
-        "Capacity increase: From 17.5mtpa to 22.5mtpa (Dahej terminal)",
-        "Capex: ₹30,000 crore in multiple projects",
-        "Projected Net Debt: ₹4,160 crore in FY30E (from net cash of ₹729 crore in FY26)"
-      ],
-      "bottom_line": "Petronet's aggressive multi-project capex program will shift its balance sheet into net debt, making future earnings recovery reliant on moderating spot LNG prices and volume ramp-ups.",
-      "claims": [
-        {
-          "text": "Dahej capacity has increased to 22.5 million tonnes per annum (mtpa), from 17.5mtpa at the end of FY26.",
-          "support_span": "Dahej capacity has increased to 22.5 million tonnes per annum (mtpa), from 17.5mtpa at the end of FY26.",
-          "status": "entailed"
-        },
-        {
-          "text": "Motilal Oswal expects utilization to fall to 70% in FY27, from 91% in FY26, before recovering to 82% in FY28.",
-          "support_span": "Motilal Oswal expects utilization to fall to 70% in FY27, from 91% in FY26, before recovering to 82% in FY28.",
+          "text": "We develop a hierarchical search strategy for efficient element localization, reducing token usage by approximately 40\\times.",
+          "support_span": "We develop a hierarchical search strategy for efficient element localization, reducing token usage by approximately 40\\times.",
           "status": "contradicted"
         }
       ],
-      "trust_score": 25,
-      "interest_score": 50,
+      "trust_score": 70,
+      "interest_score": 25,
       "corroboration": 1,
       "blend": 36.2,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "9b3ae8247d372c27"
+        "270c3b97a266ac13"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/mark-to-market/petronet-lng-s-next-growth-leg-depends-on-improving-capacity-utilization-11790670191042.html",
-          "domain": "livemint.com",
-          "tier": "B"
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2609.36190",
+          "domain": "arxiv.org",
+          "tier": "A"
         }
       ],
-      "primary_links": [],
-      "published": "2026-09-29T10:02:38+00:00",
+      "primary_links": [
+        "https://arxiv.org/abs/2609.36190"
+      ],
+      "published": "2026-09-30T04:00:00+00:00",
       "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 36 = trust 25 / interest 50 / corrob 25"
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 36 = trust 70 / interest 25 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -1765,12 +1662,79 @@
         }
       ],
       "primary_links": [],
-      "published": "2026-09-29T09:09:22+00:00",
+      "published": "2026-09-30T23:26:21+00:00",
       "trace": [
         "tier C (+10)",
         "single tier-C source — treat with caution",
         "importance 2/5 from cache",
         "blend 21 = trust 10 / interest 25 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "8f28592505a789f6",
+      "title": "Render Before Reading: Visual Rendering as a Prompt Injection Defense",
+      "category": "tech_ai",
+      "one_liner": "Rendering untrusted input as images is an effective, training-free defense against prompt injection in multimodal LLMs.",
+      "tags": [
+        "ai",
+        "appsec",
+        "exploit",
+        "llm",
+        "policy",
+        "privacy",
+        "research",
+        "tool"
+      ],
+      "summary": "Research into prompt injection defenses identifies a 'modality gap' where multimodal LLMs are more susceptible to adversarial text instructions than the same instructions delivered via images. The authors propose 'Pictionary,' a training-free defense that renders untrusted payloads as images before processing, which consistently reduces attack success rates across multiple benchmarks. This approach leverages the model's inherent bias toward treating non-textual modalities as content rather than instructions.",
+      "key_facts": [
+        "Defense: Pictionary",
+        "Benchmarks: DirectInject, AgentDojo"
+      ],
+      "bottom_line": "If you are building multimodal agent pipelines, consider rendering untrusted user inputs as images before passing them to the LLM to mitigate prompt injection risks.",
+      "claims": [
+        {
+          "text": "Multimodal LLMs are more likely to follow adversarial instruction when they appear as text than when the same instruction is delivered through a non-textual channel.",
+          "support_span": "multimodal LLMs are more likely to follow adversarial instruction when they appear as text than when the same instruction is delivered through a non-textual channel (e.g., as an image).",
+          "status": "entailed"
+        },
+        {
+          "text": "We demonstrate how this gap can be turned into a training-free defense, by rendering all untrusted payloads as typographic images (or audio) before they reach the model.",
+          "support_span": "We demonstrate how this gap can be turned into a training-free defense, by rendering all untrusted payloads as typographic images (or audio) before they reach the model.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "8f28592505a789f6"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.CR",
+          "url": "https://arxiv.org/abs/2609.36121",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2609.36121"
+      ],
+      "published": "2026-09-30T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 4/5 from gemini-3.1-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -1803,7 +1767,7 @@
       "interest_score": 25,
       "corroboration": 1,
       "blend": 21.2,
-      "is_new": false,
+      "is_new": true,
       "summary_source": "model",
       "alt_keys": [
         "36ccd5a5c571ad89"
@@ -1830,74 +1794,14 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "028646adab7047e5",
-      "title": "Centre moves Supreme Court to stay hearings on Great Nicobar project",
-      "category": "india_world",
-      "one_liner": "The Union government moves the Supreme Court to halt High Court hearings challenging the Forest Rights Act compliance of the Great Nicobar project.",
-      "tags": [
-        "india",
-        "policy",
-        "political"
-      ],
-      "summary": "The Union government has filed a Special Leave Petition in the Supreme Court seeking to stay Calcutta High Court proceedings on petitions challenging the ₹92,000-crore Great Nicobar Island project. The original petitions, filed by retired IAS officer Meena Gupta, allege violations of the Forest Rights Act in obtaining project clearances. Although the High Court dismissed the Centre's preliminary objections regarding the petitioner's locus standi and scheduled a final hearing for November, the Centre maintains that the challenge constitutes an abuse of legal process and that national growth should not be impeded.",
-      "key_facts": [
-        "Project cost: ₹92,000 crores",
-        "Petitioner: Meena Gupta",
-        "Project location: Great Nicobar Island"
-      ],
-      "bottom_line": "The Centre is seeking to block judicial reviews challenging the statutory environmental approvals of the ₹92,000-crore Great Nicobar development project.",
-      "claims": [
-        {
-          "text": "The Union government has approached the Supreme Court to stay further proceedings in the petitions pending final hearing before the Calcutta High Court.",
-          "support_span": "The Union government has approached the Supreme Court to stay further proceedings in the petitions pending final hearing before the Calcutta High Court, which allege that provisions of the Forest Rights Act (FRA) were violated in obtaining consent for its ₹92,000-crore Great Nicobar Island project.",
-          "status": "entailed"
-        },
-        {
-          "text": "Meena Gupta had filed petitions challenging the project over Forest Rights Act violations.",
-          "support_span": "Meena Gupta, a retired IAS officer, had served as Secretary in both the Environment and Tribal Affairs Ministries... Over the past two years, Ms. Gupta has filed several petitions challenging the Gram Sabha resolutions consenting to the diversion of forest land for the project under the FRA",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "028646adab7047e5"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/national/centre-moves-supreme-court-to-stay-hearings-on-great-nicobar-project/article71525280.ece",
-          "domain": "thehindu.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-29T18:02:32+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "b778c5f419f49756",
-      "title": "There is an abandonware game I loved as a kid called Rescue Raiders.",
+      "cluster_key": "b8875f93bded4cdb",
+      "title": "In all seriousness, this is a startling achievement for GPT-6 Astra.",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "llm",
-        "release"
+        "llm"
       ],
-      "summary": "There is an abandonware game I loved as a kid called Rescue Raiders. I asked Claude to create a modern & updated version of the game with new graphics, goals, tech trees, etc. It iterated back-and-forth with critic & art agents until I got this. rescue-raiders.netlify.app (Bluesky post by @emollick.bsky.social — 80 likes, 3 reposts)",
+      "summary": "In all seriousness, this is a startling achievement for GPT-6 Astra. (This is GPT-6 Astra beating Nethack on its 3rd try. Nethack is the original roguelike and one of the most famously hard games of all time. I have played a lot, and I've never ascended) (Bluesky post by @emollick.bsky.social — 153 likes, 20 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -1908,7 +1812,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "b778c5f419f49756"
+        "b8875f93bded4cdb"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -1916,396 +1820,140 @@
       "sources": [
         {
           "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mw7g7v3uuc2z",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwcpe6pdic26",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-23T18:56:49.758000+00:00",
+      "published": "2026-09-25T02:18:16.941000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-23 — outside lookback window"
+      "reject_reason": "published 2026-09-25 — outside lookback window"
     },
     {
-      "cluster_key": "faaac3929409b969",
-      "title": "Times Car confirms data breach affecting 6.6 million user accounts",
-      "category": "cyber_attacks",
-      "one_liner": "Times Car suffers a massive data breach exposing personal data and driver's licenses for 6.6 million users.",
+      "cluster_key": "f4998d307a8a2957",
+      "title": "Principled Thoughts for Latent Recursive LLM Systems",
+      "category": "tech_ai",
+      "one_liner": "REST (REpresentation-Supervised Thoughts) improves LLM reasoning accuracy and interpretability by adding representation losses to latent thoughts.",
       "tags": [
-        "dfir",
-        "incident",
-        "privacy"
-      ],
-      "summary": "Japanese car-sharing service Times Car confirmed a data breach affecting approximately 6.6 million current and former members, alongside corporate account program participants. Disclosed on September 25, the unauthorized access occurred at the beginning of September and was blocked on September 26. Exposed data includes full names, physical addresses, dates of birth, telephone numbers, email addresses, driver's license details, identity verification documents, account passwords stored in unrecoverable hashes, and linked service IDs, while credit card information remained unaffected. The company is conducting a forensic investigation with external experts and notifying impacted users in stages.",
-      "key_facts": [
-        "Affected Accounts: 6.6 million",
-        "Disclosure Date: September 25, 2026",
-        "Exposed Data: Full names, addresses, phone numbers, driver's licenses, encrypted passwords"
-      ],
-      "bottom_line": "Large-scale mobility services remain prime targets for extensive personal data theft, exposing millions of driver records and identity documents.",
-      "claims": [
-        {
-          "text": "Japanese car-sharing service Times Car has confirmed that approximately 6.6 million user accounts were compromised in a cyberattack disclosed late last week.",
-          "support_span": "Japanese car-sharing service Times Car has confirmed that approximately 6.6 million user accounts were compromised in a cyberattack targeted approximately 6.6 million user accounts",
-          "status": "contradicted"
-        },
-        {
-          "text": "The company announced the incident on September 25, saying that a third party had accessed its systems at the beginning of the month.",
-          "support_span": "The company announced the incident on September 25, saying that a third party had accessed its systems at the beginning of the month.",
-          "status": "entailed"
-        },
-        {
-          "text": "The company says that the intrusion affects 6.6 million current and former Times Car members, and also current and former members of the Times Business Service corporate account program.",
-          "support_span": "The company says that the intrusion affects 6.6 million current and former Times Car members, and also current and former members of the Times Business Service corporate account program.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "faaac3929409b969"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/times-car-confirms-data-breach-affecting-66-million-user-accounts/",
-          "domain": "bleepingcomputer.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-28T20:31:16+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "049f654015827aa0",
-      "title": "US sanctions 10 entities for allegedly supporting Iran’s military",
-      "category": "india_world",
-      "one_liner": "The US expanded sanctions against international entities aiding Iran's military supply chain under Operation Economic Outcast.",
-      "tags": [
-        "policy",
-        "political",
-        "supply-chain",
-        "threat-intel"
-      ],
-      "summary": "The US Treasury administration added 10 individuals and entities to its global sanctions list under Operation Economic Outcast, targeting alleged weapons procurement networks for the Iranian military. The designations cover technology firms and representatives based in China, Pakistan, Turkey, Saudi Arabia, and Iran, aiming to cut off Tehran's access to global markets and weapons components. Among the targeted companies is Hong Kong-based EC Mojo Technology Co Ltd and Saudi-based Cavalier Dynamics for Technologies Company. The move follows ongoing conflicts involving the US, Israel, and Iran, and comes despite diplomatic talks between Washington and Beijing.",
-      "key_facts": [
-        "Sanctioned entities: 10 individuals and companies",
-        "Operation name: Operation Economic Outcast",
-        "Targeted regions: China, Pakistan, Turkiye, Saudi Arabia, and Iran"
-      ],
-      "bottom_line": "The US Treasury sanctioned 10 global entities across China, Pakistan, Turkey, and Saudi Arabia for allegedly supplying weapons components to Iran's military.",
-      "claims": [
-        {
-          "text": "The US Treasury added 10 individuals and companies to its global sanctions list over alleged ties to the Iranian military.",
-          "support_span": "United States President Donald Trump’s administration has added a group of 10 individuals and companies to its list of global entities being sanctioned over alleged ties to the Iranian military.",
-          "status": "entailed"
-        },
-        {
-          "text": "Targeted entities include Hong Kong-based EC Mojo Technology Co Ltd and Saudi-based Cavalier Dynamics for Technologies Company.",
-          "support_span": "They included the Hong Kong-based company EC Mojo Technology Co Ltd, as well as one of its representatives, Li Fen. ... Another designated firm was Saudi-based Cavalier Dynamics for Technologies Company.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "049f654015827aa0"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/9/29/us-sanctions-10-entities-for-allegedly-supporting-irans-military?traffic_source=rss",
-          "domain": "aljazeera.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-29T20:48:34+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "ac2344f09f08c10d",
-      "title": "RatHat's Evolving C2 Panel Points to Malware-as-a-Service Model",
-      "category": "cyber_attacks",
-      "one_liner": "RatHat's MaaS command-and-control panels use Google Gemini for victim ranking and enable one-click shell deployments.",
-      "tags": [
+        "agents",
         "ai",
-        "android",
         "llm",
-        "malware",
-        "redteam",
-        "threat-actor",
-        "writeup"
+        "research",
+        "tool"
       ],
-      "summary": "Cleafy's research details how the infrastructure supporting the RatHat Android banking trojan transitioned through three generations of C2 panels—rebranded from BlackCat to Panda Workshop—under a malware-as-a-service model with nearly 100 deployments since April 2026. The C2 panels act as malware factories capable of building, signing, scheduling, and publishing applications to evade hash detection, while incorporating 2FA and phishing page builders. Operators utilize wireless debugging access to deploy a Go-based service providing one-click shell control. Furthermore, the panel integrates Google's Gemini AI model to analyze harvested SMS messages to prioritize high-value victims based on estimated bank balances.",
+      "summary": "Large language models reasoning in continuous space via hidden states often suffer from failures under standard Cross-Entropy (CE) training, such as collapsing thoughts across distinct questions and retaining irrelevant information. To resolve these issues, researchers introduce REST (REpresentation-Supervised Thoughts), a training objective that translates four valid thought representation properties—causality, minimality, separability, and stability—into differentiable loss functions added to CE. Implemented across single-agent and multi-agent systems without adding parameters at inference, REST increases task accuracy by up to 7.5 percentage points and answer convergence by 30% across seven benchmarks spanning math, science, and code generation.",
       "key_facts": [
-        "Deployments Observed: Nearly 100 since April 2026",
-        "Rebrand Names: BlackCat, Panda Workshop V5 and V6",
-        "AI Model: Google Gemini"
+        "Method name: REST (REpresentation-Supervised Thoughts)",
+        "Accuracy improvement: Up to 7.5 percentage points",
+        "Convergence improvement: 30%"
       ],
-      "bottom_line": "Malware-as-a-service operators are integrating commercial software features like 2FA and LLM victim valuation into Android banking trojans.",
+      "bottom_line": "REST optimizes latent LLM reasoning spaces by enforcing causality, minimality, separability, and stability, boosting accuracy by up to 7.5%.",
       "claims": [
         {
-          "text": "In research published September 28, Cleafy said the implant had changed little from late 2025 through September 2026, while its C2 panel went through three generations in six months and rebranded from BlackCat to Panda Workshop.",
-          "support_span": "In research published September 28, Cleafy said the implant had changed little from late 2025 through September 2026, while its C2 panel went through three generations in six months and rebranded from BlackCat to Panda Workshop.",
+          "text": "We introduce REST (REpresentation-Supervised Thoughts), a training objective that turns four properties of a valid thought representation into differentiable losses added to CE.",
+          "support_span": "We introduce REST (REpresentation-Supervised Thoughts), a training objective that turns four properties of a valid thought representation (causality, minimality, separability, and stability) into differentiable losses added to CE.",
           "status": "entailed"
         },
         {
-          "text": "Cleafy found that operators could use RatHat's wireless debugging access to deploy a native Go service with a single click from the panel, gaining shell-level control outside the Android application's permission model.",
-          "support_span": "Cleafy found that operators could use RatHat's wireless debugging access to deploy a native Go service with a single click from the panel, gaining shell-level control outside the Android application's permission model.",
+          "text": "REST increases accuracy over CE-only training across agent settings and model sizes by up to 7.5 percentage points and convergence on a final answer by 30%.",
+          "support_span": "Across 7 benchmarks spanning mathematics, science, medicine, and code generation, with the same training data, compute, and latent budget, REST increases accuracy over CE-only training across agent settings and model sizes by up to 7.5 percentage points and convergence on a final answer by 30%.",
           "status": "contradicted"
-        },
-        {
-          "text": "Cleafy found the latest panel used Gemini to analyze SMS messages already collected from infected devices and estimate victims' bank balances.",
-          "support_span": "Cleafy found the latest panel used Gemini to analyze SMS messages already collected from infected devices and estimate victims' bank balances.",
-          "status": "entailed"
         }
       ],
-      "trust_score": 25,
-      "interest_score": 100,
+      "trust_score": 70,
+      "interest_score": 75,
       "corroboration": 1,
       "blend": 58.8,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "ac2344f09f08c10d"
+        "f4998d307a8a2957"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Infosecurity Magazine",
-          "url": "https://www.infosecurity-magazine.com/news/rathat-c2-panel-malware-as-a/",
-          "domain": "infosecurity-magazine.com",
-          "tier": "B"
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2609.36159",
+          "domain": "arxiv.org",
+          "tier": "A"
         }
       ],
-      "primary_links": [],
-      "published": "2026-09-29T14:30:00+00:00",
+      "primary_links": [
+        "https://arxiv.org/abs/2609.36159"
+      ],
+      "published": "2026-09-30T04:00:00+00:00",
       "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 25 / interest 100 / corrob 25",
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
         "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "528bea3d86be9f57",
-      "title": "Externalized CPDAG Summaries Improve LLM Causal Deduction",
-      "category": "tech_ai",
-      "one_liner": "Structured Thinking uses schema-constrained CPDAG summaries to significantly boost LLM causal reasoning performance.",
+      "cluster_key": "d4f5934130fb4dad",
+      "title": "USN-8845-1: GVfs vulnerabilities",
+      "category": "cyber_attacks",
+      "one_liner": "GVfs vulnerabilities on Ubuntu enable SFTP-based code execution and local root privilege escalation via D-Bus socket ownership changes.",
       "tags": [
-        "ai",
-        "llm",
-        "privacy",
-        "research",
-        "tool"
+        "cve",
+        "exploit",
+        "linux",
+        "vulnerability"
       ],
-      "summary": "To address how causal claims hold in DAGs, researchers propose Structured Thinking, a two-turn pipeline that externalizes a typed, schema-constrained CPDAG summary before answering against that graph state. On the Corr2Cause full test, this pipeline raises Qwen3.5-27B from 73.0 to 86.4 F1(Yes) over a PC-instruction baseline. Scrambling the emitted CPDAG costs 12.0 pp F1, and a full-split audit shows close agreement with the reference CPDAG. The findings suggest that externalizing the latent object defining the label and constraining its form significantly improves LLM causal deduction.",
+      "summary": "Ubuntu published a security advisory detailing vulnerabilities in GVfs affecting versions on Ubuntu 22.04 LTS, 24.04 LTS, and 26.04 LTS. A heap buffer overflow vulnerability in SFTP server data validation (CVE-2026-84268) can be exploited to achieve arbitrary code execution or denial of service. Additionally, an improper file ownership handling flaw in private D-Bus socket creation within the admin backend (CVE-2026-88924) allows local attackers to change ownership of arbitrary system files, resulting in root privilege escalation.",
       "key_facts": [
-        "Model evaluated: Qwen3.5-27B",
-        "F1 score improvement: 73.0 to 86.4 F1(Yes)",
-        "Statistical significance: McNemar p=2.4x10^{-6}"
+        "CVE-2026-84268: SFTP heap buffer overflow for code execution/DoS",
+        "CVE-2026-88924: Admin backend D-Bus socket file ownership root escalation",
+        "Affected releases: Ubuntu 22.04 LTS, 24.04 LTS, 26.04 LTS"
       ],
-      "bottom_line": "Externalizing schema-constrained latent objects like CPDAG summaries enables LLMs to perform complex causal deduction far more reliably.",
+      "bottom_line": "Unvalidated SFTP data and insecure D-Bus socket handling in GVfs allow local attackers to achieve root escalation or remote code execution.",
       "claims": [
         {
-          "text": "On the Corr2Cause full test, Structured Thinking raises Qwen3.5-27B from 73.0 to 86.4 F1(Yes) over a strong PC-instruction baseline in the primary paired run (+13.4 pp; McNemar p=2.4\\times 10^{-6}; bootstrap 95% CI [+8.4, +18.6]).",
-          "support_span": "On the Corr2Cause full test, Structured Thinking raises Qwen3.5-27B from $73.0$ to $86.4$ $F_1$(Yes) over a strong PC-instruction baseline in the primary paired run ($+13.4$ pp; McNemar $p=2.4\times 10^{-6}$; bootstrap $95$%\n CI [$+8.4$, $+18.6$])",
+          "text": "A local attacker could possibly use this issue to change the ownership of arbitrary system files, resulting in privilege escalation to root. (CVE-2026-88924)",
+          "support_span": "A local attacker could possibly use this issue to change the ownership of arbitrary system files, resulting in privilege escalation to root. (CVE-2026-88924)",
           "status": "contradicted"
         }
       ],
       "trust_score": 70,
-      "interest_score": 50,
+      "interest_score": 75,
       "corroboration": 1,
-      "blend": 47.5,
+      "blend": 58.8,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "528bea3d86be9f57"
+        "d4f5934130fb4dad"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.31071",
-          "domain": "arxiv.org",
+          "name": "Ubuntu USN",
+          "url": "https://ubuntu.com/security/notices/USN-8845-1",
+          "domain": "ubuntu.com",
           "tier": "A"
         }
       ],
       "primary_links": [
-        "https://arxiv.org/abs/2609.31071"
+        "https://ubuntu.com/security/notices/USN-8845-1"
       ],
-      "published": "2026-09-29T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 3/5 from cache",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "d2d497e5eee41848",
-      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-      "category": "tech_ai",
-      "one_liner": "Proaction uses OpenAI's Codex to automate custom software demo creation, saving engineering hours and boosting sales conversion.",
-      "tags": [
-        "ai",
-        "llm",
-        "tool"
-      ],
-      "summary": "Fleet management software provider Proaction integrated OpenAI's Codex to empower non-technical sales staff to generate customized, interactive product demos directly from customer call recordings and spreadsheets. COO Colin Knudsen uses Codex to build 4 to 6 tailored HTML demo environments per month, each taking under 45 minutes and saving roughly 40 to 60 hours of engineering labor. The custom implementations with prospect data increased deal progression from initial contact into solution development by 60%.",
-      "key_facts": [
-        "Engineering hours saved: 40 to 60 hours per month",
-        "Founder hours saved: 33 hours per month",
-        "Sales increase: 60%",
-        "Time per demo: 30 to 45 minutes"
-      ],
-      "bottom_line": "Non-technical sales teams can use Codex to auto-generate customized software demos from customer data, drastically reducing engineering overhead and closing deals faster.",
-      "claims": [
-        {
-          "text": "Proaction builds software for businesses that manage fleets of vehicles, from cars and trucks to construction machinery.",
-          "support_span": "Proaction builds software for businesses that manage fleets of vehicles, from cars and trucks to construction machinery.",
-          "status": "contradicted"
-        },
-        {
-          "text": "Colin creates four to six customized, interactive demos a month, with each taking 30 to 45 minutes to build.",
-          "support_span": "Colin creates four to six customized, interactive demos a month, with each taking 30 to 45 minutes to build.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "d2d497e5eee41848"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "OpenAI Blog",
-          "url": "https://openai.com/index/proaction",
-          "domain": "openai.com",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://openai.com/index/proaction"
-      ],
-      "published": "2026-09-25T19:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 3/5 from cache",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "f906814c00dcda1f",
-      "title": "Pretrained ASR Pseudo-labeling for Noisy Police Audio",
-      "category": "tech_ai",
-      "one_liner": "An LLM-as-a-judge filtering paradigm improves ASR pseudo-labeling performance on noisy police communications data.",
-      "tags": [
-        "ai",
-        "llm",
-        "privacy",
-        "research",
-        "tool"
-      ],
-      "summary": "This work assesses pseudo-labeling for adapting foundation ASR models (Whisper and Qwen3-ASR) to noisy Broadcast Police Communication corpora from Baltimore and Chicago. The authors find internal confidence metrics inadequate for filtering noisy transcripts and introduce an external LLM-as-a-judge filtering paradigm to reduce word error rates.",
-      "key_facts": [
-        "Models assessed: Whisper, Qwen3-ASR",
-        "Corpora: Baltimore and Chicago BPC"
-      ],
-      "bottom_line": "External LLM judges effectively filter noisy ASR pseudo-labels where internal confidence scores fail.",
-      "claims": [
-        {
-          "text": "We systematically assess the opportunities and limits of pseudo-labeling to adapt foundation ASR models to noisy BPC domain corpora from Baltimore and Chicago.",
-          "support_span": "In this work, we systematically assess the opportunities and limits of pseudo-labeling to adapt foundation ASR models (Whisper and Qwen3-ASR) to noisy BPC domain corpora from Baltimore and Chicago.",
-          "status": "entailed"
-        },
-        {
-          "text": "We introduce an external LLM-as-a-judge filtering paradigm that leverages parametric knowledge to discard contextually implausible transcripts.",
-          "support_span": "We demonstrate that existing internal confidence metrics fail to distinguish between high and low quality BPC pseudo-labels, and we introduce an external LLM-as-a-judge filtering paradigm that leverages parametric knowledge to discard contextually implausible transcripts.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "f906814c00dcda1f"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2609.30469",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2609.30469"
-      ],
-      "published": "2026-09-29T04:00:00+00:00",
+      "published": "2026-09-30T15:54:56+00:00",
       "trace": [
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
         "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     }
