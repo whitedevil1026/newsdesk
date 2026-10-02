@@ -824,6 +824,41 @@ class TestConsoleEncodingIsSafeFromAnyEntryPoint:
             "⚠️ 腾讯 قال".encode(enc or "utf-8")
 
 
+class TestExtractionDoesNotParseConcurrently:
+    """trafilatura parses through lxml, which is libxml2 — a C extension.
+    Running it across eight threads aborted the interpreter outright on the
+    GitHub runner:
+
+        fetching 700 article bodies, 428 kept as blurbs
+        double free or corruption (out)
+        2351 Aborted (core dumped) python run.py --quiet
+
+    A glibc heap abort, not a Python exception, so nothing upstream could
+    catch it and the whole run died at stage 3. It survived weeks at a
+    220-item cap and failed the first night the cap was 700 — more work per
+    run, same latent race, suddenly reached."""
+
+    def test_only_the_download_is_submitted_to_the_pool(self):
+        import inspect
+        from pipeline import s3_extract
+        src = inspect.getsource(s3_extract.run)
+        code = " ".join(l.split("#")[0] for l in src.splitlines())
+        assert "pool.submit(_download" in code, (
+            "the thread pool must carry the network fetch")
+        assert "pool.submit(_extract" not in code and                "pool.submit(_parse" not in code, (
+            "lxml parsing is back inside the thread pool")
+
+    def test_download_and_parse_are_separate_functions(self):
+        from pipeline import s3_extract
+        assert hasattr(s3_extract, "_download")
+        assert hasattr(s3_extract, "_parse")
+
+    def test_a_bad_page_does_not_stop_the_stage(self):
+        """A parse failure is one lost body, not a lost run."""
+        from pipeline import s3_extract
+        assert s3_extract._parse("") == ""
+
+
 class TestNoSecretsInRepo:
     def test_env_is_gitignored(self):
         """A key reaching a git remote is the one unrecoverable mistake here."""

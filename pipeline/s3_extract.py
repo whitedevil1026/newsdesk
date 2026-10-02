@@ -21,7 +21,8 @@ except ImportError:                     # pipeline must survive without it
     AVAILABLE = False
 
 
-def _extract(url: str, timeout: int) -> str:
+def _download(url: str, timeout: int) -> str:
+    """Fetch the raw HTML. Safe to run concurrently — this is network I/O."""
     # Article links come from feeds, so they are untrusted input. trafilatura
     # happens to reject file:// today, but relying on a third-party library's
     # incidental behaviour for a security property is not a control.
@@ -29,12 +30,33 @@ def _extract(url: str, timeout: int) -> str:
     if reason:
         log("extract", f"! refusing {url[:52]}: {reason}")
         return ""
+    return trafilatura.fetch_url(url) or ""
 
-    downloaded = trafilatura.fetch_url(url)
-    if not downloaded:
+
+def _parse(html: str) -> str:
+    """Pull the article text out. MUST NOT run concurrently.
+
+    trafilatura parses through lxml, which is libxml2 — a C extension. Running
+    it across eight threads aborted the process outright:
+
+        fetching 700 article bodies, 428 kept as blurbs
+        double free or corruption (out)
+        2351 Aborted (core dumped) python run.py --quiet
+
+    That is a glibc heap abort, not a Python exception, so nothing upstream
+    could catch it and the whole run died at stage 3. It survived for weeks at
+    a 220-item cap and started failing the first night the cap was 700, which
+    is what a concurrency race looks like: more work per run, same bug, and
+    suddenly it is reached.
+
+    The pool exists for network latency, not for CPU, so the fetch stays
+    parallel and the parse comes back to the main thread. Costs a few seconds
+    of wall clock and removes the race completely.
+    """
+    if not html:
         return ""
     return trafilatura.extract(
-        downloaded,
+        html,
         include_comments=False,
         include_tables=False,
         favor_precision=True,
@@ -86,14 +108,20 @@ def run(clusters: list[Cluster], lead_only: bool = True) -> list[Cluster]:
     log("extract", f"fetching {len(targets)} article bodies"
                    + (f", {len(skipped)} kept as blurbs" if skipped else ""))
     ok = 0
+    # Download in parallel, parse in series. See _parse for why.
     with ThreadPoolExecutor(max_workers=8) as pool:
-        futures = {pool.submit(_extract, a.url, timeout): a for a in targets}
+        futures = {pool.submit(_download, a.url, timeout): a for a in targets}
         for fut in as_completed(futures):
             art = futures[fut]
             try:
-                body = fut.result()
+                html = fut.result()
             except Exception as exc:
                 log("extract", f"! {art.domain}: {exc}")
+                html = ""
+            try:
+                body = _parse(html)
+            except Exception as exc:                 # a bad page is not fatal
+                log("extract", f"! parse {art.domain}: {str(exc)[:70]}")
                 body = ""
             art.body = body or art.summary_raw
             ok += bool(body)
