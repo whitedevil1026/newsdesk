@@ -1,6 +1,609 @@
 {
-  "generated_at": "2026-10-03T01:18:12.529251+00:00",
+  "generated_at": "2026-10-04T00:43:10.155379+00:00",
   "items": [
+    {
+      "cluster_key": "65216355efd0ae6f",
+      "title": "CVE-2026-97644 - Groundhogg <= 4.9 - Authenticated (Sales Person+) Privilege Escalation via Contact Identity Rebinding leading to Administrator Account Takeover to 'user_id' Parameter (v3 /contacts) chained with v4 /emails/test",
+      "category": "cyber_attacks",
+      "one_liner": "Groundhogg plugin up to version 4.9 suffers from an authenticated privilege escalation vulnerability leading to admin takeover.",
+      "tags": [
+        "appsec",
+        "cve",
+        "exploit",
+        "release",
+        "vulnerability"
+      ],
+      "summary": "CVE-2026-97644 is a privilege escalation vulnerability in the Groundhogg CRM plugin for WordPress affecting versions up to 4.9. The flaw exists because the `create_contact` function in the v3 REST endpoint fails to enforce ownership guards when passing the security-bearing `user_id` column into the database upsert path. Authenticated attackers with Sales Representative privileges can rebind their contact record to an administrator user ID and chain this with the v4 email-test endpoint to generate an auto-login URL. Consuming this link allows the attacker to call `wp_set_auth_cookie()` and achieve full administrator account takeover.",
+      "key_facts": [
+        "CVE ID: CVE-2026-97644",
+        "Affected product: Groundhogg <= 4.9",
+        "Vulnerability type: Privilege Escalation"
+      ],
+      "bottom_line": "Sales Representative accounts on WordPress sites running Groundhogg <= 4.9 can escalate privileges to full Administrator.",
+      "claims": [
+        {
+          "text": "CVE-2026-97644 - Groundhogg <= 4.9 - Authenticated (Sales Person+) Privilege Escalation via Contact Identity Rebinding leading to Administrator Account Takeover to 'user_id' Parameter (v3 /contacts) chained with v4 /emails/test",
+          "support_span": "CVE-2026-97644 - Groundhogg <= 4.9 - Authenticated (Sales Person+) Privilege Escalation via Contact Identity Rebinding leading to Administrator Account Takeover to 'user_id' Parameter (v3 /contacts) chained with v4 /emails/test",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 62.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "65216355efd0ae6f",
+        "8f6dd92c4d73750f"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-97644",
+          "domain": "cvefeed.io",
+          "tier": "A"
+        },
+        {
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-18443",
+          "domain": "cvefeed.io",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-03T04:18:04+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 62 = trust 40 / interest 100 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "14894d63c0eb4a5a",
+      "title": "CVE-2026-101923 - Photo Reviews for WooCommerce <= 1.2.30 - Missing Authorization to Unauthenticated Arbitrary Post Deletion via 'wcpr_image_upload_id' Parameter",
+      "category": "cyber_attacks",
+      "one_liner": "Photo Reviews for WooCommerce <= 1.2.30 allows unauthenticated attackers to delete arbitrary site posts.",
+      "tags": [
+        "appsec",
+        "cve",
+        "vulnerability"
+      ],
+      "summary": "CVE-2026-101923 is a missing authorization vulnerability in the Photo Reviews for WooCommerce plugin for WordPress for versions up to 1.2.30. The flaw allows unauthenticated attackers to supply arbitrary post IDs via the wcpr_image_upload_id parameter during public review submissions, which are stored without ownership verification in comment meta. When an administrator subsequently deletes the review or when WordPress cron empties the trash, the plugin's deletion handler executes wp_delete_post() on the stored IDs. This results in the permanent deletion of arbitrary posts, pages, products, or media attachments on the site.",
+      "key_facts": [
+        "CVE ID: CVE-2026-101923",
+        "Affected product: Photo Reviews for WooCommerce <= 1.2.30",
+        "Vulnerability type: Missing Authorization / Arbitrary Content Deletion"
+      ],
+      "bottom_line": "Unauthenticated attackers can abuse review submission parameters in vulnerable WooCommerce plugins to trigger arbitrary post deletions.",
+      "claims": [
+        {
+          "text": "CVE-2026-101923 - Photo Reviews for WooCommerce <= 1.2.30 - Missing Authorization to Unauthenticated Arbitrary Post Deletion via 'wcpr_image_upload_id' Parameter",
+          "support_span": "CVE-2026-101923 - Photo Reviews for WooCommerce <= 1.2.30 - Missing Authorization to Unauthenticated Arbitrary Post Deletion via 'wcpr_image_upload_id' Parameter",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 62.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "14894d63c0eb4a5a",
+        "240f5e1bf480050f",
+        "d1478d26da06f88c",
+        "f9d61143eab43ebb"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-101923",
+          "domain": "cvefeed.io",
+          "tier": "A"
+        },
+        {
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-94505",
+          "domain": "cvefeed.io",
+          "tier": "A"
+        },
+        {
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-87115",
+          "domain": "cvefeed.io",
+          "tier": "A"
+        },
+        {
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-105080",
+          "domain": "cvefeed.io",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-03T01:17:23+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 62 = trust 40 / interest 100 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "01ea0d52f168c3f7",
+      "title": "Cisco Catalyst SD-WAN Manager API Authentication Bypass Vulnerability",
+      "category": "cyber_attacks",
+      "one_liner": "Apple's September 2026 security release patches 273 CVEs, including a CISA KEV screen sharing flaw under active exploit.",
+      "tags": [
+        "cve",
+        "exploit",
+        "network",
+        "policy",
+        "release",
+        "vulnerability"
+      ],
+      "summary": "Apple released patches for 273 unique CVEs across macOS, iOS, iPadOS, visionOS, watchOS, tvOS, Safari, and Xcode in September 2026. Standout vulnerabilities include CVE-2026-65400, a 9.8 critical Screen Sharing Server bug confirmed by CISA to be under active exploitation, which allows a network attacker to authenticate without valid credentials or user interaction. The flaw was originally patched in August and relisted as updated versions rolled out fixes.",
+      "key_facts": [
+        "CVE count: 273 unique CVEs",
+        "CVE-2026-65400: CVSS 9.8, actively exploited Screen Sharing Server flaw"
+      ],
+      "bottom_line": "Systems running vulnerable Apple software must be updated immediately to mitigate CVE-2026-65400, a critical zero-interaction remote flaw actively exploited in the wild.",
+      "claims": [
+        {
+          "text": "For the September 2026 release, Apple released 273 unique CVEs across macOS 27 (Golden Gate), macOS Sequoia 15.8, macOS Tahoe 26.7, iOS / iPadOS 27, visionOS 27, watchOS 27, tvOS 27, iOS / iPadOS 26.7, Safari 27, and Xcode 27.",
+          "support_span": "For the September 2026 release, Apple released 273 unique CVEs across macOS 27 (Golden Gate), macOS Sequoia 15.8, macOS Tahoe 26.7, iOS / iPadOS 27, visionOS 27, watchOS 27, tvOS 27, iOS / iPadOS 26.7, Safari 27, and Xcode 27.",
+          "status": "contradicted"
+        },
+        {
+          "text": "CVE-2026-65400 — Screen Sharing Server (9.8 CRITICAL, ⚠ CISA KEV) . This bug is confirmed by CISA to be actively exploited.",
+          "support_span": "CVE-2026-65400 — Screen Sharing Server (9.8 CRITICAL, ⚠ CISA KEV) . This bug is confirmed by CISA to be actively exploited.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 100,
+      "interest_score": 100,
+      "corroboration": 13,
+      "blend": 100.0,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "01ea0d52f168c3f7",
+        "023d3bd10a125d47",
+        "080617714f3d981a",
+        "08e1c8e64ea02763",
+        "0c1c37160e8b21df",
+        "0d22919b89e55cbe",
+        "14dad0907ce8709b",
+        "1a1512c86f75798e",
+        "1d408957140f38f6",
+        "1e694e307789cd12",
+        "212f20528c4deae6",
+        "21a70b25348e1428",
+        "26232adab8d48f40",
+        "295fc7c3e1e380d1",
+        "31db54260bd2f67f",
+        "3b9d711b091556e6",
+        "41dab25e04324b75",
+        "431f4db45c18c4d6",
+        "44b9df3ade8cf29b",
+        "462a048a4f012aa2",
+        "555a0e00683b0377",
+        "5d2205873d0cf792",
+        "5da2a0c8ed547e74",
+        "6d6c73db7556890b",
+        "863db23fdaeba1f0",
+        "8b0fa73bd1f07fd8",
+        "8e4b06fa1be69482",
+        "92b0878b9d07e0de",
+        "952c95299b531fd9",
+        "9a7a5afea589e446",
+        "9cdc062cbd100e8c",
+        "9e1b43f7fa9f5c39",
+        "ace4b8b50963f026",
+        "b19e5c1fffddd04f",
+        "b665d630ad23a25b",
+        "c236996266650a74",
+        "c30a1726d4f703a1",
+        "cd47689fb28f8e84",
+        "d10e7e123664be44",
+        "d5e1d70e2e179c52",
+        "da734e5832a6e340",
+        "dd7983abf6578523",
+        "e24d8f89374a5d28",
+        "e63e4da6b1632f0c",
+        "e7945278fd542cf1",
+        "eaf927d5a14cd0d7",
+        "ebe94ba7dbfa477a"
+      ],
+      "critical_signal": "actively exploited",
+      "priority": "critical",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitLab Security",
+          "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-1-released/",
+          "domain": "docs.gitlab.com",
+          "tier": "A"
+        },
+        {
+          "name": "GitLab Security",
+          "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-3-2-released/",
+          "domain": "docs.gitlab.com",
+          "tier": "A"
+        },
+        {
+          "name": "GitLab Security",
+          "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-0-9-released/",
+          "domain": "docs.gitlab.com",
+          "tier": "A"
+        },
+        {
+          "name": "Cisco PSIRT",
+          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-webauth-xr8beuuU?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Catalyst%20SD-WAN%20Manager%20API%20Authentication%20Bypass%20Vulnerability%26vs_k=1",
+          "domain": "sec.cloudapps.cisco.com",
+          "tier": "A"
+        },
+        {
+          "name": "ZDI Blog",
+          "url": "https://www.thezdi.com/blog/2026/9/16/the-apple-security-update-review-for-september-2026",
+          "domain": "thezdi.com",
+          "tier": "A"
+        },
+        {
+          "name": "ZDI Blog",
+          "url": "https://www.thezdi.com/blog/2026/9/8/the-september-2026-security-update-review",
+          "domain": "thezdi.com",
+          "tier": "A"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
+          "domain": "bleepingcomputer.com",
+          "tier": "B"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-critical-rce-vulnerability-in-ai-gateway-service/",
+          "domain": "bleepingcomputer.com",
+          "tier": "B"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/the-day-one-hole-in-zero-trust-architecture/",
+          "domain": "bleepingcomputer.com",
+          "tier": "B"
+        },
+        {
+          "name": "Help Net Security",
+          "url": "https://www.helpnetsecurity.com/2026/10/02/fortinet-fortimail-vulnerability-cve-2026-104286/",
+          "domain": "helpnetsecurity.com",
+          "tier": "B"
+        },
+        {
+          "name": "Infosecurity Magazine",
+          "url": "https://www.infosecurity-magazine.com/news/critical-cisco-catalyst-sdwan/",
+          "domain": "infosecurity-magazine.com",
+          "tier": "B"
+        },
+        {
+          "name": "Infosecurity Magazine",
+          "url": "https://www.infosecurity-magazine.com/news/apple-patches-coregraphics-zero/",
+          "domain": "infosecurity-magazine.com",
+          "tier": "B"
+        },
+        {
+          "name": "Security Affairs",
+          "url": "https://securityaffairs.com/200152/security/u-s-cisa-adds-cisco-catalyst-sd-wan-manager-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+          "domain": "securityaffairs.com",
+          "tier": "B"
+        },
+        {
+          "name": "Security Affairs",
+          "url": "https://securityaffairs.com/200248/security/u-s-cisa-adds-zammad-gmbh-zammad-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+          "domain": "securityaffairs.com",
+          "tier": "B"
+        },
+        {
+          "name": "Security Affairs",
+          "url": "https://securityaffairs.com/200224/security/u-s-cisa-adds-fortinet-fortimail-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+          "domain": "securityaffairs.com",
+          "tier": "B"
+        },
+        {
+          "name": "Security Affairs",
+          "url": "https://securityaffairs.com/200175/hacking/public-poc-released-for-apple-coregraphics-zero-day-cve-2026-86950.html",
+          "domain": "securityaffairs.com",
+          "tier": "B"
+        },
+        {
+          "name": "Security Affairs",
+          "url": "https://securityaffairs.com/200283/hacking/cve-2026-90970-critical-gitlab-ai-gateway-flaw-fixed.html",
+          "domain": "securityaffairs.com",
+          "tier": "B"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/",
+          "domain": "securityweek.com",
+          "tier": "B"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://www.securityweek.com/fortra-patches-critical-vulnerabilities-in-boks/",
+          "domain": "securityweek.com",
+          "tier": "B"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
+          "domain": "thehackernews.com",
+          "tier": "B"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
+          "domain": "thehackernews.com",
+          "tier": "B"
+        },
+        {
+          "name": "The Register Security",
+          "url": "https://www.theregister.com/security/2026/10/02/fortinet-sounds-the-alarm-over-actively-exploited-fortimail-zero-day/5300803",
+          "domain": "theregister.com",
+          "tier": "B"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/streaming/1004300/sling-tv-pass-cable-drops",
+          "domain": "theverge.com",
+          "tier": "B"
+        },
+        {
+          "name": "CTI Now",
+          "url": "https://ift.tt/k3S6lsA",
+          "domain": "ift.tt",
+          "tier": "C"
+        },
+        {
+          "name": "CTI Now",
+          "url": "https://ift.tt/fKqi5r2",
+          "domain": "ift.tt",
+          "tier": "C"
+        },
+        {
+          "name": "bankinfosecurity.com",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOY2plYVpTMm10blhCTmdXYmxqLW5JYThtVUJNcDNvRFVYcDRvc3lTLWRBdzhQUWpOSWpKeHJ4aENGeVpnMDBwaFlubWx2NGdxNk4yWldQRXZqUGt4ekpFTXN0Vl9TUFdfZ1VSR0FTS0VVdzM5ZmU0eHI0NllmUUphMzduaVVnb3VYc0lhSUl6VQ?oc=5",
+          "domain": "bankinfosecurity-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcjlDNDdTemhQMWVTbkh1TlNHS2ZEdWd2VXkwSEJmMG9SemlvSTFkcXM5NmdPSWVJelpHcVc4UXA3MUZCZEpGUDJCQnZySzJRcFdOdENuUkZTRmYwM3ZjRVdET0pLTllES0czcmppQmZUdm1SSEk3VGNZcGdQQkJKem1adlp6aE0zUGJ0NWxNYkZqWlJHdnY5YVZWckZSOUZCM09aV1NBREluWW9MLTN0RnFDTlprdlJ1bjhv0gHAAUFVX3lxTE5LTTVMbUhabngzWTNvbkMxcURiYkRiNmxzZ0FjQjFncmc5ajE3Zmk3clNCaGItQnF3MnBBZzZjejhiSVdUdmFrUU8yLXdTekRvRnVoeVhxcFhpcV9qWUFkX1NaOXNCc3RmbUNRQndiSlM2eUJpM1A4QU1IV2lpVkc0Wk1VdmNYYS1pdGVQMXpYQkFvYm1Ndy1RZEVzZG93MlBCVk94SDl2SUdUZ0N0bXpTN0ZCdGtPUmI4ZWE0anVNVw?oc=5",
+          "domain": "bleepingcomputer.com",
+          "tier": "C"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQMFBqem9zRGxadEhKNFV2Vkc3a1NpOTRTWnVyU1Yxako5UFJ1ZWYta25OUTVENkJVMjltRHFXamxmQnAtRmZDX1VoZVpkNWVFV2h1Qmk1bFBod0hubFdXYzBxNnFtT09MalpONnNMdDNNbmJmc1Z4b1ZJMnNCdEQ4S1FIeW56OF9ZdmF5d3pCSkY1RmpjUUtROFFxbXo3OV94NmZTX2hGQWZUeWJaVVRqQ2NJQVFGZ2tXNmZFbXNKVFNiaEHSAcgBQVVfeXFMTkcwN2wzalJxWVN6Z3BBaXRCTDNwc3BqekZSVnJnODFxVGd2SzNjSG5vNzRHek5TSF9VcEJNRjRTMzZFU3ZlVFQtMVNsMVNsTlhUeGZPTFE4YkVVYVhpS1lkcmkzVEdMZkxEbjZGdXlxQjVscmRkek1haG4xRUZvckx0cnJCQjlndVRsZUVQSnNnUlFacVZ5dF9odWx4WnAtT0x0dGFvNk4wOWNieUxxYVVaVHRQT2FwQTFrdlZBVTFLWE45Q3VoeHM?oc=5",
+          "domain": "bleepingcomputer.com",
+          "tier": "C"
+        },
+        {
+          "name": "CCB Belgium",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNnM1OEpITmlpLUd3Wk5WVGp3T3Z4ajJIajE1WWl0cTFaV3c4YmN5dE53eHdoYlRVdzhJcFhkVkZRa3FFNm83RDJkQzdnSG5wVmQwLXpia2UtQVE4YWtmdl9PTldSZDVsUlFHajM3ZTYzQ2JMZ2FJUXFwNXhSVDJYZUhvSTBWd1A0MWZaN19YR3BFcGtMX0NnMXJSSHhJSTd5aXFOeA?oc=5",
+          "domain": "ccb-belgium.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "CyberInsider",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPN2NpQVN3WmxJSy1icG1kWUhCaTg4a2FSYlRfY2ZqYmxhazBUei1VTUdTR2N6c2lrMS1wa2NDdVNHc1VYeWZ2c0dRSDEzb1BBT29yaUNNYkx4VFNsa0p4LS0zR09TeHFRdnp2MWRLTmZRVnhtREpFR3dmTUxKU2hINkJiT0RRTFVieTJUWFl0THhnYm5Mb2JzMXVMNmE4VGM?oc=5",
+          "domain": "cyberinsider.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "cybersecuritynews.com",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9iYXlDQ3dhWXpjVm9CYS1NU1lnd1RreG5NZldpSGpkdF9EVC1rMER2TzkzYUFxeEQzSjEycGZQQkZldkNkLUhPSDhmV2xfTTBram0yT1NoNGZPMjN1Mnd6Z0hiQlo2bEdTZ3h0TTYxNNIBdEFVX3lxTE5kZ0ZnRkpPaFJxZ3RURVJJTEVwWk11eVQza1NyYldVZk9oZkdpcmZUYk1fa243VWw0NXAxRmRMbTVSOXUxZ1JBU0dmZm40MVZqTFFGRTBqOFphaG80VU00MVR4ckViTjhDeE5QNVZtY3M3TkJB?oc=5",
+          "domain": "cybersecuritynews-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "cybersecuritynews.com",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1hSlN5dFpUYUdvSWJaZVVWRHZCSUR3eHhzd2ZmbTh6NXBCZTRGcXBMX1hYbXVndHAxc3Z4ZVVJNnUxRGZOWWtMMEhaYVJpRE9jX1JtZ1IzNEVQNHc0RzNNNUlVRWpNMFZHak1fbXBRQWcxMWw5UURyc3lR0gF_QVVfeXFMT1hzeW9qYnNWRGNOQlFsN2dnMlg4ZHo0U3ZjU01GTlRjWUhLUlRqeFlSTmJUeFk5TmdIZEJMQk9nLWxEc1Q3bk9CUGIwcHhGUDNpVndNZ2dMa1JrOGdjTVdoRkNvZjdZVEVVWE4ySC1sYVZienNoX3paS1UwUk5KOA?oc=5",
+          "domain": "cybersecuritynews-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Field Effect",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9tR1VVbVZxVVF5cW1BQkw1RmRMeDZUWlNZb1BQYmRTeE9iUlo1SGk1STVhV1h2N29aQ19TX2F0LWVNRmlRNi11SEFNQTEwLWtUVFBOcGUwZnI0NXowWWJ3djFuRjVpN3g5NjIxX1VuZlc?oc=5",
+          "domain": "field-effect.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Help Net Security",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRkp6UGNwVkdZUU9NekRra2JqdnFoYlZ3TkpNMllLUWRHV3ZzSi1YNXgzUDZXaC00bXdCVE1maTUzakl3aWJKWHlqSkFZRTJDX1hMY1VhY2lfTG5KR1VPUHkxV213eWc2YVdxTWVFbXhnZV8xYmh0NzYtcTlWYmc5LXRpZ3NBd1VFeW5iRG5pX1lNR012RkNB?oc=5",
+          "domain": "helpnetsecurity.com",
+          "tier": "C"
+        },
+        {
+          "name": "Help Net Security",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNejJ6Q2ZSdEJ0RkdWRGpRczBmRUk4ajhfanFYbW9HN1BwYVhRZVdhdEJMdDlVZy1PZ2REdVBUb01JTmVBdE80MzItSG56aEhfaUxoaFoxVFliVmVmNkt0VERycFdMY3pvcG5jbXZWV09STkp5ZG1ONXFfTEFGbHZUQWNsamY3ci12cnFGSFdOaFgxZ0Z1eUo2bV9ZSTVZOVcyZWVpNzhjbDBHdw?oc=5",
+          "domain": "helpnetsecurity.com",
+          "tier": "C"
+        },
+        {
+          "name": "Infosecurity Magazine",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBkVDh4M3dxY2E4NDJwZzZZUHJQcllfZjUxeVhNMTdfYUhWLVRyM3BkNEpFQUVJb0lqYURKcmc3bUhwcG5FazZ2emhpWThqQTgwZVFrZk1yMDdQVzN5cl8xd0NjWTlEMWNOTUhpbWVSNTdJUFNiUVJpelltLWdBQQ?oc=5",
+          "domain": "infosecurity-magazine.com",
+          "tier": "C"
+        },
+        {
+          "name": "macobserver.com",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQVi1uWXFKU09LVTZsSjVFS1dTTld0eFBDaS1HRU0yZWttSXVIb3psSG83OFl1TmhJU1NfMm8xd1JGdE5OaDctbS05U2Z0NlFfVVJNQ18waHY2a2ozbmdPSHB4RWJIYlJtWkxwM3Q1MGFVNWRnbFZ4ZnJmaVNYaldUZnRBeUxDMVNfcS05Mi12WENTWUl3WUNDeUt3?oc=5",
+          "domain": "macobserver-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "SC Media",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTGZiVFdyMVR2TGZnTkZtcEd5WFdLdWktV01sS3dkNk9vbkRuNDVuVUVweWNVbUJnWVNzVHNLZGxxRnIyc0k4bEFoZ2JYb21zZXAxVzQ2ZDI4SWs4N1IzR1J6TE1WOUNrbzJpUnVodWxmVnBrNi01UHZFelpDX3FUZVUyRXBYX1BURk5ETzVUNngwMnM?oc=5",
+          "domain": "sc-media.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "SecNews.gr",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5ZY21RQ3VSLU9XVEppQ015T0xuZExZcXp2b3NTRTZvcXRkSGdEMGF4Y0tsMVhtdzRwLUxtUTY1WHV2aEt1dEFHcVdsSkh4V3I3LTdPNUJTV0QtTThCeEx2d2lxZlN2em8tNzlkUUpuVVZIWHVocGtn?oc=5",
+          "domain": "secnews-gr.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Security Affairs",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQbHNQVGFHWTJSb1BNdXpYWm9CVWpXOXpBNnYzdTY0bk5NWTJJNUNNRXdEa0JkMVJmbjlvd2VGcXlVMU1PTUYwNHVoSXVPSEJzZk5wUURiVmJHOWl3anROQnBmME12NGZZa3hSaWc2M1VWNUtMNDdFMi0zb1M0MGpYVEdpTzJLejBEc1NOOXRRbm16QnRlVTRfYnhfQUlDN0dzZENIZWZiSUhjZmstNDEwMW9nOEFRVXBuQzZaQkc3enFyaWFyUUpVQVRwcEJHOWxZWnd5eS1ScHMwcGpTQ296LXBB0gHiAUFVX3lxTFBsc1BUYUdZMlJvUE11elhab0JValc5ekE2djN1NjRuTk1ZMkk1Q01Fd0RrQmQxUmZuOW93ZUZxeVUxTU9NRjA0dWhJdU9IQnNmTnBRRGJWYkc5aXdqdE5CcGYwTXY0ZllreFJpZzYzVVY1S0w0N0UyLTNvUzQwalhUR2lPMkt6MERzU045dFFubXpCdGVVNF9ieF9BSUM3R3NkQ0hlZmJJSGNmay00MTAxb2c4QVFVcG5DNlpCRzd6cXJpYXJRSlVBVHBwQkc5bFlad3l5LVJwczBwalNDb3otcEE?oc=5",
+          "domain": "security-affairs.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Security Affairs",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaVM5MzlBd3NIZTZfVDlaTDBUempIYjV0YlBfd1hsRG5nZURnc0RUUjVjQktURTlSbFVycm1nR1otZ2lzYmhjUklFVmdfam9WNlVpbDMyRVkyS2dDODdTWTJpZTM3QlctZXBUQ2RsUmZjUHdkenk3YjBRczJNQkdEdGpIZnZxU3NfVHFpZ0JOVzM2TWpTMkltWUZvYjFhX2FtVVV2cWRkVEdzamNyNWQ3WE5KQljSAboBQVVfeXFMTlBYUUdnLUVJU0VrUU5IWVQ1YWMzTkRVOWFmVHB2UXpMT2R4eVhlazFhd1EzQ3ZMUmFlVzM1T0NiM0JEdzc5dDE0VnQ0QVBqSlFrc3VoSVo4TkljQmkydG1EWWRxbE1DMGdFblUtdHBORjNQUjBDN2hvT0hkS1pTSno4dkEwYUFvX2F4MGhmVUl6RndxdWdoTFJxc3doX3dLcDd3cHhsVDF2SVBUNmplWVRid3RMSURscnln?oc=5",
+          "domain": "security-affairs.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcUpXOGEzMFprR2VsdUpOczdXM2hrUGRvUV9XOC14R1BGTk9rbnlGMDVWMzRHamUyVFVzMXhrWmJlM2pTRVVzWW51a0tTS2dKaHE4azVfT01iallUZEFCRThmd2ttbUw3WUVaUWRoeU8xZ3JBMG4xdExnZjJhMHVlMU5aU0haaWRVcF9IZ3RQeHJKdzVrYWoxVnFGWGVSM1hY0gGmAUFVX3lxTE9qUFNYZzBSUkZMRzRhSmZYTXl1VnFza1Iwam1HbzZUb1preFNzOV9SWjFjRDBZcWszSWJkRmFIZXk1aW9kNE8tMlZVZ2FsZWZsb0dvR0xMRUNsN1o1THFQQjlmTHNKWVIyQlQwQllJanRXb3d4SWpTSmVlYmx0ZnZPYUUxSEdrdDhUb0FQT2huWk85YzJDU1NMcjlMUEFRbnVDVko2d0E?oc=5",
+          "domain": "securityweek.com",
+          "tier": "C"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbGxTOUFHdjVXZndNQ0RGWnpVNWtTMDZVMUdWdDRVenRZdGJwUEcxWkRsd3BhREZaNGhZbzF2Y2Vtd29yZFRsb2VfNlZIeUF1UEYxeHl3VEJtZVVwcW1obmdrRFM4UHMzT1QxUjBuQXVONU5BRHVhVzZPM2VybzVWVGk5bDVLSjU0elBoRnIxejd4U1doYlVF0gGcAUFVX3lxTE1teUZjQnpHakFVdkpBUzlLVXpncUVIakFSOU1jTk9sSFAzYVh0NTRHc0pGWFZHYnNLSHctWGd5NEljaERaQkI0N0hPeVFXeXlQTURXd1ZTSGE3czhJVFNRLXFIU2FjTTEwMUFEd3VROHNDS2ZNbWxtUmsyUXNhQndsQU4xX0hwa1R0ZzdGMmVXWUl4dU0xcVlKaUZnbQ?oc=5",
+          "domain": "securityweek.com",
+          "tier": "C"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOa1pZcUZ3VXpQOWJGLU94d0MzRU9udURSdVBIeE1NVkJBR3VaTXJudkRYQlJZNEVmVHNNNjFJVUxaeVJ2c2FSZjEzRmpXdTZoa3dYdFE2QlBDMmIwbjJfT1lMSU40YTZWakljaFV0bEpwcDJkeGpQOVhKMi1DamhfeVhtM2FScjdOQm8xcWs1eWJkZ25uWTI0QmwwNNIBmwFBVV95cUxOa1pZcUZ3VXpQOWJGLU94d0MzRU9udURSdVBIeE1NVkJBR3VaTXJudkRYQlJZNEVmVHNNNjFJVUxaeVJ2c2FSZjEzRmpXdTZoa3dYdFE2QlBDMmIwbjJfT1lMSU40YTZWakljaFV0bEpwcDJkeGpQOVhKMi1DamhfeVhtM2FScjdOQm8xcWs1eWJkZ25uWTI0QmwwNA?oc=5",
+          "domain": "securityweek.com",
+          "tier": "C"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNOF9ZTG53M1Zkbm5xNUdDSndhTWlBYzRZWUJaSk5ISVNSTlhoSmlsblJrdzg2MkpQWEttWnY1bnVMYmozRUZFMi1uNW5IREhGY0FCSDFzS0p3R1JwcUhfczZmRTBVbkV1VGctb2ZOc2dlMzZaTVFqMzZrSEJDQzVxall5NHZHNmvSAYwBQVVfeXFMT1ZiU3FROGpPZW5ON19IRHA0WjhieXBMdFU0b2pvV3pyand5NE00VmVIYmVreVNoeXNnbnRsTXdzN3JDWEcyUXV1cC1qUzVnNmEyNHBDSGtpeExOZW4zQjhaNlhMNjRyRkxPcmtoYVlGV3VkV3ozQlIxQkVfUnFrS0RnUU9FckpLeG9GN1I?oc=5",
+          "domain": "securityweek.com",
+          "tier": "C"
+        },
+        {
+          "name": "SOC Prime",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE00V2tRc0duMUtma0NGSUxseFJTakJqOGRvcGQySTh1TUdjSEVyOXNxXzVZQ3ZBcXpYUmNWZ3N0dDR5T2FzQ2lWRjZTUmFNTS12Q1NQQ3FVR0R1WkRYM04w?oc=5",
+          "domain": "soc-prime.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "thestack.technology",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSldvTGNoOTBDb0F6SlFYYjd6Mk5KUU5WQzJDWVhKMWszQ3lXc2U4eTRGYnd6bTU5TWM1ZXdMSUMzOHJWUkNQSWEyZC1ndTZmay1KQ3dGbVhWbUQ1c2FFd3otQ2tLcVJRWEczWFl4S3dVOHQ1V3NBbk5sLWxYMGhybkNjQlZuUmtqVkE?oc=5",
+          "domain": "thestack-technology.publisher",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [
+        "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-0-9-released/",
+        "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-3-2-released/",
+        "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-1-released/",
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-webauth-xr8beuuU?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Catalyst%20SD-WAN%20Manager%20API%20Authentication%20Bypass%20Vulnerability%26vs_k=1"
+      ],
+      "published": "2026-09-08T18:32:13+00:00",
+      "trace": [
+        "tier A (+40)",
+        "13 independent outlets (+36)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 5/5 from cache",
+        "blend 100 = trust 100 / interest 100 / corrob 100"
+      ],
+      "reject_reason": "2 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "4b9b70d102f7591a",
+      "title": "CVE-2026-86950: The Great Glyph Grift An in-the-wild iOS bug with a possible WhatsApp zero-click path Blog: https://calif.io/research/the-great-glyph-grift PoC:",
+      "category": "cyber_attacks",
+      "one_liner": "Apple patches an in-the-wild CoreGraphics zero-day (CVE-2026-86950) exploited via crafted PDF files.",
+      "tags": [
+        "agents",
+        "android",
+        "cve",
+        "exploit",
+        "release",
+        "tool",
+        "vulnerability",
+        "writeup"
+      ],
+      "summary": "Apple released iOS 26.7.1 to address CVE-2026-86950, an actively exploited out-of-bounds write vulnerability in CoreGraphics caused by a unit conversion error during path rasterization. The bug can be triggered via a crafted PDF file containing malicious fonts and was reported by Meta Product Security after being observed in sophisticated targeted attacks. Code analysis indicates that WhatsApp implemented strict PDF validation features using its Rust-based Kaleidoscope parsing framework to help mitigate malicious attachments. Researchers have published proof-of-concept exploits targeting both macOS and iOS platforms.",
+      "key_facts": [
+        "CVE ID: CVE-2026-86950",
+        "Affected software: Apple iOS 26.7.1, CoreGraphics",
+        "Reporter: Meta Product Security"
+      ],
+      "bottom_line": "Active exploitation of CoreGraphics CVE-2026-86950 via crafted PDFs requires immediate patching across iOS and macOS devices.",
+      "claims": [
+        {
+          "text": "Apple recently released iOS 26.7.1 to fix a bug in CoreGraphics (CVE-2026-86950).",
+          "support_span": "Apple recently released iOS 26.7.1 to fix a bug in CoreGraphics (CVE-2026-86950).",
+          "status": "entailed"
+        },
+        {
+          "text": "The security advisory stated that the vulnerability was reported by Meta Product Security and 'may have been exploited in an extremely sophisticated attack against specific targeted individuals.'",
+          "support_span": "The security advisory stated that the vulnerability was reported by Meta Product Security and 'may have been exploited in an extremely sophisticated attack against specific targeted individuals.'",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 22,
+      "interest_score": 100,
+      "corroboration": 2,
+      "blend": 65.5,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "4b9b70d102f7591a",
+        "7e00495075197b2e"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Android Malware",
+          "url": "https://calif.io/research/the-great-glyph-grift",
+          "domain": "calif.io",
+          "tier": "C"
+        },
+        {
+          "name": "SecHarvester",
+          "url": "https://daniel.haxx.se/blog/2026/06/24/a-cve-dispute/",
+          "domain": "daniel.haxx.se",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-01T14:46:59+00:00",
+      "trace": [
+        "tier C (+10)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 66 = trust 22 / interest 100 / corrob 50",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
     {
       "cluster_key": "062a8bc557224f3e",
       "title": "edoardottt/awesome-hacker-search-engines — A curated list of awesome search engines useful during Penetration testing, Vulnerability assessments, Red/Blu",
@@ -104,7 +707,7 @@
       "category": "tech_ai",
       "one_liner": "",
       "tags": [],
-      "summary": "It is strange how much LLMs turned out to be able to solve such a wide range of hard problems that would not, instinctively, seem to be problems that a model of human language would be able to solve This is from a Stanford project that let Astra drive a robot in a kitchen tml.stanford.edu/homebody/ (Bluesky post by @emollick.bsky.social — 399 likes, 44 reposts)",
+      "summary": "It is strange how much LLMs turned out to be able to solve such a wide range of hard problems that would not, instinctively, seem to be problems that a model of human language would be able to solve This is from a Stanford project that let Astra drive a robot in a kitchen tml.stanford.edu/homebody/ (Bluesky post by @emollick.bsky.social — 398 likes, 45 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -206,57 +809,14 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "86a8b795b3ddbe60",
-      "title": "luobosibing2/dsh-jev-plugin — Native DeepSeek Harness (DSH) plugin integrating TypeSafe Jev as a System One decision layer for agent selecti",
+      "cluster_key": "031000dc35a93b30",
+      "title": "I was reflecting on how many random contingencies went into creating the current accelerating AI moment and had Opus 5.5 put together a video…",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource"
+        "ai"
       ],
-      "summary": "Native DeepSeek Harness (DSH) plugin integrating TypeSafe Jev as a System One decision layer for agent selection, supervision, corrections, and approvals. GitHub repository luobosibing2/dsh-jev-plugin, 81 stars, language JavaScript. Topics: agent-harness, ai-agents, cordis, deepseek-harness, dsh, dsh-jev, dsh-plugin, jev.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": true,
-      "summary_source": "extract",
-      "alt_keys": [
-        "86a8b795b3ddbe60"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/luobosibing2/dsh-jev-plugin",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-27T15:36:12+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-27 — outside lookback window"
-    },
-    {
-      "cluster_key": "2eb257877c431004",
-      "title": "I included a few references to this year's record-breaking Kākāpō breeding season in a talk I gave yesterday, and since Claude Opus 5.5 is…",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "llm",
-        "windows"
-      ],
-      "summary": "I included a few references to this year's record-breaking Kākāpō breeding season in a talk I gave yesterday, and since Claude Opus 5.5 is surprisingly capable at pixel art animation I had it create this celebratory video for my closing slide (Bluesky post by @simonwillison.net — 83 likes, 5 reposts)",
+      "summary": "I was reflecting on how many random contingencies went into creating the current accelerating AI moment and had Opus 5.5 put together a video, inspired by old science show Connections, to try and point out how a series of initially unrelated ideas led to the moment we are in now. (Bluesky post by @emollick.bsky.social — 125 likes, 24 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -267,7 +827,122 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "2eb257877c431004"
+        "031000dc35a93b30"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwkdftqyms2j",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-28T03:05:45.575000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-28 — outside lookback window"
+    },
+    {
+      "cluster_key": "2af8ffa15c0ea19f",
+      "title": "CVE-2026-103056 (CRITICAL 9.4): AiSOC versions 7.2.0 before 12.0.0 contain a command injection vulnerability in the actions service that buil…",
+      "category": "cyber_attacks",
+      "one_liner": "CVE-2026-103056 is a 9.4-rated command injection vulnerability in AiSOC via unescaped CrowdStrike RTR parameters.",
+      "tags": [
+        "appsec",
+        "cve",
+        "exploit",
+        "soc",
+        "vulnerability"
+      ],
+      "summary": "A critical command injection vulnerability, tracked as CVE-2026-103056 with a CVSS base score of 9.4, has been identified in AiSOC versions 7.2.0 through 11.x. The flaw exists in the actions service, which builds CrowdStrike Real Time Response command strings by improperly interpolating unescaped parameters within crowdstrike_rtr.py and endpoint.py. Authenticated users can inject single quotes into path or script parameters to execute arbitrary commands on managed endpoints with root or SYSTEM privileges.",
+      "key_facts": [
+        "CVE-2026-103056: CVSS 9.4 critical command injection",
+        "Affected Software: AiSOC versions 7.2.0 up to 12.0.0",
+        "Impact: SYSTEM or root command execution"
+      ],
+      "bottom_line": "Authenticated users can exploit AiSOC command injection flaws to run arbitrary code with root or SYSTEM privileges on endpoints.",
+      "claims": [
+        {
+          "text": "AiSOC versions 7.2.0 before 12.0.0 contain a command injection vulnerability in the actions service with a CVSS score of 9.4.",
+          "support_span": "AiSOC versions 7.2.0 before 12.0.0 contain a command injection vulnerability in the actions service that builds CrowdStrike Real Time Response command strings by interpolating unescaped action parameters in crowdstrike_rtr.py and endpoint.py. CVSS base score 9.4 (CRITICAL).",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 94,
+      "interest_score": 100,
+      "corroboration": 3,
+      "blend": 91.0,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "2af8ffa15c0ea19f",
+        "b9d1a0f242ef0aeb",
+        "bdcf6898684691ba"
+      ],
+      "critical_signal": "",
+      "priority": "critical",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103056",
+          "domain": "nist.gov",
+          "tier": "A"
+        },
+        {
+          "name": "Palo Alto PSIRT",
+          "url": "https://security.paloaltonetworks.com/CVE-2026-0302",
+          "domain": "security.paloaltonetworks.com",
+          "tier": "A"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZXJ0OUdqZ2lSRW1wRWdNSDBKUExfa0JwNkRRVEtxLTg4a092bkh5S0hldWxaVFQyeVdENHZObE94M1VGMEJGYTJ2cE1nV3BobFB5RmpEMC0xb1Q5SGRxb2tvUmFvc1ZzYWlKM1ZPWHRTTTY5b0c5S2o1b3Nxc3JOb2UwZVVVdW0xeThtRDNfMW1DdDdmSjlfWnloMUhCZ184YzdlU21aSm5oNDA4OE5oUnk1QkFkOU5ITmJLbnpYeVZseTBOWkVwdXNBb2HSAdIBQVVfeXFMTTFiOE52MWdPSERzSDlnNDFETGV1aWlWUENVdHlFYWJ1ZVNsS1p0SVpuNUcyYlRlcjhKRnRLeG82c291YWhTZGotMHF3UU8zb29jTU9RREFtOXd0STkxMjBvVENtSkkwcDNXZFN5bmRxcThKbGFMZkZ3dUlYUjBudzJtc1VJSGtDZE1pdGdGaGtXaXBPQnpRdVl2X3p5cmEwTE53TW5lQnVKRktzaXZXNzkzWm1fNnJ1ZjNzYWhXU1BTb3NHVVR6Vi1PZGRBS19XLTNB?oc=5",
+          "domain": "bleepingcomputer.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-103056",
+        "https://security.paloaltonetworks.com/CVE-2026-0302"
+      ],
+      "published": "2026-09-09T16:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "3 independent outlets (+24)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 91 = trust 94 / interest 100 / corrob 75"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "16c9263fd85146f6",
+      "title": "I've published detailed notes and an annotated transcript to accompany the video of the keynote I gave at @wearedevelopers.bsky.social World…",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "political",
+        "windows"
+      ],
+      "summary": "I've published detailed notes and an annotated transcript to accompany the video of the keynote I gave at @wearedevelopers.bsky.social World Congress North America in San Jose on Friday - here's my rundown of everything that's happened with LLMs in 2026 so far simonwillison.net/2026/Sep/27/... (Bluesky post by @simonwillison.net — 108 likes, 24 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "16c9263fd85146f6"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -275,117 +950,177 @@
       "sources": [
         {
           "name": "Simon Willison",
-          "url": "https://bsky.app/profile/simonwillison.net/post/3mwhjlrkyx22f",
+          "url": "https://bsky.app/profile/simonwillison.net/post/3mwluv7t57k2q",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-27T00:18:27.844000+00:00",
+      "published": "2026-09-28T17:51:14.894000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-27 — outside lookback window"
+      "reject_reason": "published 2026-09-28 — outside lookback window"
     },
     {
-      "cluster_key": "6cc7677a9cb8b5ba",
-      "title": "\"so this is fun, and exactly what i wanted, but now lets try one that actually is educational\" This is actually pretty impressive.",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [],
-      "summary": "Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu \"so this is fun, and exactly what i wanted, but now lets try one that actually is educational\" This is actually pretty impressive. It kept the constraint of multiple genres but did a nice job explaining recursion, in its programming meaning, in an interesting and accessible way. [contains quote post or other embedded content] 2026-09-26T16:46:27.468Z",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "6cc7677a9cb8b5ba",
-        "7781a073d05f4b2b"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwgqdgglq223",
-          "domain": "bsky.app",
-          "tier": "C"
-        },
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwfdufd7n223",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-26T03:30:35.069000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-26 — outside lookback window"
-    },
-    {
-      "cluster_key": "e45fed4535246219",
-      "title": "Louis-CFM/coucou — A tiny friend that lives in your notch (macOS) or at the top of your screen (Windows, Linux) and keeps an eye ",
-      "category": "tech_ai",
-      "one_liner": "",
+      "cluster_key": "1ab08f8efc0245c2",
+      "title": "CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)",
+      "category": "cyber_attacks",
+      "one_liner": "CVE-2026-0307 is a local privilege escalation flaw in the Palo Alto GlobalProtect app allowing root or SYSTEM execution.",
       "tags": [
-        "ai",
+        "android",
+        "appsec",
+        "cve",
+        "exploit",
         "linux",
-        "llm",
-        "opensource",
-        "tool",
+        "network",
+        "vulnerability",
         "windows"
       ],
-      "summary": "A tiny friend that lives in your notch (macOS) or at the top of your screen (Windows, Linux) and keeps an eye on your coding agents: Claude Code, Codex, Cursor, Gemini CLI, Antigravity and more. GitHub repository Louis-CFM/coucou, 2,975 stars, language Swift. Topics: ai-agents, anthropic, antigravity, claude, claude-code, codex, cursor, dynamic-island.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
+      "summary": "Palo Alto Networks disclosed multiple local privilege escalation vulnerabilities (CVE-2026-0307, CVSS base score 8.5) in the GlobalProtect app affecting Windows, macOS, and Linux clients. Due to untrusted search path weaknesses (CWE-426), a local, non-administrative user can execute arbitrary commands with NT AUTHORITY\\SYSTEM privileges on Windows or root privileges on Unix-like systems. Remediation requires upgrading both client applications and backend PAN-OS or Prisma Access environments.",
+      "key_facts": [
+        "CVE-2026-0307: CVSS 8.5 local privilege escalation",
+        "Weakness: CWE-426 (Untrusted Search Path)",
+        "Impact: SYSTEM or root execution"
+      ],
+      "bottom_line": "Local attackers can exploit GlobalProtect client search path weaknesses to escalate privileges to SYSTEM or root.",
+      "claims": [
+        {
+          "text": "Multiple local privilege escalation vulnerabilities in the Palo Alto Networks GlobalProtect app allow local users to escalate privileges to SYSTEM or root.",
+          "support_span": "Multiple local privilege escalation vulnerabilities in the Palo Alto Networks GlobalProtect app allows a local user to escalate their privileges to NT AUTHORITY\\SYSTEM on Windows and root on macOS and Linux.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 82,
+      "interest_score": 75,
+      "corroboration": 2,
+      "blend": 69.2,
       "is_new": false,
-      "summary_source": "extract",
+      "summary_source": "model",
       "alt_keys": [
-        "e45fed4535246219"
+        "1ab08f8efc0245c2",
+        "815bf950eac001ad",
+        "a3c36e87a94b475a",
+        "bd675df8ad6e361c"
       ],
       "critical_signal": "",
-      "priority": "minor",
+      "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/Louis-CFM/coucou",
-          "domain": "github.com",
+          "name": "Palo Alto PSIRT",
+          "url": "https://security.paloaltonetworks.com/CVE-2026-0307",
+          "domain": "security.paloaltonetworks.com",
+          "tier": "A"
+        },
+        {
+          "name": "Palo Alto PSIRT",
+          "url": "https://security.paloaltonetworks.com/CVE-2026-0299",
+          "domain": "security.paloaltonetworks.com",
+          "tier": "A"
+        },
+        {
+          "name": "Palo Alto PSIRT",
+          "url": "https://security.paloaltonetworks.com/CVE-2026-0304",
+          "domain": "security.paloaltonetworks.com",
+          "tier": "A"
+        },
+        {
+          "name": "SecHarvester",
+          "url": "https://www.intrinsec.com/cve-2026-50610-elevation-privileges-acer-nitrosense/",
+          "domain": "intrinsec.com",
           "tier": "C"
         }
       ],
-      "primary_links": [],
-      "published": "2026-09-27T21:54:12+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
+      "primary_links": [
+        "https://security.paloaltonetworks.com/CVE-2026-0299",
+        "https://security.paloaltonetworks.com/CVE-2026-0304",
+        "https://security.paloaltonetworks.com/CVE-2026-0307"
       ],
-      "reject_reason": "published 2026-09-27 — outside lookback window"
+      "published": "2026-09-09T16:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "2 independent outlets (+12)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 69 = trust 82 / interest 75 / corrob 50",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "3cdc523324511ad8",
-      "title": "OmniJev/OneJev — 🚀🚀 A multimodal System One decision model that gives calibrated answers to typed questions about screens, phot",
+      "cluster_key": "9eb938b888946f04",
+      "title": "Mapping of two Western Ghats districts shows much of proposed ESA overlaps with Notified Forests, Protected Areas, or existing ESZs",
+      "category": "india_world",
+      "one_liner": "Spatial analysis suggests the proposed Western Ghats ESA largely formalizes existing protections, potentially easing concerns about new land-use restrictions in Karnataka.",
+      "tags": [
+        "india",
+        "policy",
+        "political",
+        "research"
+      ],
+      "summary": "The Paani Earth Foundation analyzed the Centre’s draft notification for an Ecologically Sensitive Area (ESA) in the Western Ghats, specifically focusing on Kodagu and Udupi districts. The mapping reveals that a significant majority of the proposed ESA—70.8% in Kodagu and 82% in Udupi—already overlaps with existing protected areas like Notified Forests or Eco-Sensitive Zones. This analysis highlights that the proposed ESA designation primarily reinforces existing protections rather than imposing entirely new restrictions on the remaining 18-30% of land. The findings emerge amid ongoing political tension, as the Karnataka legislature recently passed a resolution rejecting the K. Kasturirangan Committee report in its current form.",
+      "key_facts": [
+        "Kodagu ESA overlap: 70.8%",
+        "Udupi ESA overlap: 82%",
+        "Resolution date: September 22"
+      ],
+      "bottom_line": "The proposed ESA for the Western Ghats is largely redundant with existing legal protections, suggesting that fears of widespread new land-use restrictions may be overstated.",
+      "claims": [
+        {
+          "text": "The mapping reveals that a significant majority of the proposed ESA—70.8% in Kodagu and 82% in Udupi—already overlaps with existing protected areas.",
+          "support_span": "Our mapping shows that about 70.8% of the proposed ESA area in Kodagu overlaps with Notified Forests, Protected Areas, or existing ESZs... Our mapping shows that about 82% of the proposed ESA already overlaps with Notified Forests, Protected Areas or existing Eco-Sensitive Zones.",
+          "status": "contradicted"
+        },
+        {
+          "text": "The Karnataka legislature recently passed a resolution rejecting the K. Kasturirangan Committee report.",
+          "support_span": "the Karnataka legislature, on September 22, unanimously passed a resolution rejecting the K. Kasturirangan Committee report on the Western Ghats in its current form",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "9eb938b888946f04"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "The Hindu National",
+          "url": "https://www.thehindu.com/news/national/karnataka/mapping-of-two-western-ghats-districts-shows-much-of-proposed-esa-overlaps-with-notified-forests-protected-areas-or-existing-eszs/article71541016.ece",
+          "domain": "thehindu.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-03T16:31:15+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 4/5 from gemini-3.1-flash-lite",
+        "blend 48 = trust 25 / interest 75 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "0772f65ed330d6d7",
+      "title": "edenfunf/reelmimic — Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds a",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
         "agents",
+        "ai",
         "llm",
         "opensource"
       ],
-      "summary": "🚀🚀 A multimodal System One decision model that gives calibrated answers to typed questions about screens, photos, video and text in one forward pass. GitHub repository OmniJev/OneJev, 110 stars, language Python. Topics: calibration, computer-use, decision-model, gui-agent, huggingface, jev, llm, multimodal.",
+      "summary": "An AI crew (Claude Code or Codex) plans, builds and reviews it with you. GitHub repository edenfunf/reelmimic, 1,094 stars, language JavaScript. Topics: 2d-animation, ai-agents, ai-video, animation, claude-code, codex, multi-agent, style-transfer.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -393,10 +1128,10 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
-      "is_new": true,
+      "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "3cdc523324511ad8"
+        "0772f65ed330d6d7"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -404,17 +1139,217 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/OmniJev/OneJev",
+          "url": "https://github.com/edenfunf/reelmimic",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-27T14:27:14+00:00",
+      "published": "2026-09-28T19:14:59+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-27 — outside lookback window"
+      "reject_reason": "published 2026-09-28 — outside lookback window"
+    },
+    {
+      "cluster_key": "a7be1a974d58475d",
+      "title": "I really like how @reckless.bsky.social described this: \"The people do not yearn for automation\" www.theverge.com/podcast/9170...",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "windows"
+      ],
+      "summary": "I really like how @reckless.bsky.social described this: \"The people do not yearn for automation\" www.theverge.com/podcast/9170... (Bluesky post by @simonwillison.net — 76 likes, 8 reposts)",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "a7be1a974d58475d"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Simon Willison",
+          "url": "https://bsky.app/profile/simonwillison.net/post/3mwm5kkl5e22s",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-28T20:26:20.741000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-28 — outside lookback window"
+    },
+    {
+      "cluster_key": "17c7b4058a01a0a3",
+      "title": "Security startup finds more than 13,000 internal company screenshots that AI agents uploaded publicly - the-decoder.com",
+      "category": "cyber_tools",
+      "one_liner": "Security startup finds 13,000 corporate screenshots accidentally exposed online by AI agents.",
+      "tags": [
+        "agents",
+        "ai",
+        "cloud",
+        "privacy"
+      ],
+      "summary": "Cybernews headline reporting that a security startup discovered over 13,000 internal corporate screenshots uploaded publicly by AI agents.",
+      "key_facts": [
+        "Exposed Items: 13,000+ internal company screenshots"
+      ],
+      "bottom_line": "AI agents are inadvertently leaking sensitive internal enterprise screenshots to the public internet.",
+      "claims": [
+        {
+          "text": "Security startup finds more than 13,000 internal company screenshots that AI agents uploaded publicly.",
+          "support_span": "Security startup finds more than 13,000 internal company screenshots that AI agents uploaded publicly - the-decoder.com",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 34,
+      "interest_score": 50,
+      "corroboration": 3,
+      "blend": 53.5,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "17c7b4058a01a0a3",
+        "54c3bcbe1f977fd4",
+        "5752b1d03f71f40c",
+        "8bc8c32017e8565a",
+        "a11d5b91513d8655",
+        "a5799bf70f97ce83",
+        "ca4986c1c7418633",
+        "f660ad7a9149301d"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Cybernews",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9CN2ExMjlUNVVaYjVwN0pzNEZwV3AzdDNpcU16bm9yeXRiZE1xY3J4VkFJVXJmb1JqYjdleWlWWmVvbzgyMnljOW8tNVU3TW91N1hLR0xzNHRyN0s1Z3RTbTdGX1FHMU9IdDJ3QXJINFJRQ2dtZmNCQTNzOA?oc=5",
+          "domain": "cybernews.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "cybersecuritynews.com",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBGeXpodHRkSWtqN19GaXhWVTh2X1dYUFlvSktuTExEdUNTUTJmck52VU9RZUlfQXFnTFUxdjZRc2pDTy1RREItMk5LbXZib2hJXzNVRkx5RFFwZ2FXdVdGaGhIZ2Z3Zk9ieEhhYlFNOGpyLWVBbkw3SHdKbGNmd9IBgwFBVV95cUxPV0xHa3VlblRicU5JcWNnVE0xUFJIZVdWZldhbjdJU2ZaUkdNTENHWWs4OXBMOEtpajczLWxRV01pWDR4SldQMHFuZFVkRWRwTHBoUjh0NXZIYktpYml1ZHU2dXFNVG9pWFY2WEZPOFgzSnNhTkJHOEthWlVXTjZwT0VTNA?oc=5",
+          "domain": "cybersecuritynews-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "gbhackers.com",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE13OGFtdHlSYy15cVpZZUw5TDIzSFhmYm1NSHlWTWVqbzI4UzRnMnUxY2ZlSTdBUjJVaTl3V2pLd2VOTWxLSDlPcW1haGl0akRjZ1BMaWlqN2ZvMG9FSy1jWmYwam1RTW5fQ2RvckkxLXBYMFVJdWJLaFVZQdIBe0FVX3lxTE13OGFtdHlSYy15cVpZZUw5TDIzSFhmYm1NSHlWTWVqbzI4UzRnMnUxY2ZlSTdBUjJVaTl3V2pLd2VOTWxLSDlPcW1haGl0akRjZ1BMaWlqN2ZvMG9FSy1jWmYwam1RTW5fQ2RvckkxLXBYMFVJdWJLaFVZQQ?oc=5",
+          "domain": "gbhackers-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Help Net Security",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSUhFdmphbko0SjFTZVZBTDNHcW9MUTBRMXl2Ni1zWE0zT2JRTUhKZ1Y0NVl2QlpVWmRNQUh1MU1tamdoRVlsTXlKUF9pMlZubi1vN3BjOVQ2Sl9memk4OTRhampBYmVWX2l4S1gyR2hyRUtLMExGaHlsdG9FSjd3VXI2RkZfYm50eUM0?oc=5",
+          "domain": "helpnetsecurity.com",
+          "tier": "C"
+        },
+        {
+          "name": "GN Security tools",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPY091QXNFS2wtaEpQckZoTXNYdk1RRHBxVmlnbmx0SENtckhGcG5fLU8yZkZROTNpZGctanBRb211T2Z0Y01NZkUyN1UtTC1VWUxhVzdVUDRqZlZwV3ZPaHRFQl9qR1hkQkN4ZVh0OXNLMWNZLTBKX2pCNE9oN2pJaU1ibVRwTTJRLU1DOUktTU9PYkRHeXkxWEJVZFpSbXhfN1JKbkpHcjVtSWprbkhyUHdtU3lsWm5IbEw2RmNmdTJhdDg?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "Pasquale Pillitteri",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdVhfM21RNkZKMmZvcTVLQjdPSDJucDhpY2w4R0RXRTRsV1RvNENJRzBfMmtaUFFhQ1hqZG1aamw0VTNIVGdGUks4Z2tsMFVaLTJUZ0tXeTdScjZjeTdiSjBDS1pfNFk3ZWdQRXpBMjdMV2FXV3IzdTlhNHFEdEJCaHRzTHVlTXpMNTBWcEY1b19aREE?oc=5",
+          "domain": "pasquale-pillitteri.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "rswebsols.com",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYThjUGNsSm9WZzJmNm9jdkJRMEhYSWwxQ2RXbk85a2U5cnQteGhZOWJLTF91dWVNZFV1dmdjaG9JeGNBdzJ4RkNoUjhJZl90WFJHN01CVm53aVpZaHd4SXJYUTFoaVdqcThHQkZfX2tzbEVvYkpadmpkdllzTEJYYURiRFJJWFA0ak9tZjc3WEZKdkZ6ZDZKSWZaTzNVYXh1LVVOdElwV0J6bkJiZzkwNEZQaDA5cGhU?oc=5",
+          "domain": "rswebsols-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "TechGig",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTU9mR2lfVE9ESkpaNDduM3dnUUswNk4zXy1uR2NVQUR3TzgzZTZTWG9QR015Zk9EalA5WkZINVR3R1cyS0ZCcEdiX212SkdjX3lCb1VRc0VuR0c5Qzlsb2haeGlCUFE2c1BiUUFMRVV4QjQxNVo2bkJDc0ZVMVY3SHM2eG5EYUdXUTVKTUdyTVVYc0pyc1c0STUtT1NWQWRXM01HY0ZCek01N1l1NmfSAa4BQVVfeXFMTU1PZkdpX1RPREpKWjQ3bjN3Z1FLMDZOM18tbkdjVUFEd084M2U2U1hvUEdNeWZPRGpQOVpGSDVUd0dXMktGQnBHYl9tdkpHY195Qm9VUXNFbkdHOUM5bG9oWnhpQlBRNnNQYlFBTEVVeEI0MTVaNm5CQ3NGVTFWN0hzNnhuRGFHV1E1Sk1Hck1VWHNKcnNXNEk1LU9TVkFkVzNNR2NGQnpNNTdZdTZn?oc=5",
+          "domain": "techgig.publisher",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-30T10:54:40+00:00",
+      "trace": [
+        "tier C (+10)",
+        "3 independent outlets (+24)",
+        "verified: 3 independent outlets",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 54 = trust 34 / interest 50 / corrob 75"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "425295d82670c71a",
+      "title": "With Anup Bagchi as CEO, a deep-dive into how bank stocks fared after top boss changes - Yes, RBL, IndusInd, HDFC Bank",
+      "category": "markets",
+      "one_liner": "Anup Bagchi's appointment as HDFC Bank CEO brings a major leadership transition for India's largest private lender.",
+      "tags": [
+        "india",
+        "markets"
+      ],
+      "summary": "HDFC Bank announced the appointment of Anup Bagchi as its next CEO for a three-year term, succeeding Sashidhar Jagdishan, whose tenure ends in October 2026. The transition follows a series of leadership changes and past instances of bank CEO appointments where respective stock prices reacted variably—such as positive jumps during Yes Bank and IndusInd announcements and sharp drops during RBL Bank leadership adjustments.",
+      "key_facts": [
+        "Incoming CEO: Anup Bagchi",
+        "Outgoing CEO: Sashidhar Jagdishan",
+        "Term Length: 3 years"
+      ],
+      "bottom_line": "HDFC Bank's leadership transition marks a critical juncture for private banking sector governance and market performance.",
+      "claims": [
+        {
+          "text": "HDFC Bank announced the appointment of Anup Bagchi as its next chief of executive for a period of three years.",
+          "support_span": "HDFC Bank announced the appointment of Anup Bagchi as its next chief of executive for a period of three years.",
+          "status": "contradicted"
+        },
+        {
+          "text": "Anup Bagchi will succeed Sashidhar Jagdishan, who decided to not seek reappointment after his second tenure ends in October 2026.",
+          "support_span": "Fifty five year old Anup Bagchi will succeed Sashidhar Jagdishan, who decided to not seek reappointment after his second tenure ends in October 2026.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 36.2,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "425295d82670c71a"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Livemint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/as-hdfc-bank-names-anup-bagchi-as-ceo-heres-how-bank-stocks-fared-after-past-ceo-changes-yes-bank-rbl-to-indusind-11790942528070.html",
+          "domain": "livemint.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-02T12:47:12+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 36 = trust 25 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
       "cluster_key": "6d8768e5f7814283",
@@ -479,24 +1414,200 @@
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 5/5 from gemini-3.5-flash-lite",
+        "importance 5/5 from cache",
         "blend 59 = trust 25 / interest 100 / corrob 25",
         "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "e1cf90e146250e6b",
-      "title": "scarletkc/seiso — A Markdown convention and linter for project docs written by AI and read by humans and agents",
+      "cluster_key": "0274675920160476",
+      "title": "Greed and Fear Report: Chris Wood-led Jefferies sees IT earnings soaring 65% on AI boom but flags this as a key risk",
+      "category": "markets",
+      "one_liner": "Jefferies reports IT earnings surging over 65% on AI capex, while warning of risks from rising bond yields.",
+      "tags": [
+        "ai",
+        "hardware",
+        "markets",
+        "political"
+      ],
+      "summary": "Jefferies' 'GREED & fear' report by Chris Wood highlights that S&P 500 IT sector earnings are forecast to surge 65.1% in the third quarter of 2026, driven aggressively by the artificial intelligence capital expenditure boom. Semiconductor and equipment sub-industries lead with projected growth rates exceeding 130%. However, the report cautions that escalating bond yields and questions regarding the long-term economic returns on massive AI infrastructure spending pose key valuation risks for equities going forward.",
+      "key_facts": [
+        "IT Sector Forecast Earnings Growth: 65.1%",
+        "Semiconductor Forecast Growth: 131.7%"
+      ],
+      "bottom_line": "Stellar AI-driven IT earnings are supporting equity markets, but rising bond yields and questions over capex returns pose growing risks.",
+      "claims": [
+        {
+          "text": "The IT sector has the second-highest forecast 3Q26 earnings growth of 65.1%, up from 22.3% last October.",
+          "support_span": "\"The IT sector has the second-highest forecast 3Q26 earnings growth of 65.1%, up from 22.3% last October. All 12 sub-industries in the IT sector have higher forecast earnings than a year ago...\"",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "0274675920160476"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Livemint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/greed-and-fear-report-chris-wood-led-jefferies-sees-it-earnings-soaring-65-on-ai-boom-but-flags-this-as-a-key-risk-11791011466156.html",
+          "domain": "livemint.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-03T07:40:48+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 25 / interest 75 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "285e990f0a5b3483",
+      "title": "CVE-2026-89236 - SaveTo Wishlist Lite < 1.1.5 - Unauthenticated SQLi via 'sort_column' and 'sort_order' Parameters",
+      "category": "cyber_attacks",
+      "one_liner": "SaveTo Wishlist Lite plugin before v1.1.5 suffers from unauthenticated SQL injection via sorting parameters.",
+      "tags": [
+        "appsec",
+        "cve",
+        "exploit",
+        "release",
+        "vulnerability"
+      ],
+      "summary": "CVE-2026-89236 is an unauthenticated SQL injection vulnerability affecting the SaveTo Wishlist Lite WordPress plugin in versions prior to 1.1.5. The flaw occurs because user-supplied `sort_column` and `sort_order` parameters are not properly sanitized or escaped before being concatenated into the ORDER BY clause of a SQL query. Unauthenticated attackers can exploit this to append malicious SQL queries and extract sensitive database information.",
+      "key_facts": [
+        "CVE-2026-89236: SaveTo Wishlist Lite < 1.1.5",
+        "Vulnerability: Unauthenticated SQLi"
+      ],
+      "bottom_line": "Update SaveTo Wishlist Lite to version 1.1.5 or higher to prevent unauthenticated database extractions.",
+      "claims": [
+        {
+          "text": "CVE-2026-89236 - SaveTo Wishlist Lite < 1.1.5 - Unauthenticated SQLi via 'sort_column' and 'sort_order' Parameters",
+          "support_span": "CVE-2026-89236 - SaveTo Wishlist Lite < 1.1.5 - Unauthenticated SQLi via 'sort_column' and 'sort_order' Parameters",
+          "status": "contradicted"
+        },
+        {
+          "text": "The SaveTo Wishlist Lite WordPress plugin before 1.1.5 does not sanitise and escape parameters before using them in the ORDER BY clause of a SQL query, allowing unauthenticated attackers to append additional SQL queries and extract sensitive information from the database.",
+          "support_span": "The SaveTo Wishlist Lite WordPress plugin before 1.1.5 does not sanitise and escape parameters before using them in the ORDER BY clause of a SQL query, allowing unauthenticated attackers to append additional SQL queries and extract sensitive information from the database.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 62.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "285e990f0a5b3483"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-89236",
+          "domain": "cvefeed.io",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-03T06:16:45+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 62 = trust 40 / interest 100 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "a6d052c5e2e51f85",
+      "title": "CVE-2026-105115 - OpenAM before 16.1.3 Unauthenticated Arbitrary Class Instantiation via JAX-RPC Interface",
+      "category": "cyber_attacks",
+      "one_liner": "OpenAM before v16.1.3 contains an unauthenticated arbitrary class instantiation vulnerability in its JAX-RPC interface.",
+      "tags": [
+        "cve",
+        "exploit",
+        "identity",
+        "release",
+        "vulnerability"
+      ],
+      "summary": "CVE-2026-105115 is an unauthenticated arbitrary class instantiation vulnerability affecting OpenAM before version 16.1.3 within its legacy JAX-RPC SOAP interface. Remote attackers can transmit specially crafted SOAP requests to `/jaxrpc/*` using unverified session identifiers and arbitrary class names. This allows attackers to load classes without authentication, potentially triggering server crashes, probing classpaths, or achieving code execution via gadget chains.",
+      "key_facts": [
+        "CVE-2026-105115: OpenAM before 16.1.3",
+        "Endpoint: /jaxrpc/*"
+      ],
+      "bottom_line": "Upgrade OpenAM to version 16.1.3 or higher to prevent unauthenticated remote class loading and SOAP attacks.",
+      "claims": [
+        {
+          "text": "CVE-2026-105115 - OpenAM before 16.1.3 Unauthenticated Arbitrary Class Instantiation via JAX-RPC Interface",
+          "support_span": "CVE-2026-105115 - OpenAM before 16.1.3 Unauthenticated Arbitrary Class Instantiation via JAX-RPC Interface",
+          "status": "contradicted"
+        },
+        {
+          "text": "OpenAM before 16.1.3 contains an unauthenticated arbitrary class instantiation vulnerability in the legacy JAX-RPC SOAP interface that allows remote attackers to load classes without authentication.",
+          "support_span": "OpenAM before 16.1.3 contains an unauthenticated arbitrary class instantiation vulnerability in the legacy JAX-RPC SOAP interface that allows remote attackers to load classes without authentication.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 62.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "a6d052c5e2e51f85"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-105115",
+          "domain": "cvefeed.io",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-03T14:16:38+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 62 = trust 40 / interest 100 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "58d227dbbe746299",
+      "title": "tunaarikaya/magaza-mcp — Tek MCP sunucusu, iki mağaza: App Store Connect + Google Play. Tamamen Türkçe.",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "ai",
+        "agents",
+        "android",
         "llm",
-        "opensource",
-        "tool"
+        "opensource"
       ],
-      "summary": "A Markdown convention and linter for project docs written by AI and read by humans and agents GitHub repository scarletkc/seiso, 169 stars, language Rust. Topics: ai, ai-agents, claude-code, cli, coding-agents, commonmark, conventions, developer-tools.",
+      "summary": "Tek MCP sunucusu, iki mağaza: App Store Connect + Google Play. GitHub repository tunaarikaya/magaza-mcp, 88 stars, language TypeScript. Topics: android, android-publisher, antigravity, app-store-connect, claude, cursor, google-play, ios.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -507,7 +1618,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "e1cf90e146250e6b"
+        "58d227dbbe746299"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -515,17 +1626,17 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/scarletkc/seiso",
+          "url": "https://github.com/tunaarikaya/magaza-mcp",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-27T13:27:28+00:00",
+      "published": "2026-09-28T17:25:16+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-27 — outside lookback window"
+      "reject_reason": "published 2026-09-28 — outside lookback window"
     },
     {
       "cluster_key": "a644fce59668f546",
@@ -535,7 +1646,7 @@
       "tags": [
         "agents"
       ],
-      "summary": "Qualitatively, there is now a larger gap between open & closed models than there has been in awhile. Fable/Astra class models are agentic in a way pre-Fable models are not, for better or worse. None of the open models have crossed that line, yet. (Bluesky post by @emollick.bsky.social — 74 likes, 4 reposts)",
+      "summary": "Qualitatively, there is now a larger gap between open & closed models than there has been in awhile. Fable/Astra class models are agentic in a way pre-Fable models are not, for better or worse. None of the open models have crossed that line, yet. (Bluesky post by @emollick.bsky.social — 75 likes, 4 reposts)",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -567,178 +1678,62 @@
       "reject_reason": "published 2026-09-27 — outside lookback window"
     },
     {
-      "cluster_key": "cab141db60b60cd3",
-      "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
-      "category": "tech_ai",
-      "one_liner": "OpenAI introduced GPT-6.1-Sol at OpenAI DevDay 2026, delivering near-Astra intelligence at twenty percent of the cost.",
+      "cluster_key": "0403e2679b71cc0e",
+      "title": "CVE-2026-91078 - TillKit < 1.0.5 - Unauthenticated POS Takeover via Hard-Coded Default Manager PIN",
+      "category": "cyber_attacks",
+      "one_liner": "TillKit WordPress plugin before v1.0.5 allows unauthenticated POS takeover via a hard-coded default manager PIN.",
       "tags": [
-        "ai",
-        "llm",
-        "research",
-        "windows"
+        "cve",
+        "exploit",
+        "release",
+        "vulnerability"
       ],
-      "summary": "Simon Willison has shared live-blogging updates and notes from OpenAI DevDay 2026 concerning the release of GPT-6.1-Sol. The new model is positioned as offering near-Astra intelligence at a fraction of the cost, priced at twenty percent of the flagship tier. Performance visualisations follow the standard pelican benchmark conventions established for the GPT-6 product family.",
+      "summary": "CVE-2026-91078 is a critical unauthenticated Point-of-Sale (POS) takeover vulnerability affecting TillKit WordPress plugins prior to version 1.0.5. The plugin creates a privileged POS account upon activation with a hard-coded, publicly known default PIN that is not forced to be changed. The public POS login endpoint authenticates solely against this PIN without capability checks, allowing unauthenticated attackers to obtain privileged sessions, read customer and user personal data, and modify store data.",
       "key_facts": [
-        "Model: GPT-6.1-Sol"
+        "CVE-2026-91078: TillKit < 1.0.5",
+        "Vulnerability: Unauthenticated POS Takeover via Hard-Coded PIN"
       ],
-      "bottom_line": "High-capability AI intelligence is becoming significantly more accessible as pricing drops to a fraction of previous tiers.",
+      "bottom_line": "Update TillKit to version 1.0.5 immediately to prevent unauthenticated POS session hijacking.",
       "claims": [
         {
-          "text": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
-          "support_span": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+          "text": "CVE-2026-91078 - TillKit < 1.0.5 - Unauthenticated POS Takeover via Hard-Coded Default Manager PIN",
+          "support_span": "CVE-2026-91078 - TillKit < 1.0.5 - Unauthenticated POS Takeover via Hard-Coded Default Manager PIN",
           "status": "contradicted"
-        }
-      ],
-      "trust_score": 37,
-      "interest_score": 50,
-      "corroboration": 2,
-      "blend": 46.8,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "cab141db60b60cd3",
-        "ea390ff756f2cc1c"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Simon Willison",
-          "url": "https://simonwillison.net/2026/Sep/29/hn-49898129/",
-          "domain": "simonwillison.net",
-          "tier": "B"
         },
         {
-          "name": "MarkTechPost",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQRTdHUWxxblJfYW1PT2dneTRIWnNfeDJXcDY3cWJBbVBiZnRLeGRsWmZvYmVCS1BOZC0wdVI0aEtCeGRzdWlGMzljTnJyOHhBVzRjd0VManBQdVpCdXZHWkdFN1V2YXdTRktQU3dlX3VBR3IyOU5MTTdhS1hFRjJLdWxBSUViWDRFXzMzdm14WnQwcWN4MzdNdjRWaVVPUThjVFhMR0dfcWp3SDZ1bk9fUG84Vk8xdGx2Ujhjay1TOXVnaGtpUnNRaE5TX2c2NXJ6TV9sTNIB2gFBVV95cUxNc3dvV2VoLVRXVDZIdGtrb3o5R2FQTWJncU1vWTU1RkhwLVdWX0QtTHQ3d214YmVJcGlnVkp6OTRzd2haXzQ5VVlneUgyRVFfdE12dmtDME1xVTNzcVNNM3ZCSzRvM2h3M0JCQUMtZk1wOHhxOU55ZHNYTThMR1ZyWk5xQThxbGxmdU40UmpHQ1VCWU1yNl8wdWdaaVotMWVJMnlabFNySmJrd2Y3bFRJTG9BTEpvQ2lMSzZUUFY5ZmRqX29odjRXblVzTXdwMHdGNFVDWk8xam9hZw?oc=5",
-          "domain": "marktechpost.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-29T18:27:48+00:00",
-      "trace": [
-        "tier B (+25)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 3/5 from cache",
-        "blend 47 = trust 37 / interest 50 / corrob 50"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "f756957f0c6cb8ea",
-      "title": "Two ‘intruders’ shot dead by BSF along Punjab Border, Pakistan Rangers agrees to take back bodies",
-      "category": "india_world",
-      "one_liner": "BSF shoots dead two suspected intruders along the Punjab border with Pakistan.",
-      "tags": [
-        "india",
-        "network",
-        "political"
-      ],
-      "summary": "Two suspected intruders were shot dead by the Border Security Force (BSF) along the India-Pakistan border in Punjab's Tarn Taran district after failing to halt. The men were wearing Pathan suits and moving through a paddy crop field toward the border fence during daylight hours. Following a flag meeting requested by the Pakistan Rangers at 7 p.m., authorities agreed to hand over the bodies after completing legal formalities and post-mortem procedures.",
-      "key_facts": [
-        "Location: Tarn Taran district, Punjab",
-        "Date: October 2, 2026",
-        "Border length: Punjab shares a 553-km border with Pakistan"
-      ],
-      "bottom_line": "BSF personnel shot and killed two unidentified intruders along the Punjab border, with Pakistan Rangers subsequently arranging for the repatriation of the bodies.",
-      "claims": [
-        {
-          "text": "Two unidentified suspected intruders, both appeared to be in their twenties, were shot dead by the Border Security Force (BSF) along the India-Pakistan border in Punjab’s Tarn Taran district.",
-          "support_span": "Two unidentified suspected intruders, both appeared to be in their twenties, were shot dead by the Border Security Force (BSF) along the India-Pakistan border in Punjab’s Tarn Taran district on Friday (October 2, 2026).",
+          "text": "The TillKit WordPress plugin before 1.0.5 does not require the hard-coded, publicly known PIN of the privileged POS account it creates on activation to be changed before use",
+          "support_span": "The TillKit WordPress plugin before 1.0.5 does not require the hard-coded, publicly known PIN of the privileged POS account it creates on activation to be changed before use",
           "status": "entailed"
-        },
-        {
-          "text": "Following a flag meeting with Pakistan Rangers, it has been decided to hand over the bodies after the legal formalities are completed.",
-          "support_span": "Following a meeting with Pakistan Rangers, it has been decided to hand over the bodies after the legal formalities are completed",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "f756957f0c6cb8ea"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/national/two-suspected-pakistani-intruders-shot-dead-by-bsf-in-punjab/article71536515.ece",
-          "domain": "thehindu.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-10-02T17:49:22+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "634c0d766d36343a",
-      "title": "The South African men trying to end violence against women: 'Every man needs to play a part'",
-      "category": "india_world",
-      "one_liner": "Grassroots groups in South Africa are organizing men to combat severe rates of gender-based violence and femicide.",
-      "tags": [
-        "policy"
-      ],
-      "summary": "Community organizers in Johannesburg's informal settlements, such as the non-profit Father A Nation, are actively engaging men in discussions to combat South Africa's high rates of gender-based violence and femicide. Sparked by renewed outrage following the murders of 12 women in Ekurhuleni and nationwide statistics recording thousands of murders, these grassroots sessions aim to promote positive masculinity and help men process behavioral issues. While activists critique government initiatives like improved street lighting as too little too late, community-led intervention seeks to address the root causes of domestic violence.",
-      "key_facts": [
-        "Women killed (April-June): 569",
-        "Total murders (April-June): 5427"
-      ],
-      "bottom_line": "South African non-profits are conducting community sessions with men to promote positive masculinity in response to soaring rates of gender-based violence.",
-      "claims": [
-        {
-          "text": "Bra Steve is the local organiser of Father A Nation, a non-profit that works with men and boys to promote positive masculinity and help end violence against women.",
-          "support_span": "Bra Steve is the local organiser of Father A Nation, a non-profit that works with men and boys to promote positive masculinity and help end violence against women.",
-          "status": "entailed"
-        },
-        {
-          "text": "In that period, according to the South African Human Rights Commission, 569 women were killed, an average of six a day, and 1052 others survived attempted murder.",
-          "support_span": "In that period, according to the South African Human Rights Commission, 569 women were killed, an average of six a day, and 1052 others survived attempted murder.",
-          "status": "contradicted"
         }
       ],
       "trust_score": 40,
-      "interest_score": 25,
+      "interest_score": 100,
       "corroboration": 1,
-      "blend": 28.8,
+      "blend": 62.5,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "634c0d766d36343a"
+        "0403e2679b71cc0e"
       ],
       "critical_signal": "",
-      "priority": "minor",
+      "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm3eqegwpzl4o?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-91078",
+          "domain": "cvefeed.io",
           "tier": "A"
         }
       ],
       "primary_links": [],
-      "published": "2026-10-02T23:56:21+00:00",
+      "published": "2026-10-03T06:16:45+00:00",
       "trace": [
         "tier A (+40)",
         "single outlet, established publication (tier A)",
-        "importance 2/5 from gemini-3.5-flash-lite",
-        "blend 29 = trust 40 / interest 25 / corrob 25"
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 62 = trust 40 / interest 100 / corrob 25",
+        "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -782,244 +1777,201 @@
       "reject_reason": "published 2026-09-27 — outside lookback window"
     },
     {
-      "cluster_key": "c828fdddd42f8ffa",
-      "title": "R-GroundBench: A Diagnostic Benchmark for R-Group Groundingin Markush Molecular Editing",
-      "category": "tech_ai",
-      "one_liner": "R-GroundBench exposes severe grounding and reasoning limitations in AI models attempting complex Markush molecular editing.",
+      "cluster_key": "5030d85b452532f5",
+      "title": "Two Zero-Days Exploited in Attack on Dutch Institute for Vulnerability Disclosure",
+      "category": "cyber_attacks",
+      "one_liner": "An agentic AI-powered attack chained two zero-days in Zammad to breach the Dutch Institute for Vulnerability Disclosure.",
       "tags": [
+        "agents",
         "ai",
-        "privacy",
-        "research",
-        "tool"
-      ],
-      "summary": "Reasoning over incomplete chemical representations like Markush structures remains a challenge for AI-driven scientific discovery, as variable R-group placeholders require grounding across multiple modalities. To address the lack of specialized evaluation, researchers introduce R-GroundBench, a diagnostic benchmark featuring a Multiple-Choice VQA track and an open-ended generation track built from real patent data. Experimental results reveal a large performance drop when moving from easy tasks to hard VQA tasks, and generation exact match remains below 20% for most models. These findings show that current AI systems still lack reliable grounding and execution capabilities for complex molecular editing.",
-      "key_facts": [
-        "Easy VQA accuracy: over 90%",
-        "Hard VQA accuracy: 56–66%",
-        "Domain-specific VLM Hard VQA accuracy: 25.7–46.2%",
-        "Generation Exact Match: below 20%"
-      ],
-      "bottom_line": "Current vision-language and language models lack reliable R-group grounding for chemical representations, exposing major reliability gaps in AI-driven drug discovery.",
-      "claims": [
-        {
-          "text": "Models achieve over 90% accuracy on Easy VQA, performance drops to 56--66% on Hard VQA when shortcuts are controlled.",
-          "support_span": "models achieve over 90% accuracy on Easy VQA, performance drops to 56--66% on Hard VQA when shortcuts are this http URL-domain VLMs also remain unreliable, achieving only 25.7--46.2% on HardVQA despite domain-specific this http URL, Generation Exact Match remains below 20% for most models and below8% when visual input is this http",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "c828fdddd42f8ffa"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2610.00700",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2610.00700"
-      ],
-      "published": "2026-10-02T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "d72c3221552b0c56",
-      "title": "MOMAT: Mixture of Multiple Atlases for Low-Power Jailbreak Defense of Quantized LLMs",
-      "category": "tech_ai",
-      "one_liner": "MOMAT secures edge-deployed quantized LLMs against jailbreaks with massive speedups using Compute-in-Memory acceleration.",
-      "tags": [
-        "ai",
-        "hardware",
-        "llm",
-        "research",
-        "tool",
+        "bugbounty",
+        "cve",
+        "dfir",
+        "exploit",
+        "incident",
         "vulnerability"
       ],
-      "summary": "Quantized large language models deployed on edge devices are highly vulnerable to jailbreak attacks because quantization weakens their alignment safeguards. To fix this without heavy computational overhead, researchers introduce MOMAT, a hardware-enhanced safety framework combining structured knowledge retrieval with low-power Compute-in-Memory acceleration. MOMAT maps semantic clusters into multiple atlases and uses a lightweight Mixture of Experts detector to guard prompts efficiently. Evaluations show that MOMAT accelerates retrieval by millions of times and drastically cuts energy consumption while matching state-of-the-art defense performance.",
+      "summary": "The Dutch Institute for Vulnerability Disclosure (DIVD) suffered a breach after attackers exploited two zero-day vulnerabilities in its Zammad helpdesk platform. The vulnerabilities, designated CVE-2026-102489 and CVE-2026-102490, chained together to allow session hijacking, remote code execution, and privilege escalation to root with a CVSS score of 9.4. Logs revealed that an agentic AI was used in the attack, leaving autonomous script notes that justified its own actions. DIVD's quick containment prevented lateral movement, though volunteer email addresses and contact information were compromised.",
       "key_facts": [
-        "Speedup: 4.69 x 10^6 times",
-        "Energy reduction: ~2.5 x 10^5 times over DRAM baseline",
-        "Dataset size: 223.2k samples"
+        "CVE-2026-102489: RCE component",
+        "CVE-2026-102490: Elevation of privilege component",
+        "CVSS score: 9.4 (chained)"
       ],
-      "bottom_line": "Hardware-accelerated Compute-in-Memory retrieval can make edge-deployed quantized LLMs both robust against jailbreaks and highly energy-efficient.",
+      "bottom_line": "Chained zero-days in helpdesk software can be weaponized by autonomous AI agents to execute full privilege escalation within seconds.",
       "claims": [
         {
-          "text": "MOMAT's CiM-based retrieval accelerates a 100-query batch from 15,052.44 ms to 3,207.21 ns (a 4.69 \\times 10^6\\times$ speedup) and reduces energy from $8.1 \\times 10^7$ $\\mu$J to 3.32 $\\mu$J, yielding an approximately $2.5 \\times 10^5\\times$ energy reduction over DRAM-based (Raspberry Pi) baselines.",
-          "support_span": "MOMAT's CiM-based retrieval accelerates a 100-query batch from 15,052.44 ms to 3,207.21 ns (a $4.69 \\times 10^6\times$ speedup) and reduces energy from $8.1 \\times 10^7$ $\\mu$J to 3.32 $\\mu$J, yielding an approximately $2.5 \\times 10^5\times$ energy reduction over DRAM-based (Raspberry Pi) baselines.",
+          "text": "The vulnerabilities exploited in the attack are remote code execution bug CVE-2026-102489 and elevation of privileges flaw CVE-2026-102490, both of which have a CVSS score of 9.4 when chained.",
+          "support_span": "The vulnerabilities exploited in the attack are remote code execution bug CVE-2026-102489 and elevation of privileges flaw CVE-2026-102490, both of which have a CVSS score of 9.4 when chained.",
+          "status": "entailed"
+        },
+        {
+          "text": "A separate casefile on the incident explained that volunteer data including DIVD email addresses and possibly contact details was compromised",
+          "support_span": "A separate casefile on the incident formulated that volunteer data including DIVD email addresses and possibly contact details was compromised",
           "status": "contradicted"
         }
       ],
-      "trust_score": 70,
-      "interest_score": 75,
+      "trust_score": 25,
+      "interest_score": 100,
       "corroboration": 1,
       "blend": 58.8,
-      "is_new": true,
+      "is_new": false,
       "summary_source": "model",
       "alt_keys": [
-        "d72c3221552b0c56"
+        "5030d85b452532f5"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2610.01058",
-          "domain": "arxiv.org",
-          "tier": "A"
+          "name": "Infosecurity Magazine",
+          "url": "https://www.infosecurity-magazine.com/news/zerodays-dutch-institute/",
+          "domain": "infosecurity-magazine.com",
+          "tier": "B"
         }
       ],
-      "primary_links": [
-        "https://arxiv.org/abs/2610.01058"
-      ],
-      "published": "2026-10-02T04:00:00+00:00",
+      "primary_links": [],
+      "published": "2026-10-02T08:25:00+00:00",
       "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
         "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 25 / interest 100 / corrob 25",
         "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "04d95d60408f6ad1",
-      "title": "PG-SFT: Balancing Capability Acquisition and Retention in Offline Agent Fine-Tuning",
-      "category": "tech_ai",
-      "one_liner": "Privilege-Guided SFT (PG-SFT) helps maintain base model reasoning capabilities while fine-tuning agents for specialized tool-use tasks.",
+      "cluster_key": "48aca29603c7151a",
+      "title": "TVK formally joins INDIA bloc; set to join demonstrations against BJP and EC",
+      "category": "india_world",
+      "one_liner": "The INDIA bloc in Tamil Nadu formally inducted the TVK party and announced statewide protests against the BJP and Election Commission.",
       "tags": [
-        "agents",
-        "ai",
-        "howto",
-        "llm",
-        "markets",
-        "policy",
-        "research",
-        "tool"
+        "india",
+        "political"
       ],
-      "summary": "Researchers have developed Privilege-Guided SFT (PG-SFT) to address the capability degradation that often occurs when fine-tuning tool-using agents. By using turn-level information gain to adjust supervision strength, PG-SFT better balances the acquisition of new skills with the retention of base model capabilities. This approach reduces distributional drift compared to standard supervised fine-tuning methods.",
-      "key_facts": [],
-      "bottom_line": "Developers can use PG-SFT to improve agent performance on target tasks without sacrificing the model's general reasoning and code generation abilities.",
+      "summary": "Tamil Nadu leaders of the INDIA opposition bloc met in Chennai at the Tamil Nadu Congress Committee headquarters and formally welcomed the Tamilaga Vettri Kazhagam (TNV/TVK) into the coalition. Chaired by TNCC president B. Manickam Tagore, the meeting gathered key state representatives from parties including the MDMK, VCK, CPI(M), IUML, and CPI(ML). The alliance announced plans to organize district-level 'Save Democracy' protests across Tamil Nadu on October 13 and 14, followed by a major demonstration in Chennai on October 15 to protest against the BJP government and Election Commission officials.",
+      "key_facts": [
+        "Meeting location: TNCC headquarters, Chennai",
+        "Meeting chair: B. Manickam Tagore",
+        "Protest dates: October 13, 14, and 15"
+      ],
+      "bottom_line": "The TVK has officially joined the INDIA opposition bloc in Tamil Nadu, with alliance leaders planning statewide protests against central authorities.",
       "claims": [
         {
-          "text": "This work proposes Privilege-Guided SFT (PG-SFT) to leverage turn-level information gain of agent trajectories as an indicator to adjust supervision strength.",
-          "support_span": "This work proposes Privilege-Guided SFT (PG-SFT) to leverage turn-level information gain of agent trajectories as an indicator to adjust supervision strength.",
+          "text": "The various Tamil Nadu leaders of the Indian National Developmental Inclusive Alliance (INDIA) met at the Tamil Nadu Congress Committee’s (TNCC) headquarters in Chennai on Saturday and formally welcomed the Tamilaga Vettri Kazhagam (TVK) into the alliance, led by the Congress nationally.",
+          "support_span": "The Tamil Nadu leaders of the Indian National Developmental Inclusive Alliance (INDIA) met at the Tamil Nadu Congress Committee’s (TNCC) headquarters in Chennai on Saturday and formally welcomed the Tamilaga Vettri Kazhagam (TVK) into the alliance, led by the Congress nationally.",
           "status": "contradicted"
         },
         {
-          "text": "PG-SFT yields a more favorable observed trade-off on the evaluated benchmarks, substantially reducing distributional drift and broad capability degradation",
-          "support_span": "PG-SFT yields a more favorable observed trade-off on the evaluated benchmarks, substantially reducing distributional drift and broad capability degradation",
+          "text": "At the meeting, it was also decided that ‘Save Democracy’ protests would be organised at the district headquarters across Tamil Nadu on October 13 and 14 to highlight the issues surrounding the breakdown of democracy in India.",
+          "support_span": "At the meeting, it was also decided that ‘Save Democracy’ protests would be organised at the district headquarters across Tamil Nadu on October 13 and 14 to highlight the issues surrounding the breakdown of democracy in India.",
+          "status": "entailed"
+        },
+        {
+          "text": "Additionally, a protest will be held on October 15, in which INDIA bloc leaders will participate in Chennai.",
+          "support_span": "Additionally, a protest will be held on October 15, in which INDIA bloc leaders will participate in Chennai.",
           "status": "entailed"
         }
       ],
-      "trust_score": 70,
+      "trust_score": 25,
       "interest_score": 50,
       "corroboration": 1,
-      "blend": 47.5,
+      "blend": 36.2,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "04d95d60408f6ad1"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.AI",
-          "url": "https://arxiv.org/abs/2610.00949",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2610.00949"
-      ],
-      "published": "2026-10-02T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 3/5 from gemini-3.1-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "65c0037a397e26ef",
-      "title": "blacklanternsecurity/bbot — The recursive internet scanner for hackers. 🧡",
-      "category": "cyber_tools",
-      "one_liner": "A popular open-source recursive internet scanner and attack surface mapping tool for your recon workflows.",
-      "tags": [
-        "opensource",
-        "tool"
-      ],
-      "summary": "Black Lantern Security maintains BBOT, a recursive internet scanner designed for hackers and penetration testers, written in Python with over 10,000 stars on GitHub. The tool focuses on attack surface management, automation, and command-line usage. It integrates with platforms like Neo4j to map discovered infrastructure. The repository has been recently updated with ongoing development.",
-      "key_facts": [
-        "GitHub Stars: 10,587",
-        "Language: Python"
-      ],
-      "bottom_line": "BBOT provides an active, recursive reconnaissance framework that scales attack surface discovery for security assessments.",
-      "claims": [
-        {
-          "text": "The recursive internet scanner for hackers.",
-          "support_span": "The recursive internet scanner for hackers.",
-          "status": "entailed"
-        },
-        {
-          "text": "GitHub repository blacklanternsecurity/bbot, 10,587 stars, language Python.",
-          "support_span": "GitHub repository blacklanternsecurity/bbot, 10,587 stars, language Python.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 10,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 32.5,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "65c0037a397e26ef"
+        "48aca29603c7151a"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (updated)",
-          "url": "https://github.com/blacklanternsecurity/bbot",
-          "domain": "github.com",
+          "name": "The Hindu National",
+          "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-formally-joins-india-bloc-set-to-join-demonstrations-against-bjp-and-ec/article71540550.ece",
+          "domain": "thehindu.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-03T17:09:48+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 36 = trust 25 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "3806c31795d4a4fb",
+      "title": "G7 to release millions of barrels of oil and diesel after Trump threat",
+      "category": "india_world",
+      "one_liner": "G7 agrees to release 100 million barrels of oil and diesel to stabilize soaring energy prices.",
+      "tags": [
+        "markets",
+        "policy",
+        "political",
+        "release",
+        "research"
+      ],
+      "summary": "G7 leaders have agreed to release 100 million barrels of crude oil and diesel from strategic reserves over a four-month period to stabilize skyrocketing energy prices. The coordinated action, managed through the International Energy Agency (IEA), includes a frontloaded diesel release within 20 days and averts a threatened US diesel export ban by President Donald Trump. Trump had warned he would halt US diesel exports unless European nations tapped their stockpiles to alleviate pressures on American consumers. Following the commitment, global benchmark Brent crude prices fluctuated around $102 a barrel.",
+      "key_facts": [
+        "Release volume: 100 million barrels",
+        "Duration: 4 months",
+        "Brent crude price: ~$102 a barrel"
+      ],
+      "bottom_line": "A coordinated G7 strategic reserve release successfully averts a US diesel export ban and eases global fuel supply concerns.",
+      "claims": [
+        {
+          "text": "The G7 has announced 100 million barrels of oil and diesel will be released to ease supply concerns that have caused prices to skyrocketing.",
+          "support_span": "The G7 has announced 100 million barrels of oil and diesel will be released to ease supply concerns that have caused prices to rocket.",
+          "status": "contradicted"
+        },
+        {
+          "text": "Under the measures, which come after US President Donald Trump had threatened to ban diesel exports, there will not be any 'export restrictions on energy and energy products' between G7 members.",
+          "support_span": "Under the measures, which come after US President Donald Trump had threatened to ban diesel exports, there will not be any \"export restrictions on energy and energy products\" between G7 members.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 52,
+      "interest_score": 75,
+      "corroboration": 2,
+      "blend": 61.8,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "3806c31795d4a4fb",
+        "faa7060a91909fdd"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        },
+        {
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOb19pQnVCc2dwWWN3NlFDRl9LSTJvQVRYQlpDNDRxM2lhcm9kQzNkOGE5Y1c4eGFQcEFaSHZfUTlydnhfZ25hbFdWSUlBMy1IMVM1S1hOYnA1SEJWby0tZnNzY25jek44MGY1UGprN2lHT25qN3hqLTMxazdES2s0QUczSTBzcUVpTmRRc0pqcG1wd19yR1FidVJka3otVWx5SkF1dm9TaHdzN2hzLW92M1lLdVlqSVk?oc=5",
+          "domain": "reuters.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-10-02T18:04:01+00:00",
+      "published": "2026-10-02T16:49:45+00:00",
       "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "importance 3/5 from cache",
-        "blend 32 = trust 10 / interest 50 / corrob 25"
+        "tier A (+40)",
+        "2 independent outlets (+12)",
+        "corroborated by 2 independent outlets",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 62 = trust 52 / interest 75 / corrob 50",
+        "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -1078,113 +2030,236 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "56eab8c5e7614061",
-      "title": "Autonomous OSS Threat Detection via Taxonomy-Aligned LLMs",
-      "category": "tech_ai",
-      "one_liner": "Taxonomy-aligned prompting is more effective than model fine-tuning for detecting OSS supply chain attacks.",
+      "cluster_key": "67203b00c5935f15",
+      "title": "Cisco SD-WAN Zero-Day CVE-2026-76504: CVSS 9.8 Bug - tech-insider.org",
+      "category": "cyber_attacks",
+      "one_liner": "Cisco SD-WAN zero-day vulnerability CVE-2026-76504 carries a CVSS score of 9.8.",
       "tags": [
-        "agents",
-        "ai",
-        "appsec",
-        "llm",
-        "malware",
-        "opensource",
-        "policy",
-        "tool"
+        "cve",
+        "exploit",
+        "network",
+        "vulnerability"
       ],
-      "summary": "Researchers have developed a taxonomy-aligned LLM framework to detect and classify open-source software supply chain threats. By using a structured threat taxonomy (AV-xxx) and prompt engineering with GPT-4, the framework achieved 97% accuracy across five attack categories. The study found that taxonomy-aligned prompting significantly outperforms fine-tuned models and traditional machine learning classifiers.",
+      "summary": "This article is truncated and provides only a title reference to a CVSS 9.8 zero-day vulnerability in Cisco SD-WAN tracked as CVE-2026-76504.",
       "key_facts": [
-        "Accuracy: 97%",
-        "Taxonomy: AV-xxx",
-        "Dataset size: 999 incidents"
+        "CVE-2026-76504: CVSS 9.8",
+        "Product: Cisco SD-WAN"
       ],
-      "bottom_line": "Security teams should prioritize structured taxonomy-aligned prompting over model scale or fine-tuning when building LLM-based supply chain threat detection systems.",
+      "bottom_line": "Cisco SD-WAN systems face a critical CVSS 9.8 zero-day vulnerability.",
       "claims": [
         {
-          "text": "Using taxonomy-aligned prompt engineering with GPT-4, our framework achieves 97.0% multi-class classification accuracy",
-          "support_span": "Using taxonomy-aligned prompt engineering with GPT-4, our framework achieves 97.0% multi-class classification accuracy",
+          "text": "Cisco SD-WAN Zero-Day CVE-2026-76504: CVSS 9.8 Bug - tech-insider.org",
+          "support_span": "Cisco SD-WAN Zero-Day CVE-2026-76504: CVSS 9.8 Bug - tech-insider.org",
           "status": "contradicted"
-        },
-        {
-          "text": "fine-tuned Llama 3.1 8B (70.5%) and SecRoBERTa (77.5%) both underperform simple TF-IDF classifiers (82.3%)",
-          "support_span": "fine-tuned Llama 3.1 8B (70.5%) and SecRoBERTa (77.5%) both underperform simple TF-IDF classifiers (82.3%)",
-          "status": "entailed"
         }
       ],
-      "trust_score": 70,
-      "interest_score": 50,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "56eab8c5e7614061"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2610.01263",
-          "domain": "arxiv.org",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [
-        "https://arxiv.org/abs/2610.01263"
-      ],
-      "published": "2026-10-02T04:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 3/5 from gemini-3.1-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "42cfebd3a04409ad",
-      "title": "ufo-ai/ufo-core — Agent operating system",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource"
-      ],
-      "summary": "Agent operating system GitHub repository ufo-ai/ufo-core, 88 stars, language Python. Topics: ai, ai-agent, ai-agents, ai-tools, anthropic, chatgpt, claude, claude-code.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
+      "trust_score": 10,
       "interest_score": 0,
       "corroboration": 1,
-      "blend": 0.0,
+      "blend": 10.0,
       "is_new": false,
-      "summary_source": "extract",
+      "summary_source": "model",
       "alt_keys": [
-        "42cfebd3a04409ad"
+        "67203b00c5935f15"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/ufo-ai/ufo-core",
-          "domain": "github.com",
+          "name": "GN Zero-day watch",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAzaW5rbHlxSFppVy1tbUoyMXB2dkh4LTlRTWxIUFBtaU5ZN0M4c28xRkotN0d2VTU3ak81ektLamZoaWtMWjF3TlJjeGl1UVBuY0NGTExZQjhhMkRldUltN2xBWE1HeW5XSDVpMWNCQkx4QnpwbHc?oc=5",
+          "domain": "news.google.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-27T07:25:44+00:00",
+      "published": "2026-09-30T23:11:31+00:00",
       "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 1/5 from gemini-3.5-flash-lite",
+        "blend 10 = trust 10 / interest 0 / corrob 25"
       ],
-      "reject_reason": "published 2026-09-27 — outside lookback window"
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "ccae38258f6ce76c",
+      "title": "Keralam rebrands IT department to reflect AI, deep-tech push",
+      "category": "india_world",
+      "one_liner": "Kerala renames its IT department to explicitly prioritize AI, deep tech, and future technologies.",
+      "tags": [
+        "ai",
+        "hardware",
+        "india",
+        "policy",
+        "political"
+      ],
+      "summary": "The Keralam state government has officially renamed its Electronics and Information Technology department to the Department of Information Technology, Artificial Intelligence and Future Technologies. This change reflects the department's expanded focus beyond traditional IT toward start-ups, deep-tech ventures, and AI. Alongside the rename, institutional frameworks like the Kerala State Digital Technology Mission, The Future Corporation, and Semicon Keralam are being established to bolster the state's semiconductor and digital governance architecture.",
+      "key_facts": [
+        "New Department Name: Department of Information Technology, Artificial Intelligence and Future Technologies"
+      ],
+      "bottom_line": "State-level governance structures are officially pivoting to prioritize AI and deep-tech semiconductor initiatives.",
+      "claims": [
+        {
+          "text": "The State government has renamed the Electronics & Information Technology (IT) department as the Department of Information Technology, Artificial Intelligence and Future Technologies to align the State’s technology governance with emerging global priorities.",
+          "support_span": "The State government has renamed the Electronics & Information Technology (IT) department as the Department of Information Technology, Artificial Intelligence and Future Technologies to align the State’s technology governance with emerging global priorities.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 36.2,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "ccae38258f6ce76c"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "The Hindu National",
+          "url": "https://www.thehindu.com/news/national/kerala/keralam-rebrands-it-department-to-reflect-ai-deep-tech-push/article71541359.ece",
+          "domain": "thehindu.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-03T16:50:09+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 36 = trust 25 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "cd798fd9cd966ba8",
+      "title": "Will Spain's housing crisis lead to a snap election?",
+      "category": "india_world",
+      "one_liner": "Spain faces potential snap elections after Congress rejects emergency housing measures amid widespread protests.",
+      "tags": [
+        "political"
+      ],
+      "summary": "BBC report detailing political turmoil in Spain as protests continue following the eviction of an elderly resident over rent increases. The Spanish Congress rejected two government decree-laws aimed at addressing the national housing crisis, raising speculation over whether the administration will face a snap general election before terms expire next summer.",
+      "key_facts": [],
+      "bottom_line": "Legislative rejection of emergency housing decrees in Spain threatens the stability of the current government.",
+      "claims": [
+        {
+          "text": "Thousands of people are continuing protests across Spain, after Congress rejected a series of measures aimed at tackling the country's housing crisis.",
+          "support_span": "Thousands of people are continuing protests across Spain, after Congress rejected a series of measures aimed at tackling the country's housing crisis. Lawmakers voted on two decree-laws presented by government...",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 28.8,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "cd798fd9cd966ba8"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/cmgj9vz2zxelo?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-03T12:26:30+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 29 = trust 40 / interest 25 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "89764eae00994ca8",
+      "title": "The Agent Said It Was Done. The Database Disagreed.",
+      "category": "tech_ai",
+      "one_liner": "A new benchmark from Microsoft and Hugging Face shows that nearly 78% of failed agent trials still report clean tool execution while leaving incorrect database states behind.",
+      "tags": [
+        "agents",
+        "ai",
+        "howto",
+        "llm",
+        "privacy",
+        "research",
+        "tool",
+        "windows"
+      ],
+      "summary": "Microsoft and Hugging Face researchers introduced ThinkingBox, a benchmark designed to evaluate AI agents by grading their terminal backend state and side effects rather than just looking at final responses or tool calls. In a common-set ablation of 121,680 trials across 12 LLM models, researchers found that 79,853 attempts failed executable backend checks, with 67.24% of those failures still terminating cleanly without a reported tool error. Among those failures, executable checks identified wrong field values in 77.61%, unintended extra effects in 43.30%, and missing required effects in 25.36%. The findings demonstrate a massive gap where AI agents can appear successful while leaving incorrect records behind in databases.",
+      "key_facts": [
+        "Workflows tested: 507 stateful business workflows",
+        "Total trials evaluated: 121,680",
+        "Models tested: 12 LLM models",
+        "Failed trials: 79,853",
+        "Clean termination rate among failures: 67.24%"
+      ],
+      "bottom_line": "AI agents frequently report successful tool execution while leaving underlying database records in an incorrect state, requiring backend-state verification rather than proxy metrics.",
+      "claims": [
+        {
+          "text": "Across 507 stateful business workflows, each run 20 times against various LLM models, it grades agents on terminal backend state and side effects.",
+          "support_span": "Across 507 stateful business workflows, each run 20 times against various LLM models, it grades agents on terminal backend state and side effects.",
+          "status": "entailed"
+        },
+        {
+          "text": "In a common-set ablation covering 121,680 trials across 12 LLM models, 79,853 attempts failed the executable checks.",
+          "support_span": "In a common-set ablation covering 121,680 trials across 12 LLM models, 79,853 attempts failed the executable checks.",
+          "status": "contradicted"
+        },
+        {
+          "text": "Of those failures, 67.24% still terminated cleanly, invoked a state-changing tool, and reported no final tool error.",
+          "support_span": "Of those failures, 67.24% still terminated cleanly, invoked a state-changing tool, and reported no final tool error.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "89764eae00994ca8"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+          "domain": "huggingface.co",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://huggingface.co/blog/microsoft/thinkingbox"
+      ],
+      "published": "2026-10-03T22:56:48+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
     }
   ]
 }
