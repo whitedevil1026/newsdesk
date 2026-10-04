@@ -69,7 +69,13 @@ extract:
   # own median is 118 characters. There is nothing to extract from a blurb
   # that short. 220 fetches took 20-30s against a 75-minute workflow budget,
   # so the ceiling was pure caution.
-  max_items: 700
+  # Raised again, to above the cluster count, so nothing is left on a feed
+  # blurb. At 700 the published page was bimodal: p75 was 677 characters but
+  # p50 was 125, because ~390 cards past the cap never had their article
+  # fetched and a blurb's own median is 118. Measured cost of 700 fetches
+  # with the parse moved off the thread pool: 41 seconds. There is no budget
+  # argument left for a cap below the number of clusters.
+  max_items: 1400
 
 # When the pipeline is scheduled to run. This is metadata only — the actual
 # schedule lives in .github/workflows/newsdesk.yml and must be kept in step.
