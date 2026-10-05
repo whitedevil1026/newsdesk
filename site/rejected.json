@@ -1,146 +1,6 @@
 {
-  "generated_at": "2026-10-04T00:43:10.155379+00:00",
+  "generated_at": "2026-10-05T00:44:52.212629+00:00",
   "items": [
-    {
-      "cluster_key": "65216355efd0ae6f",
-      "title": "CVE-2026-97644 - Groundhogg <= 4.9 - Authenticated (Sales Person+) Privilege Escalation via Contact Identity Rebinding leading to Administrator Account Takeover to 'user_id' Parameter (v3 /contacts) chained with v4 /emails/test",
-      "category": "cyber_attacks",
-      "one_liner": "Groundhogg plugin up to version 4.9 suffers from an authenticated privilege escalation vulnerability leading to admin takeover.",
-      "tags": [
-        "appsec",
-        "cve",
-        "exploit",
-        "release",
-        "vulnerability"
-      ],
-      "summary": "CVE-2026-97644 is a privilege escalation vulnerability in the Groundhogg CRM plugin for WordPress affecting versions up to 4.9. The flaw exists because the `create_contact` function in the v3 REST endpoint fails to enforce ownership guards when passing the security-bearing `user_id` column into the database upsert path. Authenticated attackers with Sales Representative privileges can rebind their contact record to an administrator user ID and chain this with the v4 email-test endpoint to generate an auto-login URL. Consuming this link allows the attacker to call `wp_set_auth_cookie()` and achieve full administrator account takeover.",
-      "key_facts": [
-        "CVE ID: CVE-2026-97644",
-        "Affected product: Groundhogg <= 4.9",
-        "Vulnerability type: Privilege Escalation"
-      ],
-      "bottom_line": "Sales Representative accounts on WordPress sites running Groundhogg <= 4.9 can escalate privileges to full Administrator.",
-      "claims": [
-        {
-          "text": "CVE-2026-97644 - Groundhogg <= 4.9 - Authenticated (Sales Person+) Privilege Escalation via Contact Identity Rebinding leading to Administrator Account Takeover to 'user_id' Parameter (v3 /contacts) chained with v4 /emails/test",
-          "support_span": "CVE-2026-97644 - Groundhogg <= 4.9 - Authenticated (Sales Person+) Privilege Escalation via Contact Identity Rebinding leading to Administrator Account Takeover to 'user_id' Parameter (v3 /contacts) chained with v4 /emails/test",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 62.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "65216355efd0ae6f",
-        "8f6dd92c4d73750f"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "CVEFeed High",
-          "url": "https://cvefeed.io/vuln/detail/CVE-2026-97644",
-          "domain": "cvefeed.io",
-          "tier": "A"
-        },
-        {
-          "name": "CVEFeed High",
-          "url": "https://cvefeed.io/vuln/detail/CVE-2026-18443",
-          "domain": "cvefeed.io",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-10-03T04:18:04+00:00",
-      "trace": [
-        "tier A (+40)",
-        "single outlet, established publication (tier A)",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 62 = trust 40 / interest 100 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "14894d63c0eb4a5a",
-      "title": "CVE-2026-101923 - Photo Reviews for WooCommerce <= 1.2.30 - Missing Authorization to Unauthenticated Arbitrary Post Deletion via 'wcpr_image_upload_id' Parameter",
-      "category": "cyber_attacks",
-      "one_liner": "Photo Reviews for WooCommerce <= 1.2.30 allows unauthenticated attackers to delete arbitrary site posts.",
-      "tags": [
-        "appsec",
-        "cve",
-        "vulnerability"
-      ],
-      "summary": "CVE-2026-101923 is a missing authorization vulnerability in the Photo Reviews for WooCommerce plugin for WordPress for versions up to 1.2.30. The flaw allows unauthenticated attackers to supply arbitrary post IDs via the wcpr_image_upload_id parameter during public review submissions, which are stored without ownership verification in comment meta. When an administrator subsequently deletes the review or when WordPress cron empties the trash, the plugin's deletion handler executes wp_delete_post() on the stored IDs. This results in the permanent deletion of arbitrary posts, pages, products, or media attachments on the site.",
-      "key_facts": [
-        "CVE ID: CVE-2026-101923",
-        "Affected product: Photo Reviews for WooCommerce <= 1.2.30",
-        "Vulnerability type: Missing Authorization / Arbitrary Content Deletion"
-      ],
-      "bottom_line": "Unauthenticated attackers can abuse review submission parameters in vulnerable WooCommerce plugins to trigger arbitrary post deletions.",
-      "claims": [
-        {
-          "text": "CVE-2026-101923 - Photo Reviews for WooCommerce <= 1.2.30 - Missing Authorization to Unauthenticated Arbitrary Post Deletion via 'wcpr_image_upload_id' Parameter",
-          "support_span": "CVE-2026-101923 - Photo Reviews for WooCommerce <= 1.2.30 - Missing Authorization to Unauthenticated Arbitrary Post Deletion via 'wcpr_image_upload_id' Parameter",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 40,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 62.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "14894d63c0eb4a5a",
-        "240f5e1bf480050f",
-        "d1478d26da06f88c",
-        "f9d61143eab43ebb"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "CVEFeed High",
-          "url": "https://cvefeed.io/vuln/detail/CVE-2026-101923",
-          "domain": "cvefeed.io",
-          "tier": "A"
-        },
-        {
-          "name": "CVEFeed High",
-          "url": "https://cvefeed.io/vuln/detail/CVE-2026-94505",
-          "domain": "cvefeed.io",
-          "tier": "A"
-        },
-        {
-          "name": "CVEFeed High",
-          "url": "https://cvefeed.io/vuln/detail/CVE-2026-87115",
-          "domain": "cvefeed.io",
-          "tier": "A"
-        },
-        {
-          "name": "CVEFeed High",
-          "url": "https://cvefeed.io/vuln/detail/CVE-2026-105080",
-          "domain": "cvefeed.io",
-          "tier": "A"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-10-03T01:17:23+00:00",
-      "trace": [
-        "tier A (+40)",
-        "single outlet, established publication (tier A)",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 62 = trust 40 / interest 100 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
     {
       "cluster_key": "01ea0d52f168c3f7",
       "title": "Cisco Catalyst SD-WAN Manager API Authentication Bypass Vulnerability",
@@ -174,35 +34,33 @@
       ],
       "trust_score": 100,
       "interest_score": 100,
-      "corroboration": 13,
+      "corroboration": 12,
       "blend": 100.0,
       "is_new": false,
       "summary_source": "model",
       "alt_keys": [
         "01ea0d52f168c3f7",
         "023d3bd10a125d47",
+        "050412850d7c7a4a",
         "080617714f3d981a",
         "08e1c8e64ea02763",
         "0c1c37160e8b21df",
-        "0d22919b89e55cbe",
         "14dad0907ce8709b",
         "1a1512c86f75798e",
-        "1d408957140f38f6",
         "1e694e307789cd12",
-        "212f20528c4deae6",
         "21a70b25348e1428",
         "26232adab8d48f40",
         "295fc7c3e1e380d1",
-        "31db54260bd2f67f",
         "3b9d711b091556e6",
         "41dab25e04324b75",
-        "431f4db45c18c4d6",
-        "44b9df3ade8cf29b",
         "462a048a4f012aa2",
         "555a0e00683b0377",
+        "5c13ed1598805196",
         "5d2205873d0cf792",
         "5da2a0c8ed547e74",
-        "6d6c73db7556890b",
+        "6af85b00d1f5231e",
+        "762d2ab1a2ef37d1",
+        "7b3e41ef4908e54c",
         "863db23fdaeba1f0",
         "8b0fa73bd1f07fd8",
         "8e4b06fa1be69482",
@@ -210,22 +68,21 @@
         "952c95299b531fd9",
         "9a7a5afea589e446",
         "9cdc062cbd100e8c",
-        "9e1b43f7fa9f5c39",
         "ace4b8b50963f026",
-        "b19e5c1fffddd04f",
-        "b665d630ad23a25b",
+        "b02fc10521157b9e",
+        "bc68bde2a9da47f2",
         "c236996266650a74",
         "c30a1726d4f703a1",
+        "c66941e3365b6294",
         "cd47689fb28f8e84",
         "d10e7e123664be44",
-        "d5e1d70e2e179c52",
         "da734e5832a6e340",
         "dd7983abf6578523",
         "e24d8f89374a5d28",
-        "e63e4da6b1632f0c",
         "e7945278fd542cf1",
         "eaf927d5a14cd0d7",
-        "ebe94ba7dbfa477a"
+        "f44b96a4789c0b7c",
+        "f8a87061f038fde8"
       ],
       "critical_signal": "actively exploited",
       "priority": "critical",
@@ -281,7 +138,7 @@
         },
         {
           "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/the-day-one-hole-in-zero-trust-architecture/",
+          "url": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/",
           "domain": "bleepingcomputer.com",
           "tier": "B"
         },
@@ -298,9 +155,9 @@
           "tier": "B"
         },
         {
-          "name": "Infosecurity Magazine",
-          "url": "https://www.infosecurity-magazine.com/news/apple-patches-coregraphics-zero/",
-          "domain": "infosecurity-magazine.com",
+          "name": "Security Affairs",
+          "url": "https://securityaffairs.com/200224/security/u-s-cisa-adds-fortinet-fortimail-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+          "domain": "securityaffairs.com",
           "tier": "B"
         },
         {
@@ -312,18 +169,6 @@
         {
           "name": "Security Affairs",
           "url": "https://securityaffairs.com/200248/security/u-s-cisa-adds-zammad-gmbh-zammad-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
-          "domain": "securityaffairs.com",
-          "tier": "B"
-        },
-        {
-          "name": "Security Affairs",
-          "url": "https://securityaffairs.com/200224/security/u-s-cisa-adds-fortinet-fortimail-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
-          "domain": "securityaffairs.com",
-          "tier": "B"
-        },
-        {
-          "name": "Security Affairs",
-          "url": "https://securityaffairs.com/200175/hacking/public-poc-released-for-apple-coregraphics-zero-day-cve-2026-86950.html",
           "domain": "securityaffairs.com",
           "tier": "B"
         },
@@ -347,12 +192,6 @@
         },
         {
           "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
-          "domain": "thehackernews.com",
-          "tier": "B"
-        },
-        {
-          "name": "The Hacker News",
           "url": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
           "domain": "thehackernews.com",
           "tier": "B"
@@ -364,12 +203,6 @@
           "tier": "B"
         },
         {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/streaming/1004300/sling-tv-pass-cable-drops",
-          "domain": "theverge.com",
-          "tier": "B"
-        },
-        {
           "name": "CTI Now",
           "url": "https://ift.tt/k3S6lsA",
           "domain": "ift.tt",
@@ -377,14 +210,14 @@
         },
         {
           "name": "CTI Now",
-          "url": "https://ift.tt/fKqi5r2",
+          "url": "https://ift.tt/EsOfBiR",
           "domain": "ift.tt",
           "tier": "C"
         },
         {
-          "name": "bankinfosecurity.com",
+          "name": "BankInfoSecurity",
           "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOY2plYVpTMm10blhCTmdXYmxqLW5JYThtVUJNcDNvRFVYcDRvc3lTLWRBdzhQUWpOSWpKeHJ4aENGeVpnMDBwaFlubWx2NGdxNk4yWldQRXZqUGt4ekpFTXN0Vl9TUFdfZ1VSR0FTS0VVdzM5ZmU0eHI0NllmUUphMzduaVVnb3VYc0lhSUl6VQ?oc=5",
-          "domain": "bankinfosecurity-com.publisher",
+          "domain": "bankinfosecurity.publisher",
           "tier": "C"
         },
         {
@@ -395,7 +228,7 @@
         },
         {
           "name": "BleepingComputer",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQMFBqem9zRGxadEhKNFV2Vkc3a1NpOTRTWnVyU1Yxako5UFJ1ZWYta25OUTVENkJVMjltRHFXamxmQnAtRmZDX1VoZVpkNWVFV2h1Qmk1bFBod0hubFdXYzBxNnFtT09MalpONnNMdDNNbmJmc1Z4b1ZJMnNCdEQ4S1FIeW56OF9ZdmF5d3pCSkY1RmpjUUtROFFxbXo3OV94NmZTX2hGQWZUeWJaVVRqQ2NJQVFGZ2tXNmZFbXNKVFNiaEHSAcgBQVVfeXFMTkcwN2wzalJxWVN6Z3BBaXRCTDNwc3BqekZSVnJnODFxVGd2SzNjSG5vNzRHek5TSF9VcEJNRjRTMzZFU3ZlVFQtMVNsMVNsTlhUeGZPTFE4YkVVYVhpS1lkcmkzVEdMZkxEbjZGdXlxQjVscmRkek1haG4xRUZvckx0cnJCQjlndVRsZUVQSnNnUlFacVZ5dF9odWx4WnAtT0x0dGFvNk4wOWNieUxxYVVaVHRQT2FwQTFrdlZBVTFLWE45Q3VoeHM?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQeGlHVkg1SHFGbnVaX2tVZ2ZqSjVITC1qNFBUUkNsRkxpVXE3QzJMZWhteEU2YkQxM3gzd3hBV1pRQmJPQ2lLcHhjTVdFX2VwZ1NBcndTd25vQ0kzWG90bkRFU2lMdzY1dWIzelY3S2Jva0hDaXhTOGdlMDRFbXFZM3p0MTM1THpBaDBiY1VRM3RxeXd3ZU90NmFIYlYzazEzbDBBWDFsb0hHOG_SAbABQVVfeXFMTWNFTnJhU3pyb0FFRHItVzNNVDFQWTFLREV6bi1Dbkg3RDk3ZW5rN0lkQTdyZVdmaEU0WnBsYkZiMU9kMkVib3Zvcjh4VFlWbWExLUlqbjFDVm1TSGtjMm1iSnBvOWFHYWtaMVBRelZtV05DNDBiYmtlZWtBbUQ1d0RTY2duNXh4M3dzY2h4MDB1NEJiU2tDNVhuNVNsR0NsRzhvNDZ2bmc5NklQeUJjNUM?oc=5",
           "domain": "bleepingcomputer.com",
           "tier": "C"
         },
@@ -412,15 +245,27 @@
           "tier": "C"
         },
         {
-          "name": "cybersecuritynews.com",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9iYXlDQ3dhWXpjVm9CYS1NU1lnd1RreG5NZldpSGpkdF9EVC1rMER2TzkzYUFxeEQzSjEycGZQQkZldkNkLUhPSDhmV2xfTTBram0yT1NoNGZPMjN1Mnd6Z0hiQlo2bEdTZ3h0TTYxNNIBdEFVX3lxTE5kZ0ZnRkpPaFJxZ3RURVJJTEVwWk11eVQza1NyYldVZk9oZkdpcmZUYk1fa243VWw0NXAxRmRMbTVSOXUxZ1JBU0dmZm40MVZqTFFGRTBqOFphaG80VU00MVR4ckViTjhDeE5QNVZtY3M3TkJB?oc=5",
-          "domain": "cybersecuritynews-com.publisher",
+          "name": "cybersecuritydive.com",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYTZ5WUg4dVdmZlR2dVd2QUxtMmdXTzVwNFY4N0VYRXNuVmdSMVdFX2Nldkc4c2dwSEFhVVRuMTJtQUFxSnRPZnotejdVbGRfdzJ5WlVZbDYzT1NuSTB1S2ZQdHZQdXF3bExLd3A1dWM4cHJUTm1pSFoxY2lFVEs5VDZIZjNoSzhqS0Q0YkNfY0hYbjZUMFYw?oc=5",
+          "domain": "cybersecuritydive-com.publisher",
           "tier": "C"
         },
         {
-          "name": "cybersecuritynews.com",
+          "name": "CyberSecurityNews",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9iYXlDQ3dhWXpjVm9CYS1NU1lnd1RreG5NZldpSGpkdF9EVC1rMER2TzkzYUFxeEQzSjEycGZQQkZldkNkLUhPSDhmV2xfTTBram0yT1NoNGZPMjN1Mnd6Z0hiQlo2bEdTZ3h0TTYxNNIBdEFVX3lxTE5kZ0ZnRkpPaFJxZ3RURVJJTEVwWk11eVQza1NyYldVZk9oZkdpcmZUYk1fa243VWw0NXAxRmRMbTVSOXUxZ1JBU0dmZm40MVZqTFFGRTBqOFphaG80VU00MVR4ckViTjhDeE5QNVZtY3M3TkJB?oc=5",
+          "domain": "cybersecuritynews.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "CyberSecurityNews",
           "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1hSlN5dFpUYUdvSWJaZVVWRHZCSUR3eHhzd2ZmbTh6NXBCZTRGcXBMX1hYbXVndHAxc3Z4ZVVJNnUxRGZOWWtMMEhaYVJpRE9jX1JtZ1IzNEVQNHc0RzNNNUlVRWpNMFZHak1fbXBRQWcxMWw5UURyc3lR0gF_QVVfeXFMT1hzeW9qYnNWRGNOQlFsN2dnMlg4ZHo0U3ZjU01GTlRjWUhLUlRqeFlSTmJUeFk5TmdIZEJMQk9nLWxEc1Q3bk9CUGIwcHhGUDNpVndNZ2dMa1JrOGdjTVdoRkNvZjdZVEVVWE4ySC1sYVZienNoX3paS1UwUk5KOA?oc=5",
-          "domain": "cybersecuritynews-com.publisher",
+          "domain": "cybersecuritynews.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Field Effect",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQV0lJR2RnamF6TUZ3OHh6X0pqVUpycW9YcXZQWG11LUlZZktvd3BwTnZmQmZ6Sy1YY2pqYURKZWlsazA3TDlUSWUyYnV2WVhxM29GYnRJVmFoVmpjd2t1VFpWVERZcjZTYnlFaGdnYXlfVzIwZFFqMi1sOVRNa1lfdWlDNXI?oc=5",
+          "domain": "field-effect.publisher",
           "tier": "C"
         },
         {
@@ -448,33 +293,21 @@
           "tier": "C"
         },
         {
-          "name": "macobserver.com",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQVi1uWXFKU09LVTZsSjVFS1dTTld0eFBDaS1HRU0yZWttSXVIb3psSG83OFl1TmhJU1NfMm8xd1JGdE5OaDctbS05U2Z0NlFfVVJNQ18waHY2a2ozbmdPSHB4RWJIYlJtWkxwM3Q1MGFVNWRnbFZ4ZnJmaVNYaldUZnRBeUxDMVNfcS05Mi12WENTWUl3WUNDeUt3?oc=5",
-          "domain": "macobserver-com.publisher",
+          "name": "news.lavx.hu",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRTdPSnBySVBEblFocURiUVVHRVlqN1RpRFJ0TnBtUHNPbWwyd0FlT2FQWmlVU2tDMFp4T21FZUlDRW5CWmR2V09nTUdRMXpsNjhqRmVjamZjX2VScV8zYkFUQTVRWExnXzE3dm1ydmRFd3F4SUJ1X1p5SFFqZTk0b0dmdy1mQlllZzRlOQ?oc=5",
+          "domain": "news-lavx-hu.publisher",
           "tier": "C"
         },
         {
-          "name": "SC Media",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTGZiVFdyMVR2TGZnTkZtcEd5WFdLdWktV01sS3dkNk9vbkRuNDVuVUVweWNVbUJnWVNzVHNLZGxxRnIyc0k4bEFoZ2JYb21zZXAxVzQ2ZDI4SWs4N1IzR1J6TE1WOUNrbzJpUnVodWxmVnBrNi01UHZFelpDX3FUZVUyRXBYX1BURk5ETzVUNngwMnM?oc=5",
-          "domain": "sc-media.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "SecNews.gr",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5ZY21RQ3VSLU9XVEppQ015T0xuZExZcXp2b3NTRTZvcXRkSGdEMGF4Y0tsMVhtdzRwLUxtUTY1WHV2aEt1dEFHcVdsSkh4V3I3LTdPNUJTV0QtTThCeEx2d2lxZlN2em8tNzlkUUpuVVZIWHVocGtn?oc=5",
-          "domain": "secnews-gr.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Security Affairs",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQbHNQVGFHWTJSb1BNdXpYWm9CVWpXOXpBNnYzdTY0bk5NWTJJNUNNRXdEa0JkMVJmbjlvd2VGcXlVMU1PTUYwNHVoSXVPSEJzZk5wUURiVmJHOWl3anROQnBmME12NGZZa3hSaWc2M1VWNUtMNDdFMi0zb1M0MGpYVEdpTzJLejBEc1NOOXRRbm16QnRlVTRfYnhfQUlDN0dzZENIZWZiSUhjZmstNDEwMW9nOEFRVXBuQzZaQkc3enFyaWFyUUpVQVRwcEJHOWxZWnd5eS1ScHMwcGpTQ296LXBB0gHiAUFVX3lxTFBsc1BUYUdZMlJvUE11elhab0JValc5ekE2djN1NjRuTk1ZMkk1Q01Fd0RrQmQxUmZuOW93ZUZxeVUxTU9NRjA0dWhJdU9IQnNmTnBRRGJWYkc5aXdqdE5CcGYwTXY0ZllreFJpZzYzVVY1S0w0N0UyLTNvUzQwalhUR2lPMkt6MERzU045dFFubXpCdGVVNF9ieF9BSUM3R3NkQ0hlZmJJSGNmay00MTAxb2c4QVFVcG5DNlpCRzd6cXJpYXJRSlVBVHBwQkc5bFlad3l5LVJwczBwalNDb3otcEE?oc=5",
-          "domain": "security-affairs.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Security Affairs",
+          "name": "securityaffairs.com",
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaVM5MzlBd3NIZTZfVDlaTDBUempIYjV0YlBfd1hsRG5nZURnc0RUUjVjQktURTlSbFVycm1nR1otZ2lzYmhjUklFVmdfam9WNlVpbDMyRVkyS2dDODdTWTJpZTM3QlctZXBUQ2RsUmZjUHdkenk3YjBRczJNQkdEdGpIZnZxU3NfVHFpZ0JOVzM2TWpTMkltWUZvYjFhX2FtVVV2cWRkVEdzamNyNWQ3WE5KQljSAboBQVVfeXFMTlBYUUdnLUVJU0VrUU5IWVQ1YWMzTkRVOWFmVHB2UXpMT2R4eVhlazFhd1EzQ3ZMUmFlVzM1T0NiM0JEdzc5dDE0VnQ0QVBqSlFrc3VoSVo4TkljQmkydG1EWWRxbE1DMGdFblUtdHBORjNQUjBDN2hvT0hkS1pTSno4dkEwYUFvX2F4MGhmVUl6RndxdWdoTFJxc3doX3dLcDd3cHhsVDF2SVBUNmplWVRid3RMSURscnln?oc=5",
-          "domain": "security-affairs.publisher",
+          "domain": "securityaffairs-com.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "securityaffairs.com",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT0ZSTVkyVXhtcWx3akxTNlQycDRGNUhGSFFEQ3BDcUtkS0N0aWVwdnZzM1dQYk4ySmQzM2JLM1V6bmszSGhCWEh5ZlUtNDVSQVhBOEpSQ2doRWlOUXJCZ285cjBuaU82R1NPbmlNaW5yRU1oa0gxNUp0dUpIcGtJOUdhczJUOUZZektyV2ZtX0Rya0lSNjduUTdDRXpZbXVzelHSAacBQVVfeXFMTWZDczF4UWwzbHJCaEtrS1NsNEtIajU1cnJVX1JhYWFGWUw2NHNHZXVwVUFHUDNKMUR6OEZnTFluVExYei04WW5UTU5feXBPTUFqNlI1clRUU3F2enEwenIteGgwUHMydS10ZDZNYXN5LVJPanZvLUdMVUx4Q0lPZkpwTkFVSXRpSEc0ckZDZEd3bF9uVFAxYTB3ZnRSNE9zWFVhRDVIb0E?oc=5",
+          "domain": "securityaffairs-com.publisher",
           "tier": "C"
         },
         {
@@ -491,7 +324,7 @@
         },
         {
           "name": "SecurityWeek",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOa1pZcUZ3VXpQOWJGLU94d0MzRU9udURSdVBIeE1NVkJBR3VaTXJudkRYQlJZNEVmVHNNNjFJVUxaeVJ2c2FSZjEzRmpXdTZoa3dYdFE2QlBDMmIwbjJfT1lMSU40YTZWakljaFV0bEpwcDJkeGpQOVhKMi1DamhfeVhtM2FScjdOQm8xcWs1eWJkZ25uWTI0QmwwNNIBmwFBVV95cUxOa1pZcUZ3VXpQOWJGLU94d0MzRU9udURSdVBIeE1NVkJBR3VaTXJudkRYQlJZNEVmVHNNNjFJVUxaeVJ2c2FSZjEzRmpXdTZoa3dYdFE2QlBDMmIwbjJfT1lMSU40YTZWakljaFV0bEpwcDJkeGpQOVhKMi1DamhfeVhtM2FScjdOQm8xcWs1eWJkZ25uWTI0QmwwNA?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUUFnLXRfd2RVS0s4ZlhfTENHTnJmS0FPYUdwZFh5VUlQNDIycEZKTDc2cGdFaWFzTnN4TlhvdG5vV2luQUFzSmZMWFNtaHN2MWpCWFRpaE5xV2dXeFZGbnowdVlSNUtZcHRRUnhGbHlpeHJqdUVkVWgtMldMTElGT3o5UG01QnBka1lsRERzcWljR2MxTlHSAZsBQVVfeXFMTmtaWXFGd1V6UDliRi1PeHdDM0VPbnVEUnVQSHhNTVZCQUd1Wk1ybnZEWEJSWTRFZlRzTTYxSVVMWnlSdnNhUmYxM0ZqV3U2aGt3WHRRNkJQQzJiMG4yX09ZTElONGE2VmpJY2hVdGxKcHAyZHhqUDlYSjItQ2poX3lYbTNhUnI3TkJvMXFrNXliZGdublkyNEJsMDQ?oc=5",
           "domain": "securityweek.com",
           "tier": "C"
         },
@@ -502,15 +335,21 @@
           "tier": "C"
         },
         {
-          "name": "SOC Prime",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE00V2tRc0duMUtma0NGSUxseFJTakJqOGRvcGQySTh1TUdjSEVyOXNxXzVZQ3ZBcXpYUmNWZ3N0dDR5T2FzQ2lWRjZTUmFNTS12Q1NQQ3FVR0R1WkRYM04w?oc=5",
-          "domain": "soc-prime.publisher",
+          "name": "SecurityWeek",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVmVvOFVJTnhPdmM5R0pKa1VfTjFLZFZzRGNxaWJueUk2TUlGcXhRdVc0enRjYk5URXQ1MHFGMDZHbThwWDIxUy1xdmV1MmFxVENIQy1EcFBvQ0c1Vy0wMGd1TGZ1OXpGcG5BS3pKbkVUT0xBVGEtUEp6Skp5N0dRNU16WdIBiAFBVV95cUxPc3Y1cDBwdUtDeV92WnI4RC1CQmE3UG54X3BVOGZaOXFHZDZoM1FrYVZtS2VySm55S0pOajYwSTVQU3FnMU84bXlLWmdkS2hQRTRhV2lkZ2ZidTUxOXFfanAzM3FLbDhFbFRhRExkVV9EaXZLcEEzc29lTi1vMDdOUm9pQ2NVbXBX?oc=5",
+          "domain": "securityweek.com",
           "tier": "C"
         },
         {
-          "name": "thestack.technology",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSldvTGNoOTBDb0F6SlFYYjd6Mk5KUU5WQzJDWVhKMWszQ3lXc2U4eTRGYnd6bTU5TWM1ZXdMSUMzOHJWUkNQSWEyZC1ndTZmay1KQ3dGbVhWbUQ1c2FFd3otQ2tLcVJRWEczWFl4S3dVOHQ1V3NBbk5sLWxYMGhybkNjQlZuUmtqVkE?oc=5",
-          "domain": "thestack-technology.publisher",
+          "name": "shattered.io",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9FTHktY1dlRkU1SktKeS1MSVp4Q1NKTWpBZVI1dXl4REdaN1pLMV94bFU1TkNreExuSGdkTzNiQUtZbDJIYURvcDF2dmhLcS1qZzVJQ25vM0NwazVzNHlObUQxa2VlU3FjcVUtSWRlTGtCU2k2ZTZvcVZFZw?oc=5",
+          "domain": "shattered-io.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "SOC Prime",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE00V2tRc0duMUtma0NGSUxseFJTakJqOGRvcGQySTh1TUdjSEVyOXNxXzVZQ3ZBcXpYUmNWZ3N0dDR5T2FzQ2lWRjZTUmFNTS12Q1NQQ3FVR0R1WkRYM04w?oc=5",
+          "domain": "soc-prime.publisher",
           "tier": "C"
         }
       ],
@@ -523,7 +362,7 @@
       "published": "2026-09-08T18:32:13+00:00",
       "trace": [
         "tier A (+40)",
-        "13 independent outlets (+36)",
+        "12 independent outlets (+36)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
         "importance 5/5 from cache",
@@ -598,7 +437,7 @@
         "tier C (+10)",
         "2 independent outlets (+12)",
         "corroborated by 2 independent outlets",
-        "importance 5/5 from gemini-3.5-flash-lite",
+        "importance 5/5 from cache",
         "blend 66 = trust 22 / interest 100 / corrob 50",
         "demoted: critical capped at 5"
       ],
@@ -608,7 +447,7 @@
       "cluster_key": "062a8bc557224f3e",
       "title": "edoardottt/awesome-hacker-search-engines — A curated list of awesome search engines useful during Penetration testing, Vulnerability assessments, Red/Blu",
       "category": "cyber_tools",
-      "one_liner": "A curated GitHub repository lists specialized search engines for penetration testing, bug bounty hunting, and red team operations.",
+      "one_liner": "A curated GitHub list aggregates search engines and vulnerability databases for pentesting and bug bounty operations.",
       "tags": [
         "appsec",
         "blueteam",
@@ -619,27 +458,30 @@
         "tool",
         "vulnerability"
       ],
-      "summary": "The curated GitHub repository \"awesome-hacker-search-engines\" maintains an updated list of specialized search engines useful for penetration testing, vulnerability assessments, bug bounties, and red/blue team operations. The repository has accumulated 11,228 stars and focuses on topics including DNS mapping, exploitation resources, and CVE research.",
-      "key_facts": [
-        "Repository stars: 11,228",
-        "Primary language: Shell"
-      ],
-      "bottom_line": "Security researchers can leverage this curated list of reconnaissance search engines to streamline vulnerability discovery and asset enumeration.",
+      "summary": "A curated GitHub repository list titled 'awesome-hacker-search-engines' aggregates specialized search engines and databases useful for penetration testing, vulnerability assessments, red/blue teaming, and bug bounty operations. The compilation covers multiple categories, including general search engines, server mappers, vulnerability aggregators like the NIST NVD and MITRE CVE databases, exploit repositories, network scanners like Shodan and Censys, and code-auditing tools.",
+      "key_facts": [],
+      "bottom_line": "Security researchers have a centralized reference list of cyberspace mapping engines and vulnerability databases for asset discovery.",
       "claims": [
         {
-          "text": "GitHub repository edoardottt/awesome-hacker-search-engines, 11,228 stars, language Shell.",
-          "support_span": "GitHub repository edoardottt/awesome-hacker-search-engines, 11,228 stars, language Shell.",
+          "text": "edoardottt/awesome-hacker-search-engines — A curated list of awesome search engines useful during Penetration testing, Vulnerability assessments, Red/Blu",
+          "support_span": "edoardottt/awesome-hacker-search-engines — A curated list of awesome search engines useful during Penetration testing, Vulnerability assessments, Red/Blu",
           "status": "contradicted"
+        },
+        {
+          "text": "A curated list of awesome search engines useful during Penetration testing, Vulnerability assessments, Red/Blue Team operations, Bug Bounty and more",
+          "support_span": "A curated list of awesome search engines useful during Penetration testing, Vulnerability assessments, Red/Blue Team operations, Bug Bounty and more",
+          "status": "entailed"
         }
       ],
       "trust_score": 10,
-      "interest_score": 25,
+      "interest_score": 50,
       "corroboration": 1,
-      "blend": 21.2,
+      "blend": 32.5,
       "is_new": false,
       "summary_source": "model",
       "alt_keys": [
-        "062a8bc557224f3e"
+        "062a8bc557224f3e",
+        "16ccfebc2ae8038a"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -650,6 +492,12 @@
           "url": "https://github.com/edoardottt/awesome-hacker-search-engines",
           "domain": "github.com",
           "tier": "C"
+        },
+        {
+          "name": "GitHub (updated)",
+          "url": "https://github.com/jivoi/awesome-osint",
+          "domain": "github.com",
+          "tier": "C"
         }
       ],
       "primary_links": [],
@@ -657,20 +505,20 @@
       "trace": [
         "tier C (+10)",
         "single tier-C source — treat with caution",
-        "importance 2/5 from cache",
-        "blend 21 = trust 10 / interest 25 / corrob 25"
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 32 = trust 10 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "f99b52c0e5b8216a",
-      "title": "How late to the party am I on WebP? I only recently started using it as my preferred format for non-photo images and it's SO MUCH smaller than PNG…",
-      "category": "tech_ai",
+      "cluster_key": "f3d64a040941b59f",
+      "title": "one of the most heated discussions on X is about the ethics of a project in which a person is running Saw-like “torture” and “pain” experiments on a…",
+      "category": "cyber_attacks",
       "one_liner": "",
       "tags": [
-        "windows"
+        "ai"
       ],
-      "summary": "I only recently started using it as my preferred format for non-photo images and it's SO MUCH smaller than PNG, and looks much better than JPG used to shrink down screenshots too Has everyone else been having a WebP party without me for years? (Bluesky post by @simonwillison.net — 75 likes, 1 reposts)",
+      "summary": "Post 404 Media 404media.co did:plc:vcepp6trx4vpe5ourxso4tjl one of the most heated discussions on X is about the ethics of a project in which a person is running Saw-like “torture” and “pain” experiments on a series of locally hosted LLMs, sparking a wildly tiresome conversation about AI consciousness and the idea of “model welfare\"...",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -681,33 +529,33 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "f99b52c0e5b8216a"
+        "f3d64a040941b59f"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Simon Willison",
-          "url": "https://bsky.app/profile/simonwillison.net/post/3mwjcwvab6c2k",
+          "name": "404 Media",
+          "url": "https://bsky.app/profile/404media.co/post/3mwrcixicws2o",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-27T17:24:44.069000+00:00",
+      "published": "2026-09-30T21:38:14.574000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-27 — outside lookback window"
+      "reject_reason": "published 2026-09-30 — outside lookback window"
     },
     {
-      "cluster_key": "50135753253810b6",
-      "title": "It is strange how much LLMs turned out to be able to solve such a wide range of hard problems that would not, instinctively, seem to be problems…",
+      "cluster_key": "4601d56aac7f6fcd",
+      "title": "Leaving aside Anthropic's incentives for publishing this research, there is no doubt that open weights models will soon create the same security…",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [],
-      "summary": "It is strange how much LLMs turned out to be able to solve such a wide range of hard problems that would not, instinctively, seem to be problems that a model of human language would be able to solve This is from a Stanford project that let Astra drive a robot in a kitchen tml.stanford.edu/homebody/ (Bluesky post by @emollick.bsky.social — 398 likes, 45 reposts)",
+      "summary": "Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu Leaving aside Anthropic's incentives for publishing this research, there is no doubt that open weights models will soon create the same security threats that closed source models have been demonstrating, except without guardrails.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -718,7 +566,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "50135753253810b6"
+        "4601d56aac7f6fcd"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -726,69 +574,43 @@
       "sources": [
         {
           "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwhppofdec23",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwosru4zes2o",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-27T02:08:01.182000+00:00",
+      "published": "2026-09-29T21:51:33.702000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-27 — outside lookback window"
+      "reject_reason": "published 2026-09-29 — outside lookback window"
     },
     {
       "cluster_key": "7c2711a249fc4725",
-      "title": "OpenAI DevDay 2026 live blog",
+      "title": "I'm at OpenAI's DevDay event in San Francisco today - as I have for the past three DevDay events, I'm running a live blog where I'll be posting…",
       "category": "tech_ai",
-      "one_liner": "OpenAI introduced personal agent \"Dots,\" GPT-6.1 Sol, and ultrafast model variants at DevDay 2026.",
+      "one_liner": "",
       "tags": [
-        "agents",
-        "ai",
-        "linux",
-        "llm",
-        "release"
+        "windows"
       ],
-      "summary": "At OpenAI DevDay 2026, CEO Sam Altman announced several major platform updates, headlined by \"Dots,\" a new personal agent product powered by the Astra model. Dots can execute cross-platform tasks, interact via voice, and collaborate with team members in a new shared space called ChatGPT Space. Additionally, OpenAI launched GPT-6.1 Sol, offering near-Astra intelligence at one-fifth the price, alongside an \"Ultrafast\" model option capable of up to 300 tokens per second. These tools are rolling out immediately to Pro, Enterprise, and API customers.",
-      "key_facts": [
-        "New Product: Dots (powered by Astra)",
-        "New Model: GPT-6.1 Sol (priced at 1/5th of Astra)",
-        "Performance: Ultrafast up to 300 tokens/second"
-      ],
-      "bottom_line": "OpenAI's rollout of autonomous personal agents and cheaper, high-speed models redefines enterprise workflow automation and developer cost structures.",
-      "claims": [
-        {
-          "text": "It's called \"Dots.\"",
-          "support_span": "It's called \"Dots.\"",
-          "status": "contradicted"
-        },
-        {
-          "text": "Today they're launching GPT-6.1 Sol.",
-          "support_span": "Today they're launching GPT-6.1 Sol.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 37,
-      "interest_score": 75,
-      "corroboration": 2,
-      "blend": 58.0,
+      "summary": "Post Simon Willison simonwillison.net did:plc:kft6lu4trxowqmter2b6vg6z I'm at OpenAI's DevDay event in San Francisco today - as I have for the past three DevDay events, I'm running a live blog where I'll be posting updates during the keynote, which starts in five minutes 2026-09-29T16:54:42.075Z",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
       "is_new": true,
-      "summary_source": "model",
+      "summary_source": "extract",
       "alt_keys": [
-        "7c2711a249fc4725",
-        "f7665b70e425c2c0"
+        "7c2711a249fc4725"
       ],
       "critical_signal": "",
-      "priority": "important",
+      "priority": "minor",
       "verdict": "rejected",
       "sources": [
-        {
-          "name": "Simon Willison",
-          "url": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
-          "domain": "simonwillison.net",
-          "tier": "B"
-        },
         {
           "name": "Simon Willison",
           "url": "https://bsky.app/profile/simonwillison.net/post/3mwoc6wab4s2d",
@@ -797,16 +619,48 @@
         }
       ],
       "primary_links": [],
-      "published": "2026-09-29T15:55:13+00:00",
+      "published": "2026-09-29T16:54:38.502000+00:00",
       "trace": [
-        "tier B (+25)",
-        "2 independent outlets (+12)",
-        "corroborated by 2 independent outlets",
-        "importance 4/5 from cache",
-        "blend 58 = trust 37 / interest 75 / corrob 50",
-        "demoted: critical capped at 5"
+        "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-09-29 — outside lookback window"
+    },
+    {
+      "cluster_key": "c9e2105dd9b8e320",
+      "title": "I only used the newly announced ChatGPT Dots briefly before launch, so can’t offer a detailed review, but I found it to be a good entry in the…",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [],
+      "summary": "Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu I only used the newly announced ChatGPT Dots briefly before launch, so can’t offer a detailed review, but I found it to be a good entry in the rapidly-expanding Clawlike category with Muse & Grokbot. Using a capable model with access to your data as an assistant & second opinion is remarkably useful 2026-09-29T18:26:05.074Z",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "c9e2105dd9b8e320"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwohcfeiss23",
+          "domain": "bsky.app",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-29T18:26:03.742000+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-29 — outside lookback window"
     },
     {
       "cluster_key": "031000dc35a93b30",
@@ -816,7 +670,7 @@
       "tags": [
         "ai"
       ],
-      "summary": "I was reflecting on how many random contingencies went into creating the current accelerating AI moment and had Opus 5.5 put together a video, inspired by old science show Connections, to try and point out how a series of initially unrelated ideas led to the moment we are in now. (Bluesky post by @emollick.bsky.social — 125 likes, 24 reposts)",
+      "summary": "Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu I was reflecting on how many random contingencies went into creating the current accelerating AI moment and had Opus 5.5 put together a video, inspired by old science show Connections, to try and point out how a series of initially unrelated ideas led to the moment we are in now.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -848,81 +702,6 @@
       "reject_reason": "published 2026-09-28 — outside lookback window"
     },
     {
-      "cluster_key": "2af8ffa15c0ea19f",
-      "title": "CVE-2026-103056 (CRITICAL 9.4): AiSOC versions 7.2.0 before 12.0.0 contain a command injection vulnerability in the actions service that buil…",
-      "category": "cyber_attacks",
-      "one_liner": "CVE-2026-103056 is a 9.4-rated command injection vulnerability in AiSOC via unescaped CrowdStrike RTR parameters.",
-      "tags": [
-        "appsec",
-        "cve",
-        "exploit",
-        "soc",
-        "vulnerability"
-      ],
-      "summary": "A critical command injection vulnerability, tracked as CVE-2026-103056 with a CVSS base score of 9.4, has been identified in AiSOC versions 7.2.0 through 11.x. The flaw exists in the actions service, which builds CrowdStrike Real Time Response command strings by improperly interpolating unescaped parameters within crowdstrike_rtr.py and endpoint.py. Authenticated users can inject single quotes into path or script parameters to execute arbitrary commands on managed endpoints with root or SYSTEM privileges.",
-      "key_facts": [
-        "CVE-2026-103056: CVSS 9.4 critical command injection",
-        "Affected Software: AiSOC versions 7.2.0 up to 12.0.0",
-        "Impact: SYSTEM or root command execution"
-      ],
-      "bottom_line": "Authenticated users can exploit AiSOC command injection flaws to run arbitrary code with root or SYSTEM privileges on endpoints.",
-      "claims": [
-        {
-          "text": "AiSOC versions 7.2.0 before 12.0.0 contain a command injection vulnerability in the actions service with a CVSS score of 9.4.",
-          "support_span": "AiSOC versions 7.2.0 before 12.0.0 contain a command injection vulnerability in the actions service that builds CrowdStrike Real Time Response command strings by interpolating unescaped action parameters in crowdstrike_rtr.py and endpoint.py. CVSS base score 9.4 (CRITICAL).",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 94,
-      "interest_score": 100,
-      "corroboration": 3,
-      "blend": 91.0,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "2af8ffa15c0ea19f",
-        "b9d1a0f242ef0aeb",
-        "bdcf6898684691ba"
-      ],
-      "critical_signal": "",
-      "priority": "critical",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103056",
-          "domain": "nist.gov",
-          "tier": "A"
-        },
-        {
-          "name": "Palo Alto PSIRT",
-          "url": "https://security.paloaltonetworks.com/CVE-2026-0302",
-          "domain": "security.paloaltonetworks.com",
-          "tier": "A"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZXJ0OUdqZ2lSRW1wRWdNSDBKUExfa0JwNkRRVEtxLTg4a092bkh5S0hldWxaVFQyeVdENHZObE94M1VGMEJGYTJ2cE1nV3BobFB5RmpEMC0xb1Q5SGRxb2tvUmFvc1ZzYWlKM1ZPWHRTTTY5b0c5S2o1b3Nxc3JOb2UwZVVVdW0xeThtRDNfMW1DdDdmSjlfWnloMUhCZ184YzdlU21aSm5oNDA4OE5oUnk1QkFkOU5ITmJLbnpYeVZseTBOWkVwdXNBb2HSAdIBQVVfeXFMTTFiOE52MWdPSERzSDlnNDFETGV1aWlWUENVdHlFYWJ1ZVNsS1p0SVpuNUcyYlRlcjhKRnRLeG82c291YWhTZGotMHF3UU8zb29jTU9RREFtOXd0STkxMjBvVENtSkkwcDNXZFN5bmRxcThKbGFMZkZ3dUlYUjBudzJtc1VJSGtDZE1pdGdGaGtXaXBPQnpRdVl2X3p5cmEwTE53TW5lQnVKRktzaXZXNzkzWm1fNnJ1ZjNzYWhXU1BTb3NHVVR6Vi1PZGRBS19XLTNB?oc=5",
-          "domain": "bleepingcomputer.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-103056",
-        "https://security.paloaltonetworks.com/CVE-2026-0302"
-      ],
-      "published": "2026-09-09T16:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "3 independent outlets (+24)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 91 = trust 94 / interest 100 / corrob 75"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
       "cluster_key": "16c9263fd85146f6",
       "title": "I've published detailed notes and an annotated transcript to accompany the video of the keynote I gave at @wearedevelopers.bsky.social World…",
       "category": "tech_ai",
@@ -931,7 +710,7 @@
         "political",
         "windows"
       ],
-      "summary": "I've published detailed notes and an annotated transcript to accompany the video of the keynote I gave at @wearedevelopers.bsky.social World Congress North America in San Jose on Friday - here's my rundown of everything that's happened with LLMs in 2026 so far simonwillison.net/2026/Sep/27/... (Bluesky post by @simonwillison.net — 108 likes, 24 reposts)",
+      "summary": "Post Simon Willison simonwillison.net did:plc:kft6lu4trxowqmter2b6vg6z I've published detailed notes and an annotated transcript to accompany the video of the keynote I gave at @wearedevelopers.bsky.social World Congress North America in San Jose on Friday - here's my rundown of everything that's happened with LLMs in 2026 so far 2026-09-28T17:51:17.161Z",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -963,164 +742,19 @@
       "reject_reason": "published 2026-09-28 — outside lookback window"
     },
     {
-      "cluster_key": "1ab08f8efc0245c2",
-      "title": "CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)",
-      "category": "cyber_attacks",
-      "one_liner": "CVE-2026-0307 is a local privilege escalation flaw in the Palo Alto GlobalProtect app allowing root or SYSTEM execution.",
-      "tags": [
-        "android",
-        "appsec",
-        "cve",
-        "exploit",
-        "linux",
-        "network",
-        "vulnerability",
-        "windows"
-      ],
-      "summary": "Palo Alto Networks disclosed multiple local privilege escalation vulnerabilities (CVE-2026-0307, CVSS base score 8.5) in the GlobalProtect app affecting Windows, macOS, and Linux clients. Due to untrusted search path weaknesses (CWE-426), a local, non-administrative user can execute arbitrary commands with NT AUTHORITY\\SYSTEM privileges on Windows or root privileges on Unix-like systems. Remediation requires upgrading both client applications and backend PAN-OS or Prisma Access environments.",
-      "key_facts": [
-        "CVE-2026-0307: CVSS 8.5 local privilege escalation",
-        "Weakness: CWE-426 (Untrusted Search Path)",
-        "Impact: SYSTEM or root execution"
-      ],
-      "bottom_line": "Local attackers can exploit GlobalProtect client search path weaknesses to escalate privileges to SYSTEM or root.",
-      "claims": [
-        {
-          "text": "Multiple local privilege escalation vulnerabilities in the Palo Alto Networks GlobalProtect app allow local users to escalate privileges to SYSTEM or root.",
-          "support_span": "Multiple local privilege escalation vulnerabilities in the Palo Alto Networks GlobalProtect app allows a local user to escalate their privileges to NT AUTHORITY\\SYSTEM on Windows and root on macOS and Linux.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 82,
-      "interest_score": 75,
-      "corroboration": 2,
-      "blend": 69.2,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "1ab08f8efc0245c2",
-        "815bf950eac001ad",
-        "a3c36e87a94b475a",
-        "bd675df8ad6e361c"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Palo Alto PSIRT",
-          "url": "https://security.paloaltonetworks.com/CVE-2026-0307",
-          "domain": "security.paloaltonetworks.com",
-          "tier": "A"
-        },
-        {
-          "name": "Palo Alto PSIRT",
-          "url": "https://security.paloaltonetworks.com/CVE-2026-0299",
-          "domain": "security.paloaltonetworks.com",
-          "tier": "A"
-        },
-        {
-          "name": "Palo Alto PSIRT",
-          "url": "https://security.paloaltonetworks.com/CVE-2026-0304",
-          "domain": "security.paloaltonetworks.com",
-          "tier": "A"
-        },
-        {
-          "name": "SecHarvester",
-          "url": "https://www.intrinsec.com/cve-2026-50610-elevation-privileges-acer-nitrosense/",
-          "domain": "intrinsec.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [
-        "https://security.paloaltonetworks.com/CVE-2026-0299",
-        "https://security.paloaltonetworks.com/CVE-2026-0304",
-        "https://security.paloaltonetworks.com/CVE-2026-0307"
-      ],
-      "published": "2026-09-09T16:00:00+00:00",
-      "trace": [
-        "tier A (+40)",
-        "2 independent outlets (+12)",
-        "primary source anchor (+30)",
-        "verified: primary source artifact",
-        "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 69 = trust 82 / interest 75 / corrob 50",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "9eb938b888946f04",
-      "title": "Mapping of two Western Ghats districts shows much of proposed ESA overlaps with Notified Forests, Protected Areas, or existing ESZs",
-      "category": "india_world",
-      "one_liner": "Spatial analysis suggests the proposed Western Ghats ESA largely formalizes existing protections, potentially easing concerns about new land-use restrictions in Karnataka.",
-      "tags": [
-        "india",
-        "policy",
-        "political",
-        "research"
-      ],
-      "summary": "The Paani Earth Foundation analyzed the Centre’s draft notification for an Ecologically Sensitive Area (ESA) in the Western Ghats, specifically focusing on Kodagu and Udupi districts. The mapping reveals that a significant majority of the proposed ESA—70.8% in Kodagu and 82% in Udupi—already overlaps with existing protected areas like Notified Forests or Eco-Sensitive Zones. This analysis highlights that the proposed ESA designation primarily reinforces existing protections rather than imposing entirely new restrictions on the remaining 18-30% of land. The findings emerge amid ongoing political tension, as the Karnataka legislature recently passed a resolution rejecting the K. Kasturirangan Committee report in its current form.",
-      "key_facts": [
-        "Kodagu ESA overlap: 70.8%",
-        "Udupi ESA overlap: 82%",
-        "Resolution date: September 22"
-      ],
-      "bottom_line": "The proposed ESA for the Western Ghats is largely redundant with existing legal protections, suggesting that fears of widespread new land-use restrictions may be overstated.",
-      "claims": [
-        {
-          "text": "The mapping reveals that a significant majority of the proposed ESA—70.8% in Kodagu and 82% in Udupi—already overlaps with existing protected areas.",
-          "support_span": "Our mapping shows that about 70.8% of the proposed ESA area in Kodagu overlaps with Notified Forests, Protected Areas, or existing ESZs... Our mapping shows that about 82% of the proposed ESA already overlaps with Notified Forests, Protected Areas or existing Eco-Sensitive Zones.",
-          "status": "contradicted"
-        },
-        {
-          "text": "The Karnataka legislature recently passed a resolution rejecting the K. Kasturirangan Committee report.",
-          "support_span": "the Karnataka legislature, on September 22, unanimously passed a resolution rejecting the K. Kasturirangan Committee report on the Western Ghats in its current form",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 75,
-      "corroboration": 1,
-      "blend": 47.5,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "9eb938b888946f04"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/national/karnataka/mapping-of-two-western-ghats-districts-shows-much-of-proposed-esa-overlaps-with-notified-forests-protected-areas-or-existing-eszs/article71541016.ece",
-          "domain": "thehindu.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-10-03T16:31:15+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3.1-flash-lite",
-        "blend 48 = trust 25 / interest 75 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "0772f65ed330d6d7",
-      "title": "edenfunf/reelmimic — Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds a",
+      "cluster_key": "05a6b5cb69d3f3b5",
+      "title": "Moris-kr/ai-chatroom — A web group chat where Claude, ChatGPT, Grok and Gemini hang out and talk on their own, powered by your logged",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "agents",
         "ai",
+        "linux",
         "llm",
-        "opensource"
+        "opensource",
+        "tool",
+        "windows"
       ],
-      "summary": "An AI crew (Claude Code or Codex) plans, builds and reviews it with you. GitHub repository edenfunf/reelmimic, 1,094 stars, language JavaScript. Topics: 2d-animation, ai-agents, ai-video, animation, claude-code, codex, multi-agent, style-transfer.",
+      "summary": "Claude · ChatGPT · Grok · Gemini 넷이 상주하는 웹 단톡방. Windows (PowerShell): winget install -e --id OpenJS.NodeJS.LTS Node.js irm | iex Claude Code irm | iex Codex CLI irm | iex Grok Build irm | iex Antigravity CLI macOS / Linux: curl -fsSL | bash Claude Code curl -fsSL | sh Codex CLI curl -fsSL | bash Grok Build curl -fsSL | bash Antigravity CLI 설치 후 새 터미널에서 각 CLI에 로그인하고, start.bat / ./start.sh(또는 node server.mjs)로 켠다. ChatGPT 그림은 agents.gpt.imageModel(기본 gpt-6-luna)로 그린다. public/avatars/<id>.webp(512px)와 <id>-128.webp(128px)를 내 그림으로 바꾸고, config.json에 외형을 적어 준다. config.json에 \"external\": { \"enabled\": true } → 서버 재시작.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -1128,10 +762,10 @@
       "interest_score": 0,
       "corroboration": 1,
       "blend": 0.0,
-      "is_new": false,
+      "is_new": true,
       "summary_source": "extract",
       "alt_keys": [
-        "0772f65ed330d6d7"
+        "05a6b5cb69d3f3b5"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -1139,17 +773,60 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/edenfunf/reelmimic",
+          "url": "https://github.com/Moris-kr/ai-chatroom",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-28T19:14:59+00:00",
+      "published": "2026-09-29T03:42:10+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-28 — outside lookback window"
+      "reject_reason": "published 2026-09-29 — outside lookback window"
+    },
+    {
+      "cluster_key": "8012460f884831e5",
+      "title": "mikamikasuki/FOREST — FOREST is a research agent for long-horizon science, where evidence gets lost, errors compound, and goals drif",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "agents",
+        "opensource",
+        "release",
+        "research",
+        "tool"
+      ],
+      "summary": "Turn it into ideas, real experiments, evidence, and a complete paper. FOREST is an end-to-end research agent framework for carrying a scientific project from an early question to a finished manuscript. It can explore and compare research directions, search the literature, turn promising ideas into testable hypotheses, design experiments, run real code on your compute, analyze the results, and decide what to try next. As the project develops, FOREST can revise its plan, abandon weak directions, branch into alternatives, and build the figures, tables, and manuscript around the evidence that survives. Instead of keeping the research process inside a long chat history, FOREST represents it as a…",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": true,
+      "summary_source": "extract",
+      "alt_keys": [
+        "8012460f884831e5"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/mikamikasuki/FOREST",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-29T11:06:54+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-29 — outside lookback window"
     },
     {
       "cluster_key": "a7be1a974d58475d",
@@ -1157,9 +834,10 @@
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
+        "ai",
         "windows"
       ],
-      "summary": "I really like how @reckless.bsky.social described this: \"The people do not yearn for automation\" www.theverge.com/podcast/9170... (Bluesky post by @simonwillison.net — 76 likes, 8 reposts)",
+      "summary": "Post Simon Willison simonwillison.net did:plc:kft6lu4trxowqmter2b6vg6z I really like how @reckless.bsky.social described this: \"The people do not yearn for automation\" [contains quote post or other embedded content] 2026-09-28T20:26:22.670Z",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -1191,234 +869,43 @@
       "reject_reason": "published 2026-09-28 — outside lookback window"
     },
     {
-      "cluster_key": "17c7b4058a01a0a3",
-      "title": "Security startup finds more than 13,000 internal company screenshots that AI agents uploaded publicly - the-decoder.com",
-      "category": "cyber_tools",
-      "one_liner": "Security startup finds 13,000 corporate screenshots accidentally exposed online by AI agents.",
+      "cluster_key": "643ec84f74e627e0",
+      "title": "I am a: - [ ] man - [ ] woman - [x] load-bearing seam looking for a: - [ ] man - [ ] woman - [x] way off this wild ride",
+      "category": "tech_ai",
+      "one_liner": "",
       "tags": [
-        "agents",
-        "ai",
-        "cloud",
-        "privacy"
+        "windows"
       ],
-      "summary": "Cybernews headline reporting that a security startup discovered over 13,000 internal corporate screenshots uploaded publicly by AI agents.",
-      "key_facts": [
-        "Exposed Items: 13,000+ internal company screenshots"
-      ],
-      "bottom_line": "AI agents are inadvertently leaking sensitive internal enterprise screenshots to the public internet.",
-      "claims": [
-        {
-          "text": "Security startup finds more than 13,000 internal company screenshots that AI agents uploaded publicly.",
-          "support_span": "Security startup finds more than 13,000 internal company screenshots that AI agents uploaded publicly - the-decoder.com",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 34,
-      "interest_score": 50,
-      "corroboration": 3,
-      "blend": 53.5,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "17c7b4058a01a0a3",
-        "54c3bcbe1f977fd4",
-        "5752b1d03f71f40c",
-        "8bc8c32017e8565a",
-        "a11d5b91513d8655",
-        "a5799bf70f97ce83",
-        "ca4986c1c7418633",
-        "f660ad7a9149301d"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Cybernews",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9CN2ExMjlUNVVaYjVwN0pzNEZwV3AzdDNpcU16bm9yeXRiZE1xY3J4VkFJVXJmb1JqYjdleWlWWmVvbzgyMnljOW8tNVU3TW91N1hLR0xzNHRyN0s1Z3RTbTdGX1FHMU9IdDJ3QXJINFJRQ2dtZmNCQTNzOA?oc=5",
-          "domain": "cybernews.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "cybersecuritynews.com",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBGeXpodHRkSWtqN19GaXhWVTh2X1dYUFlvSktuTExEdUNTUTJmck52VU9RZUlfQXFnTFUxdjZRc2pDTy1RREItMk5LbXZib2hJXzNVRkx5RFFwZ2FXdVdGaGhIZ2Z3Zk9ieEhhYlFNOGpyLWVBbkw3SHdKbGNmd9IBgwFBVV95cUxPV0xHa3VlblRicU5JcWNnVE0xUFJIZVdWZldhbjdJU2ZaUkdNTENHWWs4OXBMOEtpajczLWxRV01pWDR4SldQMHFuZFVkRWRwTHBoUjh0NXZIYktpYml1ZHU2dXFNVG9pWFY2WEZPOFgzSnNhTkJHOEthWlVXTjZwT0VTNA?oc=5",
-          "domain": "cybersecuritynews-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "gbhackers.com",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE13OGFtdHlSYy15cVpZZUw5TDIzSFhmYm1NSHlWTWVqbzI4UzRnMnUxY2ZlSTdBUjJVaTl3V2pLd2VOTWxLSDlPcW1haGl0akRjZ1BMaWlqN2ZvMG9FSy1jWmYwam1RTW5fQ2RvckkxLXBYMFVJdWJLaFVZQdIBe0FVX3lxTE13OGFtdHlSYy15cVpZZUw5TDIzSFhmYm1NSHlWTWVqbzI4UzRnMnUxY2ZlSTdBUjJVaTl3V2pLd2VOTWxLSDlPcW1haGl0akRjZ1BMaWlqN2ZvMG9FSy1jWmYwam1RTW5fQ2RvckkxLXBYMFVJdWJLaFVZQQ?oc=5",
-          "domain": "gbhackers-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "Help Net Security",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSUhFdmphbko0SjFTZVZBTDNHcW9MUTBRMXl2Ni1zWE0zT2JRTUhKZ1Y0NVl2QlpVWmRNQUh1MU1tamdoRVlsTXlKUF9pMlZubi1vN3BjOVQ2Sl9memk4OTRhampBYmVWX2l4S1gyR2hyRUtLMExGaHlsdG9FSjd3VXI2RkZfYm50eUM0?oc=5",
-          "domain": "helpnetsecurity.com",
-          "tier": "C"
-        },
-        {
-          "name": "GN Security tools",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPY091QXNFS2wtaEpQckZoTXNYdk1RRHBxVmlnbmx0SENtckhGcG5fLU8yZkZROTNpZGctanBRb211T2Z0Y01NZkUyN1UtTC1VWUxhVzdVUDRqZlZwV3ZPaHRFQl9qR1hkQkN4ZVh0OXNLMWNZLTBKX2pCNE9oN2pJaU1ibVRwTTJRLU1DOUktTU9PYkRHeXkxWEJVZFpSbXhfN1JKbkpHcjVtSWprbkhyUHdtU3lsWm5IbEw2RmNmdTJhdDg?oc=5",
-          "domain": "news.google.com",
-          "tier": "C"
-        },
-        {
-          "name": "Pasquale Pillitteri",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdVhfM21RNkZKMmZvcTVLQjdPSDJucDhpY2w4R0RXRTRsV1RvNENJRzBfMmtaUFFhQ1hqZG1aamw0VTNIVGdGUks4Z2tsMFVaLTJUZ0tXeTdScjZjeTdiSjBDS1pfNFk3ZWdQRXpBMjdMV2FXV3IzdTlhNHFEdEJCaHRzTHVlTXpMNTBWcEY1b19aREE?oc=5",
-          "domain": "pasquale-pillitteri.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "rswebsols.com",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYThjUGNsSm9WZzJmNm9jdkJRMEhYSWwxQ2RXbk85a2U5cnQteGhZOWJLTF91dWVNZFV1dmdjaG9JeGNBdzJ4RkNoUjhJZl90WFJHN01CVm53aVpZaHd4SXJYUTFoaVdqcThHQkZfX2tzbEVvYkpadmpkdllzTEJYYURiRFJJWFA0ak9tZjc3WEZKdkZ6ZDZKSWZaTzNVYXh1LVVOdElwV0J6bkJiZzkwNEZQaDA5cGhU?oc=5",
-          "domain": "rswebsols-com.publisher",
-          "tier": "C"
-        },
-        {
-          "name": "TechGig",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTU9mR2lfVE9ESkpaNDduM3dnUUswNk4zXy1uR2NVQUR3TzgzZTZTWG9QR015Zk9EalA5WkZINVR3R1cyS0ZCcEdiX212SkdjX3lCb1VRc0VuR0c5Qzlsb2haeGlCUFE2c1BiUUFMRVV4QjQxNVo2bkJDc0ZVMVY3SHM2eG5EYUdXUTVKTUdyTVVYc0pyc1c0STUtT1NWQWRXM01HY0ZCek01N1l1NmfSAa4BQVVfeXFMTU1PZkdpX1RPREpKWjQ3bjN3Z1FLMDZOM18tbkdjVUFEd084M2U2U1hvUEdNeWZPRGpQOVpGSDVUd0dXMktGQnBHYl9tdkpHY195Qm9VUXNFbkdHOUM5bG9oWnhpQlBRNnNQYlFBTEVVeEI0MTVaNm5CQ3NGVTFWN0hzNnhuRGFHV1E1Sk1Hck1VWHNKcnNXNEk1LU9TVkFkVzNNR2NGQnpNNTdZdTZn?oc=5",
-          "domain": "techgig.publisher",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-30T10:54:40+00:00",
-      "trace": [
-        "tier C (+10)",
-        "3 independent outlets (+24)",
-        "verified: 3 independent outlets",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 54 = trust 34 / interest 50 / corrob 75"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "425295d82670c71a",
-      "title": "With Anup Bagchi as CEO, a deep-dive into how bank stocks fared after top boss changes - Yes, RBL, IndusInd, HDFC Bank",
-      "category": "markets",
-      "one_liner": "Anup Bagchi's appointment as HDFC Bank CEO brings a major leadership transition for India's largest private lender.",
-      "tags": [
-        "india",
-        "markets"
-      ],
-      "summary": "HDFC Bank announced the appointment of Anup Bagchi as its next CEO for a three-year term, succeeding Sashidhar Jagdishan, whose tenure ends in October 2026. The transition follows a series of leadership changes and past instances of bank CEO appointments where respective stock prices reacted variably—such as positive jumps during Yes Bank and IndusInd announcements and sharp drops during RBL Bank leadership adjustments.",
-      "key_facts": [
-        "Incoming CEO: Anup Bagchi",
-        "Outgoing CEO: Sashidhar Jagdishan",
-        "Term Length: 3 years"
-      ],
-      "bottom_line": "HDFC Bank's leadership transition marks a critical juncture for private banking sector governance and market performance.",
-      "claims": [
-        {
-          "text": "HDFC Bank announced the appointment of Anup Bagchi as its next chief of executive for a period of three years.",
-          "support_span": "HDFC Bank announced the appointment of Anup Bagchi as its next chief of executive for a period of three years.",
-          "status": "contradicted"
-        },
-        {
-          "text": "Anup Bagchi will succeed Sashidhar Jagdishan, who decided to not seek reappointment after his second tenure ends in October 2026.",
-          "support_span": "Fifty five year old Anup Bagchi will succeed Sashidhar Jagdishan, who decided to not seek reappointment after his second tenure ends in October 2026.",
-          "status": "entailed"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 50,
+      "summary": "Post Xe xeiaso.net did:plc:e5nncb3dr5thdkjir5cfaqfe I am a: - [ ] man - [ ] woman - [x] load-bearing seam looking for a: - [ ] man - [ ] woman - [x] way off this wild ride 2026-09-29T00:39:10.361Z",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
       "corroboration": 1,
-      "blend": 36.2,
+      "blend": 0.0,
       "is_new": false,
-      "summary_source": "model",
+      "summary_source": "extract",
       "alt_keys": [
-        "425295d82670c71a"
+        "643ec84f74e627e0"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/as-hdfc-bank-names-anup-bagchi-as-ceo-heres-how-bank-stocks-fared-after-past-ceo-changes-yes-bank-rbl-to-indusind-11790942528070.html",
-          "domain": "livemint.com",
-          "tier": "B"
+          "name": "Xe Iaso",
+          "url": "https://bsky.app/profile/xeiaso.net/post/3mwmlonafmc2o",
+          "domain": "bsky.app",
+          "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-10-02T12:47:12+00:00",
+      "published": "2026-09-29T00:39:10.142000+00:00",
       "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 3/5 from gemini-3.5-flash-lite",
-        "blend 36 = trust 25 / interest 50 / corrob 25"
+        "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "6d8768e5f7814283",
-      "title": "Investors worried over bloodbath as Nifty 50 sees longest weekly losing streak in 25 yrs - Outlook for H2 from experts",
-      "category": "markets",
-      "one_liner": "Indian equity benchmarks log their longest weekly losing streak since 2001 amid heavy FII outflows and macroeconomic headwinds.",
-      "tags": [
-        "dfir",
-        "india",
-        "markets",
-        "policy",
-        "political",
-        "research"
-      ],
-      "summary": "Indian equity benchmarks extended their losing streak for an eighth consecutive week, marking the Nifty 50's longest weekly decline since 2001. Driven by rising US Treasury yields, geopolitical uncertainties, and heavy foreign institutional investor selling totaling ₹44,012.82 crore, the Nifty 50 dropped 3.1% and the Sensex declined 2.7% during the holiday-shortened week. Markets are also bracing for a potential 25 basis point rate hike by the Reserve Bank of India on October 7 amid rising retail inflation and currency pressures.",
-      "key_facts": [
-        "Consecutive Weeks Down: 8 weeks",
-        "FII Selling: ₹44,012.82 crore",
-        "Nifty 50 Weekly Drop: 3.1%",
-        "Sensex Weekly Drop: 2.7%"
-      ],
-      "bottom_line": "Investors face prolonged volatility as the Nifty 50 records its longest weekly losing streak in 25 years, compounded by heavy FII selling and expected RBI rate hikes.",
-      "claims": [
-        {
-          "text": "Indian equity benchmarks extended their losing streak for an eighth consecutive week, marking the Nifty 50’s longest weekly decline since 2001.",
-          "support_span": "Indian equity benchmarks extended their losing streak for an eighth consecutive week, marking the Nifty 50’s longest weekly decline since 2001.",
-          "status": "entailed"
-        },
-        {
-          "text": "Foreign institutional investors (FIIs) added to the pressure, selling equities worth ₹44,012.82 crore during the week, their highest weekly selling since June 2026.",
-          "support_span": "Foreign institutional investors (FIIs) added to the pressure, selling equities worth ₹44,012.82 crore during the week, their highest weekly selling since June 2026.",
-          "status": "entailed"
-        },
-        {
-          "text": "The Nifty 50 fell 3.1% during the holiday-shortened week, while the BSE Sensex declined 2.7%, taking its eight-week losses to 8.7% and 8.4%, respectively.",
-          "support_span": "The Nifty 50 fell 3.1% during the holiday-shortened week, while the BSE Sensex declined 2.7%, taking its eight-week losses to 8.4% and 8.7%, respectively.",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 25,
-      "interest_score": 100,
-      "corroboration": 1,
-      "blend": 58.8,
-      "is_new": true,
-      "summary_source": "model",
-      "alt_keys": [
-        "6d8768e5f7814283"
-      ],
-      "critical_signal": "",
-      "priority": "important",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Livemint Markets",
-          "url": "https://www.livemint.com/market/stock-market-news/investors-worried-over-bloodbath-as-nifty-50-sees-longest-weekly-losing-streak-in-25-yrs-outlook-for-h2-from-experts-11790922247662.html",
-          "domain": "livemint.com",
-          "tier": "B"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-10-02T09:19:43+00:00",
-      "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 5/5 from cache",
-        "blend 59 = trust 25 / interest 100 / corrob 25",
-        "demoted: critical capped at 5"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
+      "reject_reason": "published 2026-09-29 — outside lookback window"
     },
     {
       "cluster_key": "0274675920160476",
@@ -1469,38 +956,83 @@
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "importance 4/5 from gemini-3.5-flash-lite",
+        "importance 4/5 from cache",
         "blend 48 = trust 25 / interest 75 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "285e990f0a5b3483",
-      "title": "CVE-2026-89236 - SaveTo Wishlist Lite < 1.1.5 - Unauthenticated SQLi via 'sort_column' and 'sort_order' Parameters",
-      "category": "cyber_attacks",
-      "one_liner": "SaveTo Wishlist Lite plugin before v1.1.5 suffers from unauthenticated SQL injection via sorting parameters.",
+      "cluster_key": "4dccba3801cab938",
+      "title": "feder-cr/dots — Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.",
+      "category": "tech_ai",
+      "one_liner": "",
       "tags": [
-        "appsec",
+        "agents",
+        "ai",
+        "hardware",
+        "linux",
+        "llm",
+        "opensource",
+        "tool",
+        "windows"
+      ],
+      "summary": "Windows, in PowerShell: powershell -ExecutionPolicy ByPass -c \"irm | iex\" $env:Path = \"$env:USERPROFILE\\.local\\bin;$env:Path\" uvx --from git+ dots --openrouter-key sk-or-... Linux: curl -LsSf | sh source $HOME/.local/bin/env uvx --from git+ dots --openrouter-key sk-or-... The conversation on the left, the browser on the right, live. When a web agent fails, the model is rarely why. The page never loaded, a challenge appeared, the login expired, the click did not land.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "4dccba3801cab938"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/feder-cr/dots",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-29T23:06:00+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-09-29 — outside lookback window"
+    },
+    {
+      "cluster_key": "1ff361cd02ddedbc",
+      "title": "CVE-2026-105209 - ZITADEL before 3.4.15 and 4.17.1 Cross-Organization Account Takeover via Passkey Enrollment",
+      "category": "cyber_attacks",
+      "one_liner": "A critical authorization flaw in ZITADEL allows attackers to hijack accounts across different organizations on the same instance.",
+      "tags": [
         "cve",
         "exploit",
-        "release",
+        "identity",
         "vulnerability"
       ],
-      "summary": "CVE-2026-89236 is an unauthenticated SQL injection vulnerability affecting the SaveTo Wishlist Lite WordPress plugin in versions prior to 1.1.5. The flaw occurs because user-supplied `sort_column` and `sort_order` parameters are not properly sanitized or escaped before being concatenated into the ORDER BY clause of a SQL query. Unauthenticated attackers can exploit this to append malicious SQL queries and extract sensitive database information.",
+      "summary": "ZITADEL versions prior to 3.4.15 and 4.17.1 contain an improper authorization vulnerability that allows for cross-organization account takeover. An attacker with user-write permissions in one organization can exploit the system by obtaining enrollment codes for users in different organizations on the same instance. This is caused by the application failing to validate the target user's organization against the provided x-zitadel-orgid header.",
       "key_facts": [
-        "CVE-2026-89236: SaveTo Wishlist Lite < 1.1.5",
-        "Vulnerability: Unauthenticated SQLi"
+        "CVE-2026-105209",
+        "Affected versions: ZITADEL < 3.4.15, < 4.17.1"
       ],
-      "bottom_line": "Update SaveTo Wishlist Lite to version 1.1.5 or higher to prevent unauthenticated database extractions.",
+      "bottom_line": "ZITADEL users must update to version 3.4.15 or 4.17.1 to prevent cross-organization account takeover via passkey enrollment.",
       "claims": [
         {
-          "text": "CVE-2026-89236 - SaveTo Wishlist Lite < 1.1.5 - Unauthenticated SQLi via 'sort_column' and 'sort_order' Parameters",
-          "support_span": "CVE-2026-89236 - SaveTo Wishlist Lite < 1.1.5 - Unauthenticated SQLi via 'sort_column' and 'sort_order' Parameters",
+          "text": "ZITADEL versions prior to 3.4.15 and 4.17.1 contain an improper authorization vulnerability that allows for cross-organization account takeover.",
+          "support_span": "CVE-2026-105209 ZITADEL before 3.4.15 and 4.x before 4.17.1 contains an improper authorization vulnerability: when issuing passkey or passwordless enrollment codes, it checks only the organization in the x-zitadel-orgid header, not the target user's organization.",
           "status": "contradicted"
         },
         {
-          "text": "The SaveTo Wishlist Lite WordPress plugin before 1.1.5 does not sanitise and escape parameters before using them in the ORDER BY clause of a SQL query, allowing unauthenticated attackers to append additional SQL queries and extract sensitive information from the database.",
-          "support_span": "The SaveTo Wishlist Lite WordPress plugin before 1.1.5 does not sanitise and escape parameters before using them in the ORDER BY clause of a SQL query, allowing unauthenticated attackers to append additional SQL queries and extract sensitive information from the database.",
+          "text": "An attacker with user-write permissions in one organization can exploit the system by obtaining enrollment codes for users in different organizations on the same instance.",
+          "support_span": "Attackers with user-write permission in one organization can obtain an enrollment code for a user in another organization on the same instance and register their own authenticator to take over that account.",
           "status": "entailed"
         }
       ],
@@ -1511,7 +1043,12 @@
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "285e990f0a5b3483"
+        "1ff361cd02ddedbc",
+        "7c59a72af37f28cc",
+        "c47d3e75deaea90a",
+        "ddf0b1878139c731",
+        "e87bf6fede81594c",
+        "e8b3f69daf759fb8"
       ],
       "critical_signal": "",
       "priority": "important",
@@ -1519,19 +1056,114 @@
       "sources": [
         {
           "name": "CVEFeed High",
-          "url": "https://cvefeed.io/vuln/detail/CVE-2026-89236",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-105209",
+          "domain": "cvefeed.io",
+          "tier": "A"
+        },
+        {
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-105213",
+          "domain": "cvefeed.io",
+          "tier": "A"
+        },
+        {
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-105210",
+          "domain": "cvefeed.io",
+          "tier": "A"
+        },
+        {
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-105215",
+          "domain": "cvefeed.io",
+          "tier": "A"
+        },
+        {
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-105212",
+          "domain": "cvefeed.io",
+          "tier": "A"
+        },
+        {
+          "name": "CVEFeed High",
+          "url": "https://cvefeed.io/vuln/detail/CVE-2026-105208",
           "domain": "cvefeed.io",
           "tier": "A"
         }
       ],
       "primary_links": [],
-      "published": "2026-10-03T06:16:45+00:00",
+      "published": "2026-10-04T15:16:31+00:00",
       "trace": [
         "tier A (+40)",
         "single outlet, established publication (tier A)",
-        "importance 5/5 from gemini-3.5-flash-lite",
+        "importance 5/5 from gemini-3.1-flash-lite",
         "blend 62 = trust 40 / interest 100 / corrob 25",
         "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "336b976f9dc2058a",
+      "title": "Edwardxlai/easyread — 把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照、边读边问 AI、文献管理。Read English papers in comfortable Chinese.",
+      "category": "tech_ai",
+      "one_liner": "A powerful local open-source tool for researchers to read, translate, and query PDF papers using LLMs without sacrificing privacy.",
+      "tags": [
+        "agents",
+        "ai",
+        "linux",
+        "llm",
+        "opensource",
+        "privacy",
+        "release",
+        "tool"
+      ],
+      "summary": "Edwardxlai has released Easyread, a local open-source desktop and web tool designed to make reading English PDF papers in Chinese more comfortable by providing background translation, KaTeX-rendered formulas, and interactive AI questioning. The software runs locally with literature databases stored on the user's computer or personal cloud sync folders, supporting models like Claude, GPT, DeepSeek, and local Ollama instances. Users can highlight text, take notes, ask AI to explain specific formulas or text sections, and export annotations to Markdown formats. It is packaged for Windows, macOS, and Linux via installers or runnable via source code with Python 3.10+ and Node.js 22+.",
+      "key_facts": [
+        "Product: Easyread",
+        "Python requirement: Python 3.10+",
+        "Node requirement: Node.js 22+"
+      ],
+      "bottom_line": "Researchers can now run a feature-rich, local AI-powered PDF translation and literature management environment directly on their own hardware.",
+      "claims": [
+        {
+          "text": "Edwardxlai has released Easyread, a local open-source desktop and web tool designed to make reading English PDF papers in Chinese more comfortable by providing background translation, KaTeX-rendered formulas, and interactive AI questioning.",
+          "support_span": "Edwardxlai/easyread — 把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照、边读边问 AI、文献管理。Read English papers in comfortable Chinese.",
+          "status": "contradicted"
+        },
+        {
+          "text": "The software runs locally with literature databases stored on the user's computer or personal cloud sync folders, supporting models like Claude, GPT, DeepSeek, and local Ollama instances.",
+          "support_span": "本地运行，文献库默认保存在电脑上，也可以放进你自己的网盘同步文件夹",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 10,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 32.5,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "336b976f9dc2058a"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/Edwardxlai/easyread",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-09-30T12:52:24+00:00",
+      "trace": [
+        "tier C (+10)",
+        "single tier-C source — treat with caution",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 32 = trust 10 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -1590,63 +1222,76 @@
       "trace": [
         "tier A (+40)",
         "single outlet, established publication (tier A)",
-        "importance 5/5 from gemini-3.5-flash-lite",
+        "importance 5/5 from cache",
         "blend 62 = trust 40 / interest 100 / corrob 25",
         "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "58d227dbbe746299",
-      "title": "tunaarikaya/magaza-mcp — Tek MCP sunucusu, iki mağaza: App Store Connect + Google Play. Tamamen Türkçe.",
-      "category": "tech_ai",
-      "one_liner": "",
+      "cluster_key": "66632a1aa03394b6",
+      "title": "Protest against CEC Gyanesh Kumar: AISA president Neha released at Narela Industrial Area police station",
+      "category": "india_world",
+      "one_liner": "The detention of a student leader in an unmarked vehicle highlights ongoing tensions and concerns regarding police conduct during political protests in India.",
       "tags": [
-        "agents",
-        "android",
-        "llm",
-        "opensource"
+        "india",
+        "political",
+        "release"
       ],
-      "summary": "Tek MCP sunucusu, iki mağaza: App Store Connect + Google Play. GitHub repository tunaarikaya/magaza-mcp, 88 stars, language TypeScript. Topics: android, android-publisher, antigravity, app-store-connect, claude, cursor, google-play, ios.",
+      "summary": "AISA national president Neha was detained by police while marching toward Jantar Mantar and was initially held in an unmarked vehicle. The incident sparked protests from INDIA bloc leaders and activists who demanded information on her whereabouts. She was later released from the Narela Industrial Area police station.",
       "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
+      "bottom_line": "The detention and subsequent release of AISA president Neha has intensified political friction and raised questions about police transparency during protests.",
+      "claims": [
+        {
+          "text": "AISA national president Neha was picked up by police while attempting to march towards Jantar Mantar and allegedly taken away in a private vehicle without an official number plate",
+          "support_span": "AISA national president Neha was picked up by police while attempting to march towards Jantar Mantar and allegedly taken away in a private vehicle without an official number plate",
+          "status": "contradicted"
+        },
+        {
+          "text": "Neha was later released from Narela Industrial Area police station.",
+          "support_span": "Neha was later released from Narela Industrial Area police station.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 50,
       "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
+      "blend": 36.2,
+      "is_new": true,
+      "summary_source": "model",
       "alt_keys": [
-        "58d227dbbe746299"
+        "66632a1aa03394b6"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/tunaarikaya/magaza-mcp",
-          "domain": "github.com",
-          "tier": "C"
+          "name": "The Hindu National",
+          "url": "https://www.thehindu.com/news/national/protest-against-cec-gyanesh-kumar-october-4-2026/article71542893.ece",
+          "domain": "thehindu.com",
+          "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-28T17:25:16+00:00",
+      "published": "2026-10-04T16:17:06+00:00",
       "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 3/5 from gemini-3.1-flash-lite",
+        "blend 36 = trust 25 / interest 50 / corrob 25"
       ],
-      "reject_reason": "published 2026-09-28 — outside lookback window"
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "a644fce59668f546",
-      "title": "Qualitatively, there is now a larger gap between open & closed models than there has been in awhile.",
+      "cluster_key": "f04ffee241009e94",
+      "title": "Hey, Claude: \"I asked an earlier Claude to Remove the Squid from All Quiet on the Western Front.",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "agents"
+        "llm"
       ],
-      "summary": "Qualitatively, there is now a larger gap between open & closed models than there has been in awhile. Fable/Astra class models are agentic in a way pre-Fable models are not, for better or worse. None of the open models have crossed that line, yet. (Bluesky post by @emollick.bsky.social — 75 likes, 4 reposts)",
+      "summary": "Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu Hey, Claude: \"I asked an earlier Claude to Remove the Squid from All Quiet on the Western Front. I need you to show how far you have come\" & I pasted in the post below. There is some clever stuff here, models have a real sense of humor at this point [contains quote post or other embedded content] 2026-09-29T16:25:40.668Z",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -1657,7 +1302,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "a644fce59668f546"
+        "f04ffee241009e94"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -1665,116 +1310,77 @@
       "sources": [
         {
           "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwjrmxmqfk2j",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwoakzayck2t",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-27T21:47:37.159000+00:00",
+      "published": "2026-09-29T16:25:36.842000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-27 — outside lookback window"
+      "reject_reason": "published 2026-09-29 — outside lookback window"
     },
     {
-      "cluster_key": "0403e2679b71cc0e",
-      "title": "CVE-2026-91078 - TillKit < 1.0.5 - Unauthenticated POS Takeover via Hard-Coded Default Manager PIN",
-      "category": "cyber_attacks",
-      "one_liner": "TillKit WordPress plugin before v1.0.5 allows unauthenticated POS takeover via a hard-coded default manager PIN.",
+      "cluster_key": "d03eddd0153d00d6",
+      "title": "500 detained in Delhi on Day 3 of protests seeking CEC’s exit; Thackerays lead Mumbai march",
+      "category": "india_world",
+      "one_liner": "Mass protests and hundreds of detentions hit New Delhi and Mumbai as opposition parties demand the removal of the Chief Election Commissioner.",
       "tags": [
-        "cve",
-        "exploit",
-        "release",
-        "vulnerability"
+        "india",
+        "policy",
+        "political"
       ],
-      "summary": "CVE-2026-91078 is a critical unauthenticated Point-of-Sale (POS) takeover vulnerability affecting TillKit WordPress plugins prior to version 1.0.5. The plugin creates a privileged POS account upon activation with a hard-coded, publicly known default PIN that is not forced to be changed. The public POS login endpoint authenticates solely against this PIN without capability checks, allowing unauthenticated attackers to obtain privileged sessions, read customer and user personal data, and modify store data.",
+      "summary": "Protests demanding the removal of Chief Election Commissioner Gyanesh Kumar and the suspension of the special intensive revision of electoral rolls entered their third day, leading to widespread disruptions. In New Delhi, police detained approximately 500 protesters near Jantar Mantar after confrontations on Ashoka Road, with several police personnel and demonstrators sustaining injuries. In Mumbai, opposition leaders including Uddhav Thackeray and Raj Thackeray led a large march involving roughly 6,000 participants from Metro Cinema to the BMC headquarters. Protesters criticized the Election Commission's actions, claiming the removal of millions of names from draft rolls threatens democratic voting rights.",
       "key_facts": [
-        "CVE-2026-91078: TillKit < 1.0.5",
-        "Vulnerability: Unauthenticated POS Takeover via Hard-Coded PIN"
+        "Detentions: ~500 in New Delhi",
+        "Date: October 4, 2026",
+        "Participants: ~6,000 in Mumbai"
       ],
-      "bottom_line": "Update TillKit to version 1.0.5 immediately to prevent unauthenticated POS session hijacking.",
+      "bottom_line": " Widespread political unrest over electoral roll revisions has escalated into intense street confrontations and mass detentions across major Indian cities.",
       "claims": [
         {
-          "text": "CVE-2026-91078 - TillKit < 1.0.5 - Unauthenticated POS Takeover via Hard-Coded Default Manager PIN",
-          "support_span": "CVE-2026-91078 - TillKit < 1.0.5 - Unauthenticated POS Takeover via Hard-Coded Default Manager PIN",
-          "status": "contradicted"
+          "text": "Protests seeking the removal of Chief Election Commissioner (CEC) Gyanesh Kumar and the suspension of the special intensive revision (SIR) of electoral rolls entered their third day on Sunday (October 4, 2026), with demonstrations continuing in New Delhi and Mumbai.",
+          "support_span": "Protests seeking the removal of Chief Election Commissioner (CEC) Gyanesh Kumar and the suspension of the special intensive revision (SIR) of electoral rolls entered their third day on Sunday (October 4, 2026), with demonstrations continuing in New Delhi and Mumbai.",
+          "status": "entailed"
         },
         {
-          "text": "The TillKit WordPress plugin before 1.0.5 does not require the hard-coded, publicly known PIN of the privileged POS account it creates on activation to be changed before use",
-          "support_span": "The TillKit WordPress plugin before 1.0.5 does not require the hard-coded, publicly known PIN of the privileged POS account it creates on activation to be changed before use",
-          "status": "entailed"
+          "text": "On Sunday (October 4, 2026), confrontations took place in New Delhi between protesters, who were trying to reach Jantar Mantar, and the Delhi Police, who had heavily barricaded the area.",
+          "support_span": "On Sunday (October 4, 2026), confrontations took place in New Delhi between confrontations took place in New Delhi between protesters, who were trying to reach Jantar Mantar, and the Delhi Police, who had heavily barricaded the area.",
+          "status": "contradicted"
         }
       ],
-      "trust_score": 40,
+      "trust_score": 25,
       "interest_score": 100,
       "corroboration": 1,
-      "blend": 62.5,
+      "blend": 58.8,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "0403e2679b71cc0e"
+        "d03eddd0153d00d6"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "CVEFeed High",
-          "url": "https://cvefeed.io/vuln/detail/CVE-2026-91078",
-          "domain": "cvefeed.io",
-          "tier": "A"
+          "name": "The Hindu National",
+          "url": "https://www.thehindu.com/news/national/500-detained-in-delhi-on-day-3-of-protests-seeking-cecs-exit-thackerays-lead-mumbai-march/article71544629.ece",
+          "domain": "thehindu.com",
+          "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-10-03T06:16:45+00:00",
+      "published": "2026-10-04T18:08:48+00:00",
       "trace": [
-        "tier A (+40)",
-        "single outlet, established publication (tier A)",
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
         "importance 5/5 from gemini-3.5-flash-lite",
-        "blend 62 = trust 40 / interest 100 / corrob 25",
+        "blend 59 = trust 25 / interest 100 / corrob 25",
         "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "d35793405d248bd6",
-      "title": "the last bastions of true humanity will be guild chat in private world of warcraft servers",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "windows"
-      ],
-      "summary": "the last bastions of true humanity will be guild chat in private world of warcraft servers (Bluesky post by @xeiaso.net — 11 likes, 1 reposts)",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "d35793405d248bd6"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Xe Iaso",
-          "url": "https://bsky.app/profile/xeiaso.net/post/3mwjhyzw53k2n",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-27T18:55:24.799000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-27 — outside lookback window"
     },
     {
       "cluster_key": "5030d85b452532f5",
@@ -1835,44 +1441,30 @@
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
-        "importance 5/5 from gemini-3.5-flash-lite",
+        "importance 5/5 from cache",
         "blend 59 = trust 25 / interest 100 / corrob 25",
         "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "48aca29603c7151a",
-      "title": "TVK formally joins INDIA bloc; set to join demonstrations against BJP and EC",
+      "cluster_key": "b19b3c3ac489c74f",
+      "title": "'Strikes At Heart Of Constitution': Top Court Judge On Mass Deletion Of Voters",
       "category": "india_world",
-      "one_liner": "The INDIA bloc in Tamil Nadu formally inducted the TVK party and announced statewide protests against the BJP and Election Commission.",
+      "one_liner": "Justice Ujjal Bhuyan criticizes mass voter deletions as an assault on the Constitution.",
       "tags": [
         "india",
+        "policy",
         "political"
       ],
-      "summary": "Tamil Nadu leaders of the INDIA opposition bloc met in Chennai at the Tamil Nadu Congress Committee headquarters and formally welcomed the Tamilaga Vettri Kazhagam (TNV/TVK) into the coalition. Chaired by TNCC president B. Manickam Tagore, the meeting gathered key state representatives from parties including the MDMK, VCK, CPI(M), IUML, and CPI(ML). The alliance announced plans to organize district-level 'Save Democracy' protests across Tamil Nadu on October 13 and 14, followed by a major demonstration in Chennai on October 15 to protest against the BJP government and Election Commission officials.",
-      "key_facts": [
-        "Meeting location: TNCC headquarters, Chennai",
-        "Meeting chair: B. Manickam Tagore",
-        "Protest dates: October 13, 14, and 15"
-      ],
-      "bottom_line": "The TVK has officially joined the INDIA opposition bloc in Tamil Nadu, with alliance leaders planning statewide protests against central authorities.",
+      "summary": "Supreme Court judge Justice Ujjal Bhuyan stated during an address at NALSAR, Hyderabad, that mass deletions of voters strike at the very heart of the Constitution. He emphasized that any systematic exclusion of voters undermines universal adult suffrage and basic democratic principles. The brief report highlights his warnings against mass disenfranchisement.",
+      "key_facts": [],
+      "bottom_line": "Mass voter deletions undermine the constitutional foundation of universal adult suffrage.",
       "claims": [
         {
-          "text": "The various Tamil Nadu leaders of the Indian National Developmental Inclusive Alliance (INDIA) met at the Tamil Nadu Congress Committee’s (TNCC) headquarters in Chennai on Saturday and formally welcomed the Tamilaga Vettri Kazhagam (TVK) into the alliance, led by the Congress nationally.",
-          "support_span": "The Tamil Nadu leaders of the Indian National Developmental Inclusive Alliance (INDIA) met at the Tamil Nadu Congress Committee’s (TNCC) headquarters in Chennai on Saturday and formally welcomed the Tamilaga Vettri Kazhagam (TVK) into the alliance, led by the Congress nationally.",
+          "text": "'Strikes At Heart Of Constitution': Top Court Judge On Mass Deletion Of Voters",
+          "support_span": "'Strikes At Heart Of Constitution': Top Court Judge On Mass Deletion Of Voters",
           "status": "contradicted"
-        },
-        {
-          "text": "At the meeting, it was also decided that ‘Save Democracy’ protests would be organised at the district headquarters across Tamil Nadu on October 13 and 14 to highlight the issues surrounding the breakdown of democracy in India.",
-          "support_span": "At the meeting, it was also decided that ‘Save Democracy’ protests would be organised at the district headquarters across Tamil Nadu on October 13 and 14 to highlight the issues surrounding the breakdown of democracy in India.",
-          "status": "entailed"
-        },
-        {
-          "text": "Additionally, a protest will be held on October 15, in which INDIA bloc leaders will participate in Chennai.",
-          "support_span": "Additionally, a protest will be held on October 15, in which INDIA bloc leaders will participate in Chennai.",
-          "status": "entailed"
         }
       ],
       "trust_score": 25,
@@ -1882,21 +1474,21 @@
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "48aca29603c7151a"
+        "b19b3c3ac489c74f"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/national/tamil-nadu/tvk-formally-joins-india-bloc-set-to-join-demonstrations-against-bjp-and-ec/article71540550.ece",
-          "domain": "thehindu.com",
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/india-news/no-whataboutery-can-justify-top-court-judge-justice-bhuyan-on-mass-deletion-of-voters-amid-sir-row-in-nalsar-speech-12137870#publisher=newsstand",
+          "domain": "ndtv.com",
           "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-10-03T17:09:48+00:00",
+      "published": "2026-10-04T15:52:20+00:00",
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
@@ -1906,205 +1498,142 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "3806c31795d4a4fb",
-      "title": "G7 to release millions of barrels of oil and diesel after Trump threat",
+      "cluster_key": "d71f9c32ddb82a09",
+      "title": "Mass protests demanding poll chief resignation shake India for third day",
       "category": "india_world",
-      "one_liner": "G7 agrees to release 100 million barrels of oil and diesel to stabilize soaring energy prices.",
+      "one_liner": "Widespread political unrest over alleged voter-roll manipulation in India directly impacts the political landscape and governance environment.",
       "tags": [
-        "markets",
+        "india",
         "policy",
         "political",
-        "release",
-        "research"
+        "release"
       ],
-      "summary": "G7 leaders have agreed to release 100 million barrels of crude oil and diesel from strategic reserves over a four-month period to stabilize skyrocketing energy prices. The coordinated action, managed through the International Energy Agency (IEA), includes a frontloaded diesel release within 20 days and averts a threatened US diesel export ban by President Donald Trump. Trump had warned he would halt US diesel exports unless European nations tapped their stockpiles to alleviate pressures on American consumers. Following the commitment, global benchmark Brent crude prices fluctuated around $102 a barrel.",
+      "summary": "Thousands of youth and opposition protesters demonstrated across India for a third day to demand the resignation of Election Commission of India chief Gyanesh Kumar. The protests were triggered by controversy over voter-roll revisions that removed millions from electoral lists, which critics allege will benefit Prime Minister Narendra Modi's ruling Bharatiya Janata Party. While police detained dozens of protesters in New Delhi for violating bans on mass gatherings, opposition leaders and groups like the Gen Z-led Cockroach Janta Party have vowed to continue rallies. Both the ECI and the BJP have denied the allegations, with the ECI stating that the revision aims to remove duplicate and ineligible entries to maintain electoral integrity.",
       "key_facts": [
-        "Release volume: 100 million barrels",
-        "Duration: 4 months",
-        "Brent crude price: ~$102 a barrel"
+        "Affected official: Election Commission of India chief Gyanesh Kumar"
       ],
-      "bottom_line": "A coordinated G7 strategic reserve release successfully averts a US diesel export ban and eases global fuel supply concerns.",
+      "bottom_line": "Mass protests and mounting legal pressure against India's chief election commissioner over voter-roll revisions signal severe ongoing political instability.",
       "claims": [
         {
-          "text": "The G7 has announced 100 million barrels of oil and diesel will be released to ease supply concerns that have caused prices to skyrocketing.",
-          "support_span": "The G7 has announced 100 million barrels of oil and diesel will be released to ease supply concerns that have caused prices to rocket.",
+          "text": "Thousands of youth and opposition protesters have rallied for a third day in India demanding the resignation of the country’s election commission chief.",
+          "support_span": "Thousands of youth and opposition protesters have rallied for a third day in India demanding the resignation of the country’s election commission chief.",
+          "status": "entailed"
+        },
+        {
+          "text": "The protests began on Friday demanding that Election Commission of India chief Gyanesh Kumar step down due to reports that he has overseen voter-roll revisions removing millions from electoral lists.",
+          "support_span": "The protests began on Friday demanding that Election Commission of India chief Gyanesh Kumar step down due to reports that he has overseen voter-roll revisions removing millions from electoral lists.",
           "status": "contradicted"
         },
         {
-          "text": "Under the measures, which come after US President Donald Trump had threatened to ban diesel exports, there will not be any 'export restrictions on energy and energy products' between G7 members.",
-          "support_span": "Under the measures, which come after US President Donald Trump had threatened to ban diesel exports, there will not be any \"export restrictions on energy and energy products\" between G7 members.",
+          "text": "Both the ECI and the BJP have denied the allegations.",
+          "support_span": "Both the ECI and the BJP have denied the allegations.",
           "status": "entailed"
         }
       ],
-      "trust_score": 52,
+      "trust_score": 37,
       "interest_score": 75,
       "corroboration": 2,
-      "blend": 61.8,
-      "is_new": false,
+      "blend": 58.0,
+      "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "3806c31795d4a4fb",
-        "faa7060a91909fdd"
+        "d71f9c32ddb82a09",
+        "f7f8f71be9abd072"
       ],
       "critical_signal": "",
       "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&at_campaign=rss",
-          "domain": "bbc.co.uk",
-          "tier": "A"
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/4/mass-protests-demanding-poll-chief-resignation-shake-india-for-third-day?traffic_source=rss",
+          "domain": "aljazeera.com",
+          "tier": "B"
         },
         {
           "name": "Reuters",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOb19pQnVCc2dwWWN3NlFDRl9LSTJvQVRYQlpDNDRxM2lhcm9kQzNkOGE5Y1c4eGFQcEFaSHZfUTlydnhfZ25hbFdWSUlBMy1IMVM1S1hOYnA1SEJWby0tZnNzY25jek44MGY1UGprN2lHT25qN3hqLTMxazdES2s0QUczSTBzcUVpTmRRc0pqcG1wd19yR1FidVJka3otVWx5SkF1dm9TaHdzN2hzLW92M1lLdVlqSVk?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOGR6ODMtN0dvb3BUbWlIdzJZVGx2ZnlGZDlHc3VVQVZ0d1dRaEVJcjZVdGJjeTN5QUYwNUFGMHZlbWV1ZS1ONkpSUzJ4c2VMTTdBQnJxWkszRnBQdi1XU0pKX0FnVlJKS1VYaDRid21KNmxCaHNmb2RsQlRYUHRfRTl6dnFXOHlLWU5zMlcxSkdrYnVHdVBhSzcyNDVxel9YSXlTajVlWFdkazJyRFduYmtR?oc=5",
           "domain": "reuters.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-10-02T16:49:45+00:00",
+      "published": "2026-10-04T14:25:13+00:00",
       "trace": [
-        "tier A (+40)",
+        "tier B (+25)",
         "2 independent outlets (+12)",
         "corroborated by 2 independent outlets",
         "importance 4/5 from gemini-3.5-flash-lite",
-        "blend 62 = trust 52 / interest 75 / corrob 50",
+        "blend 58 = trust 37 / interest 75 / corrob 50",
         "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "589ed9cf9d91ff59",
-      "title": "laramies/theHarvester — E-mails, subdomains and names Harvester - OSINT",
-      "category": "cyber_tools",
-      "one_liner": "theHarvester remains an active Python-based OSINT recon tool for gathering emails and subdomains.",
+      "cluster_key": "5b823be3232b95f7",
+      "title": "Instead Of 'Gen Z', Use 'Tarun Bharat': Madhya Pradesh Assembly Speaker",
+      "category": "india_world",
+      "one_liner": "Madhya Pradesh Assembly Speaker suggests using 'Tarun Bharat' instead of 'Gen Z'.",
       "tags": [
-        "blueteam",
-        "opensource",
-        "tool"
+        "india"
       ],
-      "summary": "The GitHub repository for laramies/theHarvester has been recently updated, showcasing its utility as an open-source intelligence and reconnaissance tool. Written in Python, the tool gathers emails, subdomains, and names for security testing and discovery. It currently maintains 17,323 stars on the platform.",
-      "key_facts": [
-        "Repository: laramies/theHarvester",
-        "Language: Python",
-        "Stars: 17323"
-      ],
-      "bottom_line": "The popular open-source reconnaissance tool theHarvester continues to receive active updates for OSINT operations.",
+      "summary": "Madhya Pradesh Assembly Speaker suggested replacing the term 'Gen Z' with 'Tarun Bharat', emphasizing India's cultural traditions and perspective on change as a law of nature. The remark was made during a cultural or public address focusing on national identity and terminology.",
+      "key_facts": [],
+      "bottom_line": "Cultural nomenclature discussions continue to influence official terminology preferences in Indian public discourse.",
       "claims": [
         {
-          "text": "E-mails, subdomains and names Harvester - OSINT GitHub repository laramies/theHarvester, 17,323 stars, language Python.",
-          "support_span": "E-mails, subdomains and names Harvester - OSINT GitHub repository laramies/theHarvester, 17,323 stars, language Python.",
+          "text": "Instead Of 'Gen Z', Use 'Tarun Bharat': Madhya Pradesh Assembly Speaker",
+          "support_span": "Instead Of 'Gen Z', Use 'Tarun Bharat': Madhya Pradesh Assembly Speaker",
           "status": "contradicted"
         }
       ],
-      "trust_score": 10,
-      "interest_score": 25,
+      "trust_score": 25,
+      "interest_score": 0,
       "corroboration": 1,
-      "blend": 21.2,
+      "blend": 13.8,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "589ed9cf9d91ff59"
+        "5b823be3232b95f7"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (updated)",
-          "url": "https://github.com/laramies/theHarvester",
-          "domain": "github.com",
-          "tier": "C"
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/india-news/instead-of-gen-z-use-tarun-bharat-madhya-pradesh-assembly-speaker-12138012#publisher=newsstand",
+          "domain": "ndtv.com",
+          "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-10-02T02:48:22+00:00",
+      "published": "2026-10-04T15:58:12+00:00",
       "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "importance 2/5 from cache",
-        "blend 21 = trust 10 / interest 25 / corrob 25"
-      ],
-      "reject_reason": "1 claim(s) not supported by the source text"
-    },
-    {
-      "cluster_key": "67203b00c5935f15",
-      "title": "Cisco SD-WAN Zero-Day CVE-2026-76504: CVSS 9.8 Bug - tech-insider.org",
-      "category": "cyber_attacks",
-      "one_liner": "Cisco SD-WAN zero-day vulnerability CVE-2026-76504 carries a CVSS score of 9.8.",
-      "tags": [
-        "cve",
-        "exploit",
-        "network",
-        "vulnerability"
-      ],
-      "summary": "This article is truncated and provides only a title reference to a CVSS 9.8 zero-day vulnerability in Cisco SD-WAN tracked as CVE-2026-76504.",
-      "key_facts": [
-        "CVE-2026-76504: CVSS 9.8",
-        "Product: Cisco SD-WAN"
-      ],
-      "bottom_line": "Cisco SD-WAN systems face a critical CVSS 9.8 zero-day vulnerability.",
-      "claims": [
-        {
-          "text": "Cisco SD-WAN Zero-Day CVE-2026-76504: CVSS 9.8 Bug - tech-insider.org",
-          "support_span": "Cisco SD-WAN Zero-Day CVE-2026-76504: CVSS 9.8 Bug - tech-insider.org",
-          "status": "contradicted"
-        }
-      ],
-      "trust_score": 10,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 10.0,
-      "is_new": false,
-      "summary_source": "model",
-      "alt_keys": [
-        "67203b00c5935f15"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GN Zero-day watch",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAzaW5rbHlxSFppVy1tbUoyMXB2dkh4LTlRTWxIUFBtaU5ZN0M4c28xRkotN0d2VTU3ak81ektLamZoaWtMWjF3TlJjeGl1UVBuY0NGTExZQjhhMkRldUltN2xBWE1HeW5XSDVpMWNCQkx4QnpwbHc?oc=5",
-          "domain": "news.google.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-30T23:11:31+00:00",
-      "trace": [
-        "tier C (+10)",
-        "single tier-C source — treat with caution",
-        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
         "importance 1/5 from gemini-3.5-flash-lite",
-        "blend 10 = trust 10 / interest 0 / corrob 25"
+        "blend 14 = trust 25 / interest 0 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "ccae38258f6ce76c",
-      "title": "Keralam rebrands IT department to reflect AI, deep-tech push",
+      "cluster_key": "4cf478dd3de7a220",
+      "title": "Ruling TVK is obsessed with purchasing MLAs: M.K. Stalin tells voters",
       "category": "india_world",
-      "one_liner": "Kerala renames its IT department to explicitly prioritize AI, deep tech, and future technologies.",
+      "one_liner": "DMK leader M.K. Stalin accuses Tamil Nadu's ruling TVK of horse-trading and ignoring public grievances ahead of by-elections.",
       "tags": [
-        "ai",
-        "hardware",
         "india",
-        "policy",
-        "political"
+        "political",
+        "threat-intel"
       ],
-      "summary": "The Keralam state government has officially renamed its Electronics and Information Technology department to the Department of Information Technology, Artificial Intelligence and Future Technologies. This change reflects the department's expanded focus beyond traditional IT toward start-ups, deep-tech ventures, and AI. Alongside the rename, institutional frameworks like the Kerala State Digital Technology Mission, The Future Corporation, and Semicon Keralam are being established to bolster the state's semiconductor and digital governance architecture.",
-      "key_facts": [
-        "New Department Name: Department of Information Technology, Artificial Intelligence and Future Technologies"
-      ],
-      "bottom_line": "State-level governance structures are officially pivoting to prioritize AI and deep-tech semiconductor initiatives.",
+      "summary": "DMK president M.K. Stalin criticized the ruling Tamilaga Vettri Kazhagam (TVK) ahead of by-elections in Madurantakam and Dharapuram, alleging that Chief Minister C. Joseph Vijay is more focused on horse-trading MLAs and building a new Secretariat than addressing public protests. Stalin also demanded a response to allegations regarding money distribution during the ruling party's campaign and questioned the integrity of defected MLAs who triggered the by-elections.",
+      "key_facts": [],
+      "bottom_line": "Political tensions escalate in Tamil Nadu as by-elections approach, with allegations of MLA horse-trading targeting the ruling administration.",
       "claims": [
         {
-          "text": "The State government has renamed the Electronics & Information Technology (IT) department as the Department of Information Technology, Artificial Intelligence and Future Technologies to align the State’s technology governance with emerging global priorities.",
-          "support_span": "The State government has renamed the Electronics & Information Technology (IT) department as the Department of Information Technology, Artificial Intelligence and Future Technologies to align the State’s technology governance with emerging global priorities.",
+          "text": "DMK president and former Chief Minister M.K. Stalin on Sunday (September 4, 2026) appealed to voters in the Madurantakam and Dharapuram Assembly constituencies to vote for the DMK candidates, alleging the ruling Tamilaga Vettri Kazhagam (TVK) was more interested in 'purchasing' MLAs to protect its government.",
+          "support_span": "DMK president and former Chief Minister M.K. Stalin on Sunday (September 4, 2026) appealed to voters in the Madurantakam and Dharapuram Assembly constituencies to vote for the DMK candidates, alleging the ruling Tamilaga Vettri Kazhagam (TVK) was more interested in 'purchasing' MLAs to protect its government.",
           "status": "contradicted"
         }
       ],
@@ -2115,7 +1644,7 @@
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "ccae38258f6ce76c"
+        "4cf478dd3de7a220"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -2123,13 +1652,13 @@
       "sources": [
         {
           "name": "The Hindu National",
-          "url": "https://www.thehindu.com/news/national/kerala/keralam-rebrands-it-department-to-reflect-ai-deep-tech-push/article71541359.ece",
+          "url": "https://www.thehindu.com/news/national/tamil-nadu/ruling-tvk-is-obsessed-with-purchasing-mlas-mk-stalin-tells-voters/article71543295.ece",
           "domain": "thehindu.com",
           "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-10-03T16:50:09+00:00",
+      "published": "2026-10-04T17:22:15+00:00",
       "trace": [
         "tier B (+25)",
         "single outlet, established publication (tier B)",
@@ -2181,7 +1710,7 @@
       "trace": [
         "tier A (+40)",
         "single outlet, established publication (tier A)",
-        "importance 2/5 from gemini-3.5-flash-lite",
+        "importance 2/5 from cache",
         "blend 29 = trust 40 / interest 25 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
@@ -2255,9 +1784,79 @@
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "importance 4/5 from gemini-3.5-flash-lite",
+        "importance 4/5 from cache",
         "blend 59 = trust 70 / interest 75 / corrob 25",
         "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "028b11ee27594c14",
+      "title": "TTY Logs and the Data it Captures, (Sun, Oct 4th)",
+      "category": "cyber_attacks",
+      "one_liner": "Analysis of 90 days of DShield sensor TTY logs exposes widespread automated crontab execution by over 3,130 attacker IPs.",
+      "tags": [
+        "blueteam",
+        "dfir",
+        "opensource",
+        "research",
+        "soc",
+        "threat-intel"
+      ],
+      "summary": "An experimental script was deployed to parse and forward TTY logs captured from unauthorized actor and bot activity on a DShield sensor to the DShield SIEM for daily correlation. An analysis of 90 days of logs utilizing an Elastic ES|QL query revealed a specific transaction ID capturing five crontab commands executed by over 3,130 distinct attacking IP addresses. The diary highlights the specific transaction identifier and details top ASN and IP indicators associated with these automated post-compromise activities. This telemetry helps map out recurrent automated post-login attacker behavior across distributed honeypot sensors over extended periods.",
+      "key_facts": [
+        "Observation period: 90 days",
+        "Distinct actors/IPs: more than 3130",
+        "Transaction ID: f904275333aeac48d7df6cf53fe5fb9212c7d132a7d37253d2ab9321ba2690d8"
+      ],
+      "bottom_line": "Automated threat actors routinely execute standardized crontab persistence commands immediately following successful sensor logins, as tracked across thousands of distinct IPs over 90 days.",
+      "claims": [
+        {
+          "text": "Those TTY logs are sent daily at the end of each day to the DShield SIEM to be correlated with all the data.",
+          "support_span": "Those TTY logs are sent daily at the end of each day to the DShield SIEM to be correlated with all the data.",
+          "status": "contradicted"
+        },
+        {
+          "text": "This transaction ID captured 5 similar crontab commands that are translated from its hash equivalent into this list executed by more than 3130 different actors (IPs)",
+          "support_span": "This transaction ID captured 5 similar crontab commands that are translated from its hash equivalent into this list executed by more than 3130 different actors (IPs)",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 40.0,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "028b11ee27594c14",
+        "c45b408e21ef0dad"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "SANS ISC Diary",
+          "url": "https://isc.sans.edu/diary/rss/33396",
+          "domain": "isc.sans.edu",
+          "tier": "A"
+        },
+        {
+          "name": "SANS ISC Diary",
+          "url": "https://isc.sans.edu/diary/rss/33394",
+          "domain": "isc.sans.edu",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-04T07:58:51+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 40 = trust 40 / interest 50 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     }
