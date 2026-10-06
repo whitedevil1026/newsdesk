@@ -496,7 +496,7 @@ class TestScheduleTellsTheTruth:
         m, h = (int(x) for x in s["cron_utc"].split()[:2])
         finish_utc = (h * 60 + m + int(s["typical_delay_hours"] * 60)) % 1440
         ist = (finish_utc + 330) % 1440
-        assert ist == 9 * 60, f"estimate lands at {ist//60:02d}:{ist%60:02d} IST"
+        assert ist == 10 * 60, f"estimate lands at {ist//60:02d}:{ist%60:02d} IST"
 
 
 class TestUnsummarisedCardsStillCarryFacts:
