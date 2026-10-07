@@ -1,6 +1,369 @@
 {
-  "generated_at": "2026-10-06T02:22:37.044433+00:00",
+  "generated_at": "2026-10-07T07:51:13.398790+00:00",
   "items": [
+    {
+      "cluster_key": "2381d17431b9a899",
+      "title": "Google Freezes Open-Source Bug Bounty Program Over AI Slop Submissions Google paused its Open Source Software Vulnerability Rewards Program on October 1…",
+      "category": "cyber_attacks",
+      "one_liner": "Google paused its open-source bug bounty program until 2027 due to an overwhelming influx of AI-generated hallucinated vulnerability submissions.",
+      "tags": [
+        "ai",
+        "bugbounty",
+        "opensource",
+        "research",
+        "vulnerability"
+      ],
+      "summary": "Google has temporarily paused its Open Source Software Vulnerability Rewards Program starting October 1, with plans to provide updates in the first quarter of 2027. The company cited a significant surge in automated, invalid, and hallucinated bug submissions driven by AI tools. Open-source maintainers and Google engineers have been overwhelmed by low-quality reports, prompting the sudden freeze while participants are directed toward Google's other bug bounty initiatives.",
+      "key_facts": [
+        "Pause Date: October 1",
+        "Expected Update: First quarter of 2027"
+      ],
+      "bottom_line": "Google's suspension of its open-source bug bounty program highlights the operational strain that AI-generated vulnerability noise places on security teams.",
+      "claims": [
+        {
+          "text": "Google has paused its Open Source Software Vulnerability Rewards Program on October 1.",
+          "support_span": "Google paused its Open Source Software Vulnerability Rewards Program on October 1…",
+          "status": "contradicted"
+        },
+        {
+          "text": "The company cited a significant rise in AI submissions for pausing the program.",
+          "support_span": "Blaming a “significant rise” in AI submissions, Google has paused its open source bug bounty program until next year.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 61,
+      "interest_score": 75,
+      "corroboration": 9,
+      "blend": 79.0,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "2381d17431b9a899",
+        "28c7b3a734110a72",
+        "29efd38f83e917fb",
+        "2a01ab75944e0d47",
+        "32fa12f768afd40e",
+        "344239be64780fd3",
+        "35734a3e1c59d0f6",
+        "35a584d4add84164",
+        "36a13318cfdf8730",
+        "3af64ae3b9b34696",
+        "3be50c55af34bf46",
+        "3c40ecdcc2bcaa8b",
+        "43573e5b3ad35277",
+        "46267549bbb2e643",
+        "52456f0dcde46898",
+        "5973fbb121b1d678",
+        "5ad346817e5daa31",
+        "66373417ac5f2579",
+        "6b8faa41b3622097",
+        "71b92d7d124804e8",
+        "791a1d576ba43c97",
+        "7cc34f3671680980",
+        "829bf5c63f81d041",
+        "867169097f848822",
+        "8b5bf925dcad44b7",
+        "9e2313dbba068206",
+        "a028cc9b2f350970",
+        "a3e12ac331f5d0e4",
+        "ac4f8553a7218381",
+        "b04e111c3b434564",
+        "b668e3eec0b0825d",
+        "b758c36483b0fd7f",
+        "b88166f4b53f47f7",
+        "bae8e1e94ef70aaf",
+        "c080605f8fa3d70f",
+        "c44fae424836d1c9",
+        "d6c21e90289a3031",
+        "da3f65ad33d98bc9",
+        "dd93cc7857d3ef13",
+        "e6df24b3d545159a",
+        "e7a109eb66d56046",
+        "e8acbae6f37c6459",
+        "f11fba4327d3e941",
+        "f301e41b3992c292"
+      ],
+      "critical_signal": "supply chain compromise",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Infosecurity Magazine",
+          "url": "https://www.infosecurity-magazine.com/news/google-suspends-opensource-bug/",
+          "domain": "infosecurity-magazine.com",
+          "tier": "B"
+        },
+        {
+          "name": "Malwarebytes Labs",
+          "url": "https://www.malwarebytes.com/blog/news/2026/10/google-pauses-open-source-bug-bounty-program-after-rise-in-ai-submissions",
+          "domain": "malwarebytes.com",
+          "tier": "B"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/",
+          "domain": "techcrunch.com",
+          "tier": "B"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html",
+          "domain": "thehackernews.com",
+          "tier": "B"
+        },
+        {
+          "name": "ActuIA",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTDhSYWZJaTI2VUdRWVhDNjE0YnZpR0RtY3JDT0lvUHRDQ3E5dlZiZTNSMW9sOWlmYTFMSUJqTVJ0SmNJN3ZKNkgxUkJEbl9veFg2Vm5WZ0FGWGE1dXhFRk9ENXJJUTJ0Um5JNmNmZ0oyVUJFcTRnU0RPa2NxMkFfYThfSnQzdXl2c1QtWVNJeVhxM2dJOHc?oc=5",
+          "domain": "actuia.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "AI Insider",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQbWtzRnJVWUdoMDdfNjBBcHhEamxLYXB1R3oyRWRIaFFlZlQwUnpidnJqXzg3VG1QZUVSRnhIZHgtSURqMGpwdG5lSmRvQl92MkZXeVhwR2MtWml1UjBnYjZhdTdobVpPalgzWHNxVng4S29ranhPdHg2UkJ4OWtYUW0zLS1ubW1jczhFQk13NU82dmtFYUtfVVJMeUtyT1F0cmY5bWR6ZmpRaHhGVmZxWXlPeEU0VUxtd2ZWUHN4Q0dYOEVF?oc=5",
+          "domain": "ai-insider.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Analytics Insight",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPZVVwNk9RVUlOTDFKN183OE9meFBMMFVWMmVXdVdsRlZOUmtUeEhGY0lOWU10dlh4RmRvQVl3OV9zR2xhWkM2TUY5Ny1DUXEwS2h2SzBZNElNNWFGLVFFcEM2UDV6SndjczY5eEdqUjRhR0tuYTJhTnN4Q2Z3dnRmTG01eWZ1WmVFTjZHb3FlSmJMVjlnZlBUTVF4dFdtNkhZQmJlZVhXWTROTlNkOG9kS29JRndiN01xREszYmNfMXMzZmNWRDd6cjQ0eTNEclg5NmfSAdIBQVVfeXFMT2VVcDZPUVVJTkwxSjdfNzhPZnhQTDBVVjJlV3VXbEZWTlJrVHhIRmNJTllNdHZYeEZkb0FZdzlfc0dsYVpDNk1GOTctQ1FxMEtodkswWTRJTTVhRi1RRXBDNlA1ekp3Y3M2OXhHalI0YUdLbmEyYU5zeENmd3Z0ZkxtNXlmdVplRU42R29xZUpiTFY5Z2ZQVE1ReHRXbTZIWUJiZWVYV1k0Tk5TZDhvZEtvSUZ3YjdNcURLM2JjXzFzM2ZjVkQ3enI0NHkzRHJYOTZn?oc=5",
+          "domain": "analytics-insight.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "BankInfoSecurity",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTEp5Z3lYaG1TU0o3UVlZQ01pb0FLRC1sSUxXbUNwOHVJLUJfOVp2c1NITUV4UWdDZkpORnBhSG9sRzlmSVl6clVNLXRwT2pZN2pPMXVOT3NfbHhSTGtwQUFrUXQ1Z0trTGk5UkRSZFFNclEyZVJNczhhSDNhT0tWQ3AyZFNxeHNkVEZIT2VrNW1aZk9BOXdWWElLOFZHU0E?oc=5",
+          "domain": "bankinfosecurity.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Benzinga",
+          "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNQy1NODVoSHdjUzZkRWFrMlhDRFQ3dFgtQ05NLW1OczdnaGo2OUo3cGNKbl9ESkJ1dFNlUEtmYlRmc0ZwMXFxV3NoRXlWeEFudzFaMFJ3ZzdlVlZlbVFvNDdEcmNaYW9IT1Vnd2xXWTN0akFMMFB5Q0g0ZDlOOUNpdEZRWU9TbE8xbTJrbWZSZVA4TWhDYWtUalZDYkZjSm9HTmJVVmpGSkJjRXBjeFRJQzlZZENXUlQxMlNoMENCQ1YxWlV0MXlBQ2wxSDZ5dEtVLUkzSWI3X19Wd0ROVjJfQ2RiOHJjSDRGejdWSE02ZVBjZVdFdzlDR0MtbTNrTGhLVWR4X3ZndmVSZ2VpaG1VOHpBd28?oc=5",
+          "domain": "benzinga.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObXNuRGM5SjNSczAxOEhpd0dUcjhsaXpVLUZwSENKelRCZmtWU1lyQ3loMGRKN1hQbHFUU2swVXY2SlJVam50Vmx2b0FpQTdVWi1QNTcta2pZb2NFRl9iNXk2M3Y3ZFJHdER1NGlnRHZGX1JwbUQzbDBEdXpyLTNpVG8xQ2hHLW5KQ3JiR2ZoMVYtWHU0Yi1ESVN0NlYtZlYxQzlNb2xlWUpEYkNN0gGyAUFVX3lxTE5TTk1HZUJnemZQNGhGSmJSNmR5X3kyU2E1a2pzb2dvd2poSUNVZVdMSjRZOGp1RXl5OU1FNmk3X0pGYXUxTllLNWI3aGYyWDZZdlZ3WWdNVDlkSTlPNkdLUmV5ZzAxMGFJUDRrUzZVU1cycjIxbHl2RnROX3B6TmppYmdkbF9ZVkxuTDZTaU9TYVdTU0tzaVNRVjQzM3l2VkZ4WWxlc1Z4NkFLLXoyM01kVVE?oc=5",
+          "domain": "bleepingcomputer.com",
+          "tier": "C"
+        },
+        {
+          "name": "Convergence Now",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOYWk2NzBkMDQ3WTVfY1djQUh4ajdUb2lVckV5N3BRcGF1dUxFd19iT1JQd2pTUkdFVXRrbU5NNUg2UjZQSDdaVUxDekZRREJqeXp5U1dwTVZFNTl2b3dMb1A0QUg4N0Flbk9KdlF5NTZRTkZSRTFNWDVkTUdXTmU2X19IaDg0ek8tVk92VHBwbVRhOWFFUFV2VzlKeFhGR2FmdWw5VHhvSDhEZlZManFXeXlDc1pwSy0tbkE3NzRocmo1Zw?oc=5",
+          "domain": "convergence-now.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Crypto Briefing",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1GN2JaT0o3eDJra044OHRjeFdGc3NfazJiVzZZellycmNyRUhqWnRTNmNOUmZPS2RRUTgwNEJac0FGWHdvU18xUDFBRkVVQUM1ZUh0MEhCWXhBYmsyeE45S3c0dGRKRFBja085OVBFOERrNlFfWHc?oc=5",
+          "domain": "crypto-briefing.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Cyber Press",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5jMnF3U2pJSHdTaF9mYkVndGJxR0xWUF9VS3lfbWV4ZUdBQUNXZ2NWQlBFSlVHUk4tblZ1VF9UR1U3dTl4RkU2Z1FwQUtOR0dudEdlUi0waUtpTXBxdmJtcFVCVDl4M0U2UEFYOUJkZmVfZHF1YnA00gF3QVVfeXFMTmMycXdTaklId1NoX2ZiRWd0YnFHTFZQX1VLeV9tZXhlR0FBQ1dnY1ZCUEVKVUdSTi1uVnVUX1RHVTd1OXhGRTZnUXBBS05HR250R2VSLTBpS2lNcHF2Ym1wVUJUOXgzRTZQQVg5QmRmZV9kcXVicDQ?oc=5",
+          "domain": "cyber-press.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "CyberSecurityNews",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUk4zdGxPbDBTenkyR005cmJFQW8xUVZTR1F0YnJKZFY3bHE0OFpSRDFFMTBGQUZ4azh2VjV2VXk2V2lmZk9Fa0ZONXJSZUxSckZtTVdZQVhlZHZkX2FJbTlVbkJseEdqcWJBanYzaV9GYVBBT2VNeEl4bUhSMFdHedIBhgFBVV95cUxPVTBZcmhfRWwxTTM4ZHZ0bUVScnVReW0tNmt1aWloSl85WlF1eVVLQ3BPblBxTGVRTXZDV3lLanpPZzdUSkFRLVk0UEh3bm85T0JSSlRFcXlVNzlvNk16RFdBZy1nQ09DRU5ZVnZQWUVrUnhrbGVXcDZZTFhOVDNvUXhlUGl1dw?oc=5",
+          "domain": "cybersecuritynews.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "CyberSecurityNews",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVTBZcmhfRWwxTTM4ZHZ0bUVScnVReW0tNmt1aWloSl85WlF1eVVLQ3BPblBxTGVRTXZDV3lLanpPZzdUSkFRLVk0UEh3bm85T0JSSlRFcXlVNzlvNk16RFdBZy1nQ09DRU5ZVnZQWUVrUnhrbGVXcDZZTFhOVDNvUXhlUGl1d9IBhgFBVV95cUxPVTBZcmhfRWwxTTM4ZHZ0bUVScnVReW0tNmt1aWloSl85WlF1eVVLQ3BPblBxTGVRTXZDV3lLanpPZzdUSkFRLVk0UEh3bm85T0JSSlRFcXlVNzlvNk16RFdBZy1nQ09DRU5ZVnZQWUVrUnhrbGVXcDZZTFhOVDNvUXhlUGl1dw?oc=5",
+          "domain": "cybersecuritynews.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Dataconomy",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbTJQXzlxdVQxRjZRdmRFSndlaEZZdUN0ektCNGg5cmRIaW1QTWFoU1J1MUxqVUMzTXd4MVJIdXhzdFFWVi1ydi1ieGE4ek5LMmNxT2NjSW9RZWI4N2tLZ0RSY29BWU0tcm9MTnpjX1oteGYtclpPNEJPZmpJb0JkSU1RZVhmZktBYU9PTzlEYV9JNVM5bm5pUEE4U2NBY2RuVzZpUWpR?oc=5",
+          "domain": "dataconomy.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "dev.ua",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQa1NMNG1JX2huTWxEU3RsVkpBZjRqbmo3Ujh2SE1MbHVVbFdTUmh1a1kzQnNJa1ZOM2xscGlCcEI1cVdha3lBdlRMaUxSeEt0U1lQYVN6VTRaVV9xYVhtU0hGUTBwZmhmN3MzaUlLc29mRDl1VkhDbE1jeTREQ3BuZzltSQ?oc=5",
+          "domain": "dev-ua.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Digital Watch Observatory",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4wa0U3djJhbGsxT0tXcXVzV0lST2djbDdwdFBMYUFwVU5UX2NOLWxhdlV4WElvMGQtUXVCVVFTV2RhS0trVHNzRXMwV3Zjd09IV1hpQ013Yy1lYm40TjQxQmNsT2lTYjNiMHZnN0lBU1U0V1FZUGc?oc=5",
+          "domain": "digital-watch-observatory.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "GBHackers News",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9JZ0JfenZYR2lCQ2ZmV1B5T0JjNnlSd2Z6SU9BaHUyc2NsV2gyV3E4RFoxV3hoWnRicjNrS20tODhPRURENzRPNjZMREUybUp2REtSNGVEdmdkeXVBRVlWYzBjdDhaemdWV0hFUXA3TjJlb29xa1HSAXtBVV95cUxOdzlSYTQ3WmZKUk1VNWdYa25ERGZ1ZVdWNkVEbnNfSG5VZWpTWnpzcmdadnRSN1podWIxSWdMTnQyV2tNLWlaRmdpbFRBYzI0TEI4NHg1bmEtZTBXdG9wOTVfV21NTHF0bHpya1U0YTRrMU1WRHBPZjk2X1k?oc=5",
+          "domain": "gbhackers-news.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "GIGAZINE",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUnJhSi1lS0YtYUpEZGZIRERqWW1xVHIxTzA3SDk5X1Q1em5mS0lfaHhGUGRBVjBmT1VqRmZTak9vUFdLa3pyeHJZZk9COUFvRDBtdWdBdkhlVnhKWkJ3bDZfUjRPMEVVRVFlWmVVSFc1YmtmNURSYXVnU2dBLXhKdWZtYXdtQU1ZTXd6aEJxRQ?oc=5",
+          "domain": "gigazine.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Help Net Security",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPYjZYaHRoTDFWNG4xZHUyTldhdDU0b0hKNmtDLWdHS2w4cmpSWlRUTjdCd0Q4cmdOaWxKRktlb2JYVDZGZkVPRG9EcVJncFI2Mlc4ZjRodEk3XzNHS3FnQ3dPbTdub2ZVM2h6UXpCTEZySEZ5YThyVXBXSEwxSnF3eTRlMF9sYmpIN1cwX1R3bHAzZG9ESHc?oc=5",
+          "domain": "helpnetsecurity.com",
+          "tier": "C"
+        },
+        {
+          "name": "Infosecurity Magazine",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1GMmg5V1RUSnp1X1NTSWxmYkVQOC03d1BhSUloOVkwd2dSeWNYQVktenZwY2s3Qng2aEx1M2pFVUhwRDJEMWpyZHp0UVl6d25XZE9RaTdzN3pxd3NfdXZuMFIyMjBEbW1ZVnJxMjMyOHdCdWpNVGtMc01Qa2tIRmc?oc=5",
+          "domain": "infosecurity-magazine.com",
+          "tier": "C"
+        },
+        {
+          "name": "Malwarebytes",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORXRpT1htbHpaVUs0Nk1ieDVmRFpPYlVzamxvbU5td0pSdHhGQUhpUGNrRExyRHo1UFlxNzJMbEFhWVhHMGJGcHphSlNZRkpHSGNicFRNZTFtbExVVXJDS0ZRSDNYNGw2NTA3T1o0T19NcVJiLTRfNGk5ZU1SNW5xZ094U2NreTZuOVlTQUlpVlNEU0U3b0VINlZURmFpSzc5REgxbWtLVmlaNUFwY0ZHcUNwd25NYXRZM0Z1MA?oc=5",
+          "domain": "malwarebytes.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "news.lavx.hu",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUDFOTWdVZFRiNVBFWXBvUjJHcDl3TGlicl9KX1JTd3AzQVFWMWdhOFRYd2sxOHN6QzBhTm5lWUxCRFdFV01lQkoxb1RWZEFGeTljMnhNZThmYklaSFRtczhrTjlNaGdPTUhVeE90LU9NYmhiVVZyYkpJZDhIaklYRmdtVDJPT0RhdFdPcl9mT2lta2o2SjJXaXAtZlptS2tjVUpZVDNZS3lSYjNRMlJNOFY1TQ?oc=5",
+          "domain": "news-lavx-hu.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "GN Bug bounty",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1fb08xbmZhUHN6LXNpckRxY3pic19vQ011dW1aWV82TzB3SHJZeDZlcnlIR0lOc1FkcUpKamNYSnZVSEJYSlJ5NTZObG9qMXl6TUhPYW9HVzZpTnR2ZG10eHNBS1RXbk1PcFBPaA?oc=5",
+          "domain": "news.google.com",
+          "tier": "C"
+        },
+        {
+          "name": "NewsBytes",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQzB6TUpGT01tQ0tWTmVHM0lIWktpWUVMNXJ2TjI5RURIRU9FTW9HNEdNODhvWGFSVEJYWG9kM0tJM1UxSndPRFVLZlFobXo3U2RQS3NZZl9HT09uU2F1RjNYeFRra0xmZE5ETnZQSTUxMVBTTmFXbnBvVUQta3pTUUxVWHF3Y2dVZ2NZczM2eE9NMVdrcTZHaEdpalNHNzZPM1FNUHFR?oc=5",
+          "domain": "newsbytes.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "samaa tv",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYUJKOW5ES2FpTjg5bnhPWnV5UTNqdHdDQlI3cEVpNzZEN3dJMk44VXQ3WXg1NmR1WFM0VVBLN3c0VHU5eW1qSlhZeGtXR0Q1RF9yNGNnNzVUdkdQaWVMSTZydERuQlVKZ2lhaE1SZnlXZGlmNjFrWDlPTFlvWkE4YWNfbWlyZzlRLWQ5NHNmVkNZUQ?oc=5",
+          "domain": "samaa-tv.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "SC Media",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdWs1QWM0MlR2eXpzeGVRSGhIdHhRVWpaWDhmeHhTQzlxcF82UTBFTTdrb08yU0dzN2lMdHI0NW1XbjVXS04wT2x0OWs2R0cxeVl3OTAyVVM3d0JhZGdNM0hKdWI5cGtLUEYzTHFpbzFnbVNEV3pXeVZmcEhiSE1zX2JVTkhvbHJBTlFhS0lCLUNXeF9FaGJSMmxURDQ4MndO?oc=5",
+          "domain": "sc-media.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVUZYYllfRlQ0ekFUU2pnUmk4QTdtdTdSQUljOXVzRlhxVlh2LXBXcmhaSWJnTF9kSGNLMXBwRGoxTGpESTlJaE4yQzh4Rmw1TEpUUi1PSFcxdmEwWWNyX2NfZUFwc3hhaVhJRGxsNnBQXzVST2pFUm00TTVBUkNsLXZfcC1tTjd6NHdOdmJMVTFEcGpwYVN1aC1iYzFsclhMcHQ0X2RjTjA2UdIBrwFBVV95cUxQcmtHZ21xREFTQllGVFB1Um1TYlhuX0FpeG45QVYxd3BpLWV3SWpfT3QyTTFfSDl0RGlZUFdQZmkwbDZIYXlCTElyNkFfTHdETzZieUZUV3ZIeVNzcmoweUhsenNwWHBMeUQ1WW1fR19JeVAydUtRZGlFZjZzSVJpUTF4Z1VnelVVd1BnNEF4TWl6NmphallyZ3lsc0VTQWhEeDItMlp1b2cxOG5WRVd3?oc=5",
+          "domain": "securityweek.com",
+          "tier": "C"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcmtHZ21xREFTQllGVFB1Um1TYlhuX0FpeG45QVYxd3BpLWV3SWpfT3QyTTFfSDl0RGlZUFdQZmkwbDZIYXlCTElyNkFfTHdETzZieUZUV3ZIeVNzcmoweUhsenNwWHBMeUQ1WW1fR19JeVAydUtRZGlFZjZzSVJpUTF4Z1VnelVVd1BnNEF4TWl6NmphallyZ3lsc0VTQWhEeDItMlp1b2cxOG5WRVd30gGvAUFVX3lxTFBya0dnbXFEQVNCWUZUUHVSbVNiWG5fQWl4bjlBVjF3cGktZXdJal9PdDJNMV9IOXREaVlQV1BmaTBsNkhheUJMSXI2QV9Md0RPNmJ5RlRXdkh5U3NyajB5SGx6c3BYcEx5RDVZbV9HX0l5UDJ1S1FkaUVmNnNJUmlRMXhnVWd6VVV3UGc0QXhNaXo2amFqWXJneWxzRVNBaER4Mi0yWnVvZzE4blZFV3c?oc=5",
+          "domain": "securityweek.com",
+          "tier": "C"
+        },
+        {
+          "name": "SiliconANGLE",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZ05jajV1RG5hV0FEdHBNX1VUMXNESWg1UE1IMmFfQVd1a0RCeDhxbERFb0RYR0dFMEY3STVkcVVjenNiQWVNcWFSbWJxZzVaa1hUNEtKazlTTFRIRFNfbVg5R0hZWmhSVG8wV3NDRGpwR2xXUU5yWlhmVUYxNk53NlFGM2dMWXYtRUlST2FfSXFGOFZxUHV1SDNlU1BBX0xwbHc?oc=5",
+          "domain": "siliconangle.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV2dhMWFWdURrUldZWDk3dkZzWkxGN1RZNW1KdUtObHFGalBUeDlXSlRaRUF5RTUwaWVWc1lZcUprVGhQS2lMcGMyU1l2dGxnMVIyMkg4UktuenFsaFBXcmNvNTlKUlhmcHE1MW1BVGFmME41TGJzbF8wMXRnRkdCUVgydDU1VUlseTRTbEJXalJkSTZYekVWUjFjOXpqZ0RRV25IQm9PZDZsa3d5cHQwWjd0SmZMREtGZmRFbThXekFzZWFa?oc=5",
+          "domain": "techcrunch.com",
+          "tier": "C"
+        },
+        {
+          "name": "TechJuice",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbjlPOEFNbzF3RmY5cUkzUWtCTlJWd3VyZUo1ZWZvYkF2RldROE5oeUhSbnN2dDN4OUhsLWNEQUJvZVMtRjF6cDZDRmxFejl2VFdYLXhENlE5NU5oVVN1U3ZIMjM3T19jUllxYjVjaXM3TDJUdXNKd1pyM0RQS3kxNDl0NkNyVWZ4?oc=5",
+          "domain": "techjuice.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "Technology Org",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPdmN6dENYZWVEUndXdUUzd2tHWURvckNnUDJYOTBQOHcwem81ZkhCRk1RbkZickQzWV9YLVk2aDh1S0lRaVJNZXdhQTB0OVBrR3l5NkZLVFhIUlhRbF9ZX1g1R1BuZnd4aUtwbW9HYkswcEVkMExRWks1LVMxblhuTWMwM3RCdGdGNEtCRHhpeERSQU11?oc=5",
+          "domain": "technology-org.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "TechRadar",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOd3dCTzFyQWpDYS1OaUI1enB1eDIxczNSaXZ2N1cwQWgyVXZGTTBXT21KZms5Nkg2aGFIcWhCbGpuN2EwMG1XRWNldUxRM0Jzdno5S05JeFRlcTRFUUdmVWNGdnphM3RhMFhTRm8wR0dzODhkeU5BSDVLUUdpVDQwY0lrN0w3YVdhdnZXNE9LY3I0YXRBVmpkUFgyaGxGVWdDYmNhVlZGdmU4QlYtUjhGcXBvMFJUWWhvamI5SjUyckl5MUNnRk92dw?oc=5",
+          "domain": "techradar.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "The Cyber Express",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE90YXZyZnJsaTItT1BlaUxTT3BLVWVMc1pBSThEbWdHNjBRenlpSXZsSlYzZ29LZ01TRVVweElveGQxYkRUdHFaS1gyWFVheTNMMUZpbFl0WmhPTzYxbk5YZW52bEJmZ05fUzBtU1FWSUl0QmVTZVUyUThB0gF6QVVfeXFMT3RhdnJmcmxpMi1PUGVpTFNPcEtVZUxzWkFJOERtZ0c2MFF6eWlJdmxKVjNnb0tnTVNFVXB4SW94ZDFiRFR0cVpLWDJYVWF5M0wxRmlsWXRaaE9PNjFuTlhlbnZsQmZnTl9TMG1TUVZJSXRCZVNlVTJROEE?oc=5",
+          "domain": "the-cyber-express.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "The Tech Buzz",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOT0JsYUNoQkdxN1hOMm9xX3JaMmFUZDh4aGRCTElhMHNNemZJMFBjbGNnVUM0WGdXdVRialA0WWRZVEgxa0lRWlhuV1NSTmdSYTNTdTZrdlM2b19oemV3R2ZzaWpzbmJBMVFxSldnOVpQa3Y1N3ZDekM1cVFnVlpZYWNSaC1nekZPd2tmR04tZWo?oc=5",
+          "domain": "the-tech-buzz.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "The Tech Buzz",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcXNVeFQwV2dFZEd0UUFIX0NldXhYRGlBRFBibjVjQjhIRVdWUnNGQjJCZmhja3ZndHFFNHFka3RmZTJicm82MldlLUFJbnN4TDF6V0xSOF9zVFB0SEFVWEtDWkxsZWVMVXFNTWhjRmdQM1FXdFprcGxibW56aWp0cDN1UUl0R09Nc0VB?oc=5",
+          "domain": "the-tech-buzz.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "The Times of India",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOODZLcE9ZdFZvUVFuQlpzODJET1FLVXJKc3h0ekI2N0tOd2NpR1lYWHQtcmxrbi0xbVhHWG5aZHVNNlRhcl9WN0VZaUp5Sm1ucmlWdThjNk9UakROWU43bmtmSnFpOVRxTEZ2SHhGaXNqMGVkYXhfeUgwNGNFaUg1N1JBQ1VxMzl0b3ZhRDNxaXpDWGx0MmtJQi1VdHctakJySUxSeEs2UGxPdEJJdlRQUnhLR3pISUViWFlvSXZ5T0VfT25VVmwtWmVNWUh5YThEd0R3VzdfRWZkemNMVDVsWW5VdnM0TTRNZ1BUcnJ4ZC1Fb0HSAfgBQVVfeXFMUFJhaXdMLWY1NHRhMWFDLTloR3Y1ZktEWktzcml4MUFqeUpLVHVfVngwQVMtbS0tYk5kcVRUVFpfODdHaldqV083aGlSOWZhVXR3SV9MaFBPS2w5UGlsRzFXcDcxdktkSEhwc3EyZDdGV3hUcV9IUzVLWEI0N0gtQUdvYjFCQmxFLTdTS0pBR1h3V1BvdHozQUNiZDdoSDBWOWQzRms2eC1KTU9YQ2pUUzZ3allFb3RIbWtvSEluRU1KV3k0TTlkYzN1eHhvNXN4NHBIWHg2NUxRQmtPZTlvcmpzcmh3MFlJQ1VkZlN6VjJUVEM1WlVuaXk?oc=5",
+          "domain": "the-times-of-india.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "The420.in",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1hQ1M5MUkwRHl2VTlNNTJyTlhYU0tReVVEanpabUZHb3BKaV9QNnlwMnVTS0M2bjBYVU5xdG5qbjZDSWs1YmhQSnFmZlQweVN4VzVvajFMWm1yTmhobHdyYVNkZERlMncxcGdPVURCMDdsTlFhVWhJ?oc=5",
+          "domain": "the420-in.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQU3p2NHRTelNycnZEenh3dnRwcFZwUEVfVEE0YUxNWHI2RE01RGNmUHFId1ZVWkpQY2lmYk9LeWxlX2VleV9sMXJGdF9EU3Y4T01PNlo0aXhwMDB4YWtHaWZSZHJhNFZ5NnpBUWF5WmJYYXB4dUxOZWgwUl85SlUxWg?oc=5",
+          "domain": "thehackernews.com",
+          "tier": "C"
+        },
+        {
+          "name": "Tom's Hardware",
+          "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxOdl9WdlplbUl6TW9SVDV2T0czajVvN3hDVXB1emROaW5FVEs3MTI2MXAzYndQRGxyY3hwdXR1OTRwNTBYcm1pQ1FKMjVVS3ZLemlDeXVWSUtlVGVJendrNEY2eVprRk92OS1nY3haWXVOWmU0dnMzVVpxSWRPVTY3N0txMGp6SjU5TEY2V1UyNzhyU01TbWprUFl3ZVJjT3lxUlE1c2JQTzdmVUNQT05hcUZ2Ym5McURvcFc2c1lYNTgzZmVmSTdjNVltNUpqSlh4S19SWlRsTDlCdGdJb1I1OUpOT3BGWlpoa2I1OHFXdjkxTTBIUHBYVXV0czlmbHZkR2dNT2hKVUg1dHdlVkVuVmVrSjVwOHduQkdyRkdRbS05RlJGanJhMHhPSTNTcnZKb3FyeVBzOEF5Zw?oc=5",
+          "domain": "tom-s-hardware.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "TweakTown",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUFZjZjZvSU9HNVdQV0dmbzM5NGV6X2NyYXliRmpJaTkzR0NVeGxwLXJJMC1LdkJkWDZDejZHSWxTMVZVYXNzY015VkRnVFNlaUU0UTVCalVicm5ES29kV0JRUTUxS2FFOENIYkx1TkE3bGQ2a093YlJXVWFYWHFPT3BVaXZ3QWJWOF9QOV9QWHozSXhscWhqM1lQVGU5ZUl3V2dZQngzN3RaNm5JZHFyTHB6emQ2SDNUUXB4N3VKLUZtaV9pVEVFNy1R?oc=5",
+          "domain": "tweaktown.publisher",
+          "tier": "C"
+        },
+        {
+          "name": "VOI.ID",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5sUGRpTGVvOWxzUGNRdl90S0RVcmtacDhibnhkbGNEckJwSEhoRlRvdHpnT2VvTURLOTdsX3YxeGlSV2R5alM4VjdTSdIBQkFVX3lxTE83X2prenFqYzY4dkxPdWZXSksxVnpPUUIyWkhLSWtGMWdxS2ZQdXNjOUpwbk1teXJ1TlFkX0xKYmNSZw?oc=5",
+          "domain": "voi-id.publisher",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-03T12:00:00+00:00",
+      "trace": [
+        "tier B (+25)",
+        "9 independent outlets (+36)",
+        "verified: 9 independent outlets",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 79 = trust 61 / interest 75 / corrob 100",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
     {
       "cluster_key": "062a8bc557224f3e",
       "title": "edoardottt/awesome-hacker-search-engines — A curated list of awesome search engines useful during Penetration testing, Vulnerability assessments, Red/Blu",
@@ -69,12 +432,14 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "4601d56aac7f6fcd",
-      "title": "Leaving aside Anthropic's incentives for publishing this research, there is no doubt that open weights models will soon create the same security…",
+      "cluster_key": "3932a91df09e3563",
+      "title": "“We find that on medium-length, well-defined accounting tasks, frontier AI models are now faster and more accurate than junior accountants, even the…",
       "category": "tech_ai",
       "one_liner": "",
-      "tags": [],
-      "summary": "Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu Leaving aside Anthropic's incentives for publishing this research, there is no doubt that open weights models will soon create the same security threats that closed source models have been demonstrating, except without guardrails.",
+      "tags": [
+        "ai"
+      ],
+      "summary": "Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu “We find that on medium-length, well-defined accounting tasks, frontier AI models are now faster and more accurate than junior accountants, even the best one in our study.” Eighteen months ago they scored well below human accountants Good discussion here: 2026-10-02T02:11:24.661Z",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -85,7 +450,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "4601d56aac7f6fcd"
+        "3932a91df09e3563"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -93,27 +458,30 @@
       "sources": [
         {
           "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwosru4zes2o",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwucaaj3ws25",
           "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-29T21:51:33.702000+00:00",
+      "published": "2026-10-02T02:11:21.255000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-29 — outside lookback window"
+      "reject_reason": "published 2026-10-02 — outside lookback window"
     },
     {
-      "cluster_key": "7c2711a249fc4725",
-      "title": "I'm at OpenAI's DevDay event in San Francisco today - as I have for the past three DevDay events, I'm running a live blog where I'll be posting…",
+      "cluster_key": "26571ef477a664bd",
+      "title": "openpactprotocol/openpactprotocol — PACT is an open protocol for personal agents to interact with businesses’ agents under explicit, verifiable us",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "windows"
+        "agents",
+        "howto",
+        "identity",
+        "opensource"
       ],
-      "summary": "Post Simon Willison simonwillison.net did:plc:kft6lu4trxowqmter2b6vg6z I'm at OpenAI's DevDay event in San Francisco today - as I have for the past three DevDay events, I'm running a live blog where I'll be posting updates during the keynote, which starts in five minutes 2026-09-29T16:54:42.075Z",
+      "summary": "Personal agents are starting to interact with businesses' agents on their users' behalf. Businesses need to verify which agent is calling, authenticate the customer it represents, and confirm what that customer has authorized it to do. PACT builds on A2A 1.0 and OAuth to support these interactions. Personal agents identify themselves with signed requests (Trust); customers sign in directly with the business and grant permissions (Consent) without sharing their login credentials with the personal agent. Read the documentation at openpactprotocol.org.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -124,25 +492,25 @@
       "is_new": true,
       "summary_source": "extract",
       "alt_keys": [
-        "7c2711a249fc4725"
+        "26571ef477a664bd"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "Simon Willison",
-          "url": "https://bsky.app/profile/simonwillison.net/post/3mwoc6wab4s2d",
-          "domain": "bsky.app",
+          "name": "GitHub (new)",
+          "url": "https://github.com/openpactprotocol/openpactprotocol",
+          "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-29T16:54:38.502000+00:00",
+      "published": "2026-10-01T04:01:14+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-29 — outside lookback window"
+      "reject_reason": "published 2026-10-01 — outside lookback window"
     },
     {
       "cluster_key": "4d6f38293b4a5a47",
@@ -182,88 +550,8 @@
       "reject_reason": "published 2026-09-30 — outside lookback window"
     },
     {
-      "cluster_key": "4317828ae7718149",
-      "title": "justxor/claude-code-pro-course — Claude Code PRO — полный курс и гайд на русском: CLAUDE.md, settings, skills, subagents, hooks, MCP, плагины, ",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [
-        "agents",
-        "ai",
-        "linux",
-        "llm",
-        "opensource"
-      ],
-      "summary": "Установите Claude Code curl -fsSL | bash macOS / Linux / WSL или: npm install -g @anthropic-ai/claude-code 2. Поставьте starter-kit в свой проект git clone bash claude-code-pro-course/install.sh ~/path/to/my-project 3.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "4317828ae7718149"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "GitHub (new)",
-          "url": "https://github.com/justxor/claude-code-pro-course",
-          "domain": "github.com",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-30T12:15:37+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-30 — outside lookback window"
-    },
-    {
-      "cluster_key": "c9e2105dd9b8e320",
-      "title": "I only used the newly announced ChatGPT Dots briefly before launch, so can’t offer a detailed review, but I found it to be a good entry in the…",
-      "category": "tech_ai",
-      "one_liner": "",
-      "tags": [],
-      "summary": "Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu I only used the newly announced ChatGPT Dots briefly before launch, so can’t offer a detailed review, but I found it to be a good entry in the rapidly-expanding Clawlike category with Muse & Grokbot. Using a capable model with access to your data as an assistant & second opinion is remarkably useful 2026-09-29T18:26:05.074Z",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "c9e2105dd9b8e320"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwohcfeiss23",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-29T18:26:03.742000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-29 — outside lookback window"
-    },
-    {
-      "cluster_key": "b05ceac2f48e2142",
-      "title": "rehan-remade/universal-modder — Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: r",
+      "cluster_key": "989e094c39cb40f4",
+      "title": "VoltAgent/official-mcp-servers — A curated directory of 280+ official MCP servers from the companies behind the products. No unofficial forks, ",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
@@ -271,10 +559,9 @@
         "ai",
         "llm",
         "opensource",
-        "tool",
-        "windows"
+        "tool"
       ],
-      "summary": "Skills, tools and a shared knowledge base that let any AI coding agent mod almost any PC game you own. The agent finds the game, works out the engine and the route, reads the real code, builds the mod, makes art, 3D and sound with fal, tests it in the running game, cuts the video, and writes down what it learned for the next agent. Publish your mods, remix other people's, and make new ones. Each gets the same skills (Agent Skills format), the fal MCP server, and the um CLI. Inside a clone, each agent finds the skills where it looks for them: .agents/skills (Codex, Gemini CLI, Copilot, Cursor, OpenCode) and .claude/skills (Claude Code) are copies of skills/.",
+      "summary": "The curated directory of official MCP servers. No unofficial forks, no abandoned projects, just servers you can trust. The Model Context Protocol (MCP) is an open standard that lets AI assistants connect to external tools and data. An MCP server exposes what a product can do (query a database, create a ticket, send an email), and any MCP client such as Claude, ChatGPT or Cursor can use it. An MCP server can read your data and act on your behalf, so who built it matters.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -285,7 +572,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "b05ceac2f48e2142"
+        "989e094c39cb40f4"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -293,58 +580,64 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/rehan-remade/universal-modder",
+          "url": "https://github.com/VoltAgent/official-mcp-servers",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-30T05:00:35+00:00",
+      "published": "2026-10-01T07:30:34+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-30 — outside lookback window"
+      "reject_reason": "published 2026-10-01 — outside lookback window"
     },
     {
-      "cluster_key": "26949432aa97e2e9",
-      "title": "CVE-2026-103603 (HIGH 8.7): Memory allocation with excessive size value in the HSS/LMS signature code (HssPublicKeyParameters, HssSignatu…",
+      "cluster_key": "78bc6cd5a8f36a44",
+      "title": "CVE-2026-71885 (CRITICAL 9.2): In Bouncy Castle for Java before 1.86, the Messaging Layer Security (MLS, RFC 9420) implementation did not bi…",
       "category": "cyber_attacks",
-      "one_liner": "Bouncy Castle's C# library is vulnerable to a memory exhaustion DoS attack via maliciously crafted HSS/LMS signatures.",
+      "one_liner": "Critical crypto vulnerability in Bouncy Castle Java's MLS implementation allows credential spoofing and impersonation.",
       "tags": [
+        "appsec",
         "cve",
-        "opensource",
-        "release",
-        "tool",
+        "identity",
         "vulnerability"
       ],
-      "summary": "A high-severity denial-of-service vulnerability exists in the Legion of the Bouncy Castle bc-csharp library (versions before 2.7.0) within its HSS/LMS signature verification code. An unauthenticated remote attacker can supply a specially crafted HSS public key with an excessive level count, causing the library to allocate massive amounts of memory during signature parsing. This can lead to an OutOfMemoryException or consume up to 17 GB of memory per verification attempt. Developers using this library for cryptographic operations should upgrade to version 2.7.0 or later.",
+      "summary": "In Bouncy Castle for Java before 1.86, the Messaging Layer Security implementation failed to properly bind X.509 credentials to a LeafNode's signature_key. Because the implementation stored the certificate chain without validating it or requiring the end-entity certificate's public key to match the signature key per RFC 9420, an attacker could present another party's certificate as its credential while signing with an unrelated key. This flaw allowed an unauthenticated attacker in certain deployments to be admitted under a victim's identity, evict the victim, decrypt group messages, and impersonate them. TreeKEM.LeafNode now strictly requires the end-entity certificate's subject public key to equal signature_key for X.509 credentials, rejecting non-matching leaves.",
       "key_facts": [
-        "CVE-2026-103603: CVSS 8.7",
-        "Affected versions: < 2.7.0",
-        "Impact: Denial of Service via memory exhaustion"
+        "Product: Bouncy Castle for Java",
+        "Affected versions: before 1.86",
+        "CVE: CVE-2026-71885",
+        "CVSS: 9.2"
       ],
-      "bottom_line": "Applications relying on Bouncy Castle for HSS/LMS signature verification are susceptible to remote memory exhaustion attacks and must be updated to prevent service disruption.",
+      "bottom_line": "Update Bouncy Castle for Java to version 1.86 immediately to prevent MLS credential spoofing and group impersonation attacks.",
       "claims": [
         {
-          "text": "Memory allocation with excessive size value in the HSS/LMS signature code (HssPublicKeyParameters, HssSignature) in Legion of the Bouncy Castle Inc. bc-csharp before 2.7.0 allows a remote unauthenticated attacker to cause a denial of service through memory exhaustion",
-          "support_span": "Memory allocation with excessive size value in the HSS/LMS signature code (HssPublicKeyParameters, HssSignature) in Legion of the Bouncy Castle Inc. bc-csharp before 2.7.0 allows a remote unauthenticated attacker to cause a denial of service through memory exhaustion",
+          "text": "In Bouncy Castle for Java before 1.86, the Messaging Layer Security (MLS, RFC 9420) implementation did not bind an X.509 credential to a LeafNode's signature_key.",
+          "support_span": "In Bouncy Castle for Java before 1.86, the Messaging Layer Security (MLS, RFC 9420) implementation did not bi…",
           "status": "contradicted"
         },
         {
-          "text": "CVSS base score 8.7 (HIGH).",
-          "support_span": "CVSS base score 8.7 (HIGH).",
+          "text": "CVSS base score 9.2 (CRITICAL).",
+          "support_span": "CVSS base score 9.2 (CRITICAL).",
+          "status": "entailed"
+        },
+        {
+          "text": "TreeKEM.LeafNode now requires the end-entity certificate's subject public key, in the cipher suite's signature encoding, to equal signature_key for an X.509 credential and rejects the leaf otherwise",
+          "support_span": "TreeKEM.LeafNode now requires the end-entity certificate's subject public key, in the cipher suite's signature encoding, to equal signature_key for an X.509 credential and rejects the leaf otherwise",
           "status": "entailed"
         }
       ],
       "trust_score": 70,
-      "interest_score": 75,
+      "interest_score": 100,
       "corroboration": 1,
-      "blend": 58.8,
+      "blend": 70.0,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "26949432aa97e2e9",
-        "952275d5b3cad894"
+        "78bc6cd5a8f36a44",
+        "b04a32512903210b",
+        "b4e232a18beffe61"
       ],
       "critical_signal": "",
       "priority": "important",
@@ -352,45 +645,52 @@
       "sources": [
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103603",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71885",
           "domain": "nist.gov",
           "tier": "A"
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63566",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71890",
+          "domain": "nist.gov",
+          "tier": "A"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85515",
           "domain": "nist.gov",
           "tier": "A"
         }
       ],
       "primary_links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-103603",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-63566"
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-71885",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-71890",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-85515"
       ],
-      "published": "2026-10-02T07:16:36.973000+00:00",
+      "published": "2026-10-03T09:17:04.730000+00:00",
       "trace": [
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "importance 4/5 from gemini-3.1-flash-lite",
-        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 70 = trust 70 / interest 100 / corrob 25",
         "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "83f2990a7344b465",
-      "title": "Chengjun023/agent-smith — Token 超支？快给史密斯打电话！ Better Call Smith. Adaptive model routing, a glassy Codex usage monitor, and reproducible b",
+      "cluster_key": "29f5477d29817530",
+      "title": "flaviocopes/factorylog — See what your coding agents did for you: a timeline of each day and week on your Mac, and where your time went",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
         "agents",
-        "ai",
-        "network",
+        "hardware",
         "opensource",
-        "policy"
+        "release",
+        "tool"
       ],
-      "summary": "The most expensive model need not appear in every court hearing. 完整中文说明 · Architecture · Engineering notes · Roadmap Still calling your most expensive model to fix a comma? Built by Chengjun, Agent Smith pairs a local Codex model router with a native floating usage monitor and reproducible benchmarks. Routine work gets a lighter model; difficult cases bring in the heavy hitters. Two components live here: This is an independent personal project.",
+      "summary": "Factory Log shows what your coding agents did for you: a timeline of each day and each week, and where your time went, project by project. Codex, Cursor or any other agent writes a one-line report when it finishes something, and the report shows up in the app a second later. When agents work across five projects in a day, it's hard to say in the evening what actually happened. Factory Log keeps that record for you, written by the agents themselves, in a plain file on your Mac. It never reads your code, your diffs or your terminal.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -401,7 +701,7 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "83f2990a7344b465"
+        "29f5477d29817530"
       ],
       "critical_signal": "",
       "priority": "minor",
@@ -409,31 +709,27 @@
       "sources": [
         {
           "name": "GitHub (new)",
-          "url": "https://github.com/Chengjun023/agent-smith",
+          "url": "https://github.com/flaviocopes/factorylog",
           "domain": "github.com",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-30T15:58:32+00:00",
+      "published": "2026-10-01T16:28:49+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-30 — outside lookback window"
+      "reject_reason": "published 2026-10-01 — outside lookback window"
     },
     {
-      "cluster_key": "df02782130f2b724",
-      "title": "arjunkshah12345-hash/openpages — Open-source AI workspace for humans and agents — SuperCompress as the core context layer.",
+      "cluster_key": "2a7cb352b22f59ec",
+      "title": "I wrote about the thing I underestimated most about progress in AI: its ability to self-organize to accomplish tasks.",
       "category": "tech_ai",
       "one_liner": "",
       "tags": [
-        "agents",
-        "ai",
-        "cloud",
-        "llm",
-        "opensource"
+        "ai"
       ],
-      "summary": "Live demo · GitHub · SuperCompress Open-source AI workspace with persistent Spaces, collaborative pages, and SuperCompress as the core context layer. Open-source alternative to OpenAI Pages / ChatGPT Space. Quick start · Why SuperCompress · Architecture · MCP · Docker Most AI workspaces dump the whole room into the model. Workspace → Retrieval → SuperCompress → Model Your Space can grow forever. Your context window — and your bill — do not grow with it.",
+      "summary": "Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu I wrote about the thing I underestimated most about progress in AI: its ability to self-organize to accomplish tasks. Also, what that means for agents like Muse and Dots, along with a music video explaining why we keep relearning The Bitter Lesson.",
       "key_facts": [],
       "bottom_line": "",
       "claims": [],
@@ -444,112 +740,154 @@
       "is_new": false,
       "summary_source": "extract",
       "alt_keys": [
-        "df02782130f2b724"
+        "2a7cb352b22f59ec"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/arjunkshah12345-hash/openpages",
-          "domain": "github.com",
+          "name": "Ethan Mollick",
+          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwsqdcndgs2t",
+          "domain": "bsky.app",
           "tier": "C"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-30T03:06:43+00:00",
+      "published": "2026-10-01T11:18:17.068000+00:00",
       "trace": [
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
-      "reject_reason": "published 2026-09-30 — outside lookback window"
+      "reject_reason": "published 2026-10-01 — outside lookback window"
     },
     {
-      "cluster_key": "803705924fa300df",
-      "title": "nanaism/yomiyasu — AI生成の日本語を自然な日本語へ推敲するAgent Skill / Agent Skill for Refining AI-Generated Japanese into Natural Japanese",
-      "category": "tech_ai",
-      "one_liner": "",
+      "cluster_key": "e4cb10cdbc78be60",
+      "title": "RBI MPC Repo Rate Hike Highlights: GDP forecast up 40 bps to 7.1%, home loan EMI to rise | US Fed minutes in focus",
+      "category": "markets",
+      "one_liner": "The RBI raised the repo rate by 25 bps to 5.50% in its first hike in three years, while upgrading FY27 GDP growth to 7.1%.",
       "tags": [
-        "agents",
-        "ai",
-        "llm",
-        "opensource"
+        "india",
+        "markets",
+        "policy",
+        "political",
+        "research"
       ],
-      "summary": "",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
+      "summary": "The Reserve Bank of India's Monetary Policy Committee raised the benchmark repo rate by 25 basis points to 5.50%—its first rate hike in nearly three years—while shifting its stance from neutral to calibrated tightening. Alongside the rate increase, Governor Sanjay Malhotra revised the real GDP growth projection for financial year 2026-27 upward by 40 basis points to 7.1%. The policy shift is driven by rising inflation risks, elevated global yields, and resilient domestic growth. Consequently, standing deposit facility rates moved to 5.25%, marginal standing facility rates and bank rates reached 5.75%, and standard home loan EMIs will see minor increases for borrowers.",
+      "key_facts": [
+        "Repo rate increase: 25 bps to 5.50%",
+        "FY27 real GDP growth projection: 7.1% (up 40 bps)",
+        "Standing deposit facility rate: 5.25%",
+        "Marginal standing facility and bank rate: 5.75%",
+        "Standard home loan EMI increase: ~₹852 to ₹867 per ₹50 lakh loan"
+      ],
+      "bottom_line": "Borrowers face higher home loan EMIs and borrowing costs as the RBI initiates a calibrated monetary tightening cycle to curb inflation.",
+      "claims": [
+        {
+          "text": "the RBI MPC raised the repo rate by 25 bps to 5.50%.",
+          "support_span": "the RBI MPC raised the repo rate by 25 bps to 5.50%.",
+          "status": "entailed"
+        },
+        {
+          "text": "RBI Governor Sanjay Malhotra on Wednesday raised the country's real GDP growth projection for the current financial year 2026-27 by 40 basis points to 7.1 per cent",
+          "support_span": "RBI Governor Sanjay Malhotra on Wednesday raised the country's real GDP growth projection for the current financial year 2026-27 by 40 basis points to 7.1 per cent, citing the strength of economic activity despite global headwinds.",
+          "status": "contradicted"
+        },
+        {
+          "text": "Following the repo rate increase, the standing deposit facility (SDF) rate stands at 5.25 per cent, while the marginal standing facility (MSF) rate and Bank Rate are at 5.75 per cent.",
+          "support_span": "Following the repo rate increase, the standing deposit facility (SDF) rate stands at 5.25 per cent, while the marginal standing facility (MSF) rate and Bank Rate are at 5.75 per cent.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 100,
       "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
+      "blend": 58.8,
+      "is_new": true,
+      "summary_source": "model",
       "alt_keys": [
-        "803705924fa300df"
+        "e4cb10cdbc78be60"
       ],
       "critical_signal": "",
-      "priority": "minor",
+      "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/nanaism/yomiyasu",
-          "domain": "github.com",
-          "tier": "C"
+          "name": "Livemint Markets",
+          "url": "https://www.livemint.com/market/stock-market-news/rbi-mpc-meeting-live-repo-rate-crr-slr-reverse-rr-in-focus-as-governor-sanjay-malhotra-to-declare-outcome-today-11791306808901.html",
+          "domain": "livemint.com",
+          "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-30T11:49:32+00:00",
+      "published": "2026-10-07T01:07:24+00:00",
       "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 25 / interest 100 / corrob 25",
+        "demoted: critical capped at 5"
       ],
-      "reject_reason": "published 2026-09-30 — outside lookback window"
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "336b976f9dc2058a",
-      "title": "Edwardxlai/easyread — 把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照、边读边问 AI、文献管理。Read English papers in comfortable Chinese.",
-      "category": "tech_ai",
-      "one_liner": "",
+      "cluster_key": "8366c060ba550e16",
+      "title": "Coimbatore Medical College Hospital changes medicine covers after instructions in Hindi spark controversy",
+      "category": "india_world",
+      "one_liner": "A controversy over Hindi-printed medicine covers at a Coimbatore hospital highlights ongoing regional sensitivities surrounding Tamil Nadu's language policy.",
       "tags": [
-        "agents",
-        "ai",
-        "linux",
-        "llm",
-        "opensource",
-        "research",
-        "windows"
+        "india",
+        "policy",
+        "political",
+        "research"
       ],
-      "summary": "",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
+      "summary": "The Coimbatore Medical College Hospital in Tamil Nadu replaced pharmacy brown paper covers printed with Hindi instructions following public criticism that they violated the state's two-language policy. DMK leaders flagged the trilingual covers, which featured Tamil, English, and Hindi, noting a similar incident occurred in Karur. Hospital authorities clarified that the supplies came from a cooperative society and were used long-standingly, but pharmacists were instructed to switch to Tamil and English covers immediately. The hospital handles thousands of outpatients daily, including migrant workers.",
+      "key_facts": [
+        "Location: Coimbatore Medical College Hospital, Tamil Nadu",
+        "Date: October 6, 2026",
+        "Outpatient volume: 3,000 to 4,500 daily"
+      ],
+      "bottom_line": "Medical facilities in Tamil Nadu must strictly adhere to the state's two-language policy to avoid swift political backlash and administrative changes.",
+      "claims": [
+        {
+          "text": "The Coimbatore Medical College Hospital administration on Tuesday replaced the brown paper covers used to dispense medicines to patients with fresh ones after instructions printed in Hindi on the former triggered a row",
+          "support_span": "The Coimbatore Medical College Hospital administration on Tuesday replaced the brown paper covers used to dispense medicines to patients with fresh ones after instructions printed in Hindi on the former triggered a row",
+          "status": "contradicted"
+        },
+        {
+          "text": "“We replaced these covers with new ones on Tuesday evening,” said the official",
+          "support_span": "“We replaced these covers with new ones on Tuesday evening,” said the official",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 25,
       "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
+      "blend": 25.0,
+      "is_new": true,
+      "summary_source": "model",
       "alt_keys": [
-        "336b976f9dc2058a"
+        "8366c060ba550e16"
       ],
       "critical_signal": "",
       "priority": "minor",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "GitHub (new)",
-          "url": "https://github.com/Edwardxlai/easyread",
-          "domain": "github.com",
-          "tier": "C"
+          "name": "The Hindu National",
+          "url": "https://www.thehindu.com/news/national/tamil-nadu/coimbatore-medical-college-hospital-changes-paper-covers-for-medicines-as-instruction-in-hindi-kicks-up-a-row/article71552773.ece",
+          "domain": "thehindu.com",
+          "tier": "B"
         }
       ],
       "primary_links": [],
-      "published": "2026-09-30T12:52:24+00:00",
+      "published": "2026-10-07T04:45:30+00:00",
       "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 25 = trust 25 / interest 25 / corrob 25"
       ],
-      "reject_reason": "published 2026-09-30 — outside lookback window"
+      "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
       "cluster_key": "4bb0e64d13c64fe5",
@@ -589,157 +927,244 @@
       "reject_reason": "published 2026-10-01 — outside lookback window"
     },
     {
-      "cluster_key": "ec7e9331ffed79ca",
-      "title": "A look at the state of student journalism in light of the Cornell sexual assault case, and much more.",
-      "category": "cyber_attacks",
-      "one_liner": "",
-      "tags": [],
-      "summary": "Post 404 Media 404media.co did:plc:vcepp6trx4vpe5ourxso4tjl A look at the state of student journalism in light of the Cornell sexual assault case, and much more.",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "ec7e9331ffed79ca"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "404 Media",
-          "url": "https://bsky.app/profile/404media.co/post/3mwt5kxvhky2z",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-10-01T15:15:11.791000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-10-01 — outside lookback window"
-    },
-    {
-      "cluster_key": "f04ffee241009e94",
-      "title": "Hey, Claude: \"I asked an earlier Claude to Remove the Squid from All Quiet on the Western Front.",
+      "cluster_key": "7cf82ba973ef50b3",
+      "title": "The Model Plants the Trigger: Answer-Side Backdoor Attacks in Multi-Turn Large Language Models",
       "category": "tech_ai",
-      "one_liner": "",
+      "one_liner": "Multi-turn LLMs are vulnerable to answer-side backdoors where a self-generated dialogue word acts as a trigger, bypassing input-centric guardrails and safety refusals.",
       "tags": [
-        "llm"
+        "ai",
+        "llm",
+        "malware",
+        "privacy",
+        "research",
+        "tool",
+        "vulnerability"
       ],
-      "summary": "Post Ethan Mollick emollick.bsky.social did:plc:flxq4uyjfotciovpw3x3fxnu Hey, Claude: \"I asked an earlier Claude to Remove the Squid from All Quiet on the Western Front. I need you to show how far you have come\" & I pasted in the post below. There is some clever stuff here, models have a real sense of humor at this point [contains quote post or other embedded content] 2026-09-29T16:25:40.668Z",
-      "key_facts": [],
-      "bottom_line": "",
-      "claims": [],
-      "trust_score": 0,
-      "interest_score": 0,
-      "corroboration": 1,
-      "blend": 0.0,
-      "is_new": false,
-      "summary_source": "extract",
-      "alt_keys": [
-        "f04ffee241009e94"
-      ],
-      "critical_signal": "",
-      "priority": "minor",
-      "verdict": "rejected",
-      "sources": [
-        {
-          "name": "Ethan Mollick",
-          "url": "https://bsky.app/profile/emollick.bsky.social/post/3mwoakzayck2t",
-          "domain": "bsky.app",
-          "tier": "C"
-        }
-      ],
-      "primary_links": [],
-      "published": "2026-09-29T16:25:36.842000+00:00",
-      "trace": [
-        "summary: the article's opening sentences, not model-written and not fact-checked"
-      ],
-      "reject_reason": "published 2026-09-29 — outside lookback window"
-    },
-    {
-      "cluster_key": "ac004660f28b7a30",
-      "title": "India's Coal Stocks Deplete By 66% In 2026, Steepest Drop In 4 Years",
-      "category": "india_world",
-      "one_liner": "India's coal reserves have seen a sharp 66% decline in 2026, reflecting significant strain on power generation resources.",
-      "tags": [
-        "india",
-        "markets"
-      ],
-      "summary": "India's coal stocks have depleted by 66% in 2026, marking the steepest decline in four years. This trend highlights the ongoing pressure on coal-based power generation to meet electricity demand.",
+      "summary": "Safety alignment in multi-turn large language models is vulnerable to a novel answer-side backdoor attack that bypasses input-centric guardrails. Instead of injecting a trigger into user inputs, the adversary uses a benign first-turn prompt to induce the model to generate a seemingly innocuous trigger word that becomes part of the dialogue history. When a later harmful query is processed, the model detects this self-generated trigger and bypasses safety refusals while keeping the user input completely clean. Experiments across four LLMs show near-perfect attack success rates at a low poisoning rate while evading standard defenses through representation-level refusal suppression.",
       "key_facts": [
-        "Coal stock depletion: 66%"
+        "Poisoning rate: 5%",
+        "Attack success rate: Nearly 100%"
       ],
-      "bottom_line": "The rapid depletion of coal stocks poses a potential risk to the stability of India's power supply if replenishment does not keep pace with demand.",
+      "bottom_line": "Input-centric guardrails fail against answer-side backdoors in multi-turn LLMs where self-generated dialogue words act as triggers to suppress safety refusals.",
       "claims": [
         {
-          "text": "India's Coal Stocks Deplete By 66% In 2026, Steepest Drop In 4 Years",
-          "support_span": "India's Coal Stocks Deplete By 66% In 2026, Steepest Drop In 4 Years",
+          "text": "Across four LLMs, the attack reaches near-perfect Attack Success Rates, approaching 100% at only a 5% poisoning rate.",
+          "support_span": "Across four LLMs, our attack reaches near-perfect Attack Success Rates, approaching 1000\\% at only a 5% poisoning rate, while preserving general utility and clean-input safety, and it evades mainstream input-centric defenses.",
           "status": "contradicted"
         }
       ],
-      "trust_score": 25,
-      "interest_score": 25,
+      "trust_score": 70,
+      "interest_score": 75,
       "corroboration": 1,
-      "blend": 25.0,
+      "blend": 58.8,
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "ac004660f28b7a30"
+        "7cf82ba973ef50b3",
+        "bda2563ff987af99"
       ],
       "critical_signal": "",
-      "priority": "minor",
+      "priority": "important",
       "verdict": "rejected",
       "sources": [
         {
-          "name": "NDTV India",
-          "url": "https://www.ndtv.com/india-news/indias-coal-stocks-deplete-by-66-in-2026-steepest-drop-in-4-years-12142744#publisher=newsstand",
-          "domain": "ndtv.com",
-          "tier": "B"
+          "name": "arXiv cs.CR",
+          "url": "https://arxiv.org/abs/2610.07723",
+          "domain": "arxiv.org",
+          "tier": "A"
+        },
+        {
+          "name": "arXiv cs.CR",
+          "url": "https://arxiv.org/abs/2610.08678",
+          "domain": "arxiv.org",
+          "tier": "A"
         }
       ],
-      "primary_links": [],
-      "published": "2026-10-05T17:06:56+00:00",
+      "primary_links": [
+        "https://arxiv.org/abs/2610.07723",
+        "https://arxiv.org/abs/2610.08678"
+      ],
+      "published": "2026-10-07T04:00:00+00:00",
       "trace": [
-        "tier B (+25)",
-        "single outlet, established publication (tier B)",
-        "importance 2/5 from gemini-3.1-flash-lite",
-        "blend 25 = trust 25 / interest 25 / corrob 25"
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
-      "cluster_key": "15f2a2f379266999",
-      "title": "LLM Anonymization Against Agentic Re-Identification",
+      "cluster_key": "b712d48725a8e262",
+      "title": "When to Remember, When to Abstain: Category-Conditioned Retention for Reliable Agent Memory",
       "category": "tech_ai",
-      "one_liner": "AURA provides a new LLM-based anonymization method that balances privacy against re-identification by agentic web-search tools while retaining data utility.",
+      "one_liner": "Category-conditioned retention thresholds improve LLM agent memory reliability by filtering out unsupported value and belief assertions.",
       "tags": [
         "agents",
         "ai",
         "llm",
-        "privacy",
         "research",
         "tool"
       ],
-      "summary": "Researchers have introduced AURA (Anonymization with Utility-Retention Adaptation), an LLM-powered framework designed to protect text from re-identification by agentic LLMs with web search capabilities. The framework uses a mask-reconstruct approach that separates privacy localization from utility-preserving reconstruction, selecting candidates based on adversarial checks. Evaluations show that AURA achieves lower re-identification counts compared to other non-differential privacy methods while maintaining higher contextual utility. This addresses the growing threat where weak contextual cues in text can be cross-referenced via web-search agents.",
-      "key_facts": [],
-      "bottom_line": "AURA offers a practical defense for developers handling sensitive text that may be processed by agentic LLMs, effectively reducing the risk of re-identification via web-search cross-referencing.",
+      "summary": "Persistent agent memory systems often suffer from reliability issues because weak assertions are stored and later treated as established facts. Researchers study whether retention decisions should use a category-conditioned confidence threshold rather than a single global bar, keeping well-evidenced categories while abstaining on unreliable inferences. An empirical evaluation across 4,715 candidate assertions revealed a reliability asymmetry where only 77.9% of value and belief assertions are source-supported compared to 96.2% for other categories. Implementing a stricter category-conditioned threshold on values reduced unsupported retentions from 6.2% to 4.0% while preserving estimation coverage. This approach demonstrates that reliable memory retention depends on semantic category and can serve as effective selective prediction at the write boundary.",
+      "key_facts": [
+        "Evaluated synthetic personas: 100",
+        "Candidate assertions analyzed: 4,715",
+        "Value/belief support rate: 77.9%",
+        "Other categories support rate: 96.2%",
+        "Unsupported retentions reduction: From 6.2% to 4.0%"
+      ],
+      "bottom_line": "Using semantic category-conditioned thresholds instead of a global confidence bar significantly reduces unsupported memory retentions in LLM agents.",
       "claims": [
         {
-          "text": "We introduce AURA (Anonymization with Utility-Retention Adaptation), an LLM-powered mask-reconstruct framework that decouples privacy localization from utility-preserving reconstruction and selects candidates with adversarial privacy and utility-retention checks.",
-          "support_span": "We introduce AURA (Anonymization with Utility-Retention Adaptation), an LLM-powered mask-reconstruct framework that decouples privacy localization from utility-preserving reconstruction and selects candidates with adversarial privacy and utility-retention checks.",
+          "text": "Across 4,715 candidate assertions, only 77.9% of value and belief assertions are supported by their source, versus 96.2% for all other categories.",
+          "support_span": "across 4{,}715 candidate assertions, only 77.9f% of value and belief assertions are supported by their source, versus 96.2% for all other categories.",
           "status": "contradicted"
         },
         {
-          "text": "Our results show that adaptive-scope AURA yields the lowest agentic re-identification counts under each of three attacker models among the non-DP methods",
-          "support_span": "Our results show that adaptive-scope AURA yields the lowest agentic re-identification counts under each of three attacker models among the non-DP methods",
+          "text": "A stricter bar on values alone reduces unsupported retentions from 6.2% to 4.0%.",
+          "support_span": "a stricter bar on values alone reduces unsupported retentions from 6.2% to 4.0% (an ${\becomes}36\f%$ relative reduction, modest but consistent across folds)",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 47.5,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "b712d48725a8e262"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2610.07100",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2610.07100"
+      ],
+      "published": "2026-10-07T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "2 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "78a6a1c32ae67ae4",
+      "title": "CVE-2026-92393: Apache YuniKorn: Admission control bypass via workload UPDATE operation",
+      "category": "cyber_attacks",
+      "one_liner": "CVE-2026-92393 allows admission control bypass in Apache YuniKorn via workload updates, risking queue access and quota bypass.",
+      "tags": [
+        "cloud",
+        "cve",
+        "exploit",
+        "opensource",
+        "privacy",
+        "release",
+        "vulnerability"
+      ],
+      "summary": "Apache YuniKorn versions prior to 1.10.0 contain an admission control bypass vulnerability tracked as CVE-2026-92393 with a CVSS score of 2.0. The flaw arises because workload UPDATE actions fail to enforce label and user annotation checks, unlike CREATE actions. An attacker can exploit this to specify arbitrary user info annotations and change application IDs, potentially gaining unauthorized access to restricted queues and sidestepping user-based quota enforcement. Administrators are urged to upgrade to version 1.10.0 to fix the issue.",
+      "key_facts": [
+        "CVE-2026-92393: CVSS 4.0: 2.0 (low)",
+        "Affected versions: Apache YuniKorn before 1.10.0",
+        "Tracking ID: YUNIKORN-3473"
+      ],
+      "bottom_line": "Apache YuniKorn administrators must upgrade to version 1.10.0 to prevent unauthorized queue access and quota tracking bypass during workload updates.",
+      "claims": [
+        {
+          "text": "Apache YuniKorn before 1.10.0 does not implement label and user annotation checks for workload UPDATE action bypassing all checks.",
+          "support_span": "Apache YuniKorn before 1.10.0 does not implement label and user annotation checks for workload UPDATE action bypassing all checks.",
+          "status": "contradicted"
+        },
+        {
+          "text": "Users are recommended to upgrade to version 1.10.0, which fixes this issue.",
+          "support_span": "Users are recommended to upgrade to version 1.10.0, which fixes this issue.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 40.0,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "78a6a1c32ae67ae4",
+        "d45633f66063a5cf",
+        "fd0044ecdf89c372"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "oss-security",
+          "url": "https://seclists.org/oss-sec/2026/q4/84",
+          "domain": "seclists.org",
+          "tier": "A"
+        },
+        {
+          "name": "oss-security",
+          "url": "https://seclists.org/oss-sec/2026/q4/85",
+          "domain": "seclists.org",
+          "tier": "A"
+        },
+        {
+          "name": "oss-security",
+          "url": "https://seclists.org/oss-sec/2026/q4/81",
+          "domain": "seclists.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-07T05:11:21+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 40 = trust 40 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "64e6aed615c5a2fc",
+      "title": "Principles that Guide, Actions that Inform: Agent Evolution via Knowledge Abstraction",
+      "category": "tech_ai",
+      "one_liner": "SAGA introduces an experience-grounded abstraction framework that enables LLM agents to continually evolve by extracting reusable principles from interactions.",
+      "tags": [
+        "agents",
+        "ai",
+        "howto",
+        "llm",
+        "policy",
+        "research",
+        "tool"
+      ],
+      "summary": "While Large Language Model agents perform well in interactive environments, their ability to continually learn from experience is limited by task-specific memory and the high cost of fine-tuning. To bridge this gap, researchers propose SAGA (Self-evolving Agents through Experience-Grounded Abstraction), a framework that transforms concrete interaction trajectories into episodic descriptions, reusable procedures, and principles with explicit applicability conditions. By retrieving and instantiating these abstract principles into task-specific guidance, SAGA creates an execution-abstraction feedback loop that improves future agent performance on environments like ScienceWorld and ALFWorld.",
+      "key_facts": [],
+      "bottom_line": "SAGA transforms agent interaction trajectories into abstract, reusable principles, establishing an execution-feedback loop that improves multi-task agent performance.",
+      "claims": [
+        {
+          "text": "To address this challenge, we propose SAGA (\textbf{S}elf-evolving \textbf{A}gents through Experience-\textbf{G}rounded \textbf{A}bstraction), a framework for experience-grounded knowledge abstraction and utilization in LLM agents.",
+          "support_span": "To address this challenge, we propose SAGA (\textbf{S}elf-evolving \textbf{A}gents through Experience-\textbf{G}rounded \textbf{A}bstraction), a framework for experience-grounded knowledge abstraction and utilization in LLM agents.",
+          "status": "contradicted"
+        },
+        {
+          "text": "SAGA progressively transforms interaction trajectories into episodic descriptions, reusable procedures, and principles with explicit applicability conditions, while maintaining links to execution evidence.",
+          "support_span": "SAGA progressively transforms interaction trajectories into episodic descriptions, reusable procedures, and principles with explicit applicability conditions, while maintaining links to execution evidence.",
           "status": "entailed"
         }
       ],
@@ -750,7 +1175,296 @@
       "is_new": true,
       "summary_source": "model",
       "alt_keys": [
-        "15f2a2f379266999"
+        "64e6aed615c5a2fc"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2610.06964",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2610.06964"
+      ],
+      "published": "2026-10-07T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 3/5 from gemini-3.5-flash-lite",
+        "blend 48 = trust 70 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "976f8894c7013f6d",
+      "title": "facebookresearch/swe-sweep — How many bugs can LMs find & fix in large codebases?",
+      "category": "tech_ai",
+      "one_liner": "",
+      "tags": [
+        "agents",
+        "opensource",
+        "release",
+        "research",
+        "vulnerability"
+      ],
+      "summary": "How many bugs can LMs find & fix in large codebases? Given a real repository, an agent must discover & repair as many bugs as they can. Agents are not given any hint about the type of bug or its location. Website: - Paper: Note The code in this repo is only a thin wrapper around Harbor, however see the warning below regarding harbor version Warning - Harbor version: Harbor 0.23 does not yet support the separate verifier environments and collect hooks used by these tasks. The project therefore pins a compatible revision from Harbor's source repository until Harbor 0.24 is released.",
+      "key_facts": [],
+      "bottom_line": "",
+      "claims": [],
+      "trust_score": 0,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 0.0,
+      "is_new": false,
+      "summary_source": "extract",
+      "alt_keys": [
+        "976f8894c7013f6d"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "GitHub (new)",
+          "url": "https://github.com/facebookresearch/swe-sweep",
+          "domain": "github.com",
+          "tier": "C"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-01T04:59:29+00:00",
+      "trace": [
+        "summary: the article's opening sentences, not model-written and not fact-checked"
+      ],
+      "reject_reason": "published 2026-10-01 — outside lookback window"
+    },
+    {
+      "cluster_key": "caaf496af38aa22e",
+      "title": "Understanding and Mitigating Inference-Time Overreliance Using Agentic Memory",
+      "category": "tech_ai",
+      "one_liner": "MEMTRIM is a new plug-and-play framework that prevents LLM agents from relying on misleading or conflicting retrieved memories.",
+      "tags": [
+        "agents",
+        "ai",
+        "llm",
+        "privacy",
+        "research",
+        "tool"
+      ],
+      "summary": "Agentic memory allows LLM agents to reuse past experience, but retrieved memories can distort inference due to partial query-memory overlap, a failure mode known as memory overreliance. To mitigate this without model retraining, researchers propose MEMTRIM, a plug-and-play framework that indexes memory at write time and controls reuse at read time. MEMTRIM eliminates repeated or conflicting evidence while retaining useful information across both embedding-based and structured memory architectures. Experiments confirm that the framework reduces memory overreliance while preserving the utility of past agent experiences.",
+      "key_facts": [],
+      "bottom_line": "The MEMTRIM framework successfully mitigates LLM agent memory overreliance by filtering conflicting and redundant memory evidence at read and write time.",
+      "claims": [
+        {
+          "text": "Agentic memory allows LLM agents to reuse past experience, but retrieved memories can also distort inference even when they are benign, correctly stored, and appropriately retrieved.",
+          "support_span": "Agentic memory allows LLM agents to reuse past experience, but retrieved memories can also distort inference even when they are benign, correctly stored, and appropriately retrieved.",
+          "status": "contradicted"
+        },
+        {
+          "text": "Motivated by this finding, we propose MEMTRIM, a plug-and-play framework that indexes memory evidence at write time and controls its reuse at read time.",
+          "support_span": "Motivated by this finding, we propose MEMTRIM, a plug-and-play framework that indexes memory evidence at write time and controls its reuse at read time.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "caaf496af38aa22e"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "arXiv cs.AI",
+          "url": "https://arxiv.org/abs/2610.07311",
+          "domain": "arxiv.org",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "https://arxiv.org/abs/2610.07311"
+      ],
+      "published": "2026-10-07T04:00:00+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "05889591562c6e01",
+      "title": "BJP Booth Agent Faces FIR For Seeking To Delete 30 Muslim Voters Using Form 7",
+      "category": "india_world",
+      "one_liner": "A BJP booth agent is under investigation for allegedly attempting to delete Muslim voters from electoral rolls.",
+      "tags": [
+        "agents",
+        "india",
+        "political"
+      ],
+      "summary": "A BJP booth agent is facing an FIR for allegedly attempting to delete 30 Muslim voters from the electoral rolls using Form 7. The BJP has officially rejected allegations that this was a party-led drive. The incident is currently under investigation by local authorities.",
+      "key_facts": [
+        "Voters targeted: 30"
+      ],
+      "bottom_line": "An FIR has been filed against a BJP booth agent for allegedly attempting to delete 30 Muslim voters.",
+      "claims": [
+        {
+          "text": "BJP Booth Agent Faces FIR For Seeking To Delete 30 Muslim Voters Using Form 7",
+          "support_span": "BJP Booth Agent Faces FIR For Seeking To Delete 30 Muslim Voters Using Form 7",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 36.2,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "05889591562c6e01"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "NDTV India",
+          "url": "https://www.ndtv.com/telangana-news/hyderabad-bjp-booth-agent-faces-fir-for-seeking-to-delete-30-muslim-voters-using-form-7-12149369#publisher=newsstand",
+          "domain": "ndtv.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-07T05:11:54+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 3/5 from gemini-3.1-flash-lite",
+        "blend 36 = trust 25 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "984946d5750a4e3a",
+      "title": "Attackers Target Rejetto HFS Flaw That Enables Admin Session Forgery and RCE",
+      "category": "cyber_attacks",
+      "one_liner": "Rejetto HFS CVE-2026-61500 is under active exploitation due to a weak Math.random() PRNG session signing implementation.",
+      "tags": [
+        "ai",
+        "appsec",
+        "cve",
+        "exploit",
+        "incident",
+        "release",
+        "vulnerability",
+        "writeup"
+      ],
+      "summary": "Rejetto HTTP File Server versions 3.0.0 through 3.2.0 are under active exploitation for CVE-2026-61500, a critical session forgery vulnerability with a CVSS score of 9.3. The flaw stems from using the weak, non-cryptographic Math.random() PRNG in JavaScript to derive session-cookie signing keys, which are exposed to unauthenticated clients during login. Attackers can collect login responses to reconstruct the PRNG state, forge an administrator session cookie, and leverage the server_code configuration feature for remote code execution. A Python proof-of-concept was released in late September by Alejandro Ramos following Anthropic Mythos-assisted discovery, prompting scanning activity originating from China Telecom IPs.",
+      "key_facts": [
+        "CVE-2026-61500: CVSS 9.3, session forgery and remote code execution",
+        "Affected Software: Rejetto HTTP File Server (HFS) versions 3.0.0 through 3.2.0",
+        "Patch Version: 3.2.1",
+        "Exploitation Date: October 1, 2026"
+      ],
+      "bottom_line": "Rejetto HFS CVE-2026-61500 is actively exploited in the wild, allowing unauthenticated RCE via a predictable PRNG session key.",
+      "claims": [
+        {
+          "text": "A critical security flaw impacting Rejetto HTTP File Server (HFS) is witnessing active exploitation attempts, according to VulnCheck.",
+          "support_span": "A critical security flaw impacting Rejetto HTTP File Server (HFS) is witnessing active exploitation attempts, according to VulnCheck.",
+          "status": "entailed"
+        },
+        {
+          "text": "The vulnerability in question is CVE-2026-61500 (CVSS score: 9.3), a case of session forgery stemming from the use of a weak pseudo-random number generator (PRNG)...",
+          "support_span": "The vulnerability in question is CVE-2026-61500 (CVSS score: 9.3), a case of session forgery stemming from the use of a weak pseudo-random number generator (PRNG) that can lead to a predictable key...",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 25,
+      "interest_score": 100,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "984946d5750a4e3a"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/attackers-target-rejetto-hfs-flaw-that.html",
+          "domain": "thehackernews.com",
+          "tier": "B"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-05T08:09:23+00:00",
+      "trace": [
+        "tier B (+25)",
+        "single outlet, established publication (tier B)",
+        "importance 5/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 25 / interest 100 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "2c7d30901578d187",
+      "title": "Efficient Auditing of Adversarial AI Agent Behavior from Agent Traces",
+      "category": "tech_ai",
+      "one_liner": "A two-stage auditing framework reduces LLM agent monitoring costs and token usage while effectively catching adversarial behavior.",
+      "tags": [
+        "agents",
+        "ai",
+        "blueteam",
+        "llm",
+        "privacy",
+        "research",
+        "tool"
+      ],
+      "summary": "LLM-powered AI agents can perform complex tasks but may introduce security risks through unauthorized actions. Traditional guardrails either rely on rigid rules that can be bypassed or use costly continuous LLM monitoring for every action. To resolve this, researchers developed a two-stage auditing framework that uses lightweight gate rules to flag suspicious pending actions, followed by an LLM audit agent that inspects them within the agent's prior trace context. Tested on public benchmarks, the framework reduces average LLM audit frequency and token usage by over 70% while maintaining high malicious trace detection rates.",
+      "key_facts": [
+        "Audit reduction: 8.15 to 2.33 per run",
+        "Token usage reduction: 47.8k to 14.6k",
+        "Detection rate: 72.8%"
+      ],
+      "bottom_line": "Combining deterministic gate rules with targeted LLM trace inspections reduces safety auditing token consumption by over 70% without sacrificing detection efficacy.",
+      "claims": [
+        {
+          "text": "The first stage uses single-event and trace-sequence rules to select pending actions for inspection; the second uses an LLM audit agent to examine each selected action in the context of the agent's preceding trace before execution.",
+          "support_span": "The first stage uses single-event and trace-sequence rules to select pending actions for inspection; the second uses an LLM audit agent to examine each selected action in the context of the agent's preceding trace before execution.",
+          "status": "entailed"
+        },
+        {
+          "text": "On the public benchmark OpenAgentSafety, our framework reduces the average number of LLM audits from 8.15 to 2.33 per run and token usage from 47.8k to 14.6k, with a detection rate of 72.8% compared with 81.5% when every action is audited.",
+          "support_span": "On the public benchmark OpenAgentSafety, our framework reduces the average number of LLM audits from 8.15 to 2.33 per run and token usage from 47.8k to 14.6k, with a detection rate of 72.8% compared with 81.5% when every action is audited.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 75,
+      "corroboration": 1,
+      "blend": 58.8,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "2c7d30901578d187"
       ],
       "critical_signal": "",
       "priority": "important",
@@ -758,21 +1472,75 @@
       "sources": [
         {
           "name": "arXiv cs.CR",
-          "url": "https://arxiv.org/abs/2605.30848",
+          "url": "https://arxiv.org/abs/2610.07256",
           "domain": "arxiv.org",
           "tier": "A"
         }
       ],
       "primary_links": [
-        "https://arxiv.org/abs/2605.30848"
+        "https://arxiv.org/abs/2610.07256"
       ],
-      "published": "2026-10-05T04:00:00+00:00",
+      "published": "2026-10-07T04:00:00+00:00",
       "trace": [
         "tier A (+40)",
         "primary source anchor (+30)",
         "verified: primary source artifact",
-        "importance 3/5 from gemini-3.1-flash-lite",
-        "blend 48 = trust 70 / interest 50 / corrob 25"
+        "importance 4/5 from gemini-3.5-flash-lite",
+        "blend 59 = trust 70 / interest 75 / corrob 25",
+        "demoted: critical capped at 5"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
+      "cluster_key": "616b75ff71f7ec9e",
+      "title": "Watch: How Russia responded to US after plague researcher death",
+      "category": "india_world",
+      "one_liner": "The Kremlin has dismissed rumors surrounding a researcher's death at a Siberian plague facility, attributing it to an unknown pneumonia.",
+      "tags": [
+        "political"
+      ],
+      "summary": "Kremlin spokesman Dmitry Peskov has advised the public to ignore rumors regarding the death of a Russian lab technician at a plague research center in Siberia. Peskov emphasized relying exclusively on announcements from Russia's public health watchdog, which identified the official cause of death as pneumonia of unknown origin. Additionally, Peskov addressed inquiries from journalists concerning a formal offer of support made by US President Donald Trump. The situation highlights international interest and domestic sensitivity surrounding safety incidents at high-containment biological research facilities in Russia.",
+      "key_facts": [],
+      "bottom_line": "The Kremlin attributes a Siberian plague researcher's death to pneumonia of unknown origin while deflecting external speculation.",
+      "claims": [
+        {
+          "text": "Kremlin spokesman Dmitry Peskov has urged people not to \"listen to various rumours\" after a Russian lab technician died at a plague research centre in Siberia.",
+          "support_span": "Kremlin spokesman Dmitry Peskov has urged people not to \"listen to various rumours\" after a Russian lab technician died at a plague research centre in Siberia.",
+          "status": "entailed"
+        },
+        {
+          "text": "Peskov called for people to follow only information from Russia's public health watchdog, which named the official cause of death as pneumonia of unknown origin.",
+          "support_span": "Peskov called for people to follow only information from Russia's public health watchdog, which named the official cause of death as pneumonia of unknown origin.",
+          "status": "contradicted"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 25,
+      "corroboration": 1,
+      "blend": 28.8,
+      "is_new": true,
+      "summary_source": "model",
+      "alt_keys": [
+        "616b75ff71f7ec9e"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/c8e36y796enno?at_medium=RSS&at_campaign=rss",
+          "domain": "bbc.co.uk",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-06T13:32:42+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "importance 2/5 from gemini-3.5-flash-lite",
+        "blend 29 = trust 40 / interest 25 / corrob 25"
       ],
       "reject_reason": "1 claim(s) not supported by the source text"
     },
@@ -852,6 +1620,76 @@
       "reject_reason": "1 claim(s) not supported by the source text"
     },
     {
+      "cluster_key": "028b11ee27594c14",
+      "title": "TTY Logs and the Data it Captures, (Sun, Oct 4th)",
+      "category": "cyber_attacks",
+      "one_liner": "Analysis of 90 days of DShield sensor TTY logs exposes widespread automated crontab execution by over 3,130 attacker IPs.",
+      "tags": [
+        "blueteam",
+        "dfir",
+        "opensource",
+        "research",
+        "soc",
+        "threat-intel"
+      ],
+      "summary": "An experimental script was deployed to parse and forward TTY logs captured from unauthorized actor and bot activity on a DShield sensor to the DShield SIEM for daily correlation. An analysis of 90 days of logs utilizing an Elastic ES|QL query revealed a specific transaction ID capturing five crontab commands executed by over 3,130 distinct attacking IP addresses. The diary highlights the specific transaction identifier and details top ASN and IP indicators associated with these automated post-compromise activities. This telemetry helps map out recurrent automated post-login attacker behavior across distributed honeypot sensors over extended periods.",
+      "key_facts": [
+        "Observation period: 90 days",
+        "Distinct actors/IPs: more than 3130",
+        "Transaction ID: f904275333aeac48d7df6cf53fe5fb9212c7d132a7d37253d2ab9321ba2690d8"
+      ],
+      "bottom_line": "Automated threat actors routinely execute standardized crontab persistence commands immediately following successful sensor logins, as tracked across thousands of distinct IPs over 90 days.",
+      "claims": [
+        {
+          "text": "Those TTY logs are sent daily at the end of each day to the DShield SIEM to be correlated with all the data.",
+          "support_span": "Those TTY logs are sent daily at the end of each day to the DShield SIEM to be correlated with all the data.",
+          "status": "contradicted"
+        },
+        {
+          "text": "This transaction ID captured 5 similar crontab commands that are translated from its hash equivalent into this list executed by more than 3130 different actors (IPs)",
+          "support_span": "This transaction ID captured 5 similar crontab commands that are translated from its hash equivalent into this list executed by more than 3130 different actors (IPs)",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 40,
+      "interest_score": 50,
+      "corroboration": 1,
+      "blend": 40.0,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "028b11ee27594c14",
+        "c45b408e21ef0dad"
+      ],
+      "critical_signal": "",
+      "priority": "important",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "SANS ISC Diary",
+          "url": "https://isc.sans.edu/diary/rss/33396",
+          "domain": "isc.sans.edu",
+          "tier": "A"
+        },
+        {
+          "name": "SANS ISC Diary",
+          "url": "https://isc.sans.edu/diary/rss/33394",
+          "domain": "isc.sans.edu",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [],
+      "published": "2026-10-04T07:58:51+00:00",
+      "trace": [
+        "tier A (+40)",
+        "single outlet, established publication (tier A)",
+        "summary: the article's opening sentences, not model-written and not fact-checked",
+        "importance 3/5 from cache",
+        "blend 40 = trust 40 / interest 50 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
+    },
+    {
       "cluster_key": "3196e06e109c803d",
       "title": "OpenAI forgot to put rate limits on ChatGPT Dots.",
       "category": "tech_ai",
@@ -889,6 +1727,74 @@
         "summary: the article's opening sentences, not model-written and not fact-checked"
       ],
       "reject_reason": "published 2026-09-30 — outside lookback window"
+    },
+    {
+      "cluster_key": "79722db5ffe9c9dd",
+      "title": "Chrome Stable for iOS Update",
+      "category": "cyber_tools",
+      "one_liner": "Update iOS devices to Chrome Stable 155 for routine performance and stability improvements.",
+      "tags": [
+        "android",
+        "release"
+      ],
+      "summary": "Google has released Chrome Stable version 155 (155.0.8059.24) for iOS devices, rolling out to the App Store shortly. The update incorporates standard stability and performance enhancements. Users can review all modifications via the Git log and report newly discovered bugs directly to the team.",
+      "key_facts": [
+        "Version: 155.0.8059.24",
+        "Platform: iOS"
+      ],
+      "bottom_line": "Chrome Stable 155 is now available for iOS with stability and performance fixes.",
+      "claims": [
+        {
+          "text": "We've just released Chrome Stable 155 (155.0.8059.24) for iOS; it'll become available on App Store in the next few hours.",
+          "support_span": "We've just released Chrome Stable 155 (155.0.8059.24) for iOS; it'll become available on App Store in the next few hours.",
+          "status": "contradicted"
+        },
+        {
+          "text": "This release includes stability and performance improvements.",
+          "support_span": "This release includes stability and performance improvements.",
+          "status": "entailed"
+        }
+      ],
+      "trust_score": 70,
+      "interest_score": 0,
+      "corroboration": 1,
+      "blend": 25.0,
+      "is_new": false,
+      "summary_source": "model",
+      "alt_keys": [
+        "79722db5ffe9c9dd",
+        "dbe407caaf8c63cf"
+      ],
+      "critical_signal": "",
+      "priority": "minor",
+      "verdict": "rejected",
+      "sources": [
+        {
+          "name": "Chromium Releases",
+          "url": "http://chromereleases.googleblog.com/2026/10/chrome-stable-for-ios-update.html",
+          "domain": "chromereleases.googleblog.com",
+          "tier": "A"
+        },
+        {
+          "name": "Chromium Releases",
+          "url": "http://chromereleases.googleblog.com/2026/09/chrome-stable-for-ios-update_0387577389.html",
+          "domain": "chromereleases.googleblog.com",
+          "tier": "A"
+        }
+      ],
+      "primary_links": [
+        "http://chromereleases.googleblog.com/2026/09/chrome-stable-for-ios-update_0387577389.html",
+        "http://chromereleases.googleblog.com/2026/10/chrome-stable-for-ios-update.html"
+      ],
+      "published": "2026-09-30T16:13:32+00:00",
+      "trace": [
+        "tier A (+40)",
+        "primary source anchor (+30)",
+        "verified: primary source artifact",
+        "importance 1/5 from cache",
+        "blend 25 = trust 70 / interest 0 / corrob 25"
+      ],
+      "reject_reason": "1 claim(s) not supported by the source text"
     }
   ]
 }
